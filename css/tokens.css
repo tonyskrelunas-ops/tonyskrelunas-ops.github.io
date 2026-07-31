@@ -1,0 +1,61 @@
+/* ============================================================
+   TribeAwaken.com — Design Tokens  (bespoke identity)
+   Distinct from any template: a deep-teal ink base, a living
+   turquoise accent (protective, oceanic), warm sand light
+   fields, and a clay pop. Editorial serif display (Spectral)
+   over a modern grotesque body (Hanken Grotesk).
+   ============================================================ */
+
+:root {
+  /* --- Palette (bespoke) -------------------------------------- */
+  --night:  #0C2B2E;   /* deep teal-ink — primary dark ground */
+  --amber:  #2FBFAE;   /* TURQUOISE — the living accent (buttons, marks, links) */
+  --forest: #1C4B44;   /* deep sea-green — secondary surfaces */
+  --earth:  #C86A46;   /* warm clay — rare pop only */
+  --bone:   #F2ECDE;   /* warm sand — light background & text on dark */
+  --silver: #8FA8A6;   /* muted teal-grey — rules, captions */
+
+  /* --- Derived / tints --------------------------------------- */
+  --night-2:   #103436;   /* lifted teal — panels on dark */
+  --night-3:   #163F40;   /* card surfaces on dark */
+  --amber-soft:#57D8C6;   /* brighter turquoise — links/text on dark */
+  --bone-2:    #F7F2E7;   /* lighter sand for large light fields */
+  --ink:       #0E2C2A;   /* body text on light backgrounds */
+  --ink-soft:  #45605C;   /* secondary text on light */
+
+  /* --- Semantic roles --------------------------------------- */
+  --bg:          var(--night);
+  --bg-panel:    var(--night-2);
+  --surface:     var(--night-3);
+  --text:        var(--bone);
+  --text-muted:  var(--silver);
+  --accent:      var(--amber);
+  --accent-ink:  #06231F;   /* dark text sitting on a turquoise button */
+  --rule:        rgba(143,168,166,.24);
+  --turq:        var(--amber);
+
+  /* --- Type (bespoke pairing) -------------------------------- */
+  --font-display: "Spectral", Georgia, "Times New Roman", serif;
+  --font-body:    "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Fluid type scale */
+  --step--1: clamp(.83rem, .8rem + .15vw, .92rem);
+  --step-0:  clamp(1rem, .96rem + .2vw, 1.13rem);
+  --step-1:  clamp(1.2rem, 1.1rem + .5vw, 1.45rem);
+  --step-2:  clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --step-3:  clamp(1.9rem, 1.5rem + 2vw, 2.9rem);
+  --step-4:  clamp(2.4rem, 1.8rem + 3.2vw, 4.2rem);
+  --step-5:  clamp(3rem, 2rem + 5vw, 6rem);
+
+  /* --- Spacing / layout ------------------------------------- */
+  --space-1: .5rem;  --space-2: 1rem;  --space-3: 1.5rem;
+  --space-4: 2.5rem; --space-5: 4rem;  --space-6: 6rem;  --space-7: 9rem;
+
+  --content: 68rem;  --content-wide: 82rem;  --content-narrow: 40rem;
+  --radius: 12px;    /* softer, bespoke — distinct from the restrained 4px look */
+  --radius-lg: 22px;
+
+  /* --- Motion ----------------------------------------------- */
+  --ease: cubic-bezier(.22, .61, .36, 1);
+  --dur: .5s;
+}
