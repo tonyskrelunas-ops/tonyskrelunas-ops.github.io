@@ -796,11 +796,11 @@ a:hover { color: var(--amber); }
 
 /* --- Epic hero backdrop: the golden cowboy, cinematic --- */
 .hero{position:relative; overflow:hidden;}
-.hero__art{position:absolute; z-index:1; right:-8%; top:50%; transform:translateY(-50%);
-  height:150%; width:auto; max-width:none; opacity:.9; pointer-events:none;
+.hero__art{position:absolute; z-index:1; right:-9%; top:50%; transform:translateY(-50%) scaleX(-1);
+  height:116%; width:auto; max-width:none; opacity:.9; pointer-events:none;
   filter:saturate(1.25) drop-shadow(0 0 40px rgba(201,154,70,.22));}
 .hero::after{content:""; position:absolute; inset:0; z-index:2; pointer-events:none;
-  background:linear-gradient(90deg, #0C2B2E 0%, rgba(12,43,46,.9) 26%, rgba(12,43,46,.35) 58%, rgba(12,43,46,0) 100%);}
+  background:linear-gradient(90deg, #0C2B2E 0%, rgba(12,43,46,.92) 42%, rgba(12,43,46,.5) 70%, rgba(12,43,46,.08) 92%, transparent 100%);}
 .hero .wrap{position:relative; z-index:3;}
 @media (max-width:820px){
   .hero__art{ height:88%; right:-30%; opacity:.5; }
