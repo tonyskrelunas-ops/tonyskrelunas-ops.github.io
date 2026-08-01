@@ -790,6 +790,6 @@ a:hover { color: var(--amber); }
 
 /* --- Brand logo lockup in nav (prominent) --- */
 .brand{display:inline-flex !important;align-items:center;gap:.6rem;font-size:1.65rem;}
-.brand__logo{width:48px;height:48px;display:block;flex:none;}
+.brand__logo{height:56px;width:auto;display:block;flex:none;}
 .brand__wm{font-family:var(--font-display);font-weight:600;line-height:1;}
-@media (max-width:600px){ .brand__logo{width:40px;height:40px;} .brand{font-size:1.4rem;} }
+@media (max-width:600px){ .brand__logo{height:46px;width:auto;} .brand{font-size:1.4rem;} }
