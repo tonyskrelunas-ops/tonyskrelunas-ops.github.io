@@ -19,8 +19,7 @@
     });
   }
 
-  // Email capture -> Netlify Forms (AJAX). Wired once the domain is live.
-  function encode(d){return Object.keys(d).map(function(k){return encodeURIComponent(k)+"="+encodeURIComponent(d[k]);}).join("&");}
+  // Email capture -> opens a pre-addressed email to wisdom@ancestralwatch.com (works on static hosting).
   document.querySelectorAll("form[data-capture]").forEach(function (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -28,11 +27,12 @@
       var input = form.querySelector('input[type="email"]');
       var email = input ? input.value.trim() : "";
       if (!email) return;
-      fetch("/", {method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},
-        body: encode({"form-name":"tribe-signup","email":email,"source":window.location.pathname,"bot-field":""})})
-        .then(function(r){ if(!r.ok) throw 0; form.reset();
-          if(note){note.textContent="You're in. Watch your inbox for the free Stone Breath.";note.style.color="var(--amber)";}})
-        .catch(function(){ if(note){note.textContent="Something went wrong — email wisdom@tribeawaken.com and we'll add you.";note.style.color="var(--amber)";}});
+      var label = form.getAttribute("aria-label") || "Website signup";
+      var subject = "Website: " + label;
+      var body = "Please add me to the list.\n\nEmail: " + email + "\nPage: " + window.location.href;
+      window.location.href = "mailto:wisdom@ancestralwatch.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      form.reset();
+      if (note) { note.textContent = "Thanks! Your email app will open — just hit send and you're on the list."; note.style.color = "var(--amber)"; }
     });
   });
 
