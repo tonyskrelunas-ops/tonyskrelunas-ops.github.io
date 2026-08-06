@@ -30,7 +30,7 @@
       var label = form.getAttribute("aria-label") || "Website signup";
       var subject = "Website: " + label;
       var body = "Please add me to the list.\n\nEmail: " + email + "\nPage: " + window.location.href;
-      window.location.href = "mailto:tony.tribeawaken@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.location.href = "mailto:wisdom@ancestralwatch.com?cc=tony.tribeawaken@gmail.com&subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
       form.reset();
       if (note) { note.textContent = "Thanks! Your email app will open — just hit send and you're on the list."; note.style.color = "var(--amber)"; }
     });
