@@ -25,6 +25,21 @@
     .feat{ display:flex; gap:var(--space-3); flex-wrap:wrap; }
     .feat .f{ flex:1; min-width:220px; border:1px solid var(--rule); border-radius:12px; padding:var(--space-3); }
     .feat .f h4{ margin:.1rem 0 .3rem; }
+    /* imagery + motion */
+    .hero-figure{ margin-top:var(--space-4); border-radius:16px; overflow:hidden; max-height:460px; }
+    .hero-figure img{ width:100%; height:460px; object-fit:cover; display:block; animation:kenburns 26s ease-in-out infinite alternate; }
+    figure.teams-fig{ margin:var(--space-4) 0; border-radius:16px; overflow:hidden; }
+    figure.teams-fig img{ width:100%; height:auto; display:block; }
+    figure.teams-fig figcaption{ font-size:var(--step--1); opacity:.7; margin-top:.5rem; font-style:italic; text-align:center; }
+    .guide-grid{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.5fr); gap:var(--space-4); align-items:start; }
+    .guide-grid > img{ width:100%; height:auto; border-radius:16px; display:block; }
+    @media (max-width:640px){ .guide-grid{ grid-template-columns:1fr; } }
+    .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
+    .reveal.in{ opacity:1; transform:none; }
+    .arc .card, .feat .f{ transition:transform .2s ease; }
+    .arc .card:hover, .feat .f:hover{ transform:translateY(-3px); }
+    @keyframes kenburns{ from{ transform:scale(1); } to{ transform:scale(1.07); } }
+    @media (prefers-reduced-motion:reduce){ .hero-figure img{ animation:none; } .reveal{ opacity:1; transform:none; transition:none; } }
   </style>
 </head>
 <body>
@@ -51,6 +66,10 @@
         <p class="article-meta">A 2.5–3 day immersive that lifts your people to a higher frequency — clear, resilient, and fully alive — and sends each leader home carrying what matters most. We bring the whole team, and we show you the rise.</p>
       </div>
     </section>
+
+    <div class="wrap wrap--narrow">
+      <div class="hero-figure"><img src="/assets/img/tony-ceremony.jpg" alt="Tony leading a gathering circle outdoors with his team — drum, smudge, elders" /></div>
+    </div>
 
     <section class="section section--tight">
       <div class="wrap wrap--narrow">
@@ -110,6 +129,7 @@
           <div class="f"><h4>Journaling &amp; writing</h4><p class="muted">Facilitated reflection to capture the shift and name what they carry.</p></div>
         </div>
 
+        <figure class="teams-fig"><img src="/assets/img/land-healing.jpg" alt="Regenerative land at golden hour — rolling hills, a river bend, and renewable energy" loading="lazy" /></figure>
         <div class="band">
           <p class="eyebrow" style="color:var(--turq);">Grounded for the frontier</p>
           <h2 style="margin:.2rem 0 .5rem;">Ancient tools for the age of AI.</h2>
@@ -131,13 +151,19 @@
           <div class="f"><h4>1 · We bring the team</h4><p class="muted">To your offsite venue, or the redwoods of <strong>1440 Multiversity</strong> where Tony is faculty. You choose the place; we bring the method, the practitioners, and the measurable rise.</p></div>
           <div class="f"><h4>2 · Full production (turnkey)</h4><p class="muted">We pull the entire experience together end to end — venue, our cooks and ancestral kitchen, and the land-based experiences — so your team simply arrives. Premium, and completely handled.</p></div>
         </div>
+        <p style="margin-top:var(--space-3);"><strong>Delivered wherever your people are</strong> — across the U.S. and in friendly countries around the world. Tony already advises companies and communities on four continents; the Far Messenger Program travels.</p>
 
         <h2>Your guide</h2>
-        <p>Tony Skrelūnas is Lithuanian and Diné — raised in a hogan on Big Mountain, learning by lamplight after the chores were done, reading the philosophy of Japan by the same small flame, a discipline he would take as his own. He failed out of college, came back, and finished at the top of his class. Today he is a <strong>PhD candidate in Sustainable Development at Prescott College</strong>, where his doctoral research studies exactly what this work delivers: how the ancestral tools of breath, ceremony, and community hold up as a high-performance system for the modern world. He is the first person of Diné and Lithuanian descent inducted into Northern Arizona University's W. A. Franke College of Business Hall of Fame.</p>
+        <div class="guide-grid">
+          <img src="/assets/img/tony-podium.jpg" alt="Tony Skrelūnas speaking at a gathering, red-rock country behind him" loading="lazy" />
+          <div>
+          <p>Tony Skrelūnas is Lithuanian and Diné — raised in a hogan on Big Mountain, learning by lamplight after the chores were done, reading the philosophy of Japan by the same small flame, a discipline he would take as his own. He failed out of college, came back, and finished at the top of his class. Today he is a <strong>PhD candidate in Sustainable Development at Prescott College</strong>, where his doctoral research studies exactly what this work delivers: how the ancestral tools of breath, ceremony, and community hold up as a high-performance system for the modern world. He is the first person of Diné and Lithuanian descent inducted into Northern Arizona University's W. A. Franke College of Business Hall of Fame.</p>
 
         <p>He knows how to move real institutions. A <strong>three-time executive and systems architect</strong>, he led the <strong>governance restructuring of a still-traditional nation</strong> — returning real ownership and self-determination to its local communities — advises companies and communities on <strong>four continents</strong>, and serves as development advisor to a $40M integrated health-and-wellness development. For a <strong>decade he convened Indigenous elders across the Americas</strong> in the old way — the living model this program is built from. He is board chair of Red Road Journey, faculty at 1440 Multiversity, a runner and aspiring silversmith, and the author of the <em>Ancestral Watch</em> series.</p>
 
         <p>Across all of it runs one conviction: the tools were never lost, only set down — and a person, a team, or a whole people can remember their power and rise into it. Money is only ever one instrument in that work; the real aim is wholeness that lasts for generations. For each engagement, Tony assembles and leads the practitioner team.</p>
+          </div>
+        </div>
 
         <figure style="margin-top:var(--space-4); border-top:1px solid var(--rule); padding-top:var(--space-3);">
           <blockquote style="font-style:italic;">"Guides toward a deeper sense of belonging, purpose-driven action, and the courage to live from inner knowing rather than fear."</blockquote>
@@ -189,5 +215,17 @@
     </div>
   </footer>
   <script src="/js/main.js" defer></script>
+  <script>
+    (function(){
+      var els = document.querySelectorAll('.band, .arc, .feat, table.mod, figure.teams-fig, .guide-grid');
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      els.forEach(function(el){ el.classList.add('reveal'); });
+      if (!('IntersectionObserver' in window)){ els.forEach(function(el){ el.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      els.forEach(function(el){ io.observe(el); });
+    })();
+  </script>
 </body>
 </html>
