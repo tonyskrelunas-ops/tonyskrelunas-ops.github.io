@@ -636,10 +636,12 @@
         <p class="eyebrow">Work with Tony</p>
         <h2>Coaching · Gatherings · Keynotes · Consulting.</h2>
         <p>Tell me where you're carrying the weight — a life, a team, or a nation — and I'll be in touch.</p>
-        <p style="font-size:var(--step-1);margin:0 0 var(--space-3);">
-          <a class="btn btn--primary btn--lg" href="mailto:wisdom@ancestralwatch.com?subject=Working%20with%20Tony">Start the conversation →</a>
-        </p>
-        <p class="capture__note">Or email <a href="mailto:wisdom@ancestralwatch.com"><strong>wisdom@ancestralwatch.com</strong></a> directly.</p>
+        <form class="capture__form" data-capture aria-label="Contact Tony">
+          <label for="email-connect" class="skip-link">Your email address</label>
+          <input id="email-connect" type="email" name="email" placeholder="Your email address" required autocomplete="email" />
+          <button class="btn btn--primary" type="submit">Start the conversation</button>
+        </form>
+        <p class="capture__note" role="status" aria-live="polite">Or email wisdom@tribeawaken.com directly.</p>
       </div>
     </section>
 
@@ -685,6 +687,6 @@
     <input type="text" name="source" />
   </form>
 
-  <script src="/js/main.js?v=9" defer></script>
+  <script src="/js/main.js?v=5" defer></script>
 </body>
 </html>
