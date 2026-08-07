@@ -175,3 +175,116 @@ figure{margin:0}
 .menu__top .brand__logo{width:clamp(104px, 10vw, 148px)}
 @media(max-width:860px){ .brand__logo{width:86px} .brand__txt{font-size:1.3rem} }
 @media(max-width:520px){ .brand__logo{width:72px} }
+
+/* ============================================================
+   THE ROCK FACE  —  now a site-wide component.
+   A pecked petroglyph panel: figures scattered at real scale
+   across the dark, the way they sit on an actual rock wall.
+   Use .peckfield on any dark section that would otherwise be
+   empty; use .rockface when it carries a photograph too.
+   ============================================================ */
+.peckhost{ position: relative; isolation: isolate; }
+.peckfield{
+  position:absolute; inset:0; z-index:-1; pointer-events:none; overflow:hidden;
+  color: rgba(240,198,156,.30);
+}
+.peckfield svg{
+  position:absolute; color: inherit; stroke-width: 3; height:auto;
+  overflow: visible;
+}
+.peckfield--faint{ color: rgba(240,198,156,.115); }
+/* the markings stay off the reading column — they are the wall,
+   not the writing on it */
+.peckfield--faint{
+  -webkit-mask-image: radial-gradient(115% 78% at 50% 50%, transparent 0 34%, #000 66%);
+  mask-image: radial-gradient(115% 78% at 50% 50%, transparent 0 34%, #000 66%);
+}
+.peckfield--strong{ color: rgba(240,198,156,.5); }
+@media (max-width: 820px){ .peckfield svg:nth-child(n+6){ display:none } }
+@media (max-width: 560px){ .peckfield svg:nth-child(n+4){ display:none } }
+
+.rockface{
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: clamp(340px, 42vw, 620px);
+  display: grid; align-items: center;
+  border-block: 1px solid rgba(230,180,140,.2);
+}
+.rockface__bg{ position:absolute; inset:0; z-index:-3; }
+.rockface__bg img{ width:100%; height:100%; object-fit:cover;
+  filter: saturate(.5) contrast(1.08) brightness(.42); }
+.rockface__in{ position: relative; max-width: 46rem;
+  padding-block: clamp(3rem,2rem + 4vw,6rem); }
+.rockface__q{
+  font-family: var(--display); font-weight: 700; font-style: italic;
+  font-size: clamp(1.6rem, 1.05rem + 2.4vw, 3.2rem);
+  line-height: 1.22; letter-spacing: -.025em;
+  color: var(--cream-2); max-width: 21ch;
+  text-shadow: 0 3px 30px rgba(20,13,10,.95);
+}
+.rockface__c{
+  font-family:'Courier New', ui-monospace, Menlo, monospace;
+  text-transform: uppercase; letter-spacing: .18em;
+  font-size: .72rem; color: var(--gold); margin-top: 1.6rem;
+}
+
+/* ============================================================
+   THE OPENING  —  the cowboy signature on the dark, the ledge
+   in its own panel beside it. The type never crosses the man.
+   ============================================================ */
+.mark{
+  display:block; width: clamp(150px, 16vw, 280px); height:auto;
+  margin-bottom: clamp(.9rem, .6rem + 1.1vw, 1.8rem);
+  filter: drop-shadow(0 6px 34px rgba(20,13,10,.8));
+}
+.opening{
+  position: relative; isolation: isolate;
+  display: grid; grid-template-columns: minmax(0,1.06fr) minmax(0,.94fr);
+  align-items: stretch;
+  border-bottom: 1px solid rgba(230,180,140,.22);
+  background: var(--bg);
+}
+.opening__say{
+  position: relative; z-index: 2;
+  padding: clamp(2.6rem, 1.6rem + 4vw, 6rem) clamp(1.5rem,1rem + 3vw,4rem)
+           clamp(2.6rem, 1.6rem + 4vw, 5.5rem) var(--gut);
+  display: flex; flex-direction: column; justify-content: center;
+  max-width: 46rem; margin-left: auto;
+}
+.opening__say h1{
+  font-size: clamp(2.6rem, 1.2rem + 5.2vw, 6.2rem);
+  line-height: .98; letter-spacing: -.04em; max-width: 13ch;
+}
+.opening__say .lead{ max-width: 40ch; color: var(--sand); margin-top: 1.6rem; }
+.opening__say .eyebrow{ color: var(--gold); }
+.opening__say .eyebrow::before{ background: var(--gold); }
+.opening__ledge{
+  position: relative; overflow: hidden;
+  min-height: clamp(420px, 74vh, 880px);
+  border-left: 1px solid rgba(230,180,140,.2);
+}
+.opening__ledge img{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit: cover; object-position: 62% 30%;
+}
+.opening__ledge::after{
+  content:""; position:absolute; inset:0;
+  background:
+    linear-gradient(90deg, rgba(20,13,10,.72) 0%, rgba(20,13,10,.12) 22%, transparent 46%),
+    linear-gradient(180deg, rgba(20,13,10,.45) 0%, transparent 22%, transparent 70%, rgba(20,13,10,.72) 100%);
+}
+.opening__cred{
+  position:absolute; right: clamp(1rem,2vw,2rem); bottom: clamp(.9rem,1.8vw,1.8rem); z-index:2;
+  font-family:'Courier New', ui-monospace, Menlo, monospace;
+  text-transform: uppercase; letter-spacing: .17em; font-size: .66rem;
+  color: rgba(250,243,233,.7); text-align: right;
+}
+.opening .peckfield{ z-index: 0; }
+@media (max-width: 1000px){
+  .opening{ grid-template-columns: 1fr; }
+  .opening__say{ max-width: none; margin-left: 0; order: 2;
+    padding: clamp(2.2rem,1.6rem + 3vw,3.4rem) var(--gut) clamp(2.6rem,2rem + 3vw,4rem); }
+  .opening__ledge{ order: 1; min-height: clamp(340px, 52vh, 560px); border-left: 0;
+    border-bottom: 1px solid rgba(230,180,140,.2); }
+  .opening__ledge img{ object-position: 60% 26%; }
+  .mark{ width: clamp(132px, 34vw, 210px); }
+}
