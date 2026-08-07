@@ -269,13 +269,6 @@ body.locked{overflow:hidden}
   .feat__in > *{max-width:100%}
 }
 
-/* the essay's own photographs */
-.strip{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--rule)}
-.strip img{width:100%;height:clamp(150px, 16vw, 250px);object-fit:cover;
-  border-left:1px solid var(--rule)}
-.strip img:first-child{border-left:0}
-@media(max-width:620px){.strip{grid-template-columns:1fr 1fr}.strip img:nth-child(3){display:none}}
-
 /* article cards */
 .jc{display:flex;flex-direction:column;text-decoration:none}
 .jc__img{position:relative;overflow:hidden;border-radius:12px;background:var(--bg-3);
@@ -302,22 +295,18 @@ body.locked{overflow:hidden}
   padding-top:clamp(3rem, 2rem + 3vw, 5rem);border-top:1px solid var(--rule)}
 @media(max-width:940px){.jmid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.jmid{grid-template-columns:1fr}}
-.jmid .jc__img{aspect-ratio:16/10;margin-bottom:1.2rem}
+.jmid .jc{border-top:1px solid var(--rule);padding-top:1.5rem}
 .jmid h3{font-size:clamp(1.32rem, 1.15rem + .6vw, 1.62rem);margin-bottom:.6rem;max-width:20ch}
 .jmid p{font-size:.98rem;line-height:1.5;max-width:38ch}
 
 /* compact index list */
 .jlist{margin-top:clamp(3rem, 2rem + 3vw, 5rem);
   padding-top:clamp(1rem, .6rem + 1vw, 1.6rem);border-top:1px solid var(--rule)}
-.jrow{display:grid;grid-template-columns:5.5rem 1fr auto;align-items:center;
+.jrow{display:grid;grid-template-columns:1fr auto;align-items:center;
   gap:clamp(1.4rem, .9rem + 1.6vw, 2.6rem);
   padding-block:clamp(1.2rem, .9rem + 1vw, 1.9rem);
   border-bottom:1px solid var(--rule);text-decoration:none;transition:padding-left .25s ease}
 .jrow:hover{padding-left:.7rem}
-.jrow__t{overflow:hidden;border-radius:8px;aspect-ratio:1;background:var(--bg-3)}
-.jrow__t img{width:100%;height:100%;object-fit:cover}
-.jrow__t--type{display:grid;place-items:center;border:1px solid var(--rule);
-  font-family:var(--display);font-weight:900;font-size:2rem;color:var(--clay-lt);line-height:1}
 .jrow h3{font-size:clamp(1.22rem, 1.05rem + .75vw, 1.72rem);font-weight:700;letter-spacing:-.028em;
   line-height:1.14;transition:color .2s}
 .jrow:hover h3{color:var(--clay-lt)}
@@ -326,7 +315,7 @@ body.locked{overflow:hidden}
 .jrow__a{font-size:1.5rem;color:var(--clay-lt);transition:transform .25s ease;flex:none}
 .jrow:hover .jrow__a{transform:translateX(6px)}
 @media(max-width:620px){
-  .jrow{grid-template-columns:3.6rem 1fr;gap:1.1rem}
+  .jrow{grid-template-columns:1fr;gap:1.1rem}
   .jrow__a{display:none}
 }
 .jall{margin-top:clamp(2.8rem, 2rem + 2.4vw, 4.4rem);display:flex;flex-wrap:wrap;
@@ -507,32 +496,13 @@ body.locked{overflow:hidden}
 /* ================= THREE TRADITIONS ================= */
 .trad{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem, .8rem + 2vw, 2.8rem)}
 @media(max-width:860px){.trad{grid-template-columns:1fr}}
-.trad__c{display:flex;flex-direction:column}
-.trad__ph{position:relative;overflow:hidden;border-radius:14px;aspect-ratio:5/4;
-  background:var(--bg-3)}
-.trad__ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.trad__c{display:flex;flex-direction:column;
+  border-top:1px solid var(--rule);padding-top:clamp(1.4rem, 1rem + 1vw, 2rem)}
 .trad__c h3{font-size:clamp(1.7rem, 1.35rem + 1.4vw, 2.5rem);font-weight:800;
   letter-spacing:-.032em;margin-bottom:.7rem}
 .trad__c p{color:var(--sand);font-size:1.08rem;line-height:1.6;max-width:34ch}
 .trad__n{display:block;font-size:.76rem;font-weight:800;letter-spacing:.17em;
   text-transform:uppercase;color:var(--clay-lt);margin-bottom:.55rem}
-
-/* ================= LAND MOSAIC ================= */
-.mosaic{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(4,1fr);
-  border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.mosaic img{width:100%;height:clamp(175px, 16vw, 285px);object-fit:cover;display:block;
-  border-left:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.mosaic img:nth-child(4n+1){border-left:0}
-.mosaic img:nth-child(n+9){border-bottom:0}
-.mosaic::after{content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(180deg,rgba(20,13,10,.34) 0%,rgba(20,13,10,.06) 40%,
-    rgba(20,13,10,.06) 60%,rgba(20,13,10,.4) 100%)}
-@media(max-width:1040px){.mosaic{grid-template-columns:repeat(3,1fr)}
-  .mosaic img{border-left:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-  .mosaic img:nth-child(3n+1){border-left:0}}
-@media(max-width:640px){.mosaic{grid-template-columns:1fr 1fr}
-  .mosaic img:nth-child(3n+1){border-left:1px solid var(--rule)}
-  .mosaic img:nth-child(odd){border-left:0}}
 
 /* ================= CREDENTIALS PORTRAIT ================= */
 .record{display:grid;grid-template-columns:.85fr 1.15fr;
@@ -1166,7 +1136,7 @@ body.locked{overflow:hidden}
     <div class="tex__i"><img src="/assets/img/land/rug-horse.jpg" alt="" aria-hidden="true" loading="lazy"></div>
     <p class="feat__kick">The commencement address</p>
     <h3>30,000 Years, and a Formula That Still Works</h3>
-    <p class="feat__d">Delivered to the Native American graduates of Northern Arizona University — on where we come from, the great trade civilizations of the Americas, and a formula for a good life that has held for thirty thousand years.</p>
+    <p class="feat__d">Delivered to a graduating class — on where we come from, the great trade civilizations of the Americas, and a formula for a good life that has held for thirty thousand years.</p>
     <p class="feat__by"><span>Essay · Address</span><span>12 min read</span></p>
     <span class="feat__go">Read the essay <span aria-hidden="true">→</span></span>
   </div>
@@ -1585,8 +1555,8 @@ body.locked{overflow:hidden}
       <p class="eyebrow">The record</p>
       <h2 class="head">Thirty years of doing it, not describing it.</h2>
       <div class="record__body">
-        <p class="muted">Led the governance restructuring of a still-deeply-cultural nation, returning power to local communities. Built the Native America Program at the Grand Canyon Trust over fourteen years. Co-founded a renewable energy company. Advises companies and communities on four continents.</p>
-        <p class="muted">PhD candidate in Sustainable Development Education at Prescott College. Adjunct faculty at 1440 Multiversity. The first person of Lithuanian and Diné descent inducted into NAU's College of Business Hall of Fame.</p>
+        <p class="muted">Led the governance restructuring of a still-deeply-cultural nation, returning power to local communities. Built a nationally recognized conservation and community program over fourteen years. Co-founded a renewable energy company. Advises companies and communities on four continents.</p>
+        <p class="muted">PhD candidate in Sustainable Development Education. Retreat faculty. The first person of Lithuanian and Diné descent inducted into a college of business hall of fame.</p>
         <p class="muted">A runner, an aspiring silversmith, and a father.</p>
       </div>
     </div>

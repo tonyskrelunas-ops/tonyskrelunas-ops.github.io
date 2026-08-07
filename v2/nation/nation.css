@@ -234,7 +234,7 @@ body.locked{overflow:hidden}
 .state__bg{position:absolute;inset:0;z-index:-2}
 .state__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
 .state::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(20,13,10,.5) 0%,rgba(20,13,10,.64) 46%,rgba(20,13,10,.9) 100%)}
+  background:linear-gradient(180deg,rgba(20,13,10,.62) 0%,rgba(20,13,10,.74) 46%,rgba(20,13,10,.94) 100%)}
 .state__in{padding-block:clamp(4rem, 2rem + 6vw, 7rem)}
 .state .pull{max-width:20ch;font-style:normal;font-weight:700;
   font-size:clamp(2rem, 1.3rem + 2.9vw, 4rem);

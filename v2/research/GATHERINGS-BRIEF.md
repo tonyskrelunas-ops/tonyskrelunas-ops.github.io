@@ -71,10 +71,31 @@ The richest operational folder in the archive.
 | `2009-2011 accomplishments summary.docx`, `2011 GCT ADmin/2010 Major Accomplishments...docx` | Terse accomplishment lists with numbers. |
 | `2012 Presentations re gatherings/*.pptx`, `Inter Tribal Gathering Projects September 2011.pptx` | How Tony pitched the form to outside audiences. |
 
+### `/Users/tonyskrelunas/Library/CloudStorage/Dropbox/2019 september transfer files/2014 Sync Folder/2014 Administrative/2012 Grant Agreement/2012 GCT Board Meetings/`
+
+**The later decade (2012–2016) lives almost entirely here.** These are board reports — terse, dated, numerical.
+
+| File | Contents |
+|---|---|
+| `NA Program GCt Board Update 11-27-12.docx` | **Report on the Nov 14–16, 2012 gathering at Grand Canyon South Rim Village. Contains the verified "Over 80 participated" figure.** |
+| `2012-2 Gathering Board Book Article #2 BH edits (1).docx` | **The single most candid document in the archive.** Tony's own strengths-and-challenges assessment written for the board, asking whether the gathering should spin out of its host organisation. |
+| `2-8-13 GCt Board meeting/NA Full Program Board Update 1-22-13.docx` | Same 2012 gathering, with the memorial banquet detail. |
+| `Final Board Bulleton 12-11-13 (1) (Autosaved).docx`, `Final Board Book Program Report 10-2-13.docx` | 2013: a Farmers Gathering (May) and a Water Gathering (Nov 1). |
+| `Native America Program Strategic Plan Review Discussion for GCT February 6, 2014 Board Meeting.docx` | **"seven successful Gatherings… over the past four years."** Also revises the grant count to fourteen. |
+| `6-14 GCT Board meeting/NA Program Report October 2014 Board Book.docx` | 2014: August farming/water gathering (Nambe Pueblo Farms presenting), September healing gathering at Havasupai, October exhibit launch with 100+ attendees. |
+| `10-17-15 board meeting/Native America Program Report.docx`, `.../1-20-16 Native America Program Report.docx`, `.../5-23-16 Native America Program Report.docx` | 2015: Ignacio gathering (hosted by Southern Ute), the Dancing Earth performance tour, the ASU/Phoenix spring gathering, and $110,000 raised for the 2016 event. |
+| `6-12-15 Salt Lake City meeting/2015 May 27 Native America Board Report.docx` | April 2015 mini-gathering with the Bears Ears Coalition; $150,000 renewal. |
+| `October 2016 Board Meeting/Sept 2016 Native America Board Report.docx` | **The 2016 Pojoaque gathering plan in full.** |
+| `October 2016 Board Meeting/GCT Strategic Discussion on Native America 9-20-16.docx` | **"we know we cannot keep up the focus and pace."** The overload document. |
+| `../2013 Check Requests/2016 Bioneers Conference/Narrative of Tony 11-5-16 for Gathering.docx` | **Tony's own keynote welcome for the 2016 gathering.** The best first-person statement of the method in the entire archive. |
+| `../2012 Internships/2012 Strategic Plan…/Colorado Plateau Inter Tribal Gatherings two year plan 7-10-13.docx` | Risks stated up front. |
+
 ### Corroborating
 
 - `/Users/tonyskrelunas/Library/CloudStorage/Dropbox/2025 resume and bio/TONY SKRELUNAS Long Resume 11-16-25.docx` — his own one-line summary of the arc (quoted in §4).
+- `/Users/tonyskrelunas/Library/CloudStorage/Dropbox/2022 personal docs/GrandCanyonApril25/2019 Grand Canyon East/master plan/1.4.2019 Centennial Vision Statement with Action Item Update.docx` — the 2017–2018 tail: the gatherings' steering committee chartering a successor process.
 - `/Users/tonyskrelunas/Library/CloudStorage/Dropbox/2026 Just Transition/` — duplicates of several gathering reports.
+- `/Users/tonyskrelunas/Library/CloudStorage/Dropbox/ignacio gathering 2015 - 6 / - 7 / - 8` — **photographs only** (all dated Aug 21, 2015). No documents. The Ignacio gathering is documented in text only in the Oct 2015 board report.
 - `/Users/tonyskrelunas/Library/CloudStorage/Dropbox/Best Gathering pics 2014.library-ms/` — photographs (Hualapai gathering, "Conversational Gathering"). Image assets only.
 
 ---
@@ -502,32 +523,71 @@ So Gathering I was roughly **20–25 seated representatives** plus facilitators,
 **Scale of the region** (used in Tony's own framing):
 > "More than one-third of the Colorado Plateau's **120,000 square miles** is Native American land." (2009 wording; the 2011 board doc says **130,000 square miles** and "**15 Native American tribes**"). **[PUBLISHABLE]**
 
-**Growth, 2009–2013 — verified from documents:**
+### 4.2 The verified timeline, gathering by gathering
 
-| Year | Verified fact | Source |
-|---|---|---|
-| 2009 | Gathering I. 10 nations + 1 guest nation. 3 facilitators. Writers + artist hired. | 2009 report |
-| 2010 | Gatherings II and III. Nation count stated as **eleven**. Acoma Pueblo participant appears at Gathering III. **Coastal First Nations of British Columbia (Canada) attend Gathering III in person** — 3 leaders including their executive director. | 2010 reports; `Website Gathering article 3-7-11` |
-| 2011 | Gatherings IV and V. Eligibility list grows to **12 reservation-based communities** (adds San Juan Southern Paiute and Shivwits Band of Paiutes). Youth council launched. **$200,000 Opportunity Fund; 11 grants awarded.** Delegation of 3 gathering members sent to the Bioneers Conference. | `2011 June Board meeting discussion`; `Gathering_write_up_December_20` |
-| 2013 | Series still running with formal strategic goals; **two gatherings planned for the year**, themed on climate adaptation of food systems and water. | `Inter Tribal Conversations Gathering 2013.doc` |
+| # / Year | Date | Place & host | Verified facts | Source |
+|---|---|---|---|---|
+| I | Nov 8–10, 2009 | Colton House, Flagstaff | 10 nations + Cocopah guest. 2 hand-selected reps each. 3 facilitators. Writers + artist hired. | 2009 report |
+| II | May 18–20, 2010 | Hualapai Nation, Peach Springs | "Honorable Meeting Host" role created. Four subcommittees formed. | 2010 report |
+| III | Nov 17–19, 2010 | Moenkopi, Hopi Nation | Nation count now **eleven**. Acoma Pueblo participant present. **Coastal First Nations of British Columbia attend in person** — 3 leaders including their executive director. Sacred Sites Workshop. | 2010 report |
+| IV | Jun 1–2, 2011 | White Mountain Apache, Sunrise Park Lodge | Youth committee launched. Opportunity Fund procedures finalised. | 2011 minutes |
+| V | Dec 15–16, 2011 | Flagstaff | Awards ceremony for the 11 funded projects. Confluence Project presented. | `Gathering_write_up_December_20` |
+| VI | **Nov 14–16, 2012** | **Grand Canyon South Rim Village** | **"Over 80 participated in the three day gathering."** Opened with a "Success Stories Conference." Memorial banquet for two deceased participants. | `NA Program GCt Board Update 11-27-12` |
+| VII | May 2013 | Farmers Gathering | Traditional farmers, farming experts, NGO leaders. | 2013 board bulletin |
+| — | Nov 1, 2013 | Water Gathering | Co-hosted with two partner organisations; youth bused in from reservation schools. | 2013 board bulletin |
+| — | Aug 2014 | Farming/water gathering | **Nambe Pueblo Farms** presenting alongside a Hopi coalition. | Oct 2014 board report |
+| — | Sept 2014 | **Havasupai, inside the Grand Canyon** | Themed on healing. | Oct 2014 board report |
+| — | Spring 2015 | Phoenix / ASU | Held alongside the Dancing Earth performance; dialogue with Gila River and Salt River nations. | 2016 board report |
+| — | Apr 10–11, 2015 | mini-gathering | Convened with the Bears Ears Coalition. | May 2015 board report |
+| — | **~mid-Aug 2015** | **Ignacio, Colorado — hosted by the Southern Ute Indian Tribe** | Plus a Youth Intertribal Leadership Assembly. Convened days after the Gold King Mine spill into the Animas River. | Oct 2015 board report |
+| — | **Nov 6–9, 2016** | **Pueblo of Pojoaque, New Mexico** | **"Indigenous Peoples' Gathering for Healthy Communities, Culture, and Climate."** In partnership with Bioneers. Three days, four parallel tracks. Scholarships offered. | Sept 2016 board report |
+| — | Dec 12, 2017 | Twin Lakes, New Mexico | Steering committee meets and charters a successor process. | 2019 Centennial doc |
+| — | 2018 (8 sessions) | various; final at **Colton House, Flagstaff, Dec 17–18, 2018** | The Intertribal Centennial Conversations — a successor series overseen by the gatherings' steering committee. ~18 named participants at the last one. | 2019 Centennial doc |
 
-**Canada is firmly documented.** Coastal First Nations — an alliance of ten named nations on BC's north/central coast and Haida Gwaii — presented twice in Nov 2010 (once at Northern Arizona University, once at the gathering itself). Return visits were budgeted: the 2011 budget carries a line for **8 people to travel to British Columbia**. **[PUBLISHABLE]**
+**Count at the four-year mark, from the record:**
+> "GCT's Native American Program has facilitated **seven successful Gatherings** and innumerable supporting meetings over the past four years… facilitating and encouraging dialogue among the **eleven** Native American tribes that have resided across this landscape for thousands of years, and who now control the future of over a third or **30,000+ square miles** of the Colorado Plateau."
+> — *Native America Program Strategic Plan Review… February 6, 2014* **[PUBLISHABLE]**
 
-**New Mexico Pueblos:** partially documented. Zuni was a founding participant; **Acoma Pueblo** appears at Gathering III (Theresa Pasqual); the 2011 public description names "Cocopah and Acoma." Broader Pueblo participation is plausible but I did not find a document enumerating it. **Treat "New Mexico Pueblos joined" as needing one more source before it goes in print.** **[PRIVATE — verification note]**
+### 4.3 The three growth claims — now verified
 
-**South America:** the only in-archive corroboration found so far is Tony's own résumé line:
+**"Sometimes 80+ participants" — VERIFIED, and the date is 2012.**
 
-> "Organized major intertribal gatherings, reviving ancient dialogue patterns with **12+ tribes of the Colorado Plateau and expanding to include First Nations in Canada and Indigenous groups from Peru.**"
-> — `TONY SKRELUNAS Long Resume 11-16-25.docx` **[PUBLISHABLE — but it is self-report, not a contemporaneous document]**
+> "On November 14-16th, we gathered with cultural leaders from 10 tribal nations at the Grand Canyon south rim village. We started the gathering with a **'SUCCESS STORIES CONFERENCE'** which enabled sharing of lessons learned, strategies, challenges, and future collaboration among many different organizations funded this past year by the Opportunity Fund… **Over 80 participated in the three day gathering.**"
+> — *NA Program GCt Board Update 11-27-12* **[PUBLISHABLE]**
 
-**80+ participants:** *not yet verified in a primary document.* The contemporaneous numbers I can substantiate are 20–25 seated representatives at the early gatherings, ~24 budgeted, plus observers, youth, NGO leaders and staff — and an explicit 2011 decision to move to *one larger and longer* gathering per year:
+> "Several attendees, including one of our main funders, **asserted that this was one of the best conferences they have ever attended.**"
+> — *NA Full Program Board Update 1-22-13* **[PUBLISHABLE]**
 
-> "**The idea of organizing one larger and longer gathering was presented and positively received.** This will ensure thorough discussion, some efficiencies in costs, and **allow for substantial involvement from tribal leaders, organization members, and other tribes from across the Nation.**"
-> — *Gathering_write_up_December_20*, Dec 2011 **[PUBLISHABLE]**
+Note the shape of that 2012 gathering, which is itself a design lesson: **day one is the grantees reporting back to the circle that funded them; day two is open to anyone who wants to learn.** The 80 is the consequence of opening the door, not of a bigger invitation list.
 
-That is the documented mechanism by which the gatherings would have grown past 80. **Recommendation: in public copy, write the arc qualitatively — "began with ten nations… grew over a decade to include nations from Canada and Indigenous delegations from South America, and at its largest filled a room several times the size of the first" — and only cite a hard headcount if a later report is found.** **[PRIVATE — accuracy note]**
+**"New Mexico Pueblos" — VERIFIED.** Zuni was a founding participant. Acoma Pueblo appears from 2010. **Nambe Pueblo** received a climate-mitigation grant and presented its drip-irrigation work at the Aug 2014 gathering. And in Nov 2016 the whole gathering moved to **the Pueblo of Pojoaque** and was co-designed with Rio Grande Pueblo communities. Tony's welcome names this explicitly as a first:
 
-**Duration:** Tony's résumé dates the program **2005–2019**, with the gathering strand running from 2009. **[PUBLISHABLE at the level of "a decade."]**
+> "the gatherings have really helped the work of… bucky, ruby, farmers, zuni, Hualapai, Havasupai, kaibab Paiute, **we have met at almost every tribal community – accept here in Pueblo country**… this is where the rhythm of healthy living is strong"
+> — *Narrative of Tony 11-5-16 for Gathering* **[PUBLISHABLE]**
+
+**"Canada" — VERIFIED, but as invited teachers and as travel, not as a standing delegation.** Coastal First Nations — an alliance of ten named nations on British Columbia's north/central coast and Haida Gwaii — presented twice in Nov 2010 (once at a university, once at the gathering). Return visits were budgeted: the 2011 budget carries a line for **8 people to travel to British Columbia**. The 2014 strategic plan records continued outreach to them. In 2015 the programme "sent individuals to Canada… and also brought speakers to our Intertribal Gathering" through an **Intertribal Learning, Travel and Network Grant**. **[PUBLISHABLE]**
+
+**"South America" — VERIFIED for 2016, in a specific and defensible form.** The Nov 2016 Pojoaque gathering was explicitly hemispheric:
+
+> "an ambitious partnership has been formed with Bioneers to organize a **first ever indigenous gathering** this coming November that will showcase best practices around **North and South America** to preserve sacred sites, water preservation, culture, farming systems, and create sustainable communities… **The committee has already raised an additional $110,000 from new sources for the gathering.**"
+> — *5-23-16 Native America Program Report* **[PUBLISHABLE]**
+
+> "We, from the Colorado Plateau Inter Tribal Conversations are truly honored to partner with Bioneers, to share a little of the work we do on the Plateau and **to reach out to our brothers and sisters from New Mexico, Canada and South America.**"
+> — *Narrative of Tony 11-5-16 for Gathering* **[PUBLISHABLE]**
+
+The named South American figure is **Arkan Lushwala** (Peruvian, author of *The Time of the Black Jaguar*), a keynote speaker. Tony's résumés say "Peru" for this reason. **[PUBLISHABLE — but say "an Indigenous teacher from Peru keynoted," not "delegations from South America attended," unless a participant list turns up.]** **[PRIVATE — precision note]**
+
+### 4.4 Precision warnings for public copy **[PRIVATE]**
+
+- **The nation count drifts across sources: 10 → 11 → "12 targeted communities" → "12+ tribes."** All are defensible in context (10 nations invited; 11 including the guest nation; 12 communities eligible for grants). Pick one framing and hold it. Recommended: *"ten nations at the first gathering, growing past a dozen."*
+- **The grant count drifts: 11 in every 2012 document, 14 in the Feb 2014 retrospective.** The 2014 figure probably folds in the separate Youth Opportunity Fund awards. Safest public phrasing: *"more than a dozen community projects."*
+- **"2009–2019" as the span.** The gathering series proper is well documented 2009–2016. 2017–2018 is documented as a steering committee overseeing a successor series that ended Dec 2018. **Nothing at all was found for 2019–2021.** Recommended public phrasing: *"for about a decade."* Do not claim gatherings in 2020 or 2021.
+- **"the eighth and final gathering," Dec 2018,** refers to the eighth session of the 2018 Centennial Conversations sub-series — *not* to the end of the whole decade-long series. Do not quote it as the ending. **[PRIVATE — easy misreading to avoid]**
+- The clean "2009–2019 / 80+ / Pueblos, South America, Canada" sentence currently appears in recent self-authored bio drafts (e.g. `Dropbox/2026 regenerative world book/next book council fire 2/Tonas-Skrelunas-Bio.md`), where a companion working brief already flags it "**Confirm.**" This brief confirms the substance; adjust the dates as above.
+
+### 4.5 One thing worth knowing: it began at Colton House and the last documented session was at Colton House
+
+Nov 2009, first gathering: Colton House, Flagstaff. Dec 17–18, 2018, last documented session of the successor series: **Colton House, Flagstaff.** Nine years, same room. **[PUBLISHABLE — a genuinely good closing image, and it is true.]**
 
 ### 4.2 The "why" of the arc — Tony's own diagnosis
 
