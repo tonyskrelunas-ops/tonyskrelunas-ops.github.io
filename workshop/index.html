@@ -7,38 +7,234 @@
 <meta property="og:image" content="/assets/img/1440/fire-circle.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/tokens.css"><link rel="stylesheet" href="/css/style.css?v=24">
+<link rel="stylesheet" href="/css/tokens.css"><link rel="stylesheet" href="/css/style.css?v=30">
 <style>
-  .rt__hero{position:relative;overflow:hidden;text-align:center;padding:clamp(3.5rem,9vh,6.5rem) 0;}
-  .rt__hero-bg{position:absolute;inset:0;z-index:0;}
-  .rt__hero-bg img{width:100%;height:100%;object-fit:cover;}
-  .rt__hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(11,20,34,.34) 0%,rgba(11,20,34,.30) 40%,rgba(11,20,34,.66) 100%);}
-  .rt__hero .wrap{position:relative;z-index:2;}
-  .rt__kick{font-family:var(--font-body);letter-spacing:.26em;text-transform:uppercase;font-size:.72rem;color:var(--amber);margin:0 0 1rem;}
-  .rt__title{font-family:var(--font-display);font-weight:600;font-size:clamp(2.8rem,8vw,5.6rem);line-height:1;color:var(--bone);margin:0;}
-  .rt__meta{font-family:var(--font-display);font-style:italic;color:var(--amber-soft);font-size:clamp(1.1rem,2vw,1.5rem);margin:1.1rem 0 0;}
-  .rt__lead{max-width:52ch;margin:1.3rem auto 0;color:#E7E2D3;line-height:1.7;}
-  .rt-quote{font-family:var(--font-display);font-style:italic;font-size:clamp(1.4rem,3vw,2rem);line-height:1.4;color:var(--amber-soft);text-align:center;max-width:40ch;margin:2.4rem auto;}
-  .rt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--space-3);margin-top:var(--space-4);}
-  .rt-card{background:var(--night-3);border:1px solid var(--rule);border-radius:var(--radius-lg);padding:var(--space-4);}
-  .rt-card h3{font-family:var(--font-display);font-size:1.2rem;margin:0 0 .4rem;color:var(--bone);}
-  .rt-day{border-left:2px solid var(--amber);padding-left:var(--space-3);margin-bottom:var(--space-4);}
-  .rt-day h3{font-family:var(--font-display);color:var(--amber-soft);font-size:1.4rem;margin:0 0 .5rem;}
-  .rt-day p{margin:.2rem 0;color:#D8D2C4;}
-  .rt-price{background:linear-gradient(180deg,var(--night-2),var(--night));border:1px solid var(--rule);border-radius:var(--radius-lg);padding:var(--space-5);text-align:center;}
-  .rt-price ul{list-style:none;padding:0;max-width:44ch;margin:var(--space-3) auto 0;text-align:left;}
-  .rt-price li{padding:.4rem 0;border-top:1px solid var(--rule);}
-  .rt-faq{max-width:46rem;margin:0 auto;}
-  .rt-faq details{border-bottom:1px solid var(--rule);padding:1rem 0;}
-  .rt-faq summary{font-family:var(--font-display);font-size:1.15rem;color:var(--bone);cursor:pointer;}
-  .rt-faq p{color:#C9C3B5;margin:.6rem 0 0;}
-  .rt-cta{display:inline-block;margin-top:var(--space-3);}
-  .rt-img{width:100%;border-radius:var(--radius-lg);overflow:hidden;margin:var(--space-4) 0;}
-  .rt-img img{width:100%;height:auto;display:block;}
-  .rt-img--wide img{max-height:540px;object-fit:cover;}
-  .rt-img--tall{max-width:640px;margin-left:auto;margin-right:auto;}
-  .rt-img--tall img{max-height:80vh;object-fit:contain;}
-  .rt-img figcaption{font-family:var(--font-body);font-size:.85rem;color:var(--silver);text-align:center;margin-top:.5rem;font-style:italic;}
+  /* ==========================================================
+     THE CANYON WITHIN — editorial layer
+     Restraint. One job per block. Photography carries the page.
+     ========================================================== */
+
+  /* ---- 1 · Rhythm primitives ---- */
+  .s          { padding-block: clamp(4rem, 2.2rem + 6.5vw, 8.5rem); }
+  .s--tight   { padding-block: clamp(2.75rem, 1.8rem + 3.5vw, 5rem); }
+  .s--lift    { background: linear-gradient(180deg, var(--night-2) 0%, var(--night) 100%); }
+  .s--sink    { background: linear-gradient(180deg, var(--night) 0%, var(--night-2) 100%); }
+  .col        { max-width: 44rem; }
+  .col--wide  { max-width: 62rem; }
+  .col--mid   { max-width: 44rem; margin-inline: auto; text-align: center; }
+
+  /* ---- 2 · Heading system: eyebrow → heading → lead → body ---- */
+  .s-head       { margin-bottom: clamp(1.6rem, 1rem + 2.2vw, 2.75rem); }
+  main .s-kick  { display: flex; align-items: center; gap: .85rem;
+                  font-family: var(--font-body); font-size: .7rem; font-weight: 600;
+                  letter-spacing: .28em; text-transform: uppercase; color: var(--turq);
+                  margin: 0 0 1.1rem; max-width: none; }
+  main .s-kick::before { content: ""; width: 1.6rem; height: 1px; background: var(--turq);
+                  flex: none; opacity: .85; }
+  .col--mid .s-kick, .s-kick--mid { justify-content: center; }
+  main .s-title { font-family: var(--font-display); font-weight: 500;
+                  font-size: clamp(1.95rem, 1.25rem + 2.3vw, 3.1rem);
+                  line-height: 1.07; letter-spacing: -.024em; color: var(--bone);
+                  max-width: 19ch; margin-block: 0; text-wrap: balance; }
+  .col--mid .s-title { margin-inline: auto; }
+  main .s-lead  { font-size: clamp(1.08rem, .98rem + .5vw, 1.28rem); line-height: 1.62;
+                  color: #E2E7E3; max-width: 50ch; margin-block: 1.15rem 0; }
+  .col--mid .s-lead { margin-inline: auto; }
+  .s-body p     { font-size: 1.05rem; line-height: 1.8; color: #C4D0CD;
+                  margin-block-end: 1.35em; max-width: 62ch; }
+  .s-body p:last-child { margin-block-end: 0; }
+  .s-body p strong { color: var(--bone-2); font-weight: 600; }
+  main .s-note  { font-size: .86rem; line-height: 1.68; color: #86A09D; letter-spacing: .01em; }
+
+  /* ---- 3 · Pull quote — the page's quiet moments ---- */
+  main .pull    { font-family: var(--font-display); font-style: italic; font-weight: 400;
+                  font-size: clamp(1.4rem, 1.05rem + 1.5vw, 2.15rem); line-height: 1.34;
+                  letter-spacing: -.016em; color: var(--bone);
+                  max-width: 28ch; margin-block: clamp(2.5rem, 4.5vw, 3.75rem);
+                  padding-left: clamp(1.25rem, 2.5vw, 2rem);
+                  border-left: 1px solid rgba(87,216,198,.45); text-wrap: balance; }
+  main .pull--turq { color: var(--amber-soft); }
+  main .pull--flat { border-left: 0; padding-left: 0; max-width: none;
+                     font-size: clamp(1.18rem, 1rem + .75vw, 1.55rem); margin: 0; }
+  .pull cite    { display: block; font-family: var(--font-body); font-style: normal;
+                  font-size: .74rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
+                  color: #7E9895; margin-top: 1.5rem; line-height: 1.6; }
+
+  /* ---- 4 · Understated arrow CTA ---- */
+  main .arrow   { display: inline-flex; align-items: baseline; gap: .55em;
+                  font-family: var(--font-body); font-weight: 600; font-size: .93rem;
+                  letter-spacing: .04em; color: var(--bone); text-decoration: none;
+                  padding-bottom: .55rem; border-bottom: 1px solid rgba(143,168,166,.45);
+                  transition: color .25s var(--ease), border-color .25s var(--ease); }
+  main .arrow i { font-style: normal; display: inline-block; transition: transform .25s var(--ease); }
+  main .arrow:hover { color: var(--turq); border-color: var(--turq); }
+  main .arrow:hover i { transform: translateX(5px); }
+
+  /* ---- 5 · HERO ---- */
+  .hero-r       { position: relative; display: grid; align-items: end; overflow: hidden;
+                  min-height: clamp(560px, 58vw, 840px); isolation: isolate; }
+  .hero-r__img  { position: absolute; inset: 0; width: 100%; height: 100%;
+                  object-fit: cover; object-position: 66% 50%; z-index: 0; }
+  .hero-r::after{ content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+                  background:
+                    linear-gradient(90deg, rgba(8,26,28,.94) 0%, rgba(8,26,28,.80) 32%, rgba(8,26,28,.24) 60%, rgba(8,26,28,.04) 100%),
+                    linear-gradient(180deg, rgba(8,26,28,.60) 0%, rgba(8,26,28,.05) 34%, rgba(8,26,28,.52) 80%, rgba(12,43,46,.96) 100%); }
+  .hero-r__inner{ position: relative; z-index: 2; padding-block: clamp(3rem, 6.5vw, 5.5rem); }
+  .hero-r__body { max-width: 37rem; }
+  .hero-r__kick { display: flex; align-items: center; gap: .85rem;
+                  font-family: var(--font-body); font-size: .7rem; font-weight: 600;
+                  letter-spacing: .28em; text-transform: uppercase; color: var(--amber-soft);
+                  margin: 0 0 1.5rem; }
+  .hero-r__kick::before { content: ""; width: 1.6rem; height: 1px; background: var(--amber-soft); flex: none; }
+  .hero-r__title{ font-family: var(--font-display); font-weight: 500;
+                  font-size: clamp(2.9rem, 1.5rem + 5vw, 5.3rem); line-height: .97;
+                  letter-spacing: -.032em; color: var(--bone); margin: 0; }
+  .hero-r__meta { font-family: var(--font-display); font-style: italic;
+                  font-size: clamp(1.05rem, .95rem + .55vw, 1.38rem); color: var(--amber-soft);
+                  margin: 1.2rem 0 0; }
+  main .hero-r__lead { font-size: clamp(1.02rem, .97rem + .35vw, 1.16rem); line-height: 1.7;
+                  color: #DCE3DF; max-width: 33rem; margin: 1.35rem 0 0; }
+  .hero-r__act  { margin-top: clamp(1.9rem, 3.8vw, 2.75rem); }
+
+  /* ---- 6 · Fact bar under the hero ---- */
+  .facts        { border-bottom: 1px solid var(--rule); background: var(--night); }
+  .facts__grid  { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); margin: 0; }
+  .fact         { padding: clamp(1.4rem, 2.4vw, 2rem) clamp(.75rem, 1.8vw, 1.75rem);
+                  border-left: 1px solid var(--rule); }
+  .fact:first-child { border-left: 0; padding-left: 0; }
+  .fact dt      { font-family: var(--font-body); font-size: .63rem; font-weight: 600;
+                  letter-spacing: .26em; text-transform: uppercase; color: #7E9895; margin-bottom: .6rem; }
+  .fact dd      { margin: 0; font-family: var(--font-display); font-size: clamp(1rem, .9rem + .35vw, 1.2rem);
+                  line-height: 1.28; color: var(--bone); letter-spacing: -.01em; }
+  @media (max-width: 760px) {
+    .facts__grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .fact:nth-child(3) { border-left: 0; padding-left: 0; }
+    .fact:nth-child(n+3) { border-top: 1px solid var(--rule); }
+  }
+
+  /* ---- 7 · Full-bleed image plates — the primary rhythm ---- */
+  main .band-fig      { position: relative; margin: 0; }
+  main .band-fig img  { width: 100%; height: clamp(300px, 34vw, 500px); object-fit: cover;
+                        display: block; border-radius: 0; box-shadow: none; }
+  main .band-fig--tall img { height: clamp(360px, 44vw, 640px); }
+
+  /* ---- 8 · Hairline row list (who comes) ---- */
+  .rows         { margin-top: clamp(1.4rem, 2.8vw, 2.25rem); }
+  .row          { border-top: 1px solid var(--rule); padding: clamp(1.05rem, 2vw, 1.45rem) 0; }
+  .row:last-of-type { border-bottom: 1px solid var(--rule); }
+  main .row p   { margin: 0; font-size: 1.02rem; line-height: 1.64; color: #9FB0AD; max-width: none; }
+  .row__k       { color: var(--bone); font-weight: 500; }
+
+  /* ---- 9 · Hairline tile grid (carry home) ---- */
+  .tiles        { display: grid; grid-template-columns: repeat(3, minmax(0,1fr));
+                  column-gap: clamp(1.5rem, 3.2vw, 3rem); row-gap: 0;
+                  margin-top: clamp(1.4rem, 2.8vw, 2.25rem); }
+  .tile         { border-top: 1px solid var(--rule);
+                  padding: clamp(1.15rem, 2vw, 1.55rem) 0 clamp(1.5rem, 2.6vw, 2.1rem); }
+  main .tile h3 { font-family: var(--font-display); font-weight: 500; font-size: 1.18rem;
+                  letter-spacing: -.014em; color: var(--bone); margin-block: 0 .5rem; }
+  main .tile p  { margin: 0; font-size: .95rem; line-height: 1.66; color: #9FB0AD; max-width: none; }
+  @media (max-width: 860px) { .tiles { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+  @media (max-width: 520px) { .tiles { grid-template-columns: 1fr; } }
+
+  /* ---- 10 · The three-day arc ---- */
+  .arc-list     { margin-top: clamp(1.6rem, 3vw, 2.5rem); border-bottom: 1px solid var(--rule); }
+  .arc-day      { display: grid; grid-template-columns: minmax(0, 9rem) minmax(0, 1fr);
+                  gap: clamp(1rem, 3vw, 3rem); align-items: start;
+                  border-top: 1px solid var(--rule);
+                  padding-block: clamp(1.9rem, 3.4vw, 3rem); }
+  .arc-day__n   { font-family: var(--font-display); font-weight: 500; line-height: .78;
+                  font-size: clamp(2.8rem, 1.7rem + 3vw, 4.4rem);
+                  color: transparent; -webkit-text-stroke: 1px rgba(87,216,198,.6);
+                  letter-spacing: -.03em; }
+  .arc-day__day { display: block; margin-top: 1rem; font-family: var(--font-body);
+                  font-size: .66rem; font-weight: 700; letter-spacing: .26em;
+                  text-transform: uppercase; color: var(--turq); }
+  main .arc-day h3 { font-family: var(--font-display); font-weight: 500;
+                  font-size: clamp(1.35rem, 1.05rem + 1vw, 1.9rem); letter-spacing: -.018em;
+                  color: var(--bone); margin-block: 0 .7rem; }
+  main .arc-day p { margin: 0; font-size: 1.01rem; line-height: 1.76; color: #B2C1BE; max-width: 56ch; }
+  main .arc-day p strong { color: var(--bone-2); }
+  @media (max-width: 640px) {
+    .arc-day { grid-template-columns: 1fr; gap: .75rem; }
+    .arc-day__hd { display: flex; align-items: baseline; gap: 1.1rem; }
+    .arc-day__day { margin-top: 0; }
+  }
+
+  /* ---- 11 · Guide + video ---- */
+  .guide        { display: grid; grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+                  gap: clamp(1.75rem, 4vw, 3.5rem); align-items: start;
+                  margin-top: clamp(1.4rem, 2.8vw, 2.25rem); }
+  .guide__media { margin: 0; }
+  .guide__media video { display: block; width: 100%; aspect-ratio: 203 / 360;
+                  object-fit: cover; background: #06181A; border-radius: 14px;
+                  border: 1px solid var(--rule); box-shadow: 0 24px 60px rgba(0,0,0,.42); }
+  .guide__media figcaption { font-family: var(--font-body); font-size: .64rem; font-weight: 600;
+                  letter-spacing: .22em; text-transform: uppercase; color: #7E9895;
+                  margin-top: 1rem; text-align: center; }
+  @media (max-width: 720px) {
+    .guide { grid-template-columns: 1fr; }
+    .guide__media { max-width: 16rem; }
+  }
+
+  /* ---- 12 · The package ---- */
+  .pkg-band     { position: relative; overflow: hidden;
+                  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+                  background: linear-gradient(180deg, #0E3235 0%, #0A2426 100%); }
+  .pkg-band::before { content: ""; position: absolute; z-index: 0; inset: -45% -10% auto -10%;
+                  height: 100%; pointer-events: none;
+                  background: radial-gradient(ellipse at 50% 50%, rgba(47,191,174,.14), transparent 62%); }
+  .pkg-band > .wrap { position: relative; z-index: 1; }
+  .pkg          { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+                  gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+  .pkg__fig     { font-family: var(--font-display); font-weight: 500; line-height: 1;
+                  font-size: clamp(3rem, 2rem + 4vw, 4.8rem); letter-spacing: -.035em;
+                  color: var(--bone); margin: clamp(1.6rem, 3vw, 2.25rem) 0 .6rem; }
+  .pkg__fig span{ font-family: var(--font-body); font-size: .19em; font-weight: 600;
+                  letter-spacing: .2em; text-transform: uppercase; color: var(--turq);
+                  margin-left: .8em; vertical-align: .35em; white-space: nowrap; }
+  main .pkg__sub{ font-size: .95rem; color: #9FB0AD; margin: 0 0 1.7rem; max-width: 34ch; }
+  main .pkg__note { font-size: .93rem; line-height: 1.72; color: #B2C1BE; margin: 0 0 2rem; max-width: 42ch; }
+  main .pkg__note strong { color: var(--bone-2); }
+  main .pkg__fine { font-size: .8rem; line-height: 1.6; color: #7E9895; margin: 1.35rem 0 0; max-width: 34ch; }
+  .pkg-list     { list-style: none; padding: 0; margin: 0; }
+  .pkg-list li  { position: relative; border-top: 1px solid var(--rule);
+                  padding: 1rem 0 1rem 1.9rem; font-size: .99rem; line-height: 1.62; color: #C4D0CD; }
+  .pkg-list li:last-child { border-bottom: 1px solid var(--rule); }
+  .pkg-list li::before { content: ""; position: absolute; left: 0; top: 1.7rem;
+                  width: .8rem; height: 1px; background: var(--turq); }
+  .pkg-list li strong { color: var(--bone-2); font-weight: 600; }
+  @media (max-width: 820px) { .pkg { grid-template-columns: 1fr; gap: 2.25rem; } }
+
+  /* ---- 13 · FAQ ---- */
+  .faq          { border-bottom: 1px solid var(--rule); margin-top: clamp(1.4rem, 2.8vw, 2.25rem); }
+  .faq details  { border-top: 1px solid var(--rule); }
+  .faq summary  { list-style: none; cursor: pointer; display: flex; gap: 1.5rem;
+                  align-items: baseline; justify-content: space-between;
+                  font-family: var(--font-display); font-weight: 500;
+                  font-size: clamp(1.05rem, .98rem + .35vw, 1.25rem); letter-spacing: -.014em;
+                  color: var(--bone); padding: clamp(1.05rem, 2vw, 1.4rem) 0;
+                  transition: color .2s var(--ease); }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; font-family: var(--font-body); font-weight: 400;
+                  font-size: 1.3rem; line-height: 1; color: var(--turq); flex: none;
+                  transition: transform .25s var(--ease); }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .faq summary:hover { color: var(--amber-soft); }
+  main .faq p   { margin: 0 0 clamp(1.05rem, 2vw, 1.4rem); font-size: 1rem; line-height: 1.72;
+                  color: #9FB0AD; max-width: 58ch; }
+
+  /* ---- 14 · Land acknowledgement + closing ---- */
+  main .land p  { font-family: var(--font-display); font-style: italic; font-size: 1rem;
+                  line-height: 1.78; color: #86A09D; max-width: 54ch; margin-inline: auto; }
+  main .land p strong { color: #B2C1BE; font-weight: 500; font-style: normal; }
+  .close        { text-align: center; border-top: 1px solid var(--rule);
+                  background: linear-gradient(180deg, var(--night) 0%, #0A2426 100%); }
+  main .close h2{ font-family: var(--font-display); font-weight: 500;
+                  font-size: clamp(2.1rem, 1.4rem + 2.6vw, 3.3rem); letter-spacing: -.026em;
+                  color: var(--bone); margin-block: 0 1rem; }
+  main .close__seal { font-family: var(--font-display); font-style: italic; color: #7E9895;
+                  font-size: .95rem; letter-spacing: .04em; margin: clamp(2rem, 4vw, 3rem) 0 0; }
 </style>
 </head>
 <body>
@@ -55,121 +251,208 @@
 
 <main id="main">
   <!-- HERO -->
-  <section class="rt__hero">
-    <div class="rt__hero-bg"><img src="/assets/img/canyon-family.jpg" alt="A grandmother, mother, and daughter walking a red-rock canyon trail at golden hour" loading="eager" style="object-position:center 55%;"></div>
-    <div class="rt__hero-scrim"></div>
-    <div class="wrap">
-      <p class="rt__kick">The Ancestral Watch · A Harvest Gathering</p>
-      <h1 class="rt__title">The Canyon Within</h1>
-      <p class="rt__meta">August 28–30, 2026 · 1440 Multiversity, Scotts Valley CA</p>
-      <p class="rt__lead">Three days in the redwoods to change your frequency — food, nature, sound, and the wisdom of three cultures — a quiet transition back into well-being while the world spins fast. Just eighteen seats.</p>
-      <p style="margin-top:var(--space-4);"><a class="btn btn--primary btn--lg" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Reserve your seat &rarr;</a></p>
+  <section class="hero-r">
+    <img class="hero-r__img" src="/assets/img/canyon-family.jpg" alt="A grandmother, mother, and daughter walking a red-rock canyon trail at golden hour" loading="eager">
+    <div class="wrap wrap--wide hero-r__inner">
+      <div class="hero-r__body">
+        <p class="hero-r__kick">The Ancestral Watch · A Harvest Gathering</p>
+        <h1 class="hero-r__title">The Canyon Within</h1>
+        <p class="hero-r__meta">August 28–30, 2026 · 1440 Multiversity, Scotts Valley CA</p>
+        <p class="hero-r__lead">Three days in the redwoods to change your frequency — food, nature, sound, and the wisdom of three cultures — a quiet transition back into well-being while the world spins fast. Just eighteen seats.</p>
+        <p class="hero-r__act"><a class="btn btn--primary btn--lg" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Reserve your seat &rarr;</a></p>
+      </div>
     </div>
   </section>
 
-  <!-- INVITATION -->
-  <section class="section"><div class="wrap wrap--narrow" style="text-align:center;">
-    <p class="eyebrow" style="color:var(--turq);">The invitation</p>
-    <h2 style="font-family:var(--font-display);">Down into the canyon. Then up into the harvest.</h2>
-    <p class="rt-quote">&ldquo;You have built a life that looks right from the outside. And still, some quiet part of you knows you have been walking in the dark.&rdquo;</p>
-    <p>This weekend is a descent — into the canyon within, the place you have been carrying alone — and then the climb back up into the harvest: what all that hard work was actually for. The walks are gentle and always optional. The real journey is quiet, inward, and safe. We open Friday by the creek — water, breath, and a circle that keeps a seat for you.</p>
-    <p><strong>Regulate first</strong> — settle the nervous system so the body finally stops bracing. Then everything the ancestors left us becomes usable: the breath, the gratitude, the stories, the fire. You come down carrying something heavy. You go home lighter, steadier, and more yourself.</p>
+  <!-- FACT BAR -->
+  <section class="facts"><div class="wrap wrap--wide">
+    <dl class="facts__grid">
+      <div class="fact"><dt>Dates</dt><dd>August 28–30, 2026</dd></div>
+      <div class="fact"><dt>Where</dt><dd>1440 Multiversity, Scotts Valley CA</dd></div>
+      <div class="fact"><dt>Size</dt><dd>Eighteen seats</dd></div>
+      <div class="fact"><dt>All-inclusive</dt><dd>From $1,100 + tax</dd></div>
+    </dl>
   </div></section>
 
-  <div class="wrap"><figure class="rt-img rt-img--wide"><img src="/assets/img/1440/fire-circle.jpg" alt="A circle gathered at the fire in the redwoods at 1440 Multiversity" loading="lazy"><figcaption>A circle that keeps a seat for you — the opening gathering in the redwoods.</figcaption></figure></div>
+  <!-- INVITATION -->
+  <section class="s"><div class="wrap"><div class="col">
+    <div class="s-head">
+      <p class="s-kick">The invitation</p>
+      <h2 class="s-title">Down into the canyon. Then up into the harvest.</h2>
+    </div>
+    <p class="pull pull--turq">&ldquo;You have built a life that looks right from the outside. And still, some quiet part of you knows you have been walking in the dark.&rdquo;</p>
+    <div class="s-body">
+      <p>This weekend is a descent — into the canyon within, the place you have been carrying alone — and then the climb back up into the harvest: what all that hard work was actually for. The walks are gentle and always optional. The real journey is quiet, inward, and safe. We open Friday by the creek — water, breath, and a circle that keeps a seat for you.</p>
+      <p><strong>Regulate first</strong> — settle the nervous system so the body finally stops bracing. Then everything the ancestors left us becomes usable: the breath, the gratitude, the stories, the fire. You come down carrying something heavy. You go home lighter, steadier, and more yourself.</p>
+    </div>
+  </div></div></section>
+
+  <!-- PLATE 1 -->
+  <figure class="band-fig">
+    <img src="/assets/img/1440/fire-circle.jpg" alt="A circle gathered at the fire in the redwoods at 1440 Multiversity" loading="lazy" style="object-position:center 42%;">
+    <figcaption><span>A circle that keeps a seat for you — the opening gathering in the redwoods.</span></figcaption>
+  </figure>
 
   <!-- FREQUENCY -->
-  <section class="section" style="background:linear-gradient(180deg,var(--night),var(--night-2));"><div class="wrap wrap--narrow" style="text-align:center;">
-    <p class="eyebrow" style="color:var(--turq);">A change of frequency</p>
-    <h2 style="font-family:var(--font-display);">Three days to shift your whole state.</h2>
-    <p>This is not a conference you take notes at. It's an <strong>energetic reset</strong> — three days that slowly change the frequency you live at. The redwoods do half the work: standing beneath the <strong>Mother Tree</strong>, walking the creeks, eating food that is grown, cooked, and blessed as medicine. Your body remembers what calm feels like, and your nervous system finally lets go.</p>
-    <p>Into that stillness we bring the tools — <strong>meditation, breathwork, and sound healing</strong>, and wisdom braided from <strong>three cultures</strong>: the Diné of the red-earth country, the Baltic song-keepers, and the Japanese discipline of stillness. Different tongues, one human operating system. You arrive carrying the noise of a world that feels like it's coming apart. You leave carrying a <strong>frequency of well-being</strong> you can keep.</p>
-    <p class="rt-quote">The world is loud and fast right now. This is three days of remembering how to be well inside it.</p>
-  </div></section>
+  <section class="s"><div class="wrap"><div class="col">
+    <div class="s-head">
+      <p class="s-kick">A change of frequency</p>
+      <h2 class="s-title">Three days to shift your whole state.</h2>
+    </div>
+    <div class="s-body">
+      <p>This is not a conference you take notes at. It's an <strong>energetic reset</strong> — three days that slowly change the frequency you live at. The redwoods do half the work: standing beneath the <strong>Mother Tree</strong>, walking the creeks, eating food that is grown, cooked, and blessed as medicine. Your body remembers what calm feels like, and your nervous system finally lets go.</p>
+      <p>Into that stillness we bring the tools — <strong>meditation, breathwork, and sound healing</strong>, and wisdom braided from <strong>three cultures</strong>: the Diné of the red-earth country, the Baltic song-keepers, and the Japanese discipline of stillness. Different tongues, one human operating system. You arrive carrying the noise of a world that feels like it's coming apart. You leave carrying a <strong>frequency of well-being</strong> you can keep.</p>
+    </div>
+    <p class="pull">The world is loud and fast right now. This is three days of remembering how to be well inside it.</p>
+  </div></div></section>
 
-  <div class="wrap"><figure class="rt-img rt-img--tall"><img src="/assets/img/1440/redwood-touch.jpg" alt="Standing beneath the Mother Tree in the redwoods at 1440" loading="lazy"><figcaption>Standing beneath the Mother Tree — the redwoods do half the work.</figcaption></figure></div>
+  <!-- PLATE 2 -->
+  <figure class="band-fig band-fig--tall">
+    <img src="/assets/img/1440/redwood-touch.jpg" alt="Standing beneath the Mother Tree in the redwoods at 1440" loading="lazy" style="object-position:center 28%;">
+    <figcaption><span>Standing beneath the Mother Tree — the redwoods do half the work.</span></figcaption>
+  </figure>
 
   <!-- WHO COMES -->
-  <section class="section" style="background:linear-gradient(180deg,var(--night-2),var(--night));"><div class="wrap">
-    <p class="eyebrow" style="color:var(--turq);">Who comes to the canyon</p>
-    <h2 style="font-family:var(--font-display);">This weekend is for you.</h2>
-    <div class="rt-grid">
-      <div class="rt-card"><p>The woman who gives everything — to work, to family, to everyone — and quietly wonders who refills her.</p></div>
-      <div class="rt-card"><p>The one in a hard passage — a loss, a divorce, an empty nest, a career turning over — who needs a safe place to set it down.</p></div>
-      <div class="rt-card"><p>The daughter finding her footing — younger, at a crossroads, looking for ground to stand on.</p></div>
-      <div class="rt-card"><p>The elder — with a life's worth of wisdom, ready to gather it and pass it on.</p></div>
-      <div class="rt-card"><p>The seeker of any kind — anyone who's been walking in the dark and wants to remember the way home.</p></div>
+  <section class="s s--sink"><div class="wrap"><div class="col">
+    <div class="s-head">
+      <p class="s-kick">Who comes to the canyon</p>
+      <h2 class="s-title">This weekend is for you.</h2>
     </div>
-    <p class="muted" style="text-align:center;margin-top:var(--space-4);max-width:60ch;margin-left:auto;margin-right:auto;">You don't need to be fit, or a hiker, or experienced in any of this. Many arrive on their own and leave with a circle. Just eighteen guests, so no one gets lost. <em>The oldest medicine is intergenerational — grandmother, mother, daughter, moving together.</em></p>
-  </div></section>
+    <div class="rows">
+      <div class="row"><p><span class="row__k">The woman who gives everything</span> — to work, to family, to everyone — and quietly wonders who refills her.</p></div>
+      <div class="row"><p><span class="row__k">The one in a hard passage</span> — a loss, a divorce, an empty nest, a career turning over — who needs a safe place to set it down.</p></div>
+      <div class="row"><p><span class="row__k">The daughter finding her footing</span> — younger, at a crossroads, looking for ground to stand on.</p></div>
+      <div class="row"><p><span class="row__k">The elder</span> — with a life's worth of wisdom, ready to gather it and pass it on.</p></div>
+      <div class="row"><p><span class="row__k">The seeker of any kind</span> — anyone who's been walking in the dark and wants to remember the way home.</p></div>
+    </div>
+    <p class="s-note" style="margin-top:clamp(1.6rem,3vw,2.4rem);max-width:60ch;">You don't need to be fit, or a hiker, or experienced in any of this. Many arrive on their own and leave with a circle. Just eighteen guests, so no one gets lost. <em>The oldest medicine is intergenerational — grandmother, mother, daughter, moving together.</em></p>
+  </div></div></section>
 
-  <!-- ABOUT -->
-  <section class="section"><div class="wrap wrap--narrow">
-    <p class="eyebrow" style="color:var(--turq);">Ancient technologies for modern lives</p>
-    <h2 style="font-family:var(--font-display);">A lineage the grandmothers protected.</h2>
-    <p>The Canyon Within is an intimate three-day gathering guided by <strong>Tony Skrelūnas</strong> — 1440 adjunct faculty, Diné and Lithuanian author of the novel <em>Stone Breath</em>. Over the weekend you learn breathwork, gratitude, guided visualization, storytelling, and reflective tools — refined across generations, supported by contemporary science, each one simple, portable, and built to live inside your daily life.</p>
-    <p>The Diné are a matrilineal people, and this knowledge was carried to Tony by women — his great-grandmother <strong>Masan</strong>, and the grandmothers who kept the practices alive when the world told them to forget. It is woven together with meditation, qigong, sound baths, forest walks, tai chi, and a <strong>specially designed, seasonal healing diet</strong> — and with the <strong>Ancestral Kitchen</strong>, where a Navajo family turns the harvest into medicine you can taste.</p>
-  </div></section>
+  <!-- LINEAGE -->
+  <section class="s s--lift"><div class="wrap"><div class="col">
+    <div class="s-head">
+      <p class="s-kick">Ancient technologies for modern lives</p>
+      <h2 class="s-title">A lineage the grandmothers protected.</h2>
+    </div>
+    <div class="s-body">
+      <p>The Canyon Within is an intimate three-day gathering guided by <strong>Tony Skrelūnas</strong> — 1440 adjunct faculty, Diné and Lithuanian author of the novel <em>Stone Breath</em>. Over the weekend you learn breathwork, gratitude, guided visualization, storytelling, and reflective tools — refined across generations, supported by contemporary science, each one simple, portable, and built to live inside your daily life.</p>
+      <p>The Diné are a matrilineal people, and this knowledge was carried to Tony by women — his great-grandmother <strong>Masan</strong>, and the grandmothers who kept the practices alive when the world told them to forget. It is woven together with meditation, qigong, sound baths, forest walks, tai chi, and a <strong>specially designed, seasonal healing diet</strong> — and with the <strong>Ancestral Kitchen</strong>, where a Navajo family turns the harvest into medicine you can taste.</p>
+    </div>
+  </div></div></section>
 
   <!-- ANCESTRAL KITCHEN -->
-  <section class="section" style="background:linear-gradient(180deg,var(--night),var(--night-2));"><div class="wrap wrap--narrow">
-    <p class="eyebrow" style="color:var(--turq);">Food is medicine</p>
-    <h2 style="font-family:var(--font-display);">The Ancestral Kitchen.</h2>
-    <p>Every meal is part of the healing — a <strong>specially designed, seasonal diet</strong>, locally sourced, cooked and blessed as medicine, from Friday dinner through Sunday lunch. At its heart is the <strong>Ancestral Kitchen</strong>, led by <strong>Missy &amp; Henry Webster</strong> — a Navajo family from Gray Mountain, Arizona. They turn the harvest feast into a hands-on teaching: blue corn, juniper ash, frybread — the old knowledge carried hand to hand. In the Ancestral Kitchen, cooking is a lineage you can taste.</p>
-  </div></section>
+  <section class="s s--sink"><div class="wrap"><div class="col">
+    <div class="s-head">
+      <p class="s-kick">Food is medicine</p>
+      <h2 class="s-title">The Ancestral Kitchen.</h2>
+    </div>
+    <div class="s-body">
+      <p>Every meal is part of the healing — a <strong>specially designed, seasonal diet</strong>, locally sourced, cooked and blessed as medicine, from Friday dinner through Sunday lunch. At its heart is the <strong>Ancestral Kitchen</strong>, led by <strong>Missy &amp; Henry Webster</strong> — a Navajo family from Gray Mountain, Arizona. They turn the harvest feast into a hands-on teaching: blue corn, juniper ash, frybread — the old knowledge carried hand to hand. In the Ancestral Kitchen, cooking is a lineage you can taste.</p>
+    </div>
+  </div></div></section>
 
   <!-- CARRY HOME -->
-  <section class="section" style="background:linear-gradient(180deg,var(--night-2),var(--night));"><div class="wrap">
-    <p class="eyebrow" style="color:var(--turq);">What you'll carry home</p>
-    <div class="rt-grid">
-      <div class="rt-card"><h3>Stone Breath</h3><p>Calm the nervous system and find your center in sixty seconds, anywhere.</p></div>
-      <div class="rt-card"><h3>The Canyon Within</h3><p>Descend into what you've been carrying — and come back up with it, not around it.</p></div>
-      <div class="rt-card"><h3>Gratitude &amp; reflection</h3><p>Build resilience and soften a hard inner voice through daily practice.</p></div>
-      <div class="rt-card"><h3>Story &amp; journal</h3><p>Reframe your hardest chapters into strength.</p></div>
-      <div class="rt-card"><h3>Belonging</h3><p>A circle who remember it was never meant to be carried alone.</p></div>
-      <div class="rt-card"><h3>The harvest table</h3><p>Taste healing in the Ancestral Kitchen, and celebrate the year's hard work.</p></div>
+  <section class="s"><div class="wrap"><div class="col--wide">
+    <div class="s-head">
+      <p class="s-kick">What you'll carry home</p>
+      <h2 class="s-title">Six things that come with you.</h2>
     </div>
-  </div></section>
+    <div class="tiles">
+      <div class="tile"><h3>Stone Breath</h3><p>Calm the nervous system and find your center in sixty seconds, anywhere.</p></div>
+      <div class="tile"><h3>The Canyon Within</h3><p>Descend into what you've been carrying — and come back up with it, not around it.</p></div>
+      <div class="tile"><h3>Gratitude &amp; reflection</h3><p>Build resilience and soften a hard inner voice through daily practice.</p></div>
+      <div class="tile"><h3>Story &amp; journal</h3><p>Reframe your hardest chapters into strength.</p></div>
+      <div class="tile"><h3>Belonging</h3><p>A circle who remember it was never meant to be carried alone.</p></div>
+      <div class="tile"><h3>The harvest table</h3><p>Taste healing in the Ancestral Kitchen, and celebrate the year's hard work.</p></div>
+    </div>
+  </div></div></section>
+
+  <!-- PLATE 3 -->
+  <figure class="band-fig">
+    <img src="/assets/img/1440/council-chairs.jpg" alt="Chairs set in a council circle in a redwood clearing at 1440 Multiversity" loading="lazy" style="object-position:center 58%;">
+    <figcaption><span>Three days, one journey — the circle holds from Friday evening to Sunday noon.</span></figcaption>
+  </figure>
 
   <!-- THE WEEKEND -->
-  <section class="section"><div class="wrap wrap--narrow">
-    <p class="eyebrow" style="color:var(--turq);">The weekend</p>
-    <h2 style="font-family:var(--font-display);">Three days, one journey.</h2>
-    <div style="margin-top:var(--space-4);">
-      <div class="rt-day"><h3>Friday · Arrival &amp; Threshold</h3><p>Arrivals, check-in, your Ancestral Watch tee and the smooth stone you'll carry all weekend. ~4pm: by the creek — a land acknowledgement to the Amah Mutsun, whose unceded homeland this is, and the opening circle. Dinner, then fireside under the stars — Stone Breath, a first meditation, and stories.</p></div>
-      <div class="rt-day"><h3>Saturday · The Descent &amp; The Harvest</h3><p>Early meditative hike in the redwoods. A signature class — meditation, qigong, sound bath, forest walk, or tai chi. Afternoon: <strong>The Descent — The Canyon Within</strong>, the heart of the weekend, facilitated by Tony. Then the Ancestral Kitchen (Food Is Medicine), the Harvest Table celebration, and fireside songs, stories, and dance.</p></div>
-      <div class="rt-day"><h3>Sunday · Carry It Home</h3><p>Meditation by the creek. ~10am: Embody · Activate · Carry Home — turning the weekend into practices that come with you. Boxed lunches &amp; departures.</p></div>
+  <section class="s"><div class="wrap"><div class="col--wide">
+    <div class="s-head">
+      <p class="s-kick">The weekend</p>
+      <h2 class="s-title">Three days, one journey.</h2>
     </div>
-    <p class="muted" style="font-size:var(--step--1);">Sample flow — final times and class locations confirmed at check-in. Signature classes are drawn from 1440's included offerings.</p>
-  </div></section>
+    <div class="arc-list">
+      <div class="arc-day">
+        <div class="arc-day__hd"><div class="arc-day__n">01</div><span class="arc-day__day">Friday</span></div>
+        <div>
+          <h3>Arrival &amp; Threshold</h3>
+          <p>Arrivals, check-in, your Ancestral Watch tee and the smooth stone you'll carry all weekend. ~4pm: by the creek — a land acknowledgement to the Amah Mutsun, whose unceded homeland this is, and the opening circle. Dinner, then fireside under the stars — Stone Breath, a first meditation, and stories.</p>
+        </div>
+      </div>
+      <div class="arc-day">
+        <div class="arc-day__hd"><div class="arc-day__n">02</div><span class="arc-day__day">Saturday</span></div>
+        <div>
+          <h3>The Descent &amp; The Harvest</h3>
+          <p>Early meditative hike in the redwoods. A signature class — meditation, qigong, sound bath, forest walk, or tai chi. Afternoon: <strong>The Descent — The Canyon Within</strong>, the heart of the weekend, facilitated by Tony. Then the Ancestral Kitchen (Food Is Medicine), the Harvest Table celebration, and fireside songs, stories, and dance.</p>
+        </div>
+      </div>
+      <div class="arc-day">
+        <div class="arc-day__hd"><div class="arc-day__n">03</div><span class="arc-day__day">Sunday</span></div>
+        <div>
+          <h3>Carry It Home</h3>
+          <p>Meditation by the creek. ~10am: Embody · Activate · Carry Home — turning the weekend into practices that come with you. Boxed lunches &amp; departures.</p>
+        </div>
+      </div>
+    </div>
+    <p class="s-note" style="margin-top:clamp(1.25rem,2.4vw,1.8rem);max-width:56ch;">Sample flow — final times and class locations confirmed at check-in. Signature classes are drawn from 1440's included offerings.</p>
+  </div></div></section>
 
-  <!-- GUIDES -->
-  <section class="section" style="background:linear-gradient(180deg,var(--night-2),var(--night));"><div class="wrap wrap--narrow">
-    <p class="eyebrow" style="color:var(--turq);">Your guides</p>
-    <h2 style="font-family:var(--font-display);">Led by the people who live it.</h2>
-    <p class="eyebrow" style="color:var(--turq);margin-top:var(--space-3);text-align:center;">A word from Tony — in the redwoods</p>
-    <video controls preload="none" poster="/assets/img/1440/tony-invitation-poster.jpg" style="width:100%;max-width:440px;border-radius:var(--radius-lg);margin:.6rem auto 0;display:block;">
-      <source src="/assets/video/tony-invitation.mp4" type="video/mp4">
-      Your browser doesn't support embedded video.
-    </video>
-    <p><strong>Tony Skrelūnas</strong> — Creator &amp; Lead · Diné · Lithuanian · author of <em>Stone Breath</em>. Raised on Black Mesa by his great-grandmother Masan, who taught him to run at dawn with a stone in his mouth — a way to keep the breath calm when the body wanted to panic. He spent a career proving that ancestral wisdom and modern power are the same thing, then wrote it down. The Ancestral Watch is his life's work made into a weekend — he built it, and he leads it himself.</p>
-  </div></section>
+  <!-- GUIDE -->
+  <section class="s s--sink"><div class="wrap"><div class="col--wide">
+    <div class="s-head">
+      <p class="s-kick">Your guide</p>
+      <h2 class="s-title">Led by the people who live it.</h2>
+    </div>
+    <div class="guide">
+      <figure class="guide__media">
+        <video controls preload="none" poster="/assets/img/1440/tony-invitation-poster.jpg">
+          <source src="/assets/video/tony-invitation.mp4" type="video/mp4">
+          Your browser doesn't support embedded video.
+        </video>
+        <figcaption>A word from Tony — in the redwoods</figcaption>
+      </figure>
+      <div class="s-body">
+        <p><strong>Tony Skrelūnas</strong> — Creator &amp; Lead · Diné · Lithuanian · author of <em>Stone Breath</em>.</p>
+        <p>Raised on Black Mesa by his great-grandmother Masan, who taught him to run at dawn with a stone in his mouth — a way to keep the breath calm when the body wanted to panic. He spent a career proving that ancestral wisdom and modern power are the same thing, then wrote it down. The Ancestral Watch is his life's work made into a weekend — he built it, and he leads it himself.</p>
+      </div>
+    </div>
+  </div></div></section>
 
   <!-- PRAISE -->
-  <section class="section"><div class="wrap wrap--narrow" style="text-align:center;">
-    <p class="eyebrow" style="color:var(--turq);">Advance praise for Stone Breath</p>
-    <p class="rt-quote">&ldquo;The tools for endurance, belonging, and purpose are not lost — they are dormant. This book awakens them.&rdquo;<br><span style="font-size:1rem;font-style:normal;color:var(--silver);">— Carmella Kahn, DrPH, MPH · University of New Mexico</span></p>
-    <p class="rt-quote">&ldquo;Blending ancestral wisdom, cross-cultural storytelling, and practical tools — the courage to live from inner knowing rather than fear.&rdquo;<br><span style="font-size:1rem;font-style:normal;color:var(--silver);">— Emily Affolter, PhD · Associate Dean of Doctoral Studies</span></p>
-  </div></section>
+  <section class="s s--lift"><div class="wrap"><div class="col--wide">
+    <p class="s-kick">Advance praise for <em>Stone Breath</em></p>
+    <div class="tiles" style="grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(2rem,5vw,4.5rem);margin-top:clamp(1.6rem,3vw,2.5rem);">
+      <div class="tile">
+        <p class="pull pull--turq pull--flat">&ldquo;The tools for endurance, belonging, and purpose are not lost — they are dormant. This book awakens them.&rdquo;<cite>Carmella Kahn, DrPH, MPH · University of New Mexico</cite></p>
+      </div>
+      <div class="tile">
+        <p class="pull pull--turq pull--flat">&ldquo;Blending ancestral wisdom, cross-cultural storytelling, and practical tools — the courage to live from inner knowing rather than fear.&rdquo;<cite>Emily Affolter, PhD · Associate Dean of Doctoral Studies</cite></p>
+      </div>
+    </div>
+  </div></div></section>
 
-  <!-- PACKAGE / PRICE -->
-  <section class="section" style="background:linear-gradient(180deg,var(--night-2),var(--night));"><div class="wrap wrap--narrow">
-    <div class="rt-price">
-      <p class="eyebrow" style="color:var(--turq);">The package</p>
-      <h2 style="font-family:var(--font-display);">All-inclusive. Just arrive.</h2>
-      <p>From <strong>$1,100 + tax</strong> ($430/night + $240 workshop tuition). <strong>Can't stay the full weekend?</strong> Day passes are available — <strong>Friday evening, Saturday, and Sunday morning</strong> — so you can join for the parts that call you. As a nonprofit campus, each booking helps fund scholarships and community programs.</p>
-      <ul>
-        <li>The Canyon Within program — all workshops &amp; sessions</li>
+  <!-- PACKAGE -->
+  <section class="s pkg-band"><div class="wrap"><div class="col--wide">
+    <div class="pkg">
+      <div>
+        <p class="s-kick">The package</p>
+        <h2 class="s-title" style="font-size:clamp(1.8rem,1.2rem + 2vw,2.65rem);">All-inclusive. Just arrive.</h2>
+        <p class="pkg__fig">$1,100<span>from · + tax</span></p>
+        <p class="pkg__sub">$430 per night + $240 workshop tuition.</p>
+        <p class="pkg__note"><strong>Can't stay the full weekend?</strong> Day passes are available — <strong>Friday evening, Saturday, and Sunday morning</strong> — so you can join for the parts that call you. As a nonprofit campus, each booking helps fund scholarships and community programs.</p>
+        <a class="btn btn--primary btn--lg" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Reserve your seat at 1440 &rarr;</a>
+        <p class="pkg__fine">Please confirm current dates &amp; rates on the 1440 registration page.</p>
+      </div>
+      <ul class="pkg-list">
+        <li>The Canyon Within program — <strong>all workshops &amp; sessions</strong></li>
         <li>Overnight accommodations (shared pod or private room)</li>
         <li>A complimentary digital copy of <em>Stone Breath</em>, sent before the weekend</li>
         <li>A printed Ancestral Watch journal to keep</li>
@@ -177,34 +460,38 @@
         <li>Daily signature classes — meditation, qigong, sound baths, forest walks, tai chi</li>
         <li>Campus amenities, including four miles of walking trails</li>
       </ul>
-      <a class="btn btn--primary btn--lg rt-cta" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Reserve your seat at 1440 &rarr;</a>
-      <p class="muted" style="font-size:var(--step--1);margin-top:var(--space-2);">Please confirm current dates &amp; rates on the 1440 registration page.</p>
     </div>
-  </div></section>
+  </div></div></section>
 
   <!-- FAQ -->
-  <section class="section"><div class="wrap wrap--narrow rt-faq">
-    <p class="eyebrow" style="color:var(--turq);text-align:center;">Before you come</p>
-    <details><summary>Do I need to be fit, or a hiker?</summary><p>No. The descent is inward. The walks are gentle, unhurried, and always optional.</p></details>
-    <details><summary>Can I come on my own?</summary><p>Yes — many do. With just eighteen guests, you'll leave with a circle. It's a safe, warm container.</p></details>
-    <details><summary>Can I come for just part of it?</summary><p>Yes. Day passes are available for Friday evening, Saturday, and Sunday morning — join for the parts that call you, even if you can't stay overnight.</p></details>
-    <details><summary>Do I need experience with meditation or breathwork?</summary><p>None. Everything is taught from the beginning. The first tool, Stone Breath, takes about a minute to learn.</p></details>
-    <details><summary>Is this religious?</summary><p>No. It's ancestral and human. Take what serves you and leave the rest.</p></details>
-    <details><summary>What should I bring?</summary><p>Comfortable clothes and layers, a water bottle, and an open heart. A journal and your stone are provided.</p></details>
-  </div></section>
+  <section class="s"><div class="wrap"><div class="col">
+    <div class="s-head">
+      <p class="s-kick">Before you come</p>
+      <h2 class="s-title">Questions, answered.</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Do I need to be fit, or a hiker?</summary><p>No. The descent is inward. The walks are gentle, unhurried, and always optional.</p></details>
+      <details><summary>Can I come on my own?</summary><p>Yes — many do. With just eighteen guests, you'll leave with a circle. It's a safe, warm container.</p></details>
+      <details><summary>Can I come for just part of it?</summary><p>Yes. Day passes are available for Friday evening, Saturday, and Sunday morning — join for the parts that call you, even if you can't stay overnight.</p></details>
+      <details><summary>Do I need experience with meditation or breathwork?</summary><p>None. Everything is taught from the beginning. The first tool, Stone Breath, takes about a minute to learn.</p></details>
+      <details><summary>Is this religious?</summary><p>No. It's ancestral and human. Take what serves you and leave the rest.</p></details>
+      <details><summary>What should I bring?</summary><p>Comfortable clothes and layers, a water bottle, and an open heart. A journal and your stone are provided.</p></details>
+    </div>
+  </div></div></section>
 
   <!-- LAND ACKNOWLEDGEMENT -->
-  <section class="section" style="padding-top:0;"><div class="wrap wrap--narrow" style="text-align:center;">
-    <p class="muted" style="font-style:italic;max-width:56ch;margin:0 auto;">We gather on the unceded homeland of the <strong>Amah Mutsun</strong> and the Mutsun and Awaswas-speaking peoples. We honor them — past, present, and future — and the land they have always tended.</p>
-  </div></section>
+  <section class="s s--tight land" style="padding-top:0;text-align:center;"><div class="wrap"><div class="col--mid">
+    <p>We gather on the unceded homeland of the <strong>Amah Mutsun</strong> and the Mutsun and Awaswas-speaking peoples. We honor them — past, present, and future — and the land they have always tended.</p>
+  </div></div></section>
 
-  <!-- FINAL CTA -->
-  <section class="section capture" style="text-align:center;"><div class="wrap wrap--narrow">
-    <h2 style="font-family:var(--font-display);">Just eighteen seats.</h2>
-    <p class="lead">Come down into the canyon, and up into the harvest.</p>
-    <p style="margin-top:var(--space-3);"><a class="btn btn--primary btn--lg" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Register — The Canyon Within &rarr;</a></p>
-    <p class="muted" style="margin-top:var(--space-3);font-style:italic;">Hózhó · Darna · Wa — walk in beauty.</p>
-  </div></section>
+  <!-- CLOSING -->
+  <section class="s close"><div class="wrap"><div class="col--mid">
+    <p class="s-kick">August 28–30, 2026</p>
+    <h2>Just eighteen seats.</h2>
+    <p class="s-lead">Come down into the canyon, and up into the harvest.</p>
+    <p style="margin-top:clamp(2rem,4vw,2.75rem);"><a class="btn btn--primary btn--lg" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Register — The Canyon Within &rarr;</a></p>
+    <p class="close__seal">Hózhó · Darna · Wa — walk in beauty.</p>
+  </div></div></section>
 </main>
 
 <footer class="site-footer"><div class="wrap wrap--wide"><div class="footer__legal">
