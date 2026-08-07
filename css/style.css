@@ -947,3 +947,43 @@ figure.teams-fig img { border-radius: 18px; box-shadow: 0 30px 70px rgba(0,0,0,.
     width: 100%; margin-inline: 0;
   }
 }
+
+/* ============================================================
+   HOMEPAGE ELEVATION — Pat Mitchell / Emma Grede standard
+   ============================================================ */
+
+/* 1 · The full-bleed image band: a confident band, not a wall */
+.band-fig { position: relative; margin: 0; }
+.band-fig img { width: 100%; height: clamp(300px, 42vh, 460px); object-fit: cover; object-position: center 45%; display: block; }
+.band-fig figcaption {
+  position: absolute; inset: auto 0 0 0;
+  background: linear-gradient(180deg, transparent, rgba(6,17,20,.92));
+  padding: clamp(2.5rem,6vw,5rem) var(--space-3) clamp(1.6rem,3vw,2.6rem);
+}
+.band-fig figcaption span {
+  display: block; max-width: 62ch; margin-inline: auto; text-align: center;
+  font-family: var(--font-display); font-style: italic;
+  font-size: clamp(1.05rem, .95rem + .55vw, 1.42rem); line-height: 1.5; color: #EFEADC;
+}
+
+/* 2 · The condition→work matrix: a designed element, not a plain list */
+.matrix { list-style: none; padding: 0; margin: var(--space-4) 0 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); gap: 0; }
+.matrix li {
+  display: grid; grid-template-columns: 1fr auto; gap: 1.2rem; align-items: baseline;
+  padding: 1.05rem .2rem; border-block-end: 1px solid var(--rule);
+  transition: background .18s ease, padding-inline .18s ease;
+}
+.matrix li:hover { background: rgba(79,191,182,.06); padding-inline: .9rem; }
+.matrix .m-cond { font-family: var(--font-display); font-size: 1.12rem; color: var(--bone-2, #F7F2E7); line-height: 1.3; }
+.matrix .m-work { font-size: .85rem; letter-spacing: .04em; text-transform: uppercase; color: var(--turq, #4FBFB6); font-weight: 600; white-space: nowrap; }
+.matrix-note {
+  margin-top: var(--space-4); padding-top: var(--space-3); border-top: 1px solid var(--rule);
+  font-family: var(--font-display); font-style: italic; font-size: 1.12rem; color: #D9D3C4; text-align: center;
+}
+
+/* 3 · Global bar: refined, not cramped */
+.global-bar { border-block-end: 1px solid var(--rule); }
+.global-bar .wrap, .global-bar__inner { padding-block: .7rem !important; gap: .4rem 1.4rem !important; }
+.global-bar a { font-size: .84rem; letter-spacing: .01em; opacity: .9; transition: opacity .15s, color .15s; }
+.global-bar a:hover { opacity: 1; }
