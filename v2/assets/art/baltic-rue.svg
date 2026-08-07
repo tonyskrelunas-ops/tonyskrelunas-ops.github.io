@@ -52,4 +52,20 @@
   <ellipse cx="112" cy="47" rx="5.8" ry="3.8"/>
   <ellipse cx="128" cy="47" rx="5.8" ry="3.8"/>
   <circle cx="120" cy="47" r="1.5" fill="currentColor" stroke="none"/>
+  <line x1="52.0" y1="126.2" x2="52.0" y2="141.8" transform="rotate(-42 52 134)" opacity="0.5"/>
+  <line x1="70.0" y1="132.2" x2="70.0" y2="147.8" transform="rotate(-16 70 140)" opacity="0.5"/>
+  <line x1="68.0" y1="156.2" x2="68.0" y2="171.8" transform="rotate(34 68 164)" opacity="0.5"/>
+  <line x1="148.0" y1="126.2" x2="148.0" y2="141.8" transform="rotate(42 148 134)" opacity="0.5"/>
+  <line x1="130.0" y1="132.2" x2="130.0" y2="147.8" transform="rotate(16 130 140)" opacity="0.5"/>
+  <line x1="132.0" y1="156.2" x2="132.0" y2="171.8" transform="rotate(-34 132 164)" opacity="0.5"/>
+  <line x1="58.0" y1="89.9" x2="58.0" y2="104.1" transform="rotate(-42 58 97)" opacity="0.5"/>
+  <line x1="76.0" y1="95.9" x2="76.0" y2="110.1" transform="rotate(-16 76 103)" opacity="0.5"/>
+  <line x1="74.0" y1="118.9" x2="74.0" y2="133.1" transform="rotate(34 74 126)" opacity="0.5"/>
+  <line x1="142.0" y1="89.9" x2="142.0" y2="104.1" transform="rotate(42 142 97)" opacity="0.5"/>
+  <line x1="124.0" y1="95.9" x2="124.0" y2="110.1" transform="rotate(16 124 103)" opacity="0.5"/>
+  <line x1="126.0" y1="118.9" x2="126.0" y2="133.1" transform="rotate(-34 126 126)" opacity="0.5"/>
+  <line x1="69.0" y1="63.9" x2="69.0" y2="76.1" transform="rotate(-42 69 70)" opacity="0.5"/>
+  <line x1="84.0" y1="67.9" x2="84.0" y2="80.1" transform="rotate(-14 84 74)" opacity="0.5"/>
+  <line x1="131.0" y1="63.9" x2="131.0" y2="76.1" transform="rotate(42 131 70)" opacity="0.5"/>
+  <line x1="116.0" y1="67.9" x2="116.0" y2="80.1" transform="rotate(-14 116 74)" opacity="0.5"/>
 </svg>

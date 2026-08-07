@@ -4,224 +4,325 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Circle — Add something to the fire | Tony Skrelūnas</title>
-<meta name="description" content="A place to leave a thought, a reflection, or a note from the road. Every word comes straight to Tony.">
+<meta name="description" content="A place to set down a thought, a reflection, or a note from wherever you are reading. No account, no list, no confirmation email. It comes straight to Tony.">
 <link rel="icon" href="/favicon.svg">
 <link rel="stylesheet" href="/v2/assets/v2.css">
-
-<!-- ══════════════════════════════════════════════════════════════════
-     ⚙️  THE ONE LINE YOU CHANGE
-     ──────────────────────────────────────────────────────────────────
-     1. Go to  https://web3forms.com
-     2. Type  wisdom@ancestralwatch.com  in the box. Press the button.
-     3. They email you an Access Key. Paste it between the quotes below.
-     4. Save. Push. Done. There is nothing to log into, ever.
-
-     (The key is safe in public HTML — it is just an alias for the
-      email address, not a password.)
-
-     Until the key is set, the SEND button gracefully falls back to
-     opening a pre-written email to wisdom@ancestralwatch.com, so this
-     page works today either way.
-     ══════════════════════════════════════════════════════════════════ -->
-<script>
-  window.CIRCLE = {
-    ACCESS_KEY : "PASTE-YOUR-WEB3FORMS-ACCESS-KEY-HERE",
-    ENDPOINT   : "https://api.web3forms.com/submit",
-    INBOX      : "wisdom@ancestralwatch.com"
-  };
-</script>
+<link rel="stylesheet" href="/v2/assets/forms.css">
 
 <style>
-/* ============ page-specific — extends v2.css ============ */
+/* ============ page-specific — extends v2.css + forms.css ============
+   NOTE: inside clamp()/calc(), + and - MUST have whitespace around
+   them or the whole declaration is dropped.
+   ==================================================================== */
 
-.hdr__cta{font-size:.95rem;padding:.85em 1.5em}
+html{scroll-padding-top:6rem}
+
+/* ---------- header (matches /v2/) ---------- */
+.hdr__in{max-width:1560px;gap:1.6rem}
+.hdr__end{display:flex;align-items:center;gap:1rem}
+.nav{gap:1.25rem}
+.nav a{font-size:.94rem;font-weight:700;letter-spacing:-.005em;
+  padding-block:.3rem;border-bottom:2px solid transparent;transition:color .18s,border-color .18s}
+.nav a:hover{color:var(--clay-lt);border-bottom-color:var(--clay)}
+.nav a[aria-current]{color:var(--clay-lt);border-bottom-color:var(--clay)}
+.hdr__cta{font-size:.92rem;padding:.85em 1.4em;white-space:nowrap}
+.burger{display:inline-flex;flex-direction:column;justify-content:center;gap:6px;
+  width:52px;height:44px;padding:0 12px;background:none;border:1px solid var(--rule);
+  border-radius:6px;cursor:pointer}
+.burger i{display:block;height:2px;background:var(--cream);border-radius:2px;transition:.25s}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+@media(max-width:1240px){.nav{display:none}}
+@media(min-width:1241px){.burger{display:none}}
 @media(max-width:520px){.hdr__cta{display:none}}
 
-/* --- hero --- */
-.hero{min-height:min(76vh,760px)}
-.hero__scrim{background:linear-gradient(170deg,rgba(20,13,10,.72) 0%,rgba(20,13,10,.86) 46%,rgba(27,18,16,.99) 100%)}
+.menu{position:fixed;inset:0;z-index:200;background:var(--ink);overflow-y:auto;
+  padding:clamp(1.5rem, 1rem + 3vw, 3rem) 0 4rem;
+  opacity:0;visibility:hidden;transform:translateY(-12px);
+  transition:opacity .28s ease,transform .28s ease,visibility .28s}
+.menu.open{opacity:1;visibility:visible;transform:none}
+.menu__top{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  margin-bottom:clamp(2rem, 1rem + 4vw, 4rem)}
+.menu__close{width:52px;height:44px;background:none;border:1px solid var(--rule);
+  border-radius:6px;color:var(--cream);font-size:1.5rem;line-height:1;cursor:pointer}
+.menu__ls{list-style:none;padding:0;margin:0;display:grid;
+  gap:clamp(.2rem, .1rem + .5vw, .7rem);border-top:1px solid var(--rule)}
+.menu__ls li{border-bottom:1px solid var(--rule)}
+.menu__ls a{display:flex;align-items:baseline;gap:1.2rem;text-decoration:none;
+  font-family:var(--display);font-weight:700;letter-spacing:-.03em;
+  font-size:clamp(1.8rem, 1.2rem + 3vw, 3.2rem);line-height:1.05;
+  padding-block:clamp(.45rem, .3rem + .7vw, .85rem);transition:color .2s,padding-left .2s}
+.menu__ls a:hover{color:var(--clay-lt);padding-left:.6rem}
+.menu__ls em{font-family:var(--body);font-style:normal;font-size:.78rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt);flex:none}
+.menu__foot{margin-top:clamp(2.2rem, 1.5rem + 3vw, 3.6rem);display:flex;flex-wrap:wrap;
+  gap:1.2rem 2.4rem;align-items:center}
+.menu__foot a{text-decoration:none;font-weight:800;font-size:.9rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--sand)}
+.menu__foot a:hover{color:var(--clay-lt)}
+body.locked{overflow:hidden}
+
+/* ---------- hero ---------- */
+.hero{min-height:min(82vh,820px)}
+.hero__bg img{object-position:50% 46%}
+.hero__scrim{background:
+  linear-gradient(106deg,rgba(20,13,10,.93) 0%,rgba(20,13,10,.74) 46%,rgba(20,13,10,.34) 100%),
+  linear-gradient(180deg,rgba(20,13,10,.34) 0%,rgba(20,13,10,0) 30%,rgba(27,18,16,.97) 100%)}
 .hero__in .eyebrow{color:var(--gold)}
 .hero__in .eyebrow::before{background:var(--gold)}
-.hero h1{max-width:13ch}
-.hero .lead{max-width:38ch;color:var(--sand)}
+.hero h1{font-size:var(--t-hero);font-weight:900;max-width:11ch}
+.hero .lead{max-width:36ch;color:var(--sand);margin-top:1.9rem}
+.hero__cta{margin-top:2.6rem}
 
-/* --- the invitation --- */
-.invite{padding-block:clamp(3.5rem,2rem + 5vw,6.5rem)}
-.invite__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,1rem + 4vw,5.5rem);align-items:start}
-@media(max-width:900px){.invite__grid{grid-template-columns:1fr;gap:2.2rem}}
-.invite h2{max-width:14ch}
-.invite p{color:var(--sand);max-width:46ch}
-.invite p strong{color:var(--cream-2)}
+/* ---------- the invitation ---------- */
+.invite{padding-block:clamp(4rem, 2.6rem + 6vw, 8rem)}
+.invite__grid{display:grid;grid-template-columns:1.02fr 1fr;
+  gap:clamp(2.4rem, 1.2rem + 5vw, 6.5rem);align-items:start}
+@media(max-width:920px){.invite__grid{grid-template-columns:1fr;gap:2.6rem}}
+.invite h2{max-width:11ch;font-weight:800}
+/* the fire ring sits whole in the empty corner, not cropped by it */
+.invite .f-glyph--br{width:clamp(210px, 23vw, 330px);bottom:7%;
+  right:clamp(-1.5rem, -1.5vw, 0rem)}
+@media(max-width:920px){.invite .f-glyph--br{bottom:2%;opacity:.10}}
+.invite__body p{color:var(--sand);max-width:44ch;font-size:calc(var(--t-body) * 1.04)}
+.invite__body p strong{color:var(--cream-2)}
+.invite__body p:first-child::first-letter{
+  font-family:var(--display);font-weight:900;font-size:3.4em;line-height:.78;
+  float:left;margin:.06em .12em 0 0;color:var(--clay-lt)}
 
-/* --- prompts --- */
-.prompts__t{margin-top:clamp(2.4rem,1.6rem + 2vw,3.6rem);font-family:var(--body);font-weight:800;
-  font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
-.prompts{list-style:none;padding:0;display:grid;gap:0;margin-top:1.2rem;border-top:1px solid var(--rule)}
-.prompts li{padding:1.15rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1.1rem;align-items:baseline;
-  font-size:1.05rem;color:var(--sand)}
-.prompts b{font-family:var(--display);font-weight:900;font-size:.95rem;color:var(--clay-lt);flex:none;
-  letter-spacing:.02em;min-width:1.6rem}
+.prompts__t{margin-top:clamp(2.2rem, 1.6rem + 2vw, 3.4rem);
+  font-family:var(--body);font-weight:800;font-size:.8rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sand)}
+.prompts{list-style:none;padding:0;margin-top:1.3rem;
+  display:grid;gap:0;border-top:1px solid var(--rule)}
+.prompts li{padding:1.25rem 0;border-bottom:1px solid var(--rule);
+  display:flex;gap:1.25rem;align-items:baseline;
+  font-size:1.08rem;line-height:1.5;color:var(--sand)}
+.prompts b{font-family:var(--display);font-weight:900;font-size:.92rem;
+  color:var(--clay-lt);flex:none;letter-spacing:.02em;min-width:1.7rem}
 
-/* ============ THE FORM ============ */
-.fire{background:var(--ink);border-block:1px solid var(--rule);
-  padding-block:clamp(3.5rem,2rem + 5vw,7rem)}
-.fire__head{text-align:center;margin-bottom:clamp(2.2rem,1.4rem + 2.4vw,3.6rem)}
-.fire__head .eyebrow{justify-content:center}
-.fire__head h2{margin-inline:auto;max-width:15ch}
-.fire__head p{margin:1.3rem auto 0;color:var(--sand);text-align:center;max-width:44ch;text-wrap:balance}
+/* ---------- a photograph of the real thing ---------- */
+.band{position:relative;border-block:1px solid var(--rule)}
+.band img{width:100%;height:clamp(300px, 40vh, 520px);object-fit:cover;object-position:50% 58%}
+.band::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(27,18,16,.5) 0%,rgba(27,18,16,.12) 34%,rgba(20,13,10,.86) 100%)}
+.band__cap{position:absolute;left:0;right:0;bottom:0;z-index:2;
+  padding-block:clamp(1.4rem, 1rem + 1.4vw, 2.2rem)}
+.band__cap p{font-family:var(--display);font-style:italic;font-weight:600;
+  font-size:clamp(1.05rem, .95rem + .6vw, 1.5rem);color:var(--cream);
+  max-width:40ch;line-height:1.35;margin:0;text-shadow:0 2px 18px rgba(20,13,10,.9)}
 
-.card--form{background:var(--bg-3);border:1px solid var(--rule);border-radius:18px;
-  padding:clamp(1.5rem,1rem + 2.4vw,3.2rem);max-width:760px;margin-inline:auto;
-  box-shadow:0 40px 90px -40px rgba(0,0,0,.7);position:relative;overflow:hidden}
-.card--form::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;
-  background:linear-gradient(90deg,var(--clay),var(--gold),var(--clay))}
+/* ---------- the form band ---------- */
+.fire{position:relative;isolation:isolate;background:var(--ink);
+  border-block:1px solid var(--rule);
+  padding-block:clamp(4rem, 2.6rem + 6vw, 8rem)}
+.fire__tex{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.fire__tex img{width:100%;height:100%;object-fit:cover;opacity:.075;
+  filter:contrast(1.25) saturate(.55) blur(2px);transform:scale(1.05)}
+.fire__head{text-align:center;margin-bottom:clamp(2.4rem, 1.6rem + 2.6vw, 4rem)}
+.fire__head h2{margin-inline:auto;max-width:13ch;font-weight:800}
+.fire__head p{margin:1.4rem auto 0;color:var(--sand);text-align:center;
+  max-width:42ch;text-wrap:balance;font-size:var(--t-lead);line-height:1.5;font-weight:500}
 
-.field{display:block;margin-bottom:1.9rem}
-.field__l{display:block;font-family:var(--body);font-weight:800;font-size:.82rem;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--clay-lt);margin-bottom:.7rem}
-.field__l span{color:var(--sand);font-weight:600;letter-spacing:.06em;text-transform:none;font-size:.86rem}
+/* three quiet promises under the card */
+.promises{display:grid;grid-template-columns:repeat(3,1fr);
+  gap:clamp(1.2rem, .8rem + 1.6vw, 2.4rem);
+  max-width:780px;margin:clamp(2.2rem, 1.6rem + 2vw, 3.4rem) auto 0}
+@media(max-width:640px){.promises{grid-template-columns:1fr;gap:1.3rem}}
+.promises div{border-top:2px solid var(--rule);padding-top:1rem}
+.promises b{display:block;font-family:var(--body);font-weight:800;font-size:.78rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt);margin-bottom:.45rem}
+.promises span{color:var(--sand);font-size:.98rem;line-height:1.5}
 
-.inp,.txt{
-  width:100%;font-family:var(--body);font-size:1.1rem;font-weight:450;line-height:1.6;color:var(--cream);
-  background:var(--bg);border:1px solid var(--rule);border-radius:10px;
-  padding:.95rem 1.1rem;transition:border-color .2s ease,background .2s ease,box-shadow .2s ease;
-}
-.txt{min-height:190px;resize:vertical;line-height:1.7}
-.inp::placeholder,.txt::placeholder{color:rgba(217,198,180,.5)}
-.inp:focus,.txt:focus{outline:none;border-color:var(--clay);background:var(--ink);
-  box-shadow:0 0 0 4px rgba(201,106,62,.14)}
+/* ---------- the address ---------- */
+.direct{text-align:center;padding-block:clamp(4.5rem, 2.6rem + 7vw, 9rem)}
+.direct h2{margin-inline:auto;max-width:13ch;font-weight:800}
+.direct > .wrap > p{margin:1.5rem auto 0;color:var(--sand);text-align:center;
+  max-width:44ch;text-wrap:pretty;font-size:calc(var(--t-body) * 1.04)}
+.direct__after{margin-top:clamp(1.6rem, 1.2rem + 1.4vw, 2.4rem);
+  font-size:.95rem;color:var(--sand);opacity:.8}
 
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
-.row2 .field{margin-bottom:0}
-@media(max-width:620px){.row2{grid-template-columns:1fr;gap:1.5rem}}
-
-/* checkboxes */
-.checks{margin-top:1.9rem;padding-top:1.7rem;border-top:1px solid var(--rule);display:grid;gap:1rem}
-.check{display:flex;gap:.9rem;align-items:flex-start;cursor:pointer;
-  font-size:1.02rem;line-height:1.5;color:var(--sand)}
-.check input{appearance:none;flex:none;width:1.35rem;height:1.35rem;margin-top:.12rem;
-  border:2px solid var(--rule);border-radius:5px;background:var(--bg);cursor:pointer;
-  transition:border-color .18s ease,background .18s ease}
-.check input:checked{background:var(--clay);border-color:var(--clay)}
-.check input:checked::after{content:"";display:block;width:.38rem;height:.72rem;
-  margin:.05rem auto 0;border:solid var(--on-clay);border-width:0 2.5px 2.5px 0;transform:rotate(42deg)}
-.check input:focus-visible{outline:2px solid var(--clay-lt);outline-offset:2px}
-.check b{color:var(--cream-2);font-weight:700}
-.check em{font-style:normal;color:var(--sand);opacity:.8}
-
-.send{margin-top:2.2rem;display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center}
-.send .btn{font-size:1.1rem}
-.send__note{font-size:.94rem;color:var(--sand);max-width:26ch;line-height:1.45}
-
-/* honeypot */
-.hp{position:absolute;left:-9999px;opacity:0;pointer-events:none}
-
-/* error */
-.err{display:none;margin-top:1.4rem;padding:1rem 1.2rem;border-radius:10px;
-  border:1px solid rgba(229,137,92,.4);background:rgba(201,106,62,.12);
-  font-size:1rem;color:var(--cream);max-width:none}
-.err a{color:var(--gold)}
-.is-err .err{display:block}
-
-/* sending state */
-.is-sending .btn--primary{opacity:.55;pointer-events:none}
-
-/* ============ THANK YOU ============ */
-.thanks{display:none;text-align:center;padding-block:clamp(1.5rem,1rem + 2vw,3rem)}
-.is-sent .form-live{display:none}
-.is-sent .thanks{display:block;animation:rise .7s cubic-bezier(.2,.7,.3,1) both}
-@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-.thanks__mark{width:74px;height:74px;margin:0 auto 1.8rem}
-.thanks h3{font-size:clamp(2rem,1.5rem + 2vw,3rem);font-weight:800;margin-bottom:1.1rem}
-.thanks p{color:var(--sand);margin-inline:auto;max-width:38ch;text-align:center}
-.thanks__sig{margin-top:2.2rem;font-family:var(--display);font-style:italic;font-weight:600;
-  font-size:1.25rem;color:var(--gold)}
-
-/* ============ MAILTO ============ */
-.direct{text-align:center;padding-block:clamp(4rem,2.5rem + 6vw,8rem)}
-.direct .eyebrow{justify-content:center}
-.direct h2{margin-inline:auto;max-width:15ch}
-.direct p{margin:1.4rem auto 0;color:var(--sand);text-align:center;max-width:42ch;text-wrap:pretty}
-.direct__mail{display:inline-block;margin-top:clamp(2.4rem,1.4rem + 3vw,4rem);
-  font-family:var(--display);font-weight:700;letter-spacing:-.032em;line-height:1.05;
-  font-size:clamp(1.45rem,.2rem + 4vw,3.4rem);
-  color:var(--gold);text-decoration:none;white-space:nowrap;max-width:100%;
-  border-bottom:2px solid transparent;padding-bottom:.12em;
-  transition:color .22s ease,border-color .22s ease}
-.direct__mail:hover{color:var(--clay-lt);border-bottom-color:var(--clay)}
-
-/* --- closing quote band --- */
+/* ---------- closing band ---------- */
 .state{position:relative;isolation:isolate;display:grid;align-items:center;
-  min-height:min(58vh,540px);overflow:hidden}
+  min-height:min(60vh,560px);overflow:hidden}
 .state__bg{position:absolute;inset:0;z-index:-2}
-.state__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.state__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 42%}
 .state::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(20,13,10,.66),rgba(20,13,10,.9))}
-.state__in{padding-block:clamp(3.5rem,2rem + 5vw,6.5rem);text-align:center}
-.state .pull{max-width:22ch;margin-inline:auto;font-size:clamp(1.75rem,1.2rem + 2.4vw,3.3rem);
-  font-weight:700;font-style:normal}
-.state cite{display:block;font-family:var(--body);font-style:normal;font-size:.88rem;font-weight:800;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-top:2rem}
+  background:linear-gradient(180deg,rgba(20,13,10,.62),rgba(20,13,10,.92))}
+.state__in{padding-block:clamp(3.5rem, 2rem + 5vw, 6.5rem);text-align:center}
+.state .pull{max-width:21ch;margin-inline:auto;font-style:normal;font-weight:700;
+  font-size:clamp(1.8rem, 1.2rem + 2.6vw, 3.4rem)}
+.state cite{display:block;font-family:var(--body);font-style:normal;font-size:.86rem;
+  font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-top:2.1rem}
+
+/* ---------- footer extras ---------- */
+.ftr__grid{grid-template-columns:1.5fr 1fr 1fr 1fr}
+@media(max-width:1000px){.ftr__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.ftr__grid{grid-template-columns:1fr}}
+.ftr__brand{margin-top:1.2rem;max-width:30ch}
 </style>
 </head>
 <body>
 
-<a href="#main" class="skip" style="position:absolute;left:-9999px">Skip to content</a>
+<a href="#main" class="skip" style="position:absolute;left:-9999px;top:0">Skip to content</a>
 
 <!-- ================= HEADER ================= -->
 <header class="hdr">
   <div class="wrap hdr__in">
     <a class="brand" href="/v2/">Tribe<span>Awaken</span></a>
-    <nav>
+    <nav aria-label="Primary">
       <ul class="nav">
-        <li><a href="/workshop/">The Retreat</a></li>
-        <li><a href="/teams/">For Teams</a></li>
-        <li><a href="/#leaders">Coaching</a></li>
+        <li><a href="/v2/">Home</a></li>
+        <li><a href="/v2/#human-performance">Human Performance</a></li>
+        <li><a href="/v2/#nation-building">Nation-Building</a></li>
+        <li><a href="/journal/">Journal</a></li>
         <li><a href="https://ancestralwatch.com">The Books</a></li>
-        <li><a href="/v2/circle/">The Circle</a></li>
+        <li><a href="/workshop/">Retreats</a></li>
+        <li><a href="/v2/circle/" aria-current="page">The Circle</a></li>
+        <li><a href="/v2/contact/">Contact</a></li>
       </ul>
     </nav>
-    <a class="btn btn--primary hdr__cta" href="#fire">Add to the fire</a>
+    <div class="hdr__end">
+      <a class="btn btn--primary hdr__cta" href="#fire">Add to the fire</a>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
   </div>
 </header>
+
+<!-- ================= FULL-SCREEN MENU ================= -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="wrap">
+    <div class="menu__top">
+      <a class="brand" href="/v2/">Tribe<span>Awaken</span></a>
+      <button class="menu__close" id="menuClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="menu__ls">
+      <li><a href="/v2/"><em>01</em> Home</a></li>
+      <li><a href="/v2/#human-performance"><em>02</em> Human Performance</a></li>
+      <li><a href="/v2/#nation-building"><em>03</em> Nation-Building</a></li>
+      <li><a href="/journal/"><em>04</em> Journal</a></li>
+      <li><a href="https://ancestralwatch.com"><em>05</em> The Books</a></li>
+      <li><a href="/workshop/"><em>06</em> Retreats</a></li>
+      <li><a href="/teams/"><em>07</em> For Teams</a></li>
+      <li><a href="/v2/#about"><em>08</em> About</a></li>
+      <li><a href="/v2/circle/"><em>09</em> The Circle</a></li>
+      <li><a href="/v2/contact/"><em>10</em> Contact</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="/ja/">日本語</a>
+      <a href="/lt/">Lietuvių</a>
+      <a href="/india/">India</a>
+      <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+    </div>
+  </div>
+</div>
 
 <main id="main">
 
 <!-- ================= HERO ================= -->
 <section class="hero">
-  <div class="hero__bg"><img src="/assets/img/1440/fire-circle.jpg" alt="A circle of people gathered around a fire in the redwoods" fetchpriority="high"></div>
+  <div class="hero__bg">
+    <img src="/assets/img/1440/fire-circle.jpg" alt="A circle of people gathered around a fire under the redwoods at dusk" fetchpriority="high">
+  </div>
   <div class="hero__scrim"></div>
   <div class="wrap hero__in">
     <p class="eyebrow">The Circle</p>
     <h1>Add something to the&nbsp;fire.</h1>
-    <p class="lead">A place to leave a thought, a reflection, or a note from wherever you are reading this. It comes straight to me.</p>
+    <p class="lead">Somewhere to set down a thought, a reflection, or a note from wherever you happen to be reading. It comes straight to me.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#fire">Say your piece <span aria-hidden="true">→</span></a>
+      <a class="btn btn--ghost" href="#address">Or write me a letter</a>
+    </div>
   </div>
 </section>
 
 <!-- ================= INVITATION ================= -->
-<section class="sec invite">
+<section class="sec invite f-glyphed">
+  <!-- rock art: ring of figures around a fire, kept faint -->
+  <div class="f-glyph f-glyph--br" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+      <circle cx="71.7" cy="62.1" r="4.1"/>
+      <path d="M 64.9,78.7 L 66.2,70 Q 71.7,64.5 77.2,70 L 78.4,78.7"/>
+      <circle cx="128.3" cy="62.1" r="4.1"/>
+      <path d="M 121.6,78.7 L 122.8,70 Q 128.3,64.5 133.8,70 L 135.1,78.7"/>
+      <circle cx="31.6" cy="79.6" r="4.6"/>
+      <path d="M 24.1,98.2 L 25.5,88.5 Q 31.6,82.3 37.8,88.5 L 39.2,98.2"/>
+      <circle cx="168.4" cy="79.6" r="4.6"/>
+      <path d="M 160.8,98.2 L 162.2,88.5 Q 168.4,82.3 174.5,88.5 L 175.9,98.2"/>
+      <circle cx="168.4" cy="104.5" r="5.3"/>
+      <path d="M 159.7,125.8 L 161.3,114.6 Q 168.4,107.5 175.4,114.6 L 177,125.8"/>
+      <circle cx="31.6" cy="104.5" r="5.3"/>
+      <path d="M 23,125.8 L 24.6,114.6 Q 31.6,107.5 38.7,114.6 L 40.3,125.8"/>
+      <circle cx="128.3" cy="122" r="5.8"/>
+      <path d="M 118.9,145.3 L 120.6,133.1 Q 128.3,125.3 136,133.1 L 137.7,145.3"/>
+      <circle cx="71.7" cy="122" r="5.8"/>
+      <path d="M 62.3,145.3 L 64,133.1 Q 71.7,125.3 79.4,133.1 L 81.1,145.3"/>
+      <path d="M 97,40 C 93,62 79,72 79,90 C 79,106 89,118 101,118 C 114,118 123,107 123,92 C 123,79 113,71 107,56 C 106,68 109,77 106,85 C 100,74 97,57 97,40 Z"/>
+      <path d="M 100,74 C 96,86 92,90 92,99 C 92,107 96,111 101,111 C 106,111 110,107 110,99 C 110,90 104,86 100,74 Z" opacity="0.7"/>
+      <line x1="84" y1="130" x2="116" y2="120"/>
+      <line x1="84" y1="120" x2="116" y2="130"/>
+      <line x1="80" y1="126" x2="120" y2="126" opacity="0.6"/>
+    </svg>
+  </div>
+
   <div class="wrap invite__grid rv">
     <div>
       <p class="eyebrow">Why this page exists</p>
       <h2>A fire is not an audience.</h2>
-
-      <p class="prompts__t">If you want a place to start:</p>
+      <p class="prompts__t">If you'd like somewhere to start</p>
       <ul class="prompts">
         <li><b>01</b><span>The line that stopped you — and why it stopped you.</span></li>
         <li><b>02</b><span>Something you are carrying right now.</span></li>
         <li><b>03</b><span>Where you're reading from, and what the land looks like there.</span></li>
+        <li><b>04</b><span>A question you'd ask if we were sitting down.</span></li>
       </ul>
     </div>
-    <div>
+    <div class="invite__body">
       <p>At a council fire nobody performs. People arrive carrying something, they set it down in the middle where everyone can see it, and the fire is bigger for it. Then somebody else speaks.</p>
-      <p>That is what this is. <strong>Not a mailing list. Not a comment section.</strong> A place to say the thing the book brought up, or the thing you are carrying this week, or simply where you are and what the weather is doing there.</p>
+      <p>That is what this is. <strong>Not a mailing list. Not a comment section.</strong> A place to say the thing the book brought up, or the thing you have been carrying this week, or simply where you are and what the weather is doing there.</p>
       <p>I read every one of them. I answer more of them than you would expect.</p>
     </div>
   </div>
 </section>
 
+<!-- ================= A PHOTOGRAPH OF THE REAL THING ================= -->
+<section class="band">
+  <img src="/assets/img/tony/listeners-at-dusk.jpg" alt="Elders and young people seated together in a circle outdoors, listening" loading="lazy">
+  <div class="wrap band__cap">
+    <p class="rv">This is the room the page is imitating. Everyone facing in. Nobody at the front.</p>
+  </div>
+</section>
+
 <!-- ================= THE FORM ================= -->
-<section class="fire" id="fire">
+<section class="fire f-glyphed" id="fire">
+  <div class="fire__tex" aria-hidden="true">
+    <img src="/assets/img/land/sandstone-slot.jpg" alt="" loading="lazy">
+  </div>
+  <!-- rock art: sunrise over a mesa -->
+  <div class="f-glyph f-glyph--r" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+      <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+      <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+      <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+      <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+      <line x1="102" y1="118" x2="102" y2="110"/>
+      <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+      <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+      <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+      <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+      <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+      <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+      <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+      <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+      <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+      <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+      <line x1="6" y1="152" x2="194" y2="152"/>
+    </svg>
+  </div>
+
   <div class="wrap">
 
     <div class="fire__head rv">
@@ -230,91 +331,113 @@
       <p>No account. No confirmation email. Nothing to join. You write, I read.</p>
     </div>
 
-    <div class="card--form rv" id="card">
+    <!-- ---- the form. Engine: /v2/assets/forms.js ---- -->
+    <div class="f-shell rv" data-mail-shell>
 
-      <!-- ---------- LIVE FORM ---------- -->
-      <div class="form-live">
-        <form id="circleForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+      <form class="f-form" data-mail-form data-subject="Someone added to the fire">
 
-          <!-- filled in by the script from window.CIRCLE.ACCESS_KEY -->
-          <input type="hidden" name="access_key" id="accessKey" value="">
-          <input type="hidden" name="subject" value="🔥 Someone added to the fire">
-          <input type="hidden" name="from_name" value="The Circle · ancestralwatch.com">
-          <!-- honeypot: humans never see it, bots fill it -->
-          <label class="hp" aria-hidden="true">Leave this empty
-            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off">
+        <div class="f-field">
+          <label class="f-label" for="thought">Your thought <span class="f-req" aria-hidden="true">*</span></label>
+          <textarea class="f-textarea" id="thought" name="message" required
+                    aria-describedby="thought-err"
+                    data-error="There's nothing here yet — even three words is enough."
+                    placeholder="Whatever you came here to say. Long or three words — both are welcome."></textarea>
+          <p class="f-err-msg" id="thought-err"></p>
+        </div>
+
+        <div class="f-row">
+          <div class="f-field">
+            <label class="f-label" for="name">Your name <span class="f-opt">(or don't)</span></label>
+            <input class="f-input" type="text" id="name" name="name" autocomplete="name"
+                   aria-describedby="name-err" placeholder="However you'd like to be known">
+            <p class="f-err-msg" id="name-err"></p>
+          </div>
+          <div class="f-field">
+            <label class="f-label" for="email">Your email <span class="f-opt">(optional)</span></label>
+            <input class="f-input" type="email" id="email" name="email" autocomplete="email"
+                   inputmode="email" aria-describedby="email-err" placeholder="Only if you'd like a reply">
+            <p class="f-err-msg" id="email-err"></p>
+          </div>
+        </div>
+
+        <div class="f-checks">
+          <label class="f-check">
+            <input type="checkbox" name="keep_in_touch" value="Yes — send word now and then">
+            <span><b>Send me word now and then.</b> <em>A new book, the occasional letter, a seat opening at a retreat. Rarely — and never sold or handed on.</em></span>
           </label>
-
-          <label class="field" for="thought">
-            <span class="field__l">Your thought</span>
-            <textarea class="txt" id="thought" name="message" required
-              placeholder="Whatever you came here to say. Long or three words — both are welcome."></textarea>
+          <label class="f-check">
+            <input type="checkbox" name="may_share" value="Yes — may be shared anonymously">
+            <span><b>You may share this anonymously.</b> <em>Sometimes a reader says a thing better than I could. I'd never use your name without asking first.</em></span>
           </label>
+        </div>
 
-          <div class="row2">
-            <label class="field" for="name">
-              <span class="field__l">Your name <span>(or don't)</span></span>
-              <input class="inp" type="text" id="name" name="name" autocomplete="name" placeholder="However you'd like to be known">
-            </label>
+        <div class="f-actions">
+          <button class="btn btn--primary" type="submit">
+            Add it to the fire
+            <span class="f-arrow" aria-hidden="true">→</span>
+            <span class="f-spin" aria-hidden="true"></span>
+          </button>
+          <p class="f-note">Straight to my inbox. Nothing else happens.</p>
+        </div>
 
-            <label class="field" for="email">
-              <span class="field__l">Your email <span>(optional)</span></span>
-              <input class="inp" type="email" id="email" name="email" autocomplete="email" placeholder="Only if you'd like a reply">
-            </label>
-          </div>
+        <p class="f-alert" role="alert">
+          That didn't go through. Send it to
+          <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+          instead — it reaches exactly the same place.
+        </p>
+      </form>
 
-          <div class="checks">
-            <label class="check">
-              <input type="checkbox" name="keep_in_touch" value="Yes — send word now and then">
-              <span><b>Send me word now and then.</b> <em>New books, the occasional letter, a seat opening at a retreat. Rarely, and never sold or handed on.</em></span>
-            </label>
-            <label class="check">
-              <input type="checkbox" name="may_share" value="Yes — may be shared anonymously">
-              <span><b>You may share this anonymously.</b> <em>Sometimes a reader says a thing better than I could. I'd never use your name without asking.</em></span>
-            </label>
-          </div>
-
-          <div class="send">
-            <button class="btn btn--primary" type="submit" id="sendBtn">Add it to the fire <span aria-hidden="true">→</span></button>
-            <p class="send__note">It goes straight to my inbox. Nothing else happens.</p>
-          </div>
-
-          <p class="err" id="err" role="alert">That didn't go through. Write to
-            <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a> instead — it always works.</p>
-        </form>
-      </div>
-
-      <!-- ---------- THANK YOU ---------- -->
-      <div class="thanks" id="thanks" role="status" aria-live="polite">
-        <svg class="thanks__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true">
-          <circle cx="50" cy="50" r="46" stroke="#C96A3E" stroke-width="2" opacity=".45"/>
+      <!-- ---- the success state, shown in place ---- -->
+      <div class="f-done" role="status" aria-live="polite">
+        <svg class="f-done__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false">
+          <circle cx="50" cy="50" r="46" stroke="#C96A3E" stroke-width="2" opacity=".4"/>
           <circle cx="50" cy="50" r="33" stroke="#D9A25F" stroke-width="2" opacity=".7"/>
-          <path d="M50 64c-7 0-12-5-12-12 0-8 6-11 6-19 0 0 8 3 8 11 2-3 2-7 2-7s8 6 8 15c0 7-5 12-12 12Z"
-                fill="#E5895C"/>
+          <path d="M50 66c-8 0-13-6-13-13 0-9 7-12 7-21 0 0 9 3 9 12 2-3 2-8 2-8s9 7 9 17c0 8-6 13-14 13Z" fill="#E5895C"/>
         </svg>
         <h3>It's on the fire.</h3>
         <p>Thank you for that. It landed in my inbox exactly as you wrote it, and I'll read it myself.</p>
-        <p style="margin-top:1rem">If you left an email, don't be surprised to hear back.</p>
-        <p class="thanks__sig">— Tony</p>
+        <p>If you left an address, don't be surprised to hear back.</p>
+        <p class="f-done__sig">— Tony</p>
       </div>
-
     </div>
+
+    <div class="promises rv">
+      <div><b>One inbox</b><span>It goes to wisdom@ancestralwatch.com and stops there.</span></div>
+      <div><b>No list</b><span>Nothing is added anywhere unless you tick the box yourself.</span></div>
+      <div><b>No machine</b><span>No auto-reply, no drip sequence, no confirmation dance.</span></div>
+    </div>
+
   </div>
 </section>
 
-<!-- ================= DIRECT ================= -->
-<section class="sec direct">
+<!-- ================= THE ADDRESS ================= -->
+<section class="sec direct f-glyphed" id="address">
+  <!-- rock art: concentric rings from a stone -->
+  <div class="f-glyph f-glyph--c" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+      <ellipse cx="100" cy="116" rx="36" ry="12" opacity="0.95"/>
+      <ellipse cx="100" cy="116" rx="56" ry="21" opacity="0.75"/>
+      <ellipse cx="100" cy="116" rx="76" ry="30" opacity="0.55"/>
+      <ellipse cx="100" cy="116" rx="94" ry="38" opacity="0.35"/>
+      <path d="M 78,89 C 78,79 88,73 101,73 C 113,73 121,79 121,88 C 121,96 111,101 100,101 C 87,101 78,97 78,89 Z"/>
+      <path d="M 85,84 C 89,78 95,75 103,76" opacity="0.55"/>
+    </svg>
+  </div>
+
   <div class="wrap wrap--tight rv">
     <p class="eyebrow eyebrow--center">Or the old way</p>
     <h2>Write me a letter.</h2>
     <p>If you'd rather use your own mail — or you have something long, or private, or with a photograph attached — send it here. This address always works.</p>
-    <a class="direct__mail" href="mailto:wisdom@ancestralwatch.com?subject=A%20note%20for%20the%20fire">wisdom@ancestralwatch.com</a>
+    <a class="f-mail" href="mailto:wisdom@ancestralwatch.com?subject=A%20note%20for%20the%20fire">wisdom@ancestralwatch.com</a>
+    <p class="direct__after">Same inbox. Same person reading it.</p>
   </div>
 </section>
 
-<!-- ================= CLOSING BAND ================= -->
+<!-- ================= CLOSING ================= -->
 <section class="state">
-  <div class="state__bg"><img src="/assets/img/canyon-family.jpg" alt="Three generations walking the red rock above a canyon at sunrise" loading="lazy"></div>
+  <div class="state__bg">
+    <img src="/assets/img/canyon-family.jpg" alt="Three generations walking the red rock above a canyon at first light" loading="lazy">
+  </div>
   <div class="wrap state__in rv">
     <p class="pull">Someone kept the fire before you got here. That is the only reason there is one.</p>
     <cite>The Ancestral Watch</cite>
@@ -329,23 +452,30 @@
     <div class="ftr__grid">
       <div>
         <a class="brand" href="/v2/">Tribe<span>Awaken</span></a>
-        <p class="muted" style="margin-top:1.1rem;max-width:30ch">Ancestral intelligence for a regenerating world.</p>
+        <p class="muted ftr__brand">Ancestral intelligence for a regenerating world.</p>
       </div>
       <div>
         <h4>Work together</h4>
         <ul>
           <li><a href="/workshop/">The Canyon Within</a></li>
           <li><a href="/teams/">The Far Messenger Program</a></li>
-          <li><a href="/#leaders">1:1 Coaching</a></li>
-          <li><a href="/diagnostic/">The Diagnostic</a></li>
+          <li><a href="/v2/#human-performance">Human Performance</a></li>
+          <li><a href="/v2/#nation-building">Nation-Building</a></li>
         </ul>
       </div>
       <div>
-        <h4>More</h4>
+        <h4>Read, watch, listen</h4>
         <ul>
+          <li><a href="/journal/">The Journal</a></li>
           <li><a href="https://ancestralwatch.com">The Books</a></li>
+          <li><a href="/v2/#listen">The Warrior's Code</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Say something</h4>
+        <ul>
           <li><a href="/v2/circle/">The Circle</a></li>
-          <li><a href="/#leaders">About Tony</a></li>
+          <li><a href="/v2/contact/">Contact &amp; enquiries</a></li>
           <li><a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a></li>
         </ul>
       </div>
@@ -357,79 +487,18 @@
   </div>
 </footer>
 
+<script src="/v2/assets/forms.js"></script>
 <script>
-/* ---------- reveal ---------- */
+/* ---------- menu ---------- */
 (function(){
-  var els = document.querySelectorAll('.rv');
-  if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion:reduce)').matches){
-    els.forEach(function(e){e.classList.add('in')}); return;
-  }
-  var io = new IntersectionObserver(function(es){
-    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-  },{rootMargin:'0px 0px -8% 0px',threshold:.08});
-  els.forEach(function(e){io.observe(e)});
-})();
-
-/* ---------- the form ---------- */
-(function(){
-  var C     = window.CIRCLE || {};
-  var form  = document.getElementById('circleForm');
-  var card  = document.getElementById('card');
-  var keyIn = document.getElementById('accessKey');
-  var btn   = document.getElementById('sendBtn');
-  if(!form) return;
-
-  /* preview the thank-you screen any time by adding ?sent=1 to the URL */
-  if(location.search.indexOf('sent=1') > -1){ card.classList.add('is-sent'); }
-
-  var keySet = C.ACCESS_KEY && C.ACCESS_KEY.indexOf('PASTE-') !== 0;
-  if(keySet){ keyIn.value = C.ACCESS_KEY; form.action = C.ENDPOINT; }
-
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    card.classList.remove('is-err');
-
-    var thought = form.message.value.trim();
-    if(!thought){ form.message.focus(); form.message.setAttribute('aria-invalid','true'); return; }
-    form.message.removeAttribute('aria-invalid');
-
-    /* --- no key yet: fall back to a pre-written email so the page still works --- */
-    if(!keySet){
-      var body = thought
-        + '\n\n— ' + (form.name.value.trim() || 'a reader')
-        + (form.email.value.trim() ? '\n' + form.email.value.trim() : '')
-        + (form.keep_in_touch.checked ? '\n\n(Please send me word now and then.)' : '');
-      window.location.href = 'mailto:' + (C.INBOX || 'wisdom@ancestralwatch.com')
-        + '?subject=' + encodeURIComponent('A note for the fire')
-        + '&body=' + encodeURIComponent(body);
-      setTimeout(function(){ card.classList.add('is-sent'); }, 700);
-      return;
-    }
-
-    /* --- normal path --- */
-    card.classList.add('is-sending');
-    btn.textContent = 'Sending…';
-
-    var data = Object.fromEntries(new FormData(form));
-    fetch(C.ENDPOINT, {
-      method:'POST',
-      headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body: JSON.stringify(data)
-    })
-    .then(function(r){ return r.json(); })
-    .then(function(j){
-      card.classList.remove('is-sending');
-      if(j && j.success){
-        card.classList.add('is-sent');
-        document.getElementById('thanks').scrollIntoView({behavior:'smooth',block:'center'});
-      } else { throw new Error('rejected'); }
-    })
-    .catch(function(){
-      card.classList.remove('is-sending');
-      card.classList.add('is-err');
-      btn.innerHTML = 'Try again <span aria-hidden="true">→</span>';
-    });
-  });
+  var b=document.getElementById('burger'),m=document.getElementById('menu'),c=document.getElementById('menuClose');
+  if(!b||!m) return;
+  function open(){m.classList.add('open');b.setAttribute('aria-expanded','true');document.body.classList.add('locked')}
+  function shut(){m.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.classList.remove('locked')}
+  b.addEventListener('click',function(){m.classList.contains('open')?shut():open()});
+  if(c) c.addEventListener('click',shut);
+  m.addEventListener('click',function(e){if(e.target.tagName==='A') shut()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape') shut()});
 })();
 </script>
 </body>

@@ -538,8 +538,9 @@ body.locked{overflow:hidden}
 .record{display:grid;grid-template-columns:.85fr 1.15fr;
   gap:clamp(2rem, 1.2rem + 3.4vw, 5rem);align-items:center}
 @media(max-width:900px){.record{grid-template-columns:1fr}}
-.record__ph{border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:var(--bg-3)}
-.record__ph img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.record__ph{border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:var(--bg-3)}
+.record__ph img{width:100%;height:100%;object-fit:cover;object-position:50% 24%}
+@media(max-width:900px){.record__ph{aspect-ratio:4/5;max-width:420px}}
 .record__body{margin-top:clamp(1.6rem, 1.2rem + 1.4vw, 2.4rem)}
 .record p{max-width:52ch}
 
@@ -565,6 +566,111 @@ body.locked{overflow:hidden}
 .trad__sym{display:block;width:clamp(66px, 6vw, 92px);height:auto;
   margin:clamp(1.4rem, 1rem + 1.2vw, 2rem) 0 1.2rem;
   color:rgba(230,180,140,.58);stroke-width:3.4;overflow:visible}
+
+/* ================= OPEN NOW — the retreat and the books ================= */
+.now{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.4rem, .8rem + 2vw, 2.6rem)}
+@media(max-width:900px){.now{grid-template-columns:1fr}}
+.now__c{position:relative;isolation:isolate;overflow:hidden;border-radius:16px;
+  border:1px solid var(--rule);background:var(--bg-3);text-decoration:none;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  min-height:clamp(430px, 56vh, 620px);
+  padding:clamp(1.8rem, 1.2rem + 2.4vw, 3.2rem);transition:transform .3s ease}
+.now__c:hover{transform:translateY(-4px)}
+.now__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+  object-position:50% 32%;transition:transform .6s ease}
+.now__c:hover .now__bg{transform:scale(1.04)}
+.now--ph::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(20,13,10,.24) 0%,rgba(20,13,10,.62) 34%,
+    rgba(20,13,10,.9) 62%,rgba(20,13,10,.97) 100%)}
+.now--books{background:var(--ink)}
+.now__k{font-size:.79rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.1rem}
+.now__c h3{font-size:clamp(2rem, 1.4rem + 2.5vw, 3.2rem);font-weight:800;
+  letter-spacing:-.036em;line-height:1;margin-bottom:1rem}
+.now__c p{color:var(--sand);max-width:34ch;margin-bottom:1.7rem}
+.now__meta{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;max-width:none;
+  font-size:.77rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--cream);margin-bottom:1.8rem}
+.now__covers{display:flex;gap:clamp(.9rem, .6rem + 1vw, 1.7rem);align-items:flex-start;
+  margin-bottom:auto;padding-bottom:clamp(1.8rem, 1.2rem + 2vw, 3rem)}
+.now__covers img{width:clamp(108px, 13vw, 172px);border-radius:5px;
+  box-shadow:0 30px 66px -22px rgba(0,0,0,.9);transition:transform .5s ease}
+.now__covers img:nth-child(2){margin-top:clamp(1rem, .6rem + 1.6vw, 2.2rem)}
+.now__c:hover .now__covers img{transform:translateY(-5px)}
+
+/* ================= ROOMS — speaking & teaching proof ================= */
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);
+  gap:clamp(1.4rem, .9rem + 1.6vw, 2.2rem) clamp(1rem, .6rem + 1.4vw, 1.8rem)}
+@media(max-width:860px){.rooms{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.rooms{grid-template-columns:1fr}}
+.rooms figure{margin:0}
+.rooms img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;
+  border-radius:12px;border:1px solid var(--rule);background:var(--bg-3)}
+.rooms figcaption{margin-top:.95rem;font-size:.77rem;font-weight:800;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--sand);line-height:1.5}
+.rooms__act{margin-top:clamp(2.6rem, 1.8rem + 2.4vw, 4rem);
+  display:flex;flex-wrap:wrap;gap:1.2rem 2.4rem;align-items:center}
+
+/* ================= DIPTYCH — the gatherings ================= */
+.dip{display:grid;grid-template-columns:1fr 1fr;border-block:1px solid var(--rule);
+  background:var(--ink)}
+.dip img{width:100%;height:clamp(330px, 50vh, 620px);object-fit:cover;display:block}
+.dip img:first-child{border-right:1px solid var(--rule);object-position:50% 46%}
+@media(max-width:760px){
+  .dip{grid-template-columns:1fr}
+  .dip img{height:64vw;max-height:420px}
+  .dip img:first-child{border-right:0;border-bottom:1px solid var(--rule)}
+}
+
+/* ================= ARCHIVE STRIP ================= */
+.arch{display:grid;grid-template-columns:repeat(6,1fr);border-bottom:1px solid var(--rule);
+  background:var(--ink)}
+.arch img{width:100%;height:clamp(128px, 12vw, 205px);object-fit:cover;display:block;
+  border-left:1px solid var(--rule)}
+.arch img:first-child{border-left:0}
+@media(max-width:900px){
+  .arch{grid-template-columns:repeat(3,1fr)}
+  .arch img{border-bottom:1px solid var(--rule)}
+  .arch img:nth-child(3n+1){border-left:0}
+  .arch img:nth-child(n+4){border-bottom:0}
+}
+@media(max-width:520px){
+  .arch{grid-template-columns:1fr 1fr}
+  .arch img{border-left:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .arch img:nth-child(odd){border-left:0}
+  .arch img:nth-child(n+5){border-bottom:0}
+}
+
+/* ================= FIELD MOSAIC — in the field ================= */
+.field{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(5,1fr);
+  border-block:1px solid var(--rule)}
+.field img{width:100%;height:clamp(150px, 13.5vw, 244px);object-fit:cover;display:block;
+  border-left:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.field img:nth-child(5n+1){border-left:0}
+.field img:nth-child(n+6){border-bottom:0}
+.field::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(20,13,10,.3) 0%,rgba(20,13,10,.05) 42%,
+    rgba(20,13,10,.05) 58%,rgba(20,13,10,.36) 100%)}
+@media(max-width:1040px){
+  .field{grid-template-columns:1fr 1fr}
+  .field img{border-left:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .field img:nth-child(odd){border-left:0}
+  .field img:nth-child(n+9){border-bottom:0}
+}
+
+/* ================= BOOK BAND ================= */
+.bookband{position:relative;isolation:isolate;overflow:hidden;display:grid;align-items:center;
+  min-height:clamp(420px, 58vh, 640px);border-block:1px solid var(--rule)}
+.bookband__bg{position:absolute;inset:0;z-index:-2}
+.bookband__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 46%}
+.bookband::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(96deg,rgba(20,13,10,.95) 0%,rgba(20,13,10,.86) 38%,
+    rgba(20,13,10,.5) 72%,rgba(20,13,10,.28) 100%)}
+.bookband__in{padding-block:clamp(3.4rem, 2.2rem + 4vw, 5.8rem)}
+.bookband h2{max-width:15ch}
+.bookband p{color:var(--sand);max-width:44ch;margin-top:1.5rem}
+.bookband__act{margin-top:clamp(2.2rem, 1.6rem + 2vw, 3.2rem);
+  display:flex;flex-wrap:wrap;gap:1rem 2.2rem;align-items:center}
 </style>
 </head>
 <body>
@@ -670,9 +776,9 @@ body.locked{overflow:hidden}
     <p class="lead">Human performance for the people who carry things. Nation-building for the places they carry them to. Thirty years of practice, braided from three traditions.</p>
     <div class="hero__cta">
       <a class="btn btn--primary" href="/workshop/">Reserve your seat <span aria-hidden="true">→</span></a>
-      <a class="btn btn--ghost" href="/v2/#journal">Read the journal</a>
+      <a class="btn btn--ghost" href="https://ancestralwatch.com">Read the books</a>
     </div>
-    <p class="hero__note">The Canyon Within · Aug 28–30 · 1440 Multiversity · <a href="/workshop/">eighteen seats</a></p>
+    <p class="hero__note">The Canyon Within · Aug 28–30 · 1440 Multiversity · <a href="/workshop/">eighteen seats</a> · or <a href="/v2/#journal">read the journal</a></p>
   </div>
 </section>
 
@@ -688,6 +794,41 @@ body.locked{overflow:hidden}
   </div>
 </section>
 <div class="weave" aria-hidden="true"><svg><rect width="100%" height="28" fill="url(#wv)"/></svg></div>
+
+<!-- ================= OPEN NOW — retreat + books ================= -->
+<section class="sec" id="open-now" style="padding-bottom:clamp(3rem, 2rem + 3vw, 5rem)">
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Open now</p>
+        <h2 class="head">Two doors are open today.</h2>
+      </div>
+      <p>One is three days in the redwoods with eighteen people. The other costs the price of a paperback and you can start it tonight.</p>
+    </div>
+
+    <div class="now rv">
+      <a class="now__c now--ph" href="/workshop/">
+        <img class="now__bg" src="/assets/img/1440/redwood-touch.jpg" alt="Tony Skrelūnas resting a hand on the bark of a redwood at 1440 Multiversity" style="object-position:56% 34%" loading="lazy">
+        <p class="now__k">The retreat · 18 seats</p>
+        <h3>The Canyon Within</h3>
+        <p class="now__meta"><span>Aug 28–30</span><span>1440 Multiversity</span><span>Scotts Valley, CA</span></p>
+        <p>Three days to change the frequency you live at — breath, sound, land, and food cooked as medicine. Most arrive alone. Nobody leaves alone.</p>
+        <span class="btn btn--primary" style="align-self:flex-start">Reserve your seat <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="now__c now--books" href="https://ancestralwatch.com">
+        <div class="now__covers">
+          <img src="/assets/img/stone-breath-cover.jpg" alt="Stone Breath — book one of the Ancestral Watch series" loading="lazy">
+          <img src="/assets/img/council-fire-cover.jpg" alt="The Council Fire — book three of the Ancestral Watch series" loading="lazy">
+        </div>
+        <p class="now__k">The novels · Out now</p>
+        <h3>The Ancestral Watch</h3>
+        <p><em>Stone Breath</em>, then <em>The Council Fire</em>. The same tools, carried the oldest way there is — by telling you what happened to someone.</p>
+        <span class="arrow">Read the series <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
 
 <!-- ================= TWO PILLARS ================= -->
 <section class="hasglyph sec">
@@ -733,7 +874,7 @@ body.locked{overflow:hidden}
   <div class="tex__i"><img src="/assets/img/kintsugi-texture.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="wrap origin rv">
     <div class="origin__img">
-      <img src="/assets/img/1440/redwood-touch.jpg" alt="Tony Skrelūnas resting a hand on the bark of a redwood" loading="lazy">
+      <img src="/assets/img/tony/portrait-standing.jpg" alt="Tony Skrelūnas standing with his arms folded in a room with a red adobe fireplace" style="object-position:50% 34%" loading="lazy">
     </div>
     <div>
       <p class="eyebrow">The comeback</p>
@@ -855,9 +996,9 @@ body.locked{overflow:hidden}
   <div class="wrap sec__intro rv" style="margin-bottom:0">
     <div>
       <p class="eyebrow">Work with Tony</p>
-      <h2 class="head--wide">Four ways in. Now open worldwide.</h2>
+      <h2 class="head--wide">Five ways in. Now open worldwide.</h2>
     </div>
-    <p>Retreats, team immersives, private coaching, and advisory work — delivered across the U.S., Japan, the Baltics, and India.</p>
+    <p>Retreats, team immersives, private coaching, advisory work, and the keynote — delivered across the U.S., Japan, the Baltics, and India.</p>
   </div>
 </section>
 
@@ -887,7 +1028,7 @@ body.locked{overflow:hidden}
 
   <!-- 3 — COACHING -->
   <article class="row rv">
-    <div class="row__media"><img src="/assets/img/world/japan-stone-bridge-bamboo.jpg" alt="A stone bridge over water in a Japanese garden" loading="lazy"></div>
+    <div class="row__media"><img src="/assets/img/tony/portrait-gallery.jpg" alt="Tony Skrelūnas standing in front of a wall of Diné line drawings" style="object-position:50% 28%" loading="lazy"></div>
     <div class="row__body">
       <p class="row__meta"><b>One to one</b> · Human performance</p>
       <h3>Coaching for leaders</h3>
@@ -898,15 +1039,96 @@ body.locked{overflow:hidden}
 
   <!-- 4 — ADVISORY -->
   <article class="row row--flip rv">
-    <div class="row__media"><img src="/assets/img/tony-podium.jpg" alt="Tony Skrelūnas speaking at an outdoor podium below red rock" loading="lazy"></div>
+    <div class="row__media"><img src="/assets/img/tony/presenting-slides.jpg" alt="Tony Skrelūnas presenting an economic transition plan to a seated hall" style="object-position:50% 26%" loading="lazy"></div>
     <div class="row__body">
-      <p class="row__meta"><b>Advisory &amp; speaking</b> · Governments, tribes, companies</p>
-      <h3>Nation-building &amp; keynotes</h3>
-      <p>Governance restructuring, community enterprise, energy and land strategy — plus keynotes and commencement addresses. The same four-capital audit, run at the scale of a nation instead of a nervous system.</p>
+      <p class="row__meta"><b>Advisory</b> · Governments, communities, companies</p>
+      <h3>Nation-building</h3>
+      <p>Governance restructuring, community enterprise, energy and land strategy. The same four-capital audit, run at the scale of a nation instead of a nervous system — and run in the room, not in a deck.</p>
       <div class="row__act"><a class="arrow" href="mailto:wisdom@ancestralwatch.com">Start a conversation <span aria-hidden="true">→</span></a></div>
     </div>
   </article>
 
+  <!-- 5 — KEYNOTES -->
+  <article class="row rv">
+    <div class="row__media"><img src="/assets/img/tony/speaking-mic-seal.jpg" alt="Tony Skrelūnas mid-sentence beside a podium bearing an official seal" style="object-position:50% 24%" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>Keynotes &amp; addresses</b> · Conferences, campuses, communities</p>
+      <h3>The keynote</h3>
+      <p>Commencement addresses, conference keynotes, community halls with folding chairs. Same talk either way: what the oldest economies on earth knew about wealth, and what it would cost us to remember it.</p>
+      <div class="row__act"><a class="btn btn--primary" href="mailto:wisdom@ancestralwatch.com">Invite Tony to speak <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+
+</div>
+
+<!-- ================= ROOMS — speaking & teaching ================= -->
+<section class="sec sec--alt" id="speaking">
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Speaking &amp; teaching</p>
+        <h2 class="head">Thirty years of rooms.</h2>
+      </div>
+      <p>Community halls, conference halls, university stages, gymnasiums, and a folding table with a flip chart on it. The talk changes. The arithmetic underneath it does not.</p>
+    </div>
+
+    <div class="rooms rv">
+      <figure>
+        <img src="/assets/img/tony/speaking-podium-sash.jpg" alt="Tony Skrelūnas speaking from a podium under an open tent, one arm raised" loading="lazy">
+        <figcaption>Under the tent · the open-air address</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/img/tony/speaking-stage-studio.jpg" alt="Tony Skrelūnas on a conference stage, his titles projected on the screen behind him" style="object-position:50% 8%" loading="lazy">
+        <figcaption>The conference stage</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/img/tony/speaking-outdoor-audience.jpg" alt="An audience seated outdoors in rows, listening to a speaker" loading="lazy">
+        <figcaption>The room, from the back</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/img/tony/speaking-outdoor-mic.jpg" alt="Tony Skrelūnas speaking with a handheld microphone outside a community building" loading="lazy">
+        <figcaption>Community house, no stage</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/img/tony/facilitating-flipcharts.jpg" alt="Tony Skrelūnas facilitating a workshop beside a flip chart" loading="lazy">
+        <figcaption>Flip chart and folding tables</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/img/tony/presenting-group.jpg" alt="A small group seated in a lodge room watching a presentation" loading="lazy">
+        <figcaption>Twelve people in a lodge</figcaption>
+      </figure>
+    </div>
+
+    <div class="rooms__act rv">
+      <a class="btn btn--primary" href="mailto:wisdom@ancestralwatch.com">Invite Tony to speak <span aria-hidden="true">→</span></a>
+      <a class="arrow" href="/teams/">Bring the program to your team <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE GATHERINGS ================= -->
+<section class="sec" style="padding-bottom:clamp(2.4rem, 1.6rem + 2.4vw, 3.8rem)">
+  <div class="wrap">
+    <div class="sec__intro rv" style="margin-bottom:0">
+      <div>
+        <p class="eyebrow">The gatherings</p>
+        <h2 class="head">Ten years of getting everyone in one room.</h2>
+      </div>
+      <p>A decade convening inter-tribal gatherings — elders and teenagers on the same floor, nobody on a panel, everybody able to speak. It is the format underneath every retreat and every immersive on this page.</p>
+    </div>
+  </div>
+</section>
+<div class="dip rv">
+  <img src="/assets/img/tony/listeners-at-dusk.jpg" alt="A row of people seated close together at dusk, listening" loading="lazy">
+  <img src="/assets/img/tony/gym-assembly.jpg" alt="A large group of young people seated across a gymnasium floor around a single speaker" style="object-position:50% 62%" loading="lazy">
+</div>
+<div class="arch rv">
+  <img src="/assets/img/tony/awards-group.jpg" alt="Tony Skrelūnas seated with a group of honorees wearing medals" loading="lazy">
+  <img src="/assets/img/tony/handshake.jpg" alt="Tony Skrelūnas clasping hands with a collaborator" style="object-position:50% 30%" loading="lazy">
+  <img src="/assets/img/tony/dinner-colleagues.jpg" alt="Tony Skrelūnas at a long dinner table with colleagues from abroad" loading="lazy">
+  <img src="/assets/img/tony/hiking-open-country.jpg" alt="Tony Skrelūnas with a younger colleague in front of a painting" loading="lazy">
+  <img src="/assets/img/tony/team-green-jobs.jpg" alt="Tony Skrelūnas speaking in front of a crew in Green Jobs shirts" loading="lazy">
+  <img src="/assets/img/tony/elder-woman-portrait.jpg" alt="An elder photographed on the open range, in a headscarf and striped shirt" loading="lazy">
 </div>
 
 <!-- ================= IMAGE BAND — the old juniper ================= -->
@@ -924,7 +1146,7 @@ body.locked{overflow:hidden}
         <h2 class="head">Twenty-two essays. One argument.</h2>
       </div>
       <div>
-        <p>The writing is the spine of the work. Field notes from the Navajo Nation, the Baltics, Japan, Tibet and India — on longevity, honorable trade, food, grief, technology, and the arithmetic older economies used to run on.</p>
+        <p>The writing is the spine of the work. Field notes from the high desert, the Baltics, Japan, Tibet and India — on longevity, honorable trade, food, grief, technology, and the arithmetic older economies used to run on.</p>
         <a class="arrow" href="/journal/">All twenty-two essays <span aria-hidden="true">→</span></a>
       </div>
     </div>
@@ -1244,7 +1466,7 @@ body.locked{overflow:hidden}
         <p class="eyebrow">The country</p>
         <h2 class="head">This is where it comes from.</h2>
       </div>
-      <p>Slot canyon, creek, juniper, arch, the Peaks, and a ramada built by hand. Every photograph on this site was taken by Tony, on ground he knows.</p>
+      <p>Slot canyon, creek, juniper, arch, the Peaks, and a ramada built by hand. Nearly every photograph on this site was taken by Tony, on ground he knows.</p>
     </div>
   </div>
 </section>
@@ -1269,18 +1491,16 @@ body.locked{overflow:hidden}
   <div class="wrap"><figcaption>A dawn ceremony, run the way it has been run since before the roads — the practice underneath all of it.</figcaption></div>
 </figure>
 
-<!-- ================= BOOKS ================= -->
-<section class="sec">
-  <div class="wrap books rv">
-    <div class="books__covers">
-      <a href="https://ancestralwatch.com"><img src="/assets/img/stone-breath-cover.jpg" alt="Stone Breath — book one of the Ancestral Watch series" loading="lazy"></a>
-      <a href="https://ancestralwatch.com"><img src="/assets/img/council-fire-cover.jpg" alt="The Council Fire — book three of the Ancestral Watch series" loading="lazy"></a>
-    </div>
-    <div>
-      <p class="eyebrow">The books</p>
-      <h2 class="head">The Ancestral Watch</h2>
-      <p>A novel series carrying the same tools in story form — <em>Stone Breath</em>, then <em>The Council Fire</em>. The way to calm a nervous system in sixty seconds, taught the oldest way there is: by telling you what happened to someone.</p>
-      <p class="books__more"><a class="arrow" href="https://ancestralwatch.com">Read the series <span aria-hidden="true">→</span></a></p>
+<!-- ================= BOOKS — the band ================= -->
+<section class="bookband">
+  <div class="bookband__bg"><img src="/assets/img/far-messenger-desert.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap bookband__in rv">
+    <p class="eyebrow">The books · Out now</p>
+    <h2>If you only ever do one thing here, read the novels.</h2>
+    <p><em>Stone Breath</em>, then <em>The Council Fire</em> — the Ancestral Watch series. Everything on this page, carried in story: how to calm a nervous system in sixty seconds, taught the oldest way there is.</p>
+    <div class="bookband__act">
+      <a class="btn btn--primary" href="https://ancestralwatch.com">Read the series <span aria-hidden="true">→</span></a>
+      <a class="arrow" href="/v2/#open-now">See both covers <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
@@ -1328,13 +1548,38 @@ body.locked{overflow:hidden}
   </div>
 </section>
 
+<!-- ================= IN THE FIELD ================= -->
+<section class="sec" style="padding-bottom:clamp(2.4rem, 1.6rem + 2.4vw, 3.8rem)">
+  <div class="wrap">
+    <div class="sec__intro rv" style="margin-bottom:0">
+      <div>
+        <p class="eyebrow">In the field</p>
+        <h2 class="head">Mostly he is outside.</h2>
+      </div>
+      <p>Horseback in the pines, eight miles down to Supai, the rim in winter, a dead juniper worth stopping for — and, occasionally, Manhattan. He took nearly every photograph on this site. These are the ones somebody took of him.</p>
+    </div>
+  </div>
+</section>
+<div class="field rv">
+  <img src="/assets/img/tony/slickrock-group.jpg" alt="Tony Skrelūnas riding a dark horse through open pine forest" loading="lazy">
+  <img src="/assets/img/tony/canyon-rim-family.jpg" alt="Tony Skrelūnas standing on a rock outcrop above a forested canyon" style="object-position:50% 62%" loading="lazy">
+  <img src="/assets/img/tony/canyon-hiking-hat.jpg" alt="Tony Skrelūnas pointing at a trail sign reading Supai — you're almost there" loading="lazy">
+  <img src="/assets/img/tony/forest-hiking.jpg" alt="Tony Skrelūnas gesturing out over the Grand Canyon from the rim" style="object-position:50% 34%" loading="lazy">
+  <img src="/assets/img/tony/hiking-creek.jpg" alt="Tony Skrelūnas on a hilltop above open country, hands on his hips" style="object-position:50% 56%" loading="lazy">
+  <img src="/assets/img/tony/burned-forest.jpg" alt="Tony Skrelūnas beside a weathered dead juniper on red rock" loading="lazy">
+  <img src="/assets/img/tony/supai-trail-sign.jpg" alt="Tony Skrelūnas on a green creekside trail, holding a young tree" style="object-position:50% 40%" loading="lazy">
+  <img src="/assets/img/tony/horseback-trail.jpg" alt="Tony Skrelūnas riding a paint horse along a dry wash" loading="lazy">
+  <img src="/assets/img/land/tony-stonewall.jpg" alt="Tony Skrelūnas beside a stone wall and water feature he built" loading="lazy">
+  <img src="/assets/img/tony/horseback-pines.jpg" alt="Tony Skrelūnas beside a lake in Central Park, the Manhattan skyline behind" style="object-position:50% 46%" loading="lazy">
+</div>
+
 <!-- ================= CREDENTIALS ================= -->
 <section class="hasglyph sec sec--deep tex">
   <svg class="glyph glyph--bl glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <polyline points="14,152 38,92 62,152"/> <polyline points="27.9,117.2 38,103 48.1,117.2" opacity="0.7"/> <polyline points="58,152 83,50 108,152"/> <polyline points="72.5,92.8 83,61 93.5,92.8" opacity="0.7"/> <polyline points="104,152 128,66 152,152"/> <polyline points="117.9,102.1 128,77 138.1,102.1" opacity="0.7"/> <polyline points="148,152 167,100 186,152"/> <polyline points="159,121.8 167,111 175,121.8" opacity="0.7"/> <line x1="10" y1="152" x2="190" y2="152"/> </svg>
   <div class="tex__i"><img src="/assets/img/land/rug-red-diamond.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="wrap record rv">
     <div class="record__ph">
-      <img src="/assets/img/land/tony-stonewall.jpg" alt="Tony Skrelūnas beside a stone wall and water feature he built" loading="lazy">
+      <img src="/assets/img/tony/portrait-hat-turquoise.jpg" alt="Portrait of Tony Skrelūnas in a felt hat and turquoise necklace" loading="lazy">
     </div>
     <div>
       <p class="eyebrow">The record</p>
@@ -1342,7 +1587,7 @@ body.locked{overflow:hidden}
       <div class="record__body">
         <p class="muted">Led the governance restructuring of a still-deeply-cultural nation, returning power to local communities. Built the Native America Program at the Grand Canyon Trust over fourteen years. Co-founded a renewable energy company. Advises companies and communities on four continents.</p>
         <p class="muted">PhD candidate in Sustainable Development Education at Prescott College. Adjunct faculty at 1440 Multiversity. The first person of Lithuanian and Diné descent inducted into NAU's College of Business Hall of Fame.</p>
-        <p class="muted">A runner, and an aspiring silversmith.</p>
+        <p class="muted">A runner, an aspiring silversmith, and a father.</p>
       </div>
     </div>
   </div>

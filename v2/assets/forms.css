@@ -1,0 +1,320 @@
+/* ============================================================
+   TRIBEAWAKEN v2 — FORM SYSTEM
+   Extends v2.css. Loads AFTER it.
+
+   Everything is prefixed .f- so it can drop onto any page
+   without colliding with page-specific styles.
+
+   Rules inherited from the design system:
+     BIG type. HEAVY labels. Warm canyon palette. Generous air.
+   Rules specific to forms:
+     56px minimum touch target. Visible focus. Honest errors.
+   ============================================================ */
+
+:root{
+  --f-h:      60px;                    /* min field height — never below 56 */
+  --f-radius: 10px;
+  --f-err:    #EE6C5A;                 /* error — hotter than clay, reads as alarm */
+  --f-err-bg: rgba(238,108,90,.10);
+  --f-ok:     #8FBF7F;                 /* confirmation green, desaturated for the canyon */
+  --f-focus:  0 0 0 4px rgba(201,106,62,.22);
+}
+
+/* p{max-width:62ch} in v2.css keeps a centred eyebrow off-centre.
+   Reinforce it here so .eyebrow--center means what it says. */
+.eyebrow--center{max-width:none;margin-inline:auto;justify-content:center}
+
+/* ============================================================
+   1. THE SHELL
+   ============================================================ */
+
+.f-shell{
+  position:relative;
+  background:var(--bg-3);
+  border:1px solid var(--rule);
+  border-radius:18px;
+  padding:clamp(1.5rem, 1rem + 2.6vw, 3.4rem);
+  max-width:780px;
+  margin-inline:auto;
+  box-shadow:0 40px 90px -44px rgba(0,0,0,.75);
+  overflow:hidden;
+}
+/* an ember along the top edge */
+.f-shell::before{
+  content:"";position:absolute;inset:0 0 auto 0;height:3px;
+  background:linear-gradient(90deg,var(--clay),var(--gold),var(--clay));
+}
+.f-shell--bare{
+  background:none;border:0;box-shadow:none;padding:0;border-radius:0;
+}
+.f-shell--bare::before{display:none}
+
+/* ============================================================
+   2. FIELDS
+   ============================================================ */
+
+.f-field{display:block;margin-bottom:clamp(1.5rem,1.2rem + .8vw,2rem)}
+.f-field:last-of-type{margin-bottom:0}
+
+.f-label{
+  display:block;
+  font-family:var(--body);font-weight:800;font-size:.82rem;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--clay-lt);
+  margin-bottom:.7rem;
+}
+.f-label .f-opt{
+  color:var(--sand);font-weight:600;font-size:.86rem;
+  letter-spacing:.04em;text-transform:none;
+}
+.f-label .f-req{color:var(--gold);margin-left:.25em}
+
+.f-hint{
+  font-size:.94rem;line-height:1.45;color:var(--sand);
+  margin:-.35rem 0 .75rem;max-width:48ch;
+}
+
+.f-input,
+.f-textarea,
+.f-select{
+  display:block;width:100%;
+  min-height:var(--f-h);
+  font-family:var(--body);font-size:1.08rem;font-weight:450;line-height:1.55;
+  color:var(--cream);
+  background:var(--bg);
+  border:1px solid var(--rule);
+  border-radius:var(--f-radius);
+  padding:1rem 1.15rem;
+  -webkit-appearance:none;appearance:none;
+  transition:border-color .2s ease, background .2s ease, box-shadow .2s ease;
+}
+.f-textarea{
+  min-height:clamp(190px, 26vh, 260px);
+  line-height:1.7;resize:vertical;
+  padding:1.1rem 1.15rem;
+}
+.f-input::placeholder,
+.f-textarea::placeholder{color:rgba(217,198,180,.48)}
+
+.f-input:hover,
+.f-textarea:hover,
+.f-select:hover{border-color:rgba(250,243,233,.28)}
+
+.f-input:focus,
+.f-textarea:focus,
+.f-select:focus{
+  outline:none;
+  border-color:var(--clay);
+  background:var(--ink);
+  box-shadow:var(--f-focus);
+}
+/* keyboard users get the ring even where :focus is suppressed elsewhere */
+.f-input:focus-visible,
+.f-textarea:focus-visible,
+.f-select:focus-visible{box-shadow:var(--f-focus)}
+
+/* select — custom chevron, since appearance is stripped */
+.f-select{
+  padding-right:3.2rem;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D9C6B4' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 1.15rem center;
+  background-size:1.1rem;
+}
+.f-select option{background:var(--bg-2);color:var(--cream)}
+
+/* two-up */
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.1rem,.8rem + 1vw,1.7rem)}
+.f-row .f-field{margin-bottom:0}
+.f-row + .f-field,
+.f-field + .f-row,
+.f-row + .f-row{margin-top:clamp(1.5rem,1.2rem + .8vw,2rem)}
+@media(max-width:640px){
+  .f-row{grid-template-columns:1fr;gap:clamp(1.5rem,1.2rem + .8vw,2rem)}
+}
+
+/* ============================================================
+   3. ERROR STATES
+   ============================================================ */
+
+.f-err-msg{
+  display:none;
+  align-items:flex-start;gap:.5rem;
+  margin-top:.6rem;
+  font-size:.96rem;font-weight:600;line-height:1.4;
+  color:var(--f-err);
+}
+.f-err-msg::before{content:"!";
+  flex:none;display:grid;place-items:center;
+  width:1.15rem;height:1.15rem;margin-top:.1rem;
+  border-radius:50%;border:1.5px solid currentColor;
+  font-size:.72rem;font-weight:800;line-height:1;
+}
+.f-field.is-invalid .f-err-msg{display:flex}
+.f-field.is-invalid .f-input,
+.f-field.is-invalid .f-textarea,
+.f-field.is-invalid .f-select{
+  border-color:var(--f-err);
+  background:var(--f-err-bg);
+}
+.f-field.is-invalid .f-input:focus,
+.f-field.is-invalid .f-textarea:focus,
+.f-field.is-invalid .f-select:focus{
+  box-shadow:0 0 0 4px rgba(238,108,90,.20);
+}
+.f-field.is-invalid .f-label{color:var(--f-err)}
+
+/* form-level alert */
+.f-alert{
+  display:none;
+  margin-top:1.5rem;padding:1.05rem 1.25rem;
+  border:1px solid rgba(238,108,90,.42);
+  background:var(--f-err-bg);
+  border-radius:var(--f-radius);
+  font-size:1rem;line-height:1.55;color:var(--cream);
+  max-width:none;
+}
+.f-alert a{color:var(--gold);font-weight:700}
+.f-form.is-error .f-alert{display:block}
+
+/* ============================================================
+   4. CHECKBOXES
+   ============================================================ */
+
+.f-checks{
+  margin-top:clamp(1.6rem,1.2rem + 1vw,2.1rem);
+  padding-top:clamp(1.5rem,1.2rem + .8vw,1.9rem);
+  border-top:1px solid var(--rule);
+  display:grid;gap:1.05rem;
+}
+.f-check{
+  display:flex;gap:.9rem;align-items:flex-start;
+  cursor:pointer;font-size:1.02rem;line-height:1.5;color:var(--sand);
+  min-height:2.6rem;
+}
+.f-check input{
+  appearance:none;-webkit-appearance:none;
+  flex:none;width:1.4rem;height:1.4rem;margin:.1rem 0 0;
+  border:2px solid rgba(250,243,233,.28);border-radius:5px;
+  background:var(--bg);cursor:pointer;
+  transition:border-color .18s ease, background .18s ease;
+}
+.f-check:hover input{border-color:var(--clay)}
+.f-check input:checked{background:var(--clay);border-color:var(--clay)}
+.f-check input:checked::after{
+  content:"";display:block;width:.36rem;height:.72rem;
+  margin:.08rem auto 0;
+  border:solid var(--on-clay);border-width:0 2.5px 2.5px 0;
+  transform:rotate(42deg);
+}
+.f-check input:focus-visible{outline:2px solid var(--clay-lt);outline-offset:3px}
+.f-check b{color:var(--cream-2);font-weight:700}
+.f-check em{font-style:normal;opacity:.82}
+
+/* ============================================================
+   5. HONEYPOT — off-screen, never focusable, never announced
+   ============================================================ */
+
+.f-hp{
+  position:absolute!important;
+  left:-9999px;top:auto;
+  width:1px;height:1px;overflow:hidden;
+  opacity:0;pointer-events:none;
+}
+
+/* ============================================================
+   6. SUBMIT
+   ============================================================ */
+
+.f-actions{
+  margin-top:clamp(1.8rem,1.4rem + 1.2vw,2.4rem);
+  display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem;
+}
+.f-actions .btn{font-size:1.08rem;min-height:var(--f-h)}
+.f-actions .btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.f-note{
+  font-size:.94rem;line-height:1.45;color:var(--sand);
+  max-width:34ch;flex:1 1 15rem;margin:0;
+}
+@media(max-width:560px){
+  .f-actions .btn{width:100%;justify-content:center}
+  .f-note{max-width:none}
+}
+
+/* sending */
+.f-form.is-sending .btn--primary{opacity:.6;pointer-events:none}
+.f-spin{
+  display:none;flex:none;
+  width:1.05em;height:1.05em;border-radius:50%;
+  border:2px solid rgba(27,18,16,.3);border-top-color:var(--on-clay);
+  animation:f-spin .7s linear infinite;
+}
+.f-form.is-sending .f-spin{display:block}
+.f-form.is-sending .f-arrow{display:none}
+@keyframes f-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.f-spin{animation-duration:2s}}
+
+/* ============================================================
+   7. THE SUCCESS STATE — replaces the form in place, no reload
+   ============================================================ */
+
+.f-done{display:none;text-align:center;padding-block:clamp(1.2rem,1rem + 2vw,2.6rem)}
+.f-shell.is-sent .f-form{display:none}
+.f-shell.is-sent .f-done{display:block}
+@media(prefers-reduced-motion:no-preference){
+  .f-shell.is-sent .f-done{animation:f-rise .7s cubic-bezier(.2,.7,.3,1) both}
+}
+@keyframes f-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+.f-done__mark{width:76px;height:76px;margin:0 auto 1.7rem}
+.f-done h3{
+  font-size:clamp(1.9rem,1.5rem + 1.8vw,2.9rem);font-weight:800;
+  margin-bottom:1rem;max-width:18ch;margin-inline:auto;
+}
+.f-done p{color:var(--sand);max-width:40ch;margin-inline:auto;text-align:center}
+.f-done p + p{margin-top:.9rem}
+.f-done__sig{
+  margin-top:2rem;
+  font-family:var(--display);font-style:italic;font-weight:600;
+  font-size:1.25rem;color:var(--gold);
+}
+
+/* ============================================================
+   8. THE BIG ADDRESS — the always-works alternative
+   ============================================================ */
+
+.f-mail{
+  display:inline-block;max-width:100%;
+  margin-top:clamp(2rem,1.2rem + 2.6vw,3.4rem);
+  font-family:var(--display);font-weight:700;
+  letter-spacing:-.034em;line-height:1.05;
+  font-size:clamp(1.35rem, .1rem + 4.1vw, 3.3rem);
+  color:var(--gold);text-decoration:none;white-space:nowrap;
+  border-bottom:2px solid transparent;padding-bottom:.1em;
+  transition:color .22s ease, border-color .22s ease;
+}
+.f-mail:hover{color:var(--clay-lt);border-bottom-color:var(--clay)}
+.f-mail:focus-visible{outline:2px solid var(--gold);outline-offset:6px;border-radius:2px}
+
+/* ============================================================
+   9. ROCK ART — petroglyph SVG behind a section, faint
+   ============================================================ */
+
+.f-glyphed{position:relative;isolation:isolate;overflow:hidden}
+.f-glyph{
+  position:absolute;z-index:-1;pointer-events:none;
+  color:var(--clay-lt);
+}
+.f-glyph img,.f-glyph svg{width:100%;height:auto;display:block}
+.f-glyph--l{left:clamp(-7rem,-8vw,-2.5rem);top:6%;width:clamp(260px,34vw,540px);opacity:.14}
+.f-glyph--r{right:clamp(-7rem,-8vw,-2.5rem);top:5%;width:clamp(240px,30vw,470px);opacity:.12}
+.f-glyph--br{right:clamp(-5rem,-5vw,-1.5rem);bottom:-3%;
+  width:clamp(240px,32vw,520px);opacity:.14}
+.f-glyph--c{left:50%;top:50%;transform:translate(-50%,-50%);
+  width:clamp(360px,54vw,820px);opacity:.10}
+@media(max-width:760px){
+  .f-glyph--l{width:clamp(200px,58vw,300px);top:3%;opacity:.11}
+  .f-glyph--r{width:clamp(190px,52vw,280px);opacity:.10}
+  .f-glyph--br{width:clamp(200px,56vw,300px);bottom:-2%;opacity:.11}
+  .f-glyph--c{width:min(88vw,420px);opacity:.09}
+}

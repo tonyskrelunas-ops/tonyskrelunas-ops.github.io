@@ -1,40 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Twin horse-head roof finial">
   <!-- crossed gable boards -->
-  <line x1="36" y1="188" x2="128" y2="38"/>
-  <line x1="42" y1="192" x2="134" y2="42"/>
-  <line x1="164" y1="188" x2="72" y2="38"/>
-  <line x1="158" y1="192" x2="66" y2="42"/>
-  <circle cx="100" cy="82" r="3.2" fill="currentColor" stroke="none"/>
+  <line x1="40" y1="190" x2="126" y2="66"/>
+  <line x1="48" y1="194" x2="134" y2="70"/>
+  <line x1="160" y1="190" x2="74" y2="66"/>
+  <line x1="152" y1="194" x2="66" y2="70"/>
+  <circle cx="100" cy="100" r="3.4" fill="currentColor" stroke="none"/>
+  <line x1="20" y1="194" x2="180" y2="194" opacity="0.4"/>
 
   <!-- rosette between the boards -->
-  <circle cx="100" cy="124" r="11"/>
-  <line x1="100" y1="107" x2="100" y2="113"/>
-  <line x1="100" y1="135" x2="100" y2="141"/>
-  <line x1="83" y1="124" x2="89" y2="124"/>
-  <line x1="111" y1="124" x2="117" y2="124"/>
-  <line x1="88" y1="112" x2="92" y2="116"/>
-  <line x1="112" y1="112" x2="108" y2="116"/>
-  <line x1="88" y1="136" x2="92" y2="132"/>
-  <line x1="112" y1="136" x2="108" y2="132"/>
-
-  <!-- left horse head -->
-  <path d="M 78,56 C 72,46 63,37 52,31 C 44,27 36,24 29,25 C 24,26 23,31 27,34 C 33,37 39,39 45,43 C 55,49 64,54 70,62 Z"/>
-  <path d="M 51,31 L 47,18 L 58,27" />
-  <path d="M 60,36 L 59,24 L 67,32" opacity="0.9"/>
-  <circle cx="41" cy="31" r="2" fill="currentColor" stroke="none"/>
-  <path d="M 31,29 L 24,29" opacity="0.8"/>
-  <path d="M 63,40 L 60,32" opacity="0.7"/>
-  <path d="M 70,48 L 67,40" opacity="0.7"/>
+  <circle cx="100" cy="142" r="11"/>
+  <line x1="100" y1="125" x2="100" y2="131"/>
+  <line x1="100" y1="153" x2="100" y2="159"/>
+  <line x1="83" y1="142" x2="89" y2="142"/>
+  <line x1="111" y1="142" x2="117" y2="142"/>
+  <line x1="88" y1="130" x2="92" y2="134"/>
+  <line x1="112" y1="130" x2="108" y2="134"/>
+  <line x1="88" y1="154" x2="92" y2="150"/>
+  <line x1="112" y1="154" x2="108" y2="150"/>
 
   <!-- right horse head -->
-  <path d="M 122,56 C 128,46 137,37 148,31 C 156,27 164,24 171,25 C 176,26 177,31 173,34 C 167,37 161,39 155,43 C 145,49 136,54 130,62 Z"/>
-  <path d="M 149,31 L 153,18 L 142,27"/>
-  <path d="M 140,36 L 141,24 L 133,32" opacity="0.9"/>
-  <circle cx="159" cy="31" r="2" fill="currentColor" stroke="none"/>
-  <path d="M 169,29 L 176,29" opacity="0.8"/>
-  <path d="M 137,40 L 140,32" opacity="0.7"/>
-  <path d="M 130,48 L 133,40" opacity="0.7"/>
+  <path d="M 132,72 L 136,44 C 138,31 148,23 159,23
+           C 169,23 175,29 177,35 C 180,41 179,48 173,50
+           C 165,52 157,50 151,48 C 145,46 141,54 143,62
+           L 145,74 Z"/>
+  <path d="M 140,32 L 136,17 L 150,26"/>
+  <path d="M 152,25 L 154,12 L 162,23" opacity="0.9"/>
+  <circle cx="161" cy="34" r="2.3" fill="currentColor" stroke="none"/>
+  <path d="M 173,44 L 176,43" opacity="0.85"/>
+  <path d="M 139,38 L 132,32" opacity="0.7"/>
+  <path d="M 137,48 L 130,44" opacity="0.7"/>
+  <path d="M 135,58 L 128,56" opacity="0.7"/>
 
-  <!-- eave line -->
-  <line x1="20" y1="192" x2="180" y2="192" opacity="0.4"/>
+  <!-- left horse head -->
+  <path d="M 68,72 L 64,44 C 62,31 52,23 41,23
+           C 31,23 25,29 23,35 C 20,41 21,48 27,50
+           C 35,52 43,50 49,48 C 55,46 59,54 57,62
+           L 55,74 Z"/>
+  <path d="M 60,32 L 64,17 L 50,26"/>
+  <path d="M 48,25 L 46,12 L 38,23" opacity="0.9"/>
+  <circle cx="39" cy="34" r="2.3" fill="currentColor" stroke="none"/>
+  <path d="M 27,44 L 24,43" opacity="0.85"/>
+  <path d="M 61,38 L 68,32" opacity="0.7"/>
+  <path d="M 63,48 L 70,44" opacity="0.7"/>
+  <path d="M 65,58 L 72,56" opacity="0.7"/>
 </svg>
