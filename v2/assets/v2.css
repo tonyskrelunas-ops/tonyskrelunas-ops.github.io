@@ -192,12 +192,12 @@ figure{margin:0}
   position:absolute; color: inherit; stroke-width: 3; height:auto;
   overflow: visible;
 }
-.peckfield--faint{ color: rgba(240,198,156,.115); }
+.peckfield--faint{ color: rgba(240,198,156,.155); }
 /* the markings stay off the reading column — they are the wall,
    not the writing on it */
 .peckfield--faint{
-  -webkit-mask-image: radial-gradient(115% 78% at 50% 50%, transparent 0 34%, #000 66%);
-  mask-image: radial-gradient(115% 78% at 50% 50%, transparent 0 34%, #000 66%);
+  -webkit-mask-image: radial-gradient(120% 82% at 50% 50%, transparent 0 24%, #000 58%);
+  mask-image: radial-gradient(120% 82% at 50% 50%, transparent 0 24%, #000 58%);
 }
 .peckfield--strong{ color: rgba(240,198,156,.5); }
 @media (max-width: 820px){ .peckfield svg:nth-child(n+6){ display:none } }
