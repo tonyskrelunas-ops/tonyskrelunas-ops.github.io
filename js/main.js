@@ -19,22 +19,6 @@
     });
   }
 
-  // Email capture -> opens a pre-addressed email to wisdom@ancestralwatch.com (works on static hosting).
-  document.querySelectorAll("form[data-capture]").forEach(function (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var note = form.parentElement.querySelector(".capture__note");
-      var input = form.querySelector('input[type="email"]');
-      var email = input ? input.value.trim() : "";
-      if (!email) return;
-      var label = form.getAttribute("aria-label") || "Website signup";
-      var subject = "Website: " + label;
-      var body = "Please add me to the list.\n\nEmail: " + email + "\nPage: " + window.location.href;
-      window.location.href = "mailto:wisdom@ancestralwatch.com?cc=tony.tribeawaken@gmail.com&subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-      form.reset();
-      if (note) { note.textContent = "Thanks! Your email app will open — just hit send and you're on the list."; note.style.color = "var(--amber)"; }
-    });
-  });
 
   // Scroll reveal
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
