@@ -806,3 +806,86 @@ a:hover { color: var(--amber); }
   .hero__art{ height:88%; right:-30%; opacity:.5; }
   .hero::after{ background:linear-gradient(180deg, rgba(12,43,46,.35) 0%, rgba(12,43,46,.82) 70%); }
 }
+
+/* ============================================================
+   CANONICAL SITE HEADER — nav + language bar   (Aug 2026)
+   One header on every page. Home is always first. Languages
+   are always visible. NOTE: clamp() needs spaces around + / -
+   or the whole declaration is silently dropped.
+   ============================================================ */
+.site-header { position: sticky; top: 0; z-index: 300; }
+
+.nav__links a {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .005em;
+  padding: .3rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color .18s ease, border-color .18s ease;
+}
+.nav__links a:hover,
+.nav__links a:focus-visible { color: var(--amber); border-bottom-color: var(--amber); }
+.nav__links a[aria-current="page"] { color: var(--amber); border-bottom-color: var(--amber); }
+.nav__links .nav__cta a,
+.nav__links .nav__cta a:hover { border-bottom-color: transparent; }
+.nav__cta .btn { font-size: .95rem; font-weight: 700; padding: .58em 1.15em; }
+
+/* ---- the language strip ---- */
+.global-bar {
+  background: var(--night-3);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.global-bar__inner {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: .3rem 1.15rem;
+  padding: .5rem var(--space-3);
+  font-size: .92rem;
+}
+.global-bar__label {
+  color: var(--turq); letter-spacing: .13em; text-transform: uppercase;
+  font-size: .68rem; font-weight: 700; white-space: nowrap;
+}
+.global-bar a {
+  color: var(--bone); text-decoration: none; font-weight: 500; white-space: nowrap;
+  border-bottom: 2px solid transparent; padding-bottom: 1px;
+}
+.global-bar a:hover,
+.global-bar a:focus-visible { color: var(--amber); border-bottom-color: var(--amber); }
+.global-bar a[aria-current="true"] { color: var(--amber); font-weight: 700; }
+.global-bar__soon { color: var(--silver); white-space: nowrap; }
+
+@media (max-width: 900px) {
+  /* keep the sticky header short on a phone: nav sticks, languages scroll away */
+  .site-header { position: relative; }
+  .brand__logo { height: 52px; }
+  .brand { font-size: 1.3rem; }
+  .global-bar__inner {
+    flex-wrap: nowrap; justify-content: flex-start;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; -ms-overflow-style: none;
+    gap: 1rem; font-size: .88rem;
+  }
+  .global-bar__inner::-webkit-scrollbar { display: none; }
+  .global-bar__label { display: none; }
+}
+
+/* --- never let the wordmark and the menu collide --- */
+.nav { flex-wrap: wrap; }
+.nav__links { flex: 1 1 auto; justify-content: flex-end; min-width: 0; }
+@media (min-width: 901px) and (max-width: 1240px) {
+  .nav__links { gap: 1.15rem; }
+  .nav__links a { font-size: .9rem; }
+  .nav__cta .btn { font-size: .86rem; padding: .52em 1em; }
+  .brand__logo { height: 58px; }
+  .brand { font-size: 1.4rem; }
+}
+
+/* The header always speaks in the house fonts — the language editions
+   redefine --font-display / --font-body for their body copy, so the
+   chrome is pinned to explicit stacks instead of the tokens. */
+.site-header .brand__wm { font-family: "Spectral", Georgia, serif; }
+.site-header .nav__links a,
+.site-header .nav__cta .btn,
+.site-header .global-bar { font-family: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.site-header .global-bar a[lang] { font-family: inherit; }

@@ -11,38 +11,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/tokens.css" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/style.css?v=13" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <nav class="nav wrap wrap--wide" aria-label="Primary">
-      <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png" alt="TribeAwaken logo" width="60" height="59"><span class="brand__wm">Tribe<span class="brand__mark">Awaken</span></span></a>
-      <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">☰</button>
-      <ul class="nav__links" id="primary-nav" data-open="false">
-        <li><a href="/">Home</a></li>
-        <li><a href="#leaders">Human Performance</a></li>
-        <li><a href="#nations">Nation-Building</a></li>
-        <li><a href="/journal/">Journal</a></li>
-        <li><a href="#books">The Books</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="/workshop/">Retreats</a></li><li><a href="/teams/">For Teams</a></li><li class="nav__cta"><a class="btn btn--primary" href="#connect">Work with Tony</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Global & Languages bar -->
-  <div class="global-bar" style="background:var(--night-3); border-bottom:1px solid var(--rule);">
-    <div class="wrap wrap--wide" style="display:flex; flex-wrap:wrap; gap:.35rem 1.1rem; align-items:center; justify-content:center; padding:.55rem var(--space-3); font-size:.9rem;">
-      <span style="color:var(--turq); letter-spacing:.12em; text-transform:uppercase; font-size:.7rem;">🌐 Global &amp; Languages</span>
-      <a href="/" style="color:var(--amber); font-weight:700; text-decoration:none;">English</a>
-      <a href="/ja/" style="color:var(--text); text-decoration:none;">日本語 · Japan</a>
-      <a href="/lt/" style="color:var(--text); text-decoration:none;">Lietuvių · Lithuania</a>
-      <a href="/india/" style="color:var(--text); text-decoration:none;">India</a>
-      <span style="color:var(--silver);">中文 · China — soon</span>
+  <nav class="nav wrap wrap--wide" aria-label="Primary">
+    <a class="brand" href="/" aria-label="TribeAwaken — home"><img class="brand__logo" src="/assets/img/author-logo.png" alt="" width="60" height="59"><span class="brand__wm">Tribe<span class="brand__mark">Awaken</span></span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">&#9776;</button>
+    <ul class="nav__links" id="primary-nav" data-open="false">
+      <li><a href="/" data-nav="home">Home</a></li>
+      <li><a href="/#leaders">Human Performance</a></li>
+      <li><a href="/#nations">Nation-Building</a></li>
+      <li><a href="/journal/" data-nav="/journal/">Journal</a></li>
+      <li><a href="/#books">The Books</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/workshop/" data-nav="/workshop/">Retreats</a></li>
+      <li><a href="/teams/" data-nav="/teams/">For Teams</a></li>
+      <li class="nav__cta"><a class="btn btn--primary" href="/#connect">Work with Tony</a></li>
+    </ul>
+  </nav>
+  <div class="global-bar" aria-label="Languages">
+    <div class="wrap wrap--wide global-bar__inner">
+      <span class="global-bar__label">&#127760; Global &amp; Languages</span>
+      <a href="/" data-lang="en">English</a>
+      <a href="/ja/" data-lang="/ja/" lang="ja">&#26085;&#26412;&#35486; &middot; Japan</a>
+      <a href="/lt/" data-lang="/lt/" lang="lt">Lietuvi&#371; &middot; Lithuania</a>
+      <a href="/india/" data-lang="/india/">India</a>
+      <span class="global-bar__soon">&#20013;&#25991; &middot; China &mdash; soon</span>
     </div>
   </div>
+</header>
+
+  <!-- Global & Languages bar -->
 
   <main id="main">
 
@@ -687,6 +689,6 @@
     <input type="text" name="source" />
   </form>
 
-  <script src="/js/main.js?v=12" defer></script>
+  <script src="/js/main.js?v=13" defer></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <meta name="description" content="Baltų, dinė (navahų) ir japonų įrankiai — ramybei, sveikatai ir prasmingam pasiekimui. Tony Skrelūnas: dešimčių tūkstančių metų protėvių išmintis šiandienos gyvenimui.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/tokens.css"><link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/tokens.css"><link rel="stylesheet" href="/css/style.css?v=13">
 <style>
   .lang-switch a{color:var(--silver);font-size:.85rem;text-decoration:none;}
   .lang-switch a[aria-current]{color:var(--amber);font-weight:700;}
@@ -20,18 +20,33 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Pereiti prie turinio</a>
-<header class="site-header"><nav class="nav wrap wrap--wide" aria-label="Pagrindinė navigacija">
-  <a class="brand" href="/lt/"><img class="brand__logo" src="/assets/img/author-logo.png" alt="TribeAwaken logo" width="60" height="59"><span class="brand__wm">Tribe<span class="brand__mark">Awaken</span></span></a>
-  <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Meniu">&#9776;</button>
-  <ul class="nav__links" id="primary-nav" data-open="false">
-    <li><a href="/lt/">Pradžia</a></li>
-    <li><a href="/lt/#straipsniai">Straipsniai</a></li>
-    <li><a href="https://ancestralwatch.com/lt/" target="_blank" rel="noopener">Knygos</a></li>
-    <li><a href="/lt/#susisiekime">Susisiekime</a></li>
-    <li class="lang-switch"><a href="/">EN</a> · <a href="/ja/">日本語</a> · <a href="/lt/" aria-current="true">LT</a></li>
-    <li class="nav__cta"><a class="btn btn--primary" href="https://ancestralwatch.com/lt/" target="_blank" rel="noopener">Akmens kvėpavimas (nemokamai)</a></li>
-  </ul>
-</nav></header>
+<header class="site-header">
+  <nav class="nav wrap wrap--wide" aria-label="Primary">
+    <a class="brand" href="/" aria-label="TribeAwaken — home"><img class="brand__logo" src="/assets/img/author-logo.png" alt="" width="60" height="59"><span class="brand__wm">Tribe<span class="brand__mark">Awaken</span></span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">&#9776;</button>
+    <ul class="nav__links" id="primary-nav" data-open="false">
+      <li><a href="/" data-nav="home">Home</a></li>
+      <li><a href="/#leaders">Human Performance</a></li>
+      <li><a href="/#nations">Nation-Building</a></li>
+      <li><a href="/journal/" data-nav="/journal/">Journal</a></li>
+      <li><a href="/#books">The Books</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/workshop/" data-nav="/workshop/">Retreats</a></li>
+      <li><a href="/teams/" data-nav="/teams/">For Teams</a></li>
+      <li class="nav__cta"><a class="btn btn--primary" href="/#connect">Work with Tony</a></li>
+    </ul>
+  </nav>
+  <div class="global-bar" aria-label="Languages">
+    <div class="wrap wrap--wide global-bar__inner">
+      <span class="global-bar__label">&#127760; Global &amp; Languages</span>
+      <a href="/" data-lang="en">English</a>
+      <a href="/ja/" data-lang="/ja/" lang="ja">&#26085;&#26412;&#35486; &middot; Japan</a>
+      <a href="/lt/" data-lang="/lt/" lang="lt">Lietuvi&#371; &middot; Lithuania</a>
+      <a href="/india/" data-lang="/india/">India</a>
+      <span class="global-bar__soon">&#20013;&#25991; &middot; China &mdash; soon</span>
+    </div>
+  </div>
+</header>
 
 <main id="main">
   <section class="lt-hero">
@@ -91,5 +106,5 @@
   <span>&copy; 2026 TribeAwaken &middot; Tony Skrelūnas</span>
   <span class="lang-switch"><a href="/">English</a> · <a href="/ja/">日本語</a> · <a href="/lt/" aria-current="true">Lietuvių</a></span>
 </div></div></footer>
-<script src="/js/main.js?v=12" defer></script>
+<script src="/js/main.js?v=13" defer></script>
 </body></html>

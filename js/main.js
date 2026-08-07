@@ -32,6 +32,21 @@
   }
 })();
 
-/* MailerLite Universal */
-(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-ml('account','2560671');
+/* Mark the current page in the nav + language bar. */
+(function () {
+  "use strict";
+  var path = location.pathname.replace(/index\.html$/, "");
+  if (path.charAt(path.length - 1) !== "/") path += "/";
+  document.querySelectorAll(".nav__links a[data-nav]").forEach(function (a) {
+    var k = a.getAttribute("data-nav");
+    var hit = (k === "home") ? (path === "/") : (path.indexOf(k) === 0);
+    if (hit) a.setAttribute("aria-current", "page");
+  });
+  document.querySelectorAll(".global-bar a[data-lang]").forEach(function (a) {
+    var k = a.getAttribute("data-lang");
+    var hit = (k === "en")
+      ? !/^\/(ja|lt|india)\//.test(path)
+      : path.indexOf(k) === 0;
+    if (hit) a.setAttribute("aria-current", "true");
+  });
+})();
