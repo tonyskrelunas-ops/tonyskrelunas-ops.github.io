@@ -95,6 +95,69 @@
   background:linear-gradient(to top,rgba(20,13,10,.9),transparent);
   font-size:.98rem;font-weight:600;color:var(--cream);letter-spacing:.01em}
 .band img.tall{height:clamp(420px,66vh,760px)}
+
+/* ---- restored sections ---- */
+
+/* beats inside the three-day arc */
+.beats{list-style:none;padding:0;margin-top:1.4rem;display:grid;gap:.6rem;max-width:58ch}
+.beats li{color:var(--sand);font-size:1.03rem;line-height:1.5;padding-left:1.5rem;position:relative}
+.beats li::before{content:"";position:absolute;left:0;top:.66em;width:.65rem;height:2px;background:var(--clay)}
+.beats strong{color:var(--cream-2);font-weight:700}
+
+/* tile grids: who comes, what you carry home */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(278px,1fr));
+  gap:clamp(1.1rem,2.2vw,1.9rem);margin-top:clamp(2.2rem,4vw,3.4rem)}
+.tile{background:var(--bg-3);border:1px solid var(--rule);border-radius:14px;
+  padding:clamp(1.5rem,1.1rem + 1.2vw,2.2rem)}
+.tile h3{font-size:clamp(1.28rem,1.1rem + .8vw,1.7rem);font-weight:800;margin-bottom:.6rem}
+.tile p{color:var(--sand);margin-bottom:0;font-size:1.05rem;line-height:1.58}
+.tile--plain{background:none;border:0;border-top:2px solid var(--clay);border-radius:0;padding:1.3rem 0 0}
+
+/* the ancestral kitchen detail */
+.kx{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:clamp(1.4rem,3vw,2.6rem);margin-top:clamp(2.4rem,4vw,3.4rem)}
+.kx>div{border-top:2px solid var(--clay);padding-top:1.2rem}
+.kx b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(1.22rem,1.05rem + .8vw,1.6rem);margin-bottom:.5rem;color:var(--cream-2)}
+.kx span{color:var(--sand);font-size:1.02rem;line-height:1.55;display:block;max-width:30ch}
+
+/* price / what's included */
+.price{background:linear-gradient(160deg,#3A2419,var(--bg-3));border:1px solid rgba(201,106,62,.5);
+  border-radius:16px;padding:clamp(1.8rem,1.3rem + 1.8vw,3rem);margin-top:clamp(2.4rem,4vw,3.4rem)}
+.price__n{font-family:var(--display);font-weight:900;letter-spacing:-.03em;line-height:1;
+  color:var(--gold);font-size:clamp(2.9rem,2rem + 3.6vw,4.8rem)}
+.price__sub{color:var(--sand);font-weight:700;margin-top:.8rem;font-size:1.05rem}
+.incl{list-style:none;padding:0;margin-top:clamp(1.8rem,3vw,2.6rem);border-top:1px solid var(--rule)}
+.incl li{padding:.95rem 0 .95rem 1.9rem;border-bottom:1px solid var(--rule);color:var(--cream);
+  font-size:1.06rem;line-height:1.55;position:relative}
+.incl li::before{content:"—";color:var(--clay);position:absolute;left:0;top:.95rem}
+
+/* faq */
+.faq{margin-top:clamp(2rem,4vw,3.2rem);border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule)}
+.faq summary{cursor:pointer;list-style:none;padding-block:1.35rem;font-family:var(--display);
+  font-weight:700;letter-spacing:-.02em;font-size:clamp(1.18rem,1.05rem + .7vw,1.55rem);
+  color:var(--cream-2);display:flex;justify-content:space-between;gap:1.5rem;align-items:baseline}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--clay);font-family:var(--body);font-weight:700;flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq p{color:var(--sand);max-width:62ch;padding-bottom:1.4rem;margin:0}
+
+/* praise */
+.praise{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:clamp(2rem,4vw,4rem);margin-top:clamp(2.2rem,4vw,3.4rem)}
+.praise blockquote{margin:0;font-family:var(--display);font-style:italic;font-weight:500;
+  font-size:clamp(1.25rem,1.1rem + 1vw,1.8rem);line-height:1.42;color:var(--cream-2);
+  border-top:2px solid var(--clay);padding-top:1.6rem}
+.praise cite{display:block;font-family:var(--body);font-style:normal;font-weight:700;
+  font-size:.98rem;color:var(--sand);margin-top:1.2rem}
+
+/* closing honoring + blessing */
+.honor{text-align:center;max-width:64ch;margin-inline:auto}
+.honor p:not(.eyebrow){font-family:var(--display);font-style:italic;color:var(--sand);
+  font-size:clamp(1.12rem,1rem + .65vw,1.45rem);line-height:1.55}
+.blessing{font-family:var(--display);font-style:italic;color:var(--clay-lt);
+  margin-top:2.4rem;font-size:1.15rem}
 </style>
 </head>
 <body>
@@ -171,43 +234,96 @@
   </div>
 </section>
 
-<!-- THE THREE DAYS -->
+<!-- WHO COMES -->
 <section class="sec">
   <div class="wrap">
+    <p class="eyebrow rv">Who comes to the canyon</p>
+    <h2 class="rv" style="max-width:16ch">This weekend is for you.</h2>
+
+    <div class="tiles rv">
+      <div class="tile">
+        <h3>The woman who gives everything</h3>
+        <p>To work, to family, to everyone — and quietly wonders who refills her.</p>
+      </div>
+      <div class="tile">
+        <h3>The one in a hard passage</h3>
+        <p>A loss, a divorce, an empty nest, a career turning over — who needs a safe place to set it down.</p>
+      </div>
+      <div class="tile">
+        <h3>The daughter finding her footing</h3>
+        <p>Younger, at a crossroads, looking for ground to stand on.</p>
+      </div>
+      <div class="tile">
+        <h3>The elder</h3>
+        <p>With a life's worth of wisdom, ready to gather it and pass it on.</p>
+      </div>
+      <div class="tile">
+        <h3>The seeker</h3>
+        <p>Anyone who has been walking in the dark and wants to remember the way home.</p>
+      </div>
+    </div>
+
+    <p class="muted rv" style="margin-top:2.6rem;max-width:64ch">You do not need to be fit, or a hiker, or experienced in any of this. Many arrive on their own and leave with a circle. Just eighteen guests, so no one gets lost. <em>The oldest medicine is intergenerational — grandmother, mother, daughter, moving together.</em></p>
+  </div>
+</section>
+
+<!-- THE THREE DAYS -->
+<section class="sec sec--alt">
+  <div class="wrap">
     <p class="eyebrow rv">The three days</p>
-    <h2 class="rv" style="max-width:18ch">A descent, a floor, and a climb into the harvest.</h2>
+    <h2 class="rv" style="max-width:18ch">A descent, a harvest, and a climb into the light.</h2>
 
     <div class="arc">
       <div class="arc-item rv">
         <div class="arc-item__n">01</div>
         <div>
-          <div class="arc-item__d">Friday evening</div>
-          <h3>The Descent</h3>
-          <p>We open outdoors, by the creek, with a land acknowledgement — then breath, fire, and the first story. Nothing is asked of you on the first night except that you set something down.</p>
+          <div class="arc-item__d">Friday</div>
+          <h3>Arrival &amp; Threshold</h3>
+          <p>Nothing is asked of you on the first night except that you set something down.</p>
+          <ul class="beats">
+            <li>Arrivals and check-in — your Ancestral Watch tee, and the smooth stone you will carry all weekend.</li>
+            <li><strong>~4pm, by the creek</strong> — a land acknowledgement to the Amah Mutsun, whose unceded homeland this is, and the opening circle.</li>
+            <li>Dinner — the first meal of the seasonal healing diet.</li>
+            <li>Fireside under the stars — <strong>Stone Breath</strong>, a first meditation, and stories.</li>
+          </ul>
         </div>
       </div>
       <div class="arc-item rv">
         <div class="arc-item__n">02</div>
         <div>
-          <div class="arc-item__d">Saturday, all day</div>
-          <h3>The Canyon Floor</h3>
-          <p>Breathwork at first light. Meditation. Qigong and tai chi beneath the redwoods. A sound bath. A long, slow forest walk. The Ancestral Kitchen at dusk, then fireside and storytelling until the fire goes low.</p>
+          <div class="arc-item__d">Saturday</div>
+          <h3>The Descent &amp; The Harvest</h3>
+          <p>The deepest day of the three — down into the canyon in the afternoon, up into the harvest by nightfall.</p>
+          <ul class="beats">
+            <li>Early meditative hike in the redwoods.</li>
+            <li>A <strong>signature class</strong> — meditation, qigong, sound bath, forest walk, or tai chi.</li>
+            <li>Afternoon: <strong>The Descent — The Canyon Within</strong>, the heart of the weekend, facilitated by Tony.</li>
+            <li>The <strong>Ancestral Kitchen</strong> — food is medicine, with Missy &amp; Henry Webster.</li>
+            <li>The <strong>Harvest Table</strong> celebration, then fireside songs, stories, and dance.</li>
+          </ul>
         </div>
       </div>
       <div class="arc-item rv">
         <div class="arc-item__n">03</div>
         <div>
-          <div class="arc-item__d">Sunday morning</div>
-          <h3>The Harvest</h3>
-          <p>The climb out. We gather what the canyon gave you and name it out loud, so it survives the drive home. Closing circle, and you are on the road before the afternoon.</p>
+          <div class="arc-item__d">Sunday</div>
+          <h3>Carry It Home</h3>
+          <p>The climb out. We gather what the canyon gave you and name it out loud, so it survives the drive home.</p>
+          <ul class="beats">
+            <li>Meditation by the creek.</li>
+            <li><strong>~10am — Embody · Activate · Carry Home</strong>: turning the weekend into practices that come with you.</li>
+            <li>Boxed lunches and departures. You are on the road before the afternoon.</li>
+          </ul>
         </div>
       </div>
     </div>
+
+    <p class="muted rv" style="margin-top:2.2rem;font-size:1rem">Sample flow — final times and class locations are confirmed at check-in. Signature classes are drawn from 1440's included offerings.</p>
   </div>
 </section>
 
 <!-- LAND ACKNOWLEDGEMENT -->
-<section class="sec sec--alt">
+<section class="sec sec--deep">
   <div class="wrap split">
     <div class="rv">
       <p class="eyebrow">Whose ground this is</p>
@@ -228,6 +344,7 @@
   <div class="wrap">
     <p class="eyebrow rv">The practices</p>
     <h2 class="rv" style="max-width:16ch">Old tools. Used properly. For three days straight.</h2>
+    <p class="body-lg muted rv" style="margin-top:1.8rem;max-width:62ch">The redwoods do half the work — standing beneath the <strong>Mother Tree</strong>, walking the creeks, eating food grown and blessed as medicine. Into that stillness we bring the tools, braided from <strong>three cultures</strong>: the Diné of the red-earth country, the Baltic song-keepers, and the Japanese discipline of stillness. Different tongues, one human operating system. <strong>Regulate first</strong> — then everything the ancestors left us becomes usable.</p>
 
     <ul class="plist rv">
       <li><b>Breathwork</b><span>The fastest door into the body we have found. Twice daily.</span></li>
@@ -243,16 +360,28 @@
 </section>
 
 <!-- ANCESTRAL KITCHEN -->
-<section class="sec sec--deep">
-  <div class="wrap split">
-    <div class="rv">
-      <p class="eyebrow">The Ancestral Kitchen</p>
-      <h2 style="max-width:14ch">Food is the oldest medicine on the mountain.</h2>
+<section class="sec sec--deep" id="ancestral-kitchen">
+  <div class="wrap">
+    <p class="eyebrow rv">Food is medicine</p>
+    <h2 class="rv" style="max-width:14ch">The Ancestral Kitchen.</h2>
+    <p class="lead rv" style="margin-top:1.8rem;max-width:46ch">Cooking is a lineage you can taste.</p>
+
+    <div class="split rv" style="margin-top:clamp(2.2rem,4vw,3.4rem);align-items:start">
+      <div>
+        <p class="body-lg">At the heart of the weekend is the <strong>Ancestral Kitchen</strong>, led by <strong>Missy &amp; Henry Webster</strong> — a Navajo family from <strong>Gray Mountain, Arizona</strong>, who cook the way their grandmothers cooked.</p>
+        <p class="body-lg muted">They turn the harvest feast into a hands-on teaching: <strong>blue corn, juniper ash, frybread</strong> pulled hot. They will tell you what each thing is for while they hand it to you, which is how the old knowledge has always travelled — hand to hand, not page to page.</p>
+      </div>
+      <div>
+        <p class="body-lg muted">Around it, every meal is part of the healing: a <strong>specially designed, seasonal diet</strong>, <strong>every meal locally sourced</strong>, cooked and blessed as medicine, <strong>from Friday dinner through Sunday lunch</strong>.</p>
+        <p class="body-lg muted">It is built for late August — light, warm, and alkaline — and designed so that by Sunday your body is running at a different speed than it was on Friday.</p>
+      </div>
     </div>
-    <div class="rv">
-      <p class="body-lg">One night of the weekend belongs to <strong>Missy and Henry Webster</strong> — a Navajo family from Gray Mountain, Arizona, who cook the way their grandmothers cooked.</p>
-      <p class="body-lg muted">Blue corn. Juniper ash. Frybread pulled hot. They will tell you what each thing is for while they hand it to you, which is how the knowledge has always travelled.</p>
-      <p class="body-lg muted">Around it, all weekend, a seasonal healing diet built for late August: light, warm, alkaline, and designed so that by Sunday your body is running at a different speed than it was on Friday.</p>
+
+    <div class="kx rv">
+      <div><b>Missy &amp; Henry Webster</b><span>A Navajo family from Gray Mountain, Arizona, carrying a kitchen lineage forward.</span></div>
+      <div><b>Blue corn · juniper ash</b><span>The staples of Diné cooking, prepared and explained as they are served.</span></div>
+      <div><b>Frybread, pulled hot</b><span>Made together, hands in the dough — a teaching, not a demonstration.</span></div>
+      <div><b>The Harvest Table</b><span>Saturday night's feast — the celebration the end of summer has always been for.</span></div>
     </div>
   </div>
 </section>
@@ -263,8 +392,43 @@
   <figcaption>Eighteen people, one fire, three nights.</figcaption>
 </figure>
 
-<!-- GUIDE -->
+<!-- CARRY HOME -->
 <section class="sec">
+  <div class="wrap">
+    <p class="eyebrow rv">What you will carry home</p>
+    <h2 class="rv" style="max-width:16ch">Six things that leave with you.</h2>
+
+    <div class="tiles rv">
+      <div class="tile tile--plain">
+        <h3>Stone Breath</h3>
+        <p>Calm the nervous system and find your centre in sixty seconds, anywhere.</p>
+      </div>
+      <div class="tile tile--plain">
+        <h3>The Canyon Within</h3>
+        <p>Descend into what you have been carrying — and come back up with it, not around it.</p>
+      </div>
+      <div class="tile tile--plain">
+        <h3>Gratitude &amp; reflection</h3>
+        <p>Build resilience and soften a hard inner voice through daily practice.</p>
+      </div>
+      <div class="tile tile--plain">
+        <h3>Story &amp; journal</h3>
+        <p>Reframe your hardest chapters into strength, in a book you keep.</p>
+      </div>
+      <div class="tile tile--plain">
+        <h3>Belonging</h3>
+        <p>A circle who remember it was never meant to be carried alone.</p>
+      </div>
+      <div class="tile tile--plain">
+        <h3>The harvest table</h3>
+        <p>Taste healing in the Ancestral Kitchen, and celebrate the year's hard work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE -->
+<section class="sec sec--alt">
   <div class="wrap">
     <p class="eyebrow rv">Your guide</p>
     <div class="guide" style="margin-top:2rem">
@@ -294,6 +458,50 @@
   </div>
 </section>
 
+<!-- PRAISE -->
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow rv">Advance praise for <em>Stone Breath</em></p>
+    <div class="praise rv">
+      <blockquote>
+        “The tools for endurance, belonging, and purpose are not lost — they are dormant. This book awakens them.”
+        <cite>Carmella Kahn, DrPH, MPH · University of New Mexico</cite>
+      </blockquote>
+      <blockquote>
+        “Blending ancestral wisdom, cross-cultural storytelling, and practical tools — the courage to live from inner knowing rather than fear.”
+        <cite>Emily Affolter, PhD · Associate Dean of Doctoral Studies</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- THE PACKAGE -->
+<section class="sec sec--deep" id="package">
+  <div class="wrap">
+    <p class="eyebrow rv">The package</p>
+    <h2 class="rv" style="max-width:15ch">All-inclusive. Just arrive.</h2>
+
+    <div class="price rv">
+      <div class="price__n">From $1,100 <span style="font-size:.34em;color:var(--sand);font-weight:700">+ tax</span></div>
+      <div class="price__sub">$430 per night + $240 workshop tuition</div>
+      <ul class="incl">
+        <li>The Canyon Within program — all workshops and sessions</li>
+        <li>Overnight accommodations (shared pod or private room)</li>
+        <li>A complimentary digital copy of <em>Stone Breath</em>, sent before the weekend</li>
+        <li>A printed <strong>Ancestral Watch journal</strong> to keep</li>
+        <li>A specially designed, seasonal healing diet — <strong>every meal locally sourced, Friday dinner through Sunday lunch</strong></li>
+        <li>Daily signature classes — meditation, qigong, sound baths, forest walks, tai chi</li>
+        <li>Campus amenities, including <strong>four miles of walking trails</strong></li>
+      </ul>
+      <p class="muted" style="margin-top:1.8rem;max-width:58ch">1440 Multiversity is a <strong>nonprofit campus</strong> — each booking helps fund scholarships and community programs.</p>
+      <p style="margin-top:2rem">
+        <a class="btn btn--primary" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Reserve your seat at 1440</a>
+      </p>
+      <p class="muted" style="margin-top:1.4rem;font-size:1rem">Please confirm current dates and rates on the 1440 registration page.</p>
+    </div>
+  </div>
+</section>
+
 <!-- DAY PASSES -->
 <section class="sec sec--alt">
   <div class="wrap">
@@ -308,18 +516,53 @@
       <div class="pass">
         <div class="pass__k">Pass two</div>
         <h3>Saturday, full day</h3>
-        <p>Dawn breathwork through to the Ancestral Kitchen and fireside. The deepest day of the three.</p>
+        <p>The early hike, a signature class, The Descent, the Ancestral Kitchen and the Harvest Table. The deepest day of the three.</p>
       </div>
       <div class="pass">
         <div class="pass__k">Pass three</div>
         <h3>Sunday morning</h3>
-        <p>The climb out — integration, the harvest circle, and the road home by noon.</p>
+        <p>The climb out — Embody · Activate · Carry Home, and the road home by noon.</p>
       </div>
     </div>
-    <p class="muted rv" style="margin-top:2.4rem">Full-weekend registration from <strong>$1,100 + tax</strong>; rates vary by accommodation. Day-pass pricing and lodging options are listed with 1440.</p>
+    <p class="muted rv" style="margin-top:2.4rem">Join for the parts that call you, even if you cannot stay overnight. Day-pass pricing and lodging options are listed with 1440.</p>
     <p class="rv" style="margin-top:1.8rem">
       <a class="arrow" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">See dates, rooms &amp; pricing →</a>
     </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec">
+  <div class="wrap wrap--tight">
+    <p class="eyebrow rv">Before you come</p>
+    <h2 class="rv" style="max-width:14ch">The questions people ask.</h2>
+
+    <div class="faq rv">
+      <details>
+        <summary>Do I need to be fit, or a hiker?</summary>
+        <p>No. The descent is inward. The walks are gentle, unhurried, and always optional.</p>
+      </details>
+      <details>
+        <summary>Can I come on my own?</summary>
+        <p>Yes — many do. With just eighteen guests, you will leave with a circle. It is a safe, warm container.</p>
+      </details>
+      <details>
+        <summary>Can I come for just part of it?</summary>
+        <p>Yes. Day passes are available for Friday evening, Saturday, and Sunday morning — join for the parts that call you, even if you cannot stay overnight.</p>
+      </details>
+      <details>
+        <summary>Do I need experience with meditation or breathwork?</summary>
+        <p>None. Everything is taught from the beginning. The first tool, Stone Breath, takes about a minute to learn.</p>
+      </details>
+      <details>
+        <summary>Is this religious?</summary>
+        <p>No. It is ancestral and human. Take what serves you and leave the rest.</p>
+      </details>
+      <details>
+        <summary>What should I bring?</summary>
+        <p>Comfortable clothes and layers, a water bottle, and an open heart. A journal and your stone are provided.</p>
+      </details>
+    </div>
   </div>
 </section>
 
@@ -328,6 +571,14 @@
   <img class="tall" src="/assets/img/1440/redwood-touch.jpg" alt="A hand resting on the bark of an old redwood" style="object-position:50% 72%">
 </figure>
 
+<!-- HONORING -->
+<section class="sec">
+  <div class="wrap wrap--tight honor rv">
+    <p class="eyebrow eyebrow--center">In honoring</p>
+    <p style="margin-top:1.6rem">We gather on the unceded homeland of the <strong style="color:var(--cream-2)">Amah Mutsun</strong> and the Mutsun and Awaswas-speaking peoples. We honor them — past, present, and future — and the land they have always tended.</p>
+  </div>
+</section>
+
 <!-- CLOSE -->
 <section class="sec sec--deep">
   <div class="wrap wrap--tight close-cta">
@@ -335,6 +586,7 @@
     <h2 class="rv" style="margin-top:1.6rem">That is the whole room.</h2>
     <p class="lead rv" style="max-width:40ch;margin-top:1.6rem">August 28–30, 2026. 1440 Multiversity, Scotts Valley, California. Three days in the redwoods to change your frequency.</p>
     <a class="btn btn--primary rv" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Reserve your seat at 1440</a>
+    <p class="blessing rv">Hózhó · Darna · Wa — walk in beauty.</p>
   </div>
 </section>
 

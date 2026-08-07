@@ -85,6 +85,45 @@
   background:linear-gradient(to top,rgba(20,13,10,.9),transparent);
   font-size:.98rem;font-weight:600;color:var(--cream);letter-spacing:.01em}
 .band img.tall{height:clamp(400px,60vh,700px)}
+
+/* ---- restored sections ---- */
+
+/* who this is for */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));
+  gap:clamp(1.1rem,2.2vw,1.9rem);margin-top:clamp(2.2rem,4vw,3.4rem)}
+.tile{background:var(--bg-3);border:1px solid var(--rule);border-radius:14px;
+  padding:clamp(1.5rem,1.1rem + 1.2vw,2.2rem)}
+.tile h3{font-size:clamp(1.28rem,1.1rem + .8vw,1.72rem);font-weight:800;margin-bottom:.6rem}
+.tile p{color:var(--sand);margin-bottom:0;font-size:1.05rem;line-height:1.58}
+
+/* scale & reach */
+.reach{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:clamp(1.8rem,3.4vw,3.4rem);margin-top:clamp(2.2rem,4vw,3.2rem)}
+.reach>div{border-top:2px solid var(--clay);padding-top:1.4rem}
+.reach h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(1.4rem,1.15rem + 1vw,2rem);margin-bottom:.8rem}
+.reach p{color:var(--sand);max-width:40ch;margin-bottom:0}
+
+/* guide */
+.guide{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.35fr);
+  gap:clamp(2rem,1rem + 4vw,4.5rem);align-items:start;margin-top:clamp(2.2rem,4vw,3.2rem)}
+@media(max-width:900px){.guide{grid-template-columns:1fr}}
+.guide__img img{width:100%;height:clamp(380px,56vh,620px);object-fit:cover;
+  object-position:50% 26%;border-radius:14px}
+.guide__bio p{color:var(--sand);font-size:1.08rem;line-height:1.62}
+.guide__bio p strong{color:var(--cream-2)}
+
+/* praise */
+.praise{margin-top:clamp(2.6rem,4vw,3.8rem);border-top:2px solid var(--clay);
+  padding-top:1.8rem;max-width:62ch}
+.praise blockquote{margin:0;font-family:var(--display);font-style:italic;font-weight:500;
+  font-size:clamp(1.25rem,1.1rem + 1vw,1.8rem);line-height:1.42;color:var(--cream-2)}
+.praise cite{display:block;font-family:var(--body);font-style:normal;font-weight:700;
+  font-size:.98rem;color:var(--sand);margin-top:1.2rem}
+
+/* close: second CTA */
+.cta-row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2.6rem}
+.cta-row .btn{margin-top:0}
 </style>
 </head>
 <body>
@@ -144,6 +183,30 @@
       <p class="body-lg">Technology is accelerating past the pace any of us were built for. Systems that held for decades are under strain. Your best people are absorbing that load in their bodies, and calling it a busy quarter.</p>
       <p class="body-lg muted">Rest is not the answer. Rest wears off by Wednesday.</p>
       <p class="body-lg muted">Resilience is different. Resilience is <strong>trainable</strong> — and it has been trained, deliberately and successfully, by peoples who crossed hard country for thousands of years before anyone wrote a wellness budget.</p>
+      <p class="body-lg muted">The best teams do not run on pressure. They run on <strong>coherence</strong> — a nervous system that has remembered how to settle makes clearer decisions, hears people better, and creates from abundance instead of scarcity. That state is not a personality trait. It is trainable, it is measurable, and it is the quiet engine under every good decision and every person who chooses to stay.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHO THIS IS FOR -->
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow rv">Who this is for</p>
+    <h2 class="rv" style="max-width:14ch">For teams ready to rise.</h2>
+
+    <div class="tiles rv">
+      <div class="tile">
+        <h3>Leadership teams ready for more</h3>
+        <p>More clarity, more coherence, more aliveness — a higher baseline to lead from.</p>
+      </div>
+      <div class="tile">
+        <h3>Organizations investing in their people</h3>
+        <p>Where belonging and vitality become the reason your best people stay.</p>
+      </div>
+      <div class="tile">
+        <h3>Teams entering a big season</h3>
+        <p>A merger, a launch, fast growth — met in strength and unity, not depletion.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -306,6 +369,29 @@
   </div>
 </section>
 
+<!-- SCALE & REACH -->
+<section class="sec sec--deep">
+  <div class="wrap">
+    <p class="eyebrow rv">Scale and reach</p>
+    <h2 class="rv" style="max-width:17ch">Built to lift your whole leadership.</h2>
+
+    <div class="reach rv">
+      <div>
+        <h3>Parallel cohorts for groups over twenty</h3>
+        <p>The work is intimate by design. Larger groups run as parallel cohorts with additional facilitators — so an entire leadership layer can rise together, without losing the depth that makes it real.</p>
+      </div>
+      <div>
+        <h3>Delivered wherever your people are</h3>
+        <p>Across the United States and in friendly countries around the world. Tony already advises companies and communities on <strong style="color:var(--cream-2)">four continents</strong>; the Far Messenger Program travels.</p>
+      </div>
+      <div>
+        <h3>Your venue, or 1440 Multiversity</h3>
+        <p>We run inside your offsite container, or in the redwoods at 1440 Multiversity in Scotts Valley, California, where Tony serves as faculty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PROVEN -->
 <section class="sec">
   <div class="wrap split">
@@ -330,6 +416,34 @@
   </div>
 </section>
 
+<!-- YOUR GUIDE -->
+<section class="sec sec--alt">
+  <div class="wrap">
+    <p class="eyebrow rv">Your guide</p>
+    <h2 class="rv" style="max-width:13ch">Tony Skrelūnas.</h2>
+
+    <div class="guide">
+      <figure class="guide__img rv">
+        <img src="/assets/img/tony/portrait-standing.jpg" alt="Tony Skrelūnas, portrait">
+      </figure>
+      <div class="guide__bio rv">
+        <p>Tony Skrelūnas is <strong>Lithuanian and Diné</strong> — raised in a hogan on Big Mountain, learning by lamplight after the chores were done, reading the philosophy of Japan by the same small flame, a discipline he would take as his own. He walked away from college, came back, and finished at the top of his class.</p>
+        <p>Today he is a <strong>PhD candidate in Sustainable Development at Prescott College</strong>, where his doctoral research studies exactly what this work delivers: how the ancestral tools of breath, ceremony, and community hold up as a high-performance system for the modern world. He is the first person of Diné and Lithuanian descent inducted into <strong>Northern Arizona University's W. A. Franke College of Business Hall of Fame</strong>.</p>
+        <p>He knows how to move real institutions. A <strong>three-time executive and systems architect</strong>, he led the <strong>governance restructuring of a still-traditional nation</strong> — returning real ownership and self-determination to its local communities — advises companies and communities on <strong>four continents</strong>, and serves as development advisor to a <strong>$40M integrated health-and-wellness development</strong>. For a <strong>decade he convened Indigenous elders across the Americas</strong> in the old way — the living model this program is built from.</p>
+        <p>He is <strong>board chair of Red Road Journey</strong>, faculty at <strong>1440 Multiversity</strong>, a runner and aspiring silversmith, and the author of the <em>Ancestral Watch</em> series.</p>
+        <p>Across all of it runs one conviction: the tools were never lost, only set down — and a person, a team, or a whole people can remember their power and rise into it. Money is only ever one instrument in that work; the real aim is wholeness that lasts for generations. <strong>For each engagement, Tony assembles and leads the practitioner team.</strong></p>
+
+        <div class="praise">
+          <blockquote>
+            “Guides toward a deeper sense of belonging, purpose-driven action, and the courage to live from inner knowing rather than fear.”
+            <cite>Emily Alicia Affolter, PhD · Prescott College</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- TECH THREAD -->
 <section class="sec sec--deep">
   <div class="wrap wrap--tight">
@@ -346,7 +460,10 @@
     <h2 class="rv">Tell us who you are bringing, and where.</h2>
     <p class="lead rv" style="max-width:44ch;margin-top:1.8rem">We will come back with an arc designed for your group, the practitioner team it needs, and what it costs — in one document.</p>
     <a class="mail rv" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
-    <a class="btn btn--primary rv" href="mailto:wisdom@ancestralwatch.com">Start a conversation</a>
+    <div class="cta-row rv">
+      <a class="btn btn--primary" href="mailto:wisdom@ancestralwatch.com?subject=The%20Far%20Messenger%20Program%20%E2%80%94%20Inquiry&amp;body=Our%20team%3A%20%0AApprox.%20size%3A%20%0ATimeframe%3A%20%0AWhat%20we%27re%20moving%20toward%3A%20">Book an exploratory call</a>
+      <a class="btn btn--ghost" href="mailto:wisdom@ancestralwatch.com?subject=Far%20Messenger%20Program%20%E2%80%94%20Please%20send%20the%20prospectus">Request the prospectus</a>
+    </div>
   </div>
 </section>
 
