@@ -20,6 +20,15 @@
   --f-focus:  0 0 0 4px rgba(201,106,62,.22);
 }
 
+/* skip link — off-screen until a keyboard user tabs to it */
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{
+  left:0;top:0;z-index:300;
+  background:var(--clay);color:var(--on-clay);
+  padding:.9rem 1.4rem;border-radius:0 0 8px 0;
+  font-family:var(--body);font-weight:800;text-decoration:none;
+}
+
 /* p{max-width:62ch} in v2.css keeps a centred eyebrow off-centre.
    Reinforce it here so .eyebrow--center means what it says. */
 .eyebrow--center{max-width:none;margin-inline:auto;justify-content:center}

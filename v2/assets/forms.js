@@ -144,7 +144,10 @@ var MAIL = {
     function hidden(name, value) {
       if (form.querySelector('[name="' + name + '"]')) return;
       var i = document.createElement("input");
-      i.type = "hidden"; i.name = name; i.value = value;
+      i.type = "hidden"; i.name = name;
+      /* setAttribute, not .value — form.reset() restores the attribute,
+         so the access key survives a reset after a successful send */
+      i.setAttribute("value", value);
       form.appendChild(i);
     }
     hidden("access_key", MAIL.ACCESS_KEY);
