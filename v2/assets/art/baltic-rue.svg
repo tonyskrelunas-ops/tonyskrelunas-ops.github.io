@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Rue sprig">
+  <!-- main stem -->
+  <path d="M 102,192 C 99,168 101,144 100,120 C 99,96 100,76 100,58"/>
+
+  <!-- branch pair 1 -->
+  <path d="M 100,170 L 80,160 L 60,144"/>
+  <path d="M 100,170 L 120,160 L 140,144"/>
+  <ellipse cx="52" cy="134" rx="7" ry="11.5" transform="rotate(-42 52 134)"/>
+  <ellipse cx="70" cy="140" rx="7" ry="11.5" transform="rotate(-16 70 140)"/>
+  <ellipse cx="68" cy="164" rx="7" ry="11.5" transform="rotate(34 68 164)"/>
+  <ellipse cx="148" cy="134" rx="7" ry="11.5" transform="rotate(42 148 134)"/>
+  <ellipse cx="130" cy="140" rx="7" ry="11.5" transform="rotate(16 130 140)"/>
+  <ellipse cx="132" cy="164" rx="7" ry="11.5" transform="rotate(-34 132 164)"/>
+
+  <!-- branch pair 2 -->
+  <path d="M 100,132 L 84,122 L 66,106"/>
+  <path d="M 100,132 L 116,122 L 134,106"/>
+  <ellipse cx="58" cy="97" rx="6.4" ry="10.5" transform="rotate(-42 58 97)"/>
+  <ellipse cx="76" cy="103" rx="6.4" ry="10.5" transform="rotate(-16 76 103)"/>
+  <ellipse cx="74" cy="126" rx="6.4" ry="10.5" transform="rotate(34 74 126)"/>
+  <ellipse cx="142" cy="97" rx="6.4" ry="10.5" transform="rotate(42 142 97)"/>
+  <ellipse cx="124" cy="103" rx="6.4" ry="10.5" transform="rotate(16 124 103)"/>
+  <ellipse cx="126" cy="126" rx="6.4" ry="10.5" transform="rotate(-34 126 126)"/>
+
+  <!-- branch pair 3 -->
+  <path d="M 100,98 L 88,90 L 76,78"/>
+  <path d="M 100,98 L 112,90 L 124,78"/>
+  <ellipse cx="69" cy="70" rx="5.6" ry="9" transform="rotate(-42 69 70)"/>
+  <ellipse cx="84" cy="74" rx="5.6" ry="9" transform="rotate(-14 84 74)"/>
+  <ellipse cx="131" cy="70" rx="5.6" ry="9" transform="rotate(42 131 70)"/>
+  <ellipse cx="116" cy="74" rx="5.6" ry="9" transform="rotate(-14 116 74)"/>
+
+  <!-- crown flowers -->
+  <path d="M 100,60 C 94,56 88,53 84,50"/>
+  <path d="M 100,60 C 106,56 112,53 116,50"/>
+  <line x1="100" y1="58" x2="100" y2="44"/>
+
+  <ellipse cx="100" cy="28" rx="4.6" ry="7"/>
+  <ellipse cx="100" cy="42" rx="4.6" ry="7"/>
+  <ellipse cx="91" cy="35" rx="7" ry="4.6"/>
+  <ellipse cx="109" cy="35" rx="7" ry="4.6"/>
+  <circle cx="100" cy="35" r="1.8" fill="currentColor" stroke="none"/>
+
+  <ellipse cx="80" cy="41" rx="3.8" ry="5.8"/>
+  <ellipse cx="80" cy="53" rx="3.8" ry="5.8"/>
+  <ellipse cx="72" cy="47" rx="5.8" ry="3.8"/>
+  <ellipse cx="88" cy="47" rx="5.8" ry="3.8"/>
+  <circle cx="80" cy="47" r="1.5" fill="currentColor" stroke="none"/>
+
+  <ellipse cx="120" cy="41" rx="3.8" ry="5.8"/>
+  <ellipse cx="120" cy="53" rx="3.8" ry="5.8"/>
+  <ellipse cx="112" cy="47" rx="5.8" ry="3.8"/>
+  <ellipse cx="128" cy="47" rx="5.8" ry="3.8"/>
+  <circle cx="120" cy="47" r="1.5" fill="currentColor" stroke="none"/>
+</svg>

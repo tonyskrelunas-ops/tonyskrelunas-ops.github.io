@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Stylized scroll cloud bands">
+  <!-- upper cloud -->
+  <path d="M 18,82 Q 20,62 38,65 Q 42,48 62,53 Q 70,38 88,47 Q 103,42 106,57 Q 123,57 125,74 Q 127,89 110,93 Q 60,99 18,82 Z"/>
+  <path d="M 29,80 Q 31,67 43,69 Q 47,56 61,60 Q 69,50 81,56" opacity="0.55"/>
+  <path d="M 125,72 C 145,66 163,73 183,66"/>
+  <path d="M 126,81 C 146,77 164,84 186,77" opacity="0.8"/>
+  <path d="M 123,90 C 143,88 160,94 180,88" opacity="0.55"/>
+
+  <!-- lower cloud -->
+  <path d="M 182,142 Q 180,122 162,125 Q 158,108 138,113 Q 130,98 112,107 Q 97,102 94,117 Q 77,117 75,134 Q 73,149 90,153 Q 140,159 182,142 Z"/>
+  <path d="M 171,140 Q 169,127 157,129 Q 153,116 139,120 Q 131,110 119,116" opacity="0.55"/>
+  <path d="M 75,132 C 55,126 37,133 17,126"/>
+  <path d="M 74,141 C 54,137 36,144 14,137" opacity="0.8"/>
+  <path d="M 77,150 C 57,148 40,154 20,148" opacity="0.55"/>
+</svg>
