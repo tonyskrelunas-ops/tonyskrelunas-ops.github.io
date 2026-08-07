@@ -165,3 +165,10 @@ figure{margin:0}
   .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
   .rv.in{opacity:1;transform:none}
 }
+
+/* --- the cowboy signature is the opening mark, on every page --- */
+.brand{display:inline-flex;align-items:center;gap:.75rem}
+.brand__logo{width:56px;height:auto;flex:none;display:block}
+.brand__txt{font-family:var(--display);font-weight:700;line-height:1;letter-spacing:-.02em}
+.menu__top .brand__logo{width:52px}
+@media(max-width:860px){ .brand__logo{width:44px} }
