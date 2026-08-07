@@ -167,8 +167,11 @@ figure{margin:0}
 }
 
 /* --- the cowboy signature is the opening mark, on every page --- */
-.brand{display:inline-flex;align-items:center;gap:.75rem}
-.brand__logo{width:56px;height:auto;flex:none;display:block}
-.brand__txt{font-family:var(--display);font-weight:700;line-height:1;letter-spacing:-.02em}
-.menu__top .brand__logo{width:52px}
-@media(max-width:860px){ .brand__logo{width:44px} }
+.brand{display:inline-flex;align-items:center;gap:.85rem}
+.brand__logo{width:clamp(104px, 9vw, 148px);height:auto;flex:none;display:block}
+.brand__txt{font-family:var(--display);font-weight:700;line-height:1;letter-spacing:-.02em;
+  font-size:clamp(1.4rem, 1.2rem + .55vw, 1.85rem)}
+.hdr__in{padding-block:clamp(.9rem, .7rem + .5vw, 1.35rem)}
+.menu__top .brand__logo{width:clamp(104px, 10vw, 148px)}
+@media(max-width:860px){ .brand__logo{width:86px} .brand__txt{font-size:1.3rem} }
+@media(max-width:520px){ .brand__logo{width:72px} }
