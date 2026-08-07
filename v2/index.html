@@ -4,44 +4,127 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tony Skrelūnas — Ancestral intelligence for a regenerating world | TribeAwaken</title>
-<meta name="description" content="Retreats, team immersives, and coaching that build the capacity to carry what matters across hard ground. Led by Tony Skrelūnas — Diné and Lithuanian, advising on four continents.">
+<meta name="description" content="Human performance and nation-building, braided from three traditions. Retreats, team immersives, coaching, essays, music and film. Led by Tony Skrelūnas — Diné and Lithuanian, advising on four continents.">
 <link rel="icon" href="/favicon.svg">
 <link rel="stylesheet" href="/v2/assets/v2.css">
 <style>
-/* ============ page-specific — extends v2.css ============ */
+/* ============ page-specific — extends v2.css ============
+   NOTE: inside clamp()/calc(), the + and - operators MUST be
+   surrounded by whitespace or the whole declaration is dropped.
+   ======================================================== */
 
+html{scroll-padding-top:6.5rem}
 .bleed{width:100%}
 .eyebrow{flex-wrap:wrap}
 
-/* --- hero --- */
-/* single grid track must never exceed the container on narrow screens */
-.hero{min-height:min(92vh,960px);grid-template-columns:minmax(0,100%)}
+/* --- texture layer: sandstone / rug / stone, kept subliminal --- */
+.tex{position:relative;isolation:isolate}
+.tex__i{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.tex__i img{width:100%;height:100%;object-fit:cover;opacity:.055;
+  filter:contrast(1.3) saturate(.4) blur(2px);transform:scale(1.06)}
+.tex--strong .tex__i img{opacity:.13;filter:contrast(1.2) saturate(.5) blur(3px)}
+.tex--zoom .tex__i img{transform:scale(2.6);opacity:.1}
+.tex--weave .tex__i img{transform:scale(2.9);opacity:.05;filter:contrast(1.4) saturate(.35) blur(2px)}
+
+/* --- woven band divider (Diné weaving motif) --- */
+.weave{color:var(--clay);opacity:.55;line-height:0;
+  border-block:1px solid var(--rule);background:var(--ink)}
+.weave svg{display:block;width:100%;height:28px}
+
+/* ================= GLOBAL / LANGUAGE BAR ================= */
+.globebar{background:var(--ink);border-bottom:1px solid var(--rule);font-size:.82rem}
+.globebar__in{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap;
+  padding-block:.62rem;min-height:2.9rem}
+.globebar__lbl{display:flex;align-items:center;gap:.55rem;font-weight:800;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--gold);flex:none}
+.globebar__lbl svg{width:15px;height:15px;flex:none}
+.globebar__ls{display:flex;align-items:center;gap:.35rem 1.15rem;flex-wrap:wrap;
+  list-style:none;padding:0;margin:0}
+.globebar__ls a{text-decoration:none;font-weight:700;color:var(--sand);
+  letter-spacing:.04em;white-space:nowrap;transition:color .18s}
+.globebar__ls a:hover{color:var(--cream)}
+.globebar__ls .is-on{color:var(--cream);border-bottom:2px solid var(--clay);padding-bottom:2px}
+.globebar__ls .soon{color:rgba(217,198,180,.42);white-space:nowrap;font-weight:600}
+.globebar__mail{margin-left:auto;text-decoration:none;font-weight:700;color:var(--sand);
+  letter-spacing:.03em;white-space:nowrap;transition:color .18s}
+.globebar__mail:hover{color:var(--clay-lt)}
+@media(max-width:860px){.globebar__mail{display:none}}
+@media(max-width:520px){.globebar__lbl span{display:none}}
+
+/* ================= HEADER — full nav ================= */
+.hdr__in{max-width:1560px;gap:1.6rem}
+.hdr__end{display:flex;align-items:center;gap:1rem}
+.nav{gap:1.25rem}
+.nav a{font-size:.94rem;font-weight:700;letter-spacing:-.005em;
+  padding-block:.3rem;border-bottom:2px solid transparent;transition:color .18s,border-color .18s}
+.nav a:hover{color:var(--clay-lt);border-bottom-color:var(--clay)}
+.hdr__cta{font-size:.92rem;padding:.85em 1.4em;white-space:nowrap}
+
+.burger{display:inline-flex;flex-direction:column;justify-content:center;gap:6px;
+  width:52px;height:44px;padding:0 12px;background:none;border:1px solid var(--rule);
+  border-radius:6px;cursor:pointer}
+.burger i{display:block;height:2px;background:var(--cream);border-radius:2px;transition:.25s}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* nav / burger swap — declared AFTER the base rules so they win */
+@media(max-width:1240px){.nav{display:none}}
+@media(min-width:1241px){.burger{display:none}}
+@media(max-width:520px){.hdr__cta{display:none}}
+
+.menu{position:fixed;inset:0;z-index:200;background:var(--ink);overflow-y:auto;
+  padding:clamp(1.5rem, 1rem + 3vw, 3rem) 0 4rem;
+  opacity:0;visibility:hidden;transform:translateY(-12px);
+  transition:opacity .28s ease,transform .28s ease,visibility .28s}
+.menu.open{opacity:1;visibility:visible;transform:none}
+.menu__top{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  margin-bottom:clamp(2rem, 1rem + 4vw, 4rem)}
+.menu__close{width:52px;height:44px;background:none;border:1px solid var(--rule);
+  border-radius:6px;color:var(--cream);font-size:1.5rem;line-height:1;cursor:pointer}
+.menu__ls{list-style:none;padding:0;margin:0;display:grid;
+  gap:clamp(.2rem, .1rem + .5vw, .7rem);border-top:1px solid var(--rule)}
+.menu__ls li{border-bottom:1px solid var(--rule)}
+.menu__ls a{display:flex;align-items:baseline;gap:1.2rem;text-decoration:none;
+  font-family:var(--display);font-weight:700;letter-spacing:-.03em;
+  font-size:clamp(1.9rem, 1.2rem + 3.2vw, 3.4rem);line-height:1.05;
+  padding-block:clamp(.5rem, .3rem + .8vw, .9rem);transition:color .2s,padding-left .2s}
+.menu__ls a:hover{color:var(--clay-lt);padding-left:.6rem}
+.menu__ls em{font-family:var(--body);font-style:normal;font-size:.78rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt);flex:none}
+.menu__foot{margin-top:clamp(2.2rem, 1.5rem + 3vw, 3.6rem);display:flex;flex-wrap:wrap;
+  gap:1.2rem 2.4rem;align-items:center}
+.menu__foot a{text-decoration:none;font-weight:800;font-size:.9rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--sand)}
+.menu__foot a:hover{color:var(--clay-lt)}
+body.locked{overflow:hidden}
+
+/* ================= HERO ================= */
+.hero{min-height:min(94vh, 1000px);grid-template-columns:minmax(0,100%)}
 .hero__in{min-width:0}
-.hero__scrim{background:linear-gradient(100deg,rgba(20,13,10,.95) 0%,rgba(20,13,10,.84) 44%,rgba(20,13,10,.34) 100%)}
+.hero__scrim{background:linear-gradient(100deg,rgba(20,13,10,.95) 0%,rgba(20,13,10,.9) 40%,rgba(20,13,10,.6) 68%,rgba(20,13,10,.3) 100%)}
 .hero__in .eyebrow{color:var(--gold)}
 .hero__in .eyebrow::before{background:var(--gold)}
 .hero h1{max-width:15ch;font-size:clamp(3rem, 1.2rem + 7.2vw, 7.5rem)}
-.hero .lead{max-width:38ch;color:var(--sand)}
+.hero .lead{max-width:40ch;color:var(--sand)}
 .hero__note{margin-top:2.2rem;font-size:var(--t-small);color:var(--sand);letter-spacing:.02em}
 .hero__note a{color:var(--cream);text-decoration:none;border-bottom:1px solid var(--rule)}
 .hero__note a:hover{border-bottom-color:var(--clay)}
 
-/* --- proof strip --- */
-.proof{background:var(--ink);border-block:1px solid var(--rule)}
-.proof__in{display:flex;flex-wrap:wrap;
-  gap:clamp(1.4rem, .5rem + 3vw, 4rem);
-  padding-block:clamp(1.5rem, 1rem + 1vw, 2.2rem);
-  align-items:baseline;justify-content:space-between}
-@media(max-width:760px){
-  .proof__in{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 1.2rem}
-}
-@media(max-width:420px){.proof__in{grid-template-columns:1fr;gap:1.15rem}}
-.proof__i{display:flex;align-items:baseline;gap:.65rem;font-size:.9rem;font-weight:700;
-  letter-spacing:.11em;text-transform:uppercase;color:var(--sand);max-width:none}
-.proof__i b{font-family:var(--display);font-weight:900;letter-spacing:-.03em;
-  font-size:clamp(1.7rem, 1.2rem + 1.1vw, 2.5rem);color:var(--gold);text-transform:none}
+/* ================= PROOF ================= */
+.proof{background:var(--ink);border-bottom:1px solid var(--rule)}
+.proof__in{display:grid;grid-template-columns:repeat(5,1fr);
+  gap:clamp(1.4rem, .8rem + 1.6vw, 2.6rem);
+  padding-block:clamp(2rem, 1.4rem + 1.6vw, 3.2rem)}
+.proof__i{display:block;max-width:none;font-size:.8rem;font-weight:800;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--sand);line-height:1.4}
+.proof__i b{display:block;font-family:var(--display);font-weight:900;letter-spacing:-.035em;
+  font-size:clamp(2.4rem, 1.6rem + 2.2vw, 4rem);color:var(--gold);text-transform:none;
+  line-height:.9;margin-bottom:.6rem}
+@media(max-width:900px){.proof__in{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.proof__in{grid-template-columns:1fr 1fr}}
 
-/* --- section intro --- */
+/* ================= SECTION INTRO ================= */
 .head{max-width:22ch}
 .head--wide{max-width:24ch}
 .sec__intro{display:grid;grid-template-columns:1.15fr .85fr;
@@ -50,56 +133,55 @@
 .sec__intro p{color:var(--sand)}
 @media(max-width:900px){.sec__intro{grid-template-columns:1fr;align-items:start;gap:1.5rem}}
 
-/* --- alternating full-bleed rows --- */
-.row{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
-.row + .row{border-top:1px solid var(--rule)}
-.row__media{position:relative;overflow:hidden;background:var(--ink);
-  min-height:clamp(360px, 50vh, 640px)}
-.row__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.row__body{display:flex;flex-direction:column;justify-content:center;
-  padding:clamp(3rem, 2rem + 3.4vw, 5.5rem) clamp(1.5rem, .8rem + 3.6vw, 5.5rem)}
-.row__body > *{max-width:33rem}
-.row--flip .row__media{order:2}
-.row__meta{font-size:.84rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--sand);margin-bottom:1.5rem;line-height:1.6;max-width:100%}
-.row__meta b{color:var(--clay-lt);font-weight:800}
-.row__body h3{font-size:clamp(2rem, 1.45rem + 2.3vw, 3.3rem);font-weight:800;
-  letter-spacing:-.033em;line-height:1;margin-bottom:1.15rem}
-.row__body p{color:var(--sand);margin-bottom:2.1rem;max-width:34ch}
-@media(max-width:900px){
-  .row{grid-template-columns:1fr}
-  .row--flip .row__media{order:0}
-  .row__media{min-height:0;height:62vw;max-height:440px}
-  .row__body > *{max-width:100%}
-  .row__body p{max-width:100%}
-}
+/* ================= TWO PILLARS ================= */
+.pill{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.4rem, .8rem + 2vw, 2.6rem)}
+@media(max-width:860px){.pill{grid-template-columns:1fr}}
+.pill__c{position:relative;isolation:isolate;overflow:hidden;border-radius:16px;
+  min-height:clamp(440px, 60vh, 680px);display:flex;flex-direction:column;justify-content:flex-end;
+  padding:clamp(1.8rem, 1.2rem + 2.4vw, 3.4rem);text-decoration:none;
+  border:1px solid var(--rule);transition:transform .3s ease}
+.pill__c:hover{transform:translateY(-4px)}
+.pill__c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+  transition:transform .6s ease}
+.pill__c:hover img{transform:scale(1.04)}
+.pill__c::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(20,13,10,.32) 0%,rgba(20,13,10,.8) 46%,rgba(20,13,10,.97) 100%)}
+.pill__n{font-family:var(--body);font-size:.8rem;font-weight:800;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem}
+.pill__c h3{font-size:clamp(2rem, 1.4rem + 2.4vw, 3.2rem);font-weight:800;letter-spacing:-.035em;
+  line-height:1;margin-bottom:1rem}
+.pill__c p{color:var(--sand);max-width:36ch;margin-bottom:1.6rem}
+.pill__ls{list-style:none;padding:0;margin:0 0 1.9rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.pill__ls li{font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--cream);border:1px solid var(--rule);border-radius:100px;padding:.45em 1em;
+  background:rgba(20,13,10,.45)}
 
-/* --- comeback / origin --- */
+/* ================= ORIGIN ================= */
 .origin{display:grid;grid-template-columns:1fr 1.12fr;
   gap:clamp(2rem, 1rem + 4vw, 5.5rem);align-items:center}
 .origin__img{border-radius:14px;overflow:hidden;aspect-ratio:4/5;background:var(--ink)}
-.origin__img img{width:100%;height:100%;object-fit:cover;object-position:50% 26%}
+.origin__img img{width:100%;height:100%;object-fit:cover;object-position:50% 42%}
 .origin h2{margin-bottom:1.7rem}
 .origin p{color:var(--sand);max-width:46ch}
 .origin p strong{color:var(--cream-2)}
 .origin__more{margin-top:2.2rem}
 @media(max-width:900px){.origin{grid-template-columns:1fr}.origin__img{aspect-ratio:5/4}}
 
-/* --- big statement band --- */
+/* ================= STATEMENT BAND ================= */
 .state{position:relative;isolation:isolate;display:grid;align-items:center;
-  min-height:min(80vh,760px);overflow:hidden}
+  min-height:min(82vh, 820px);overflow:hidden}
 .state__bg{position:absolute;inset:0;z-index:-2}
-.state__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.state__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 58%}
 .state::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(20,13,10,.58) 0%,rgba(20,13,10,.72) 55%,rgba(20,13,10,.9) 100%)}
+  background:linear-gradient(180deg,rgba(20,13,10,.46) 0%,rgba(20,13,10,.6) 46%,rgba(20,13,10,.88) 100%)}
 .state__in{padding-block:clamp(4rem, 2rem + 6vw, 7rem)}
 .state .pull{max-width:19ch;font-style:normal;font-weight:700;
   font-size:clamp(2.1rem, 1.3rem + 3vw, 4.2rem);
-  text-shadow:0 2px 30px rgba(20,13,10,.6)}
+  text-shadow:0 2px 34px rgba(20,13,10,.75)}
 .state cite{display:block;font-family:var(--body);font-style:normal;font-size:.86rem;
   font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-top:2.2rem}
 
-/* --- four capitals --- */
+/* ================= FOUR CAPITALS ================= */
 .caps{display:grid;grid-template-columns:repeat(4,1fr);
   border-top:1px solid var(--rule);margin-top:clamp(2.8rem, 2rem + 2vw, 4.5rem)}
 .cap{padding:clamp(2.2rem, 1.6rem + 1.6vw, 3.2rem) clamp(1.3rem, .7rem + 1.6vw, 2.4rem);
@@ -107,7 +189,7 @@
 .cap:first-child{border-left:0;padding-left:0}
 .cap:last-child{padding-right:0}
 .cap__n{display:block;font-family:var(--display);font-weight:900;font-size:1rem;
-  color:var(--clay-lt);letter-spacing:.03em;margin-bottom:1.7rem}
+  color:var(--clay-lt);letter-spacing:.03em;margin-bottom:.9rem}
 .cap h3{font-size:clamp(1.5rem, 1.2rem + 1.1vw, 2.15rem);font-weight:800;margin-bottom:.8rem}
 .cap p{font-size:1.02rem;line-height:1.6;color:var(--sand);max-width:none}
 @media(max-width:1000px){
@@ -122,30 +204,267 @@
   .cap:last-child{border-bottom:0}
 }
 
-/* --- plain full-bleed image band --- */
-.slab img{width:100%;height:clamp(320px, 52vh, 640px);object-fit:cover;object-position:50% 45%}
-.slab figcaption{font-size:var(--t-small);color:var(--sand);font-style:italic;
-  margin-top:1.1rem;max-width:44ch}
+/* ================= WORK ROWS ================= */
+.row{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.row + .row{border-top:1px solid var(--rule)}
+.row__media{position:relative;overflow:hidden;background:var(--ink);
+  min-height:clamp(360px, 50vh, 620px)}
+.row__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.row__body{display:flex;flex-direction:column;justify-content:center;
+  padding:clamp(3rem, 2rem + 3.4vw, 5.5rem) clamp(1.5rem, .8rem + 3.6vw, 5.5rem)}
+.row__body > *{max-width:33rem}
+.row--flip .row__media{order:2}
+.row .row__meta{max-width:none;font-size:.84rem;font-weight:800;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--sand);margin-bottom:1.5rem;line-height:1.6}
+.row__meta b{color:var(--clay-lt);font-weight:800}
+.row__body h3{font-size:clamp(2rem, 1.45rem + 2.3vw, 3.3rem);font-weight:800;
+  letter-spacing:-.033em;line-height:1;margin-bottom:1.15rem}
+.row .row__body p{color:var(--sand);margin-bottom:2.1rem;max-width:36ch}
+.row .row__body p.row__meta{max-width:none;color:var(--sand);margin-bottom:1.5rem}
+@media(max-width:900px){
+  .row{grid-template-columns:1fr}
+  .row--flip .row__media{order:0}
+  .row__media{min-height:0;height:62vw;max-height:440px}
+  .row__body > *{max-width:100%}
+  .row .row__body p{max-width:100%}
+}
 
-/* --- books --- */
-.books{display:grid;grid-template-columns:.78fr 1.22fr;
+/* ================= JOURNAL ================= */
+.jhead .arrow{margin-top:1.8rem}
+.jbar{display:flex;align-items:baseline;justify-content:space-between;gap:1.5rem;
+  flex-wrap:wrap;border-top:1px solid var(--rule);padding-top:1.5rem;
+  margin-top:clamp(3rem, 2rem + 3vw, 5rem);font-size:.84rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+
+/* featured — broadsheet cover: full-res photo panel + type panel */
+.feat{display:grid;grid-template-columns:1fr 1fr;text-decoration:none;
+  border-block:1px solid var(--rule);background:var(--ink)}
+.feat__ph{position:relative;overflow:hidden;background:var(--bg-3);
+  min-height:clamp(420px, 64vh, 780px)}
+.feat__ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transition:transform .9s ease}
+.feat:hover .feat__ph img{transform:scale(1.04)}
+.feat__in{position:relative;isolation:isolate;display:flex;flex-direction:column;
+  justify-content:center;
+  padding:clamp(3rem, 2rem + 3.4vw, 5.5rem) clamp(1.5rem, .8rem + 3.6vw, 5.5rem)}
+.feat__in > *{max-width:34rem}
+.feat__kick{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap;
+  font-size:.8rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.5rem}
+.feat__kick::before{content:"";width:2.4rem;height:2px;background:var(--gold);flex:none}
+.feat h3{font-family:var(--display);font-weight:900;letter-spacing:-.038em;line-height:.98;
+  font-size:clamp(2.2rem, 1.1rem + 3.4vw, 4.4rem)}
+.feat__d{margin-top:1.6rem;color:var(--sand);font-size:var(--t-lead);line-height:1.5;
+  font-weight:500;max-width:38ch}
+.feat__by{margin-top:1.8rem;display:flex;align-items:center;gap:1.6rem;flex-wrap:wrap;
+  font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+.feat__go{display:inline-flex;align-items:center;gap:.6em;margin-top:2.4rem;align-self:flex-start;
+  font-family:var(--body);font-weight:800;font-size:1rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--on-clay);background:var(--clay);
+  padding:1em 2em;border-radius:6px;transition:background .2s,gap .2s}
+.feat:hover .feat__go{background:var(--clay-lt);gap:1em}
+@media(max-width:900px){
+  .feat{grid-template-columns:1fr}
+  .feat__ph{min-height:0;height:66vw;max-height:460px}
+  .feat__in > *{max-width:100%}
+}
+
+/* the essay's own photographs */
+.strip{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--rule)}
+.strip img{width:100%;height:clamp(150px, 16vw, 250px);object-fit:cover;
+  border-left:1px solid var(--rule)}
+.strip img:first-child{border-left:0}
+@media(max-width:620px){.strip{grid-template-columns:1fr 1fr}.strip img:nth-child(3){display:none}}
+
+/* article cards */
+.jc{display:flex;flex-direction:column;text-decoration:none}
+.jc__img{position:relative;overflow:hidden;border-radius:12px;background:var(--bg-3);
+  aspect-ratio:3/2;margin-bottom:1.5rem}
+.jc__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transition:transform .6s ease}
+.jc:hover .jc__img img{transform:scale(1.05)}
+.jc__kick{font-size:.76rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--clay-lt);margin-bottom:.85rem}
+.jc h3{font-size:clamp(1.5rem, 1.2rem + 1.1vw, 2.05rem);font-weight:800;letter-spacing:-.032em;
+  line-height:1.06;margin-bottom:.9rem;transition:color .2s;max-width:16ch}
+.jc:hover h3{color:var(--clay-lt)}
+.jc p{color:var(--sand);font-size:1.02rem;line-height:1.55;max-width:36ch}
+.jc__go{margin-top:auto;padding-top:1.4rem;font-size:.8rem;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--sand)}
+
+.jbig{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem, .8rem + 2vw, 2.6rem)}
+@media(max-width:940px){.jbig{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.jbig{grid-template-columns:1fr}}
+
+.jmid{display:grid;grid-template-columns:repeat(3,1fr);
+  gap:clamp(1.8rem, 1.2rem + 2vw, 3.2rem) clamp(1.4rem, .8rem + 2vw, 2.6rem);
+  margin-top:clamp(3rem, 2rem + 3vw, 5rem);
+  padding-top:clamp(3rem, 2rem + 3vw, 5rem);border-top:1px solid var(--rule)}
+@media(max-width:940px){.jmid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.jmid{grid-template-columns:1fr}}
+.jmid .jc__img{aspect-ratio:16/10;margin-bottom:1.2rem}
+.jmid h3{font-size:clamp(1.32rem, 1.15rem + .6vw, 1.62rem);margin-bottom:.6rem;max-width:20ch}
+.jmid p{font-size:.98rem;line-height:1.5;max-width:38ch}
+
+/* compact index list */
+.jlist{margin-top:clamp(3rem, 2rem + 3vw, 5rem);
+  padding-top:clamp(1rem, .6rem + 1vw, 1.6rem);border-top:1px solid var(--rule)}
+.jrow{display:grid;grid-template-columns:5.5rem 1fr auto;align-items:center;
+  gap:clamp(1.4rem, .9rem + 1.6vw, 2.6rem);
+  padding-block:clamp(1.2rem, .9rem + 1vw, 1.9rem);
+  border-bottom:1px solid var(--rule);text-decoration:none;transition:padding-left .25s ease}
+.jrow:hover{padding-left:.7rem}
+.jrow__t{overflow:hidden;border-radius:8px;aspect-ratio:1;background:var(--bg-3)}
+.jrow__t img{width:100%;height:100%;object-fit:cover}
+.jrow__t--type{display:grid;place-items:center;border:1px solid var(--rule);
+  font-family:var(--display);font-weight:900;font-size:2rem;color:var(--clay-lt);line-height:1}
+.jrow h3{font-size:clamp(1.22rem, 1.05rem + .75vw, 1.72rem);font-weight:700;letter-spacing:-.028em;
+  line-height:1.14;transition:color .2s}
+.jrow:hover h3{color:var(--clay-lt)}
+.jrow__k{font-size:.74rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--sand);margin-bottom:.5rem}
+.jrow__a{font-size:1.5rem;color:var(--clay-lt);transition:transform .25s ease;flex:none}
+.jrow:hover .jrow__a{transform:translateX(6px)}
+@media(max-width:620px){
+  .jrow{grid-template-columns:3.6rem 1fr;gap:1.1rem}
+  .jrow__a{display:none}
+}
+.jall{margin-top:clamp(2.8rem, 2rem + 2.4vw, 4.4rem);display:flex;flex-wrap:wrap;
+  gap:1.2rem 2.4rem;align-items:center}
+
+/* ================= WATCH ================= */
+.vsplit{display:grid;grid-template-columns:minmax(0,.82fr) 1fr;
+  gap:clamp(2rem, 1.2rem + 3.4vw, 5rem);align-items:center}
+@media(max-width:840px){.vsplit{grid-template-columns:1fr;max-width:520px}}
+.vfilm{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--rule);
+  background:var(--ink);box-shadow:0 40px 90px -40px rgba(0,0,0,.9)}
+.vfilm video{width:100%;display:block;aspect-ratio:406/720;object-fit:cover;background:var(--ink)}
+.vsplit h3{font-size:clamp(1.9rem, 1.4rem + 2vw, 3rem);font-weight:800;letter-spacing:-.035em;
+  line-height:1.02;margin-bottom:1.2rem}
+.vsplit p{color:var(--sand);margin-bottom:1.7rem;max-width:38ch}
+.vmeta{display:flex;flex-wrap:wrap;gap:.6rem 1.8rem;margin-bottom:2rem;max-width:none;
+  font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+
+.embed{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;
+  border:1px solid var(--rule);background:var(--ink)}
+.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vtalk{margin-top:clamp(3.5rem, 2.4rem + 3.4vw, 6rem);
+  padding-top:clamp(3.5rem, 2.4rem + 3.4vw, 6rem);border-top:1px solid var(--rule)}
+.vtalk__head{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.6rem, 1rem + 2.4vw, 3.5rem);
+  align-items:end;margin-bottom:clamp(2rem, 1.4rem + 2vw, 3rem)}
+@media(max-width:840px){.vtalk__head{grid-template-columns:1fr;align-items:start;gap:1.2rem}}
+.vtalk h3{font-size:clamp(1.7rem, 1.3rem + 1.6vw, 2.6rem);font-weight:800;letter-spacing:-.032em}
+.vtalk p{color:var(--sand)}
+
+/* ================= LISTEN ================= */
+.listen{position:relative;isolation:isolate;overflow:hidden;background:var(--ink)}
+.listen__bg{position:absolute;inset:0;z-index:-2}
+.listen__bg img{width:100%;height:100%;object-fit:cover;opacity:.42}
+.listen::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(20,13,10,.9),rgba(20,13,10,.8))}
+
+.aps{display:grid;gap:clamp(1.2rem, .8rem + 1.4vw, 2rem)}
+.ap{display:grid;grid-template-columns:clamp(120px, 15vw, 200px) 1fr;
+  gap:clamp(1.3rem, .9rem + 1.6vw, 2.8rem);align-items:center;
+  background:rgba(46,30,24,.66);border:1px solid var(--rule);border-radius:16px;
+  padding:clamp(1.1rem, .8rem + 1vw, 1.7rem);backdrop-filter:blur(8px)}
+.ap__art{position:relative;overflow:hidden;border-radius:10px;aspect-ratio:1;background:var(--bg-3)}
+.ap__art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ap__kick{font-size:.76rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:.7rem;max-width:none}
+.ap h3{font-size:clamp(1.5rem, 1.2rem + 1.4vw, 2.3rem);font-weight:800;letter-spacing:-.03em;
+  margin-bottom:.6rem}
+.ap__d{color:var(--sand);font-size:1rem;line-height:1.55;max-width:52ch;margin-bottom:1.5rem}
+.ap__ctrl{display:flex;align-items:center;gap:clamp(.9rem, .6rem + .8vw, 1.4rem)}
+.ap__play{flex:none;width:clamp(52px, 5vw, 64px);height:clamp(52px, 5vw, 64px);border-radius:50%;
+  background:var(--clay);border:0;cursor:pointer;display:grid;place-items:center;
+  transition:background .2s,transform .18s}
+.ap__play:hover{background:var(--clay-lt);transform:scale(1.06)}
+.ap__play svg{width:20px;height:20px;fill:var(--on-clay);display:block}
+.ap__play .pz{display:none}
+.ap.playing .ap__play .py{display:none}
+.ap.playing .ap__play .pz{display:block}
+.ap__bar{flex:1;height:8px;border-radius:100px;background:rgba(250,243,233,.16);
+  cursor:pointer;position:relative;min-width:60px}
+.ap__fill{position:absolute;inset:0 auto 0 0;width:0;border-radius:100px;
+  background:linear-gradient(90deg,var(--clay),var(--gold))}
+.ap__time{flex:none;font-variant-numeric:tabular-nums;font-size:.88rem;font-weight:800;
+  letter-spacing:.06em;color:var(--sand);min-width:6rem;text-align:right}
+@media(max-width:620px){
+  .ap{grid-template-columns:1fr}
+  .ap__art{max-width:180px}
+  .ap__time{min-width:0}
+}
+
+.plist{display:grid;grid-template-columns:.62fr 1.38fr;
+  gap:clamp(2rem, 1.2rem + 3vw, 4rem);align-items:center;
+  margin-top:clamp(3rem, 2rem + 3vw, 5rem);
+  padding-top:clamp(3rem, 2rem + 3vw, 5rem);border-top:1px solid var(--rule)}
+@media(max-width:900px){.plist{grid-template-columns:1fr}}
+.plist h3{font-size:clamp(1.7rem, 1.3rem + 1.6vw, 2.5rem);font-weight:800;
+  letter-spacing:-.032em;margin-bottom:1rem}
+.plist p{color:var(--sand)}
+
+/* ================= IMAGE BAND ================= */
+.slab__ph{position:relative;isolation:isolate}
+.slab__ph::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(20,13,10,.5) 0%,rgba(20,13,10,.1) 26%,
+    rgba(20,13,10,.12) 62%,rgba(20,13,10,.62) 100%)}
+.slab img{width:100%;height:clamp(320px, 52vh, 620px);object-fit:cover;object-position:50% 50%;
+  display:block}
+.slab figcaption{font-size:var(--t-small);color:var(--sand);font-style:italic;
+  margin-top:1.2rem;max-width:46ch}
+
+/* ================= BOOKS ================= */
+.books{display:grid;grid-template-columns:1.05fr .95fr;
   gap:clamp(2rem, 1rem + 4vw, 5.5rem);align-items:center}
-.books__cover img{width:100%;border-radius:6px;box-shadow:0 34px 80px -22px rgba(0,0,0,.8)}
+.books__covers{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem, .6rem + 1.4vw, 2rem);
+  align-items:start}
+.books__covers img{width:100%;border-radius:6px;box-shadow:0 34px 80px -22px rgba(0,0,0,.85)}
+.books__covers a:nth-child(2){margin-top:clamp(1.4rem, 1rem + 2vw, 3.2rem)}
 .books h2{margin-bottom:1.3rem}
 .books p{color:var(--sand);max-width:44ch}
 .books__more{margin-top:2.2rem}
-@media(max-width:900px){
-  .books{grid-template-columns:1fr}
-  .books__cover{max-width:320px}
-}
+@media(max-width:900px){.books{grid-template-columns:1fr}.books__covers{max-width:460px}}
 
-/* --- closing CTA --- */
-.close{text-align:center}
+/* ================= GLOBAL SECTION ================= */
+.globe{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(1rem, .6rem + 1.4vw, 1.9rem)}
+@media(max-width:1000px){.globe{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.globe{grid-template-columns:1fr}}
+.gc{position:relative;isolation:isolate;overflow:hidden;border-radius:14px;
+  border:1px solid var(--rule);min-height:clamp(310px, 36vh, 440px);
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:clamp(1.3rem, 1rem + 1.2vw, 2.1rem);text-decoration:none;transition:transform .3s}
+.gc:hover{transform:translateY(-4px)}
+.gc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+  transition:transform .6s ease}
+.gc:hover img{transform:scale(1.05)}
+.gc::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(20,13,10,.28),rgba(20,13,10,.92))}
+.gc__l{display:block;font-family:var(--display);font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(1.7rem, 1.3rem + 1.2vw, 2.4rem);line-height:1.05;margin-bottom:.5rem}
+.gc__s{display:block;font-size:.78rem;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sand)}
+.gc--soon{background:var(--bg-3);justify-content:space-between}
+.gc--soon::after{display:none}
+.gc--soon .gc__s{color:var(--gold)}
+.gc__weave{width:100%;height:70px;color:var(--clay);opacity:.4;display:block}
+
+/* ================= CREDENTIALS ================= */
+.record{align-items:start}
+.record .eyebrow{margin-top:.45rem}
+.record p{max-width:52ch}
+
+/* ================= CLOSE / TOUCH ================= */
+.close{position:relative;isolation:isolate;overflow:hidden;text-align:center}
+.close__bg{position:absolute;inset:0;z-index:-2}
+.close__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+.close::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(20,13,10,.9),rgba(20,13,10,.8))}
 .close h2{margin-inline:auto;max-width:15ch}
 .close p{margin:1.7rem auto 0;color:var(--sand);text-align:center;max-width:54ch}
 .close__cta{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2.9rem}
 
-/* --- get in touch --- */
 .touch{text-align:center;padding-block:clamp(5rem, 3rem + 6vw, 9.5rem)}
 .touch h2{margin-inline:auto;max-width:14ch}
 .touch p{margin:1.5rem auto 0;color:var(--sand);text-align:center;max-width:44ch}
@@ -157,87 +476,318 @@
   transition:color .22s ease, border-color .22s ease}
 .touch__mail:hover{color:var(--clay-lt);border-bottom-color:var(--clay)}
 
-/* --- header --- */
-.hdr__cta{font-size:.95rem;padding:.85em 1.5em}
-@media(max-width:400px){.hdr__cta{font-size:.85rem;padding:.8em 1.1em}}
-@media(max-width:960px){.hdr__in{gap:1rem}}
-
-/* --- the record --- */
-.record{align-items:start}
-.record .eyebrow{margin-top:.45rem}
-
-/* --- footer --- */
+/* ================= FOOTER ================= */
+.ftr__grid{grid-template-columns:1.5fr 1fr 1fr 1fr}
+@media(max-width:1000px){.ftr__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.ftr__grid{grid-template-columns:1fr}}
 .ftr__brand{margin-top:1.2rem;max-width:30ch}
+.ftr__langs{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.6rem .9rem;
+  font-size:.82rem;font-weight:700;letter-spacing:.05em}
+.ftr__langs a{color:var(--sand)}
+.ftr__langs span{color:rgba(217,198,180,.4)}
+
+/* ================= RUG PLATE (a weaving presented as a plate) ================= */
+.plate{background:var(--ink);padding-block:clamp(3.5rem, 2.4rem + 3.4vw, 6rem);
+  border-block:1px solid var(--rule)}
+.plate__ph{max-width:1100px;margin-inline:auto;border-radius:8px;overflow:hidden;
+  box-shadow:0 40px 100px -40px rgba(0,0,0,.9)}
+.plate__ph img{width:100%;height:auto;display:block}
+.plate__cap{margin-top:clamp(1.6rem, 1.2rem + 1.4vw, 2.6rem);
+  display:grid;grid-template-columns:auto 1fr;gap:clamp(1.2rem, .8rem + 2vw, 3rem);
+  align-items:start;max-width:1100px}
+.plate__cap .eyebrow{margin-bottom:0;white-space:nowrap}
+.plate__cap p{color:var(--sand);font-style:italic;max-width:56ch;margin:0}
+@media(max-width:700px){.plate__cap{grid-template-columns:1fr;gap:.9rem}}
+
+/* ================= RUG STRIP DIVIDER ================= */
+.rugstrip{border-block:1px solid var(--rule);overflow:hidden;background:var(--ink)}
+.rugstrip img{width:100%;height:clamp(74px, 8vw, 130px);object-fit:cover;
+  object-position:50% 50%;display:block}
+
+/* ================= THREE TRADITIONS ================= */
+.trad{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem, .8rem + 2vw, 2.8rem)}
+@media(max-width:860px){.trad{grid-template-columns:1fr}}
+.trad__c{display:flex;flex-direction:column}
+.trad__ph{position:relative;overflow:hidden;border-radius:14px;aspect-ratio:5/4;
+  background:var(--bg-3)}
+.trad__ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.trad__c h3{font-size:clamp(1.7rem, 1.35rem + 1.4vw, 2.5rem);font-weight:800;
+  letter-spacing:-.032em;margin-bottom:.7rem}
+.trad__c p{color:var(--sand);font-size:1.08rem;line-height:1.6;max-width:34ch}
+.trad__n{display:block;font-size:.76rem;font-weight:800;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--clay-lt);margin-bottom:.55rem}
+
+/* ================= LAND MOSAIC ================= */
+.mosaic{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.mosaic img{width:100%;height:clamp(175px, 16vw, 285px);object-fit:cover;display:block;
+  border-left:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.mosaic img:nth-child(4n+1){border-left:0}
+.mosaic img:nth-child(n+9){border-bottom:0}
+.mosaic::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(20,13,10,.34) 0%,rgba(20,13,10,.06) 40%,
+    rgba(20,13,10,.06) 60%,rgba(20,13,10,.4) 100%)}
+@media(max-width:1040px){.mosaic{grid-template-columns:repeat(3,1fr)}
+  .mosaic img{border-left:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .mosaic img:nth-child(3n+1){border-left:0}}
+@media(max-width:640px){.mosaic{grid-template-columns:1fr 1fr}
+  .mosaic img:nth-child(3n+1){border-left:1px solid var(--rule)}
+  .mosaic img:nth-child(odd){border-left:0}}
+
+/* ================= CREDENTIALS PORTRAIT ================= */
+.record{display:grid;grid-template-columns:.85fr 1.15fr;
+  gap:clamp(2rem, 1.2rem + 3.4vw, 5rem);align-items:center}
+@media(max-width:900px){.record{grid-template-columns:1fr}}
+.record__ph{border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:var(--bg-3)}
+.record__ph img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.record__body{margin-top:clamp(1.6rem, 1.2rem + 1.4vw, 2.4rem)}
+.record p{max-width:52ch}
+
+/* ================= PETROGLYPHS =================
+   The line art is treated as rock art: large, faint, warm sandstone,
+   pecked into the surface rather than placed on it. */
+.hasglyph{position:relative;overflow:hidden}
+.glyph{position:absolute;pointer-events:none;z-index:0;
+  color:rgba(230,180,140,.20);stroke-width:2.4;
+  width:clamp(190px, 24vw, 400px);height:auto;overflow:visible}
+.glyph--faint{color:rgba(230,180,140,.13)}
+.glyph--tr{top:clamp(1rem, -1rem + 5vw, 4rem);right:clamp(-3rem, -6rem + 3vw, -1rem)}
+.glyph--br{bottom:clamp(-2rem, -5rem + 3vw, 0rem);right:clamp(-2rem, -5rem + 3vw, 1rem)}
+.glyph--bl{bottom:clamp(-2rem, -5rem + 3vw, 0rem);left:clamp(-4rem, -7rem + 3vw, -1rem)}
+.glyph--tl{top:clamp(1rem, -1rem + 5vw, 4rem);left:clamp(-4rem, -7rem + 3vw, -1rem)}
+@media(max-width:900px){.glyph{display:none}}
+/* the wrap must sit above the rock art */
+.hasglyph > .wrap{position:relative;z-index:1}
+
+/* carved symbol rows */
+.cap__sym{display:block;width:clamp(58px, 5vw, 78px);height:auto;margin-bottom:1.6rem;
+  color:rgba(230,180,140,.52);stroke-width:3.2;overflow:visible}
+.trad__sym{display:block;width:clamp(66px, 6vw, 92px);height:auto;
+  margin:clamp(1.4rem, 1rem + 1.2vw, 2rem) 0 1.2rem;
+  color:rgba(230,180,140,.58);stroke-width:3.4;overflow:visible}
 </style>
 </head>
 <body>
 
 <a href="#main" class="skip" style="position:absolute;left:-9999px">Skip to content</a>
 
+<!-- shared SVG defs: Diné weaving band, used by every .weave divider -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="wv" width="48" height="28" patternUnits="userSpaceOnUse">
+      <path d="M0 4H48M0 24H48" stroke="currentColor" stroke-width="1.1" opacity=".5"/>
+      <path d="M0 14 12 7 24 14 12 21Z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <path d="M24 14 36 7 48 14 36 21Z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <circle cx="12" cy="14" r="2" fill="currentColor"/>
+      <circle cx="36" cy="14" r="2" fill="currentColor" opacity=".45"/>
+    </pattern>
+  </defs>
+</svg>
+
+<!-- ================= GLOBAL / LANGUAGES ================= -->
+<div class="globebar">
+  <div class="wrap globebar__in">
+    <p class="globebar__lbl">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 2.6 15 0 18M12 3c-2.6 2.6-2.6 15 0 18"/>
+      </svg>
+      <span>Global</span>
+    </p>
+    <ul class="globebar__ls">
+      <li><a class="is-on" href="/v2/" hreflang="en">English</a></li>
+      <li><a href="/ja/" hreflang="ja">日本語 · Japan</a></li>
+      <li><a href="/lt/" hreflang="lt">Lietuvių · Lithuania</a></li>
+      <li><a href="/india/" hreflang="en">India</a></li>
+      <li><span class="soon">中文 · coming soon</span></li>
+    </ul>
+    <a class="globebar__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+  </div>
+</div>
+
 <!-- ================= HEADER ================= -->
 <header class="hdr">
   <div class="wrap hdr__in">
     <a class="brand" href="/v2/">Tribe<span>Awaken</span></a>
-    <nav>
+    <nav aria-label="Primary">
       <ul class="nav">
-        <li><a href="/workshop/">The Retreat</a></li>
-        <li><a href="/teams/">For Teams</a></li>
-        <li><a href="/#leaders">Coaching</a></li>
+        <li><a href="/v2/">Home</a></li>
+        <li><a href="/v2/#human-performance">Human Performance</a></li>
+        <li><a href="/v2/#nation-building">Nation-Building</a></li>
+        <li><a href="/journal/">Journal</a></li>
         <li><a href="https://ancestralwatch.com">The Books</a></li>
-        <li><a href="/diagnostic/">Diagnostic</a></li>
+        <li><a href="/workshop/">Retreats</a></li>
+        <li><a href="/teams/">For Teams</a></li>
+        <li><a href="/v2/#about">About</a></li>
       </ul>
     </nav>
-    <a class="btn btn--primary hdr__cta" href="/workshop/">Reserve a seat</a>
+    <div class="hdr__end">
+      <a class="btn btn--primary hdr__cta" href="/workshop/">Reserve a seat</a>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
   </div>
 </header>
+
+<!-- ================= FULL-SCREEN MENU ================= -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="wrap">
+    <div class="menu__top">
+      <a class="brand" href="/v2/">Tribe<span>Awaken</span></a>
+      <button class="menu__close" id="menuClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="menu__ls">
+      <li><a href="/v2/"><em>01</em> Home</a></li>
+      <li><a href="/v2/#human-performance"><em>02</em> Human Performance</a></li>
+      <li><a href="/v2/#nation-building"><em>03</em> Nation-Building</a></li>
+      <li><a href="/journal/"><em>04</em> Journal</a></li>
+      <li><a href="https://ancestralwatch.com"><em>05</em> The Books</a></li>
+      <li><a href="/workshop/"><em>06</em> Retreats</a></li>
+      <li><a href="/teams/"><em>07</em> For Teams</a></li>
+      <li><a href="/v2/#about"><em>08</em> About</a></li>
+      <li><a href="/v2/#listen"><em>09</em> Listen &amp; Watch</a></li>
+      <li><a href="/v2/#traditions"><em>10</em> The Three Traditions</a></li>
+      <li><a href="/diagnostic/"><em>11</em> The Diagnostic</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="/ja/">日本語</a>
+      <a href="/lt/">Lietuvių</a>
+      <a href="/india/">India</a>
+      <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+    </div>
+  </div>
+</div>
 
 <main id="main">
 
 <!-- ================= HERO ================= -->
 <section class="hero">
-  <div class="hero__bg"><img src="/assets/img/1440/fire-circle.jpg" alt="A circle of people around the fire in the redwoods at 1440 Multiversity" fetchpriority="high"></div>
+  <div class="hero__bg"><img src="/assets/img/land/tony-rock-overhang.jpg" alt="Tony Skrelūnas standing on a red sandstone overhang at sunset" style="object-position:50% 26%" fetchpriority="high"></div>
   <div class="hero__scrim"></div>
   <div class="wrap hero__in">
     <p class="eyebrow">Tony Skrelūnas · Diné &amp; Lithuanian</p>
     <h1>Ancestral intelligence for a regenerating world.</h1>
-    <p class="lead">Retreats, team immersives, and coaching that build the capacity to carry what matters across hard ground — and arrive whole.</p>
+    <p class="lead">Human performance for the people who carry things. Nation-building for the places they carry them to. Thirty years of practice, braided from three traditions.</p>
     <div class="hero__cta">
       <a class="btn btn--primary" href="/workshop/">Reserve your seat <span aria-hidden="true">→</span></a>
-      <a class="btn btn--ghost" href="/teams/">Bring it to your team</a>
+      <a class="btn btn--ghost" href="/v2/#journal">Read the journal</a>
     </div>
     <p class="hero__note">The Canyon Within · Aug 28–30 · 1440 Multiversity · <a href="/workshop/">eighteen seats</a></p>
   </div>
 </section>
 
 <!-- ================= PROOF ================= -->
-<section class="proof">
+<section class="proof tex">
+  <div class="tex__i"><img src="/assets/img/land/pine-bark.jpg" alt="" aria-hidden="true"></div>
   <div class="wrap proof__in">
-    <p class="proof__i"><b>30</b> years in the field</p>
-    <p class="proof__i"><b>4</b> continents advised</p>
-    <p class="proof__i"><b>3</b> traditions braided</p>
+    <p class="proof__i"><b>30</b> Years in the field</p>
+    <p class="proof__i"><b>4</b> Continents advised</p>
+    <p class="proof__i"><b>3</b> Traditions braided</p>
+    <p class="proof__i"><b>22</b> Essays published</p>
     <p class="proof__i"><b>1440</b> Multiversity faculty</p>
+  </div>
+</section>
+<div class="weave" aria-hidden="true"><svg><rect width="100%" height="28" fill="url(#wv)"/></svg></div>
+
+<!-- ================= TWO PILLARS ================= -->
+<section class="hasglyph sec">
+  <svg class="glyph glyph--tr" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <line x1="22" y1="176" x2="178" y2="176" opacity="0.35"/> <circle cx="131" cy="44" r="10.5"/> <path d="M 138,54 C 132,70 120,88 107,101 L 94,95 C 104,82 113,68 118,53 Z"/> <polyline points="101,99 138,94 130,129"/> <path d="M 130,129 C 136,133 143,134 149,132"/> <polyline points="100,100 69,122 44,141"/> <path d="M 44,141 C 38,145 34,150 32,157"/> <polyline points="128,57 152,74 143,51"/> <polyline points="119,58 92,76 76,58"/> <line x1="26" y1="92" x2="56" y2="78" opacity="0.3"/> <line x1="18" y1="108" x2="44" y2="96" opacity="0.24"/> </svg>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">The work</p>
+        <h2 class="head">Two bodies of work. One method.</h2>
+      </div>
+      <p>One rebuilds the person. One rebuilds the place. They run on the same discipline — read all four accounts, spend from none of them blindly, and build capacity before you need it.</p>
+    </div>
+
+    <div class="pill rv">
+      <a class="pill__c" id="human-performance" href="/workshop/">
+        <img src="/assets/img/1440/creek.jpg" alt="Tony Skrelūnas sitting beside a creek running over stone" loading="lazy">
+        <p class="pill__n">Pillar one</p>
+        <h3>Human Performance</h3>
+        <p>Endurance you can prove. Breath, sound, movement, food and sleep — trained the way three old cultures trained them, measured the way a modern practice measures.</p>
+        <ul class="pill__ls">
+          <li>Retreats</li><li>1:1 Coaching</li><li>Team immersives</li><li>Diagnostic</li>
+        </ul>
+        <span class="arrow">Explore the practice <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="pill__c" id="nation-building" href="/teams/">
+        <img src="/assets/img/council-band.jpg" alt="A council seated around a fire under a night sky" loading="lazy">
+        <p class="pill__n">Pillar two</p>
+        <h3>Nation-Building</h3>
+        <p>Governance, enterprise and land, restructured so power sits where the knowledge already is. Thirty years of it — on reservations, in boardrooms, on four continents.</p>
+        <ul class="pill__ls">
+          <li>Governance</li><li>Enterprise</li><li>Energy &amp; land</li><li>Advisory</li>
+        </ul>
+        <span class="arrow">See the advisory work <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
   </div>
 </section>
 
 <!-- ================= THE COMEBACK ================= -->
-<section class="sec">
+<section class="hasglyph sec sec--alt tex" id="about">
+  <svg class="glyph glyph--tr glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <line x1="12" y1="168" x2="188" y2="168"/> <path d="M 22,168 C 22,134 46,114 74,110 L 126,110 C 154,114 178,134 178,168"/> <path d="M 74,110 C 80,94 88,86 100,86 C 112,86 120,94 126,110"/> <path d="M 30,168 C 30,140 52,122 78,119 L 122,119 C 148,122 170,140 170,168" opacity="0.45"/> <path d="M 78,119 C 84,104 90,97 100,97 C 110,97 116,104 122,119" opacity="0.45"/> <path d="M 92,86 A 8,3 0 0 0 108,86"/> <path d="M 94,80 C 87,68 100,60 93,46" opacity="0.6"/> <path d="M 106,79 C 100,69 111,62 106,50" opacity="0.45"/> <path d="M 106,168 L 106,136 A 14,14 0 0 1 134,136 L 134,168"/> <line x1="112" y1="152" x2="112" y2="158" opacity="0.6"/> <circle cx="168" cy="44" r="7" opacity="0.9"/> <line x1="178.5" y1="44" x2="183.5" y2="44" opacity="0.7"/> <line x1="175.4" y1="36.6" x2="179" y2="33" opacity="0.7"/> <line x1="168" y1="33.5" x2="168" y2="28.5" opacity="0.7"/> <line x1="160.6" y1="36.6" x2="157" y2="33" opacity="0.7"/> <line x1="157.5" y1="44" x2="152.5" y2="44" opacity="0.7"/> <line x1="160.6" y1="51.4" x2="157" y2="55" opacity="0.7"/> <line x1="168" y1="54.5" x2="168" y2="59.5" opacity="0.7"/> <line x1="175.4" y1="51.4" x2="179" y2="55" opacity="0.7"/> </svg>
+  <div class="tex__i"><img src="/assets/img/kintsugi-texture.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="wrap origin rv">
     <div class="origin__img">
-      <img src="/assets/img/1440/tony-redwoods.jpg" alt="Tony Skrelūnas in the redwoods" loading="lazy">
+      <img src="/assets/img/1440/redwood-touch.jpg" alt="Tony Skrelūnas resting a hand on the bark of a redwood" loading="lazy">
     </div>
     <div>
       <p class="eyebrow">The comeback</p>
       <h2>He failed out of college. He came back and finished top of his class.</h2>
       <p>Raised by his great-grandmother in a hogan on Big Mountain — no electricity, four hundred sheep, a ceremony every dawn. He learned to read by kerosene lamp, and by that same lamp read the philosophy of Japan, a discipline he has been apprenticed to ever since. By choice, not by blood.</p>
       <p>Then he lost his footing and failed out. <strong>He went back. He finished first.</strong> Everything since has been built on what that year taught him: capacity is not inherited, and it is not a personality. It is built.</p>
-      <p class="origin__more"><a class="arrow" href="/#leaders">The full story <span aria-hidden="true">→</span></a></p>
+      <p class="origin__more"><a class="arrow" href="/journal/">Read him in his own words <span aria-hidden="true">→</span></a></p>
     </div>
   </div>
 </section>
 
-<!-- ================= STATEMENT BAND ================= -->
+<!-- ================= THREE TRADITIONS ================= -->
+<section class="hasglyph sec" id="traditions">
+  <svg class="glyph glyph--br glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M 30,78 C 22,76 17,80 10,79" opacity="0.6"/> <path d="M 170,78 C 178,76 183,80 190,79" opacity="0.6"/> <path d="M 30,89 C 22,87 17,91 10,90" opacity="0.6"/> <path d="M 170,89 C 178,87 183,91 190,90" opacity="0.6"/> <path d="M 30,100 C 22,98 17,102 10,101" opacity="0.6"/> <path d="M 170,100 C 178,98 183,102 190,101" opacity="0.6"/> <path d="M 30,111 C 22,109 17,113 10,112" opacity="0.6"/> <path d="M 170,111 C 178,109 183,113 190,112" opacity="0.6"/> <path d="M 30,122 C 22,120 17,124 10,123" opacity="0.6"/> <path d="M 170,122 C 178,120 183,124 190,123" opacity="0.6"/> <line x1="30" y1="66" x2="170" y2="66"/> <line x1="30" y1="72" x2="170" y2="72"/> <line x1="30" y1="128" x2="170" y2="128"/> <line x1="30" y1="134" x2="170" y2="134"/> <polyline points="30,86 40,74 50,86"/> <polyline points="30,114 40,126 50,114"/> <polyline points="50,86 60,74 70,86"/> <polyline points="50,114 60,126 70,114"/> <polyline points="70,86 80,74 90,86"/> <polyline points="70,114 80,126 90,114"/> <polyline points="90,86 100,74 110,86"/> <polyline points="90,114 100,126 110,114"/> <polyline points="110,86 120,74 130,86"/> <polyline points="110,114 120,126 130,114"/> <polyline points="130,86 140,74 150,86"/> <polyline points="130,114 140,126 150,114"/> <polyline points="150,86 160,74 170,86"/> <polyline points="150,114 160,126 170,114"/> <line x1="30" y1="86" x2="170" y2="86"/> <line x1="30" y1="114" x2="170" y2="114"/> <polyline points="30,100 44,86 58,100 44,114 30,100"/> <line x1="39" y1="100" x2="49" y2="100" opacity="0.7"/> <line x1="44" y1="95" x2="44" y2="105" opacity="0.7"/> <polyline points="58,100 72,86 86,100 72,114 58,100"/> <line x1="67" y1="100" x2="77" y2="100" opacity="0.7"/> <line x1="72" y1="95" x2="72" y2="105" opacity="0.7"/> <polyline points="86,100 100,86 114,100 100,114 86,100"/> <line x1="95" y1="100" x2="105" y2="100" opacity="0.7"/> <line x1="100" y1="95" x2="100" y2="105" opacity="0.7"/> <polyline points="114,100 128,86 142,100 128,114 114,100"/> <line x1="123" y1="100" x2="133" y2="100" opacity="0.7"/> <line x1="128" y1="95" x2="128" y2="105" opacity="0.7"/> <polyline points="142,100 156,86 170,100 156,114 142,100"/> <line x1="151" y1="100" x2="161" y2="100" opacity="0.7"/> <line x1="156" y1="95" x2="156" y2="105" opacity="0.7"/> </svg>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">The braid</p>
+        <h2 class="head">Three traditions. Not a blend — a braid.</h2>
+      </div>
+      <p>Two came by blood and one by choice. Each carries a discipline the other two do not. Kept separate, kept whole, and put to work together.</p>
+    </div>
+
+    <div class="trad rv">
+      <article class="trad__c">
+        <div class="trad__ph"><img src="/assets/img/land/juniper-ancient.jpg" alt="A massive ancient juniper on the high desert" loading="lazy"></div>
+        <svg class="trad__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <line x1="131.4" y1="135" x2="138.4" y2="131"/> <line x1="126" y1="128" x2="137.4" y2="116.6"/> <line x1="119" y1="122.6" x2="123" y2="115.6"/> <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/> <line x1="102" y1="118" x2="102" y2="110"/> <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/> <line x1="85" y1="122.6" x2="81" y2="115.6"/> <line x1="78" y1="128" x2="66.6" y2="116.6"/> <line x1="72.6" y1="135" x2="65.6" y2="131"/> <path d="M 76,152 A 26,26 0 0 1 128,152"/> <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/> <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/> <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/> <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/> <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/> <line x1="6" y1="152" x2="194" y2="152"/> </svg>
+        <span class="trad__n">By blood</span>
+        <h3>Diné</h3>
+        <p>Dawn practice, corn pollen, the four sacred mountains, and a way of counting wealth that has never once been in dollars. Raised in it, in a hogan on Big Mountain.</p>
+      </article>
+
+      <article class="trad__c">
+        <div class="trad__ph"><img src="/assets/img/land/aspen-grove.jpg" alt="White trunks in a northern forest" loading="lazy"></div>
+        <svg class="trad__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <line x1="50" y1="176" x2="150" y2="176"/> <path d="M 87,176 C 89,152 92,134 94,116"/> <path d="M 113,176 C 111,152 108,134 106,116"/> <path d="M 87,176 C 82,170 74,167 64,166" opacity="0.55"/> <path d="M 113,176 C 118,170 126,167 136,166" opacity="0.55"/> <path d="M 97,118 C 90,104 76,96 62,90"/> <path d="M 79,98 C 75,86 72,76 71,64"/> <path d="M 62,90 C 52,88 44,84 38,78"/> <path d="M 103,118 C 110,102 124,94 138,88"/> <path d="M 122,96 C 126,84 129,74 130,62"/> <path d="M 138,88 C 148,86 156,82 162,76"/> <path d="M 100,116 C 100,96 99,74 98,52"/> <path d="M 99,76 C 92,68 86,62 82,54"/> <path d="M 98,54 C 105,48 111,44 116,38"/> <path d="M 23.1,95.4 Q 9.6,88.7 20,79.7 Q 9.7,70.6 23.3,64 Q 16.7,53.1 32.8,49.6 Q 30.1,37.3 47.8,37.6 Q 49.2,24.5 66.9,29 Q 73.1,15.7 88.7,24.6 Q 100,12.6 111.3,24.6 Q 126.9,15.7 133.1,29 Q 150.8,24.5 152.2,37.6 Q 169.9,37.3 167.2,49.6 Q 183.3,53.1 176.7,64 Q 190.3,70.6 180,79.7 Q 190.4,88.7 176.9,95.4"/> <line x1="56" y1="105" x2="56" y2="110" opacity="0.6"/> <path d="M 51,112 A 5,7 0 0 0 61,112"/> <path d="M 50.5,112 A 5.5,3.4 0 0 1 61.5,112"/> <line x1="146" y1="101" x2="146" y2="106" opacity="0.6"/> <path d="M 141,108 A 5,7 0 0 0 151,108"/> <path d="M 140.5,108 A 5.5,3.4 0 0 1 151.5,108"/> </svg>
+        <span class="trad__n">By blood</span>
+        <h3>Lithuanian</h3>
+        <p>The forest, the song, and the stubbornness of a people who were supposed to disappear four times and did not. Endurance as an inherited technology.</p>
+      </article>
+
+      <article class="trad__c">
+        <div class="trad__ph"><img src="/assets/img/world/japan-pagoda-garden.jpg" alt="A pagoda among maples in a Japanese garden" loading="lazy"></div>
+        <svg class="trad__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <line x1="18" y1="172" x2="182" y2="172" opacity="0.55"/> <line x1="47" y1="66" x2="39" y2="172"/> <line x1="61" y1="66" x2="57" y2="172"/> <line x1="153" y1="66" x2="161" y2="172"/> <line x1="139" y1="66" x2="143" y2="172"/> <line x1="39" y1="172" x2="57" y2="172"/> <line x1="143" y1="172" x2="161" y2="172"/> <path d="M 33,98 L 167,98 L 167,110 L 33,110 Z"/> <path d="M 94,80 L 106,80 L 106,98 L 94,98 Z"/> <path d="M 12,60 C 48,34 152,34 188,60 L 179,74 C 147,52 53,52 21,74 Z"/> </svg>
+        <span class="trad__n">By choice</span>
+        <h3>Japanese</h3>
+        <p>Read by kerosene lamp at fourteen and apprenticed to ever since. Restraint, repair, and the discipline of doing one thing completely before starting the next.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATEMENT BAND — dry-farmed corn ================= -->
 <section class="state">
-  <div class="state__bg"><img src="/assets/img/canyon-family.jpg" alt="Three generations walking the red rock above a canyon at sunrise" loading="lazy"></div>
+  <div class="state__bg"><img src="/assets/img/journal/the-silent-theft/2.jpg" alt="Dry-farmed corn in tassel at sunset" loading="lazy"></div>
   <div class="wrap state__in rv">
     <p class="pull">The tools for endurance, belonging, and purpose are not lost. They are dormant.</p>
     <cite>The premise of thirty years of work</cite>
@@ -245,7 +795,9 @@
 </section>
 
 <!-- ================= FOUR CAPITALS ================= -->
-<section class="sec sec--alt">
+<section class="hasglyph sec tex tex--weave">
+  <svg class="glyph glyph--tr" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <circle cx="70" cy="70" r="46"/> <circle cx="130" cy="70" r="46"/> <circle cx="130" cy="130" r="46"/> <circle cx="70" cy="130" r="46"/> <circle cx="100" cy="100" r="7"/> <circle cx="100" cy="100" r="2.2" fill="currentColor" stroke="none"/> <circle cx="54" cy="54" r="8"/> <line x1="54" y1="48" x2="54" y2="60"/> <line x1="50" y1="52" x2="58" y2="52" opacity="0.8"/> <circle cx="141" cy="51" r="6"/> <circle cx="151" cy="57" r="6"/> <polyline points="146,138 154,146 146,154 138,146 146,138"/> <polyline points="146,142 150,146 146,150 142,146 146,142" opacity="0.7"/> <path d="M 46,154 C 46,144 52,138 62,138 C 62,148 56,154 46,154 Z"/> <line x1="48" y1="152" x2="60" y2="140" opacity="0.7"/> </svg>
+  <div class="tex__i"><img src="/assets/img/land/rug-cattle.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="wrap">
     <div class="sec__intro rv">
       <div>
@@ -257,25 +809,43 @@
 
     <div class="caps rv">
       <div class="cap">
+        <svg class="cap__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M 100,24 C 88,58 60,92 60,116 A 40,40 0 0 0 140,116 C 140,92 112,58 100,24 Z"/> <path d="M 100,54 C 92,78 76,98 76,116 A 24,24 0 0 0 124,116 C 124,98 108,78 100,54" opacity="0.8"/> <path d="M 72.2,127.2 A 30,30 0 1 0 127.8,127.2" opacity="0.55"/> <path d="M 66.4,125.6 A 35,35 0 1 0 133.6,125.6" opacity="0.4"/> <path d="M 89,84 C 84,96 82,106 82,114" opacity="0.5"/> <path d="M 111,84 C 116,96 118,106 118,114" opacity="0.4"/> <path d="M 86,96 C 89,84 93,72 97,60" opacity="0.55"/> <circle cx="112" cy="106" r="2.1" fill="currentColor" stroke="none"/> <circle cx="92" cy="128" r="1.5" fill="currentColor" stroke="none"/> </svg>
         <span class="cap__n">01</span>
         <h3>Financial</h3>
         <p>The account everyone already measures. It holds longer when the other three are solvent.</p>
       </div>
       <div class="cap">
+        <svg class="cap__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <circle cx="71.7" cy="62.1" r="4.1"/> <path d="M 64.9,78.7 L 66.2,70 Q 71.7,64.5 77.2,70 L 78.4,78.7"/> <circle cx="128.3" cy="62.1" r="4.1"/> <path d="M 121.6,78.7 L 122.8,70 Q 128.3,64.5 133.8,70 L 135.1,78.7"/> <circle cx="31.6" cy="79.6" r="4.6"/> <path d="M 24.1,98.2 L 25.5,88.5 Q 31.6,82.3 37.8,88.5 L 39.2,98.2"/> <circle cx="168.4" cy="79.6" r="4.6"/> <path d="M 160.8,98.2 L 162.2,88.5 Q 168.4,82.3 174.5,88.5 L 175.9,98.2"/> <circle cx="168.4" cy="104.5" r="5.3"/> <path d="M 159.7,125.8 L 161.3,114.6 Q 168.4,107.5 175.4,114.6 L 177,125.8"/> <circle cx="31.6" cy="104.5" r="5.3"/> <path d="M 23,125.8 L 24.6,114.6 Q 31.6,107.5 38.7,114.6 L 40.3,125.8"/> <circle cx="128.3" cy="122" r="5.8"/> <path d="M 118.9,145.3 L 120.6,133.1 Q 128.3,125.3 136,133.1 L 137.7,145.3"/> <circle cx="71.7" cy="122" r="5.8"/> <path d="M 62.3,145.3 L 64,133.1 Q 71.7,125.3 79.4,133.1 L 81.1,145.3"/> <path d="M 97,40 C 93,62 79,72 79,90 C 79,106 89,118 101,118 C 114,118 123,107 123,92 C 123,79 113,71 107,56 C 106,68 109,77 106,85 C 100,74 97,57 97,40 Z"/> <path d="M 100,74 C 96,86 92,90 92,99 C 92,107 96,111 101,111 C 106,111 110,107 110,99 C 110,90 104,86 100,74 Z" opacity="0.7"/> <line x1="84" y1="130" x2="116" y2="120"/> <line x1="84" y1="120" x2="116" y2="130"/> <line x1="80" y1="126" x2="120" y2="126" opacity="0.6"/> </svg>
         <span class="cap__n">02</span>
         <h3>Relational</h3>
         <p>Trust, reciprocity, the people who show up. The slowest to build and the fastest to spend.</p>
       </div>
       <div class="cap">
+        <svg class="cap__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <line x1="20" y1="46" x2="180" y2="46"/> <line x1="20" y1="54" x2="180" y2="54"/> <line x1="20" y1="146" x2="180" y2="146"/> <line x1="20" y1="154" x2="180" y2="154"/> <polyline points="20,60 40,74 60,60 80,74 100,60 120,74 140,60 160,74 180,60"/> <polyline points="20,140 40,126 60,140 80,126 100,140 120,126 140,140 160,126 180,140"/> <line x1="20" y1="82" x2="180" y2="82"/> <line x1="20" y1="118" x2="180" y2="118"/> <polyline points="20,100 40,82 60,100 40,118 20,100"/> <polyline points="31,100 40,91.9 49,100 40,108.1 31,100"/> <polyline points="60,100 80,82 100,100 80,118 60,100"/> <polyline points="71,100 80,91.9 89,100 80,108.1 71,100"/> <polyline points="100,100 120,82 140,100 120,118 100,100"/> <polyline points="111,100 120,91.9 129,100 120,108.1 111,100"/> <polyline points="140,100 160,82 180,100 160,118 140,100"/> <polyline points="151,100 160,91.9 169,100 160,108.1 151,100"/> </svg>
         <span class="cap__n">03</span>
         <h3>Cultural</h3>
         <p>Story, language, ceremony, memory. What tells a people who they are when conditions change.</p>
       </div>
       <div class="cap">
+        <svg class="cap__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <polyline points="14,152 38,92 62,152"/> <polyline points="27.9,117.2 38,103 48.1,117.2" opacity="0.7"/> <polyline points="58,152 83,50 108,152"/> <polyline points="72.5,92.8 83,61 93.5,92.8" opacity="0.7"/> <polyline points="104,152 128,66 152,152"/> <polyline points="117.9,102.1 128,77 138.1,102.1" opacity="0.7"/> <polyline points="148,152 167,100 186,152"/> <polyline points="159,121.8 167,111 175,121.8" opacity="0.7"/> <line x1="10" y1="152" x2="190" y2="152"/> </svg>
         <span class="cap__n">04</span>
         <h3>Natural</h3>
         <p>Land, water, air, the living systems underneath. The balance sheet no quarter can escape.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE WEAVING ================= -->
+<section class="plate tex rv">
+  <div class="tex__i"><img src="/assets/img/land/water-redrock.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap">
+    <div class="plate__ph">
+      <img src="/assets/img/land/rug-yei-corn.jpg" alt="A Navajo yei weaving: standing figures flanked by corn stalks" loading="lazy">
+    </div>
+    <div class="plate__cap">
+      <p class="eyebrow">The weaving</p>
+      <p>Yeis standing between corn stalks. Corn pollen is how a Diné day begins — before the coffee, before the phone, before anything is asked of you. Four capitals, woven by someone who was counting them long before anybody wrote them down.</p>
     </div>
   </div>
 </section>
@@ -285,9 +855,9 @@
   <div class="wrap sec__intro rv" style="margin-bottom:0">
     <div>
       <p class="eyebrow">Work with Tony</p>
-      <h2 class="head--wide">Three ways in. Now open worldwide.</h2>
+      <h2 class="head--wide">Four ways in. Now open worldwide.</h2>
     </div>
-    <p>Consulting, coaching, and major retreats are delivered across the U.S. and around the world.</p>
+    <p>Retreats, team immersives, private coaching, and advisory work — delivered across the U.S., Japan, the Baltics, and India.</p>
   </div>
 </section>
 
@@ -295,9 +865,9 @@
 
   <!-- 1 — RETREAT -->
   <article class="row rv">
-    <div class="row__media"><img src="/assets/img/1440/creek.jpg" alt="The creek at 1440 Multiversity in the redwoods" loading="lazy"></div>
+    <div class="row__media"><img src="/assets/img/1440/fire-circle.jpg" alt="A circle of people around the fire in the redwoods at 1440 Multiversity" loading="lazy"></div>
     <div class="row__body">
-      <p class="row__meta"><b>The Retreat</b> · Aug 28–30 · Scotts Valley, CA</p>
+      <p class="row__meta"><b>The Retreat</b> · Aug 28–30 · Scotts Valley, CA</p>
       <h3>The Canyon Within</h3>
       <p>Three days in the redwoods to change the frequency you live at — breath, sound, land, and food cooked as medicine. Eighteen seats. Many arrive alone and leave with a circle.</p>
       <div class="row__act"><a class="btn btn--primary" href="/workshop/">Reserve your seat <span aria-hidden="true">→</span></a></div>
@@ -308,7 +878,7 @@
   <article class="row row--flip rv">
     <div class="row__media"><img src="/assets/img/1440/council-chairs.jpg" alt="Tony in council with participants beneath the redwoods" loading="lazy"></div>
     <div class="row__body">
-      <p class="row__meta"><b>For Teams</b> · 2.5–3 days · Worldwide</p>
+      <p class="row__meta"><b>For Teams</b> · 2.5–3 days · Worldwide</p>
       <h3>The Far Messenger Program</h3>
       <p>An immersive for leadership teams entering harder terrain. We bring the whole faculty — practitioners, cooks, elders, coaches — and a diagnostic before and thirty days after, so the lift is documented, not just felt.</p>
       <div class="row__act"><a class="arrow" href="/teams/">See the program <span aria-hidden="true">→</span></a></div>
@@ -317,43 +887,394 @@
 
   <!-- 3 — COACHING -->
   <article class="row rv">
-    <div class="row__media"><img src="/assets/img/tony-podium.jpg" alt="Tony Skrelūnas speaking at an outdoor gathering" loading="lazy"></div>
+    <div class="row__media"><img src="/assets/img/world/japan-stone-bridge-bamboo.jpg" alt="A stone bridge over water in a Japanese garden" loading="lazy"></div>
     <div class="row__body">
-      <p class="row__meta"><b>One to one</b> · Human performance</p>
+      <p class="row__meta"><b>One to one</b> · Human performance</p>
       <h3>Coaching for leaders</h3>
       <p>Private work for founders, executives, and people carrying something heavy. Grounded in the dissertation research: human and organizational performance through three lenses — Diné, Lithuanian, Japanese.</p>
-      <div class="row__act"><a class="arrow" href="/#leaders">Work with Tony <span aria-hidden="true">→</span></a></div>
+      <div class="row__act"><a class="arrow" href="/v2/#human-performance">Work with Tony <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+
+  <!-- 4 — ADVISORY -->
+  <article class="row row--flip rv">
+    <div class="row__media"><img src="/assets/img/tony-podium.jpg" alt="Tony Skrelūnas speaking at an outdoor podium below red rock" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>Advisory &amp; speaking</b> · Governments, tribes, companies</p>
+      <h3>Nation-building &amp; keynotes</h3>
+      <p>Governance restructuring, community enterprise, energy and land strategy — plus keynotes and commencement addresses. The same four-capital audit, run at the scale of a nation instead of a nervous system.</p>
+      <div class="row__act"><a class="arrow" href="mailto:wisdom@ancestralwatch.com">Start a conversation <span aria-hidden="true">→</span></a></div>
     </div>
   </article>
 
 </div>
 
-<!-- ================= IMAGE BAND ================= -->
+<!-- ================= IMAGE BAND — the old juniper ================= -->
 <figure class="slab rv">
-  <img src="/assets/img/tony-ceremony.jpg" alt="Tony Skrelūnas leading a dawn gathering outdoors" loading="lazy">
-  <div class="wrap"><figcaption>A dawn ceremony, run the way it has been run since before the roads — the practice underneath all of it.</figcaption></div>
+  <div class="slab__ph"><img src="/assets/img/land/juniper-redrock.jpg" alt="An old juniper twisting low over red rock" style="object-position:50% 56%" loading="lazy"></div>
+  <div class="wrap"><figcaption>An old juniper working its way over red rock. Slow, twisted, still green — the shape of a thing that kept its roots in dry ground.</figcaption></div>
 </figure>
 
-<!-- ================= CREDENTIALS ================= -->
-<section class="sec sec--deep">
-  <div class="wrap split record rv">
-    <div>
-      <p class="eyebrow">The record</p>
-      <h2 class="head">Thirty years of doing it, not describing it.</h2>
+<!-- ================= JOURNAL ================= -->
+<section class="sec sec--alt" id="journal" style="padding-bottom:clamp(2.6rem, 1.6rem + 2.6vw, 4rem)">
+  <div class="wrap">
+    <div class="sec__intro jhead rv" style="margin-bottom:0">
+      <div>
+        <p class="eyebrow">The Journal</p>
+        <h2 class="head">Twenty-two essays. One argument.</h2>
+      </div>
+      <div>
+        <p>The writing is the spine of the work. Field notes from the Navajo Nation, the Baltics, Japan, Tibet and India — on longevity, honorable trade, food, grief, technology, and the arithmetic older economies used to run on.</p>
+        <a class="arrow" href="/journal/">All twenty-two essays <span aria-hidden="true">→</span></a>
+      </div>
     </div>
-    <div>
-      <p class="muted">Led the governance restructuring of a still-deeply-cultural nation, returning power to local communities. Built the Native America Program at the Grand Canyon Trust over fourteen years. Co-founded a renewable energy company. Advises companies and communities on four continents.</p>
-      <p class="muted">PhD candidate in Sustainable Development Education at Prescott College. Adjunct faculty at 1440 Multiversity. The first person of Lithuanian and Diné descent inducted into NAU's College of Business Hall of Fame.</p>
-      <p class="muted">A runner, and an aspiring silversmith.</p>
+    <div class="jbar rv">
+      <span>Featured this month</span>
+      <span>Written by Tony Skrelūnas</span>
     </div>
   </div>
 </section>
 
+<!-- FEATURED — broadsheet cover -->
+<a class="feat" href="/journal/30000-years-tribal-trade-americas/">
+  <div class="feat__ph">
+    <img src="/assets/img/journal/30000-years-tribal-trade-americas/2.jpg" alt="Coiled baskets laid out on a Navajo rug at a trade gathering" loading="lazy">
+  </div>
+  <div class="feat__in tex tex--strong tex--zoom">
+    <div class="tex__i"><img src="/assets/img/land/rug-horse.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+    <p class="feat__kick">The commencement address</p>
+    <h3>30,000 Years, and a Formula That Still Works</h3>
+    <p class="feat__d">Delivered to the Native American graduates of Northern Arizona University — on where we come from, the great trade civilizations of the Americas, and a formula for a good life that has held for thirty thousand years.</p>
+    <p class="feat__by"><span>Essay · Address</span><span>12 min read</span></p>
+    <span class="feat__go">Read the essay <span aria-hidden="true">→</span></span>
+  </div>
+</a>
+
+<!-- the essay's own photographs -->
+<div class="strip">
+  <img src="/assets/img/journal/30000-years-tribal-trade-americas/0.jpg" alt="From the essay: a grandmother and her grandchildren on the reservation" loading="lazy">
+  <img src="/assets/img/journal/30000-years-tribal-trade-americas/1.jpg" alt="From the essay: a herder carrying a lamb" loading="lazy">
+  <img src="/assets/img/journal/30000-years-tribal-trade-americas/3.jpg" alt="From the essay: the gathering that heard the address" style="object-position:50% 68%" loading="lazy">
+</div>
+
+<!-- MORE ESSAYS -->
+<section class="sec sec--alt" style="padding-top:clamp(3.5rem, 2.4rem + 3.4vw, 6rem)">
+  <div class="wrap">
+
+    <div class="jbig rv">
+      <a class="jc" href="/journal/the-water-remembers-sacred-lake/">
+        <div class="jc__img"><img src="/assets/img/journal/the-water-remembers-sacred-lake/0.jpg" alt="A mountain lake below snow peaks" loading="lazy"></div>
+        <p class="jc__kick">Water · Memory</p>
+        <h3>The Water Remembers</h3>
+        <p>My grandfather stood at the edge of a mountain lake and was called to sing an old song. What he taught me there belongs to every people on earth.</p>
+        <span class="jc__go">Read the essay →</span>
+      </a>
+
+      <a class="jc" href="/journal/they-tried-to-erase-a-whole-people/">
+        <div class="jc__img"><img src="/assets/img/journal/they-tried-to-erase-a-whole-people/0.jpeg" alt="An illustrated history of Lithuanian survival" style="object-position:50% 6%" loading="lazy"></div>
+        <p class="jc__kick">Survival · Baltics</p>
+        <h3>They Tried to Erase a Whole People</h3>
+        <p>Book smugglers, song keepers, and a basketball team in tie-dye. Now they raise the happiest young souls on earth.</p>
+        <span class="jc__go">Read the essay →</span>
+      </a>
+
+      <a class="jc" href="/journal/the-man-who-raced-hills-into-his-70s/">
+        <div class="jc__img"><img src="/assets/img/journal/the-man-who-raced-hills-into-his-70s/0.jpg" alt="A hand-built vintage hill-climb motorcycle" style="object-position:50% 24%" loading="lazy"></div>
+        <p class="jc__kick">Longevity</p>
+        <h3>The Man Who Raced Hills Into His 70s</h3>
+        <p>He built motorcycles that now sell for six figures. The real machine, the one that kept him alive, was quieter than any engine: he showed up.</p>
+        <span class="jc__go">Read the essay →</span>
+      </a>
+    </div>
+
+    <div class="jmid rv">
+      <a class="jc" href="/journal/honoring-my-father-on-fathers-day/">
+        <div class="jc__img"><img src="/assets/img/journal/honoring-my-father-on-fathers-day/0.jpg" alt="Two men sitting together outside a home" loading="lazy"></div>
+        <p class="jc__kick">Family</p>
+        <h3>Shizhé'é: A Letter to the Man Who Chose Me</h3>
+        <p>A city boy who followed love to the high country, learned the old ways, and became a pillar.</p>
+      </a>
+
+      <a class="jc" href="/journal/ai-robotics-repair-warming-world/">
+        <div class="jc__img"><img src="/assets/img/journal/ai-robotics-repair-warming-world/0.jpg" alt="A drone at work among the trees" loading="lazy"></div>
+        <p class="jc__kick">Technology</p>
+        <h3>The Machines That Could Help Us Come Home</h3>
+        <p>What if the intelligence we built to speed up extraction were turned, deliberately, toward repair?</p>
+      </a>
+
+      <a class="jc" href="/journal/seeds-of-the-ancestors/">
+        <div class="jc__img"><img src="/assets/img/journal/seeds-of-the-ancestors/0.jpg" alt="Corn-husk tamales set out on a table" loading="lazy"></div>
+        <p class="jc__kick">Food</p>
+        <h3>Seeds of the Ancestors</h3>
+        <p>The blueprint for a sustainable future is not an invention waiting to be engineered. It is an inheritance waiting to be remembered.</p>
+      </a>
+
+      <a class="jc" href="/journal/the-final-council-post-extraction-future/">
+        <div class="jc__img"><img src="/assets/img/journal/the-final-council-post-extraction-future/0.jpg" alt="A long table gathered in council" loading="lazy"></div>
+        <p class="jc__kick">Futures</p>
+        <h3>The Final Council: Building a Post-Extraction Future</h3>
+        <p>A dream of a council that vets the future before it is built — and a blueprint for encoding reciprocity into what comes next.</p>
+      </a>
+
+      <a class="jc" href="/journal/roots-of-resilience-wisdom-week-rancho-la-puerta/">
+        <div class="jc__img"><img src="/assets/img/journal/roots-of-resilience-wisdom-week-rancho-la-puerta/1.jpeg" alt="A ceremony circle with smoke rising among the trees" loading="lazy"></div>
+        <p class="jc__kick">The circle</p>
+        <h3>Roots of Resilience: What the Fire Taught Us</h3>
+        <p>Under the stars at Rancho La Puerta, elders and strangers became a circle. Healing begins the moment we are truly seen.</p>
+      </a>
+
+      <a class="jc" href="/journal/wealth-wisdom-from-sheepherders-of-the-planet/">
+        <div class="jc__img"><img src="/assets/img/journal/wealth-wisdom-from-sheepherders-of-the-planet/0.jpeg" alt="A flock moving across a hillside" loading="lazy"></div>
+        <p class="jc__kick">Wealth</p>
+        <h3>Wealth Wisdom from the Sheepherders of the Planet</h3>
+        <p>Wealth was never counted in currency but in flocks, dawns, clan bonds, and the resilience that outlasts every drought.</p>
+      </a>
+    </div>
+
+    <div class="jlist rv">
+      <a class="jrow" href="/journal/the-ancestral-code-for-living-to-100/">
+        <div class="jrow__t"><img src="/assets/img/journal/the-ancestral-code-for-living-to-100/0.jpg" alt="" loading="lazy"></div>
+        <div>
+          <p class="jrow__k">Longevity</p>
+          <h3>The Ancestral Code for Living to 100</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/honorable-trade-oldest-economies-planet-in-transition/">
+        <div class="jrow__t"><img src="/assets/img/journal/honorable-trade-oldest-economies-planet-in-transition/0.jpg" alt="" loading="lazy"></div>
+        <div>
+          <p class="jrow__k">Economy</p>
+          <h3>Honorable Trade: What the World's Oldest Economies Teach a Planet in Transition</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/tibet-the-unbroken-thread/">
+        <div class="jrow__t jrow__t--type" aria-hidden="true">ཨ</div>
+        <div>
+          <p class="jrow__k">Tibet</p>
+          <h3>Tibet, and the Unbroken Thread</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/the-silent-theft/">
+        <div class="jrow__t"><img src="/assets/img/journal/the-silent-theft/0.jpg" alt="" loading="lazy"></div>
+        <div>
+          <p class="jrow__k">Human capital</p>
+          <h3>The Silent Theft</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/what-the-cottonwood-sings-roots-workshop/">
+        <div class="jrow__t"><img src="/assets/img/journal/what-the-cottonwood-sings-roots-workshop/0.jpg" alt="" loading="lazy"></div>
+        <div>
+          <p class="jrow__k">The land</p>
+          <h3>What the Cottonwood Sings</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/weaving-a-new-dream-what-is-the-world-dreaming-through-you/">
+        <div class="jrow__t"><img src="/assets/img/journal/weaving-a-new-dream-what-is-the-world-dreaming-through-you/0.jpg" alt="" loading="lazy"></div>
+        <div>
+          <p class="jrow__k">Purpose</p>
+          <h3>Weaving a New Dream: What Is the World Dreaming Through You?</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/monster-slayer-blueprint-turning-waste-into-renewal/">
+        <div class="jrow__t"><img src="/assets/img/journal/monster-slayer-blueprint-turning-waste-into-renewal/0.jpg" alt="" loading="lazy"></div>
+        <div>
+          <p class="jrow__k">Renewal</p>
+          <h3>The Monster Slayer Blueprint: Turning Waste Into Renewal</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/ancient-farming-hedge-against-climate-change/">
+        <div class="jrow__t"><img src="/assets/img/journal/ancient-farming-hedge-against-climate-change/0.jpg" alt="" loading="lazy"></div>
+        <div>
+          <p class="jrow__k">Climate</p>
+          <h3>Ancient Farming as a Hedge Against Climate Change</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="jall rv">
+      <a class="btn btn--primary" href="/journal/">Read all twenty-two essays <span aria-hidden="true">→</span></a>
+      <a class="arrow" href="/v2/#listen">Or listen instead <span aria-hidden="true">→</span></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= IMAGE BAND — the peaks ================= -->
+<figure class="slab rv">
+  <div class="slab__ph"><img src="/assets/img/land/canyon-sunset-forest.jpg" alt="Sunset over a forested canyon" style="object-position:50% 54%" loading="lazy"></div>
+  <div class="wrap"><figcaption>Sundown off the rim. Most of this work happens within a day's drive of here.</figcaption></div>
+</figure>
+
+<!-- ================= WATCH ================= -->
+<section class="hasglyph sec" id="watch">
+  <svg class="glyph glyph--br glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <ellipse cx="100" cy="116" rx="36" ry="12" opacity="0.95"/> <ellipse cx="100" cy="116" rx="56" ry="21" opacity="0.75"/> <ellipse cx="100" cy="116" rx="76" ry="30" opacity="0.55"/> <ellipse cx="100" cy="116" rx="94" ry="38" opacity="0.35"/> <path d="M 78,89 C 78,79 88,73 101,73 C 113,73 121,79 121,88 C 121,96 111,101 100,101 C 87,101 78,97 78,89 Z"/> <path d="M 85,84 C 89,78 95,75 103,76" opacity="0.55"/> </svg>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Watch</p>
+        <h2 class="head">A minute is enough to know.</h2>
+      </div>
+      <p>Sixty-two seconds, filmed on the land. If you only give this page one minute, give it to this.</p>
+    </div>
+
+    <div class="vsplit rv">
+      <div class="vfilm">
+        <video controls preload="none" playsinline
+               poster="/assets/img/1440/tony-invitation-poster.jpg">
+          <source src="/assets/video/tony-invitation.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div>
+        <p class="eyebrow">The invitation</p>
+        <h3>Come and sit down with us.</h3>
+        <p>A minute, filmed in the redwoods at 1440. Tony says the thing he says at the start of every retreat, before anybody has taken their shoes off.</p>
+        <p class="vmeta"><span>1:02</span><span>Filmed at 1440 Multiversity</span></p>
+        <a class="btn btn--primary" href="/workshop/">Reserve your seat <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= LISTEN ================= -->
+<section class="hasglyph sec listen" id="listen">
+  <svg class="glyph glyph--br glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M 12,150 C 46,148 68,134 88,112 C 110,88 126,56 156,52 C 180,49 193,72 184,93 C 176,111 154,119 138,110"/> <path d="M 36,152 C 62,148 80,134 96,114 C 114,92 130,68 154,66 C 172,64 181,80 175,95" opacity="0.85"/> <path d="M 60,154 C 80,150 92,138 104,122 C 118,102 132,80 152,80 C 164,80 170,88 167,97" opacity="0.7"/> <path d="M 138,110 C 133,121 122,126 111,121"/> <path d="M 152,113 C 151,124 142,131 131,128" opacity="0.8"/> <circle cx="172" cy="40" r="2.6"/> <circle cx="184" cy="56" r="1.8"/> <circle cx="158" cy="32" r="1.6"/> <line x1="10" y1="162" x2="190" y2="162" opacity="0.6"/> <path d="M 30,176 A 8,8 0 0 1 46,176" opacity="0.5"/> <path d="M 24,176 A 14,14 0 0 1 52,176" opacity="0.5"/> <path d="M 18,176 A 20,20 0 0 1 58,176" opacity="0.5"/> <path d="M 66,176 A 8,8 0 0 1 82,176" opacity="0.5"/> <path d="M 60,176 A 14,14 0 0 1 88,176" opacity="0.5"/> <path d="M 54,176 A 20,20 0 0 1 94,176" opacity="0.5"/> <path d="M 102,176 A 8,8 0 0 1 118,176" opacity="0.5"/> <path d="M 96,176 A 14,14 0 0 1 124,176" opacity="0.5"/> <path d="M 90,176 A 20,20 0 0 1 130,176" opacity="0.5"/> <path d="M 138,176 A 8,8 0 0 1 154,176" opacity="0.5"/> <path d="M 132,176 A 14,14 0 0 1 160,176" opacity="0.5"/> <path d="M 126,176 A 20,20 0 0 1 166,176" opacity="0.5"/> </svg>
+  <div class="listen__bg"><img src="/assets/img/land/creek-waterfall.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Listen</p>
+        <h2 class="head">Some of it was never meant to be read.</h2>
+      </div>
+      <p>A song, a word before you begin, and a meditation playlist for the mornings you need the frequency changed before the day starts.</p>
+    </div>
+
+    <div class="aps rv">
+      <article class="ap" data-audio>
+        <div class="ap__art">
+          <img src="/assets/img/ocean-crosser.jpg" alt="The Warrior's Code — cover art" loading="lazy">
+        </div>
+        <div class="ap__body">
+          <p class="ap__kick">Original song · Written &amp; performed by Tony</p>
+          <h3>The Warrior's Code</h3>
+          <p class="ap__d">Written for the ones who keep going after the reason to keep going has stopped being obvious. Play it loud, early, before anybody else is awake.</p>
+          <div class="ap__ctrl">
+            <button class="ap__play" type="button" aria-label="Play The Warrior's Code">
+              <svg class="py" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+              <svg class="pz" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5h4.2v15H6zM13.8 4.5H18v15h-4.2z"/></svg>
+            </button>
+            <div class="ap__bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="ap__fill"></div></div>
+            <span class="ap__time">0:00</span>
+          </div>
+          <audio preload="metadata" src="/assets/audio/warriors-code.mp3"></audio>
+        </div>
+      </article>
+
+      <article class="ap" data-audio>
+        <div class="ap__art">
+          <img src="/assets/img/land/tony-river-golden-hour.jpg" alt="A figure seated by a river at golden hour" loading="lazy">
+        </div>
+        <div class="ap__body">
+          <p class="ap__kick">Spoken · A few minutes</p>
+          <h3>A Word Before You Begin</h3>
+          <p class="ap__d">The short version of everything on this page, said out loud. Useful in a car park before a hard meeting, which is exactly where it was meant to be used.</p>
+          <div class="ap__ctrl">
+            <button class="ap__play" type="button" aria-label="Play A Word Before You Begin">
+              <svg class="py" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+              <svg class="pz" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5h4.2v15H6zM13.8 4.5H18v15h-4.2z"/></svg>
+            </button>
+            <div class="ap__bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="ap__fill"></div></div>
+            <span class="ap__time">0:00</span>
+          </div>
+          <audio preload="metadata" src="/assets/audio/tony-motivational-intro.mp3"></audio>
+        </div>
+      </article>
+    </div>
+
+    <div class="plist rv">
+      <div>
+        <p class="eyebrow">On the record</p>
+        <h3>We Are A Tribe.</h3>
+        <p>Temple Step Project, featuring Murray Kyle and friends. Not Tony's, but the one he keeps coming back to — and the closest thing there is to a soundtrack for this work.</p>
+        <p style="margin-top:1.6rem"><a class="arrow" href="https://www.youtube.com/watch?v=8kGuXxsbKYU">Watch on YouTube <span aria-hidden="true">&rarr;</span></a></p>
+      </div>
+      <div class="embed">
+        <iframe src="https://www.youtube.com/embed/8kGuXxsbKYU"
+                title="Temple Step Project — We Are A Tribe"
+                loading="lazy" allowfullscreen
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      </div>
+    </div>
+
+    <div class="plist rv">
+      <div>
+        <p class="eyebrow">The playlist</p>
+        <h3>Meditations for the morning.</h3>
+        <p>A running playlist of guided sits, drum, and long-form quiet — added to as new sessions are recorded.</p>
+        <p style="margin-top:1.6rem"><a class="arrow" href="https://www.youtube.com/playlist?list=PLjB4J2ZBlei6CgzNuXQzLxH9MG9pImafZ">Open the full playlist <span aria-hidden="true">→</span></a></p>
+      </div>
+      <div class="embed">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLjB4J2ZBlei6CgzNuXQzLxH9MG9pImafZ"
+                title="Meditation playlist" loading="lazy" allowfullscreen
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE COUNTRY ================= -->
+<section class="sec sec--alt" style="padding-bottom:clamp(2.4rem, 1.6rem + 2.4vw, 3.8rem)">
+  <div class="wrap">
+    <div class="sec__intro rv" style="margin-bottom:0">
+      <div>
+        <p class="eyebrow">The country</p>
+        <h2 class="head">This is where it comes from.</h2>
+      </div>
+      <p>Slot canyon, creek, juniper, arch, the Peaks, and a ramada built by hand. Every photograph on this site was taken by Tony, on ground he knows.</p>
+    </div>
+  </div>
+</section>
+<div class="mosaic rv">
+  <img src="/assets/img/land/juniper-plain.jpg" alt="Juniper on the open high desert" loading="lazy">
+  <img src="/assets/img/land/creek-boulders.jpg" alt="A quiet creek running between boulders and pines" loading="lazy">
+  <img src="/assets/img/land/redrock-arch.jpg" alt="A red rock arch weathered out of the cliff" loading="lazy">
+  <img src="/assets/img/land/peaks-meadow.jpg" alt="A meadow below the snow-topped Peaks" loading="lazy">
+  <img src="/assets/img/land/sandstone-slot.jpg" alt="A hand against the wall of a sandstone slot canyon" style="object-position:50% 26%" loading="lazy">
+  <img src="/assets/img/land/horseshoe-bend.jpg" alt="A figure at the edge above Horseshoe Bend" loading="lazy">
+  <img src="/assets/img/land/peaks-pines.jpg" alt="The San Francisco Peaks in snow above the pine forest" loading="lazy">
+  <img src="/assets/img/land/juniper-valley.jpg" alt="Juniper above a wide green valley" loading="lazy">
+  <img src="/assets/img/land/tony-grand-canyon.jpg" alt="Tony Skrelūnas crouched at the canyon rim" loading="lazy">
+  <img src="/assets/img/land/stone-ramada.jpg" alt="A stone ramada built by hand" loading="lazy">
+  <img src="/assets/img/land/garden-ramada-torii.jpg" alt="The covered ramada under the trees" loading="lazy">
+  <img src="/assets/img/land/tony-river-sunset.jpg" alt="A snow peak beyond the rooftops at first light" loading="lazy">
+</div>
+
+<!-- ================= IMAGE BAND — dawn ceremony ================= -->
+<figure class="slab rv">
+  <div class="slab__ph"><img src="/assets/img/tony-ceremony.jpg" alt="Tony Skrelūnas leading a dawn gathering outdoors" loading="lazy"></div>
+  <div class="wrap"><figcaption>A dawn ceremony, run the way it has been run since before the roads — the practice underneath all of it.</figcaption></div>
+</figure>
+
 <!-- ================= BOOKS ================= -->
 <section class="sec">
   <div class="wrap books rv">
-    <div class="books__cover">
-      <img src="/assets/img/stone-breath-cover.jpg" alt="Stone Breath — book one of the Ancestral Watch series" loading="lazy">
+    <div class="books__covers">
+      <a href="https://ancestralwatch.com"><img src="/assets/img/stone-breath-cover.jpg" alt="Stone Breath — book one of the Ancestral Watch series" loading="lazy"></a>
+      <a href="https://ancestralwatch.com"><img src="/assets/img/council-fire-cover.jpg" alt="The Council Fire — book three of the Ancestral Watch series" loading="lazy"></a>
     </div>
     <div>
       <p class="eyebrow">The books</p>
@@ -364,8 +1285,72 @@
   </div>
 </section>
 
+<figure class="rugstrip rv">
+  <img src="/assets/img/land/rug-diamonds.jpg" alt="Detail of a Navajo weaving in diamond bands" loading="lazy">
+</figure>
+
+<!-- ================= GLOBAL ================= -->
+<section class="hasglyph sec sec--alt" id="global">
+  <svg class="glyph glyph--tr glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <circle cx="100" cy="100" r="76"/> <circle cx="100" cy="100" r="46"/> <circle cx="100" cy="100" r="26"/> <circle cx="100" cy="100" r="8"/> <polyline points="95.5,51 100,27 104.5,51 95.5,51"/> <line x1="81.2" y1="54.7" x2="75.5" y2="40.9"/> <polyline points="62.2,68.5 48.4,48.4 68.5,62.2 62.2,68.5"/> <line x1="54.7" y1="81.2" x2="40.9" y2="75.5"/> <polyline points="51,104.5 27,100 51,95.5 51,104.5"/> <line x1="54.7" y1="118.8" x2="40.9" y2="124.5"/> <polyline points="68.5,137.8 48.4,151.6 62.2,131.5 68.5,137.8"/> <line x1="81.2" y1="145.3" x2="75.5" y2="159.1"/> <polyline points="104.5,149 100,173 95.5,149 104.5,149"/> <line x1="118.8" y1="145.3" x2="124.5" y2="159.1"/> <polyline points="137.8,131.5 151.6,151.6 131.5,137.8 137.8,131.5"/> <line x1="145.3" y1="118.8" x2="159.1" y2="124.5"/> <polyline points="149,95.5 173,100 149,104.5 149,95.5"/> <line x1="145.3" y1="81.2" x2="159.1" y2="75.5"/> <polyline points="131.5,62.2 151.6,48.4 137.8,68.5 131.5,62.2"/> <line x1="118.8" y1="54.7" x2="124.5" y2="40.9"/> <path d="M 109.2,74.6 Q 100,55 90.8,74.6"/> <path d="M 88.6,75.5 Q 68.2,68.2 75.5,88.6"/> <path d="M 74.6,90.8 Q 55,100 74.6,109.2"/> <path d="M 75.5,111.4 Q 68.2,131.8 88.6,124.5"/> <path d="M 90.8,125.4 Q 100,145 109.2,125.4"/> <path d="M 111.4,124.5 Q 131.8,131.8 124.5,111.4"/> <path d="M 125.4,109.2 Q 145,100 125.4,90.8"/> <path d="M 124.5,88.6 Q 131.8,68.2 111.4,75.5"/> </svg>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Worldwide</p>
+        <h2 class="head">The work travels. So does the site.</h2>
+      </div>
+      <p>Programs run in four regions, each with its own faculty, its own food, and its own language. Choose where you are.</p>
+    </div>
+
+    <div class="globe rv">
+      <a class="gc" href="/ja/" hreflang="ja">
+        <img src="/assets/img/world/japan-garden-reflection.jpg" alt="Pines and a stone bridge reflected in still water" loading="lazy">
+        <span class="gc__l">日本語</span>
+        <span class="gc__s">Japan · Kyoto &amp; Tokyo</span>
+      </a>
+      <a class="gc" href="/lt/" hreflang="lt">
+        <img src="/assets/img/baltic.jpg" alt="A Baltic hill fort at golden hour" loading="lazy">
+        <span class="gc__l">Lietuvių</span>
+        <span class="gc__s">Lithuania · Vilnius</span>
+      </a>
+      <a class="gc" href="/india/">
+        <img src="/assets/img/far-messengers-mountain.jpg" alt="Walkers on a high mountain ridge" loading="lazy">
+        <span class="gc__l">India</span>
+        <span class="gc__s">Himalaya &amp; the South</span>
+      </a>
+      <div class="gc gc--soon">
+        <svg class="gc__weave" aria-hidden="true"><rect width="100%" height="70" fill="url(#wv)"/></svg>
+        <div>
+          <span class="gc__l">中文</span>
+          <span class="gc__s">Coming soon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CREDENTIALS ================= -->
+<section class="hasglyph sec sec--deep tex">
+  <svg class="glyph glyph--bl glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <polyline points="14,152 38,92 62,152"/> <polyline points="27.9,117.2 38,103 48.1,117.2" opacity="0.7"/> <polyline points="58,152 83,50 108,152"/> <polyline points="72.5,92.8 83,61 93.5,92.8" opacity="0.7"/> <polyline points="104,152 128,66 152,152"/> <polyline points="117.9,102.1 128,77 138.1,102.1" opacity="0.7"/> <polyline points="148,152 167,100 186,152"/> <polyline points="159,121.8 167,111 175,121.8" opacity="0.7"/> <line x1="10" y1="152" x2="190" y2="152"/> </svg>
+  <div class="tex__i"><img src="/assets/img/land/rug-red-diamond.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap record rv">
+    <div class="record__ph">
+      <img src="/assets/img/land/tony-stonewall.jpg" alt="Tony Skrelūnas beside a stone wall and water feature he built" loading="lazy">
+    </div>
+    <div>
+      <p class="eyebrow">The record</p>
+      <h2 class="head">Thirty years of doing it, not describing it.</h2>
+      <div class="record__body">
+        <p class="muted">Led the governance restructuring of a still-deeply-cultural nation, returning power to local communities. Built the Native America Program at the Grand Canyon Trust over fourteen years. Co-founded a renewable energy company. Advises companies and communities on four continents.</p>
+        <p class="muted">PhD candidate in Sustainable Development Education at Prescott College. Adjunct faculty at 1440 Multiversity. The first person of Lithuanian and Diné descent inducted into NAU's College of Business Hall of Fame.</p>
+        <p class="muted">A runner, and an aspiring silversmith.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= DIAGNOSTIC / CLOSE ================= -->
-<section class="sec sec--alt close">
+<section class="sec close">
+  <div class="close__bg"><img src="/assets/img/land/sandstone-antelope.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="wrap wrap--tight rv">
     <p class="eyebrow eyebrow--center">Free · 90 seconds</p>
     <h2>Are you leading from calm, or from alarm?</h2>
@@ -378,9 +1363,9 @@
 </section>
 
 <!-- ================= GET IN TOUCH ================= -->
-<section class="sec touch">
+<section class="sec sec--alt touch">
   <div class="wrap wrap--tight rv">
-    <p class="eyebrow">Get in touch</p>
+    <p class="eyebrow eyebrow--center">Get in touch</p>
     <h2>Write to me.</h2>
     <p>Speaking, consulting, a retreat for your people, or a question about the work — it comes straight to Tony.</p>
     <a class="touch__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
@@ -389,6 +1374,8 @@
 
 </main>
 
+<div class="weave" aria-hidden="true"><svg><rect width="100%" height="28" fill="url(#wv)"/></svg></div>
+
 <!-- ================= FOOTER ================= -->
 <footer class="ftr">
   <div class="wrap">
@@ -396,23 +1383,41 @@
       <div>
         <a class="brand" href="/v2/">Tribe<span>Awaken</span></a>
         <p class="muted ftr__brand">Ancestral intelligence for a regenerating world.</p>
+        <div class="ftr__langs">
+          <a href="/ja/">日本語</a><span>·</span>
+          <a href="/lt/">Lietuvių</a><span>·</span>
+          <a href="/india/">India</a><span>·</span>
+          <span>中文 soon</span>
+        </div>
       </div>
       <div>
         <h4>Work together</h4>
         <ul>
           <li><a href="/workshop/">The Canyon Within</a></li>
           <li><a href="/teams/">The Far Messenger Program</a></li>
-          <li><a href="/#leaders">1:1 Coaching</a></li>
+          <li><a href="/v2/#human-performance">Human Performance</a></li>
+          <li><a href="/v2/#nation-building">Nation-Building</a></li>
           <li><a href="/diagnostic/">The Diagnostic</a></li>
         </ul>
       </div>
       <div>
-        <h4>More</h4>
+        <h4>Read, watch, listen</h4>
         <ul>
+          <li><a href="/journal/">The Journal — 22 essays</a></li>
           <li><a href="https://ancestralwatch.com">The Books</a></li>
-          <li><a href="/journal/">Journal</a></li>
-          <li><a href="/#leaders">About Tony</a></li>
-          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/v2/#watch">The invitation, on film</a></li>
+          <li><a href="/v2/#listen">The Warrior's Code</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLjB4J2ZBlei6CgzNuXQzLxH9MG9pImafZ">Meditation playlist</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="/v2/#about">Tony Skrelūnas</a></li>
+          <li><a href="/v2/#traditions">The Three Traditions</a></li>
+          <li><a href="/v2/#global">Worldwide</a></li>
+          <li><a href="/press/">Press</a></li>
+          <li><a href="mailto:wisdom@ancestralwatch.com">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -424,6 +1429,7 @@
 </footer>
 
 <script>
+/* ---------- reveal ---------- */
 (function(){
   var els = document.querySelectorAll('.rv');
   if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion:reduce)').matches){
@@ -433,7 +1439,6 @@
     es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
   },{rootMargin:'0px 0px -6% 0px',threshold:.05});
   els.forEach(function(e){io.observe(e)});
-  // failsafe: lazy images can shift layout after the observer's first pass
   function sweep(){
     els.forEach(function(e){
       if(e.classList.contains('in')) return;
@@ -443,6 +1448,76 @@
   }
   window.addEventListener('load', function(){ sweep(); setTimeout(sweep, 260); });
   setTimeout(sweep, 1200);
+})();
+
+/* ---------- menu ---------- */
+(function(){
+  var b = document.getElementById('burger'),
+      m = document.getElementById('menu'),
+      c = document.getElementById('menuClose');
+  if(!b || !m) return;
+  function open(){ m.classList.add('open'); b.setAttribute('aria-expanded','true'); document.body.classList.add('locked'); }
+  function shut(){ m.classList.remove('open'); b.setAttribute('aria-expanded','false'); document.body.classList.remove('locked'); }
+  b.addEventListener('click', function(){ m.classList.contains('open') ? shut() : open(); });
+  if(c) c.addEventListener('click', shut);
+  m.addEventListener('click', function(e){ if(e.target.tagName === 'A') shut(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') shut(); });
+})();
+
+/* ---------- audio players ---------- */
+(function(){
+  var cards = [].slice.call(document.querySelectorAll('[data-audio]'));
+  if(!cards.length) return;
+  var all = [];
+
+  function fmt(s){
+    if(!isFinite(s) || s < 0) s = 0;
+    var m = Math.floor(s/60), r = Math.floor(s%60);
+    return m + ':' + (r < 10 ? '0' : '') + r;
+  }
+
+  cards.forEach(function(card){
+    var a    = card.querySelector('audio'),
+        btn  = card.querySelector('.ap__play'),
+        bar  = card.querySelector('.ap__bar'),
+        fill = card.querySelector('.ap__fill'),
+        time = card.querySelector('.ap__time');
+    if(!a || !btn) return;
+    all.push(a);
+
+    btn.addEventListener('click', function(){
+      if(a.paused){
+        all.forEach(function(o){ if(o !== a) o.pause(); });
+        a.play();
+      } else { a.pause(); }
+    });
+
+    a.addEventListener('play',  function(){ card.classList.add('playing'); btn.setAttribute('aria-label','Pause'); });
+    a.addEventListener('pause', function(){ card.classList.remove('playing'); btn.setAttribute('aria-label','Play'); });
+    a.addEventListener('ended', function(){ card.classList.remove('playing'); fill.style.width = '0'; });
+
+    a.addEventListener('loadedmetadata', function(){ time.textContent = '0:00 / ' + fmt(a.duration); });
+    a.addEventListener('timeupdate', function(){
+      var p = a.duration ? (a.currentTime / a.duration) * 100 : 0;
+      fill.style.width = p + '%';
+      bar.setAttribute('aria-valuenow', Math.round(p));
+      time.textContent = fmt(a.currentTime) + (a.duration ? ' / ' + fmt(a.duration) : '');
+    });
+
+    function seek(e){
+      var r = bar.getBoundingClientRect(),
+          x = ((e.clientX - r.left) / r.width);
+      x = Math.max(0, Math.min(1, x));
+      if(a.duration) a.currentTime = x * a.duration;
+      else { a.addEventListener('loadedmetadata', function once(){ a.currentTime = x * a.duration; a.removeEventListener('loadedmetadata', once); }); a.load(); }
+    }
+    bar.addEventListener('click', seek);
+    bar.addEventListener('keydown', function(e){
+      if(!a.duration) return;
+      if(e.key === 'ArrowRight'){ a.currentTime = Math.min(a.duration, a.currentTime + 5); e.preventDefault(); }
+      if(e.key === 'ArrowLeft'){  a.currentTime = Math.max(0, a.currentTime - 5); e.preventDefault(); }
+    });
+  });
 })();
 </script>
 </body>

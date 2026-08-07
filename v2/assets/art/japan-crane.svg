@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Crane in flight with wings extended">
+  <!-- upper wing -->
+  <path d="M 96,99 C 106,78 120,58 142,42"/>
+  <path d="M 142,42 L 147,47"/>
+  <path d="M 147,47 C 145,69 137,93 128,104"/>
+  <path d="M 139,44 L 143,27" opacity="0.9"/>
+  <path d="M 146,45 L 156,31" opacity="0.9"/>
+  <path d="M 151,51 L 165,42" opacity="0.9"/>
+
+  <!-- lower wing -->
+  <path d="M 96,112 C 106,133 120,153 142,169"/>
+  <path d="M 142,169 L 147,164"/>
+  <path d="M 147,164 C 145,142 137,118 128,107"/>
+  <path d="M 139,167 L 143,184" opacity="0.9"/>
+  <path d="M 146,166 L 156,180" opacity="0.9"/>
+  <path d="M 151,160 L 165,169" opacity="0.9"/>
+
+  <!-- body -->
+  <path d="M 74,105 C 92,94 122,93 143,104 C 122,117 92,117 74,105 Z"/>
+
+  <!-- neck and head -->
+  <path d="M 78,100 C 62,95 48,83 40,67"/>
+  <path d="M 43,71 C 37,60 40,52 48,52 C 54,52 57,58 54,64"/>
+  <path d="M 45,55 L 22,44"/>
+  <path d="M 47,61 L 22,44"/>
+  <circle cx="46" cy="60" r="1.9" fill="currentColor" stroke="none"/>
+
+  <!-- trailing legs -->
+  <path d="M 141,102 C 158,103 172,107 186,113"/>
+  <path d="M 140,109 C 157,112 170,117 182,124"/>
+  <path d="M 186,113 L 191,109" opacity="0.85"/>
+  <path d="M 182,124 L 188,122" opacity="0.85"/>
+</svg>
