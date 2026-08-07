@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Stylized cresting wave">
+  <path d="M 12,150 C 46,148 68,134 88,112 C 110,88 126,56 156,52 C 180,49 193,72 184,93 C 176,111 154,119 138,110"/>
+  <path d="M 36,152 C 62,148 80,134 96,114 C 114,92 130,68 154,66 C 172,64 181,80 175,95" opacity="0.85"/>
+  <path d="M 60,154 C 80,150 92,138 104,122 C 118,102 132,80 152,80 C 164,80 170,88 167,97" opacity="0.7"/>
+  <path d="M 138,110 C 133,121 122,126 111,121"/>
+  <path d="M 152,113 C 151,124 142,131 131,128" opacity="0.8"/>
+  <circle cx="172" cy="40" r="2.6"/>
+  <circle cx="184" cy="56" r="1.8"/>
+  <circle cx="158" cy="32" r="1.6"/>
+  <line x1="10" y1="162" x2="190" y2="162" opacity="0.6"/>
+  <path d="M 30,176 A 8,8 0 0 1 46,176" opacity="0.5"/>
+  <path d="M 24,176 A 14,14 0 0 1 52,176" opacity="0.5"/>
+  <path d="M 18,176 A 20,20 0 0 1 58,176" opacity="0.5"/>
+  <path d="M 66,176 A 8,8 0 0 1 82,176" opacity="0.5"/>
+  <path d="M 60,176 A 14,14 0 0 1 88,176" opacity="0.5"/>
+  <path d="M 54,176 A 20,20 0 0 1 94,176" opacity="0.5"/>
+  <path d="M 102,176 A 8,8 0 0 1 118,176" opacity="0.5"/>
+  <path d="M 96,176 A 14,14 0 0 1 124,176" opacity="0.5"/>
+  <path d="M 90,176 A 20,20 0 0 1 130,176" opacity="0.5"/>
+  <path d="M 138,176 A 8,8 0 0 1 154,176" opacity="0.5"/>
+  <path d="M 132,176 A 14,14 0 0 1 160,176" opacity="0.5"/>
+  <path d="M 126,176 A 20,20 0 0 1 166,176" opacity="0.5"/>
+</svg>

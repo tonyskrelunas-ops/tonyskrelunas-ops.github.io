@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TribeAwaken — Symbol Contact Sheet</title>
+<style>
+  :root {
+    --canyon: #1B1210;
+    --ember: #E5895C;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 32px 64px;
+    background: var(--canyon);
+    color: var(--ember);
+    font-family: "Iowan Old Style", Georgia, "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header { max-width: 1120px; margin: 0 auto 36px; }
+  h1 {
+    font-size: 24px; font-weight: 500; letter-spacing: .14em;
+    text-transform: uppercase; margin: 0 0 8px;
+  }
+  header p {
+    margin: 0; font-size: 13px; letter-spacing: .05em;
+    color: rgba(229,137,92,.62);
+  }
+  section { max-width: 1120px; margin: 0 auto 44px; }
+  h2 {
+    font-size: 12px; font-weight: 500; letter-spacing: .22em;
+    text-transform: uppercase; color: rgba(229,137,92,.55);
+    margin: 0 0 18px; padding-bottom: 9px;
+    border-bottom: 1px solid rgba(229,137,92,.18);
+  }
+  .grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+  }
+  .tile { margin: 0; text-align: center; }
+  .frame {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    border: 1px solid rgba(229,137,92,.16);
+    border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    padding: 10px;
+  }
+  .frame svg { width: 100%; height: 100%; display: block; }
+  .small {
+    height: 34px; margin-top: 10px;
+    display: flex; align-items: center; justify-content: center; gap: 14px;
+  }
+  .small svg { height: 32px; width: 32px; }
+  .small svg:last-child { height: 20px; width: 20px; opacity: .9; }
+  figcaption {
+    margin-top: 8px; font-size: 11px; letter-spacing: .06em;
+    color: rgba(229,137,92,.6);
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>TribeAwaken · Symbol Set</h1>
+  <p>Diné · Lithuanian · Japanese — three peoples, one human operating system.
+     Each mark is a 200×200 SVG drawn in <code>currentColor</code>.</p>
+</header>
+    <section>
+      <h2>Diné · Southwest</h2>
+      <div class="grid">
+      <figure class="tile">
+        <div class="frame" data-src="dine-mountains.svg"></div>
+        <div class="small" data-src="dine-mountains.svg"></div>
+        <figcaption>dine-mountains.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="dine-dawn.svg"></div>
+        <div class="small" data-src="dine-dawn.svg"></div>
+        <figcaption>dine-dawn.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="dine-weaving.svg"></div>
+        <div class="small" data-src="dine-weaving.svg"></div>
+        <figcaption>dine-weaving.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="dine-hogan.svg"></div>
+        <div class="small" data-src="dine-hogan.svg"></div>
+        <figcaption>dine-hogan.svg</figcaption>
+      </figure>
+      </div>
+    </section>
+    <section>
+      <h2>Lithuanian · Baltic</h2>
+      <div class="grid">
+      <figure class="tile">
+        <div class="frame" data-src="baltic-oak.svg"></div>
+        <div class="small" data-src="baltic-oak.svg"></div>
+        <figcaption>baltic-oak.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="baltic-sun.svg"></div>
+        <div class="small" data-src="baltic-sun.svg"></div>
+        <figcaption>baltic-sun.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="baltic-amber.svg"></div>
+        <div class="small" data-src="baltic-amber.svg"></div>
+        <figcaption>baltic-amber.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="baltic-juosta.svg"></div>
+        <div class="small" data-src="baltic-juosta.svg"></div>
+        <figcaption>baltic-juosta.svg</figcaption>
+      </figure>
+      </div>
+    </section>
+    <section>
+      <h2>Japanese</h2>
+      <div class="grid">
+      <figure class="tile">
+        <div class="frame" data-src="japan-torii.svg"></div>
+        <div class="small" data-src="japan-torii.svg"></div>
+        <figcaption>japan-torii.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="japan-enso.svg"></div>
+        <div class="small" data-src="japan-enso.svg"></div>
+        <figcaption>japan-enso.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="japan-wave.svg"></div>
+        <div class="small" data-src="japan-wave.svg"></div>
+        <figcaption>japan-wave.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="japan-pine.svg"></div>
+        <div class="small" data-src="japan-pine.svg"></div>
+        <figcaption>japan-pine.svg</figcaption>
+      </figure>
+      </div>
+    </section>
+    <section>
+      <h2>Universal · The Work</h2>
+      <div class="grid">
+      <figure class="tile">
+        <div class="frame" data-src="breath.svg"></div>
+        <div class="small" data-src="breath.svg"></div>
+        <figcaption>breath.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="runner.svg"></div>
+        <div class="small" data-src="runner.svg"></div>
+        <figcaption>runner.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="fire-circle.svg"></div>
+        <div class="small" data-src="fire-circle.svg"></div>
+        <figcaption>fire-circle.svg</figcaption>
+      </figure>
+      <figure class="tile">
+        <div class="frame" data-src="four-capitals.svg"></div>
+        <div class="small" data-src="four-capitals.svg"></div>
+        <figcaption>four-capitals.svg</figcaption>
+      </figure>
+      </div>
+    </section>
+<script>
+(async () => {
+  const nodes = [...document.querySelectorAll('[data-src]')];
+  const uniq = [...new Set(nodes.map(n => n.dataset.src))];
+  const cache = {};
+  await Promise.all(uniq.map(async src => {
+    try { cache[src] = await (await fetch(src)).text(); }
+    catch (e) { cache[src] = ''; }
+  }));
+  for (const n of nodes) {
+    const markup = cache[n.dataset.src] || '';
+    n.innerHTML = n.classList.contains('small') ? markup + markup : markup;
+  }
+})();
+</script>
+</body>
+</html>

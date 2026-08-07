@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Canyon Within — Aug 28–30, 2026 · 1440 Multiversity | TribeAwaken</title>
+<meta name="description" content="Three days in the redwoods to change your frequency. A descent into the canyon within, then a climb into the harvest. August 28–30, 2026 at 1440 Multiversity, Scotts Valley CA. Just 18 seats.">
+<link rel="stylesheet" href="/v2/assets/v2.css">
+<style>
+/* ---- repairs to shared v2.css (invalid calc: missing spaces around "+") ---- */
+.grid{gap:clamp(1.2rem,.8rem + 1.6vw,2.2rem)}
+.split{gap:clamp(2rem,1rem + 4vw,5rem)}
+.card{padding:clamp(1.6rem,1.2rem + 1.4vw,2.4rem)}
+.stat__n{font-size:clamp(2.8rem,2rem + 2.6vw,4.4rem)}
+.pull{font-size:clamp(1.9rem,1.4rem + 2.4vw,3.4rem)}
+
+/* ---- page-scoped: workshop ---- */
+.hero--canyon .hero__bg img{object-position:50% 64%}
+.hero__meta{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.1rem;margin-top:2rem;
+  font-weight:700;font-size:1.02rem;color:var(--sand)}
+.hero__meta span{display:flex;align-items:center;gap:1.1rem}
+.hero__meta span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--clay)}
+.hero__meta span:last-child::after{display:none}
+
+/* facts strip */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--rule)}
+.facts>div{padding:clamp(1.6rem,1rem + 1.4vw,2.4rem) 0;padding-left:clamp(1.2rem,2.4vw,2.6rem);border-left:1px solid var(--rule)}
+.facts>div:first-child{border-left:0;padding-left:0}
+.fact__k{font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt);margin-bottom:.7rem}
+.fact__v{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.1;
+  font-size:clamp(1.3rem,1rem + 1vw,1.95rem)}
+@media(max-width:860px){
+  .facts{grid-template-columns:1fr 1fr}
+  .facts>div:nth-child(3){border-left:0;padding-left:0}
+  .facts>div:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+}
+
+/* arc / three days */
+.arc{margin-top:clamp(2.5rem,5vw,4.5rem);border-bottom:1px solid var(--rule)}
+.arc-item{display:grid;grid-template-columns:minmax(0,6.5rem) 1fr;gap:clamp(1.4rem,3vw,4rem);
+  padding-block:clamp(2.4rem,1.6rem + 2.4vw,4rem);border-top:1px solid var(--rule)}
+.arc-item__n{font-family:var(--display);font-weight:900;line-height:.85;color:var(--clay);
+  font-size:clamp(2.6rem,1.8rem + 2.2vw,4.2rem)}
+.arc-item__d{font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--sand);margin-bottom:1rem}
+.arc-item h3{font-size:clamp(2rem,1.4rem + 2.2vw,3.2rem);font-weight:800;margin-bottom:1.1rem}
+.arc-item p{max-width:52ch;color:var(--sand)}
+@media(max-width:720px){
+  .arc-item{grid-template-columns:1fr;gap:.9rem}
+  .arc-item__n{font-size:2.6rem}
+}
+
+/* practice list */
+.plist{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  gap:0 clamp(2rem,4vw,5rem);list-style:none;padding:0;margin-top:clamp(2rem,4vw,3.4rem);
+  border-bottom:1px solid var(--rule)}
+.plist li{padding-block:clamp(1.4rem,2.4vw,1.9rem);border-top:1px solid var(--rule)}
+.plist b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.02em;color:var(--cream-2);
+  font-size:clamp(1.5rem,1.2rem + 1.1vw,2.1rem);line-height:1.1;margin-bottom:.45rem}
+.plist span{display:block;color:var(--sand);font-size:1.08rem;line-height:1.55;max-width:38ch}
+
+/* land acknowledgement */
+.ack{border-left:3px solid var(--clay);padding-left:clamp(1.4rem,3vw,2.6rem)}
+.ack p{max-width:54ch}
+
+/* guide + video */
+.guide{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,1rem + 4vw,5rem);align-items:center}
+@media(max-width:900px){.guide{grid-template-columns:1fr}}
+.guide__img img{width:100%;height:clamp(420px,58vh,660px);object-fit:cover;object-position:50% 32%;border-radius:14px}
+
+.watch{display:grid;grid-template-columns:300px 1fr;gap:clamp(1.8rem,1rem + 3vw,3.4rem);
+  align-items:center;margin-top:clamp(3rem,2rem + 3vw,5.5rem);
+  padding-top:clamp(2.4rem,1.6rem + 2vw,3.6rem);border-top:1px solid var(--rule)}
+@media(max-width:700px){.watch{grid-template-columns:1fr}}
+.vid{border-radius:14px;overflow:hidden;border:1px solid var(--rule);background:#000}
+.vid video{width:100%;display:block}
+.watch h3{font-size:clamp(1.7rem,1.3rem + 1.6vw,2.6rem);font-weight:800;margin-bottom:1rem}
+.watch p{color:var(--sand);max-width:46ch;font-size:1.12rem}
+
+/* passes */
+.pass{background:var(--bg-3);border:1px solid var(--rule);border-radius:14px;
+  padding:clamp(1.7rem,1.2rem + 1.4vw,2.4rem);display:flex;flex-direction:column}
+.pass__k{font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt);margin-bottom:.9rem}
+.pass h3{font-size:clamp(1.55rem,1.3rem + 1vw,2rem);font-weight:800;margin-bottom:.7rem}
+.pass p{color:var(--sand);margin-bottom:0}
+
+/* closing */
+.close-cta{text-align:center}
+.close-cta h2{margin-inline:auto;max-width:15ch}
+.close-cta p{margin-inline:auto;text-align:center}
+.close-cta .btn{margin-top:2.6rem}
+.seats{font-family:var(--display);font-weight:900;font-size:clamp(4.5rem,3rem + 8vw,10rem);
+  line-height:.85;color:var(--clay);letter-spacing:-.04em}
+
+.band figcaption{position:absolute;left:0;right:0;bottom:0;padding:var(--gut);
+  background:linear-gradient(to top,rgba(20,13,10,.9),transparent);
+  font-size:.98rem;font-weight:600;color:var(--cream);letter-spacing:.01em}
+.band img.tall{height:clamp(420px,66vh,760px)}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="/v2/">Tribe<span>Awaken</span></a>
+    <nav>
+      <ul class="nav">
+        <li><a href="/v2/workshop/">The Canyon Within</a></li>
+        <li><a href="/v2/teams/">For Organizations</a></li>
+        <li><a href="/diagnostic/">The Diagnostic</a></li>
+        <li><a class="arrow" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Register →</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero hero--canyon">
+  <div class="hero__bg"><img src="/assets/img/1440/redwoods.jpg" alt="Ancient coast redwoods rising above the forest floor at 1440 Multiversity"></div>
+  <div class="hero__scrim"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow">August 28–30, 2026 · Scotts Valley, California</p>
+    <h1>The Canyon Within</h1>
+    <p class="lead">Three days in the redwoods to change your frequency.</p>
+    <div class="hero__meta">
+      <span>Just 18 seats</span>
+      <span>From $1,100 + tax</span>
+      <span>Day passes available</span>
+    </div>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Reserve your seat</a>
+      <a class="btn btn--ghost" href="#invitation">Read the invitation</a>
+    </div>
+  </div>
+</section>
+
+<!-- FACTS -->
+<div class="wrap">
+  <div class="facts rv">
+    <div><div class="fact__k">Dates</div><div class="fact__v">Aug 28–30<br>2026</div></div>
+    <div><div class="fact__k">Place</div><div class="fact__v">1440<br>Multiversity</div></div>
+    <div><div class="fact__k">Seats</div><div class="fact__v">Eighteen<br>only</div></div>
+    <div><div class="fact__k">From</div><div class="fact__v">$1,100<br>+ tax</div></div>
+  </div>
+</div>
+
+<!-- INVITATION -->
+<section class="sec" id="invitation">
+  <div class="wrap wrap--tight">
+    <p class="eyebrow rv">The invitation</p>
+    <h2 class="rv">Every one of us is carrying something we have not put down.</h2>
+    <div class="rv" style="margin-top:2.4rem;max-width:62ch">
+      <p class="body-lg">You are competent. You are needed. The days move faster than you do, and somewhere underneath all of it, you have gone quiet.</p>
+      <p class="body-lg">Where I come from, when the world gets too loud, you go <em>down</em>. Into the canyon. Where the walls hold the heat of the day, where the water still runs, where there is nothing above you but a long strip of sky and nothing asked of you but to keep walking.</p>
+      <p class="body-lg">For three days at 1440 Multiversity, we make that descent together. Then, on the last morning, we climb back out into the harvest — which is what the end of summer has always been for.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BAND: canyon -->
+<figure class="band rv">
+  <img class="tall" src="/assets/img/canyon-family.jpg" alt="Three generations walking a canyon rim at sunrise">
+  <figcaption>The descent is old. The people who taught it to me are older still.</figcaption>
+</figure>
+
+<!-- PULL -->
+<section class="sec sec--deep">
+  <div class="wrap">
+    <p class="pull rv">You do not change your life by adding more to it. You change your frequency.</p>
+  </div>
+</section>
+
+<!-- THE THREE DAYS -->
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow rv">The three days</p>
+    <h2 class="rv" style="max-width:18ch">A descent, a floor, and a climb into the harvest.</h2>
+
+    <div class="arc">
+      <div class="arc-item rv">
+        <div class="arc-item__n">01</div>
+        <div>
+          <div class="arc-item__d">Friday evening</div>
+          <h3>The Descent</h3>
+          <p>We open outdoors, by the creek, with a land acknowledgement — then breath, fire, and the first story. Nothing is asked of you on the first night except that you set something down.</p>
+        </div>
+      </div>
+      <div class="arc-item rv">
+        <div class="arc-item__n">02</div>
+        <div>
+          <div class="arc-item__d">Saturday, all day</div>
+          <h3>The Canyon Floor</h3>
+          <p>Breathwork at first light. Meditation. Qigong and tai chi beneath the redwoods. A sound bath. A long, slow forest walk. The Ancestral Kitchen at dusk, then fireside and storytelling until the fire goes low.</p>
+        </div>
+      </div>
+      <div class="arc-item rv">
+        <div class="arc-item__n">03</div>
+        <div>
+          <div class="arc-item__d">Sunday morning</div>
+          <h3>The Harvest</h3>
+          <p>The climb out. We gather what the canyon gave you and name it out loud, so it survives the drive home. Closing circle, and you are on the road before the afternoon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAND ACKNOWLEDGEMENT -->
+<section class="sec sec--alt">
+  <div class="wrap split">
+    <div class="rv">
+      <p class="eyebrow">Whose ground this is</p>
+      <div class="ack">
+        <h2 style="font-size:clamp(1.85rem,1.3rem + 1.9vw,2.9rem);font-weight:700;margin-bottom:1.6rem">We open by the creek, and we open by saying whose land we are standing on.</h2>
+        <p class="muted">1440 Multiversity sits on the unceded homeland of the <strong>Amah Mutsun</strong>, who have cared for these mountains, these creeks and these redwoods since long before any of us arrived, and who are here still.</p>
+        <p class="muted">On Friday evening we begin outdoors, at the water, with a land acknowledgement offered to the Amah Mutsun. We say their name first. We ask the land's permission before we ask anything of ourselves. Everything that follows in the three days rests on that.</p>
+      </div>
+    </div>
+    <figure class="rv">
+      <img src="/assets/img/1440/creek.jpg" alt="Tony Skrelūnas beside the creek at 1440 Multiversity" style="width:100%;height:clamp(420px,62vh,700px);object-fit:cover;object-position:50% 40%;border-radius:14px">
+    </figure>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow rv">The practices</p>
+    <h2 class="rv" style="max-width:16ch">Old tools. Used properly. For three days straight.</h2>
+
+    <ul class="plist rv">
+      <li><b>Breathwork</b><span>The fastest door into the body we have found. Twice daily.</span></li>
+      <li><b>Meditation</b><span>Guided and silent, indoors and under the trees.</span></li>
+      <li><b>Qigong and tai chi</b><span>Slow movement on the redwood deck, first thing.</span></li>
+      <li><b>Sound baths</b><span>Bowls, drum and voice. You lie down; the room does the rest.</span></li>
+      <li><b>Forest walks</b><span>Long, unhurried, mostly wordless. The trees do the teaching.</span></li>
+      <li><b>A seasonal healing diet</b><span>Specially designed for these three days and this time of year.</span></li>
+      <li><b>Storytelling</b><span>Told the way it was told to me — at night, out loud, no notes.</span></li>
+      <li><b>Fireside</b><span>The last hour of each day. The part people remember.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ANCESTRAL KITCHEN -->
+<section class="sec sec--deep">
+  <div class="wrap split">
+    <div class="rv">
+      <p class="eyebrow">The Ancestral Kitchen</p>
+      <h2 style="max-width:14ch">Food is the oldest medicine on the mountain.</h2>
+    </div>
+    <div class="rv">
+      <p class="body-lg">One night of the weekend belongs to <strong>Missy and Henry Webster</strong> — a Navajo family from Gray Mountain, Arizona, who cook the way their grandmothers cooked.</p>
+      <p class="body-lg muted">Blue corn. Juniper ash. Frybread pulled hot. They will tell you what each thing is for while they hand it to you, which is how the knowledge has always travelled.</p>
+      <p class="body-lg muted">Around it, all weekend, a seasonal healing diet built for late August: light, warm, alkaline, and designed so that by Sunday your body is running at a different speed than it was on Friday.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BAND: fire circle -->
+<figure class="band rv">
+  <img class="tall" src="/assets/img/1440/fire-circle.jpg" alt="A small circle gathered around the fire pit in the redwoods at 1440 Multiversity">
+  <figcaption>Eighteen people, one fire, three nights.</figcaption>
+</figure>
+
+<!-- GUIDE -->
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow rv">Your guide</p>
+    <div class="guide" style="margin-top:2rem">
+      <figure class="guide__img rv">
+        <img src="/assets/img/1440/tony-redwoods.jpg" alt="Tony Skrelūnas in the redwoods at 1440 Multiversity">
+      </figure>
+      <div class="rv">
+        <h2 style="max-width:12ch">Tony Skrelūnas</h2>
+        <p class="lead" style="margin-top:1.4rem;max-width:30ch">Diné and Lithuanian. Raised on Black Mesa by his great-grandmother, Masan.</p>
+        <p class="muted" style="margin-top:1.6rem">Masan did not teach with lectures. She taught with the day: what time you rose, what you ate, what you said to the fire, how long you stayed quiet. Most of what happens at The Canyon Within is hers.</p>
+        <p class="muted">Tony has spent a decade convening intergenerational gatherings — cooks, singers, runners, elders, facilitators — and now brings that work to 1440 Multiversity, where he serves as faculty.</p>
+      </div>
+    </div>
+
+    <div class="watch rv">
+      <div class="vid">
+        <video controls preload="metadata" playsinline poster="/assets/img/1440/tony-invitation-poster.jpg">
+          <source src="/assets/video/tony-invitation.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div>
+        <p class="eyebrow">One minute</p>
+        <h3>The invitation, in his own words.</h3>
+        <p>Tony, standing among the redwoods at 1440, on what these three days are for — and who they are for.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY PASSES -->
+<section class="sec sec--alt">
+  <div class="wrap">
+    <p class="eyebrow rv">If you cannot take the whole weekend</p>
+    <h2 class="rv" style="max-width:15ch">Day passes are available.</h2>
+    <div class="grid grid--3 rv" style="margin-top:clamp(2.2rem,4vw,3.4rem)">
+      <div class="pass">
+        <div class="pass__k">Pass one</div>
+        <h3>Friday evening</h3>
+        <p>The creek opening, the land acknowledgement, the first fire and the first story.</p>
+      </div>
+      <div class="pass">
+        <div class="pass__k">Pass two</div>
+        <h3>Saturday, full day</h3>
+        <p>Dawn breathwork through to the Ancestral Kitchen and fireside. The deepest day of the three.</p>
+      </div>
+      <div class="pass">
+        <div class="pass__k">Pass three</div>
+        <h3>Sunday morning</h3>
+        <p>The climb out — integration, the harvest circle, and the road home by noon.</p>
+      </div>
+    </div>
+    <p class="muted rv" style="margin-top:2.4rem">Full-weekend registration from <strong>$1,100 + tax</strong>; rates vary by accommodation. Day-pass pricing and lodging options are listed with 1440.</p>
+    <p class="rv" style="margin-top:1.8rem">
+      <a class="arrow" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">See dates, rooms &amp; pricing →</a>
+    </p>
+  </div>
+</section>
+
+<!-- BAND: redwood touch -->
+<figure class="band rv">
+  <img class="tall" src="/assets/img/1440/redwood-touch.jpg" alt="A hand resting on the bark of an old redwood" style="object-position:50% 72%">
+</figure>
+
+<!-- CLOSE -->
+<section class="sec sec--deep">
+  <div class="wrap wrap--tight close-cta">
+    <div class="seats rv">18</div>
+    <h2 class="rv" style="margin-top:1.6rem">That is the whole room.</h2>
+    <p class="lead rv" style="max-width:40ch;margin-top:1.6rem">August 28–30, 2026. 1440 Multiversity, Scotts Valley, California. Three days in the redwoods to change your frequency.</p>
+    <a class="btn btn--primary rv" href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Reserve your seat at 1440</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="brand" href="/v2/">Tribe<span>Awaken</span></a>
+        <p class="muted" style="margin-top:1.1rem;max-width:34ch">Ancestral tools for people carrying weight across hard ground.</p>
+      </div>
+      <div>
+        <h4>Go</h4>
+        <ul>
+          <li><a href="/v2/">Home</a></li>
+          <li><a href="/v2/workshop/">The Canyon Within</a></li>
+          <li><a href="/v2/teams/">For Organizations</a></li>
+          <li><a href="/diagnostic/">The Far Messenger Diagnostic</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li><a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a></li>
+          <li><a href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Register at 1440</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <span>© 2026 TribeAwaken</span>
+      <span>1440 Multiversity sits on the unceded homeland of the Amah Mutsun.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

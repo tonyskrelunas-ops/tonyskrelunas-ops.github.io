@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Geometric diamond weaving band">
+  <line x1="20" y1="46" x2="180" y2="46"/>
+  <line x1="20" y1="54" x2="180" y2="54"/>
+  <line x1="20" y1="146" x2="180" y2="146"/>
+  <line x1="20" y1="154" x2="180" y2="154"/>
+  <polyline points="20,60 40,74 60,60 80,74 100,60 120,74 140,60 160,74 180,60"/>
+  <polyline points="20,140 40,126 60,140 80,126 100,140 120,126 140,140 160,126 180,140"/>
+  <line x1="20" y1="82" x2="180" y2="82"/>
+  <line x1="20" y1="118" x2="180" y2="118"/>
+  <polyline points="20,100 40,82 60,100 40,118 20,100"/>
+  <polyline points="31,100 40,91.9 49,100 40,108.1 31,100"/>
+  <polyline points="60,100 80,82 100,100 80,118 60,100"/>
+  <polyline points="71,100 80,91.9 89,100 80,108.1 71,100"/>
+  <polyline points="100,100 120,82 140,100 120,118 100,100"/>
+  <polyline points="111,100 120,91.9 129,100 120,108.1 111,100"/>
+  <polyline points="140,100 160,82 180,100 160,118 140,100"/>
+  <polyline points="151,100 160,91.9 169,100 160,108.1 151,100"/>
+</svg>
