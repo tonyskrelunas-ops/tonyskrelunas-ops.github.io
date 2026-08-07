@@ -7,18 +7,24 @@
 <meta property="og:image" content="/assets/img/1440/fire-circle.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/tokens.css"><link rel="stylesheet" href="/css/style.css?v=30">
+<link rel="stylesheet" href="/css/tokens.css"><link rel="stylesheet" href="/css/style.css?v=31">
 <style>
   /* ==========================================================
      THE CANYON WITHIN — editorial layer
      Restraint. One job per block. Photography carries the page.
      ========================================================== */
 
+  main { --ink-body: color-mix(in srgb, var(--text) 86%, var(--bg));
+         --ink-dim:  color-mix(in srgb, var(--text) 66%, var(--bg));
+         --ink-faint:color-mix(in srgb, var(--text) 52%, var(--bg));
+         --hair:     color-mix(in srgb, var(--text) 18%, transparent); }
+
   /* ---- 1 · Rhythm primitives ---- */
   .s          { padding-block: clamp(4rem, 2.2rem + 6.5vw, 8.5rem); }
   .s--tight   { padding-block: clamp(2.75rem, 1.8rem + 3.5vw, 5rem); }
   .s--lift    { background: linear-gradient(180deg, var(--night-2) 0%, var(--night) 100%); }
   .s--sink    { background: linear-gradient(180deg, var(--night) 0%, var(--night-2) 100%); }
+  .s--light   { background: var(--bone-2); }
   .col        { max-width: 44rem; }
   .col--wide  { max-width: 62rem; }
   .col--mid   { max-width: 44rem; margin-inline: auto; text-align: center; }
@@ -35,16 +41,16 @@
   main .s-title { font-family: var(--font-display); font-weight: 500;
                   font-size: clamp(1.95rem, 1.25rem + 2.3vw, 3.1rem);
                   line-height: 1.07; letter-spacing: -.024em; color: var(--bone);
-                  max-width: 19ch; margin-block: 0; text-wrap: balance; }
+                  max-width: 24ch; margin-block: 0; text-wrap: balance; }
   .col--mid .s-title { margin-inline: auto; }
   main .s-lead  { font-size: clamp(1.08rem, .98rem + .5vw, 1.28rem); line-height: 1.62;
-                  color: #E2E7E3; max-width: 50ch; margin-block: 1.15rem 0; }
+                  color: var(--text); max-width: 50ch; margin-block: 1.15rem 0; }
   .col--mid .s-lead { margin-inline: auto; }
-  .s-body p     { font-size: 1.05rem; line-height: 1.8; color: #C4D0CD;
+  .s-body p     { font-size: 1.05rem; line-height: 1.8; color: var(--ink-body);
                   margin-block-end: 1.35em; max-width: 62ch; }
   .s-body p:last-child { margin-block-end: 0; }
   .s-body p strong { color: var(--bone-2); font-weight: 600; }
-  main .s-note  { font-size: .86rem; line-height: 1.68; color: #86A09D; letter-spacing: .01em; }
+  main .s-note  { font-size: .86rem; line-height: 1.68; color: var(--ink-faint); letter-spacing: .01em; }
 
   /* ---- 3 · Pull quote — the page's quiet moments ---- */
   main .pull    { font-family: var(--font-display); font-style: italic; font-weight: 400;
@@ -52,19 +58,19 @@
                   letter-spacing: -.016em; color: var(--bone);
                   max-width: 28ch; margin-block: clamp(2.5rem, 4.5vw, 3.75rem);
                   padding-left: clamp(1.25rem, 2.5vw, 2rem);
-                  border-left: 1px solid rgba(87,216,198,.45); text-wrap: balance; }
+                  border-left: 1px solid color-mix(in srgb, var(--amber-soft) 48%, transparent); text-wrap: balance; }
   main .pull--turq { color: var(--amber-soft); }
   main .pull--flat { border-left: 0; padding-left: 0; max-width: none;
                      font-size: clamp(1.18rem, 1rem + .75vw, 1.55rem); margin: 0; }
   .pull cite    { display: block; font-family: var(--font-body); font-style: normal;
                   font-size: .74rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
-                  color: #7E9895; margin-top: 1.5rem; line-height: 1.6; }
+                  color: var(--ink-faint); margin-top: 1.5rem; line-height: 1.6; }
 
   /* ---- 4 · Understated arrow CTA ---- */
   main .arrow   { display: inline-flex; align-items: baseline; gap: .55em;
                   font-family: var(--font-body); font-weight: 600; font-size: .93rem;
                   letter-spacing: .04em; color: var(--bone); text-decoration: none;
-                  padding-bottom: .55rem; border-bottom: 1px solid rgba(143,168,166,.45);
+                  padding-bottom: .55rem; border-bottom: 1px solid var(--hair);
                   transition: color .25s var(--ease), border-color .25s var(--ease); }
   main .arrow i { font-style: normal; display: inline-block; transition: transform .25s var(--ease); }
   main .arrow:hover { color: var(--turq); border-color: var(--turq); }
@@ -77,8 +83,8 @@
                   object-fit: cover; object-position: 66% 50%; z-index: 0; }
   .hero-r::after{ content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
                   background:
-                    linear-gradient(90deg, rgba(8,26,28,.94) 0%, rgba(8,26,28,.80) 32%, rgba(8,26,28,.24) 60%, rgba(8,26,28,.04) 100%),
-                    linear-gradient(180deg, rgba(8,26,28,.60) 0%, rgba(8,26,28,.05) 34%, rgba(8,26,28,.52) 80%, rgba(12,43,46,.96) 100%); }
+                    linear-gradient(90deg, color-mix(in srgb, var(--night) 94%, transparent) 0%, color-mix(in srgb, var(--night) 80%, transparent) 32%, color-mix(in srgb, var(--night) 26%, transparent) 60%, transparent 100%),
+                    linear-gradient(180deg, color-mix(in srgb, var(--night) 62%, transparent) 0%, transparent 34%, color-mix(in srgb, var(--night) 55%, transparent) 80%, var(--night) 100%); }
   .hero-r__inner{ position: relative; z-index: 2; padding-block: clamp(3rem, 6.5vw, 5.5rem); }
   .hero-r__body { max-width: 37rem; }
   .hero-r__kick { display: flex; align-items: center; gap: .85rem;
@@ -93,7 +99,7 @@
                   font-size: clamp(1.05rem, .95rem + .55vw, 1.38rem); color: var(--amber-soft);
                   margin: 1.2rem 0 0; }
   main .hero-r__lead { font-size: clamp(1.02rem, .97rem + .35vw, 1.16rem); line-height: 1.7;
-                  color: #DCE3DF; max-width: 33rem; margin: 1.35rem 0 0; }
+                  color: var(--ink-body); max-width: 33rem; margin: 1.35rem 0 0; }
   .hero-r__act  { margin-top: clamp(1.9rem, 3.8vw, 2.75rem); }
 
   /* ---- 6 · Fact bar under the hero ---- */
@@ -103,7 +109,7 @@
                   border-left: 1px solid var(--rule); }
   .fact:first-child { border-left: 0; padding-left: 0; }
   .fact dt      { font-family: var(--font-body); font-size: .63rem; font-weight: 600;
-                  letter-spacing: .26em; text-transform: uppercase; color: #7E9895; margin-bottom: .6rem; }
+                  letter-spacing: .26em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: .6rem; }
   .fact dd      { margin: 0; font-family: var(--font-display); font-size: clamp(1rem, .9rem + .35vw, 1.2rem);
                   line-height: 1.28; color: var(--bone); letter-spacing: -.01em; }
   @media (max-width: 760px) {
@@ -113,16 +119,23 @@
   }
 
   /* ---- 7 · Full-bleed image plates — the primary rhythm ---- */
-  main .band-fig      { position: relative; margin: 0; }
+  main .band-fig      { position: relative; margin: 0; overflow: hidden; }
   main .band-fig img  { width: 100%; height: clamp(300px, 34vw, 500px); object-fit: cover;
                         display: block; border-radius: 0; box-shadow: none; }
-  main .band-fig--tall img { height: clamp(360px, 44vw, 640px); }
+  main .band-fig--tall img { height: clamp(380px, 52vw, 780px); }
+  main .band-fig figcaption { position: absolute; inset: auto 0 0 0; margin: 0;
+                        padding: clamp(3rem, 7vw, 6rem) var(--space-3) clamp(1.5rem, 3vw, 2.4rem);
+                        background: linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--night) 60%, transparent) 45%, color-mix(in srgb, var(--night) 94%, transparent) 100%); }
+  main .band-fig figcaption span { display: block; max-width: 56ch; margin-inline: auto;
+                        text-align: center; font-family: var(--font-display); font-style: italic;
+                        font-size: clamp(1.02rem, .94rem + .5vw, 1.35rem); line-height: 1.5;
+                        color: var(--bone-2); letter-spacing: -.005em; }
 
   /* ---- 8 · Hairline row list (who comes) ---- */
   .rows         { margin-top: clamp(1.4rem, 2.8vw, 2.25rem); }
   .row          { border-top: 1px solid var(--rule); padding: clamp(1.05rem, 2vw, 1.45rem) 0; }
   .row:last-of-type { border-bottom: 1px solid var(--rule); }
-  main .row p   { margin: 0; font-size: 1.02rem; line-height: 1.64; color: #9FB0AD; max-width: none; }
+  main .row p   { margin: 0; font-size: 1.02rem; line-height: 1.64; color: var(--ink-dim); max-width: none; }
   .row__k       { color: var(--bone); font-weight: 500; }
 
   /* ---- 9 · Hairline tile grid (carry home) ---- */
@@ -133,9 +146,18 @@
                   padding: clamp(1.15rem, 2vw, 1.55rem) 0 clamp(1.5rem, 2.6vw, 2.1rem); }
   main .tile h3 { font-family: var(--font-display); font-weight: 500; font-size: 1.18rem;
                   letter-spacing: -.014em; color: var(--bone); margin-block: 0 .5rem; }
-  main .tile p  { margin: 0; font-size: .95rem; line-height: 1.66; color: #9FB0AD; max-width: none; }
+  main .tile p  { margin: 0; font-size: .95rem; line-height: 1.66; color: var(--ink-dim); max-width: none; }
   @media (max-width: 860px) { .tiles { grid-template-columns: repeat(2, minmax(0,1fr)); } }
   @media (max-width: 520px) { .tiles { grid-template-columns: 1fr; } }
+
+  /* ---- 9b · Light field — one bright break in the descent ---- */
+  main .s--light .s-kick { color: var(--earth); }
+  main .s--light .s-kick::before { background: var(--earth); }
+  main .s--light .s-title { color: var(--night); }
+  main .s--light .s-lead { color: color-mix(in srgb, var(--night) 74%, #ffffff); }
+  main .s--light .tile { border-top-color: color-mix(in srgb, var(--night) 18%, transparent); }
+  main .s--light .tile h3 { color: var(--night); }
+  main .s--light .tile p { color: color-mix(in srgb, var(--night) 68%, #ffffff); }
 
   /* ---- 10 · The three-day arc ---- */
   .arc-list     { margin-top: clamp(1.6rem, 3vw, 2.5rem); border-bottom: 1px solid var(--rule); }
@@ -145,7 +167,7 @@
                   padding-block: clamp(1.9rem, 3.4vw, 3rem); }
   .arc-day__n   { font-family: var(--font-display); font-weight: 500; line-height: .78;
                   font-size: clamp(2.8rem, 1.7rem + 3vw, 4.4rem);
-                  color: transparent; -webkit-text-stroke: 1px rgba(87,216,198,.6);
+                  color: transparent; -webkit-text-stroke: 1px color-mix(in srgb, var(--amber-soft) 65%, transparent);
                   letter-spacing: -.03em; }
   .arc-day__day { display: block; margin-top: 1rem; font-family: var(--font-body);
                   font-size: .66rem; font-weight: 700; letter-spacing: .26em;
@@ -153,7 +175,7 @@
   main .arc-day h3 { font-family: var(--font-display); font-weight: 500;
                   font-size: clamp(1.35rem, 1.05rem + 1vw, 1.9rem); letter-spacing: -.018em;
                   color: var(--bone); margin-block: 0 .7rem; }
-  main .arc-day p { margin: 0; font-size: 1.01rem; line-height: 1.76; color: #B2C1BE; max-width: 56ch; }
+  main .arc-day p { margin: 0; font-size: 1.01rem; line-height: 1.76; color: var(--ink-body); max-width: 56ch; }
   main .arc-day p strong { color: var(--bone-2); }
   @media (max-width: 640px) {
     .arc-day { grid-template-columns: 1fr; gap: .75rem; }
@@ -162,49 +184,60 @@
   }
 
   /* ---- 11 · Guide + video ---- */
-  .guide        { display: grid; grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+  .guide        { display: grid; grid-template-columns: minmax(0, 19rem) minmax(0, 1fr);
                   gap: clamp(1.75rem, 4vw, 3.5rem); align-items: start;
                   margin-top: clamp(1.4rem, 2.8vw, 2.25rem); }
   .guide__media { margin: 0; }
   .guide__media video { display: block; width: 100%; aspect-ratio: 203 / 360;
-                  object-fit: cover; background: #06181A; border-radius: 14px;
-                  border: 1px solid var(--rule); box-shadow: 0 24px 60px rgba(0,0,0,.42); }
+                  object-fit: cover; background: var(--night); border-radius: 14px;
+                  border: 1px solid var(--rule); box-shadow: 0 24px 60px rgba(0,0,0,.45); }
   .guide__media figcaption { font-family: var(--font-body); font-size: .64rem; font-weight: 600;
-                  letter-spacing: .22em; text-transform: uppercase; color: #7E9895;
+                  letter-spacing: .22em; text-transform: uppercase; color: var(--ink-faint);
                   margin-top: 1rem; text-align: center; }
   @media (max-width: 720px) {
     .guide { grid-template-columns: 1fr; }
-    .guide__media { max-width: 16rem; }
+    .guide__media { max-width: 19rem; }
   }
+
+  /* ---- 11b · Praise ---- */
+  .praise       { display: grid; grid-template-columns: repeat(2, minmax(0,1fr));
+                  gap: clamp(2rem, 5vw, 4.5rem); margin-top: clamp(1.6rem, 3vw, 2.5rem); }
+  .praise > * { border-top: 1px solid var(--rule); padding-top: clamp(1.4rem, 2.4vw, 1.9rem); }
+  @media (max-width: 720px) { .praise { grid-template-columns: 1fr; gap: 0; }
+    .praise > *:last-child { margin-top: 2rem; } }
 
   /* ---- 12 · The package ---- */
   .pkg-band     { position: relative; overflow: hidden;
                   border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
-                  background: linear-gradient(180deg, #0E3235 0%, #0A2426 100%); }
+                  background: linear-gradient(180deg, var(--night-2) 0%, var(--night) 100%); }
   .pkg-band::before { content: ""; position: absolute; z-index: 0; inset: -45% -10% auto -10%;
                   height: 100%; pointer-events: none;
-                  background: radial-gradient(ellipse at 50% 50%, rgba(47,191,174,.14), transparent 62%); }
+                  background: radial-gradient(ellipse at 50% 50%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 62%); }
   .pkg-band > .wrap { position: relative; z-index: 1; }
   .pkg          { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
                   gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+  .pkg > ul     { position: relative; }
+  .pkg > ul::before { content: ""; position: absolute; top: 0; bottom: 0;
+                  left: calc(-1 * clamp(1rem, 2.5vw, 2.25rem)); width: 1px; background: var(--rule); }
   .pkg__fig     { font-family: var(--font-display); font-weight: 500; line-height: 1;
                   font-size: clamp(3rem, 2rem + 4vw, 4.8rem); letter-spacing: -.035em;
                   color: var(--bone); margin: clamp(1.6rem, 3vw, 2.25rem) 0 .6rem; }
   .pkg__fig span{ font-family: var(--font-body); font-size: .19em; font-weight: 600;
                   letter-spacing: .2em; text-transform: uppercase; color: var(--turq);
                   margin-left: .8em; vertical-align: .35em; white-space: nowrap; }
-  main .pkg__sub{ font-size: .95rem; color: #9FB0AD; margin: 0 0 1.7rem; max-width: 34ch; }
-  main .pkg__note { font-size: .93rem; line-height: 1.72; color: #B2C1BE; margin: 0 0 2rem; max-width: 42ch; }
+  main .pkg__sub{ font-size: .95rem; color: var(--ink-dim); margin: 0 0 1.7rem; max-width: 34ch; }
+  main .pkg__note { font-size: .93rem; line-height: 1.72; color: var(--ink-body); margin: 0 0 2rem; max-width: 42ch; }
   main .pkg__note strong { color: var(--bone-2); }
-  main .pkg__fine { font-size: .8rem; line-height: 1.6; color: #7E9895; margin: 1.35rem 0 0; max-width: 34ch; }
+  main .pkg__fine { font-size: .8rem; line-height: 1.6; color: var(--ink-faint); margin: 1.35rem 0 0; max-width: 34ch; }
   .pkg-list     { list-style: none; padding: 0; margin: 0; }
   .pkg-list li  { position: relative; border-top: 1px solid var(--rule);
-                  padding: 1rem 0 1rem 1.9rem; font-size: .99rem; line-height: 1.62; color: #C4D0CD; }
+                  padding: 1rem 0 1rem 1.9rem; font-size: .99rem; line-height: 1.62; color: var(--ink-body); }
   .pkg-list li:last-child { border-bottom: 1px solid var(--rule); }
   .pkg-list li::before { content: ""; position: absolute; left: 0; top: 1.7rem;
                   width: .8rem; height: 1px; background: var(--turq); }
   .pkg-list li strong { color: var(--bone-2); font-weight: 600; }
-  @media (max-width: 820px) { .pkg { grid-template-columns: 1fr; gap: 2.25rem; } }
+  @media (max-width: 820px) { .pkg { grid-template-columns: 1fr; gap: 2.25rem; }
+    .pkg > ul::before { display: none; } }
 
   /* ---- 13 · FAQ ---- */
   .faq          { border-bottom: 1px solid var(--rule); margin-top: clamp(1.4rem, 2.8vw, 2.25rem); }
@@ -222,18 +255,18 @@
   .faq details[open] summary::after { transform: rotate(45deg); }
   .faq summary:hover { color: var(--amber-soft); }
   main .faq p   { margin: 0 0 clamp(1.05rem, 2vw, 1.4rem); font-size: 1rem; line-height: 1.72;
-                  color: #9FB0AD; max-width: 58ch; }
+                  color: var(--ink-dim); max-width: 58ch; }
 
   /* ---- 14 · Land acknowledgement + closing ---- */
   main .land p  { font-family: var(--font-display); font-style: italic; font-size: 1rem;
-                  line-height: 1.78; color: #86A09D; max-width: 54ch; margin-inline: auto; }
-  main .land p strong { color: #B2C1BE; font-weight: 500; font-style: normal; }
+                  line-height: 1.78; color: var(--ink-faint); max-width: 54ch; margin-inline: auto; }
+  main .land p strong { color: var(--ink-body); font-weight: 500; font-style: normal; }
   .close        { text-align: center; border-top: 1px solid var(--rule);
-                  background: linear-gradient(180deg, var(--night) 0%, #0A2426 100%); }
+                  background: linear-gradient(180deg, var(--night) 0%, var(--night-2) 100%); }
   main .close h2{ font-family: var(--font-display); font-weight: 500;
                   font-size: clamp(2.1rem, 1.4rem + 2.6vw, 3.3rem); letter-spacing: -.026em;
                   color: var(--bone); margin-block: 0 1rem; }
-  main .close__seal { font-family: var(--font-display); font-style: italic; color: #7E9895;
+  main .close__seal { font-family: var(--font-display); font-style: italic; color: var(--ink-faint);
                   font-size: .95rem; letter-spacing: .04em; margin: clamp(2rem, 4vw, 3rem) 0 0; }
 </style>
 </head>
@@ -290,7 +323,7 @@
   <!-- PLATE 1 -->
   <figure class="band-fig">
     <img src="/assets/img/1440/fire-circle.jpg" alt="A circle gathered at the fire in the redwoods at 1440 Multiversity" loading="lazy" style="object-position:center 42%;">
-    <figcaption><span>A circle that keeps a seat for you — the opening gathering in the redwoods.</span></figcaption>
+    <figcaption><span>The opening gathering in the redwoods — a circle that keeps a seat for you.</span></figcaption>
   </figure>
 
   <!-- FREQUENCY -->
@@ -308,7 +341,7 @@
 
   <!-- PLATE 2 -->
   <figure class="band-fig band-fig--tall">
-    <img src="/assets/img/1440/redwood-touch.jpg" alt="Standing beneath the Mother Tree in the redwoods at 1440" loading="lazy" style="object-position:center 28%;">
+    <img src="/assets/img/1440/redwoods.jpg" alt="Standing beneath the Mother Tree in the redwoods at 1440" loading="lazy" style="object-position:center 74%;">
     <figcaption><span>Standing beneath the Mother Tree — the redwoods do half the work.</span></figcaption>
   </figure>
 
@@ -351,8 +384,14 @@
     </div>
   </div></div></section>
 
+  <!-- PLATE 3 -->
+  <figure class="band-fig">
+    <img src="/assets/img/1440/council-chairs.jpg" alt="Tony in conversation with a guest in the redwoods at 1440 Multiversity" loading="lazy" style="object-position:center 38%;">
+    <figcaption><span>Just eighteen guests, so no one gets lost.</span></figcaption>
+  </figure>
+
   <!-- CARRY HOME -->
-  <section class="s"><div class="wrap"><div class="col--wide">
+  <section class="s s--light"><div class="wrap"><div class="col--wide">
     <div class="s-head">
       <p class="s-kick">What you'll carry home</p>
       <h2 class="s-title">Six things that come with you.</h2>
@@ -367,14 +406,8 @@
     </div>
   </div></div></section>
 
-  <!-- PLATE 3 -->
-  <figure class="band-fig">
-    <img src="/assets/img/1440/council-chairs.jpg" alt="Chairs set in a council circle in a redwood clearing at 1440 Multiversity" loading="lazy" style="object-position:center 58%;">
-    <figcaption><span>Three days, one journey — the circle holds from Friday evening to Sunday noon.</span></figcaption>
-  </figure>
-
   <!-- THE WEEKEND -->
-  <section class="s"><div class="wrap"><div class="col--wide">
+  <section class="s s--sink"><div class="wrap"><div class="col--wide">
     <div class="s-head">
       <p class="s-kick">The weekend</p>
       <h2 class="s-title">Three days, one journey.</h2>
@@ -406,7 +439,7 @@
   </div></div></section>
 
   <!-- GUIDE -->
-  <section class="s s--sink"><div class="wrap"><div class="col--wide">
+  <section class="s s--lift"><div class="wrap"><div class="col--wide">
     <div class="s-head">
       <p class="s-kick">Your guide</p>
       <h2 class="s-title">Led by the people who live it.</h2>
@@ -427,15 +460,11 @@
   </div></div></section>
 
   <!-- PRAISE -->
-  <section class="s s--lift"><div class="wrap"><div class="col--wide">
+  <section class="s s--tight"><div class="wrap"><div class="col--wide">
     <p class="s-kick">Advance praise for <em>Stone Breath</em></p>
-    <div class="tiles" style="grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(2rem,5vw,4.5rem);margin-top:clamp(1.6rem,3vw,2.5rem);">
-      <div class="tile">
-        <p class="pull pull--turq pull--flat">&ldquo;The tools for endurance, belonging, and purpose are not lost — they are dormant. This book awakens them.&rdquo;<cite>Carmella Kahn, DrPH, MPH · University of New Mexico</cite></p>
-      </div>
-      <div class="tile">
-        <p class="pull pull--turq pull--flat">&ldquo;Blending ancestral wisdom, cross-cultural storytelling, and practical tools — the courage to live from inner knowing rather than fear.&rdquo;<cite>Emily Affolter, PhD · Associate Dean of Doctoral Studies</cite></p>
-      </div>
+    <div class="praise">
+      <p class="pull pull--turq pull--flat">&ldquo;The tools for endurance, belonging, and purpose are not lost — they are dormant. This book awakens them.&rdquo;<cite>Carmella Kahn, DrPH, MPH · University of New Mexico</cite></p>
+      <p class="pull pull--turq pull--flat">&ldquo;Blending ancestral wisdom, cross-cultural storytelling, and practical tools — the courage to live from inner knowing rather than fear.&rdquo;<cite>Emily Affolter, PhD · Associate Dean of Doctoral Studies</cite></p>
     </div>
   </div></div></section>
 
