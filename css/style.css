@@ -380,7 +380,7 @@ a:hover { color: var(--amber); }
   max-width: 52ch; font-style: italic; }
 .pain__kicker em { color: var(--amber); font-style: italic; }
 
-/* S4 — The Free Tool ★ PRIMARY CONVERSION ★ */
+/* S4 — The Free Tool PRIMARY CONVERSION */
 .free-tool { background: linear-gradient(180deg, var(--forest), #2a3727); }
 .free-tool__panel { max-width: 46rem; margin-inline: auto; text-align: center;
   background: rgba(16,27,45,.42); border: 1px solid var(--rule);
@@ -495,7 +495,7 @@ a:hover { color: var(--amber); }
 .author-bio p { margin-bottom: var(--space-2); }
 .author-cred { list-style: none; padding: 0; margin: var(--space-3) 0 0; display: grid; gap: .5rem; max-width: 46rem; }
 .author-cred li { padding-left: 1.4rem; position: relative; color: var(--silver); }
-.author-cred li::before { content: "◆"; position: absolute; left: 0; color: var(--amber); font-size: .7em; top: .35em; }
+.author-cred li::before { content: "—"; position: absolute; left: 0; color: var(--amber); font-size: .7em; top: .35em; }
 
 .offerings-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); margin-top: var(--space-4); }
 @media (max-width: 820px) { .offerings-grid { grid-template-columns: 1fr; } }
