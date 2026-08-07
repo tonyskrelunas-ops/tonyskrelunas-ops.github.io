@@ -23,7 +23,7 @@ You've been reading these posts for a while, but you may not know where they com
 
 I was raised by my great-grandmother in a hogan on Big Mountain — no electricity, four hundred sheep she knew by name, and a dawn ceremony she performed every morning of her life without missing one. I learned to read by kerosene lamp after the chores were done. By that same small flame I worked through the philosophy of Japan, a tradition I've been apprenticed to ever since — not by blood, but by choice, since childhood. The other half of me is Lithuanian: another old people the world tried hard to make forget who they were, and who refused.
 
-Then I went out into the world and **failed out of college.**
+Then I went out into the world and **walked away from college.**
 
 That's the part I tell first, because it's the part that matters. I'd been top of my class, an award-winner, a 4:20 miler — and I walked into a world that quietly required me to be someone generic, and I tried. I lost the thread completely. What brought me back wasn't a program or a mentor. It was one realization: *I could be who I was.* I went back and finished at the top of my class.
 

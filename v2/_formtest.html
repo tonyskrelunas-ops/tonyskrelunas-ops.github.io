@@ -13,6 +13,7 @@ f.src = '/v2/' + page + '/' + (mode === 'sent' ? '?sent=1' : '') + '#' + (page =
 f.onload = function () {
   var d = f.contentDocument, w = f.contentWindow;
   var form = d.querySelector('form[data-mail-form]');
+  d.querySelectorAll('.rv').forEach(function (e) { e.classList.add('in'); });
   setTimeout(function () {
     if (mode === 'empty') {
       form.dispatchEvent(new w.Event('submit', { cancelable: true, bubbles: true }));
@@ -28,8 +29,9 @@ f.onload = function () {
       form.dispatchEvent(new w.Event('submit', { cancelable: true, bubbles: true }));
     }
     setTimeout(function(){
-      var t = d.querySelector('.f-shell'); if (t) t.scrollIntoView({block:'center'});
-    }, 120);
+      var t = d.querySelector('.f-shell');
+      if (t) w.scrollTo(0, t.getBoundingClientRect().top + w.scrollY - 90);
+    }, 300);
   }, 400);
 };
 </script>

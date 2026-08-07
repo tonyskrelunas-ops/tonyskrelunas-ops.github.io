@@ -100,12 +100,14 @@
 .f-textarea:hover,
 .f-select:hover{border-color:rgba(250,243,233,.28)}
 
+/* background-COLOR, never the shorthand — the shorthand would wipe
+   the select's chevron background-image. */
 .f-input:focus,
 .f-textarea:focus,
 .f-select:focus{
   outline:none;
   border-color:var(--clay);
-  background:var(--ink);
+  background-color:var(--ink);
   box-shadow:var(--f-focus);
 }
 /* keyboard users get the ring even where :focus is suppressed elsewhere */
@@ -155,7 +157,7 @@
 .f-field.is-invalid .f-textarea,
 .f-field.is-invalid .f-select{
   border-color:var(--f-err);
-  background:var(--f-err-bg);
+  background-color:var(--f-err-bg);
 }
 .f-field.is-invalid .f-input:focus,
 .f-field.is-invalid .f-textarea:focus,
@@ -234,7 +236,7 @@
 .f-actions .btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .f-note{
   font-size:.94rem;line-height:1.45;color:var(--sand);
-  max-width:34ch;flex:1 1 15rem;margin:0;
+  max-width:none;flex:1 1 15rem;margin:0;
 }
 @media(max-width:560px){
   .f-actions .btn{width:100%;justify-content:center}
