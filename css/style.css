@@ -889,3 +889,112 @@ a:hover { color: var(--amber); }
 .site-header .nav__cta .btn,
 .site-header .global-bar { font-family: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 .site-header .global-bar a[lang] { font-family: inherit; }
+
+/* ============================================================
+   FORMATTING PASS — Aug 7 2026
+   No layout re-architecture, no markup changes. This fixes the
+   six things that read as sloppy on the page:
+     1  six different content widths / alignments per page
+     2  book covers of different heights, so everything under
+        them lined up with nothing
+     3  three-across cards squeezed too narrow for their copy
+     4  the article cards shrunk to a cramped little cluster
+     5  the hero headline running straight over the line art
+     6  ragged vertical gaps between sections
+   NOTE: clamp() needs spaces around + and - or the whole
+   declaration is silently dropped.
+   ============================================================ */
+
+/* --- 1. ONE left edge, one width, one rhythm ------------------ */
+[data-page="home"] .wrap{ max-width: 74rem; }
+
+/* narrow sections keep their reading measure but share the page's
+   left edge, so sections stop drifting between left and centre */
+[data-page="home"] .wrap--narrow{ max-width: var(--content); }
+[data-page="home"] .wrap--narrow > p,
+[data-page="home"] .wrap--narrow > ul,
+[data-page="home"] .wrap--narrow > ol,
+[data-page="home"] .wrap--narrow > blockquote{ max-width: 64ch; }
+[data-page="home"] .wrap--narrow > h1,
+[data-page="home"] .wrap--narrow > h2,
+[data-page="home"] .wrap--narrow > h3{ max-width: 22ch; }
+/* article bodies are meant to be a centred column — leave them */
+[data-page="home"] .article .wrap--narrow,
+[data-page="home"] .wrap--narrow.article,
+[data-page="home"] .article-hero .wrap--narrow{ max-width: var(--content-narrow); }
+
+/* a heading followed straight by its lead needs air */
+[data-page="home"] .section h2 + p,
+[data-page="home"] .section h2 + .lead{ margin-top: var(--space-3); }
+
+/* --- 2. book covers line up, and so does everything under them - */
+.books-feature{ align-items: stretch !important; }
+.books-feature > a{ height: 100%; }
+.books-feature > a > img{
+  height: clamp(300px, 30vw, 430px) !important;
+  width: 100% !important; max-width: 360px !important;
+  object-fit: contain; object-position: left top;
+}
+.books-feature > a > .btn{ margin-top: auto !important; align-self: flex-start; }
+.books-feature > a > p{ margin-bottom: var(--space-3); }
+
+/* --- 3. cards get room to breathe ----------------------------- */
+.offerings-grid{ gap: var(--space-4); }
+.book-hook{ padding: var(--space-4) var(--space-4) calc(var(--space-4) + .2rem); }
+.book-hook h3{ text-wrap: balance; line-height: 1.2; }
+.book-hook p{ font-size: 1rem; line-height: 1.62; }
+.book-hook .btn{ margin-top: auto; }
+
+/* --- 4. the article cards stop being an afterthought ---------- */
+.stories-grid{ gap: var(--space-4); margin-top: var(--space-4); }
+.story-card__body{ padding: var(--space-4); }
+.story-card h3{ font-size: var(--step-2); line-height: 1.22; text-wrap: balance; margin-bottom: var(--space-2); }
+.story-card__cat{ font-size: .7rem; }
+.story-card__meta{ font-size: .95rem; padding-top: var(--space-2); }
+.story-card__meta .read{ letter-spacing: .01em; }
+
+/* --- 5. the hero headline clears the artwork ------------------ */
+.hero__art{ opacity: .30; }
+.hero h1{ max-width: 19ch; text-wrap: balance; hyphens: none; }
+.hero__sub,
+.hero__inner > p{ max-width: 56ch; }
+@media (min-width: 1100px){
+  .hero__inner{ padding-right: min(26%, 22rem); }
+  .hero__art{ opacity: .38; }
+}
+
+/* --- 6. even vertical rhythm ---------------------------------- */
+.section > .wrap > *:last-child{ margin-bottom: 0; }
+.section--tight{ padding-block: var(--space-5); }
+
+.book-hook .btn,
+.offerings-grid .btn{ text-wrap: balance; }
+@media (min-width: 981px){ .offerings-grid .btn{ white-space: nowrap; } }
+
+/* --- 7. long prose is never centred --------------------------
+   Centring a 60-character paragraph is the classic amateur tell.
+   Eyebrows, captions and one-line pull quotes stay centred;
+   anything that runs to several lines goes back to the left
+   edge everything else on the page already shares. -------------- */
+[data-page="home"] .section .lead[style*="text-align:center"],
+[data-page="home"] .section .lead[style*="text-align: center"],
+[data-page="home"] .section p.muted[style*="text-align:center"],
+[data-page="home"] .section p.muted[style*="text-align: center"]{ text-align: left !important; }
+[data-page="home"] .section .wrap--narrow[style*="text-align:center"] > p,
+[data-page="home"] .section .wrap--narrow[style*="text-align: center"] > p,
+[data-page="home"] .section .wrap--narrow[style*="text-align:center"] > h2,
+[data-page="home"] .section .wrap--narrow[style*="text-align: center"] > h2{ text-align: left; }
+[data-page="home"] .section .wrap--narrow[style*="text-align:center"] > h2,
+[data-page="home"] .section .wrap--narrow[style*="text-align: center"] > h2{ margin-inline: 0 !important; }
+/* the definition rows under it read as a list, not as poetry */
+[data-page="home"] .section .wrap--narrow[style*="text-align:center"] > div,
+[data-page="home"] .section .wrap--narrow[style*="text-align: center"] > div{ text-align: left; }
+/* the "new forms of economy" block joins the page's left edge */
+[data-page="home"] .creed{ text-align: left !important; }
+[data-page="home"] .creed__head{ text-align: left !important; justify-items: start !important;
+  max-width: 30ch !important; margin-inline: 0 !important; }
+[data-page="home"] .creed__head .eyebrow{ justify-self: start !important; }
+[data-page="home"] .creed__head h2{ margin-inline: 0 !important; max-width: 26ch; }
+[data-page="home"] .creed__lines{ text-align: left !important; max-width: 62rem !important; margin-inline: 0 !important; }
+[data-page="home"] .creed__line{ margin-inline: 0 !important; max-width: 64ch; }
+[data-page="home"] .creed .wrap--narrow > p{ margin-inline: 0 !important; }
