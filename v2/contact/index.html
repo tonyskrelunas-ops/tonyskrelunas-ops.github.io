@@ -7,9 +7,7 @@
 <title>Contact — Speaking, consulting, retreats, press | Tony Skrelūnas</title>
 <meta name="description" content="Direct enquiries for keynotes, advisory work, retreats and team immersives, and press. One inbox: wisdom@ancestralwatch.com.">
 <link rel="icon" href="/favicon.svg">
-<link rel="stylesheet" href="/v2/assets/v2.css?v=7">
-<link rel="stylesheet" href="/v2/assets/forms.css">
-
+<link rel="stylesheet" href="/v2/assets/v2.css?v=8">
 <style>
 /* ============ page-specific — extends v2.css + forms.css ============
    NOTE: inside clamp()/calc(), + and - MUST have whitespace around
@@ -104,12 +102,12 @@ body.locked{overflow:hidden}
 .band{position:relative;border-block:1px solid var(--rule)}
 .band img{width:100%;height:clamp(280px, 38vh, 480px);object-fit:cover;object-position:50% 40%}
 .band::after{content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(180deg,rgba(27,18,16,.52) 0%,rgba(27,18,16,.14) 36%,rgba(20,13,10,.77) 100%)}
+  background:linear-gradient(180deg,rgba(27,18,16,.52) 0%,rgba(27,18,16,.14) 36%,rgba(20,13,10,.63) 100%)}
 .band__cap{position:absolute;left:0;right:0;bottom:0;z-index:2;
   padding-block:clamp(1.4rem, 1rem + 1.4vw, 2.2rem)}
 .band__cap p{font-family:var(--display);font-style:italic;font-weight:600;
   font-size:clamp(1.05rem, .95rem + .6vw, 1.5rem);color:var(--cream);
-  max-width:42ch;line-height:1.35;margin:0;text-shadow:0 2px 18px rgba(20,13,10,.8)}
+  max-width:42ch;line-height:1.35;margin:0;text-shadow:0 2px 18px rgba(20,13,10,.66)}
 
 /* ---------- the form band ---------- */
 .ask{position:relative;isolation:isolate;background:var(--ink);
@@ -442,82 +440,7 @@ body.locked{overflow:hidden}
     <!-- ---- the form. Engine: /v2/assets/forms.js ---- -->
     <div class="f-shell rv" data-mail-shell>
 
-      <form class="f-form" data-mail-form data-subject="Enquiry from tonyskrelunas.com">
-
-        <div class="f-row">
-          <div class="f-field">
-            <label class="f-label" for="name">Your name <span class="f-req" aria-hidden="true">*</span></label>
-            <input class="f-input" type="text" id="name" name="name" required autocomplete="name"
-                   aria-describedby="name-err" data-error="I'll need a name to write back to."
-                   placeholder="First and last">
-            <p class="f-err-msg" id="name-err"></p>
-          </div>
-          <div class="f-field">
-            <label class="f-label" for="email">Your email <span class="f-req" aria-hidden="true">*</span></label>
-            <input class="f-input" type="email" id="email" name="email" required autocomplete="email"
-                   inputmode="email" aria-describedby="email-err"
-                   data-error="Without this there's nowhere to reply."
-                   placeholder="you@organisation.com">
-            <p class="f-err-msg" id="email-err"></p>
-          </div>
-        </div>
-
-        <div class="f-row">
-          <div class="f-field">
-            <label class="f-label" for="org">Organisation <span class="f-opt">(optional)</span></label>
-            <input class="f-input" type="text" id="org" name="organisation" autocomplete="organization"
-                   aria-describedby="org-err" placeholder="Company, nation, university, outlet">
-            <p class="f-err-msg" id="org-err"></p>
-          </div>
-          <div class="f-field">
-            <label class="f-label" for="topic">What's this about <span class="f-req" aria-hidden="true">*</span></label>
-            <select class="f-select" id="topic" name="enquiry_type" required
-                    aria-describedby="topic-err" data-error="Pick the closest one — I'll sort out the rest.">
-              <option value="">Choose one…</option>
-              <option>Speaking — keynote, panel or closing</option>
-              <option>Advisory &amp; consulting</option>
-              <option>A retreat — The Canyon Within</option>
-              <option>A team immersive — Far Messenger Program</option>
-              <option>Press, podcast or interview</option>
-              <option>Books, essays &amp; rights</option>
-              <option>Something else entirely</option>
-            </select>
-            <p class="f-err-msg" id="topic-err"></p>
-          </div>
-        </div>
-
-        <div class="f-field">
-          <label class="f-label" for="when">Dates or timing <span class="f-opt">(optional)</span></label>
-          <input class="f-input" type="text" id="when" name="timing" aria-describedby="when-err"
-                 placeholder="e.g. a Thursday in March, or “still deciding”">
-          <p class="f-err-msg" id="when-err"></p>
-        </div>
-
-        <div class="f-field">
-          <label class="f-label" for="message">The details <span class="f-req" aria-hidden="true">*</span></label>
-          <p class="f-hint" id="message-hint">Who's in the room, what you're trying to achieve, and anything you already know about budget or logistics. Plain language is fine.</p>
-          <textarea class="f-textarea" id="message" name="message" required
-                    aria-describedby="message-hint message-err"
-                    data-error="A line or two is enough — but I do need something here."
-                    placeholder="What you're planning, and what you'd want it to do."></textarea>
-          <p class="f-err-msg" id="message-err"></p>
-        </div>
-
-        <div class="f-actions">
-          <button class="btn btn--primary" type="submit">
-            Send the enquiry
-            <span class="f-arrow" aria-hidden="true">→</span>
-            <span class="f-spin" aria-hidden="true"></span>
-          </button>
-          <p class="f-note">Goes to wisdom@ancestralwatch.com. Nothing else happens.</p>
-        </div>
-
-        <p class="f-alert" role="alert">
-          That didn't go through. Send it to
-          <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
-          instead — it reaches exactly the same place.
-        </p>
-      </form>
+      <p style="margin-top:1.6rem"><a class="mailto" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a></p><p class="mailto__note">Write to me &mdash; it opens your own mail, addressed to me. I read everything.</p>
 
       <!-- ---- the success state, shown in place ---- -->
       <div class="f-done" role="status" aria-live="polite">
@@ -600,7 +523,6 @@ body.locked{overflow:hidden}
   </div>
 </footer>
 
-<script src="/v2/assets/forms.js"></script>
 <script>
 /* ---------- menu ---------- */
 (function(){

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Listen — the song, the video, and the meditation playlist | TribeAwaken</title>
 <meta name="description" content="A word from Tony Skrelūnas in the redwoods, his original song The Warrior's Code, the We Are A Tribe anthem, and the Ancestral Watch meditation and relaxation playlist. Put it on and let it run.">
-<link rel="stylesheet" href="/v2/assets/v2.css?v=7">
+<link rel="stylesheet" href="/v2/assets/v2.css?v=8">
 <style>
 /* ---- repairs to shared v2.css (invalid calc: missing spaces around "+") ---- */
 .grid{gap:clamp(1.2rem,.8rem + 1.6vw,2.2rem)}
@@ -27,25 +27,25 @@
 .tex--slot::before{background-image:url(/assets/img/land/sandstone-slot.jpg);opacity:.4;
   background-position:50% 34%;filter:saturate(.88)}
 .tex--slot::after{background:
-  linear-gradient(100deg,rgba(27,18,16,.8) 0%,rgba(27,18,16,.8) 48%,rgba(27,18,16,.65) 100%),
-  linear-gradient(180deg,rgba(27,18,16,.45),rgba(27,18,16,.8))}
+  linear-gradient(100deg,rgba(27,18,16,.66) 0%,rgba(27,18,16,.66) 48%,rgba(27,18,16,.54) 100%),
+  linear-gradient(180deg,rgba(27,18,16,.45),rgba(27,18,16,.66))}
 .tex--bark::before{background-image:url(/assets/img/land/pine-bark.jpg);opacity:.62;
   background-position:64% 50%;filter:saturate(.8)}
 .tex--bark::after{background:
-  linear-gradient(96deg,rgba(20,13,10,.8) 0%,rgba(20,13,10,.8) 42%,rgba(20,13,10,.53) 100%),
-  linear-gradient(180deg,rgba(20,13,10,.45),rgba(20,13,10,.71))}
+  linear-gradient(96deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.66) 42%,rgba(20,13,10,.53) 100%),
+  linear-gradient(180deg,rgba(20,13,10,.45),rgba(20,13,10,.57))}
 .tex--stone::before{background-image:url(/assets/img/land/stone-ramada.jpg);opacity:.4;
   background-position:50% 62%;filter:saturate(.7)}
 .tex--stone::after{background:
-  linear-gradient(100deg,rgba(27,18,16,.8) 0%,rgba(27,18,16,.8) 45%,rgba(27,18,16,.69) 100%),
-  linear-gradient(180deg,rgba(27,18,16,.55),rgba(27,18,16,.8))}
+  linear-gradient(100deg,rgba(27,18,16,.66) 0%,rgba(27,18,16,.66) 45%,rgba(27,18,16,.58) 100%),
+  linear-gradient(180deg,rgba(27,18,16,.44),rgba(27,18,16,.66))}
 .tex--rughorse::before{background-image:url(/assets/img/land/rug-horse.jpg);opacity:.3;
   background-position:50% 52%;filter:saturate(.9)}
 .tex--rughorse::after{background:
   radial-gradient(100% 120% at 30% 50%,rgba(36,24,20,.86) 0%,rgba(36,24,20,.95) 72%)}
 .tex--corn::before{background-image:url(/assets/img/land/rug-yei-corn.jpg);opacity:.22;
   background-position:50% 50%;filter:saturate(.9)}
-.tex--corn::after{background:radial-gradient(92% 130% at 50% 44%,rgba(20,13,10,.69) 0%,rgba(20,13,10,.8) 74%)}
+.tex--corn::after{background:radial-gradient(92% 130% at 50% 44%,rgba(20,13,10,.58) 0%,rgba(20,13,10,.66) 74%)}
 
 
 /* ---- petroglyphs ----
@@ -79,8 +79,8 @@
 .hero--listen .hero__bg img{object-position:58% 44%}
 .hero--listen .hero__bg img{filter:saturate(.9) brightness(1.12)}
 .hero--listen .hero__scrim{background:
-  linear-gradient(96deg,rgba(20,13,10,.8) 0%,rgba(20,13,10,.8) 38%,rgba(20,13,10,.55) 72%,rgba(20,13,10,.3) 100%),
-  linear-gradient(180deg,rgba(20,13,10,.5) 0%,rgba(20,13,10,.1) 45%,rgba(20,13,10,.66) 100%)}
+  linear-gradient(96deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.66) 38%,rgba(20,13,10,.44) 72%,rgba(20,13,10,.3) 100%),
+  linear-gradient(180deg,rgba(20,13,10,.5) 0%,rgba(20,13,10,.1) 45%,rgba(20,13,10,.55) 100%)}
 .hero--listen h1{max-width:14ch}
 .hero--listen .lead{max-width:32ch}
 .hero__meta{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.1rem;margin-top:2rem;
@@ -99,7 +99,7 @@
   border:1px solid var(--rule);background:#000;aspect-ratio:16/9}
 .vwrap video{width:100%;height:100%;object-fit:cover;display:block}
 .vwrap__cover{position:absolute;inset:0;z-index:3;display:grid;place-items:center;
-  background:linear-gradient(180deg,rgba(20,13,10,.28) 0%,rgba(20,13,10,.12) 42%,rgba(20,13,10,.63) 100%);
+  background:linear-gradient(180deg,rgba(20,13,10,.28) 0%,rgba(20,13,10,.12) 42%,rgba(20,13,10,.52) 100%);
   border:0;padding:0;cursor:pointer;transition:opacity .35s ease}
 .vwrap.is-playing .vwrap__cover{opacity:0;pointer-events:none}
 .vwrap__label{position:absolute;left:clamp(1.1rem,2.6vw,2.2rem);bottom:clamp(1.1rem,2.6vw,2rem);
@@ -180,7 +180,7 @@
 .band figcaption{position:absolute;left:0;right:0;bottom:0;
   padding:5rem var(--gut) clamp(1.3rem,2.6vw,2.2rem);
   padding-inline:max(var(--gut),calc((100% - var(--max)) / 2 + var(--gut)));
-  background:linear-gradient(to top,rgba(20,13,10,.8) 0%,rgba(20,13,10,.69) 34%,transparent 100%);
+  background:linear-gradient(to top,rgba(20,13,10,.66) 0%,rgba(20,13,10,.58) 34%,transparent 100%);
   font-size:clamp(1rem,.92rem + .38vw,1.24rem);font-weight:600;color:var(--cream);
   text-shadow:0 1px 14px rgba(20,13,10,.53)}
 
@@ -192,7 +192,7 @@
   transition:transform .7s cubic-bezier(.2,.7,.3,1),filter .4s ease}
 .strip figure:hover img{transform:scale(1.05);filter:saturate(1.05)}
 .strip figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .95rem .8rem;
-  background:linear-gradient(to top,rgba(20,13,10,.8),transparent);
+  background:linear-gradient(to top,rgba(20,13,10,.66),transparent);
   font-size:.72rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--cream)}
 
 /* ---- close ---- */
