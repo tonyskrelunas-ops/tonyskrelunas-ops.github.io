@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Woven sash band pattern">
+  <path d="M 30,78 C 22,76 17,80 10,79" opacity="0.6"/>
+  <path d="M 170,78 C 178,76 183,80 190,79" opacity="0.6"/>
+  <path d="M 30,89 C 22,87 17,91 10,90" opacity="0.6"/>
+  <path d="M 170,89 C 178,87 183,91 190,90" opacity="0.6"/>
+  <path d="M 30,100 C 22,98 17,102 10,101" opacity="0.6"/>
+  <path d="M 170,100 C 178,98 183,102 190,101" opacity="0.6"/>
+  <path d="M 30,111 C 22,109 17,113 10,112" opacity="0.6"/>
+  <path d="M 170,111 C 178,109 183,113 190,112" opacity="0.6"/>
+  <path d="M 30,122 C 22,120 17,124 10,123" opacity="0.6"/>
+  <path d="M 170,122 C 178,120 183,124 190,123" opacity="0.6"/>
+  <line x1="30" y1="66" x2="170" y2="66"/>
+  <line x1="30" y1="72" x2="170" y2="72"/>
+  <line x1="30" y1="128" x2="170" y2="128"/>
+  <line x1="30" y1="134" x2="170" y2="134"/>
+  <polyline points="30,86 40,74 50,86"/>
+  <polyline points="30,114 40,126 50,114"/>
+  <polyline points="50,86 60,74 70,86"/>
+  <polyline points="50,114 60,126 70,114"/>
+  <polyline points="70,86 80,74 90,86"/>
+  <polyline points="70,114 80,126 90,114"/>
+  <polyline points="90,86 100,74 110,86"/>
+  <polyline points="90,114 100,126 110,114"/>
+  <polyline points="110,86 120,74 130,86"/>
+  <polyline points="110,114 120,126 130,114"/>
+  <polyline points="130,86 140,74 150,86"/>
+  <polyline points="130,114 140,126 150,114"/>
+  <polyline points="150,86 160,74 170,86"/>
+  <polyline points="150,114 160,126 170,114"/>
+  <line x1="30" y1="86" x2="170" y2="86"/>
+  <line x1="30" y1="114" x2="170" y2="114"/>
+  <polyline points="30,100 44,86 58,100 44,114 30,100"/>
+  <line x1="39" y1="100" x2="49" y2="100" opacity="0.7"/>
+  <line x1="44" y1="95" x2="44" y2="105" opacity="0.7"/>
+  <polyline points="58,100 72,86 86,100 72,114 58,100"/>
+  <line x1="67" y1="100" x2="77" y2="100" opacity="0.7"/>
+  <line x1="72" y1="95" x2="72" y2="105" opacity="0.7"/>
+  <polyline points="86,100 100,86 114,100 100,114 86,100"/>
+  <line x1="95" y1="100" x2="105" y2="100" opacity="0.7"/>
+  <line x1="100" y1="95" x2="100" y2="105" opacity="0.7"/>
+  <polyline points="114,100 128,86 142,100 128,114 114,100"/>
+  <line x1="123" y1="100" x2="133" y2="100" opacity="0.7"/>
+  <line x1="128" y1="95" x2="128" y2="105" opacity="0.7"/>
+  <polyline points="142,100 156,86 170,100 156,114 142,100"/>
+  <line x1="151" y1="100" x2="161" y2="100" opacity="0.7"/>
+  <line x1="156" y1="95" x2="156" y2="105" opacity="0.7"/>
+</svg>

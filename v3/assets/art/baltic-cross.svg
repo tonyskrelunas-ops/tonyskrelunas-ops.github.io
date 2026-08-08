@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Ornate wayside cross finial">
+  <!-- sun disc behind the crossing -->
+  <circle cx="100" cy="95" r="25" opacity="0.9"/>
+  <circle cx="100" cy="95" r="15" opacity="0.7"/>
+  <line x1="100" y1="63" x2="100" y2="56" opacity="0.75"/>
+  <line x1="122.6" y1="72.4" x2="127.5" y2="67.5" opacity="0.75"/>
+  <line x1="132" y1="95" x2="139" y2="95" opacity="0.75"/>
+  <line x1="122.6" y1="117.6" x2="127.5" y2="122.5" opacity="0.75"/>
+  <line x1="100" y1="127" x2="100" y2="134" opacity="0.75"/>
+  <line x1="77.4" y1="117.6" x2="72.5" y2="122.5" opacity="0.75"/>
+  <line x1="68" y1="95" x2="61" y2="95" opacity="0.75"/>
+  <line x1="77.4" y1="72.4" x2="72.5" y2="67.5" opacity="0.75"/>
+
+  <!-- post -->
+  <line x1="96" y1="192" x2="96" y2="40"/>
+  <line x1="104" y1="192" x2="104" y2="40"/>
+  <line x1="96" y1="40" x2="104" y2="40"/>
+  <line x1="86" y1="192" x2="114" y2="192" opacity="0.6"/>
+
+  <!-- crossbar -->
+  <line x1="47" y1="90" x2="153" y2="90"/>
+  <line x1="47" y1="100" x2="153" y2="100"/>
+  <line x1="47" y1="90" x2="47" y2="100"/>
+  <line x1="153" y1="90" x2="153" y2="100"/>
+
+  <!-- arm-end curls -->
+  <path d="M 47,93 C 34,92 26,84 30,76 C 34,71 42,73 42,80"/>
+  <path d="M 47,98 C 34,99 26,107 30,115 C 34,120 42,118 42,111"/>
+  <path d="M 153,93 C 166,92 174,84 170,76 C 166,71 158,73 158,80"/>
+  <path d="M 153,98 C 166,99 174,107 170,115 C 166,120 158,118 158,111"/>
+
+  <!-- tulip finial -->
+  <path d="M 100,40 C 90,35 86,24 91,15 C 95,8 105,8 109,15 C 114,24 110,35 100,40 Z"/>
+  <path d="M 91,19 C 82,17 76,24 80,32 C 84,37 90,34 91,28" opacity="0.9"/>
+  <path d="M 109,19 C 118,17 124,24 120,32 C 116,37 110,34 109,28" opacity="0.9"/>
+  <circle cx="100" cy="7" r="4"/>
+
+  <!-- lower scrollwork -->
+  <path d="M 96,122 C 82,127 73,138 76,150 C 78,157 87,158 91,151 C 93,147 90,143 87,145"/>
+  <path d="M 104,122 C 118,127 127,138 124,150 C 122,157 113,158 109,151 C 107,147 110,143 113,145"/>
+  <path d="M 96,158 L 78,166" opacity="0.7"/>
+  <path d="M 104,158 L 122,166" opacity="0.7"/>
+</svg>

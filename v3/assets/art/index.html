@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TribeAwaken — Symbol Contact Sheet</title>
+<style>
+  :root {
+    --canyon: #1B1210;
+    --ember: #E5895C;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 32px 64px;
+    background: var(--canyon);
+    color: var(--ember);
+    font-family: "Iowan Old Style", Georgia, "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header { max-width: 1200px; margin: 0 auto 36px; }
+  h1 {
+    font-size: 24px; font-weight: 500; letter-spacing: .14em;
+    text-transform: uppercase; margin: 0 0 8px;
+  }
+  header p {
+    margin: 0; font-size: 13px; letter-spacing: .05em;
+    color: rgba(229,137,92,.62);
+  }
+  section { max-width: 1200px; margin: 0 auto 44px; }
+  h2 {
+    font-size: 12px; font-weight: 500; letter-spacing: .22em;
+    text-transform: uppercase; color: rgba(229,137,92,.55);
+    margin: 0 0 18px; padding-bottom: 9px;
+    border-bottom: 1px solid rgba(229,137,92,.18);
+  }
+  h2 span { color: rgba(229,137,92,.32); letter-spacing: .12em; }
+
+  /* ---- petroglyph treatment ---- */
+  .petro {
+    position: relative;
+    border: 1px solid rgba(229,137,92,.16);
+    border-radius: 3px;
+    overflow: hidden;
+    background: #241713;
+  }
+  .petro img.bg {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; object-fit: cover;
+    filter: saturate(.9) contrast(1.02) brightness(1.34);
+  }
+  /* weight stays behind the centred headline and falls away to the edges,
+     so the sandstone still reads as a photograph */
+  .petro .veil {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(120% 100% at 50% 45%, rgba(27,18,16,.5), rgba(27,18,16,.32)),
+      linear-gradient(180deg, rgba(27,18,16,.2) 0%, rgba(27,18,16,.06) 44%, rgba(27,18,16,.3) 100%);
+  }
+  .petro .row {
+    position: relative;
+    display: flex; align-items: center; justify-content: space-around;
+    gap: 24px; padding: 34px 28px 44px; flex-wrap: wrap;
+  }
+  .petro .row svg {
+    width: 320px; height: 320px;
+    color: #E9C6A6;
+    opacity: .15;
+  }
+  .petro .cap {
+    position: absolute; left: 22px; bottom: 14px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    color: rgba(233,198,166,.55);
+  }
+  .petro .headline {
+    position: absolute; left: 0; right: 0; top: 50%;
+    transform: translateY(-50%);
+    text-align: center; pointer-events: none;
+    font-size: 34px; letter-spacing: .12em; text-transform: uppercase;
+    color: rgba(240,214,192,.9);
+  }
+
+  .grid {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px;
+  }
+  .tile { margin: 0; text-align: center; }
+  .frame {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    border: 1px solid rgba(229,137,92,.16);
+    border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    padding: 10px;
+  }
+  .frame svg { width: 100%; height: 100%; display: block; }
+  .small {
+    height: 34px; margin-top: 10px;
+    display: flex; align-items: center; justify-content: center; gap: 14px;
+  }
+  .small svg { height: 32px; width: 32px; }
+  .small svg:last-child { height: 20px; width: 20px; opacity: .9; }
+  figcaption {
+    margin-top: 8px; font-size: 11px; letter-spacing: .06em;
+    color: rgba(229,137,92,.6);
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  .new figcaption::after {
+    content: " ·new";
+    color: rgba(229,137,92,.35);
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>TribeAwaken · Symbol Set</h1>
+  <p>Diné · Lithuanian · Japanese — three peoples, one human operating system.
+     Each mark is a 200×200 SVG drawn in <code>currentColor</code>. 36 symbols.</p>
+</header>
+
+<section>
+  <h2>Petroglyph treatment <span>— 320px, 15% opacity, over sandstone</span></h2>
+  <div class="petro">
+    <img class="bg" src="/assets/img/land/sandstone-antelope.jpg" alt="">
+    <div class="veil"></div>
+    <div class="row">
+      <div data-src="dine-mountains.svg"></div>
+      <div data-src="japan-crane.svg"></div>
+      <div data-src="baltic-tree-of-life.svg"></div>
+    </div>
+    <div class="headline">The Work Is Older Than Us</div>
+    <div class="cap">how the marks read behind a heading</div>
+  </div>
+</section>
+
+<section>
+  <h2>Diné · Southwest</h2>
+  <div class="grid" data-set="dine-mountains dine-dawn dine-weaving dine-hogan"></div>
+</section>
+
+<section>
+  <h2>Lithuanian · Baltic</h2>
+  <div class="grid" data-set="baltic-oak baltic-sun baltic-amber baltic-juosta"
+       data-new="baltic-rue baltic-tree-of-life baltic-cross baltic-serpent baltic-fire baltic-stork baltic-linen baltic-moon baltic-horse baltic-hill-fort"></div>
+</section>
+
+<section>
+  <h2>Japanese</h2>
+  <div class="grid" data-set="japan-torii japan-enso japan-wave japan-pine"
+       data-new="japan-pagoda japan-crane japan-bamboo japan-fuji japan-koi japan-maple japan-stone-lantern japan-bridge japan-cloud japan-seigaiha"></div>
+</section>
+
+<section>
+  <h2>Universal · The Work</h2>
+  <div class="grid" data-set="breath runner fire-circle four-capitals"></div>
+</section>
+
+<script>
+(async () => {
+  // build tiles from the data-set / data-new lists
+  for (const grid of document.querySelectorAll('.grid')) {
+    const old = (grid.dataset.set || '').split(/\s+/).filter(Boolean);
+    const fresh = (grid.dataset.new || '').split(/\s+/).filter(Boolean);
+    const html = [];
+    const add = (name, isNew) => html.push(
+      '<figure class="tile' + (isNew ? ' new' : '') + '">' +
+        '<div class="frame" data-src="' + name + '.svg"></div>' +
+        '<div class="small" data-src="' + name + '.svg"></div>' +
+        '<figcaption>' + name + '.svg</figcaption>' +
+      '</figure>');
+    old.forEach(n => add(n, false));
+    fresh.forEach(n => add(n, true));
+    grid.innerHTML = html.join('');
+  }
+
+  const nodes = [...document.querySelectorAll('[data-src]')];
+  const uniq = [...new Set(nodes.map(n => n.dataset.src))];
+  const cache = {};
+  await Promise.all(uniq.map(async src => {
+    try { cache[src] = await (await fetch(src)).text(); }
+    catch (e) { cache[src] = ''; }
+  }));
+  for (const n of nodes) {
+    const markup = cache[n.dataset.src] || '';
+    n.innerHTML = n.classList.contains('small') ? markup + markup : markup;
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Twin horse-head roof finial">
+  <!-- crossed gable boards -->
+  <line x1="40" y1="190" x2="126" y2="66"/>
+  <line x1="48" y1="194" x2="134" y2="70"/>
+  <line x1="160" y1="190" x2="74" y2="66"/>
+  <line x1="152" y1="194" x2="66" y2="70"/>
+  <circle cx="100" cy="100" r="3.4" fill="currentColor" stroke="none"/>
+  <line x1="20" y1="194" x2="180" y2="194" opacity="0.4"/>
+
+  <!-- rosette between the boards -->
+  <circle cx="100" cy="142" r="11"/>
+  <line x1="100" y1="125" x2="100" y2="131"/>
+  <line x1="100" y1="153" x2="100" y2="159"/>
+  <line x1="83" y1="142" x2="89" y2="142"/>
+  <line x1="111" y1="142" x2="117" y2="142"/>
+  <line x1="88" y1="130" x2="92" y2="134"/>
+  <line x1="112" y1="130" x2="108" y2="134"/>
+  <line x1="88" y1="154" x2="92" y2="150"/>
+  <line x1="112" y1="154" x2="108" y2="150"/>
+
+  <!-- right horse head -->
+  <path d="M 132,72 L 136,44 C 138,31 148,23 159,23
+           C 169,23 175,29 177,35 C 180,41 179,48 173,50
+           C 165,52 157,50 151,48 C 145,46 141,54 143,62
+           L 145,74 Z"/>
+  <path d="M 140,32 L 136,17 L 150,26"/>
+  <path d="M 152,25 L 154,12 L 162,23" opacity="0.9"/>
+  <circle cx="161" cy="34" r="2.3" fill="currentColor" stroke="none"/>
+  <path d="M 173,44 L 176,43" opacity="0.85"/>
+  <path d="M 139,38 L 132,32" opacity="0.7"/>
+  <path d="M 137,48 L 130,44" opacity="0.7"/>
+  <path d="M 135,58 L 128,56" opacity="0.7"/>
+
+  <!-- left horse head -->
+  <path d="M 68,72 L 64,44 C 62,31 52,23 41,23
+           C 31,23 25,29 23,35 C 20,41 21,48 27,50
+           C 35,52 43,50 49,48 C 55,46 59,54 57,62
+           L 55,74 Z"/>
+  <path d="M 60,32 L 64,17 L 50,26"/>
+  <path d="M 48,25 L 46,12 L 38,23" opacity="0.9"/>
+  <circle cx="39" cy="34" r="2.3" fill="currentColor" stroke="none"/>
+  <path d="M 27,44 L 24,43" opacity="0.85"/>
+  <path d="M 61,38 L 68,32" opacity="0.7"/>
+  <path d="M 63,48 L 70,44" opacity="0.7"/>
+  <path d="M 65,58 L 72,56" opacity="0.7"/>
+</svg>
