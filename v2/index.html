@@ -7,7 +7,7 @@
 <title>Tony Skrelūnas — Ancestral intelligence for a regenerating world | TribeAwaken</title>
 <meta name="description" content="Human performance and nation-building, braided from three traditions. Retreats, team immersives, coaching, essays, music and film. Led by Tony Skrelūnas — Diné and Lithuanian, advising on four continents.">
 <link rel="icon" href="/favicon.svg">
-<link rel="stylesheet" href="/v2/assets/v2.css?v=8">
+<link rel="stylesheet" href="/v2/assets/v2.css?v=9">
 <style>
 /* ============ page-specific — extends v2.css ============
    NOTE: inside clamp()/calc(), the + and - operators MUST be
@@ -143,10 +143,15 @@ body.locked{overflow:hidden}
   border:1px solid var(--rule);transition:transform .3s ease}
 .pill__c:hover{transform:translateY(-4px)}
 .pill__c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
-  transition:transform .6s ease}
+  filter:brightness(1.12) saturate(1.03);transition:transform .6s ease}
+/* pillar two is a night photograph — it needs the exposure, pillar one does not */
+#nation-building img{filter:brightness(1.5) saturate(1.06) contrast(.96)}
 .pill__c:hover img{transform:scale(1.04)}
+/* the photo stays open across the top; the scrim only builds where the type sits */
 .pill__c::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(20,13,10,.32) 0%,rgba(20,13,10,.58) 46%,rgba(20,13,10,.66) 100%)}
+  background:linear-gradient(180deg,rgba(20,13,10,.04) 0%,rgba(20,13,10,.12) 20%,
+    rgba(20,13,10,.44) 50%,rgba(20,13,10,.66) 80%,rgba(20,13,10,.7) 100%)}
+.pill__n,.pill__c h3,.pill__c p{text-shadow:0 2px 20px rgba(20,13,10,.72)}
 .pill__n{font-family:var(--body);font-size:.8rem;font-weight:800;letter-spacing:.17em;
   text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem}
 .pill__c h3{font-size:clamp(2rem, 1.4rem + 2.4vw, 3.2rem);font-weight:800;letter-spacing:-.035em;
@@ -349,14 +354,17 @@ body.locked{overflow:hidden}
 /* ================= LISTEN ================= */
 .listen{position:relative;isolation:isolate;overflow:hidden;background:var(--ink)}
 .listen__bg{position:absolute;inset:0;z-index:-2}
-.listen__bg img{width:100%;height:100%;object-fit:cover;opacity:.42}
+.listen__bg img{width:100%;height:100%;object-fit:cover;opacity:.92}
+/* dark under the heading, falling away over the open water behind the players */
 .listen::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(20,13,10,.66),rgba(20,13,10,.58))}
+  background:linear-gradient(180deg,rgba(20,13,10,.68) 0%,rgba(20,13,10,.5) 24%,
+    rgba(20,13,10,.34) 58%,rgba(20,13,10,.4) 100%)}
+.listen .sec__intro,.listen .plist{text-shadow:0 2px 20px rgba(20,13,10,.85)}
 
 .aps{display:grid;gap:clamp(1.2rem, .8rem + 1.4vw, 2rem)}
 .ap{display:grid;grid-template-columns:clamp(120px, 15vw, 200px) 1fr;
   gap:clamp(1.3rem, .9rem + 1.6vw, 2.8rem);align-items:center;
-  background:rgba(46,30,24,.48);border:1px solid var(--rule);border-radius:16px;
+  background:rgba(46,30,24,.62);border:1px solid var(--rule);border-radius:16px;
   padding:clamp(1.1rem, .8rem + 1vw, 1.7rem);backdrop-filter:blur(8px)}
 .ap__art{position:relative;overflow:hidden;border-radius:10px;aspect-ratio:1;background:var(--bg-3)}
 .ap__art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -397,11 +405,14 @@ body.locked{overflow:hidden}
 
 /* ================= IMAGE BAND ================= */
 .slab__ph{position:relative;isolation:isolate}
+/* no type sits on a slab — the caption is below it — so this is edge blend only */
 .slab__ph::after{content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(180deg,rgba(20,13,10,.5) 0%,rgba(20,13,10,.1) 26%,
-    rgba(20,13,10,.12) 62%,rgba(20,13,10,.44) 100%)}
+  background:linear-gradient(180deg,rgba(20,13,10,.3) 0%,rgba(20,13,10,.03) 20%,
+    rgba(20,13,10,.03) 72%,rgba(20,13,10,.24) 100%)}
 .slab img{width:100%;height:clamp(320px, 52vh, 620px);object-fit:cover;object-position:50% 50%;
-  display:block}
+  display:block;filter:brightness(1.12) saturate(1.03)}
+/* the dusk slab is two stops under the others */
+.slab--lift img{filter:brightness(1.46) saturate(1.05)}
 .slab figcaption{font-size:var(--t-small);color:var(--sand);font-style:italic;
   margin-top:1.2rem;max-width:46ch}
 
@@ -443,9 +454,13 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 /* ================= CLOSE / TOUCH ================= */
 .close{position:relative;isolation:isolate;overflow:hidden;text-align:center}
 .close__bg{position:absolute;inset:0;z-index:-2}
-.close__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+.close__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 42%;
+  filter:brightness(1.66) saturate(1.07)}
+/* the type is a centred column — hold the scrim behind it, open the canyon at the sides */
 .close::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(20,13,10,.66),rgba(20,13,10,.58))}
+  background:radial-gradient(68% 90% at 50% 48%,rgba(20,13,10,.72) 0%,rgba(20,13,10,.64) 34%,
+    rgba(20,13,10,.18) 74%,rgba(20,13,10,.04) 100%)}
+.close h2,.close p,.close .eyebrow{text-shadow:0 2px 24px rgba(20,13,10,.72)}
 .close h2{margin-inline:auto;max-width:15ch}
 .close p{margin:1.7rem auto 0;color:var(--sand);text-align:center;max-width:54ch}
 .close__cta{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2.9rem}
@@ -1754,7 +1769,7 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
     </div>
   </div>
 </section>
-<figure class="slab rv">
+<figure class="slab slab--lift rv">
   <div class="slab__ph"><img src="/assets/img/tony/listeners-at-dusk.jpg" alt="A row of people seated close together at dusk, listening" style="object-position:50% 46%" loading="lazy"></div>
   <div class="wrap"><figcaption>Elders and teenagers on the same floor, nobody on a panel. The format underneath every retreat on this page.</figcaption></div>
 </figure>

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Listen — the song, the video, and the meditation playlist | TribeAwaken</title>
 <meta name="description" content="A word from Tony Skrelūnas in the redwoods, his original song The Warrior's Code, the We Are A Tribe anthem, and the Ancestral Watch meditation and relaxation playlist. Put it on and let it run.">
-<link rel="stylesheet" href="/v2/assets/v2.css?v=8">
+<link rel="stylesheet" href="/v2/assets/v2.css?v=9">
 <style>
 /* ---- repairs to shared v2.css (invalid calc: missing spaces around "+") ---- */
 .grid{gap:clamp(1.2rem,.8rem + 1.6vw,2.2rem)}
@@ -24,28 +24,30 @@
 .tex::before{content:"";position:absolute;inset:0;z-index:0;background-size:cover;
   background-position:center;pointer-events:none}
 .tex::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none}
-.tex--slot::before{background-image:url(/assets/img/land/sandstone-slot.jpg);opacity:.4;
+/* The scrims are DIRECTIONAL: full weight under the reading column on the left,
+   falling away across the open half of the photograph. Nothing exceeds .72. */
+.tex--slot::before{background-image:url(/assets/img/land/sandstone-slot.jpg);opacity:.8;
   background-position:50% 34%;filter:saturate(.88)}
 .tex--slot::after{background:
-  linear-gradient(100deg,rgba(27,18,16,.66) 0%,rgba(27,18,16,.66) 48%,rgba(27,18,16,.54) 100%),
-  linear-gradient(180deg,rgba(27,18,16,.45),rgba(27,18,16,.66))}
-.tex--bark::before{background-image:url(/assets/img/land/pine-bark.jpg);opacity:.62;
+  linear-gradient(104deg,rgba(27,18,16,.68) 0%,rgba(27,18,16,.56) 34%,rgba(27,18,16,.26) 70%,rgba(27,18,16,.1) 100%)}
+.tex--bark::before{background-image:url(/assets/img/land/pine-bark.jpg);opacity:.8;
   background-position:64% 50%;filter:saturate(.8)}
 .tex--bark::after{background:
-  linear-gradient(96deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.66) 42%,rgba(20,13,10,.53) 100%),
-  linear-gradient(180deg,rgba(20,13,10,.45),rgba(20,13,10,.57))}
-.tex--stone::before{background-image:url(/assets/img/land/stone-ramada.jpg);opacity:.4;
+  linear-gradient(96deg,rgba(20,13,10,.72) 0%,rgba(20,13,10,.62) 38%,rgba(20,13,10,.26) 74%,rgba(20,13,10,.12) 100%)}
+.tex--stone::before{background-image:url(/assets/img/land/stone-ramada.jpg);opacity:.58;
   background-position:50% 62%;filter:saturate(.7)}
 .tex--stone::after{background:
-  linear-gradient(100deg,rgba(27,18,16,.66) 0%,rgba(27,18,16,.66) 45%,rgba(27,18,16,.58) 100%),
-  linear-gradient(180deg,rgba(27,18,16,.44),rgba(27,18,16,.66))}
-.tex--rughorse::before{background-image:url(/assets/img/land/rug-horse.jpg);opacity:.3;
+  linear-gradient(100deg,rgba(27,18,16,.7) 0%,rgba(27,18,16,.6) 36%,rgba(27,18,16,.3) 72%,rgba(27,18,16,.18) 100%)}
+.tex--rughorse::before{background-image:url(/assets/img/land/rug-horse.jpg);opacity:.55;
   background-position:50% 52%;filter:saturate(.9)}
+/* two reading columns here, so the weight stays central and lifts off the edges */
 .tex--rughorse::after{background:
-  radial-gradient(100% 120% at 30% 50%,rgba(36,24,20,.86) 0%,rgba(36,24,20,.95) 72%)}
-.tex--corn::before{background-image:url(/assets/img/land/rug-yei-corn.jpg);opacity:.22;
+  radial-gradient(115% 130% at 44% 46%,rgba(36,24,20,.7) 0%,rgba(36,24,20,.6) 52%,rgba(36,24,20,.34) 100%)}
+.tex--corn::before{background-image:url(/assets/img/land/rug-yei-corn.jpg);opacity:.9;
   background-position:50% 50%;filter:saturate(.9)}
-.tex--corn::after{background:radial-gradient(92% 130% at 50% 44%,rgba(20,13,10,.58) 0%,rgba(20,13,10,.66) 74%)}
+/* centred type — weight in the middle, the weaving reads at the edges */
+.tex--corn::after{background:
+  radial-gradient(60% 96% at 50% 50%,rgba(20,13,10,.72) 0%,rgba(20,13,10,.62) 56%,rgba(20,13,10,.2) 100%)}
 
 
 /* ---- petroglyphs ----
@@ -77,10 +79,12 @@
 /* hero */
 .hero--listen{min-height:min(74vh,760px)}
 .hero--listen .hero__bg img{object-position:58% 44%}
-.hero--listen .hero__bg img{filter:saturate(.9) brightness(1.12)}
+.hero--listen .hero__bg img{filter:saturate(.94) brightness(1.2)}
+/* weight where the headline sits, then the creek opens up to the right.
+   Deepest composite = 1 - (1 - .64)(1 - .22) = .72 */
 .hero--listen .hero__scrim{background:
-  linear-gradient(96deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.66) 38%,rgba(20,13,10,.44) 72%,rgba(20,13,10,.3) 100%),
-  linear-gradient(180deg,rgba(20,13,10,.5) 0%,rgba(20,13,10,.1) 45%,rgba(20,13,10,.55) 100%)}
+  linear-gradient(96deg,rgba(20,13,10,.64) 0%,rgba(20,13,10,.54) 36%,rgba(20,13,10,.24) 72%,rgba(20,13,10,.08) 100%),
+  linear-gradient(180deg,rgba(20,13,10,.22) 0%,rgba(20,13,10,0) 34%,rgba(20,13,10,0) 66%,rgba(20,13,10,.22) 100%)}
 .hero--listen h1{max-width:14ch}
 .hero--listen .lead{max-width:32ch}
 .hero__meta{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.1rem;margin-top:2rem;

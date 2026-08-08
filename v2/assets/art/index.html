@@ -48,13 +48,15 @@
   .petro img.bg {
     position: absolute; inset: 0;
     width: 100%; height: 100%; object-fit: cover;
-    filter: saturate(.72) contrast(1.02);
+    filter: saturate(.9) contrast(1.02) brightness(1.34);
   }
+  /* weight stays behind the centred headline and falls away to the edges,
+     so the sandstone still reads as a photograph */
   .petro .veil {
     position: absolute; inset: 0;
     background:
-      radial-gradient(120% 100% at 50% 45%, rgba(27,18,16,.44), rgba(27,18,16,.61)),
-      linear-gradient(180deg, rgba(27,18,16,.52), rgba(27,18,16,.66));
+      radial-gradient(120% 100% at 50% 45%, rgba(27,18,16,.5), rgba(27,18,16,.32)),
+      linear-gradient(180deg, rgba(27,18,16,.2) 0%, rgba(27,18,16,.06) 44%, rgba(27,18,16,.3) 100%);
   }
   .petro .row {
     position: relative;

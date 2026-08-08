@@ -7,7 +7,7 @@
 <title>Contact — Speaking, consulting, retreats, press | Tony Skrelūnas</title>
 <meta name="description" content="Direct enquiries for keynotes, advisory work, retreats and team immersives, and press. One inbox: wisdom@ancestralwatch.com.">
 <link rel="icon" href="/favicon.svg">
-<link rel="stylesheet" href="/v2/assets/v2.css?v=8">
+<link rel="stylesheet" href="/v2/assets/v2.css?v=9">
 <style>
 /* ============ page-specific — extends v2.css + forms.css ============
    NOTE: inside clamp()/calc(), + and - MUST have whitespace around
@@ -100,9 +100,11 @@ body.locked{overflow:hidden}
 
 /* ---------- photo band ---------- */
 .band{position:relative;border-block:1px solid var(--rule)}
-.band img{width:100%;height:clamp(280px, 38vh, 480px);object-fit:cover;object-position:50% 40%}
+.band img{width:100%;height:clamp(280px, 38vh, 480px);object-fit:cover;object-position:50% 40%;
+  filter:brightness(1.18) contrast(1.03)}
+/* the caption sits bottom-left, so the weight does too — the room stays visible */
 .band::after{content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(180deg,rgba(27,18,16,.52) 0%,rgba(27,18,16,.14) 36%,rgba(20,13,10,.63) 100%)}
+  background:linear-gradient(18deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.42) 26%,rgba(27,18,16,.13) 58%,rgba(27,18,16,.05) 100%)}
 .band__cap{position:absolute;left:0;right:0;bottom:0;z-index:2;
   padding-block:clamp(1.4rem, 1rem + 1.4vw, 2.2rem)}
 .band__cap p{font-family:var(--display);font-style:italic;font-weight:600;

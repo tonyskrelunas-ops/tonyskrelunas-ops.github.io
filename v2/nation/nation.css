@@ -22,6 +22,14 @@ html{scroll-padding-top:6.5rem}
   filter:contrast(1.3) saturate(.4) blur(2px);transform:scale(1.06)}
 .tex--weave .tex__i img{transform:scale(2.9);opacity:.05;filter:contrast(1.4) saturate(.35) blur(2px)}
 
+/* ================= PHOTO TONE LIFT =================
+   For the handful of source photographs that are intrinsically dark
+   (dusk, low interior light). Brightness opens them up; contrast under 1
+   pulls the shadows off the floor without blowing the highlights. */
+.photolift img{filter:brightness(1.28) contrast(.9) saturate(1.04)}
+/* listeners-at-dusk is the darkest source on the section (median 25/255) */
+.photolift--deep img{filter:brightness(1.42) contrast(.86) saturate(1.06)}
+
 /* ================= WOVEN DIVIDER ================= */
 .weave{color:var(--clay);opacity:.55;line-height:0;
   border-block:1px solid var(--rule);background:var(--ink)}
@@ -116,7 +124,10 @@ body.locked{overflow:hidden}
 /* ================= HERO ================= */
 .hero{min-height:min(84vh, 900px);grid-template-columns:minmax(0,100%)}
 .hero__in{min-width:0}
-.hero__scrim{background:linear-gradient(100deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.66) 40%,rgba(20,13,10,.44) 70%,rgba(20,13,10,.34) 100%)}
+/* scrim keeps its full weight under the headline on the left, then falls
+   away across the open half so the photograph is actually readable */
+.hero__scrim{background:linear-gradient(100deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.62) 38%,
+  rgba(20,13,10,.25) 70%,rgba(20,13,10,.09) 100%)}
 .hero__in .eyebrow{color:var(--gold)}
 .hero__in .eyebrow::before{background:var(--gold)}
 .hero h1{max-width:17ch;font-size:clamp(2.7rem, 1.1rem + 6.4vw, 6.6rem)}
@@ -233,8 +244,11 @@ body.locked{overflow:hidden}
   min-height:min(76vh, 760px);overflow:hidden}
 .state__bg{position:absolute;inset:0;z-index:-2}
 .state__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+/* was a flat vertical wash that buried the whole photograph; now the weight
+   sits under the 20ch pull-quote and releases over the open right-hand side */
 .state::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(20,13,10,.44) 0%,rgba(20,13,10,.54) 46%,rgba(20,13,10,.66) 100%)}
+  background:linear-gradient(100deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.6) 40%,
+    rgba(20,13,10,.3) 70%,rgba(20,13,10,.17) 100%)}
 .state__in{padding-block:clamp(4rem, 2rem + 6vw, 7rem)}
 .state .pull{max-width:20ch;font-style:normal;font-weight:700;
   font-size:clamp(2rem, 1.3rem + 2.9vw, 4rem);
@@ -311,8 +325,8 @@ body.locked{overflow:hidden}
 .bookband__bg{position:absolute;inset:0;z-index:-2}
 .bookband__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 46%}
 .bookband::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(96deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.62) 38%,
-    rgba(20,13,10,.52) 72%,rgba(20,13,10,.3) 100%)}
+  background:linear-gradient(96deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.6) 34%,
+    rgba(20,13,10,.28) 68%,rgba(20,13,10,.13) 100%)}
 .bookband__in{padding-block:clamp(3.4rem, 2.2rem + 4vw, 5.8rem)}
 .bookband h2{max-width:16ch}
 .bookband p{color:var(--sand);max-width:46ch;margin-top:1.5rem}
@@ -358,6 +372,10 @@ body.locked{overflow:hidden}
   .hero__meta span::after{display:none}
 }
 @media(max-width:900px){
+  /* narrow screens: the pull-quote spans the full column, so the
+     directional scrim has nothing to fall away over — go back to vertical */
+  .state::after{background:linear-gradient(180deg,rgba(20,13,10,.4) 0%,
+    rgba(20,13,10,.48) 50%,rgba(20,13,10,.56) 100%)}
   .eng__c p{max-width:none}
   .mediasplit p{max-width:none}
   .dive p{max-width:none}
