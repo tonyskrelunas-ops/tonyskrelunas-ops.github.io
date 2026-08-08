@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>capture test</title>
+<body style="background:#0B1422;color:#7CE38B;font:15px ui-monospace,monospace;padding:28px">
+<h1 style="color:#E8C07A;font:600 20px system-ui">TribeAwaken — email capture test</h1>
+<div id="o">running…</div>
+<script>
+var b=new FormData();
+b.append("access_key","057975c1-1a1a-465e-9b5e-3fb6692b2106");
+b.append("email","setup-test@tribeawaken.com");
+b.append("subject","TribeAwaken — email capture is WORKING");
+b.append("from_name","TribeAwaken website");
+b.append("message","One-time test from tribeawaken.com. If this is in your inbox, the capture form on the homepage and the diagnostic page are working. You can delete this page now.");
+fetch("https://api.web3forms.com/submit",{method:"POST",body:b})
+  .then(function(r){return r.json()})
+  .then(function(r){document.getElementById("o").innerHTML =
+    (r&&r.success ? "<b style='color:#7CE38B;font-size:22px'>SUCCESS — check wisdom@ancestralwatch.com</b>"
+                  : "<b style='color:#E5895C'>FAILED: "+JSON.stringify(r)+"</b>")})
+  .catch(function(e){document.getElementById("o").innerHTML="<b style='color:#E5895C'>ERROR: "+e+"</b>"});
+</script></body>
