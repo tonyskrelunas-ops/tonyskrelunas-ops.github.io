@@ -555,3 +555,9 @@ body.locked{overflow:hidden}
 .join__note{ margin-top:.9rem; font-size:.9rem; color:var(--sand); max-width:44ch }
 .join__note a{ color:var(--gold-lt) }
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* the opening — his words on the left, the garden beside them */
+.opening__say h1{ font-size:clamp(2.1rem, 1.3rem + 3.2vw, 3.9rem); max-width:17ch; line-height:1.06 }
+.opening__say .lead{ max-width:52ch; margin-top:1.6rem; font-size:1.08rem; line-height:1.78 }
+.opening__say .lead strong{ color:var(--cream-2); font-weight:600 }
+.opening__ledge img{ object-position:52% 50% !important }
