@@ -300,6 +300,15 @@
   --gold-lt:#EFC58C;
 }
 
+/* ---- the slot-canyon panel is a bright photograph; the weave's
+       default lift washes the caption out, so this one sits lower ---- */
+.tour-rock .rockface__bg img{ filter: saturate(.58) contrast(1) brightness(.8); }
+.tour-rock .rockface__c{ text-shadow: 0 2px 16px rgba(20,13,10,.92); }
+
+/* ---- the ledger's middle column collapses when the third column
+       carries long prose; give the name room to sit on one line ---- */
+.tour-page .ledger td:nth-child(2){ width: 11rem; }
+
 /* ---- the record strip under the hero ---- */
 .tour-proof{
   background: var(--ink);
@@ -329,8 +338,12 @@
   display: flex; flex-wrap: wrap; gap: .7rem 1.6rem;
   margin-top: clamp(1.6rem, 1.2rem + 1vw, 2.4rem);
   font-family: 'Courier New', ui-monospace, Menlo, monospace;
-  font-size: .74rem; letter-spacing: .16em; text-transform: uppercase;
-  color: var(--gold);
+  font-size: .74rem; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase;
+  /* the hero photograph is bright sandstone on the right — plain gold
+     disappears into it, so this line carries its own shadow */
+  color: #F5DCB4;
+  text-shadow: 0 1px 2px rgba(20,13,10,.95), 0 2px 18px rgba(20,13,10,.85);
 }
 .tour-meta span{ display: inline-flex; align-items: center; gap: .7rem; }
 .tour-meta span + span::before{
@@ -382,6 +395,84 @@
   transition: color .2s ease;
 }
 .tour-close__mail:hover{ color: var(--clay-lt); }
+
+/* ============================================================
+   BUSINESS / COMPANY DESIGN  —  .biz- components
+   Used on /v2/business/. Inside .weaveworld, so --note and the
+   thread colours are inherited.
+   ============================================================ */
+
+/* ---- the two animals, set against each other row by row ---- */
+.biz-vs{
+  margin-top: clamp(2.2rem, 1.6rem + 2vw, 3.4rem);
+  border-top: 2px solid var(--clay);
+  max-width: 68rem;
+}
+.biz-vs__hd,
+.biz-vs__row{
+  display: grid;
+  grid-template-columns: minmax(0, 10rem) minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(.8rem, 1.8vw, 1.8rem);
+  padding-block: clamp(.9rem, .75rem + .6vw, 1.35rem);
+  border-bottom: 1px solid rgba(230,180,140,.13);
+}
+.biz-vs__hd{ border-bottom: 1px solid rgba(230,180,140,.32); }
+.biz-vs__hd span{
+  font-family: var(--note); text-transform: uppercase; letter-spacing: .14em;
+  font-size: .68rem; line-height: 1.4; color: var(--gold);
+}
+.biz-vs__hd span.old{ color: var(--sand); opacity: .62; }
+.biz-vs__k{
+  font-family: var(--note); text-transform: uppercase; letter-spacing: .08em;
+  font-size: .72rem; line-height: 1.45; color: var(--clay-lt); padding-top: .16rem;
+}
+.biz-vs__a{ color: var(--sand); opacity: .6; font-size: 1rem; line-height: 1.55; }
+.biz-vs__b{ color: var(--cream-2); font-size: 1rem; line-height: 1.55; font-weight: 600; }
+@media (max-width: 780px){
+  .biz-vs__hd{ display: none; }
+  .biz-vs__row{ grid-template-columns: 1fr; gap: .4rem; }
+  .biz-vs__k{ color: var(--gold); }
+  .biz-vs__a::before{ content: "Old — "; color: var(--clay-lt); font-weight: 700; }
+  .biz-vs__b::before{ content: "This — "; color: var(--gold); font-weight: 700; }
+}
+
+/* ---- the failure a joint is holding shut, hung under it ---- */
+em.biz-guard{
+  display: block; margin-top: .95rem; font-style: normal;
+  font-family: var(--note); font-size: .76rem; line-height: 1.6;
+  letter-spacing: .015em; color: var(--sand);
+  padding-left: .95rem; border-left: 2px solid var(--clay);
+  max-width: 56ch;
+}
+em.biz-guard b{
+  font-family: var(--note); font-size: .72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .13em; color: var(--gold);
+  margin-right: .45em;
+}
+
+/* ---- hard numbers, set as an account strip ---- */
+.biz-figures{
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0; margin-top: clamp(2.2rem, 1.6rem + 2vw, 3.4rem);
+  border-top: 2px solid var(--clay);
+  max-width: 68rem;
+}
+.biz-fig{
+  padding: clamp(1.4rem, 1.1rem + 1vw, 2.1rem) clamp(1rem, 1vw + .55rem, 1.8rem);
+  border-left: 1px solid rgba(230,180,140,.18);
+  border-bottom: 1px solid rgba(230,180,140,.12);
+}
+.biz-fig:first-child{ border-left: 0; padding-left: 0; }
+.biz-fig b{
+  display: block; font-family: var(--display); font-weight: 900;
+  letter-spacing: -.04em; line-height: 1; color: var(--gold);
+  font-size: clamp(2.3rem, 1.7rem + 2.4vw, 3.9rem);
+}
+.biz-fig span{
+  display: block; margin-top: .8rem; color: var(--sand);
+  font-size: .97rem; line-height: 1.55;
+}
+@media (max-width: 780px){ .biz-fig{ border-left: 0; padding-left: 0; } }
 
 /* the manuscript column is generous, not a narrow strip */
 @media (min-width: 1100px){
