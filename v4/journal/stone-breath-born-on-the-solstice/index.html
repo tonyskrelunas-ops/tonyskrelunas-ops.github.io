@@ -1,4 +1,28 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>Stone Breath: Born on the Solstice, On Purpose — TribeAwaken</title><meta name="description" content="A novel about the songs we carry across oceans — and the roots that a lifetime of forgetting could never take. Released on the solstice, on purpose."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/tokens.css"><link rel="stylesheet" href="/css/style.css?v=18"></head><body><a class="skip-link" href="#main">Skip to content</a><div class="greet">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>Stone Breath: Born on the Solstice, On Purpose — TribeAwaken</title><meta name="description" content="A novel about the songs we carry across oceans — and the roots that a lifetime of forgetting could never take. Released on the solstice, on purpose."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/tokens.css"><link rel="stylesheet" href="/css/style.css?v=18"><style>
+/* the greeting strip, styled for the pages that use the older stylesheet */
+.greet{background:#0B1422;border-bottom:1px solid rgba(237,230,213,.12)}
+.greet__in{display:grid;grid-template-columns:repeat(3,1fr);
+  gap:clamp(.7rem,.5rem + 1.4vw,2rem);
+  padding:clamp(1rem,.8rem + 1.4vw,1.9rem) clamp(1rem,3vw,2rem);
+  max-width:82rem;margin-inline:auto}
+.greet__c{display:flex;flex-direction:column;align-items:center;text-align:center;
+  gap:.55rem;text-decoration:none;transition:opacity .2s}
+.greet__c:hover{opacity:.72}
+.greet__c svg{width:clamp(38px,4.4vw,60px);height:auto;stroke-width:3.6;color:#D97A5C}
+.greet__c:nth-child(2) svg{color:#C9A15E}
+.greet__c:nth-child(3) svg{color:#7FB79F}
+.greet__w{font-family:var(--font-display,Georgia,serif);font-weight:600;letter-spacing:-.015em;
+  font-size:clamp(.95rem,.85rem + .7vw,1.4rem);line-height:1.1;color:#F5F1E6}
+.greet__l{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;
+  color:#9FB0B8;opacity:.75}
+@media(max-width:640px){
+  .greet__in{gap:.5rem;padding-block:.85rem}
+  .greet__c svg{width:30px;stroke-width:4}
+  .greet__w{font-size:.85rem}
+  .greet__l{font-size:.52rem;letter-spacing:.1em}
+}
+</style>
+</head><body><a class="skip-link" href="#main">Skip to content</a><div class="greet">
   <div class="wrap greet__in">
     <a class="greet__c" href="/v4/">
       <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
@@ -80,27 +104,27 @@
 
 <header class="site-header">
   <nav class="nav wrap wrap--wide" aria-label="Primary">
-    <a class="brand" href="/" aria-label="TribeAwaken — home"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" width="716" height="676"><span class="brand__wm">Tribe<span class="brand__mark">Awaken</span></span></a>
+    <a class="brand" href="/v4/" aria-label="TribeAwaken — home"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" width="716" height="676"><span class="brand__wm">Tribe<span class="brand__mark">Awaken</span></span></a>
     <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">&#9776;</button>
     <ul class="nav__links" id="primary-nav" data-open="false">
-      <li><a href="/" data-nav="home">Home</a></li>
+      <li><a href="/v4/" data-nav="home">Home</a></li>
       <li><a href="/#leaders">Human Performance</a></li>
       <li><a href="/#nations">Nation-Building</a></li>
-      <li><a href="/journal/" data-nav="/journal/">Journal</a></li>
+      <li><a href="/v4/journal/" data-nav="/journal/">Journal</a></li>
       <li><a href="/#books">The Books</a></li>
       <li><a href="/#about">About</a></li>
-      <li><a href="/workshop/" data-nav="/workshop/">Retreats</a></li>
-      <li><a href="/teams/" data-nav="/teams/">For Teams</a></li>
+      <li><a href="/v4/workshop/" data-nav="/workshop/">Retreats</a></li>
+      <li><a href="/v4/teams/" data-nav="/teams/">For Teams</a></li>
       <li class="nav__cta"><a class="btn btn--primary" href="/#connect">Work with Tony</a></li>
     </ul>
   </nav>
   <div class="global-bar" aria-label="Languages">
     <div class="wrap wrap--wide global-bar__inner">
       <span class="global-bar__label">&#127760; Global &amp; Languages</span>
-      <a href="/" data-lang="en">English</a>
-      <a href="/ja/" data-lang="/ja/" lang="ja">&#26085;&#26412;&#35486; &middot; Japan</a>
-      <a href="/lt/" data-lang="/lt/" lang="lt">Lietuvi&#371; &middot; Lithuania</a>
-      <a href="/india/" data-lang="/india/">India</a>
+      <a href="/v4/" data-lang="en">English</a>
+      <a href="/v4/ja/" data-lang="/ja/" lang="ja">&#26085;&#26412;&#35486; &middot; Japan</a>
+      <a href="/v4/lt/" data-lang="/lt/" lang="lt">Lietuvi&#371; &middot; Lithuania</a>
+      <a href="/v4/india/" data-lang="/india/">India</a>
       <span class="global-bar__soon">&#20013;&#25991; &middot; China &mdash; soon</span>
     </div>
   </div>
@@ -116,4 +140,4 @@
 <p>The fire is still lit. It is not too late. You are not alone — the circle holds.</p>
 <p>Su pagarba,</p>
 <p>Tony Skrelūnas</p>
-<p>Ačiū. Ahéhee'.</p></div><p style="margin-top:var(--space-5)"><a class="btn btn--ghost" href="/journal/">&larr; All articles</a></p></div></article></main><footer class="site-footer"><div class="wrap wrap--wide"><div class="footer__legal"><span>&copy; 2026 TribeAwaken &middot; Tony Skrel&#363;nas</span><span>Ancestral intelligence for a regenerating world.</span></div></div></footer><script src="/js/main.js?v=13" defer></script></body></html>
+<p>Ačiū. Ahéhee'.</p></div><p style="margin-top:var(--space-5)"><a class="btn btn--ghost" href="/v4/journal/">&larr; All articles</a></p></div></article></main><footer class="site-footer"><div class="wrap wrap--wide"><div class="footer__legal"><span>&copy; 2026 TribeAwaken &middot; Tony Skrel&#363;nas</span><span>Ancestral intelligence for a regenerating world.</span></div></div></footer><script src="/js/main.js?v=13" defer></script></body></html>

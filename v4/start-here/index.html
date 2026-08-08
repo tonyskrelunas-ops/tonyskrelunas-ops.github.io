@@ -18,6 +18,30 @@
     .path-num { color:var(--turq); letter-spacing:.14em; text-transform:uppercase; font-size:.72rem; font-weight:700; }
     .path-hi { color:var(--amber); font-weight:600; }
   </style>
+<style>
+/* the greeting strip, styled for the pages that use the older stylesheet */
+.greet{background:#0B1422;border-bottom:1px solid rgba(237,230,213,.12)}
+.greet__in{display:grid;grid-template-columns:repeat(3,1fr);
+  gap:clamp(.7rem,.5rem + 1.4vw,2rem);
+  padding:clamp(1rem,.8rem + 1.4vw,1.9rem) clamp(1rem,3vw,2rem);
+  max-width:82rem;margin-inline:auto}
+.greet__c{display:flex;flex-direction:column;align-items:center;text-align:center;
+  gap:.55rem;text-decoration:none;transition:opacity .2s}
+.greet__c:hover{opacity:.72}
+.greet__c svg{width:clamp(38px,4.4vw,60px);height:auto;stroke-width:3.6;color:#D97A5C}
+.greet__c:nth-child(2) svg{color:#C9A15E}
+.greet__c:nth-child(3) svg{color:#7FB79F}
+.greet__w{font-family:var(--font-display,Georgia,serif);font-weight:600;letter-spacing:-.015em;
+  font-size:clamp(.95rem,.85rem + .7vw,1.4rem);line-height:1.1;color:#F5F1E6}
+.greet__l{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;
+  color:#9FB0B8;opacity:.75}
+@media(max-width:640px){
+  .greet__in{gap:.5rem;padding-block:.85rem}
+  .greet__c svg{width:30px;stroke-width:4}
+  .greet__w{font-size:.85rem}
+  .greet__l{font-size:.52rem;letter-spacing:.1em}
+}
+</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -103,27 +127,27 @@
 
 <header class="site-header">
   <nav class="nav wrap wrap--wide" aria-label="Primary">
-    <a class="brand" href="/" aria-label="TribeAwaken — home"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" width="716" height="676"><span class="brand__wm">Tribe<span class="brand__mark">Awaken</span></span></a>
+    <a class="brand" href="/v4/" aria-label="TribeAwaken — home"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" width="716" height="676"><span class="brand__wm">Tribe<span class="brand__mark">Awaken</span></span></a>
     <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">&#9776;</button>
     <ul class="nav__links" id="primary-nav" data-open="false">
-      <li><a href="/" data-nav="home">Home</a></li>
+      <li><a href="/v4/" data-nav="home">Home</a></li>
       <li><a href="/#leaders">Human Performance</a></li>
       <li><a href="/#nations">Nation-Building</a></li>
-      <li><a href="/journal/" data-nav="/journal/">Journal</a></li>
+      <li><a href="/v4/journal/" data-nav="/journal/">Journal</a></li>
       <li><a href="/#books">The Books</a></li>
       <li><a href="/#about">About</a></li>
-      <li><a href="/workshop/" data-nav="/workshop/">Retreats</a></li>
-      <li><a href="/teams/" data-nav="/teams/">For Teams</a></li>
+      <li><a href="/v4/workshop/" data-nav="/workshop/">Retreats</a></li>
+      <li><a href="/v4/teams/" data-nav="/teams/">For Teams</a></li>
       <li class="nav__cta"><a class="btn btn--primary" href="/#connect">Work with Tony</a></li>
     </ul>
   </nav>
   <div class="global-bar" aria-label="Languages">
     <div class="wrap wrap--wide global-bar__inner">
       <span class="global-bar__label">&#127760; Global &amp; Languages</span>
-      <a href="/" data-lang="en">English</a>
-      <a href="/ja/" data-lang="/ja/" lang="ja">&#26085;&#26412;&#35486; &middot; Japan</a>
-      <a href="/lt/" data-lang="/lt/" lang="lt">Lietuvi&#371; &middot; Lithuania</a>
-      <a href="/india/" data-lang="/india/">India</a>
+      <a href="/v4/" data-lang="en">English</a>
+      <a href="/v4/ja/" data-lang="/ja/" lang="ja">&#26085;&#26412;&#35486; &middot; Japan</a>
+      <a href="/v4/lt/" data-lang="/lt/" lang="lt">Lietuvi&#371; &middot; Lithuania</a>
+      <a href="/v4/india/" data-lang="/india/">India</a>
       <span class="global-bar__soon">&#20013;&#25991; &middot; China &mdash; soon</span>
     </div>
   </div>
@@ -138,8 +162,7 @@
       </div>
     </section>
 
-    <section class="section section--tight hasphoto">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/land/juniper-plain.jpg" alt="" loading="lazy"></div>
+    <section class="section section--tight">
       <div class="wrap wrap--narrow">
         <p style="font-size:var(--step-1); margin-bottom:var(--space-4);">TribeAwaken works with three kinds of people — and one kind of organization. Each path leads to the same place. Pick the door that matches where you are right now.</p>
 
@@ -149,7 +172,7 @@
           <p>You're succeeding by every external metric and still running on alarm. The nervous-system work is where everything else begins. Tony's 1:1 coaching and wellness protocols are built for people who have tried everything else.</p>
           <div class="path-actions">
             <a class="btn btn--primary" href="/#leaders">Explore Coaching &amp; Wellness →</a>
-            <a class="btn btn--ghost" href="/diagnostic/">Take the 90-second diagnostic first →</a>
+            <a class="btn btn--ghost" href="/v4/diagnostic/">Take the 90-second diagnostic first →</a>
           </div>
         </div>
 
@@ -167,7 +190,7 @@
           <h3>I want to experience this work in person, with others carrying something real.</h3>
           <p>Retreats and gatherings — the containers where the practices come alive. <span class="path-hi">The Canyon Within — Aug 28–30 at 1440 Multiversity</span> is the next one.</p>
           <div class="path-actions">
-            <a class="btn btn--primary" href="/workshop/">Explore the Retreat →</a>
+            <a class="btn btn--primary" href="/v4/workshop/">Explore the Retreat →</a>
           </div>
         </div>
 
@@ -195,8 +218,8 @@
           <ul>
             <li><a href="/#leaders">Human Performance</a></li>
             <li><a href="/#nations">Nation-Building</a></li>
-            <li><a href="/workshop/">The Retreat</a></li>
-            <li><a href="/diagnostic/">The Diagnostic</a></li>
+            <li><a href="/v4/workshop/">The Retreat</a></li>
+            <li><a href="/v4/diagnostic/">The Diagnostic</a></li>
           </ul>
         </div>
         <div>
