@@ -1,0 +1,2851 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tony Skrelūnas — Ancestral intelligence for a regenerating world | TribeAwaken</title>
+<meta name="description" content="Human performance and nation-building, braided from three traditions. Retreats, team immersives, coaching, essays, music and film. Led by Tony Skrelūnas — Diné and Lithuanian, advising on four continents.">
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/v4/assets/v2.css?v=11">
+<style>
+/* ============ page-specific — extends v2.css ============
+   NOTE: inside clamp()/calc(), the + and - operators MUST be
+   surrounded by whitespace or the whole declaration is dropped.
+   ======================================================== */
+
+html{scroll-padding-top:6.5rem}
+.bleed{width:100%}
+.eyebrow{flex-wrap:wrap}
+
+/* --- texture layer: sandstone / rug / stone, kept subliminal --- */
+.tex{position:relative;isolation:isolate}
+.tex__i{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.tex__i img{width:100%;height:100%;object-fit:cover;opacity:.055;
+  filter:contrast(1.3) saturate(.4) blur(2px);transform:scale(1.06)}
+.tex--strong .tex__i img{opacity:.13;filter:contrast(1.2) saturate(.5) blur(3px)}
+.tex--zoom .tex__i img{transform:scale(2.6);opacity:.1}
+.tex--weave .tex__i img{transform:scale(2.9);opacity:.05;filter:contrast(1.4) saturate(.35) blur(2px)}
+
+/* --- woven band divider (Diné weaving motif) --- */
+.weave{color:var(--clay);opacity:.55;line-height:0;
+  border-block:1px solid var(--rule);background:var(--ink)}
+.weave svg{display:block;width:100%;height:28px}
+
+/* ================= GLOBAL / LANGUAGE BAR ================= */
+.globebar{background:var(--ink);border-bottom:1px solid var(--rule);font-size:.82rem}
+.globebar__in{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap;
+  padding-block:.62rem;min-height:2.9rem}
+.globebar__lbl{display:flex;align-items:center;gap:.55rem;font-weight:800;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--gold);flex:none}
+.globebar__lbl svg{width:15px;height:15px;flex:none}
+.globebar__ls{display:flex;align-items:center;gap:.35rem 1.15rem;flex-wrap:wrap;
+  list-style:none;padding:0;margin:0}
+.globebar__ls a{text-decoration:none;font-weight:700;color:var(--sand);
+  letter-spacing:.04em;white-space:nowrap;transition:color .18s}
+.globebar__ls a:hover{color:var(--cream)}
+.globebar__ls .is-on{color:var(--cream);border-bottom:2px solid var(--clay);padding-bottom:2px}
+.globebar__ls .soon{color:rgba(217,198,180,.42);white-space:nowrap;font-weight:600}
+.globebar__mail{margin-left:auto;text-decoration:none;font-weight:700;color:var(--sand);
+  letter-spacing:.03em;white-space:nowrap;transition:color .18s}
+.globebar__mail:hover{color:var(--clay-lt)}
+@media(max-width:860px){.globebar__mail{display:none}}
+@media(max-width:520px){.globebar__lbl span{display:none}}
+
+/* ================= HEADER — full nav ================= */
+.hdr__in{max-width:1560px;gap:1.6rem}
+.hdr__end{display:flex;align-items:center;gap:1rem}
+.nav{gap:1.25rem}
+.nav a{font-size:.94rem;font-weight:700;letter-spacing:-.005em;
+  padding-block:.3rem;border-bottom:2px solid transparent;transition:color .18s,border-color .18s}
+.nav a:hover{color:var(--clay-lt);border-bottom-color:var(--clay)}
+.hdr__cta{font-size:.92rem;padding:.85em 1.4em;white-space:nowrap}
+
+.burger{display:inline-flex;flex-direction:column;justify-content:center;gap:6px;
+  width:52px;height:44px;padding:0 12px;background:none;border:1px solid var(--rule);
+  border-radius:6px;cursor:pointer}
+.burger i{display:block;height:2px;background:var(--cream);border-radius:2px;transition:.25s}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* nav / burger swap — declared AFTER the base rules so they win */
+@media(max-width:1240px){.nav{display:none}}
+@media(min-width:1241px){.burger{display:none}}
+@media(max-width:520px){.hdr__cta{display:none}}
+
+.menu{position:fixed;inset:0;z-index:200;background:var(--ink);overflow-y:auto;
+  padding:clamp(1.5rem, 1rem + 3vw, 3rem) 0 4rem;
+  opacity:0;visibility:hidden;transform:translateY(-12px);
+  transition:opacity .28s ease,transform .28s ease,visibility .28s}
+.menu.open{opacity:1;visibility:visible;transform:none}
+.menu__top{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  margin-bottom:clamp(2rem, 1rem + 4vw, 4rem)}
+.menu__close{width:52px;height:44px;background:none;border:1px solid var(--rule);
+  border-radius:6px;color:var(--cream);font-size:1.5rem;line-height:1;cursor:pointer}
+.menu__ls{list-style:none;padding:0;margin:0;display:grid;
+  gap:clamp(.2rem, .1rem + .5vw, .7rem);border-top:1px solid var(--rule)}
+.menu__ls li{border-bottom:1px solid var(--rule)}
+.menu__ls a{display:flex;align-items:baseline;gap:1.2rem;text-decoration:none;
+  font-family:var(--display);font-weight:700;letter-spacing:-.03em;
+  font-size:clamp(1.9rem, 1.2rem + 3.2vw, 3.4rem);line-height:1.05;
+  padding-block:clamp(.5rem, .3rem + .8vw, .9rem);transition:color .2s,padding-left .2s}
+.menu__ls a:hover{color:var(--clay-lt);padding-left:.6rem}
+.menu__ls em{font-family:var(--body);font-style:normal;font-size:.78rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt);flex:none}
+.menu__foot{margin-top:clamp(2.2rem, 1.5rem + 3vw, 3.6rem);display:flex;flex-wrap:wrap;
+  gap:1.2rem 2.4rem;align-items:center}
+.menu__foot a{text-decoration:none;font-weight:800;font-size:.9rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--sand)}
+.menu__foot a:hover{color:var(--clay-lt)}
+body.locked{overflow:hidden}
+
+/* ================= HERO ================= */
+.hero{min-height:min(94vh, 1000px);grid-template-columns:minmax(0,100%)}
+.hero__in{min-width:0}
+.hero__scrim{background:linear-gradient(100deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.66) 40%,rgba(20,13,10,.53) 68%,rgba(20,13,10,.3) 100%)}
+.hero__in .eyebrow{color:var(--gold)}
+.hero__in .eyebrow::before{background:var(--gold)}
+.hero h1{max-width:15ch;font-size:clamp(3rem, 1.2rem + 7.2vw, 7.5rem)}
+.hero .lead{max-width:40ch;color:var(--sand)}
+.hero__note{margin-top:2.2rem;font-size:var(--t-small);color:var(--sand);letter-spacing:.02em}
+.hero__note a{color:var(--cream);text-decoration:none;border-bottom:1px solid var(--rule)}
+.hero__note a:hover{border-bottom-color:var(--clay)}
+
+/* ================= PROOF ================= */
+.proof{background:var(--ink);border-bottom:1px solid var(--rule)}
+.proof__in{display:grid;grid-template-columns:repeat(5,1fr);
+  gap:clamp(1.4rem, .8rem + 1.6vw, 2.6rem);
+  padding-block:clamp(2rem, 1.4rem + 1.6vw, 3.2rem)}
+.proof__i{display:block;max-width:none;font-size:.8rem;font-weight:800;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--sand);line-height:1.4}
+.proof__i b{display:block;font-family:var(--display);font-weight:900;letter-spacing:-.035em;
+  font-size:clamp(2.4rem, 1.6rem + 2.2vw, 4rem);color:var(--gold);text-transform:none;
+  line-height:.9;margin-bottom:.6rem}
+@media(max-width:900px){.proof__in{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.proof__in{grid-template-columns:1fr 1fr}}
+
+/* ================= SECTION INTRO ================= */
+.head{max-width:22ch}
+.head--wide{max-width:24ch}
+.sec__intro{display:grid;grid-template-columns:1.15fr .85fr;
+  gap:clamp(2rem, 1rem + 4vw, 5rem);align-items:end;
+  margin-bottom:clamp(2.6rem, 1.5rem + 3vw, 4.5rem)}
+.sec__intro p{color:var(--sand)}
+@media(max-width:900px){.sec__intro{grid-template-columns:1fr;align-items:start;gap:1.5rem}}
+
+/* ================= TWO PILLARS ================= */
+.pill{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.4rem, .8rem + 2vw, 2.6rem)}
+@media(max-width:860px){.pill{grid-template-columns:1fr}}
+.pill__c{position:relative;isolation:isolate;overflow:hidden;border-radius:16px;
+  min-height:clamp(440px, 60vh, 680px);display:flex;flex-direction:column;justify-content:flex-end;
+  padding:clamp(1.8rem, 1.2rem + 2.4vw, 3.4rem);text-decoration:none;
+  border:1px solid var(--rule);transition:transform .3s ease}
+.pill__c:hover{transform:translateY(-4px)}
+.pill__c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+  filter:brightness(1.12) saturate(1.03);transition:transform .6s ease}
+/* pillar two is a night photograph — it needs the exposure, pillar one does not */
+#nation-building img{filter:brightness(1.5) saturate(1.06) contrast(.96)}
+.pill__c:hover img{transform:scale(1.04)}
+/* the photo stays open across the top; the scrim only builds where the type sits */
+.pill__c::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(20,13,10,.04) 0%,rgba(20,13,10,.12) 20%,
+    rgba(20,13,10,.44) 50%,rgba(20,13,10,.66) 80%,rgba(20,13,10,.7) 100%)}
+.pill__n,.pill__c h3,.pill__c p{text-shadow:0 2px 20px rgba(20,13,10,.72)}
+.pill__n{font-family:var(--body);font-size:.8rem;font-weight:800;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem}
+.pill__c h3{font-size:clamp(2rem, 1.4rem + 2.4vw, 3.2rem);font-weight:800;letter-spacing:-.035em;
+  line-height:1;margin-bottom:1rem}
+.pill__c p{color:var(--sand);max-width:36ch;margin-bottom:1.6rem}
+.pill__ls{list-style:none;padding:0;margin:0 0 1.9rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.pill__ls li{font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--cream);border:1px solid var(--rule);border-radius:100px;padding:.45em 1em;
+  background:rgba(20,13,10,.45)}
+
+/* ================= ORIGIN ================= */
+.origin{display:grid;grid-template-columns:1fr 1.12fr;
+  gap:clamp(2rem, 1rem + 4vw, 5.5rem);align-items:center}
+.origin__img{border-radius:14px;overflow:hidden;aspect-ratio:4/5;background:var(--ink)}
+.origin__img img{width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+.origin h2{margin-bottom:1.7rem}
+.origin p{color:var(--sand);max-width:46ch}
+.origin p strong{color:var(--cream-2)}
+.origin__more{margin-top:2.2rem}
+@media(max-width:900px){.origin{grid-template-columns:1fr}.origin__img{aspect-ratio:5/4}}
+
+/* ================= STATEMENT BAND ================= */
+.state{position:relative;isolation:isolate;display:grid;align-items:center;
+  min-height:min(82vh, 820px);overflow:hidden}
+.state__bg{position:absolute;inset:0;z-index:-2}
+.state__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 58%}
+.state::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(20,13,10,.46) 0%,rgba(20,13,10,.53) 46%,rgba(20,13,10,.63) 100%)}
+.state__in{padding-block:clamp(4rem, 2rem + 6vw, 7rem)}
+.state .pull{max-width:19ch;font-style:normal;font-weight:700;
+  font-size:clamp(2.1rem, 1.3rem + 3vw, 4.2rem);
+  text-shadow:0 2px 34px rgba(20,13,10,.55)}
+.state cite{display:block;font-family:var(--body);font-style:normal;font-size:.86rem;
+  font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-top:2.2rem}
+
+/* ================= FOUR CAPITALS ================= */
+.caps{display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--rule);margin-top:clamp(2.8rem, 2rem + 2vw, 4.5rem)}
+.cap{padding:clamp(2.2rem, 1.6rem + 1.6vw, 3.2rem) clamp(1.3rem, .7rem + 1.6vw, 2.4rem);
+  border-left:1px solid var(--rule)}
+.cap:first-child{border-left:0;padding-left:0}
+.cap:last-child{padding-right:0}
+.cap__n{display:block;font-family:var(--display);font-weight:900;font-size:1rem;
+  color:var(--clay-lt);letter-spacing:.03em;margin-bottom:.9rem}
+.cap h3{font-size:clamp(1.5rem, 1.2rem + 1.1vw, 2.15rem);font-weight:800;margin-bottom:.8rem}
+.cap p{font-size:1.02rem;line-height:1.6;color:var(--sand);max-width:none}
+@media(max-width:1000px){
+  .caps{grid-template-columns:1fr 1fr}
+  .cap{border-bottom:1px solid var(--rule)}
+  .cap:nth-child(odd){border-left:0;padding-left:0}
+  .cap:nth-child(even){padding-right:0}
+}
+@media(max-width:620px){
+  .caps{grid-template-columns:1fr}
+  .cap{border-left:0;padding-left:0;padding-right:0}
+  .cap:last-child{border-bottom:0}
+}
+
+/* ================= WORK ROWS ================= */
+.row{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.row + .row{border-top:1px solid var(--rule)}
+.row__media{position:relative;overflow:hidden;background:var(--ink);
+  min-height:clamp(360px, 50vh, 620px)}
+.row__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.row__body{display:flex;flex-direction:column;justify-content:center;
+  padding:clamp(3rem, 2rem + 3.4vw, 5.5rem) clamp(1.5rem, .8rem + 3.6vw, 5.5rem)}
+.row__body > *{max-width:33rem}
+.row--flip .row__media{order:2}
+.row .row__meta{max-width:none;font-size:.84rem;font-weight:800;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--sand);margin-bottom:1.5rem;line-height:1.6}
+.row__meta b{color:var(--clay-lt);font-weight:800}
+.row__body h3{font-size:clamp(2rem, 1.45rem + 2.3vw, 3.3rem);font-weight:800;
+  letter-spacing:-.033em;line-height:1;margin-bottom:1.15rem}
+.row .row__body p{color:var(--sand);margin-bottom:2.1rem;max-width:36ch}
+.row .row__body p.row__meta{max-width:none;color:var(--sand);margin-bottom:1.5rem}
+@media(max-width:900px){
+  .row{grid-template-columns:1fr}
+  .row--flip .row__media{order:0}
+  .row__media{min-height:0;height:62vw;max-height:440px}
+  .row__body > *{max-width:100%}
+  .row .row__body p{max-width:100%}
+}
+
+/* ================= JOURNAL ================= */
+.jhead .arrow{margin-top:1.8rem}
+.jbar{display:flex;align-items:baseline;justify-content:space-between;gap:1.5rem;
+  flex-wrap:wrap;border-top:1px solid var(--rule);padding-top:1.5rem;
+  margin-top:clamp(3rem, 2rem + 3vw, 5rem);font-size:.84rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+
+/* featured — broadsheet cover: full-res photo panel + type panel */
+.feat{display:grid;grid-template-columns:1fr 1fr;text-decoration:none;
+  border-block:1px solid var(--rule);background:var(--ink)}
+.feat__ph{position:relative;overflow:hidden;background:var(--bg-3);
+  min-height:clamp(420px, 64vh, 780px)}
+.feat__ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transition:transform .9s ease}
+.feat:hover .feat__ph img{transform:scale(1.04)}
+.feat__in{position:relative;isolation:isolate;display:flex;flex-direction:column;
+  justify-content:center;
+  padding:clamp(3rem, 2rem + 3.4vw, 5.5rem) clamp(1.5rem, .8rem + 3.6vw, 5.5rem)}
+.feat__in > *{max-width:34rem}
+.feat__kick{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap;
+  font-size:.8rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.5rem}
+.feat__kick::before{content:"";width:2.4rem;height:2px;background:var(--gold);flex:none}
+.feat h3{font-family:var(--display);font-weight:900;letter-spacing:-.038em;line-height:.98;
+  font-size:clamp(2.2rem, 1.1rem + 3.4vw, 4.4rem)}
+.feat__d{margin-top:1.6rem;color:var(--sand);font-size:var(--t-lead);line-height:1.5;
+  font-weight:500;max-width:38ch}
+.feat__by{margin-top:1.8rem;display:flex;align-items:center;gap:1.6rem;flex-wrap:wrap;
+  font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+.feat__go{display:inline-flex;align-items:center;gap:.6em;margin-top:2.4rem;align-self:flex-start;
+  font-family:var(--body);font-weight:800;font-size:1rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--on-clay);background:var(--clay);
+  padding:1em 2em;border-radius:6px;transition:background .2s,gap .2s}
+.feat:hover .feat__go{background:var(--clay-lt);gap:1em}
+@media(max-width:900px){
+  .feat{grid-template-columns:1fr}
+  .feat__ph{min-height:0;height:66vw;max-height:460px}
+  .feat__in > *{max-width:100%}
+}
+
+/* article cards */
+.jc{display:flex;flex-direction:column;text-decoration:none}
+.jc__img{position:relative;overflow:hidden;border-radius:12px;background:var(--bg-3);
+  aspect-ratio:3/2;margin-bottom:1.5rem}
+.jc__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transition:transform .6s ease}
+.jc:hover .jc__img img{transform:scale(1.05)}
+.jc__kick{font-size:.76rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--clay-lt);margin-bottom:.85rem}
+.jc h3{font-size:clamp(1.5rem, 1.2rem + 1.1vw, 2.05rem);font-weight:800;letter-spacing:-.032em;
+  line-height:1.06;margin-bottom:.9rem;transition:color .2s;max-width:16ch}
+.jc:hover h3{color:var(--clay-lt)}
+.jc p{color:var(--sand);font-size:1.02rem;line-height:1.55;max-width:36ch}
+.jc__go{margin-top:auto;padding-top:1.4rem;font-size:.8rem;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--sand)}
+
+.jbig{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem, .8rem + 2vw, 2.6rem)}
+@media(max-width:940px){.jbig{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.jbig{grid-template-columns:1fr}}
+
+.jmid{display:grid;grid-template-columns:repeat(3,1fr);
+  gap:clamp(1.8rem, 1.2rem + 2vw, 3.2rem) clamp(1.4rem, .8rem + 2vw, 2.6rem);
+  margin-top:clamp(3rem, 2rem + 3vw, 5rem);
+  padding-top:clamp(3rem, 2rem + 3vw, 5rem);border-top:1px solid var(--rule)}
+@media(max-width:940px){.jmid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.jmid{grid-template-columns:1fr}}
+.jmid .jc{border-top:1px solid var(--rule);padding-top:1.5rem}
+.jmid h3{font-size:clamp(1.32rem, 1.15rem + .6vw, 1.62rem);margin-bottom:.6rem;max-width:20ch}
+.jmid p{font-size:.98rem;line-height:1.5;max-width:38ch}
+
+/* compact index list */
+.jlist{margin-top:clamp(3rem, 2rem + 3vw, 5rem);
+  padding-top:clamp(1rem, .6rem + 1vw, 1.6rem);border-top:1px solid var(--rule)}
+.jrow{display:grid;grid-template-columns:1fr auto;align-items:center;
+  gap:clamp(1.4rem, .9rem + 1.6vw, 2.6rem);
+  padding-block:clamp(1.2rem, .9rem + 1vw, 1.9rem);
+  border-bottom:1px solid var(--rule);text-decoration:none;transition:padding-left .25s ease}
+.jrow:hover{padding-left:.7rem}
+.jrow h3{font-size:clamp(1.22rem, 1.05rem + .75vw, 1.72rem);font-weight:700;letter-spacing:-.028em;
+  line-height:1.14;transition:color .2s}
+.jrow:hover h3{color:var(--clay-lt)}
+.jrow__k{font-size:.74rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--sand);margin-bottom:.5rem}
+.jrow__a{font-size:1.5rem;color:var(--clay-lt);transition:transform .25s ease;flex:none}
+.jrow:hover .jrow__a{transform:translateX(6px)}
+@media(max-width:620px){
+  .jrow{grid-template-columns:1fr;gap:1.1rem}
+  .jrow__a{display:none}
+}
+.jall{margin-top:clamp(2.8rem, 2rem + 2.4vw, 4.4rem);display:flex;flex-wrap:wrap;
+  gap:1.2rem 2.4rem;align-items:center}
+
+/* ================= WATCH ================= */
+.vsplit{display:grid;grid-template-columns:minmax(0,.82fr) 1fr;
+  gap:clamp(2rem, 1.2rem + 3.4vw, 5rem);align-items:center}
+@media(max-width:840px){.vsplit{grid-template-columns:1fr;max-width:520px}}
+.vfilm{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--rule);
+  background:var(--ink);box-shadow:0 40px 90px -40px rgba(0,0,0,.9)}
+.vfilm video{width:100%;display:block;aspect-ratio:406/720;object-fit:cover;background:var(--ink)}
+.vsplit h3{font-size:clamp(1.9rem, 1.4rem + 2vw, 3rem);font-weight:800;letter-spacing:-.035em;
+  line-height:1.02;margin-bottom:1.2rem}
+.vsplit p{color:var(--sand);margin-bottom:1.7rem;max-width:38ch}
+.vmeta{display:flex;flex-wrap:wrap;gap:.6rem 1.8rem;margin-bottom:2rem;max-width:none;
+  font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+
+.embed{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;
+  border:1px solid var(--rule);background:var(--ink)}
+.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vtalk{margin-top:clamp(3.5rem, 2.4rem + 3.4vw, 6rem);
+  padding-top:clamp(3.5rem, 2.4rem + 3.4vw, 6rem);border-top:1px solid var(--rule)}
+.vtalk__head{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.6rem, 1rem + 2.4vw, 3.5rem);
+  align-items:end;margin-bottom:clamp(2rem, 1.4rem + 2vw, 3rem)}
+@media(max-width:840px){.vtalk__head{grid-template-columns:1fr;align-items:start;gap:1.2rem}}
+.vtalk h3{font-size:clamp(1.7rem, 1.3rem + 1.6vw, 2.6rem);font-weight:800;letter-spacing:-.032em}
+.vtalk p{color:var(--sand)}
+
+/* ================= LISTEN ================= */
+.listen{position:relative;isolation:isolate;overflow:hidden;background:var(--ink)}
+.listen__bg{position:absolute;inset:0;z-index:-2}
+.listen__bg img{width:100%;height:100%;object-fit:cover;opacity:.92}
+/* dark under the heading, falling away over the open water behind the players */
+.listen::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(20,13,10,.68) 0%,rgba(20,13,10,.5) 24%,
+    rgba(20,13,10,.34) 58%,rgba(20,13,10,.4) 100%)}
+.listen .sec__intro,.listen .plist{text-shadow:0 2px 20px rgba(20,13,10,.85)}
+
+.aps{display:grid;gap:clamp(1.2rem, .8rem + 1.4vw, 2rem)}
+.ap{display:grid;grid-template-columns:clamp(120px, 15vw, 200px) 1fr;
+  gap:clamp(1.3rem, .9rem + 1.6vw, 2.8rem);align-items:center;
+  background:rgba(46,30,24,.62);border:1px solid var(--rule);border-radius:16px;
+  padding:clamp(1.1rem, .8rem + 1vw, 1.7rem);backdrop-filter:blur(8px)}
+.ap__art{position:relative;overflow:hidden;border-radius:10px;aspect-ratio:1;background:var(--bg-3)}
+.ap__art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ap__kick{font-size:.76rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:.7rem;max-width:none}
+.ap h3{font-size:clamp(1.5rem, 1.2rem + 1.4vw, 2.3rem);font-weight:800;letter-spacing:-.03em;
+  margin-bottom:.6rem}
+.ap__d{color:var(--sand);font-size:1rem;line-height:1.55;max-width:52ch;margin-bottom:1.5rem}
+.ap__ctrl{display:flex;align-items:center;gap:clamp(.9rem, .6rem + .8vw, 1.4rem)}
+.ap__play{flex:none;width:clamp(52px, 5vw, 64px);height:clamp(52px, 5vw, 64px);border-radius:50%;
+  background:var(--clay);border:0;cursor:pointer;display:grid;place-items:center;
+  transition:background .2s,transform .18s}
+.ap__play:hover{background:var(--clay-lt);transform:scale(1.06)}
+.ap__play svg{width:20px;height:20px;fill:var(--on-clay);display:block}
+.ap__play .pz{display:none}
+.ap.playing .ap__play .py{display:none}
+.ap.playing .ap__play .pz{display:block}
+.ap__bar{flex:1;height:8px;border-radius:100px;background:rgba(250,243,233,.16);
+  cursor:pointer;position:relative;min-width:60px}
+.ap__fill{position:absolute;inset:0 auto 0 0;width:0;border-radius:100px;
+  background:linear-gradient(90deg,var(--clay),var(--gold))}
+.ap__time{flex:none;font-variant-numeric:tabular-nums;font-size:.88rem;font-weight:800;
+  letter-spacing:.06em;color:var(--sand);min-width:6rem;text-align:right}
+@media(max-width:620px){
+  .ap{grid-template-columns:1fr}
+  .ap__art{max-width:180px}
+  .ap__time{min-width:0}
+}
+
+.plist{display:grid;grid-template-columns:.62fr 1.38fr;
+  gap:clamp(2rem, 1.2rem + 3vw, 4rem);align-items:center;
+  margin-top:clamp(3rem, 2rem + 3vw, 5rem);
+  padding-top:clamp(3rem, 2rem + 3vw, 5rem);border-top:1px solid var(--rule)}
+@media(max-width:900px){.plist{grid-template-columns:1fr}}
+.plist h3{font-size:clamp(1.7rem, 1.3rem + 1.6vw, 2.5rem);font-weight:800;
+  letter-spacing:-.032em;margin-bottom:1rem}
+.plist p{color:var(--sand)}
+
+/* ================= IMAGE BAND ================= */
+.slab__ph{position:relative;isolation:isolate}
+/* no type sits on a slab — the caption is below it — so this is edge blend only */
+.slab__ph::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(20,13,10,.3) 0%,rgba(20,13,10,.03) 20%,
+    rgba(20,13,10,.03) 72%,rgba(20,13,10,.24) 100%)}
+.slab img{width:100%;height:clamp(320px, 52vh, 620px);object-fit:cover;object-position:50% 50%;
+  display:block;filter:brightness(1.12) saturate(1.03)}
+/* the dusk slab is two stops under the others */
+.slab--lift img{filter:brightness(1.46) saturate(1.05)}
+.slab figcaption{font-size:var(--t-small);color:var(--sand);font-style:italic;
+  margin-top:1.2rem;max-width:46ch}
+
+/* ================= BOOKS ================= */
+.books{display:grid;grid-template-columns:1.05fr .95fr;
+  gap:clamp(2rem, 1rem + 4vw, 5.5rem);align-items:center}
+.books__covers{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem, .6rem + 1.4vw, 2rem);
+  align-items:start}
+.books__covers img{width:100%;border-radius:6px;box-shadow:0 34px 80px -22px rgba(0,0,0,.85)}
+.books__covers a:nth-child(2){margin-top:clamp(1.4rem, 1rem + 2vw, 3.2rem)}
+.books h2{margin-bottom:1.3rem}
+.books p{color:var(--sand);max-width:44ch}
+.books__more{margin-top:2.2rem}
+@media(max-width:900px){.books{grid-template-columns:1fr}.books__covers{max-width:460px}}
+
+/* ================= GLOBAL SECTION ================= */
+.globe{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(1rem, .6rem + 1.4vw, 1.9rem)}
+@media(max-width:1000px){.globe{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.globe{grid-template-columns:1fr}}
+.gc{position:relative;isolation:isolate;overflow:hidden;border-radius:14px;
+  border:1px solid var(--rule);min-height:clamp(240px, 28vh, 330px);background:var(--bg-3);
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding:clamp(1.3rem, 1rem + 1.2vw, 2.1rem);text-decoration:none;transition:transform .3s}
+.gc:hover{transform:translateY(-4px)}
+a.gc:hover .gc__l{color:var(--clay-lt)}
+.gc__l{display:block;font-family:var(--display);font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(1.7rem, 1.3rem + 1.2vw, 2.4rem);line-height:1.05;margin-bottom:.5rem;
+  transition:color .2s}
+.gc__s{display:block;font-size:.78rem;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sand)}
+.gc--soon .gc__s{color:var(--gold)}
+.gc__weave{width:100%;height:70px;color:var(--clay);opacity:.4;display:block}
+
+/* ================= CREDENTIALS ================= */
+.record{align-items:start}
+.record .eyebrow{margin-top:.45rem}
+.record p{max-width:52ch}
+
+/* ================= CLOSE / TOUCH ================= */
+.close{position:relative;isolation:isolate;overflow:hidden;text-align:center}
+.close__bg{position:absolute;inset:0;z-index:-2}
+.close__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 42%;
+  filter:brightness(1.66) saturate(1.07)}
+/* the type is a centred column — hold the scrim behind it, open the canyon at the sides */
+.close::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(68% 90% at 50% 48%,rgba(20,13,10,.72) 0%,rgba(20,13,10,.64) 34%,
+    rgba(20,13,10,.18) 74%,rgba(20,13,10,.04) 100%)}
+.close h2,.close p,.close .eyebrow{text-shadow:0 2px 24px rgba(20,13,10,.72)}
+.close h2{margin-inline:auto;max-width:15ch}
+.close p{margin:1.7rem auto 0;color:var(--sand);text-align:center;max-width:54ch}
+.close__cta{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2.9rem}
+
+.touch{text-align:center;padding-block:clamp(5rem, 3rem + 6vw, 9.5rem)}
+.touch h2{margin-inline:auto;max-width:14ch}
+.touch p{margin:1.5rem auto 0;color:var(--sand);text-align:center;max-width:44ch}
+.touch__mail{display:inline-block;margin-top:clamp(2.6rem, 1.6rem + 2.6vw, 4.4rem);
+  font-family:var(--display);font-weight:700;letter-spacing:-.03em;line-height:1.05;
+  font-size:clamp(1.5rem, .3rem + 3.6vw, 3.4rem);
+  color:var(--gold);text-decoration:none;word-break:break-word;
+  border-bottom:2px solid transparent;padding-bottom:.1em;
+  transition:color .22s ease, border-color .22s ease}
+.touch__mail:hover{color:var(--clay-lt);border-bottom-color:var(--clay)}
+
+/* ================= FOOTER ================= */
+.ftr__grid{grid-template-columns:1.5fr 1fr 1fr 1fr}
+@media(max-width:1000px){.ftr__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.ftr__grid{grid-template-columns:1fr}}
+.ftr__brand{margin-top:1.2rem;max-width:30ch}
+.ftr__langs{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.6rem .9rem;
+  font-size:.82rem;font-weight:700;letter-spacing:.05em}
+.ftr__langs a{color:var(--sand)}
+.ftr__langs span{color:rgba(217,198,180,.4)}
+
+/* ================= RUG PLATE (a weaving presented as a plate) ================= */
+.plate{background:var(--ink);padding-block:clamp(3.5rem, 2.4rem + 3.4vw, 6rem);
+  border-block:1px solid var(--rule)}
+.plate__ph{max-width:1100px;margin-inline:auto;border-radius:8px;overflow:hidden;
+  box-shadow:0 40px 100px -40px rgba(0,0,0,.9)}
+.plate__ph img{width:100%;height:auto;display:block}
+.plate__cap{margin-top:clamp(1.6rem, 1.2rem + 1.4vw, 2.6rem);
+  display:grid;grid-template-columns:auto 1fr;gap:clamp(1.2rem, .8rem + 2vw, 3rem);
+  align-items:start;max-width:1100px}
+.plate__cap .eyebrow{margin-bottom:0;white-space:nowrap}
+.plate__cap p{color:var(--sand);font-style:italic;max-width:56ch;margin:0}
+@media(max-width:700px){.plate__cap{grid-template-columns:1fr;gap:.9rem}}
+
+/* ================= RUG STRIP DIVIDER ================= */
+.rugstrip{border-block:1px solid var(--rule);overflow:hidden;background:var(--ink)}
+.rugstrip img{width:100%;height:clamp(74px, 8vw, 130px);object-fit:cover;
+  object-position:50% 50%;display:block}
+
+/* ================= THREE TRADITIONS ================= */
+.trad{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem, .8rem + 2vw, 2.8rem)}
+@media(max-width:860px){.trad{grid-template-columns:1fr}}
+.trad__c{display:flex;flex-direction:column;
+  border-top:1px solid var(--rule);padding-top:clamp(1.4rem, 1rem + 1vw, 2rem)}
+.trad__c h3{font-size:clamp(1.7rem, 1.35rem + 1.4vw, 2.5rem);font-weight:800;
+  letter-spacing:-.032em;margin-bottom:.7rem}
+.trad__c p{color:var(--sand);font-size:1.08rem;line-height:1.6;max-width:34ch}
+.trad__n{display:block;font-size:.76rem;font-weight:800;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--clay-lt);margin-bottom:.55rem}
+
+/* ================= CREDENTIALS PORTRAIT ================= */
+.record{display:grid;grid-template-columns:.85fr 1.15fr;
+  gap:clamp(2rem, 1.2rem + 3.4vw, 5rem);align-items:center}
+@media(max-width:900px){.record{grid-template-columns:1fr}}
+.record__ph{border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:var(--bg-3)}
+.record__ph img{width:100%;height:100%;object-fit:cover;object-position:50% 24%}
+@media(max-width:900px){.record__ph{aspect-ratio:4/5;max-width:420px}}
+.record__body{margin-top:clamp(1.6rem, 1.2rem + 1.4vw, 2.4rem)}
+.record p{max-width:52ch}
+
+/* ================= PETROGLYPHS =================
+   The line art is treated as rock art: large, faint, warm sandstone,
+   pecked into the surface rather than placed on it. */
+.hasglyph{position:relative;overflow:hidden}
+.glyph{position:absolute;pointer-events:none;z-index:0;
+  color:rgba(230,180,140,.20);stroke-width:2.4;
+  width:clamp(190px, 24vw, 400px);height:auto;overflow:visible}
+.glyph--faint{color:rgba(230,180,140,.13)}
+.glyph--tr{top:clamp(1rem, -1rem + 5vw, 4rem);right:clamp(-3rem, -6rem + 3vw, -1rem)}
+.glyph--br{bottom:clamp(-2rem, -5rem + 3vw, 0rem);right:clamp(-2rem, -5rem + 3vw, 1rem)}
+.glyph--bl{bottom:clamp(-2rem, -5rem + 3vw, 0rem);left:clamp(-4rem, -7rem + 3vw, -1rem)}
+.glyph--tl{top:clamp(1rem, -1rem + 5vw, 4rem);left:clamp(-4rem, -7rem + 3vw, -1rem)}
+@media(max-width:900px){.glyph{display:none}}
+/* the wrap must sit above the rock art */
+.hasglyph > .wrap{position:relative;z-index:1}
+
+/* carved symbol rows */
+.cap__sym{display:block;width:clamp(58px, 5vw, 78px);height:auto;margin-bottom:1.6rem;
+  color:rgba(230,180,140,.52);stroke-width:3.2;overflow:visible}
+.trad__sym{display:block;width:clamp(66px, 6vw, 92px);height:auto;
+  margin:clamp(1.4rem, 1rem + 1.2vw, 2rem) 0 1.2rem;
+  color:rgba(230,180,140,.58);stroke-width:3.4;overflow:visible}
+
+/* ================= OPEN NOW — the retreat and the books ================= */
+.now{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.4rem, .8rem + 2vw, 2.6rem)}
+@media(max-width:900px){.now{grid-template-columns:1fr}}
+.now__c{position:relative;isolation:isolate;overflow:hidden;border-radius:16px;
+  border:1px solid var(--rule);background:var(--bg-3);text-decoration:none;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  min-height:clamp(430px, 56vh, 620px);
+  padding:clamp(1.8rem, 1.2rem + 2.4vw, 3.2rem);transition:transform .3s ease}
+.now__c:hover{transform:translateY(-4px)}
+.now__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+  object-position:50% 32%;transition:transform .6s ease}
+.now__c:hover .now__bg{transform:scale(1.04)}
+.now--ph::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(20,13,10,.24) 0%,rgba(20,13,10,.44) 34%,
+    rgba(20,13,10,.66) 62%,rgba(20,13,10,.66) 100%)}
+.now--books{background:var(--ink)}
+.now__k{font-size:.79rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.1rem}
+.now__c h3{font-size:clamp(2rem, 1.4rem + 2.5vw, 3.2rem);font-weight:800;
+  letter-spacing:-.036em;line-height:1;margin-bottom:1rem}
+.now__c p{color:var(--sand);max-width:34ch;margin-bottom:1.7rem}
+.now__meta{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;max-width:none;
+  font-size:.77rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--cream);margin-bottom:1.8rem}
+.now__covers{display:flex;gap:clamp(.9rem, .6rem + 1vw, 1.7rem);align-items:flex-start;
+  margin-bottom:auto;padding-bottom:clamp(1.8rem, 1.2rem + 2vw, 3rem)}
+.now__covers img{width:clamp(108px, 13vw, 172px);border-radius:5px;
+  box-shadow:0 30px 66px -22px rgba(0,0,0,.9);transition:transform .5s ease}
+.now__covers img:nth-child(2){margin-top:clamp(1rem, .6rem + 1.6vw, 2.2rem)}
+.now__c:hover .now__covers img{transform:translateY(-5px)}
+
+/* ================= ROOMS — speaking & teaching proof ================= */
+.rooms{margin:0}
+.rooms img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 30%;display:block;
+  border-radius:14px;border:1px solid var(--rule);background:var(--bg-3)}
+.rooms figcaption{margin-top:1.1rem;font-size:.77rem;font-weight:800;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--sand);line-height:1.5}
+.rooms__act{margin-top:clamp(2.6rem, 1.8rem + 2.4vw, 4rem);
+  display:flex;flex-wrap:wrap;gap:1.2rem 2.4rem;align-items:center}
+
+/* ================= BOOK BAND ================= */
+.bookband{position:relative;isolation:isolate;overflow:hidden;display:grid;align-items:center;
+  min-height:clamp(420px, 58vh, 640px);border-block:1px solid var(--rule)}
+.bookband__bg{position:absolute;inset:0;z-index:-2}
+.bookband__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 46%}
+.bookband::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(96deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.61) 38%,
+    rgba(20,13,10,.5) 72%,rgba(20,13,10,.28) 100%)}
+.bookband__in{padding-block:clamp(3.4rem, 2.2rem + 4vw, 5.8rem)}
+.bookband h2{max-width:15ch}
+.bookband p{color:var(--sand);max-width:44ch;margin-top:1.5rem}
+.bookband__act{margin-top:clamp(2.2rem, 1.6rem + 2vw, 3.2rem);
+  display:flex;flex-wrap:wrap;gap:1rem 2.2rem;align-items:center}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip" style="position:absolute;left:-9999px">Skip to content</a>
+
+<!-- shared SVG defs: Diné weaving band, used by every .weave divider -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="wv" width="48" height="28" patternUnits="userSpaceOnUse">
+      <path d="M0 4H48M0 24H48" stroke="currentColor" stroke-width="1.1" opacity=".5"/>
+      <path d="M0 14 12 7 24 14 12 21Z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <path d="M24 14 36 7 48 14 36 21Z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <circle cx="12" cy="14" r="2" fill="currentColor"/>
+      <circle cx="36" cy="14" r="2" fill="currentColor" opacity=".45"/>
+    </pattern>
+  </defs>
+</svg>
+
+<!-- ================= GLOBAL / LANGUAGES ================= -->
+<div class="globebar">
+  <div class="wrap globebar__in">
+    <p class="globebar__lbl">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 2.6 15 0 18M12 3c-2.6 2.6-2.6 15 0 18"/>
+      </svg>
+      <span>Global</span>
+    </p>
+    <ul class="globebar__ls">
+      <li><a class="is-on" href="/v4/" hreflang="en">English</a></li>
+      <li><a href="/ja/" hreflang="ja">日本語 · Japan</a></li>
+      <li><a href="/lt/" hreflang="lt">Lietuvių · Lithuania</a></li>
+      <li><a href="/india/" hreflang="en">India</a></li>
+      <li><span class="soon">中文 · coming soon</span></li>
+    </ul>
+    <a class="globebar__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+  </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="/v4/">Home</a></li>
+        <li><a href="/v4/#human-performance">Human Performance</a></li>
+        <li><a href="/v4/#nation-building">Nation-Building</a></li>
+        <li><a href="/v4/journal/">Journal</a></li>
+        <li><a href="https://ancestralwatch.com">The Books</a></li>
+        <li><a href="/v4/workshop/">Retreats</a></li>
+        <li><a href="/v4/teams/">For Teams</a></li>
+        <li><a href="/v4/#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="hdr__end">
+      <a class="btn btn--primary hdr__cta" href="/workshop/">Reserve a seat</a>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= FULL-SCREEN MENU ================= -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="wrap">
+    <div class="menu__top">
+      <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+      <button class="menu__close" id="menuClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="menu__ls">
+      <li><a href="/v4/"><em>01</em> Home</a></li>
+      <li><a href="/v4/#human-performance"><em>02</em> Human Performance</a></li>
+      <li><a href="/v4/#nation-building"><em>03</em> Nation-Building</a></li>
+      <li><a href="/v4/journal/"><em>04</em> Journal</a></li>
+      <li><a href="https://ancestralwatch.com"><em>05</em> The Books</a></li>
+      <li><a href="/v4/workshop/"><em>06</em> Retreats</a></li>
+      <li><a href="/v4/teams/"><em>07</em> For Teams</a></li>
+      <li><a href="/v4/healing/"><em>10</em> Healing</a></li>
+      <li><a href="/v4/tourism/"><em>11</em> Tourism</a></li>
+      <li><a href="/v4/business/"><em>12</em> Business Design</a></li>
+      <li><a href="/v4/nation/lga/"><em>13</em> The Local Governance Act</a></li>
+      <li><a href="/v4/#about"><em>08</em> About</a></li>
+      <li><a href="/v4/#listen"><em>09</em> Listen &amp; Watch</a></li>
+      <li><a href="/v4/#traditions"><em>10</em> The Three Traditions</a></li>
+      <li><a href="/diagnostic/"><em>11</em> The Diagnostic</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="/ja/">日本語</a>
+      <a href="/lt/">Lietuvių</a>
+      <a href="/india/">India</a>
+      <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="opening peckhost">
+  <div class="peckfield" aria-hidden="true">
+    <svg aria-hidden="true" focusable="false" style="left:2%;top:62%;width:110px;transform:rotate(-4deg)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+  <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+  <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+  <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+  <line x1="102" y1="118" x2="102" y2="110"/>
+  <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+  <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+  <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+  <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+  <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+  <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+  <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+  <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+  <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+  <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+  <line x1="6" y1="152" x2="194" y2="152"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:2%;top:90%;width:96px;transform:rotate(3deg)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="22" y1="176" x2="178" y2="176" opacity="0.35"/>
+  <circle cx="131" cy="44" r="10.5"/>
+  <path d="M 138,54 C 132,70 120,88 107,101 L 94,95 C 104,82 113,68 118,53 Z"/>
+  <polyline points="101,99 138,94 130,129"/>
+  <path d="M 130,129 C 136,133 143,134 149,132"/>
+  <polyline points="100,100 69,122 44,141"/>
+  <path d="M 44,141 C 38,145 34,150 32,157"/>
+  <polyline points="128,57 152,74 143,51"/>
+  <polyline points="119,58 92,76 76,58"/>
+  <line x1="26" y1="92" x2="56" y2="78" opacity="0.3"/>
+  <line x1="18" y1="108" x2="44" y2="96" opacity="0.24"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:24%;top:92%;width:84px;transform:rotate(-6deg);opacity:.72" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="100" cy="100" r="76"/>
+  <circle cx="100" cy="100" r="46"/>
+  <circle cx="100" cy="100" r="26"/>
+  <circle cx="100" cy="100" r="8"/>
+  <polyline points="95.5,51 100,27 104.5,51 95.5,51"/>
+  <line x1="81.2" y1="54.7" x2="75.5" y2="40.9"/>
+  <polyline points="62.2,68.5 48.4,48.4 68.5,62.2 62.2,68.5"/>
+  <line x1="54.7" y1="81.2" x2="40.9" y2="75.5"/>
+  <polyline points="51,104.5 27,100 51,95.5 51,104.5"/>
+  <line x1="54.7" y1="118.8" x2="40.9" y2="124.5"/>
+  <polyline points="68.5,137.8 48.4,151.6 62.2,131.5 68.5,137.8"/>
+  <line x1="81.2" y1="145.3" x2="75.5" y2="159.1"/>
+  <polyline points="104.5,149 100,173 95.5,149 104.5,149"/>
+  <line x1="118.8" y1="145.3" x2="124.5" y2="159.1"/>
+  <polyline points="137.8,131.5 151.6,151.6 131.5,137.8 137.8,131.5"/>
+  <line x1="145.3" y1="118.8" x2="159.1" y2="124.5"/>
+  <polyline points="149,95.5 173,100 149,104.5 149,95.5"/>
+  <line x1="145.3" y1="81.2" x2="159.1" y2="75.5"/>
+  <polyline points="131.5,62.2 151.6,48.4 137.8,68.5 131.5,62.2"/>
+  <line x1="118.8" y1="54.7" x2="124.5" y2="40.9"/>
+  <path d="M 109.2,74.6 Q 100,55 90.8,74.6"/>
+  <path d="M 88.6,75.5 Q 68.2,68.2 75.5,88.6"/>
+  <path d="M 74.6,90.8 Q 55,100 74.6,109.2"/>
+  <path d="M 75.5,111.4 Q 68.2,131.8 88.6,124.5"/>
+  <path d="M 90.8,125.4 Q 100,145 109.2,125.4"/>
+  <path d="M 111.4,124.5 Q 131.8,131.8 124.5,111.4"/>
+  <path d="M 125.4,109.2 Q 145,100 125.4,90.8"/>
+  <path d="M 124.5,88.6 Q 131.8,68.2 111.4,75.5"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:44%;top:88%;width:104px;transform:rotate(2deg);opacity:.66" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="14,152 38,92 62,152"/>
+  <polyline points="27.9,117.2 38,103 48.1,117.2" opacity="0.7"/>
+  <polyline points="58,152 83,50 108,152"/>
+  <polyline points="72.5,92.8 83,61 93.5,92.8" opacity="0.7"/>
+  <polyline points="104,152 128,66 152,152"/>
+  <polyline points="117.9,102.1 128,77 138.1,102.1" opacity="0.7"/>
+  <polyline points="148,152 167,100 186,152"/>
+  <polyline points="159,121.8 167,111 175,121.8" opacity="0.7"/>
+  <line x1="10" y1="152" x2="190" y2="152"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:8%;top:78%;width:88px;transform:rotate(-3deg);opacity:.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="18" y1="172" x2="182" y2="172" opacity="0.55"/>
+  <line x1="47" y1="66" x2="39" y2="172"/>
+  <line x1="61" y1="66" x2="57" y2="172"/>
+  <line x1="153" y1="66" x2="161" y2="172"/>
+  <line x1="139" y1="66" x2="143" y2="172"/>
+  <line x1="39" y1="172" x2="57" y2="172"/>
+  <line x1="143" y1="172" x2="161" y2="172"/>
+  <path d="M 33,98 L 167,98 L 167,110 L 33,110 Z"/>
+  <path d="M 94,80 L 106,80 L 106,98 L 94,98 Z"/>
+  <path d="M 12,60 C 48,34 152,34 188,60 L 179,74 C 147,52 53,52 21,74 Z"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:34%;top:94%;width:82px;transform:rotate(5deg);opacity:.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- trunk -->
+  <line x1="96" y1="172" x2="96" y2="58"/>
+  <line x1="104" y1="172" x2="104" y2="58"/>
+
+  <!-- ground -->
+  <line x1="26" y1="172" x2="174" y2="172" opacity="0.5"/>
+
+  <!-- roots -->
+  <path d="M 97,172 L 70,183 L 54,180"/>
+  <path d="M 103,172 L 130,183 L 146,180"/>
+  <path d="M 98,173 L 82,188 L 70,190" opacity="0.8"/>
+  <path d="M 102,173 L 118,188 L 130,190" opacity="0.8"/>
+  <path d="M 100,174 L 100,192" opacity="0.7"/>
+
+  <!-- tier 1 -->
+  <path d="M 97,148 L 62,130 L 56,114"/>
+  <path d="M 103,148 L 138,130 L 144,114"/>
+  <circle cx="56" cy="108" r="5"/>
+  <circle cx="144" cy="108" r="5"/>
+  <path d="M 79,139 L 74,150" opacity="0.75"/>
+  <path d="M 121,139 L 126,150" opacity="0.75"/>
+
+  <!-- tier 2 -->
+  <path d="M 97,120 L 68,104 L 64,88"/>
+  <path d="M 103,120 L 132,104 L 136,88"/>
+  <circle cx="64" cy="82" r="4.4"/>
+  <circle cx="136" cy="82" r="4.4"/>
+  <path d="M 82,112 L 78,123" opacity="0.75"/>
+  <path d="M 118,112 L 122,123" opacity="0.75"/>
+
+  <!-- tier 3 -->
+  <path d="M 97,94 L 74,80 L 72,64"/>
+  <path d="M 103,94 L 126,80 L 128,64"/>
+  <circle cx="72" cy="58" r="3.8"/>
+  <circle cx="128" cy="58" r="3.8"/>
+
+  <!-- crown -->
+  <path d="M 96,58 L 86,40 L 100,28 L 114,40 L 104,58"/>
+  <path d="M 93,46 L 107,46" opacity="0.7"/>
+  <line x1="100" y1="28" x2="100" y2="20"/>
+  <circle cx="100" cy="14" r="6.5"/>
+  <line x1="100" y1="4" x2="100" y2="7.5"/>
+  <line x1="90" y1="14" x2="93.5" y2="14"/>
+  <line x1="110" y1="14" x2="106.5" y2="14"/>
+  <line x1="93" y1="7" x2="95.4" y2="9.4"/>
+  <line x1="107" y1="7" x2="104.6" y2="9.4"/>
+  <line x1="93" y1="21" x2="95.4" y2="18.6"/>
+  <line x1="107" y1="21" x2="104.6" y2="18.6"/>
+</svg>
+
+  </div>
+  <div class="opening__say">
+    <img class="mark" src="/assets/img/author-logo.png?v=2" alt="TribeAwaken" width="716" height="676" fetchpriority="high">
+    <p class="eyebrow">Tony Skrelūnas &middot; Diné &amp; Lithuanian</p>
+    <h1>Ancestral intelligence for a regenerating world.</h1>
+    <p class="lead">Human performance for the people who carry things. Nation-building for the places they carry them to. Thirty years of practice, braided from three traditions.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="/v4/workshop/">Reserve your seat <span aria-hidden="true">&rarr;</span></a>
+      <a class="btn btn--ghost" href="https://ancestralwatch.com">Read the books</a>
+    </div>
+    <p class="hero__note">The Canyon Within &middot; Aug 28&ndash;30 &middot; 1440 Multiversity &middot; <a href="/v4/workshop/">eighteen seats</a> &middot; or <a href="/v4/#journal">read the journal</a></p>
+  </div>
+  <div class="opening__ledge">
+    <img src="/assets/img/land/tony-rock-overhang.jpg" alt="Tony Skrelūnas standing at the lip of a red sandstone overhang at sunset" width="1224" height="1632" fetchpriority="high">
+    <p class="opening__cred">The overhang, at last light</p>
+  </div>
+</section>
+
+
+<div class="weave" aria-hidden="true"><svg><rect width="100%" height="28" fill="url(#wv)"/></svg></div>
+
+<!-- ================= OPEN NOW — retreat + books ================= -->
+<section class="sec peckhost" id="open-now" style="padding-bottom:clamp(3rem, 2rem + 3vw, 5rem)">
+  <div class="peckfield peckfield--faint" aria-hidden="true">
+    <svg aria-hidden="true" focusable="false" style="right:5%;top:14%;width:88px;transform:rotate(4deg)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="22" y1="176" x2="178" y2="176" opacity="0.35"/>
+  <circle cx="131" cy="44" r="10.5"/>
+  <path d="M 138,54 C 132,70 120,88 107,101 L 94,95 C 104,82 113,68 118,53 Z"/>
+  <polyline points="101,99 138,94 130,129"/>
+  <path d="M 130,129 C 136,133 143,134 149,132"/>
+  <polyline points="100,100 69,122 44,141"/>
+  <path d="M 44,141 C 38,145 34,150 32,157"/>
+  <polyline points="128,57 152,74 143,51"/>
+  <polyline points="119,58 92,76 76,58"/>
+  <line x1="26" y1="92" x2="56" y2="78" opacity="0.3"/>
+  <line x1="18" y1="108" x2="44" y2="96" opacity="0.24"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="right:15%;top:76%;width:104px;transform:rotate(-3deg);opacity:.62" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+  <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+  <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+  <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+  <line x1="102" y1="118" x2="102" y2="110"/>
+  <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+  <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+  <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+  <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+  <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+  <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+  <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+  <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+  <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+  <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+  <line x1="6" y1="152" x2="194" y2="152"/>
+</svg>
+
+  </div>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Open now</p>
+        <h2 class="head">Two doors are open today.</h2>
+      </div>
+      <p>One is three days in the redwoods with eighteen people. The other costs the price of a paperback and you can start it tonight.</p>
+    </div>
+
+    <div class="now rv">
+      <a class="now__c now--ph" href="/workshop/">
+        <img class="now__bg" src="/assets/img/1440/redwood-touch.jpg" alt="Tony Skrelūnas resting a hand on the bark of a redwood at 1440 Multiversity" style="object-position:56% 34%" loading="lazy">
+        <p class="now__k">The retreat · 18 seats</p>
+        <h3>The Canyon Within</h3>
+        <p class="now__meta"><span>Aug 28–30</span><span>1440 Multiversity</span><span>Scotts Valley, CA</span></p>
+        <p>Three days to change the frequency you live at — breath, sound, land, and food cooked as medicine. Most arrive alone. Nobody leaves alone.</p>
+        <span class="btn btn--primary" style="align-self:flex-start">Reserve your seat <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="now__c now--books" href="https://ancestralwatch.com">
+        <div class="now__covers">
+          <img src="/assets/img/stone-breath-cover.jpg" alt="Stone Breath — book one of the Ancestral Watch series" loading="lazy">
+          <img src="/assets/img/council-fire-cover.jpg" alt="The Council Fire — book three of the Ancestral Watch series" loading="lazy">
+        </div>
+        <p class="now__k">The novels · Out now</p>
+        <h3>The Ancestral Watch</h3>
+        <p><em>Stone Breath</em>, then <em>The Council Fire</em>. The same tools, carried the oldest way there is — by telling you what happened to someone.</p>
+        <span class="arrow">Read the series <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= TWO PILLARS ================= -->
+<section class="hasglyph sec">
+  <svg class="glyph glyph--tr" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <line x1="22" y1="176" x2="178" y2="176" opacity="0.35"/> <circle cx="131" cy="44" r="10.5"/> <path d="M 138,54 C 132,70 120,88 107,101 L 94,95 C 104,82 113,68 118,53 Z"/> <polyline points="101,99 138,94 130,129"/> <path d="M 130,129 C 136,133 143,134 149,132"/> <polyline points="100,100 69,122 44,141"/> <path d="M 44,141 C 38,145 34,150 32,157"/> <polyline points="128,57 152,74 143,51"/> <polyline points="119,58 92,76 76,58"/> <line x1="26" y1="92" x2="56" y2="78" opacity="0.3"/> <line x1="18" y1="108" x2="44" y2="96" opacity="0.24"/> </svg>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">The work</p>
+        <h2 class="head">Two bodies of work. One method.</h2>
+      </div>
+      <p>One rebuilds the person. One rebuilds the place. They run on the same discipline — read all four accounts, spend from none of them blindly, and build capacity before you need it.</p>
+    </div>
+
+    <div class="pill rv">
+      <a class="pill__c" id="human-performance" href="/workshop/">
+        <img src="/assets/img/1440/creek.jpg" alt="Tony Skrelūnas sitting beside a creek running over stone" loading="lazy">
+        <p class="pill__n">Pillar one</p>
+        <h3>Human Performance</h3>
+        <p>Endurance you can prove. Breath, sound, movement, food and sleep — trained the way three old cultures trained them, measured the way a modern practice measures.</p>
+        <ul class="pill__ls">
+          <li>Retreats</li><li>1:1 Coaching</li><li>Team immersives</li><li>Diagnostic</li>
+        </ul>
+        <span class="arrow">Explore the practice <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="pill__c" id="nation-building" href="/teams/">
+        <img src="/assets/img/council-band.jpg" alt="A council seated around a fire under a night sky" loading="lazy">
+        <p class="pill__n">Pillar two</p>
+        <h3>Nation-Building</h3>
+        <p>Governance, enterprise and land, restructured so power sits where the knowledge already is. Thirty years of it — on reservations, in boardrooms, on four continents.</p>
+        <ul class="pill__ls">
+          <li>Governance</li><li>Enterprise</li><li>Energy &amp; land</li><li>Advisory</li>
+        </ul>
+        <span class="arrow">See the advisory work <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE COMEBACK ================= -->
+<section class="hasglyph sec sec--alt tex" id="about">
+  <svg class="glyph glyph--tr glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><!-- ground -->
+  <line x1="12" y1="170" x2="188" y2="170"/>
+
+  <!-- six-sided wall: straight faceted sides, flat top plate -->
+  <path d="M 26,170 L 26,124 L 52,106 L 148,106 L 174,124 L 174,170"/>
+  <line x1="52" y1="106" x2="52" y2="170" opacity="0.4"/>
+  <line x1="148" y1="106" x2="148" y2="170" opacity="0.4"/>
+
+  <!-- cribbed log courses -->
+  <line x1="26" y1="140" x2="174" y2="140" opacity="0.35"/>
+  <line x1="26" y1="155" x2="174" y2="155" opacity="0.35"/>
+
+  <!-- low faceted roof: straight planes meeting a flat smoke opening -->
+  <path d="M 26,124 L 78,80 L 122,80 L 174,124"/>
+  <path d="M 52,106 L 88,80" opacity="0.45"/>
+  <path d="M 148,106 L 112,80" opacity="0.45"/>
+
+  <!-- the smoke hole is a squared opening in the roof plane -->
+  <path d="M 82,80 L 82,72 L 118,72 L 118,80"/>
+  <line x1="82" y1="72" x2="118" y2="72"/>
+
+  <!-- smoke, drifting off-centre so it never reads as a point -->
+  <path d="M 92,66 C 84,54 98,48 90,34" opacity="0.55"/>
+  <path d="M 108,66 C 102,56 114,50 109,38" opacity="0.35"/>
+
+  <!-- the door always faces east -->
+  <path d="M 106,170 L 106,132 L 136,132 L 136,170"/>
+  <line x1="106" y1="140" x2="136" y2="140" opacity="0.45"/>
+  <line x1="112" y1="153" x2="112" y2="159" opacity="0.6"/>
+
+  <!-- the sun it faces -->
+  <circle cx="168" cy="44" r="7" opacity="0.9"/>
+  <line x1="178.5" y1="44" x2="183.5" y2="44" opacity="0.7"/>
+  <line x1="175.4" y1="36.6" x2="179" y2="33" opacity="0.7"/>
+  <line x1="168" y1="33.5" x2="168" y2="28.5" opacity="0.7"/>
+  <line x1="160.6" y1="36.6" x2="157" y2="33" opacity="0.7"/>
+  <line x1="157.5" y1="44" x2="152.5" y2="44" opacity="0.7"/>
+  <line x1="160.6" y1="51.4" x2="157" y2="55" opacity="0.7"/>
+  <line x1="168" y1="54.5" x2="168" y2="59.5" opacity="0.7"/>
+  <line x1="175.4" y1="51.4" x2="179" y2="55" opacity="0.7"/></svg>
+  <div class="tex__i"><img src="/assets/img/kintsugi-texture.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap origin rv">
+    <div class="origin__img">
+      <img src="/assets/img/tony/portrait-standing.jpg" alt="Tony Skrelūnas standing with his arms folded in a room with a red adobe fireplace" style="object-position:50% 34%" loading="lazy">
+    </div>
+    <div>
+      <p class="eyebrow">The comeback</p>
+      <h2>College handed him an identity crisis and an inferiority crisis. He finished top of his class.</h2>
+      <p>Raised by his great-grandmother in a hogan on Big Mountain — no electricity, four hundred sheep, a ceremony every dawn. He learned to read by kerosene lamp, and by that same lamp read the philosophy of Japan, a discipline he has been apprenticed to ever since. By choice, not by blood.</p>
+      <p>Then came the turn: <strong>he could be who he was.</strong> <strong>He finished first.</strong> Everything since has been built on what that year taught him: capacity is not inherited, and it is not a personality. It is built.</p>
+      <p class="origin__more"><a class="arrow" href="/journal/">Read him in his own words <span aria-hidden="true">→</span></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THREE TRADITIONS ================= -->
+<section class="hasglyph sec peckhost" id="traditions">
+  <div class="peckfield peckfield--faint" aria-hidden="true">
+    <svg aria-hidden="true" focusable="false" style="left:3%;top:9%;width:186px;transform:rotate(-2deg)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="14,152 38,92 62,152"/>
+  <polyline points="27.9,117.2 38,103 48.1,117.2" opacity="0.7"/>
+  <polyline points="58,152 83,50 108,152"/>
+  <polyline points="72.5,92.8 83,61 93.5,92.8" opacity="0.7"/>
+  <polyline points="104,152 128,66 152,152"/>
+  <polyline points="117.9,102.1 128,77 138.1,102.1" opacity="0.7"/>
+  <polyline points="148,152 167,100 186,152"/>
+  <polyline points="159,121.8 167,111 175,121.8" opacity="0.7"/>
+  <line x1="10" y1="152" x2="190" y2="152"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:14%;top:31%;width:96px;transform:rotate(6deg);opacity:.8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- trunk -->
+  <line x1="96" y1="172" x2="96" y2="58"/>
+  <line x1="104" y1="172" x2="104" y2="58"/>
+
+  <!-- ground -->
+  <line x1="26" y1="172" x2="174" y2="172" opacity="0.5"/>
+
+  <!-- roots -->
+  <path d="M 97,172 L 70,183 L 54,180"/>
+  <path d="M 103,172 L 130,183 L 146,180"/>
+  <path d="M 98,173 L 82,188 L 70,190" opacity="0.8"/>
+  <path d="M 102,173 L 118,188 L 130,190" opacity="0.8"/>
+  <path d="M 100,174 L 100,192" opacity="0.7"/>
+
+  <!-- tier 1 -->
+  <path d="M 97,148 L 62,130 L 56,114"/>
+  <path d="M 103,148 L 138,130 L 144,114"/>
+  <circle cx="56" cy="108" r="5"/>
+  <circle cx="144" cy="108" r="5"/>
+  <path d="M 79,139 L 74,150" opacity="0.75"/>
+  <path d="M 121,139 L 126,150" opacity="0.75"/>
+
+  <!-- tier 2 -->
+  <path d="M 97,120 L 68,104 L 64,88"/>
+  <path d="M 103,120 L 132,104 L 136,88"/>
+  <circle cx="64" cy="82" r="4.4"/>
+  <circle cx="136" cy="82" r="4.4"/>
+  <path d="M 82,112 L 78,123" opacity="0.75"/>
+  <path d="M 118,112 L 122,123" opacity="0.75"/>
+
+  <!-- tier 3 -->
+  <path d="M 97,94 L 74,80 L 72,64"/>
+  <path d="M 103,94 L 126,80 L 128,64"/>
+  <circle cx="72" cy="58" r="3.8"/>
+  <circle cx="128" cy="58" r="3.8"/>
+
+  <!-- crown -->
+  <path d="M 96,58 L 86,40 L 100,28 L 114,40 L 104,58"/>
+  <path d="M 93,46 L 107,46" opacity="0.7"/>
+  <line x1="100" y1="28" x2="100" y2="20"/>
+  <circle cx="100" cy="14" r="6.5"/>
+  <line x1="100" y1="4" x2="100" y2="7.5"/>
+  <line x1="90" y1="14" x2="93.5" y2="14"/>
+  <line x1="110" y1="14" x2="106.5" y2="14"/>
+  <line x1="93" y1="7" x2="95.4" y2="9.4"/>
+  <line x1="107" y1="7" x2="104.6" y2="9.4"/>
+  <line x1="93" y1="21" x2="95.4" y2="18.6"/>
+  <line x1="107" y1="21" x2="104.6" y2="18.6"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:5%;top:46%;width:112px;transform:rotate(-5deg);opacity:.7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 12,168 C 50,160 84,142 110,118 C 130,100 148,84 170,68"/>
+  <path d="M 15,173 C 52,165 87,147 113,123 C 133,105 150,89 172,73" opacity="0.45"/>
+  <path d="M 52,156 Q 63,147 68,132"/>
+  <line x1="68" y1="132" x2="85.6" y2="130.2" stroke-width="1" opacity="0.9"/>
+  <line x1="68" y1="132" x2="87.4" y2="126.3" stroke-width="1" opacity="0.9"/>
+  <line x1="68" y1="132" x2="88.1" y2="121.8" stroke-width="1" opacity="0.9"/>
+  <line x1="68" y1="132" x2="87.4" y2="117.2" stroke-width="1" opacity="0.9"/>
+  <line x1="68" y1="132" x2="85.3" y2="113.1" stroke-width="1" opacity="0.9"/>
+  <line x1="68" y1="132" x2="81.8" y2="110" stroke-width="1" opacity="0.9"/>
+  <line x1="68" y1="132" x2="77.4" y2="108.2" stroke-width="1" opacity="0.9"/>
+  <line x1="68" y1="132" x2="72.7" y2="108.1" stroke-width="1" opacity="0.9"/>
+  <line x1="68" y1="132" x2="68.3" y2="109.4" stroke-width="1" opacity="0.9"/>
+  <line x1="68" y1="132" x2="64.6" y2="112" stroke-width="1" opacity="0.9"/>
+  <line x1="68" y1="132" x2="62" y2="115.4" stroke-width="1" opacity="0.9"/>
+  <path d="M 88,136 Q 99,126 104,110"/>
+  <line x1="104" y1="110" x2="122.2" y2="107.4" stroke-width="1" opacity="0.9"/>
+  <line x1="104" y1="110" x2="124" y2="103.4" stroke-width="1" opacity="0.9"/>
+  <line x1="104" y1="110" x2="124.5" y2="98.7" stroke-width="1" opacity="0.9"/>
+  <line x1="104" y1="110" x2="123.6" y2="94" stroke-width="1" opacity="0.9"/>
+  <line x1="104" y1="110" x2="121.2" y2="89.8" stroke-width="1" opacity="0.9"/>
+  <line x1="104" y1="110" x2="117.5" y2="86.6" stroke-width="1" opacity="0.9"/>
+  <line x1="104" y1="110" x2="112.9" y2="85" stroke-width="1" opacity="0.9"/>
+  <line x1="104" y1="110" x2="108.1" y2="85" stroke-width="1" opacity="0.9"/>
+  <line x1="104" y1="110" x2="103.5" y2="86.6" stroke-width="1" opacity="0.9"/>
+  <line x1="104" y1="110" x2="99.8" y2="89.4" stroke-width="1" opacity="0.9"/>
+  <line x1="104" y1="110" x2="97.1" y2="93" stroke-width="1" opacity="0.9"/>
+  <path d="M 122,104 Q 134,96 140,82"/>
+  <line x1="140" y1="82" x2="157" y2="82" stroke-width="1" opacity="0.9"/>
+  <line x1="140" y1="82" x2="159.2" y2="78.5" stroke-width="1" opacity="0.9"/>
+  <line x1="140" y1="82" x2="160.3" y2="74.3" stroke-width="1" opacity="0.9"/>
+  <line x1="140" y1="82" x2="160.1" y2="69.8" stroke-width="1" opacity="0.9"/>
+  <line x1="140" y1="82" x2="158.4" y2="65.7" stroke-width="1" opacity="0.9"/>
+  <line x1="140" y1="82" x2="155.4" y2="62.3" stroke-width="1" opacity="0.9"/>
+  <line x1="140" y1="82" x2="151.4" y2="60.2" stroke-width="1" opacity="0.9"/>
+  <line x1="140" y1="82" x2="146.9" y2="59.6" stroke-width="1" opacity="0.9"/>
+  <line x1="140" y1="82" x2="142.6" y2="60.5" stroke-width="1" opacity="0.9"/>
+  <line x1="140" y1="82" x2="138.8" y2="62.6" stroke-width="1" opacity="0.9"/>
+  <line x1="140" y1="82" x2="135.9" y2="65.5" stroke-width="1" opacity="0.9"/>
+  <path d="M 152,80 Q 163.5,73.5 169,61"/>
+  <line x1="169" y1="61" x2="181.9" y2="61.9" stroke-width="1" opacity="0.8"/>
+  <line x1="169" y1="61" x2="184.1" y2="58.9" stroke-width="1" opacity="0.8"/>
+  <line x1="169" y1="61" x2="185.2" y2="55.1" stroke-width="1" opacity="0.8"/>
+  <line x1="169" y1="61" x2="184.7" y2="51.2" stroke-width="1" opacity="0.8"/>
+  <line x1="169" y1="61" x2="182.7" y2="47.8" stroke-width="1" opacity="0.8"/>
+  <line x1="169" y1="61" x2="179.4" y2="45.6" stroke-width="1" opacity="0.8"/>
+  <line x1="169" y1="61" x2="175.5" y2="45" stroke-width="1" opacity="0.8"/>
+  <line x1="169" y1="61" x2="171.6" y2="46" stroke-width="1" opacity="0.8"/>
+  <line x1="169" y1="61" x2="168.5" y2="48.1" stroke-width="1" opacity="0.8"/>
+  <path d="M 104,124 Q 113,138 116,146"/>
+  <line x1="116" y1="146" x2="114.6" y2="159.5" stroke-width="1" opacity="0.7"/>
+  <line x1="116" y1="146" x2="117.5" y2="162" stroke-width="1" opacity="0.7"/>
+  <line x1="116" y1="146" x2="121.3" y2="163.3" stroke-width="1" opacity="0.7"/>
+  <line x1="116" y1="146" x2="125.3" y2="163.1" stroke-width="1" opacity="0.7"/>
+  <line x1="116" y1="146" x2="128.9" y2="161.3" stroke-width="1" opacity="0.7"/>
+  <line x1="116" y1="146" x2="131.3" y2="158.1" stroke-width="1" opacity="0.7"/>
+  <line x1="116" y1="146" x2="132.1" y2="154.2" stroke-width="1" opacity="0.7"/>
+  <line x1="116" y1="146" x2="131.5" y2="150.3" stroke-width="1" opacity="0.7"/>
+  <line x1="116" y1="146" x2="129.6" y2="146.9" stroke-width="1" opacity="0.7"/>
+  <path d="M 88, 112 C 82,117 82,127 88,132 C 94,127 94,117 88,112 Z" opacity="0.85"/>
+  <line x1="88" y1="106" x2="88" y2="112" opacity="0.6"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="right:4%;top:12%;width:150px;transform:rotate(3deg);opacity:.75" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="20" y1="46" x2="180" y2="46"/>
+  <line x1="20" y1="54" x2="180" y2="54"/>
+  <line x1="20" y1="146" x2="180" y2="146"/>
+  <line x1="20" y1="154" x2="180" y2="154"/>
+  <polyline points="20,60 40,74 60,60 80,74 100,60 120,74 140,60 160,74 180,60"/>
+  <polyline points="20,140 40,126 60,140 80,126 100,140 120,126 140,140 160,126 180,140"/>
+  <line x1="20" y1="82" x2="180" y2="82"/>
+  <line x1="20" y1="118" x2="180" y2="118"/>
+  <polyline points="20,100 40,82 60,100 40,118 20,100"/>
+  <polyline points="31,100 40,91.9 49,100 40,108.1 31,100"/>
+  <polyline points="60,100 80,82 100,100 80,118 60,100"/>
+  <polyline points="71,100 80,91.9 89,100 80,108.1 71,100"/>
+  <polyline points="100,100 120,82 140,100 120,118 100,100"/>
+  <polyline points="111,100 120,91.9 129,100 120,108.1 111,100"/>
+  <polyline points="140,100 160,82 180,100 160,118 140,100"/>
+  <polyline points="151,100 160,91.9 169,100 160,108.1 151,100"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="right:7%;top:33%;width:128px;transform:rotate(-2deg);opacity:.6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 30,78 C 22,76 17,80 10,79" opacity="0.6"/>
+  <path d="M 170,78 C 178,76 183,80 190,79" opacity="0.6"/>
+  <path d="M 30,89 C 22,87 17,91 10,90" opacity="0.6"/>
+  <path d="M 170,89 C 178,87 183,91 190,90" opacity="0.6"/>
+  <path d="M 30,100 C 22,98 17,102 10,101" opacity="0.6"/>
+  <path d="M 170,100 C 178,98 183,102 190,101" opacity="0.6"/>
+  <path d="M 30,111 C 22,109 17,113 10,112" opacity="0.6"/>
+  <path d="M 170,111 C 178,109 183,113 190,112" opacity="0.6"/>
+  <path d="M 30,122 C 22,120 17,124 10,123" opacity="0.6"/>
+  <path d="M 170,122 C 178,120 183,124 190,123" opacity="0.6"/>
+  <line x1="30" y1="66" x2="170" y2="66"/>
+  <line x1="30" y1="72" x2="170" y2="72"/>
+  <line x1="30" y1="128" x2="170" y2="128"/>
+  <line x1="30" y1="134" x2="170" y2="134"/>
+  <polyline points="30,86 40,74 50,86"/>
+  <polyline points="30,114 40,126 50,114"/>
+  <polyline points="50,86 60,74 70,86"/>
+  <polyline points="50,114 60,126 70,114"/>
+  <polyline points="70,86 80,74 90,86"/>
+  <polyline points="70,114 80,126 90,114"/>
+  <polyline points="90,86 100,74 110,86"/>
+  <polyline points="90,114 100,126 110,114"/>
+  <polyline points="110,86 120,74 130,86"/>
+  <polyline points="110,114 120,126 130,114"/>
+  <polyline points="130,86 140,74 150,86"/>
+  <polyline points="130,114 140,126 150,114"/>
+  <polyline points="150,86 160,74 170,86"/>
+  <polyline points="150,114 160,126 170,114"/>
+  <line x1="30" y1="86" x2="170" y2="86"/>
+  <line x1="30" y1="114" x2="170" y2="114"/>
+  <polyline points="30,100 44,86 58,100 44,114 30,100"/>
+  <line x1="39" y1="100" x2="49" y2="100" opacity="0.7"/>
+  <line x1="44" y1="95" x2="44" y2="105" opacity="0.7"/>
+  <polyline points="58,100 72,86 86,100 72,114 58,100"/>
+  <line x1="67" y1="100" x2="77" y2="100" opacity="0.7"/>
+  <line x1="72" y1="95" x2="72" y2="105" opacity="0.7"/>
+  <polyline points="86,100 100,86 114,100 100,114 86,100"/>
+  <line x1="95" y1="100" x2="105" y2="100" opacity="0.7"/>
+  <line x1="100" y1="95" x2="100" y2="105" opacity="0.7"/>
+  <polyline points="114,100 128,86 142,100 128,114 114,100"/>
+  <line x1="123" y1="100" x2="133" y2="100" opacity="0.7"/>
+  <line x1="128" y1="95" x2="128" y2="105" opacity="0.7"/>
+  <polyline points="142,100 156,86 170,100 156,114 142,100"/>
+  <line x1="151" y1="100" x2="161" y2="100" opacity="0.7"/>
+  <line x1="156" y1="95" x2="156" y2="105" opacity="0.7"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="right:3%;top:70%;width:168px;transform:rotate(2deg);opacity:.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -11.0,40 A 11.0,11.0 0 0 1 11.0,40" opacity="0.62"/>
+  <path d="M -19.0,40 A 19.0,19.0 0 0 1 19.0,40" opacity="0.72"/>
+  <path d="M -26.5,40 A 26.5,26.5 0 0 1 26.5,40" opacity="0.82"/>
+  <path d="M -34.0,40 A 34.0,34.0 0 0 1 34.0,40"/>
+  <path d="M 29.0,40 A 11.0,11.0 0 0 1 51.0,40" opacity="0.62"/>
+  <path d="M 21.0,40 A 19.0,19.0 0 0 1 59.0,40" opacity="0.72"/>
+  <path d="M 13.5,40 A 26.5,26.5 0 0 1 66.5,40" opacity="0.82"/>
+  <path d="M 6.0,40 A 34.0,34.0 0 0 1 74.0,40"/>
+  <path d="M 69.0,40 A 11.0,11.0 0 0 1 91.0,40" opacity="0.62"/>
+  <path d="M 61.0,40 A 19.0,19.0 0 0 1 99.0,40" opacity="0.72"/>
+  <path d="M 53.5,40 A 26.5,26.5 0 0 1 106.5,40" opacity="0.82"/>
+  <path d="M 46.0,40 A 34.0,34.0 0 0 1 114.0,40"/>
+  <path d="M 109.0,40 A 11.0,11.0 0 0 1 131.0,40" opacity="0.62"/>
+  <path d="M 101.0,40 A 19.0,19.0 0 0 1 139.0,40" opacity="0.72"/>
+  <path d="M 93.5,40 A 26.5,26.5 0 0 1 146.5,40" opacity="0.82"/>
+  <path d="M 86.0,40 A 34.0,34.0 0 0 1 154.0,40"/>
+  <path d="M 149.0,40 A 11.0,11.0 0 0 1 171.0,40" opacity="0.62"/>
+  <path d="M 141.0,40 A 19.0,19.0 0 0 1 179.0,40" opacity="0.72"/>
+  <path d="M 133.5,40 A 26.5,26.5 0 0 1 186.5,40" opacity="0.82"/>
+  <path d="M 126.0,40 A 34.0,34.0 0 0 1 194.0,40"/>
+  <path d="M 189.0,40 A 11.0,11.0 0 0 1 211.0,40" opacity="0.62"/>
+  <path d="M 181.0,40 A 19.0,19.0 0 0 1 219.0,40" opacity="0.72"/>
+  <path d="M 173.5,40 A 26.5,26.5 0 0 1 226.5,40" opacity="0.82"/>
+  <path d="M 166.0,40 A 34.0,34.0 0 0 1 234.0,40"/>
+  <path d="M -31.0,76 A 11.0,11.0 0 0 1 -9.0,76" opacity="0.62"/>
+  <path d="M -39.0,76 A 19.0,19.0 0 0 1 -1.0,76" opacity="0.72"/>
+  <path d="M -46.5,76 A 26.5,26.5 0 0 1 6.5,76" opacity="0.82"/>
+  <path d="M -54.0,76 A 34.0,34.0 0 0 1 14.0,76"/>
+  <path d="M 9.0,76 A 11.0,11.0 0 0 1 31.0,76" opacity="0.62"/>
+  <path d="M 1.0,76 A 19.0,19.0 0 0 1 39.0,76" opacity="0.72"/>
+  <path d="M -6.5,76 A 26.5,26.5 0 0 1 46.5,76" opacity="0.82"/>
+  <path d="M -14.0,76 A 34.0,34.0 0 0 1 54.0,76"/>
+  <path d="M 49.0,76 A 11.0,11.0 0 0 1 71.0,76" opacity="0.62"/>
+  <path d="M 41.0,76 A 19.0,19.0 0 0 1 79.0,76" opacity="0.72"/>
+  <path d="M 33.5,76 A 26.5,26.5 0 0 1 86.5,76" opacity="0.82"/>
+  <path d="M 26.0,76 A 34.0,34.0 0 0 1 94.0,76"/>
+  <path d="M 89.0,76 A 11.0,11.0 0 0 1 111.0,76" opacity="0.62"/>
+  <path d="M 81.0,76 A 19.0,19.0 0 0 1 119.0,76" opacity="0.72"/>
+  <path d="M 73.5,76 A 26.5,26.5 0 0 1 126.5,76" opacity="0.82"/>
+  <path d="M 66.0,76 A 34.0,34.0 0 0 1 134.0,76"/>
+  <path d="M 129.0,76 A 11.0,11.0 0 0 1 151.0,76" opacity="0.62"/>
+  <path d="M 121.0,76 A 19.0,19.0 0 0 1 159.0,76" opacity="0.72"/>
+  <path d="M 113.5,76 A 26.5,26.5 0 0 1 166.5,76" opacity="0.82"/>
+  <path d="M 106.0,76 A 34.0,34.0 0 0 1 174.0,76"/>
+  <path d="M 169.0,76 A 11.0,11.0 0 0 1 191.0,76" opacity="0.62"/>
+  <path d="M 161.0,76 A 19.0,19.0 0 0 1 199.0,76" opacity="0.72"/>
+  <path d="M 153.5,76 A 26.5,26.5 0 0 1 206.5,76" opacity="0.82"/>
+  <path d="M 146.0,76 A 34.0,34.0 0 0 1 214.0,76"/>
+  <path d="M 209.0,76 A 11.0,11.0 0 0 1 231.0,76" opacity="0.62"/>
+  <path d="M 201.0,76 A 19.0,19.0 0 0 1 239.0,76" opacity="0.72"/>
+  <path d="M 193.5,76 A 26.5,26.5 0 0 1 246.5,76" opacity="0.82"/>
+  <path d="M 186.0,76 A 34.0,34.0 0 0 1 254.0,76"/>
+  <path d="M -11.0,112 A 11.0,11.0 0 0 1 11.0,112" opacity="0.62"/>
+  <path d="M -19.0,112 A 19.0,19.0 0 0 1 19.0,112" opacity="0.72"/>
+  <path d="M -26.5,112 A 26.5,26.5 0 0 1 26.5,112" opacity="0.82"/>
+  <path d="M -34.0,112 A 34.0,34.0 0 0 1 34.0,112"/>
+  <path d="M 29.0,112 A 11.0,11.0 0 0 1 51.0,112" opacity="0.62"/>
+  <path d="M 21.0,112 A 19.0,19.0 0 0 1 59.0,112" opacity="0.72"/>
+  <path d="M 13.5,112 A 26.5,26.5 0 0 1 66.5,112" opacity="0.82"/>
+  <path d="M 6.0,112 A 34.0,34.0 0 0 1 74.0,112"/>
+  <path d="M 69.0,112 A 11.0,11.0 0 0 1 91.0,112" opacity="0.62"/>
+  <path d="M 61.0,112 A 19.0,19.0 0 0 1 99.0,112" opacity="0.72"/>
+  <path d="M 53.5,112 A 26.5,26.5 0 0 1 106.5,112" opacity="0.82"/>
+  <path d="M 46.0,112 A 34.0,34.0 0 0 1 114.0,112"/>
+  <path d="M 109.0,112 A 11.0,11.0 0 0 1 131.0,112" opacity="0.62"/>
+  <path d="M 101.0,112 A 19.0,19.0 0 0 1 139.0,112" opacity="0.72"/>
+  <path d="M 93.5,112 A 26.5,26.5 0 0 1 146.5,112" opacity="0.82"/>
+  <path d="M 86.0,112 A 34.0,34.0 0 0 1 154.0,112"/>
+  <path d="M 149.0,112 A 11.0,11.0 0 0 1 171.0,112" opacity="0.62"/>
+  <path d="M 141.0,112 A 19.0,19.0 0 0 1 179.0,112" opacity="0.72"/>
+  <path d="M 133.5,112 A 26.5,26.5 0 0 1 186.5,112" opacity="0.82"/>
+  <path d="M 126.0,112 A 34.0,34.0 0 0 1 194.0,112"/>
+  <path d="M 189.0,112 A 11.0,11.0 0 0 1 211.0,112" opacity="0.62"/>
+  <path d="M 181.0,112 A 19.0,19.0 0 0 1 219.0,112" opacity="0.72"/>
+  <path d="M 173.5,112 A 26.5,26.5 0 0 1 226.5,112" opacity="0.82"/>
+  <path d="M 166.0,112 A 34.0,34.0 0 0 1 234.0,112"/>
+  <path d="M -31.0,148 A 11.0,11.0 0 0 1 -9.0,148" opacity="0.62"/>
+  <path d="M -39.0,148 A 19.0,19.0 0 0 1 -1.0,148" opacity="0.72"/>
+  <path d="M -46.5,148 A 26.5,26.5 0 0 1 6.5,148" opacity="0.82"/>
+  <path d="M -54.0,148 A 34.0,34.0 0 0 1 14.0,148"/>
+  <path d="M 9.0,148 A 11.0,11.0 0 0 1 31.0,148" opacity="0.62"/>
+  <path d="M 1.0,148 A 19.0,19.0 0 0 1 39.0,148" opacity="0.72"/>
+  <path d="M -6.5,148 A 26.5,26.5 0 0 1 46.5,148" opacity="0.82"/>
+  <path d="M -14.0,148 A 34.0,34.0 0 0 1 54.0,148"/>
+  <path d="M 49.0,148 A 11.0,11.0 0 0 1 71.0,148" opacity="0.62"/>
+  <path d="M 41.0,148 A 19.0,19.0 0 0 1 79.0,148" opacity="0.72"/>
+  <path d="M 33.5,148 A 26.5,26.5 0 0 1 86.5,148" opacity="0.82"/>
+  <path d="M 26.0,148 A 34.0,34.0 0 0 1 94.0,148"/>
+  <path d="M 89.0,148 A 11.0,11.0 0 0 1 111.0,148" opacity="0.62"/>
+  <path d="M 81.0,148 A 19.0,19.0 0 0 1 119.0,148" opacity="0.72"/>
+  <path d="M 73.5,148 A 26.5,26.5 0 0 1 126.5,148" opacity="0.82"/>
+  <path d="M 66.0,148 A 34.0,34.0 0 0 1 134.0,148"/>
+  <path d="M 129.0,148 A 11.0,11.0 0 0 1 151.0,148" opacity="0.62"/>
+  <path d="M 121.0,148 A 19.0,19.0 0 0 1 159.0,148" opacity="0.72"/>
+  <path d="M 113.5,148 A 26.5,26.5 0 0 1 166.5,148" opacity="0.82"/>
+  <path d="M 106.0,148 A 34.0,34.0 0 0 1 174.0,148"/>
+  <path d="M 169.0,148 A 11.0,11.0 0 0 1 191.0,148" opacity="0.62"/>
+  <path d="M 161.0,148 A 19.0,19.0 0 0 1 199.0,148" opacity="0.72"/>
+  <path d="M 153.5,148 A 26.5,26.5 0 0 1 206.5,148" opacity="0.82"/>
+  <path d="M 146.0,148 A 34.0,34.0 0 0 1 214.0,148"/>
+  <path d="M 209.0,148 A 11.0,11.0 0 0 1 231.0,148" opacity="0.62"/>
+  <path d="M 201.0,148 A 19.0,19.0 0 0 1 239.0,148" opacity="0.72"/>
+  <path d="M 193.5,148 A 26.5,26.5 0 0 1 246.5,148" opacity="0.82"/>
+  <path d="M 186.0,148 A 34.0,34.0 0 0 1 254.0,148"/>
+  <path d="M -11.0,184 A 11.0,11.0 0 0 1 11.0,184" opacity="0.62"/>
+  <path d="M -19.0,184 A 19.0,19.0 0 0 1 19.0,184" opacity="0.72"/>
+  <path d="M -26.5,184 A 26.5,26.5 0 0 1 26.5,184" opacity="0.82"/>
+  <path d="M -34.0,184 A 34.0,34.0 0 0 1 34.0,184"/>
+  <path d="M 29.0,184 A 11.0,11.0 0 0 1 51.0,184" opacity="0.62"/>
+  <path d="M 21.0,184 A 19.0,19.0 0 0 1 59.0,184" opacity="0.72"/>
+  <path d="M 13.5,184 A 26.5,26.5 0 0 1 66.5,184" opacity="0.82"/>
+  <path d="M 6.0,184 A 34.0,34.0 0 0 1 74.0,184"/>
+  <path d="M 69.0,184 A 11.0,11.0 0 0 1 91.0,184" opacity="0.62"/>
+  <path d="M 61.0,184 A 19.0,19.0 0 0 1 99.0,184" opacity="0.72"/>
+  <path d="M 53.5,184 A 26.5,26.5 0 0 1 106.5,184" opacity="0.82"/>
+  <path d="M 46.0,184 A 34.0,34.0 0 0 1 114.0,184"/>
+  <path d="M 109.0,184 A 11.0,11.0 0 0 1 131.0,184" opacity="0.62"/>
+  <path d="M 101.0,184 A 19.0,19.0 0 0 1 139.0,184" opacity="0.72"/>
+  <path d="M 93.5,184 A 26.5,26.5 0 0 1 146.5,184" opacity="0.82"/>
+  <path d="M 86.0,184 A 34.0,34.0 0 0 1 154.0,184"/>
+  <path d="M 149.0,184 A 11.0,11.0 0 0 1 171.0,184" opacity="0.62"/>
+  <path d="M 141.0,184 A 19.0,19.0 0 0 1 179.0,184" opacity="0.72"/>
+  <path d="M 133.5,184 A 26.5,26.5 0 0 1 186.5,184" opacity="0.82"/>
+  <path d="M 126.0,184 A 34.0,34.0 0 0 1 194.0,184"/>
+  <path d="M 189.0,184 A 11.0,11.0 0 0 1 211.0,184" opacity="0.62"/>
+  <path d="M 181.0,184 A 19.0,19.0 0 0 1 219.0,184" opacity="0.72"/>
+  <path d="M 173.5,184 A 26.5,26.5 0 0 1 226.5,184" opacity="0.82"/>
+  <path d="M 166.0,184 A 34.0,34.0 0 0 1 234.0,184"/>
+</svg>
+
+  </div>
+  <svg class="glyph glyph--br glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M 30,78 C 22,76 17,80 10,79" opacity="0.6"/> <path d="M 170,78 C 178,76 183,80 190,79" opacity="0.6"/> <path d="M 30,89 C 22,87 17,91 10,90" opacity="0.6"/> <path d="M 170,89 C 178,87 183,91 190,90" opacity="0.6"/> <path d="M 30,100 C 22,98 17,102 10,101" opacity="0.6"/> <path d="M 170,100 C 178,98 183,102 190,101" opacity="0.6"/> <path d="M 30,111 C 22,109 17,113 10,112" opacity="0.6"/> <path d="M 170,111 C 178,109 183,113 190,112" opacity="0.6"/> <path d="M 30,122 C 22,120 17,124 10,123" opacity="0.6"/> <path d="M 170,122 C 178,120 183,124 190,123" opacity="0.6"/> <line x1="30" y1="66" x2="170" y2="66"/> <line x1="30" y1="72" x2="170" y2="72"/> <line x1="30" y1="128" x2="170" y2="128"/> <line x1="30" y1="134" x2="170" y2="134"/> <polyline points="30,86 40,74 50,86"/> <polyline points="30,114 40,126 50,114"/> <polyline points="50,86 60,74 70,86"/> <polyline points="50,114 60,126 70,114"/> <polyline points="70,86 80,74 90,86"/> <polyline points="70,114 80,126 90,114"/> <polyline points="90,86 100,74 110,86"/> <polyline points="90,114 100,126 110,114"/> <polyline points="110,86 120,74 130,86"/> <polyline points="110,114 120,126 130,114"/> <polyline points="130,86 140,74 150,86"/> <polyline points="130,114 140,126 150,114"/> <polyline points="150,86 160,74 170,86"/> <polyline points="150,114 160,126 170,114"/> <line x1="30" y1="86" x2="170" y2="86"/> <line x1="30" y1="114" x2="170" y2="114"/> <polyline points="30,100 44,86 58,100 44,114 30,100"/> <line x1="39" y1="100" x2="49" y2="100" opacity="0.7"/> <line x1="44" y1="95" x2="44" y2="105" opacity="0.7"/> <polyline points="58,100 72,86 86,100 72,114 58,100"/> <line x1="67" y1="100" x2="77" y2="100" opacity="0.7"/> <line x1="72" y1="95" x2="72" y2="105" opacity="0.7"/> <polyline points="86,100 100,86 114,100 100,114 86,100"/> <line x1="95" y1="100" x2="105" y2="100" opacity="0.7"/> <line x1="100" y1="95" x2="100" y2="105" opacity="0.7"/> <polyline points="114,100 128,86 142,100 128,114 114,100"/> <line x1="123" y1="100" x2="133" y2="100" opacity="0.7"/> <line x1="128" y1="95" x2="128" y2="105" opacity="0.7"/> <polyline points="142,100 156,86 170,100 156,114 142,100"/> <line x1="151" y1="100" x2="161" y2="100" opacity="0.7"/> <line x1="156" y1="95" x2="156" y2="105" opacity="0.7"/> </svg>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">The braid</p>
+        <h2 class="head">Three traditions. Not a blend — a braid.</h2>
+      </div>
+      <p>Two came by blood and one by choice. Each carries a discipline the other two do not. Kept separate, kept whole, and put to work together.</p>
+    </div>
+
+    <div class="trad rv">
+      <article class="trad__c">
+        <svg class="trad__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <line x1="131.4" y1="135" x2="138.4" y2="131"/> <line x1="126" y1="128" x2="137.4" y2="116.6"/> <line x1="119" y1="122.6" x2="123" y2="115.6"/> <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/> <line x1="102" y1="118" x2="102" y2="110"/> <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/> <line x1="85" y1="122.6" x2="81" y2="115.6"/> <line x1="78" y1="128" x2="66.6" y2="116.6"/> <line x1="72.6" y1="135" x2="65.6" y2="131"/> <path d="M 76,152 A 26,26 0 0 1 128,152"/> <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/> <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/> <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/> <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/> <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/> <line x1="6" y1="152" x2="194" y2="152"/> </svg>
+        <span class="trad__n">By blood</span>
+        <h3>Diné</h3>
+        <p>Dawn practice, corn pollen, the four sacred mountains, and a way of counting wealth that has never once been in dollars. Raised in it, in a hogan on Big Mountain.</p>
+      </article>
+
+      <article class="trad__c">
+        <svg class="trad__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <line x1="50" y1="176" x2="150" y2="176"/> <path d="M 87,176 C 89,152 92,134 94,116"/> <path d="M 113,176 C 111,152 108,134 106,116"/> <path d="M 87,176 C 82,170 74,167 64,166" opacity="0.55"/> <path d="M 113,176 C 118,170 126,167 136,166" opacity="0.55"/> <path d="M 97,118 C 90,104 76,96 62,90"/> <path d="M 79,98 C 75,86 72,76 71,64"/> <path d="M 62,90 C 52,88 44,84 38,78"/> <path d="M 103,118 C 110,102 124,94 138,88"/> <path d="M 122,96 C 126,84 129,74 130,62"/> <path d="M 138,88 C 148,86 156,82 162,76"/> <path d="M 100,116 C 100,96 99,74 98,52"/> <path d="M 99,76 C 92,68 86,62 82,54"/> <path d="M 98,54 C 105,48 111,44 116,38"/> <path d="M 23.1,95.4 Q 9.6,88.7 20,79.7 Q 9.7,70.6 23.3,64 Q 16.7,53.1 32.8,49.6 Q 30.1,37.3 47.8,37.6 Q 49.2,24.5 66.9,29 Q 73.1,15.7 88.7,24.6 Q 100,12.6 111.3,24.6 Q 126.9,15.7 133.1,29 Q 150.8,24.5 152.2,37.6 Q 169.9,37.3 167.2,49.6 Q 183.3,53.1 176.7,64 Q 190.3,70.6 180,79.7 Q 190.4,88.7 176.9,95.4"/> <line x1="56" y1="105" x2="56" y2="110" opacity="0.6"/> <path d="M 51,112 A 5,7 0 0 0 61,112"/> <path d="M 50.5,112 A 5.5,3.4 0 0 1 61.5,112"/> <line x1="146" y1="101" x2="146" y2="106" opacity="0.6"/> <path d="M 141,108 A 5,7 0 0 0 151,108"/> <path d="M 140.5,108 A 5.5,3.4 0 0 1 151.5,108"/> </svg>
+        <span class="trad__n">By blood</span>
+        <h3>Lithuanian</h3>
+        <p>The forest, the song, and the stubbornness of a people who were supposed to disappear four times and did not. Endurance as an inherited technology.</p>
+      </article>
+
+      <article class="trad__c">
+        <svg class="trad__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <line x1="18" y1="172" x2="182" y2="172" opacity="0.55"/> <line x1="47" y1="66" x2="39" y2="172"/> <line x1="61" y1="66" x2="57" y2="172"/> <line x1="153" y1="66" x2="161" y2="172"/> <line x1="139" y1="66" x2="143" y2="172"/> <line x1="39" y1="172" x2="57" y2="172"/> <line x1="143" y1="172" x2="161" y2="172"/> <path d="M 33,98 L 167,98 L 167,110 L 33,110 Z"/> <path d="M 94,80 L 106,80 L 106,98 L 94,98 Z"/> <path d="M 12,60 C 48,34 152,34 188,60 L 179,74 C 147,52 53,52 21,74 Z"/> </svg>
+        <span class="trad__n">By choice</span>
+        <h3>Japanese</h3>
+        <p>Read by kerosene lamp at fourteen and apprenticed to ever since. Restraint, repair, and the discipline of doing one thing completely before starting the next.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATEMENT BAND — dry-farmed corn ================= -->
+<section class="state">
+  <div class="state__bg"><img src="/assets/img/journal/the-silent-theft/2.jpg" alt="Dry-farmed corn in tassel at sunset" loading="lazy"></div>
+  <div class="wrap state__in rv">
+    <p class="pull">The tools for endurance, belonging, and purpose are not lost. They are dormant.</p>
+    <cite>The premise of thirty years of work</cite>
+  </div>
+</section>
+
+<!-- ================= FOUR CAPITALS ================= -->
+<section class="hasglyph sec tex tex--weave">
+  <svg class="glyph glyph--tr" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <circle cx="70" cy="70" r="46"/> <circle cx="130" cy="70" r="46"/> <circle cx="130" cy="130" r="46"/> <circle cx="70" cy="130" r="46"/> <circle cx="100" cy="100" r="7"/> <circle cx="100" cy="100" r="2.2" fill="currentColor" stroke="none"/> <circle cx="54" cy="54" r="8"/> <line x1="54" y1="48" x2="54" y2="60"/> <line x1="50" y1="52" x2="58" y2="52" opacity="0.8"/> <circle cx="141" cy="51" r="6"/> <circle cx="151" cy="57" r="6"/> <polyline points="146,138 154,146 146,154 138,146 146,138"/> <polyline points="146,142 150,146 146,150 142,146 146,142" opacity="0.7"/> <path d="M 46,154 C 46,144 52,138 62,138 C 62,148 56,154 46,154 Z"/> <line x1="48" y1="152" x2="60" y2="140" opacity="0.7"/> </svg>
+  <div class="tex__i"><img src="/assets/img/garden/tea-pagoda-path.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">The framework</p>
+        <h2 class="head">Four capitals. Most organizations count one.</h2>
+      </div>
+      <p>Every decision spends from four accounts. Run three of them into deficit and the fourth eventually collapses too — in a company, in a community, in a person. The work is learning to read all four.</p>
+    </div>
+
+    <div class="caps rv">
+      <div class="cap">
+        <svg class="cap__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M 100,24 C 88,58 60,92 60,116 A 40,40 0 0 0 140,116 C 140,92 112,58 100,24 Z"/> <path d="M 100,54 C 92,78 76,98 76,116 A 24,24 0 0 0 124,116 C 124,98 108,78 100,54" opacity="0.8"/> <path d="M 72.2,127.2 A 30,30 0 1 0 127.8,127.2" opacity="0.55"/> <path d="M 66.4,125.6 A 35,35 0 1 0 133.6,125.6" opacity="0.4"/> <path d="M 89,84 C 84,96 82,106 82,114" opacity="0.5"/> <path d="M 111,84 C 116,96 118,106 118,114" opacity="0.4"/> <path d="M 86,96 C 89,84 93,72 97,60" opacity="0.55"/> <circle cx="112" cy="106" r="2.1" fill="currentColor" stroke="none"/> <circle cx="92" cy="128" r="1.5" fill="currentColor" stroke="none"/> </svg>
+        <span class="cap__n">01</span>
+        <h3>Financial</h3>
+        <p>The account everyone already measures. It holds longer when the other three are solvent.</p>
+      </div>
+      <div class="cap">
+        <svg class="cap__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <circle cx="71.7" cy="62.1" r="4.1"/> <path d="M 64.9,78.7 L 66.2,70 Q 71.7,64.5 77.2,70 L 78.4,78.7"/> <circle cx="128.3" cy="62.1" r="4.1"/> <path d="M 121.6,78.7 L 122.8,70 Q 128.3,64.5 133.8,70 L 135.1,78.7"/> <circle cx="31.6" cy="79.6" r="4.6"/> <path d="M 24.1,98.2 L 25.5,88.5 Q 31.6,82.3 37.8,88.5 L 39.2,98.2"/> <circle cx="168.4" cy="79.6" r="4.6"/> <path d="M 160.8,98.2 L 162.2,88.5 Q 168.4,82.3 174.5,88.5 L 175.9,98.2"/> <circle cx="168.4" cy="104.5" r="5.3"/> <path d="M 159.7,125.8 L 161.3,114.6 Q 168.4,107.5 175.4,114.6 L 177,125.8"/> <circle cx="31.6" cy="104.5" r="5.3"/> <path d="M 23,125.8 L 24.6,114.6 Q 31.6,107.5 38.7,114.6 L 40.3,125.8"/> <circle cx="128.3" cy="122" r="5.8"/> <path d="M 118.9,145.3 L 120.6,133.1 Q 128.3,125.3 136,133.1 L 137.7,145.3"/> <circle cx="71.7" cy="122" r="5.8"/> <path d="M 62.3,145.3 L 64,133.1 Q 71.7,125.3 79.4,133.1 L 81.1,145.3"/> <path d="M 97,40 C 93,62 79,72 79,90 C 79,106 89,118 101,118 C 114,118 123,107 123,92 C 123,79 113,71 107,56 C 106,68 109,77 106,85 C 100,74 97,57 97,40 Z"/> <path d="M 100,74 C 96,86 92,90 92,99 C 92,107 96,111 101,111 C 106,111 110,107 110,99 C 110,90 104,86 100,74 Z" opacity="0.7"/> <line x1="84" y1="130" x2="116" y2="120"/> <line x1="84" y1="120" x2="116" y2="130"/> <line x1="80" y1="126" x2="120" y2="126" opacity="0.6"/> </svg>
+        <span class="cap__n">02</span>
+        <h3>Relational</h3>
+        <p>Trust, reciprocity, the people who show up. The slowest to build and the fastest to spend.</p>
+      </div>
+      <div class="cap">
+        <svg class="cap__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <line x1="20" y1="46" x2="180" y2="46"/> <line x1="20" y1="54" x2="180" y2="54"/> <line x1="20" y1="146" x2="180" y2="146"/> <line x1="20" y1="154" x2="180" y2="154"/> <polyline points="20,60 40,74 60,60 80,74 100,60 120,74 140,60 160,74 180,60"/> <polyline points="20,140 40,126 60,140 80,126 100,140 120,126 140,140 160,126 180,140"/> <line x1="20" y1="82" x2="180" y2="82"/> <line x1="20" y1="118" x2="180" y2="118"/> <polyline points="20,100 40,82 60,100 40,118 20,100"/> <polyline points="31,100 40,91.9 49,100 40,108.1 31,100"/> <polyline points="60,100 80,82 100,100 80,118 60,100"/> <polyline points="71,100 80,91.9 89,100 80,108.1 71,100"/> <polyline points="100,100 120,82 140,100 120,118 100,100"/> <polyline points="111,100 120,91.9 129,100 120,108.1 111,100"/> <polyline points="140,100 160,82 180,100 160,118 140,100"/> <polyline points="151,100 160,91.9 169,100 160,108.1 151,100"/> </svg>
+        <span class="cap__n">03</span>
+        <h3>Cultural</h3>
+        <p>Story, language, ceremony, memory. What tells a people who they are when conditions change.</p>
+      </div>
+      <div class="cap">
+        <svg class="cap__sym" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <polyline points="14,152 38,92 62,152"/> <polyline points="27.9,117.2 38,103 48.1,117.2" opacity="0.7"/> <polyline points="58,152 83,50 108,152"/> <polyline points="72.5,92.8 83,61 93.5,92.8" opacity="0.7"/> <polyline points="104,152 128,66 152,152"/> <polyline points="117.9,102.1 128,77 138.1,102.1" opacity="0.7"/> <polyline points="148,152 167,100 186,152"/> <polyline points="159,121.8 167,111 175,121.8" opacity="0.7"/> <line x1="10" y1="152" x2="190" y2="152"/> </svg>
+        <span class="cap__n">04</span>
+        <h3>Ecological</h3>
+        <p>Land, water, air, the living systems underneath. The balance sheet no quarter can escape.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE WEAVING ================= -->
+<section class="plate tex rv">
+  <div class="tex__i"><img src="/assets/img/land/creek-boulders.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap">
+    <div class="plate__ph">
+      <img src="/assets/img/garden/tea-azalea-moss.jpg" alt="A Navajo yei weaving: standing figures flanked by corn stalks" loading="lazy">
+    </div>
+    <div class="plate__cap">
+      <p class="eyebrow">The weaving</p>
+      <p>Yeis standing between corn stalks. Corn pollen is how a Diné day begins — before the coffee, before the phone, before anything is asked of you. Four capitals, woven by someone who was counting them long before anybody wrote them down.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK — STACKED ROWS ================= -->
+<section class="sec peckhost" style="padding-bottom:clamp(2.4rem, 1.5rem + 2.4vw, 3.6rem)">
+  <div class="peckfield peckfield--faint" aria-hidden="true">
+    <svg aria-hidden="true" focusable="false" style="right:6%;top:-6%;width:258px;transform:rotate(3deg)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="71.7" cy="62.1" r="4.1"/>
+  <path d="M 64.9,78.7 L 66.2,70 Q 71.7,64.5 77.2,70 L 78.4,78.7"/>
+  <circle cx="128.3" cy="62.1" r="4.1"/>
+  <path d="M 121.6,78.7 L 122.8,70 Q 128.3,64.5 133.8,70 L 135.1,78.7"/>
+  <circle cx="31.6" cy="79.6" r="4.6"/>
+  <path d="M 24.1,98.2 L 25.5,88.5 Q 31.6,82.3 37.8,88.5 L 39.2,98.2"/>
+  <circle cx="168.4" cy="79.6" r="4.6"/>
+  <path d="M 160.8,98.2 L 162.2,88.5 Q 168.4,82.3 174.5,88.5 L 175.9,98.2"/>
+  <circle cx="168.4" cy="104.5" r="5.3"/>
+  <path d="M 159.7,125.8 L 161.3,114.6 Q 168.4,107.5 175.4,114.6 L 177,125.8"/>
+  <circle cx="31.6" cy="104.5" r="5.3"/>
+  <path d="M 23,125.8 L 24.6,114.6 Q 31.6,107.5 38.7,114.6 L 40.3,125.8"/>
+  <circle cx="128.3" cy="122" r="5.8"/>
+  <path d="M 118.9,145.3 L 120.6,133.1 Q 128.3,125.3 136,133.1 L 137.7,145.3"/>
+  <circle cx="71.7" cy="122" r="5.8"/>
+  <path d="M 62.3,145.3 L 64,133.1 Q 71.7,125.3 79.4,133.1 L 81.1,145.3"/>
+  <path d="M 97,40 C 93,62 79,72 79,90 C 79,106 89,118 101,118 C 114,118 123,107 123,92 C 123,79 113,71 107,56 C 106,68 109,77 106,85 C 100,74 97,57 97,40 Z"/>
+  <path d="M 100,74 C 96,86 92,90 92,99 C 92,107 96,111 101,111 C 106,111 110,107 110,99 C 110,90 104,86 100,74 Z" opacity="0.7"/>
+  <line x1="84" y1="130" x2="116" y2="120"/>
+  <line x1="84" y1="120" x2="116" y2="130"/>
+  <line x1="80" y1="126" x2="120" y2="126" opacity="0.6"/>
+</svg>
+
+  </div>
+  <div class="wrap sec__intro rv" style="margin-bottom:0">
+    <div>
+      <p class="eyebrow">Work with Tony</p>
+      <h2 class="head--wide">Five ways in. Now open worldwide.</h2>
+    </div>
+    <p>Retreats, team immersives, private coaching, advisory work, and the keynote — delivered across the U.S., Japan, the Baltics, and India.</p>
+  </div>
+</section>
+
+<div class="bleed">
+
+  <!-- 1 — RETREAT -->
+  <article class="row rv">
+    <div class="row__media"><img src="/assets/img/1440/fire-circle.jpg" alt="A circle of people around the fire in the redwoods at 1440 Multiversity" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>The Retreat</b> · Aug 28–30 · Scotts Valley, CA</p>
+      <h3>The Canyon Within</h3>
+      <p>Three days in the redwoods to change the frequency you live at — breath, sound, land, and food cooked as medicine. Eighteen seats. Many arrive alone and leave with a circle.</p>
+      <div class="row__act"><a class="btn btn--primary" href="/workshop/">Reserve your seat <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+
+  <!-- 2 — TEAMS -->
+  <article class="row row--flip rv">
+    <div class="row__media"><img src="/assets/img/1440/council-chairs.jpg" alt="Tony in council with participants beneath the redwoods" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>For Teams</b> · 2.5–3 days · Worldwide</p>
+      <h3>The Far Messenger Program</h3>
+      <p>An immersive for leadership teams entering harder terrain. We bring the whole faculty — practitioners, cooks, elders, coaches — and a diagnostic before and thirty days after, so the lift is documented, not just felt.</p>
+      <div class="row__act"><a class="arrow" href="/teams/">See the program <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+
+  <!-- 3 — COACHING -->
+  <article class="row rv">
+    <div class="row__media"><img src="/assets/img/tony/portrait-gallery.jpg" alt="Tony Skrelūnas standing in front of a wall of Diné line drawings" style="object-position:50% 28%" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>One to one</b> · Human performance</p>
+      <h3>Coaching for leaders</h3>
+      <p>Private work for founders, executives, and people carrying something heavy. Grounded in the dissertation research: human and organizational performance through three lenses — Diné, Lithuanian, Japanese.</p>
+      <div class="row__act"><a class="arrow" href="/v4/#human-performance">Work with Tony <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+
+  <!-- 4 — ADVISORY -->
+  <article class="row row--flip rv">
+    <div class="row__media"><img src="/assets/img/tony/presenting-slides.jpg" alt="Tony Skrelūnas presenting an economic transition plan to a seated hall" style="object-position:50% 26%" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>Advisory</b> · Governments, communities, companies</p>
+      <h3>Nation-building</h3>
+      <p>Governance restructuring, community enterprise, energy and land strategy. The same four-capital audit, run at the scale of a nation instead of a nervous system — and run in the room, not in a deck.</p>
+      <div class="row__act"><a class="arrow" href="mailto:wisdom@ancestralwatch.com">Start a conversation <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+
+  <!-- 5 — KEYNOTES -->
+  <article class="row rv">
+    <div class="row__media"><img src="/assets/img/tony/speaking-mic-seal.jpg" alt="Tony Skrelūnas mid-sentence beside a podium bearing an official seal" style="object-position:50% 24%" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>Keynotes &amp; addresses</b> · Conferences, campuses, communities</p>
+      <h3>The keynote</h3>
+      <p>Commencement addresses, conference keynotes, community halls with folding chairs. Same talk either way: what the oldest economies on earth knew about wealth, and what it would cost us to remember it.</p>
+      <div class="row__act"><a class="btn btn--primary" href="mailto:wisdom@ancestralwatch.com">Invite Tony to speak <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+
+</div>
+
+<!-- ================= ROOMS — speaking & teaching ================= -->
+<section class="sec sec--alt peckhost" id="speaking">
+  <div class="peckfield peckfield--faint" aria-hidden="true">
+    <svg aria-hidden="true" focusable="false" style="left:4%;top:56%;width:120px;transform:rotate(-4deg)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- terraced mound -->
+  <path d="M 2,182 L 22,182 C 34,180 42,175 50,166 L 62,150 C 68,142 74,138 84,138
+           L 116,138 C 126,138 132,142 138,150 L 150,166 C 158,175 166,180 178,182 L 198,182"/>
+  <line x1="2" y1="182" x2="198" y2="182"/>
+
+  <!-- terrace steps -->
+  <path d="M 30,177 L 56,171 L 60,160"/>
+  <path d="M 170,177 L 144,171 L 140,160"/>
+  <path d="M 54,157 L 76,151 L 80,141" opacity="0.85"/>
+  <path d="M 146,157 L 124,151 L 120,141" opacity="0.85"/>
+
+  <!-- rampart on the plateau lip -->
+  <path d="M 74,142 C 82,133 118,133 126,142"/>
+  <line x1="86" y1="138" x2="114" y2="138" opacity="0.5"/>
+
+  <!-- oak -->
+  <line x1="94" y1="140" x2="94" y2="106"/>
+  <line x1="106" y1="140" x2="106" y2="106"/>
+  <path d="M 100,108 L 80,84" opacity="0.85"/>
+  <path d="M 100,108 L 121,82" opacity="0.85"/>
+  <line x1="100" y1="106" x2="100" y2="70"/>
+  <path d="M 60,96 C 45,93 41,76 54,70
+           C 45,57 56,42 71,47
+           C 71,33 90,26 100,37
+           C 110,26 129,31 131,45
+           C 147,42 158,57 147,68
+           C 159,77 153,94 138,96
+           C 126,104 72,104 60,96 Z"/>
+  <path d="M 70,88 C 60,82 60,70 70,66" opacity="0.5"/>
+  <path d="M 130,88 C 140,82 140,70 130,66" opacity="0.5"/>
+  <path d="M 86,60 C 92,52 108,52 114,60" opacity="0.45"/>
+
+  <!-- stones -->
+  <path d="M 22,182 C 24,176 32,175 35,180" opacity="0.5"/>
+  <path d="M 170,182 C 172,176 180,175 183,180" opacity="0.5"/>
+  <path d="M 12,192 C 42,189 76,193 104,190 C 134,187 162,192 186,189" opacity="0.35"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:22%;top:74%;width:96px;transform:rotate(5deg);opacity:.66" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- crossed gable boards -->
+  <line x1="40" y1="190" x2="126" y2="66"/>
+  <line x1="48" y1="194" x2="134" y2="70"/>
+  <line x1="160" y1="190" x2="74" y2="66"/>
+  <line x1="152" y1="194" x2="66" y2="70"/>
+  <circle cx="100" cy="100" r="3.4" fill="currentColor" stroke="none"/>
+  <line x1="20" y1="194" x2="180" y2="194" opacity="0.4"/>
+
+  <!-- rosette between the boards -->
+  <circle cx="100" cy="142" r="11"/>
+  <line x1="100" y1="125" x2="100" y2="131"/>
+  <line x1="100" y1="153" x2="100" y2="159"/>
+  <line x1="83" y1="142" x2="89" y2="142"/>
+  <line x1="111" y1="142" x2="117" y2="142"/>
+  <line x1="88" y1="130" x2="92" y2="134"/>
+  <line x1="112" y1="130" x2="108" y2="134"/>
+  <line x1="88" y1="154" x2="92" y2="150"/>
+  <line x1="112" y1="154" x2="108" y2="150"/>
+
+  <!-- right horse head -->
+  <path d="M 132,72 L 136,44 C 138,31 148,23 159,23
+           C 169,23 175,29 177,35 C 180,41 179,48 173,50
+           C 165,52 157,50 151,48 C 145,46 141,54 143,62
+           L 145,74 Z"/>
+  <path d="M 140,32 L 136,17 L 150,26"/>
+  <path d="M 152,25 L 154,12 L 162,23" opacity="0.9"/>
+  <circle cx="161" cy="34" r="2.3" fill="currentColor" stroke="none"/>
+  <path d="M 173,44 L 176,43" opacity="0.85"/>
+  <path d="M 139,38 L 132,32" opacity="0.7"/>
+  <path d="M 137,48 L 130,44" opacity="0.7"/>
+  <path d="M 135,58 L 128,56" opacity="0.7"/>
+
+  <!-- left horse head -->
+  <path d="M 68,72 L 64,44 C 62,31 52,23 41,23
+           C 31,23 25,29 23,35 C 20,41 21,48 27,50
+           C 35,52 43,50 49,48 C 55,46 59,54 57,62
+           L 55,74 Z"/>
+  <path d="M 60,32 L 64,17 L 50,26"/>
+  <path d="M 48,25 L 46,12 L 38,23" opacity="0.9"/>
+  <circle cx="39" cy="34" r="2.3" fill="currentColor" stroke="none"/>
+  <path d="M 27,44 L 24,43" opacity="0.85"/>
+  <path d="M 61,38 L 68,32" opacity="0.7"/>
+  <path d="M 63,48 L 70,44" opacity="0.7"/>
+  <path d="M 65,58 L 72,56" opacity="0.7"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="right:8%;top:22%;width:104px;transform:rotate(-3deg);opacity:.58" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- wing -->
+  <path d="M 90,100 C 96,74 112,46 140,28"/>
+  <path d="M 140,28 C 149,23 158,25 160,31"/>
+  <path d="M 160,31 C 154,58 140,84 124,100"/>
+  <path d="M 145,27 L 148,9"/>
+  <path d="M 154,28 L 163,12"/>
+  <path d="M 159,36 L 175,29"/>
+  <path d="M 152,45 L 141,41" opacity="0.6"/>
+  <path d="M 145,59 L 133,54" opacity="0.6"/>
+  <path d="M 138,73 L 126,67" opacity="0.6"/>
+  <path d="M 131,87 L 119,80" opacity="0.6"/>
+
+  <!-- body -->
+  <path d="M 62,110 C 76,99 104,95 128,100 C 138,102 139,111 130,116 C 110,123 78,121 62,110 Z"/>
+
+  <!-- neck and head -->
+  <path d="M 65,105 C 54,97 44,89 35,81"/>
+  <path d="M 71,113 C 60,105 49,97 40,89"/>
+  <path d="M 35,81 C 28,77 22,79 22,85 C 23,91 31,91 38,89"/>
+  <path d="M 22,82 L 4,74"/>
+  <path d="M 23,89 L 4,74"/>
+  <circle cx="30" cy="83" r="1.9" fill="currentColor" stroke="none"/>
+
+  <!-- tail plumes -->
+  <path d="M 134,103 C 146,99 156,94 163,87"/>
+  <path d="M 136,109 C 148,108 158,104 165,99" opacity="0.8"/>
+
+  <!-- trailing legs -->
+  <path d="M 129,114 C 146,120 164,128 182,138"/>
+  <path d="M 125,119 C 142,126 157,135 171,146"/>
+  <path d="M 182,138 L 189,137" opacity="0.85"/>
+  <path d="M 171,146 L 178,146" opacity="0.85"/>
+</svg>
+
+  </div>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Speaking &amp; teaching</p>
+        <h2 class="head">Thirty years of rooms.</h2>
+      </div>
+      <p>Community halls, conference halls, university stages, gymnasiums, and a folding table with a flip chart on it. The talk changes. The arithmetic underneath it does not.</p>
+    </div>
+
+    <figure class="rooms rv">
+      <img src="/assets/img/tony/speaking-podium-sash.jpg" alt="Tony Skrelūnas speaking from a podium under an open tent, one arm raised" loading="lazy">
+      <figcaption>Under the tent · the open-air address</figcaption>
+    </figure>
+
+    <div class="rooms__act rv">
+      <a class="btn btn--primary" href="mailto:wisdom@ancestralwatch.com">Invite Tony to speak <span aria-hidden="true">→</span></a>
+      <a class="arrow" href="/teams/">Bring the program to your team <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE GATHERINGS ================= -->
+<section class="sec peckhost" style="padding-bottom:clamp(2.4rem, 1.6rem + 2.4vw, 3.8rem)">
+  <div class="peckfield peckfield--faint" aria-hidden="true">
+    <svg aria-hidden="true" focusable="false" style="left:5%;top:20%;width:76px;transform:rotate(4deg);opacity:.8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="100" cy="100" r="76"/>
+  <circle cx="100" cy="100" r="46"/>
+  <circle cx="100" cy="100" r="26"/>
+  <circle cx="100" cy="100" r="8"/>
+  <polyline points="95.5,51 100,27 104.5,51 95.5,51"/>
+  <line x1="81.2" y1="54.7" x2="75.5" y2="40.9"/>
+  <polyline points="62.2,68.5 48.4,48.4 68.5,62.2 62.2,68.5"/>
+  <line x1="54.7" y1="81.2" x2="40.9" y2="75.5"/>
+  <polyline points="51,104.5 27,100 51,95.5 51,104.5"/>
+  <line x1="54.7" y1="118.8" x2="40.9" y2="124.5"/>
+  <polyline points="68.5,137.8 48.4,151.6 62.2,131.5 68.5,137.8"/>
+  <line x1="81.2" y1="145.3" x2="75.5" y2="159.1"/>
+  <polyline points="104.5,149 100,173 95.5,149 104.5,149"/>
+  <line x1="118.8" y1="145.3" x2="124.5" y2="159.1"/>
+  <polyline points="137.8,131.5 151.6,151.6 131.5,137.8 137.8,131.5"/>
+  <line x1="145.3" y1="118.8" x2="159.1" y2="124.5"/>
+  <polyline points="149,95.5 173,100 149,104.5 149,95.5"/>
+  <line x1="145.3" y1="81.2" x2="159.1" y2="75.5"/>
+  <polyline points="131.5,62.2 151.6,48.4 137.8,68.5 131.5,62.2"/>
+  <line x1="118.8" y1="54.7" x2="124.5" y2="40.9"/>
+  <path d="M 109.2,74.6 Q 100,55 90.8,74.6"/>
+  <path d="M 88.6,75.5 Q 68.2,68.2 75.5,88.6"/>
+  <path d="M 74.6,90.8 Q 55,100 74.6,109.2"/>
+  <path d="M 75.5,111.4 Q 68.2,131.8 88.6,124.5"/>
+  <path d="M 90.8,125.4 Q 100,145 109.2,125.4"/>
+  <path d="M 111.4,124.5 Q 131.8,131.8 124.5,111.4"/>
+  <path d="M 125.4,109.2 Q 145,100 125.4,90.8"/>
+  <path d="M 124.5,88.6 Q 131.8,68.2 111.4,75.5"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="right:6%;top:58%;width:92px;transform:rotate(-2deg);opacity:.6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+  <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+  <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+  <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+  <line x1="102" y1="118" x2="102" y2="110"/>
+  <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+  <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+  <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+  <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+  <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+  <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+  <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+  <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+  <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+  <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+  <line x1="6" y1="152" x2="194" y2="152"/>
+</svg>
+
+  </div>
+  <div class="wrap">
+    <div class="sec__intro rv" style="margin-bottom:0">
+      <div>
+        <p class="eyebrow">The gatherings</p>
+        <h2 class="head">Ten years of getting everyone in one room.</h2>
+      </div>
+      <p>A decade convening inter-tribal gatherings — elders and teenagers on the same floor, nobody on a panel, everybody able to speak. It is the format underneath every retreat and every immersive on this page.</p>
+    </div>
+  </div>
+</section>
+<figure class="slab slab--lift rv">
+  <div class="slab__ph"><img src="/assets/img/tony/listeners-at-dusk.jpg" alt="A row of people seated close together at dusk, listening" style="object-position:50% 46%" loading="lazy"></div>
+  <div class="wrap"><figcaption>Elders and teenagers on the same floor, nobody on a panel. The format underneath every retreat on this page.</figcaption></div>
+</figure>
+
+<!-- ================= JOURNAL ================= -->
+<section class="sec sec--alt peckhost" id="journal" style="padding-bottom:clamp(2.6rem, 1.6rem + 2.6vw, 4rem)">
+  <div class="peckfield peckfield--faint" aria-hidden="true">
+    <span class="lamphalo" style="left:2%;top:4%;width:320px;height:320px"></span>
+    <svg class="lit" aria-hidden="true" focusable="false" style="left:6%;top:14%;width:210px;transform:rotate(-2deg)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <!-- the light it throws -->
+  <line x1="100" y1="18" x2="100" y2="4" opacity="0.5"/>
+  <line x1="132" y1="27" x2="139" y2="14" opacity="0.42"/>
+  <line x1="68" y1="27" x2="61" y2="14" opacity="0.42"/>
+  <line x1="156" y1="52" x2="169" y2="44" opacity="0.34"/>
+  <line x1="44" y1="52" x2="31" y2="44" opacity="0.34"/>
+  <line x1="166" y1="86" x2="181" y2="83" opacity="0.26"/>
+  <line x1="34" y1="86" x2="19" y2="83" opacity="0.26"/>
+
+  <!-- the handle -->
+  <path d="M 86,40 C 74,34 66,40 66,50" opacity="0.7"/>
+  <path d="M 114,40 C 126,34 134,40 134,50" opacity="0.7"/>
+
+  <!-- the chimney: glass, waisted -->
+  <path d="M 79,44 L 79,62 C 79,74 70,80 70,94 C 70,108 78,114 80,124"/>
+  <path d="M 121,44 L 121,62 C 121,74 130,80 130,94 C 130,108 122,114 120,124"/>
+  <line x1="79" y1="44" x2="121" y2="44"/>
+
+  <!-- the flame -->
+  <path d="M 100,74 C 92,88 95,98 100,104 C 105,98 108,88 100,74 Z"/>
+  <path d="M 100,86 C 97,94 98,99 100,102 C 102,99 103,94 100,86 Z" opacity="0.6"/>
+
+  <!-- the burner collar and wick knob -->
+  <path d="M 76,124 L 124,124 L 124,133 L 76,133 Z"/>
+  <line x1="84" y1="124" x2="84" y2="133" opacity="0.5"/>
+  <line x1="100" y1="124" x2="100" y2="133" opacity="0.5"/>
+  <line x1="116" y1="124" x2="116" y2="133" opacity="0.5"/>
+  <circle cx="133" cy="129" r="4.5" opacity="0.8"/>
+  <line x1="137.5" y1="129" x2="142" y2="129" opacity="0.6"/>
+
+  <!-- the reservoir -->
+  <path d="M 82,133 C 70,140 64,150 64,160 C 64,170 74,176 100,176 C 126,176 136,170 136,160 C 136,150 130,140 118,133"/>
+  <path d="M 72,159 C 82,163 118,163 128,159" opacity="0.45"/>
+
+  <!-- the table it sits on -->
+  <line x1="24" y1="184" x2="176" y2="184" opacity="0.6"/>
+  <line x1="40" y1="189" x2="160" y2="189" opacity="0.35"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="right:4%;top:8%;width:140px;transform:rotate(-3deg)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="0" y1="7" x2="20" y2="7"/>
+  <line x1="0" y1="13" x2="20" y2="13"/>
+  <line x1="20" y1="7" x2="40" y2="7"/>
+  <line x1="20" y1="13" x2="40" y2="13"/>
+  <line x1="47" y1="0" x2="47" y2="20" opacity="0.78"/>
+  <line x1="53" y1="0" x2="53" y2="20" opacity="0.78"/>
+  <line x1="67" y1="0" x2="67" y2="20" opacity="0.78"/>
+  <line x1="73" y1="0" x2="73" y2="20" opacity="0.78"/>
+  <line x1="80" y1="7" x2="100" y2="7"/>
+  <line x1="80" y1="13" x2="100" y2="13"/>
+  <line x1="100" y1="7" x2="120" y2="7"/>
+  <line x1="100" y1="13" x2="120" y2="13"/>
+  <line x1="127" y1="0" x2="127" y2="20" opacity="0.78"/>
+  <line x1="133" y1="0" x2="133" y2="20" opacity="0.78"/>
+  <line x1="147" y1="0" x2="147" y2="20" opacity="0.78"/>
+  <line x1="153" y1="0" x2="153" y2="20" opacity="0.78"/>
+  <line x1="160" y1="7" x2="180" y2="7"/>
+  <line x1="160" y1="13" x2="180" y2="13"/>
+  <line x1="180" y1="7" x2="200" y2="7"/>
+  <line x1="180" y1="13" x2="200" y2="13"/>
+  <line x1="0" y1="27" x2="20" y2="27"/>
+  <line x1="0" y1="33" x2="20" y2="33"/>
+  <line x1="27" y1="20" x2="27" y2="40" opacity="0.78"/>
+  <line x1="33" y1="20" x2="33" y2="40" opacity="0.78"/>
+  <line x1="47" y1="20" x2="47" y2="40" opacity="0.78"/>
+  <line x1="53" y1="20" x2="53" y2="40" opacity="0.78"/>
+  <line x1="60" y1="27" x2="80" y2="27"/>
+  <line x1="60" y1="33" x2="80" y2="33"/>
+  <line x1="80" y1="27" x2="100" y2="27"/>
+  <line x1="80" y1="33" x2="100" y2="33"/>
+  <line x1="107" y1="20" x2="107" y2="40" opacity="0.78"/>
+  <line x1="113" y1="20" x2="113" y2="40" opacity="0.78"/>
+  <line x1="127" y1="20" x2="127" y2="40" opacity="0.78"/>
+  <line x1="133" y1="20" x2="133" y2="40" opacity="0.78"/>
+  <line x1="140" y1="27" x2="160" y2="27"/>
+  <line x1="140" y1="33" x2="160" y2="33"/>
+  <line x1="160" y1="27" x2="180" y2="27"/>
+  <line x1="160" y1="33" x2="180" y2="33"/>
+  <line x1="187" y1="20" x2="187" y2="40" opacity="0.78"/>
+  <line x1="193" y1="20" x2="193" y2="40" opacity="0.78"/>
+  <line x1="7" y1="40" x2="7" y2="60" opacity="0.78"/>
+  <line x1="13" y1="40" x2="13" y2="60" opacity="0.78"/>
+  <line x1="27" y1="40" x2="27" y2="60" opacity="0.78"/>
+  <line x1="33" y1="40" x2="33" y2="60" opacity="0.78"/>
+  <line x1="40" y1="47" x2="60" y2="47"/>
+  <line x1="40" y1="53" x2="60" y2="53"/>
+  <line x1="60" y1="47" x2="80" y2="47"/>
+  <line x1="60" y1="53" x2="80" y2="53"/>
+  <line x1="87" y1="40" x2="87" y2="60" opacity="0.78"/>
+  <line x1="93" y1="40" x2="93" y2="60" opacity="0.78"/>
+  <line x1="107" y1="40" x2="107" y2="60" opacity="0.78"/>
+  <line x1="113" y1="40" x2="113" y2="60" opacity="0.78"/>
+  <line x1="120" y1="47" x2="140" y2="47"/>
+  <line x1="120" y1="53" x2="140" y2="53"/>
+  <line x1="140" y1="47" x2="160" y2="47"/>
+  <line x1="140" y1="53" x2="160" y2="53"/>
+  <line x1="167" y1="40" x2="167" y2="60" opacity="0.78"/>
+  <line x1="173" y1="40" x2="173" y2="60" opacity="0.78"/>
+  <line x1="187" y1="40" x2="187" y2="60" opacity="0.78"/>
+  <line x1="193" y1="40" x2="193" y2="60" opacity="0.78"/>
+  <line x1="7" y1="60" x2="7" y2="80" opacity="0.78"/>
+  <line x1="13" y1="60" x2="13" y2="80" opacity="0.78"/>
+  <line x1="20" y1="67" x2="40" y2="67"/>
+  <line x1="20" y1="73" x2="40" y2="73"/>
+  <line x1="40" y1="67" x2="60" y2="67"/>
+  <line x1="40" y1="73" x2="60" y2="73"/>
+  <line x1="67" y1="60" x2="67" y2="80" opacity="0.78"/>
+  <line x1="73" y1="60" x2="73" y2="80" opacity="0.78"/>
+  <line x1="87" y1="60" x2="87" y2="80" opacity="0.78"/>
+  <line x1="93" y1="60" x2="93" y2="80" opacity="0.78"/>
+  <line x1="100" y1="67" x2="120" y2="67"/>
+  <line x1="100" y1="73" x2="120" y2="73"/>
+  <line x1="120" y1="67" x2="140" y2="67"/>
+  <line x1="120" y1="73" x2="140" y2="73"/>
+  <line x1="147" y1="60" x2="147" y2="80" opacity="0.78"/>
+  <line x1="153" y1="60" x2="153" y2="80" opacity="0.78"/>
+  <line x1="167" y1="60" x2="167" y2="80" opacity="0.78"/>
+  <line x1="173" y1="60" x2="173" y2="80" opacity="0.78"/>
+  <line x1="180" y1="67" x2="200" y2="67"/>
+  <line x1="180" y1="73" x2="200" y2="73"/>
+  <line x1="0" y1="87" x2="20" y2="87"/>
+  <line x1="0" y1="93" x2="20" y2="93"/>
+  <line x1="20" y1="87" x2="40" y2="87"/>
+  <line x1="20" y1="93" x2="40" y2="93"/>
+  <line x1="47" y1="80" x2="47" y2="100" opacity="0.78"/>
+  <line x1="53" y1="80" x2="53" y2="100" opacity="0.78"/>
+  <line x1="67" y1="80" x2="67" y2="100" opacity="0.78"/>
+  <line x1="73" y1="80" x2="73" y2="100" opacity="0.78"/>
+  <line x1="80" y1="87" x2="100" y2="87"/>
+  <line x1="80" y1="93" x2="100" y2="93"/>
+  <line x1="100" y1="87" x2="120" y2="87"/>
+  <line x1="100" y1="93" x2="120" y2="93"/>
+  <line x1="127" y1="80" x2="127" y2="100" opacity="0.78"/>
+  <line x1="133" y1="80" x2="133" y2="100" opacity="0.78"/>
+  <line x1="147" y1="80" x2="147" y2="100" opacity="0.78"/>
+  <line x1="153" y1="80" x2="153" y2="100" opacity="0.78"/>
+  <line x1="160" y1="87" x2="180" y2="87"/>
+  <line x1="160" y1="93" x2="180" y2="93"/>
+  <line x1="180" y1="87" x2="200" y2="87"/>
+  <line x1="180" y1="93" x2="200" y2="93"/>
+  <line x1="0" y1="107" x2="20" y2="107"/>
+  <line x1="0" y1="113" x2="20" y2="113"/>
+  <line x1="27" y1="100" x2="27" y2="120" opacity="0.78"/>
+  <line x1="33" y1="100" x2="33" y2="120" opacity="0.78"/>
+  <line x1="47" y1="100" x2="47" y2="120" opacity="0.78"/>
+  <line x1="53" y1="100" x2="53" y2="120" opacity="0.78"/>
+  <line x1="60" y1="107" x2="80" y2="107"/>
+  <line x1="60" y1="113" x2="80" y2="113"/>
+  <line x1="80" y1="107" x2="100" y2="107"/>
+  <line x1="80" y1="113" x2="100" y2="113"/>
+  <line x1="107" y1="100" x2="107" y2="120" opacity="0.78"/>
+  <line x1="113" y1="100" x2="113" y2="120" opacity="0.78"/>
+  <line x1="127" y1="100" x2="127" y2="120" opacity="0.78"/>
+  <line x1="133" y1="100" x2="133" y2="120" opacity="0.78"/>
+  <line x1="140" y1="107" x2="160" y2="107"/>
+  <line x1="140" y1="113" x2="160" y2="113"/>
+  <line x1="160" y1="107" x2="180" y2="107"/>
+  <line x1="160" y1="113" x2="180" y2="113"/>
+  <line x1="187" y1="100" x2="187" y2="120" opacity="0.78"/>
+  <line x1="193" y1="100" x2="193" y2="120" opacity="0.78"/>
+  <line x1="7" y1="120" x2="7" y2="140" opacity="0.78"/>
+  <line x1="13" y1="120" x2="13" y2="140" opacity="0.78"/>
+  <line x1="27" y1="120" x2="27" y2="140" opacity="0.78"/>
+  <line x1="33" y1="120" x2="33" y2="140" opacity="0.78"/>
+  <line x1="40" y1="127" x2="60" y2="127"/>
+  <line x1="40" y1="133" x2="60" y2="133"/>
+  <line x1="60" y1="127" x2="80" y2="127"/>
+  <line x1="60" y1="133" x2="80" y2="133"/>
+  <line x1="87" y1="120" x2="87" y2="140" opacity="0.78"/>
+  <line x1="93" y1="120" x2="93" y2="140" opacity="0.78"/>
+  <line x1="107" y1="120" x2="107" y2="140" opacity="0.78"/>
+  <line x1="113" y1="120" x2="113" y2="140" opacity="0.78"/>
+  <line x1="120" y1="127" x2="140" y2="127"/>
+  <line x1="120" y1="133" x2="140" y2="133"/>
+  <line x1="140" y1="127" x2="160" y2="127"/>
+  <line x1="140" y1="133" x2="160" y2="133"/>
+  <line x1="167" y1="120" x2="167" y2="140" opacity="0.78"/>
+  <line x1="173" y1="120" x2="173" y2="140" opacity="0.78"/>
+  <line x1="187" y1="120" x2="187" y2="140" opacity="0.78"/>
+  <line x1="193" y1="120" x2="193" y2="140" opacity="0.78"/>
+  <line x1="7" y1="140" x2="7" y2="160" opacity="0.78"/>
+  <line x1="13" y1="140" x2="13" y2="160" opacity="0.78"/>
+  <line x1="20" y1="147" x2="40" y2="147"/>
+  <line x1="20" y1="153" x2="40" y2="153"/>
+  <line x1="40" y1="147" x2="60" y2="147"/>
+  <line x1="40" y1="153" x2="60" y2="153"/>
+  <line x1="67" y1="140" x2="67" y2="160" opacity="0.78"/>
+  <line x1="73" y1="140" x2="73" y2="160" opacity="0.78"/>
+  <line x1="87" y1="140" x2="87" y2="160" opacity="0.78"/>
+  <line x1="93" y1="140" x2="93" y2="160" opacity="0.78"/>
+  <line x1="100" y1="147" x2="120" y2="147"/>
+  <line x1="100" y1="153" x2="120" y2="153"/>
+  <line x1="120" y1="147" x2="140" y2="147"/>
+  <line x1="120" y1="153" x2="140" y2="153"/>
+  <line x1="147" y1="140" x2="147" y2="160" opacity="0.78"/>
+  <line x1="153" y1="140" x2="153" y2="160" opacity="0.78"/>
+  <line x1="167" y1="140" x2="167" y2="160" opacity="0.78"/>
+  <line x1="173" y1="140" x2="173" y2="160" opacity="0.78"/>
+  <line x1="180" y1="147" x2="200" y2="147"/>
+  <line x1="180" y1="153" x2="200" y2="153"/>
+  <line x1="0" y1="167" x2="20" y2="167"/>
+  <line x1="0" y1="173" x2="20" y2="173"/>
+  <line x1="20" y1="167" x2="40" y2="167"/>
+  <line x1="20" y1="173" x2="40" y2="173"/>
+  <line x1="47" y1="160" x2="47" y2="180" opacity="0.78"/>
+  <line x1="53" y1="160" x2="53" y2="180" opacity="0.78"/>
+  <line x1="67" y1="160" x2="67" y2="180" opacity="0.78"/>
+  <line x1="73" y1="160" x2="73" y2="180" opacity="0.78"/>
+  <line x1="80" y1="167" x2="100" y2="167"/>
+  <line x1="80" y1="173" x2="100" y2="173"/>
+  <line x1="100" y1="167" x2="120" y2="167"/>
+  <line x1="100" y1="173" x2="120" y2="173"/>
+  <line x1="127" y1="160" x2="127" y2="180" opacity="0.78"/>
+  <line x1="133" y1="160" x2="133" y2="180" opacity="0.78"/>
+  <line x1="147" y1="160" x2="147" y2="180" opacity="0.78"/>
+  <line x1="153" y1="160" x2="153" y2="180" opacity="0.78"/>
+  <line x1="160" y1="167" x2="180" y2="167"/>
+  <line x1="160" y1="173" x2="180" y2="173"/>
+  <line x1="180" y1="167" x2="200" y2="167"/>
+  <line x1="180" y1="173" x2="200" y2="173"/>
+  <line x1="0" y1="187" x2="20" y2="187"/>
+  <line x1="0" y1="193" x2="20" y2="193"/>
+  <line x1="27" y1="180" x2="27" y2="200" opacity="0.78"/>
+  <line x1="33" y1="180" x2="33" y2="200" opacity="0.78"/>
+  <line x1="47" y1="180" x2="47" y2="200" opacity="0.78"/>
+  <line x1="53" y1="180" x2="53" y2="200" opacity="0.78"/>
+  <line x1="60" y1="187" x2="80" y2="187"/>
+  <line x1="60" y1="193" x2="80" y2="193"/>
+  <line x1="80" y1="187" x2="100" y2="187"/>
+  <line x1="80" y1="193" x2="100" y2="193"/>
+  <line x1="107" y1="180" x2="107" y2="200" opacity="0.78"/>
+  <line x1="113" y1="180" x2="113" y2="200" opacity="0.78"/>
+  <line x1="127" y1="180" x2="127" y2="200" opacity="0.78"/>
+  <line x1="133" y1="180" x2="133" y2="200" opacity="0.78"/>
+  <line x1="140" y1="187" x2="160" y2="187"/>
+  <line x1="140" y1="193" x2="160" y2="193"/>
+  <line x1="160" y1="187" x2="180" y2="187"/>
+  <line x1="160" y1="193" x2="180" y2="193"/>
+  <line x1="187" y1="180" x2="187" y2="200" opacity="0.78"/>
+  <line x1="193" y1="180" x2="193" y2="200" opacity="0.78"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="right:22%;top:62%;width:84px;transform:rotate(6deg);opacity:.66" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 100,24 C 88,58 60,92 60,116 A 40,40 0 0 0 140,116 C 140,92 112,58 100,24 Z"/>
+  <path d="M 100,54 C 92,78 76,98 76,116 A 24,24 0 0 0 124,116 C 124,98 108,78 100,54" opacity="0.8"/>
+  <path d="M 72.2,127.2 A 30,30 0 1 0 127.8,127.2" opacity="0.55"/>
+  <path d="M 66.4,125.6 A 35,35 0 1 0 133.6,125.6" opacity="0.4"/>
+  <path d="M 89,84 C 84,96 82,106 82,114" opacity="0.5"/>
+  <path d="M 111,84 C 116,96 118,106 118,114" opacity="0.4"/>
+  <path d="M 86,96 C 89,84 93,72 97,60" opacity="0.55"/>
+  <circle cx="112" cy="106" r="2.1" fill="currentColor" stroke="none"/>
+  <circle cx="92" cy="128" r="1.5" fill="currentColor" stroke="none"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:4%;top:52%;width:100px;transform:rotate(2deg);opacity:.55" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 100,128
+           C 90,126 80,124 72,122
+           L 60,118 L 48,120 L 26,112
+           L 44,108 L 50,102
+           L 40,88 L 34,64
+           L 54,76 L 74,80
+           L 70,64 L 66,34
+           L 82,50 L 88,58
+           L 92,40 L 100,20
+           L 108,40 L 112,58
+           L 118,50 L 134,34
+           L 130,64 L 126,80
+           L 146,76 L 166,64
+           L 160,88 L 150,102
+           L 156,108 L 174,112
+           L 152,120 L 140,118
+           L 128,122
+           C 120,124 110,126 100,128 Z"/>
+  <path d="M 100,126 L 100,26" opacity="0.65"/>
+  <path d="M 100,124 L 70,42" opacity="0.65"/>
+  <path d="M 100,124 L 130,42" opacity="0.65"/>
+  <path d="M 100,124 L 40,72" opacity="0.65"/>
+  <path d="M 100,124 L 160,72" opacity="0.65"/>
+  <path d="M 100,126 L 32,113" opacity="0.65"/>
+  <path d="M 100,126 L 168,113" opacity="0.65"/>
+  <path d="M 100,127 C 102,146 98,164 100,182"/>
+  <path d="M 100,150 C 106,148 111,144 113,138" opacity="0.6"/>
+  <path d="M 94,182 C 97,188 103,188 106,182" opacity="0.55"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:19%;top:14%;width:72px;transform:rotate(-6deg);opacity:.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- main stem -->
+  <path d="M 102,192 C 99,168 101,144 100,120 C 99,96 100,76 100,58"/>
+
+  <!-- branch pair 1 -->
+  <path d="M 100,170 L 80,160 L 60,144"/>
+  <path d="M 100,170 L 120,160 L 140,144"/>
+  <ellipse cx="52" cy="134" rx="7" ry="11.5" transform="rotate(-42 52 134)"/>
+  <ellipse cx="70" cy="140" rx="7" ry="11.5" transform="rotate(-16 70 140)"/>
+  <ellipse cx="68" cy="164" rx="7" ry="11.5" transform="rotate(34 68 164)"/>
+  <ellipse cx="148" cy="134" rx="7" ry="11.5" transform="rotate(42 148 134)"/>
+  <ellipse cx="130" cy="140" rx="7" ry="11.5" transform="rotate(16 130 140)"/>
+  <ellipse cx="132" cy="164" rx="7" ry="11.5" transform="rotate(-34 132 164)"/>
+
+  <!-- branch pair 2 -->
+  <path d="M 100,132 L 84,122 L 66,106"/>
+  <path d="M 100,132 L 116,122 L 134,106"/>
+  <ellipse cx="58" cy="97" rx="6.4" ry="10.5" transform="rotate(-42 58 97)"/>
+  <ellipse cx="76" cy="103" rx="6.4" ry="10.5" transform="rotate(-16 76 103)"/>
+  <ellipse cx="74" cy="126" rx="6.4" ry="10.5" transform="rotate(34 74 126)"/>
+  <ellipse cx="142" cy="97" rx="6.4" ry="10.5" transform="rotate(42 142 97)"/>
+  <ellipse cx="124" cy="103" rx="6.4" ry="10.5" transform="rotate(16 124 103)"/>
+  <ellipse cx="126" cy="126" rx="6.4" ry="10.5" transform="rotate(-34 126 126)"/>
+
+  <!-- branch pair 3 -->
+  <path d="M 100,98 L 88,90 L 76,78"/>
+  <path d="M 100,98 L 112,90 L 124,78"/>
+  <ellipse cx="69" cy="70" rx="5.6" ry="9" transform="rotate(-42 69 70)"/>
+  <ellipse cx="84" cy="74" rx="5.6" ry="9" transform="rotate(-14 84 74)"/>
+  <ellipse cx="131" cy="70" rx="5.6" ry="9" transform="rotate(42 131 70)"/>
+  <ellipse cx="116" cy="74" rx="5.6" ry="9" transform="rotate(-14 116 74)"/>
+
+  <!-- crown flowers -->
+  <path d="M 100,60 C 94,56 88,53 84,50"/>
+  <path d="M 100,60 C 106,56 112,53 116,50"/>
+  <line x1="100" y1="58" x2="100" y2="44"/>
+
+  <ellipse cx="100" cy="28" rx="4.6" ry="7"/>
+  <ellipse cx="100" cy="42" rx="4.6" ry="7"/>
+  <ellipse cx="91" cy="35" rx="7" ry="4.6"/>
+  <ellipse cx="109" cy="35" rx="7" ry="4.6"/>
+  <circle cx="100" cy="35" r="1.8" fill="currentColor" stroke="none"/>
+
+  <ellipse cx="80" cy="41" rx="3.8" ry="5.8"/>
+  <ellipse cx="80" cy="53" rx="3.8" ry="5.8"/>
+  <ellipse cx="72" cy="47" rx="5.8" ry="3.8"/>
+  <ellipse cx="88" cy="47" rx="5.8" ry="3.8"/>
+  <circle cx="80" cy="47" r="1.5" fill="currentColor" stroke="none"/>
+
+  <ellipse cx="120" cy="41" rx="3.8" ry="5.8"/>
+  <ellipse cx="120" cy="53" rx="3.8" ry="5.8"/>
+  <ellipse cx="112" cy="47" rx="5.8" ry="3.8"/>
+  <ellipse cx="128" cy="47" rx="5.8" ry="3.8"/>
+  <circle cx="120" cy="47" r="1.5" fill="currentColor" stroke="none"/>
+  <line x1="52.0" y1="126.2" x2="52.0" y2="141.8" transform="rotate(-42 52 134)" opacity="0.5"/>
+  <line x1="70.0" y1="132.2" x2="70.0" y2="147.8" transform="rotate(-16 70 140)" opacity="0.5"/>
+  <line x1="68.0" y1="156.2" x2="68.0" y2="171.8" transform="rotate(34 68 164)" opacity="0.5"/>
+  <line x1="148.0" y1="126.2" x2="148.0" y2="141.8" transform="rotate(42 148 134)" opacity="0.5"/>
+  <line x1="130.0" y1="132.2" x2="130.0" y2="147.8" transform="rotate(16 130 140)" opacity="0.5"/>
+  <line x1="132.0" y1="156.2" x2="132.0" y2="171.8" transform="rotate(-34 132 164)" opacity="0.5"/>
+  <line x1="58.0" y1="89.9" x2="58.0" y2="104.1" transform="rotate(-42 58 97)" opacity="0.5"/>
+  <line x1="76.0" y1="95.9" x2="76.0" y2="110.1" transform="rotate(-16 76 103)" opacity="0.5"/>
+  <line x1="74.0" y1="118.9" x2="74.0" y2="133.1" transform="rotate(34 74 126)" opacity="0.5"/>
+  <line x1="142.0" y1="89.9" x2="142.0" y2="104.1" transform="rotate(42 142 97)" opacity="0.5"/>
+  <line x1="124.0" y1="95.9" x2="124.0" y2="110.1" transform="rotate(16 124 103)" opacity="0.5"/>
+  <line x1="126.0" y1="118.9" x2="126.0" y2="133.1" transform="rotate(-34 126 126)" opacity="0.5"/>
+  <line x1="69.0" y1="63.9" x2="69.0" y2="76.1" transform="rotate(-42 69 70)" opacity="0.5"/>
+  <line x1="84.0" y1="67.9" x2="84.0" y2="80.1" transform="rotate(-14 84 74)" opacity="0.5"/>
+  <line x1="131.0" y1="63.9" x2="131.0" y2="76.1" transform="rotate(42 131 70)" opacity="0.5"/>
+  <line x1="116.0" y1="67.9" x2="116.0" y2="80.1" transform="rotate(-14 116 74)" opacity="0.5"/>
+</svg>
+
+  </div>
+  <div class="wrap">
+    <div class="sec__intro jhead rv" style="margin-bottom:0">
+      <div>
+        <p class="eyebrow">The Journal</p>
+        <h2 class="head">Decades of writing. One argument.</h2>
+      </div>
+      <div>
+        <p>The writing is the spine of the work. Field notes from the high desert, the Baltics, Japan, Tibet and India — on longevity, honorable trade, food, grief, technology, and the arithmetic older economies used to run on.</p>
+        <a class="arrow" href="/journal/">Read the journal <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="jbar rv">
+      <span>Featured this month</span>
+      <span>Written by Tony Skrelūnas</span>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED — broadsheet cover -->
+<a class="feat" href="/journal/30000-years-tribal-trade-americas/">
+  <div class="feat__ph">
+    <img src="/assets/img/journal/30000-years-tribal-trade-americas/2.jpg" alt="Coiled baskets laid out on a Navajo rug at a trade gathering" loading="lazy">
+  </div>
+  <div class="feat__in tex tex--strong tex--zoom">
+    <div class="tex__i"><img src="/assets/img/garden/tea-lantern-azalea.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+    <p class="feat__kick">The commencement address</p>
+    <h3>30,000 Years, and a Formula That Still Works</h3>
+    <p class="feat__d">One of several commencement addresses he has given — this one to a graduating class — on where we come from, the great trade civilizations of the Americas, and a formula for a good life that has held for thirty thousand years.</p>
+    <p class="feat__by"><span>Essay · Address</span><span>12 min read</span></p>
+    <span class="feat__go">Read the essay <span aria-hidden="true">→</span></span>
+  </div>
+</a>
+
+<!-- MORE ESSAYS -->
+<section class="sec sec--alt" style="padding-top:clamp(3.5rem, 2.4rem + 3.4vw, 6rem)">
+  <div class="wrap">
+
+    <div class="jbig rv">
+      <a class="jc" href="/journal/the-water-remembers-sacred-lake/">
+        <div class="jc__img"><img src="/assets/img/journal/the-water-remembers-sacred-lake/0.jpg" alt="A mountain lake below snow peaks" loading="lazy"></div>
+        <p class="jc__kick">Water · Memory</p>
+        <h3>The Water Remembers</h3>
+        <p>My grandfather stood at the edge of a mountain lake and was called to sing an old song. What he taught me there belongs to every people on earth.</p>
+        <span class="jc__go">Read the essay →</span>
+      </a>
+
+      <a class="jc" href="/journal/they-tried-to-erase-a-whole-people/">
+        <div class="jc__img"><img src="/assets/img/journal/they-tried-to-erase-a-whole-people/0.jpeg" alt="An illustrated history of Lithuanian survival" style="object-position:50% 6%" loading="lazy"></div>
+        <p class="jc__kick">Survival · Baltics</p>
+        <h3>They Tried to Erase a Whole People</h3>
+        <p>Book smugglers, song keepers, and a basketball team in tie-dye. Now they raise the happiest young souls on earth.</p>
+        <span class="jc__go">Read the essay →</span>
+      </a>
+
+      <a class="jc" href="/journal/the-man-who-raced-hills-into-his-70s/">
+        <div class="jc__img"><img src="/assets/img/journal/the-man-who-raced-hills-into-his-70s/0.jpg" alt="A hand-built vintage hill-climb motorcycle" style="object-position:50% 24%" loading="lazy"></div>
+        <p class="jc__kick">Longevity</p>
+        <h3>The Man Who Raced Hills Into His 70s</h3>
+        <p>He built motorcycles that now sell for six figures. The real machine, the one that kept him alive, was quieter than any engine: he showed up.</p>
+        <span class="jc__go">Read the essay →</span>
+      </a>
+    </div>
+
+    <div class="jmid rv">
+      <a class="jc" href="/journal/honoring-my-father-on-fathers-day/">
+        <p class="jc__kick">Family</p>
+        <h3>Shizhé'é: A Letter to the Man Who Chose Me</h3>
+        <p>A city boy who followed love to the high country, learned the old ways, and became a pillar.</p>
+      </a>
+
+      <a class="jc" href="/journal/ai-robotics-repair-warming-world/">
+        <p class="jc__kick">Technology</p>
+        <h3>The Machines That Could Help Us Come Home</h3>
+        <p>What if the intelligence we built to speed up extraction were turned, deliberately, toward repair?</p>
+      </a>
+
+      <a class="jc" href="/journal/seeds-of-the-ancestors/">
+        <p class="jc__kick">Food</p>
+        <h3>Seeds of the Ancestors</h3>
+        <p>The blueprint for a sustainable future is not an invention waiting to be engineered. It is an inheritance waiting to be remembered.</p>
+      </a>
+
+      <a class="jc" href="/journal/the-final-council-post-extraction-future/">
+        <p class="jc__kick">Futures</p>
+        <h3>The Final Council: Building a Post-Extraction Future</h3>
+        <p>A dream of a council that vets the future before it is built — and a blueprint for encoding reciprocity into what comes next.</p>
+      </a>
+
+      <a class="jc" href="/journal/roots-of-resilience-wisdom-week-rancho-la-puerta/">
+        <p class="jc__kick">The circle</p>
+        <h3>Roots of Resilience: What the Fire Taught Us</h3>
+        <p>Under the stars at Rancho La Puerta, elders and strangers became a circle. Healing begins the moment we are truly seen.</p>
+      </a>
+
+      <a class="jc" href="/journal/wealth-wisdom-from-sheepherders-of-the-planet/">
+        <p class="jc__kick">Wealth</p>
+        <h3>Wealth Wisdom from the Sheepherders of the Planet</h3>
+        <p>Wealth was never counted in currency but in flocks, dawns, clan bonds, and the resilience that outlasts every drought.</p>
+      </a>
+    </div>
+
+    <div class="jlist rv">
+      <a class="jrow" href="/journal/the-ancestral-code-for-living-to-100/">
+        <div>
+          <p class="jrow__k">Longevity</p>
+          <h3>The Ancestral Code for Living to 100</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/honorable-trade-oldest-economies-planet-in-transition/">
+        <div>
+          <p class="jrow__k">Economy</p>
+          <h3>Honorable Trade: What the World's Oldest Economies Teach a Planet in Transition</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/tibet-the-unbroken-thread/">
+        <div>
+          <p class="jrow__k">Tibet</p>
+          <h3>Tibet, and the Unbroken Thread</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/the-silent-theft/">
+        <div>
+          <p class="jrow__k">Human capital</p>
+          <h3>The Silent Theft</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/what-the-cottonwood-sings-roots-workshop/">
+        <div>
+          <p class="jrow__k">The land</p>
+          <h3>What the Cottonwood Sings</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/weaving-a-new-dream-what-is-the-world-dreaming-through-you/">
+        <div>
+          <p class="jrow__k">Purpose</p>
+          <h3>Weaving a New Dream: What Is the World Dreaming Through You?</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/monster-slayer-blueprint-turning-waste-into-renewal/">
+        <div>
+          <p class="jrow__k">Renewal</p>
+          <h3>The Monster Slayer Blueprint: Turning Waste Into Renewal</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/ancient-farming-hedge-against-climate-change/">
+        <div>
+          <p class="jrow__k">Climate</p>
+          <h3>Ancient Farming as a Hedge Against Climate Change</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="jall rv">
+      <a class="btn btn--primary" href="/journal/">Read the journal <span aria-hidden="true">→</span></a>
+      <a class="arrow" href="/v4/#listen">Or listen instead <span aria-hidden="true">→</span></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= IMAGE BAND — the peaks ================= -->
+<figure class="slab rv">
+  <div class="slab__ph"><img src="/assets/img/land/canyon-sunset-forest.jpg" alt="Sunset over a forested canyon" style="object-position:50% 54%" loading="lazy"></div>
+  <div class="wrap"><figcaption>Sundown off the rim. Most of this work happens within a day's drive of here.</figcaption></div>
+</figure>
+
+<!-- ================= WATCH ================= -->
+<section class="hasglyph sec peckhost" id="watch">
+  <div class="peckfield peckfield--faint" aria-hidden="true">
+    <svg aria-hidden="true" focusable="false" style="right:9%;top:6%;width:230px;transform:rotate(-4deg)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 136.2,42.1 L 138.1,42.4 L 139.7,43.2 L 141.3,44.1 L 142.8,45 L 144.3,46 L 145.8,47.1 L 147.2,48.2 L 148.5,49.4 L 149.9,50.7 L 151.1,51.9 L 152.4,53.3 L 153.6,54.6 L 154.7,56 L 155.8,57.4 L 156.9,58.9 L 157.9,60.4 L 158.9,61.9 L 159.8,63.5 L 160.7,65.1 L 161.5,66.7 L 162.3,68.3 L 163.1,69.9 L 163.8,71.6 L 164.5,73.2 L 165.1,74.9 L 165.7,76.6 L 166.3,78.3 L 166.8,80 L 167.3,81.8 L 167.7,83.5 L 168.1,85.3 L 168.5,87 L 168.8,88.8 L 169.1,90.6 L 169.3,92.4 L 169.5,94.1 L 169.7,95.9 L 169.8,97.7 L 169.9,99.5 L 169.9,101.3 L 169.9,103.1 L 169.9,104.9 L 169.8,106.7 L 169.6,108.5 L 169.4,110.3 L 169.1,112.1 L 168.8,113.9 L 168.5,115.7 L 168.1,117.5 L 167.6,119.2 L 167.1,121 L 166.6,122.7 L 165.9,124.4 L 165.3,126.1 L 164.5,127.7 L 163.8,129.4 L 162.9,131 L 162.1,132.6 L 161.2,134.1 L 160.2,135.6 L 159.2,137.1 L 158.1,138.6 L 157,140 L 155.9,141.4 L 154.7,142.8 L 153.5,144.1 L 152.3,145.4 L 151,146.7 L 149.7,147.9 L 148.4,149.1 L 147,150.2 L 145.6,151.3 L 144.2,152.4 L 142.8,153.5 L 141.4,154.5 L 139.9,155.5 L 138.5,156.5 L 137,157.4 L 135.5,158.3 L 133.9,159.2 L 132.4,160.1 L 130.9,160.9 L 129.3,161.7 L 127.7,162.5 L 126.1,163.3 L 124.5,164 L 122.9,164.7 L 121.3,165.4 L 119.6,166.1 L 117.9,166.7 L 116.2,167.3 L 114.5,167.8 L 112.8,168.4 L 111.1,168.8 L 109.3,169.3 L 107.5,169.7 L 105.8,170 L 104,170.4 L 102.2,170.6 L 100.3,170.8 L 98.5,171 L 96.7,171.1 L 94.8,171.2 L 93,171.2 L 91.1,171.1 L 89.3,171 L 87.4,170.8 L 85.6,170.5 L 83.8,170.2 L 82,169.8 L 80.1,169.3 L 78.4,168.8 L 76.6,168.2 L 74.8,167.6 L 73.1,166.9 L 71.4,166.1 L 69.8,165.3 L 68.1,164.4 L 66.5,163.5 L 65,162.5 L 63.4,161.5 L 61.9,160.4 L 60.5,159.3 L 59,158.1 L 57.7,156.9 L 56.3,155.6 L 55,154.3 L 53.8,153 L 52.5,151.7 L 51.4,150.3 L 50.2,148.9 L 49.1,147.4 L 48.1,146 L 47,144.5 L 46,143 L 45.1,141.5 L 44.2,140 L 43.3,138.4 L 42.5,136.9 L 41.7,135.3 L 40.9,133.7 L 40.1,132.1 L 39.4,130.5 L 38.8,128.9 L 38.2,127.3 L 37.6,125.6 L 37,124 L 36.5,122.3 L 36,120.7 L 35.6,119 L 35.2,117.3 L 34.8,115.6 L 34.5,113.9 L 34.2,112.2 L 34,110.5 L 33.8,108.8 L 33.7,107.1 L 33.6,105.3 L 33.5,103.6 L 33.6,101.9 L 33.6,100.2 L 33.8,98.5 L 34.3,96.8 L 34.4,95.1 L 34.6,93.4 L 34.8,91.7 L 35,90 L 35.3,88.4 L 35.6,86.7 L 35.9,85.1 L 36.4,83.4 L 36.8,81.8 L 37.3,80.2 L 37.9,78.5 L 38.4,77 L 39.1,75.4 L 39.7,73.8 L 40.5,72.3 L 41.2,70.8 L 42,69.3 L 42.8,67.8 L 43.7,66.3 L 44.6,64.9 L 45.5,63.5 L 46.5,62.1 L 47.5,60.7 L 48.5,59.4 L 49.6,58.1 L 50.6,56.8 L 51.8,55.5 L 52.9,54.3 L 54.1,53.1 L 55.3,51.9 L 56.5,50.7 L 57.8,49.6 L 59.1,48.5 L 60.4,47.4 L 61.7,46.3 L 63.1,45.3 L 64.5,44.3 L 65.9,43.4 L 67.3,42.4 L 68.8,41.5 L 70.2,40.7 L 71.7,39.8 L 73.3,39 L 74.8,38.3 L 76.4,37.6 L 78,36.9 L 79.6,36.2 L 81.2,35.6 L 82.8,35 L 84.5,34.5 L 86.1,34 L 87.8,33.6 L 89.5,33.2 L 91.2,32.8 L 93,32.5 L 94.7,32.3 L 96.4,32.1 L 96.5,32.8 L 94.8,33.1 L 93.1,33.4 L 91.4,33.7 L 89.7,34.1 L 88,34.6 L 86.4,35.1 L 84.7,35.6 L 83.1,36.2 L 81.5,36.8 L 80,37.4 L 78.4,38.1 L 76.9,38.8 L 75.3,39.6 L 73.8,40.3 L 72.4,41.1 L 70.9,42 L 69.5,42.8 L 68,43.7 L 66.6,44.6 L 65.2,45.5 L 63.9,46.5 L 62.5,47.4 L 61.2,48.4 L 59.9,49.5 L 58.6,50.5 L 57.3,51.6 L 56,52.7 L 54.8,53.8 L 53.6,55 L 52.4,56.1 L 51.3,57.4 L 50.2,58.6 L 49.1,59.9 L 48,61.2 L 47,62.5 L 46,63.8 L 45.1,65.2 L 44.2,66.6 L 43.3,68.1 L 42.5,69.5 L 41.7,71 L 41,72.5 L 40.3,74.1 L 39.6,75.6 L 39,77.2 L 38.5,78.8 L 38,80.4 L 37.5,82 L 37.1,83.6 L 36.8,85.2 L 36.5,86.9 L 36.2,88.5 L 36,90.2 L 35.8,91.9 L 35.7,93.5 L 35.6,95.2 L 35.6,96.9 L 36.1,98.5 L 36.3,100.2 L 36.5,101.8 L 36.7,103.4 L 37,105.1 L 37.3,106.7 L 37.6,108.3 L 37.9,109.9 L 38.3,111.4 L 38.6,113 L 39,114.6 L 39.5,116.1 L 39.9,117.7 L 40.4,119.2 L 40.9,120.8 L 41.5,122.3 L 42,123.8 L 42.6,125.3 L 43.2,126.8 L 43.9,128.3 L 44.6,129.8 L 45.3,131.2 L 46,132.7 L 46.8,134.1 L 47.6,135.5 L 48.4,136.9 L 49.3,138.3 L 50.2,139.7 L 51.2,141 L 52.2,142.3 L 53.2,143.6 L 54.3,144.9 L 55.4,146.2 L 56.5,147.4 L 57.7,148.5 L 58.9,149.7 L 60.1,150.8 L 61.4,151.8 L 62.7,152.9 L 64.1,153.8 L 65.5,154.8 L 66.9,155.7 L 68.3,156.5 L 69.8,157.3 L 71.3,158 L 72.8,158.7 L 74.4,159.3 L 75.9,159.9 L 77.5,160.5 L 79.1,160.9 L 80.7,161.4 L 82.3,161.7 L 83.9,162.1 L 85.6,162.3 L 87.2,162.6 L 88.9,162.7 L 90.5,162.8 L 92.1,162.9 L 93.8,162.9 L 95.4,162.9 L 97.1,162.8 L 98.7,162.7 L 100.3,162.5 L 101.9,162.3 L 103.5,162.1 L 105.1,161.8 L 106.7,161.5 L 108.2,161.1 L 109.8,160.7 L 111.3,160.3 L 112.8,159.9 L 114.3,159.4 L 115.8,158.8 L 117.3,158.3 L 118.7,157.7 L 120.2,157.1 L 121.6,156.4 L 123,155.8 L 124.4,155.1 L 125.8,154.4 L 127.2,153.6 L 128.5,152.8 L 129.8,152.1 L 131.1,151.2 L 132.4,150.4 L 133.7,149.5 L 135,148.6 L 136.2,147.7 L 137.4,146.8 L 138.6,145.8 L 139.8,144.8 L 141,143.8 L 142.1,142.8 L 143.3,141.7 L 144.4,140.6 L 145.5,139.5 L 146.5,138.3 L 147.5,137.2 L 148.6,136 L 149.5,134.8 L 150.5,133.5 L 151.4,132.3 L 152.3,131 L 153.2,129.7 L 154,128.3 L 154.8,127 L 155.6,125.6 L 156.3,124.2 L 157,122.8 L 157.6,121.3 L 158.3,119.9 L 158.8,118.4 L 159.4,116.9 L 159.9,115.4 L 160.3,113.8 L 160.7,112.3 L 161.1,110.7 L 161.4,109.1 L 161.6,107.6 L 161.9,106 L 162,104.4 L 162.2,102.8 L 162.3,101.2 L 162.3,99.6 L 162.3,98 L 162.3,96.4 L 162.2,94.8 L 162.1,93.2 L 161.9,91.6 L 161.7,90 L 161.4,88.4 L 161.1,86.8 L 160.8,85.2 L 160.5,83.6 L 160.1,82.1 L 159.6,80.5 L 159.2,78.9 L 158.7,77.4 L 158.1,75.9 L 157.5,74.4 L 156.9,72.8 L 156.3,71.3 L 155.6,69.8 L 154.9,68.4 L 154.2,66.9 L 153.4,65.4 L 152.6,64 L 151.8,62.6 L 150.9,61.2 L 150,59.8 L 149.1,58.4 L 148.1,57 L 147.1,55.7 L 146.1,54.4 L 145,53.1 L 143.9,51.8 L 142.8,50.6 L 141.6,49.3 L 140.4,48.1 L 139.2,46.9 L 137.9,45.7 L 136.7,44.5 L 135.6,43 Z" fill="currentColor" stroke="none"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:6%;top:62%;width:88px;transform:rotate(3deg);opacity:.6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <ellipse cx="100" cy="116" rx="36" ry="12" opacity="0.95"/>
+  <ellipse cx="100" cy="116" rx="56" ry="21" opacity="0.75"/>
+  <ellipse cx="100" cy="116" rx="76" ry="30" opacity="0.55"/>
+  <ellipse cx="100" cy="116" rx="94" ry="38" opacity="0.35"/>
+  <path d="M 78,89 C 78,79 88,73 101,73 C 113,73 121,79 121,88 C 121,96 111,101 100,101 C 87,101 78,97 78,89 Z"/>
+  <path d="M 85,84 C 89,78 95,75 103,76" opacity="0.55"/>
+</svg>
+
+  </div>
+  <svg class="glyph glyph--br glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <ellipse cx="100" cy="116" rx="36" ry="12" opacity="0.95"/> <ellipse cx="100" cy="116" rx="56" ry="21" opacity="0.75"/> <ellipse cx="100" cy="116" rx="76" ry="30" opacity="0.55"/> <ellipse cx="100" cy="116" rx="94" ry="38" opacity="0.35"/> <path d="M 78,89 C 78,79 88,73 101,73 C 113,73 121,79 121,88 C 121,96 111,101 100,101 C 87,101 78,97 78,89 Z"/> <path d="M 85,84 C 89,78 95,75 103,76" opacity="0.55"/> </svg>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Watch</p>
+        <h2 class="head">A minute is enough to know.</h2>
+      </div>
+      <p>Sixty-two seconds, filmed on the land. If you only give this page one minute, give it to this.</p>
+    </div>
+
+    <div class="vsplit rv">
+      <div class="vfilm">
+        <video controls preload="none" playsinline
+               poster="/assets/img/1440/tony-invitation-poster.jpg">
+          <source src="/assets/video/tony-invitation.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div>
+        <p class="eyebrow">The invitation</p>
+        <h3>Come and sit down with us.</h3>
+        <p>A minute, filmed in the redwoods at 1440. Tony says the thing he says at the start of every retreat, before anybody has taken their shoes off.</p>
+        <p class="vmeta"><span>1:02</span><span>Filmed at 1440 Multiversity</span></p>
+        <a class="btn btn--primary" href="/workshop/">Reserve your seat <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= LISTEN ================= -->
+<section class="hasglyph sec listen" id="listen">
+  <svg class="glyph glyph--br glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M 12,150 C 46,148 68,134 88,112 C 110,88 126,56 156,52 C 180,49 193,72 184,93 C 176,111 154,119 138,110"/> <path d="M 36,152 C 62,148 80,134 96,114 C 114,92 130,68 154,66 C 172,64 181,80 175,95" opacity="0.85"/> <path d="M 60,154 C 80,150 92,138 104,122 C 118,102 132,80 152,80 C 164,80 170,88 167,97" opacity="0.7"/> <path d="M 138,110 C 133,121 122,126 111,121"/> <path d="M 152,113 C 151,124 142,131 131,128" opacity="0.8"/> <circle cx="172" cy="40" r="2.6"/> <circle cx="184" cy="56" r="1.8"/> <circle cx="158" cy="32" r="1.6"/> <line x1="10" y1="162" x2="190" y2="162" opacity="0.6"/> <path d="M 30,176 A 8,8 0 0 1 46,176" opacity="0.5"/> <path d="M 24,176 A 14,14 0 0 1 52,176" opacity="0.5"/> <path d="M 18,176 A 20,20 0 0 1 58,176" opacity="0.5"/> <path d="M 66,176 A 8,8 0 0 1 82,176" opacity="0.5"/> <path d="M 60,176 A 14,14 0 0 1 88,176" opacity="0.5"/> <path d="M 54,176 A 20,20 0 0 1 94,176" opacity="0.5"/> <path d="M 102,176 A 8,8 0 0 1 118,176" opacity="0.5"/> <path d="M 96,176 A 14,14 0 0 1 124,176" opacity="0.5"/> <path d="M 90,176 A 20,20 0 0 1 130,176" opacity="0.5"/> <path d="M 138,176 A 8,8 0 0 1 154,176" opacity="0.5"/> <path d="M 132,176 A 14,14 0 0 1 160,176" opacity="0.5"/> <path d="M 126,176 A 20,20 0 0 1 166,176" opacity="0.5"/> </svg>
+  <div class="listen__bg"><img src="/assets/img/land/creek-waterfall.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Listen</p>
+        <h2 class="head">Some of it was never meant to be read.</h2>
+      </div>
+      <p>A song, a word before you begin, and a meditation playlist for the mornings you need the frequency changed before the day starts.</p>
+    </div>
+
+    <div class="aps rv">
+      <article class="ap" data-audio>
+        <div class="ap__art">
+          <img src="/assets/img/ocean-crosser.jpg" alt="The Warrior's Code — cover art" loading="lazy">
+        </div>
+        <div class="ap__body">
+          <p class="ap__kick">Original song · Written &amp; performed by Tony</p>
+          <h3>The Warrior's Code</h3>
+          <p class="ap__d">Written for the ones who keep going after the reason to keep going has stopped being obvious. Play it loud, early, before anybody else is awake.</p>
+          <div class="ap__ctrl">
+            <button class="ap__play" type="button" aria-label="Play The Warrior's Code">
+              <svg class="py" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+              <svg class="pz" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5h4.2v15H6zM13.8 4.5H18v15h-4.2z"/></svg>
+            </button>
+            <div class="ap__bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="ap__fill"></div></div>
+            <span class="ap__time">0:00</span>
+          </div>
+          <audio preload="metadata" src="/assets/audio/warriors-code.mp3"></audio>
+        </div>
+      </article>
+
+      <article class="ap" data-audio>
+        <div class="ap__art">
+          <img src="/assets/img/land/tony-river-golden-hour.jpg" alt="A figure seated by a river at golden hour" loading="lazy">
+        </div>
+        <div class="ap__body">
+          <p class="ap__kick">Spoken · A few minutes</p>
+          <h3>A Word Before You Begin</h3>
+          <p class="ap__d">The short version of everything on this page, said out loud. Useful in a car park before a hard meeting, which is exactly where it was meant to be used.</p>
+          <div class="ap__ctrl">
+            <button class="ap__play" type="button" aria-label="Play A Word Before You Begin">
+              <svg class="py" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+              <svg class="pz" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5h4.2v15H6zM13.8 4.5H18v15h-4.2z"/></svg>
+            </button>
+            <div class="ap__bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="ap__fill"></div></div>
+            <span class="ap__time">0:00</span>
+          </div>
+          <audio preload="metadata" src="/assets/audio/tony-motivational-intro.mp3"></audio>
+        </div>
+      </article>
+    </div>
+
+    <div class="plist rv">
+      <div>
+        <p class="eyebrow">On the record</p>
+        <h3>We Are A Tribe.</h3>
+        <p>Temple Step Project, featuring Murray Kyle and friends. Not Tony's, but the one he keeps coming back to — and the closest thing there is to a soundtrack for this work.</p>
+        <p style="margin-top:1.6rem"><a class="arrow" href="https://www.youtube.com/watch?v=8kGuXxsbKYU">Watch on YouTube <span aria-hidden="true">&rarr;</span></a></p>
+      </div>
+      <div class="embed">
+        <iframe src="https://www.youtube.com/embed/8kGuXxsbKYU"
+                title="Temple Step Project — We Are A Tribe"
+                loading="lazy" allowfullscreen
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      </div>
+    </div>
+
+    <div class="plist rv">
+      <div>
+        <p class="eyebrow">The playlist</p>
+        <h3>Meditations for the morning.</h3>
+        <p>A running playlist of guided sits, drum, and long-form quiet — added to as new sessions are recorded.</p>
+        <p style="margin-top:1.6rem"><a class="arrow" href="https://www.youtube.com/playlist?list=PLjB4J2ZBlei6CgzNuXQzLxH9MG9pImafZ">Open the full playlist <span aria-hidden="true">→</span></a></p>
+      </div>
+      <div class="embed">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLjB4J2ZBlei6CgzNuXQzLxH9MG9pImafZ"
+                title="Meditation playlist" loading="lazy" allowfullscreen
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMAGE BAND — dawn ceremony ================= -->
+<figure class="slab rv">
+  <div class="slab__ph"><img src="/assets/img/tony-ceremony.jpg" alt="Tony Skrelūnas leading a dawn gathering outdoors" loading="lazy"></div>
+  <div class="wrap"><figcaption>A dawn ceremony, run the way it has been run since before the roads — the practice underneath all of it.</figcaption></div>
+</figure>
+
+<!-- ================= BOOKS — the band ================= -->
+<section class="bookband">
+  <div class="bookband__bg"><img src="/assets/img/far-messenger-desert.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap bookband__in rv">
+    <p class="eyebrow">The books · Out now</p>
+    <h2>If you only ever do one thing here, read the novels.</h2>
+    <p><em>Stone Breath</em>, then <em>The Council Fire</em> — the Ancestral Watch series. Everything on this page, carried in story: how to calm a nervous system in sixty seconds, taught the oldest way there is.</p>
+    <div class="bookband__act">
+      <a class="btn btn--primary" href="https://ancestralwatch.com">Read the series <span aria-hidden="true">→</span></a>
+      <a class="arrow" href="/v4/#open-now">See both covers <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<figure class="rugstrip rv">
+  <img src="/assets/img/garden/tea-stone-bridge.jpg" alt="Detail of a Navajo weaving in diamond bands" loading="lazy">
+</figure>
+
+<!-- ================= GLOBAL ================= -->
+<section class="hasglyph sec sec--alt peckhost" id="global">
+  <div class="peckfield peckfield--faint" aria-hidden="true">
+    <svg aria-hidden="true" focusable="false" style="left:3%;top:12%;width:118px;transform:rotate(-3deg)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="18" y1="172" x2="182" y2="172" opacity="0.55"/>
+  <line x1="47" y1="66" x2="39" y2="172"/>
+  <line x1="61" y1="66" x2="57" y2="172"/>
+  <line x1="153" y1="66" x2="161" y2="172"/>
+  <line x1="139" y1="66" x2="143" y2="172"/>
+  <line x1="39" y1="172" x2="57" y2="172"/>
+  <line x1="143" y1="172" x2="161" y2="172"/>
+  <path d="M 33,98 L 167,98 L 167,110 L 33,110 Z"/>
+  <path d="M 94,80 L 106,80 L 106,98 L 94,98 Z"/>
+  <path d="M 12,60 C 48,34 152,34 188,60 L 179,74 C 147,52 53,52 21,74 Z"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:20%;top:66%;width:86px;transform:rotate(5deg);opacity:.7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- sun disc behind the crossing -->
+  <circle cx="100" cy="95" r="25" opacity="0.9"/>
+  <circle cx="100" cy="95" r="15" opacity="0.7"/>
+  <line x1="100" y1="63" x2="100" y2="56" opacity="0.75"/>
+  <line x1="122.6" y1="72.4" x2="127.5" y2="67.5" opacity="0.75"/>
+  <line x1="132" y1="95" x2="139" y2="95" opacity="0.75"/>
+  <line x1="122.6" y1="117.6" x2="127.5" y2="122.5" opacity="0.75"/>
+  <line x1="100" y1="127" x2="100" y2="134" opacity="0.75"/>
+  <line x1="77.4" y1="117.6" x2="72.5" y2="122.5" opacity="0.75"/>
+  <line x1="68" y1="95" x2="61" y2="95" opacity="0.75"/>
+  <line x1="77.4" y1="72.4" x2="72.5" y2="67.5" opacity="0.75"/>
+
+  <!-- post -->
+  <line x1="96" y1="192" x2="96" y2="40"/>
+  <line x1="104" y1="192" x2="104" y2="40"/>
+  <line x1="96" y1="40" x2="104" y2="40"/>
+  <line x1="86" y1="192" x2="114" y2="192" opacity="0.6"/>
+
+  <!-- crossbar -->
+  <line x1="47" y1="90" x2="153" y2="90"/>
+  <line x1="47" y1="100" x2="153" y2="100"/>
+  <line x1="47" y1="90" x2="47" y2="100"/>
+  <line x1="153" y1="90" x2="153" y2="100"/>
+
+  <!-- arm-end curls -->
+  <path d="M 47,93 C 34,92 26,84 30,76 C 34,71 42,73 42,80"/>
+  <path d="M 47,98 C 34,99 26,107 30,115 C 34,120 42,118 42,111"/>
+  <path d="M 153,93 C 166,92 174,84 170,76 C 166,71 158,73 158,80"/>
+  <path d="M 153,98 C 166,99 174,107 170,115 C 166,120 158,118 158,111"/>
+
+  <!-- tulip finial -->
+  <path d="M 100,40 C 90,35 86,24 91,15 C 95,8 105,8 109,15 C 114,24 110,35 100,40 Z"/>
+  <path d="M 91,19 C 82,17 76,24 80,32 C 84,37 90,34 91,28" opacity="0.9"/>
+  <path d="M 109,19 C 118,17 124,24 120,32 C 116,37 110,34 109,28" opacity="0.9"/>
+  <circle cx="100" cy="7" r="4"/>
+
+  <!-- lower scrollwork -->
+  <path d="M 96,122 C 82,127 73,138 76,150 C 78,157 87,158 91,151 C 93,147 90,143 87,145"/>
+  <path d="M 104,122 C 118,127 127,138 124,150 C 122,157 113,158 109,151 C 107,147 110,143 113,145"/>
+  <path d="M 96,158 L 78,166" opacity="0.7"/>
+  <path d="M 104,158 L 122,166" opacity="0.7"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="right:5%;top:14%;width:140px;transform:rotate(2deg);opacity:.72" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="14,152 38,92 62,152"/>
+  <polyline points="27.9,117.2 38,103 48.1,117.2" opacity="0.7"/>
+  <polyline points="58,152 83,50 108,152"/>
+  <polyline points="72.5,92.8 83,61 93.5,92.8" opacity="0.7"/>
+  <polyline points="104,152 128,66 152,152"/>
+  <polyline points="117.9,102.1 128,77 138.1,102.1" opacity="0.7"/>
+  <polyline points="148,152 167,100 186,152"/>
+  <polyline points="159,121.8 167,111 175,121.8" opacity="0.7"/>
+  <line x1="10" y1="152" x2="190" y2="152"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="right:24%;top:64%;width:112px;transform:rotate(-2deg);opacity:.6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- mountain -->
+  <path d="M 6,172 C 30,170 48,158 66,132 C 80,112 88,78 94,48"/>
+  <path d="M 194,172 C 170,170 152,158 134,132 C 120,112 112,78 106,48"/>
+  <path d="M 94,48 C 96,55 104,55 106,48"/>
+
+  <!-- snow cap -->
+  <path d="M 68,126 L 77,110 L 83,121 L 89,103 L 95,115 L 100,99 L 105,115 L 111,103 L 117,121 L 123,110 L 132,126"/>
+  <path d="M 84,128 L 90,118" opacity="0.55"/>
+  <path d="M 116,128 L 110,118" opacity="0.55"/>
+  <path d="M 100,88 L 100,78" opacity="0.5"/>
+
+  <!-- cloud bands -->
+  <path d="M 14,140 C 42,133 66,146 92,139 C 116,133 142,146 170,138"/>
+  <path d="M 22,149 C 48,143 68,153 92,147 C 114,141 140,152 164,146" opacity="0.7"/>
+  <path d="M 30,161 C 54,155 76,165 102,159 C 126,153 152,164 176,158"/>
+
+  <!-- ground -->
+  <line x1="4" y1="172" x2="196" y2="172"/>
+  <path d="M 26,184 C 48,181 66,186 86,183" opacity="0.4"/>
+  <path d="M 112,184 C 134,181 154,186 176,183" opacity="0.4"/>
+</svg>
+
+    <svg aria-hidden="true" focusable="false" style="left:44%;top:80%;width:78px;transform:rotate(4deg);opacity:.44" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- body -->
+  <path d="M 76,94 C 94,78 128,78 146,98 C 157,112 147,131 122,133 C 100,135 78,124 76,106 Z"/>
+
+  <!-- folded wing -->
+  <path d="M 90,100 C 110,93 132,99 145,112"/>
+  <path d="M 133,108 L 152,118" opacity="0.9"/>
+  <path d="M 126,115 L 146,127" opacity="0.9"/>
+  <path d="M 118,121 L 138,133" opacity="0.9"/>
+
+  <!-- tail -->
+  <path d="M 148,101 L 170,104"/>
+  <path d="M 148,108 L 168,114" opacity="0.85"/>
+
+  <!-- neck and head -->
+  <path d="M 82,98 C 68,84 63,62 72,47"/>
+  <path d="M 70,45 C 68,36 76,29 84,33 C 91,37 90,47 82,50 C 76,52 71,50 70,45 Z"/>
+  <circle cx="80" cy="40" r="2.1" fill="currentColor" stroke="none"/>
+  <path d="M 70,40 L 20,31"/>
+  <path d="M 71,48 L 20,31"/>
+
+  <!-- legs -->
+  <path d="M 104,133 L 102,164"/>
+  <path d="M 102,164 L 98,186"/>
+  <path d="M 98,186 L 88,190"/>
+  <path d="M 98,186 L 108,190"/>
+  <path d="M 98,186 L 98,191"/>
+  <path d="M 124,132 L 126,162"/>
+  <path d="M 126,162 L 130,186"/>
+  <path d="M 130,186 L 120,190"/>
+  <path d="M 130,186 L 140,190"/>
+  <path d="M 130,186 L 130,191"/>
+
+  <!-- ground -->
+  <line x1="22" y1="190" x2="178" y2="190" opacity="0.5"/>
+  <path d="M 40,190 C 42,178 44,170 44,162" opacity="0.4"/>
+  <path d="M 50,190 C 54,180 58,174 60,168" opacity="0.4"/>
+  <path d="M 160,190 C 158,180 156,172 156,166" opacity="0.4"/>
+</svg>
+
+  </div>
+  <svg class="glyph glyph--tr glyph--faint" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <circle cx="100" cy="100" r="76"/> <circle cx="100" cy="100" r="46"/> <circle cx="100" cy="100" r="26"/> <circle cx="100" cy="100" r="8"/> <polyline points="95.5,51 100,27 104.5,51 95.5,51"/> <line x1="81.2" y1="54.7" x2="75.5" y2="40.9"/> <polyline points="62.2,68.5 48.4,48.4 68.5,62.2 62.2,68.5"/> <line x1="54.7" y1="81.2" x2="40.9" y2="75.5"/> <polyline points="51,104.5 27,100 51,95.5 51,104.5"/> <line x1="54.7" y1="118.8" x2="40.9" y2="124.5"/> <polyline points="68.5,137.8 48.4,151.6 62.2,131.5 68.5,137.8"/> <line x1="81.2" y1="145.3" x2="75.5" y2="159.1"/> <polyline points="104.5,149 100,173 95.5,149 104.5,149"/> <line x1="118.8" y1="145.3" x2="124.5" y2="159.1"/> <polyline points="137.8,131.5 151.6,151.6 131.5,137.8 137.8,131.5"/> <line x1="145.3" y1="118.8" x2="159.1" y2="124.5"/> <polyline points="149,95.5 173,100 149,104.5 149,95.5"/> <line x1="145.3" y1="81.2" x2="159.1" y2="75.5"/> <polyline points="131.5,62.2 151.6,48.4 137.8,68.5 131.5,62.2"/> <line x1="118.8" y1="54.7" x2="124.5" y2="40.9"/> <path d="M 109.2,74.6 Q 100,55 90.8,74.6"/> <path d="M 88.6,75.5 Q 68.2,68.2 75.5,88.6"/> <path d="M 74.6,90.8 Q 55,100 74.6,109.2"/> <path d="M 75.5,111.4 Q 68.2,131.8 88.6,124.5"/> <path d="M 90.8,125.4 Q 100,145 109.2,125.4"/> <path d="M 111.4,124.5 Q 131.8,131.8 124.5,111.4"/> <path d="M 125.4,109.2 Q 145,100 125.4,90.8"/> <path d="M 124.5,88.6 Q 131.8,68.2 111.4,75.5"/> </svg>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Worldwide</p>
+        <h2 class="head">The work travels. So does the site.</h2>
+      </div>
+      <p>Programs run in four regions, each with its own faculty, its own food, and its own language. Choose where you are.</p>
+    </div>
+
+    <div class="globe rv">
+      <a class="gc" href="/ja/" hreflang="ja">
+        <svg class="gc__weave" aria-hidden="true"><rect width="100%" height="70" fill="url(#wv)"/></svg>
+        <div>
+          <span class="gc__l">日本語</span>
+          <span class="gc__s">Japan · Kyoto &amp; Tokyo</span>
+        </div>
+      </a>
+      <a class="gc" href="/lt/" hreflang="lt">
+        <svg class="gc__weave" aria-hidden="true"><rect width="100%" height="70" fill="url(#wv)"/></svg>
+        <div>
+          <span class="gc__l">Lietuvių</span>
+          <span class="gc__s">Lithuania · Vilnius</span>
+        </div>
+      </a>
+      <a class="gc" href="/india/">
+        <svg class="gc__weave" aria-hidden="true"><rect width="100%" height="70" fill="url(#wv)"/></svg>
+        <div>
+          <span class="gc__l">India</span>
+          <span class="gc__s">Himalaya &amp; the South</span>
+        </div>
+      </a>
+      <div class="gc gc--soon">
+        <svg class="gc__weave" aria-hidden="true"><rect width="100%" height="70" fill="url(#wv)"/></svg>
+        <div>
+          <span class="gc__l">中文</span>
+          <span class="gc__s">Coming soon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= DIAGNOSTIC / CLOSE ================= -->
+<section class="sec close">
+  <div class="close__bg"><img src="/assets/img/garden/tea-stone-bridge.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap wrap--tight rv">
+    <p class="eyebrow eyebrow--center">Free · 90 seconds</p>
+    <h2>Are you leading from calm, or from alarm?</h2>
+    <p>Five questions. You get your baseline and the one practice that resets your system before your next meeting.</p>
+    <div class="close__cta">
+      <a class="btn btn--primary" href="/diagnostic/">Take the diagnostic <span aria-hidden="true">→</span></a>
+      <a class="btn btn--ghost" href="/workshop/">See the retreat</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GET IN TOUCH ================= -->
+<section class="sec sec--alt touch peckhost">
+  <div class="peckfield peckfield--faint" aria-hidden="true">
+    <svg aria-hidden="true" focusable="false" style="right:7%;top:24%;width:82px;transform:rotate(-5deg)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 130,38 A 68,68 0 1 0 128,164 A 60,60 0 1 1 130,38 Z"/>
+
+  <!-- carved rays along the outer edge -->
+  <line x1="38" y1="62" x2="30" y2="54" opacity="0.6"/>
+  <line x1="28" y1="90" x2="18" y2="86" opacity="0.6"/>
+  <line x1="28" y1="118" x2="18" y2="122" opacity="0.6"/>
+  <line x1="40" y1="144" x2="32" y2="152" opacity="0.6"/>
+  <line x1="62" y1="30" x2="58" y2="20" opacity="0.6"/>
+  <line x1="64" y1="174" x2="60" y2="184" opacity="0.6"/>
+
+  <!-- inner arc echo -->
+  <path d="M 122,52 A 54,54 0 0 0 122,150" opacity="0.55"/>
+
+  <!-- four-point stars -->
+  <path d="M 158,50 C 160,60 162,62 172,64 C 162,66 160,68 158,78 C 156,68 154,66 144,64 C 154,62 156,60 158,50 Z"/>
+  <path d="M 174,110 C 175,117 176,118 183,119 C 176,120 175,121 174,128 C 173,121 172,120 165,119 C 172,118 173,117 174,110 Z"/>
+  <path d="M 152,152 C 153,158 154,159 160,160 C 154,161 153,162 152,168 C 151,162 150,161 144,160 C 150,159 151,158 152,152 Z"/>
+  <path d="M 182,30 C 183,35 184,36 189,37 C 184,38 183,39 182,44 C 181,39 180,38 175,37 C 180,36 181,35 182,30 Z" opacity="0.8"/>
+</svg>
+
+  </div>
+  <div class="wrap wrap--tight rv">
+    <p class="eyebrow eyebrow--center">Get in touch</p>
+    <h2>Write to me.</h2>
+    <p>Speaking, consulting, a retreat for your people, or a question about the work — it comes straight to Tony.</p>
+    <a class="touch__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+  </div>
+</section>
+
+</main>
+
+<div class="weave" aria-hidden="true"><svg><rect width="100%" height="28" fill="url(#wv)"/></svg></div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+        <p class="muted ftr__brand">Ancestral intelligence for a regenerating world.</p>
+        <div class="ftr__langs">
+          <a href="/ja/">日本語</a><span>·</span>
+          <a href="/lt/">Lietuvių</a><span>·</span>
+          <a href="/india/">India</a><span>·</span>
+          <span>中文 soon</span>
+        </div>
+      </div>
+      <div>
+        <h4>Work together</h4>
+        <ul>
+          <li><a href="/workshop/">The Canyon Within</a></li>
+          <li><a href="/teams/">The Far Messenger Program</a></li>
+          <li><a href="/v4/#human-performance">Human Performance</a></li>
+          <li><a href="/v4/#nation-building">Nation-Building</a></li>
+          <li><a href="/diagnostic/">The Diagnostic</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read, watch, listen</h4>
+        <ul>
+          <li><a href="/journal/">The Journal</a></li>
+          <li><a href="https://ancestralwatch.com">The Books</a></li>
+          <li><a href="/v4/#watch">The invitation, on film</a></li>
+          <li><a href="/v4/#listen">The Warrior's Code</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLjB4J2ZBlei6CgzNuXQzLxH9MG9pImafZ">Meditation playlist</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="/v4/#about">Tony Skrelūnas</a></li>
+          <li><a href="/v4/#traditions">The Three Traditions</a></li>
+          <li><a href="/v4/#global">Worldwide</a></li>
+          <li><a href="/press/">Press</a></li>
+          <li><a href="mailto:wisdom@ancestralwatch.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <span>© 2026 TribeAwaken · Tony Skrelūnas</span>
+      <span>Ancestral intelligence for a regenerating world.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- reveal ---------- */
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')}); return;
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{rootMargin:'0px 0px -6% 0px',threshold:.05});
+  els.forEach(function(e){io.observe(e)});
+  function sweep(){
+    els.forEach(function(e){
+      if(e.classList.contains('in')) return;
+      var r = e.getBoundingClientRect();
+      if(r.top < (window.innerHeight || 0) * 1.02){ e.classList.add('in'); io.unobserve(e); }
+    });
+  }
+  window.addEventListener('load', function(){ sweep(); setTimeout(sweep, 260); });
+  setTimeout(sweep, 1200);
+})();
+
+/* ---------- menu ---------- */
+(function(){
+  var b = document.getElementById('burger'),
+      m = document.getElementById('menu'),
+      c = document.getElementById('menuClose');
+  if(!b || !m) return;
+  function open(){ m.classList.add('open'); b.setAttribute('aria-expanded','true'); document.body.classList.add('locked'); }
+  function shut(){ m.classList.remove('open'); b.setAttribute('aria-expanded','false'); document.body.classList.remove('locked'); }
+  b.addEventListener('click', function(){ m.classList.contains('open') ? shut() : open(); });
+  if(c) c.addEventListener('click', shut);
+  m.addEventListener('click', function(e){ if(e.target.tagName === 'A') shut(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') shut(); });
+})();
+
+/* ---------- audio players ---------- */
+(function(){
+  var cards = [].slice.call(document.querySelectorAll('[data-audio]'));
+  if(!cards.length) return;
+  var all = [];
+
+  function fmt(s){
+    if(!isFinite(s) || s < 0) s = 0;
+    var m = Math.floor(s/60), r = Math.floor(s%60);
+    return m + ':' + (r < 10 ? '0' : '') + r;
+  }
+
+  cards.forEach(function(card){
+    var a    = card.querySelector('audio'),
+        btn  = card.querySelector('.ap__play'),
+        bar  = card.querySelector('.ap__bar'),
+        fill = card.querySelector('.ap__fill'),
+        time = card.querySelector('.ap__time');
+    if(!a || !btn) return;
+    all.push(a);
+
+    btn.addEventListener('click', function(){
+      if(a.paused){
+        all.forEach(function(o){ if(o !== a) o.pause(); });
+        a.play();
+      } else { a.pause(); }
+    });
+
+    a.addEventListener('play',  function(){ card.classList.add('playing'); btn.setAttribute('aria-label','Pause'); });
+    a.addEventListener('pause', function(){ card.classList.remove('playing'); btn.setAttribute('aria-label','Play'); });
+    a.addEventListener('ended', function(){ card.classList.remove('playing'); fill.style.width = '0'; });
+
+    a.addEventListener('loadedmetadata', function(){ time.textContent = '0:00 / ' + fmt(a.duration); });
+    a.addEventListener('timeupdate', function(){
+      var p = a.duration ? (a.currentTime / a.duration) * 100 : 0;
+      fill.style.width = p + '%';
+      bar.setAttribute('aria-valuenow', Math.round(p));
+      time.textContent = fmt(a.currentTime) + (a.duration ? ' / ' + fmt(a.duration) : '');
+    });
+
+    function seek(e){
+      var r = bar.getBoundingClientRect(),
+          x = ((e.clientX - r.left) / r.width);
+      x = Math.max(0, Math.min(1, x));
+      if(a.duration) a.currentTime = x * a.duration;
+      else { a.addEventListener('loadedmetadata', function once(){ a.currentTime = x * a.duration; a.removeEventListener('loadedmetadata', once); }); a.load(); }
+    }
+    bar.addEventListener('click', seek);
+    bar.addEventListener('keydown', function(e){
+      if(!a.duration) return;
+      if(e.key === 'ArrowRight'){ a.currentTime = Math.min(a.duration, a.currentTime + 5); e.preventDefault(); }
+      if(e.key === 'ArrowLeft'){  a.currentTime = Math.max(0, a.currentTime - 5); e.preventDefault(); }
+    });
+  });
+})();
+</script>
+<script src="/v4/assets/capture.js?v=1" defer></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Arched drum bridge over water">
+  <!-- deck -->
+  <path d="M 22,158 A 78,78 0 0 1 178,158"/>
+  <path d="M 32,158 A 68,68 0 0 1 168,158"/>
+
+  <!-- railing -->
+  <path d="M 9,158 A 91,91 0 0 1 191,158"/>
+
+  <!-- posts -->
+  <line x1="26.7" y1="131.3" x2="14.5" y2="126.9"/>
+  <line x1="40.3" y1="107.9" x2="30.3" y2="99.5"/>
+  <line x1="67.0" y1="87.3" x2="61.6" y2="75.5"/>
+  <line x1="100" y1="80" x2="100" y2="67"/>
+  <line x1="133.0" y1="87.3" x2="138.4" y2="75.5"/>
+  <line x1="159.7" y1="107.9" x2="169.7" y2="99.5"/>
+  <line x1="173.3" y1="131.3" x2="185.5" y2="126.9"/>
+  <circle cx="9" cy="154" r="3.2"/>
+  <circle cx="191" cy="154" r="3.2"/>
+
+  <!-- banks -->
+  <path d="M 4,162 C 12,159 18,158 24,158" opacity="0.7"/>
+  <path d="M 196,162 C 188,159 182,158 176,158" opacity="0.7"/>
+
+  <!-- water -->
+  <path d="M 6,168 C 38,162 62,172 94,166 C 124,160 158,170 194,164"/>
+  <path d="M 6,180 C 38,174 62,183 94,177 C 124,171 158,181 194,175" opacity="0.8"/>
+  <path d="M 6,191 C 38,185 62,194 94,188 C 124,182 158,192 194,186" opacity="0.55"/>
+  <path d="M 62,161 C 68,164 74,164 80,161" opacity="0.5"/>
+  <path d="M 122,161 C 128,164 134,164 140,161" opacity="0.5"/>
+</svg>

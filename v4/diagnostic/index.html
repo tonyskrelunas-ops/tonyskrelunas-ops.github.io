@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <title>The Far Messenger Diagnostic — Is Your Nervous System Running the Show? | TribeAwaken</title>
+  <meta name="description" content="Take the 90-second diagnostic. Discover whether you're leading from calm or from alarm — and what your ancestors knew about carrying weight without breaking." />
+  <link rel="canonical" href="https://tribeawaken.com/diagnostic/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/style.css?v=18" />
+  <style>
+    .q { border:1px solid var(--rule); border-radius:14px; padding:var(--space-3) var(--space-4); margin-bottom:var(--space-3); background:var(--night-3, rgba(255,255,255,.02)); }
+    .q > legend { font-family:var(--font-display,'Spectral'),serif; font-size:var(--step-1); font-weight:600; padding:0; margin-bottom:.8rem; }
+    .q label { display:flex; gap:.7rem; align-items:flex-start; padding:.6rem .7rem; border-radius:10px; cursor:pointer; transition:background .15s; }
+    .q label:hover { background:rgba(127,127,127,.10); }
+    .q input { margin-top:.25rem; accent-color:var(--turq); }
+    .dx-actions { margin:var(--space-4) 0; text-align:center; }
+    #dx-result { display:none; }
+    .result-card { border:1px solid var(--amber); border-radius:16px; padding:var(--space-4); background:rgba(201,138,58,.07); }
+    .result-tag { color:var(--amber); letter-spacing:.14em; text-transform:uppercase; font-size:.72rem; font-weight:700; }
+    .dx-note { opacity:.7; font-size:var(--step--1); text-align:center; margin-top:.6rem; }
+    .dx-err { color:#e07a5f; text-align:center; font-weight:600; min-height:1.4em; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+  <nav class="nav wrap wrap--wide" aria-label="Primary">
+    <a class="brand" href="/" aria-label="TribeAwaken — home"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" width="716" height="676"><span class="brand__wm">Tribe<span class="brand__mark">Awaken</span></span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">&#9776;</button>
+    <ul class="nav__links" id="primary-nav" data-open="false">
+      <li><a href="/" data-nav="home">Home</a></li>
+      <li><a href="/#leaders">Human Performance</a></li>
+      <li><a href="/#nations">Nation-Building</a></li>
+      <li><a href="/journal/" data-nav="/journal/">Journal</a></li>
+      <li><a href="/#books">The Books</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/workshop/" data-nav="/workshop/">Retreats</a></li>
+      <li><a href="/teams/" data-nav="/teams/">For Teams</a></li>
+      <li class="nav__cta"><a class="btn btn--primary" href="/#connect">Work with Tony</a></li>
+    </ul>
+  </nav>
+  <div class="global-bar" aria-label="Languages">
+    <div class="wrap wrap--wide global-bar__inner">
+      <span class="global-bar__label">&#127760; Global &amp; Languages</span>
+      <a href="/" data-lang="en">English</a>
+      <a href="/ja/" data-lang="/ja/" lang="ja">&#26085;&#26412;&#35486; &middot; Japan</a>
+      <a href="/lt/" data-lang="/lt/" lang="lt">Lietuvi&#371; &middot; Lithuania</a>
+      <a href="/india/" data-lang="/india/">India</a>
+      <span class="global-bar__soon">&#20013;&#25991; &middot; China &mdash; soon</span>
+    </div>
+  </div>
+</header>
+
+  <main id="main">
+    <section class="page-hero article-hero">
+      <div class="wrap wrap--narrow">
+        <p class="eyebrow">The Far Messenger Diagnostic</p>
+        <h1>Is your nervous system running the show?</h1>
+        <p class="article-meta">Ninety seconds. Discover whether you're leading from calm or from alarm — and the one practice that resets your system before your next meeting.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap wrap--narrow">
+
+        <form id="dx-form">
+          <fieldset class="q"><legend>1. When you wake up in the morning, what's the first sensation you notice?</legend>
+            <label><input type="radio" name="q1" value="A"> Tightness in my chest or jaw</label>
+            <label><input type="radio" name="q1" value="B"> A mental to-do list already spinning</label>
+            <label><input type="radio" name="q1" value="C"> A quiet sense of readiness</label>
+          </fieldset>
+          <fieldset class="q"><legend>2. Under pressure, your decision-making tends to be:</legend>
+            <label><input type="radio" name="q2" value="A"> Fast, but occasionally regretted</label>
+            <label><input type="radio" name="q2" value="B"> Over-analyzed, then rushed at the deadline</label>
+            <label><input type="radio" name="q2" value="C"> Clear, even when the data is incomplete</label>
+          </fieldset>
+          <fieldset class="q"><legend>3. How do you feel at the end of a successful day?</legend>
+            <label><input type="radio" name="q3" value="A"> Still wired, unable to fully rest</label>
+            <label><input type="radio" name="q3" value="B"> Satisfied, but already anxious about tomorrow</label>
+            <label><input type="radio" name="q3" value="C"> Complete — the day was enough</label>
+          </fieldset>
+          <fieldset class="q"><legend>4. When someone challenges you directly, your body:</legend>
+            <label><input type="radio" name="q4" value="A"> Tenses immediately</label>
+            <label><input type="radio" name="q4" value="B"> Goes numb, or checks out</label>
+            <label><input type="radio" name="q4" value="C"> Stays open — you can hear them without collapsing</label>
+          </fieldset>
+          <fieldset class="q"><legend>5. If you had to carry something precious across hard ground tomorrow, your body feels:</legend>
+            <label><input type="radio" name="q5" value="A"> Already exhausted</label>
+            <label><input type="radio" name="q5" value="B"> Capable, but worried</label>
+            <label><input type="radio" name="q5" value="C"> Ready — this is what I was built for</label>
+          </fieldset>
+
+          <p class="dx-err" id="dx-err" role="alert"></p>
+          <div class="dx-actions">
+            <button type="submit" class="btn btn--primary btn--lg">See my result →</button>
+          </div>
+        </form>
+
+        <div id="dx-result">
+          <div class="result-card">
+            <p class="result-tag" id="dx-tag"></p>
+            <h2 id="dx-title" style="margin-top:.3rem;"></h2>
+            <p id="dx-body"></p>
+            <p style="margin-top:var(--space-3);"><strong id="dx-path"></strong></p>
+
+            <div class="capture" style="margin-top:var(--space-4); padding-top:var(--space-3); border-top:1px solid var(--rule);">
+              <p style="font-weight:600;">Get your path by email — starting tomorrow.</p>
+              <form class="join" data-join="the diagnostic result and the Stone Breath"><label class="sr-only" for="dx-email">Your email</label><input id="dx-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com" spellcheck="false"><button class="btn btn--primary btn--lg" type="submit">Send it to me</button></form><p class="join__note">Your result plus the Stone Breath practice. Or write to <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>.</p>
+              <p class="dx-note">Free. No spam. Unsubscribe anytime.</p>
+            </div>
+          </div>
+
+          <div class="dx-actions">
+            <a class="btn btn--ghost" href="/start-here/">Not sure yet? See all the paths →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap wrap--wide">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">TribeAwaken</p>
+          <p class="footer__tag">Ancestral intelligence for a regenerating world.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="/#leaders">Human Performance</a></li>
+            <li><a href="/workshop/">The Retreat</a></li>
+            <li><a href="/start-here/">Start Here</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>The Books</h4>
+          <ul>
+            <li><a href="https://ancestralwatch.com/series/stone-breath/" target="_blank" rel="noopener">Stone Breath</a></li>
+            <li><a href="https://ancestralwatch.com/" target="_blank" rel="noopener">AncestralWatch.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span>© 2026 TribeAwaken · Tony Skrelūnas.</span>
+        <span>Ancestral intelligence for a regenerating world.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var RESULTS = {
+        A: {
+          tag: "Result · The Alarm Carrier",
+          title: "You're carrying weight through alarm, not from calm.",
+          body: "Your nervous system is running on high alert — and it has been for a while. You're performing, but you're performing through alarm. The cost shows up in sleep, in relationships, and in decisions that look good on paper but feel hollow. This isn't a willpower problem. It's a wiring problem — and it has a fix older than the systems that created it.",
+          path: "Your path: The 7-Day Nervous System Reset — one practice a day, drawn from the protocols Tony uses with founders and CEOs."
+        },
+        B: {
+          tag: "Result · The Scattered Carrier",
+          title: "You're functional, but fragmented.",
+          body: "Mentally sharp, bodily disconnected — you live in your head because your body has started to feel like unreliable territory. It's the most common state among high-achieving leaders, and it's also the most fixable. The work is simple: come back into the body a few minutes at a time, until it's home again.",
+          path: "Your path: The Stone Breath Protocol + the Grounding Sequence — short, daily, and built to reconnect head and body."
+        },
+        C: {
+          tag: "Result · The Steady Carrier",
+          title: "You're leading from a regulated baseline — and carrying others who aren't.",
+          body: "You return to center after the storm. Your challenge isn't personal regulation; it's holding space for people and systems in alarm without being pulled into the current. That's the far-messenger's real work: staying whole while everyone borrows your calm.",
+          path: "Your path: The Far Messenger Leadership Brief + an invitation to The Canyon Within — the retreat for people who carry others."
+        }
+      };
+
+      var form = document.getElementById("dx-form");
+      var err = document.getElementById("dx-err");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var tally = { A: 0, B: 0, C: 0 };
+        var answered = 0;
+        for (var i = 1; i <= 5; i++) {
+          var sel = form.querySelector('input[name="q' + i + '"]:checked');
+          if (sel) { tally[sel.value]++; answered++; }
+        }
+        if (answered < 5) {
+          err.textContent = "Please answer all five questions (" + answered + "/5).";
+          return;
+        }
+        err.textContent = "";
+        // Tie-break order: A (alarm) > B (scattered) > C (steady)
+        var winner = "A";
+        if (tally.C > tally.A && tally.C >= tally.B) winner = "C";
+        else if (tally.B > tally.A && tally.B >= tally.C) winner = "B";
+        else if (tally.A >= tally.B && tally.A >= tally.C) winner = "A";
+        else { // fallback: pick max
+          winner = tally.A >= tally.B ? (tally.A >= tally.C ? "A" : "C") : (tally.B >= tally.C ? "B" : "C");
+        }
+
+        var r = RESULTS[winner];
+        document.getElementById("dx-tag").textContent = r.tag;
+        document.getElementById("dx-title").textContent = r.title;
+        document.getElementById("dx-body").textContent = r.body;
+        document.getElementById("dx-path").textContent = r.path;
+
+        form.style.display = "none";
+        var res = document.getElementById("dx-result");
+        res.style.display = "block";
+        res.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    })();
+  </script>
+  <script src="/js/main.js?v=13" defer></script>
+<script src="/js/capture.js?v=1" defer></script>
+</body>
+</html>
