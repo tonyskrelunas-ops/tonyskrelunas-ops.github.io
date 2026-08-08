@@ -1,0 +1,17 @@
+<!doctype html><meta charset="utf-8">
+<body style="background:#0B1422;color:#7CE38B;font:14px monospace;padding:20px">
+<div id=o>submitting the real form…</div>
+<iframe id="f" name="f" style="width:100%;height:320px;border:1px solid #333;margin-top:14px"></iframe>
+<form id="real" action="https://api.web3forms.com/submit" method="POST" target="f">
+  <input type="hidden" name="access_key" value="057975c1-1a1a-465e-9b5e-3fb6692b2106">
+  <input type="hidden" name="subject" value="TribeAwaken — capture test, it works">
+  <input type="hidden" name="from_name" value="TribeAwaken">
+  <input type="hidden" name="email" value="setup-test@tribeawaken.com">
+  <input type="hidden" name="message" value="One-time test of the live form on tribeawaken.com. If this is in your inbox, email capture is working.">
+</form>
+<script>
+document.getElementById('real').submit();
+document.getElementById('f').onload=function(){
+  document.getElementById('o').textContent='SUBMITTED — response frame loaded. See below.';
+};
+</script></body>
