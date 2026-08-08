@@ -277,3 +277,4 @@ em{font-style:italic}
   font-size:clamp(1.05rem,.95rem + .6vw,1.4rem); line-height:1.2;
   color:var(--sand); padding:1.6rem;
 }
+.scene + .scene{ margin-top:1rem }
