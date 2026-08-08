@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/tokens.css" />
-  <link rel="stylesheet" href="/css/style.css?v=17" />
+  <link rel="stylesheet" href="/css/style.css?v=18" />
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -508,7 +508,7 @@
         <p class="eyebrow">Start free</p>
         <h2>The Stone Breath — the calm you can carry anywhere.</h2>
         <p>The daily practice at the root of all of it. Free. It begins with a stone in your hand — join the circle and I'll send it to you.</p>
-        <p class="capture__note" style="margin-top:var(--space-3);"><a class="btn btn--primary btn--lg" href="mailto:wisdom@ancestralwatch.com">Write to Tony &rarr;</a></p><p class="capture__note" style="margin-top:var(--space-2);">Straight to <a href="mailto:wisdom@ancestralwatch.com" style="color:var(--amber);font-weight:600;">wisdom@ancestralwatch.com</a>. It comes to him, not to an assistant.</p>
+        <form class="join" data-join="the Stone Breath"><label class="sr-only" for="join-email">Your email</label><input id="join-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com" spellcheck="false"><button class="btn btn--primary btn--lg" type="submit">Send me the Stone Breath</button></form><p class="join__note">One practice, then a short letter most Fridays. Leave whenever you like. Straight to Tony &mdash; <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>.</p>
       </div>
     </section>
 
@@ -682,6 +682,7 @@
     </div>
   </footer>
 
+  <script src="/js/capture.js?v=1" defer></script>
   <script src="/js/main.js?v=13" defer></script>
 </body>
 </html>
