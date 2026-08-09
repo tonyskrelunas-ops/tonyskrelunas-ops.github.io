@@ -94,6 +94,22 @@
 .closing p{color:var(--sand);font-size:1.06rem;line-height:1.78;max-width:56ch}
 .closing a{color:var(--clay-lt);font-weight:700}
 </style>
+<style>
+/* the directory — what is in this section, said plainly, at the top */
+.dir{border-top:1px solid var(--rule);margin-top:clamp(1.8rem, 1.4rem + 1.6vw, 2.8rem)}
+.dir__g{padding-block:clamp(1.4rem, 1.1rem + 1.2vw, 2.2rem);border-bottom:1px solid var(--rule);
+  display:grid;grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:clamp(.8rem, .5rem + 2vw, 2.6rem)}
+@media(max-width:760px){.dir__g{grid-template-columns:1fr;gap:.7rem}}
+.dir__k{font-family:'Courier New',ui-monospace,Menlo,monospace;text-transform:uppercase;
+  letter-spacing:.15em;font-size:.7rem;color:var(--gold);padding-top:.35rem}
+.dir__ls{list-style:none;margin:0;padding:0}
+.dir__ls li + li{margin-top:.9rem}
+.dir__ls a{text-decoration:none;display:block}
+.dir__ls b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(1.08rem, 1rem + .5vw, 1.35rem);line-height:1.2;color:var(--cream-2)}
+.dir__ls a:hover b{color:var(--clay-lt)}
+.dir__ls span{display:block;color:var(--sand);font-size:.98rem;line-height:1.55;margin-top:.2rem;max-width:56ch}
+</style>
 </head>
 <body>
 <a href="#main" class="skip" style="position:absolute;left:-9999px">Skip to content</a>
@@ -249,8 +265,8 @@
 
 <nav class="secnav" aria-label="Community resilience">
   <div class="wrap secnav__in">
-    <span class="secnav__lbl">Community resilience</span>
-    <a class="is-on" aria-current="page" href="/community-resilience/">The argument</a><a href="/community-resilience/gathering/">How decisions get made</a><a href="/community-resilience/governance/">A government that fits</a><a href="/community-resilience/economy/">Ancestral Economics</a><a href="/community-resilience/lga/">The Local Governance Act</a><a href="/organizing/">Organizing anything</a>
+    <span class="secnav__lbl">Resilience</span>
+    <a class="is-on" aria-current="page" href="/human-resilience/">Human resilience</a><a href="/community-resilience/">The argument</a><a href="/community-resilience/gathering/">How decisions get made</a><a href="/community-resilience/governance/">A government that fits</a><a href="/community-resilience/economy/">Ancestral Economics</a><a href="/community-resilience/lga/">The Local Governance Act</a><a href="/organizing/">Organizing anything</a><a href="/business/">A business with soul</a>
   </div>
 </nav>
 
@@ -274,6 +290,23 @@
 </section>
 
 <!-- ═══════════════ 1 · THE CONDITION, HONESTLY ═══════════════ -->
+
+<!-- ═══════════ THE DIRECTORY ═══════════ -->
+<section class="sec sec--alt" id="whats-here">
+  <div class="wrap wrap--tight">
+    <p class="eyebrow">What is in here</p>
+    <h2 class="head">A person, and what they were handed.</h2>
+    <p class="lead" style="margin-top:1.1rem;max-width:52ch">Two different subjects live on this page. What travels down a family, and how long a body lasts. They are not the same question, and the tools sit underneath both.</p>
+    <div class="dir">
+    <div class="dir__g"><p class="dir__k">The two subjects</p><ul class="dir__ls"><li><a href="#it-travels"><b>Intergenerational healing</b><span>A nervous system is learned before language and handed on. So is a settled one. What stops the handing-down.</span></a></li><li><a href="#longevity"><b>Long life</b><span>My grandfather reached a hundred and three. It was once common. The Blue Zones, the studies, and the shape of a day that gets you there.</span></a></li></ul></div>
+    <div class="dir__g"><p class="dir__k">The tools</p><ul class="dir__ls"><li><a href="#tools"><b>The practices</b><span>The Stone Breath, the dawn, the long exhale, sound, movement, food, sleep. Free, and none of them complicated.</span></a></li><li><a href="#the-house"><b>The house</b><span>The atmosphere of a home is a practice too. You cannot raise a far messenger in a house with bad energy.</span></a></li></ul></div>
+    <div class="dir__g"><p class="dir__k">The proof</p><ul class="dir__ls"><li><a href="#lithuania"><b>Lithuania</b><span>Occupied, deported, driven underground &mdash; and their young are among the happiest on earth. That is not despite it.</span></a></li></ul></div>
+    <div class="dir__g"><p class="dir__k">Done with other people</p><ul class="dir__ls"><li><a href="/workshop/"><b>The Canyon Within</b><span>Three days in the redwoods at 1440 Multiversity.</span></a></li><li><a href="/teams/"><b>The Far Messenger Program</b><span>For a leadership team, and for everybody underneath them.</span></a></li><li><a href="/diagnostic/"><b>The diagnostic</b><span>Ninety seconds. Are you leading from calm, or from alarm?</span></a></li><li><a href="/healing/"><b>Healing at community scale</b><span>The same wound, one scale up.</span></a></li></ul></div>
+    <div class="dir__g"><p class="dir__k">The writing</p><ul class="dir__ls"><li><a href="/journal/#body"><b>Long life, in the journal</b><span>Everything written down on the body, the blue zones, and living past a hundred.</span></a></li><li><a href="https://ancestralwatch.com"><b>Stone Breath, the novel</b><span>There are whole teachings in it. The practice is carried as story, which is how it was always carried.</span></a></li></ul></div>
+    </div>
+  </div>
+</section>
+
 <section class="sec hasphoto" id="the-condition">
   <div class="photo-bg" aria-hidden="true"><img src="/assets/img/tony/gym-assembly.jpg" alt="" loading="lazy"></div>
   <div class="wrap">
@@ -404,6 +437,47 @@
 </section>
 
 <!-- ═══════════════ 4 · LITHUANIA ═══════════════ -->
+
+<!-- ═══════════ LONGEVITY ═══════════ -->
+<section class="sec hasphoto" id="longevity">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/grandfather-porch.jpg" alt="" loading="lazy"></div>
+  <div class="wrap wrap--tight">
+    <p class="eyebrow">Longevity</p>
+    <h2 class="head">My grandfather lived to a hundred and three.</h2>
+
+    <p class="lead" style="margin-top:1.4rem">He did not do it with a supplement. He did it with a life that had a shape.</p>
+
+    <p class="say">Up before the sun. Prayer facing east, every morning, without a day off. Walk out with the sheep. Real food, most of it grown or raised within sight of the house. Work with his hands until the light went. People around him the whole time &mdash; family, neighbours, somebody always coming by. A reason to get up that had nothing to do with him.</p>
+    <p class="say">Nothing on that list is exotic. Nothing on it costs money. And every single item on it turns up again in the places on earth where people most reliably reach a hundred.</p>
+
+    <p class="pull" style="margin-top:2.4rem">The path to a hundred and three is not a secret. It is a schedule.</p>
+
+    <h3 style="margin-top:2.6rem">The Blue Zones found the same house from a different direction</h3>
+    <p class="say">Researchers went looking for the places where people live longest &mdash; Okinawa in Japan, Sardinia in Italy, Nicoya in Costa Rica, Ikaria in Greece, and Loma Linda in California, an hour from Los Angeles. Five places with almost nothing in common: different foods, different faiths, different centuries of history.</p>
+    <p class="say">What they share is the shape. Movement built into the day instead of scheduled into an hour. Eating mostly plants, and stopping before full. A reason to get up in the morning that survives retirement. Something that downshifts the nervous system every day &mdash; prayer, nap, a glass of wine with people, a walk. Faith or practice of some kind. Family close. And a circle of friends who have known you for decades.</p>
+    <p class="say"><strong>Loma Linda is the one that ought to end the argument.</strong> It is in Southern California, on the same freeways and in the same economy as everybody else. What is different is a community that keeps a weekly day of rest, eats simply, and does not leave anyone on their own. That is it. That is the whole intervention, and it buys years.</p>
+
+    <p class="say" style="margin-top:1.6rem">My great-grandparents were running a Blue Zone on Black Mesa before anybody had a name for it. So were yours, somewhere, a few generations back. <strong>Nobody invented this. We set it down.</strong></p>
+
+    <h3 style="margin-top:2.6rem">What the studies keep finding</h3>
+    <p class="say">The Harvard Study of Adult Development has followed the same men &mdash; and later their families &mdash; since 1938. It is the longest study of its kind. It measured everything you would expect: cholesterol, income, exercise, education. The thing that best predicted who would be healthy and happy in old age was none of those.</p>
+    <p class="say"><strong>It was the quality of their close relationships.</strong> Not how many. How good. Loneliness, in that data, behaves like a disease.</p>
+    <p class="say">Which is the same finding the Blue Zones arrived at by walking around, and the same one my grandfather would have told you without a study, and the same one that sits underneath everything on this page. A nervous system settles in company. It braces alone. Over eighty years, that difference shows up in the body.</p>
+
+    <p class="pull" style="margin-top:2.4rem">Tools for a long life turn out to be tools for a happy one. Nobody has ever found two lists.</p>
+
+    <p class="say" style="margin-top:2.2rem">I have written a good deal of this out in the journal, with the research where it belongs and the sheep camp where it belongs.</p>
+    <ul class="rows" style="margin-top:1.4rem">
+      <li><a href="/journal/the-ancestral-code-for-living-to-100/"><span><b>The Ancestral Code for Living to 100</b><span>The code written out in full &mdash; what the long-lived peoples of the world actually do.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/journal/long-lives-as-modeled-by-our-ancestors/"><span><b>Long Lives as Modeled by Our Ancestors</b><span><i>Hozhoogo Nizaadgoo Iina.</i> We can live past a hundred, and we did.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/journal/inspiration-for-new-grocery-stores/"><span><b>What Loma Linda Knows</b><span>A Blue Zone an hour from Los Angeles, and what it would take to build one at home.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/journal/the-man-who-raced-hills-into-his-70s/"><span><b>The Man Who Raced Hills Into His 70s</b><span>What longevity actually asks of a person.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/journal/walking-in-lightness-eating-in-balance/"><span><b>Walking in Lightness, Eating in Balance</b><span>The path to long life and sustainable health, the old way.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/journal/wealth-wisdom-from-sheepherders-of-the-planet/"><span><b>Wealth Wisdom from the Sheepherders of the Planet</b><span>The richest people I know own almost nothing a bank would recognize.</span></span><em>&rarr;</em></a></li>
+    </ul>
+  </div>
+</section>
+
 <section class="sec sec--alt hasphoto" id="lithuania">
   <div class="photo-bg" aria-hidden="true"><img src="/assets/img/world/baltic-forest.jpg" alt="" loading="lazy"></div>
   <div class="wrap">

@@ -17,6 +17,21 @@
 <meta property="og:url" content="https://tribeawaken.com/business/">
 <meta property="og:image" content="https://tribeawaken.com/assets/img/garden/tea-pagoda-cypress.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<style>
+/* the section bar — community resilience has five floors, this is how you move between them */
+.secnav{position:sticky;top:0;z-index:60;background:rgba(15,18,16,.94);
+  backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--rule)}
+.secnav__in{display:flex;align-items:center;gap:.4rem 1.6rem;flex-wrap:nowrap;
+  overflow-x:auto;scrollbar-width:none;padding-block:.7rem}
+.secnav__in::-webkit-scrollbar{display:none}
+.secnav__lbl{font-family:'Courier New',ui-monospace,Menlo,monospace;text-transform:uppercase;
+  letter-spacing:.16em;font-size:.68rem;color:var(--gold);white-space:nowrap;flex:none}
+.secnav a{white-space:nowrap;text-decoration:none;font-size:.88rem;font-weight:600;
+  color:var(--sand);padding-bottom:2px;border-bottom:2px solid transparent}
+.secnav a:hover{color:var(--cream)}
+.secnav a.is-on{color:var(--cream-2);border-bottom-color:var(--clay)}
+@media(max-width:640px){.secnav__lbl{display:none}}
+</style>
 </head>
 <body>
 
@@ -170,6 +185,14 @@
       <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
     </div>
   </div>
+
+<nav class="secnav" aria-label="Community resilience">
+  <div class="wrap secnav__in">
+    <span class="secnav__lbl">Resilience</span>
+    <a href="/human-resilience/">Human resilience</a><a href="/community-resilience/">The argument</a><a href="/community-resilience/gathering/">How decisions get made</a><a href="/community-resilience/governance/">A government that fits</a><a href="/community-resilience/economy/">Ancestral Economics</a><a href="/community-resilience/lga/">The Local Governance Act</a><a href="/organizing/">Organizing anything</a><a class="is-on" aria-current="page" href="/business/">A business with soul</a>
+  </div>
+</nav>
+
 </div>
 
 <main id="main">
