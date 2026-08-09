@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Journal &mdash; Tony Skrel&#363;nas</title>
-<meta name="description" content="Essays, letters and field notes from Tony Skrelūnas — ancestral economies, health and longevity, food systems, and the story behind the books.">
+<title>The Writing &mdash; Tony Skrel&#363;nas</title>
+<meta name="description" content="The writing of Tony Skrelūnas, organised by line of inquiry: ancestral economics, the body and long life, what gets carried, the doctorate, the novels.">
 <link rel="icon" href="/favicon.svg">
 <link rel="stylesheet" href="/v4/assets/v2.css?v=31">
 <style>
-/* the journal index — a list, not a wall of cards */
+/* The Writing — streams, not a feed */
 .jhero{padding-block:clamp(3.2rem, 2.4rem + 5vw, 7rem)}
 .jhero .photo-bg::after{background:linear-gradient(100deg,
   rgba(15,18,16,.86) 0%, rgba(15,18,16,.64) 36%,
@@ -28,11 +28,38 @@
   text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
 .jump a:hover{color:var(--gold-lt);border-bottom-color:var(--clay)}
 
-.grp{margin-top:clamp(2.8rem, 2.2rem + 3vw, 5rem);scroll-margin-top:1.5rem}
+/* start here */
+.spine{counter-reset:sp}
+.spine .st{color:var(--gold);font-size:.74rem;letter-spacing:.14em;
+  text-transform:uppercase;margin-top:.6rem}
+
+/* the streams */
+.grp{margin-top:clamp(3rem, 2.2rem + 3.4vw, 5.6rem);scroll-margin-top:1.5rem}
 .grp:first-of-type{margin-top:0}
-.grp .rows{margin-top:clamp(1.2rem, 1rem + 1vw, 1.8rem)}
-.rows span span.by{color:var(--gold);font-size:.76rem;letter-spacing:.14em;
-  text-transform:uppercase;margin-top:.55rem}
+.grp__say{color:var(--sand);font-size:1.06rem;line-height:1.7;
+  max-width:62ch;margin-top:1.1rem}
+.grp .rows{margin-top:clamp(1.4rem, 1.1rem + 1.2vw, 2.2rem)}
+
+.rows--dated a{grid-template-columns:11rem minmax(0,1fr);gap:1.6rem}
+.rows--dated li{padding-block:clamp(1rem, .85rem + .7vw, 1.5rem)}
+.rows--dated .dt{font-style:normal;font-variant-numeric:tabular-nums;
+  color:var(--gold);font-size:.78rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;white-space:nowrap;line-height:1.9}
+.rows--dated b{font-size:clamp(1.06rem, .96rem + .55vw, 1.42rem);margin-bottom:0}
+.rows span span.by{color:var(--gold);font-size:.74rem;letter-spacing:.14em;
+  text-transform:uppercase;margin-top:.5rem}
+@media (max-width:680px){
+  .rows--dated a{grid-template-columns:minmax(0,1fr);gap:.4rem}
+  .rows--dated .dt{line-height:1.4}
+}
+
+.tail{margin-top:clamp(3rem, 2.2rem + 3vw, 5rem);
+  border-top:1px solid var(--rule);padding-top:clamp(1.6rem, 1.3rem + 1.4vw, 2.6rem)}
+.tail a{font-family:var(--display);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(1.2rem, 1.05rem + .8vw, 1.7rem);color:var(--cream-2);
+  text-decoration:none;border-bottom:1px solid var(--clay);padding-bottom:.25rem}
+.tail a:hover{color:var(--gold-lt)}
+.tail p{color:var(--sand);margin-top:.9rem;font-size:1rem;max-width:52ch}
 </style>
 </head>
 <body>
@@ -192,334 +219,335 @@
 <section class="sec hasphoto jhero">
   <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/lamplight-desk.jpg" alt="" fetchpriority="high"></div>
   <div class="wrap">
-    <p class="eyebrow">Journal</p>
-    <h1>Everything I have written down, in one place.</h1>
-    <p class="lead">Sorted by what it is about. A few of these are Shelby&rsquo;s writing, and say so.</p>
+    <p class="eyebrow">The Writing</p>
+    <h1>A few questions I have not let go of.</h1>
+    <p class="lead">Not a feed. Each stream below is one long argument, laid out oldest first, so you can watch it change its mind. A few of these are Shelby&rsquo;s writing, and say so.</p>
     <ul class="jump">
-      <li><a href="#trade">Regenerative Development &amp; New Economy</a></li>
-      <li><a href="#health">Health &amp; Longevity</a></li>
-      <li><a href="#food">Food Systems &amp; Agriculture</a></li>
-      <li><a href="#reflections">Reflections</a></li>
-      <li><a href="#story">The Story</a></li>
-      <li><a href="#movement">The Movement</a></li>
+      <li><a href="#economics">Ancestral Economics</a></li>
+      <li><a href="#body">The Body, and Long Life</a></li>
+      <li><a href="#carried">What Gets Carried</a></li>
       <li><a href="#doctorate">The Doctorate</a></li>
-      <li><a href="#books">The Books</a></li>
-      <li><a href="#global">Global</a></li>
+      <li><a href="#novels">The Novels</a></li>
     </ul>
   </div>
 </section>
 
-<!-- ═══════════ THE LIST ═══════════ -->
-<section class="sec">
+<!-- ═══════════ START HERE ═══════════ -->
+<section class="sec sec--alt">
   <div class="wrap">
-    <div class="grp" id="trade">
-      <h2 class="eyebrow">Regenerative Development &amp; New Economy</h2>
-      <ul class="rows">
-        <li><a href="/v4/journal/30000-years-tribal-trade-americas/">
-          <span>
-            <b>30,000 Years, and a Formula That Still Works</b>
-            <span>The commencement address to the Native American graduates of Northern Arizona University, on the great trade civilizations of the Americas.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
+    <p class="eyebrow">Start here</p>
+    <h2 class="head">If you only read five.</h2>
+    <ol class="rows spine">
         <li><a href="/v4/journal/honorable-trade-oldest-economies-planet-in-transition/">
           <span>
             <b>Honorable Trade: What the World&rsquo;s Oldest Economies Teach a Planet in Transition</b>
-            <span>Whole continents once ran on economies built for honor rather than shareholder wealth.</span>
+            <span>The whole argument in one place: whole continents ran on economies built for honor, and the map still works.</span>
+            <span class="st">Ancestral Economics</span>
           </span>
           <em aria-hidden="true">&rarr;</em>
         </a></li>
-        <li><a href="/v4/journal/the-silent-theft/">
-          <span>
-            <b>The Silent Theft</b>
-            <span>We track every barrel and every dollar, and let the one irreplaceable resource evaporate: human genius.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/monster-slayer-blueprint-turning-waste-into-renewal/">
-          <span>
-            <b>The Monster-Slayer&rsquo;s Blueprint</b>
-            <span>Take-make-dispose is the beast of our age, and every people on earth descends from monster-slayers.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/the-final-council-post-extraction-future/">
-          <span>
-            <b>The Final Council: Building a Post-Extraction Future</b>
-            <span>A recurring dream of a council that vets the future before it is built.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/ai-robotics-repair-warming-world/">
-          <span>
-            <b>The Machines That Could Help Us Come Home</b>
-            <span>What if the intelligence we built to speed up extraction were turned, deliberately, toward repair.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/creating-traditional-inter-generational-wealth/">
-          <span>
-            <b>The Wealth That Cannot Be Spent</b>
-            <span>The richest people I know own almost nothing a bank would recognize.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/keeping-the-tribal-dollar-home/">
-          <span>
-            <b>Keeping the Tribal Dollar in Our Local Communities</b>
-            <span>A childhood at the Tonalea Trading Post, and where the money goes after it leaves your hand.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/three-pillars-of-tribal-customer-service/">
-          <span>
-            <b>Three Pillars of Good Customer Service: Woshdee, Bahozho, K&rsquo;enidzin</b>
-            <span>Good service is good business, and good for the culture. It comes down to three values.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/trading-goods-and-services-worldwide/">
-          <span>
-            <b>Trading Goods and Services Worldwide, Safely</b>
-            <span>Tribes.Humans.Net, a peer-to-peer network for trade inside our communities and beyond.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/were-running-out-of-sand/">
-          <span>
-            <b>Extra, Extra: &ldquo;We&rsquo;re Running Out of Sand&rdquo;</b>
-            <span>Concrete is sand. Your phone is melted sand. We are running out of it.</span>
-            <span class="by">by Shelby Skrel&#363;nas</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-      </ul>
-    </div>
-
-    <div class="grp" id="health">
-      <h2 class="eyebrow">Health &amp; Longevity</h2>
-      <ul class="rows">
         <li><a href="/v4/journal/the-ancestral-code-for-living-to-100/">
           <span>
             <b>The Ancestral Code for Living to 100</b>
-            <span>The peoples who reach a hundred are not lucky. They are living a code we stopped reading.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/the-body-is-infrastructure/">
-          <span>
-            <b>The Body Is Infrastructure</b>
-            <span>A gym is not a luxury. It is quiet infrastructure for a people&rsquo;s survival.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/the-man-who-raced-hills-into-his-70s/">
-          <span>
-            <b>The Man Who Raced Hills Into His 70s</b>
-            <span>He raced motorcycles up near-vertical hills past the age most men retire. The real machine was quieter.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/wealth-wisdom-from-sheepherders-of-the-planet/">
-          <span>
-            <b>Wealth Wisdom from the Sheepherders of the Planet</b>
-            <span>Among herding peoples, wealth was counted in flocks, dawns and clan bonds.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/roots-of-resilience-wisdom-week-rancho-la-puerta/">
-          <span>
-            <b>Roots of Resilience: What the Fire Taught Us at Wisdom Week</b>
-            <span>A week under the stars at Rancho La Puerta, where elders and strangers became a circle.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/success-with-harmony-rise-early-pray-grind/">
-          <span>
-            <b>Success with Harmony: Rise Early, Pray, Grind, and Grow Always</b>
-            <span>There are many gurus offering strategy. Here is what the old order actually asks of you.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/refueling-our-souls-with-a-tribal-dacha/">
-          <span>
-            <b>Refueling Our Souls with a Tribal Dacha</b>
-            <span>A place kept in the community you grew up in, and what it keeps you tied to.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/helping-young-tribal-runners/">
-          <span>
-            <b>Helping Young Tribal Runners Achieve Their Olympic Vision</b>
-            <span>Can a talented runner be carried by a tribal community rather than taken out of it?</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/in-the-mind-of-a-bull-rider/">
-          <span>
-            <b>In the Mind of a Bull Rider</b>
-            <span>An interview with bull rider Wyatt Nez, on one of the most dangerous sports there is.</span>
-            <span class="by">by Shelby Skrel&#363;nas</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/what-waking-up-early-did-for-me/">
-          <span>
-            <b>What Waking Up Early Did for Me</b>
-            <span>A small turnaround: earlier mornings, longer days, and what actually changed.</span>
-            <span class="by">by Shelby Skrel&#363;nas</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-      </ul>
-    </div>
-
-    <div class="grp" id="food">
-      <h2 class="eyebrow">Food Systems &amp; Agriculture</h2>
-      <ul class="rows">
-        <li><a href="/v4/journal/ancient-farming-hedge-against-climate-change/">
-          <span>
-            <b>The Old Farmers Are Right</b>
-            <span>A handful of master farmers still coax harvests from wind and sand. Their methods may be our best hedge.</span>
+            <span>The peoples who reach a hundred are not lucky. This is the code, written out in full.</span>
+            <span class="st">The Body, and Long Life</span>
           </span>
           <em aria-hidden="true">&rarr;</em>
         </a></li>
         <li><a href="/v4/journal/seeds-of-the-ancestors/">
           <span>
             <b>Seeds of the Ancestors</b>
-            <span>The blueprint for a sustainable future is not an invention waiting to be engineered. It is an inheritance waiting to be remembered.</span>
+            <span>The future we are trying to engineer is already sitting in a jar of seed corn.</span>
+            <span class="st">What Gets Carried</span>
           </span>
           <em aria-hidden="true">&rarr;</em>
         </a></li>
-      </ul>
-    </div>
+        <li><a href="/v4/journal/twenty-five-years-to-the-podium-prescott-commencement/">
+          <span>
+            <b>Twenty-Five Years to That Podium</b>
+            <span>Kerosene lamp to commencement podium, and what I found when I got there.</span>
+            <span class="st">The Doctorate</span>
+          </span>
+          <em aria-hidden="true">&rarr;</em>
+        </a></li>
+        <li><a href="/v4/journal/stone-breath-born-on-the-solstice/">
+          <span>
+            <b>Stone Breath: Born on the Solstice, On Purpose</b>
+            <span>A man brings his grandfather's book of old melodies home, and finds the old ways were only waiting.</span>
+            <span class="st">The Novels</span>
+          </span>
+          <em aria-hidden="true">&rarr;</em>
+        </a></li>
+    </ol>
+  </div>
+</section>
 
-    <div class="grp" id="reflections">
-      <h2 class="eyebrow">Reflections</h2>
-      <ul class="rows">
-        <li><a href="/v4/journal/the-water-remembers-sacred-lake/">
+<!-- ═══════════ THE STREAMS ═══════════ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="grp" id="economics">
+      <p class="eyebrow">Stream</p>
+      <h2 class="head">Ancestral Economics</h2>
+      <p class="grp__say">The oldest economies on earth were not built for shareholder wealth. They were built for honor, for kinship, and for the great-grandchildren. I keep asking the same question here: where does the money go after it leaves your hand, and what would it take to keep it home.</p>
+      <ul class="rows rows--dated">
+        <li><a href="/v4/journal/trading-goods-and-services-worldwide/">
+          <em class="dt"><time datetime="2019-03-12">March&nbsp;12,&nbsp;2019</time></em>
           <span>
-            <b>The Water Remembers: My Grandfather&rsquo;s Song at the Sacred Lake</b>
-            <span>He stood at the edge of a mountain lake and was called to sing. Water has a memory, and so do we.</span>
+            <b>Trading Goods and Services Worldwide, Safely</b>
           </span>
-          <em aria-hidden="true">&rarr;</em>
         </a></li>
-        <li><a href="/v4/journal/the-passage-of-cultural-knowledge/">
+        <li><a href="/v4/journal/three-pillars-of-tribal-customer-service/">
+          <em class="dt"><time datetime="2019-07-01">July&nbsp;1,&nbsp;2019</time></em>
           <span>
-            <b>Being Tribal Means Ensuring the Passage of Cultural Knowledge</b>
-            <span>It means engaging completely in whether your kids, your relatives and your neighbors succeed.</span>
+            <b>Three Pillars of Good Customer Service: Woshdee, Bahozho, K&rsquo;enidzin</b>
           </span>
-          <em aria-hidden="true">&rarr;</em>
         </a></li>
-        <li><a href="/v4/journal/what-the-cottonwood-sings-roots-workshop/">
+        <li><a href="/v4/journal/keeping-the-tribal-dollar-home/">
+          <em class="dt"><time datetime="2019-07-02">July&nbsp;2,&nbsp;2019</time></em>
           <span>
-            <b>What the Cottonwood Sings: A Poet&rsquo;s Afternoon in the Roots Workshop</b>
-            <span>I picked up a pen for the first time and wrote my way back to a childhood summer.</span>
+            <b>Keeping the Tribal Dollar in Our Local Communities</b>
           </span>
-          <em aria-hidden="true">&rarr;</em>
         </a></li>
-        <li><a href="/v4/journal/discipline-and-a-strong-life-partner/">
+        <li><a href="/v4/journal/were-running-out-of-sand/">
+          <em class="dt"><time datetime="2020-01-21">January&nbsp;21,&nbsp;2020</time></em>
           <span>
-            <b>The Highest Success Takes Discipline and a Strong Life Partner</b>
-            <span>What it takes to hold up under the bright lights of Las Vegas, with all of Indian Country watching.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/what-arranged-marriages-can-teach-us/">
-          <span>
-            <b>Did Your Ancestors Have Arranged Marriages?</b>
-            <span>What the old arrangements might still tell us about choosing a life partner. Written to start an argument.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-        <li><a href="/v4/journal/creativity-makes-the-planet-go-round/">
-          <span>
-            <b>Creativity Is What Makes the Planet Go Round</b>
-            <span>Do what you love, enjoy what you do, make life worth it. Clich&eacute;, and true.</span>
+            <b>Extra, Extra: &ldquo;We&rsquo;re Running Out of Sand&rdquo;</b>
             <span class="by">by Shelby Skrel&#363;nas</span>
           </span>
-          <em aria-hidden="true">&rarr;</em>
+        </a></li>
+        <li><a href="/v4/journal/honorable-trade-oldest-economies-planet-in-transition/">
+          <em class="dt"><time datetime="2023-04-24">April&nbsp;24,&nbsp;2023</time></em>
+          <span>
+            <b>Honorable Trade: What the World&rsquo;s Oldest Economies Teach a Planet in Transition</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/creating-traditional-inter-generational-wealth/">
+          <em class="dt"><time datetime="2024-11-02">November&nbsp;2,&nbsp;2024</time></em>
+          <span>
+            <b>The Wealth That Cannot Be Spent</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/the-final-council-post-extraction-future/">
+          <em class="dt"><time datetime="2025-11-15">November&nbsp;15,&nbsp;2025</time></em>
+          <span>
+            <b>The Final Council: Building a Post-Extraction Future</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/the-silent-theft/">
+          <em class="dt"><time datetime="2025-11-20">November&nbsp;20,&nbsp;2025</time></em>
+          <span>
+            <b>The Silent Theft</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/ai-robotics-repair-warming-world/">
+          <em class="dt"><time datetime="2026-01-24">January&nbsp;24,&nbsp;2026</time></em>
+          <span>
+            <b>The Machines That Could Help Us Come Home</b>
+          </span>
         </a></li>
       </ul>
     </div>
 
-    <div class="grp" id="story">
-      <h2 class="eyebrow">The Story</h2>
-      <ul class="rows">
+    <div class="grp" id="body">
+      <p class="eyebrow">Stream</p>
+      <h2 class="head">The Body, and Long Life</h2>
+      <p class="grp__say">Our people ran. They rose before the sun, prayed facing east, walked the flock, and many of them lived a very long time. I have been tracking what the long-lived peoples of the world actually do, and what it would cost a community to build the places where a body can still move.</p>
+      <ul class="rows rows--dated">
+        <li><a href="/v4/journal/in-the-mind-of-a-bull-rider/">
+          <em class="dt"><time datetime="2019-03-04">March&nbsp;4,&nbsp;2019</time></em>
+          <span>
+            <b>In the Mind of a Bull Rider</b>
+            <span class="by">by Shelby Skrel&#363;nas</span>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/success-with-harmony-rise-early-pray-grind/">
+          <em class="dt"><time datetime="2019-03-04">March&nbsp;4,&nbsp;2019</time></em>
+          <span>
+            <b>Success with Harmony: Rise Early, Pray, Grind, and Grow Always</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/refueling-our-souls-with-a-tribal-dacha/">
+          <em class="dt"><time datetime="2019-03-11">March&nbsp;11,&nbsp;2019</time></em>
+          <span>
+            <b>Refueling Our Souls with a Tribal Dacha</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/helping-young-tribal-runners/">
+          <em class="dt"><time datetime="2019-08-15">August&nbsp;15,&nbsp;2019</time></em>
+          <span>
+            <b>Helping Young Tribal Runners Achieve Their Olympic Vision</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/discipline-and-a-strong-life-partner/">
+          <em class="dt"><time datetime="2019-12-10">December&nbsp;10,&nbsp;2019</time></em>
+          <span>
+            <b>The Highest Success Takes Discipline and a Strong Life Partner</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/what-waking-up-early-did-for-me/">
+          <em class="dt"><time datetime="2020-01-28">January&nbsp;28,&nbsp;2020</time></em>
+          <span>
+            <b>What Waking Up Early Did for Me</b>
+            <span class="by">by Shelby Skrel&#363;nas</span>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/roots-of-resilience-wisdom-week-rancho-la-puerta/">
+          <em class="dt"><time datetime="2025-03-03">March&nbsp;3,&nbsp;2025</time></em>
+          <span>
+            <b>Roots of Resilience: What the Fire Taught Us at Wisdom Week</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/wealth-wisdom-from-sheepherders-of-the-planet/">
+          <em class="dt"><time datetime="2025-03-09">March&nbsp;9,&nbsp;2025</time></em>
+          <span>
+            <b>Wealth Wisdom from the Sheepherders of the Planet</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/the-ancestral-code-for-living-to-100/">
+          <em class="dt"><time datetime="2026-04-01">April&nbsp;1,&nbsp;2026</time></em>
+          <span>
+            <b>The Ancestral Code for Living to 100</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/the-body-is-infrastructure/">
+          <em class="dt dt--none"></em>
+          <span>
+            <b>The Body Is Infrastructure</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/the-man-who-raced-hills-into-his-70s/">
+          <em class="dt dt--none"></em>
+          <span>
+            <b>The Man Who Raced Hills Into His 70s</b>
+          </span>
+        </a></li>
+      </ul>
+    </div>
+
+    <div class="grp" id="carried">
+      <p class="eyebrow">Stream</p>
+      <h2 class="head">What Gets Carried</h2>
+      <p class="grp__say">A people is not its territory. It is the thread &mdash; the seed, the song, the language, the way of raising a child. Some of these pieces are about peoples who were supposed to vanish and did not. Some are about my own family, and what was handed to me before I could read.</p>
+      <ul class="rows rows--dated">
+        <li><a href="/v4/journal/creativity-makes-the-planet-go-round/">
+          <em class="dt"><time datetime="2019-02-09">February&nbsp;9,&nbsp;2019</time></em>
+          <span>
+            <b>Creativity Is What Makes the Planet Go Round</b>
+            <span class="by">by Shelby Skrel&#363;nas</span>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/the-passage-of-cultural-knowledge/">
+          <em class="dt"><time datetime="2019-09-02">September&nbsp;2,&nbsp;2019</time></em>
+          <span>
+            <b>Being Tribal Means Ensuring the Passage of Cultural Knowledge</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/what-arranged-marriages-can-teach-us/">
+          <em class="dt"><time datetime="2019-12-31">December&nbsp;31,&nbsp;2019</time></em>
+          <span>
+            <b>Did Your Ancestors Have Arranged Marriages?</b>
+          </span>
+        </a></li>
         <li><a href="/v4/journal/honoring-my-father-on-fathers-day/">
+          <em class="dt"><time datetime="2023-06-19">June&nbsp;19,&nbsp;2023</time></em>
           <span>
             <b>Shizh&eacute;&rsquo;&eacute;: A Father&rsquo;s Day Letter to the Man Who Chose Me</b>
-            <span>A city boy who followed love to the high country, learned the old ways, and became a pillar.</span>
           </span>
-          <em aria-hidden="true">&rarr;</em>
         </a></li>
-        <li><a href="/v4/journal/they-tried-to-erase-a-whole-people/">
+        <li><a href="/v4/journal/ancient-farming-hedge-against-climate-change/">
+          <em class="dt"><time datetime="2024-05-09">May&nbsp;9,&nbsp;2024</time></em>
           <span>
-            <b>They Tried to Erase a Whole People</b>
-            <span>Book smugglers, song keepers, and a basketball team in tie-dye. A people who were supposed to vanish came back singing.</span>
+            <b>The Old Farmers Are Right</b>
           </span>
-          <em aria-hidden="true">&rarr;</em>
         </a></li>
-      </ul>
-    </div>
-
-    <div class="grp" id="movement">
-      <h2 class="eyebrow">The Movement</h2>
-      <ul class="rows">
-        <li><a href="/v4/journal/30000-years-wellness-wisdom-phd-book-series-movement/">
+        <li><a href="/v4/journal/the-water-remembers-sacred-lake/">
+          <em class="dt"><time datetime="2025-07-13">July&nbsp;13,&nbsp;2025</time></em>
           <span>
-            <b>30,000 Years of Wellness Wisdom &mdash; Now a PhD, a Book Series, and a Movement</b>
-            <span>Our families were the most sophisticated success seminars ever designed. Here is how we take those teachings back.</span>
+            <b>The Water Remembers: My Grandfather&rsquo;s Song at the Sacred Lake</b>
           </span>
-          <em aria-hidden="true">&rarr;</em>
         </a></li>
         <li><a href="/v4/journal/weaving-a-new-dream-what-is-the-world-dreaming-through-you/">
+          <em class="dt"><time datetime="2025-09-25">September&nbsp;25,&nbsp;2025</time></em>
           <span>
             <b>Weaving a New Dream: What Is the World Dreaming Through You?</b>
-            <span>There is an older, larger dream than your own, and it is trying to move through you.</span>
           </span>
-          <em aria-hidden="true">&rarr;</em>
+        </a></li>
+        <li><a href="/v4/journal/seeds-of-the-ancestors/">
+          <em class="dt"><time datetime="2025-11-14">November&nbsp;14,&nbsp;2025</time></em>
+          <span>
+            <b>Seeds of the Ancestors</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/they-tried-to-erase-a-whole-people/">
+          <em class="dt"><time datetime="2026-08-07">August&nbsp;7,&nbsp;2026</time></em>
+          <span>
+            <b>They Tried to Erase a Whole People</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/tibet-the-unbroken-thread/">
+          <em class="dt"><time datetime="2026-08-07">August&nbsp;7,&nbsp;2026</time></em>
+          <span>
+            <b>Tibet, and the Unbroken Thread</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/what-the-cottonwood-sings-roots-workshop/">
+          <em class="dt"><time datetime="2026-08-07">August&nbsp;7,&nbsp;2026</time></em>
+          <span>
+            <b>What the Cottonwood Sings: A Poet&rsquo;s Afternoon in the Roots Workshop</b>
+          </span>
         </a></li>
       </ul>
     </div>
 
     <div class="grp" id="doctorate">
-      <h2 class="eyebrow">The Doctorate</h2>
-      <ul class="rows">
+      <p class="eyebrow">Stream</p>
+      <h2 class="head">The Doctorate</h2>
+      <p class="grp__say">I started this doctorate as an extension of my MBA more than twenty-five years ago, and the work never slowed down enough to let me finish it. These are the addresses and the statements of purpose from along that road, including the two podiums.</p>
+      <ul class="rows rows--dated">
+        <li><a href="/v4/journal/30000-years-tribal-trade-americas/">
+          <em class="dt"><time datetime="2020-01-29">January&nbsp;29,&nbsp;2020</time></em>
+          <span>
+            <b>30,000 Years, and a Formula That Still Works</b>
+          </span>
+        </a></li>
+        <li><a href="/v4/journal/monster-slayer-blueprint-turning-waste-into-renewal/">
+          <em class="dt"><time datetime="2025-09-25">September&nbsp;25,&nbsp;2025</time></em>
+          <span>
+            <b>The Monster-Slayer&rsquo;s Blueprint</b>
+          </span>
+        </a></li>
         <li><a href="/v4/journal/twenty-five-years-to-the-podium-prescott-commencement/">
+          <em class="dt"><time datetime="2026-08-07">August&nbsp;7,&nbsp;2026</time></em>
           <span>
             <b>Twenty-Five Years to That Podium</b>
-            <span>I started the doctorate as an extension of my MBA. Here is what happened in between.</span>
           </span>
-          <em aria-hidden="true">&rarr;</em>
+        </a></li>
+        <li><a href="/v4/journal/30000-years-wellness-wisdom-phd-book-series-movement/">
+          <em class="dt dt--none"></em>
+          <span>
+            <b>30,000 Years of Wellness Wisdom &mdash; Now a PhD, a Book Series, and a Movement</b>
+          </span>
         </a></li>
       </ul>
     </div>
 
-    <div class="grp" id="books">
-      <h2 class="eyebrow">The Books</h2>
-      <ul class="rows">
+    <div class="grp" id="novels">
+      <p class="eyebrow">Stream</p>
+      <h2 class="head">The Novels</h2>
+      <p class="grp__say">What the essays argue, the fiction carries. Stone Breath came out on the solstice, on purpose. Book Two, What Masan Taught Me, arrives in the fall.</p>
+      <ul class="rows rows--dated">
         <li><a href="/v4/journal/stone-breath-born-on-the-solstice/">
+          <em class="dt"><time datetime="2026-08-07">August&nbsp;7,&nbsp;2026</time></em>
           <span>
             <b>Stone Breath: Born on the Solstice, On Purpose</b>
-            <span>A novel about the songs we carry across oceans, and the roots a lifetime of forgetting could not take.</span>
           </span>
-          <em aria-hidden="true">&rarr;</em>
         </a></li>
       </ul>
     </div>
 
-    <div class="grp" id="global">
-      <h2 class="eyebrow">Global</h2>
-      <ul class="rows">
-        <li><a href="/v4/journal/tibet-the-unbroken-thread/">
-          <span>
-            <b>Tibet, and the Unbroken Thread</b>
-            <span>A people is not its territory. It is the thread, carried across the highest mountains on earth.</span>
-          </span>
-          <em aria-hidden="true">&rarr;</em>
-        </a></li>
-      </ul>
+    <div class="tail">
+      <a href="/v4/journal/all/">The full directory &rarr;</a>
+      <p>Everything, newest first, with its date and its stream.</p>
     </div>
   </div>
 </section>
