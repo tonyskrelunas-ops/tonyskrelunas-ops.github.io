@@ -11,7 +11,7 @@
   
   
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="/v4/assets/v2.css?v=30">
+<link rel="stylesheet" href="/v4/assets/v2.css?v=31">
 <style>
 /* an article, in the v4 skin */
 .art{padding-block:clamp(2.6rem,2rem + 3vw,5rem)}
@@ -48,17 +48,18 @@
 .art .btn--ghost:hover{border-color:var(--clay-lt);color:var(--clay-lt)}
 </style>
   <style>
-    .q { border:1px solid var(--rule); border-radius:14px; padding:var(--space-3) var(--space-4); margin-bottom:var(--space-3); background:var(--night-3, rgba(255,255,255,.02)); }
-    .q > legend { font-family:var(--font-display,'Spectral'),serif; font-size:var(--step-1); font-weight:600; padding:0; margin-bottom:.8rem; }
-    .q label { display:flex; gap:.7rem; align-items:flex-start; padding:.6rem .7rem; border-radius:10px; cursor:pointer; transition:background .15s; }
+    .q { border:1px solid var(--rule); border-radius:2px; padding:var(--space-3) var(--space-4); margin-bottom:var(--space-3); background:var(--bg-2); }
+    .q > legend { float:left; width:100%; font-family:var(--display),serif; font-size:var(--t-h3); font-weight:600; line-height:1.2; padding:0; margin:0 0 1rem; }
+    .q::after{content:'';display:table;clear:both}
+    .q label { display:flex; gap:.7rem; align-items:flex-start; padding:.6rem .7rem; border-radius:2px; cursor:pointer; transition:background .15s; }
     .q label:hover { background:rgba(127,127,127,.10); }
-    .q input { margin-top:.25rem; accent-color:var(--turq); }
+    .q input { margin-top:.25rem; accent-color:var(--clay); }
     .dx-actions { margin:var(--space-4) 0; text-align:center; }
     #dx-result { display:none; }
-    .result-card { border:1px solid var(--amber); border-radius:16px; padding:var(--space-4); background:rgba(201,138,58,.07); }
+    .result-card { border:1px solid var(--gold); border-radius:2px; padding:var(--space-4); background:rgba(217,162,95,.07); }
     .result-tag { color:var(--amber); letter-spacing:.14em; text-transform:uppercase; font-size:.72rem; font-weight:700; }
     .dx-note { opacity:.7; font-size:var(--step--1); text-align:center; margin-top:.6rem; }
-    .dx-err { color:#e07a5f; text-align:center; font-weight:600; min-height:1.4em; }
+    .dx-err { color:var(--clay-lt); text-align:center; font-weight:600; min-height:1.4em; }
   </style>
 
 </head>
@@ -152,10 +153,10 @@
       <span>Global</span>
     </p>
     <ul class="globebar__ls">
-      <li><a class="is-on" href="/v4/" hreflang="en">English</a></li>
-      <li><a href="/ja/" hreflang="ja">日本語 · Japan</a></li>
-      <li><a href="/lt/" hreflang="lt">Lietuvių · Lithuania</a></li>
-      <li><a href="/india/" hreflang="en">India</a></li>
+      <li><a class="is-on" aria-current="true" href="/v4/" hreflang="en">English</a></li>
+      <li><a href="/v4/ja/" hreflang="ja">日本語 · Japan</a></li>
+      <li><a href="/v4/lt/" hreflang="lt">Lietuvių · Lithuania</a></li>
+      <li><a href="/v4/india/" hreflang="en">India</a></li>
       <li><span class="soon">中文 · coming soon</span></li>
     </ul>
     <a class="globebar__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
@@ -204,73 +205,9 @@
       <li><a href="/v4/#about"><em>08</em> About</a></li>
     </ul>
     <div class="menu__foot">
-      <a href="/ja/">日本語</a>
-      <a href="/lt/">Lietuvių</a>
-      <a href="/india/">India</a>
-      <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
-    </div>
-  </div>
-</div>
-<div class="globebar">
-  <div class="wrap globebar__in">
-    <p class="globebar__lbl">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 2.6 15 0 18M12 3c-2.6 2.6-2.6 15 0 18"/>
-      </svg>
-      <span>Global</span>
-    </p>
-    <ul class="globebar__ls">
-      <li><a class="is-on" href="/v4/" hreflang="en">English</a></li>
-      <li><a href="/ja/" hreflang="ja">日本語 · Japan</a></li>
-      <li><a href="/lt/" hreflang="lt">Lietuvių · Lithuania</a></li>
-      <li><a href="/india/" hreflang="en">India</a></li>
-      <li><span class="soon">中文 · coming soon</span></li>
-    </ul>
-    <a class="globebar__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
-  </div>
-</div>
-<header class="hdr">
-  <div class="wrap hdr__in">
-    <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
-    <nav aria-label="Primary">
-      <ul class="nav">
-        <li><a href="/v4/">Home</a></li>
-        <li><a href="/v4/#human-performance">Human Performance</a></li>
-        <li><a href="https://ancestralwatch.com">The Books</a></li>
-        <li><a href="/v4/workshop/">Retreats</a></li>
-        <li><a href="/v4/journal/">Journal</a></li>
-        <li><a href="/v4/teams/">For Teams</a></li>
-        <li><a href="/v4/nation/">Nation-Building</a></li>
-        <li><a href="/v4/#about">About</a></li>
-      </ul>
-    </nav>
-    <div class="hdr__end">
-      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
-        <i></i><i></i><i></i>
-      </button>
-    </div>
-  </div>
-</header>
-<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
-  <div class="wrap">
-    <div class="menu__top">
-      <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
-      <button class="menu__close" id="menuClose" aria-label="Close menu">&times;</button>
-    </div>
-    <ul class="menu__ls">
-      <li><a href="/v4/"><em>01</em> Home</a></li>
-      <li><a href="/v4/#human-performance"><em>02</em> Human Performance</a></li>
-      <li><a href="https://ancestralwatch.com"><em>03</em> The Books</a></li>
-      <li><a href="/v4/workshop/"><em>04</em> Retreats</a></li>
-      <li><a href="/v4/journal/"><em>05</em> Journal</a></li>
-      <li><a href="/v4/teams/"><em>06</em> For Teams</a></li>
-      <li><a href="/v4/nation/"><em>07</em> Nation-Building</a></li>
-      <li><a href="/v4/#about"><em>08</em> About</a></li>
-    </ul>
-    <div class="menu__foot">
-      <a href="/ja/">日本語</a>
-      <a href="/lt/">Lietuvių</a>
-      <a href="/india/">India</a>
+      <a href="/v4/ja/">日本語</a>
+      <a href="/v4/lt/">Lietuvių</a>
+      <a href="/v4/india/">India</a>
       <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
     </div>
   </div>
@@ -279,6 +216,81 @@
   
   
     
+  <main id="main">
+    <section class="page-hero article-hero">
+      <div class="wrap wrap--narrow">
+        <p class="eyebrow">The Far Messenger Diagnostic</p>
+        <h1>Is your nervous system running the show?</h1>
+        <p class="article-meta">Ninety seconds. Discover whether you're leading from calm or from alarm — and the one practice that resets your system before your next meeting.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap wrap--narrow">
+
+        <form id="dx-form">
+          <fieldset class="q"><legend>1. When you wake up in the morning, what's the first sensation you notice?</legend>
+            <label><input type="radio" name="q1" value="A"> Tightness in my chest or jaw</label>
+            <label><input type="radio" name="q1" value="B"> A mental to-do list already spinning</label>
+            <label><input type="radio" name="q1" value="C"> A quiet sense of readiness</label>
+          </fieldset>
+          <fieldset class="q"><legend>2. Under pressure, your decision-making tends to be:</legend>
+            <label><input type="radio" name="q2" value="A"> Fast, but occasionally regretted</label>
+            <label><input type="radio" name="q2" value="B"> Over-analyzed, then rushed at the deadline</label>
+            <label><input type="radio" name="q2" value="C"> Clear, even when the data is incomplete</label>
+          </fieldset>
+          <fieldset class="q"><legend>3. How do you feel at the end of a successful day?</legend>
+            <label><input type="radio" name="q3" value="A"> Still wired, unable to fully rest</label>
+            <label><input type="radio" name="q3" value="B"> Satisfied, but already anxious about tomorrow</label>
+            <label><input type="radio" name="q3" value="C"> Complete — the day was enough</label>
+          </fieldset>
+          <fieldset class="q"><legend>4. When someone challenges you directly, your body:</legend>
+            <label><input type="radio" name="q4" value="A"> Tenses immediately</label>
+            <label><input type="radio" name="q4" value="B"> Goes numb, or checks out</label>
+            <label><input type="radio" name="q4" value="C"> Stays open — you can hear them without collapsing</label>
+          </fieldset>
+          <fieldset class="q"><legend>5. If you had to carry something precious across hard ground tomorrow, your body feels:</legend>
+            <label><input type="radio" name="q5" value="A"> Already exhausted</label>
+            <label><input type="radio" name="q5" value="B"> Capable, but worried</label>
+            <label><input type="radio" name="q5" value="C"> Ready — this is what I was built for</label>
+          </fieldset>
+
+          <p class="dx-err" id="dx-err" role="alert"></p>
+          <div class="dx-actions">
+            <button type="submit" class="btn btn--primary btn--lg">See my result →</button>
+          </div>
+        </form>
+
+        <div id="dx-result">
+          <div class="result-card">
+            <p class="result-tag" id="dx-tag"></p>
+            <h2 id="dx-title" style="margin-top:.3rem;"></h2>
+            <p id="dx-body"></p>
+            <p style="margin-top:var(--space-3);"><strong id="dx-path"></strong></p>
+
+            <div class="capture" style="margin-top:var(--space-4); padding-top:var(--space-3); border-top:1px solid var(--rule);">
+              <p style="font-weight:600;">Want it in writing?</p>
+              <form class="join" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="057975c1-1a1a-465e-9b5e-3fb6692b2106">
+                <input type="hidden" name="subject" value="The diagnostic — a new email from tribeawaken.com">
+                <input type="hidden" name="from_name" value="TribeAwaken">
+                <input type="hidden" name="redirect" value="https://tribeawaken.com/thanks/">
+                <input type="checkbox" name="botcheck" class="sr-only" style="display:none" tabindex="-1" autocomplete="off">
+                <label class="sr-only" for="dx-email">Your email</label>
+                <input id="dx-email" class="join__in" type="email" name="email" required autocomplete="email" placeholder="you@example.com" spellcheck="false">
+                <button class="btn btn--primary btn--lg" type="submit">Send it to me</button>
+              </form>
+              <p class="join__note">Your result and the Stone Breath, sent once. Nothing else unless you ask. Or write straight to <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>.</p>
+            </div>
+          </div>
+
+          <div class="dx-actions">
+            <a class="btn btn--ghost" href="/v4/start-here/">Not sure yet? See all the paths →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
 
   
@@ -352,9 +364,9 @@
         <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
         <p class="muted ftr__brand">Ancestral intelligence for a regenerating world.</p>
         <div class="ftr__langs">
-          <a href="/ja/">日本語</a><span>·</span>
-          <a href="/lt/">Lietuvių</a><span>·</span>
-          <a href="/india/">India</a><span>·</span>
+          <a href="/v4/ja/">日本語</a><span>·</span>
+          <a href="/v4/lt/">Lietuvių</a><span>·</span>
+          <a href="/v4/india/">India</a><span>·</span>
           <span>中文 soon</span>
         </div>
       </div>
@@ -371,8 +383,8 @@
         <h4>Work together</h4>
         <ul>
           <li><a href="mailto:wisdom@ancestralwatch.com">Advisory &amp; design</a></li>
-          <li><a href="/teams/">The Far Messenger Program</a></li>
-          <li><a href="/workshop/">The Canyon Within</a></li>
+          <li><a href="/v4/teams/">The Far Messenger Program</a></li>
+          <li><a href="/v4/workshop/">The Canyon Within</a></li>
           <li><a href="/v4/#human-performance">Human Performance</a></li>
         </ul>
       </div>
@@ -381,7 +393,7 @@
         <ul>
           <li><a href="https://ancestralwatch.com">The Council Fire</a></li>
           <li><a href="https://ancestralwatch.com">The Books</a></li>
-          <li><a href="/journal/">The Journal</a></li>
+          <li><a href="/v4/journal/">The Journal</a></li>
           <li><a href="/v4/#about">About Tony</a></li>
         </ul>
       </div>

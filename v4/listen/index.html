@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Listen — the song, the video, and the meditation playlist | TribeAwaken</title>
 <meta name="description" content="A word from Tony Skrelūnas in the redwoods, his original song The Warrior's Code, the We Are A Tribe anthem, and the Ancestral Watch meditation and relaxation playlist. Put it on and let it run.">
-<link rel="stylesheet" href="/v4/assets/v2.css?v=29">
+<link rel="stylesheet" href="/v4/assets/v2.css?v=31">
 <style>
 /* ---- repairs to shared v2.css (invalid calc: missing spaces around "+") ---- */
 .grid{gap:clamp(1.2rem,.8rem + 1.6vw,2.2rem)}
@@ -304,7 +304,7 @@
 <header class="hdr">
   <div class="wrap hdr__in">
     <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
-    <nav>
+    <nav aria-label="Primary">
       <ul class="nav">
         <li><a href="/v4/">Home</a></li>
         <li><a href="/v4/#human-performance">Human Performance</a></li>
@@ -316,8 +316,39 @@
         <li><a href="/v4/#about">About</a></li>
       </ul>
     </nav>
+    <div class="hdr__end">
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
   </div>
 </header>
+
+<!-- ================= FULL-SCREEN MENU ================= -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="wrap">
+    <div class="menu__top">
+      <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+      <button class="menu__close" id="menuClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="menu__ls">
+      <li><a href="/v4/"><em>01</em> Home</a></li>
+      <li><a href="/v4/#human-performance"><em>02</em> Human Performance</a></li>
+      <li><a href="https://ancestralwatch.com"><em>03</em> The Books</a></li>
+      <li><a href="/v4/workshop/"><em>04</em> Retreats</a></li>
+      <li><a href="/v4/journal/"><em>05</em> Journal</a></li>
+      <li><a href="/v4/teams/"><em>06</em> For Teams</a></li>
+      <li><a href="/v4/nation/"><em>07</em> Nation-Building</a></li>
+      <li><a href="/v4/#about"><em>08</em> About</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="/v4/ja/">日本語</a>
+      <a href="/v4/lt/">Lietuvių</a>
+      <a href="/v4/india/">India</a>
+      <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+    </div>
+  </div>
+</div>
 
 <!-- woven-wool pattern, referenced by every .weave band on the page -->
 
@@ -567,9 +598,9 @@
   <div class="wrap langs__in">
     <div class="langs__k">Read in your language</div>
     <ul class="langs__list">
-      <li><a href="/ja/">日本語 <em>Japan</em></a></li>
-      <li><a href="/lt/">Lietuvių <em>Lithuania</em></a></li>
-      <li><a href="/india/">India <em>English</em></a></li>
+      <li><a href="/v4/ja/">日本語 <em>Japan</em></a></li>
+      <li><a href="/v4/lt/">Lietuvių <em>Lithuania</em></a></li>
+      <li><a href="/v4/india/">India <em>English</em></a></li>
       <li><span>中文 <em>China — soon</em></span></li>
     </ul>
   </div>
@@ -590,7 +621,7 @@
           <li><a href="/v4/teams/">For Organizations</a></li>
           <li><a href="/v4/journal/">The Journal</a></li>
           <li><a href="/v4/listen/">Listen</a></li>
-          <li><a href="/diagnostic/">The Far Messenger Diagnostic</a></li>
+          <li><a href="/v4/diagnostic/">The Far Messenger Diagnostic</a></li>
         </ul>
       </div>
       <div>
@@ -610,6 +641,17 @@
 </footer>
 
 <script>
+/* ---------- menu ---------- */
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu'),c=document.getElementById('menuClose');
+  if(!b||!m) return;
+  function open(){m.classList.add('open');b.setAttribute('aria-expanded','true');document.body.classList.add('locked')}
+  function shut(){m.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.classList.remove('locked')}
+  b.addEventListener('click',function(){m.classList.contains('open')?shut():open()});
+  if(c) c.addEventListener('click',shut);
+  m.addEventListener('click',function(e){if(e.target.tagName==='A') shut()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape') shut()});
+})();
 /* ---- reveal ---- */
 (function(){
   var els=document.querySelectorAll('.rv');

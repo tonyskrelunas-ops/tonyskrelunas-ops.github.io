@@ -661,3 +661,32 @@ body.locked{overflow:hidden}
   font-size:clamp(1.2rem,1.05rem + .7vw,1.6rem);color:var(--cream-2);margin-bottom:.6rem}
 .four span{display:block;color:var(--sand);font-size:1rem;line-height:1.66}
 @media(max-width:780px){.four div{border-left:0;padding-left:0}}
+
+/* ══════════════════════════════════════════════════════════════════
+   CARRIED-OVER PAGES — the old teal tokens, pointed at the garden
+   palette. 47 pages came across from the previous site still asking
+   for --night, --turq, --space-3 and so on. Rather than rewrite
+   47 files of his prose, the old names now resolve here.
+   ══════════════════════════════════════════════════════════════════ */
+:root{
+  --night:var(--bg); --night-2:var(--bg-2); --night-3:var(--bg-3);
+  --bone:var(--cream); --bone-2:var(--cream-2); --silver:var(--sand);
+  --amber:var(--gold); --amber-soft:var(--gold); --turq:var(--clay-lt);
+  --earth:var(--clay); --forest:var(--bg-2);
+  --ink-soft:var(--sand);
+  --bg-panel:var(--bg-2); --surface:var(--bg-3);
+  --text:var(--cream); --text-muted:var(--sand);
+  --accent:var(--clay); --accent-ink:var(--on-clay);
+
+  --font-display:var(--display);
+  --font-body:var(--body);
+
+  --step--1:var(--t-small); --step-0:var(--t-body); --step-1:var(--t-h3);
+  --step-2:var(--t-h3); --step-3:var(--t-h2); --step-4:var(--t-h1);
+  --step-5:var(--t-hero);
+
+  --space-1:.5rem; --space-2:1rem; --space-3:1.6rem;
+  --space-4:2.5rem; --space-5:4rem;
+  --content:var(--max); --radius:2px; --radius-lg:3px;
+  --ease:cubic-bezier(.22,.61,.36,1); --dur:.5s;
+}
