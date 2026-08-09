@@ -9,6 +9,21 @@
 <link rel="icon" href="/favicon.svg">
 <link rel="stylesheet" href="/v4/assets/v2.css?v=31">
 <link rel="stylesheet" href="/v4/nation/weave.css?v=4">
+<style>
+/* the section bar — nation-building has five floors, this is how you move between them */
+.secnav{position:sticky;top:0;z-index:60;background:rgba(15,18,16,.94);
+  backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--rule)}
+.secnav__in{display:flex;align-items:center;gap:.4rem 1.6rem;flex-wrap:nowrap;
+  overflow-x:auto;scrollbar-width:none;padding-block:.7rem}
+.secnav__in::-webkit-scrollbar{display:none}
+.secnav__lbl{font-family:'Courier New',ui-monospace,Menlo,monospace;text-transform:uppercase;
+  letter-spacing:.16em;font-size:.68rem;color:var(--gold);white-space:nowrap;flex:none}
+.secnav a{white-space:nowrap;text-decoration:none;font-size:.88rem;font-weight:600;
+  color:var(--sand);padding-bottom:2px;border-bottom:2px solid transparent}
+.secnav a:hover{color:var(--cream)}
+.secnav a.is-on{color:var(--cream-2);border-bottom-color:var(--clay)}
+@media(max-width:640px){.secnav__lbl{display:none}}
+</style>
 </head>
 <body>
 
@@ -162,6 +177,14 @@
       <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
     </div>
   </div>
+
+<nav class="secnav" aria-label="Nation-building">
+  <div class="wrap secnav__in">
+    <span class="secnav__lbl">Nation-building</span>
+    <a href="/v4/nation/">The argument</a><a href="/v4/nation/gathering/">How decisions get made</a><a href="/v4/nation/governance/">A government that fits</a><a href="/v4/nation/economy/">Ancestral Economics</a><a class="is-on" aria-current="page" href="/v4/nation/lga/">The Local Governance Act</a><a href="/v4/organizing/">Organizing anything</a>
+  </div>
+</nav>
+
 </div>
 
 <main id="main">

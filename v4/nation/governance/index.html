@@ -9,6 +9,21 @@
 <link rel="icon" href="/favicon.svg">
 <link rel="stylesheet" href="/v4/assets/v2.css?v=31">
 <link rel="stylesheet" href="/v4/nation/nation.css?v=3">
+<style>
+/* the section bar — nation-building has five floors, this is how you move between them */
+.secnav{position:sticky;top:0;z-index:60;background:rgba(15,18,16,.94);
+  backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--rule)}
+.secnav__in{display:flex;align-items:center;gap:.4rem 1.6rem;flex-wrap:nowrap;
+  overflow-x:auto;scrollbar-width:none;padding-block:.7rem}
+.secnav__in::-webkit-scrollbar{display:none}
+.secnav__lbl{font-family:'Courier New',ui-monospace,Menlo,monospace;text-transform:uppercase;
+  letter-spacing:.16em;font-size:.68rem;color:var(--gold);white-space:nowrap;flex:none}
+.secnav a{white-space:nowrap;text-decoration:none;font-size:.88rem;font-weight:600;
+  color:var(--sand);padding-bottom:2px;border-bottom:2px solid transparent}
+.secnav a:hover{color:var(--cream)}
+.secnav a.is-on{color:var(--cream-2);border-bottom-color:var(--clay)}
+@media(max-width:640px){.secnav__lbl{display:none}}
+</style>
 </head>
 <body>
 
@@ -159,6 +174,14 @@
       <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
     </div>
   </div>
+
+<nav class="secnav" aria-label="Nation-building">
+  <div class="wrap secnav__in">
+    <span class="secnav__lbl">Nation-building</span>
+    <a href="/v4/nation/">The argument</a><a href="/v4/nation/gathering/">How decisions get made</a><a class="is-on" aria-current="page" href="/v4/nation/governance/">A government that fits</a><a href="/v4/nation/economy/">Ancestral Economics</a><a href="/v4/nation/lga/">The Local Governance Act</a><a href="/v4/organizing/">Organizing anything</a>
+  </div>
+</nav>
+
 </div>
 
 <main id="main">
@@ -523,6 +546,14 @@
     <div class="essay rv" style="margin-top:clamp(2.4rem, 1.6rem + 2.4vw, 3.6rem)">
       <p><strong>Who this is for.</strong> Indigenous and tribal governments, regional and municipal bodies inheriting a colonial-era code, newly autonomous territories, rural and post-industrial regions negotiating devolution, and any central government that has decided to push authority downward and wants it to survive the third year. Also the reverse case: a centre being asked to devolve, that needs a certification pathway it can defend.</p>
     </div>
+  </div>
+</section>
+
+<section class="sec sec--alt">
+  <div class="wrap wrap--tight" style="max-width:46rem">
+    <p class="eyebrow">The one question</p>
+    <p class="pull" style="margin-top:1.4rem">Will this ensure our future generations live in harmony and resilience with each other and Mother Earth?</p>
+    <p class="say" style="margin-top:1.6rem">That is the bottom line of <em>The Council Fire</em>, and it is the last thing asked before a decision is made. Every provision, every account, every council on this page exists to make that question answerable by somebody other than the person who wants the answer to be yes.</p>
   </div>
 </section>
 

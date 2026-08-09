@@ -10,6 +10,21 @@
 <link rel="stylesheet" href="/v4/assets/v2.css?v=31">
 <link rel="stylesheet" href="/v4/nation/nation.css?v=3">
 <link rel="stylesheet" href="/v4/nation/weave.css?v=4">
+<style>
+/* the section bar — nation-building has five floors, this is how you move between them */
+.secnav{position:sticky;top:0;z-index:60;background:rgba(15,18,16,.94);
+  backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--rule)}
+.secnav__in{display:flex;align-items:center;gap:.4rem 1.6rem;flex-wrap:nowrap;
+  overflow-x:auto;scrollbar-width:none;padding-block:.7rem}
+.secnav__in::-webkit-scrollbar{display:none}
+.secnav__lbl{font-family:'Courier New',ui-monospace,Menlo,monospace;text-transform:uppercase;
+  letter-spacing:.16em;font-size:.68rem;color:var(--gold);white-space:nowrap;flex:none}
+.secnav a{white-space:nowrap;text-decoration:none;font-size:.88rem;font-weight:600;
+  color:var(--sand);padding-bottom:2px;border-bottom:2px solid transparent}
+.secnav a:hover{color:var(--cream)}
+.secnav a.is-on{color:var(--cream-2);border-bottom-color:var(--clay)}
+@media(max-width:640px){.secnav__lbl{display:none}}
+</style>
 </head>
 <body>
 
@@ -163,6 +178,14 @@
       <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
     </div>
   </div>
+
+<nav class="secnav" aria-label="Nation-building">
+  <div class="wrap secnav__in">
+    <span class="secnav__lbl">Nation-building</span>
+    <a class="is-on" aria-current="page" href="/v4/nation/">The argument</a><a href="/v4/nation/gathering/">How decisions get made</a><a href="/v4/nation/governance/">A government that fits</a><a href="/v4/nation/economy/">Ancestral Economics</a><a href="/v4/nation/lga/">The Local Governance Act</a><a href="/v4/organizing/">Organizing anything</a>
+  </div>
+</nav>
+
 </div>
 
 <main id="main">
@@ -432,7 +455,7 @@
       <p class="gloss">The options<em>A community reads these and says: that one &mdash; that is how we already are</em></p>
       <div>
         <ul class="shuttle">
-          <li class="here"><div><b>Council of Na&rsquo;ta&rsquo;a</b><span>One local example, from home. The leader is chosen because the community has already seen him &mdash; considered wise, a good citizen, of good family standing, knowledgeable in the life skills that matter. He does not put his name forward. Elections had produced winners and losers, and the ones who lost felt rejected by their own community; the communities elections were meant to build had broken instead.</span></div></li>
+          <li class="here"><div><b>The selection of the Naat'áanii</b><span>One local example, from home. The leader is chosen because the community has already seen him &mdash; considered wise, a good citizen, of good family standing, knowledgeable in the life skills that matter. He does not put his name forward. Elections had produced winners and losers, and the ones who lost felt rejected by their own community; the communities elections were meant to build had broken instead.</span></div></li>
           <li><div><b>The Great Law of Peace</b><span>Haudenosaunee. Clan mothers name the chiefs and can un-name one who fails the people. A condolence ceremony opens every major meeting, because a person carrying grief cannot decide for the whole people. Every decision measured against the seventh generation &mdash; in the room, out loud.</span></div></li>
           <li><div><b>The <i>ayllu</i></b><span>Andean. Authority rotates by turn. The office is carried and then set down, and the setting down is as ordinary as the taking up.</span></div></li>
           <li><div><b>The <i>Allmend</i></b><span>Alpine. The assembled village governs its own shared pasture and forest &mdash; hand raised beside hand &mdash; and has done so for seven hundred years. Older than any parliament in its own country, and still working.</span></div></li>
@@ -478,7 +501,7 @@
           </div>
           <div class="spindle">
             <span class="spindle__k">At regional scale</span>
-            <h4>The council of sent voices</h4>
+            <h4>The regional council</h4>
             <p>Each community&rsquo;s circle <i>sends</i> someone &mdash; not elected, sent, for a short term, then somebody else. The representative does not vote for the community. They carry the community&rsquo;s voice into the larger circle and carry its questions home. The community decides; the region coordinates. Four times a year, in the round of the seasons.</p>
           </div>
           <div class="spindle">
@@ -487,6 +510,7 @@
             <p>A community bank holding patient money and doing the unglamorous work no large bank will. Underneath it, the oldest banking on earth &mdash; the rotating fund, the <i>ayni</i>, the <i>susu</i>, the tontine. Everyone puts in; each takes the whole pool in turn; no interest, no collateral, no credit score, only trust. A web of small enterprises instead of one large employer.</p>
           </div>
         </div>
+        <p class="say" style="margin-top:clamp(1.8rem, 1.4rem + 1.2vw, 2.6rem)">And it runs smaller than this. A person starting something on a Tuesday is answering the same questions in the same order. <a class="arrow" href="/v4/organizing/" style="margin-top:1.2rem">A community, a venture, an organization <span aria-hidden="true">&rarr;</span></a></p>
       </div>
     </div>
 
@@ -537,6 +561,7 @@
         <h2 class="step">A business with <i>soul.</i> Redesigned from the bones out.</h2>
         <p class="say" style="margin-top:1.8rem">Not reformed. Not incentivised. Not persuaded to be less bad. <strong>Redesigned</strong> &mdash; so the shape of the thing, at every joint, produces something the community can live with.</p>
         <p class="say">The old business was a machine for making money, and was startlingly good at that one narrow task while being catastrophic at everything else. This is a different animal, not a kinder version of the same one.</p>
+        <p class="say">In <em>The Council Fire</em> this one is called the Seventh Generation Company.</p>
       </div>
     </div>
 
@@ -549,7 +574,7 @@
           <li><b>The land holds a share too</b><span>Held in trust and spoken for by the ones whose work it is to speak for the land. If the business takes from the land, it gives back. If it cannot give back, it changes what it takes or it shrinks until it can.</span></li>
           <li><b>A board that includes the people the decisions land on</b><span>A chief executive, yes. Operations, finance, design &mdash; yes. And elders seated with equal authority, and young people from the community as full members rather than interns, because they are the ones who will live inside the results.</span></li>
           <li><b>The Sacred Veto</b><span>Any decision that would fundamentally alter the mission, the core values, or the relationship with the community and the land can be stopped by an elder council seated alongside the board &mdash; for a minimum of seven years past any change of ownership. The anti-drift principle, written into the bones instead of the values statement.</span></li>
-          <li><b>Surplus that flows in three directions</b><span>To the workers who made it. To the community that chartered it, through a fund that cannot be spent on operating costs and cannot be liquidated in a hard year &mdash; only on the school, the clinic, the land trust, the apprenticeships, the seed bank, the water. And to the land, through the restoration that returns what was drawn. Nothing flows to distant shareholders. Nothing buys back stock.</span></li>
+          <li><b>Surplus that flows in three directions</b><span>To the workers who made it. To the community that chartered it, through a Seventh Generation Fund that cannot be spent on operating costs and cannot be liquidated in a hard year &mdash; only on the school, the clinic, the land trust, the apprenticeships, the seed bank, the water. And to the land, through the restoration that returns what was drawn. Nothing flows to distant shareholders. Nothing buys back stock.</span></li>
         </ol>
 
         <div class="aloud">
@@ -670,13 +695,22 @@
 </section>
 
 <!-- ================= THE COUNCIL FIRE ================= -->
+<section class="sec sec--alt">
+  <div class="wrap wrap--tight" style="max-width:46rem">
+    <p class="eyebrow">The one question</p>
+    <p class="pull" style="margin-top:1.4rem">Will this ensure our future generations live in harmony and resilience with each other and Mother Earth?</p>
+    <p class="say" style="margin-top:1.6rem">That is the bottom line of <em>The Council Fire</em>, and it is the last thing asked before a decision is made. Every provision, every account, every council on this page exists to make that question answerable by somebody other than the person who wants the answer to be yes.</p>
+  </div>
+</section>
+
 <section class="bookband">
   <div class="bookband__bg"><img src="/assets/img/land/canyon-sunset-forest.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="wrap bookband__in">
     <p class="eyebrow rv">The novel</p>
     <h2 class="rv">The Council Fire</h2>
     <p class="rv">When the systems running the modern world reach their limits, the keepers of many peoples' oldest knowledge are drawn to one fire to remember what actually lasts.</p>
-    <p class="rv">Every culture facing a breaking world kept a council fire — a circle where elders, mothers and daughters remembered what endures. This is the fiction that sits underneath all of the work on this page.</p>
+    <p class="rv">Every culture facing a breaking world kept a council fire — elders in the circle, the young in the circle, the children at the edges. This is the fiction that sits underneath all of the work on this page.</p>
+    <p class="rv">On the last night of the book, a young woman stands up and asks the elders how she does this at home. They tell her the answer is a whole other book, and then they say what will be in it — the business, the community economy, the planning, property, the seeing of every person, and the story. That is the book being written next.</p>
     <div class="bookband__act rv">
       <a class="btn btn--primary" href="https://ancestralwatch.com">Read The Council Fire <span aria-hidden="true">→</span></a>
     </div>
