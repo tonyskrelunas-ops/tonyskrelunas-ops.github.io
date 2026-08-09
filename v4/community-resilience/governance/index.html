@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A government that fits — getting away from elections | Community Resilience</title>
+<meta name="description" content="Why campaign elections misfire in a communal culture, and the alternatives actually built and adopted: nomination and honor, representation by far-flung precinct, positions created from within, certification, and real leasing and taxing authority transferred down.">
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/v4/assets/v2.css?v=31">
+<link rel="stylesheet" href="/v4/community-resilience/nation.css?v=3">
+<style>
+/* the section bar — community resilience has five floors, this is how you move between them */
+.secnav{position:sticky;top:0;z-index:60;background:rgba(15,18,16,.94);
+  backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--rule)}
+.secnav__in{display:flex;align-items:center;gap:.4rem 1.6rem;flex-wrap:nowrap;
+  overflow-x:auto;scrollbar-width:none;padding-block:.7rem}
+.secnav__in::-webkit-scrollbar{display:none}
+.secnav__lbl{font-family:'Courier New',ui-monospace,Menlo,monospace;text-transform:uppercase;
+  letter-spacing:.16em;font-size:.68rem;color:var(--gold);white-space:nowrap;flex:none}
+.secnav a{white-space:nowrap;text-decoration:none;font-size:.88rem;font-weight:600;
+  color:var(--sand);padding-bottom:2px;border-bottom:2px solid transparent}
+.secnav a:hover{color:var(--cream)}
+.secnav a.is-on{color:var(--cream-2);border-bottom-color:var(--clay)}
+@media(max-width:640px){.secnav__lbl{display:none}}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip" style="position:absolute;left:-9999px">Skip to content</a>
+
+<div class="greet">
+  <div class="wrap greet__in">
+    <a class="greet__c" href="/v4/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+  <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+  <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+  <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+  <line x1="102" y1="118" x2="102" y2="110"/>
+  <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+  <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+  <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+  <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+  <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+  <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+  <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+  <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+  <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+  <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+  <line x1="6" y1="152" x2="194" y2="152"/>
+</svg>
+
+      <span class="greet__w">Y&aacute;'&aacute;t'&eacute;&eacute;h</span>
+      <span class="greet__l">Din&eacute;</span>
+    </a>
+    <a class="greet__c" href="/v4/lt/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="100" cy="100" r="76"/>
+  <circle cx="100" cy="100" r="46"/>
+  <circle cx="100" cy="100" r="26"/>
+  <circle cx="100" cy="100" r="8"/>
+  <polyline points="95.5,51 100,27 104.5,51 95.5,51"/>
+  <line x1="81.2" y1="54.7" x2="75.5" y2="40.9"/>
+  <polyline points="62.2,68.5 48.4,48.4 68.5,62.2 62.2,68.5"/>
+  <line x1="54.7" y1="81.2" x2="40.9" y2="75.5"/>
+  <polyline points="51,104.5 27,100 51,95.5 51,104.5"/>
+  <line x1="54.7" y1="118.8" x2="40.9" y2="124.5"/>
+  <polyline points="68.5,137.8 48.4,151.6 62.2,131.5 68.5,137.8"/>
+  <line x1="81.2" y1="145.3" x2="75.5" y2="159.1"/>
+  <polyline points="104.5,149 100,173 95.5,149 104.5,149"/>
+  <line x1="118.8" y1="145.3" x2="124.5" y2="159.1"/>
+  <polyline points="137.8,131.5 151.6,151.6 131.5,137.8 137.8,131.5"/>
+  <line x1="145.3" y1="118.8" x2="159.1" y2="124.5"/>
+  <polyline points="149,95.5 173,100 149,104.5 149,95.5"/>
+  <line x1="145.3" y1="81.2" x2="159.1" y2="75.5"/>
+  <polyline points="131.5,62.2 151.6,48.4 137.8,68.5 131.5,62.2"/>
+  <line x1="118.8" y1="54.7" x2="124.5" y2="40.9"/>
+  <path d="M 109.2,74.6 Q 100,55 90.8,74.6"/>
+  <path d="M 88.6,75.5 Q 68.2,68.2 75.5,88.6"/>
+  <path d="M 74.6,90.8 Q 55,100 74.6,109.2"/>
+  <path d="M 75.5,111.4 Q 68.2,131.8 88.6,124.5"/>
+  <path d="M 90.8,125.4 Q 100,145 109.2,125.4"/>
+  <path d="M 111.4,124.5 Q 131.8,131.8 124.5,111.4"/>
+  <path d="M 125.4,109.2 Q 145,100 125.4,90.8"/>
+  <path d="M 124.5,88.6 Q 131.8,68.2 111.4,75.5"/>
+</svg>
+
+      <span class="greet__w">Sveiki atvyk&#281;</span>
+      <span class="greet__l">Lietuvi&#371;</span>
+    </a>
+    <a class="greet__c" href="/v4/ja/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="18" y1="172" x2="182" y2="172" opacity="0.55"/>
+  <line x1="47" y1="66" x2="39" y2="172"/>
+  <line x1="61" y1="66" x2="57" y2="172"/>
+  <line x1="153" y1="66" x2="161" y2="172"/>
+  <line x1="139" y1="66" x2="143" y2="172"/>
+  <line x1="39" y1="172" x2="57" y2="172"/>
+  <line x1="143" y1="172" x2="161" y2="172"/>
+  <path d="M 33,98 L 167,98 L 167,110 L 33,110 Z"/>
+  <path d="M 94,80 L 106,80 L 106,98 L 94,98 Z"/>
+  <path d="M 12,60 C 48,34 152,34 188,60 L 179,74 C 147,52 53,52 21,74 Z"/>
+</svg>
+
+      <span class="greet__w" lang="ja">&#12424;&#12358;&#12371;&#12381;</span>
+      <span class="greet__l">&#26085;&#26412;&#35486;</span>
+    </a>
+  </div>
+</div>
+
+<div class="globebar">
+  <div class="wrap globebar__in">
+    <p class="globebar__lbl">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 2.6 15 0 18M12 3c-2.6 2.6-2.6 15 0 18"/>
+      </svg>
+      <span>Global</span>
+    </p>
+    <ul class="globebar__ls">
+      <li><a class="is-on" aria-current="true" href="/v4/" hreflang="en">English</a></li>
+      <li><a href="/v4/ja/" hreflang="ja">日本語 · Japan</a></li>
+      <li><a href="/v4/lt/" hreflang="lt">Lietuvių · Lithuania</a></li>
+      <li><a href="/v4/india/" hreflang="en">India</a></li>
+      <li><span class="soon">中文 · coming soon</span></li>
+    </ul>
+    <a class="globebar__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+  </div>
+</div>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="/v4/">Home</a></li>
+        <li><a href="/v4/#human-performance">Human Resilience</a></li>
+        <li><a href="https://ancestralwatch.com">The Books</a></li>
+        <li><a href="/v4/workshop/">Retreats</a></li>
+        <li><a href="/v4/journal/">Journal</a></li>
+        <li><a href="/v4/teams/">For Teams</a></li>
+        <li><a href="/v4/community-resilience/">Community Resilience</a></li>
+        <li><a href="/v4/#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="hdr__end">
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="wrap">
+    <div class="menu__top">
+      <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+      <button class="menu__close" id="menuClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="menu__ls">
+      <li><a href="/v4/"><em>01</em> Home</a></li>
+      <li><a href="/v4/#human-performance"><em>02</em> Human Resilience</a></li>
+      <li><a href="https://ancestralwatch.com"><em>03</em> The Books</a></li>
+      <li><a href="/v4/workshop/"><em>04</em> Retreats</a></li>
+      <li><a href="/v4/journal/"><em>05</em> Journal</a></li>
+      <li><a href="/v4/teams/"><em>06</em> For Teams</a></li>
+      <li><a href="/v4/community-resilience/"><em>07</em> Community Resilience</a></li>
+      <li><a href="/v4/#about"><em>08</em> About</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="/v4/ja/">日本語</a>
+      <a href="/v4/lt/">Lietuvių</a>
+      <a href="/v4/india/">India</a>
+      <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+    </div>
+  </div>
+
+<nav class="secnav" aria-label="Community resilience">
+  <div class="wrap secnav__in">
+    <span class="secnav__lbl">Community resilience</span>
+    <a href="/v4/community-resilience/">The argument</a><a href="/v4/community-resilience/gathering/">How decisions get made</a><a class="is-on" aria-current="page" href="/v4/community-resilience/governance/">A government that fits</a><a href="/v4/community-resilience/economy/">Ancestral Economics</a><a href="/v4/community-resilience/lga/">The Local Governance Act</a><a href="/v4/organizing/">Organizing anything</a>
+  </div>
+</nav>
+
+</div>
+
+<main id="main">
+
+<div class="crumb">
+  <div class="wrap crumb__in">
+    <a href="/v4/">TribeAwaken</a><i>/</i>
+    <a href="/v4/community-resilience/">Community Resilience</a><i>/</i>
+    <b>Deep dive two</b>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero__bg"><img src="/assets/img/garden/tea-lantern-azalea.jpg" alt="Tony Skrelūnas speaking from a podium to a seated audience outdoors" style="object-position:50% 45%" fetchpriority="high"></div>
+  <div class="hero__scrim"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow">Deep dive two · Community Resilience</p>
+    <h1>Getting away from elections.</h1>
+    <p class="lead">Campaign elections are one way to choose leaders. In a communal culture they are usually the worst one available. Here is what we built instead — and what it took to make the authority real rather than symbolic.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="mailto:wisdom@ancestralwatch.com">Start a conversation <span aria-hidden="true">&rarr;</span></a>
+      <a class="btn btn--ghost" href="#steps">See the first three steps</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec tex tex--weave">
+  
+  <div class="tex__i"><img src="/assets/img/garden/tea-azalea-moss.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">The before</p>
+        <h2 class="head">One salaried coordinator, reporting upward. That was the whole local government.</h2>
+      </div>
+      <p>Start with the failure state, because every conversation about governance reform that skips it produces a document nobody can use.</p>
+    </div>
+
+    <div class="essay rv">
+      <p class="drop">Before the reform, every local community in the system was structurally identical. One salaried coordinator, who reported to the central delegate. The community could pass resolutions. That was the extent of it.</p>
+
+      <p>No zoning. No local revenue. No taxing authority. No incentive to build anything, because anything built was approved, financed and controlled from the centre — and the people who approved it lived a long way from the people who would live next to it.</p>
+
+      <p>That is what centralization looks like from underneath. Not tyranny. <strong>Administration.</strong> A hundred communities holding regular meetings in order to produce documents requesting permission.</p>
+
+      <p>And here is the part that matters for anyone reading this from a very different place: the failure had nothing to do with the culture, the language, the remoteness or the poverty. It was a design. Power and authority had been placed entirely at the centre, and the local body had been given the form of a government with none of the substance of one. You can find the identical arrangement in post-industrial regions, in colonial-era municipal codes across three continents, and in the field offices of most large organizations.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--alt hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/roper/roper-peaks-sunset.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Why elections misfire</p>
+        <h2 class="head">A ballot is a mechanism, not a synonym for consent.</h2>
+      </div>
+      <p>I am not against voting. I am against assuming a campaign election is the only way consent can be established, when the culture in front of you has three older mechanisms still visibly working.</p>
+    </div>
+
+    <ol class="nlist rv">
+      <li>
+        <span class="n">01</span>
+        <div>
+          <b>They reward self-promotion.</b>
+          <span>In most communal cultures, declaring your own worth in public is a disqualifying act — it is the behaviour of someone who cannot be trusted with anything. So the election does not select the strongest leader. It selects the person least bound by that norm, which is a materially different group of people and usually a worse one.</span>
+        </div>
+      </li>
+      <li>
+        <span class="n">02</span>
+        <div>
+          <b>They split kin.</b>
+          <span>A campaign obliges households to declare against each other in public. The election is over in November. The family is not. Where the same fifty households will be intermarrying and sharing water for the next century, a two-year cycle of forced public opposition is not a democratic exercise. It is a slow structural injury.</span>
+        </div>
+      </li>
+      <li>
+        <span class="n">03</span>
+        <div>
+          <b>They import a contest the culture never had.</b>
+          <span>A winner with fifty-one percent inherits an organized opposition that did not exist until the campaign manufactured it. Then that opposition is available for capture by anyone with money, and now you have factions in a place that previously had families.</span>
+        </div>
+      </li>
+      <li>
+        <span class="n">04</span>
+        <div>
+          <b>They select for campaigning, not governing.</b>
+          <span>These are two different jobs requiring two different temperaments. We have simply agreed to pretend that winning the first is evidence of competence at the second, and every level of government on earth pays for that pretence.</span>
+        </div>
+      </li>
+      <li>
+        <span class="n">05</span>
+        <div>
+          <b>Turnout gets read as legitimacy.</b>
+          <span>Across a dispersed territory, turnout substantially measures the condition of the roads and who owns a working vehicle. A council elected on eighteen percent is then told, by everyone including itself, that eighty-two percent of its people did not care.</span>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="state">
+  <div class="state__bg"><img src="/assets/img/tony/listeners-at-dusk.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap state__in">
+    <p class="pull rv">You do not put yourself forward. Others put you forward, and the honor is part of the pay.</p>
+    <cite class="rv">On nomination as a selection mechanism</cite>
+  </div>
+</section>
+
+<section class="sec hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/roper/roper-trail-hat.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">What we built instead</p>
+        <h2 class="head">Four older mechanisms, given legal form.</h2>
+      </div>
+      <p>None of these were invented. All of them were already operating in the community — in the ceremony, the family, the grazing dispute. The work was to give them a statute, a budget line and a filing cabinet.</p>
+    </div>
+
+    <ul class="rlist rv">
+      <li>
+        <b>Nomination and honor</b>
+        <span>You do not put yourself forward. Others put you forward, and a substantial part of the compensation is the honor of having been named. It selects for standing already earned rather than for appetite, and it removes the campaign entirely — with it, the factions.</span>
+      </li>
+      <li>
+        <b>Representation by far-flung precinct</b>
+        <span>Representation follows the true shape of the land and the people — kinship groupings, watersheds, the roads people actually travel — rather than a population-equal polygon produced by an algorithm. A community spread across two hundred miles of dirt road is several constituencies, whatever the map says.</span>
+      </li>
+      <li>
+        <b>Positions created from within the culture</b>
+        <span>Instead of importing a committee chart, we asked which functions the community already performs — water, grazing, ceremony, the young, the burial, the dispute — and gave each of them a named position, a term and a line in the budget. The government then describes something that already exists.</span>
+      </li>
+      <li>
+        <b>A respectful meeting process, written into the law</b>
+        <span>Not etiquette. Formal design: how the meeting opens, who speaks in what order, how a decision closes. It is in the act because a governing body that meets badly will govern badly no matter what authority it holds. <a class="arrow" style="display:inline-flex;font-size:.82rem;padding-bottom:0;vertical-align:baseline" href="/v4/community-resilience/gathering/">The full argument &rarr;</a></span>
+      </li>
+    </ul>
+
+    <div class="essay rv" style="margin-top:clamp(2.6rem, 1.8rem + 2.4vw, 4rem)">
+      <h3>And then certification, which is the part people skip</h3>
+      <p>You do not hand real authority to a body that cannot yet hold it. That is not paternalism; it is the reason most devolution programmes collapse in their third year and get quietly reversed.</p>
+      <p>So communities became <strong>certified to govern</strong>. Certification meant meeting a defined standard, with genuine separation of powers, real checks and balances, and an annual audit once revenue passed a threshold. A community that had them held authority. A community that did not, worked toward them, with support.</p>
+      <p>About half of the communities achieved certification.</p>
+      <p>I want to say that number plainly rather than round it. The roadblocks were real and they were boring: <strong>staffing</strong> — small places cannot easily hire a manager and an accountant; <strong>partial adoption</strong> — a community would stand up the two easy systems and stop; and <strong>inconsistent technical support from the centre</strong>, which had agreed to devolve authority but had not fully reorganized itself to help anyone use it.</p>
+      <div class="note">
+        <p>Half is not a disappointing number for a structural reform of this size. But I would rather tell you half than sell you a hundred percent, and any consultant who quotes you a hundred percent has not run one of these.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--alt hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/tony/gym-assembly.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Authority has to be real</p>
+        <h2 class="head">A local government without money is a suggestion box.</h2>
+      </div>
+      <p>This is where most decentralization reform quietly fails. Responsibility travels down; authority and revenue stay up. The reform we wrote moved the tools themselves.</p>
+    </div>
+
+    <div class="essay rv">
+      <p>Alongside the governance act, business site-leasing law and the tax code were reformed so that communities gained the practical machinery to govern — <strong>local taxing and leasing authority transferred downward</strong>, not promised, not piloted. These are the tools that became available:</p>
+    </div>
+
+    <ul class="tags rv">
+      <li class="hi">Business site leasing</li>
+      <li class="hi">Local sales taxes</li>
+      <li class="hi">Land use planning</li>
+      <li>Zoning ordinances</li>
+      <li>Revenue creation</li>
+      <li>Bond finance</li>
+      <li>Tax increment financing</li>
+      <li>Equity positions</li>
+      <li>A locally-owned development entity</li>
+      <li>Special development areas</li>
+      <li>Delegation of central responsibilities downward</li>
+      <li>Dispute resolution</li>
+      <li>Sub-units and joint agreements</li>
+      <li>Alternative forms of government</li>
+    </ul>
+
+    <div class="essay rv" style="margin-top:clamp(2.2rem, 1.6rem + 2vw, 3.2rem)">
+      <p>Using them requires supporting capacity, and there is no way around it: an experienced manager, legal counsel, accounting, and a standing committee with a real remit. A community that acquires the tools without the capacity will hold them and not use them, which looks from the outside like proof that devolution does not work.</p>
+      <p><strong>And the first step is always a land use plan.</strong> Always. Nothing downstream — zoning, leasing, revenue, bond finance, a development entity — is available to a community that cannot yet state what its land is for.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/roper/aspens-looking-up.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">What communities did with it</p>
+        <h2 class="head">Once the authority was real, they used it in ways nobody had drafted for.</h2>
+      </div>
+      <p>This is the argument for local decision-making in one line: the centre could not have designed these, because the centre did not know they were needed.</p>
+    </div>
+
+    <ul class="rlist rv">
+      <li><b>Architectural standards and green belts</b><span>Communities set what their own places would look like, and drew the lines that would stay open.</span></li>
+      <li><b>Parks managed through delegation</b><span>Stewardship taken over from the centre by the people who live at the gate.</span></li>
+      <li><b>Special tax district financing</b><span>Revenue raised locally against a defined area and a defined purpose.</span></li>
+      <li><b>Partnership between communities</b><span>Neighbouring communities combining to take over functions of the central government outright.</span></li>
+      <li><b>Joint administration</b><span>Shared management, shared accounting, shared economic development staff — the way small places afford competence.</span></li>
+      <li><b>Joint agreements</b><span>Projects developed together, with costs and benefits shared on terms both sides wrote.</span></li>
+      <li><b>Unique local ordinances</b><span>Law that fits one valley, because one valley is what it was written for.</span></li>
+      <li><b>The whole economic development process, locally</b><span>Not a grant application to the centre. The process itself, held and run at home.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec sec--deep">
+  <div class="wrap mediasplit">
+    <figure class="mediasplit__img photolift rv">
+      <img src="/assets/img/world/japan-zen-garden.jpg" alt="Tony Skrelūnas presenting to a seated group in a lodge" loading="lazy" style="object-position:50% 45%">
+    </figure>
+    <div class="rv">
+      <p class="eyebrow">How it was built</p>
+      <h2 style="max-width:14ch">It failed the first time.</h2>
+      <p style="margin-top:1.8rem">The act was co-authored with a commission. Underneath it sat <strong>a public policy process</strong> that gathered vision from the three groups most reform ignores in favour of consultants: <strong>elders, youth and leaders</strong>. Alongside that, a deep study of the old systems, the culture and the ceremony — done at night and at weekends, for years, because nobody funds that part.</p>
+      <p>Then it went to the legislature and <strong>it failed.</strong></p>
+      <p>We took it back, worked it again, and it passed on the second attempt — after which it was signed quickly. I say this every time, because the reform literature is full of clean stories and not one of them is true. A structural change that alters where power sits will be defeated at least once by the people it takes power from. Budget for that, politically and emotionally, or the first defeat will end the project.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec hasphoto" id="steps">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/land/peaks-pines.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">If you are a community leader</p>
+        <h2 class="head">Your first three steps, and you can start this month.</h2>
+      </div>
+      <p>None of these require a budget, an outside adviser, or permission from anybody. They are the orientation work, and almost nobody does them before hiring someone.</p>
+    </div>
+
+    <ol class="nlist rv">
+      <li>
+        <span class="n">01</span>
+        <div>
+          <b>Write down the authority you actually hold.</b>
+          <span>Not what you are told you hold. Read the enabling documents — the charter, the code, the delegation instruments, the leases. Most communities find they hold more than they use and considerably less than they were promised, and the gap between those two numbers is the entire strategy for the next five years.</span>
+        </div>
+      </li>
+      <li>
+        <span class="n">02</span>
+        <div>
+          <b>Make a land use plan.</b>
+          <span>Always first, everywhere, without exception. Zoning, leasing, revenue, financing and any development entity are all downstream of a community being able to state what its land is for. A community without a plan is not underfunded. It is unable to receive funding.</span>
+        </div>
+      </li>
+      <li>
+        <span class="n">03</span>
+        <div>
+          <b>Name the functions you already perform, and give them positions.</b>
+          <span>You are already governing water, grazing, disputes, ceremony and the young — informally, through people everyone can name. Give those functions a title, a term and a line in a budget and you have the beginning of a government that fits, built from what is already load-bearing rather than from an org chart somebody imported.</span>
+        </div>
+      </li>
+    </ol>
+
+    <div class="gate rv">
+      <svg class="gate__g" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><!-- ground -->
+  <line x1="12" y1="170" x2="188" y2="170"/>
+
+  <!-- six-sided wall: straight faceted sides, flat top plate -->
+  <path d="M 26,170 L 26,124 L 52,106 L 148,106 L 174,124 L 174,170"/>
+  <line x1="52" y1="106" x2="52" y2="170" opacity="0.4"/>
+  <line x1="148" y1="106" x2="148" y2="170" opacity="0.4"/>
+
+  <!-- cribbed log courses -->
+  <line x1="26" y1="140" x2="174" y2="140" opacity="0.35"/>
+  <line x1="26" y1="155" x2="174" y2="155" opacity="0.35"/>
+
+  <!-- low faceted roof: straight planes meeting a flat smoke opening -->
+  <path d="M 26,124 L 78,80 L 122,80 L 174,124"/>
+  <path d="M 52,106 L 88,80" opacity="0.45"/>
+  <path d="M 148,106 L 112,80" opacity="0.45"/>
+
+  <!-- the smoke hole is a squared opening in the roof plane -->
+  <path d="M 82,80 L 82,72 L 118,72 L 118,80"/>
+  <line x1="82" y1="72" x2="118" y2="72"/>
+
+  <!-- smoke, drifting off-centre so it never reads as a point -->
+  <path d="M 92,66 C 84,54 98,48 90,34" opacity="0.55"/>
+  <path d="M 108,66 C 102,56 114,50 109,38" opacity="0.35"/>
+
+  <!-- the door always faces east -->
+  <path d="M 106,170 L 106,132 L 136,132 L 136,170"/>
+  <line x1="106" y1="140" x2="136" y2="140" opacity="0.45"/>
+  <line x1="112" y1="153" x2="112" y2="159" opacity="0.6"/>
+
+  <!-- the sun it faces -->
+  <circle cx="168" cy="44" r="7" opacity="0.9"/>
+  <line x1="178.5" y1="44" x2="183.5" y2="44" opacity="0.7"/>
+  <line x1="175.4" y1="36.6" x2="179" y2="33" opacity="0.7"/>
+  <line x1="168" y1="33.5" x2="168" y2="28.5" opacity="0.7"/>
+  <line x1="160.6" y1="36.6" x2="157" y2="33" opacity="0.7"/>
+  <line x1="157.5" y1="44" x2="152.5" y2="44" opacity="0.7"/>
+  <line x1="160.6" y1="51.4" x2="157" y2="55" opacity="0.7"/>
+  <line x1="168" y1="54.5" x2="168" y2="59.5" opacity="0.7"/>
+  <line x1="175.4" y1="51.4" x2="179" y2="55" opacity="0.7"/></svg>
+      <p class="gate__k"><span>Beyond this point</span></p>
+      <h3>The rest of this is done together.</h3>
+      <p>What follows is the working method — the part that is genuinely a method rather than a principle.</p>
+      <ul>
+      <li>The precinct mapping process</li>
+      <li>The nomination protocol, end to end</li>
+      <li>The certification criteria and the audit threshold</li>
+      <li>The authority-transfer sequence and its order</li>
+      <li>Ordinance and code drafting, and transition governance during handover</li>
+      </ul>
+      <p class="gate__close">It is not a document. It is carried into a community and adapted to that community’s kinship, terrain and existing institutions, in the sequence that community can actually absorb. Handed over as a template it produces a binder. That is the only way it holds.</p>
+      <div class="gate__act">
+        <a class="btn btn--primary" href="mailto:wisdom@ancestralwatch.com">Start a conversation <span aria-hidden="true">&rarr;</span></a>
+        <a class="arrow" href="https://ancestralwatch.com">Read The Council Fire <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec sec--alt hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/roper/two-dogs-pines.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Working together</p>
+        <h2 class="head">What the work actually looks like.</h2>
+      </div>
+      <p>Governance design is a multi-year piece of work and I will say so at the first meeting. What follows is how it is usually staged.</p>
+    </div>
+
+    <div class="eng rv">
+      <div class="eng__c">
+        <div class="eng__k">One</div>
+        <h4>Authority audit and vision process</h4>
+        <p>What you hold on paper, what you actually exercise, and a real process — elders, youth, leaders — to establish what the government is being built to do.</p>
+      </div>
+      <div class="eng__c">
+        <div class="eng__k">Two</div>
+        <h4>Design and drafting</h4>
+        <p>Precincts, selection mechanism, positions, meeting process and the certification path, drafted into instruments your body can actually adopt.</p>
+      </div>
+      <div class="eng__c">
+        <div class="eng__k">Three</div>
+        <h4>Transfer and capacity</h4>
+        <p>Sequencing the authority that moves down, standing up the systems that let you hold it, and staying through the first defeat.</p>
+      </div>
+    </div>
+
+    <div class="essay rv" style="margin-top:clamp(2.4rem, 1.6rem + 2.4vw, 3.6rem)">
+      <p><strong>Who this is for.</strong> Indigenous and tribal governments, regional and municipal bodies inheriting a colonial-era code, newly autonomous territories, rural and post-industrial regions negotiating devolution, and any central government that has decided to push authority downward and wants it to survive the third year. Also the reverse case: a centre being asked to devolve, that needs a certification pathway it can defend.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--alt">
+  <div class="wrap wrap--tight" style="max-width:46rem">
+    <p class="eyebrow">The one question</p>
+    <p class="pull" style="margin-top:1.4rem">Will this ensure our future generations live in harmony and resilience with each other and Mother Earth?</p>
+    <p class="say" style="margin-top:1.6rem">That is the bottom line of <em>The Council Fire</em>, and it is the last thing asked before a decision is made. Every provision, every account, every council on this page exists to make that question answerable by somebody other than the person who wants the answer to be yes.</p>
+  </div>
+</section>
+
+<section class="bookband">
+  <div class="bookband__bg"><img src="/assets/img/land/juniper-ancient.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap bookband__in">
+    <p class="eyebrow rv">The novel</p>
+    <h2 class="rv">The Council Fire</h2>
+    <p class="rv">When the systems running the modern world reach their limits, the keepers of many peoples’ oldest knowledge are drawn to one fire to remember what actually lasts.</p>
+    <p class="rv">Every culture facing a breaking world kept a council fire. The governance argument on this page is the non-fiction half of that book.</p>
+    <div class="bookband__act rv">
+      <a class="btn btn--primary" href="https://ancestralwatch.com">Read The Council Fire <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--alt touch">
+  <div class="wrap wrap--tight rv">
+    <p class="eyebrow eyebrow--center">Work together</p>
+    <h2>Tell me what authority you are trying to move, and where.</h2>
+    <p>Governance design, code and ordinance work, certification pathways, and the politics of getting it adopted. It comes straight to Tony.</p>
+    <a class="touch__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+        <p class="muted ftr__brand">Ancestral intelligence for a regenerating world.</p>
+        <div class="ftr__langs">
+          <a href="/v4/ja/">日本語</a><span>·</span>
+          <a href="/v4/lt/">Lietuvių</a><span>·</span>
+          <a href="/v4/india/">India</a><span>·</span>
+          <span>中文 soon</span>
+        </div>
+      </div>
+      <div>
+        <h4>Community Resilience</h4>
+        <ul>
+          <li><a href="/v4/community-resilience/">The philosophy</a></li>
+          <li><a href="/v4/community-resilience/gathering/">How decisions get made</a></li>
+          <li><a href="/v4/community-resilience/governance/">A government that fits</a></li>
+          <li><a href="/v4/community-resilience/economy/">Ancestral Economics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Work together</h4>
+        <ul>
+          <li><a href="mailto:wisdom@ancestralwatch.com">Advisory &amp; design</a></li>
+          <li><a href="/v4/teams/">The Far Messenger Program</a></li>
+          <li><a href="/v4/workshop/">The Canyon Within</a></li>
+          <li><a href="/v4/#human-performance">Human Resilience</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read</h4>
+        <ul>
+          <li><a href="https://ancestralwatch.com">The Council Fire</a></li>
+          <li><a href="https://ancestralwatch.com">The Books</a></li>
+          <li><a href="/v4/journal/">The Journal</a></li>
+          <li><a href="/v4/#about">About Tony</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <span>© 2026 TribeAwaken · Tony Skrelūnas</span>
+      <span>Ancestral intelligence for a regenerating world.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')}); return;
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{rootMargin:'0px 0px -6% 0px',threshold:.05});
+  els.forEach(function(e){io.observe(e)});
+  function sweep(){
+    els.forEach(function(e){
+      if(e.classList.contains('in')) return;
+      var r = e.getBoundingClientRect();
+      if(r.top < (window.innerHeight || 0) * 1.02){ e.classList.add('in'); io.unobserve(e); }
+    });
+  }
+  window.addEventListener('load', function(){ sweep(); setTimeout(sweep, 260); });
+  setTimeout(sweep, 1200);
+})();
+
+(function(){
+  var b=document.getElementById('burger'), m=document.getElementById('menu'), c=document.getElementById('menuClose');
+  if(!b||!m) return;
+  function open(){m.classList.add('open');b.setAttribute('aria-expanded','true');document.body.classList.add('locked')}
+  function close(){m.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.classList.remove('locked')}
+  b.addEventListener('click',function(){m.classList.contains('open')?close():open()});
+  if(c) c.addEventListener('click',close);
+  m.addEventListener('click',function(e){if(e.target.tagName==='A')close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+})();
+</script>
+<script src="/v4/assets/capture.js?v=1" defer></script>
+</body>
+</html>
