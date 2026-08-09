@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Listen — the song, the video, and the meditation playlist | TribeAwaken</title>
+<meta name="description" content="A word from Tony Skrelūnas in the redwoods, his original song The Warrior's Code, the We Are A Tribe anthem, and the Ancestral Watch meditation and relaxation playlist. Put it on and let it run.">
+<link rel="stylesheet" href="/assets-v4/v2.css?v=31">
+<style>
+/* ---- repairs to shared v2.css (invalid calc: missing spaces around "+") ---- */
+.grid{gap:clamp(1.2rem,.8rem + 1.6vw,2.2rem)}
+.split{gap:clamp(2rem,1rem + 4vw,5rem)}
+.card{padding:clamp(1.6rem,1.2rem + 1.4vw,2.4rem)}
+.stat__n{font-size:clamp(2.8rem,2rem + 2.6vw,4.4rem)}
+.pull{font-size:clamp(1.9rem,1.4rem + 2.4vw,3.4rem)}
+
+/* ---- page-scoped: listen ---- */
+
+/* textures — the client's own photographs: slot-canyon sandstone, ponderosa bark,
+   dry-laid stone, and two of his weavings (one carrying the corn motif) */
+.tex{position:relative;overflow:hidden;isolation:isolate}
+.tex>*{position:relative;z-index:2}
+.tex::before{content:"";position:absolute;inset:0;z-index:0;background-size:cover;
+  background-position:center;pointer-events:none}
+.tex::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none}
+/* The scrims are DIRECTIONAL: full weight under the reading column on the left,
+   falling away across the open half of the photograph. Nothing exceeds .72. */
+.tex--slot::before{background-image:url(/assets/img/garden/tea-pagoda-stream.jpg);opacity:.8;
+  background-position:50% 34%;filter:saturate(.88)}
+.tex--slot::after{background:
+  linear-gradient(104deg,rgba(27,18,16,.68) 0%,rgba(27,18,16,.56) 34%,rgba(27,18,16,.26) 70%,rgba(27,18,16,.1) 100%)}
+.tex--bark::before{background-image:url(/assets/img/land/pine-bark.jpg);opacity:.8;
+  background-position:64% 50%;filter:saturate(.8)}
+.tex--bark::after{background:
+  linear-gradient(96deg,rgba(20,13,10,.72) 0%,rgba(20,13,10,.62) 38%,rgba(20,13,10,.26) 74%,rgba(20,13,10,.12) 100%)}
+.tex--stone::before{background-image:url(/assets/img/land/stone-ramada.jpg);opacity:.58;
+  background-position:50% 62%;filter:saturate(.7)}
+.tex--stone::after{background:
+  linear-gradient(100deg,rgba(27,18,16,.7) 0%,rgba(27,18,16,.6) 36%,rgba(27,18,16,.3) 72%,rgba(27,18,16,.18) 100%)}
+.tex--rughorse::before{background-image:url(/assets/img/garden/tea-lantern-azalea.jpg);opacity:.55;
+  background-position:50% 52%;filter:saturate(.9)}
+/* two reading columns here, so the weight stays central and lifts off the edges */
+.tex--rughorse::after{background:
+  radial-gradient(115% 130% at 44% 46%,rgba(36,24,20,.7) 0%,rgba(36,24,20,.6) 52%,rgba(36,24,20,.34) 100%)}
+.tex--corn::before{background-image:url(/assets/img/garden/tea-azalea-moss.jpg);opacity:.9;
+  background-position:50% 50%;filter:saturate(.9)}
+/* centred type — weight in the middle, the weaving reads at the edges */
+.tex--corn::after{background:
+  radial-gradient(60% 96% at 50% 50%,rgba(20,13,10,.72) 0%,rgba(20,13,10,.62) 56%,rgba(20,13,10,.2) 100%)}
+
+/* ---- petroglyphs ----
+   The SVG symbols are treated as rock art: large, sparse, pecked-in, barely there. */
+.pg{position:absolute;z-index:1;pointer-events:none;aspect-ratio:1;
+  background:rgba(232,182,140,.14);
+  -webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;-webkit-mask-position:center;
+  mask-repeat:no-repeat;mask-size:contain;mask-position:center}
+.pg--breath{-webkit-mask-image:url(/assets-v4/art/breath.svg);mask-image:url(/assets-v4/art/breath.svg)}
+.pg--runner{-webkit-mask-image:url(/assets-v4/art/runner.svg);mask-image:url(/assets-v4/art/runner.svg)}
+.pg--enso{-webkit-mask-image:url(/assets-v4/art/japan-enso.svg);mask-image:url(/assets-v4/art/japan-enso.svg)}
+.pg--wave{-webkit-mask-image:url(/assets-v4/art/japan-wave.svg);mask-image:url(/assets-v4/art/japan-wave.svg)}
+.pg--sun{-webkit-mask-image:url(/assets-v4/art/baltic-sun.svg);mask-image:url(/assets-v4/art/baltic-sun.svg)}
+.pg--fire{-webkit-mask-image:url(/assets-v4/art/fire-circle.svg);mask-image:url(/assets-v4/art/fire-circle.svg)}
+.pg--capitals{-webkit-mask-image:url(/assets-v4/art/four-capitals.svg);mask-image:url(/assets-v4/art/four-capitals.svg)}
+.pg--hogan{-webkit-mask-image:url(/assets-v4/art/dine-hogan.svg);mask-image:url(/assets-v4/art/dine-hogan.svg)}
+.sec{position:relative;overflow:hidden}
+.sec>.pg{top:clamp(-5rem,-4vw,-2rem);right:clamp(-9rem,-7.5vw,-3.5rem);
+  width:clamp(200px,20vw,360px);background-color:rgba(232,182,140,.115)}
+.sec>.pg--left{right:auto;left:clamp(-9rem,-7.5vw,-3.5rem);top:auto;bottom:clamp(-5rem,-4vw,-2rem)}
+.sec>.pg--centre{left:50%;top:50%;right:auto;transform:translate(-50%,-50%);
+  width:clamp(320px,40vw,600px);background-color:rgba(232,182,140,.1)}
+@media(max-width:820px){.sec>.pg{width:180px;background-color:rgba(232,182,140,.08)}}
+
+/* woven wool band */
+.weave{display:block;width:100%;height:72px;opacity:.9}
+.weaverule{padding-block:clamp(1rem,2vw,1.8rem);border-block:1px solid var(--rule);background:var(--ink)}
+
+/* hero */
+.hero--listen{min-height:min(74vh,760px)}
+.hero--listen .hero__bg img{object-position:58% 44%}
+.hero--listen .hero__bg img{filter:saturate(.94) brightness(1.2)}
+/* weight where the headline sits, then the creek opens up to the right.
+   Deepest composite = 1 - (1 - .64)(1 - .22) = .72 */
+.hero--listen .hero__scrim{background:
+  linear-gradient(96deg,rgba(20,13,10,.64) 0%,rgba(20,13,10,.54) 36%,rgba(20,13,10,.24) 72%,rgba(20,13,10,.08) 100%),
+  linear-gradient(180deg,rgba(20,13,10,.22) 0%,rgba(20,13,10,0) 34%,rgba(20,13,10,0) 66%,rgba(20,13,10,.22) 100%)}
+.hero--listen h1{max-width:14ch}
+.hero--listen .lead{max-width:32ch}
+.hero__meta{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.1rem;margin-top:2rem;
+  font-weight:700;font-size:1.02rem;color:var(--sand)}
+.hero__meta span{display:flex;align-items:center;gap:1.1rem}
+.hero__meta span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--clay)}
+.hero__meta span:last-child::after{display:none}
+
+/* section heading pattern */
+.shd{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.8rem 2rem}
+.shd h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.7rem);font-weight:800;letter-spacing:-.032em;max-width:18ch}
+.shd__n{font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--sand)}
+
+/* ---- video ---- */
+.vwrap{position:relative;margin-top:clamp(2rem,4vw,3.2rem);border-radius:16px;overflow:hidden;
+  border:1px solid var(--rule);background:#000;aspect-ratio:16/9}
+.vwrap video{width:100%;height:100%;object-fit:cover;display:block}
+.vwrap__cover{position:absolute;inset:0;z-index:3;display:grid;place-items:center;
+  background:linear-gradient(180deg,rgba(20,13,10,.28) 0%,rgba(20,13,10,.12) 42%,rgba(20,13,10,.52) 100%);
+  border:0;padding:0;cursor:pointer;transition:opacity .35s ease}
+.vwrap.is-playing .vwrap__cover{opacity:0;pointer-events:none}
+.vwrap__label{position:absolute;left:clamp(1.1rem,2.6vw,2.2rem);bottom:clamp(1.1rem,2.6vw,2rem);
+  text-align:left;font-family:var(--body);font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  font-size:.76rem;color:var(--cream)}
+.vwrap__label b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.02em;
+  text-transform:none;font-size:clamp(1.15rem,1rem + .9vw,1.75rem);margin-top:.5rem}
+.pbtn{width:clamp(74px,9vw,112px);height:clamp(74px,9vw,112px);border-radius:50%;
+  background:var(--clay);color:var(--on-clay);display:grid;place-items:center;
+  box-shadow:0 18px 48px rgba(0,0,0,.45);transition:transform .22s ease,background .22s ease}
+.vwrap__cover:hover .pbtn{transform:scale(1.07);background:var(--clay-lt)}
+.pbtn svg{width:34%;height:34%;margin-left:8%}
+
+/* ---- custom audio players ---- */
+.tracks{display:grid;gap:clamp(1.6rem,1rem + 1.8vw,2.4rem);margin-top:clamp(2rem,4vw,3.2rem)}
+.trk{display:grid;grid-template-columns:clamp(180px,28%,320px) 1fr;
+  gap:clamp(1.3rem,.8rem + 2vw,2.8rem);align-items:center;
+  background:var(--bg-3);border:1px solid var(--rule);border-radius:16px;
+  padding:clamp(1.1rem,.7rem + 1.4vw,1.7rem)}
+@media(max-width:660px){.trk{grid-template-columns:1fr}
+  .trk__art{aspect-ratio:16/10}
+  .trk h3{font-size:clamp(1.45rem,1.2rem + 1.4vw,1.9rem)}}
+.trk__art{border-radius:12px;overflow:hidden;position:relative;aspect-ratio:1;background:var(--ink)}
+.trk__art img{width:100%;height:100%;object-fit:cover}
+.trk__k{font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--clay-lt);margin-bottom:.6rem}
+.trk h3{font-size:clamp(1.5rem,1.2rem + 1.5vw,2.35rem);font-weight:800;letter-spacing:-.028em;
+  margin-bottom:.7rem}
+.trk__note{color:var(--sand);font-size:1.04rem;line-height:1.58;max-width:54ch;margin-bottom:1.5rem}
+
+.player{display:flex;align-items:flex-start;gap:clamp(.9rem,2vw,1.4rem)}
+.player__btn{flex:none;width:60px;height:60px;margin-top:-17px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--clay);color:var(--on-clay);display:grid;place-items:center;
+  transition:transform .18s ease,background .2s ease}
+.player__btn:hover{background:var(--clay-lt);transform:scale(1.06)}
+.player__btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.player__btn svg{width:20px;height:20px;pointer-events:none}
+.player__btn .ic-pause{display:none}
+.player.is-playing .ic-play{display:none}
+.player.is-playing .ic-pause{display:block}
+.player__mid{flex:1 1 auto;min-width:0}
+.player__bar{position:relative;height:26px;display:flex;align-items:center;cursor:pointer;
+  touch-action:none}
+.player__bar:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:4px}
+.player__track{position:relative;width:100%;height:6px;border-radius:99px;
+  background:rgba(250,243,233,.16);overflow:visible}
+.player__fill{position:absolute;inset:0 auto 0 0;width:0%;border-radius:99px;
+  background:linear-gradient(90deg,var(--clay) 0%,var(--gold) 100%)}
+.player__knob{position:absolute;top:50%;left:0%;width:14px;height:14px;border-radius:50%;
+  background:var(--cream);transform:translate(-50%,-50%);box-shadow:0 2px 8px rgba(0,0,0,.5);
+  transition:transform .15s ease}
+.player__bar:hover .player__knob{transform:translate(-50%,-50%) scale(1.25)}
+.player__time{display:flex;justify-content:space-between;gap:1rem;margin-top:.5rem;
+  font-size:.78rem;font-weight:800;letter-spacing:.11em;color:var(--sand);
+  font-variant-numeric:tabular-nums}
+.player__hint{flex:none;font-size:.74rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--sand);white-space:nowrap}
+@media(max-width:520px){.player__hint{display:none}}
+
+/* ---- youtube embeds ---- */
+.yt{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;
+  border:1px solid var(--rule);background:#0B0806}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ytnote{color:var(--sand);margin-top:1.1rem;font-size:var(--t-small)}
+
+.playlist{display:grid;grid-template-columns:1.85fr 1fr;gap:clamp(2rem,1rem + 3.2vw,3.8rem);
+  align-items:start;margin-top:clamp(2rem,4vw,3.2rem)}
+@media(max-width:980px){.playlist{grid-template-columns:1fr}}
+.plist2{list-style:none;padding:0;margin-top:1.8rem;display:grid;gap:0;border-top:1px solid var(--rule)}
+.plist2 li{display:flex;gap:1rem;align-items:baseline;padding-block:.95rem;
+  border-bottom:1px solid var(--rule);color:var(--sand);font-size:1.02rem}
+.plist2 b{font-family:var(--display);font-weight:700;letter-spacing:-.015em;color:var(--cream-2);
+  font-size:1.12rem;white-space:nowrap}
+
+/* full-bleed photographic bands */
+.band{position:relative}
+.band img{width:100%;height:clamp(340px,48vh,620px);object-fit:cover;object-position:50% 62%}
+.band figcaption{position:absolute;left:0;right:0;bottom:0;
+  padding:5rem var(--gut) clamp(1.3rem,2.6vw,2.2rem);
+  padding-inline:max(var(--gut),calc((100% - var(--max)) / 2 + var(--gut)));
+  background:linear-gradient(to top,rgba(20,13,10,.66) 0%,rgba(20,13,10,.58) 34%,transparent 100%);
+  font-size:clamp(1rem,.92rem + .38vw,1.24rem);font-weight:600;color:var(--cream);
+  text-shadow:0 1px 14px rgba(20,13,10,.53)}
+
+/* ---- image strip ---- */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.6rem,1.4vw,1.1rem)}
+@media(max-width:820px){.strip{grid-template-columns:repeat(2,1fr)}}
+.strip figure{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--rule)}
+.strip img{width:100%;height:clamp(180px,20vw,270px);object-fit:cover;filter:saturate(.9);
+  transition:transform .7s cubic-bezier(.2,.7,.3,1),filter .4s ease}
+.strip figure:hover img{transform:scale(1.05);filter:saturate(1.05)}
+.strip figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .95rem .8rem;
+  background:linear-gradient(to top,rgba(20,13,10,.66),transparent);
+  font-size:.72rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--cream)}
+
+/* ---- close ---- */
+.lclose{text-align:center}
+.lclose h2{margin-inline:auto;max-width:16ch}
+.lclose p{margin-inline:auto;text-align:center}
+.lclose__cta{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2.6rem}
+
+/* ---- languages bar ---- */
+.langs{border-top:1px solid var(--rule);background:var(--ink);padding-block:clamp(2rem,1.4rem + 1.8vw,3rem)}
+.langs__in{display:flex;flex-wrap:wrap;align-items:center;gap:1rem clamp(1.2rem,3vw,2.6rem)}
+.langs__k{font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--clay-lt);flex:none}
+.langs__list{display:flex;flex-wrap:wrap;gap:.7rem 1.7rem;list-style:none;padding:0;margin:0}
+.langs__list a,.langs__list span{display:inline-flex;align-items:baseline;gap:.55rem;
+  text-decoration:none;font-weight:700;color:var(--cream);transition:color .18s}
+.langs__list a:hover{color:var(--clay-lt)}
+.langs__list em{font-style:normal;font-size:.8rem;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--sand)}
+.langs__list span{color:var(--sand)}
+.langs__list span em{opacity:.7}
+</style>
+<link rel="canonical" href="https://tribeawaken.com/listen/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TribeAwaken">
+<meta property="og:title" content="Listen — the song, the video, and the meditation playlist | TribeAwaken">
+<meta property="og:description" content="A word from Tony Skrelūnas in the redwoods, his original song The Warrior's Code, the We Are A Tribe anthem, and the Ancestral Watch meditation and relaxation playlist. Put it on and let it run.">
+<meta property="og:url" content="https://tribeawaken.com/listen/">
+<meta property="og:image" content="https://tribeawaken.com/assets/img/land/creek-waterfall.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<div class="greet">
+  <div class="wrap greet__in">
+    <a class="greet__c" href="/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+  <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+  <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+  <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+  <line x1="102" y1="118" x2="102" y2="110"/>
+  <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+  <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+  <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+  <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+  <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+  <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+  <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+  <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+  <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+  <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+  <line x1="6" y1="152" x2="194" y2="152"/>
+</svg>
+
+      <span class="greet__w">Y&aacute;'&aacute;t'&eacute;&eacute;h</span>
+      <span class="greet__l">Din&eacute;</span>
+    </a>
+    <a class="greet__c" href="/lt/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="100" cy="100" r="76"/>
+  <circle cx="100" cy="100" r="46"/>
+  <circle cx="100" cy="100" r="26"/>
+  <circle cx="100" cy="100" r="8"/>
+  <polyline points="95.5,51 100,27 104.5,51 95.5,51"/>
+  <line x1="81.2" y1="54.7" x2="75.5" y2="40.9"/>
+  <polyline points="62.2,68.5 48.4,48.4 68.5,62.2 62.2,68.5"/>
+  <line x1="54.7" y1="81.2" x2="40.9" y2="75.5"/>
+  <polyline points="51,104.5 27,100 51,95.5 51,104.5"/>
+  <line x1="54.7" y1="118.8" x2="40.9" y2="124.5"/>
+  <polyline points="68.5,137.8 48.4,151.6 62.2,131.5 68.5,137.8"/>
+  <line x1="81.2" y1="145.3" x2="75.5" y2="159.1"/>
+  <polyline points="104.5,149 100,173 95.5,149 104.5,149"/>
+  <line x1="118.8" y1="145.3" x2="124.5" y2="159.1"/>
+  <polyline points="137.8,131.5 151.6,151.6 131.5,137.8 137.8,131.5"/>
+  <line x1="145.3" y1="118.8" x2="159.1" y2="124.5"/>
+  <polyline points="149,95.5 173,100 149,104.5 149,95.5"/>
+  <line x1="145.3" y1="81.2" x2="159.1" y2="75.5"/>
+  <polyline points="131.5,62.2 151.6,48.4 137.8,68.5 131.5,62.2"/>
+  <line x1="118.8" y1="54.7" x2="124.5" y2="40.9"/>
+  <path d="M 109.2,74.6 Q 100,55 90.8,74.6"/>
+  <path d="M 88.6,75.5 Q 68.2,68.2 75.5,88.6"/>
+  <path d="M 74.6,90.8 Q 55,100 74.6,109.2"/>
+  <path d="M 75.5,111.4 Q 68.2,131.8 88.6,124.5"/>
+  <path d="M 90.8,125.4 Q 100,145 109.2,125.4"/>
+  <path d="M 111.4,124.5 Q 131.8,131.8 124.5,111.4"/>
+  <path d="M 125.4,109.2 Q 145,100 125.4,90.8"/>
+  <path d="M 124.5,88.6 Q 131.8,68.2 111.4,75.5"/>
+</svg>
+
+      <span class="greet__w">Sveiki atvyk&#281;</span>
+      <span class="greet__l">Lietuvi&#371;</span>
+    </a>
+    <a class="greet__c" href="/ja/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="18" y1="172" x2="182" y2="172" opacity="0.55"/>
+  <line x1="47" y1="66" x2="39" y2="172"/>
+  <line x1="61" y1="66" x2="57" y2="172"/>
+  <line x1="153" y1="66" x2="161" y2="172"/>
+  <line x1="139" y1="66" x2="143" y2="172"/>
+  <line x1="39" y1="172" x2="57" y2="172"/>
+  <line x1="143" y1="172" x2="161" y2="172"/>
+  <path d="M 33,98 L 167,98 L 167,110 L 33,110 Z"/>
+  <path d="M 94,80 L 106,80 L 106,98 L 94,98 Z"/>
+  <path d="M 12,60 C 48,34 152,34 188,60 L 179,74 C 147,52 53,52 21,74 Z"/>
+</svg>
+
+      <span class="greet__w" lang="ja">&#12424;&#12358;&#12371;&#12381;</span>
+      <span class="greet__l">&#26085;&#26412;&#35486;</span>
+    </a>
+  </div>
+</div>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#human-performance">Human Resilience</a></li>
+        <li><a href="https://ancestralwatch.com">The Books</a></li>
+        <li><a href="/workshop/">Retreats</a></li>
+        <li><a href="/journal/">Journal</a></li>
+        <li><a href="/teams/">For Teams</a></li>
+        <li><a href="/community-resilience/">Community Resilience</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="hdr__end">
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= FULL-SCREEN MENU ================= -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="wrap">
+    <div class="menu__top">
+      <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+      <button class="menu__close" id="menuClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="menu__ls">
+      <li><a href="/"><em>01</em> Home</a></li>
+      <li><a href="/#human-performance"><em>02</em> Human Resilience</a></li>
+      <li><a href="https://ancestralwatch.com"><em>03</em> The Books</a></li>
+      <li><a href="/workshop/"><em>04</em> Retreats</a></li>
+      <li><a href="/journal/"><em>05</em> Journal</a></li>
+      <li><a href="/teams/"><em>06</em> For Teams</a></li>
+      <li><a href="/community-resilience/"><em>07</em> Community Resilience</a></li>
+      <li><a href="/#about"><em>08</em> About</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="/ja/">日本語</a>
+      <a href="/lt/">Lietuvių</a>
+      <a href="/india/">India</a>
+      <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- woven-wool pattern, referenced by every .weave band on the page -->
+
+<main>
+
+<!-- HERO -->
+<section class="hero hero--listen">
+  <div class="hero__bg"><img src="/assets/img/land/creek-waterfall.jpg" alt="Whitewater dropping over boulders in a high-country creek"></div>
+  <div class="hero__scrim"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow">Listen &amp; watch</p>
+    <h1>Put it on.<br>Let it run.</h1>
+    <p class="lead">A word from Tony in the redwoods, a song he wrote, an anthem he plays before every room, and sixteen tracks to fall asleep to.</p>
+    <div class="hero__meta">
+      <span>One minute from Tony</span>
+      <span>An original song</span>
+      <span>Sixteen tracks of meditation</span>
+    </div>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#song">Play the song</a>
+      <a class="btn btn--ghost" href="#playlist">Open the playlist</a>
+    </div>
+  </div>
+</section>
+
+<!-- THE VIDEO -->
+<section class="sec hasphoto" id="watch">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/roper/roper-peaks-sunset.jpg" alt="" loading="lazy"></div>
+  
+  <span class="pg pg--runner" aria-hidden="true"></span>
+  <div class="wrap">
+    <p class="eyebrow rv">A word from Tony</p>
+    <div class="shd rv">
+      <h2>One minute, standing in the redwoods.</h2>
+      <div class="shd__n">Filmed at 1440 Multiversity</div>
+    </div>
+
+    <div class="vwrap rv" id="tonyvid">
+      <video preload="metadata" playsinline poster="/assets/img/1440/tony-invitation-poster.jpg">
+        <source src="/assets/video/tony-invitation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button class="vwrap__cover" type="button" aria-label="Play the invitation from Tony Skrelūnas">
+        <span class="pbtn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5 20.5 12 6 20.5z" fill="currentColor"/></svg>
+        </span>
+        <span class="vwrap__label">The invitation<b>In his own words</b></span>
+      </button>
+    </div>
+
+    <p class="muted rv" style="margin-top:1.6rem;max-width:56ch">Tony, among the old coast redwoods at 1440, on what the three days are for — and who they are for.</p>
+  </div>
+</section>
+
+<div class="weaverule"><div class="wrap"><svg class="weave" aria-hidden="true"><rect width="100%" height="100%" fill="url(#weave)"/></svg></div></div>
+
+<!-- THE SONGS -->
+<section class="sec tex tex--slot" id="song">
+  <span class="pg pg--breath" aria-hidden="true"></span>
+  <div class="wrap">
+    <p class="eyebrow rv">The songs</p>
+    <div class="shd rv">
+      <h2>Songs are how the old knowledge travels.</h2>
+      <div class="shd__n">Two tracks · press play</div>
+    </div>
+
+    <div class="tracks">
+
+      <article class="trk rv">
+        <div class="trk__art"><img src="/assets/img/land/juniper-ancient.jpg" alt="A massive old juniper, its trunk twisted silver by centuries of wind"></div>
+        <div>
+          <div class="trk__k">Original song · Tony Skrelūnas</div>
+          <h3>The Warrior's Code</h3>
+          <p class="trk__note">Not the warrior who goes out looking for a fight — the one who gets up before the sun, carries what has to be carried, and comes home whole. Written and recorded by Tony.</p>
+          <div class="player" data-title="The Warrior's Code">
+            <button class="player__btn" type="button" aria-label="Play The Warrior's Code">
+              <svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5 20.5 12 6 20.5z" fill="currentColor"/></svg>
+              <svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4h4v16h-4zM13.5 4h4v16h-4z" fill="currentColor"/></svg>
+            </button>
+            <div class="player__mid">
+              <div class="player__bar" role="slider" tabindex="0" aria-label="Seek within The Warrior's Code" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <div class="player__track">
+                  <div class="player__fill"></div>
+                  <div class="player__knob"></div>
+                </div>
+              </div>
+              <div class="player__time"><span class="t-cur">0:00</span><span class="t-dur">–:––</span></div>
+            </div>
+            <audio preload="metadata"><source src="/assets/audio/warriors-code.mp3" type="audio/mpeg"></audio>
+          </div>
+        </div>
+      </article>
+
+      <article class="trk rv">
+        <div class="trk__art"><img src="/assets/img/land/aspen-grove.jpg" alt="White aspen trunks rising in a summer grove"></div>
+        <div>
+          <div class="trk__k">Spoken word · Tony Skrelūnas</div>
+          <h3>A Word Before You Begin</h3>
+          <p class="trk__note">Nine minutes, spoken — the thing Tony says to a room before the breathwork begins. Made for the drive, the walk, or the first hour of the morning.</p>
+          <div class="player" data-title="A Word Before You Begin">
+            <button class="player__btn" type="button" aria-label="Play A Word Before You Begin">
+              <svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5 20.5 12 6 20.5z" fill="currentColor"/></svg>
+              <svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4h4v16h-4zM13.5 4h4v16h-4z" fill="currentColor"/></svg>
+            </button>
+            <div class="player__mid">
+              <div class="player__bar" role="slider" tabindex="0" aria-label="Seek within A Word Before You Begin" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <div class="player__track">
+                  <div class="player__fill"></div>
+                  <div class="player__knob"></div>
+                </div>
+              </div>
+              <div class="player__time"><span class="t-cur">0:00</span><span class="t-dur">–:––</span></div>
+            </div>
+            <audio preload="metadata"><source src="/assets/audio/tony-motivational-intro.mp3" type="audio/mpeg"></audio>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PULL -->
+<section class="sec sec--deep tex tex--bark">
+  <div class="wrap">
+    <p class="pull rv">Before anyone wrote anything down, everything worth keeping was carried in a song.</p>
+  </div>
+</section>
+
+<!-- THE ANTHEM -->
+<section class="sec tex tex--stone hasphoto" id="watch-anthem">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/roper/roper-trail-hat.jpg" alt="" loading="lazy"></div>
+  
+  <span class="pg pg--sun" aria-hidden="true"></span>
+  <div class="wrap">
+    <p class="eyebrow rv">The anthem</p>
+    <div class="shd rv">
+      <h2>We Are A Tribe.</h2>
+      <div class="shd__n">On YouTube · 4 min</div>
+    </div>
+    <div class="yt rv" style="margin-top:clamp(2rem,4vw,3.2rem)">
+      <iframe src="https://www.youtube.com/embed/8kGuXxsbKYU" title="We Are A Tribe — Temple Step Project, featuring Murray Kyle &amp; Friends" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <p class="ytnote rv">“We Are A Tribe” by the <strong>Temple Step Project</strong>, featuring Murray Kyle and friends. Tony plays it before a room and after a room — it says in four minutes what the whole body of work is trying to say.</p>
+  </div>
+</section>
+
+<div class="weaverule"><div class="wrap"><svg class="weave" aria-hidden="true"><rect width="100%" height="100%" fill="url(#weave)"/></svg></div></div>
+
+<figure class="band rv">
+  <img loading="lazy" decoding="async" src="/assets/img/world/japan-garden-reflection.jpg" alt="An arched wooden bridge and an old pine reflected in still garden water">
+  <figcaption>Still water, an old bridge, nothing hurrying. That is the temperature the playlist is trying to hold.</figcaption>
+</figure>
+
+<!-- THE PLAYLIST -->
+<section class="sec sec--alt tex tex--rughorse hasphoto" id="playlist">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/tony/hiking-open-country.jpg" alt="" loading="lazy"></div>
+  
+  <span class="pg pg--enso" aria-hidden="true"></span>
+  <div class="wrap">
+    <p class="eyebrow rv">The Ancestral Watch playlist</p>
+    <div class="shd rv">
+      <h2>Meditation and relaxation. Sixteen tracks, four continents.</h2>
+      <div class="shd__n">Free · always on</div>
+    </div>
+
+    <div class="playlist">
+      <div class="yt rv">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLjB4J2ZBlei6CgzNuXQzLxH9MG9pImafZ" title="The Ancestral Watch meditation and relaxation playlist" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="rv">
+        <p class="body-lg">Tony's own collection for meditation and relaxation — water songs, Diné chant, Baltic voices, mantra, and a sacred African choir, gathered from the same four corners the books come from.</p>
+        <p class="muted">Put it on and leave it. It is built to run underneath something else: the last hour of work, the drive home, a slow dinner, the long stretch before sleep.</p>
+        <ul class="plist2">
+          <li><b>Water</b><span>“Sing The Water Song”, “The Water Song”, and Klee Benally on weather changing.</span></li>
+          <li><b>Diné</b><span>Shí Naashá, Yeha-Noha, and Tony's own <em>Warrior's Code</em>.</span></li>
+          <li><b>Baltic &amp; beyond</b><span>Naktìs, Ubuntu Voices, Lokah mantra, Spirit of the Shaman.</span></li>
+        </ul>
+        <p style="margin-top:2rem">
+          <a class="arrow" href="https://www.youtube.com/playlist?list=PLjB4J2ZBlei6CgzNuXQzLxH9MG9pImafZ" target="_blank" rel="noopener">Open the full playlist on YouTube →</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHERE IT COMES FROM -->
+<section class="sec">
+  <span class="pg pg--capitals" aria-hidden="true"></span>
+  <div class="wrap">
+    <p class="eyebrow rv">Where it all comes from</p>
+    <div class="shd rv" style="margin-bottom:clamp(2rem,4vw,3rem)">
+      <h2>Four continents, one thread.</h2>
+      <div class="shd__n">Twenty places · one thread</div>
+    </div>
+    <div class="strip rv">
+      <figure><img loading="lazy" decoding="async" src="/assets/img/world/japan-pagoda-trees.jpg" alt="A five-storey pagoda rising through the trees"><figcaption>The Pagoda</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/world/japan-garden-pond.jpg" alt="A teahouse across the still water of a Japanese garden pond"><figcaption>Garden Pond</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/world/japan-zen-garden.jpg" alt="Raked gravel, a red arched bridge and an autumn maple"><figcaption>Zen Garden</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/world/japan-stone-bridge-bamboo.jpg" alt="A single stone slab bridging green water beneath bamboo"><figcaption>Stone Bridge</figcaption></figure>
+    </div>
+    <div class="strip rv" style="margin-top:clamp(.6rem,1.4vw,1.1rem)">
+      <figure><img loading="lazy" decoding="async" src="/assets/img/baltic.jpg" alt="A Baltic hillfort above the river at first light"><figcaption>The Baltic</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/savanna.jpg" alt="A herder walking the savanna at sunrise"><figcaption>The Savanna</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/ocean-crosser.jpg" alt="An outrigger sailing canoe crossing open ocean"><figcaption>The Ocean</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/land-healing.jpg" alt="Restored grassland curving under a low sun"><figcaption>Land Healing</figcaption></figure>
+    </div>
+    <div class="strip rv" style="margin-top:clamp(.6rem,1.4vw,1.1rem)">
+      <figure><img loading="lazy" decoding="async" src="/assets/img/land/creek-waterfall.jpg" alt="An old juniper growing straight out of red slickrock"><figcaption>Red Rock</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/land/creek-boulders.jpg" alt="Water running white over red stone through grass"><figcaption>Running Water</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/land/creek-boulders.jpg" alt="A clear creek threading between boulders and pines"><figcaption>The Creek</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/garden/tea-lantern-azalea.jpg" alt="The river turning back on itself a thousand feet below the rim"><figcaption>The Bend</figcaption></figure>
+    </div>
+    <div class="strip rv" style="margin-top:clamp(.6rem,1.4vw,1.1rem)">
+      <figure><img loading="lazy" decoding="async" src="/assets/img/garden/tea-azalea-moss.jpg" alt="A small natural arch worn through a sandstone fin"><figcaption>The Arch</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/land/canyon-sunset-forest.jpg" alt="A forested canyon going blue at dusk"><figcaption>Canyon at Dusk</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/kintsugi-texture.jpg" alt="Dark stone veined with gold, in the kintsugi manner"><figcaption>Kintsugi</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/stone-dawn.jpg" alt="A hand holding a smooth river stone at first light"><figcaption>The Stone</figcaption></figure>
+    </div>
+    <div class="strip rv" style="margin-top:clamp(.6rem,1.4vw,1.1rem)">
+      <figure><img loading="lazy" decoding="async" src="/assets/img/world/japan-pagoda-garden.jpg" alt="A pagoda standing above a clipped garden and pond"><figcaption>Pagoda Garden</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/land/juniper-valley.jpg" alt="Juniper on a rise above a green valley"><figcaption>The Valley</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/soul-bowl.jpg" alt="A gold-repaired bowl glowing on the forest floor"><figcaption>The Soul Bowl</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="/assets/img/world/japan-stone-bridge-bamboo.jpg" alt="Tony Skrelūnas crouched at the rim of the Grand Canyon"><figcaption>The Rim</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSE -->
+<section class="sec sec--deep tex tex--corn">
+  <span class="pg pg--fire pg--centre" aria-hidden="true"></span>
+  <div class="wrap wrap--tight lclose">
+    <p class="eyebrow eyebrow--center rv">After the headphones</p>
+    <h2 class="rv">The recording is the invitation. The room is the thing.</h2>
+    <p class="lead rv" style="max-width:42ch;margin-top:1.6rem">Three days in the redwoods, a program for your organization, or the essays to read on the way there.</p>
+    <div class="lclose__cta rv">
+      <a class="btn btn--primary" href="/workshop/">The Canyon Within</a>
+      <a class="btn btn--ghost" href="/journal/">Read the Journal</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- LANGUAGES -->
+<section class="langs">
+  <div class="wrap langs__in">
+    <div class="langs__k">Read in your language</div>
+    <ul class="langs__list">
+      <li><a href="/ja/">日本語 <em>Japan</em></a></li>
+      <li><a href="/lt/">Lietuvių <em>Lithuania</em></a></li>
+      <li><a href="/india/">India <em>English</em></a></li>
+      <li><span>中文 <em>China — soon</em></span></li>
+    </ul>
+  </div>
+</section>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+        <p class="muted" style="margin-top:1.1rem;max-width:34ch">Ancestral tools for people carrying weight across hard ground.</p>
+      </div>
+      <div>
+        <h4>Go</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/workshop/">The Canyon Within</a></li>
+          <li><a href="/teams/">For Organizations</a></li>
+          <li><a href="/journal/">The Journal</a></li>
+          <li><a href="/listen/">Listen</a></li>
+          <li><a href="/diagnostic/">The Far Messenger Diagnostic</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li><a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a></li>
+          <li><a href="https://ancestralwatch.com" target="_blank" rel="noopener">The books</a></li>
+          <li><a href="https://www.1440.org/the-canyon-within-082826" target="_blank" rel="noopener">Register at 1440</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <span>© 2026 TribeAwaken · Tony Skrelūnas</span>
+      <span>Ancestral intelligence for a regenerating world.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- menu ---------- */
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu'),c=document.getElementById('menuClose');
+  if(!b||!m) return;
+  function open(){m.classList.add('open');b.setAttribute('aria-expanded','true');document.body.classList.add('locked')}
+  function shut(){m.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.classList.remove('locked')}
+  b.addEventListener('click',function(){m.classList.contains('open')?shut():open()});
+  if(c) c.addEventListener('click',shut);
+  m.addEventListener('click',function(e){if(e.target.tagName==='A') shut()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape') shut()});
+})();
+/* ---- reveal ---- */
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+
+/* ---- video: custom poster/play cover, native controls once it is running ---- */
+(function(){
+  var w=document.getElementById('tonyvid'); if(!w) return;
+  var v=w.querySelector('video'), cover=w.querySelector('.vwrap__cover');
+  cover.addEventListener('click',function(){
+    v.controls=true; w.classList.add('is-playing');
+    var p=v.play(); if(p&&p.catch){p.catch(function(){})}
+  });
+  v.addEventListener('pause',function(){ if(v.currentTime===0){w.classList.remove('is-playing')} });
+  v.addEventListener('ended',function(){ w.classList.remove('is-playing'); v.controls=false; });
+})();
+
+/* ---- custom audio players ---- */
+(function(){
+  var all=[].slice.call(document.querySelectorAll('.player'));
+
+  function fmt(s){
+    if(!isFinite(s)||s<0) return '–:––';
+    s=Math.floor(s); var m=Math.floor(s/60), r=s%60;
+    return m+':'+(r<10?'0':'')+r;
+  }
+
+  all.forEach(function(p){
+    var audio=p.querySelector('audio'),
+        btn=p.querySelector('.player__btn'),
+        bar=p.querySelector('.player__bar'),
+        fill=p.querySelector('.player__fill'),
+        knob=p.querySelector('.player__knob'),
+        cur=p.querySelector('.t-cur'),
+        dur=p.querySelector('.t-dur'),
+        title=p.getAttribute('data-title')||'this track',
+        dragging=false;
+
+    function paint(){
+      var d=audio.duration, t=audio.currentTime,
+          pct=(isFinite(d)&&d>0)?(t/d*100):0;
+      fill.style.width=pct+'%'; knob.style.left=pct+'%';
+      cur.textContent=fmt(t);
+      bar.setAttribute('aria-valuenow',Math.round(pct));
+      bar.setAttribute('aria-valuetext',fmt(t)+' of '+fmt(d));
+    }
+    function seekTo(clientX){
+      var r=bar.getBoundingClientRect(),
+          pct=Math.min(1,Math.max(0,(clientX-r.left)/r.width));
+      if(isFinite(audio.duration)){audio.currentTime=pct*audio.duration; paint();}
+    }
+
+    audio.addEventListener('loadedmetadata',function(){dur.textContent=fmt(audio.duration); paint();});
+    audio.addEventListener('timeupdate',function(){if(!dragging) paint();});
+    audio.addEventListener('play',function(){
+      p.classList.add('is-playing');
+      btn.setAttribute('aria-label','Pause '+title);
+      all.forEach(function(o){ if(o!==p){var a=o.querySelector('audio'); if(!a.paused) a.pause();} });
+      var v=document.querySelector('#tonyvid video'); if(v&&!v.paused) v.pause();
+    });
+    audio.addEventListener('pause',function(){
+      p.classList.remove('is-playing'); btn.setAttribute('aria-label','Play '+title);
+    });
+    audio.addEventListener('ended',function(){audio.currentTime=0; paint();});
+
+    btn.addEventListener('click',function(){
+      if(audio.paused){var pr=audio.play(); if(pr&&pr.catch){pr.catch(function(){})}}
+      else{audio.pause()}
+    });
+
+    bar.addEventListener('pointerdown',function(e){
+      dragging=true; seekTo(e.clientX);
+      try{bar.setPointerCapture(e.pointerId)}catch(err){}
+    });
+    bar.addEventListener('pointermove',function(e){ if(dragging) seekTo(e.clientX); });
+    bar.addEventListener('pointerup',function(e){
+      dragging=false; try{bar.releasePointerCapture(e.pointerId)}catch(err){}
+    });
+    bar.addEventListener('keydown',function(e){
+      if(!isFinite(audio.duration)) return;
+      var step=audio.duration/20;
+      if(e.key==='ArrowRight'){audio.currentTime=Math.min(audio.duration,audio.currentTime+step);e.preventDefault()}
+      else if(e.key==='ArrowLeft'){audio.currentTime=Math.max(0,audio.currentTime-step);e.preventDefault()}
+      else if(e.key==='Home'){audio.currentTime=0;e.preventDefault()}
+      else if(e.key==='End'){audio.currentTime=audio.duration;e.preventDefault()}
+      else return;
+      paint();
+    });
+
+    if(audio.readyState>=1){dur.textContent=fmt(audio.duration); paint();}
+  });
+})();
+</script>
+<script src="/assets-v4/capture.js?v=1" defer></script>
+</body>
+</html>

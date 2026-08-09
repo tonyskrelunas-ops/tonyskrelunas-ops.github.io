@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Stone lantern">
+  <!-- jewel finial -->
+  <path d="M 100,26 C 92,22 92,12 100,8 C 108,12 108,22 100,26 Z"/>
+  <line x1="100" y1="26" x2="100" y2="34"/>
+  <line x1="90" y1="36" x2="110" y2="36"/>
+
+  <!-- roof -->
+  <path d="M 36,76 C 58,66 78,52 93,38 L 107,38 C 122,52 142,66 164,76"/>
+  <path d="M 44,77 C 70,84 130,84 156,77"/>
+  <path d="M 36,76 C 29,71 28,63 31,56" opacity="0.9"/>
+  <path d="M 164,76 C 171,71 172,63 169,56" opacity="0.9"/>
+  <path d="M 100,38 L 100,46" opacity="0.5"/>
+
+  <!-- firebox -->
+  <path d="M 75,84 L 71,126 L 129,126 L 125,84"/>
+  <circle cx="100" cy="103" r="13"/>
+  <path d="M 79,96 L 79,114" opacity="0.55"/>
+  <path d="M 121,96 L 121,114" opacity="0.55"/>
+
+  <!-- platform under firebox -->
+  <path d="M 62,126 C 76,134 124,134 138,126"/>
+  <line x1="68" y1="134" x2="132" y2="134"/>
+
+  <!-- pillar -->
+  <path d="M 88,134 L 86,166"/>
+  <path d="M 112,134 L 114,166"/>
+  <line x1="86" y1="150" x2="114" y2="150" opacity="0.6"/>
+
+  <!-- base -->
+  <path d="M 62,184 C 64,172 79,165 100,165 C 121,165 136,172 138,184"/>
+  <line x1="26" y1="184" x2="174" y2="184"/>
+  <path d="M 78,176 C 86,172 114,172 122,176" opacity="0.5"/>
+</svg>

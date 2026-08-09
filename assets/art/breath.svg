@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Concentric rings radiating from a stone">
+  <ellipse cx="100" cy="116" rx="36" ry="12" opacity="0.95"/>
+  <ellipse cx="100" cy="116" rx="56" ry="21" opacity="0.75"/>
+  <ellipse cx="100" cy="116" rx="76" ry="30" opacity="0.55"/>
+  <ellipse cx="100" cy="116" rx="94" ry="38" opacity="0.35"/>
+  <path d="M 78,89 C 78,79 88,73 101,73 C 113,73 121,79 121,88 C 121,96 111,101 100,101 C 87,101 78,97 78,89 Z"/>
+  <path d="M 85,84 C 89,78 95,75 103,76" opacity="0.55"/>
+</svg>

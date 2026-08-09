@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Amber teardrop with inner striations">
+  <path d="M 100,24 C 88,58 60,92 60,116 A 40,40 0 0 0 140,116 C 140,92 112,58 100,24 Z"/>
+  <path d="M 100,54 C 92,78 76,98 76,116 A 24,24 0 0 0 124,116 C 124,98 108,78 100,54" opacity="0.8"/>
+  <path d="M 72.2,127.2 A 30,30 0 1 0 127.8,127.2" opacity="0.55"/>
+  <path d="M 66.4,125.6 A 35,35 0 1 0 133.6,125.6" opacity="0.4"/>
+  <path d="M 89,84 C 84,96 82,106 82,114" opacity="0.5"/>
+  <path d="M 111,84 C 116,96 118,106 118,114" opacity="0.4"/>
+  <path d="M 86,96 C 89,84 93,72 97,60" opacity="0.55"/>
+  <circle cx="112" cy="106" r="2.1" fill="currentColor" stroke="none"/>
+  <circle cx="92" cy="128" r="1.5" fill="currentColor" stroke="none"/>
+</svg>

@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Organizing — one design at three scales | Tony Skrelūnas</title>
+<meta name="description" content="A community, a venture, an organization. The eight questions that come first, in the order they have to be asked, shown at all three scales — and what each one turns into if you skip it.">
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/assets-v4/v2.css?v=31">
+<link rel="stylesheet" href="/community-resilience/nation.css?v=3">
+<link rel="stylesheet" href="/community-resilience/weave.css?v=4">
+<style>
+/* ============ page-specific — extends v2.css / nation.css / weave.css
+   NOTE: inside clamp()/calc(), the + and - operators MUST be
+   surrounded by whitespace or the whole declaration is dropped.
+   ================================================================ */
+
+/* ---- a question, set as a question ---- */
+.qn{ margin-top: clamp(2.6rem, 1.9rem + 2.2vw, 4.2rem); }
+.qn__n{
+  display: block; font-family: var(--note);
+  font-size: .72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .16em; color: var(--clay-lt); margin-bottom: .6rem;
+}
+.qn h3{
+  font-family: var(--display); font-weight: 800;
+  letter-spacing: -.03em; line-height: 1.08;
+  font-size: clamp(1.55rem, 1.2rem + 1.45vw, 2.45rem);
+  max-width: 22ch; color: var(--cream-2);
+}
+.qn__l{
+  font-family: var(--display); font-style: italic; font-weight: 600;
+  color: var(--gold-lt); font-size: clamp(1.02rem, .98rem + .3vw, 1.2rem);
+  line-height: 1.55; margin-top: .85rem; max-width: 56ch;
+}
+
+/* ---- the same question at three sizes, side by side ---- */
+.tri{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin-top: clamp(1.5rem, 1.2rem + 1vw, 2.2rem);
+  border-top: 2px solid var(--clay);
+  max-width: 68rem;
+}
+.tri > div{
+  padding: clamp(1.1rem, .9rem + .8vw, 1.7rem) clamp(.9rem, .8vw + .6rem, 1.5rem);
+  border-left: 1px solid rgba(230,180,140,.18);
+  border-bottom: 1px solid rgba(230,180,140,.12);
+}
+.tri > div:first-child{ border-left: 0; padding-left: 0; }
+.tri__k{
+  display: block; font-family: var(--note);
+  text-transform: uppercase; letter-spacing: .13em;
+  font-size: .68rem; line-height: 1.4; color: var(--gold);
+  margin-bottom: .75rem;
+}
+.tri p{
+  color: var(--sand); font-size: .99rem; line-height: 1.6;
+  max-width: none; margin: 0;
+}
+@media (max-width: 860px){
+  .tri{ grid-template-columns: 1fr; }
+  .tri > div{ border-left: 0; padding-left: 0; }
+}
+
+/* ---- the one question that stands over the other eight ---- */
+.over{
+  margin-top: clamp(2.4rem, 1.8rem + 2vw, 3.6rem);
+  border-left: 3px solid var(--clay);
+  padding: .3rem 0 .3rem clamp(1.2rem, 2.4vw, 2rem);
+  max-width: 56ch;
+}
+.over p{
+  font-family: var(--display); font-weight: 600; font-style: italic;
+  color: var(--cream-2); line-height: 1.34;
+  font-size: clamp(1.25rem, 1.05rem + .9vw, 1.85rem);
+}
+.over span{
+  display: block; margin-top: .9rem; font-family: var(--note);
+  font-size: .74rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--sand);
+}
+
+/* ---- the deep dives, as plain rows rather than cards ---- */
+.onward .rows b{ color: var(--cream-2); }
+</style>
+<style>
+/* the section bar — community resilience has five floors, this is how you move between them */
+.secnav{position:sticky;top:0;z-index:60;background:rgba(15,18,16,.94);
+  backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--rule)}
+.secnav__in{display:flex;align-items:center;gap:.4rem 1.6rem;flex-wrap:nowrap;
+  overflow-x:auto;scrollbar-width:none;padding-block:.7rem}
+.secnav__in::-webkit-scrollbar{display:none}
+.secnav__lbl{font-family:'Courier New',ui-monospace,Menlo,monospace;text-transform:uppercase;
+  letter-spacing:.16em;font-size:.68rem;color:var(--gold);white-space:nowrap;flex:none}
+.secnav a{white-space:nowrap;text-decoration:none;font-size:.88rem;font-weight:600;
+  color:var(--sand);padding-bottom:2px;border-bottom:2px solid transparent}
+.secnav a:hover{color:var(--cream)}
+.secnav a.is-on{color:var(--cream-2);border-bottom-color:var(--clay)}
+@media(max-width:640px){.secnav__lbl{display:none}}
+</style>
+<link rel="canonical" href="https://tribeawaken.com/organizing/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TribeAwaken">
+<meta property="og:title" content="Organizing — one design at three scales | Tony Skrelūnas">
+<meta property="og:description" content="A community, a venture, an organization. The eight questions that come first, in the order they have to be asked, shown at all three scales — and what each one turns into if you skip it.">
+<meta property="og:url" content="https://tribeawaken.com/organizing/">
+<meta property="og:image" content="https://tribeawaken.com/assets/img/1440/fire-circle.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<a href="#main" class="skip" style="position:absolute;left:-9999px">Skip to content</a>
+
+<!-- ================= GLOBAL / LANGUAGES ================= -->
+<div class="greet">
+  <div class="wrap greet__in">
+    <a class="greet__c" href="/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+  <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+  <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+  <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+  <line x1="102" y1="118" x2="102" y2="110"/>
+  <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+  <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+  <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+  <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+  <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+  <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+  <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+  <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+  <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+  <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+  <line x1="6" y1="152" x2="194" y2="152"/>
+</svg>
+
+      <span class="greet__w">Y&aacute;'&aacute;t'&eacute;&eacute;h</span>
+      <span class="greet__l">Din&eacute;</span>
+    </a>
+    <a class="greet__c" href="/lt/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="100" cy="100" r="76"/>
+  <circle cx="100" cy="100" r="46"/>
+  <circle cx="100" cy="100" r="26"/>
+  <circle cx="100" cy="100" r="8"/>
+  <polyline points="95.5,51 100,27 104.5,51 95.5,51"/>
+  <line x1="81.2" y1="54.7" x2="75.5" y2="40.9"/>
+  <polyline points="62.2,68.5 48.4,48.4 68.5,62.2 62.2,68.5"/>
+  <line x1="54.7" y1="81.2" x2="40.9" y2="75.5"/>
+  <polyline points="51,104.5 27,100 51,95.5 51,104.5"/>
+  <line x1="54.7" y1="118.8" x2="40.9" y2="124.5"/>
+  <polyline points="68.5,137.8 48.4,151.6 62.2,131.5 68.5,137.8"/>
+  <line x1="81.2" y1="145.3" x2="75.5" y2="159.1"/>
+  <polyline points="104.5,149 100,173 95.5,149 104.5,149"/>
+  <line x1="118.8" y1="145.3" x2="124.5" y2="159.1"/>
+  <polyline points="137.8,131.5 151.6,151.6 131.5,137.8 137.8,131.5"/>
+  <line x1="145.3" y1="118.8" x2="159.1" y2="124.5"/>
+  <polyline points="149,95.5 173,100 149,104.5 149,95.5"/>
+  <line x1="145.3" y1="81.2" x2="159.1" y2="75.5"/>
+  <polyline points="131.5,62.2 151.6,48.4 137.8,68.5 131.5,62.2"/>
+  <line x1="118.8" y1="54.7" x2="124.5" y2="40.9"/>
+  <path d="M 109.2,74.6 Q 100,55 90.8,74.6"/>
+  <path d="M 88.6,75.5 Q 68.2,68.2 75.5,88.6"/>
+  <path d="M 74.6,90.8 Q 55,100 74.6,109.2"/>
+  <path d="M 75.5,111.4 Q 68.2,131.8 88.6,124.5"/>
+  <path d="M 90.8,125.4 Q 100,145 109.2,125.4"/>
+  <path d="M 111.4,124.5 Q 131.8,131.8 124.5,111.4"/>
+  <path d="M 125.4,109.2 Q 145,100 125.4,90.8"/>
+  <path d="M 124.5,88.6 Q 131.8,68.2 111.4,75.5"/>
+</svg>
+
+      <span class="greet__w">Sveiki atvyk&#281;</span>
+      <span class="greet__l">Lietuvi&#371;</span>
+    </a>
+    <a class="greet__c" href="/ja/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="18" y1="172" x2="182" y2="172" opacity="0.55"/>
+  <line x1="47" y1="66" x2="39" y2="172"/>
+  <line x1="61" y1="66" x2="57" y2="172"/>
+  <line x1="153" y1="66" x2="161" y2="172"/>
+  <line x1="139" y1="66" x2="143" y2="172"/>
+  <line x1="39" y1="172" x2="57" y2="172"/>
+  <line x1="143" y1="172" x2="161" y2="172"/>
+  <path d="M 33,98 L 167,98 L 167,110 L 33,110 Z"/>
+  <path d="M 94,80 L 106,80 L 106,98 L 94,98 Z"/>
+  <path d="M 12,60 C 48,34 152,34 188,60 L 179,74 C 147,52 53,52 21,74 Z"/>
+</svg>
+
+      <span class="greet__w" lang="ja">&#12424;&#12358;&#12371;&#12381;</span>
+      <span class="greet__l">&#26085;&#26412;&#35486;</span>
+    </a>
+  </div>
+</div>
+
+<div class="globebar">
+  <div class="wrap globebar__in">
+    <p class="globebar__lbl">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 2.6 15 0 18M12 3c-2.6 2.6-2.6 15 0 18"/>
+      </svg>
+      <span>Global</span>
+    </p>
+    <ul class="globebar__ls">
+      <li><a class="is-on" aria-current="true" href="/" hreflang="en">English</a></li>
+      <li><a href="/ja/" hreflang="ja">日本語 · Japan</a></li>
+      <li><a href="/lt/" hreflang="lt">Lietuvių · Lithuania</a></li>
+      <li><a href="/india/" hreflang="en">India</a></li>
+      <li><span class="soon">中文 · coming soon</span></li>
+    </ul>
+    <a class="globebar__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+  </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#human-performance">Human Resilience</a></li>
+        <li><a href="https://ancestralwatch.com">The Books</a></li>
+        <li><a href="/workshop/">Retreats</a></li>
+        <li><a href="/journal/">Journal</a></li>
+        <li><a href="/teams/">For Teams</a></li>
+        <li><a href="/community-resilience/">Community Resilience</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="hdr__end">
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= FULL-SCREEN MENU ================= -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="wrap">
+    <div class="menu__top">
+      <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+      <button class="menu__close" id="menuClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="menu__ls">
+      <li><a href="/"><em>01</em> Home</a></li>
+      <li><a href="/#human-performance"><em>02</em> Human Resilience</a></li>
+      <li><a href="https://ancestralwatch.com"><em>03</em> The Books</a></li>
+      <li><a href="/workshop/"><em>04</em> Retreats</a></li>
+      <li><a href="/journal/"><em>05</em> Journal</a></li>
+      <li><a href="/teams/"><em>06</em> For Teams</a></li>
+      <li><a href="/community-resilience/"><em>07</em> Community Resilience</a></li>
+      <li><a href="/#about"><em>08</em> About</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="/ja/">日本語</a>
+      <a href="/lt/">Lietuvių</a>
+      <a href="/india/">India</a>
+      <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+    </div>
+  </div>
+
+<nav class="secnav" aria-label="Community resilience">
+  <div class="wrap secnav__in">
+    <span class="secnav__lbl">Community resilience</span>
+    <a href="/community-resilience/">The argument</a><a href="/community-resilience/gathering/">How decisions get made</a><a href="/community-resilience/governance/">A government that fits</a><a href="/community-resilience/economy/">Ancestral Economics</a><a href="/community-resilience/lga/">The Local Governance Act</a><a class="is-on" aria-current="page" href="/organizing/">Organizing anything</a>
+  </div>
+</nav>
+
+</div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__bg photolift"><img src="/assets/img/1440/fire-circle.jpg" alt="A circle of people seated around a fire in the trees" style="object-position:50% 52%" fetchpriority="high"></div>
+  <div class="hero__scrim"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow">Organizing</p>
+    <h1>A community, a venture, an organization. It is one design.</h1>
+    <p class="lead">Whatever you are starting, the same questions come first, and they come in an order. Skipping one is why a thing drifts later &mdash; and by the time it drifts, nobody can name which one got skipped.</p>
+    <div class="hero__cta">
+      <a class="btn btn--ghost" href="#questions">The questions, in order</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CRUMB ================= -->
+<div class="crumb">
+  <div class="wrap crumb__in">
+    <a href="/">TribeAwaken</a><i>/</i>
+    <b>Organizing</b>
+  </div>
+</div>
+
+<!-- ================= THE ARGUMENT ================= -->
+<section class="sec hasphoto" id="argument">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/world/baltic-forest.jpg" alt="" loading="lazy" style="object-position:50% 74%"></div>
+
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">The argument</p>
+        <h2 class="head">Nobody skips a question on purpose. They skip it because it has no deadline.</h2>
+      </div>
+      <p>There is a page here for a nation and a page here for a company. This is the one that says they are the same page, and that a person starting something on a Tuesday can use it.</p>
+    </div>
+
+    <div class="essay rv">
+      <p class="drop">I have sat in the first meeting of a great many new things. A community that has decided to stop asking permission. Three people at a kitchen table with a name and no money. A room of people spinning a small thing out of a bigger thing that stopped listening. From the inside all three feel entirely different. Structurally they are the same meeting.</p>
+
+      <p>The same questions are in that room. They are in the room whether or not anybody says them out loud, and the ones nobody says out loud get answered anyway &mdash; by default, by whoever moves first, by a template somebody found.</p>
+
+      <p><strong>The failure is never in the design. It is underneath the design.</strong> On the nation page I mean by that the ground a people is standing on. Here I mean something smaller and more ordinary. Underneath the design is the order the questions were taken in, and which of them got answered by accident in the first month.</p>
+
+      <p>The order is not a preference. Each answer is the material the next question is made out of. Settle who owns it before you have said what it is for, and the ownership talk will be about money, because at that hour there is nothing else for it to be about. Settle how decisions get made before you know who lives with the results, and you have built a room with the wrong people in it &mdash; and it will keep being the wrong room for twenty years, and no one will be able to say why the decisions keep coming out strange.</p>
+
+      <p>What you can skip is the paperwork. What you cannot skip is the question. Three people do not need a charter. They need the answer a charter would have forced them to write down. That answer can live in a notebook. It cannot live nowhere.</p>
+
+      <p>A far messenger carried something across hard ground and arrived with it whole. That is the test here too, and it is the only one I trust. Not whether the thing gets built &mdash; plenty of things get built. <strong>Whether what you meant is still inside it in forty years, when you are not there to explain it.</strong></p>
+
+      <div class="note">
+        <p>The three scales are not three levels of ambition. They are one design at three sizes, and they come apart in the same places.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE ROCK PANEL ================= -->
+<div class="rockface">
+  <div class="rockface__bg"><img src="/assets/img/tony/gym-assembly.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap rockface__in">
+    <p class="rockface__q">Every one of these gets answered. The only choice is whether you were in the room when it happened.</p>
+    <p class="rockface__c">Eight questions &middot; the same eight at every size</p>
+  </div>
+</div>
+
+<div class="weaveworld">
+
+<!-- ═══════════════ REGISTER ONE — BEFORE ANYTHING IS BUILT ═══════════════ -->
+<section class="reg hasphoto" id="questions">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/1440/council-chairs.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+
+    <div class="loom">
+      <p class="gloss">Before anything is built<em>Questions one, two and three &mdash; and they are in this order for a reason</em></p>
+      <div>
+        <h2 class="step">Ask them in this order. The order <i>is</i> the design.</h2>
+        <p class="say" style="margin-top:1.8rem">Out of order you will still get answers. Fast, plausible, defensible ones. Every one of them a guess wearing the clothes of a decision.</p>
+        <p class="say">Under each question below, the same thing at three sizes. Read across to the column you are actually standing in. <strong>The wording changes. The question does not.</strong></p>
+
+        <div class="qn">
+          <span class="qn__n">Question one</span>
+          <h3>What is already here?</h3>
+          <p class="qn__l">There is always an answer, and it is older than whatever is on paper.</p>
+          <div class="tri">
+            <div>
+              <span class="tri__k">A community</span>
+              <p>What already settles a dispute, and who already gets listened to when it is settled. It is running in the funeral, the harvest, the argument over a fence line. Nobody here calls it governance.</p>
+            </div>
+            <div>
+              <span class="tri__k">A venture</span>
+              <p>What the founders already do when they disagree and neither one can win. That is your decision process. You did not choose it. You have it.</p>
+            </div>
+            <div>
+              <span class="tri__k">An organization</span>
+              <p>The thing everyone actually uses instead of the chart &mdash; the person people call first, the conversation before the meeting. Draw that. The chart is fiction and everybody knows it.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="qn">
+          <span class="qn__n">Question two</span>
+          <h3>Who lives with what this does?</h3>
+          <p class="qn__l">Not who is interested. Who cannot walk away from the result.</p>
+          <div class="tri">
+            <div>
+              <span class="tri__k">A community</span>
+              <p>The households downstream. The ones who will still be here in forty years because their grandmother is buried here. The young, who are not a side programme &mdash; they are the people this is being decided for.</p>
+            </div>
+            <div>
+              <span class="tri__k">A venture</span>
+              <p>The people who will do the work. The neighbours. The ground it stands on and whoever drinks the water under it. Write the list before you need it, because later the list gets shorter on its own.</p>
+            </div>
+            <div>
+              <span class="tri__k">An organization</span>
+              <p>The people the decisions land on &mdash; who are almost never the people in the meeting where the decision gets made. If you cannot name three of them, you have not asked this question yet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="qn">
+          <span class="qn__n">Question three</span>
+          <h3>What is it for?</h3>
+          <p class="qn__l">Worked in the open until the people in the room hear their own words come back at them.</p>
+          <div class="tri">
+            <div>
+              <span class="tri__k">A community</span>
+              <p>One sentence an elder and a fifteen-year-old would both recognise on the first hearing. If either of them needs it explained, it is not the sentence yet.</p>
+            </div>
+            <div>
+              <span class="tri__k">A venture</span>
+              <p>What it makes, who it makes it for, and what it will not do to make it. That last part is the half that carries weight. A purpose with no refusal in it is a description.</p>
+            </div>
+            <div>
+              <span class="tri__k">An organization</span>
+              <p>What would be missing if it shut on Friday. If the honest answer is a set of meetings and a mailing list, you have found the real problem, and it is not a communications problem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════ REGISTER TWO — THE SHAPE ═══════════════ -->
+<section class="reg reg--sunk hasphoto" id="the-shape">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/land/peaks-pines.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+
+    <div class="loom">
+      <p class="gloss">The shape<em>Questions four, five and six &mdash; the ones that outlive everybody in the room</em></p>
+      <div>
+        <h2 class="step">Whatever form you pick is already an argument about what a <i>person</i> is.</h2>
+        <p class="say" style="margin-top:1.8rem">A governing form is never neutral. Take one off the shelf and you have taken its argument with it &mdash; usually one your people never made and do not believe. That is as true of a five-person venture adopting somebody else's operating agreement as it is of a nation adopting somebody else's constitution.</p>
+        <p class="say">So there is no template to hand you here, at any of the three sizes. <strong>There is no universal council.</strong> The form has to fit the people, and the people are specific.</p>
+
+        <div class="qn">
+          <span class="qn__n">Question four</span>
+          <h3>How does it decide?</h3>
+          <p class="qn__l">Who speaks first, what counts as agreement, and what happens to the one who is not convinced.</p>
+          <div class="tri">
+            <div>
+              <span class="tri__k">A community</span>
+              <p>The circle, and agreement reached by the exhaustion of standing objection rather than by a count. The person left standing outside the decision is the person who will not carry it out, and in a small place that is the entire workforce.</p>
+            </div>
+            <div>
+              <span class="tri__k">A venture</span>
+              <p>Two founders need this more than a council of forty does. Write it down before the first real disagreement, not after. Before is a design. After is a negotiation, and somebody is already angry.</p>
+            </div>
+            <div>
+              <span class="tri__k">An organization</span>
+              <p>The speaking order. Least positioned first, every time. Once the person with authority has said a thing, the knowledge held by everyone junior to them stops being said out loud, which for deciding purposes is the same as it not existing.</p>
+            </div>
+          </div>
+          <p style="margin-top:1.6rem"><a class="arrow" href="/community-resilience/gathering/">This question, taken all the way down <span aria-hidden="true">&rarr;</span></a></p>
+        </div>
+
+        <div class="qn">
+          <span class="qn__n">Question five</span>
+          <h3>Who owns it?</h3>
+          <p class="qn__l">Ownership is the difference between a job and an economy.</p>
+          <div class="tri">
+            <div>
+              <span class="tri__k">A community</span>
+              <p>The commons &mdash; the water, the ground, the building, the fund. Held so that no future council can sell it in a bad year to make a budget balance, because a future council will want to.</p>
+            </div>
+            <div>
+              <span class="tri__k">A venture</span>
+              <p>A share that grows with the years worked. Not an option that thins out every time somebody arrives with money. Settle it while the money is not yet wanted; the terms you get then are the only honest ones you will ever be offered.</p>
+            </div>
+            <div>
+              <span class="tri__k">An organization</span>
+              <p>With nothing to sell, something is still owned: the purpose. Name who holds it and who is allowed to change it. Leave it unnamed and the answer turns out to be whoever happens to be in charge that decade.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="qn">
+          <span class="qn__n">Question six</span>
+          <h3>What can stop it?</h3>
+          <p class="qn__l">Take the founder out of the room. Take out the good year. Now what does the thing do?</p>
+          <div class="tri">
+            <div>
+              <span class="tri__k">A community</span>
+              <p>A named way for the community to withdraw its consent, written down in advance, that does not require a lawsuit ten years too late. Consent you cannot withdraw was never consent.</p>
+            </div>
+            <div>
+              <span class="tri__k">A venture</span>
+              <p>A brake that only stops and never steers, held by people who are not on the payroll and cannot be outwaited. A brake nobody has ever pulled is a decoration; pull it once on something small, early, so the room learns it is real.</p>
+            </div>
+            <div>
+              <span class="tri__k">An organization</span>
+              <p>One decision, written down now, that this body is not permitted to make. If there is no such decision, there is no such body &mdash; only a mood, and moods do not survive a hard winter.</p>
+            </div>
+          </div>
+          <p style="margin-top:1.6rem"><a class="arrow" href="/business/">Five and six, drafted as clauses <span aria-hidden="true">&rarr;</span></a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════ REGISTER THREE — ONCE IT IS RUNNING ═══════════════ -->
+<section class="reg reg--raised hasphoto" id="once-it-runs">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/tony/listeners-at-dusk.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+
+    <div class="loom">
+      <p class="gloss">Once it is running<em>The last two &mdash; and they never stop being asked</em></p>
+      <div>
+        <h2 class="step">What you measure is what you <i>become.</i></h2>
+        <p class="say" style="margin-top:1.8rem">One number rising is not a verdict. It is a habit, and within three years it is the whole personality of the place. Four accounts, none of them shrinking: the money, the people, the culture, the ground.</p>
+        <p class="say">And the last question is not about the thing at all. It is about who will be able to hold it on a day you cannot.</p>
+
+        <div class="qn">
+          <span class="qn__n">Question seven</span>
+          <h3>What do you count?</h3>
+          <p class="qn__l">Four accounts, none of them shrinking. Not one number, rising.</p>
+          <div class="tri">
+            <div>
+              <span class="tri__k">A community</span>
+              <p>The four accounts read out loud once a year, in a room where people can ask about them. Someone has to be waiting for the number. Otherwise the number is furniture.</p>
+            </div>
+            <div>
+              <span class="tri__k">A venture</span>
+              <p>Money first and honestly &mdash; a venture that bleeds money dies and takes with it everything it was carrying. Then the other three on the same page as the money, in the same size type, not in an appendix nobody opens.</p>
+            </div>
+            <div>
+              <span class="tri__k">An organization</span>
+              <p>Whatever gets reported upward is what the place will be in three years. Not what it will report. What it will be. Choose the measure as though that were literally true, because it is.</p>
+            </div>
+          </div>
+          <p style="margin-top:1.6rem"><a class="arrow" href="/community-resilience/economy/">The four accounts at economy scale <span aria-hidden="true">&rarr;</span></a></p>
+        </div>
+
+        <div class="qn">
+          <span class="qn__n">Question eight</span>
+          <h3>Who is being made ready?</h3>
+          <p class="qn__l">Calm is a built thing. You do not make it in the emergency. You retrieve it.</p>
+          <div class="tri">
+            <div>
+              <span class="tri__k">A community</span>
+              <p>The young in the room from the beginning, not in a separate programme for the young. Twenty years of watching is what a council is made out of, and there is no shorter way to make one.</p>
+            </div>
+            <div>
+              <span class="tri__k">A venture</span>
+              <p>The second person who can hold the whole of it. Named in a calm month, because you cannot name them in the week you need them &mdash; that week you will take whoever is standing closest.</p>
+            </div>
+            <div>
+              <span class="tri__k">An organization</span>
+              <p>Apprenticeship, not a succession plan in a drawer. A plan is a document. Readiness is a person, and a person takes years that nobody has budgeted.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="aloud">
+          <p>Capacity is built before you need it. Whatever you are going to reach for in the bad year has to already be in your hand.</p>
+        </div>
+
+        <div class="over">
+          <p>And one question stands over all eight, asked out loud in the room before the vote rather than printed on a poster behind it: does this leave the great-grandchildren whole?</p>
+          <span>The seventh generation &middot; asked aloud, or not asked</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════ REGISTER FOUR — WHAT A SKIP COSTS ═══════════════ -->
+<section class="reg hasphoto" id="skip">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/tony/presenting-group.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+
+    <div class="loom">
+      <p class="gloss">The skip<em>What each one costs, and roughly when the bill arrives</em></p>
+      <div>
+        <h2 class="step-2">Nothing collapses. That is what makes it so hard to see.</h2>
+        <p class="say" style="margin-top:1.6rem">A skipped question does not announce itself. It comes back years later under a different name &mdash; a capacity problem, a communications problem, a culture problem, a leadership problem &mdash; and gets treated as the thing it is calling itself.</p>
+        <p class="say">Every one of these is something I have watched happen, in a room, with good people in it. Not one of them was anybody's fault. <strong>They were all decided in the first month, by nobody.</strong></p>
+
+        <div class="ledger">
+          <table>
+            <caption>The eight questions &mdash; and what a skipped one turns into</caption>
+            <thead><tr><th></th><th>Skipped</th><th>What it turns into</th></tr></thead>
+            <tbody>
+              <tr><td class="num">i</td><td><b>What is already here?</b></td><td><span>A form nobody believes in, worked around quietly by everyone, every day &mdash; until the workaround is the real organisation and the official one is just holding meetings.</span></td></tr>
+              <tr><td class="num">ii</td><td><b>Who lives with what this does?</b></td><td><span>A room making forty-year decisions it will not be present for, and a slow anger downstream that arrives with no legitimate door to come through.</span></td></tr>
+              <tr><td class="num">iii</td><td><b>What is it for?</b></td><td><span>A sentence on a wall that everybody can recite and nobody can use to settle an argument. It gets quoted in good years and ignored in the year it was written for.</span></td></tr>
+              <tr><td class="num">iv</td><td><b>How does it decide?</b></td><td><span>Decisions that pass cleanly and then simply never happen. Three years on it is written up as a training need, and the training is delivered, and nothing changes.</span></td></tr>
+              <tr><td class="num">v</td><td><b>Who owns it?</b></td><td><span>The people who built the thing holding the least of it, and nobody able to point at the year that happened, because it happened over nine of them.</span></td></tr>
+              <tr><td class="num">vi</td><td><b>What can stop it?</b></td><td><span>Drift. Not a betrayal and not a meeting &mdash; a run of reasonable calls in a hard year, each one defensible on its own, arriving somewhere no one would have voted for.</span></td></tr>
+              <tr><td class="num">vii</td><td><b>What do you count?</b></td><td><span>One number, and three years later a place that has become extremely good at that number and quietly worse at the thing the number was standing in for.</span></td></tr>
+              <tr><td class="num">viii</td><td><b>Who is being made ready?</b></td><td><span>The handover arrives exactly on schedule, and there is nobody with twenty years of watching behind them. The work is inherited. The reasons are not.</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="say" style="margin-top:clamp(1.8rem, 1.4rem + 1.2vw, 2.6rem)">None of this needs money and none of it needs a consultant. It needs somebody to say the question out loud in a room, early, while the answer is still soft enough to change.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<!-- ================= ONWARD ================= -->
+<section class="sec sec--alt hasphoto onward">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/land/aspen-grove.jpg" alt="" loading="lazy"></div>
+
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">Taken further</p>
+        <h2 class="head">Any one of these opens into its own argument.</h2>
+      </div>
+      <p>This page is the map. Each of these is a place on it, written out at length, and each one is the real thinking rather than the summary.</p>
+    </div>
+
+    <ul class="rows rv">
+      <li><a href="/community-resilience/gathering/"><span><b>How decisions get made</b><span>Question four, all the way down. The meeting as a technology, why the imported one manufactures a loser every cycle, and what council form does instead.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/community-resilience/governance/"><span><b>A government that fits</b><span>Questions one and two at the scale of a people. Why imported forms don&rsquo;t hold, and the alternatives that actually got built: nomination and honor, precinct representation, authority transferred down.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/community-resilience/economy/"><span><b>Ancestral Economics</b><span>Question seven at economy scale. Four capitals in depth, wealth that stays home against wealth that leaves, and the transition off an extraction economy.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/business/"><span><b>A business with soul</b><span>Questions five and six written as provisions you can draft, file, sign and enforce. The charter, the ownership covenant, the veto, the fund that cannot be raided.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/community-resilience/"><span><b>Community Resilience</b><span>The whole argument at the largest scale &mdash; governance, economy and institutions, and why the hard part was never the constitution.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/teams/"><span><b>The Far Messenger Program</b><span>Question eight, as a piece of work. Who is being made ready, and what raising someone actually consists of.</span></span><em>&rarr;</em></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= THE COUNCIL FIRE ================= -->
+<section class="sec sec--alt">
+  <div class="wrap wrap--tight" style="max-width:46rem">
+    <p class="eyebrow">The one question</p>
+    <p class="pull" style="margin-top:1.4rem">Will this ensure our future generations live in harmony and resilience with each other and Mother Earth?</p>
+    <p class="say" style="margin-top:1.6rem">That is the bottom line of <em>The Council Fire</em>, and it is the last thing asked before a decision is made. Every provision, every account, every council on this page exists to make that question answerable by somebody other than the person who wants the answer to be yes.</p>
+  </div>
+</section>
+
+<section class="bookband">
+  <div class="bookband__bg"><img src="/assets/img/land/juniper-valley.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap bookband__in">
+    <p class="eyebrow rv">The novel, and the one after it</p>
+    <h2 class="rv">The Council Fire</h2>
+    <p class="rv">When the systems running the modern world reach their limits, the keepers of many peoples&rsquo; oldest knowledge are drawn to one fire to remember what actually lasts &mdash; and then they build. The circle, the four capitals, the charter, the Sacred Veto, the Seventh Generation Fund: they are in that book before they are anywhere else.</p>
+    <p class="rv">On the last night, a young woman stands up and asks the elders how she does this at home. One of them tells her: <i>&ldquo;The answer is a whole other book.&rdquo;</i> Then they say what will be in it &mdash; the business, the community economy, the planning, property, the seeing of every person, and the story. This page is the part of that answer I can give you now. The book is being written.</p>
+    <div class="bookband__act rv">
+      <a class="btn btn--primary" href="https://ancestralwatch.com">Read The Council Fire <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLOSE ================= -->
+<section class="sec hasphoto touch">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/land/creek-waterfall.jpg" alt="" loading="lazy"></div>
+  <div class="wrap wrap--tight rv">
+    <p class="eyebrow eyebrow--center">The whole of it</p>
+    <h2>Eight questions. They are yours now.</h2>
+    <p>None of this needs me in the room. If you are in the middle of one of them and want another pair of eyes, it comes straight to Tony.</p>
+    <a class="touch__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+        <p class="muted ftr__brand">Ancestral intelligence for a regenerating world.</p>
+        <div class="ftr__langs">
+          <a href="/ja/">日本語</a><span>·</span>
+          <a href="/lt/">Lietuvių</a><span>·</span>
+          <a href="/india/">India</a><span>·</span>
+          <span>中文 soon</span>
+        </div>
+      </div>
+      <div>
+        <h4>Community Resilience</h4>
+        <ul>
+          <li><a href="/community-resilience/">The philosophy</a></li>
+          <li><a href="/community-resilience/gathering/">How decisions get made</a></li>
+          <li><a href="/community-resilience/governance/">A government that fits</a></li>
+          <li><a href="/community-resilience/economy/">Ancestral Economics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Work together</h4>
+        <ul>
+          <li><a href="mailto:wisdom@ancestralwatch.com">Advisory &amp; design</a></li>
+          <li><a href="/teams/">The Far Messenger Program</a></li>
+          <li><a href="/workshop/">The Canyon Within</a></li>
+          <li><a href="/#human-performance">Human Resilience</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read</h4>
+        <ul>
+          <li><a href="https://ancestralwatch.com">The Council Fire</a></li>
+          <li><a href="https://ancestralwatch.com">The Books</a></li>
+          <li><a href="/journal/">The Journal</a></li>
+          <li><a href="/#about">About Tony</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <span>© 2026 TribeAwaken · Tony Skrelūnas</span>
+      <span>Ancestral intelligence for a regenerating world.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')}); return;
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{rootMargin:'0px 0px -6% 0px',threshold:.05});
+  els.forEach(function(e){io.observe(e)});
+  function sweep(){
+    els.forEach(function(e){
+      if(e.classList.contains('in')) return;
+      var r = e.getBoundingClientRect();
+      if(r.top < (window.innerHeight || 0) * 1.02){ e.classList.add('in'); io.unobserve(e); }
+    });
+  }
+  window.addEventListener('load', function(){ sweep(); setTimeout(sweep, 260); });
+  setTimeout(sweep, 1200);
+})();
+
+(function(){
+  var b=document.getElementById('burger'), m=document.getElementById('menu'), c=document.getElementById('menuClose');
+  if(!b||!m) return;
+  function open(){m.classList.add('open');b.setAttribute('aria-expanded','true');document.body.classList.add('locked')}
+  function close(){m.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.classList.remove('locked')}
+  b.addEventListener('click',function(){m.classList.contains('open')?close():open()});
+  if(c) c.addEventListener('click',close);
+  m.addEventListener('click',function(e){if(e.target.tagName==='A')close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+})();
+</script>
+<script src="/assets-v4/capture.js?v=1" defer></script>
+</body>
+</html>

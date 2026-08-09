@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Sunrise over a mesa horizon">
+  <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+  <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+  <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+  <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+  <line x1="102" y1="118" x2="102" y2="110"/>
+  <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+  <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+  <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+  <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+  <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+  <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+  <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+  <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+  <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+  <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+  <line x1="6" y1="152" x2="194" y2="152"/>
+</svg>

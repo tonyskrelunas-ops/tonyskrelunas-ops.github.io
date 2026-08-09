@@ -1,6 +1,493 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<title>Redirecting… | TribeAwaken</title>
-<link rel="canonical" href="https://tribeawaken.com/#connect">
-<meta http-equiv="refresh" content="0; url=https://tribeawaken.com/#connect">
-<script>location.replace("https://tribeawaken.com/#connect")</script>
-</head><body>This page has moved. <a href="https://tribeawaken.com/#connect">Continue to TribeAwaken →</a></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Speaking, consulting, retreats, press | Tony Skrelūnas</title>
+<meta name="description" content="Direct enquiries for keynotes, advisory work, retreats and team immersives, and press. One inbox: wisdom@ancestralwatch.com.">
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/assets-v4/v2.css?v=31">
+<style>
+/* ============ page-specific — extends v2.css + forms.css ============
+   NOTE: inside clamp()/calc(), + and - MUST have whitespace around
+   them or the whole declaration is dropped.
+   ==================================================================== */
+
+html{scroll-padding-top:6rem}
+
+/* ---------- header (matches /) ---------- */
+.hdr__in{max-width:1560px;gap:1.6rem}
+.hdr__end{display:flex;align-items:center;gap:1rem}
+.nav{gap:1.25rem}
+.nav a{font-size:.94rem;font-weight:700;letter-spacing:-.005em;
+  padding-block:.3rem;border-bottom:2px solid transparent;transition:color .18s,border-color .18s}
+.nav a:hover{color:var(--clay-lt);border-bottom-color:var(--clay)}
+.nav a[aria-current]{color:var(--clay-lt);border-bottom-color:var(--clay)}
+.hdr__cta{font-size:.92rem;padding:.85em 1.4em;white-space:nowrap}
+.burger{display:inline-flex;flex-direction:column;justify-content:center;gap:6px;
+  width:52px;height:44px;padding:0 12px;background:none;border:1px solid var(--rule);
+  border-radius:6px;cursor:pointer}
+.burger i{display:block;height:2px;background:var(--cream);border-radius:2px;transition:.25s}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+@media(max-width:1010px){.nav{display:none}}
+@media(min-width:1011px){.burger{display:none}}
+@media(max-width:520px){.hdr__cta{display:none}}
+
+.menu{position:fixed;inset:0;z-index:200;background:var(--ink);overflow-y:auto;
+  padding:clamp(1.5rem, 1rem + 3vw, 3rem) 0 4rem;
+  opacity:0;visibility:hidden;transform:translateY(-12px);
+  transition:opacity .28s ease,transform .28s ease,visibility .28s}
+.menu.open{opacity:1;visibility:visible;transform:none}
+.menu__top{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  margin-bottom:clamp(2rem, 1rem + 4vw, 4rem)}
+.menu__close{width:52px;height:44px;background:none;border:1px solid var(--rule);
+  border-radius:6px;color:var(--cream);font-size:1.5rem;line-height:1;cursor:pointer}
+.menu__ls{list-style:none;padding:0;margin:0;display:grid;
+  gap:clamp(.2rem, .1rem + .5vw, .7rem);border-top:1px solid var(--rule)}
+.menu__ls li{border-bottom:1px solid var(--rule)}
+.menu__ls a{display:flex;align-items:baseline;gap:1.2rem;text-decoration:none;
+  font-family:var(--display);font-weight:700;letter-spacing:-.03em;
+  font-size:clamp(1.8rem, 1.2rem + 3vw, 3.2rem);line-height:1.05;
+  padding-block:clamp(.45rem, .3rem + .7vw, .85rem);transition:color .2s,padding-left .2s}
+.menu__ls a:hover{color:var(--clay-lt);padding-left:.6rem}
+.menu__ls em{font-family:var(--body);font-style:normal;font-size:.78rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt);flex:none}
+.menu__foot{margin-top:clamp(2.2rem, 1.5rem + 3vw, 3.6rem);display:flex;flex-wrap:wrap;
+  gap:1.2rem 2.4rem;align-items:center}
+.menu__foot a{text-decoration:none;font-weight:800;font-size:.9rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--sand)}
+.menu__foot a:hover{color:var(--clay-lt)}
+body.locked{overflow:hidden}
+
+/* ---------- typographic opening ---------- */
+.open{background:var(--ink);border-bottom:1px solid var(--rule);
+  padding-block:clamp(3.5rem, 2rem + 6vw, 7.5rem)}
+.open__grid{display:grid;grid-template-columns:1.15fr .85fr;
+  gap:clamp(2.2rem, 1rem + 4.5vw, 6rem);align-items:end}
+@media(max-width:940px){.open__grid{grid-template-columns:1fr;gap:2.4rem;align-items:start}}
+.open h1{font-size:var(--t-hero);font-weight:900;max-width:9ch}
+.open .lead{margin-top:1.8rem;max-width:34ch;color:var(--sand)}
+.open__mailwrap{padding-bottom:.4rem}
+.open__k{font-family:var(--body);font-weight:800;font-size:.8rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--clay-lt);margin-bottom:.9rem}
+.open .f-mail{margin-top:0;font-size:clamp(1.3rem, .1rem + 3.4vw, 2.5rem)}
+/* keep the peaks fully inside this shorter section */
+.open .f-glyph--r{top:50%;bottom:auto;transform:translateY(-50%);
+  right:clamp(-2rem, -2vw, 0rem);width:clamp(190px,22vw,340px);opacity:.13}
+.open__sub{margin-top:1.1rem;color:var(--sand);font-size:.98rem;max-width:32ch}
+
+/* ---------- what you might be here for ---------- */
+.kinds{padding-block:clamp(3.5rem, 2.2rem + 5vw, 7rem)}
+.kinds__head{margin-bottom:clamp(2.2rem, 1.6rem + 2vw, 3.4rem)}
+.kinds__head h2{max-width:16ch;font-weight:800}
+.kinds__grid{display:grid;grid-template-columns:repeat(4,1fr);
+  gap:clamp(1.2rem, .8rem + 1.4vw, 2rem)}
+@media(max-width:1080px){.kinds__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.kinds__grid{grid-template-columns:1fr}}
+.kind{border-top:2px solid var(--clay);padding-top:1.3rem;display:flex;flex-direction:column}
+.kind:nth-child(2){border-top-color:var(--gold)}
+.kind:nth-child(3){border-top-color:var(--clay-lt)}
+.kind:nth-child(4){border-top-color:var(--sand)}
+.kind h3{font-size:clamp(1.3rem, 1.15rem + .7vw, 1.75rem);font-weight:800;margin-bottom:.7rem}
+/* two headings wrap to two lines — hold the others to the same depth
+   so all four bodies start on one line */
+@media(min-width:601px){.kind h3{min-height:2.04em}}
+.kind p{color:var(--sand);font-size:1rem;line-height:1.55;max-width:32ch;margin:0}
+.kind__note{margin-top:.9rem!important;font-size:.9rem;color:var(--clay-lt);font-weight:700}
+
+/* ---------- photo band ---------- */
+.band{position:relative;border-block:1px solid var(--rule)}
+.band img{width:100%;height:clamp(280px, 38vh, 480px);object-fit:cover;object-position:50% 40%;
+  filter:brightness(1.18) contrast(1.03)}
+/* the caption sits bottom-left, so the weight does too — the room stays visible */
+.band::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(18deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.42) 26%,rgba(27,18,16,.13) 58%,rgba(27,18,16,.05) 100%)}
+.band__cap{position:absolute;left:0;right:0;bottom:0;z-index:2;
+  padding-block:clamp(1.4rem, 1rem + 1.4vw, 2.2rem)}
+.band__cap p{font-family:var(--display);font-style:italic;font-weight:600;
+  font-size:clamp(1.05rem, .95rem + .6vw, 1.5rem);color:var(--cream);
+  max-width:42ch;line-height:1.35;margin:0;text-shadow:0 2px 18px rgba(20,13,10,.66)}
+
+/* ---------- the form band ---------- */
+.ask{position:relative;isolation:isolate;background:var(--ink);
+  border-block:1px solid var(--rule);padding-block:clamp(4rem, 2.6rem + 6vw, 8rem)}
+.ask__tex{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.ask__tex img{width:100%;height:100%;object-fit:cover;opacity:.07;
+  filter:contrast(1.25) saturate(.5) blur(2px);transform:scale(1.05)}
+.ask__head{text-align:center;margin-bottom:clamp(2.4rem, 1.6rem + 2.6vw, 4rem)}
+.ask__head h2{margin-inline:auto;max-width:14ch;font-weight:800}
+.ask__head p{margin:1.4rem auto 0;color:var(--sand);text-align:center;max-width:42ch;
+  text-wrap:balance;font-size:var(--t-lead);line-height:1.5;font-weight:500}
+
+/* ---------- what happens next ---------- */
+.next{padding-block:clamp(3.5rem, 2.2rem + 5vw, 7rem);text-align:center}
+.next h2{margin-inline:auto;max-width:14ch;font-weight:800}
+.next__grid{display:grid;grid-template-columns:repeat(3,1fr);
+  gap:clamp(1.4rem, 1rem + 2vw, 3rem);
+  max-width:1000px;margin:clamp(2.4rem, 1.6rem + 2.4vw, 3.8rem) auto 0;text-align:left}
+@media(max-width:760px){.next__grid{grid-template-columns:1fr;gap:1.6rem}}
+.next__grid div{border-top:1px solid var(--rule);padding-top:1.2rem}
+.next__grid b{display:block;font-family:var(--display);font-weight:900;
+  font-size:1.9rem;color:var(--gold);line-height:1;margin-bottom:.7rem}
+.next__grid p{color:var(--sand);font-size:1rem;line-height:1.55;max-width:30ch;margin:0}
+.next__grid strong{color:var(--cream-2)}
+
+/* ---------- footer ---------- */
+.ftr__grid{grid-template-columns:1.5fr 1fr 1fr 1fr}
+@media(max-width:1000px){.ftr__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.ftr__grid{grid-template-columns:1fr}}
+.ftr__brand{margin-top:1.2rem;max-width:30ch}
+</style>
+<link rel="canonical" href="https://tribeawaken.com/contact/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TribeAwaken">
+<meta property="og:title" content="Contact — Speaking, consulting, retreats, press | Tony Skrelūnas">
+<meta property="og:description" content="Direct enquiries for keynotes, advisory work, retreats and team immersives, and press. One inbox: wisdom@ancestralwatch.com.">
+<meta property="og:url" content="https://tribeawaken.com/contact/">
+<meta property="og:image" content="https://tribeawaken.com/assets/img/garden/tea-stone-bridge.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<!-- ================= HEADER ================= -->
+<div class="greet">
+  <div class="wrap greet__in">
+    <a class="greet__c" href="/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+  <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+  <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+  <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+  <line x1="102" y1="118" x2="102" y2="110"/>
+  <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+  <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+  <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+  <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+  <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+  <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+  <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+  <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+  <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+  <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+  <line x1="6" y1="152" x2="194" y2="152"/>
+</svg>
+
+      <span class="greet__w">Y&aacute;'&aacute;t'&eacute;&eacute;h</span>
+      <span class="greet__l">Din&eacute;</span>
+    </a>
+    <a class="greet__c" href="/lt/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="100" cy="100" r="76"/>
+  <circle cx="100" cy="100" r="46"/>
+  <circle cx="100" cy="100" r="26"/>
+  <circle cx="100" cy="100" r="8"/>
+  <polyline points="95.5,51 100,27 104.5,51 95.5,51"/>
+  <line x1="81.2" y1="54.7" x2="75.5" y2="40.9"/>
+  <polyline points="62.2,68.5 48.4,48.4 68.5,62.2 62.2,68.5"/>
+  <line x1="54.7" y1="81.2" x2="40.9" y2="75.5"/>
+  <polyline points="51,104.5 27,100 51,95.5 51,104.5"/>
+  <line x1="54.7" y1="118.8" x2="40.9" y2="124.5"/>
+  <polyline points="68.5,137.8 48.4,151.6 62.2,131.5 68.5,137.8"/>
+  <line x1="81.2" y1="145.3" x2="75.5" y2="159.1"/>
+  <polyline points="104.5,149 100,173 95.5,149 104.5,149"/>
+  <line x1="118.8" y1="145.3" x2="124.5" y2="159.1"/>
+  <polyline points="137.8,131.5 151.6,151.6 131.5,137.8 137.8,131.5"/>
+  <line x1="145.3" y1="118.8" x2="159.1" y2="124.5"/>
+  <polyline points="149,95.5 173,100 149,104.5 149,95.5"/>
+  <line x1="145.3" y1="81.2" x2="159.1" y2="75.5"/>
+  <polyline points="131.5,62.2 151.6,48.4 137.8,68.5 131.5,62.2"/>
+  <line x1="118.8" y1="54.7" x2="124.5" y2="40.9"/>
+  <path d="M 109.2,74.6 Q 100,55 90.8,74.6"/>
+  <path d="M 88.6,75.5 Q 68.2,68.2 75.5,88.6"/>
+  <path d="M 74.6,90.8 Q 55,100 74.6,109.2"/>
+  <path d="M 75.5,111.4 Q 68.2,131.8 88.6,124.5"/>
+  <path d="M 90.8,125.4 Q 100,145 109.2,125.4"/>
+  <path d="M 111.4,124.5 Q 131.8,131.8 124.5,111.4"/>
+  <path d="M 125.4,109.2 Q 145,100 125.4,90.8"/>
+  <path d="M 124.5,88.6 Q 131.8,68.2 111.4,75.5"/>
+</svg>
+
+      <span class="greet__w">Sveiki atvyk&#281;</span>
+      <span class="greet__l">Lietuvi&#371;</span>
+    </a>
+    <a class="greet__c" href="/ja/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="18" y1="172" x2="182" y2="172" opacity="0.55"/>
+  <line x1="47" y1="66" x2="39" y2="172"/>
+  <line x1="61" y1="66" x2="57" y2="172"/>
+  <line x1="153" y1="66" x2="161" y2="172"/>
+  <line x1="139" y1="66" x2="143" y2="172"/>
+  <line x1="39" y1="172" x2="57" y2="172"/>
+  <line x1="143" y1="172" x2="161" y2="172"/>
+  <path d="M 33,98 L 167,98 L 167,110 L 33,110 Z"/>
+  <path d="M 94,80 L 106,80 L 106,98 L 94,98 Z"/>
+  <path d="M 12,60 C 48,34 152,34 188,60 L 179,74 C 147,52 53,52 21,74 Z"/>
+</svg>
+
+      <span class="greet__w" lang="ja">&#12424;&#12358;&#12371;&#12381;</span>
+      <span class="greet__l">&#26085;&#26412;&#35486;</span>
+    </a>
+  </div>
+</div>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#human-performance">Human Resilience</a></li>
+        <li><a href="https://ancestralwatch.com">The Books</a></li>
+        <li><a href="/workshop/">Retreats</a></li>
+        <li><a href="/journal/">Journal</a></li>
+        <li><a href="/teams/">For Teams</a></li>
+        <li><a href="/community-resilience/">Community Resilience</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="hdr__end">
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= FULL-SCREEN MENU ================= -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="wrap">
+    <div class="menu__top">
+      <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+      <button class="menu__close" id="menuClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="menu__ls">
+      <li><a href="/"><em>01</em> Home</a></li>
+      <li><a href="/#human-performance"><em>02</em> Human Resilience</a></li>
+      <li><a href="https://ancestralwatch.com"><em>03</em> The Books</a></li>
+      <li><a href="/workshop/"><em>04</em> Retreats</a></li>
+      <li><a href="/journal/"><em>05</em> Journal</a></li>
+      <li><a href="/teams/"><em>06</em> For Teams</a></li>
+      <li><a href="/community-resilience/"><em>07</em> Community Resilience</a></li>
+      <li><a href="/#about"><em>08</em> About</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="/ja/">日本語</a>
+      <a href="/lt/">Lietuvių</a>
+      <a href="/india/">India</a>
+      <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= OPENING ================= -->
+<section class="open f-glyphed hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/garden/tea-stone-bridge.jpg" alt="" loading="lazy"></div>
+  <!-- rock art: four stylized peaks -->
+  <div class="f-glyph f-glyph--r" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+      <polyline points="14,152 38,92 62,152"/>
+      <polyline points="27.9,117.2 38,103 48.1,117.2" opacity="0.7"/>
+      <polyline points="58,152 83,50 108,152"/>
+      <polyline points="72.5,92.8 83,61 93.5,92.8" opacity="0.7"/>
+      <polyline points="104,152 128,66 152,152"/>
+      <polyline points="117.9,102.1 128,77 138.1,102.1" opacity="0.7"/>
+      <polyline points="148,152 167,100 186,152"/>
+      <polyline points="159,121.8 167,111 175,121.8" opacity="0.7"/>
+      <line x1="10" y1="152" x2="190" y2="152"/>
+    </svg>
+  </div>
+
+  <div class="wrap open__grid rv">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h1>Say what you&nbsp;need.</h1>
+      <p class="lead">Speaking, advisory work, a retreat, a team immersive, or a press question. One inbox, read by me.</p>
+    </div>
+    <div class="open__mailwrap">
+      <p class="open__k">Direct</p>
+      <a class="f-mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+      <p class="open__sub">If you'd rather just write, write. The form below only exists to save you a few questions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT YOU MIGHT BE HERE FOR ================= -->
+<section class="sec kinds hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/world/japan-waterfall.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap">
+    <div class="kinds__head rv">
+      <p class="eyebrow">What people usually ask for</p>
+      <h2>Four kinds of enquiry.</h2>
+    </div>
+    <div class="kinds__grid rv">
+      <div class="kind">
+        <h3>Speaking</h3>
+        <p>Keynotes, panels, convocations, and closing sessions. Leadership, regeneration, and what thirty years in the field actually taught.</p>
+        <p class="kind__note">Tell me the date, the room, and who's in it.</p>
+      </div>
+      <div class="kind">
+        <h3>Advisory&nbsp;&amp; consulting</h3>
+        <p>Community resilience, economic development, governance restructuring, and organisations trying to change without losing themselves.</p>
+        <p class="kind__note">Tell me the decision you're facing.</p>
+      </div>
+      <div class="kind">
+        <h3>Retreats&nbsp;&amp; immersives</h3>
+        <p>The Canyon Within, private team immersives, and the Far Messenger Program. On the land, or brought to you.</p>
+        <p class="kind__note">Tell me how many people and roughly when.</p>
+      </div>
+      <div class="kind">
+        <h3>Press&nbsp;&amp; interviews</h3>
+        <p>Podcasts, profiles, book coverage, and permission requests for the essays and the four books.</p>
+        <p class="kind__note">Tell me your deadline.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PHOTO BAND ================= -->
+<section class="band">
+  <img src="/assets/img/world/japan-garden-reflection.jpg" alt="Tony Skrelūnas presenting to a seated group in a low-lit room" loading="lazy">
+  <div class="wrap band__cap">
+    <p class="rv">Thirty years of rooms like this one — boardrooms, chapter houses, convocations, four continents.</p>
+  </div>
+</section>
+
+<!-- ================= THE FORM ================= -->
+<section class="ask f-glyphed" id="ask">
+  <div class="ask__tex" aria-hidden="true">
+    <img src="/assets/img/garden/tea-azalea-moss.jpg" alt="" loading="lazy">
+  </div>
+  <!-- rock art: four interlocking circles -->
+  <div class="f-glyph f-glyph--br" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+      <circle cx="70" cy="70" r="46"/><circle cx="130" cy="70" r="46"/>
+      <circle cx="130" cy="130" r="46"/><circle cx="70" cy="130" r="46"/>
+      <circle cx="100" cy="100" r="7"/>
+      <circle cx="100" cy="100" r="2.2" fill="currentColor" stroke="none"/>
+      <circle cx="54" cy="54" r="8"/>
+      <line x1="54" y1="48" x2="54" y2="60"/>
+      <line x1="50" y1="52" x2="58" y2="52" opacity="0.8"/>
+      <circle cx="141" cy="51" r="6"/><circle cx="151" cy="57" r="6"/>
+      <polyline points="146,138 154,146 146,154 138,146 146,138"/>
+      <polyline points="146,142 150,146 146,150 142,146 146,142" opacity="0.7"/>
+      <path d="M 46,154 C 46,144 52,138 62,138 C 62,148 56,154 46,154 Z"/>
+      <line x1="48" y1="152" x2="60" y2="140" opacity="0.7"/>
+    </svg>
+  </div>
+
+  <div class="wrap">
+    <div class="ask__head rv">
+      <p class="eyebrow eyebrow--center">Send it</p>
+      <h2>Tell me what you're planning.</h2>
+      <p>Six fields. No account, no confirmation email, nothing to join.</p>
+    </div>
+
+    <!-- ---- the form. Engine: /assets-v4/forms.js ---- -->
+    <div class="f-shell rv" data-mail-shell>
+
+      <p style="margin-top:1.6rem"><a class="mailto" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a></p><p class="mailto__note">Write to me &mdash; it opens your own mail, addressed to me. I read everything.</p>
+
+      <!-- ---- the success state, shown in place ---- -->
+      <div class="f-done" role="status" aria-live="polite">
+        <svg class="f-done__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false">
+          <circle cx="50" cy="50" r="46" stroke="#C96A3E" stroke-width="2" opacity=".4"/>
+          <circle cx="50" cy="50" r="33" stroke="#D9A25F" stroke-width="2" opacity=".7"/>
+          <path d="M32 51.5 45 64l24-27" stroke="#E5895C" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>That's with me.</h3>
+        <p>It arrived in my inbox, not a queue. I answer most enquiries within a few days — sooner if there's a deadline in it.</p>
+        <p>If it's urgent, write straight to <strong>wisdom@ancestralwatch.com</strong> and say so in the subject.</p>
+        <p class="f-done__sig">— Tony</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT HAPPENS NEXT ================= -->
+<section class="sec next">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--center">After you press send</p>
+    <h2>Three things, then nothing.</h2>
+    <div class="next__grid rv">
+      <div>
+        <b>01</b>
+        <p>It lands in <strong>one inbox</strong> — wisdom@ancestralwatch.com — as an ordinary email.</p>
+      </div>
+      <div>
+        <b>02</b>
+        <p><strong>I read it.</strong> Not an assistant, not a routing system, not a bot writing back.</p>
+      </div>
+      <div>
+        <b>03</b>
+        <p><strong>You hear back within a few days</strong>, usually with a question or a time to talk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+        <p class="muted ftr__brand">Ancestral intelligence for a regenerating world.</p>
+      </div>
+      <div>
+        <h4>Work together</h4>
+        <ul>
+          <li><a href="/workshop/">The Canyon Within</a></li>
+          <li><a href="/teams/">The Far Messenger Program</a></li>
+          <li><a href="/#human-performance">Human Resilience</a></li>
+          <li><a href="/community-resilience/">Community Resilience</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read, watch, listen</h4>
+        <ul>
+          <li><a href="/journal/">The Journal</a></li>
+          <li><a href="https://ancestralwatch.com">The Books</a></li>
+          <li><a href="/#listen">The Warrior's Code</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Say something</h4>
+        <ul>
+          <li><a href="/circle/">The Circle</a></li>
+          <li><a href="/contact/">Contact &amp; enquiries</a></li>
+          <li><a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <span>© 2026 TribeAwaken · Tony Skrelūnas</span>
+      <span>Ancestral intelligence for a regenerating world.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- menu ---------- */
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu'),c=document.getElementById('menuClose');
+  if(!b||!m) return;
+  function open(){m.classList.add('open');b.setAttribute('aria-expanded','true');document.body.classList.add('locked')}
+  function shut(){m.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.classList.remove('locked')}
+  b.addEventListener('click',function(){m.classList.contains('open')?shut():open()});
+  if(c) c.addEventListener('click',shut);
+  m.addEventListener('click',function(e){if(e.target.tagName==='A') shut()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape') shut()});
+})();
+</script>
+<script src="/assets-v4/capture.js?v=1" defer></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Mount Fuji with snow line and cloud bands">
+  <!-- mountain -->
+  <path d="M 6,172 C 30,170 48,158 66,132 C 80,112 88,78 94,48"/>
+  <path d="M 194,172 C 170,170 152,158 134,132 C 120,112 112,78 106,48"/>
+  <path d="M 94,48 C 96,55 104,55 106,48"/>
+
+  <!-- snow cap -->
+  <path d="M 68,126 L 77,110 L 83,121 L 89,103 L 95,115 L 100,99 L 105,115 L 111,103 L 117,121 L 123,110 L 132,126"/>
+  <path d="M 84,128 L 90,118" opacity="0.55"/>
+  <path d="M 116,128 L 110,118" opacity="0.55"/>
+  <path d="M 100,88 L 100,78" opacity="0.5"/>
+
+  <!-- cloud bands -->
+  <path d="M 14,140 C 42,133 66,146 92,139 C 116,133 142,146 170,138"/>
+  <path d="M 22,149 C 48,143 68,153 92,147 C 114,141 140,152 164,146" opacity="0.7"/>
+  <path d="M 30,161 C 54,155 76,165 102,159 C 126,153 152,164 176,158"/>
+
+  <!-- ground -->
+  <line x1="4" y1="172" x2="196" y2="172"/>
+  <path d="M 26,184 C 48,181 66,186 86,183" opacity="0.4"/>
+  <path d="M 112,184 C 134,181 154,186 176,183" opacity="0.4"/>
+</svg>

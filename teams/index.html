@@ -1,246 +1,661 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <title>The Far Messenger Program — Raise Your Team's Frequency | TribeAwaken</title>
-  <meta name="description" content="A 2.5–3 day immersive that lifts your team to a higher frequency — clear, resilient, fully alive — and sends each leader home carrying what matters most. We bring the whole team, and we show you the rise." />
-  <link rel="canonical" href="https://tribeawaken.com/teams/" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/tokens.css" />
-  <link rel="stylesheet" href="/css/style.css?v=20" />
-  <style>
-    .promise{ border-left:3px solid var(--turq); padding:var(--space-3) var(--space-4); margin:var(--space-4) 0; font-family:var(--font-display,'Spectral'),serif; font-size:var(--step-2); font-style:italic; line-height:1.4; }
-    .arc{ display:grid; gap:var(--space-3); grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); margin:var(--space-4) 0; }
-    .arc .card{ border:1px solid var(--rule); border-radius:14px; padding:var(--space-4); background:var(--night-3, rgba(255,255,255,.02)); }
-    .arc .card .n{ color:var(--turq); letter-spacing:.14em; text-transform:uppercase; font-size:.7rem; font-weight:700; }
-    .arc .card h3{ margin:.3rem 0; }
-    table.mod{ width:100%; border-collapse:collapse; margin:var(--space-3) 0; }
-    table.mod td{ padding:.7rem .6rem; border-bottom:1px solid var(--rule); vertical-align:top; font-size:.98rem; }
-    table.mod td:first-child{ font-weight:700; color:var(--amber); width:44%; }
-    .band{ border:1px solid var(--turq); border-radius:16px; padding:var(--space-4); background:rgba(47,191,174,.06); margin:var(--space-4) 0; }
-    .cta-row{ display:flex; flex-wrap:wrap; gap:.7rem; margin-top:var(--space-3); }
-    .feat{ display:flex; gap:var(--space-3); flex-wrap:wrap; }
-    .feat .f{ flex:1; min-width:220px; border:1px solid var(--rule); border-radius:12px; padding:var(--space-3); }
-    .feat .f h4{ margin:.1rem 0 .3rem; }
-    /* imagery + motion */
-    .hero-figure{ margin-top:var(--space-4); border-radius:16px; overflow:hidden; max-height:460px; }
-    .hero-figure img{ width:100%; height:460px; object-fit:cover; display:block; animation:kenburns 26s ease-in-out infinite alternate; }
-    figure.teams-fig{ margin:var(--space-4) 0; border-radius:16px; overflow:hidden; }
-    figure.teams-fig img{ width:100%; height:auto; display:block; }
-    figure.teams-fig figcaption{ font-size:var(--step--1); opacity:.7; margin-top:.5rem; font-style:italic; text-align:center; }
-    .guide-grid{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.5fr); gap:var(--space-4); align-items:start; }
-    .guide-grid > img{ width:100%; height:auto; border-radius:16px; display:block; }
-    @media (max-width:640px){ .guide-grid{ grid-template-columns:1fr; } }
-    .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
-    .reveal.in{ opacity:1; transform:none; }
-    .arc .card, .feat .f{ transition:transform .2s ease; }
-    .arc .card:hover, .feat .f:hover{ transform:translateY(-3px); }
-    @keyframes kenburns{ from{ transform:scale(1); } to{ transform:scale(1.07); } }
-    @media (prefers-reduced-motion:reduce){ .hero-figure img{ animation:none; } .reveal{ opacity:1; transform:none; transition:none; } }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Far Messenger Program — resilience training for organizations | TribeAwaken</title>
+<meta name="description" content="A 2.5–3 day immersive for organizations. We don't send your leaders home rested. We send them home as Far Messengers — able to carry weight across hard ground, and arrive whole. Measured before and 30 days after.">
+<link rel="stylesheet" href="/assets-v4/v2.css?v=31">
+<style>
+/* ---- repairs to shared v2.css (invalid calc: missing spaces around "+") ---- */
+.grid{gap:clamp(1.2rem,.8rem + 1.6vw,2.2rem)}
+.split{gap:clamp(2rem,1rem + 4vw,5rem)}
+.card{padding:clamp(1.6rem,1.2rem + 1.4vw,2.4rem)}
+.stat__n{font-size:clamp(2.8rem,2rem + 2.6vw,4.4rem)}
+.pull{font-size:clamp(1.9rem,1.4rem + 2.4vw,3.4rem)}
+
+/* ---- page-scoped: teams ---- */
+.hero--teams .hero__bg img{object-position:50% 42%}
+.hero--teams .hero__scrim{background:linear-gradient(100deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.57) 46%,rgba(20,13,10,.45) 100%)}
+.hero__meta{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.1rem;margin-top:2rem;
+  font-weight:700;font-size:1.02rem;color:var(--sand)}
+.hero__meta span{display:flex;align-items:center;gap:1.1rem}
+.hero__meta span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--clay)}
+.hero__meta span:last-child::after{display:none}
+
+/* promise */
+.promise{font-family:var(--display);font-weight:700;letter-spacing:-.03em;line-height:1.06;
+  font-size:clamp(2.2rem,1.5rem + 3.1vw,4.3rem);max-width:20ch;text-wrap:balance}
+.promise em{color:var(--clay-lt);font-style:italic}
+
+/* days */
+.days{margin-top:clamp(2.5rem,5vw,4.5rem);border-bottom:1px solid var(--rule)}
+.day{display:grid;grid-template-columns:minmax(0,10rem) 1fr;gap:clamp(1.4rem,3vw,4rem);
+  padding-block:clamp(2.4rem,1.6rem + 2.4vw,4rem);border-top:1px solid var(--rule)}
+.day__k{font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt);padding-top:.7rem}
+.day h3{font-size:clamp(2.1rem,1.4rem + 2.6vw,3.6rem);font-weight:800;margin-bottom:1.1rem}
+.day p{max-width:56ch;color:var(--sand);font-size:1.14rem}
+@media(max-width:720px){.day{grid-template-columns:1fr;gap:.8rem}}
+
+/* simple rule list */
+.rlist{list-style:none;padding:0;margin-top:clamp(2rem,4vw,3.4rem);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:0 clamp(2rem,4vw,5rem);
+  border-bottom:1px solid var(--rule)}
+.rlist li{padding-block:clamp(1.3rem,2.2vw,1.8rem);border-top:1px solid var(--rule)}
+.rlist b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.02em;color:var(--cream-2);
+  font-size:clamp(1.4rem,1.15rem + 1vw,1.95rem);line-height:1.12;margin-bottom:.4rem}
+.rlist span{display:block;color:var(--sand);font-size:1.05rem;line-height:1.55;max-width:38ch}
+
+/* measured */
+.metric{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:clamp(1.6rem,3vw,3rem);margin-top:clamp(2.4rem,4vw,3.6rem)}
+.metric>div{border-top:2px solid var(--clay);padding-top:1.3rem}
+.metric__n{font-family:var(--display);font-weight:900;line-height:.95;color:var(--gold);
+  font-size:clamp(2.4rem,1.7rem + 2.4vw,3.9rem);letter-spacing:-.03em}
+.metric__l{font-weight:700;font-size:1.02rem;color:var(--sand);margin-top:.7rem;max-width:26ch}
+
+/* tiers */
+.tier{background:var(--bg-3);border:1px solid var(--rule);border-radius:14px;
+  padding:clamp(1.8rem,1.3rem + 1.6vw,2.8rem);display:flex;flex-direction:column}
+.tier--lead{background:linear-gradient(160deg,#3A2419,var(--bg-3));border-color:rgba(201,106,62,.5)}
+.tier__k{font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt);margin-bottom:1rem}
+.tier h3{font-size:clamp(1.7rem,1.35rem + 1.4vw,2.4rem);font-weight:800;margin-bottom:.9rem}
+.tier p{color:var(--sand)}
+.tier ul{list-style:none;padding:0;margin-top:1.3rem;display:grid;gap:.75rem}
+.tier li{position:relative;padding-left:1.5rem;color:var(--cream);font-size:1.05rem;line-height:1.5}
+.tier li::before{content:"";position:absolute;left:0;top:.6em;width:.55rem;height:2px;background:var(--clay)}
+
+/* proof */
+.proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:clamp(1.6rem,3vw,2.6rem);
+  margin-top:clamp(2.4rem,4vw,3.6rem)}
+.proof>div{border-top:1px solid var(--rule);padding-top:1.4rem}
+.proof__n{font-family:var(--display);font-weight:900;line-height:.95;color:var(--cream-2);
+  font-size:clamp(2.2rem,1.6rem + 2vw,3.4rem);letter-spacing:-.03em}
+.proof__l{color:var(--sand);font-size:1.02rem;margin-top:.6rem;max-width:24ch}
+
+/* closing */
+.close-cta{text-align:center}
+.close-cta h2{margin-inline:auto;max-width:16ch}
+.close-cta p{margin-inline:auto;text-align:center}
+.close-cta .btn{margin-top:2.6rem}
+.mail{display:block;margin-top:1.6rem;font-family:var(--display);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(1.3rem,1rem + 1.2vw,2rem);color:var(--clay-lt);text-decoration:none}
+.mail:hover{color:var(--cream-2)}
+
+.band figcaption{position:absolute;left:0;right:0;bottom:0;padding:var(--gut);
+  background:linear-gradient(to top,rgba(20,13,10,.7) 0%,rgba(20,13,10,.34) 42%,transparent 100%);
+  font-size:.98rem;font-weight:600;color:var(--cream);letter-spacing:.01em}
+.band img.tall{height:clamp(400px,60vh,700px)}
+.band img{filter:brightness(1.16) saturate(1.03)}
+
+/* ---- restored sections ---- */
+
+/* who this is for */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));
+  gap:clamp(1.1rem,2.2vw,1.9rem);margin-top:clamp(2.2rem,4vw,3.4rem)}
+.tile{background:var(--bg-3);border:1px solid var(--rule);border-radius:14px;
+  padding:clamp(1.5rem,1.1rem + 1.2vw,2.2rem)}
+.tile h3{font-size:clamp(1.28rem,1.1rem + .8vw,1.72rem);font-weight:800;margin-bottom:.6rem}
+.tile p{color:var(--sand);margin-bottom:0;font-size:1.05rem;line-height:1.58}
+
+/* scale & reach */
+.reach{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:clamp(1.8rem,3.4vw,3.4rem);margin-top:clamp(2.2rem,4vw,3.2rem)}
+.reach>div{border-top:2px solid var(--clay);padding-top:1.4rem}
+.reach h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(1.4rem,1.15rem + 1vw,2rem);margin-bottom:.8rem}
+.reach p{color:var(--sand);max-width:40ch;margin-bottom:0}
+
+/* guide */
+.guide{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.35fr);
+  gap:clamp(2rem,1rem + 4vw,4.5rem);align-items:start;margin-top:clamp(2.2rem,4vw,3.2rem)}
+@media(max-width:900px){.guide{grid-template-columns:1fr}}
+.guide__img img{width:100%;height:clamp(380px,56vh,620px);object-fit:cover;
+  object-position:50% 26%;border-radius:14px}
+.guide__bio p{color:var(--sand);font-size:1.08rem;line-height:1.62}
+.guide__bio p strong{color:var(--cream-2)}
+
+/* praise */
+.praise{margin-top:clamp(2.6rem,4vw,3.8rem);border-top:2px solid var(--clay);
+  padding-top:1.8rem;max-width:62ch}
+.praise blockquote{margin:0;font-family:var(--display);font-style:italic;font-weight:500;
+  font-size:clamp(1.25rem,1.1rem + 1vw,1.8rem);line-height:1.42;color:var(--cream-2)}
+.praise cite{display:block;font-family:var(--body);font-style:normal;font-weight:700;
+  font-size:.98rem;color:var(--sand);margin-top:1.2rem}
+
+/* close: second CTA */
+.cta-row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2.6rem}
+.cta-row .btn{margin-top:0}
+</style>
+<link rel="canonical" href="https://tribeawaken.com/teams/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TribeAwaken">
+<meta property="og:title" content="The Far Messenger Program — resilience training for organizations | TribeAwaken">
+<meta property="og:description" content="A 2.5–3 day immersive for organizations. We don't send your leaders home rested. We send them home as Far Messengers — able to carry weight across hard ground, and arrive whole. Measured before and 30 days after.">
+<meta property="og:url" content="https://tribeawaken.com/teams/">
+<meta property="og:image" content="https://tribeawaken.com/assets/img/tony-ceremony.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-  <nav class="nav wrap wrap--wide" aria-label="Primary">
-    <a class="brand" href="/" aria-label="TribeAwaken — home"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" width="716" height="676"><span class="brand__wm">Tribe<span class="brand__mark">Awaken</span></span></a>
-    <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">&#9776;</button>
-    <ul class="nav__links" id="primary-nav" data-open="false">
-      <li><a href="/" data-nav="home">Home</a></li>
-      <li><a href="/#leaders">Human Performance</a></li>
-      <li><a href="/#nations">Nation-Building</a></li>
-      <li><a href="/journal/" data-nav="/journal/">Journal</a></li>
-      <li><a href="/#books">The Books</a></li>
-      <li><a href="/#about">About</a></li>
-      <li><a href="/workshop/" data-nav="/workshop/">Retreats</a></li>
-      <li><a href="/teams/" data-nav="/teams/">For Teams</a></li>
-      <li class="nav__cta"><a class="btn btn--primary" href="/#connect">Work with Tony</a></li>
-    </ul>
-  </nav>
-  <div class="global-bar" aria-label="Languages">
-    <div class="wrap wrap--wide global-bar__inner">
-      <span class="global-bar__label">&#127760; Global &amp; Languages</span>
-      <a href="/" data-lang="en">English</a>
-      <a href="/ja/" data-lang="/ja/" lang="ja">&#26085;&#26412;&#35486; &middot; Japan</a>
-      <a href="/lt/" data-lang="/lt/" lang="lt">Lietuvi&#371; &middot; Lithuania</a>
-      <a href="/india/" data-lang="/india/">India</a>
-      <span class="global-bar__soon">&#20013;&#25991; &middot; China &mdash; soon</span>
+
+<div class="greet">
+  <div class="wrap greet__in">
+    <a class="greet__c" href="/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+  <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+  <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+  <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+  <line x1="102" y1="118" x2="102" y2="110"/>
+  <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+  <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+  <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+  <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+  <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+  <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+  <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+  <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+  <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+  <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+  <line x1="6" y1="152" x2="194" y2="152"/>
+</svg>
+
+      <span class="greet__w">Y&aacute;'&aacute;t'&eacute;&eacute;h</span>
+      <span class="greet__l">Din&eacute;</span>
+    </a>
+    <a class="greet__c" href="/lt/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="100" cy="100" r="76"/>
+  <circle cx="100" cy="100" r="46"/>
+  <circle cx="100" cy="100" r="26"/>
+  <circle cx="100" cy="100" r="8"/>
+  <polyline points="95.5,51 100,27 104.5,51 95.5,51"/>
+  <line x1="81.2" y1="54.7" x2="75.5" y2="40.9"/>
+  <polyline points="62.2,68.5 48.4,48.4 68.5,62.2 62.2,68.5"/>
+  <line x1="54.7" y1="81.2" x2="40.9" y2="75.5"/>
+  <polyline points="51,104.5 27,100 51,95.5 51,104.5"/>
+  <line x1="54.7" y1="118.8" x2="40.9" y2="124.5"/>
+  <polyline points="68.5,137.8 48.4,151.6 62.2,131.5 68.5,137.8"/>
+  <line x1="81.2" y1="145.3" x2="75.5" y2="159.1"/>
+  <polyline points="104.5,149 100,173 95.5,149 104.5,149"/>
+  <line x1="118.8" y1="145.3" x2="124.5" y2="159.1"/>
+  <polyline points="137.8,131.5 151.6,151.6 131.5,137.8 137.8,131.5"/>
+  <line x1="145.3" y1="118.8" x2="159.1" y2="124.5"/>
+  <polyline points="149,95.5 173,100 149,104.5 149,95.5"/>
+  <line x1="145.3" y1="81.2" x2="159.1" y2="75.5"/>
+  <polyline points="131.5,62.2 151.6,48.4 137.8,68.5 131.5,62.2"/>
+  <line x1="118.8" y1="54.7" x2="124.5" y2="40.9"/>
+  <path d="M 109.2,74.6 Q 100,55 90.8,74.6"/>
+  <path d="M 88.6,75.5 Q 68.2,68.2 75.5,88.6"/>
+  <path d="M 74.6,90.8 Q 55,100 74.6,109.2"/>
+  <path d="M 75.5,111.4 Q 68.2,131.8 88.6,124.5"/>
+  <path d="M 90.8,125.4 Q 100,145 109.2,125.4"/>
+  <path d="M 111.4,124.5 Q 131.8,131.8 124.5,111.4"/>
+  <path d="M 125.4,109.2 Q 145,100 125.4,90.8"/>
+  <path d="M 124.5,88.6 Q 131.8,68.2 111.4,75.5"/>
+</svg>
+
+      <span class="greet__w">Sveiki atvyk&#281;</span>
+      <span class="greet__l">Lietuvi&#371;</span>
+    </a>
+    <a class="greet__c" href="/ja/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="18" y1="172" x2="182" y2="172" opacity="0.55"/>
+  <line x1="47" y1="66" x2="39" y2="172"/>
+  <line x1="61" y1="66" x2="57" y2="172"/>
+  <line x1="153" y1="66" x2="161" y2="172"/>
+  <line x1="139" y1="66" x2="143" y2="172"/>
+  <line x1="39" y1="172" x2="57" y2="172"/>
+  <line x1="143" y1="172" x2="161" y2="172"/>
+  <path d="M 33,98 L 167,98 L 167,110 L 33,110 Z"/>
+  <path d="M 94,80 L 106,80 L 106,98 L 94,98 Z"/>
+  <path d="M 12,60 C 48,34 152,34 188,60 L 179,74 C 147,52 53,52 21,74 Z"/>
+</svg>
+
+      <span class="greet__w" lang="ja">&#12424;&#12358;&#12371;&#12381;</span>
+      <span class="greet__l">&#26085;&#26412;&#35486;</span>
+    </a>
+  </div>
+</div>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#human-performance">Human Resilience</a></li>
+        <li><a href="https://ancestralwatch.com">The Books</a></li>
+        <li><a href="/workshop/">Retreats</a></li>
+        <li><a href="/journal/">Journal</a></li>
+        <li><a href="/teams/">For Teams</a></li>
+        <li><a href="/community-resilience/">Community Resilience</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="hdr__end">
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <i></i><i></i><i></i>
+      </button>
     </div>
   </div>
 </header>
 
-  <main id="main">
-    <section class="page-hero article-hero">
-      <div class="wrap wrap--narrow">
-        <p class="eyebrow">For teams · The Far Messenger Program</p>
-        <h1>Awaken the Far Messenger in your team.</h1>
-        <p class="article-meta">A 2.5–3 day immersive that lifts your people to a higher frequency — clear, resilient, and fully alive — and sends each leader home carrying what matters most. We bring the whole team, and we show you the rise.</p>
-      </div>
-    </section>
-
-    <div class="wrap wrap--narrow">
-      <div class="hero-figure"><img src="/assets/img/tony-ceremony.jpg" alt="Tony leading a gathering circle outdoors with his team — drum, smudge, elders" /></div>
+<!-- ================= FULL-SCREEN MENU ================= -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="wrap">
+    <div class="menu__top">
+      <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+      <button class="menu__close" id="menuClose" aria-label="Close menu">&times;</button>
     </div>
+    <ul class="menu__ls">
+      <li><a href="/"><em>01</em> Home</a></li>
+      <li><a href="/#human-performance"><em>02</em> Human Resilience</a></li>
+      <li><a href="https://ancestralwatch.com"><em>03</em> The Books</a></li>
+      <li><a href="/workshop/"><em>04</em> Retreats</a></li>
+      <li><a href="/journal/"><em>05</em> Journal</a></li>
+      <li><a href="/teams/"><em>06</em> For Teams</a></li>
+      <li><a href="/community-resilience/"><em>07</em> Community Resilience</a></li>
+      <li><a href="/#about"><em>08</em> About</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="/ja/">日本語</a>
+      <a href="/lt/">Lietuvių</a>
+      <a href="/india/">India</a>
+      <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+    </div>
+  </div>
+</div>
 
-    <section class="section section--tight">
-      <div class="wrap wrap--narrow">
+<main>
 
-        <p class="promise">Every person on your team already carries a Far Messenger — the one who can hold what matters and move it across hard ground, and arrive whole. Our work is not to fix anyone. Nothing is broken. It is to raise the frequency until that messenger wakes.</p>
+<!-- HERO -->
+<section class="hero hero--teams">
+  <div class="hero__bg"><img src="/assets/img/tony-ceremony.jpg" alt="Tony Skrelūnas leading an opening circle outdoors"></div>
+  <div class="hero__scrim"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow">For organizations</p>
+    <h1>The Far Messenger Program</h1>
+    <p class="lead">A 2.5–3 day immersive that trains the one thing no strategy deck can give your people: the capacity to carry weight.</p>
+    <div class="hero__meta">
+      <span>2.5–3 days</span>
+      <span>On land, not in a ballroom</span>
+      <span>Measured before &amp; after</span>
+    </div>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="mailto:wisdom@ancestralwatch.com">Start a conversation</a>
+      <a class="btn btn--ghost" href="#arc">See the three days</a>
+    </div>
+  </div>
+</section>
 
-        <p>We are entering harder terrain than most organizations have ever had to cross — accelerating technology, systems under strain, a world on edge. The answer is not to grip tighter. It is to become the kind of people, and teams, who can carry what matters across the hardest ground and arrive whole. That capacity has a name — <strong>Far Messenger resilience</strong> — and it can be built.</p>
+<!-- PROMISE -->
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow rv">The promise</p>
+    <p class="promise rv">We don't send your leaders home rested. We send them home as <em>Far Messengers</em> — able to carry weight across hard ground, and arrive whole.</p>
+  </div>
+</section>
 
-        <p>The best teams don't run on pressure — they run on <strong>coherence</strong>. A nervous system that has remembered how to settle makes clearer decisions, hears people better, and creates from abundance instead of from scarcity. That state is not a personality trait. It is trainable, it is measurable, and it is the quiet engine under every good decision, every person who chooses to stay, and every thing your team builds that lasts.</p>
+<!-- WHY NOW -->
+<section class="sec sec--alt hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/world/japan-garden-pond.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap split">
+    <div class="rv">
+      <p class="eyebrow">Why now</p>
+      <h2 style="max-width:14ch">The ground is moving faster than your people can absorb.</h2>
+    </div>
+    <div class="rv">
+      <p class="body-lg">Technology is accelerating past the pace any of us were built for. Systems that held for decades are under strain. Your best people are absorbing that load in their bodies, and calling it a busy quarter.</p>
+      <p class="body-lg muted">Rest is not the answer. Rest wears off by Wednesday.</p>
+      <p class="body-lg muted">Resilience is different. Resilience is <strong>trainable</strong> — and it has been trained, deliberately and successfully, by peoples who crossed hard country for thousands of years before anyone wrote a wellness budget.</p>
+      <p class="body-lg muted">The best teams do not run on pressure. They run on <strong>coherence</strong> — a nervous system that has remembered how to settle makes clearer decisions, hears people better, and creates from abundance instead of scarcity. That state is not a personality trait. It is trainable, it is measurable, and it is the quiet engine under every good decision and every person who chooses to stay.</p>
+    </div>
+  </div>
+</section>
 
-        <h2>For teams ready to rise</h2>
-        <div class="feat">
-          <div class="f"><h4>Leadership teams ready for more</h4><p class="muted">More clarity, more coherence, more aliveness — a higher baseline to lead from.</p></div>
-          <div class="f"><h4>Organizations investing in their people</h4><p class="muted">Where belonging and vitality become the reason your best people stay.</p></div>
-          <div class="f"><h4>Teams entering a big season</h4><p class="muted">A merger, a launch, fast growth — met in strength and unity, not depletion.</p></div>
-        </div>
+<!-- WHO THIS IS FOR -->
+<section class="sec hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/roper/roper-peaks-sunset.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <p class="eyebrow rv">Who this is for</p>
+    <h2 class="rv" style="max-width:14ch">For teams ready to rise.</h2>
 
-        <h2>The arc — 2.5 to 3 days</h2>
-        <div class="arc">
-          <div class="card"><p class="n">Day 1 — Arrive</p><h3>Return to stillness</h3><p class="muted">We begin outdoors, on the land, with a <strong>land acknowledgement</strong> — honoring the ground and the people whose home it is. Everyone settles into nature and into calm, dropping to a clear, open baseline: the ground all real change is built on.</p></div>
-          <div class="card"><p class="n">Day 2 — Awaken</p><h3>Raise the frequency</h3><p class="muted">Breath, sound, movement, food, and council — the living tools three cultures kept alive, delivered by our team, lifting the whole group together.</p></div>
-          <div class="card"><p class="n">Day 3 — Carry</p><h3>Take the frequency home</h3><p class="muted">Integration + a 30/60/90 path so each leader carries the new baseline into the real work on Monday.</p></div>
-        </div>
-
-        <div class="band">
-          <p class="eyebrow" style="color:var(--turq);">The signature journey</p>
-          <h2 style="margin:.2rem 0 .5rem;">The Far Messenger Path</h2>
-          <p>Underneath every practice runs one facilitated journey. We guide each person to name <strong>what they are here to carry</strong> — the gift, the message, the work only they can move across hard ground — and to build the resilience to carry it in abundance. Through custom hikes, time with elders, writing, and council, your people don't just recover. They <em>awaken, and begin to build their own Far Messenger.</em></p>
-        </div>
-
-        <div class="band">
-          <p class="eyebrow" style="color:var(--turq);">Proven in the field</p>
-          <h2 style="margin:.2rem 0 .5rem;">This is not theory.</h2>
-          <p>For <strong>ten years</strong>, Tony led <strong>inter-tribal gatherings</strong> — bringing together cooks, sauna leaders, running coaches, dancers, singers, and facilitators to do the deep work of <strong>intergenerational healing</strong>. He has since brought his team to deliver at premier wellness centers — <strong>Rancho La Puerta (three times) and Sedona</strong> — and is now organizing at <strong>1440 Multiversity</strong>, where he is faculty. The Far Messenger Program brings that proven model — the full team, the real transformation — to <strong>organizations and companies</strong>.</p>
-        </div>
-
-        <h2>We bring the whole team</h2>
-        <p>This is a faculty, not a single speaker — a team atmosphere, so your people are held and lifted from every direction at once. Many of our practitioners carry more than one gift, and nearly all are devoted <strong>students of ancestral wellness</strong> — the living traditions, not the trend.</p>
-        <figure class="teams-fig"><img src="/assets/img/1440/fire-circle.jpg" alt="A circle gathered at the fire in the redwoods at 1440 Multiversity" loading="lazy" /><figcaption>A circle at the fire — 1440 Multiversity, in the redwoods.</figcaption></figure>
-        <table class="mod">
-          <tr><td>Meditation &amp; breathwork</td><td>Calm and clarity that make every decision cleaner</td></tr>
-          <tr><td>Sound healing &amp; chanting</td><td>Coherence and connection — a frequency a whole team can feel</td></tr>
-          <tr><td>Somatic healing</td><td>Release what the body has held; return to ease and openness</td></tr>
-          <tr><td>Yoga · tai chi · qigong</td><td>Vitality, energy, and presence returning to the body</td></tr>
-          <tr><td>Our cooks &amp; ancestral kitchen</td><td>Food as celebration and medicine — nourishment they feel for weeks</td></tr>
-          <tr><td>Several leadership coaches</td><td>Turn the higher frequency into how they actually lead</td></tr>
-        </table>
-
-        <h2>Land-based experiences (optional)</h2>
-        <p>Where the setting allows, we weave in experiences that raise the frequency in ways words can't — chosen to fit your team and the land.</p>
-        <div class="feat">
-          <div class="f"><h4>Equine therapy &amp; horseback</h4><p class="muted">The horse meets you in pure presence — honest, humbling, unforgettable.</p></div>
-          <div class="f"><h4>Custom hikes</h4><p class="muted">Routes matched to your team and the land — the trail does the teaching.</p></div>
-          <div class="f"><h4>Time with elders</h4><p class="muted">Wisdom carriers who have kept the thread — the part no slide deck can give.</p></div>
-          <div class="f"><h4>Ancestral kitchen workshops</h4><p class="muted">Cook the medicine together — blue corn, juniper, the old abundance.</p></div>
-          <div class="f"><h4>Running workshop</h4><p class="muted">Led by a professional running coach — moving the body the way it was built to move.</p></div>
-          <div class="f"><h4>Backcountry &amp; UTV</h4><p class="muted">Onto real land, out of the conference room, into aliveness.</p></div>
-          <div class="f"><h4>Journaling &amp; writing</h4><p class="muted">Facilitated reflection to capture the shift and name what they carry.</p></div>
-        </div>
-
-        <figure class="teams-fig"><img src="/assets/img/land-healing.jpg" alt="Regenerative land at golden hour — rolling hills, a river bend, and renewable energy" loading="lazy" /></figure>
-        <div class="band">
-          <p class="eyebrow" style="color:var(--turq);">Grounded for the frontier</p>
-          <h2 style="margin:.2rem 0 .5rem;">Ancient tools for the age of AI.</h2>
-          <p>Tony advises <strong>technology and robotics companies</strong> on staying human as the world accelerates. For teams building the future, we can weave in a forward-looking thread — how ancestral resilience keeps leaders grounded, clear, and creative exactly when the pace is fastest. Woven in modestly, and only where it serves.</p>
-        </div>
-
-        <div class="band">
-          <p class="eyebrow" style="color:var(--turq);">The rise, made visible</p>
-          <h2 style="margin:.2rem 0 .5rem;">A documented lift — not just a good feeling.</h2>
-          <p>Every participant takes the <strong>Far Messenger Diagnostic</strong> before we begin and again 30 days after, so you can see the real rise in your team's baseline — a measurable shift you can bring to leadership, not just warm memories from the ride home.</p>
-          <p style="margin-top:var(--space-2);"><a class="btn btn--ghost" href="/diagnostic/">See the diagnostic →</a></p>
-        </div>
-
-        <h2>Built to lift your whole leadership</h2>
-        <p>The work is intimate by design. Groups over twenty run as <strong>parallel cohorts</strong> with additional facilitators — so an entire leadership layer can rise together, without losing the depth that makes it real.</p>
-
-        <h2>Two ways to run it</h2>
-        <div class="feat">
-          <div class="f"><h4>1 · We bring the team</h4><p class="muted">To your offsite venue, or the redwoods of <strong>1440 Multiversity</strong> where Tony is faculty. You choose the place; we bring the method, the practitioners, and the measurable rise.</p></div>
-          <div class="f"><h4>2 · Full production (turnkey)</h4><p class="muted">We pull the entire experience together end to end — venue, our cooks and ancestral kitchen, and the land-based experiences — so your team simply arrives. Premium, and completely handled.</p></div>
-        </div>
-        <p style="margin-top:var(--space-3);"><strong>Delivered wherever your people are</strong> — across the U.S. and in friendly countries around the world. Tony already advises companies and communities on four continents; the Far Messenger Program travels.</p>
-
-        <h2>Your guide</h2>
-        <div class="guide-grid">
-          <img src="/assets/img/tony-podium.jpg" alt="Tony Skrelūnas speaking at a gathering, red-rock country behind him" loading="lazy" />
-          <div>
-          <p>Tony Skrelūnas is Lithuanian and Diné — raised in a hogan on Big Mountain, learning by lamplight after the chores were done, reading the philosophy of Japan by the same small flame, a discipline he would take as his own. College handed him an identity crisis and an inferiority crisis at once. He came through it, and finished at the top of his class. Today he is a <strong>PhD candidate in Sustainable Development at Prescott College</strong>, where his doctoral research studies exactly what this work delivers: how the ancestral tools of breath, ceremony, and community hold up as a high-performance system for the modern world. He is the first person of Diné and Lithuanian descent inducted into Northern Arizona University's W. A. Franke College of Business Hall of Fame.</p>
-
-        <p>He knows how to move real institutions. A <strong>three-time executive and systems architect</strong>, he led the <strong>governance restructuring of a still-traditional nation</strong> — returning real ownership and self-determination to its local communities — advises companies and communities on <strong>four continents</strong>, and serves as development advisor to a $40M integrated health-and-wellness development. For a <strong>decade he convened Indigenous elders across the Americas</strong> in the old way — the living model this program is built from. He is board chair of Red Road Journey, faculty at 1440 Multiversity, a runner and aspiring silversmith, and the author of the <em>Ancestral Watch</em> series.</p>
-
-        <p>Across all of it runs one conviction: the tools were never lost, only set down — and a person, a team, or a whole people can remember their power and rise into it. Money is only ever one instrument in that work; the real aim is wholeness that lasts for generations. For each engagement, Tony assembles and leads the practitioner team.</p>
-          </div>
-        </div>
-
-        <figure style="margin-top:var(--space-4); border-top:1px solid var(--rule); padding-top:var(--space-3);">
-          <blockquote style="font-style:italic;">"Guides toward a deeper sense of belonging, purpose-driven action, and the courage to live from inner knowing rather than fear."</blockquote>
-          <figcaption class="muted" style="margin-top:.4rem;">— Emily Alicia Affolter, Ph.D., Prescott College</figcaption>
-        </figure>
-
-        <div class="band" style="text-align:center; margin-top:var(--space-5);">
-          <p class="eyebrow" style="color:var(--turq);">One conversation to begin</p>
-          <h2 style="margin:.2rem 0 .5rem;">Bring the Far Messenger Program to your team.</h2>
-          <p style="max-width:46ch; margin:0 auto;">Tell us about your team and the season you're in. We'll design the engagement and share the full prospectus.</p>
-          <div class="cta-row" style="justify-content:center;">
-            <a class="btn btn--primary btn--lg" href="mailto:wisdom@ancestralwatch.com">Book an exploratory call →</a>
-            <a class="btn btn--ghost btn--lg" href="mailto:wisdom@ancestralwatch.com">Request the prospectus →</a>
-          </div>
-        </div>
-
+    <div class="tiles rv">
+      <div class="tile">
+        <h3>Leadership teams ready for more</h3>
+        <p>More clarity, more coherence, more aliveness — a higher baseline to lead from.</p>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap wrap--wide">
-      <div class="footer__grid">
-        <div>
-          <p class="footer__brand">TribeAwaken</p>
-          <p class="footer__tag">Ancestral intelligence for a regenerating world.</p>
-        </div>
-        <div>
-          <h4>Programs</h4>
-          <ul>
-            <li><a href="/teams/">The Far Messenger Program</a></li>
-            <li><a href="/workshop/">The Canyon Within (retreat)</a></li>
-            <li><a href="/diagnostic/">The Diagnostic</a></li>
-            <li><a href="/start-here/">Start Here</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>The Books</h4>
-          <ul>
-            <li><a href="https://ancestralwatch.com/series/stone-breath/" target="_blank" rel="noopener">Stone Breath</a></li>
-            <li><a href="https://ancestralwatch.com/" target="_blank" rel="noopener">AncestralWatch.com</a></li>
-          </ul>
-        </div>
+      <div class="tile">
+        <h3>Organizations investing in their people</h3>
+        <p>Where belonging and vitality become the reason your best people stay.</p>
       </div>
-      <div class="footer__legal">
-        <span>© 2026 TribeAwaken · Tony Skrelūnas.</span>
-        <span>Ancestral intelligence for a regenerating world.</span>
+      <div class="tile">
+        <h3>Teams entering a big season</h3>
+        <p>A merger, a launch, fast growth — met in strength and unity, not depletion.</p>
       </div>
     </div>
-  </footer>
-  <script src="/js/main.js?v=13" defer></script>
-  <script>
-    (function(){
-      var els = document.querySelectorAll('.band, .arc, .feat, table.mod, figure.teams-fig, .guide-grid');
-      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      els.forEach(function(el){ el.classList.add('reveal'); });
-      if (!('IntersectionObserver' in window)){ els.forEach(function(el){ el.classList.add('in'); }); return; }
-      var io = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-      }, { threshold: 0.12 });
-      els.forEach(function(el){ io.observe(el); });
-    })();
-  </script>
+  </div>
+</section>
+
+<!-- BAND -->
+<figure class="band rv">
+  <img class="tall" src="/assets/img/land-healing.jpg" alt="Open country at sunset with wind turbines on the far ridge">
+  <figcaption>Ancient tools, for the age we are actually living in.</figcaption>
+</figure>
+
+<!-- THE ARC -->
+<section class="sec hasphoto" id="arc">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/roper/roper-trail-hat.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap">
+    <p class="eyebrow rv">The arc</p>
+    <h2 class="rv" style="max-width:16ch">Arrive. Awaken. Carry.</h2>
+
+    <div class="days">
+      <div class="day rv">
+        <div class="day__k">Day one</div>
+        <div>
+          <h3>Arrive</h3>
+          <p>We begin outdoors, on the land, with a land acknowledgement — never in a conference room. The first hours are spent settling the nervous system: breath, quiet, food, and a slow introduction of every person in the room to every other person in the room. Nothing is asked of anyone on the first day except that they land.</p>
+        </div>
+      </div>
+      <div class="day rv">
+        <div class="day__k">Day two</div>
+        <div>
+          <h3>Awaken</h3>
+          <p>The full day. Breathwork at first light. Sound and chanting. Movement — yoga, tai chi, qigong, or the land options your group chooses. The ancestral kitchen. And council: the oldest meeting format there is, where each person speaks once, uninterrupted, and the group hears what it has been too busy to hear.</p>
+        </div>
+      </div>
+      <div class="day rv">
+        <div class="day__k">Day three</div>
+        <div>
+          <h3>Carry</h3>
+          <p>Integration. We convert three days of experience into something durable: a personal practice each participant can run in ten minutes a day, and a written <strong>30/60/90 plan</strong> tied to the work they are going back to. They leave with it in hand, not in a follow-up email.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNATURE JOURNEY -->
+<section class="sec sec--deep">
+  <div class="wrap split">
+    <figure class="rv">
+      <img src="/assets/img/1440/redwood-touch.jpg" alt="A hand on the bark of an ancient tree" style="width:100%;height:clamp(420px,62vh,680px);object-fit:cover;object-position:50% 55%;border-radius:14px">
+    </figure>
+    <div class="rv">
+      <p class="eyebrow">The signature journey</p>
+      <h2 style="max-width:12ch">The Far Messenger Path</h2>
+      <p class="lead" style="margin-top:1.6rem;max-width:32ch">Each person names, out loud, what they are here to carry.</p>
+      <p class="muted" style="margin-top:1.6rem">A far messenger was the person a community sent when the distance was long, the ground was hard, and the message could not fail to arrive. They were trained for it — breath, pace, food, mind, and the discipline of arriving whole rather than merely arriving.</p>
+      <p class="muted">On the Path, every participant walks that role. They name their message. They walk it. They are witnessed naming it, which is the part that makes it stick. It is the hinge of the program, and it is the thing people are still talking about a year later.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MEASURED -->
+<section class="sec hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/tony/gym-assembly.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <p class="eyebrow rv">Measured, not vibed</p>
+    <h2 class="rv" style="max-width:17ch">A documented rise, or we have not done our job.</h2>
+    <p class="body-lg muted rv" style="margin-top:2rem">Every participant takes the <strong>Far Messenger Diagnostic</strong> before they arrive and again thirty days after they leave. You receive an aggregate, anonymised report showing the movement across your group — so the investment is defensible to the people who approve it.</p>
+
+    <div class="metric rv">
+      <div>
+        <div class="metric__n">Before</div>
+        <div class="metric__l">Baseline diagnostic, taken in the two weeks prior to arrival.</div>
+      </div>
+      <div>
+        <div class="metric__n">+30 days</div>
+        <div class="metric__l">Repeat diagnostic, after the practices have met real working weeks.</div>
+      </div>
+      <div>
+        <div class="metric__n">The delta</div>
+        <div class="metric__l">An aggregate report for your leadership, plus a private result for each person.</div>
+      </div>
+    </div>
+
+    <p class="rv" style="margin-top:2.6rem"><a class="arrow" href="/diagnostic/">Take the Far Messenger Diagnostic →</a></p>
+  </div>
+</section>
+
+<!-- THE TEAM -->
+<section class="sec sec--alt hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/roper/aspens-looking-up.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <p class="eyebrow rv">Who shows up</p>
+    <h2 class="rv" style="max-width:15ch">We do not send one facilitator. We send a team.</h2>
+    <p class="body-lg muted rv" style="margin-top:1.8rem">Most of them are lifelong students of ancestral wellness, and several are practitioners in their own traditions. They travel together and they have worked together for years.</p>
+
+    <ul class="rlist rv">
+      <li><b>Meditation and breathwork</b><span>The daily spine of the program, morning and evening.</span></li>
+      <li><b>Sound healing and chanting</b><span>Bowls, drum and voice — the fastest route into a regulated room.</span></li>
+      <li><b>Somatic healing</b><span>For the load your people have been carrying in the body.</span></li>
+      <li><b>Yoga, tai chi, qigong</b><span>Movement scaled to the group in front of us, never performative.</span></li>
+      <li><b>Cooks and the ancestral kitchen</b><span>Real food with a lineage, cooked on site and explained as it is served.</span></li>
+      <li><b>Leadership coaches</b><span>Several, so small-group and one-to-one work is possible throughout.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- LAND OPTIONS -->
+<section class="sec hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/land/peaks-pines.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap">
+    <p class="eyebrow rv">Built on the land</p>
+    <h2 class="rv" style="max-width:16ch">You choose what the days are made of.</h2>
+    <p class="body-lg muted rv" style="margin-top:1.8rem">The arc stays the same. What fills it is designed with you, against the terrain we are on and the people you are bringing.</p>
+
+    <ul class="rlist rv">
+      <li><b>Equine therapy and horseback</b><span>Horses read a nervous system faster than any assessment will.</span></li>
+      <li><b>Custom hikes</b><span>Routed to the group's range, from a gentle morning walk to real distance.</span></li>
+      <li><b>Time with elders</b><span>Unhurried conversation with people who have carried more than we have.</span></li>
+      <li><b>Ancestral kitchen workshops</b><span>Hands in the corn. The team cooks a meal together and eats it together.</span></li>
+      <li><b>A running workshop</b><span>Led by a professional running coach — form, breath, and pace as a discipline of mind.</span></li>
+      <li><b>Backcountry and UTV</b><span>Getting properly out, where the phone signal ends and the day opens up.</span></li>
+      <li><b>Journaling and writing</b><span>Guided, quiet, and kept — the record your people take home with them.</span></li>
+      <li><b>Council and fireside</b><span>Every night. The hours where the real work tends to happen.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- BAND -->
+<figure class="band rv">
+  <img class="tall" src="/assets/img/1440/fire-circle.jpg" alt="A small group in conversation around an outdoor fire">
+  <figcaption>Groups over twenty run as parallel cohorts, so no circle is ever too big to hear itself.</figcaption>
+</figure>
+
+<!-- TIERS -->
+<section class="sec sec--alt hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/roper/two-dogs-pines.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap">
+    <p class="eyebrow rv">Two ways to run it</p>
+    <h2 class="rv" style="max-width:14ch">Bring us in, or hand us the whole thing.</h2>
+
+    <div class="grid grid--2 rv" style="margin-top:clamp(2.2rem,4vw,3.4rem)">
+      <div class="tier">
+        <div class="tier__k">Tier one</div>
+        <h3>We bring the team</h3>
+        <p>You have the venue and the logistics handled. We arrive with the full practitioner team and run the program inside your container.</p>
+        <ul>
+          <li>Full practitioner team on site for the duration</li>
+          <li>Program designed to your people and your terrain</li>
+          <li>The Far Messenger Path and nightly council</li>
+          <li>Diagnostic before and at 30 days, with an aggregate report</li>
+        </ul>
+      </div>
+      <div class="tier tier--lead">
+        <div class="tier__k">Tier two</div>
+        <h3>Full turnkey production</h3>
+        <p>We take the whole thing: venue, land partners, food, elders, transport, schedule, staffing and the follow-through. You send your people and nothing else.</p>
+        <ul>
+          <li>Everything in Tier One</li>
+          <li>Venue sourcing and full on-site production</li>
+          <li>Ancestral kitchen, elders and land partners arranged</li>
+          <li>Parallel cohorts for groups over twenty</li>
+          <li>Post-program coaching for the 30/60/90 plans</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCALE & REACH -->
+<section class="sec sec--deep hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/tony/listeners-at-dusk.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <p class="eyebrow rv">Scale and reach</p>
+    <h2 class="rv" style="max-width:17ch">Built to lift your whole leadership.</h2>
+
+    <div class="reach rv">
+      <div>
+        <h3>Parallel cohorts for groups over twenty</h3>
+        <p>The work is intimate by design. Larger groups run as parallel cohorts with additional facilitators — so an entire leadership layer can rise together, without losing the depth that makes it real.</p>
+      </div>
+      <div>
+        <h3>Delivered wherever your people are</h3>
+        <p>Across the United States and in friendly countries around the world. Tony already advises companies and communities on <strong style="color:var(--cream-2)">four continents</strong>; the Far Messenger Program travels.</p>
+      </div>
+      <div>
+        <h3>Your venue, or 1440 Multiversity</h3>
+        <p>We run inside your offsite container, or in the redwoods at 1440 Multiversity in Scotts Valley, California, where Tony leads retreats.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROVEN -->
+<section class="sec">
+  <div class="wrap split">
+    <div class="rv">
+      <p class="eyebrow">Proven</p>
+      <h2 style="max-width:13ch">This is not a new idea we are testing on you.</h2>
+      <p class="muted" style="margin-top:1.8rem">For ten years Tony Skrelūnas convened inter-tribal gatherings — cooks, sauna leaders, running coaches, dancers, singers and facilitators, working across generations on intergenerational healing. Everything in the Far Messenger Program was built and pressure-tested there first.</p>
+      <p class="muted">He has since brought that team to deliver at <strong>Rancho La Puerta</strong> three times and in <strong>Sedona</strong>, and now convenes at <strong>1440 Multiversity</strong>, where he leads retreats.</p>
+    </div>
+    <figure class="rv">
+      <img src="/assets/img/tony-podium.jpg" alt="Tony Skrelūnas speaking at an outdoor gathering" style="width:100%;height:clamp(420px,62vh,660px);object-fit:cover;object-position:52% 45%;border-radius:14px">
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <div class="proof rv">
+      <div><div class="proof__n">10 years</div><div class="proof__l">Convening inter-tribal, intergenerational gatherings.</div></div>
+      <div><div class="proof__n">3×</div><div class="proof__l">Programs delivered with his team at Rancho La Puerta.</div></div>
+      <div><div class="proof__n">Sedona</div><div class="proof__l">Leadership immersives on the red rock.</div></div>
+      <div><div class="proof__n">1440</div><div class="proof__l">Retreats at 1440 Multiversity, Scotts Valley, California.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- YOUR GUIDE -->
+<section class="sec sec--alt">
+  <div class="wrap">
+    <p class="eyebrow rv">Your guide</p>
+    <h2 class="rv" style="max-width:13ch">Tony Skrelūnas.</h2>
+
+    <div class="guide">
+      <figure class="guide__img rv">
+        <img src="/assets/img/land/peaks-meadow.jpg" alt="Tony Skrelūnas, portrait">
+      </figure>
+      <div class="guide__bio rv">
+        <p>Tony Skrelūnas is <strong>Lithuanian and Diné</strong> — raised in a hogan on Big Mountain, learning by lamplight after the chores were done, reading the philosophy of Japan by the same small flame, a discipline he would take as his own. College handed him an identity crisis and an inferiority crisis at once. He came through it, and finished at the top of his class.</p>
+        <p>Today he is a <strong>PhD candidate in Sustainable Development Education</strong>, and his doctoral research studies exactly what this work delivers: how the ancestral tools of breath, ceremony, and community hold up as a high-performance system for the modern world. He is a repeat commencement speaker, most recently to a doctoral graduating class, and the first person of Lithuanian and Diné descent inducted into a <strong>college of business hall of fame</strong>.</p>
+        <p>He knows how to move real institutions. A <strong>three-time executive and systems architect</strong>, he led the <strong>governance restructuring of a still-traditional nation</strong> — returning real ownership and self-determination to its local communities — advises companies and communities on <strong>four continents</strong>, and serves as development advisor to a major integrated health-and-wellness development. For a <strong>decade he convened Indigenous elders across the Americas</strong> in the old way — the living model this program is built from.</p>
+        <p>He is <strong>board chair of a Native-led nonprofit</strong>, <strong>retreat faculty</strong>, a runner and aspiring silversmith, and the author of the <em>Ancestral Watch</em> series.</p>
+        <p>Across all of it runs one conviction: the tools were never lost, only set down — and a person, a team, or a whole people can remember their power and rise into it. Money is only ever one instrument in that work; the real aim is wholeness that lasts for generations. <strong>For each engagement, Tony assembles and leads the practitioner team.</strong></p>
+
+        <div class="praise">
+          <blockquote>
+            “Guides toward a deeper sense of belonging, purpose-driven action, and the courage to live from inner knowing rather than fear.”
+            <cite>Emily Alicia Affolter, PhD · Associate Dean of Doctoral Studies</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH THREAD -->
+<section class="sec sec--deep">
+  <div class="wrap wrap--tight">
+    <p class="eyebrow rv">A note on the work he does elsewhere</p>
+    <p class="pull rv" style="max-width:26ch">Ancient tools, for the age of AI.</p>
+    <p class="body-lg muted rv" style="margin-top:2rem">Tony advises technology and robotics companies. He is not romantic about the machines and he is not frightened of them. He is interested in the same question you are: what a human being needs in order to stay whole while building something that moves this fast.</p>
+  </div>
+</section>
+
+<!-- CLOSE -->
+<section class="sec sec--alt hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/tony/presenting-group.jpg" alt="" loading="lazy"></div>
+  <div class="wrap wrap--tight close-cta">
+    <p class="eyebrow eyebrow--center rv">Next step</p>
+    <h2 class="rv">Tell us who you are bringing, and where.</h2>
+    <p class="lead rv" style="max-width:44ch;margin-top:1.8rem">We will come back with an arc designed for your group, the practitioner team it needs, and what it costs — in one document.</p>
+    <a class="mail rv" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+    <div class="cta-row rv">
+      <a class="btn btn--primary" href="mailto:wisdom@ancestralwatch.com">Book an exploratory call</a>
+      <a class="btn btn--ghost" href="mailto:wisdom@ancestralwatch.com">Request the prospectus</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="brand" href="/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+        <p class="muted" style="margin-top:1.1rem;max-width:34ch">Ancestral tools for people carrying weight across hard ground.</p>
+      </div>
+      <div>
+        <h4>Go</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/workshop/">The Canyon Within</a></li>
+          <li><a href="/teams/">For Organizations</a></li>
+          <li><a href="/diagnostic/">The Far Messenger Diagnostic</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li><a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a></li>
+          <li><a href="/workshop/">Join a public retreat</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <span>© 2026 TribeAwaken</span>
+      <span>We begin every program outdoors, with a land acknowledgement.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- menu ---------- */
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu'),c=document.getElementById('menuClose');
+  if(!b||!m) return;
+  function open(){m.classList.add('open');b.setAttribute('aria-expanded','true');document.body.classList.add('locked')}
+  function shut(){m.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.classList.remove('locked')}
+  b.addEventListener('click',function(){m.classList.contains('open')?shut():open()});
+  if(c) c.addEventListener('click',shut);
+  m.addEventListener('click',function(e){if(e.target.tagName==='A') shut()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape') shut()});
+})();
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+<script src="/assets-v4/capture.js?v=1" defer></script>
 </body>
 </html>

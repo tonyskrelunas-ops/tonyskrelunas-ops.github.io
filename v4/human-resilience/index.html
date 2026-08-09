@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Human Resilience — the nervous system you were handed, and the one you hand on | Tony Skrelūnas</title>
+<meta name="description" content="Fear travels down a family. So does calm. The condition honestly stated, what the research says about what passes between generations, the practices that stop the handing-down, and Lithuania — occupied, deported, and now raising some of the happiest young people on earth.">
+<meta property="og:title" content="Human Resilience — fear travels down a family. So does calm.">
+<meta property="og:description" content="What happened to the grandparents shows up in the grandchildren's bodies. It travels the other way too. The practices that stop the handing-down, and the reason Lithuania is the proof.">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/v4/assets/v2.css?v=31">
+<style>
+/* ── Human Resilience — page-local. Reuses the v2 system; adds only what is missing. ── */
+.head{max-width:22ch}
+.sec__intro{display:grid;grid-template-columns:1.15fr .85fr;
+  gap:clamp(1.6rem, 1.2rem + 2vw, 3.4rem);align-items:end;
+  margin-bottom:clamp(2rem, 1.6rem + 2vw, 3.4rem)}
+.sec__intro p{color:var(--sand)}
+@media(max-width:900px){.sec__intro{grid-template-columns:1fr;align-items:start;gap:1.5rem}}
+
+/* the statement bands */
+.state{position:relative;isolation:isolate;display:grid;align-items:center;
+  min-height:min(62vh,560px);overflow:hidden}
+.state__bg{position:absolute;inset:0;z-index:-2}
+.state__bg img{width:100%;height:100%;object-fit:cover}
+.state::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(100deg, rgba(15,18,16,.86) 0%, rgba(15,18,16,.7) 44%, rgba(15,18,16,.24) 100%)}
+.state__in{padding-block:clamp(3rem, 2rem + 5vw, 6rem)}
+.state__in .pull{max-width:26ch;text-shadow:0 2px 22px rgba(15,18,16,.8)}
+.state__in cite{display:block;margin-top:1.5rem;font-style:normal;
+  font-family:var(--body);font-size:.82rem;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold)}
+
+/* a figure said out loud — the numbers on this page get room */
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:0;margin-top:clamp(2.2rem, 1.8rem + 2vw, 3.4rem);border-top:1px solid var(--rule)}
+.figs div{padding:clamp(1.5rem, 1.2rem + 1.2vw, 2.3rem) clamp(1rem, 1vw + .6rem, 1.9rem);
+  border-left:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.figs div:first-child{border-left:0;padding-left:0}
+.figs b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.03em;
+  font-size:clamp(2.1rem, 1.6rem + 2.2vw, 3.2rem);line-height:1;color:var(--gold);margin-bottom:.7rem}
+.figs span{display:block;color:var(--sand);font-size:1rem;line-height:1.62}
+.figs cite{display:block;margin-top:.9rem;font-style:normal;font-size:.8rem;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--clay-lt);line-height:1.5}
+@media(max-width:780px){.figs div{border-left:0;padding-left:0}}
+
+/* a line quoted from the books or from him */
+.aloud{border-left:3px solid var(--clay);padding:.3rem 0 .3rem 1.5rem;
+  margin-top:clamp(2rem, 1.6rem + 1.6vw, 3rem);max-width:52ch}
+.aloud p{font-family:var(--display);font-weight:600;font-style:italic;
+  font-size:clamp(1.25rem, 1.1rem + .9vw, 1.75rem);line-height:1.34;
+  letter-spacing:-.02em;color:var(--cream-2);max-width:none}
+.aloud cite{display:block;margin-top:.9rem;font-style:normal;font-family:var(--body);
+  font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+
+/* the Stone Breath, given its own floor */
+.tool{border:1px solid var(--rule);border-radius:6px;background:rgba(20,13,10,.5);
+  padding:clamp(1.6rem, 1.2rem + 1.8vw, 2.8rem);
+  margin-top:clamp(2rem, 1.6rem + 2vw, 3.2rem)}
+.tool__k{display:block;font-size:.8rem;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.tool h3{color:var(--cream-2)}
+.tool .count{font-family:var(--display);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(1.4rem, 1.15rem + 1.1vw, 2.1rem);line-height:1.3;color:var(--clay-lt);
+  margin-top:1.4rem;max-width:none}
+.tool .acts{display:flex;flex-wrap:wrap;gap:1.2rem 1.8rem;align-items:center;
+  margin-top:clamp(1.6rem, 1.3rem + 1vw, 2.2rem)}
+
+/* the plain hand-off pair at the seam */
+.seam{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:clamp(1.2rem, 1rem + 1.4vw, 2.2rem);margin-top:clamp(2rem, 1.6rem + 2vw, 3.2rem)}
+.seam a{display:block;text-decoration:none;border:1px solid var(--rule);border-radius:6px;
+  padding:clamp(1.4rem, 1.2rem + 1vw, 2.1rem);background:rgba(20,13,10,.46);
+  transition:border-color .2s ease, transform .18s ease}
+.seam a:hover{border-color:var(--clay);transform:translateY(-3px)}
+.seam b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.025em;
+  font-size:clamp(1.2rem, 1.05rem + .7vw, 1.6rem);color:var(--cream-2);margin-bottom:.6rem}
+.seam span{display:block;color:var(--sand);font-size:1rem;line-height:1.66}
+.seam em{display:block;margin-top:1rem;font-style:normal;color:var(--clay-lt);
+  font-size:.82rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+
+/* the sourcing note — every figure on this page, listed */
+.sources{margin-top:clamp(2.4rem, 2rem + 2vw, 3.6rem);border-top:1px solid var(--rule);
+  padding-top:clamp(1.6rem, 1.3rem + 1.2vw, 2.4rem)}
+.sources h4{font-size:.82rem;font-family:var(--body);font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem}
+.sources ul{list-style:none;padding:0;margin:0}
+.sources li{color:var(--sand);font-size:.95rem;line-height:1.68;max-width:74ch;
+  padding-block:.5rem;border-bottom:1px solid var(--rule)}
+.sources li:last-child{border-bottom:0}
+
+.closing{margin-top:clamp(2.4rem, 2rem + 2vw, 3.4rem)}
+.closing p{color:var(--sand);font-size:1.06rem;line-height:1.78;max-width:56ch}
+.closing a{color:var(--clay-lt);font-weight:700}
+</style>
+</head>
+<body>
+<a href="#main" class="skip" style="position:absolute;left:-9999px">Skip to content</a>
+
+<!-- ================= GLOBAL / LANGUAGES ================= -->
+<div class="greet">
+  <div class="wrap greet__in">
+    <a class="greet__c" href="/v4/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+  <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+  <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+  <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+  <line x1="102" y1="118" x2="102" y2="110"/>
+  <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+  <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+  <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+  <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+  <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+  <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+  <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+  <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+  <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+  <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+  <line x1="6" y1="152" x2="194" y2="152"/>
+</svg>
+
+      <span class="greet__w">Y&aacute;'&aacute;t'&eacute;&eacute;h</span>
+      <span class="greet__l">Din&eacute;</span>
+    </a>
+    <a class="greet__c" href="/v4/lt/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="100" cy="100" r="76"/>
+  <circle cx="100" cy="100" r="46"/>
+  <circle cx="100" cy="100" r="26"/>
+  <circle cx="100" cy="100" r="8"/>
+  <polyline points="95.5,51 100,27 104.5,51 95.5,51"/>
+  <line x1="81.2" y1="54.7" x2="75.5" y2="40.9"/>
+  <polyline points="62.2,68.5 48.4,48.4 68.5,62.2 62.2,68.5"/>
+  <line x1="54.7" y1="81.2" x2="40.9" y2="75.5"/>
+  <polyline points="51,104.5 27,100 51,95.5 51,104.5"/>
+  <line x1="54.7" y1="118.8" x2="40.9" y2="124.5"/>
+  <polyline points="68.5,137.8 48.4,151.6 62.2,131.5 68.5,137.8"/>
+  <line x1="81.2" y1="145.3" x2="75.5" y2="159.1"/>
+  <polyline points="104.5,149 100,173 95.5,149 104.5,149"/>
+  <line x1="118.8" y1="145.3" x2="124.5" y2="159.1"/>
+  <polyline points="137.8,131.5 151.6,151.6 131.5,137.8 137.8,131.5"/>
+  <line x1="145.3" y1="118.8" x2="159.1" y2="124.5"/>
+  <polyline points="149,95.5 173,100 149,104.5 149,95.5"/>
+  <line x1="145.3" y1="81.2" x2="159.1" y2="75.5"/>
+  <polyline points="131.5,62.2 151.6,48.4 137.8,68.5 131.5,62.2"/>
+  <line x1="118.8" y1="54.7" x2="124.5" y2="40.9"/>
+  <path d="M 109.2,74.6 Q 100,55 90.8,74.6"/>
+  <path d="M 88.6,75.5 Q 68.2,68.2 75.5,88.6"/>
+  <path d="M 74.6,90.8 Q 55,100 74.6,109.2"/>
+  <path d="M 75.5,111.4 Q 68.2,131.8 88.6,124.5"/>
+  <path d="M 90.8,125.4 Q 100,145 109.2,125.4"/>
+  <path d="M 111.4,124.5 Q 131.8,131.8 124.5,111.4"/>
+  <path d="M 125.4,109.2 Q 145,100 125.4,90.8"/>
+  <path d="M 124.5,88.6 Q 131.8,68.2 111.4,75.5"/>
+</svg>
+
+      <span class="greet__w">Sveiki atvyk&#281;</span>
+      <span class="greet__l">Lietuvi&#371;</span>
+    </a>
+    <a class="greet__c" href="/v4/ja/">
+      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="18" y1="172" x2="182" y2="172" opacity="0.55"/>
+  <line x1="47" y1="66" x2="39" y2="172"/>
+  <line x1="61" y1="66" x2="57" y2="172"/>
+  <line x1="153" y1="66" x2="161" y2="172"/>
+  <line x1="139" y1="66" x2="143" y2="172"/>
+  <line x1="39" y1="172" x2="57" y2="172"/>
+  <line x1="143" y1="172" x2="161" y2="172"/>
+  <path d="M 33,98 L 167,98 L 167,110 L 33,110 Z"/>
+  <path d="M 94,80 L 106,80 L 106,98 L 94,98 Z"/>
+  <path d="M 12,60 C 48,34 152,34 188,60 L 179,74 C 147,52 53,52 21,74 Z"/>
+</svg>
+
+      <span class="greet__w" lang="ja">&#12424;&#12358;&#12371;&#12381;</span>
+      <span class="greet__l">&#26085;&#26412;&#35486;</span>
+    </a>
+  </div>
+</div>
+
+<div class="globebar">
+  <div class="wrap globebar__in">
+    <p class="globebar__lbl">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 2.6 15 0 18M12 3c-2.6 2.6-2.6 15 0 18"/>
+      </svg>
+      <span>Global</span>
+    </p>
+    <ul class="globebar__ls">
+      <li><a class="is-on" aria-current="true" href="/v4/" hreflang="en">English</a></li>
+      <li><a href="/v4/ja/" hreflang="ja">日本語 · Japan</a></li>
+      <li><a href="/v4/lt/" hreflang="lt">Lietuvių · Lithuania</a></li>
+      <li><a href="/v4/india/" hreflang="en">India</a></li>
+      <li><span class="soon">中文 · coming soon</span></li>
+    </ul>
+    <a class="globebar__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+  </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="/v4/">Home</a></li>
+        <li><a href="/v4/#human-performance">Human Resilience</a></li>
+        <li><a href="https://ancestralwatch.com">The Books</a></li>
+        <li><a href="/v4/workshop/">Retreats</a></li>
+        <li><a href="/v4/journal/">Journal</a></li>
+        <li><a href="/v4/teams/">For Teams</a></li>
+        <li><a href="/v4/community-resilience/">Community Resilience</a></li>
+        <li><a href="/v4/#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="hdr__end">
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= FULL-SCREEN MENU ================= -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="wrap">
+    <div class="menu__top">
+      <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+      <button class="menu__close" id="menuClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="menu__ls">
+      <li><a href="/v4/"><em>01</em> Home</a></li>
+      <li><a href="/v4/#human-performance"><em>02</em> Human Resilience</a></li>
+      <li><a href="https://ancestralwatch.com"><em>03</em> The Books</a></li>
+      <li><a href="/v4/workshop/"><em>04</em> Retreats</a></li>
+      <li><a href="/v4/journal/"><em>05</em> Journal</a></li>
+      <li><a href="/v4/teams/"><em>06</em> For Teams</a></li>
+      <li><a href="/v4/community-resilience/"><em>07</em> Community Resilience</a></li>
+      <li><a href="/v4/#about"><em>08</em> About</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="/v4/ja/">日本語</a>
+      <a href="/v4/lt/">Lietuvių</a>
+      <a href="/v4/india/">India</a>
+      <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+    </div>
+  </div>
+
+<nav class="secnav" aria-label="Community resilience">
+  <div class="wrap secnav__in">
+    <span class="secnav__lbl">Community resilience</span>
+    <a class="is-on" aria-current="page" href="/v4/community-resilience/">The argument</a><a href="/v4/community-resilience/gathering/">How decisions get made</a><a href="/v4/community-resilience/governance/">A government that fits</a><a href="/v4/community-resilience/economy/">Ancestral Economics</a><a href="/v4/community-resilience/lga/">The Local Governance Act</a><a href="/v4/organizing/">Organizing anything</a>
+  </div>
+</nav>
+
+</div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__bg"><img src="/assets/img/family/grandfathers-hands.jpg" alt="An elder's hands, folded and still" style="object-position:50% 42%;filter:saturate(.82) brightness(.8)" fetchpriority="high"></div>
+  <div class="hero__scrim"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow">Pillar one &middot; Human Resilience</p>
+    <h1>Fear travels down a family. So does calm.</h1>
+    <p class="lead">What happened to the grandparents shows up in the grandchildren&rsquo;s bodies &mdash; the flinch, the bracing, the short breath learned before there were words to argue with it. It runs the other way with exactly the same machinery. This page is about being the one it turns around on.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#tools">The tools <span aria-hidden="true">&rarr;</span></a>
+      <a class="btn btn--ghost" href="#lithuania">Why this is a hopeful page</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 1 · THE CONDITION, HONESTLY ═══════════════ -->
+<section class="sec hasphoto" id="the-condition">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/tony/gym-assembly.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+
+    <div class="sec__intro">
+      <div>
+        <p class="eyebrow">The weather</p>
+        <h2 class="head">A great many people are living braced.</h2>
+      </div>
+      <p>This is the one place on this site where numbers belong. They are not about anybody here. They are facts about the world, and every one of them has a name and a year attached at the bottom of the page.</p>
+    </div>
+
+    <p class="say">Gallup asked adults in a hundred and forty-four countries what they had actually felt the day before, and published it in October 2025 as the <em>State of the World&rsquo;s Emotional Health</em>. Thirty-nine in every hundred said they had felt a lot of worry. Thirty-seven said stress. Twenty-six said sadness. Each of those is at least four points higher than it was ten years earlier.</p>
+
+    <p class="say">That is not a mood. A body that spends its days braced is running a specific piece of old machinery &mdash; the one that floods you for a tiger. It is good machinery. It is built for ninety seconds and a sprint. It was never built to be left switched on through a Tuesday.</p>
+
+    <p class="say">Then the second thing, which is the same thing wearing different clothes. In 2023 the US Surgeon General issued an advisory called <em>Our Epidemic of Loneliness and Isolation</em>. About one in two American adults reported loneliness. The advisory states the physical cost without softening it: lacking social connection raises the risk of early death about as much as smoking up to fifteen cigarettes a day, and is associated with a twenty-nine per cent higher risk of heart disease and a thirty-two per cent higher risk of stroke.</p>
+
+    <p class="say">And then the figure in that advisory that is not a percentage at all, which is why it lands.</p>
+
+    <div class="figs">
+      <div>
+        <b>60 &rarr; 20</b>
+        <span>Minutes a day American adults spent with friends in person, 2003 compared with 2020.</span>
+        <cite>US Surgeon General&rsquo;s advisory, 2023</cite>
+      </div>
+      <div>
+        <b>150 &rarr; 40</b>
+        <span>The same measure for fifteen- to twenty-four-year-olds. Two and a half hours became forty minutes.</span>
+        <cite>US Surgeon General&rsquo;s advisory, 2023</cite>
+      </div>
+      <div>
+        <b>1 in 6</b>
+        <span>People worldwide affected by loneliness &mdash; linked to about 871,000 deaths a year, near enough a hundred every hour.</span>
+        <cite>WHO Commission on Social Connection, June 2025</cite>
+      </div>
+    </div>
+
+    <p class="say" style="margin-top:clamp(2.2rem, 1.8rem + 1.6vw, 3.2rem)">None of this is a verdict on anybody. It is weather. People did not get weaker. The conditions changed, and the practices that used to hold a person steady got set down in a shed and the shed got forgotten. <strong>Nothing here is lost. It was set down, and it can be picked back up.</strong> The rest of this page is about opening the shed.</p>
+
+  </div>
+</section>
+
+<!-- ═══════════════ STATEMENT BAND ONE ═══════════════ -->
+<section class="state">
+  <div class="state__bg"><img src="/assets/img/land/peaks-pines.jpg" alt="Pines running up to a snow peak" loading="lazy"></div>
+  <div class="wrap state__in">
+    <p class="pull">Panic is not a mood. It is a failure of preparation.</p>
+    <cite>The premise underneath the whole practice</cite>
+  </div>
+</section>
+
+<!-- ═══════════════ 2 · IT TRAVELS ═══════════════ -->
+<section class="sec sec--alt hasphoto" id="it-travels">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/archival-family.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+
+    <div class="sec__intro">
+      <div>
+        <p class="eyebrow">What passes down</p>
+        <h2 class="head">A child learns how to be in a body before it learns a single word.</h2>
+      </div>
+      <p>This is the middle of the page and the heart of the argument. What gets handed down a family is not only land and stories and a nose. It is a nervous system.</p>
+    </div>
+
+    <p class="say">A way of being in a body: how fast the alarm goes up, how long it stays up, how easily it comes back down. A child learns that in the first years, in the arms of whoever is holding them, off the face and the breath and the tone of voice of an adult, long before there is any language to argue with it. Then, thirty years on, without deciding to, they hand it on.</p>
+
+    <p class="say">The record on this is not thin. In June 2023 the CDC published ten years of its Behavioral Risk Factor Surveillance System: 63.9 per cent of American adults reported at least one adverse childhood experience, and 17.3 per cent &mdash; about one in six &mdash; reported four or more.</p>
+
+    <p class="say">And those things do not stop with the person who lived them. In 2023 Lixia Zhang, Joshua Mersky and colleagues went through sixty-eight studies in the journal <em>Trauma, Violence, &amp; Abuse</em> and found nearly all of them showing the same shape: a parent&rsquo;s childhood adversity turning up in the child&rsquo;s physical health, mental health, thinking and social life. Mostly not by any mystery. By the ordinary route &mdash; through what the adversity did to the parent&rsquo;s own steadiness, and the parenting that came out of that.</p>
+
+    <p class="say">That is the hard half of it. Here is the half that never makes the headline.</p>
+
+    <p class="say"><strong>It runs the other way on exactly the same wiring.</strong> The Center on the Developing Child at Harvard has been saying it for years in almost boring language: children who do well in spite of serious hardship nearly always have at least one stable, committed relationship with a supportive adult. One. A relationship in which the adult&rsquo;s own calm is available to borrow, over and over, until the child builds their own. That is not a soft finding. That is the transmission running in reverse, and it means the whole line can turn around inside one generation, on one person who got steady on purpose.</p>
+
+    <p class="say">Which is why the calm comes first and not last. Not the reward at the end of the rebuilding. The ignition at the start.</p>
+
+    <div class="aloud">
+      <p>Only a regulated people can build at all. The calm, and then the house.</p>
+      <cite>The Council Fire</cite>
+    </div>
+
+    <p class="say" style="margin-top:clamp(2rem, 1.6rem + 1.6vw, 3rem)">You are not being asked to fix your grandparents&rsquo; century. You are being asked to be the one in the room whose breath is not short.</p>
+
+  </div>
+</section>
+
+<!-- ═══════════════ 3 · THE TOOLS ═══════════════ -->
+<section class="sec hasphoto" id="tools">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/world/japan-waterfall.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+
+    <div class="sec__intro">
+      <div>
+        <p class="eyebrow">Where the handing-down stops</p>
+        <h2 class="head">The tools, and they are not complicated.</h2>
+      </div>
+      <p>None of these needs a licence, a subscription, a therapist or a good week. They are what three old peoples arrived at separately, which is the strongest evidence there is for anything.</p>
+    </div>
+
+    <div class="tool">
+      <span class="tool__k">Start here &middot; free, no email</span>
+      <h3>The Stone Breath</h3>
+      <p class="say">Hold a small stone in your hand, or picture one. Feel the ages it took to come smooth. Give thanks to the water that carried it. Then begin.</p>
+      <p class="count">In four. Hold four. Out six. Hold four.<br>Five unhurried rounds. About three minutes.</p>
+      <p class="say">The long exhale is the body&rsquo;s own switch for standing the alarm down &mdash; a count the old runners kept ten thousand years before anybody named the nerve it runs on.</p>
+      <p class="say">Do it <em>before</em> the hard conversation, not after it. And do it in front of your children, out loud, where they can see you. That is the actual lesson. Not the count &mdash; the demonstration. A child who watches a grown person bring themselves down on purpose has just been handed something their grandparents may not have had to give.</p>
+      <div class="acts">
+        <a class="btn btn--primary" href="https://ancestralwatch.com/downloads/ancestral-watch__stone-breath.pdf">The printable card <span aria-hidden="true">&rarr;</span></a>
+        <a class="arrow" href="/v4/#stone-breath">Guided timer <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+
+    <ul class="rows">
+      <li><a href="/v4/#stone-breath"><span><b>Dawn</b><span>Up before the sun, outside, on your feet, facing east. Light on the face before a screen gets it. It sets the whole day&rsquo;s clock, and it is the oldest thing on this list by a long way. This is where the handing-down stops, because a child raised into a morning does not have to find one at forty.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/v4/diagnostic/"><span><b>The long exhale, anywhere</b><span>No stone needed and nobody has to know. Out longer than in &mdash; six out, four in &mdash; for thirty seconds in a car park, in a corridor, on a stair. The alarm cannot stay up while the exhale is long. This is the one that gets used a hundred times a year.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/v4/workshop/"><span><b>Sound</b><span>Singing, humming, a drum, the old songs of whoever your people are. Not performance &mdash; nobody is listening. The throat and the chest doing what they were built to do. Every people on earth kept a version of this, and the ones who were forbidden to sing did it anyway, in kitchens, which tells you what it was worth to them.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/v4/workshop/"><span><b>Movement, daily and boring</b><span>Running, walking, hauling something heavy from one place to another. A body was built to move a body&rsquo;s worth of distance in a day. A day with no distance in it leaves the alarm with nowhere to go, and it goes into the household instead.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/v4/workshop/"><span><b>Eating like it matters</b><span>Food that came out of ground somebody can point to. Eaten sitting down, at a table, with faces at it. The eating and the company are one practice, not two, and they were never meant to be separated.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/v4/diagnostic/"><span><b>Sleep, defended</b><span>Dark, cold, and finished with the day. Nothing else on this list survives a broken night, which is why it is not last in importance, only last in the order people get to it.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/v4/teams/"><span><b>Real faces, on purpose</b><span>Twenty minutes a day is the figure at the top of this page, and it is the one to argue with. One long unhurried evening a week with people who know you, screens off the table. Not networking. Faces.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/v4/#stone-breath"><span><b>The ordinary day when nothing is wrong</b><span>This is the one everybody skips, and it is the whole thing. You do not make the calm during the emergency. You retrieve what you already built. Practise on the days it feels pointless and it will be standing there on the day it is not.</span></span><em>&rarr;</em></a></li>
+    </ul>
+
+    <p class="say" style="margin-top:clamp(2.2rem, 1.8rem + 1.6vw, 3.2rem)">Every one of these is a place the line stops. Not because anything was broken and got fixed &mdash; nothing here was broken. Because a child in the room learns what a settled adult looks like, and <strong>that</strong> is the thing that travels.</p>
+
+  </div>
+</section>
+
+<!-- ═══════════════ 4 · LITHUANIA ═══════════════ -->
+<section class="sec sec--alt hasphoto" id="lithuania">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/world/baltic-forest.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+
+    <div class="sec__intro">
+      <div>
+        <p class="eyebrow">The hope, and it is not small</p>
+        <h2 class="head">They were supposed to disappear. Their young are among the happiest on earth.</h2>
+      </div>
+      <p>Lithuania. Banned, occupied, deported, the language driven underground and the printing of it made a crime for forty years.</p>
+    </div>
+
+    <p class="say">They carried the books through the forests at night anyway. When the books were banned the grandmothers kept the songs going in kitchens, under the noses of soldiers. After 1944 farmers and teachers and students walked into the trees with rifles and stayed there for nine years. That story is told properly elsewhere, in his own words, and it is his to tell.</p>
+
+    <p class="say"><a class="arrow" href="/v4/journal/they-tried-to-erase-a-whole-people/">They tried to erase a whole people <span aria-hidden="true">&rarr;</span></a></p>
+
+    <p class="say" style="margin-top:clamp(2rem, 1.6rem + 1.6vw, 2.8rem)">Here is the part that belongs on this page.</p>
+
+    <p class="say">In 2024 the World Happiness Report ranked countries by age for the first time. Lithuania&rsquo;s under-thirties came <strong>first in the world</strong> &mdash; 7.76 out of ten &mdash; while the country as a whole sat nineteenth. The gap was the story. It has not closed: in the report&rsquo;s 2026 edition, on data gathered from 2023 to 2025, Lithuania&rsquo;s young rank eleventh in the world while the country overall ranks twenty-eighth. Years on, the young of that country are still far happier than the country they live in.</p>
+
+    <div class="aloud">
+      <p>That is not despite what they went through. The passage through it, together, is what bonds the happiness.</p>
+      <cite>Tony Skrelūnas</cite>
+    </div>
+
+    <p class="say" style="margin-top:clamp(2rem, 1.6rem + 1.6vw, 3rem)">A people who go through something together and come out the other side still themselves are bonded by the going through. The grandmother who kept singing is the reason the granddaughter is happy. The happiness is not amnesia. It is the inheritance of having got through, handed forward in a body that knows the family did not break.</p>
+
+    <p class="say">It happened here, too. In 1864 the Diné were marched off their land &mdash; between two hundred and fifty and four hundred and fifty miles, depending which route the soldiers took &mdash; and held four years at Bosque Redondo. One in four of the people interned there did not survive it. On the first of June, 1868, the treaty was signed. On the eighteenth they started walking home. They came back, and the songs came back with them, because the songs had been carried in throats, which is the one place nobody can search.</p>
+
+    <p class="say">Two peoples who never met, on opposite sides of the world, with the same instruction: <strong>you do not survive by forgetting who you are.</strong> Which is why the numbers at the top of this page are a weather report and not a sentence.</p>
+
+  </div>
+</section>
+
+<!-- ═══════════════ STATEMENT BAND TWO ═══════════════ -->
+<section class="state">
+  <div class="state__bg"><img src="/assets/img/land/creek-waterfall.jpg" alt="Water falling over stone into a pool" loading="lazy"></div>
+  <div class="wrap state__in">
+    <p class="pull">You do not make the calm. You retrieve it.</p>
+    <cite>Which is why it is practised on the ordinary days</cite>
+  </div>
+</section>
+
+<!-- ═══════════════ 5 · THE HOUSE ITSELF ═══════════════ -->
+<section class="sec hasphoto" id="the-house">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/grandfather-porch.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+
+    <div class="sec__intro">
+      <div>
+        <p class="eyebrow">The house itself</p>
+        <h2 class="head">The atmosphere of a home is a practice too.</h2>
+      </div>
+      <p>Everything above is something one person does with their own body. This last one is not, and it is the one that decides whether any of the rest holds.</p>
+    </div>
+
+    <div class="aloud">
+      <p>To be a far messenger, and to raise far messengers, you cannot live in a home or a community with bad energy.</p>
+      <cite>Tony Skrelūnas</cite>
+    </div>
+
+    <p class="say" style="margin-top:clamp(2rem, 1.6rem + 1.6vw, 3rem)">He means that plainly. Not as a figure of speech. The actual atmosphere of a house &mdash; what gets said at the table, what tone the door gets closed in, whether the grievance runs the whole evening, whether a person can walk in at six o&rsquo;clock and feel their shoulders come down. A small child reads that room the way an animal reads weather, reads it every day for years, and it becomes their baseline. You can teach a child the breath in the morning and undo the entire lesson in the hallway at night.</p>
+
+    <p class="say">The novel treats this as a kind of contagion, and that is fair. Someone who spends their days tearing at other people is not strong; they are drowning, and the room takes the water on. But it says the other thing too, and the other thing matters more: <strong>a wrecked frequency can be mended, and it does not take very long.</strong> A few days of the old practices &mdash; the quiet, the breath, the fire, the circle, real food, real rest, real faces, the land under the feet again, the screen set down &mdash; and a person starts to remember what their own calm felt like. Once they remember it, they want it more than they want the wrecking.</p>
+
+    <p class="say">Which is where this page reaches the edge of what it can do alone. A person can get steady inside a house that is not. Nobody stays steady inside a community that is not. That work runs on a different clock &mdash; three generations, six ceremonies, elders who keep the date &mdash; and it has its own page.</p>
+
+    <div class="seam">
+      <a href="/v4/healing/">
+        <b>Intergenerational Healing</b>
+        <span>The same wound at the scale of a whole people. Six things a community does, forever, and the hundred-year path they sit on. Structural, not therapeutic.</span>
+        <em>The community scale <span aria-hidden="true">&rarr;</span></em>
+      </a>
+      <a href="/v4/community-resilience/">
+        <b>Community Resilience</b>
+        <span>Pillar two. Governance, enterprise and land, put back together so that power sits where the knowledge already is. The place, once the people in it can breathe.</span>
+        <em>The second pillar <span aria-hidden="true">&rarr;</span></em>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════ 6 · THE BOOKS ═══════════════ -->
+<section class="sec sec--alt hasphoto" id="the-books">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/great-grandfather-hat.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+
+    <div class="sec__intro">
+      <div>
+        <p class="eyebrow">Where the rest of it is</p>
+        <h2 class="head">A framework is forgotten. A story is carried.</h2>
+      </div>
+      <p>This page is the shape of the thing. The books are the thing.</p>
+    </div>
+
+    <p class="say"><em>Stone Breath</em> is the practice, built around a single stone held in one hand &mdash; the door a person goes through on their own. <em>The Council Fire</em> is what happens when a whole people does this together: the fear taken out of the body first, and the building afterwards, in that order, because there is no other order that works. The nervous system passing down a family, and the tools for stopping it, are laid out there as they actually happen &mdash; in a story, to people, which is the only place that kind of thing can be laid out properly.</p>
+
+    <p class="say" style="margin-top:1.8rem">
+      <a class="btn btn--primary" href="https://ancestralwatch.com">Read the series <span aria-hidden="true">&rarr;</span></a>
+    </p>
+
+  </div>
+</section>
+
+<!-- ═══════════════ 7 · WITH OTHER PEOPLE ═══════════════ -->
+<section class="sec hasphoto" id="together">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/1440/council-chairs.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+
+    <div class="sec__intro">
+      <div>
+        <p class="eyebrow">If you want company in it</p>
+        <h2 class="head">Ways this gets done with other people.</h2>
+      </div>
+      <p>Everything on this page works without any of these. They are here because some of it is easier in a room.</p>
+    </div>
+
+    <ul class="rows">
+      <li><a href="/v4/workshop/"><span><b>The Canyon Within</b><span>Three days at 1440 Multiversity in the redwoods. Breath, sound, movement, food, sleep and the ancestral council, trained the way three old cultures trained them.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/v4/teams/"><span><b>The Far Messenger Program</b><span>The same practice built for organisations &mdash; teams that have to stay steady while the ground keeps moving, and leaders who have to be the calm in the room and not the source of the weather.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/v4/diagnostic/"><span><b>The Far Messenger Diagnostic</b><span>Is your nervous system running the show? A short set of honest questions and a plain reading back. Free, and it stays on your machine.</span></span><em>&rarr;</em></a></li>
+      <li><a href="/v4/healing/"><span><b>Intergenerational Healing</b><span>When it is not one house but a whole community &mdash; the six ceremonies, the naming, the grief work, and the hundred-year path they belong to.</span></span><em>&rarr;</em></a></li>
+    </ul>
+
+    <div class="closing">
+      <p>None of the above is required. The stone, the count and the long exhale are free, and they are the part that matters. If you want a hand with any of it, the address is <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>.</p>
+    </div>
+
+    <div class="sources">
+      <h4>Where the figures come from</h4>
+      <ul>
+        <li><strong>Worry, stress and sadness worldwide</strong> &mdash; Gallup, <em>State of the World&rsquo;s Emotional Health</em>, published 12 October 2025 on 2024 survey data from 144 countries and territories: 39% worry, 37% stress, 26% sadness &ldquo;a lot of the day yesterday&rdquo;, each at least four points above 2014.</li>
+        <li><strong>Loneliness in America, the cigarette comparison, heart disease and stroke, and the minutes with friends</strong> &mdash; US Surgeon General, <em>Our Epidemic of Loneliness and Isolation</em>, 2023. About one in two adults reported loneliness; lacking social connection raises risk of premature death as much as smoking up to 15 cigarettes a day; 29% increased risk of heart disease and 32% increased risk of stroke; in-person time with friends fell from 60 to 20 minutes a day between 2003 and 2020, and from about 150 to 40 minutes a day among those aged 15&ndash;24.</li>
+        <li><strong>One in six worldwide, and 871,000 deaths a year</strong> &mdash; World Health Organization Commission on Social Connection, global report published 30 June 2025.</li>
+        <li><strong>Adverse childhood experiences</strong> &mdash; Swedo et al., CDC <em>Morbidity and Mortality Weekly Report</em>, 30 June 2023, on Behavioral Risk Factor Surveillance System data 2011&ndash;2020: 63.9% of US adults reported at least one; 17.3% reported four or more.</li>
+        <li><strong>Sixty-eight studies on what passes from parent to child</strong> &mdash; Zhang, Mersky, Gruber and Kim, &ldquo;Intergenerational Transmission of Parental Adverse Childhood Experiences and Children&rsquo;s Outcomes: A Scoping Review&rdquo;, <em>Trauma, Violence, &amp; Abuse</em>, 2023.</li>
+        <li><strong>One stable, committed relationship</strong> &mdash; Center on the Developing Child at Harvard University, <em>The Science of Resilience</em>, drawn from Working Paper 13, 2015.</li>
+        <li><strong>Lithuania</strong> &mdash; <em>World Happiness Report</em> 2024, the first edition to rank by age group: Lithuania first in the world for under-30s at 7.76, nineteenth overall. <em>World Happiness Report</em> 2026, on 2023&ndash;2025 data, ranking the young (under 25): Lithuania eleventh at 7.396, twenty-eighth overall.</li>
+        <li><strong>The Long Walk</strong> &mdash; Smithsonian National Museum of the American Indian, <em>The Navajo Treaties</em>. Forced removals beginning 1864 over routes of 250 to 450 miles; one in four of those interned at Bosque Redondo died there; the treaty signed 1 June 1868 and the walk home begun 18 June 1868.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="brand" href="/v4/"><img class="brand__logo" src="/assets/img/author-logo.png?v=2" alt="" aria-hidden="true" width="716" height="676"><span class="brand__txt">Tribe<span>Awaken</span></span></a>
+        <p class="muted ftr__brand">Ancestral intelligence for a regenerating world.</p>
+        <div class="ftr__langs">
+          <a href="/v4/ja/">日本語</a><span>·</span>
+          <a href="/v4/lt/">Lietuvių</a><span>·</span>
+          <a href="/v4/india/">India</a><span>·</span>
+          <span>中文 soon</span>
+        </div>
+      </div>
+      <div>
+        <h4>Community Resilience</h4>
+        <ul>
+          <li><a href="/v4/community-resilience/">The philosophy</a></li>
+          <li><a href="/v4/community-resilience/gathering/">How decisions get made</a></li>
+          <li><a href="/v4/community-resilience/governance/">A government that fits</a></li>
+          <li><a href="/v4/community-resilience/economy/">Ancestral Economics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Work together</h4>
+        <ul>
+          <li><a href="mailto:wisdom@ancestralwatch.com">Advisory &amp; design</a></li>
+          <li><a href="/v4/teams/">The Far Messenger Program</a></li>
+          <li><a href="/v4/workshop/">The Canyon Within</a></li>
+          <li><a href="/v4/#human-performance">Human Resilience</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read</h4>
+        <ul>
+          <li><a href="https://ancestralwatch.com">The Council Fire</a></li>
+          <li><a href="https://ancestralwatch.com">The Books</a></li>
+          <li><a href="/v4/journal/">The Journal</a></li>
+          <li><a href="/v4/#about">About Tony</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <span>© 2026 TribeAwaken · Tony Skrelūnas</span>
+      <span>Ancestral intelligence for a regenerating world.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')}); return;
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{rootMargin:'0px 0px -6% 0px',threshold:.05});
+  els.forEach(function(e){io.observe(e)});
+  function sweep(){
+    els.forEach(function(e){
+      if(e.classList.contains('in')) return;
+      var r = e.getBoundingClientRect();
+      if(r.top < (window.innerHeight || 0) * 1.02){ e.classList.add('in'); io.unobserve(e); }
+    });
+  }
+  window.addEventListener('load', function(){ sweep(); setTimeout(sweep, 260); });
+  setTimeout(sweep, 1200);
+})();
+
+(function(){
+  var b=document.getElementById('burger'), m=document.getElementById('menu'), c=document.getElementById('menuClose');
+  if(!b||!m) return;
+  function open(){m.classList.add('open');b.setAttribute('aria-expanded','true');document.body.classList.add('locked')}
+  function close(){m.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.classList.remove('locked')}
+  b.addEventListener('click',function(){m.classList.contains('open')?close():open()});
+  if(c) c.addEventListener('click',close);
+  m.addEventListener('click',function(e){if(e.target.tagName==='A')close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+})();
+</script>
+<script src="/v4/assets/capture.js?v=1" defer></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Koi ascending, body curved">
+  <!-- body -->
+  <path d="M 82,44 C 62,60 60,92 78,112 C 90,128 92,150 88,166"/>
+  <path d="M 120,46 C 106,62 102,92 116,112 C 126,130 122,152 106,168"/>
+  <path d="M 82,44 C 90,29 112,29 120,46"/>
+
+  <!-- head -->
+  <path d="M 92,38 C 99,30 109,31 113,39" opacity="0.9"/>
+  <circle cx="110" cy="53" r="3.2" fill="currentColor" stroke="none"/>
+  <path d="M 84,60 C 92,71 104,74 114,70"/>
+  <path d="M 88,42 C 78,38 70,32 66,24" opacity="0.9"/>
+  <path d="M 119,46 C 129,43 137,38 142,31" opacity="0.9"/>
+
+  <!-- dorsal fin -->
+  <path d="M 112,80 C 128,71 144,78 150,93 C 137,95 126,100 119,108"/>
+  <!-- pectoral fin -->
+  <path d="M 86,66 C 70,64 56,73 52,88 C 66,83 78,76 85,72"/>
+  <!-- ventral fin -->
+  <path d="M 84,128 C 70,133 62,144 62,157 C 74,149 83,140 88,134" opacity="0.9"/>
+
+  <!-- caudal fin -->
+  <path d="M 88,166 L 52,196"/>
+  <path d="M 52,196 C 70,188 88,183 98,181"/>
+  <path d="M 106,168 L 142,196"/>
+  <path d="M 142,196 C 124,188 108,183 98,181"/>
+  <path d="M 98,181 L 98,171" opacity="0.7"/>
+
+  <!-- scales -->
+  <path d="M 78,94 C 88,88 100,88 108,94" opacity="0.75"/>
+  <path d="M 82,118 C 92,112 104,112 112,118" opacity="0.75"/>
+  <path d="M 87,144 C 95,138 105,138 112,144" opacity="0.75"/>
+
+  <!-- water and bubbles -->
+  <path d="M 20,72 C 32,62 46,64 54,72" opacity="0.55"/>
+  <path d="M 24,96 C 34,88 44,90 50,96" opacity="0.45"/>
+  <path d="M 152,134 C 164,126 176,128 184,136" opacity="0.45"/>
+  <circle cx="154" cy="56" r="3.4" opacity="0.8"/>
+  <circle cx="168" cy="38" r="2.3" opacity="0.7"/>
+  <circle cx="148" cy="28" r="1.7" opacity="0.6"/>
+</svg>

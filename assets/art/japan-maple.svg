@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Momiji maple leaf">
+  <path d="M 100,128
+           C 90,126 80,124 72,122
+           L 60,118 L 48,120 L 26,112
+           L 44,108 L 50,102
+           L 40,88 L 34,64
+           L 54,76 L 74,80
+           L 70,64 L 66,34
+           L 82,50 L 88,58
+           L 92,40 L 100,20
+           L 108,40 L 112,58
+           L 118,50 L 134,34
+           L 130,64 L 126,80
+           L 146,76 L 166,64
+           L 160,88 L 150,102
+           L 156,108 L 174,112
+           L 152,120 L 140,118
+           L 128,122
+           C 120,124 110,126 100,128 Z"/>
+  <path d="M 100,126 L 100,26" opacity="0.65"/>
+  <path d="M 100,124 L 70,42" opacity="0.65"/>
+  <path d="M 100,124 L 130,42" opacity="0.65"/>
+  <path d="M 100,124 L 40,72" opacity="0.65"/>
+  <path d="M 100,124 L 160,72" opacity="0.65"/>
+  <path d="M 100,126 L 32,113" opacity="0.65"/>
+  <path d="M 100,126 L 168,113" opacity="0.65"/>
+  <path d="M 100,127 C 102,146 98,164 100,182"/>
+  <path d="M 100,150 C 106,148 111,144 113,138" opacity="0.6"/>
+  <path d="M 94,182 C 97,188 103,188 106,182" opacity="0.55"/>
+</svg>
