@@ -609,6 +609,23 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 <meta property="og:url" content="https://tribeawaken.com/">
 <meta property="og:image" content="https://tribeawaken.com/assets/img/family/lamplight-desk.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<style>
+/* the three most recent pieces, up front */
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:clamp(1.2rem, .9rem + 1.6vw, 2.4rem);margin-top:clamp(1.8rem, 1.4rem + 1.8vw, 3rem)}
+.feat__c{text-decoration:none;display:flex;flex-direction:column}
+.feat__im{display:block;overflow:hidden;border-radius:2px;background:var(--bg-2)}
+.feat__im img{width:100%;height:clamp(180px, 19vw, 250px);object-fit:cover;display:block;
+  transition:transform .4s ease}
+.feat__c:hover .feat__im img{transform:scale(1.04)}
+.feat__d{display:block;font-family:'Courier New',ui-monospace,Menlo,monospace;text-transform:uppercase;
+  letter-spacing:.14em;font-size:.7rem;color:var(--gold);margin-top:1rem}
+.feat__c b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.025em;
+  font-size:clamp(1.3rem, 1.1rem + .8vw, 1.7rem);line-height:1.14;color:var(--cream-2);margin-top:.5rem}
+.feat__c:hover b{color:var(--clay-lt)}
+.feat__k{display:block;color:var(--sand);font-size:1rem;line-height:1.6;margin-top:.6rem;flex:1}
+.feat__c .arrow{font-style:normal;margin-top:.9rem;font-size:.9rem}
+</style>
 </head>
 <body>
 
@@ -886,6 +903,39 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
   </div>
 </section>
 <!-- ═══════════ THE STONE BREATH ═══════════ -->
+<!-- ═══════════ LATEST ═══════════ -->
+<section class="sec sec--alt" id="latest">
+  <div class="wrap">
+    <p class="eyebrow">Written lately</p>
+    <h2 class="head">Three from the last few weeks.</h2>
+    <p class="lead" style="margin-top:1.1rem;max-width:50ch">A lunch table in Baja, a podium in Prescott, and a people who were supposed to disappear.</p>
+    <div class="feat">
+    <a class="feat__c" href="/journal/one-in-a-trillion/">
+      <span class="feat__im"><img src="/assets/img/journal/one-in-a-trillion/00.jpg" alt="" loading="lazy"></span>
+      <time class="feat__d" datetime="2026-08-05">August 5, 2026</time>
+      <b>One in a Trillion</b>
+      <span class="feat__k">An hour under the papel picado with Tom Blue Wolf, Muskogee Creek elder, who does not carry a phone. &ldquo;The chances of me and you sitting at this table are one in a trillion.&rdquo;</span>
+      <em class="arrow">Read it <span aria-hidden="true">&rarr;</span></em>
+    </a>
+    <a class="feat__c" href="/journal/twenty-five-years-to-the-podium-prescott-commencement/">
+      <span class="feat__im"><img src="/assets/img/tony/speaking-podium-sash.jpg" alt="" loading="lazy"></span>
+      <time class="feat__d" datetime="2026-08-07">August 7, 2026</time>
+      <b>Twenty-Five Years to That Podium</b>
+      <span class="feat__k">I started this doctorate more than twenty-five years ago. Last year I gave the commencement address. What happened in between, and what I found when I arrived early.</span>
+      <em class="arrow">Read it <span aria-hidden="true">&rarr;</span></em>
+    </a>
+    <a class="feat__c" href="/journal/they-tried-to-erase-a-whole-people/">
+      <span class="feat__im"><img src="/assets/img/world/baltic-forest.jpg" alt="" loading="lazy"></span>
+      <time class="feat__d" datetime="2026-08-07">August 7, 2026</time>
+      <b>They Tried to Erase a Whole People</b>
+      <span class="feat__k">Occupied, deported, the language driven underground &mdash; and now they raise some of the happiest young people on earth. That is not despite what they went through.</span>
+      <em class="arrow">Read it <span aria-hidden="true">&rarr;</span></em>
+    </a>
+    </div>
+    <p style="margin-top:clamp(1.6rem, 1.2rem + 1.6vw, 2.6rem)"><a class="arrow" href="/journal/">Everything I have written down <span aria-hidden="true">&rarr;</span></a></p>
+  </div>
+</section>
+
 <section class="sec sec--alt hasphoto" id="stone-breath">
   <div class="photo-bg" aria-hidden="true"><img src="/assets/img/world/japan-waterfall.jpg" alt="" loading="lazy"></div>
   <div class="wrap wrap--mid">
