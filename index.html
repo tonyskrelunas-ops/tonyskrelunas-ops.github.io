@@ -6,7 +6,7 @@
 <title>Tony Skrelūnas — Ancestral intelligence for a regenerating world | TribeAwaken</title>
 <meta name="description" content="Human resilience and community resilience, braided from three traditions. Retreats, team immersives, coaching, essays, music and film. Led by Tony Skrelūnas — Diné and Lithuanian.">
 <link rel="icon" href="/favicon.svg">
-<link rel="stylesheet" href="/assets-v4/v2.css?v=31">
+<link rel="stylesheet" href="/assets-v4/v2.css?v=32">
 <style>
 /* ============ page-specific — extends v2.css ============
    NOTE: inside clamp()/calc(), the + and - operators MUST be
@@ -626,6 +626,21 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 .feat__k{display:block;color:var(--sand);font-size:1rem;line-height:1.6;margin-top:.6rem;flex:1}
 .feat__c .arrow{font-style:normal;margin-top:.9rem;font-size:.9rem}
 </style>
+<style>
+/* the Stone Breath section: the tool wins over the photograph */
+.sb-dim .photo-bg::after{background:linear-gradient(100deg, rgba(15,18,16,.94) 0%, rgba(15,18,16,.88) 38%,
+  rgba(15,18,16,.66) 68%, rgba(15,18,16,.5) 100%) !important}
+.sb-dim .photo-bg img{filter:saturate(.9) brightness(.85)}
+</style>
+<style>
+.sbcover{display:flex;gap:1.1rem;align-items:center;text-decoration:none;
+  margin:clamp(1.4rem, 1.1rem + 1.2vw, 2.2rem) 0 0;max-width:34rem}
+.sbcover img{width:104px;height:auto;flex:none;border-radius:2px;box-shadow:0 14px 34px rgba(0,0,0,.6)}
+.sbcover b{display:block;font-family:var(--display);font-weight:700;font-size:1.06rem;color:var(--cream-2)}
+.sbcover:hover b{color:var(--clay-lt)}
+.sbcover span span{display:block;color:var(--sand);font-size:.94rem;line-height:1.55;margin-top:.25rem}
+@media(max-width:520px){.sbcover img{width:78px}}
+</style>
 </head>
 <body>
 
@@ -936,7 +951,7 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
   </div>
 </section>
 
-<section class="sec sec--alt hasphoto" id="stone-breath">
+<section class="sec sec--alt hasphoto sb-dim" id="stone-breath">
   <div class="photo-bg" aria-hidden="true"><img src="/assets/img/world/japan-waterfall.jpg" alt="" loading="lazy"></div>
   <div class="wrap wrap--mid">
     <p class="eyebrow">Free &middot; no email, no signup</p>
@@ -947,6 +962,10 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
       <div>
         <p class="say">Hold a small stone in your hand, or picture one. Feel the ages it took to come smooth. Give thanks to the water that carried it. Then begin.</p>
         <p class="say" style="margin-top:1rem"><strong>In four. Hold four. Out six. Hold four.</strong> Five unhurried rounds. About three minutes. The long exhale is the body&rsquo;s off-switch for alarm &mdash; a count the old runners had ten thousand years before anyone named the vagus nerve.</p>
+        <a class="sbcover" href="https://ancestralwatch.com/series/stone-breath/">
+          <img src="/assets/img/stone-breath-cover.jpg" alt="Stone Breath, book one of The Ancestral Watch, by Tony Skrel&#363;nas" loading="lazy">
+          <span><b>It came from the novel</b><span>The count, the stone, and the man who taught it &mdash; <em>Stone Breath</em>, book one of The Ancestral Watch.</span></span>
+        </a>
         <div class="actions" style="margin-top:1.8rem">
           <button class="btn btn--primary" id="bStart" type="button">Begin</button>
           <a class="arrow" href="https://ancestralwatch.com/downloads/ancestral-watch__stone-breath.pdf">Printable card <span aria-hidden="true">&rarr;</span></a>

@@ -621,16 +621,23 @@ body.locked{overflow:hidden}
   margin-top:clamp(2rem,1.6rem + 2vw,3.2rem)}
 @media(max-width:820px){.breath{grid-template-columns:1fr}}
 .orb{position:relative;display:grid;place-items:center;width:min(100%,17rem);
-  aspect-ratio:1;margin-inline:auto}
-.orb__ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(201,161,94,.32)}
-.orb__fill{position:absolute;inset:14%;border-radius:50%;
+  aspect-ratio:1;margin-inline:auto;isolation:isolate}
+/* the tool has to be legible on top of a photograph — it is the point of the page */
+.orb::before{content:"";position:absolute;inset:-14%;border-radius:50%;z-index:0;
+  background:radial-gradient(circle at 50% 50%, rgba(12,14,12,.94) 0%, rgba(12,14,12,.88) 46%,
+    rgba(12,14,12,.55) 72%, rgba(12,14,12,0) 100%);
+  backdrop-filter:blur(3px) saturate(.85)}
+.orb__ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(201,161,94,.5);z-index:1}
+.orb__fill{position:absolute;inset:14%;border-radius:50%;z-index:1;
   background:radial-gradient(circle at 50% 45%, rgba(201,161,94,.34), rgba(184,80,58,.16) 60%, transparent 72%);
   transform:scale(.62);transition:transform 1s linear}
 .orb__t{position:relative;text-align:center;z-index:2}
 .orb__t b{display:block;font-family:var(--display);font-weight:700;
-  font-size:clamp(1.3rem,1.1rem + 1vw,1.9rem);color:var(--cream-2);letter-spacing:-.02em}
-.orb__t span{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--gold);margin-top:.5rem;min-height:1.2em;max-width:15rem;line-height:1.5}
+  font-size:clamp(1.3rem,1.1rem + 1vw,1.9rem);color:var(--cream-2);letter-spacing:-.02em;
+  text-shadow:0 2px 18px rgba(0,0,0,.9)}
+.orb__t span{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold-lt);margin-top:.5rem;min-height:1.2em;max-width:15rem;line-height:1.5;
+  text-shadow:0 2px 14px rgba(0,0,0,.95)}
 .orb__n{display:block;font-family:var(--display);font-size:2.4rem;color:var(--gold);
   line-height:1;margin-top:.6rem;min-height:1em}
 .pull{font-family:var(--display);font-weight:700;letter-spacing:-.03em;
