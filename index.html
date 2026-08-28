@@ -641,6 +641,21 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 .sbcover span span{display:block;color:var(--sand);font-size:.94rem;line-height:1.55;margin-top:.25rem}
 @media(max-width:520px){.sbcover img{width:78px}}
 </style>
+<style>
+/* the reader, featured */
+.reader{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);
+  gap:clamp(1.6rem,1.2rem + 2.4vw,3.6rem);align-items:center}
+.reader__cov img{width:100%;height:auto;display:block;border-radius:2px;
+  box-shadow:0 26px 60px rgba(0,0,0,.65);transition:transform .3s ease}
+.reader__cov:hover img{transform:translateY(-5px)}
+@media(max-width:760px){.reader{grid-template-columns:1fr}
+  .reader__cov{max-width:220px}}
+</style>
+<style>
+.reader-dim .photo-bg::after{background:linear-gradient(100deg, rgba(15,18,16,.95) 0%, rgba(15,18,16,.9) 46%,
+  rgba(15,18,16,.7) 74%, rgba(15,18,16,.55) 100%) !important}
+.reader-dim .photo-bg img{filter:saturate(.85) brightness(.72)}
+</style>
 </head>
 <body>
 
@@ -979,6 +994,30 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
           <span id="bPhase">hold a stone, or imagine one</span>
           <span class="orb__n" id="bCount"></span>
         </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ THE READER ═══════════ -->
+<section class="sec sec--alt hasphoto reader-dim" id="the-reader">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/1440/redwoods.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div class="reader">
+      <a class="reader__cov" href="https://ancestralwatch.com/reader/">
+        <img src="/assets/img/living-as-a-far-messenger-cover.jpg" alt="Cover of Living as a Far Messenger, the Ancestral Watch Executive Reader" loading="lazy">
+      </a>
+      <div>
+        <p class="eyebrow">New &middot; the Executive Reader</p>
+        <h2 class="head">Living as a Far Messenger</h2>
+        <p class="lead" style="margin-top:1.1rem">The Oldest Discipline of Mind, Body, and Soul. Seventy illustrated pages: the teaching in one sitting, then eleven write-in worksheets to return to at solstices and birthdays.</p>
+        <p class="say">Two books bound as one. <strong>The Telling</strong> is the discipline &mdash; the messenger at the dry well, the navigator who carried no map because he <em>was</em> the map, the Stone Breath in full, the seven disciplines. <strong>The Crossing</strong> is where you write: it opens by asking you to name the far messenger in your own family line, and most people find one within three generations. It ends with the one sentence you want to survive you, signed and dated.</p>
+        <p class="say"><strong>Made for the first Far Messenger Retreat</strong> &mdash; the fire in the redwoods at 1440 this weekend. Everyone who reads it afterwards carries the book that began there.</p>
+        <p class="pull" style="margin-top:1.6rem">Read it in a sitting. Write in it for a year.</p>
+        <div class="actions" style="margin-top:1.8rem">
+          <a class="btn btn--primary" href="https://ancestralwatch.com/reader/">About the reader <span aria-hidden="true">&rarr;</span></a>
+          <a class="arrow" href="/journal/what-a-far-messenger-is/">What a far messenger is <span aria-hidden="true">&rarr;</span></a>
+        </div>
       </div>
     </div>
   </div>
