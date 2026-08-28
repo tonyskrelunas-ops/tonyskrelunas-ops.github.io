@@ -47,6 +47,15 @@
 .syl__out li{position:relative;padding-left:1.6rem;margin-top:.7rem;color:var(--cream);line-height:1.68}
 .syl__out li::before{content:"";position:absolute;left:0;top:.72em;width:.6rem;height:1px;background:var(--clay)}
 </style>
+<style>
+.lafm-card{display:flex;gap:1.2rem;align-items:center;text-decoration:none;
+  margin-top:clamp(1.3rem,1rem + 1.2vw,2rem);max-width:38rem}
+.lafm-card img{width:120px;height:auto;flex:none;border-radius:2px;box-shadow:0 16px 40px rgba(0,0,0,.6)}
+.lafm-card b{display:block;font-family:var(--display);font-weight:700;font-size:1.12rem;color:var(--cream-2)}
+.lafm-card:hover b{color:var(--clay-lt)}
+.lafm-card span span{display:block;color:var(--sand);font-size:.96rem;line-height:1.58;margin-top:.3rem}
+@media(max-width:520px){.lafm-card img{width:88px}}
+</style>
 </head>
 <body>
 <div class="greet">
@@ -281,7 +290,17 @@
     </ol>
 
     <h3 class="syl__h">Texts</h3>
-    <p class="say"><em>Stone Breath</em> and <em>The Council Fire</em>, from The Ancestral Watch series &mdash; the practices and the argument, carried as story, which is how they were always carried. Everything else is on this site, free, with the sources: the <a href="/human-resilience/">Human Resilience</a> and <a href="/community-resilience/">Community Resilience</a> deep dives, and the <a href="/journal/">journal</a>.</p>
+    <p class="say"><strong><em>Living as a Far Messenger</em></strong> is the working reader for this course &mdash; the teaching in one sitting, then eleven write-in worksheets meant to be dated and returned to at solstices and birthdays. Read it in a sitting; write in it for a year.</p>
+
+    <a class="lafm-card" href="https://ancestralwatch.com/reader/">
+      <img src="/assets/img/living-as-a-far-messenger-cover.jpg" alt="Cover of Living as a Far Messenger, the Ancestral Watch Executive Reader" loading="lazy">
+      <span>
+        <b>Living as a Far Messenger</b>
+        <span>The Oldest Discipline of Mind, Body, and Soul. The Executive Reader &mdash; seventy illustrated pages, the discipline distilled to what a person can begin tonight.</span>
+      </span>
+    </a>
+
+    <p class="say" style="margin-top:1.6rem">Alongside it, the novels: <em>Stone Breath</em> and <em>The Council Fire</em> &mdash; the practice and the argument, carried as story, which is how they were always carried. Everything else is on this site, free, with the sources: the <a href="/human-resilience/">Human Resilience</a> and <a href="/community-resilience/">Community Resilience</a> deep dives, and the <a href="/journal/">journal</a>.</p>
 
     <p class="say" style="margin-top:1.6rem">More courses are coming, each taking one of these strands and teaching it properly rather than as a summary.</p>
   </div>
