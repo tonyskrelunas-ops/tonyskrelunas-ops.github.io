@@ -1,7 +1,7 @@
-<!doctype html><html lang="lt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<title>TribeAwaken | Protėvių išmintis šiuolaikiniam gyvenimui</title>
-<meta name="description" content="Baltų, dinė (navahų) ir japonų įrankiai — ramybei, sveikatai ir prasmingam pasiekimui. Tony Skrelūnas: dešimčių tūkstančių metų protėvių išmintis šiandienos gyvenimui.">
+<title>『石の呼吸』が世界へ——なぜこの本に日本が流れているのか｜TribeAwaken</title>
+<meta name="description" content="小説『石の呼吸』が世界流通へ。なぜこの本に日本が流れているのか——灯油ランプの下で読んだ日本の哲学、金継ぎ、そして二十二の道具。">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,25 +42,35 @@
 .art .btn--ghost:hover{border-color:var(--clay-lt);color:var(--clay-lt)}
 </style>
 <style>
+  :root{--font-display:"Noto Serif JP",Georgia,serif;--font-body:"Noto Sans JP",system-ui,sans-serif;}
+  body{font-family:var(--font-body);}
   .lang-switch a{color:var(--silver);font-size:.85rem;text-decoration:none;}
   .lang-switch a[aria-current]{color:var(--amber);font-weight:700;}
-  .lt-hero{padding:clamp(3.5rem,10vh,7rem) 0;background:radial-gradient(120% 120% at 50% 0%,var(--bg-3),var(--night) 62%);text-align:center;}
-  .lt-hero h1{font-family:var(--font-display);font-weight:600;font-size:clamp(2.1rem,6vw,4rem);line-height:1.08;color:var(--bone);margin:.6rem auto;max-width:18ch;}
-  .lt-hero .lead{max-width:52ch;margin:1.2rem auto 0;color:var(--sand);line-height:1.7;}
-  .lt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--space-4);margin-top:var(--space-4);}
-  .lt-card{text-decoration:none;color:inherit;display:flex;flex-direction:column;background:var(--night-3);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--rule);}
-  .lt-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;}
-  .lt-card .body{padding:var(--space-3);}
-  .lt-card h3{font-family:var(--font-display);font-size:1.25rem;line-height:1.3;margin:.2rem 0;}
+  .art{max-width:42rem;margin:0 auto;}
+  .art p{font-size:1.12rem;line-height:2;color:var(--sand);margin:0 0 1.5rem;}
+  .art h2{font-family:var(--font-display);font-size:1.6rem;margin:2.4rem 0 1rem;color:var(--bone);}
+  .pull{font-family:var(--font-display);font-size:clamp(1.4rem,3vw,2rem);line-height:1.7;color:var(--amber-soft);text-align:center;margin:2.4rem auto;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:1.6rem 0;}
 </style>
 
-<link rel="canonical" href="https://tribeawaken.com/lt/">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* Japanese edition — the CJK faces, with the house fonts kept for Latin */
+:root{
+  --display:'Fraunces','Noto Serif JP',Georgia,serif;
+  --body:'Hanken Grotesk','Noto Sans JP',-apple-system,sans-serif;
+}
+.brand__txt,.nav,.menu__ls,.globebar,.eyebrow{font-family:'Hanken Grotesk',-apple-system,sans-serif}
+.ja h1,.ja h2,h1:lang(ja),h2:lang(ja){line-height:1.28;padding-bottom:.12em}
+main h1,main h2{margin-bottom:.6rem}
+
+</style>
+<link rel="canonical" href="https://tribeawaken.com/ja/okinawa-to-hogan/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TribeAwaken">
-<meta property="og:title" content="TribeAwaken | Protėvių išmintis šiuolaikiniam gyvenimui">
-<meta property="og:description" content="Baltų, dinė (navahų) ir japonų įrankiai — ramybei, sveikatai ir prasmingam pasiekimui. Tony Skrelūnas: dešimčių tūkstančių metų protėvių išmintis šiandienos gyvenimui.">
-<meta property="og:url" content="https://tribeawaken.com/lt/">
-<meta property="og:image" content="https://tribeawaken.com/assets/img/baltic.jpg">
+<meta property="og:title" content="沖縄とホーガン——二つのブルーゾーン、一つの祖先のOS｜TribeAwaken">
+<meta property="og:description" content="沖縄の長寿とディネ（ナバホ）のホーガンの暮らし。二つのブルーゾーンが指し示す、何万年も効き続けてきた「祖先のオペレーティング・システム」について。">
+<meta property="og:url" content="https://tribeawaken.com/ja/okinawa-to-hogan/">
+<meta property="og:image" content="https://tribeawaken.com/assets/img/japanese-temple.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
@@ -154,8 +164,8 @@
     </p>
     <ul class="globebar__ls">
       <li><a href="/" hreflang="en">English</a></li>
-      <li><a href="/ja/" hreflang="ja">日本語 · Japan</a></li>
-      <li><a class="is-on" aria-current="true" href="/lt/" hreflang="lt">Lietuvių · Lithuania</a></li>
+      <li><a class="is-on" aria-current="true" href="/ja/" hreflang="ja">日本語 · Japan</a></li>
+      <li><a href="/lt/" hreflang="lt">Lietuvių · Lithuania</a></li>
       <li><a href="/india/" hreflang="en">India</a></li>
       <li><span class="soon">中文 · coming soon</span></li>
     </ul>
@@ -213,63 +223,65 @@
   </div>
 </div>
 
-<main id="main">
-  <section class="lt-hero">
-    <div class="wrap">
-      <p class="eyebrow" style="color:var(--turq);">Protėvių operacinė sistema</p>
-      <h1>Dešimčių tūkstančių metų išmintis — šiandienos gyvenimui.</h1>
-      <p class="lead">Baltų, dinė (navahų) ir japonų įrankiai — ramybei, tvirtai sveikatai ir prasmingam pasiekimui. Kadaise kiekviena tauta mokėjo pereiti sunkią žemę ir atnešti tai, ko reikia jos žmonėms — nepalūžusi. Padedame tai prisiminti ir pritaikyti šiandien.</p>
-      <p style="margin-top:var(--space-4);"><a class="btn btn--primary btn--lg" href="https://ancestralwatch.com/lt/" target="_blank" rel="noopener">Pradėkite nemokamai — „Akmens kvėpavimas" →</a></p>
-    </div>
-  </section>
+<main id="main"><article class="art"><div class="wrap wrap--narrow art">
+  <p class="eyebrow" style="color:var(--turq);">本のこと</p>
+  <h1 style="font-family:var(--font-display);font-size:clamp(1.9rem,5vw,3rem);line-height:1.35;">『石の呼吸』が世界へ</h1>
+  <p class="lead">ランプの灯りで読んだ日本。血筋ではなく、長い学びによって。</p>
+  <figure class="article__hero" style="margin:0 0 var(--space-4);border-radius:var(--radius-lg);overflow:hidden;">
+    <img src="/assets/img/zen-garden.jpg" alt="静かな庭と苔" loading="eager" style="width:100%;height:auto;display:block;">
+  </figure>
 
-  <section class="sec">
-    <div class="wrap wrap--narrow" style="text-align:center;">
-      <p class="eyebrow" style="color:var(--turq);">Tolimieji pasiuntiniai</p>
-      <h2 style="font-family:var(--font-display);">Kas yra Tony Skrelūnas</h2>
-      <p>Kadaise kiekviena tauta turėjo <strong>tolimuosius pasiuntinius</strong> — parengtus nešėjus, kurie pereidavo pavojingą kelią ir atnešdavo tai, ko reikėjo jų žmonėms. Tony Skrelūnas yra dinė (navahas) ir lietuvis, užaugęs pas senelius kartu su senąja išmintimi. Trisdešimt metų jis grąžina tuos įrankius vadovams ir bendruomenėms. Kaip baltai išsaugojo dainas, kalbą ir dvasią per visus draudimus — taip ir čia: ilgaamžiškumo ir gerovės raktas slypi ne naujausiuose, o <strong>seniausiuose</strong> dalykuose.</p>
-    </div>
-  </section>
+  <p>今週、<em>Stone Breath</em>（『石の呼吸』）が世界に出ました。Apple Books と Kobo で、そして各国の書店と図書館の目録へ。ひとつのリンクが、あなたの国の書店へ案内します — <a href="https://books2read.com/u/4AEDdd" target="_blank" rel="noopener">books2read.com/u/4AEDdd</a>。</p>
 
-  <section class="sec section--tight" id="straipsniai">
-    <div class="wrap">
-      <p class="eyebrow" style="color:var(--turq);">Lietuvos skaitytojui</p>
-      <h2 style="font-family:var(--font-display);">Straipsniai apie mūsų kultūrą</h2>
-      <div class="lt-grid">
-        <a class="lt-card" href="/lt/akmens-kvepavimas-isejo-i-pasauli/">
-          <img src="/assets/img/baltic.jpg" alt="Vilnius auštant">
-          <div class="body"><p class="eyebrow" style="color:var(--turq);">Knygos</p><h3>Akmens kvėpavimas išėjo į pasaulį</h3></div>
-        </a>
-        <a class="lt-card" href="/lt/knygnesiai-ir-dainu-saugotojai/">
-          <img src="/assets/img/baltic.jpg" alt="Baltų miškas ir šviesa">
-          <div class="body"><p class="eyebrow" style="color:var(--turq);">Atsparumas</p><h3>Knygnešiai ir dainų saugotojai: kaip tauta išsaugo sielą</h3></div>
-        </a>
-        <a class="lt-card" href="/lt/akmens-kvepavimas/">
-          <img src="/assets/img/stone-dawn.jpg" alt="Akmuo aušroje">
-          <div class="body"><p class="eyebrow" style="color:var(--turq);">Praktika</p><h3>Akmens kvėpavimas: ramybė, gimusi per Rasas</h3></div>
-        </a>
-      </div>
-    </div>
-  </section>
+  <p>けれども、ここで書きたいのはそのことではありません。<strong>なぜこの本に日本が流れているのか</strong>——そのことです。</p>
 
-  <section class="sec" style="background:linear-gradient(180deg,var(--night-2),var(--night));">
-    <div class="wrap wrap--narrow" style="text-align:center;">
-      <p class="eyebrow" style="color:var(--turq);">Knygų serija „The Ancestral Watch"</p>
-      <h2 style="font-family:var(--font-display);">Išmintis, perduodama kaip pasakojimas.</h2>
-      <p>Knygos, kurios skaitosi kaip romanai, o veikia kaip praktikos — tie patys įrankiai, kuriuos Tony taiko su vadovais ir tautomis, tik tokia forma, į kurią gali pasinerti sekmadienio popietę.</p>
-      <p style="margin-top:var(--space-3);"><a class="btn btn--primary btn--lg" href="https://ancestralwatch.com/lt/" target="_blank" rel="noopener">Peržiūrėti seriją (AncestralWatch) →</a></p>
-    </div>
-  </section>
+  <h2>ランプの灯りで読んだ日本</h2>
 
-  <section class="sec capture" id="susisiekime">
-    <div class="wrap" style="text-align:center;">
-      <p class="eyebrow">Susisiekime</p>
-      <h2 style="font-family:var(--font-display);">Seniausi įrankiai — šiandienos gyvenimui.</h2>
-      <p>Kiekvieną savaitę atsiųsime naują pasakojimą. Vienas laiškas. Bet kada galėsite atsisakyti.</p>
-      <p style="margin-top:var(--space-3);"><a class="btn btn--primary btn--lg" href="https://ancestralwatch.com/lt/" target="_blank" rel="noopener">Prenumeruoti →</a></p>
-    </div>
-  </section>
-</main>
+  <p>私はアリゾナのブラックメサ、電気のないホーガンで、曽祖父母に育てられました。四百頭の羊。毎朝の祈り。</p>
+
+  <p>読み書きは灯油ランプの下で覚えました。そして<strong>その同じ灯りで、私は日本の哲学を読みました</strong>。郵便で届く本でした。地図にも載らないような場所に。</p>
+
+  <p>血筋ではディネ（ナバホ）とリトアニア。日本は、長い学びによるものです。弟子入りしたとは言いません。<strong>学び、敬い、その規律のいくつかを自分の仕事に取り入れてきた</strong>——それが正確な言い方です。</p>
+
+  <p class="pull">出会ったことのない三つの民が、<br>同じ答えにたどり着いた。</p>
+
+  <h2>何を受け取ったか</h2>
+
+  <p>抑制。修復。ひとつを終えてから次へ移るという規律。</p>
+
+  <p>庭を、神経系のための道具として見ること。<em>金継ぎ</em>——割れを隠さず、金で継いで、割れた事実ごと美しくするという、損なわれることについてのひとつの主張。</p>
+
+  <p>曽祖母のやり方も、名前は違えど同じでした。夜明け前に立ち、何が本当かを名指し、感謝を述べ、意図を言う。彼女はそれを「実践」とは呼びませんでした。<strong>生き延びる術</strong>と呼んでいたのです。両方とも正しかったのだと思います。</p>
+
+  <h2>本のこと</h2>
+
+  <p>『石の呼吸』は小説です。トナス・ヤジーは、世界が測れるものをすべて持っています。祖父が亡くなり、彼は古い歌の綴りを持って、見たこともないリトアニアの村へ向かいます。</p>
+
+  <p>そこでアウステーヤに出会う。パリの厨房で修業した料理人であり、競技者を鍛える指導者であり、夜明けを走る人であり、みなが去ったあとも残った女性です。そして、<strong>彼を必要としていません</strong>。</p>
+
+  <p>世界が数えるどの尺度でも成功している二人。ただ一つ、最も古い尺度を除いて——<strong>大切なものを、厳しい土地を越えて運び、そのまま無事に届けられるか</strong>。</p>
+
+  <h2>二十二の道具</h2>
+
+  <p>恋愛の物語のまわりに、この本は本当の積み荷を運んでいます。各章にひとつずつ、<strong>二十二の道具</strong>。出会ったことのない三つの民——<strong>ディネ、リトアニア、日本</strong>——が、それぞれに同じ答えへ至ったもの。</p>
+
+  <p>石の呼吸。朝の整え。共に囲む食卓。どれも費用はかかりません。千年のあいだ試されてきました。</p>
+
+  <p>なぜ小説にしたのかと聞かれます。答えは羊のいる野営地にあります。教えは決して講義として渡されませんでした。<strong>講義は頭に同意を求めますが、物語は人そのものに、どこかへ歩いていくことを求めます。</strong>古い伝達の仕組みです。今でも働きます。</p>
+
+  <h2>入手について</h2>
+
+  <p>ひとつのリンクが、あなたの国の書店へ案内します。図書館の目録にも入りつつあります。まだ所蔵がなければ、取り寄せを頼むことができます。</p>
+
+  <p>『石の呼吸』は <em>The Ancestral Watch</em>（祖先の見張り）の第一巻です。次は『評議の火』——第一巻が走者の石をあなたの手に置いたのなら、次の巻は、<strong>その走者が何を運んでいたのか</strong>を示します。</p>
+
+  <p class="pull">石はあたたかい。輪は保たれている。</p>
+
+  <p style="margin-top:var(--space-5);">
+    <a class="btn btn--primary btn--lg" href="https://books2read.com/u/4AEDdd" target="_blank" rel="noopener">お住まいの国の書店で探す &rarr;</a>
+    <a class="btn btn--ghost" href="/ja/">&larr; ホームへ</a>
+  </p>
+</div></article></main>
 
 <footer class="ftr">
   <div class="wrap">
