@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reads</title><meta name="robots" content="noindex,nofollow">
+<style>
+body{margin:0;background:#141814;color:#F2EFE6;font:400 16px/1.6 Georgia,"Palatino Linotype",serif;
+ padding:40px clamp(16px,4vw,48px)}
+h1{font-size:clamp(1.8rem,1.4rem+2vw,2.6rem);margin:0 0 .3rem;color:#FBF9F3;letter-spacing:-.02em}
+.sub{color:#C3C6B8;margin:0 0 2rem;font-size:.95rem}
+table{border-collapse:collapse;width:100%;max-width:60rem}
+th{font:400 .66rem/1 "Courier New",monospace;letter-spacing:.16em;text-transform:uppercase;
+ color:#C6A45F;text-align:left;padding:0 0 .8rem;border-bottom:1px solid rgba(255,255,255,.14)}
+th.n,td.n{text-align:right;white-space:nowrap}
+td{padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.07);vertical-align:baseline}
+td a{color:#F2EFE6;text-decoration:none}
+td a:hover{color:#E3C68C}
+td.n{font:400 1.05rem "Courier New",monospace;color:#E3C68C;padding-left:1.5rem}
+.tot{margin-top:2rem;font:400 .7rem/1 "Courier New",monospace;letter-spacing:.14em;
+ text-transform:uppercase;color:#C6A45F}
+.note{margin-top:2.4rem;color:#C3C6B8;font-size:.9rem;max-width:52ch;opacity:.8}
+</style></head><body>
+<h1>Reads</h1>
+<p class="sub">Every article, most read first. Counts every page view since the counter went in.</p>
+<table><thead><tr><th>Article</th><th class="n">Reads</th></tr></thead><tbody id="rows">
+<tr><td colspan="2" style="color:#C3C6B8">Counting&hellip;</td></tr></tbody></table>
+<p class="tot" id="tot"></p>
+<p class="note">Reading this page does not add to any count &mdash; it only looks them up.</p>
+<script>
+fetch('articles.json').then(function(r){return r.json()}).then(function(list){
+  Promise.all(list.map(function(a){
+    return fetch('https://abacus.jasoncameron.dev/get/tribeawaken/'+a.slug)
+      .then(function(r){return r.ok?r.json():{value:0}})
+      .then(function(j){return {t:a.title,s:a.slug,v:(j&&j.value)||0}})
+      .catch(function(){return {t:a.title,s:a.slug,v:0}});
+  })).then(function(rows){
+    rows.sort(function(x,y){return y.v-x.v});
+    document.getElementById('rows').innerHTML = rows.map(function(r){
+      return '<tr><td><a href="/journal/'+r.s+'/">'+r.t+'</a></td>'+
+             '<td class="n">'+(r.v?r.v.toLocaleString():'&mdash;')+'</td></tr>';
+    }).join('');
+    var t=rows.reduce(function(a,b){return a+b.v},0);
+    document.getElementById('tot').textContent=t.toLocaleString()+' reads across '+rows.length+' articles';
+  });
+});
+</script></body></html>
