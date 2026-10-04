@@ -10,13 +10,13 @@
   color:#6B5A49;background:rgba(255,255,255,.88);border:1px solid rgba(107,90,73,.26);
   border-radius:999px;padding:.42rem .62rem;cursor:pointer;
   backdrop-filter:saturate(1.4) blur(6px);
-  opacity:0;transform:translateY(4px);transition:opacity .22s,transform .22s,color .22s,border-color .22s}
-.amm__w:hover .amm__share,.amm__share:focus-visible{opacity:1;transform:none}
+  opacity:.78;transition:opacity .22s,color .22s,border-color .22s}
+.amm__w:hover .amm__share,.amm__share:focus-visible{opacity:1}
 .amm__share:hover{color:#B8512A;border-color:rgba(184,81,42,.5)}
-.amm__share.is-done{color:#2F6B4F;border-color:rgba(47,107,79,.5);opacity:1;transform:none}
+.amm__share.is-done{color:#2F6B4F;border-color:rgba(47,107,79,.5);opacity:1}
 .amm__share svg{flex:none}
-/* touch devices have no hover — show it always, a little quieter */
-@media (hover:none){ .amm__share{opacity:.82;transform:none} }
+/* Always visible, not hover-gated: he asked for things that are plainly
+   shareable, and a control nobody can see is not an invitation. */
 
 /* ── the seven-minute invitation ──────────────────────────────────────── */
 .amm-reg{position:fixed;left:50%;bottom:0;z-index:70;width:min(46rem,calc(100% - 1.6rem));
