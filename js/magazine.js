@@ -25,12 +25,24 @@
              date: a.date, art: a.art, slug: a.slug, translated: true };
   }
 
+  /* each edition writes the date in its own language — it was printing
+     "September 17, 2026" inside the Spanish and Lithuanian magazines */
+  var MONTHS = {
+    en: ['January','February','March','April','May','June','July',
+         'August','September','October','November','December'],
+    es: ['enero','febrero','marzo','abril','mayo','junio','julio',
+         'agosto','septiembre','octubre','noviembre','diciembre'],
+    lt: ['sausio','vasario','kovo','balandžio','gegužės','birželio','liepos',
+         'rugpjūčio','rugsėjo','spalio','lapkričio','gruodžio']
+  };
   function pretty(d) {
     if (!d) return '';
     var p = d.split('-'); if (p.length < 3) return d;
-    var M = ['January','February','March','April','May','June','July',
-             'August','September','October','November','December'];
-    return M[+p[1] - 1] + ' ' + (+p[2]) + ', ' + p[0];
+    var y = p[0], mi = +p[1] - 1, day = +p[2];
+    if (LANG === 'ja') return y + '年' + (mi + 1) + '月' + day + '日';
+    if (LANG === 'es') return day + ' de ' + MONTHS.es[mi] + ' de ' + y;
+    if (LANG === 'lt') return y + ' m. ' + MONTHS.lt[mi] + ' ' + day + ' d.';
+    return MONTHS.en[mi] + ' ' + day + ', ' + y;
   }
 
   fetch('/js/magazine-feed.json', { cache: 'no-cache' })
@@ -98,7 +110,11 @@
       }
 
       var stamp = document.querySelector('[data-edition]');
-      if (stamp && F.generated) stamp.textContent = 'This edition · ' + pretty(F.generated.slice(0, 10));
+      var EDN = { en: 'This edition · ', es: 'Esta edición · ',
+                  ja: 'この号 · ', lt: 'Šis leidimas · ' };
+      if (stamp && F.generated) {
+        stamp.textContent = (EDN[LANG] || EDN.en) + pretty(F.generated.slice(0, 10));
+      }
       document.documentElement.classList.add('mag-ready');
     })
     .catch(function () { document.documentElement.classList.add('mag-ready'); });

@@ -4,6 +4,8 @@
 /* ── a card and its share button ──────────────────────────────────────── */
 .amm__w{position:relative;display:flex;flex-direction:column}
 .amm__w > .amm__c,.amm__w > .amm__f{flex:1}
+/* room for the control, so it never sits on the card's own words */
+.amm__w > .amm__c,.amm__w > .amm__f{padding-bottom:3.2rem}
 .amm__share{position:absolute;right:.6rem;bottom:.6rem;z-index:3;
   display:inline-flex;align-items:center;gap:.36rem;
   font:700 .68rem/1 var(--body,system-ui);letter-spacing:.07em;text-transform:uppercase;
