@@ -41,7 +41,7 @@
     lt: { share: 'Pasidalinti', copied: 'Nuoroda nukopijuota',
           k: 'Septynios minutės skaitant',
           h: 'Ar norėtumėte gauti leidimą paštu?',
-          p: '\u010cia rasite tekst\u0173 i\u0161 kit\u0173 pasaulio daliu\u0173, kuri\u0173 niekur kitur nerasite surinkt\u0173 kartu; kiekvienas parinktas pagal viet\u0105, i\u0161 kurios ateina. Statome tai atid\u017eiai, po vien\u0105 kalb\u0105. Palikite adres\u0105 ir Tony atsi\u0173s jums leidim\u0105.',
+          p: '\u010cia rasite tekst\u0173 i\u0161 kit\u0173 pasaulio dali\u0173, kuri\u0173 niekur kitur nerasite surinkt\u0173 kartu; kiekvienas parinktas pagal viet\u0105, i\u0161 kurios ateina. Statome tai atid\u017eiai, po vien\u0105 kalb\u0105. Palikite adres\u0105 ir Tony atsi\u0173s jums leidim\u0105.',
           ph: 'jus@pavyzdys.lt', go: 'Atsiųskite man', no: 'Ne dabar',
           fine: 'Tai keliauja tiesiai pas Tony — jokios rašymų programos, jokio automatinio atsakymo, niekam neparduodama. Žurnalas čia lieka nemokamas.',
           done: 'Ačiū — Tony tai gavo.' },
