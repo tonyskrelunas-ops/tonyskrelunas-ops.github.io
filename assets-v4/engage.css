@@ -59,3 +59,11 @@
   .amm-reg{transition:none}
   .amm__share{transition:none}
 }
+
+/* A card still in English, inside another edition, says so before it is
+   clicked. Tony, 10/4: "when you click the articles.. it still goes to an
+   english page." The tag goes away as each piece is carried across. */
+.amm__en{display:inline-block;margin-left:.5em;padding:.12em .5em;
+  border:1px solid rgba(107,90,73,.4);border-radius:999px;
+  font-style:normal;font-size:.76em;letter-spacing:.06em;text-transform:none;
+  color:#6B5A49;background:rgba(107,90,73,.06);vertical-align:.08em}

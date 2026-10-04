@@ -35,6 +35,15 @@
     lt: ['sausio','vasario','kovo','balandžio','gegužės','birželio','liepos',
          'rugpjūčio','rugsėjo','spalio','lapkričio','gruodžio']
   };
+  /* A reader in the Spanish edition clicked a card and landed on an English
+     page. Until every piece is carried across, any card that is still in
+     English says so before it is clicked. */
+  var ENONLY = { es: 'en inglés', ja: '英語', lt: 'angliškai' };
+  function tag(a) {
+    return (LANG !== 'en' && !a.translated && ENONLY[LANG])
+      ? ' <em class="amm__en">' + ENONLY[LANG] + '</em>' : '';
+  }
+
   function pretty(d) {
     if (!d) return '';
     var p = d.split('-'); if (p.length < 3) return d;
@@ -67,7 +76,7 @@
         var dek = ls.querySelector('.dek');
         var art = ls.querySelector('.lead-art');
         if (h) { h.textContent = lead.title; if (h.tagName === 'A') h.href = lead.href; }
-        if (k) k.textContent = lead.pillar + ' · ' + pretty(lead.date);
+        if (k) { k.innerHTML = esc(lead.pillar) + ' · ' + pretty(lead.date) + tag(lead); }
         if (dek && lead.dek) dek.textContent = lead.dek;
         if (art && lead.art) art.setAttribute('src', lead.art);
       }
@@ -83,7 +92,7 @@
         grid.innerHTML = featured.map(function (a) {
           return '<a class="amm__c" href="' + a.href + '">' +
                  (a.art ? '<img class="amm__art" src="' + a.art + '" alt="">' : '') +
-                 '<i>' + esc(a.pillar) + ' · ' + pretty(a.date) + '</i>' +
+                 '<i>' + esc(a.pillar) + ' · ' + pretty(a.date) + tag(a) + '</i>' +
                  '<b>' + esc(a.title) + '</b>' +
                  (a.dek ? '<span>' + esc(a.dek) + '</span>' : '') + '</a>';
         }).join('');
