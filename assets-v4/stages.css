@@ -144,3 +144,23 @@ html:not(.stages-on) .stage__nav{display:none}
   display:block;margin-top:.24rem}
 .dive a:hover .dt{color:#B8512A}
 .dive.is-held .dk::after{content:" — paused";opacity:.6;letter-spacing:.08em}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MOBILE MEMORY — iOS Safari was killing the tab.
+   Measured on the live homepage at phone width: 11.3 MB of media and about
+   309 MB of decoded image memory across 24 stacked scenes. Safari drops a
+   tab long before that, which is why the site "did not open" on a phone.
+   Offscreen and inactive scenes must not paint or decode.
+   ═══════════════════════════════════════════════════════════════════════ */
+.scene:not(.is-on){
+  visibility:hidden;              /* lets the engine skip paint entirely */
+  content-visibility:hidden;      /* and skip layout + decode of its images */
+}
+.scene.is-on{visibility:visible;content-visibility:visible}
+.scene.is-out{visibility:visible}  /* keep the outgoing one through its turn */
+
+/* bands far down the page do not render until they are near */
+.stage, .gal, .shelf, .amm, .cvids, .sec.listen, #watch{
+  content-visibility:auto;
+  contain-intrinsic-size:auto 700px;
+}
