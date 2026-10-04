@@ -26,63 +26,78 @@
   },
   {
    "src": "/assets/img/v2/wix-mexico-dancers-1800px.jpg",
-   "cap": "The dancers in white"
+   "cap": "The dancers in white",
+   "src_900": "/assets/img/v2/wix-mexico-dancers-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-crown-dancers-fire-1800px.jpg",
-   "cap": "The night fire"
+   "cap": "The night fire",
+   "src_900": "/assets/img/v2/wix-crown-dancers-fire-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/gallery-turquoise-hand-1400px.jpg",
-   "cap": "Turquoise and red earth"
+   "cap": "Turquoise and red earth",
+   "src_900": "/assets/img/v2/gallery-turquoise-hand-1400px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-heirloom-corn-baskets-1800px.jpg",
-   "cap": "The seeds of the ancestors"
+   "cap": "The seeds of the ancestors",
+   "src_900": "/assets/img/v2/wix-heirloom-corn-baskets-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-woven-baskets-1800px.jpg",
-   "cap": "The weavers' plaques"
+   "cap": "The weavers' plaques",
+   "src_900": "/assets/img/v2/wix-woven-baskets-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/real-sheep-under-butte-1800px.jpg",
-   "cap": "The flock under the butte"
+   "cap": "The flock under the butte",
+   "src_900": "/assets/img/v2/real-sheep-under-butte-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-feather-parade-1800px.jpg",
-   "cap": "The feather parade"
+   "cap": "The feather parade",
+   "src_900": "/assets/img/v2/wix-feather-parade-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-elder-yellow-motorcycle-1800px.jpg",
-   "cap": "The elder and the motorcycle"
+   "cap": "The elder and the motorcycle",
+   "src_900": "/assets/img/v2/wix-elder-yellow-motorcycle-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-tony-green-field-1800px.jpg",
-   "cap": "In the green field"
+   "cap": "In the green field",
+   "src_900": "/assets/img/v2/wix-tony-green-field-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/real-teton-river-1800px.jpg",
-   "cap": "The river and the peaks"
+   "cap": "The river and the peaks",
+   "src_900": "/assets/img/v2/real-teton-river-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-valley-sunset-1800px.jpg",
-   "cap": "The valley at sundown"
+   "cap": "The valley at sundown",
+   "src_900": "/assets/img/v2/wix-valley-sunset-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/real-garden-path-1800px.jpg",
-   "cap": "The garden path"
+   "cap": "The garden path",
+   "src_900": "/assets/img/v2/real-garden-path-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/real-elder-hands-braiding-1800px.jpg",
-   "cap": "Her hands at work"
+   "cap": "Her hands at work",
+   "src_900": "/assets/img/v2/real-elder-hands-braiding-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-elder-hands-turquoise-1800px.jpg",
-   "cap": "An elder's hands"
+   "cap": "An elder's hands",
+   "src_900": "/assets/img/v2/wix-elder-hands-turquoise-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-river-peaks-1800px.jpg",
-   "cap": "The river below the peaks"
+   "cap": "The river below the peaks",
+   "src_900": "/assets/img/v2/wix-river-peaks-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-red-road-conversation-1800px.jpg",
@@ -90,7 +105,8 @@
   },
   {
    "src": "/assets/img/v2/wix-vintage-car-1800px.jpg",
-   "cap": "The old car"
+   "cap": "The old car",
+   "src_900": "/assets/img/v2/wix-vintage-car-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-hogan-two-people-1800px.jpg",
@@ -102,19 +118,23 @@
   },
   {
    "src": "/assets/img/v2/wix-gathering-on-the-grass-1800px.jpg",
-   "cap": "A gathering on the grass"
+   "cap": "A gathering on the grass",
+   "src_900": "/assets/img/v2/wix-gathering-on-the-grass-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-elder-hands-cloth-1800px.jpg",
-   "cap": "Hands at rest"
+   "cap": "Hands at rest",
+   "src_900": "/assets/img/v2/wix-elder-hands-cloth-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-corn-sunset-1800px.jpg",
-   "cap": "The corn field at dusk"
+   "cap": "The corn field at dusk",
+   "src_900": "/assets/img/v2/wix-corn-sunset-1800px-900w.jpg"
   },
   {
    "src": "/assets/img/v2/wix-sheep-red-rock-1800px.jpg",
-   "cap": "Sheep under the red rock"
+   "cap": "Sheep under the red rock",
+   "src_900": "/assets/img/v2/wix-sheep-red-rock-1800px-900w.jpg"
   }
  ],
  "shelf": [

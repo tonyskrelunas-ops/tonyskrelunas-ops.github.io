@@ -155,6 +155,13 @@
   }
   dives();
 
+
+  function srcsetFor(o, key){
+    var full=o[key], small=o[key+'_900'];
+    if(!small) return 'src="'+full+'"';
+    return 'src="'+full+'" srcset="'+small+' 900w, '+full+' 1800w" sizes="(max-width:820px) 100vw, 900px"';
+  }
+
   function boot() {
     document.documentElement.classList.add('stages-on');
     document.querySelectorAll('.stage').forEach(function (s, n) { Stage(s, n); });

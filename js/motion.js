@@ -27,8 +27,9 @@
     el = document.querySelector('[data-gallery]');
     if (el && R.gallery) {
       el.innerHTML = shuffle(R.gallery).map(function (g) {
-        return '<figure class="gal__fig"><img src="' + g.src + '" alt="' + esc(g.cap) +
-               '" ><figcaption>' + esc(g.cap) + '</figcaption></figure>';
+        var ss = g.src_900 ? ' srcset="' + g.src_900 + ' 900w, ' + g.src + ' 1800w" sizes="(max-width:820px) 100vw, 460px"' : '';
+        return '<figure class="gal__fig"><img src="' + g.src + '"' + ss + ' alt="' + esc(g.cap) +
+               '" loading="lazy" decoding="async"><figcaption>' + esc(g.cap) + '</figcaption></figure>';
       }).join('');
     }
 
@@ -37,7 +38,7 @@
     if (el && R.shelf) {
       el.innerHTML = shuffle(R.shelf).map(function (b) {
         return '<a class="shelf__b" href="' + b.href + '"><img src="' + b.img + '" alt="' +
-               esc(b.t) + '" loading="lazy"><span class="shelf__t">' + esc(b.t) +
+               esc(b.t) + '" loading="lazy" decoding="async"><span class="shelf__t">' + esc(b.t) +
                '</span><span class="shelf__k">' + esc(b.k) + '</span></a>';
       }).join('');
     }
