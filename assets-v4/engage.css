@@ -67,3 +67,12 @@
   border:1px solid rgba(107,90,73,.4);border-radius:999px;
   font-style:normal;font-size:.76em;letter-spacing:.06em;text-transform:none;
   color:#6B5A49;background:rgba(107,90,73,.06);vertical-align:.08em}
+
+/* The confirmation a reader sees after signing up. Honest: the address
+   reached Tony. Nothing claims an email is already on its way. */
+.cap-done{margin:.9rem 0 0;padding:.9rem 1.05rem;border-left:3px solid #2F6B4F;
+  background:rgba(47,107,79,.07);border-radius:2px;
+  font-family:var(--body,system-ui);color:#2C2317}
+.cap-done b{display:block;font-size:1rem;line-height:1.4}
+.cap-done span{display:block;margin-top:.3rem;font-size:.88rem;color:#4A4039}
+.cap-done--err{border-left-color:#8A3C1E;background:rgba(138,60,30,.07)}

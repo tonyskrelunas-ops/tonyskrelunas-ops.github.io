@@ -12,6 +12,10 @@ cd ~/Documents/TribeAwaken || { echo "repo missing"; exit 1; }
 echo "── $(date '+%Y-%m-%d %H:%M') ─────────────────────────────"
 python3 _tools/refresh-magazine-daily.py
 rc=$?
+
+# keep the member list current — Tony should never harvest an address by hand
+python3 _tools/pull-subscribers.py || echo "subscriber pull failed (list unchanged)"
+
 [ $rc -ne 0 ] && { echo "engine failed (rc=$rc) — nothing pushed"; exit $rc; }
 
 if [ -n "$(git status --porcelain js/magazine-feed.json journal/index.html)" ]; then
