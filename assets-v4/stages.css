@@ -76,12 +76,12 @@ html:not(.stages-on) .stage__nav{display:none}
   offset-distance:0%;
   animation:walker-cross 26s linear infinite;
 }
-.walker__body{animation:walker-bob .62s ease-in-out infinite}
+.walker__body{animation:walker-bob .78s ease-in-out infinite}
 .walker__leg,.walker__arm{transform-box:fill-box;transform-origin:top left}
-.walker__leg--f{animation:swing-fwd .62s ease-in-out infinite}
-.walker__leg--b{animation:swing-back .62s ease-in-out infinite}
-.walker__arm--f{animation:swing-back .62s ease-in-out infinite}
-.walker__arm--b{animation:swing-fwd .62s ease-in-out infinite}
+.walker__leg--f{animation:swing-fwd .78s ease-in-out infinite}
+.walker__leg--b{animation:swing-back .78s ease-in-out infinite}
+.walker__arm--f{animation:swing-back .78s ease-in-out infinite}
+.walker__arm--b{animation:swing-fwd .78s ease-in-out infinite}
 
 @keyframes walker-cross{
   from{offset-distance:0%}
@@ -91,13 +91,14 @@ html:not(.stages-on) .stage__nav{display:none}
   0%,100%{transform:translateY(0)}
   50%{transform:translateY(-1.6px)}
 }
+/* a walk, not a leap: a short swing, and a slower cadence */
 @keyframes swing-fwd{
-  0%,100%{transform:rotate(14deg)}
-  50%{transform:rotate(-16deg)}
+  0%,100%{transform:rotate(8deg)}
+  50%{transform:rotate(-9deg)}
 }
 @keyframes swing-back{
-  0%,100%{transform:rotate(-16deg)}
-  50%{transform:rotate(14deg)}
+  0%,100%{transform:rotate(-9deg)}
+  50%{transform:rotate(8deg)}
 }
 
 /* a second, far messenger on the ridge behind — the ones who went before */
