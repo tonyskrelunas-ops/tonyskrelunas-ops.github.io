@@ -218,3 +218,21 @@ html:not(.stages-on) .stage__nav{display:none}
   .stage__menu-i.is-on i{color:#8A3C1E}
 }
 @media (prefers-reduced-motion:reduce){ .stage__menu-i{transition:none} }
+
+/* ═══ THE ARROWS MOVE ════════════════════════════════════════════════════
+   Tony, 10/4: "i like the arrow on there but things are supposed to be
+   animated." A slow travel on its own so the page is never quite still,
+   and a decisive step forward under the cursor. Off under reduced motion. */
+.arrow span,.btn span,a.arrow::after,.four__more span{display:inline-block}
+.arrow span,.four__more span,.btn--primary span{
+  animation:arrow-drift 3.4s ease-in-out infinite;will-change:transform}
+a:hover .arrow span,a:hover .four__more span,
+.btn:hover span,.arrow:hover span{animation:none;transform:translateX(5px);
+  transition:transform .22s cubic-bezier(.22,.7,.2,1)}
+@keyframes arrow-drift{
+  0%,70%,100%{transform:translateX(0)}
+  82%{transform:translateX(4px)}
+}
+@media (prefers-reduced-motion:reduce){
+  .arrow span,.four__more span,.btn--primary span{animation:none}
+}
