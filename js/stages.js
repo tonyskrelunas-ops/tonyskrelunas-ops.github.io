@@ -109,8 +109,11 @@
         { threshold: 0, rootMargin: '1200px 0px 1200px 0px' }).observe(root);
     }
 
-    var every = 5200 + ordinal * 900 + Math.floor(Math.random() * 900);    // 5-8s, staggered
-    var first = 1700 + ordinal * 500;                                      // FIRST turn fast
+    var every = 6000 + ordinal * 400;        // ~6s, lightly staggered so they never flip in unison
+    var first = 1800 + ordinal * 450;        // the first turn comes quickly
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden && !held && visible) next();   // resume on return
+    });
     setTimeout(function () {
       if (held) return;
       if (visible && !document.hidden) next();
@@ -157,8 +160,8 @@
             timer = setInterval(function(){
               if (held || !vis || document.hidden) return;
               at = (at + 1) % pool.length; paint();
-            }, 5600 + k*800);
-          }, 1500 + k*450);
+            }, 6000 + k*350);
+          }, 1600 + k*400);
         });
       }).catch(function(){});
   }
