@@ -71,3 +71,24 @@
   background:#F5F2EC;border:1px solid rgba(26,21,18,.14);border-radius:3px;padding:.4rem .7rem;color:#1A1512}
 .mag-share__row{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
 .mag-share__done{color:#1E6E34;font-weight:700;margin-top:.9rem}
+
+/* ═══ THE WORLD, BESIDE THE NAMEPLATE ═══════════════════════════════════
+   Tony, 10/4: the four languages belong to the right of the logo, each
+   with its own news — and "maybe a global map," drawn in the pen-and-ink
+   style of the Council Fire maps. The Far Messenger runs the circuit.
+   An <object>, not an <img>, so the places stay clickable and he keeps
+   running.                                                               */
+.mast__top{display:grid;gap:clamp(1.2rem,1rem + 1.6vw,2.4rem);align-items:center}
+.mast__id{min-width:0}
+.mast__map{min-width:0}
+.mast__map object{display:block;width:100%;height:auto;aspect-ratio:1056/560;
+  border:0;pointer-events:auto}
+@media (min-width:1000px){
+  .mast__top{grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);text-align:left}
+  .mast__id{text-align:left}
+  .mast .mast__emblem{margin-inline:0;width:min(100%,360px)}
+  .mast__id h1{text-align:left;font-size:clamp(2.2rem,1rem + 3.4vw,4.2rem)}
+}
+@media (max-width:999px){
+  .mast__map{margin-top:.4rem}
+}
