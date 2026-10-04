@@ -10,6 +10,14 @@
      · prefers-reduced-motion: auto-rotation OFF entirely, dots only
    Without JS every scene simply stacks and reads as a normal page. */
 (function () {
+  /* on a phone, ask for the 900px file outright — srcset still lets a
+     desktop take the full-size one. Keeps iOS Safari inside its memory. */
+  var SMALL = (typeof innerWidth !== 'undefined') && innerWidth <= 900;
+  function pick900(full, small){
+    if (SMALL && small) return small;
+    return full;
+  }
+
   var REDUCE = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function Stage(root, ordinal) {

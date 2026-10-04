@@ -3,6 +3,14 @@
    LOSE NOTHING: this only fills NEW bands and reorders existing ones.
    No existing content is removed. Without JS the page is the static site. */
 (function () {
+  /* on a phone, ask for the 900px file outright — srcset still lets a
+     desktop take the full-size one. Keeps iOS Safari inside its memory. */
+  var SMALL = (typeof innerWidth !== 'undefined') && innerWidth <= 900;
+  function pick900(full, small){
+    if (SMALL && small) return small;
+    return full;
+  }
+
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   function pick(a){ return a[Math.floor(Math.random()*a.length)]; }
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;} return a; }
@@ -27,8 +35,9 @@
     el = document.querySelector('[data-gallery]');
     if (el && R.gallery) {
       el.innerHTML = shuffle(R.gallery).map(function (g) {
+        var use = pick900(g.src, g.src_900);
         var ss = g.src_900 ? ' srcset="' + g.src_900 + ' 900w, ' + g.src + ' 1800w" sizes="(max-width:820px) 100vw, 460px"' : '';
-        return '<figure class="gal__fig"><img src="' + g.src + '"' + ss + ' alt="' + esc(g.cap) +
+        return '<figure class="gal__fig"><img src="' + use + '"' + ss + ' alt="' + esc(g.cap) +
                '" loading="lazy" decoding="async"><figcaption>' + esc(g.cap) + '</figcaption></figure>';
       }).join('');
     }
@@ -37,7 +46,7 @@
     el = document.querySelector('[data-shelf]');
     if (el && R.shelf) {
       el.innerHTML = shuffle(R.shelf).map(function (b) {
-        return '<a class="shelf__b" href="' + b.href + '"><img src="' + b.img + '" alt="' +
+        return '<a class="shelf__b" href="' + b.href + '"><img src="' + pick900(b.img, b.img_900) + '" alt="' +
                esc(b.t) + '" loading="lazy" decoding="async"><span class="shelf__t">' + esc(b.t) +
                '</span><span class="shelf__k">' + esc(b.k) + '</span></a>';
       }).join('');
