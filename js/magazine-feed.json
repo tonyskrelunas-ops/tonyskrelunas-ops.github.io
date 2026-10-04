@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-04T11:42:09",
+ "generated": "2026-10-04T12:10:02",
  "mine": [
   {
    "slug": "why-i-started-a-magazine-again",
@@ -46,6 +46,18 @@
      "title": "Hable solo lo que quiera construir",
      "dek": "Mi bisabuela corregía una palabra descuidada igual que corregía una herramienta dejada donde no iba.",
      "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/nozomu-koto-dake-wo-kataru/",
+     "title": "築きたいことだけを口にせよ",
+     "dek": "曾祖母は、不用意な言葉を、置き場所を間違えた道具とまったく同じように正した。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/kalbek-tik-tai-ka-nori-pastatyti/",
+     "title": "Kalbėk tik tai, ką nori pastatyti",
+     "dek": "Promočiutė taisydavo neapgalvotą žodį lygiai taip, kaip taisydavo ne į tą vietą padėtą įrankį.",
+     "pillar": "Žmogaus atsparumas"
     }
    }
   },
@@ -64,6 +76,18 @@
      "title": "El deseo angosta la mirada",
      "dek": "Mi abuelo nunca tuvo dinero y no fue pobre un solo día de su vida.",
      "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/hossuru-koto-wa-me-wo-sebameru/",
+     "title": "欲することは眼を狭める",
+     "dek": "祖父は金を持たないまま百三歳まで生き、一日も貧しくなかった。四つの富の帳簿について。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/noras-susiaurina-aki/",
+     "title": "Noras susiaurina akį",
+     "dek": "Senelis sulaukė šimto trejų be pinigų ir nė dienos nebuvo vargšas. Apie keturių turtų apskaitą.",
+     "pillar": "Žmogaus atsparumas"
     }
    }
   },
@@ -88,6 +112,12 @@
      "title": "Akmens kvėpavimas išėjo į pasaulį",
      "dek": "Kodėl pusė šios knygos vyksta Lietuvoje — Antalieptėje, tarp dainų.",
      "pillar": "Knygos"
+    },
+    "es": {
+     "href": "/es/stone-breath-salio-al-mundo/",
+     "title": "Stone Breath salió al mundo",
+     "dek": "Distribución mundial: Apple Books, Kobo, librerías de Berlín a Sídney. Un solo enlace alcanza todo.",
+     "pillar": "Los libros"
     }
    }
   },
