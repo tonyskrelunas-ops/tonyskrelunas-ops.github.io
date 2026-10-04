@@ -47,9 +47,10 @@
       if (band.timer) { clearInterval(band.timer); band.timer = null; }
       root.classList.add('is-paused');
     }
-    ['pointerdown', 'keydown'].forEach(function (ev) {
-      root.addEventListener(ev, stopForever, { passive: true });
-    });
+    /* pointerdown fires when a finger lands to scroll, which stopped every
+       band on a phone before it had turned once. A tap, not a scroll. */
+    if (window.taphold) { window.taphold(root, stopForever); }
+    else { root.addEventListener('click', stopForever, { passive: true }); }
     new IntersectionObserver(function (es) {
       es.forEach(function (e) { band.visible = e.isIntersecting; });
     }, { threshold: .25 }).observe(root);

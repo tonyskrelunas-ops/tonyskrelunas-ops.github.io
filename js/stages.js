@@ -72,9 +72,11 @@
       root.classList.add('is-held');
       clearInterval(timer); timer = null;
     }
-    ['click', 'touchstart', 'focusin', 'keydown'].forEach(function (ev) {
-      root.addEventListener(ev, hold, { passive: true });
-    });
+    /* A deliberate tap hands the stage over. A scroll does not: touchstart
+       fires the moment a finger lands, so this used to freeze every band on
+       a phone at the first scroll. See js/tap.js. */
+    if (window.taphold) { window.taphold(root, hold); }
+    else { root.addEventListener('click', hold, { passive: true }); }
     dots.forEach(function (d, n) {
       d.addEventListener('click', function (e) { e.preventDefault(); hold(); show(n); });
     });
