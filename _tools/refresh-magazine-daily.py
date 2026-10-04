@@ -56,6 +56,14 @@ SOURCES_BY_LANG = {
               ("Village Square",   "https://www.villagesquare.in/feed/"),
               ("Sahapedia",        "https://www.sahapedia.org/rss.xml"),
               ("Mongabay India",   "https://india.mongabay.com/feed/")],
+    # Tibet reads in English, from the exile community's own publications.
+    # Most Tibetan journalism is necessarily about occupation and surveillance,
+    # which the gates turn away; what clears them is the life being kept up —
+    # the settlements, the schools, the athletes, the marathons, the language.
+    "tibet": [("Phayul",                "https://www.phayul.com/feed/"),
+              ("Tibetan Review",        "https://www.tibetanreview.net/feed/"),
+              ("Central Tibetan Administration", "https://tibet.net/feed/"),
+              ("Tibet Policy Institute","https://tibetpolicy.net/feed/")],
     # China — the plumbing is ready and the gates are written, but there is
     # no Chinese equivalent of greenz or IDEAS FOR GOOD in here yet. The
     # general-news feeds I tried produce almost nothing that clears the gates,
@@ -140,7 +148,7 @@ def brief(feed):
 
     out, seen = [], set()
     for rank in range(2):
-        for lang in ("en", "es", "ja", "lt", "india", "zh"):
+        for lang in ("en", "es", "ja", "lt", "india", "tibet", "zh"):
             lst = best.get(lang, [])
             if rank >= len(lst): continue
             it = lst[rank]

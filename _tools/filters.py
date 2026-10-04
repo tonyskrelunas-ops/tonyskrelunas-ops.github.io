@@ -95,7 +95,11 @@ ALARM = re.compile(
   r"įspėj|krizė|grės|pavoj|blogėj|žlug|avarin|protest|rinkim|"
   r"seimo|seimas|ministr|politik|partij|"
   r"警告|危机|风险|威胁|恶化|崩溃|紧急|抗议|选举|议员|部长|政党|政治|制裁|审判|"
-  r"当局|被捕|流亡|煎熬|审查|管控|打压|冲突|争端|疫情|裁员|失业)", re.I)
+  r"当局|被捕|流亡|煎熬|审查|管控|打压|冲突|争端|疫情|裁员|失业|"
+  r"surveillance|occupied|occupation|crackdown|repress|detention|"
+  r"geopolitic|strategic|succession|reckoning|deferred|sanction|"
+  r"mining|lithium|extraction|reserves|displac|resettle|"
+  r"infrastructure development|runaway|boarding school)", re.I)
 
 # ── 4. junk, in any language ─────────────────────────────────────────────────
 JUNK = {
@@ -138,3 +142,16 @@ UPLIFT["zh"] = re.compile(
   r"努力|尝试|诞生|连接|相连|学习|馈赠|赠送|分享|重建|焕新|传承)")
 JUNK["india"] = JUNK["en"]
 JUNK["zh"] = re.compile(r"(明星|绯闻|八卦|彩票|加密货币|博彩|网红带货)")
+
+# Tibet reads in English, from the exile community's own publications. Its
+# own vocabulary matters: settlement, monastery, thangka, the language itself.
+# Tony, 10/4, after I showed him China had no source worth reading: "do tibet."
+TOPIC["tibet"] = re.compile(TOPIC["en"].pattern +
+  r"|\b(tibet|tibetan|settlement|monaster|nunnery|monk|nun|thangka|"
+  r"dharamshala|dharamsala|himalay|plateau|nomad|yak|barley|tsampa|"
+  r"sowa rigpa|men-tsee-khang|opera|lhamo|exile|refugee school|"
+  r"language class|manuscript|archive|pilgrim|festival|losar)", re.I)
+UPLIFT["tibet"] = re.compile(UPLIFT["en"].pattern +
+  r"|\b(gold medal|clinch|marathon|rally|roadmap|observed|marks|"
+  r"inaugurat|enrol|graduat|scholarship|preserv|revitalis|revitaliz)", re.I)
+JUNK["tibet"] = JUNK["en"]

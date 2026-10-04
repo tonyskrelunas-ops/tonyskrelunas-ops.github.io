@@ -22,6 +22,10 @@ Lietuvos nacionalinis muziejus (LNM) savo padalinyje Jono Šliūpo muziejuje (Vy
 “We are using our own hands to clean the poison people throw away.” What started as a few people cleaning their surroundings has grown into a community movement. Since 1   
 <https://thebetterindia.com/videos/society/350-volunteers-thousands-of-tonnes-of-waste-removed-12623415>
 
+**Tibetan athlete Tenzin Choezom clinches gold medal at Asian Games** — Phayul · TIBET  
+Tenzin Nyidon DHARAMSHALA, Sept. 30: Tibetan athlete Tenzin Choezom has bagged a gold medal in the women’s marathon race walk at the 2026 Asian Games after Kazakhstan’s Y  
+<https://phayul.com/tibetan-athlete-tenzin-choezom-clinches-gold-medal-at-asian-games/>
+
 **Antarctica’s Wind Farm Saves 122,000 Gallons of Diesel Over 15 Years Powering McMurdo Station** — Good News Network  
 As they near the end of their productive lives, the 3 wind turbines spinning on Antarctica’s Ross Island have made an enormous impact on the energy market of the continen  
 <https://www.goodnewsnetwork.org/antarcticas-wind-farm-saves-122000-gallons-of-diesel-over-15-years-powering-mcmurdo-station/>
@@ -41,3 +45,7 @@ Lietuvos nacionalinio muziejaus (LNM) padalinyje Palangos burmistro Jono Šliūp
 **How girls are building their own safety networks** — Village Square · INDIA  
 Think about the last time something felt wrong in your life. Chances are the first person who noticed was a friend, well before a parent, teacher or counsellor. Aangan ru  
 <https://villagesquare.in/how-girls-are-building-their-own-safety-networks/>
+
+**7th peace rally marathon for Tibet underway in Canada** — Phayul · TIBET  
+Tenzin Nyidon DHARAMSHALA, Sept. 29: The 7th Peace Rally Marathon for Tibet reached its fifth day on Sunday, with a five-member team continuing its 450-kilometre journey   
+<https://phayul.com/7th-peace-rally-marathon-for-tibet-underway-in-canada/>
