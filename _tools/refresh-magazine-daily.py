@@ -109,20 +109,27 @@ def brief(feed):
     He asked for the breakthroughs worth knowing about. Ranked by how much
     uplift language the piece carries, deduped, newest first, with the link.
     """
-    pool = []
+    # two from each language, so the brief is a view of the world and not
+    # whichever feed happened to use the most uplifting words that morning
+    best = {}
     for k in ("found", "found_es", "found_ja", "found_lt"):
         lang = k.replace("found_", "") if "_" in k else "en"
+        ranked = []
         for it in feed.get(k, []):
             blob = it["title"] + " " + it["dek"]
-            score = len(UPLIFT[lang].findall(blob)) + (1 if it["date"] else 0)
-            pool.append((score, lang, it))
-    pool.sort(key=lambda t: (-t[0], t[2]["date"] or ""), reverse=False)
-    pool.sort(key=lambda t: -t[0])
+            ranked.append((len(UPLIFT[lang].findall(blob)), it))
+        ranked.sort(key=lambda t: -t[0])
+        best[lang] = [it for _, it in ranked]
+
     out, seen = [], set()
-    for score, lang, it in pool:
-        if it["url"] in seen: continue
-        seen.add(it["url"]); out.append((lang, it))
-        if len(out) >= 8: break
+    for rank in range(2):
+        for lang in ("en", "es", "ja", "lt"):
+            lst = best.get(lang, [])
+            if rank >= len(lst): continue
+            it = lst[rank]
+            if it["url"] in seen: continue
+            seen.add(it["url"]); out.append((lang, it))
+
     d = datetime.date.today().isoformat()
     L = ["# Best ideas today — %s" % d, "",
          "From the magazine's own engine. Every one is live and shareable.", ""]
