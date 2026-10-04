@@ -40,6 +40,9 @@ SOURCES_BY_LANG = {
            ("México Desconocido", "https://www.mexicodesconocido.com.mx/feed"),
            ("Causa Natura",       "https://causanatura.org/feed"),
            ("Local.mx",           "https://local.mx/feed/"),
+           ("Mongabay Latam",     "https://es.mongabay.com/feed/"),
+           ("Servindi",           "https://www.servindi.org/rss.xml"),
+           ("Inforegión",         "https://www.inforegion.pe/feed/"),
            ("Climática",          "https://www.climatica.lamarea.com/feed/"),
            ("Ethic",              "https://ethic.es/feed/")],
     "ja": [("IDEAS FOR GOOD", "https://ideasforgood.jp/feed/"),
@@ -48,6 +51,19 @@ SOURCES_BY_LANG = {
     "lt": [("Bernardinai",       "https://www.bernardinai.lt/feed/"),
            ("Kaunas pilnas kultūros", "https://kaunaspilnas.lt/feed/"),
            ("Nacionalinis muziejus",  "https://lnm.lt/feed/")],
+    # India reads in English, from Indian publications.
+    "india": [("The Better India", "https://www.thebetterindia.com/feed/"),
+              ("Village Square",   "https://www.villagesquare.in/feed/"),
+              ("Sahapedia",        "https://www.sahapedia.org/rss.xml"),
+              ("Mongabay India",   "https://india.mongabay.com/feed/")],
+    # China — the plumbing is ready and the gates are written, but there is
+    # no Chinese equivalent of greenz or IDEAS FOR GOOD in here yet. The
+    # general-news feeds I tried produce almost nothing that clears the gates,
+    # and what does clear them is not what this magazine is for. So the
+    # edition stays unpublished until there is a source worth reading, rather
+    # than going out thin. 少数派 and 知乎日报 are the closest in register.
+    "zh": [("少数派",  "https://sspai.com/feed"),
+           ("知乎日报", "https://feedx.net/rss/zhihudaily.xml")],
 }
 
 def fetch(url, timeout=25):
@@ -112,8 +128,9 @@ def brief(feed):
     # two from each language, so the brief is a view of the world and not
     # whichever feed happened to use the most uplifting words that morning
     best = {}
-    for k in ("found", "found_es", "found_ja", "found_lt"):
+    for k in [x for x in feed if x == "found" or x.startswith("found_")]:
         lang = k.replace("found_", "") if "_" in k else "en"
+        if lang not in UPLIFT: continue
         ranked = []
         for it in feed.get(k, []):
             blob = it["title"] + " " + it["dek"]
@@ -123,7 +140,7 @@ def brief(feed):
 
     out, seen = [], set()
     for rank in range(2):
-        for lang in ("en", "es", "ja", "lt"):
+        for lang in ("en", "es", "ja", "lt", "india", "zh"):
             lst = best.get(lang, [])
             if rank >= len(lst): continue
             it = lst[rank]

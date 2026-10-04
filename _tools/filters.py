@@ -93,7 +93,9 @@ ALARM = re.compile(
   r"persigu|r[ée]ditos|"
   r"警告|危機|懸念|悪化|崩壊|緊急|抗議|選挙|議員|大臣|政党|政治|"
   r"įspėj|krizė|grės|pavoj|blogėj|žlug|avarin|protest|rinkim|"
-  r"seimo|seimas|ministr|politik|partij)", re.I)
+  r"seimo|seimas|ministr|politik|partij|"
+  r"警告|危机|风险|威胁|恶化|崩溃|紧急|抗议|选举|议员|部长|政党|政治|制裁|审判|"
+  r"当局|被捕|流亡|煎熬|审查|管控|打压|冲突|争端|疫情|裁员|失业)", re.I)
 
 # ── 4. junk, in any language ─────────────────────────────────────────────────
 JUNK = {
@@ -114,3 +116,25 @@ def passes(blob, lang):
     u = UPLIFT.get(lang)
     if u and not u.search(blob):                 return False, "not uplifting"
     return True, ""
+
+
+# India reads in English, so it uses the English gates with a few more of its
+# own words. China reads in Chinese.
+TOPIC["india"] = re.compile(TOPIC["en"].pattern +
+  r"|\b(village|panchayat|artisan|handloom|khadi|millet|monsoon|forest dweller|"
+  r"adivasi|tribal|temple|festival|craft|weaver|potter|farmer|self-help group|"
+  r"watershed|stepwell|heritage|folk|classical|raga|ayurved|yoga)", re.I)
+TOPIC["zh"] = re.compile(
+  r"(社区|社群|乡村|村|修复|再生|循环|长者|老人|原住民|少数民族|农|种子|水|森林|河|土地|"
+  r"健康|疗愈|康复|韧性|长寿|平静|睡眠|步行|手艺|手工|编织|织|语言|学校|青年|邻里|"
+  r"合作社|在地|本地|修理|太阳能|照护|生活|树|植树|公园|花园|自然|气候|能源|"
+  r"文化|博物馆|图书馆|音乐|舞蹈|艺术|食物|市集|书|记忆|传统|非遗|古镇|手作)")
+UPLIFT["india"] = re.compile(UPLIFT["en"].pattern +
+  r"|\b(revive|revived|reviving|uplift|empower|rejuvenat|turnaround|"
+  r"planted|restored|crore saved|model village)", re.I)
+UPLIFT["zh"] = re.compile(
+  r"(实现|成功|开设|开张|开馆|开幕|举办|建成|完成|复活|复兴|重生|再生|恢复|救|守护|培育|"
+  r"推广|扩大|首次|首个|获奖|得奖|纪录|庆祝|支持|帮助|改善|提升|希望|欢喜|喜悦|"
+  r"努力|尝试|诞生|连接|相连|学习|馈赠|赠送|分享|重建|焕新|传承)")
+JUNK["india"] = JUNK["en"]
+JUNK["zh"] = re.compile(r"(明星|绯闻|八卦|彩票|加密货币|博彩|网红带货)")

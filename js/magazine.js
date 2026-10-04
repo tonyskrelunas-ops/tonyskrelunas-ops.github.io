@@ -16,6 +16,10 @@
 
   /* an edition shows his article in its own language when that version
      exists, and falls back to the English one when it does not */
+  /* India reads in English, so the edition is named on <html> and the
+     language attribute alone cannot identify it. */
+  var EDITION = document.documentElement.getAttribute('data-edition') ||
+                (document.documentElement.lang || 'en').slice(0, 2);
   var LANG = (document.documentElement.lang || 'en').slice(0, 2);
   function inLang(a) {
     if (LANG === 'en' || !a.tr || !a.tr[LANG]) return a;
@@ -101,9 +105,8 @@
 
       /* good news from the world — only renders once the daily job has run,
          so the page never shows an empty promise */
-      var lang = (document.documentElement.lang || 'en').slice(0,2);
-      var found = (lang !== 'en' && F['found_' + lang] && F['found_' + lang].length)
-                  ? F['found_' + lang] : (F.found || []);
+      var found = (EDITION !== 'en' && F['found_' + EDITION] && F['found_' + EDITION].length)
+                  ? F['found_' + EDITION] : (F.found || []);
       var box = document.querySelector('[data-found]');
       if (box) {
         if (!found.length) { box.hidden = true; }
