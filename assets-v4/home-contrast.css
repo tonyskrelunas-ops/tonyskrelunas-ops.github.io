@@ -1,0 +1,115 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   HOMEPAGE CONTRAST FIX — 2026-10-04
+   Two real defects found by measuring every text element against the
+   surface actually behind it:
+
+   1. v2.css:1222 paints white panels on #far-messenger, #chapters,
+      #stone-breath, #the-reader, #traditions — but v2.css:938 keeps
+      .scene__body text cream. Cream on white measured 1.07:1. Invisible.
+   2. Bands with no panel sit on a dark per-image scrim, yet carried the
+      Courage deep-blue headline (#124279) — measured 1.31:1 and 1.51:1.
+
+   Loaded last on the homepage only. Interiors have their own file.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── 1. text on the white panels reads as ink ── */
+html.courage #far-messenger .wrap--mid, html.courage #chapters .wrap--mid,
+html.courage #stone-breath .wrap--mid, html.courage #the-reader .wrap,
+html.courage #traditions .wrap{
+  color:#23301F;
+  padding:clamp(1.4rem,2.6vw,2.6rem);
+  border-radius:3px;
+  box-shadow:0 26px 60px -30px rgba(18,40,30,.45);
+}
+html.courage #far-messenger .wrap--mid :is(p,li,span,b,strong,em,summary,div),
+html.courage #chapters .wrap--mid :is(p,li,span,b,strong,em,summary,div),
+html.courage #stone-breath .wrap--mid :is(p,li,span,b,strong,em,summary,div),
+html.courage #the-reader .wrap :is(p,li,span,b,strong,em,summary,div),
+html.courage #traditions .wrap :is(p,li,span,b,strong,em,summary,div){
+  color:#23301F !important;text-shadow:none !important}
+html.courage #chapters .scene__body,
+html.courage #chapters .scene__body p,
+html.courage .hasphoto .wrap--mid .scene__body,
+html.courage .hasphoto .wrap--mid .scene__body p{color:#23301F !important}
+html.courage #chapters .scene__body .say{color:#7B3418 !important}
+html.courage #far-messenger .wrap--mid :is(h2,h3),
+html.courage #chapters .wrap--mid :is(h2,h3),
+html.courage #stone-breath .wrap--mid :is(h2,h3),
+html.courage #the-reader .wrap :is(h2,h3),
+html.courage #traditions .wrap :is(h2,h3){color:#124279 !important}
+html.courage #far-messenger .wrap--mid .eyebrow,
+html.courage #chapters .wrap--mid .eyebrow,
+html.courage #stone-breath .wrap--mid .eyebrow,
+html.courage #the-reader .wrap .eyebrow,
+html.courage #traditions .wrap .eyebrow{color:#1E6E34 !important}
+html.courage #chapters .scene__t b{color:#124279 !important}
+html.courage #chapters .scene__btn{color:#23301F !important}
+
+/* ── 2. bands whose photograph was buried ──────────────────────────────
+   #the-work and its siblings carried an OPAQUE light section background
+   with .photo-bg sitting behind it at z-index:-2 — so the photograph never
+   showed and the text was light-on-light (measured 1.02:1).
+   The law says the background is his photograph, so: let the picture
+   through, and put the reading on paper.
+   ─────────────────────────────────────────────────────────────────────── */
+html.courage #the-work, html.courage #watch,
+html.courage .sec.hasphoto:not([id]){background:transparent !important}
+html.courage #the-work .photo-bg, html.courage #watch .photo-bg,
+html.courage .sec.hasphoto:not([id]) .photo-bg{z-index:0 !important}
+html.courage #the-work > .wrap, html.courage #watch > .wrap,
+html.courage .sec.hasphoto:not([id]) > .wrap{
+  position:relative;z-index:2;
+  background:rgba(252,253,250,.94);
+  padding:clamp(1.5rem,3vw,3rem);
+  border-radius:3px;
+  box-shadow:0 26px 60px -30px rgba(18,40,30,.5);
+  max-width:min(var(--max,1280px),74ch);
+  margin-inline:auto;
+}
+html.courage #the-work > .wrap :is(p,li,b,strong,span),
+html.courage #watch > .wrap :is(p,li,b,strong,span),
+html.courage .sec.hasphoto:not([id]) > .wrap :is(p,li,b,strong,span){
+  color:#23301F !important;text-shadow:none !important}
+html.courage #the-work > .wrap :is(h2,h3,.head),
+html.courage #watch > .wrap :is(h2,h3,.head),
+html.courage .sec.hasphoto:not([id]) > .wrap :is(h2,h3,.head){
+  color:#124279 !important;text-shadow:none !important}
+html.courage #the-work > .wrap .eyebrow,
+html.courage #watch > .wrap .eyebrow,
+html.courage .sec.hasphoto:not([id]) > .wrap .eyebrow{color:#1E6E34 !important}
+html.courage #the-work > .wrap em, html.courage #watch > .wrap em{color:#8A5A12 !important}
+html.courage #the-work .photo-bg::after, html.courage #watch .photo-bg::after,
+html.courage .sec.hasphoto:not([id]) .photo-bg::after{background:none !important}
+
+/* #about keeps its own white bio card — never force its text light */
+html.courage #about .origin > div{background:rgba(255,255,255,.96);color:#23301F}
+html.courage #about .origin > div :is(p,li,span,b,strong){color:#23301F !important}
+html.courage #about .origin > div :is(h2,h3){color:#124279 !important}
+
+/* the video player's own cover sits on black — it stays light */
+html.courage .vwrap, html.courage .vwrap *{color:#FFF6EA !important}
+html.courage .vwrap__label span{color:#E3D3B4 !important}
+
+/* ── the diagnostic close band ────────────────────────────────────────
+   Same buried-photograph pattern as #the-work: .close__bg at z-index:-2
+   behind an opaque light section, and the image only 543px wide, so it
+   read as a grey stripe with a blue headline fighting the greenery.
+   Let the picture cover the band; the reading goes on paper.
+   ─────────────────────────────────────────────────────────────────── */
+html.courage .sec.close{background:transparent !important;position:relative;isolation:isolate}
+html.courage .close__bg{z-index:0 !important;position:absolute;inset:0;overflow:hidden}
+html.courage .close__bg img{width:100% !important;height:100% !important;object-fit:cover}
+html.courage .close__bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(18,40,26,.34),rgba(18,40,26,.14) 60%,rgba(18,40,26,.28))}
+html.courage .sec.close > .wrap{
+  position:relative;z-index:2;
+  background:rgba(252,253,250,.95);
+  padding:clamp(1.6rem,3.2vw,3rem);
+  border-radius:3px;
+  box-shadow:0 26px 60px -30px rgba(18,40,30,.5);
+  max-width:min(var(--max,1280px),66ch);
+  margin-inline:auto;
+}
+html.courage .sec.close :is(h2,h3){color:#124279 !important;text-shadow:none !important}
+html.courage .sec.close :is(p,li,span,b,strong):not(.eyebrow){color:#23301F !important;text-shadow:none !important}
+html.courage .sec.close .eyebrow{color:#1E6E34 !important;text-shadow:none !important}

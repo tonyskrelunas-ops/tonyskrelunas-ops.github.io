@@ -1,0 +1,169 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   INTERIOR PAGES IN DAYLIGHT
+   Tony, 10/4: "everything is going back to dark" — the homepage was the
+   only page wearing the Courage world; every deep page was still the old
+   dark design. They now carry html.courage too. These rules fix the one
+   thing that breaks in the flip: text that was written light for a dark
+   ground, now sitting on a pale photo wash.
+   Loaded LAST on interior pages.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* text over a photograph: ink, with a soft light halo so it separates
+   from the picture without a heavy veil over his photography */
+html.courage .hasphoto .wrap p,
+html.courage .hasphoto .wrap li,
+html.courage .hasphoto .lead,
+html.courage .hasphoto .say,
+html.courage .hasphoto .sec__intro,
+html.courage .hasphoto .essay p,
+html.courage .hasphoto .essay li{
+  color:#1F2A24 !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.55), 0 0 18px rgba(255,255,255,.75);
+}
+html.courage .hasphoto .wrap h2,
+html.courage .hasphoto .wrap h3,
+html.courage .hasphoto .head{
+  color:#124279 !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.5), 0 0 22px rgba(255,255,255,.7);
+}
+html.courage .hasphoto .eyebrow{color:#1E6E34 !important;text-shadow:0 0 14px rgba(255,255,255,.8)}
+html.courage .hasphoto strong,
+html.courage .hasphoto b{color:#0F1A14 !important}
+html.courage .hasphoto em{color:#8A5A12 !important}
+html.courage .hasphoto a{color:#1C5BA8}
+
+/* lift the photograph a touch so the halo reads as light, not as fog */
+html.courage .photo-bg img{filter:saturate(1.06) contrast(.99) brightness(1.1)}
+
+/* the long essays sit on paper, per the deep-dive ruling — never a veil
+   over the whole picture, just a panel where the reading happens */
+html.courage .hasphoto .essay{
+  background:rgba(252,253,250,.90);
+  padding:clamp(1.4rem,2.6vw,2.6rem);
+  border-radius:3px;
+  box-shadow:0 20px 50px -28px rgba(18,40,30,.45);
+  max-width:62ch;
+}
+html.courage .hasphoto .essay p,
+html.courage .hasphoto .essay li{text-shadow:none !important}
+
+/* numbered ledgers and lists keep ink on the pale ground */
+html.courage .num,html.courage .cap__n,html.courage .spindle__k{color:#1E6E34}
+
+/* ── the interior hero: headline + lead sit on a photograph ───────────── */
+html.courage .hero{position:relative;isolation:isolate}
+html.courage .hero__in,html.courage .hero > .wrap{position:relative;z-index:3}
+/* a soft light gradient from the reading edge, sampled light not generic white */
+html.courage .hero::before{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(100deg,
+    rgba(249,251,246,.90) 0%, rgba(249,251,246,.74) 38%,
+    rgba(249,251,246,.34) 66%, rgba(249,251,246,.10) 100%);
+}
+html.courage .hero h1{color:#124279 !important;text-shadow:none}
+html.courage .hero .lead,
+html.courage .hero p:not(.eyebrow){
+  color:#23301F !important;text-shadow:none !important;max-width:52ch}
+html.courage .hero .eyebrow{color:#1E6E34 !important;text-shadow:none}
+html.courage .hero .btn--primary{background:#1C5BA8;color:#fff;border-color:#1C5BA8}
+html.courage .hero a:not(.btn){color:#124279;font-weight:700}
+@media(max-width:800px){
+  html.courage .hero::before{
+    background:linear-gradient(180deg,rgba(249,251,246,.92),rgba(249,251,246,.80) 60%,rgba(249,251,246,.55))}
+}
+
+/* ═══ TEXT OVER A PHOTOGRAPH READS ON PAPER ═══════════════════════════
+   Tony, 10/4: "you cant even read the texts too dark over the pics."
+   A halo is not enough over a bright, busy photograph (the gym assembly,
+   the crop rows). Per the deep-dive ruling the reading happens on a paper
+   panel and the photograph keeps its full strength around it — never a
+   veil across the whole picture.
+   ═══════════════════════════════════════════════════════════════════ */
+html.courage .hasphoto:not(.hero) > .wrap{
+  position:relative;z-index:2;
+  background:rgba(252,253,250,.93);
+  backdrop-filter:saturate(1.1) blur(1px);
+  -webkit-backdrop-filter:saturate(1.1) blur(1px);
+  padding:clamp(1.5rem,3vw,3rem) clamp(1.3rem,3vw,3rem);
+  border-radius:3px;
+  box-shadow:0 26px 60px -30px rgba(18,40,30,.5);
+  max-width:min(var(--max,1280px), 74ch);
+  margin-inline:auto;
+}
+@media(min-width:1000px){
+  /* alternate the panel left and right so the photographs stay visible */
+  html.courage .hasphoto:not(.hero):nth-of-type(even) > .wrap{margin-left:max(var(--gut,2rem),6%);margin-right:auto}
+  html.courage .hasphoto:not(.hero):nth-of-type(odd)  > .wrap{margin-right:max(var(--gut,2rem),6%);margin-left:auto}
+}
+/* on paper the halo is wrong — plain ink */
+html.courage .hasphoto:not(.hero) > .wrap p,
+html.courage .hasphoto:not(.hero) > .wrap li,
+html.courage .hasphoto:not(.hero) > .wrap .say,
+html.courage .hasphoto:not(.hero) > .wrap .sec__intro p{
+  color:#23301F !important;text-shadow:none !important}
+html.courage .hasphoto:not(.hero) > .wrap h2,
+html.courage .hasphoto:not(.hero) > .wrap h3,
+html.courage .hasphoto:not(.hero) > .wrap .head{
+  color:#124279 !important;text-shadow:none !important}
+html.courage .hasphoto:not(.hero) > .wrap .eyebrow{color:#1E6E34 !important;text-shadow:none !important}
+html.courage .hasphoto:not(.hero) > .wrap em{color:#8A5A12 !important}
+html.courage .hasphoto:not(.hero) > .wrap strong,
+html.courage .hasphoto:not(.hero) > .wrap b{color:#0F1A14 !important}
+/* the photograph underneath keeps its own light — no veil */
+html.courage .hasphoto .photo-bg::after{background:none !important}
+html.courage .hasphoto .photo-bg img{filter:saturate(1.08) brightness(1.02) !important}
+
+/* the same paper panel for the other wrappers these bands use */
+html.courage .hasphoto:not(.hero) > .wrap--mid,
+html.courage .hasphoto:not(.hero) > .wrap--tight,
+html.courage .hasphoto:not(.hero) > .vwrap,
+html.courage .hasphoto:not(.hero) > .tex__i,
+html.courage .hasphoto:not(.hero) > .playlist{
+  position:relative;z-index:2;
+  background:rgba(252,253,250,.93);
+  padding:clamp(1.5rem,3vw,3rem) clamp(1.3rem,3vw,3rem);
+  border-radius:3px;
+  box-shadow:0 26px 60px -30px rgba(18,40,30,.5);
+  max-width:min(var(--max,1280px), 74ch);
+  margin-inline:auto;
+}
+html.courage .hasphoto:not(.hero) > [class*="wrap"] p,
+html.courage .hasphoto:not(.hero) > [class*="wrap"] li,
+html.courage .hasphoto:not(.hero) > .vwrap p,
+html.courage .hasphoto:not(.hero) > .tex__i p{color:#23301F !important;text-shadow:none !important}
+html.courage .hasphoto:not(.hero) > [class*="wrap"] h2,
+html.courage .hasphoto:not(.hero) > [class*="wrap"] h3,
+html.courage .hasphoto:not(.hero) > .vwrap h2{color:#124279 !important;text-shadow:none !important}
+html.courage .hasphoto:not(.hero) > [class*="wrap"] .eyebrow{color:#1E6E34 !important;text-shadow:none !important}
+
+/* ═══ bands whose photograph is buried behind an opaque section ═══════
+   Same defect as the homepage's #the-work: an opaque light section with
+   .photo-bg at z-index:-2 behind it, so the picture never shows and the
+   dark-era light text reads 1.02:1. Let the photograph through; the
+   reading goes on paper.
+   ═══════════════════════════════════════════════════════════════════ */
+html.courage #watch, html.courage .sec.listen.hasphoto{background:transparent !important}
+html.courage #watch .photo-bg, html.courage .sec.listen.hasphoto .photo-bg{z-index:0 !important}
+html.courage #watch .photo-bg::after{background:none !important}
+html.courage #watch > .wrap, html.courage #watch > .vwrap{
+  position:relative;z-index:2;
+  background:rgba(252,253,250,.94);
+  padding:clamp(1.5rem,3vw,3rem);
+  border-radius:3px;
+  box-shadow:0 26px 60px -30px rgba(18,40,30,.5);
+  max-width:min(var(--max,1280px),80ch);
+  margin-inline:auto;
+}
+html.courage #watch :is(p,li,b,strong,span):not(.eyebrow){color:#23301F !important;text-shadow:none !important}
+html.courage #watch :is(h2,h3,.head){color:#124279 !important;text-shadow:none !important}
+html.courage #watch .eyebrow{color:#1E6E34 !important;text-shadow:none !important}
+
+/* the video player's own cover sits on black — it stays light */
+html.courage .vwrap, html.courage .vwrap *{color:#FFF6EA !important}
+html.courage .vwrap__label b{color:#FFF6EA !important}
+html.courage .vwrap__label span{color:#E3D3B4 !important}
+
+/* the video cover sits on black — outrank the #watch ink rule above */
+html.courage #watch .vwrap :is(b,span,p,em,strong),
+html.courage #watch .vwrap__label :is(b,span){color:#FFF6EA !important}
+html.courage #watch .vwrap__label span:last-child{color:#E3D3B4 !important}

@@ -1,0 +1,146 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   THE FOUR MAJOR ROTATING SECTIONS — one stage component, four theaters.
+   Spec: _brief/THE-SIX-THEATERS-spec-2026-10-03.md
+   Loaded LAST. Everything here is new; nothing above is edited.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.stage{position:relative;isolation:isolate}
+.stage + .stage{border-top:1px solid color-mix(in srgb, currentColor 10%, transparent)}
+
+/* ── the head: number, title, dots ── */
+.stage__head{
+  max-width:var(--max,1280px);margin:0 auto;
+  padding:clamp(3.2rem,5vw,5.4rem) var(--gut,2rem) clamp(1.6rem,2.6vw,2.6rem);
+  display:grid;grid-template-columns:auto 1fr;grid-template-areas:"num title" "num sub" "num nav";
+  column-gap:clamp(1rem,2.2vw,2.2rem);align-items:start}
+@media(max-width:700px){
+  .stage__head{grid-template-columns:1fr;grid-template-areas:"num" "title" "sub" "nav"}}
+.stage__num{grid-area:num;margin:0;font-family:var(--display);font-weight:800;
+  font-size:clamp(2rem,1.2rem + 3vw,4rem);line-height:.9;letter-spacing:-.03em;
+  color:var(--courage-sun,#E0A400);opacity:.85}
+.stage__title{grid-area:title;margin:0;font-family:var(--display);font-weight:800;
+  font-size:clamp(2.1rem,1.2rem + 4vw,4.4rem);line-height:.96;letter-spacing:-.02em}
+.stage__sub{grid-area:sub;margin:.7rem 0 0;max-width:52ch;font-size:var(--t-body,1.08rem);
+  line-height:1.55;opacity:.78}
+.stage__nav{grid-area:nav;display:flex;align-items:center;gap:.7rem;margin-top:1.3rem}
+.stage__dots{display:flex;gap:.5rem;flex-wrap:wrap}
+.stage__dot{width:30px;height:4px;border:0;padding:0;cursor:pointer;border-radius:2px;
+  background:color-mix(in srgb, currentColor 22%, transparent);
+  transition:background .3s, transform .3s}
+.stage__dot:hover{background:color-mix(in srgb, currentColor 44%, transparent)}
+.stage__dot.is-on{background:var(--courage-blue,#1C5BA8);transform:scaleY(1.6)}
+.stage__held{font-family:var(--body);font-size:.6rem;font-weight:800;letter-spacing:.17em;
+  text-transform:uppercase;opacity:0;transition:opacity .35s;white-space:nowrap}
+.stage.is-held .stage__held{opacity:.6}
+
+/* ── the deck: scenes stack in ONE grid cell, so the deck is always as tall
+      as its tallest scene. No JS measuring, so it can never collapse. ── */
+.stage__deck{display:grid;position:relative;transform-style:preserve-3d;
+  align-items:start;overflow:hidden;
+  transition:height .62s cubic-bezier(.22,.7,.2,1)}
+.scene{grid-area:1 / 1 / 2 / 2;opacity:0;pointer-events:none;
+  transform:perspective(1500px) rotateY(9deg) translateZ(-70px);
+  transform-origin:50% 50%;
+  transition:opacity .62s ease, transform .68s cubic-bezier(.22,.7,.2,1);
+  will-change:transform,opacity}
+.scene.is-on{opacity:1;pointer-events:auto;
+  transform:perspective(1500px) rotateY(0) translateZ(0)}
+.scene.is-out{transform:perspective(1500px) rotateY(-9deg) translateZ(-70px)}
+
+/* a scene's own section keeps all its styling — the stage only sets its rhythm */
+.scene > section{padding-block:clamp(1.4rem,2.4vw,2.8rem) !important;min-height:0 !important}
+.scene > section.four{padding-block:clamp(1rem,2vw,2.2rem) !important}
+.scene > .bookband,.scene > .state,.scene > .gal,.scene > .shelf{margin:0}
+
+/* before the engine runs, the first scene must be visible and the rest out of the way */
+html:not(.stages-on) .stage__deck{display:block}
+html:not(.stages-on) .scene{opacity:1;transform:none;pointer-events:auto}
+html:not(.stages-on) .stage__nav{display:none}
+
+@media (prefers-reduced-motion: reduce){
+  .scene{transition:opacity .2s;transform:none !important}
+  .stage__deck{transition:none}
+  .stage__held{opacity:.6}
+}
+
+/* ═══ THE MESSENGER WALKS ═══════════════════════════════════════════════
+   The same ridge runner Tony likes, now jointed and travelling his own
+   trail. Strategic, not decorative: the far messenger is the whole idea of
+   the site — someone who crosses hard ground carrying what matters and
+   arrives whole — so he crosses the ridge, continuously, in front of you.
+   Pure transform/opacity. Fully off under prefers-reduced-motion.
+   ═══════════════════════════════════════════════════════════════════════ */
+.walker{
+  offset-path:path("M10 200 L90 140 L150 185 L225 105 L295 170 L370 135 L450 190 L550 160");
+  offset-rotate:0deg;              /* he stays upright; the trail tilts, he does not */
+  offset-distance:0%;
+  animation:walker-cross 26s linear infinite;
+}
+.walker__body{animation:walker-bob .62s ease-in-out infinite}
+.walker__leg,.walker__arm{transform-box:fill-box;transform-origin:top left}
+.walker__leg--f{animation:swing-fwd .62s ease-in-out infinite}
+.walker__leg--b{animation:swing-back .62s ease-in-out infinite}
+.walker__arm--f{animation:swing-back .62s ease-in-out infinite}
+.walker__arm--b{animation:swing-fwd .62s ease-in-out infinite}
+
+@keyframes walker-cross{
+  from{offset-distance:0%}
+  to{offset-distance:100%}
+}
+@keyframes walker-bob{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-1.6px)}
+}
+@keyframes swing-fwd{
+  0%,100%{transform:rotate(14deg)}
+  50%{transform:rotate(-16deg)}
+}
+@keyframes swing-back{
+  0%,100%{transform:rotate(-16deg)}
+  50%{transform:rotate(14deg)}
+}
+
+/* a second, far messenger on the ridge behind — the ones who went before */
+.cmotion__ridge .walker--distant{opacity:.34;animation-duration:38s;animation-delay:-14s}
+.cmotion__ridge .walker--distant .walker__body{stroke-width:2.2}
+
+@media (prefers-reduced-motion: reduce){
+  .walker,.walker__body,.walker__leg,.walker__arm{animation:none !important}
+  .walker{offset-distance:42%}
+}
+
+/* ── a stage is a stage, not a scroll: cap the full-bleed plates and the
+      oversized plates inside scenes so one scene cannot inflate the deck ── */
+.scene .bleed{max-height:clamp(300px,44vh,520px);overflow:hidden}
+.scene .bleed img{width:100%;height:100%;object-fit:cover}
+.scene .work-rows img,
+.scene .wrow img,
+.scene figure img{max-height:clamp(260px,38vh,440px);object-fit:cover}
+/* book covers and spot art keep their natural size */
+.scene .shelf__b img,.scene .sbcover img,.scene .reader__cov img,
+.scene .amm img,.scene svg{max-height:none}
+
+/* ═══ VIDEOS OF OUR COMMUNITIES ═══ carried over from the old site ═══ */
+.cvids{background:linear-gradient(170deg,#F2F6EE 0%,#E9F0E4 100%);padding-block:clamp(2rem,3.4vw,3.4rem)}
+.cvid__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1rem,2.2vw,2rem);
+  margin-top:clamp(1.6rem,3vw,2.6rem)}
+@media(max-width:780px){.cvid__grid{grid-template-columns:1fr}}
+.cvid{margin:0}
+.cvid__frame{position:relative;padding-top:56.25%;background:#15301F;border-radius:3px;overflow:hidden;
+  box-shadow:0 22px 48px -26px rgba(16,40,26,.55)}
+.cvid__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.cvid figcaption{margin-top:.7rem;font-family:var(--display);font-size:1.02rem;line-height:1.3;color:#1E6E34}
+.cvid__k{display:block;font-family:var(--body);font-size:.64rem;font-weight:800;letter-spacing:.17em;
+  text-transform:uppercase;color:#B8512A;margin-bottom:.25rem}
+
+/* the rotating deep dive inside each fire */
+.dive{margin:0 0 1.3rem;min-height:4.4rem}
+.dive a{text-decoration:none;display:block}
+.dive .dk{font-family:var(--body);font-size:.62rem;font-weight:800;letter-spacing:.18em;
+  text-transform:uppercase;color:#2F7C72;display:block;margin-bottom:.35rem}
+.dive .dt{font-family:var(--display);font-weight:700;font-size:1.1rem;line-height:1.24;
+  color:#124279;display:block}
+.dive .ds{font-family:var(--body);font-size:.9rem;line-height:1.5;color:#4A4039;
+  display:block;margin-top:.24rem}
+.dive a:hover .dt{color:#B8512A}
+.dive.is-held .dk::after{content:" — paused";opacity:.6;letter-spacing:.08em}

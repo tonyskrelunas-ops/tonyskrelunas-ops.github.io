@@ -1,0 +1,122 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   TRIBEAWAKEN — THE SAMPLED PALETTE
+   Per THE COLOR & BACKGROUND LAW (Tony, 10/3 late). Every value below is
+   taken from Tony's own pixels. The AI warm-neutral family — cream fields
+   + muted terracotta + desaturated gold as IDENTITY — is banned here.
+   Living turquoise #489FB3 was sampled from the bracelet in DSCF0023 at
+   build time, as the law requires.
+   ═══════════════════════════════════════════════════════════════════════ */
+:root{
+  /* — his sky (the elder portrait) — */
+  --sky-deep:#112357;  --sky-mid:#1D3571;  --sky-slate:#4F717D;
+  /* — his firelight and his shirt — */
+  --amber:#D1995A;     --amber-deep:#A1734C;
+  /* — the red earth under the turquoise hand — */
+  --earth:#6A2510;     --earth-mid:#7B3418;  --earth-lt:#A56345;  --sand:#DAB28F;
+  /* — the real fire on the Council Fire cover — */
+  --ember:#881E1B;     --ember-lt:#A65234;
+  /* — the Far Messengers shore, the Stone Breath creek — */
+  --slate:#37404A;     --stone-green:#627061;
+  /* — courage, from the Tribe Achieve horse's own mane — */
+  --crimson:#B10324;   --violet:#470560;
+  /* — SAMPLED AT BUILD TIME from DSCF0023 bracelet pixels — */
+  --turquoise:#489FB3; --turquoise-lt:#4BAFC9; --turquoise-dk:#478190;
+
+  /* — quiet paper: resting space between image bands, never the brand — */
+  --paper:#F6F1E7;  --paper-2:#FFFFFF;  --paper-3:#ECE4D6;
+}
+:root{
+  --bg:var(--paper); --bg-2:var(--paper-2); --bg-3:var(--paper-3);
+  --ink:var(--paper);
+  --cream:#24324F;            /* body text — his sky, deepened, not brown */
+  --cream-2:var(--sky-deep);  /* headlines */
+  --sand:var(--slate);        /* secondary text */
+  --clay:var(--crimson);      /* primary accent — courage */
+  --clay-lt:var(--ember);
+  --gold:var(--amber);  --gold-lt:var(--sand);
+  --pebble:var(--sand);
+  --on-clay:#FFFFFF;
+  --rule:color-mix(in srgb,var(--sky-deep) 18%,transparent);
+  --rule-2:color-mix(in srgb,var(--sky-deep) 9%,transparent);
+}
+html,body{background:var(--paper);color:#24324F}
+h1,h2,h3,.head,.four__head h2,.four__txt h3{color:var(--sky-deep)}
+.sec--alt{background:var(--paper-3)}
+.hdr{background:color-mix(in srgb,var(--paper) 92%,transparent) !important;
+     border-bottom:1px solid var(--rule)}
+.eyebrow,.four__label,.four__badge{color:var(--crimson)}
+.btn--primary{background:var(--crimson);color:#fff;border-color:var(--crimson)}
+.btn--primary:hover{background:var(--ember)}
+.arrow,.four__go{color:var(--sky-deep);border-bottom-color:var(--turquoise)}
+.arrow:hover,.four__go:hover{color:var(--crimson)}
+.four__n{color:var(--turquoise);opacity:.42}
+/* text over photographs — light, on the scrims sampled per image */
+.hero,.hero *,.state,.state *,.bookband,.bookband *,
+.hasphoto .wrap,.hasphoto .wrap *{color:#FFF6EA}
+.state .pull em,.bookband em,.hasphoto em{color:var(--amber)}
+.state cite,.hasphoto .eyebrow,.bookband__in .eyebrow{color:var(--sand)}
+.hasphoto h2,.state .pull{text-shadow:0 2px 26px rgba(8,12,24,.5)}
+/* photographs keep their own color — no washing out */
+.photo-bg img,.state__bg img,.bookband__bg img,.hero__bg img{
+  filter:saturate(1.14) brightness(1.04) contrast(1.02) !important}
+/* footer: his deep sky, not brown */
+.ftr{background:var(--sky-deep) !important;border-top:3px solid var(--turquoise)}
+.ftr,.ftr h4,.ftr p,.ftr a{color:#E8EEF7}
+.ftr__tag{color:var(--amber)}
+
+/* ═══ GALLERY — his photographs, full height, scrolling strip ═══ */
+.gal{background:var(--paper);padding-block:clamp(4.5rem,8vw,8rem);overflow:hidden}
+.gal__head{max-width:var(--max,1280px);margin:0 auto clamp(2.2rem,4vw,3.4rem);padding-inline:var(--gut,2rem)}
+.gal__label{font-family:var(--body);font-size:.72rem;font-weight:800;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--crimson);margin:0 0 .8rem}
+.gal__head h2{font-family:var(--display);font-weight:800;line-height:.95;margin:0;
+  font-size:clamp(2.4rem,1.3rem + 4.6vw,5rem);letter-spacing:-.02em;color:var(--sky-deep)}
+.gal__strip{display:flex;gap:clamp(.8rem,1.6vw,1.6rem);padding-inline:var(--gut,2rem);
+  overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.gal__strip::-webkit-scrollbar{display:none}
+.gal__fig{flex:0 0 clamp(260px,34vw,460px);scroll-snap-align:start;margin:0;position:relative}
+.gal__fig img{width:100%;height:clamp(300px,36vw,520px);object-fit:cover;display:block;
+  filter:saturate(1.12)}
+.gal__fig figcaption{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--slate);margin-top:.7rem}
+
+/* ═══ THE SHELF — four covers, standing ═══ */
+.shelf{background:var(--paper-3);padding-block:clamp(4.5rem,8vw,8rem)}
+.shelf__head{max-width:var(--max,1280px);margin:0 auto clamp(2.4rem,4vw,3.6rem);padding-inline:var(--gut,2rem)}
+.shelf__label{font-family:var(--body);font-size:.72rem;font-weight:800;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--crimson);margin:0 0 .8rem}
+.shelf__head h2{font-family:var(--display);font-weight:800;line-height:.95;margin:0;
+  font-size:clamp(2.4rem,1.3rem + 4.6vw,5rem);letter-spacing:-.02em;color:var(--sky-deep)}
+.shelf__row{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(1rem,2.4vw,2.4rem);
+  max-width:var(--max,1280px);margin-inline:auto;padding-inline:var(--gut,2rem);align-items:end}
+@media(max-width:720px){.shelf__row{grid-template-columns:repeat(2,1fr)}}
+.shelf__b{text-decoration:none;display:block}
+.shelf__b img{width:100%;display:block;box-shadow:0 28px 54px -26px rgba(17,35,87,.55);
+  transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s}
+.shelf__b:hover img{transform:translateY(-10px);box-shadow:0 40px 70px -28px rgba(17,35,87,.6)}
+.shelf__t{display:block;font-family:var(--display);font-weight:700;font-size:1rem;
+  color:var(--sky-deep);margin-top:.9rem;line-height:1.2}
+.shelf__k{display:block;font-family:var(--body);font-size:.68rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--crimson);margin-top:.35rem}
+
+/* ═══ ABUNDANCE MINDSET MAGAZINE ═══ */
+.amm{background:var(--sky-deep);color:#EAF0FA;padding-block:clamp(4.5rem,8vw,8rem)}
+.amm__in{max-width:var(--max,1280px);margin-inline:auto;padding-inline:var(--gut,2rem);
+  display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:clamp(1.8rem,4vw,4rem);
+  align-items:center}
+@media(max-width:760px){.amm__in{grid-template-columns:1fr}}
+.amm__mark img{width:100%;display:block;mix-blend-mode:screen;opacity:.92}
+.amm__label{font-family:var(--body);font-size:.72rem;font-weight:800;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--amber);margin:0 0 .9rem}
+.amm__txt h2{font-family:var(--display);font-weight:800;line-height:.92;margin:0 0 1.2rem;
+  font-size:clamp(2.3rem,1.2rem + 4.4vw,4.8rem);letter-spacing:-.02em;color:#fff}
+.amm__p{color:#C7D4E8;font-size:var(--t-body,1.1rem);line-height:1.62;max-width:52ch;margin:0}
+.amm__cards{max-width:var(--max,1280px);margin:clamp(2.6rem,5vw,4rem) auto 0;padding-inline:var(--gut,2rem);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2vw,2rem)}
+@media(max-width:820px){.amm__cards{grid-template-columns:1fr}}
+.amm__c{border-top:2px solid var(--turquoise);padding-top:1.1rem;text-decoration:none;display:block}
+.amm__c b{display:block;font-family:var(--display);font-weight:700;font-size:1.22rem;
+  line-height:1.22;color:#fff;margin-bottom:.5rem}
+.amm__c span{display:block;color:#AFC0DA;font-size:.95rem;line-height:1.55}
+.amm__c i{display:block;font-style:normal;font-family:var(--body);font-size:.66rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:.6rem}

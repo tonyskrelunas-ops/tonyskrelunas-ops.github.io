@@ -1,0 +1,36 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   MOBILE — no page may scroll sideways on a phone.
+   Found by measuring documentElement.scrollWidth at 375px: 7 of 18 pages
+   overflowed. Four distinct causes, each fixed at its source.
+   Loaded last, sitewide.
+   ═══════════════════════════════════════════════════════════════════════ */
+html,body{overflow-x:hidden;max-width:100%}
+
+@media (max-width:820px){
+  /* 1 — the magazine strip + rail was a fixed two-column grid (470px) */
+  .nyr__in{grid-template-columns:1fr !important}
+  .nyr__rail,.nyr__strip{max-width:100% !important}
+  .nyr__cover,.nyr__mast,.nyr__dateline{max-width:100% !important}
+  .nyr__cover svg{width:100% !important;height:auto !important}
+
+  /* 2 — the section nav was a no-wrap flex row of five links */
+  .secnav__in{flex-wrap:wrap !important;gap:.5rem .9rem !important}
+  .secnav__in a{white-space:normal !important}
+
+  /* 3 — the loom used a fixed 642px column */
+  .loom{grid-template-columns:1fr !important}
+  .loom > *,.gloss{max-width:100% !important}
+
+  /* 4 — stage decks and their scenes stay inside the viewport */
+  .stage__deck,.scene,.scene > section{max-width:100% !important}
+  .four__row,.four__row--flip{grid-template-columns:1fr !important;direction:ltr !important}
+  .four__img,.four__row--flip .four__img{margin-inline:0 !important}
+  .cvid__grid,.shelf__row,.amm__deck,.amm__cards{grid-template-columns:1fr !important}
+}
+
+/* a background photograph must never widen the document */
+.photo-bg,.hero__bg,.state__bg,.bookband__bg,.listen__bg{overflow:hidden !important;max-width:100%}
+.photo-bg img,.hero__bg img,.state__bg img,.bookband__bg img,.listen__bg img{
+  max-width:100% !important;width:100% !important;object-fit:cover}
+/* nothing else may exceed its column either */
+img,svg,video,iframe,table,pre{max-width:100%}

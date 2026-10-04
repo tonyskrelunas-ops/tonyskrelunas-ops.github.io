@@ -1,0 +1,53 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   CONTROLS IN DAYLIGHT — buttons and form fields
+   Two dark-era components were still showing up on light panels:
+     · .btn--ghost kept white text on a transparent ground — invisible
+       on a paper panel ("See the retreat" read as an empty box).
+     · email inputs kept a dark brown fill with cream text.
+   Loaded last, sitewide.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ghost buttons: ink on paper, unless they sit on a dark band */
+html.courage .btn--ghost{
+  color:#124279 !important;
+  border-color:rgba(18,66,121,.42) !important;
+  background:transparent !important;
+}
+html.courage .btn--ghost:hover{
+  color:#0E3159 !important;border-color:#1C5BA8 !important;background:rgba(28,91,168,.07) !important}
+/* on the dark footer and the deep-blue magazine band they stay light */
+html.courage .ftr .btn--ghost, html.courage .amm .btn--ghost, html.courage .mag-sub .btn--ghost,
+html.courage .state .btn--ghost, html.courage .bookband .btn--ghost{
+  color:#FFF6EA !important;border-color:rgba(255,246,234,.45) !important}
+
+/* text fields read as paper, not as a dark-era slot */
+html.courage input[type="email"], html.courage input[type="text"],
+html.courage textarea, html.courage .join__in{
+  background:#FFFFFF !important;
+  color:#1E2419 !important;
+  border:1px solid rgba(18,66,121,.30) !important;
+  border-radius:3px;
+}
+html.courage input::placeholder, html.courage textarea::placeholder{color:#6E7B68 !important;opacity:1}
+html.courage input[type="email"]:focus, html.courage input[type="text"]:focus, html.courage textarea:focus{
+  outline:2px solid #1C5BA8 !important;outline-offset:2px;border-color:#1C5BA8 !important}
+/* the deep-blue subscribe band keeps its own treatment */
+html.courage .mag-sub input[type="email"]{
+  background:rgba(255,255,255,.10) !important;color:#fff !important;
+  border:1px solid rgba(255,255,255,.35) !important}
+html.courage .mag-sub input::placeholder{color:#90A6C6 !important}
+
+/* ── two overrides that outrank the rules which broke these ──────────
+   v2.css:1084  html.courage .jall a {color:var(--sky)!important}
+                painted the PRIMARY button's label the same blue as its
+                own background — 1.00:1, an invisible label.
+   The ghost button in the diagnostic band needed matching weight too.
+   ─────────────────────────────────────────────────────────────────── */
+html.courage .jall a.btn--primary,
+html.courage .jall a.btn.btn--primary,
+html.courage a.btn--primary, html.courage button.btn--primary{
+  color:#FFFFFF !important;border-color:transparent !important}
+html.courage .close__cta a.btn--ghost,
+html.courage .sec.close a.btn--ghost,
+html.courage .sec.close .close__cta .btn--ghost{
+  color:#124279 !important;border-color:rgba(18,66,121,.42) !important;background:transparent !important}

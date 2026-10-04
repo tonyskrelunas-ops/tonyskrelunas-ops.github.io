@@ -1,0 +1,1287 @@
+/* ============================================================
+   TRIBEAWAKEN v2 — DESIGN SYSTEM
+   Standard: Pat Mitchell (restraint, editorial confidence)
+             Emma Grede (bold, direct, commercial)
+   Rules: BIG type. HEAVY weights. Warm canyon palette. Generous air.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap');
+
+:root{
+  /* canyon earth */
+  --ink:#140D0A;         /* deepest */
+  --bg:#1B1210;          /* page */
+  --bg-2:#241814;        /* raised */
+  --bg-3:#2E1E18;        /* card */
+  --cream:#FAF3E9;       /* primary text */
+  --cream-2:#FFFCF6;
+  --sand:#D9C6B4;        /* secondary text */
+  --clay:#C96A3E;        /* primary accent */
+  --clay-lt:#E5895C;
+  --gold:#D9A25F;
+  --rule:rgba(242,242,238,.14);
+  --on-clay:#1B1210;
+
+  --display:'Fraunces',Georgia,serif;
+  --body:'Hanken Grotesk',-apple-system,sans-serif;
+
+  /* BIG type scale */
+  --t-hero: clamp(3.4rem, 2rem + 7vw, 7.5rem);
+  --t-h1:   clamp(2.8rem, 1.8rem + 4.6vw, 5.4rem);
+  --t-h2:   clamp(2.2rem, 1.6rem + 3vw, 4rem);
+  --t-h3:   clamp(1.5rem, 1.3rem + 1vw, 2.1rem);
+  --t-lead: clamp(1.25rem, 1.1rem + .8vw, 1.7rem);
+  --t-body: clamp(1.08rem, 1.02rem + .32vw, 1.28rem);
+  --t-small:clamp(.95rem, .9rem + .2vw, 1.05rem);
+  --t-eyebrow: .84rem;
+
+  --gut: clamp(1.5rem, 1rem + 3vw, 4rem);
+  --pad: clamp(4rem, 2.5rem + 6vw, 9rem);
+  --max: 1280px;
+  --measure: 62ch;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--cream);
+  font-family:var(--body); font-size:var(--t-body); font-weight:450; line-height:1.65;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img,svg,video{display:block;max-width:100%;height:auto}
+a{color:inherit}
+
+/* --- layout --- */
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
+.wrap--tight{max-width:860px}
+.sec{padding-block:var(--pad)}
+.sec--alt{background:var(--bg-2)}
+.sec--deep{background:var(--ink)}
+
+/* --- type --- */
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.02;letter-spacing:-.03em;text-wrap:balance}
+h1{font-size:var(--t-h1)}
+h2{font-size:var(--t-h2)}
+h3{font-size:var(--t-h3);letter-spacing:-.02em}
+p{max-width:var(--measure)}
+p + p{margin-top:1.1em}
+.lead{font-size:var(--t-lead);line-height:1.5;font-weight:500;color:var(--cream);max-width:34ch}
+.body-lg{font-size:calc(var(--t-body) * 1.06)}
+.muted{color:var(--sand)}
+strong,b{font-weight:700;color:var(--cream-2)}
+em{font-style:italic}
+
+.eyebrow{
+  font-family:var(--body);font-size:var(--t-eyebrow);font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--clay-lt);
+  display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem;
+}
+.eyebrow::before{content:"";width:2.2rem;height:2px;background:var(--clay);flex:none}
+.eyebrow--center{justify-content:center}
+
+/* --- actions --- */
+.btn{
+  display:inline-flex;align-items:center;gap:.6em;
+  font-family:var(--body);font-weight:800;font-size:1.05rem;letter-spacing:.005em;
+  padding:1.05em 2.1em;border-radius:6px;border:2px solid transparent;
+  text-decoration:none;cursor:pointer;line-height:1;
+  transition:transform .16s ease, background .2s ease, border-color .2s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn--primary{background:var(--clay);color:var(--on-clay)}
+.btn--primary:hover{background:var(--clay-lt)}
+.btn--ghost{border-color:var(--rule);color:var(--cream)}
+.btn--ghost:hover{border-color:var(--clay);color:var(--clay-lt)}
+
+.arrow{
+  display:inline-flex;align-items:center;gap:.55em;text-decoration:none;
+  font-family:var(--body);font-weight:800;font-size:.95rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--clay-lt);
+  border-bottom:2px solid transparent;padding-bottom:.3em;transition:.2s;
+}
+.arrow:hover{border-bottom-color:var(--clay);gap:.9em}
+
+/* --- header --- */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(27,18,16,.66);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.hdr__in{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding-block:1.15rem}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font-family:var(--display);font-weight:700;font-size:1.5rem;letter-spacing:-.02em;white-space:nowrap}
+.brand span{color:var(--clay-lt)}
+.brand img{width:44px;height:auto}
+.nav{display:flex;align-items:center;gap:1.9rem;list-style:none;padding:0}
+.nav a{text-decoration:none;font-weight:700;font-size:1rem;color:var(--cream);white-space:nowrap;transition:color .18s}
+.nav a:hover{color:var(--clay-lt)}
+@media(max-width:960px){.nav{display:none}}
+
+/* --- hero --- */
+.hero{position:relative;min-height:min(88vh,900px);display:grid;align-items:center;overflow:hidden}
+.hero__bg{position:absolute;inset:0;z-index:0}
+.hero__bg img{width:100%;height:100%;object-fit:cover}
+.hero__scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.58) 42%,rgba(20,13,10,.35) 100%)}
+.hero__in{position:relative;z-index:2;padding-block:var(--pad)}
+.hero h1{font-size:var(--t-hero);font-weight:900;max-width:16ch}
+.hero .lead{margin-top:1.8rem}
+.hero__cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.6rem}
+
+/* --- grids --- */
+.grid{display:grid;gap:clamp(1.2rem,.8rem + 1.6vw,2.2rem)}
+.grid--2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.grid--3{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,1rem + 4vw,5rem);align-items:center}
+@media(max-width:900px){.split{grid-template-columns:1fr}}
+
+/* --- cards --- */
+.card{background:var(--bg-3);border:1px solid var(--rule);border-radius:14px;padding:clamp(1.6rem,1.2rem + 1.4vw,2.4rem);display:flex;flex-direction:column;height:100%}
+.card h3{margin-bottom:.7rem}
+.card p{margin-bottom:1.2rem}
+.card .arrow{margin-top:auto;align-self:flex-start}
+
+/* --- media --- */
+.band{position:relative}
+.band img{width:100%;height:clamp(340px,48vh,560px);object-fit:cover}
+figure{margin:0}
+.figcap{font-size:var(--t-small);color:var(--sand);font-style:italic;margin-top:.9rem}
+
+/* --- stat / proof --- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
+.stat__n{font-family:var(--display);font-weight:900;font-size:clamp(2.8rem,2rem + 2.6vw,4.4rem);color:var(--gold);line-height:1}
+.stat__l{font-weight:700;font-size:1rem;color:var(--sand);margin-top:.5rem}
+
+/* --- quote --- */
+.pull{font-family:var(--display);font-weight:600;font-style:italic;font-size:clamp(1.6rem,1.2rem + 1.8vw,2.7rem);line-height:1.3;letter-spacing:-.02em;max-width:24ch}
+
+/* --- footer --- */
+.ftr{background:var(--ink);border-top:1px solid var(--rule);padding-block:4rem 2.5rem}
+.ftr__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:3rem}
+@media(max-width:800px){.ftr__grid{grid-template-columns:1fr;gap:2rem}}
+.ftr h4{font-family:var(--body);font-size:.86rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--clay-lt);margin-bottom:1rem}
+.ftr ul{list-style:none;padding:0;display:grid;gap:.7rem}
+.ftr a{text-decoration:none;font-weight:600;color:var(--sand);transition:color .18s}
+.ftr a:hover{color:var(--cream)}
+.ftr__legal{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;font-size:var(--t-small);color:var(--sand)}
+
+/* --- reveal --- */
+@media(prefers-reduced-motion:no-preference){
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+  .rv.in{opacity:1;transform:none}
+}
+
+/* --- the cowboy signature is the opening mark, on every page --- */
+.brand{display:inline-flex;align-items:center;gap:.85rem}
+.brand__logo{width:clamp(104px, 9vw, 148px);height:auto;flex:none;display:block}
+.brand__txt{font-family:var(--display);font-weight:700;line-height:1;letter-spacing:-.02em;
+  font-size:clamp(1.4rem, 1.2rem + .55vw, 1.85rem)}
+.hdr__in{padding-block:clamp(.9rem, .7rem + .5vw, 1.35rem)}
+.menu__top .brand__logo{width:clamp(104px, 10vw, 148px)}
+@media(max-width:860px){ .brand__logo{width:86px} .brand__txt{font-size:1.3rem} }
+@media(max-width:520px){ .brand__logo{width:72px} }
+
+/* ============================================================
+   THE ROCK FACE  —  now a site-wide component.
+   A pecked petroglyph panel: figures scattered at real scale
+   across the dark, the way they sit on an actual rock wall.
+   Use .peckfield on any dark section that would otherwise be
+   empty; use .rockface when it carries a photograph too.
+   ============================================================ */
+.peckhost{ position: relative; isolation: isolate; }
+.peckfield{
+  position:absolute; inset:0; z-index:-1; pointer-events:none; overflow:hidden;
+  color: rgba(246,210,166,.52);
+}
+.peckfield svg{
+  position:absolute; color: inherit; stroke-width: 3; height:auto;
+  overflow: visible;
+}
+.peckfield--faint{ color: rgba(240,198,156,.155); }
+/* the markings stay off the reading column — they are the wall,
+   not the writing on it */
+.peckfield--faint{
+  
+}
+.peckfield--strong{ color: rgba(250,220,178,.66); }
+@media (max-width: 820px){ .peckfield svg:nth-child(n+6){ display:none } }
+@media (max-width: 560px){ .peckfield svg:nth-child(n+4){ display:none } }
+
+.rockface{
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: clamp(340px, 42vw, 620px);
+  display: grid; align-items: center;
+  border-block: 1px solid rgba(230,180,140,.2);
+}
+.rockface__bg{ position:absolute; inset:0; z-index:-3; }
+.rockface__bg img{ width:100%; height:100%; object-fit:cover;
+  filter: saturate(.5) contrast(1.08) brightness(.76); }
+.rockface__in{ position: relative; max-width: 46rem;
+  padding-block: clamp(3rem,2rem + 4vw,6rem); }
+.rockface__q{
+  font-family: var(--display); font-weight: 700; font-style: italic;
+  font-size: clamp(1.6rem, 1.05rem + 2.4vw, 3.2rem);
+  line-height: 1.22; letter-spacing: -.025em;
+  color: var(--cream-2); max-width: 21ch;
+  text-shadow: 0 3px 30px rgba(20,13,10,.66);
+}
+.rockface__c{
+  font-family:'Courier New', ui-monospace, Menlo, monospace;
+  text-transform: uppercase; letter-spacing: .18em;
+  font-size: .72rem; color: var(--gold); margin-top: 1.6rem;
+}
+
+/* ============================================================
+   THE OPENING  —  the cowboy signature on the dark, the ledge
+   in its own panel beside it. The type never crosses the man.
+   ============================================================ */
+.mark{
+  display:block; width: clamp(150px, 16vw, 280px); height:auto;
+  margin-bottom: clamp(.9rem, .6rem + 1.1vw, 1.8rem);
+  filter: drop-shadow(0 6px 34px rgba(20,13,10,.58));
+}
+.opening{
+  position: relative; isolation: isolate;
+  display: grid; grid-template-columns: minmax(0,1.06fr) minmax(0,.94fr);
+  align-items: stretch;
+  border-bottom: 1px solid rgba(230,180,140,.22);
+  background: var(--bg);
+}
+.opening__say{
+  position: relative; z-index: 2;
+  padding: clamp(2.6rem, 1.6rem + 4vw, 6rem) clamp(1.5rem,1rem + 3vw,4rem)
+           clamp(2.6rem, 1.6rem + 4vw, 5.5rem) var(--gut);
+  display: flex; flex-direction: column; justify-content: center;
+  max-width: 46rem; margin-left: auto;
+}
+.opening__say h1{
+  font-size: clamp(2.6rem, 1.2rem + 5.2vw, 6.2rem);
+  line-height: .98; letter-spacing: -.04em; max-width: 13ch;
+}
+.opening__say .lead{ max-width: 40ch; color: var(--sand); margin-top: 1.6rem; }
+.opening__say .eyebrow{ color: var(--gold); }
+.opening__say .eyebrow::before{ background: var(--gold); }
+.opening__ledge{
+  position: relative; overflow: hidden;
+  min-height: clamp(420px, 74vh, 880px);
+  border-left: 1px solid rgba(230,180,140,.2);
+}
+.opening__ledge img{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit: cover; object-position: 62% 30%;
+}
+.opening__ledge::after{
+  content:""; position:absolute; inset:0;
+  background:
+    linear-gradient(90deg, rgba(20,13,10,.52) 0%, rgba(20,13,10,.12) 22%, transparent 46%),
+    linear-gradient(180deg, rgba(20,13,10,.45) 0%, transparent 22%, transparent 70%, rgba(20,13,10,.52) 100%);
+}
+.opening__cred{
+  position:absolute; right: clamp(1rem,2vw,2rem); bottom: clamp(.9rem,1.8vw,1.8rem); z-index:2;
+  font-family:'Courier New', ui-monospace, Menlo, monospace;
+  text-transform: uppercase; letter-spacing: .17em; font-size: .66rem;
+  color: rgba(242,242,238,.7); text-align: right;
+}
+.opening .peckfield{ z-index: 0; }
+@media (max-width: 1000px){
+  .opening{ grid-template-columns: 1fr; }
+  .opening__say{ max-width: none; margin-left: 0; order: 2;
+    padding: clamp(2.2rem,1.6rem + 3vw,3.4rem) var(--gut) clamp(2.6rem,2rem + 3vw,4rem); }
+  .opening__ledge{ order: 1; min-height: clamp(340px, 52vh, 560px); border-left: 0;
+    border-bottom: 1px solid rgba(230,180,140,.2); }
+  .opening__ledge img{ object-position: 60% 26%; }
+  .mark{ width: clamp(132px, 34vw, 210px); }
+}
+
+/* the signature stands alone — nothing is allowed under or beside it */
+.opening__say .mark{ margin-bottom: clamp(1.6rem, 1.1rem + 1.8vw, 3rem); }
+.opening .peckfield{
+  -webkit-mask-image: radial-gradient(58% 46% at 14% 20%, transparent 0 62%, #000 100%);
+  mask-image: radial-gradient(58% 46% at 14% 20%, transparent 0 62%, #000 100%);
+}
+
+/* ---- the markings catch the light ---- */
+.peckfield svg{
+  stroke-width: 3.4;
+  filter: drop-shadow(0 0 12px rgba(240,180,116,.55))
+          drop-shadow(0 0 34px rgba(214,120,60,.34));
+}
+.peckfield--faint{ color: rgba(244,206,160,.40); }
+
+/* ---- and one of them is lit ---- */
+.peckfield svg.lit{
+  color: rgba(247,214,168,.62);
+  stroke-width: 3.4;
+  filter: drop-shadow(0 0 14px rgba(247,196,120,.62))
+          drop-shadow(0 0 44px rgba(217,120,52,.42))
+          drop-shadow(0 0 90px rgba(217,120,52,.24));
+}
+.peckfield svg.lit::after{ content:none }
+.lamphalo{
+  position:absolute; pointer-events:none; border-radius:50%;
+  background: radial-gradient(circle,
+    rgba(247,196,120,.16) 0%, rgba(217,120,52,.09) 34%, transparent 68%);
+}
+@media (prefers-reduced-motion: no-preference){
+  .peckfield svg.lit{ animation: wick 7.5s ease-in-out infinite; }
+  @keyframes wick{
+    0%,100%{ opacity:1 }
+    42%{ opacity:.86 }
+    58%{ opacity:1.0 }
+    73%{ opacity:.92 }
+  }
+}
+
+/* ============================================================
+   THE RECORD — the work, with the numbers in the margin
+   ============================================================ */
+.creds{
+  list-style:none; padding:0;
+  margin: clamp(2.4rem, 1.8rem + 2vw, 3.8rem) 0 0;
+  border-top: 1px solid var(--rule);
+}
+.creds li{
+  display: grid;
+  grid-template-columns: minmax(0, 9.5rem) minmax(0, 1fr);
+  gap: clamp(1rem, .6rem + 2vw, 3rem);
+  padding-block: clamp(1.5rem, 1.1rem + 1.4vw, 2.4rem);
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+.creds__n{
+  font-family: var(--display); font-weight: 900; letter-spacing: -.035em;
+  font-size: clamp(1.7rem, 1.3rem + 1.7vw, 2.8rem); line-height: 1;
+  color: var(--gold); white-space: nowrap;
+}
+.creds b{
+  display:block; font-family: var(--display); font-weight: 700;
+  letter-spacing: -.022em; color: var(--cream-2);
+  font-size: clamp(1.2rem, 1.02rem + .85vw, 1.7rem); line-height: 1.15;
+  margin-bottom: .5rem;
+}
+.creds span:not(.creds__n){
+  display:block; color: var(--sand); font-size: 1.05rem; line-height: 1.62; max-width: 62ch;
+}
+.creds__foot{
+  margin-top: clamp(1.6rem, 1.2rem + 1.4vw, 2.4rem);
+  color: var(--sand); font-size: .98rem; letter-spacing: .01em; max-width: 74ch;
+}
+@media (max-width: 700px){
+  .creds li{ grid-template-columns: 1fr; gap: .5rem; }
+  .creds__n{ font-size: 1.6rem; }
+}
+
+/* ============================================================
+   THE ASK — a quiet panel, bottom-right, never a full takeover
+   ============================================================ */
+.ask{
+  position: fixed; z-index: 400;
+  right: clamp(.8rem, 2vw, 2rem); bottom: clamp(.8rem, 2vw, 2rem);
+  width: min(25rem, calc(100vw - 1.6rem));
+  background: linear-gradient(180deg, var(--bg-3), var(--bg-2));
+  border: 1px solid rgba(230,180,140,.34);
+  border-radius: 16px;
+  padding: clamp(1.4rem, 1.1rem + 1.2vw, 2rem);
+  box-shadow: 0 28px 80px rgba(0,0,0,.62), 0 0 0 1px rgba(20,13,10,.5);
+  opacity: 0; transform: translateY(18px) scale(.98);
+  transition: opacity .38s ease, transform .38s cubic-bezier(.22,1,.36,1);
+  pointer-events: none;
+}
+.ask.in{ opacity: 1; transform: none; pointer-events: auto; }
+.ask__x{
+  position: absolute; top: .5rem; right: .5rem;
+  width: 2.1rem; height: 2.1rem; line-height: 1;
+  background: none; border: 0; cursor: pointer;
+  color: var(--sand); font-size: 1.5rem; border-radius: 8px;
+}
+.ask__x:hover{ color: var(--cream); background: rgba(242,242,238,.07); }
+.ask__k{
+  font-family: 'Courier New', ui-monospace, Menlo, monospace;
+  font-size: .68rem; letter-spacing: .17em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: .7rem;
+}
+.ask__h{
+  font-family: var(--display); font-weight: 800; letter-spacing: -.03em;
+  font-size: clamp(1.3rem, 1.15rem + .6vw, 1.65rem); line-height: 1.12;
+  color: var(--cream-2); margin-bottom: .7rem; max-width: 18ch;
+}
+.ask__p{ color: var(--sand); font-size: .96rem; line-height: 1.58; }
+.ask__f{ display: flex; gap: .5rem; margin-top: 1.1rem; flex-wrap: wrap; }
+.ask__in{
+  flex: 1 1 11rem; min-width: 0;
+  background: rgba(20,13,10,.6);
+  border: 1px solid rgba(230,180,140,.3); border-radius: 9px;
+  padding: .78em .9em; color: var(--cream); font: inherit; font-size: .96rem;
+}
+.ask__in::placeholder{ color: rgba(217,198,180,.5); }
+.ask__in:focus{ outline: 2px solid var(--clay); outline-offset: 1px; border-color: transparent; }
+.ask__in.bad{ border-color: #E5895C; animation: nudge .3s ease; }
+@keyframes nudge{ 25%{transform:translateX(-4px)} 75%{transform:translateX(4px)} }
+.ask__go{ flex: 0 0 auto; font-size: .94rem; padding: .78em 1.2em; }
+.ask__note{ margin-top: .85rem; font-size: .8rem; color: rgba(217,198,180,.72); line-height: 1.5; }
+.ask__note.bad{ color: #E5895C; }
+.ask__note a{ color: var(--gold-lt); }
+@media (max-width: 560px){
+  .ask{ left: .8rem; right: .8rem; width: auto; }
+  .ask__f{ flex-direction: column; }
+  .ask__go{ width: 100%; }
+}
+@media (prefers-reduced-motion: reduce){
+  .ask{ transition: opacity .2s ease; transform: none; }
+}
+
+/* ============================================================
+   SHARED CHROME — restored. These rules had been truncated out
+   of this file by an earlier edit, so any page without its own
+   inline copy (the course page) rendered its header unstyled.
+   ============================================================ */
+.globebar{background:var(--ink);border-top:1px solid var(--rule);font-size:.82rem}
+.globebar__in{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap;
+  padding-block:.55rem;min-height:2.6rem}
+.globebar__lbl{display:flex;align-items:center;gap:.55rem;font-weight:800;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--gold);flex:none;margin:0}
+.globebar__lbl svg{width:15px;height:15px;flex:none}
+.globebar__ls{display:flex;align-items:center;gap:.35rem 1.15rem;flex-wrap:wrap;
+  list-style:none;padding:0;margin:0}
+.globebar__ls a{text-decoration:none;font-weight:700;color:var(--sand);
+  letter-spacing:.04em;white-space:nowrap;transition:color .18s}
+.globebar__ls a:hover{color:var(--cream)}
+.globebar__ls .is-on{color:var(--cream);border-bottom:2px solid var(--clay);padding-bottom:2px}
+.globebar .soon{color:rgba(217,198,180,.42);white-space:nowrap;font-weight:600}
+.globebar__mail{margin-left:auto;text-decoration:none;font-weight:700;color:var(--sand);
+  letter-spacing:.03em;white-space:nowrap;transition:color .18s}
+.globebar__mail:hover{color:var(--clay-lt)}
+
+.hdr__cta{font-size:.92rem;padding:.85em 1.4em;white-space:nowrap}
+
+.burger{display:none;flex-direction:column;justify-content:center;gap:6px;
+  width:52px;height:44px;padding:0 12px;background:none;border:1px solid var(--rule);
+  border-radius:6px;cursor:pointer}
+.burger i{display:block;height:2px;background:var(--cream);border-radius:2px;transition:.25s}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+.menu{position:fixed;inset:0;z-index:200;background:var(--ink);overflow-y:auto;
+  padding:clamp(1.5rem, 1rem + 3vw, 3rem) 0 4rem;
+  opacity:0;visibility:hidden;transform:translateY(-12px);
+  transition:opacity .28s ease,transform .28s ease,visibility .28s}
+.menu.open{opacity:1;visibility:visible;transform:none}
+.menu__top{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  margin-bottom:clamp(1.6rem, 1rem + 3vw, 3rem)}
+.menu__close{width:52px;height:44px;background:none;border:1px solid var(--rule);
+  border-radius:6px;color:var(--cream);font-size:1.5rem;line-height:1;cursor:pointer}
+.menu__ls{list-style:none;padding:0;margin:0;display:grid;gap:0;border-top:1px solid var(--rule)}
+.menu__ls li{border-bottom:1px solid var(--rule)}
+.menu__ls a{display:flex;align-items:baseline;gap:1.2rem;text-decoration:none;
+  font-family:var(--display);font-weight:700;letter-spacing:-.03em;
+  font-size:clamp(1.6rem, 1.1rem + 2.4vw, 2.9rem);line-height:1.05;
+  padding-block:clamp(.45rem, .3rem + .5vw, .8rem);transition:padding .2s,color .2s}
+.menu__ls a:hover{color:var(--clay-lt);padding-left:.6rem}
+.menu__ls em{font-family:var(--body);font-style:normal;font-size:.78rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt);flex:none}
+.menu__foot{margin-top:clamp(1.6rem, 1.2rem + 2vw, 2.6rem);display:flex;flex-wrap:wrap;
+  gap:1.2rem 2.4rem;align-items:center}
+.menu__foot a{text-decoration:none;font-weight:800;font-size:.9rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--sand)}
+.menu__foot a:hover{color:var(--clay-lt)}
+body.locked{overflow:hidden}
+
+@media(max-width:1010px){ .nav{display:none} .burger{display:inline-flex} }
+@media(max-width:860px){ .globebar__mail{display:none} }
+@media(max-width:520px){
+  .globebar__lbl span{display:none}
+  .globebar__in{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .globebar__in::-webkit-scrollbar{display:none}
+}
+
+/* ============================================================
+   THE GREETINGS — three cultures, three bold marks, every page
+   ============================================================ */
+.greet{ background:var(--ink); border-bottom:1px solid var(--rule); }
+.greet__in{
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(.8rem,.5rem + 1.6vw,2.4rem);
+  padding-block:clamp(1.4rem,1rem + 2vw,2.8rem);
+}
+.greet__c{
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+  gap:.75rem; text-decoration:none; transition:opacity .2s;
+}
+.greet__c:hover{ opacity:.72 }
+.greet__c svg{
+  width:clamp(48px, 6.5vw, 84px); height:auto;
+  stroke-width:3.6; color:var(--clay-lt);
+}
+.greet__c:nth-child(2) svg{ color:var(--gold) }
+.greet__c:nth-child(3) svg{ color:#A3B490 }
+.greet__w{
+  font-family:var(--display); font-weight:700; letter-spacing:-.02em;
+  font-size:clamp(1.05rem,.9rem + 1vw,1.8rem); line-height:1.1; color:var(--cream-2);
+}
+.greet__l{
+  font-size:.64rem; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--sand); opacity:.6;
+}
+@media(max-width:640px){
+  .greet__in{ gap:.6rem; padding-block:1.1rem }
+  .greet__c svg{ width:38px; stroke-width:4 }
+  .greet__w{ font-size:.92rem }
+  .greet__l{ font-size:.54rem; letter-spacing:.12em }
+}
+
+/* ---- an open chapter ---- */
+.scene{ border:1px solid var(--rule); background:var(--bg-2); margin-top:1rem; overflow:hidden }
+.scene__btn{ display:flex; width:100%; gap:clamp(1rem,2vw,2rem); align-items:center; cursor:pointer;
+  padding:clamp(1.2rem,1rem + 1.2vw,2rem); list-style:none; transition:background .2s }
+.scene__btn::-webkit-details-marker{ display:none }
+.scene__btn:hover{ background:rgba(201,106,62,.08) }
+.scene__mark{ flex:none; width:clamp(42px,4.6vw,62px); color:var(--clay-lt); stroke-width:3.4 }
+.scene__t{ flex:1 }
+.scene__t b{ display:block; font-family:var(--display); font-weight:700; letter-spacing:-.025em;
+  font-size:clamp(1.15rem,1rem + .8vw,1.6rem); color:var(--cream-2); line-height:1.16; margin-bottom:.25rem }
+.scene__t span{ display:block; color:var(--sand); font-size:.94rem }
+.scene__x{ flex:none; font-size:1.5rem; color:var(--clay-lt); transition:transform .3s }
+.scene[open] .scene__x{ transform:rotate(45deg) }
+.scene__body{ padding:0 clamp(1.2rem,1rem + 1.2vw,2rem) clamp(1.8rem,1.4rem + 2vw,3rem);
+  border-top:1px solid var(--rule-2) }
+.scene__body p{ max-width:62ch; margin-top:1.1rem; color:var(--cream); line-height:1.82; font-size:1.06rem }
+.scene__body p:first-child{ margin-top:1.6rem }
+.scene__body .say{ font-family:var(--display); font-style:italic; font-weight:600;
+  font-size:clamp(1.1rem,1rem + .7vw,1.45rem); color:var(--gold-lt); line-height:1.5 }
+.scene__body .src{ margin-top:2rem; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--sand); opacity:.7 }
+.join{ display:flex; gap:.6rem; flex-wrap:wrap; margin-top:1.6rem; max-width:34rem }
+.join__in{ flex:1 1 14rem; min-width:0; background:rgba(20,13,10,.6);
+  border:1px solid var(--rule); border-radius:8px; padding:.85em 1em;
+  color:var(--cream); font:inherit; font-size:1rem }
+.join__in::placeholder{ color:rgba(217,198,180,.5) }
+.join__in:focus{ outline:2px solid var(--clay); outline-offset:1px; border-color:transparent }
+.join__note{ margin-top:.9rem; font-size:.9rem; color:var(--sand); max-width:44ch }
+.join__note a{ color:var(--gold-lt) }
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* the opening — his words on the left, the garden beside them */
+.opening__say h1{ font-size:clamp(2.1rem, 1.3rem + 3.2vw, 3.9rem); max-width:17ch; line-height:1.06 }
+.opening__say .lead{ max-width:52ch; margin-top:1.6rem; font-size:1.08rem; line-height:1.78 }
+.opening__say .lead strong{ color:var(--cream-2); font-weight:600 }
+.opening__ledge img{ object-position:52% 50% !important }
+
+/* the menu has to fit a laptop, not just a desktop */
+@media (min-width:1011px) and (max-width:1320px){
+  .nav{ gap:1rem }
+  .nav a{ font-size:.86rem }
+  .hdr__cta{ font-size:.82rem; padding:.7em 1em }
+  .brand img{ width:46px }
+  .brand__txt{ font-size:1.2rem }
+}
+
+/* ============================================================
+   THE THEME — out of the canyon, into the garden.
+   Wet stone, moss, deep shade, and the vermilion of the torii.
+   ============================================================ */
+:root{
+  --ink:#0F1210;
+  --bg:#141814;
+  --bg-2:#1A1F1A;
+  --bg-3:#222922;
+  --cream:#F2EFE6;
+  --cream-2:#FBF9F3;
+  --sand:#C3C6B8;
+  --clay:#B8503A;
+  --clay-lt:#D06E52;
+  --gold:#C6A45F;
+  --gold-lt:#E3C68C;
+  --rule:rgba(242,239,230,.13);
+  --rule-2:rgba(242,239,230,.07);
+  --on-clay:#0F1210;
+}
+
+@media (min-width:1011px){ .burger{ display:none !important } }
+
+/* ============================================================
+   PHOTOGRAPHS CARRY THE PAGE.  STANDING RULE: a background
+   photograph is always visible. Never a texture, never a hint.
+   Weight goes under the type only, and falls away over the picture.
+   ============================================================ */
+.photo-bg{ position:absolute; inset:0; z-index:-2; overflow:hidden; pointer-events:none }
+.photo-bg img{ width:100%; height:100%; object-fit:cover; opacity:1;
+  filter:saturate(1.02) contrast(1) }
+.photo-bg::after{ content:""; position:absolute; inset:0;
+  background:linear-gradient(100deg,
+    rgba(15,18,16,.88) 0%, rgba(15,18,16,.78) 34%,
+    rgba(15,18,16,.42) 64%, rgba(15,18,16,.16) 100%) }
+.hasphoto{ position:relative; isolation:isolate }
+.hasphoto .wrap > *{ position:relative }
+.hasphoto h2,.hasphoto h3,.hasphoto p,.hasphoto li,.hasphoto b,.hasphoto span{
+  text-shadow:0 1px 18px rgba(15,18,16,.72) }
+@media (max-width:820px){
+  .photo-bg::after{ background:linear-gradient(180deg,
+    rgba(15,18,16,.58) 0%, rgba(15,18,16,.74) 45%, rgba(15,18,16,.9) 100%) }
+}
+
+/* ---- the Stone Breath ---- */
+.breath{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,19rem);
+  gap:clamp(1.6rem,1.2rem + 2.4vw,3.4rem);align-items:center;
+  margin-top:clamp(2rem,1.6rem + 2vw,3.2rem)}
+@media(max-width:820px){.breath{grid-template-columns:1fr}}
+.orb{position:relative;display:grid;place-items:center;width:min(100%,17rem);
+  aspect-ratio:1;margin-inline:auto;isolation:isolate}
+/* the tool has to be legible on top of a photograph — it is the point of the page */
+.orb::before{content:"";position:absolute;inset:-14%;border-radius:50%;z-index:0;
+  background:radial-gradient(circle at 50% 50%, rgba(12,14,12,.94) 0%, rgba(12,14,12,.88) 46%,
+    rgba(12,14,12,.55) 72%, rgba(12,14,12,0) 100%);
+  backdrop-filter:blur(3px) saturate(.85)}
+.orb__ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(201,161,94,.5);z-index:1}
+.orb__fill{position:absolute;inset:14%;border-radius:50%;z-index:1;
+  background:radial-gradient(circle at 50% 45%, rgba(201,161,94,.34), rgba(184,80,58,.16) 60%, transparent 72%);
+  transform:scale(.62);transition:transform 1s linear}
+.orb__t{position:relative;text-align:center;z-index:2}
+.orb__t b{display:block;font-family:var(--display);font-weight:700;
+  font-size:clamp(1.3rem,1.1rem + 1vw,1.9rem);color:var(--cream-2);letter-spacing:-.02em;
+  text-shadow:0 2px 18px rgba(0,0,0,.9)}
+.orb__t span{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold-lt);margin-top:.5rem;min-height:1.2em;max-width:15rem;line-height:1.5;
+  text-shadow:0 2px 14px rgba(0,0,0,.95)}
+.orb__n{display:block;font-family:var(--display);font-size:2.4rem;color:var(--gold);
+  line-height:1;margin-top:.6rem;min-height:1em}
+.pull{font-family:var(--display);font-weight:700;letter-spacing:-.03em;
+  font-size:clamp(1.5rem,1.2rem + 1.7vw,2.6rem);line-height:1.2;
+  color:var(--cream-2);max-width:22ch}
+.say{color:var(--sand);font-size:1.06rem;line-height:1.78;max-width:62ch;margin-top:1.1rem}
+.say strong{color:var(--cream-2)}
+
+/* ---- plain rows, not cards ---- */
+.rows{list-style:none;padding:0;margin:clamp(2rem,1.6rem + 2vw,3.2rem) 0 0;
+  border-top:1px solid var(--rule)}
+.rows li{border-bottom:1px solid var(--rule);
+  padding-block:clamp(1.4rem,1.1rem + 1.2vw,2.2rem)}
+.rows a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1.4rem;
+  align-items:baseline;text-decoration:none;transition:padding .25s ease}
+.rows a:hover{padding-left:.7rem}
+.rows b{display:block;font-family:var(--display);font-weight:700;
+  font-size:clamp(1.2rem,1.05rem + .8vw,1.7rem);letter-spacing:-.02em;
+  color:var(--cream-2);margin-bottom:.4rem;line-height:1.16}
+.rows span span{display:block;color:var(--sand);font-size:1.02rem;line-height:1.66;max-width:60ch}
+.rows em{font-style:normal;color:var(--clay-lt);white-space:nowrap;font-size:1.3rem}
+.four-legacy{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;
+  margin-top:clamp(2rem,1.6rem + 2vw,3.2rem);border-top:1px solid var(--rule)}
+.four-legacy div{padding:clamp(1.5rem,1.2rem + 1.2vw,2.3rem) clamp(1rem,1vw + .6rem,1.9rem);
+  border-left:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.four-legacy div:first-child{border-left:0;padding-left:0}
+.four-legacy b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.025em;
+  font-size:clamp(1.2rem,1.05rem + .7vw,1.6rem);color:var(--cream-2);margin-bottom:.6rem}
+.four-legacy span{display:block;color:var(--sand);font-size:1rem;line-height:1.66}
+@media(max-width:780px){.four-legacy div{border-left:0;padding-left:0}}
+
+/* ══════════════════════════════════════════════════════════════════
+   CARRIED-OVER PAGES — the old teal tokens, pointed at the garden
+   palette. 47 pages came across from the previous site still asking
+   for --night, --turq, --space-3 and so on. Rather than rewrite
+   47 files of his prose, the old names now resolve here.
+   ══════════════════════════════════════════════════════════════════ */
+:root{
+  --night:var(--bg); --night-2:var(--bg-2); --night-3:var(--bg-3);
+  --bone:var(--cream); --bone-2:var(--cream-2); --silver:var(--sand);
+  --amber:var(--gold); --amber-soft:var(--gold); --turq:var(--clay-lt);
+  --earth:var(--clay); --forest:var(--bg-2);
+  --ink-soft:var(--sand);
+  --bg-panel:var(--bg-2); --surface:var(--bg-3);
+  --text:var(--cream); --text-muted:var(--sand);
+  --accent:var(--clay); --accent-ink:var(--on-clay);
+
+  --font-display:var(--display);
+  --font-body:var(--body);
+
+  --step--1:var(--t-small); --step-0:var(--t-body); --step-1:var(--t-h3);
+  --step-2:var(--t-h3); --step-3:var(--t-h2); --step-4:var(--t-h1);
+  --step-5:var(--t-hero);
+
+  --space-1:.5rem; --space-2:1rem; --space-3:1.6rem;
+  --space-4:2.5rem; --space-5:4rem;
+  --content:var(--max); --radius:2px; --radius-lg:3px;
+  --ease:cubic-bezier(.22,.61,.36,1); --dur:.5s;
+}
+
+/* ── end-of-article capture ─────────────────────────────── */
+.sub{margin-top:clamp(2.4rem,2rem + 1.8vw,3.6rem);padding:clamp(1.5rem,1.2rem + 1.4vw,2.3rem);
+  border:1px solid var(--rule);border-left:3px solid var(--clay);border-radius:3px;
+  background:rgba(0,0,0,.24);max-width:60ch}
+.sub__eyebrow{font-family:'Courier New',ui-monospace,Menlo,monospace;text-transform:uppercase;
+  letter-spacing:.14em;font-size:.7rem;color:var(--gold);margin:0}
+.sub__head{font-family:var(--display);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(1.25rem,1.1rem + .7vw,1.6rem);line-height:1.2;color:var(--cream-2);margin:.6rem 0 0}
+.sub__say{color:var(--sand);font-size:1rem;line-height:1.7;margin:.7rem 0 0}
+.sub__form{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.2rem}
+.sub__in{flex:1 1 15rem;min-width:0;background:rgba(0,0,0,.35);color:var(--cream-2);
+  border:1px solid var(--rule);border-radius:2px;padding:.85em 1em;font-size:1rem;font-family:inherit}
+.sub__in::placeholder{color:rgba(195,198,184,.55)}
+.sub__in:focus{outline:none;border-color:var(--clay-lt);box-shadow:0 0 0 3px rgba(184,80,58,.16)}
+.sub__form .btn{flex:0 0 auto}
+.sub__fine{margin:.8rem 0 0;font-size:.85rem;line-height:1.6;color:var(--sand);opacity:.85}
+
+/* ═══════════════════════════════════════════════════════════════════
+   DAYLIGHT RESTORATION — v2, 2026-10-03
+   Tony's 10/3 ruling: cream page, ink text, sandstone kept.
+   A token flip, not a rebuild. Appended last so it wins.
+   ═══════════════════════════════════════════════════════════════════ */
+:root{
+  /* ═══ THE SAMPLED PALETTE — Tony's 10/3 color law.
+     Every hex sampled from his own pixels. Beige/cream BANNED as ground;
+     paper zones are cool pale stone. ═══ */
+  --ink:#E9EAE6;          /* deepest light ground -> cool pale stone */
+  --bg:#F2F2EE;           /* page: pale river-stone, cool, never beige */
+  --bg-2:#FAFAF7;         /* raised */
+  --bg-3:#ECEDE8;         /* card */
+
+  --cream:#231A12;        /* primary text — his shadow dark */
+  --cream-2:#140F0A;      /* strongest text */
+  --sand:#4A4740;         /* secondary text — cool stone gray, not brown */
+
+  --clay:#7B3418;         /* VERMILLION EARTH (the turquoise-hand photo) */
+  --clay-lt:#8A3A1B;
+  --gold:#A1734C;         /* firelight amber, deepened for contrast */
+  --gold-lt:#D1995A;      /* the shirt's amber-gold (elder portrait) */
+
+  --sky:#1D3571;          /* the elder's deep sky — headline blue */
+  --sky-2:#112357;
+  --turquoise:#3E8077;
+  --juniper:#4F6147;
+  --ember:#881E1B;        /* the real fire — Council Fire cover */
+  --crimson:#B10324;      /* the horse's mane — courage accent */
+  --pebble:#D8D6CE;       /* cool pebble */
+  --gold-soft:#E8C491;
+  --clay-deep:#6A2510;
+
+  --rule:rgba(20,15,10,.15);
+  --rule-2:rgba(20,15,10,.08);
+  --on-clay:#FAFAF7;
+}
+/* compat layer re-pointed so older pages follow the flip */
+:root{
+  --night:var(--bg); --night-2:var(--bg-2); --night-3:var(--bg-3);
+  --bone:var(--cream); --bone-2:var(--cream-2); --silver:var(--sand);
+  --amber:var(--gold); --amber-soft:var(--gold-lt);
+  --turq:var(--turquoise); --earth:var(--clay); --forest:var(--juniper);
+  --ink-soft:var(--sand);
+  --bg-panel:var(--bg-2); --surface:var(--bg-3);
+  --text:var(--cream); --text-muted:var(--sand);
+  --accent:var(--clay); --accent-ink:var(--on-clay);
+}
+html,body{background:var(--bg);color:var(--cream)}
+/* images were tuned for a dark page; lift them slightly on cream */
+.hero__bg img,.band img{filter:none}
+
+/* ── daylight: photo bands become pale washes, not darkened plates ── */
+.photo-bg img{filter:saturate(1.04) contrast(.98) brightness(1.06)}
+.photo-bg::after{
+  background:linear-gradient(100deg,
+    rgba(242,242,238,.16) 0%,
+    rgba(242,242,238,.12) 38%,
+    rgba(242,242,238,.06) 68%,
+    rgba(242,242,238,0) 100%) !important;
+}
+/* the vertical variant (bands that read top-to-bottom) */
+.sec.hasphoto .photo-bg::after,
+.band .photo-bg::after{
+  background:linear-gradient(180deg,
+    rgba(242,242,238,.10) 0%,
+    rgba(242,242,238,.16) 46%,
+    rgba(242,242,238,.22) 100%) !important;
+}
+/* full-bleed image plates keep their photograph — just lift them */
+.plate img,.state img,.bookband img{filter:saturate(1.04) brightness(1.04)}
+
+/* ── daylight: the remaining full-bleed photo bands ── */
+.bookband__bg::after,.state__bg::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,
+    rgba(242,242,238,.86) 0%,
+    rgba(242,242,238,.92) 50%,
+    rgba(242,242,238,.96) 100%);
+}
+.bookband__bg,.state__bg{position:absolute;inset:0;overflow:hidden}
+.bookband__bg img,.state__bg img{filter:saturate(1.05) brightness(1.08)}
+.bookband,.state{position:relative;isolation:isolate}
+.bookband__in,.state__in{position:relative;z-index:1}
+.state .pull{color:var(--cream-2)}
+.state cite{color:var(--sand)}
+
+/* ── daylight: the two-pillar cards ── */
+.pill__c{background:var(--bg-2);overflow:hidden}
+.pill__c img{filter:saturate(1.05) brightness(1.06)}
+.pill__c::after{
+  background:linear-gradient(180deg,
+    rgba(242,242,238,.74) 0%,
+    rgba(242,242,238,.90) 44%,
+    rgba(242,242,238,.97) 100%) !important;
+}
+.pill__c h3,.pill__c p,.pill__c .pill__n,.pill__c li,.pill__c .arrow{color:var(--cream)}
+.pill__c h3{color:var(--cream-2)}
+.pill__c .pill__n,.pill__c .arrow{color:var(--clay-lt)}
+.pill__c li{border-color:var(--rule)}
+
+/* ── the corn statement band: brighten the photograph rather than muddy it ── */
+.state__bg img{filter:saturate(1.1) brightness(1.5) contrast(.92)}
+.state__bg::after{
+  background:linear-gradient(180deg,
+    rgba(242,242,238,.72) 0%,
+    rgba(242,242,238,.80) 55%,
+    rgba(242,242,238,.88) 100%) !important;
+}
+
+/* ── daylight: lift the dark photographs rather than muddying them ── */
+.bookband__bg img{filter:saturate(1.08) brightness(1.55) contrast(.9)}
+.bookband__bg::after{
+  background:linear-gradient(180deg,
+    rgba(242,242,238,.70) 0%,
+    rgba(242,242,238,.78) 55%,
+    rgba(242,242,238,.86) 100%) !important;
+}
+.bookband__in p,.bookband__in li{color:var(--cream)}
+.bookband__in h2{color:var(--cream-2)}
+.bookband__in .eyebrow{color:var(--clay-lt)}
+
+/* ═══ CORRECTION 2026-10-03 (late): the near-white washes above were built
+   against a rendering artifact (.rv renders at opacity:0 headless), not
+   against the real page. Photographs stay rich; text over them goes light
+   on a WARM scrim. Same treatment that reads correctly on AncestralWatch. ═══ */
+.state__bg img,.bookband__bg img{filter:saturate(1.16) brightness(1.08) contrast(1.0) !important}
+.state__bg::after{
+  background:linear-gradient(100deg,rgba(44,24,10,.78),rgba(60,33,15,.50) 55%,rgba(92,54,24,.46)) !important;}
+.bookband__bg::after{
+  background:linear-gradient(100deg,rgba(44,24,10,.76),rgba(60,33,15,.48) 55%,rgba(92,54,24,.44)) !important;}
+.state,.state *,.bookband,.bookband *{color:#FFF9EF !important}
+.state .pull em,.bookband em{color:#F3C87A !important}
+.state cite,.bookband__in .eyebrow{color:#EBD6B4 !important}
+.state .pull{text-shadow:0 2px 26px rgba(30,14,4,.55)}
+
+/* ═══ THE FOUR — editorial rows, full-bleed photographs, no cards ═══ */
+.four{background:var(--bg);padding-block:clamp(5rem,9vw,9rem)}
+.four__head{max-width:var(--max,1280px);margin:0 auto clamp(3rem,6vw,5.5rem);padding-inline:var(--gut,2rem)}
+.four__label{font-family:var(--body);font-size:.72rem;font-weight:800;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--clay-lt);margin:0 0 .9rem}
+.four__head h2{font-family:var(--display);font-weight:800;line-height:.92;margin:0;
+  font-size:clamp(2.8rem,1.4rem + 6vw,6.4rem);letter-spacing:-.02em;color:var(--cream-2)}
+.four__row{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:center;
+  gap:clamp(2rem,5vw,5.5rem);margin-bottom:clamp(4rem,8vw,8rem)}
+.four__row:last-child{margin-bottom:0}
+.four__row--flip{direction:rtl}
+.four__row--flip>*{direction:ltr}
+.four__img img{width:100%;height:clamp(300px,42vw,620px);object-fit:cover;display:block;filter:saturate(1.1)}
+.four__row:not(.four__row--flip) .four__img{margin-left:calc(-1 * var(--gut,2rem))}
+.four__row--flip .four__img{margin-right:calc(-1 * var(--gut,2rem))}
+.four__txt{padding-inline:var(--gut,2rem);max-width:46ch}
+.four__row--flip .four__txt{margin-left:auto}
+.four__n{display:block;font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,4vw,4.4rem);
+  line-height:1;color:var(--pebble,#D9CEBF);letter-spacing:-.03em;margin-bottom:.2rem}
+.four__txt h3{font-family:var(--display);font-weight:800;letter-spacing:-.015em;
+  font-size:clamp(1.9rem,1.1rem + 2.6vw,3.5rem);line-height:.98;margin:0 0 1.1rem;color:var(--cream-2)}
+.four__txt p{color:var(--cream);font-size:var(--t-body,1.1rem);line-height:1.62;margin:0 0 1.5rem}
+.four__badge{font-family:var(--body) !important;font-size:.68rem !important;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt) !important;margin:0 0 .7rem !important}
+.four__go{font-family:var(--body);font-weight:800;font-size:.92rem;text-decoration:none;
+  color:var(--cream-2);border-bottom:2px solid var(--clay);padding-bottom:.25rem}
+.four__go:hover{color:var(--clay-lt)}
+@media(max-width:860px){
+  .four__row,.four__row--flip{grid-template-columns:1fr;direction:ltr;gap:1.6rem}
+  .four__row .four__img,.four__row--flip .four__img{margin-inline:0}
+  .four__txt{max-width:none}}
+
+
+/* ═══ SAMPLED ACCENTS — 10/3 color law, applied ═══ */
+h1,h2,.head,.four__head h2,.gal__head h2,.shelf__head h2,.jc h3,.feat h3{color:var(--sky-2)}
+.eyebrow{color:var(--clay-lt)}
+.btn--primary{background:var(--crimson);color:#FAFAF7}
+.btn--primary:hover{background:var(--ember)}
+.four__n{color:var(--pebble)}
+.four__go{border-bottom-color:var(--gold-lt)}
+
+/* ═══ ABUNDANCE MINDSET MAGAZINE — the band ═══ */
+.amm{background:linear-gradient(180deg,var(--bg-2),var(--bg));border-block:1px solid var(--rule);
+  padding-block:clamp(4.5rem,8vw,8rem)}
+.amm__in{max-width:var(--max,1280px);margin:0 auto;padding-inline:var(--gut,2rem)}
+.amm__top{display:grid;grid-template-columns:clamp(150px,18vw,230px) 1fr;gap:clamp(1.6rem,4vw,4rem);
+  align-items:center;margin-bottom:clamp(2.4rem,5vw,4rem)}
+.amm__horse img{width:100%;mix-blend-mode:multiply;filter:saturate(.9)}
+.amm__label{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--crimson);margin:0 0 .8rem}
+.amm__top h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:.95;
+  font-size:clamp(2.4rem,1.2rem + 4.6vw,5rem);margin:0 0 1rem;color:var(--sky-2)}
+.amm__why{color:var(--sand);font-size:var(--t-lead,1.25rem);line-height:1.55;max-width:56ch;margin:0}
+.amm__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.4vw,2rem)}
+@media(max-width:860px){.amm__top{grid-template-columns:1fr}.amm__horse{max-width:190px}
+  .amm__grid{grid-template-columns:1fr}}
+.amm__c{display:flex;flex-direction:column;gap:.7rem;text-decoration:none;background:var(--bg-2);
+  border:1px solid var(--rule);border-left:4px solid var(--gold-lt);border-radius:4px;
+  padding:clamp(1.3rem,2vw,1.9rem);transition:transform .3s ease,box-shadow .3s}
+.amm__c:hover{transform:translateY(-4px);box-shadow:0 18px 44px -22px rgba(20,15,10,.35)}
+.amm__c i{font-style:normal;font-size:.68rem;font-weight:800;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--turquoise)}
+.amm__c b{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.16;
+  font-size:clamp(1.25rem,1.05rem + .9vw,1.7rem);color:var(--cream-2)}
+.amm__c span{color:var(--sand);font-size:1rem;line-height:1.6}
+.amm__act{margin-top:clamp(2rem,4vw,3rem);display:flex;flex-wrap:wrap;gap:1rem 2.2rem;align-items:center}
+
+/* ═══ LIVE ROTATION ENGINE — Tony's motion law ═══ */
+[data-live]{position:relative}
+.live-flip{backface-visibility:hidden;will-change:transform,opacity}
+.live-paused-tag{position:absolute;top:.6rem;right:.8rem;font-size:.62rem;font-weight:800;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--sand);opacity:0;transition:opacity .3s;
+  pointer-events:none;z-index:3}
+[data-live].is-paused .live-paused-tag{opacity:.75}
+@media (prefers-reduced-motion: reduce){.live-paused-tag{display:none}}
+
+/* ═══ 10/3 late fixes — daylight readability ═══ */
+/* the two expandable book scenes: were dark cards, go light cards */
+.scene{background:var(--bg-2);border:1px solid var(--rule);border-radius:6px}
+.scene + .scene{margin-top:1rem}
+.scene__btn{background:var(--bg-2)}
+.scene__t b{color:var(--cream-2)}
+.scene__t span{color:var(--sand)}
+.scene__x{color:var(--clay)}
+.scene__body{color:var(--cream)}
+.scene__body .say{color:var(--clay-deep)}
+/* eyebrows over photographs need the light amber, not dark vermillion */
+.hasphoto .eyebrow,.state .eyebrow,.bookband .eyebrow{color:var(--gold-lt)}
+/* paper zones: push cooler still — no warmth allowed */
+.sec--alt{background:var(--ink)}
+
+/* ═══ FINAL GROUND LOCK — Tony's zero-cream law. Cool stone, no warm washes. ═══ */
+body{background:var(--bg) !important}
+.opening{background:var(--bg) !important}
+.opening__say{background:transparent !important}
+.sec{background-color:var(--bg)}
+.sec--alt,#latest{background:var(--ink) !important}
+.shelf,.gal{background:var(--ink) !important}
+.four{background:var(--bg) !important}
+.amm{background:linear-gradient(180deg,var(--bg-2),var(--bg)) !important}
+.globebar{background:var(--bg-2) !important}
+.hdr{background:var(--bg-2) !important}
+.plate{background:var(--ink) !important}
+/* pillar cards: photograph + proper dark-cool scrim, light type — rich not washy */
+.pill__c::after{background:linear-gradient(180deg,rgba(18,20,18,.04) 0%,rgba(18,20,18,.42) 52%,rgba(18,20,18,.74) 100%) !important}
+.pill__c img{filter:saturate(1.08) brightness(1.02) !important}
+.pill__c h3,.pill__c p,.pill__c .pill__n,.pill__c li,.pill__c .arrow{color:#FAFAF7 !important}
+.pill__c .pill__n,.pill__c .arrow{color:#E8C491 !important}
+/* ═══ GALLERY STRIP — his photographs, rotating ═══ */
+.gal{padding-block:clamp(4rem,7vw,7rem)}
+.gal__head{max-width:var(--max,1280px);margin:0 auto clamp(2rem,4vw,3.4rem);padding-inline:var(--gut,2rem)}
+.gal__label{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--crimson);margin:0 0 .9rem}
+.gal__head h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:.95;
+  font-size:clamp(2.4rem,1.2rem + 4.6vw,5rem);margin:0;color:var(--sky-2)}
+.gal__strip{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(240px,26vw,380px);
+  gap:clamp(1rem,2vw,1.8rem);overflow-x:auto;padding:0 var(--gut,2rem) 1.2rem;
+  scroll-snap-type:x mandatory;max-width:var(--max,1280px);margin:0 auto}
+.gal__fig{margin:0;scroll-snap-align:start;background:var(--bg-2);border:1px solid var(--rule);
+  border-radius:6px;padding:10px 10px 12px;box-shadow:0 16px 36px -22px rgba(20,15,10,.4)}
+.gal__fig img{width:100%;height:clamp(280px,30vw,430px);object-fit:cover;border-radius:3px;display:block}
+.gal__fig figcaption{margin-top:.7rem;text-align:center;font-size:.72rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--sand)}
+.feat__d,.feat__kick{color:#FAFAF7 !important}
+/* listen: light type over the creek photograph */
+.listen h2,.listen .sec__intro p,.listen .head{color:#FAFAF7 !important}
+.listen .eyebrow{color:#E8C491 !important}
+
+/* ═══ ACCENT SHIFT 10/3 — kill the last Claude-amber accents.
+   Labels: turquoise. Action: crimson. Heads: sky. Amber only inside firelight. ═══ */
+.eyebrow,.globebar__lbl,.four__label,.gal__label,.shelf__label,.amm__label,
+.row__meta b,.jc__kick,.jrow__k,.feat__kick,.ap__kick,.pill__n,.trad__n,
+.now__k,.feat__d,.briefs-label{color:var(--turquoise) !important}
+.eyebrow::before{background:var(--turquoise) !important}
+.hasphoto .eyebrow,.state .eyebrow,.bookband .eyebrow,.listen .eyebrow{color:#9FD8CE !important}
+.arrow,.four__go,.jall a,.origin__more a{color:var(--crimson) !important;border-color:var(--crimson) !important}
+.arrow:hover,.four__go:hover{color:var(--ember) !important}
+a.touch__mail{color:var(--sky) !important}
+.scene__t b{color:var(--sky-2) !important}
+.scene__x{color:var(--crimson) !important}
+/* the two statement scrims: warm brown -> deep cool night-blue */
+.state__bg::after{background:linear-gradient(100deg,rgba(13,19,28,.78),rgba(16,24,36,.52) 55%,rgba(20,30,44,.46)) !important}
+.bookband__bg::after{background:linear-gradient(100deg,rgba(13,19,28,.76),rgba(16,24,36,.5) 55%,rgba(20,30,44,.44)) !important}
+.state cite,.bookband__in .eyebrow{color:#C9D9E4 !important}
+.state .pull em,.bookband em{color:#F3C87A !important} /* firelight words may stay lit */
+/* hero band: a whisper of morning sky instead of green-stone */
+.opening{background:linear-gradient(180deg,#EDF1F6,#F2F2EE 70%) !important}
+.globebar__mail{color:var(--sky) !important}
+
+/* ═══ THE MOCKUP'S SOUL, PORTED 10/3 — the bands that won him ═══ */
+/* 1 — the morning-sky welcome band with the rising sun */
+.greet{background:
+  radial-gradient(ellipse 52% 130% at 84% -30%, rgba(217,162,95,.6), rgba(217,162,95,.18) 55%, transparent 72%),
+  linear-gradient(180deg,#E9EFF7 0%, #EFF0EC 58%, #F3EAD8 100%) !important;
+  border-bottom:1px solid rgba(20,15,10,.14)}
+/* 2 — CULTURE IN MOTION: the sandstone band, vermillion with courage */
+.cmotion{position:relative;color:#FBF6EF;overflow:hidden;
+  background:
+    radial-gradient(1.5px 1.5px at 18% 32%, rgba(251,246,239,.3) 50%, transparent 51%),
+    radial-gradient(1px 1px at 41% 71%, rgba(30,10,4,.35) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 66% 24%, rgba(251,246,239,.25) 50%, transparent 51%),
+    radial-gradient(1px 1px at 87% 62%, rgba(30,10,4,.3) 50%, transparent 51%),
+    linear-gradient(135deg,#C1491F 0%, #A53A14 48%, #7E2A0C 100%);
+  background-size:150px 150px,170px 170px,190px 190px,160px 160px,auto;
+  padding-block:clamp(3.6rem,7vw,6.4rem)}
+.cmotion__in{max-width:var(--max,1280px);margin:0 auto;padding-inline:var(--gut,2rem);
+  display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+@media(max-width:860px){.cmotion__in{grid-template-columns:1fr}}
+.cmotion h2{font-family:var(--display);font-weight:700;letter-spacing:-.015em;line-height:1.02;
+  font-size:clamp(2rem,1.2rem + 3.4vw,3.8rem);margin:0 0 1rem;color:#FBF6EF}
+.cmotion p{color:rgba(251,246,239,.93);font-size:var(--t-lead,1.2rem);line-height:1.55;max-width:44ch;margin:0}
+.cmotion__words{margin-top:1.6rem;font-family:var(--display);font-style:italic;
+  font-size:1.05rem;letter-spacing:.07em;color:#F3C87A}
+.cmotion__ridge{width:100%;height:auto;display:block}
+
+/* ═══ PREVIEW-ONLY PALETTE WORLDS — Tony picks, the rest burn ═══ */
+/* B — RED ROCK: saturated real sandstone, canyon courage */
+html[data-pal="b"]{--bg:#F5F1EA;--bg-2:#FBF8F2;--ink:#EFE7DB;--sky:#14365C;--sky-2:#0E2A4A;
+  --turquoise:#1F8A7D;--crimson:#C21807;--clay:#B5431F;--ember:#8F2F12}
+html[data-pal="b"] .cmotion{background:linear-gradient(135deg,#C84A1B,#A23410 55%,#7E2609 100%) !important}
+html[data-pal="b"] h1,html[data-pal="b"] h2.head,html[data-pal="b"] .four__head h2{color:#8F2F12 !important}
+/* C — INK & PAPER: NYT minimal, one red only */
+html[data-pal="c"]{--bg:#FAFAF7;--bg-2:#FFFFFF;--ink:#F2F2EF;--sky:#121212;--sky-2:#0C0C0C;
+  --turquoise:#444;--crimson:#C21807;--gold-lt:#777;--clay:#1A1A1A}
+html[data-pal="c"] .eyebrow,html[data-pal="c"] .four__label{color:#C21807 !important}
+html[data-pal="c"] .cmotion{background:#111 !important}
+/* D — OLD SITE COURAGE: the green/blue/sun of the original TribeAwaken */
+html[data-pal="d"]{--bg:#F7FAF4;--bg-2:#FFFFFF;--ink:#EEF4E9;--sky:#1C5BA8;--sky-2:#124279;
+  --turquoise:#1E9E63;--crimson:#E0A400;--clay:#2E8540;--ember:#1C5BA8}
+html[data-pal="d"] .cmotion{background:linear-gradient(135deg,#2E8540,#1E6E34 55%,#16522A 100%) !important}
+html[data-pal="d"] .btn--primary{background:#1C5BA8 !important}
+/* softer statement scrim across all worlds */
+.state__bg::after{background:linear-gradient(100deg,rgba(15,18,24,.62),rgba(18,24,34,.42) 55%,rgba(22,30,42,.36)) !important}
+/* the switcher chip panel */
+#palpick{position:fixed;right:14px;bottom:14px;z-index:9999;background:#141210;color:#fff;
+  border-radius:10px;padding:10px 12px;font:700 11px/1.4 -apple-system,sans-serif;letter-spacing:.08em;
+  box-shadow:0 12px 40px rgba(0,0,0,.4)}
+#palpick b{display:block;font-size:9px;opacity:.7;margin-bottom:6px;letter-spacing:.18em}
+#palpick button{margin:0 4px 0 0;padding:7px 12px;border:0;border-radius:6px;cursor:pointer;
+  font:800 11px -apple-system,sans-serif;color:#fff}
+
+/* ═══════════════════════════════════════════════════════════════
+   THE CHOSEN WORLD — OLD-SITE COURAGE. Tony's call, 10/3 night.
+   The green of the mountain, the blue of the runner, the sun.
+   Committed as default; the switcher is retired.
+   ═══════════════════════════════════════════════════════════════ */
+:root{
+  --bg:#F7FAF4;           /* pale leaf-white */
+  --bg-2:#FFFFFF;
+  --bg-3:#EFF5EC;
+  --ink:#EEF4E9;          /* resting band ground */
+  --cream:#1E2419;        /* text: deep forest-ink */
+  --cream-2:#131812;
+  --sand:#49523F;         /* secondary: moss gray-green */
+  --sky:#1C5BA8;          /* the runner's blue */
+  --sky-2:#124279;        /* deep blue for headlines */
+  --turquoise:#1E9E63;    /* living green — labels */
+  --juniper:#2E8540;      /* the mountain green */
+  --crimson:#B10324;      /* the horse keeps his red (magazine identity) */
+  --ember:#124279;
+  --gold-lt:#E0A400;      /* the sun */
+  --gold:#C89200;
+  --clay:#2E8540;
+  --clay-lt:#1E6E34;
+  --clay-deep:#16522A;
+  --pebble:#DCE5D6;
+  --rule:rgba(19,24,18,.16);
+  --rule-2:rgba(19,24,18,.08);
+  --on-clay:#FFFFFF;
+}
+/* actions ride the runner's blue; the sun lights the motion words */
+.arrow,.four__go,.jall a,.origin__more a{color:var(--sky) !important;border-color:var(--sky) !important}
+.arrow:hover,.four__go:hover{color:var(--sky-2) !important}
+.btn--primary{background:var(--sky) !important;color:#fff}
+.btn--primary:hover{background:var(--sky-2) !important}
+.cmotion{background:
+  radial-gradient(1.5px 1.5px at 18% 32%, rgba(255,255,255,.3) 50%, transparent 51%),
+  radial-gradient(1px 1px at 41% 71%, rgba(10,25,12,.35) 50%, transparent 51%),
+  radial-gradient(1.5px 1.5px at 66% 24%, rgba(255,255,255,.25) 50%, transparent 51%),
+  linear-gradient(135deg,#2E8540 0%, #1E6E34 52%, #16522A 100%) !important;
+  background-size:150px 150px,170px 170px,190px 190px,auto}
+.cmotion__words{color:#FFD75E !important}
+.cmotion__ridge circle,.cmotion__ridge path{stroke:#FFFFFF}
+.cmotion__ridge g[stroke="#F3C87A"]{stroke:#FFD75E}
+/* magazine band keeps the horse's crimson identity */
+.amm__label{color:var(--crimson) !important}
+/* greet band: morning over the green world */
+.greet{background:
+  radial-gradient(ellipse 52% 130% at 84% -30%, rgba(224,164,0,.5), rgba(224,164,0,.14) 55%, transparent 72%),
+  linear-gradient(180deg,#E7F0FA 0%, #F2F7EE 60%, #F7FAF4 100%) !important}
+/* statement scrims: deep blue-green night */
+.state__bg::after{background:linear-gradient(100deg,rgba(10,22,16,.62),rgba(12,28,22,.42) 55%,rgba(14,34,28,.36)) !important}
+.bookband__bg::after{background:linear-gradient(100deg,rgba(10,20,30,.72),rgba(12,26,38,.5) 55%,rgba(16,32,46,.44)) !important}
+#palpick{display:none !important}
+/* ═══ DARK PHOTO BANDS keep light type in the Courage world ═══ */
+.listen h2,.listen h3,.listen p,.listen .ap__kick,.listen .ap__d,.listen .ap__time,.listen figcaption{color:#FFFFFF !important}
+.listen .ap__kick{color:#FFD75E !important}
+.listen .eyebrow{color:#9FD8CE !important}
+#watch h2,#watch h3,#watch p,#watch .row__meta,#watch .eyebrow{color:#FFFFFF !important}
+#watch .eyebrow{color:#9FD8CE !important}
+.btn{color:#fff !important}
+/* hero ledge: the elder scan is a portrait — frame her with care */
+.opening__ledge img{object-position:50% 18%}
+/* ═══ FIRES — THE BIG ROTATOR: one fire burning at a time, 3D turn ═══ */
+.four__row{display:none}
+.four__row.is-live{display:grid}
+.four__dots{display:flex;gap:10px;justify-content:center;margin-top:1.6rem}
+.four__dots button{width:12px;height:12px;border-radius:50%;border:2px solid var(--juniper);
+  background:transparent;cursor:pointer;padding:0}
+.four__dots button.on{background:var(--juniper)}
+/* ═══ MAGAZINE UP FRONT — prominence ═══ */
+.amm--front{border-top:6px solid var(--juniper);
+  background:linear-gradient(180deg,#FFFFFF, var(--bg)) !important}
+.amm--front .amm__top h2{font-size:clamp(2.8rem,1.4rem + 5.6vw,6rem)}
+.amm--front .amm__horse{max-width:none}
+.amm--front .amm__why{font-size:clamp(1.15rem,1.05rem + .8vw,1.5rem);color:var(--cream)}
+.amm--front .amm__c b{font-size:clamp(1.3rem,1.1rem + 1vw,1.8rem)}
+/* ═══ THE NEW YORKER FACE ═══ */
+.nyr{background:#FFFFFF !important;border-top:0 !important;border-block:1px solid var(--rule);
+  padding-block:clamp(3.6rem,7vw,6.6rem)}
+.nyr__in{max-width:var(--max,1280px);margin:0 auto;padding-inline:var(--gut,2rem);
+  display:grid;grid-template-columns:minmax(300px,.9fr) 1.1fr;gap:clamp(2.2rem,5vw,5rem);align-items:start}
+@media(max-width:900px){.nyr__in{grid-template-columns:1fr;max-width:560px}}
+.nyr__cover{border:3.5px solid #141210;outline:1px solid #141210;outline-offset:3px;
+  background:#E0A400;box-shadow:0 26px 60px -28px rgba(19,24,18,.45)}
+.nyr__mast{font-family:var(--display);font-weight:900;font-style:italic;letter-spacing:-.02em;
+  line-height:.88;color:#141210;font-size:clamp(2.4rem,1.4rem + 3vw,3.6rem);
+  padding:1.1rem 1.2rem .4rem;background:#E0A400}
+.nyr__dateline{font-size:.6rem;font-weight:800;letter-spacing:.18em;color:#141210;
+  padding:0 1.25rem .7rem;border-bottom:3px solid #141210;background:#E0A400}
+.nyr__art{display:block;width:100%;height:auto}
+.nyr__covercap{margin-top:.9rem;font-family:var(--display);font-style:italic;
+  font-size:.95rem;color:var(--sand)}
+.nyr__label{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--crimson);margin:0 0 .7rem}
+.nyr__title{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:.95;
+  font-size:clamp(2.4rem,1.2rem + 4.2vw,4.6rem);margin:0 0 1rem;color:var(--sky-2)}
+.nyr__why{font-size:clamp(1.08rem,1rem + .7vw,1.35rem);line-height:1.55;color:var(--cream);
+  max-width:58ch;margin:0 0 1.4rem}
+.nyr__thickthin{border:0;border-top:3px solid #141210;border-bottom:1px solid #141210;
+  height:5px;margin:0 0 .9rem}
+.nyr__intro{font-size:.7rem;font-weight:800;letter-spacing:.24em;color:#141210;margin:0 0 .6rem}
+.nyr .amm__grid{display:block;columns:2;column-gap:2.2rem;column-rule:1px solid var(--rule)}
+@media(max-width:640px){.nyr .amm__grid{columns:1}}
+.nyr .amm__c{display:block;break-inside:avoid;background:none;border:0;box-shadow:none;border-radius:0;
+  border-top:1px solid var(--rule);padding:.85rem 0 .95rem}
+.nyr .amm__c b{font-size:clamp(1.1rem,1rem + .6vw,1.35rem)}
+.nyr .amm__c .amm__art{height:44px;width:44px;margin-bottom:.4rem}
+.nyr .amm__act{margin-top:1.6rem}
+/* ═══ THE STRIP — old-site anatomy: magazine runs down the left ═══ */
+.nyr--strip .nyr__in{grid-template-columns:1.12fr .88fr;align-items:start}
+.nyr__strip .amm__grid{display:block;columns:1 !important}
+.nyr__strip .amm__c{border-top:1px solid var(--rule);padding:1rem 0 1.1rem}
+.nyr__strip .amm__c b{font-size:clamp(1.3rem,1.1rem + 1.1vw,1.9rem)}
+.nyr__strip .amm__c .amm__art{height:52px;width:52px}
+.nyr__cover--rail{max-width:360px}
+.nyr__pitch{margin-top:1.8rem;border-top:3px solid #141210;padding-top:1.2rem;max-width:360px}
+.nyr__pitch h3{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:1.08;
+  font-size:clamp(1.5rem,1.2rem + 1.4vw,2.2rem);margin:0 0 .8rem;color:var(--sky-2)}
+.nyr__pitch p{color:var(--cream);font-size:1.02rem;line-height:1.6;margin:0 0 .9rem}
+.nyr__pitchline{font-family:var(--display);font-style:italic;color:var(--clay-deep)}
+.nyr__pitchact{display:flex;flex-direction:column;gap:.9rem;margin-top:1.1rem;align-items:flex-start}
+@media(max-width:900px){.nyr--strip .nyr__in{grid-template-columns:1fr}.nyr__rail{max-width:420px}}
+
+/* ═══ DEEP-DIVE READABILITY — text on paper panels, photos frame them ═══ */
+#far-messenger .wrap--mid,#chapters .wrap--mid,#stone-breath .wrap--mid,
+#the-reader .wrap,#traditions .wrap,#about .origin > div:last-child{
+  background:rgba(255,255,255,.96);border-radius:12px;
+  padding:clamp(1.8rem,1.2rem + 2.6vw,3.4rem);
+  box-shadow:0 34px 90px -44px rgba(10,20,14,.5)}
+#far-messenger,#chapters,#stone-breath,#the-reader,#traditions{padding-block:clamp(3.4rem,6vw,6rem)}
+/* ink text inside the panels — no shadows, no guessing */
+#far-messenger .wrap--mid *,#chapters .wrap--mid h2,#chapters .wrap--mid .lead,
+#stone-breath .wrap--mid *,#the-reader .wrap *,#traditions .wrap *,#about .origin > div:last-child *{
+  text-shadow:none !important}
+#far-messenger h2,#chapters h2,#stone-breath h2,#the-reader h2,#traditions h2{color:var(--sky-2) !important}
+#far-messenger .say,#far-messenger .lead,#stone-breath .say,#stone-breath .lead,
+#the-reader .say,#the-reader .lead,#traditions p,#about .origin p{color:#243024 !important}
+#far-messenger .pull,#the-reader .pull{color:var(--clay-deep) !important}
+#far-messenger .eyebrow,#chapters .eyebrow,#stone-breath .eyebrow,#the-reader .eyebrow,#traditions .eyebrow{color:var(--juniper) !important}
+#traditions .trad__c h3{color:var(--sky-2) !important}
+#traditions .trad__n{color:var(--juniper) !important}
+/* photos behind panels: lighter veil so the frame glows, not fights */
+#far-messenger .photo-bg::after,#chapters .photo-bg::after,#stone-breath .photo-bg::after,
+#the-reader .photo-bg::after,#traditions .photo-bg::after{
+  background:linear-gradient(180deg,rgba(247,250,244,.38),rgba(247,250,244,.52)) !important}
+/* the two scene cards inside chapters stay readable on their own paper */
+#chapters .scene{background:#FFFFFF}
+/* strip titles: ink, always — nothing may whiten them */
+.nyr .amm__c b{color:#131812 !important}
+.nyr .amm__c span{color:#49523F !important}
+.nyr .amm__c i{color:var(--crimson) !important}
+/* panels: every word ink — including the bold ones the old vars kept bleaching */
+#far-messenger .wrap--mid strong,#far-messenger .wrap--mid b,
+#stone-breath .wrap--mid strong,#the-reader .wrap strong,
+#about .origin strong,#chapters .wrap--mid .lead,#chapters .scene__t span,
+#traditions .wrap strong{color:#14321F !important}
+#chapters .wrap--mid .lead{color:#243024 !important}
+#chapters .scene__t b{color:var(--sky-2) !important}
+.btn--primary{border:0 !important}
+/* ═══ PHOTOS BACK IN FORCE — panels narrow, veils gone, pictures blaze ═══ */
+#far-messenger .photo-bg::after,#chapters .photo-bg::after,#stone-breath .photo-bg::after,
+#the-reader .photo-bg::after,#traditions .photo-bg::after{background:none !important}
+#far-messenger .photo-bg img,#chapters .photo-bg img,#stone-breath .photo-bg img,
+#the-reader .photo-bg img,#traditions .photo-bg img{filter:saturate(1.1) brightness(1.02) !important;opacity:1}
+#far-messenger .wrap--mid,#chapters .wrap--mid,#stone-breath .wrap--mid,#traditions .wrap{
+  max-width:60ch;margin-right:auto;margin-left:clamp(1rem,5vw,5rem)}
+#chapters .wrap--mid{margin-left:auto;margin-right:clamp(1rem,5vw,5rem)}
+#the-reader .wrap{max-width:900px}
+#far-messenger .wrap--mid,#chapters .wrap--mid,#stone-breath .wrap--mid,
+#the-reader .wrap,#traditions .wrap{background:rgba(255,255,255,.95)}
+/* the strip band breathes leaf, not hospital white */
+.nyr{background:#F2F7EE !important}
+.nyr__strip .amm__c,.nyr .amm__c{background:transparent}
+/* ═══ HEADER & MENU join the Courage world ═══ */
+.brand__txt{color:#124279 !important}
+.brand__txt span{color:#2E8540 !important}
+.brand__logo{filter:hue-rotate(95deg) saturate(.85) brightness(.92)}
+.hdr{border-bottom:1px solid var(--rule)}
+.nav a{color:#1E2419 !important;border-bottom-color:transparent}
+.nav a:hover{color:#1C5BA8 !important;border-bottom-color:#1C5BA8 !important}
+.hdr__cta{background:#1C5BA8 !important;color:#fff !important}
+.burger{border-color:var(--rule)}
+.burger i{background:#1E2419 !important}
+.globebar{border-bottom:1px solid var(--rule)}
+.globebar__ls .is-on{color:#124279 !important;border-bottom-color:#2E8540 !important}
+.globebar__ls a{color:#49523F !important}
+.globebar__ls a:hover{color:#1C5BA8 !important}
+/* the full-screen menu: deep runner's blue */
+.menu{background:#124279 !important}
+.menu__ls a{color:#FFFFFF !important}
+.menu__ls a:hover{color:#FFD75E !important}
+.menu__ls em{color:#FFD75E !important}
+.menu__ls li,.menu__ls{border-color:rgba(255,255,255,.25) !important}
+.menu__close{color:#fff !important;border-color:rgba(255,255,255,.4) !important}
+.menu__foot a{color:#9FD8CE !important}
+
+/* ═══ FINISH PASS — density, life, presence ═══ */
+/* dead space dies: the page tightens its belt */
+.sec,.sec--alt{padding-block:clamp(2.4rem,5vw,4.8rem) !important}
+#far-messenger,#chapters,#stone-breath,#the-reader,#traditions{padding-block:clamp(2.6rem,5vw,4.6rem) !important}
+.cmotion{padding-block:clamp(2.6rem,5vw,4.6rem) !important}
+.nyr{padding-block:clamp(2.6rem,5vw,4.8rem) !important}
+.four{padding-block:clamp(2.8rem,6vw,5.2rem) !important}
+.gal,.shelf{padding-block:clamp(2.6rem,5vw,4.6rem) !important}
+.opening{min-height:min(78vh,820px)}
+/* the photographs BREATHE — slow Ken Burns on every band image */
+@keyframes kbA{from{transform:scale(1.06) translate(0,-1.2%)}to{transform:scale(1.14) translate(1.6%,1.2%)}}
+@keyframes kbB{from{transform:scale(1.12) translate(1.2%,1%)}to{transform:scale(1.05) translate(-1.4%,-1%)}}
+.photo-bg img,.state__bg img,.bookband__bg img{animation:kbA 26s ease-in-out infinite alternate;will-change:transform}
+.sec:nth-child(even) .photo-bg img,.bookband__bg img{animation-name:kbB;animation-duration:31s}
+.pill__c img,.row__media img,.feat__ph img{animation:kbA 34s ease-in-out infinite alternate}
+.four__img img{animation:kbB 24s ease-in-out infinite alternate}
+@media (prefers-reduced-motion: reduce){
+  .photo-bg img,.state__bg img,.bookband__bg img,.pill__c img,.row__media img,.feat__ph img,.four__img img{animation:none}}
+/* the sun turns over the ridge; the cover's sun too */
+@keyframes rays{to{transform:rotate(360deg)}}
+.cmotion__ridge g[stroke="#FFD75E"],.cmotion__ridge g[stroke="#F3C87A"]{
+  transform-origin:430px 78px;animation:rays 48s linear infinite}
+.nyr__art g[stroke="#FFF7E6"]{transform-origin:300px 120px;animation:rays 60s linear infinite}
+@media (prefers-reduced-motion: reduce){.cmotion__ridge g,.nyr__art g{animation:none}}
+/* ═══ FRONT GETS WEIGHT ═══ */
+.globebar{background:#16522A !important;border-bottom:0}
+.globebar__lbl,.globebar__lbl svg{color:#FFD75E !important}
+.globebar__ls a{color:rgba(255,255,255,.85) !important}
+.globebar__ls .is-on{color:#FFFFFF !important;border-bottom-color:#FFD75E !important}
+.globebar__ls .soon{color:rgba(255,255,255,.45) !important}
+.globebar__mail{color:#9FD8CE !important}
+.greet{background:
+  radial-gradient(ellipse 55% 140% at 82% -30%, rgba(224,164,0,.75), rgba(224,164,0,.25) 55%, transparent 74%),
+  linear-gradient(180deg,#CBDCF0 0%, #E6EDDC 55%, #F0F0D8 100%) !important}
+.greet__w{color:#124279 !important}
+.opening{background:linear-gradient(180deg,#E9F2E4,#F4F8F0) !important}
+.nyr{background:#E9F2E4 !important}
+.nyr__cover{box-shadow:0 34px 70px -26px rgba(18,42,24,.55)}

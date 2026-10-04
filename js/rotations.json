@@ -1,0 +1,291 @@
+{
+ "heroKicker": [
+  "Ancestral intelligence for a regenerating world.",
+  "Three lineages. One lesson, told three ways.",
+  "The oldest discipline of mind, body, and soul.",
+  "Human resilience. Community resilience."
+ ],
+ "pull": [
+  {
+   "q": "The tools for endurance, belonging, and purpose are not lost. They are <em>dormant</em>.",
+   "c": "The premise of the work"
+  },
+  {
+   "q": "They ran so their people would <em>live</em>.",
+   "c": "The far messengers"
+  },
+  {
+   "q": "The skill we are losing is not the stories. It is the <em>carrying</em>.",
+   "c": "What is a far messenger"
+  }
+ ],
+ "gallery": [
+  {
+   "src": "/assets/img/v2/gallery-elder-sky-1400px.jpg",
+   "cap": "Under open sky"
+  },
+  {
+   "src": "/assets/img/v2/wix-mexico-dancers-1800px.jpg",
+   "cap": "The dancers in white"
+  },
+  {
+   "src": "/assets/img/v2/wix-crown-dancers-fire-1800px.jpg",
+   "cap": "The night fire"
+  },
+  {
+   "src": "/assets/img/v2/gallery-turquoise-hand-1400px.jpg",
+   "cap": "Turquoise and red earth"
+  },
+  {
+   "src": "/assets/img/v2/wix-heirloom-corn-baskets-1800px.jpg",
+   "cap": "The seeds of the ancestors"
+  },
+  {
+   "src": "/assets/img/v2/wix-woven-baskets-1800px.jpg",
+   "cap": "The weavers' plaques"
+  },
+  {
+   "src": "/assets/img/v2/real-sheep-under-butte-1800px.jpg",
+   "cap": "The flock under the butte"
+  },
+  {
+   "src": "/assets/img/v2/wix-feather-parade-1800px.jpg",
+   "cap": "The feather parade"
+  },
+  {
+   "src": "/assets/img/v2/wix-elder-yellow-motorcycle-1800px.jpg",
+   "cap": "The elder and the motorcycle"
+  },
+  {
+   "src": "/assets/img/v2/wix-tony-green-field-1800px.jpg",
+   "cap": "In the green field"
+  },
+  {
+   "src": "/assets/img/v2/real-teton-river-1800px.jpg",
+   "cap": "The river and the peaks"
+  },
+  {
+   "src": "/assets/img/v2/wix-valley-sunset-1800px.jpg",
+   "cap": "The valley at sundown"
+  },
+  {
+   "src": "/assets/img/v2/real-garden-path-1800px.jpg",
+   "cap": "The garden path"
+  },
+  {
+   "src": "/assets/img/v2/real-elder-hands-braiding-1800px.jpg",
+   "cap": "Her hands at work"
+  },
+  {
+   "src": "/assets/img/v2/wix-elder-hands-turquoise-1800px.jpg",
+   "cap": "An elder's hands"
+  },
+  {
+   "src": "/assets/img/v2/wix-river-peaks-1800px.jpg",
+   "cap": "The river below the peaks"
+  },
+  {
+   "src": "/assets/img/v2/wix-red-road-conversation-1800px.jpg",
+   "cap": "Talking it through"
+  },
+  {
+   "src": "/assets/img/v2/wix-vintage-car-1800px.jpg",
+   "cap": "The old car"
+  },
+  {
+   "src": "/assets/img/v2/wix-hogan-two-people-1800px.jpg",
+   "cap": "At the hogan"
+  },
+  {
+   "src": "/assets/img/v2/wix-the-interview-1800px.jpg",
+   "cap": "The old interviews"
+  },
+  {
+   "src": "/assets/img/v2/wix-gathering-on-the-grass-1800px.jpg",
+   "cap": "A gathering on the grass"
+  },
+  {
+   "src": "/assets/img/v2/wix-elder-hands-cloth-1800px.jpg",
+   "cap": "Hands at rest"
+  },
+  {
+   "src": "/assets/img/v2/wix-corn-sunset-1800px.jpg",
+   "cap": "The corn field at dusk"
+  },
+  {
+   "src": "/assets/img/v2/wix-sheep-red-rock-1800px.jpg",
+   "cap": "Sheep under the red rock"
+  }
+ ],
+ "shelf": [
+  {
+   "img": "/assets/img/stone-breath-cover.jpg",
+   "t": "Stone Breath",
+   "k": "Book One · out now",
+   "href": "https://ancestralwatch.com/series/stone-breath/"
+  },
+  {
+   "img": "/assets/img/by-lamplight-cover.jpg",
+   "t": "The Amber and the Stone",
+   "k": "Book Two · coming",
+   "href": "https://ancestralwatch.com/series/by-lamplight/"
+  },
+  {
+   "img": "/assets/img/council-fire-cover.jpg",
+   "t": "The Council Fire",
+   "k": "Book Three · out now",
+   "href": "https://ancestralwatch.com/series/the-council-fire/"
+  },
+  {
+   "img": "/assets/img/far-messengers-cover.jpg",
+   "t": "The Far Messengers",
+   "k": "Book Four · coming",
+   "href": "https://ancestralwatch.com/series/the-far-messengers/"
+  },
+  {
+   "img": "/assets/img/living-as-a-far-messenger-cover.jpg",
+   "t": "Living as a Far Messenger",
+   "k": "The working reader",
+   "href": "https://ancestralwatch.com/reader/"
+  }
+ ],
+ "magazine": [
+  {
+   "kind": "From the journal",
+   "t": "The Wealth That Cannot Be Spent",
+   "s": "Raising generations who inherit more than money.",
+   "href": "/journal/creating-traditional-inter-generational-wealth/",
+   "art": "/assets/art/four-capitals.svg"
+  },
+  {
+   "kind": "From the journal",
+   "t": "The Old Farmers Are Right",
+   "s": "Ancient agriculture as a hedge against a warming world.",
+   "href": "/journal/ancient-farming-hedge-against-climate-change/",
+   "art": "/assets/art/baltic-oak.svg"
+  },
+  {
+   "kind": "From the journal",
+   "t": "A Magazine to Uplift Our Community",
+   "s": "Where this began — and why good news was always the point.",
+   "href": "/journal/a-magazine-to-uplift-our-community/",
+   "art": "/assets/art/dine-dawn.svg"
+  },
+  {
+   "kind": "From the journal",
+   "t": "The Machines That Could Help Us Come Home",
+   "s": "AI, robotics, and the repair of a warming world.",
+   "href": "/journal/ai-robotics-repair-warming-world/",
+   "art": "/assets/art/japan-bridge.svg"
+  },
+  {
+   "kind": "From the journal",
+   "t": "Creativity Is What Makes the Planet Go Round",
+   "s": "On making, and why a people that stops making starts shrinking.",
+   "href": "/journal/creativity-makes-the-planet-go-round/",
+   "art": "/assets/art/baltic-juosta.svg"
+  },
+  {
+   "kind": "From the journal",
+   "t": "30,000 Years of Wellness Wisdom",
+   "s": "The long record, and what it still has to say.",
+   "href": "/journal/30000-years-wellness-wisdom-phd-book-series-movement/",
+   "art": "/assets/art/dine-mountains.svg"
+  }
+ ],
+ "deepDives": {
+  "economy": [
+   {
+    "href": "/community-resilience/economy/",
+    "t": "The four-capital ledger",
+    "k": "Four accounts. Most economies count one."
+   },
+   {
+    "href": "/tourism/",
+    "t": "Where the money leaves",
+    "k": "Two million came. The money left before they did."
+   },
+   {
+    "href": "/business/",
+    "t": "The business that is not a machine",
+    "k": "Built to hold people, not only to make money."
+   },
+   {
+    "href": "/organizing/",
+    "t": "One design",
+    "k": "A community, a venture, an organization — one design."
+   },
+   {
+    "href": "/business/charter/",
+    "t": "The charter most founders never wrote",
+    "k": "Every company already has one. Few have read it."
+   }
+  ],
+  "governing": [
+   {
+    "href": "/community-resilience/governance/",
+    "t": "Getting away from elections",
+    "k": "Governance that fits the people it serves."
+   },
+   {
+    "href": "/community-resilience/lga/",
+    "t": "The council tabled it",
+    "k": "So we wrote the plan and came back."
+   },
+   {
+    "href": "/community-resilience/gathering/",
+    "t": "The meeting is a technology",
+    "k": "How a people decides, and what the room does."
+   },
+   {
+    "href": "/community-resilience/",
+    "t": "Frightened ground",
+    "k": "You cannot build a nation on it."
+   }
+  ],
+  "healing": [
+   {
+    "href": "/human-resilience/",
+    "t": "Fear travels down a family",
+    "k": "So does calm."
+   },
+   {
+    "href": "/healing/",
+    "t": "Still afraid",
+    "k": "A people that is still afraid cannot build anything."
+   },
+   {
+    "href": "/diagnostic/",
+    "t": "Leading from calm, or from alarm?",
+    "k": "Ninety seconds, and an honest read."
+   }
+  ],
+  "far-messenger": [
+   {
+    "href": "/teaching/",
+    "t": "What I teach, and why it holds up",
+    "k": "The practice, laid out plainly."
+   },
+   {
+    "href": "/teams/",
+    "t": "The Far Messenger Program",
+    "k": "The training, carried into an organization."
+   },
+   {
+    "href": "/keynotes/",
+    "t": "Told in the room",
+    "k": "The far messengers, spoken aloud."
+   },
+   {
+    "href": "/workshop/",
+    "t": "The Canyon Within",
+    "k": "The retreat, and what it asks of you."
+   },
+   {
+    "href": "/business/sanctuary/",
+    "t": "Nobody is calm in a hard season",
+    "k": "They are only prepared, or they are not."
+   }
+  ]
+ }
+}

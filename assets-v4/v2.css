@@ -19,7 +19,7 @@
   --clay:#C96A3E;        /* primary accent */
   --clay-lt:#E5895C;
   --gold:#D9A25F;
-  --rule:rgba(250,243,233,.14);
+  --rule:rgba(242,242,238,.14);
   --on-clay:#1B1210;
 
   --display:'Fraunces',Georgia,serif;
@@ -275,7 +275,7 @@ figure{margin:0}
   position:absolute; right: clamp(1rem,2vw,2rem); bottom: clamp(.9rem,1.8vw,1.8rem); z-index:2;
   font-family:'Courier New', ui-monospace, Menlo, monospace;
   text-transform: uppercase; letter-spacing: .17em; font-size: .66rem;
-  color: rgba(250,243,233,.7); text-align: right;
+  color: rgba(242,242,238,.7); text-align: right;
 }
 .opening .peckfield{ z-index: 0; }
 @media (max-width: 1000px){
@@ -389,7 +389,7 @@ figure{margin:0}
   background: none; border: 0; cursor: pointer;
   color: var(--sand); font-size: 1.5rem; border-radius: 8px;
 }
-.ask__x:hover{ color: var(--cream); background: rgba(250,243,233,.07); }
+.ask__x:hover{ color: var(--cream); background: rgba(242,242,238,.07); }
 .ask__k{
   font-family: 'Courier New', ui-monospace, Menlo, monospace;
   font-size: .68rem; letter-spacing: .17em; text-transform: uppercase;
@@ -659,15 +659,15 @@ body.locked{overflow:hidden}
   color:var(--cream-2);margin-bottom:.4rem;line-height:1.16}
 .rows span span{display:block;color:var(--sand);font-size:1.02rem;line-height:1.66;max-width:60ch}
 .rows em{font-style:normal;color:var(--clay-lt);white-space:nowrap;font-size:1.3rem}
-.four{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;
+.four-legacy{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;
   margin-top:clamp(2rem,1.6rem + 2vw,3.2rem);border-top:1px solid var(--rule)}
-.four div{padding:clamp(1.5rem,1.2rem + 1.2vw,2.3rem) clamp(1rem,1vw + .6rem,1.9rem);
+.four-legacy div{padding:clamp(1.5rem,1.2rem + 1.2vw,2.3rem) clamp(1rem,1vw + .6rem,1.9rem);
   border-left:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.four div:first-child{border-left:0;padding-left:0}
-.four b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.025em;
+.four-legacy div:first-child{border-left:0;padding-left:0}
+.four-legacy b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.025em;
   font-size:clamp(1.2rem,1.05rem + .7vw,1.6rem);color:var(--cream-2);margin-bottom:.6rem}
-.four span{display:block;color:var(--sand);font-size:1rem;line-height:1.66}
-@media(max-width:780px){.four div{border-left:0;padding-left:0}}
+.four-legacy span{display:block;color:var(--sand);font-size:1rem;line-height:1.66}
+@media(max-width:780px){.four-legacy div{border-left:0;padding-left:0}}
 
 /* ══════════════════════════════════════════════════════════════════
    CARRIED-OVER PAGES — the old teal tokens, pointed at the garden
@@ -714,3 +714,576 @@ body.locked{overflow:hidden}
 .sub__in:focus{outline:none;border-color:var(--clay-lt);box-shadow:0 0 0 3px rgba(184,80,58,.16)}
 .sub__form .btn{flex:0 0 auto}
 .sub__fine{margin:.8rem 0 0;font-size:.85rem;line-height:1.6;color:var(--sand);opacity:.85}
+
+/* ═══════════════════════════════════════════════════════════════════
+   DAYLIGHT RESTORATION — v2, 2026-10-03
+   Tony's 10/3 ruling: cream page, ink text, sandstone kept.
+   A token flip, not a rebuild. Appended last so it wins.
+   ═══════════════════════════════════════════════════════════════════ */
+html.courage{
+  /* ═══ THE SAMPLED PALETTE — Tony's 10/3 color law.
+     Every hex sampled from his own pixels. Beige/cream BANNED as ground;
+     paper zones are cool pale stone. ═══ */
+  --ink:#E9EAE6;          /* deepest light ground -> cool pale stone */
+  --bg:#F2F2EE;           /* page: pale river-stone, cool, never beige */
+  --bg-2:#FAFAF7;         /* raised */
+  --bg-3:#ECEDE8;         /* card */
+
+  --cream:#231A12;        /* primary text — his shadow dark */
+  --cream-2:#140F0A;      /* strongest text */
+  --sand:#4A4740;         /* secondary text — cool stone gray, not brown */
+
+  --clay:#7B3418;         /* VERMILLION EARTH (the turquoise-hand photo) */
+  --clay-lt:#8A3A1B;
+  --gold:#A1734C;         /* firelight amber, deepened for contrast */
+  --gold-lt:#D1995A;      /* the shirt's amber-gold (elder portrait) */
+
+  --sky:#1D3571;          /* the elder's deep sky — headline blue */
+  --sky-2:#112357;
+  --turquoise:#3E8077;
+  --juniper:#4F6147;
+  --ember:#881E1B;        /* the real fire — Council Fire cover */
+  --crimson:#B10324;      /* the horse's mane — courage accent */
+  --pebble:#D8D6CE;       /* cool pebble */
+  --gold-soft:#E8C491;
+  --clay-deep:#6A2510;
+
+  --rule:rgba(20,15,10,.15);
+  --rule-2:rgba(20,15,10,.08);
+  --on-clay:#FAFAF7;
+}
+/* compat layer re-pointed so older pages follow the flip */
+html.courage{
+  --night:var(--bg); --night-2:var(--bg-2); --night-3:var(--bg-3);
+  --bone:var(--cream); --bone-2:var(--cream-2); --silver:var(--sand);
+  --amber:var(--gold); --amber-soft:var(--gold-lt);
+  --turq:var(--turquoise); --earth:var(--clay); --forest:var(--juniper);
+  --ink-soft:var(--sand);
+  --bg-panel:var(--bg-2); --surface:var(--bg-3);
+  --text:var(--cream); --text-muted:var(--sand);
+  --accent:var(--clay); --accent-ink:var(--on-clay);
+}
+html.courage, html.courage body{background:var(--bg);color:var(--cream)}
+/* images were tuned for a dark page; lift them slightly on cream */
+html.courage .hero__bg img, html.courage .band img{filter:none}
+
+/* ── daylight: photo bands become pale washes, not darkened plates ── */
+html.courage .photo-bg img{filter:saturate(1.04) contrast(.98) brightness(1.06)}
+html.courage .photo-bg::after{
+  background:linear-gradient(100deg,
+    rgba(242,242,238,.16) 0%,
+    rgba(242,242,238,.12) 38%,
+    rgba(242,242,238,.06) 68%,
+    rgba(242,242,238,0) 100%) !important;
+}
+/* the vertical variant (bands that read top-to-bottom) */
+.sec.hasphoto .photo-bg::after,
+html.courage .band .photo-bg::after{
+  background:linear-gradient(180deg,
+    rgba(242,242,238,.10) 0%,
+    rgba(242,242,238,.16) 46%,
+    rgba(242,242,238,.22) 100%) !important;
+}
+/* full-bleed image plates keep their photograph — just lift them */
+html.courage .plate img, html.courage .state img, html.courage .bookband img{filter:saturate(1.04) brightness(1.04)}
+
+/* ── daylight: the remaining full-bleed photo bands ── */
+html.courage .bookband__bg::after, html.courage .state__bg::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,
+    rgba(242,242,238,.86) 0%,
+    rgba(242,242,238,.92) 50%,
+    rgba(242,242,238,.96) 100%);
+}
+html.courage .bookband__bg, html.courage .state__bg{position:absolute;inset:0;overflow:hidden}
+html.courage .bookband__bg img, html.courage .state__bg img{filter:saturate(1.05) brightness(1.08)}
+html.courage .bookband, html.courage .state{position:relative;isolation:isolate}
+html.courage .bookband__in, html.courage .state__in{position:relative;z-index:1}
+html.courage .state .pull{color:var(--cream-2)}
+html.courage .state cite{color:var(--sand)}
+
+/* ── daylight: the two-pillar cards ── */
+html.courage .pill__c{background:var(--bg-2);overflow:hidden}
+html.courage .pill__c img{filter:saturate(1.05) brightness(1.06)}
+html.courage .pill__c::after{
+  background:linear-gradient(180deg,
+    rgba(242,242,238,.74) 0%,
+    rgba(242,242,238,.90) 44%,
+    rgba(242,242,238,.97) 100%) !important;
+}
+html.courage .pill__c h3, html.courage .pill__c p, html.courage .pill__c .pill__n, html.courage .pill__c li, html.courage .pill__c .arrow{color:var(--cream)}
+html.courage .pill__c h3{color:var(--cream-2)}
+html.courage .pill__c .pill__n, html.courage .pill__c .arrow{color:var(--clay-lt)}
+html.courage .pill__c li{border-color:var(--rule)}
+
+/* ── the corn statement band: brighten the photograph rather than muddy it ── */
+html.courage .state__bg img{filter:saturate(1.1) brightness(1.5) contrast(.92)}
+html.courage .state__bg::after{
+  background:linear-gradient(180deg,
+    rgba(242,242,238,.72) 0%,
+    rgba(242,242,238,.80) 55%,
+    rgba(242,242,238,.88) 100%) !important;
+}
+
+/* ── daylight: lift the dark photographs rather than muddying them ── */
+html.courage .bookband__bg img{filter:saturate(1.08) brightness(1.55) contrast(.9)}
+html.courage .bookband__bg::after{
+  background:linear-gradient(180deg,
+    rgba(242,242,238,.70) 0%,
+    rgba(242,242,238,.78) 55%,
+    rgba(242,242,238,.86) 100%) !important;
+}
+html.courage .bookband__in p, html.courage .bookband__in li{color:var(--cream)}
+html.courage .bookband__in h2{color:var(--cream-2)}
+html.courage .bookband__in .eyebrow{color:var(--clay-lt)}
+
+/* ═══ CORRECTION 2026-10-03 (late): the near-white washes above were built
+   against a rendering artifact (.rv renders at opacity:0 headless), not
+   against the real page. Photographs stay rich; text over them goes light
+   on a WARM scrim. Same treatment that reads correctly on AncestralWatch. ═══ */
+html.courage .state__bg img, html.courage .bookband__bg img{filter:saturate(1.16) brightness(1.08) contrast(1.0) !important}
+html.courage .state__bg::after{
+  background:linear-gradient(100deg,rgba(44,24,10,.78),rgba(60,33,15,.50) 55%,rgba(92,54,24,.46)) !important;}
+html.courage .bookband__bg::after{
+  background:linear-gradient(100deg,rgba(44,24,10,.76),rgba(60,33,15,.48) 55%,rgba(92,54,24,.44)) !important;}
+html.courage .state, html.courage .state *, html.courage .bookband, html.courage .bookband *{color:#FFF9EF !important}
+html.courage .state .pull em, html.courage .bookband em{color:#F3C87A !important}
+html.courage .state cite, html.courage .bookband__in .eyebrow{color:#EBD6B4 !important}
+html.courage .state .pull{text-shadow:0 2px 26px rgba(30,14,4,.55)}
+
+/* ═══ THE FOUR — editorial rows, full-bleed photographs, no cards ═══ */
+html.courage .four{background:var(--bg);padding-block:clamp(5rem,9vw,9rem)}
+html.courage .four__head{max-width:var(--max,1280px);margin:0 auto clamp(3rem,6vw,5.5rem);padding-inline:var(--gut,2rem)}
+html.courage .four__label{font-family:var(--body);font-size:.72rem;font-weight:800;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--clay-lt);margin:0 0 .9rem}
+html.courage .four__head h2{font-family:var(--display);font-weight:800;line-height:.92;margin:0;
+  font-size:clamp(2.8rem,1.4rem + 6vw,6.4rem);letter-spacing:-.02em;color:var(--cream-2)}
+html.courage .four__row{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:center;
+  gap:clamp(2rem,5vw,5.5rem);margin-bottom:clamp(4rem,8vw,8rem)}
+html.courage .four__row:last-child{margin-bottom:0}
+html.courage .four__row--flip{direction:rtl}
+html.courage .four__row--flip>*{direction:ltr}
+html.courage .four__img img{width:100%;height:clamp(300px,42vw,620px);object-fit:cover;display:block;filter:saturate(1.1)}
+html.courage .four__row:not(.four__row--flip) .four__img{margin-left:calc(-1 * var(--gut,2rem))}
+html.courage .four__row--flip .four__img{margin-right:calc(-1 * var(--gut,2rem))}
+html.courage .four__txt{padding-inline:var(--gut,2rem);max-width:46ch}
+html.courage .four__row--flip .four__txt{margin-left:auto}
+html.courage .four__n{display:block;font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,4vw,4.4rem);
+  line-height:1;color:var(--pebble,#D9CEBF);letter-spacing:-.03em;margin-bottom:.2rem}
+html.courage .four__txt h3{font-family:var(--display);font-weight:800;letter-spacing:-.015em;
+  font-size:clamp(1.9rem,1.1rem + 2.6vw,3.5rem);line-height:.98;margin:0 0 1.1rem;color:var(--cream-2)}
+html.courage .four__txt p{color:var(--cream);font-size:var(--t-body,1.1rem);line-height:1.62;margin:0 0 1.5rem}
+html.courage .four__badge{font-family:var(--body) !important;font-size:.68rem !important;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt) !important;margin:0 0 .7rem !important}
+html.courage .four__go{font-family:var(--body);font-weight:800;font-size:.92rem;text-decoration:none;
+  color:var(--cream-2);border-bottom:2px solid var(--clay);padding-bottom:.25rem}
+html.courage .four__go:hover{color:var(--clay-lt)}
+@media(max-width:860px){
+html.courage .four__row, html.courage .four__row--flip{grid-template-columns:1fr;direction:ltr;gap:1.6rem}
+html.courage .four__row .four__img, html.courage .four__row--flip .four__img{margin-inline:0}
+html.courage .four__txt{max-width:none}}
+
+
+/* ═══ SAMPLED ACCENTS — 10/3 color law, applied ═══ */
+html.courage h1, html.courage h2, html.courage .head, html.courage .four__head h2, html.courage .gal__head h2, html.courage .shelf__head h2, html.courage .jc h3, html.courage .feat h3{color:var(--sky-2)}
+html.courage .eyebrow{color:var(--clay-lt)}
+html.courage .btn--primary{background:var(--crimson);color:#FAFAF7}
+html.courage .btn--primary:hover{background:var(--ember)}
+html.courage .four__n{color:var(--pebble)}
+html.courage .four__go{border-bottom-color:var(--gold-lt)}
+
+/* ═══ ABUNDANCE MINDSET MAGAZINE — the band ═══ */
+html.courage .amm{background:linear-gradient(180deg,var(--bg-2),var(--bg));border-block:1px solid var(--rule);
+  padding-block:clamp(4.5rem,8vw,8rem)}
+html.courage .amm__in{max-width:var(--max,1280px);margin:0 auto;padding-inline:var(--gut,2rem)}
+html.courage .amm__top{display:grid;grid-template-columns:clamp(150px,18vw,230px) 1fr;gap:clamp(1.6rem,4vw,4rem);
+  align-items:center;margin-bottom:clamp(2.4rem,5vw,4rem)}
+html.courage .amm__horse img{width:100%;mix-blend-mode:multiply;filter:saturate(.9)}
+html.courage .amm__label{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--crimson);margin:0 0 .8rem}
+html.courage .amm__top h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:.95;
+  font-size:clamp(2.4rem,1.2rem + 4.6vw,5rem);margin:0 0 1rem;color:var(--sky-2)}
+html.courage .amm__why{color:var(--sand);font-size:var(--t-lead,1.25rem);line-height:1.55;max-width:56ch;margin:0}
+html.courage .amm__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.4vw,2rem)}
+@media(max-width:860px){.amm__top{grid-template-columns:1fr}.amm__horse{max-width:190px}
+html.courage .amm__grid{grid-template-columns:1fr}}
+html.courage .amm__c{display:flex;flex-direction:column;gap:.7rem;text-decoration:none;background:var(--bg-2);
+  border:1px solid var(--rule);border-left:4px solid var(--gold-lt);border-radius:4px;
+  padding:clamp(1.3rem,2vw,1.9rem);transition:transform .3s ease,box-shadow .3s}
+html.courage .amm__c:hover{transform:translateY(-4px);box-shadow:0 18px 44px -22px rgba(20,15,10,.35)}
+html.courage .amm__c i{font-style:normal;font-size:.68rem;font-weight:800;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--turquoise)}
+html.courage .amm__c b{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.16;
+  font-size:clamp(1.25rem,1.05rem + .9vw,1.7rem);color:var(--cream-2)}
+html.courage .amm__c span{color:var(--sand);font-size:1rem;line-height:1.6}
+html.courage .amm__act{margin-top:clamp(2rem,4vw,3rem);display:flex;flex-wrap:wrap;gap:1rem 2.2rem;align-items:center}
+
+/* ═══ LIVE ROTATION ENGINE — Tony's motion law ═══ */
+html.courage [data-live]{position:relative}
+html.courage .live-flip{backface-visibility:hidden;will-change:transform,opacity}
+html.courage .live-paused-tag{position:absolute;top:.6rem;right:.8rem;font-size:.62rem;font-weight:800;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--sand);opacity:0;transition:opacity .3s;
+  pointer-events:none;z-index:3}
+html.courage [data-live].is-paused .live-paused-tag{opacity:.75}
+@media (prefers-reduced-motion: reduce){.live-paused-tag{display:none}}
+
+/* ═══ 10/3 late fixes — daylight readability ═══ */
+/* the two expandable book scenes: were dark cards, go light cards */
+html.courage .scene{background:var(--bg-2);border:1px solid var(--rule);border-radius:6px}
+html.courage .scene + .scene{margin-top:1rem}
+html.courage .scene__btn{background:var(--bg-2)}
+html.courage .scene__t b{color:var(--cream-2)}
+html.courage .scene__t span{color:var(--sand)}
+html.courage .scene__x{color:var(--clay)}
+html.courage .scene__body{color:var(--cream)}
+html.courage .scene__body .say{color:var(--clay-deep)}
+/* eyebrows over photographs need the light amber, not dark vermillion */
+html.courage .hasphoto .eyebrow, html.courage .state .eyebrow, html.courage .bookband .eyebrow{color:var(--gold-lt)}
+/* paper zones: push cooler still — no warmth allowed */
+html.courage .sec--alt{background:var(--ink)}
+
+/* ═══ FINAL GROUND LOCK — Tony's zero-cream law. Cool stone, no warm washes. ═══ */
+html.courage body{background:var(--bg) !important}
+html.courage .opening{background:var(--bg) !important}
+html.courage .opening__say{background:transparent !important}
+html.courage .sec{background-color:var(--bg)}
+html.courage .sec--alt, html.courage #latest{background:var(--ink) !important}
+html.courage .shelf, html.courage .gal{background:var(--ink) !important}
+html.courage .four{background:var(--bg) !important}
+html.courage .amm{background:linear-gradient(180deg,var(--bg-2),var(--bg)) !important}
+html.courage .globebar{background:var(--bg-2) !important}
+html.courage .hdr{background:var(--bg-2) !important}
+html.courage .plate{background:var(--ink) !important}
+/* pillar cards: photograph + proper dark-cool scrim, light type — rich not washy */
+html.courage .pill__c::after{background:linear-gradient(180deg,rgba(18,20,18,.04) 0%,rgba(18,20,18,.42) 52%,rgba(18,20,18,.74) 100%) !important}
+html.courage .pill__c img{filter:saturate(1.08) brightness(1.02) !important}
+html.courage .pill__c h3, html.courage .pill__c p, html.courage .pill__c .pill__n, html.courage .pill__c li, html.courage .pill__c .arrow{color:#FAFAF7 !important}
+html.courage .pill__c .pill__n, html.courage .pill__c .arrow{color:#E8C491 !important}
+/* ═══ GALLERY STRIP — his photographs, rotating ═══ */
+html.courage .gal{padding-block:clamp(4rem,7vw,7rem)}
+html.courage .gal__head{max-width:var(--max,1280px);margin:0 auto clamp(2rem,4vw,3.4rem);padding-inline:var(--gut,2rem)}
+html.courage .gal__label{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--crimson);margin:0 0 .9rem}
+html.courage .gal__head h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:.95;
+  font-size:clamp(2.4rem,1.2rem + 4.6vw,5rem);margin:0;color:var(--sky-2)}
+html.courage .gal__strip{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(240px,26vw,380px);
+  gap:clamp(1rem,2vw,1.8rem);overflow-x:auto;padding:0 var(--gut,2rem) 1.2rem;
+  scroll-snap-type:x mandatory;max-width:var(--max,1280px);margin:0 auto}
+html.courage .gal__fig{margin:0;scroll-snap-align:start;background:var(--bg-2);border:1px solid var(--rule);
+  border-radius:6px;padding:10px 10px 12px;box-shadow:0 16px 36px -22px rgba(20,15,10,.4)}
+html.courage .gal__fig img{width:100%;height:clamp(280px,30vw,430px);object-fit:cover;border-radius:3px;display:block}
+html.courage .gal__fig figcaption{margin-top:.7rem;text-align:center;font-size:.72rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--sand)}
+html.courage .feat__d, html.courage .feat__kick{color:#FAFAF7 !important}
+/* listen: light type over the creek photograph */
+html.courage .listen h2, html.courage .listen .sec__intro p, html.courage .listen .head{color:#FAFAF7 !important}
+html.courage .listen .eyebrow{color:#E8C491 !important}
+
+/* ═══ ACCENT SHIFT 10/3 — kill the last Claude-amber accents.
+   Labels: turquoise. Action: crimson. Heads: sky. Amber only inside firelight. ═══ */
+.eyebrow,.globebar__lbl,.four__label,.gal__label,.shelf__label,.amm__label,
+.row__meta b,.jc__kick,.jrow__k,.feat__kick,.ap__kick,.pill__n,.trad__n,
+html.courage .now__k, html.courage .feat__d, html.courage .briefs-label{color:var(--turquoise) !important}
+html.courage .eyebrow::before{background:var(--turquoise) !important}
+html.courage .hasphoto .eyebrow, html.courage .state .eyebrow, html.courage .bookband .eyebrow, html.courage .listen .eyebrow{color:#9FD8CE !important}
+html.courage .arrow, html.courage .four__go, html.courage .jall a, html.courage .origin__more a{color:var(--crimson) !important;border-color:var(--crimson) !important}
+html.courage .arrow:hover, html.courage .four__go:hover{color:var(--ember) !important}
+html.courage a.touch__mail{color:var(--sky) !important}
+html.courage .scene__t b{color:var(--sky-2) !important}
+html.courage .scene__x{color:var(--crimson) !important}
+/* the two statement scrims: warm brown -> deep cool night-blue */
+html.courage .state__bg::after{background:linear-gradient(100deg,rgba(13,19,28,.78),rgba(16,24,36,.52) 55%,rgba(20,30,44,.46)) !important}
+html.courage .bookband__bg::after{background:linear-gradient(100deg,rgba(13,19,28,.76),rgba(16,24,36,.5) 55%,rgba(20,30,44,.44)) !important}
+html.courage .state cite, html.courage .bookband__in .eyebrow{color:#C9D9E4 !important}
+html.courage .state .pull em, html.courage .bookband em{color:#F3C87A !important} /* firelight words may stay lit */
+/* hero band: a whisper of morning sky instead of green-stone */
+html.courage .opening{background:linear-gradient(180deg,#EDF1F6,#F2F2EE 70%) !important}
+html.courage .globebar__mail{color:var(--sky) !important}
+
+/* ═══ THE MOCKUP'S SOUL, PORTED 10/3 — the bands that won him ═══ */
+/* 1 — the morning-sky welcome band with the rising sun */
+html.courage .greet{background:
+  radial-gradient(ellipse 52% 130% at 84% -30%, rgba(217,162,95,.6), rgba(217,162,95,.18) 55%, transparent 72%),
+  linear-gradient(180deg,#E9EFF7 0%, #EFF0EC 58%, #F3EAD8 100%) !important;
+  border-bottom:1px solid rgba(20,15,10,.14)}
+/* 2 — CULTURE IN MOTION: the sandstone band, vermillion with courage */
+html.courage .cmotion{position:relative;color:#FBF6EF;overflow:hidden;
+  background:
+    radial-gradient(1.5px 1.5px at 18% 32%, rgba(251,246,239,.3) 50%, transparent 51%),
+    radial-gradient(1px 1px at 41% 71%, rgba(30,10,4,.35) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 66% 24%, rgba(251,246,239,.25) 50%, transparent 51%),
+    radial-gradient(1px 1px at 87% 62%, rgba(30,10,4,.3) 50%, transparent 51%),
+    linear-gradient(135deg,#C1491F 0%, #A53A14 48%, #7E2A0C 100%);
+  background-size:150px 150px,170px 170px,190px 190px,160px 160px,auto;
+  padding-block:clamp(3.6rem,7vw,6.4rem)}
+html.courage .cmotion__in{max-width:var(--max,1280px);margin:0 auto;padding-inline:var(--gut,2rem);
+  display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+@media(max-width:860px){.cmotion__in{grid-template-columns:1fr}}
+html.courage .cmotion h2{font-family:var(--display);font-weight:700;letter-spacing:-.015em;line-height:1.02;
+  font-size:clamp(2rem,1.2rem + 3.4vw,3.8rem);margin:0 0 1rem;color:#FBF6EF}
+html.courage .cmotion p{color:rgba(251,246,239,.93);font-size:var(--t-lead,1.2rem);line-height:1.55;max-width:44ch;margin:0}
+html.courage .cmotion__words{margin-top:1.6rem;font-family:var(--display);font-style:italic;
+  font-size:1.05rem;letter-spacing:.07em;color:#F3C87A}
+html.courage .cmotion__ridge{width:100%;height:auto;display:block}
+
+/* ═══ PREVIEW-ONLY PALETTE WORLDS — Tony picks, the rest burn ═══ */
+/* B — RED ROCK: saturated real sandstone, canyon courage */
+html.courage[data-pal="b"]{--bg:#F5F1EA;--bg-2:#FBF8F2;--ink:#EFE7DB;--sky:#14365C;--sky-2:#0E2A4A;
+  --turquoise:#1F8A7D;--crimson:#C21807;--clay:#B5431F;--ember:#8F2F12}
+html.courage[data-pal="b"] .cmotion{background:linear-gradient(135deg,#C84A1B,#A23410 55%,#7E2609 100%) !important}
+html.courage[data-pal="b"] h1, html.courage[data-pal="b"] h2.head, html.courage[data-pal="b"] .four__head h2{color:#8F2F12 !important}
+/* C — INK & PAPER: NYT minimal, one red only */
+html.courage[data-pal="c"]{--bg:#FAFAF7;--bg-2:#FFFFFF;--ink:#F2F2EF;--sky:#121212;--sky-2:#0C0C0C;
+  --turquoise:#444;--crimson:#C21807;--gold-lt:#777;--clay:#1A1A1A}
+html.courage[data-pal="c"] .eyebrow, html.courage[data-pal="c"] .four__label{color:#C21807 !important}
+html.courage[data-pal="c"] .cmotion{background:#111 !important}
+/* D — OLD SITE COURAGE: the green/blue/sun of the original TribeAwaken */
+html.courage[data-pal="d"]{--bg:#F7FAF4;--bg-2:#FFFFFF;--ink:#EEF4E9;--sky:#1C5BA8;--sky-2:#124279;
+  --turquoise:#1E9E63;--crimson:#E0A400;--clay:#2E8540;--ember:#1C5BA8}
+html.courage[data-pal="d"] .cmotion{background:linear-gradient(135deg,#2E8540,#1E6E34 55%,#16522A 100%) !important}
+html.courage[data-pal="d"] .btn--primary{background:#1C5BA8 !important}
+/* softer statement scrim across all worlds */
+html.courage .state__bg::after{background:linear-gradient(100deg,rgba(15,18,24,.62),rgba(18,24,34,.42) 55%,rgba(22,30,42,.36)) !important}
+/* the switcher chip panel */
+html.courage #palpick{position:fixed;right:14px;bottom:14px;z-index:9999;background:#141210;color:#fff;
+  border-radius:10px;padding:10px 12px;font:700 11px/1.4 -apple-system,sans-serif;letter-spacing:.08em;
+  box-shadow:0 12px 40px rgba(0,0,0,.4)}
+html.courage #palpick b{display:block;font-size:9px;opacity:.7;margin-bottom:6px;letter-spacing:.18em}
+html.courage #palpick button{margin:0 4px 0 0;padding:7px 12px;border:0;border-radius:6px;cursor:pointer;
+  font:800 11px -apple-system,sans-serif;color:#fff}
+
+/* ═══════════════════════════════════════════════════════════════
+   THE CHOSEN WORLD — OLD-SITE COURAGE. Tony's call, 10/3 night.
+   The green of the mountain, the blue of the runner, the sun.
+   Committed as default; the switcher is retired.
+   ═══════════════════════════════════════════════════════════════ */
+html.courage{
+  --bg:#F7FAF4;           /* pale leaf-white */
+  --bg-2:#FFFFFF;
+  --bg-3:#EFF5EC;
+  --ink:#EEF4E9;          /* resting band ground */
+  --cream:#1E2419;        /* text: deep forest-ink */
+  --cream-2:#131812;
+  --sand:#49523F;         /* secondary: moss gray-green */
+  --sky:#1C5BA8;          /* the runner's blue */
+  --sky-2:#124279;        /* deep blue for headlines */
+  --turquoise:#1E9E63;    /* living green — labels */
+  --juniper:#2E8540;      /* the mountain green */
+  --crimson:#B10324;      /* the horse keeps his red (magazine identity) */
+  --ember:#124279;
+  --gold-lt:#E0A400;      /* the sun */
+  --gold:#C89200;
+  --clay:#2E8540;
+  --clay-lt:#1E6E34;
+  --clay-deep:#16522A;
+  --pebble:#DCE5D6;
+  --rule:rgba(19,24,18,.16);
+  --rule-2:rgba(19,24,18,.08);
+  --on-clay:#FFFFFF;
+}
+/* actions ride the runner's blue; the sun lights the motion words */
+html.courage .arrow, html.courage .four__go, html.courage .jall a, html.courage .origin__more a{color:var(--sky) !important;border-color:var(--sky) !important}
+html.courage .arrow:hover, html.courage .four__go:hover{color:var(--sky-2) !important}
+html.courage .btn--primary{background:var(--sky) !important;color:#fff}
+html.courage .btn--primary:hover{background:var(--sky-2) !important}
+html.courage .cmotion{background:
+  radial-gradient(1.5px 1.5px at 18% 32%, rgba(255,255,255,.3) 50%, transparent 51%),
+  radial-gradient(1px 1px at 41% 71%, rgba(10,25,12,.35) 50%, transparent 51%),
+  radial-gradient(1.5px 1.5px at 66% 24%, rgba(255,255,255,.25) 50%, transparent 51%),
+  linear-gradient(135deg,#2E8540 0%, #1E6E34 52%, #16522A 100%) !important;
+  background-size:150px 150px,170px 170px,190px 190px,auto}
+html.courage .cmotion__words{color:#FFD75E !important}
+html.courage .cmotion__ridge circle, html.courage .cmotion__ridge path{stroke:#FFFFFF}
+html.courage .cmotion__ridge g[stroke="#F3C87A"]{stroke:#FFD75E}
+/* magazine band keeps the horse's crimson identity */
+html.courage .amm__label{color:var(--crimson) !important}
+/* greet band: morning over the green world */
+html.courage .greet{background:
+  radial-gradient(ellipse 52% 130% at 84% -30%, rgba(224,164,0,.5), rgba(224,164,0,.14) 55%, transparent 72%),
+  linear-gradient(180deg,#E7F0FA 0%, #F2F7EE 60%, #F7FAF4 100%) !important}
+/* statement scrims: deep blue-green night */
+html.courage .state__bg::after{background:linear-gradient(100deg,rgba(10,22,16,.62),rgba(12,28,22,.42) 55%,rgba(14,34,28,.36)) !important}
+html.courage .bookband__bg::after{background:linear-gradient(100deg,rgba(10,20,30,.72),rgba(12,26,38,.5) 55%,rgba(16,32,46,.44)) !important}
+html.courage #palpick{display:none !important}
+/* ═══ DARK PHOTO BANDS keep light type in the Courage world ═══ */
+html.courage .listen h2, html.courage .listen h3, html.courage .listen p, html.courage .listen .ap__kick, html.courage .listen .ap__d, html.courage .listen .ap__time, html.courage .listen figcaption{color:#FFFFFF !important}
+html.courage .listen .ap__kick{color:#FFD75E !important}
+html.courage .listen .eyebrow{color:#9FD8CE !important}
+html.courage #watch h2, html.courage #watch h3, html.courage #watch p, html.courage #watch .row__meta, html.courage #watch .eyebrow{color:#FFFFFF !important}
+html.courage #watch .eyebrow{color:#9FD8CE !important}
+html.courage .btn{color:#fff !important}
+/* hero ledge: the elder scan is a portrait — frame her with care */
+html.courage .opening__ledge img{object-position:50% 18%}
+/* ═══ FIRES — THE BIG ROTATOR: one fire burning at a time, 3D turn ═══ */
+html.courage .four__row{display:none}
+html.courage .four__row.is-live{display:grid}
+html.courage .four__dots{display:flex;gap:10px;justify-content:center;margin-top:1.6rem}
+html.courage .four__dots button{width:12px;height:12px;border-radius:50%;border:2px solid var(--juniper);
+  background:transparent;cursor:pointer;padding:0}
+html.courage .four__dots button.on{background:var(--juniper)}
+/* ═══ MAGAZINE UP FRONT — prominence ═══ */
+html.courage .amm--front{border-top:6px solid var(--juniper);
+  background:linear-gradient(180deg,#FFFFFF, var(--bg)) !important}
+html.courage .amm--front .amm__top h2{font-size:clamp(2.8rem,1.4rem + 5.6vw,6rem)}
+html.courage .amm--front .amm__horse{max-width:none}
+html.courage .amm--front .amm__why{font-size:clamp(1.15rem,1.05rem + .8vw,1.5rem);color:var(--cream)}
+html.courage .amm--front .amm__c b{font-size:clamp(1.3rem,1.1rem + 1vw,1.8rem)}
+/* ═══ THE NEW YORKER FACE ═══ */
+html.courage .nyr{background:#FFFFFF !important;border-top:0 !important;border-block:1px solid var(--rule);
+  padding-block:clamp(3.6rem,7vw,6.6rem)}
+html.courage .nyr__in{max-width:var(--max,1280px);margin:0 auto;padding-inline:var(--gut,2rem);
+  display:grid;grid-template-columns:minmax(300px,.9fr) 1.1fr;gap:clamp(2.2rem,5vw,5rem);align-items:start}
+@media(max-width:900px){.nyr__in{grid-template-columns:1fr;max-width:560px}}
+html.courage .nyr__cover{border:3.5px solid #141210;outline:1px solid #141210;outline-offset:3px;
+  background:#E0A400;box-shadow:0 26px 60px -28px rgba(19,24,18,.45)}
+html.courage .nyr__mast{font-family:var(--display);font-weight:900;font-style:italic;letter-spacing:-.02em;
+  line-height:.88;color:#141210;font-size:clamp(2.4rem,1.4rem + 3vw,3.6rem);
+  padding:1.1rem 1.2rem .4rem;background:#E0A400}
+html.courage .nyr__dateline{font-size:.6rem;font-weight:800;letter-spacing:.18em;color:#141210;
+  padding:0 1.25rem .7rem;border-bottom:3px solid #141210;background:#E0A400}
+html.courage .nyr__art{display:block;width:100%;height:auto}
+html.courage .nyr__covercap{margin-top:.9rem;font-family:var(--display);font-style:italic;
+  font-size:.95rem;color:var(--sand)}
+html.courage .nyr__label{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--crimson);margin:0 0 .7rem}
+html.courage .nyr__title{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:.95;
+  font-size:clamp(2.4rem,1.2rem + 4.2vw,4.6rem);margin:0 0 1rem;color:var(--sky-2)}
+html.courage .nyr__why{font-size:clamp(1.08rem,1rem + .7vw,1.35rem);line-height:1.55;color:var(--cream);
+  max-width:58ch;margin:0 0 1.4rem}
+html.courage .nyr__thickthin{border:0;border-top:3px solid #141210;border-bottom:1px solid #141210;
+  height:5px;margin:0 0 .9rem}
+html.courage .nyr__intro{font-size:.7rem;font-weight:800;letter-spacing:.24em;color:#141210;margin:0 0 .6rem}
+html.courage .nyr .amm__grid{display:block;columns:2;column-gap:2.2rem;column-rule:1px solid var(--rule)}
+@media(max-width:640px){.nyr .amm__grid{columns:1}}
+html.courage .nyr .amm__c{display:block;break-inside:avoid;background:none;border:0;box-shadow:none;border-radius:0;
+  border-top:1px solid var(--rule);padding:.85rem 0 .95rem}
+html.courage .nyr .amm__c b{font-size:clamp(1.1rem,1rem + .6vw,1.35rem)}
+html.courage .nyr .amm__c .amm__art{height:44px;width:44px;margin-bottom:.4rem}
+html.courage .nyr .amm__act{margin-top:1.6rem}
+/* ═══ THE STRIP — old-site anatomy: magazine runs down the left ═══ */
+html.courage .nyr--strip .nyr__in{grid-template-columns:1.12fr .88fr;align-items:start}
+html.courage .nyr__strip .amm__grid{display:block;columns:1 !important}
+html.courage .nyr__strip .amm__c{border-top:1px solid var(--rule);padding:1rem 0 1.1rem}
+html.courage .nyr__strip .amm__c b{font-size:clamp(1.3rem,1.1rem + 1.1vw,1.9rem)}
+html.courage .nyr__strip .amm__c .amm__art{height:52px;width:52px}
+html.courage .nyr__cover--rail{max-width:360px}
+html.courage .nyr__pitch{margin-top:1.8rem;border-top:3px solid #141210;padding-top:1.2rem;max-width:360px}
+html.courage .nyr__pitch h3{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:1.08;
+  font-size:clamp(1.5rem,1.2rem + 1.4vw,2.2rem);margin:0 0 .8rem;color:var(--sky-2)}
+html.courage .nyr__pitch p{color:var(--cream);font-size:1.02rem;line-height:1.6;margin:0 0 .9rem}
+html.courage .nyr__pitchline{font-family:var(--display);font-style:italic;color:var(--clay-deep)}
+html.courage .nyr__pitchact{display:flex;flex-direction:column;gap:.9rem;margin-top:1.1rem;align-items:flex-start}
+@media(max-width:900px){.nyr--strip .nyr__in{grid-template-columns:1fr}.nyr__rail{max-width:420px}}
+
+/* ═══ DEEP-DIVE READABILITY — text on paper panels, photos frame them ═══ */
+#far-messenger .wrap--mid,#chapters .wrap--mid,#stone-breath .wrap--mid,
+html.courage #the-reader .wrap, html.courage #traditions .wrap, html.courage #about .origin > div:last-child{
+  background:rgba(255,255,255,.96);border-radius:12px;
+  padding:clamp(1.8rem,1.2rem + 2.6vw,3.4rem);
+  box-shadow:0 34px 90px -44px rgba(10,20,14,.5)}
+html.courage #far-messenger, html.courage #chapters, html.courage #stone-breath, html.courage #the-reader, html.courage #traditions{padding-block:clamp(3.4rem,6vw,6rem)}
+/* ink text inside the panels — no shadows, no guessing */
+#far-messenger .wrap--mid *,#chapters .wrap--mid h2,#chapters .wrap--mid .lead,
+html.courage #stone-breath .wrap--mid *, html.courage #the-reader .wrap *, html.courage #traditions .wrap *, html.courage #about .origin > div:last-child *{
+  text-shadow:none !important}
+html.courage #far-messenger h2, html.courage #chapters h2, html.courage #stone-breath h2, html.courage #the-reader h2, html.courage #traditions h2{color:var(--sky-2) !important}
+#far-messenger .say,#far-messenger .lead,#stone-breath .say,#stone-breath .lead,
+html.courage #the-reader .say, html.courage #the-reader .lead, html.courage #traditions p, html.courage #about .origin p{color:#243024 !important}
+html.courage #far-messenger .pull, html.courage #the-reader .pull{color:var(--clay-deep) !important}
+html.courage #far-messenger .eyebrow, html.courage #chapters .eyebrow, html.courage #stone-breath .eyebrow, html.courage #the-reader .eyebrow, html.courage #traditions .eyebrow{color:var(--juniper) !important}
+html.courage #traditions .trad__c h3{color:var(--sky-2) !important}
+html.courage #traditions .trad__n{color:var(--juniper) !important}
+/* photos behind panels: lighter veil so the frame glows, not fights */
+#far-messenger .photo-bg::after,#chapters .photo-bg::after,#stone-breath .photo-bg::after,
+html.courage #the-reader .photo-bg::after, html.courage #traditions .photo-bg::after{
+  background:linear-gradient(180deg,rgba(247,250,244,.38),rgba(247,250,244,.52)) !important}
+/* the two scene cards inside chapters stay readable on their own paper */
+html.courage #chapters .scene{background:#FFFFFF}
+/* strip titles: ink, always — nothing may whiten them */
+html.courage .nyr .amm__c b{color:#131812 !important}
+html.courage .nyr .amm__c span{color:#49523F !important}
+html.courage .nyr .amm__c i{color:var(--crimson) !important}
+/* panels: every word ink — including the bold ones the old vars kept bleaching */
+#far-messenger .wrap--mid strong,#far-messenger .wrap--mid b,
+#stone-breath .wrap--mid strong,#the-reader .wrap strong,
+#about .origin strong,#chapters .wrap--mid .lead,#chapters .scene__t span,
+html.courage #traditions .wrap strong{color:#14321F !important}
+html.courage #chapters .wrap--mid .lead{color:#243024 !important}
+html.courage #chapters .scene__t b{color:var(--sky-2) !important}
+html.courage .btn--primary{border:0 !important}
+/* ═══ PHOTOS BACK IN FORCE — panels narrow, veils gone, pictures blaze ═══ */
+#far-messenger .photo-bg::after,#chapters .photo-bg::after,#stone-breath .photo-bg::after,
+html.courage #the-reader .photo-bg::after, html.courage #traditions .photo-bg::after{background:none !important}
+#far-messenger .photo-bg img,#chapters .photo-bg img,#stone-breath .photo-bg img,
+html.courage #the-reader .photo-bg img, html.courage #traditions .photo-bg img{filter:saturate(1.1) brightness(1.02) !important;opacity:1}
+html.courage #far-messenger .wrap--mid, html.courage #chapters .wrap--mid, html.courage #stone-breath .wrap--mid, html.courage #traditions .wrap{
+  max-width:60ch;margin-right:auto;margin-left:clamp(1rem,5vw,5rem)}
+html.courage #chapters .wrap--mid{margin-left:auto;margin-right:clamp(1rem,5vw,5rem)}
+html.courage #the-reader .wrap{max-width:900px}
+#far-messenger .wrap--mid,#chapters .wrap--mid,#stone-breath .wrap--mid,
+html.courage #the-reader .wrap, html.courage #traditions .wrap{background:rgba(255,255,255,.95)}
+/* the strip band breathes leaf, not hospital white */
+html.courage .nyr{background:#F2F7EE !important}
+html.courage .nyr__strip .amm__c, html.courage .nyr .amm__c{background:transparent}
+/* ═══ HEADER & MENU join the Courage world ═══ */
+html.courage .brand__txt{color:#124279 !important}
+html.courage .brand__txt span{color:#2E8540 !important}
+html.courage .brand__logo{filter:hue-rotate(95deg) saturate(.85) brightness(.92)}
+html.courage .hdr{border-bottom:1px solid var(--rule)}
+html.courage .nav a{color:#1E2419 !important;border-bottom-color:transparent}
+html.courage .nav a:hover{color:#1C5BA8 !important;border-bottom-color:#1C5BA8 !important}
+html.courage .hdr__cta{background:#1C5BA8 !important;color:#fff !important}
+html.courage .burger{border-color:var(--rule)}
+html.courage .burger i{background:#1E2419 !important}
+html.courage .globebar{border-bottom:1px solid var(--rule)}
+html.courage .globebar__ls .is-on{color:#124279 !important;border-bottom-color:#2E8540 !important}
+html.courage .globebar__ls a{color:#49523F !important}
+html.courage .globebar__ls a:hover{color:#1C5BA8 !important}
+/* the full-screen menu: deep runner's blue */
+html.courage .menu{background:#124279 !important}
+html.courage .menu__ls a{color:#FFFFFF !important}
+html.courage .menu__ls a:hover{color:#FFD75E !important}
+html.courage .menu__ls em{color:#FFD75E !important}
+html.courage .menu__ls li, html.courage .menu__ls{border-color:rgba(255,255,255,.25) !important}
+html.courage .menu__close{color:#fff !important;border-color:rgba(255,255,255,.4) !important}
+html.courage .menu__foot a{color:#9FD8CE !important}
+
+/* ═══ FINISH PASS — density, life, presence ═══ */
+/* dead space dies: the page tightens its belt */
+html.courage .sec, html.courage .sec--alt{padding-block:clamp(2.4rem,5vw,4.8rem) !important}
+html.courage #far-messenger, html.courage #chapters, html.courage #stone-breath, html.courage #the-reader, html.courage #traditions{padding-block:clamp(2.6rem,5vw,4.6rem) !important}
+html.courage .cmotion{padding-block:clamp(2.6rem,5vw,4.6rem) !important}
+html.courage .nyr{padding-block:clamp(2.6rem,5vw,4.8rem) !important}
+html.courage .four{padding-block:clamp(2.8rem,6vw,5.2rem) !important}
+html.courage .gal, html.courage .shelf{padding-block:clamp(2.6rem,5vw,4.6rem) !important}
+html.courage .opening{min-height:min(78vh,820px)}
+/* the photographs BREATHE — slow Ken Burns on every band image */
+@keyframes kbA{from{transform:scale(1.06) translate(0,-1.2%)}to{transform:scale(1.14) translate(1.6%,1.2%)}}
+@keyframes kbB{from{transform:scale(1.12) translate(1.2%,1%)}to{transform:scale(1.05) translate(-1.4%,-1%)}}
+.photo-bg img,.state__bg img,.bookband__bg img{animation:kbA 26s ease-in-out infinite alternate;will-change:transform}
+html.courage .sec:nth-child(even) .photo-bg img, html.courage .bookband__bg img{animation-name:kbB;animation-duration:31s}
+html.courage .pill__c img, html.courage .row__media img, html.courage .feat__ph img{animation:kbA 34s ease-in-out infinite alternate}
+html.courage .four__img img{animation:kbB 24s ease-in-out infinite alternate}
+@media (prefers-reduced-motion: reduce){
+html.courage .photo-bg img, html.courage .state__bg img, html.courage .bookband__bg img, html.courage .pill__c img, html.courage .row__media img, html.courage .feat__ph img, html.courage .four__img img{animation:none}}
+/* the sun turns over the ridge; the cover's sun too */
+@keyframes rays{to{transform:rotate(360deg)}}
+.cmotion__ridge g[stroke="#FFD75E"],.cmotion__ridge g[stroke="#F3C87A"]{
+  transform-origin:430px 78px;animation:rays 48s linear infinite}
+html.courage .nyr__art g[stroke="#FFF7E6"]{transform-origin:300px 120px;animation:rays 60s linear infinite}
+@media (prefers-reduced-motion: reduce){.cmotion__ridge g,.nyr__art g{animation:none}}
+/* ═══ FRONT GETS WEIGHT ═══ */
+html.courage .globebar{background:#16522A !important;border-bottom:0}
+html.courage .globebar__lbl, html.courage .globebar__lbl svg{color:#FFD75E !important}
+html.courage .globebar__ls a{color:rgba(255,255,255,.85) !important}
+html.courage .globebar__ls .is-on{color:#FFFFFF !important;border-bottom-color:#FFD75E !important}
+html.courage .globebar__ls .soon{color:rgba(255,255,255,.45) !important}
+html.courage .globebar__mail{color:#9FD8CE !important}
+html.courage .greet{background:
+  radial-gradient(ellipse 55% 140% at 82% -30%, rgba(224,164,0,.75), rgba(224,164,0,.25) 55%, transparent 74%),
+  linear-gradient(180deg,#CBDCF0 0%, #E6EDDC 55%, #F0F0D8 100%) !important}
+html.courage .greet__w{color:#124279 !important}
+html.courage .opening{background:linear-gradient(180deg,#E9F2E4,#F4F8F0) !important}
+html.courage .nyr{background:#E9F2E4 !important}
+html.courage .nyr__cover{box-shadow:0 34px 70px -26px rgba(18,42,24,.55)}
+html.courage .jc__img--ink{background:#E9F2E4;display:flex;align-items:center;justify-content:center}
+html.courage .jc__ink{width:38%;height:auto;position:static;object-fit:contain;opacity:.9}

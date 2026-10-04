@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="courage">
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNYT1TJ3N2"></script>
@@ -15,7 +15,7 @@
 <title>Tony Skrelūnas — Ancestral intelligence for a regenerating world | TribeAwaken</title>
 <meta name="description" content="Human resilience and community resilience, braided from three traditions. Retreats, team immersives, coaching, essays, music and film.">
 <link rel="icon" href="/favicon.svg">
-<link rel="stylesheet" href="/assets-v4/v2.css?v=33">
+<link rel="stylesheet" href="/assets-v4/v2.css?v=60">
 <style>
 /* ============ page-specific — extends v2.css ============
    NOTE: inside clamp()/calc(), the + and - operators MUST be
@@ -616,7 +616,7 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 <meta property="og:title" content="Tony Skrelūnas — Ancestral intelligence for a regenerating world | TribeAwaken">
 <meta property="og:description" content="Human resilience and community resilience, braided from three traditions. Retreats, team immersives, coaching, essays, music and film.">
 <meta property="og:url" content="https://tribeawaken.com/">
-<meta property="og:image" content="https://tribeawaken.com/assets/img/family/lamplight-desk.jpg">
+<meta property="og:image" content="https://tribeawaken.com/assets/img/v2/masan-and-the-boy-1800px.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <style>
 /* the three most recent pieces, up front */
@@ -665,6 +665,19 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
   rgba(15,18,16,.7) 74%, rgba(15,18,16,.55) 100%) !important}
 .reader-dim .photo-bg img{filter:saturate(.85) brightness(.72)}
 </style>
+<link rel="stylesheet" href="/js/vendor/lenis.css">
+<script src="/js/vendor/gsap.min.js" defer></script>
+<script src="/js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/js/vendor/lenis.min.js" defer></script>
+<script src="/js/motion.js" defer></script>
+<script src="/js/rotate-live.js" defer></script>
+<link rel="stylesheet" href="/assets-v4/palette-sampled.css?v=2">
+<link rel="stylesheet" href="/assets-v4/scrims.css?v=2">
+<link rel="stylesheet" href="/assets-v4/stages.css?v=6">
+<script src="/js/stages.js" defer></script>
+<link rel="stylesheet" href="/assets-v4/home-contrast.css?v=5">
+<link rel="stylesheet" href="/assets-v4/mobile-fix.css?v=1">
+<link rel="stylesheet" href="/assets-v4/controls-daylight.css?v=2">
 </head>
 <body>
 
@@ -783,6 +796,7 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
         <li><a href="https://ancestralwatch.com">The Books</a></li>
         <li><a href="/teaching/">Teaching</a></li>
         <li><a href="/journal/">Journal</a></li>
+        <li><a href="/magazine/">Magazine</a></li>
         <li><a href="/teams/">For Teams</a></li>
         <li><a href="/community-resilience/">Community Resilience</a></li>
         <li><a href="/#about">About</a></li>
@@ -809,6 +823,7 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
       <li><a href="https://ancestralwatch.com"><em>03</em> The Books</a></li>
       <li><a href="/teaching/"><em>04</em> Teaching</a></li>
       <li><a href="/journal/"><em>05</em> Journal</a></li>
+      <li><a href="/magazine/"><em>05&middot;5</em> Magazine</a></li>
       <li><a href="/teams/"><em>06</em> For Teams</a></li>
       <li><a href="/community-resilience/"><em>07</em> Community Resilience</a></li>
       <li><a href="/#about"><em>08</em> About</a></li>
@@ -834,13 +849,543 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
     <p class="lead" style="margin-top:1.1rem"><strong>Three lineages. One lesson, told three ways: the old people knew how to live, and they left us the tools.</strong></p>
   </div>
   <div class="opening__ledge">
-    <img src="/assets/img/family/lamplight-desk.jpg" alt="The kerosene lamp on the desk in the log room" width="2200" height="1650" fetchpriority="high">
+    <img src="/assets/img/v2/masan-and-the-boy-1800px.jpg" alt="Masan in the doorway of the hogan, the boy and the dog beside her" width="2200" height="1650" fetchpriority="high">
   </div>
 </section>
 
+<!-- ================= CULTURE IN MOTION — the mockup's sandstone band ================= -->
+<section class="cmotion rv" id="culture-in-motion">
+  <div class="cmotion__in">
+    <div>
+      <h2>Culture in motion</h2>
+      <p>Cowboys and corral dust. Dancers at dawn. Skiers, riders, runners, elders who walked farther than any of us. The cultures of the world are alive, and they move in morning light.</p>
+      <p class="cmotion__words">cowboys &middot; dancers &middot; skiers &middot; riders &middot; elders &middot; athletes</p>
+    </div>
+    <svg class="cmotion__ridge" viewBox="0 0 560 240" xmlns="http://www.w3.org/2000/svg" aria-label="Sun over the ridge, a runner on the trail">
+      <circle cx="430" cy="78" r="34" fill="none" stroke="#FBF6EF" stroke-width="2.5"/>
+      <g stroke="#F3C87A" stroke-width="2" stroke-linecap="round">
+        <line x1="430" y1="28" x2="430" y2="14"/><line x1="430" y1="128" x2="430" y2="142"/>
+        <line x1="380" y1="78" x2="366" y2="78"/><line x1="480" y1="78" x2="494" y2="78"/>
+        <line x1="395" y1="43" x2="385" y2="33"/><line x1="465" y1="43" x2="475" y2="33"/>
+        <line x1="395" y1="113" x2="385" y2="123"/><line x1="465" y1="113" x2="475" y2="123"/>
+      </g>
+      <path d="M10 200 L90 140 L150 185 L225 105 L295 170 L370 135 L450 190 L550 160"
+            fill="none" stroke="#FBF6EF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- the messenger. Same drawing, now jointed and walking the ridge. -->
+      <g class="walker" aria-hidden="true">
+        <g class="walker__body" stroke="#FBF6EF" stroke-width="3" stroke-linecap="round"
+           stroke-linejoin="round" fill="none">
+          <circle cx="0" cy="-34" r="6"/>
+          <path d="M-3 -27 Q-9 -16 -13 -6"/>
+          <g class="walker__leg walker__leg--b">
+            <path d="M-13 -6 Q-22 0 -32 2 M-32 2 L-40 11"/>
+          </g>
+          <g class="walker__leg walker__leg--f">
+            <path d="M-13 -6 Q-5 2 -1 9 M-1 9 L10 13"/>
+          </g>
+          <g class="walker__arm walker__arm--b">
+            <path d="M-6 -22 Q-16 -24 -24 -30"/>
+          </g>
+          <g class="walker__arm walker__arm--f">
+            <path d="M-6 -20 Q4 -16 11 -8"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ================= ABUNDANCE MINDSET MAGAZINE · the vertical strip ================= -->
+<section class="amm nyr nyr--strip" id="magazine">
+  <div class="nyr__in">
+    <div class="nyr__strip">
+      <p class="nyr__label">The magazine &middot; Tribe Achieve, reborn</p>
+      <h2 class="nyr__title">Abundance Mindset Magazine</h2>
+      <p class="nyr__why">Good news, chosen as medicine. Every article in the journal lives here &mdash; and the strip turns on its own.</p>
+      <hr class="nyr__thickthin">
+      <p class="nyr__intro">IN THIS ISSUE</p>
+      <div class="amm__grid" data-magazine></div>
+      <div class="amm__act">
+        <a class="btn btn--primary" href="/magazine/">Open the whole magazine <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+    <aside class="nyr__rail">
+      <div class="nyr__cover nyr__cover--rail rv">
+        <div class="nyr__mast">Abundance<br>Mindset</div>
+        <div class="nyr__dateline">GOOD NEWS AS MEDICINE &middot; OCT. 2026</div>
+        <svg class="nyr__art" viewBox="0 0 420 470" xmlns="http://www.w3.org/2000/svg" aria-label="Cover: the sun over green mountains, the runner on the ridge">
+          <rect x="0" y="0" width="420" height="470" fill="#E0A400"/>
+          <circle cx="300" cy="120" r="64" fill="#FFF7E6"/>
+          <g stroke="#FFF7E6" stroke-width="5" stroke-linecap="round">
+            <line x1="300" y1="22" x2="300" y2="44"/><line x1="300" y1="196" x2="300" y2="218"/>
+            <line x1="202" y1="120" x2="224" y2="120"/><line x1="376" y1="120" x2="398" y2="120"/>
+            <line x1="231" y1="51" x2="247" y2="67"/><line x1="353" y1="173" x2="369" y2="189"/>
+            <line x1="369" y1="51" x2="353" y2="67"/><line x1="247" y1="173" x2="231" y2="189"/>
+          </g>
+          <path d="M0 330 L90 220 L160 300 L250 180 L330 280 L420 230 L420 470 L0 470 Z" fill="#2E8540"/>
+          <path d="M0 390 L80 320 L170 380 L260 300 L350 370 L420 330 L420 470 L0 470 Z" fill="#1E6E34"/>
+          <path d="M0 440 L420 400 L420 470 L0 470 Z" fill="#16522A"/>
+          <g stroke="#1C5BA8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <circle cx="237" cy="153" r="13" fill="#1C5BA8" stroke="none"/>
+            <path d="M233 168 Q224 190 216 206"/>
+            <path d="M216 206 Q198 216 180 220 M180 220 L162 238"/>
+            <path d="M216 206 Q232 222 240 236 M240 236 L262 244"/>
+            <path d="M228 178 Q206 174 190 162 M229 182 Q252 190 266 206"/>
+          </g>
+        </svg>
+      </div>
+      <div class="nyr__pitch rv">
+        <h3>You stand as a leader of your people.</h3>
+        <p>You have achieved, built, and negotiated within systems not of your making. Yet a deeper call remains: an economy and a life that are truly yours &mdash; resilient, self-determined, in harmony with the wisdom of your ancestors. That potential is not a distant dream. It is a code waiting to be rebooted.</p>
+        <p class="nyr__pitchline">The journey begins with a single step.</p>
+        <div class="nyr__pitchact">
+          <a class="btn btn--primary" href="/teams/">Begin the journey <span aria-hidden="true">&rarr;</span></a>
+          <a class="arrow" href="https://ancestralwatch.com">The books <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+
 <!-- ═══════════ WHAT IS A FAR MESSENGER ═══════════ -->
+
+<!-- ═══════════ STAGE I · The Work ═══════════ -->
+<section class="stage" id="stage-work" data-stage="work">
+  <div class="stage__head">
+    <p class="stage__num">I</p>
+    <h2 class="stage__title">The Work</h2>
+    <p class="stage__sub">What I actually do, and how it comes to you.</p>
+    <div class="stage__nav">
+      <div class="stage__dots" role="tablist" aria-label="The Work scenes"><button class="stage__dot" type="button" data-go="0" aria-label="Four fires"></button><button class="stage__dot" type="button" data-go="1" aria-label="The talk and the sanctuary"></button><button class="stage__dot" type="button" data-go="2" aria-label="Two bodies of work"></button><button class="stage__dot" type="button" data-go="3" aria-label="Course, lecture, long form"></button></div>
+      <span class="stage__held">paused — yours</span>
+    </div>
+  </div>
+  <div class="stage__deck">
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="0" data-label="Four fires">
+<section class="four" id="focus">
+  <div class="four__head">
+    <p class="four__label">The work</p>
+    <h2>Four fires I keep.</h2>
+  </div>
+  <article class="four__row rv" data-fire="economy">
+    <div class="four__img"><img src="/assets/img/v2/wix-corn-sunset-1800px.jpg" alt="Dry-farmed corn in tassel at sunset" loading="lazy"></div>
+    <div class="four__txt"><span class="four__n">01</span>
+      <h3>Regenerative<br>Economy</h3>
+      <p>Just transition, honorable trade, economic sovereignty. What a people owns, what it makes, and who keeps the margin.</p>
+      
+      <div class="dive" data-dive="economy" aria-live="polite"></div>
+      <a class="four__go" href="/community-resilience/economy/">Into the work <span aria-hidden="true">&rarr;</span></a></div>
+  </article>
+  <article class="four__row four__row--flip rv" data-fire="governing">
+    <div class="four__img"><img src="/assets/img/ta/workshop-room-2000x1500.jpg" alt="Tony in council with participants beneath the redwoods" loading="lazy"></div>
+    <div class="four__txt"><span class="four__n">02</span>
+      <h3>Culturally<br>Compatible<br>Governing</h3>
+      <p>Governance built to fit the people it serves, not borrowed whole from somewhere it never grew.</p>
+      
+      <div class="dive" data-dive="governing" aria-live="polite"></div>
+      <a class="four__go" href="/community-resilience/lga/">Into the work <span aria-hidden="true">&rarr;</span></a></div>
+  </article>
+  <article class="four__row rv" data-fire="healing">
+    <div class="four__img"><img src="/assets/img/focus/healing.jpg" alt="A grandfather&rsquo;s hands" loading="lazy"></div>
+    <div class="four__txt"><span class="four__n">03</span>
+      <h3>Intergenerational<br>Healing</h3>
+      <p>What crosses the bridge between the generations, and what gets set down before it can.</p>
+      
+      <div class="dive" data-dive="healing" aria-live="polite"></div>
+      <a class="four__go" href="/human-resilience/">Into the work <span aria-hidden="true">&rarr;</span></a></div>
+  </article>
+  <article class="four__row four__row--flip rv" data-fire="far-messenger">
+    <div class="four__img"><img src="/assets/img/gallery/roper-trail-hat.jpg" alt="On the trail at first light" loading="lazy"></div>
+    <div class="four__txt"><span class="four__n">04</span>
+      <p class="four__badge">A full section &middot; the writings and the books</p>
+      <h3>Living as a<br>Far Messenger</h3>
+      <p>The practice at the center. Every people on earth once raised trained carriers who crossed hard ground with what mattered and arrived whole. This is how it is done now.</p>
+      
+      <div class="dive" data-dive="far-messenger" aria-live="polite"></div>
+      <a class="four__go" href="/teaching/">Into the work <span aria-hidden="true">&rarr;</span></a></div>
+  </article>
+</section>
+
+<!-- ═══════════ THE TWO CHAPTERS ═══════════ -->
+
+<!-- ================= OPEN NOW — retreat + books ================= -->
+
+<!-- ================= TWO PILLARS ================= -->
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="1" data-label="The talk and the sanctuary">
+<section class="sec hasphoto" id="the-work">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/v2/real-garden-path-1800px.jpg" alt="" loading="lazy"></div>
+  <div class="wrap wrap--mid">
+    <p class="eyebrow">Two ways this comes to you</p>
+    <h2 class="head">The talk, and the sanctuary.</h2>
+
+    <ul class="rows">
+      <li><a href="/keynotes/"><span><b>The talk</b><span>Conferences, corporate retreats, leadership gatherings, universities, commencements. The far messengers &mdash; what they were, what we lost when we stopped raising them, and what it means for what comes next. Told as a story, in the room, without slides.</span></span><em>&rarr;</em></a></li>
+      <li><a href="mailto:wisdom@ancestralwatch.com"><span><b>The sanctuary</b><span>Designing a company or community sanctuary that holds resilience while the world stays uncertain. Slower work, fewer at a time &mdash; the charter, the ownership, the governance, and the practices that keep people steady inside it.</span></span><em>&rarr;</em></a></li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ================= THE FOUR · the deep work ================= -->
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="2" data-label="Two bodies of work">
+<section class="sec hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/v2/real-marsh-pond-1800px.jpg" alt="" loading="lazy"></div>
+  
+  <div class="wrap">
+    <div class="sec__intro rv">
+      <div>
+        <p class="eyebrow">The work</p>
+        <h2 class="head">Two bodies of work. One method.</h2>
+      </div>
+      <p>One rebuilds the person. One rebuilds the place. They run on the same discipline — read all four accounts, spend from none of them blindly, and build capacity before you need it.</p>
+    </div>
+
+    <div class="pill rv">
+      <a class="pill__c" id="human-performance" href="/human-resilience/">
+        <img src="/assets/img/v2/real-tony-pebbles-creek-1800px.jpg" alt="Tony beside the creek, stones in hand" loading="lazy">
+        <p class="pill__n">Pillar one</p>
+        <h3>Human Resilience</h3>
+        <p>Endurance you can prove. Breath, sound, movement, food and sleep — trained the way three old cultures trained them, measured the way a modern practice measures.</p>
+        <ul class="pill__ls">
+          <li>Retreats</li><li>1:1 Coaching</li><li>Team immersives</li><li>Diagnostic</li>
+        </ul>
+        <span class="arrow">Explore the practice <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="pill__c" id="community-resilience" href="/teams/">
+        <img src="/assets/img/v2/wix-mexico-dancers-1800px.jpg" alt="Dancers in white at the fiesta" loading="lazy">
+        <p class="pill__n">Pillar two</p>
+        <h3>Community Resilience</h3>
+        <p>Governance, enterprise and land, restructured so power sits where the knowledge already is. On reservations, in boardrooms, and in halls with folding chairs.</p>
+        <ul class="pill__ls">
+          <li>Governance</li><li>Enterprise</li><li>Energy &amp; land</li><li>Advisory</li>
+        </ul>
+        <span class="arrow">See the advisory work <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE COMEBACK ================= -->
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="3" data-label="Course, lecture, long form">
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow">The work</p>
+    <h2 class="head">A course, a lecture, and the long form of both.</h2>
+    <p class="lead" style="margin-top:1.1rem;max-width:54ch">I hold a faculty appointment at 1440 Multiversity. The subject is unusual enough that I have had to build the syllabus from scratch, out of three traditions and forty years of research that keeps confirming them.</p>
+  </div>
+</section>
+
+<div class="bleed">
+
+  <!-- 1 — THE COURSE -->
+  <article class="row rv">
+    <div class="row__media"><img src="/assets/img/v2/real-tony-cottonwood-1800px.jpg" alt="The redwoods at 1440 Multiversity" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>The course</b> &middot; Faculty, 1440 Multiversity &middot; Residential</p>
+      <h3>Ancestral Practice and Human Performance</h3>
+      <p>Six sessions on the technologies three peoples built for meeting the hardest days &mdash; Din&eacute;, Lithuanian, Japanese &mdash; and the evidence that has since grown up underneath them. Taught from inside the traditions rather than about them. More courses follow the doctoral research, which enters dissertation stage early next year.</p>
+      <div class="row__act"><a class="btn btn--primary" href="/teaching/">The syllabus <span aria-hidden="true">&rarr;</span></a></div>
+    </div>
+  </article>
+
+  <article class="row rv">
+    <div class="row__media"><img src="/assets/img/v2/real-garden-path-1800px.jpg" alt="Tony Skrelūnas mid-sentence beside a podium bearing an official seal" style="object-position:50% 24%" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>Keynotes &amp; addresses</b> · Conferences, campuses, communities</p>
+      <h3>The keynote</h3>
+      <p>Commencement addresses, conference keynotes, community halls with folding chairs. Same talk either way: what the oldest economies on earth knew about wealth, and what it would cost us to remember it.</p>
+      <div class="row__act"><a class="btn btn--primary" href="mailto:wisdom@ancestralwatch.com">Write to Tony <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+      <article class="row row--flip rv">
+    <div class="row__media"><img src="/assets/img/ta/podium-banner-2000x1500.jpg" alt="Tony in council with participants beneath the redwoods" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>For Teams</b> · 2.5–3 days · Worldwide</p>
+      <h3>The Far Messenger Program</h3>
+      <p>An immersive for leadership teams entering harder terrain. We bring the whole faculty — practitioners, cooks, elders, coaches — and a diagnostic before and thirty days after, so the lift is documented, not just felt.</p>
+      <div class="row__act"><a class="arrow" href="/teams/">See the program <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+      <article class="row rv">
+    <div class="row__media"><img src="/assets/img/v2/wix-red-road-conversation-1800px.jpg" alt="A Red Road conversation on the grass" style="object-position:50% 28%" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>One to one</b> · Human resilience</p>
+      <h3>Coaching for leaders</h3>
+      <p>Private work for founders, executives, and people carrying something heavy. Endurance and steadiness read through three lenses — Diné, Lithuanian, Japanese.</p>
+      <div class="row__act"><a class="arrow" href="/human-resilience/">Work with Tony <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+      <article class="row row--flip rv">
+    <div class="row__media"><img src="/assets/img/v2/real-gold-trail-1800px.jpg" alt="Tony Skrelūnas presenting an economic transition plan to a seated hall" style="object-position:50% 26%" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>Advisory</b> · Governments, communities, companies</p>
+      <h3>Community resilience</h3>
+      <p>Governance restructuring, community enterprise, energy and land strategy. The same questions, run at the scale of a nation instead of a nervous system — and run in the room, not in a deck.</p>
+      <div class="row__act"><a class="arrow" href="mailto:wisdom@ancestralwatch.com">Start a conversation <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+      <article class="row rv">
+    <div class="row__media"><img src="/assets/img/ta/gathering-table-2000x1500.jpg" alt="A circle of people around the fire in the redwoods at 1440 Multiversity" loading="lazy"></div>
+    <div class="row__body">
+      <p class="row__meta"><b>The Retreat</b> · Aug 28–30 · Scotts Valley, CA</p>
+      <h3>The Canyon Within</h3>
+      <p>Three days in the redwoods to change the frequency you live at — breath, sound, land, and food cooked as medicine. Eighteen seats. Many arrive alone and leave with a circle.</p>
+      <div class="row__act"><a class="btn btn--primary" href="/workshop/">See the retreat <span aria-hidden="true">→</span></a></div>
+    </div>
+  </article>
+
+</div>
+
+<!-- ================= ROOMS — speaking & teaching ================= -->
+
+<!-- ================= THE GATHERINGS ================= -->
+
+<figure class="slab slab--lift rv">
+  <div class="slab__ph"><img src="/assets/img/v2/real-creek-logbridge-1800px.jpg" alt="A row of people seated close together at dusk, listening" style="object-position:50% 46%" loading="lazy"></div>
+  <div class="wrap"><figcaption>Elders and teenagers on the same floor, nobody on a panel. The format underneath every retreat on this page.</figcaption></div>
+</figure>
+
+<!-- ================= JOURNAL ================= -->
+
+<!-- FEATURED — broadsheet cover -->
+<a class="feat" href="/journal/30000-years-tribal-trade-americas/">
+  <div class="feat__ph">
+    <img src="/assets/img/journal/30000-years-tribal-trade-americas/2.jpg" alt="Coiled baskets laid out on a Navajo rug at a trade gathering" loading="lazy">
+  </div>
+  <div class="feat__in tex tex--strong tex--zoom">
+    <div class="tex__i"><img src="/assets/img/v2/real-garden-path-1800px.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+    <p class="feat__kick">The commencement address</p>
+    <h3>30,000 Years, and a Formula That Still Works</h3>
+    <p class="feat__d">A commencement address on where we come from, the great trade civilizations of the Americas, and a formula for a good life that has held for thirty thousand years.</p>
+    <p class="feat__by"><span>Essay · Address</span><span>12 min read</span></p>
+    <span class="feat__go">Read the essay <span aria-hidden="true">→</span></span>
+  </div>
+</a>
+
+<!-- MORE ESSAYS -->
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ STAGE II · The Journal ═══════════ -->
+<section class="stage" id="stage-journal" data-stage="journal">
+  <div class="stage__head">
+    <p class="stage__num">II</p>
+    <h2 class="stage__title">The Journal</h2>
+    <p class="stage__sub">Everything I have written down.</p>
+    <div class="stage__nav">
+      <div class="stage__dots" role="tablist" aria-label="The Journal scenes"><button class="stage__dot" type="button" data-go="0" aria-label="Three from the last few weeks"></button><button class="stage__dot" type="button" data-go="1" aria-label="The featured essay"></button><button class="stage__dot" type="button" data-go="2" aria-label="More from the journal"></button><button class="stage__dot" type="button" data-go="3" aria-label="The whole index"></button></div>
+      <span class="stage__held">paused — yours</span>
+    </div>
+  </div>
+  <div class="stage__deck">
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="0" data-label="Three from the last few weeks">
+<section class="sec sec--alt" id="latest">
+  <div class="wrap">
+    <p class="eyebrow">Written lately</p>
+    <h2 class="head">Three from the last few weeks.</h2>
+    <p class="lead" style="margin-top:1.1rem;max-width:52ch">The book goes worldwide, a basketball coach who borrowed the circle, and a fire in the redwoods.</p>
+    <div class="feat">
+    <a class="feat__c" href="/journal/stone-breath-has-gone-out-to-the-world/">
+      <span class="feat__im"><img src="/assets/img/stone-breath-cover.jpg" alt="" loading="lazy"></span>
+      <time class="feat__d" datetime="2026-09-11">September 11, 2026</time>
+      <b>Stone Breath Has Gone Out to the World</b>
+      <span class="feat__k">Worldwide distribution. Apple Books, Kobo, booksellers from Berlin to Sydney, and the library catalogs. One link reaches all of it.</span>
+      <em class="arrow">Read it <span aria-hidden="true">&rarr;</span></em>
+    </a>
+    <a class="feat__c" href="/journal/the-coach-who-borrowed-the-circle/">
+      <span class="feat__im"><img src="/assets/img/ta/bench-gathering-2000x1333.jpg" alt="" loading="lazy"></span>
+      <time class="feat__d" datetime="2026-09-11">September 11, 2026</time>
+      <b>The Coach Who Borrowed the Circle</b>
+      <span class="feat__k">Phil Jackson put silence, story and a circle into the most pressured organization in American sport and won seventy-two games. He had to borrow the pieces.</span>
+      <em class="arrow">Read it <span aria-hidden="true">&rarr;</span></em>
+    </a>
+    <a class="feat__c" href="/journal/the-first-fire/">
+      <span class="feat__im"><img src="/assets/img/journal/the-first-fire/missy-and-henry.jpg" alt="" loading="lazy"></span>
+      <time class="feat__d" datetime="2026-09-01">September 1, 2026</time>
+      <b>The First Fire</b>
+      <span class="feat__k">Three days in the redwoods. About twenty people crossed west carrying gratitude, and at the far end they were expected.</span>
+      <em class="arrow">Read it <span aria-hidden="true">&rarr;</span></em>
+    </a>
+    </div>
+    <p style="margin-top:clamp(1.6rem, 1.2rem + 1.6vw, 2.6rem)"><a class="arrow" href="/journal/">Everything I have written down <span aria-hidden="true">&rarr;</span></a></p>
+  </div>
+</section>
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="1" data-label="The featured essay">
+<section class="sec sec--alt" style="padding-top:clamp(3.5rem, 2.4rem + 3.4vw, 6rem)">
+<div class="wrap">
+<div class="jbig rv">
+      <a class="jc" href="/journal/the-water-remembers-sacred-lake/">
+        <div class="jc__img"><img src="/assets/img/v2/wix-river-peaks-1800px.jpg" alt="The river below the peaks" loading="lazy"></div>
+        <p class="jc__kick">Water · Memory</p>
+        <h3>The Water Remembers</h3>
+        <p>My grandfather stood at the edge of a mountain lake and was called to sing an old song. What he taught me there belongs to every people on earth.</p>
+        <span class="jc__go">Read the essay →</span>
+      </a>
+
+      <a class="jc" href="/journal/they-tried-to-erase-a-whole-people/">
+        <div class="jc__img"><img src="/assets/img/v2/historic-stick-game-1600px.jpg" alt="A historic photograph of the stick game" loading="lazy"></div>
+        <p class="jc__kick">Survival · Baltics</p>
+        <h3>They Tried to Erase a Whole People</h3>
+        <p>Book smugglers, song keepers, and a basketball team in tie-dye. Now they raise the happiest young souls on earth.</p>
+        <span class="jc__go">Read the essay →</span>
+      </a>
+
+      <a class="jc" href="/journal/the-man-who-raced-hills-into-his-70s/">
+        <div class="jc__img"><img src="/assets/img/v2/wix-elder-yellow-motorcycle-1800px.jpg" alt="The elder and the yellow motorcycle" loading="lazy"></div>
+        <p class="jc__kick">Longevity</p>
+        <h3>The Man Who Raced Hills Into His 70s</h3>
+        <p>He built motorcycles that now sell for six figures. The real machine, the one that kept him alive, was quieter than any engine: he showed up.</p>
+        <span class="jc__go">Read the essay →</span>
+      </a>
+    </div>
+</div>
+</section>
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="2" data-label="More from the journal">
+<section class="sec sec--alt" style="padding-top:clamp(3.5rem, 2.4rem + 3.4vw, 6rem)">
+<div class="wrap">
+<div class="jmid rv">
+      <a class="jc" href="/journal/honoring-my-father-on-fathers-day/">
+        <p class="jc__kick">Family</p>
+        <h3>Shizhé'é: A Letter to the Man Who Chose Me</h3>
+        <p>A city boy who followed love to the high country, learned the old ways, and became a pillar.</p>
+      </a>
+
+      <a class="jc" href="/journal/ai-robotics-repair-warming-world/">
+        <p class="jc__kick">Technology</p>
+        <h3>The Machines That Could Help Us Come Home</h3>
+        <p>What if the intelligence we built to speed up extraction were turned, deliberately, toward repair?</p>
+      </a>
+
+      <a class="jc" href="/journal/seeds-of-the-ancestors/">
+        <p class="jc__kick">Food</p>
+        <h3>Seeds of the Ancestors</h3>
+        <p>The blueprint for a sustainable future is not an invention waiting to be engineered. It is an inheritance waiting to be remembered.</p>
+      </a>
+
+      <a class="jc" href="/journal/the-final-council-post-extraction-future/">
+        <p class="jc__kick">Futures</p>
+        <h3>The Final Council: Building a Post-Extraction Future</h3>
+        <p>A dream of a council that vets the future before it is built — and a blueprint for encoding reciprocity into what comes next.</p>
+      </a>
+
+      <a class="jc" href="/journal/roots-of-resilience-wisdom-week-rancho-la-puerta/">
+        <p class="jc__kick">The circle</p>
+        <h3>Roots of Resilience: What the Fire Taught Us</h3>
+        <p>Under the stars at Rancho La Puerta, elders and strangers became a circle. Healing begins the moment we are truly seen.</p>
+      </a>
+
+      <a class="jc" href="/journal/wealth-wisdom-from-sheepherders-of-the-planet/">
+        <p class="jc__kick">Wealth</p>
+        <h3>Wealth Wisdom from the Sheepherders of the Planet</h3>
+        <p>Wealth was never counted in currency but in flocks, dawns, clan bonds, and the resilience that outlasts every drought.</p>
+      </a>
+    </div>
+</div>
+</section>
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="3" data-label="The whole index">
+<section class="sec sec--alt" style="padding-top:clamp(3.5rem, 2.4rem + 3.4vw, 6rem)">
+<div class="wrap">
+<div class="jlist rv">
+      <a class="jrow" href="/journal/the-ancestral-code-for-living-to-100/">
+        <div>
+          <p class="jrow__k">Longevity</p>
+          <h3>The Ancestral Code for Living to 100</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/honorable-trade-oldest-economies-planet-in-transition/">
+        <div>
+          <p class="jrow__k">Economy</p>
+          <h3>Honorable Trade: What the World's Oldest Economies Teach a Planet in Transition</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/tibet-the-unbroken-thread/">
+        <div>
+          <p class="jrow__k">Tibet</p>
+          <h3>Tibet, and the Unbroken Thread</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/the-silent-theft/">
+        <div>
+          <p class="jrow__k">Human capital</p>
+          <h3>The Silent Theft</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/what-the-cottonwood-sings-roots-workshop/">
+        <div>
+          <p class="jrow__k">The land</p>
+          <h3>What the Cottonwood Sings</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/weaving-a-new-dream-what-is-the-world-dreaming-through-you/">
+        <div>
+          <p class="jrow__k">Purpose</p>
+          <h3>Weaving a New Dream: What Is the World Dreaming Through You?</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/monster-slayer-blueprint-turning-waste-into-renewal/">
+        <div>
+          <p class="jrow__k">Renewal</p>
+          <h3>The Monster Slayer Blueprint: Turning Waste Into Renewal</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+
+      <a class="jrow" href="/journal/ancient-farming-hedge-against-climate-change/">
+        <div>
+          <p class="jrow__k">Climate</p>
+          <h3>Ancient Farming as a Hedge Against Climate Change</h3>
+        </div>
+        <span class="jrow__a" aria-hidden="true">→</span>
+      </a>
+    </div>
+<div class="jall rv">
+      <a class="btn btn--primary" href="/journal/">Read the journal <span aria-hidden="true">→</span></a>
+      <a class="arrow" href="/#listen">Or listen instead <span aria-hidden="true">→</span></a>
+    </div>
+</div>
+</section>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ STAGE III · The Books ═══════════ -->
+<section class="stage" id="stage-books" data-stage="books">
+  <div class="stage__head">
+    <p class="stage__num">III</p>
+    <h2 class="stage__title">The Books</h2>
+    <p class="stage__sub">The novels, the reader, and the practice inside them.</p>
+    <div class="stage__nav">
+      <div class="stage__dots" role="tablist" aria-label="The Books scenes"><button class="stage__dot" type="button" data-go="0" aria-label="What is a far messenger"></button><button class="stage__dot" type="button" data-go="1" aria-label="Two chapters, open"></button><button class="stage__dot" type="button" data-go="2" aria-label="Take a Stone Breath"></button><button class="stage__dot" type="button" data-go="3" aria-label="The Executive Reader"></button><button class="stage__dot" type="button" data-go="4" aria-label="The novels carry all of this"></button><button class="stage__dot" type="button" data-go="5" aria-label="Four books, one long road"></button></div>
+      <span class="stage__held">paused — yours</span>
+    </div>
+  </div>
+  <div class="stage__deck">
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="0" data-label="What is a far messenger">
 <section class="sec hasphoto" id="far-messenger">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/grandfathers-hands.jpg" alt="" loading="lazy"></div>
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/v2/real-elder-hands-braiding-1800px.jpg" alt="" loading="lazy"></div>
   <div class="wrap wrap--mid">
     <p class="eyebrow">Before anything else</p>
     <h2 class="head">What is a far messenger?</h2>
@@ -861,9 +1406,10 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
     <p class="say"><strong>We are the far messengers now.</strong></p>
   </div>
 </section>
-
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="1" data-label="Two chapters, open">
 <section class="sec hasphoto" id="chapters">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/world/baltic-forest.jpg" alt="" loading="lazy"></div>
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/v2/real-forest-roots-1800px.jpg" alt="" loading="lazy"></div>
   <div class="wrap wrap--mid">
     <p class="eyebrow">Two chapters, open</p>
     <h2 class="head">One is the crossing. One is the stage.</h2>
@@ -943,40 +1489,10 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 </section>
 <!-- ═══════════ THE STONE BREATH ═══════════ -->
 <!-- ═══════════ LATEST ═══════════ -->
-<section class="sec sec--alt" id="latest">
-  <div class="wrap">
-    <p class="eyebrow">Written lately</p>
-    <h2 class="head">Three from the last few weeks.</h2>
-    <p class="lead" style="margin-top:1.1rem;max-width:52ch">The book goes worldwide, a basketball coach who borrowed the circle, and a fire in the redwoods.</p>
-    <div class="feat">
-    <a class="feat__c" href="/journal/stone-breath-has-gone-out-to-the-world/">
-      <span class="feat__im"><img src="/assets/img/stone-breath-cover.jpg" alt="" loading="lazy"></span>
-      <time class="feat__d" datetime="2026-09-11">September 11, 2026</time>
-      <b>Stone Breath Has Gone Out to the World</b>
-      <span class="feat__k">Worldwide distribution. Apple Books, Kobo, booksellers from Berlin to Sydney, and the library catalogs. One link reaches all of it.</span>
-      <em class="arrow">Read it <span aria-hidden="true">&rarr;</span></em>
-    </a>
-    <a class="feat__c" href="/journal/the-coach-who-borrowed-the-circle/">
-      <span class="feat__im"><img src="/assets/img/1440/fire-circle.jpg" alt="" loading="lazy"></span>
-      <time class="feat__d" datetime="2026-09-11">September 11, 2026</time>
-      <b>The Coach Who Borrowed the Circle</b>
-      <span class="feat__k">Phil Jackson put silence, story and a circle into the most pressured organization in American sport and won seventy-two games. He had to borrow the pieces.</span>
-      <em class="arrow">Read it <span aria-hidden="true">&rarr;</span></em>
-    </a>
-    <a class="feat__c" href="/journal/the-first-fire/">
-      <span class="feat__im"><img src="/assets/img/journal/the-first-fire/missy-and-henry.jpg" alt="" loading="lazy"></span>
-      <time class="feat__d" datetime="2026-09-01">September 1, 2026</time>
-      <b>The First Fire</b>
-      <span class="feat__k">Three days in the redwoods. About twenty people crossed west carrying gratitude, and at the far end they were expected.</span>
-      <em class="arrow">Read it <span aria-hidden="true">&rarr;</span></em>
-    </a>
     </div>
-    <p style="margin-top:clamp(1.6rem, 1.2rem + 1.6vw, 2.6rem)"><a class="arrow" href="/journal/">Everything I have written down <span aria-hidden="true">&rarr;</span></a></p>
-  </div>
-</section>
-
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="2" data-label="Take a Stone Breath">
 <section class="sec sec--alt hasphoto sb-dim" id="stone-breath">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/1440/creek-stone.jpg" alt="" loading="lazy"></div>
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/v2/real-tony-pebbles-creek-1800px.jpg" alt="" loading="lazy"></div>
   <div class="wrap wrap--mid">
     <p class="eyebrow">Free &middot; no email, no signup</p>
     <h2 class="head">Take a Stone Breath.</h2>
@@ -1009,8 +1525,10 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 </section>
 
 <!-- ═══════════ THE READER ═══════════ -->
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="3" data-label="The Executive Reader">
 <section class="sec sec--alt hasphoto reader-dim" id="the-reader">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/1440/redwoods.jpg" alt="" loading="lazy"></div>
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/v2/real-tony-cottonwood-1800px.jpg" alt="" loading="lazy"></div>
   <div class="wrap">
     <div class="reader">
       <a class="reader__cov" href="https://ancestralwatch.com/reader/">
@@ -1031,9 +1549,10 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
     </div>
   </div>
 </section>
-
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="4" data-label="The novels carry all of this">
 <section class="bookband">
-  <div class="bookband__bg"><img src="/assets/img/land/peaks-meadow.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="bookband__bg"><img src="/assets/img/v2/real-teton-river-1800px.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="wrap bookband__in rv">
     <p class="eyebrow">The books · Out now</p>
     <h2>The novels carry all of this.</h2>
@@ -1046,68 +1565,41 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
   </div>
 </section>
 
+<!-- ================= THE SHELF · four books, rotating ================= -->
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="5" data-label="Four books, one long road">
+<section class="shelf" id="shelf">
+  <div class="shelf__head">
+    <p class="shelf__label">The library</p>
+    <h2>Four books. One long road.</h2>
+  </div>
+  <div class="shelf__row" data-shelf></div>
+</section>
+
+
 <!-- ═══════════ THE TALK AND THE SANCTUARY ═══════════ -->
-<section class="sec hasphoto" id="the-work">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/world/japan-meditation-mountain.jpg" alt="" loading="lazy"></div>
-  <div class="wrap wrap--mid">
-    <p class="eyebrow">Two ways this comes to you</p>
-    <h2 class="head">The talk, and the sanctuary.</h2>
-
-    <ul class="rows">
-      <li><a href="/keynotes/"><span><b>The talk</b><span>Conferences, corporate retreats, leadership gatherings, universities, commencements. The far messengers &mdash; what they were, what we lost when we stopped raising them, and what it means for what comes next. Told as a story, in the room, without slides.</span></span><em>&rarr;</em></a></li>
-      <li><a href="mailto:wisdom@ancestralwatch.com"><span><b>The sanctuary</b><span>Designing a company or community sanctuary that holds resilience while the world stays uncertain. Slower work, fewer at a time &mdash; the charter, the ownership, the governance, and the practices that keep people steady inside it.</span></span><em>&rarr;</em></a></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ═══════════ THE TWO CHAPTERS ═══════════ -->
-
-<!-- ================= OPEN NOW — retreat + books ================= -->
-
-<!-- ================= TWO PILLARS ================= -->
-<section class="sec hasphoto">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/great-grandfather-hat.jpg" alt="" loading="lazy"></div>
-  
-  <div class="wrap">
-    <div class="sec__intro rv">
-      <div>
-        <p class="eyebrow">The work</p>
-        <h2 class="head">Two bodies of work. One method.</h2>
-      </div>
-      <p>One rebuilds the person. One rebuilds the place. They run on the same discipline — read all four accounts, spend from none of them blindly, and build capacity before you need it.</p>
-    </div>
-
-    <div class="pill rv">
-      <a class="pill__c" id="human-performance" href="/human-resilience/">
-        <img src="/assets/img/1440/creek.jpg" alt="Tony Skrelūnas sitting beside a creek running over stone" loading="lazy">
-        <p class="pill__n">Pillar one</p>
-        <h3>Human Resilience</h3>
-        <p>Endurance you can prove. Breath, sound, movement, food and sleep — trained the way three old cultures trained them, measured the way a modern practice measures.</p>
-        <ul class="pill__ls">
-          <li>Retreats</li><li>1:1 Coaching</li><li>Team immersives</li><li>Diagnostic</li>
-        </ul>
-        <span class="arrow">Explore the practice <span aria-hidden="true">→</span></span>
-      </a>
-
-      <a class="pill__c" id="community-resilience" href="/teams/">
-        <img src="/assets/img/council-band.jpg" alt="A council seated around a fire under a night sky" loading="lazy">
-        <p class="pill__n">Pillar two</p>
-        <h3>Community Resilience</h3>
-        <p>Governance, enterprise and land, restructured so power sits where the knowledge already is. On reservations, in boardrooms, and in halls with folding chairs.</p>
-        <ul class="pill__ls">
-          <li>Governance</li><li>Enterprise</li><li>Energy &amp; land</li><li>Advisory</li>
-        </ul>
-        <span class="arrow">See the advisory work <span aria-hidden="true">→</span></span>
-      </a>
     </div>
   </div>
 </section>
 
-<!-- ================= THE COMEBACK ================= -->
+
+<!-- ═══════════ STAGE IV · The Life ═══════════ -->
+<section class="stage" id="stage-life" data-stage="life">
+  <div class="stage__head">
+    <p class="stage__num">IV</p>
+    <h2 class="stage__title">The Life</h2>
+    <p class="stage__sub">One room, many scenes.</p>
+    <div class="stage__nav">
+      <div class="stage__dots" role="tablist" aria-label="The Life scenes"><button class="stage__dot" type="button" data-go="0" aria-label="The comeback"></button><button class="stage__dot" type="button" data-go="1" aria-label="Three traditions"></button><button class="stage__dot" type="button" data-go="2" aria-label="The tools are dormant"></button><button class="stage__dot" type="button" data-go="3" aria-label="Our communities"></button><button class="stage__dot" type="button" data-go="4" aria-label="The garden"></button><button class="stage__dot" type="button" data-go="5" aria-label="Watch"></button><button class="stage__dot" type="button" data-go="6" aria-label="Listen"></button><button class="stage__dot" type="button" data-go="7" aria-label="Videos of our communities"></button></div>
+      <span class="stage__held">paused — yours</span>
+    </div>
+  </div>
+  <div class="stage__deck">
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="0" data-label="The comeback">
 <section class="sec sec--alt tex hasphoto" id="about">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/elder-with-lamb.jpg" alt="" loading="lazy"></div>
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/v2/wix-tony-green-field-1800px.jpg" alt="" loading="lazy"></div>
   
-  <div class="tex__i"><img src="/assets/img/kintsugi-texture.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="tex__i"><img src="/assets/img/v2/real-forest-road-1800px.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="wrap origin rv">
     <div class="origin__img">
       <img src="/assets/img/tony/portrait-hat-turquoise.jpg" alt="Tony Skrelūnas in a hat and turquoise" style="object-position:50% 30%" loading="lazy">
@@ -1120,12 +1612,16 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
       <p>Where he is now: a PhD candidate, writing a dissertation on human and organisational performance through three ancestral lenses — Diné, Lithuanian, Japanese. He holds a faculty appointment at 1440 Multiversity, where teaching this work is now the centre of it, and he teaches in other parts of the world as a far messenger. Four novels in <em>The Ancestral Watch</em>. He runs at dawn, and hikes with a corgi named Roper.</p>
       <p class="origin__more"><a class="arrow" href="/journal/">Read him in his own words <span aria-hidden="true">→</span></a></p>
     </div>
+
+    
   </div>
 </section>
 
 <!-- ================= THREE TRADITIONS ================= -->
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="1" data-label="Three traditions">
 <section class="sec hasphoto" id="traditions">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/elder-profile.jpg" alt="" loading="lazy"></div>
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/v2/real-chokecherries-metate-1800px.jpg" alt="" loading="lazy"></div>
   
   
   <div class="wrap">
@@ -1163,20 +1659,43 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 </section>
 
 <!-- ================= STATEMENT BAND — dry-farmed corn ================= -->
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="2" data-label="The tools are dormant">
 <section class="state">
-  <div class="state__bg"><img src="/assets/img/journal/the-silent-theft/2.jpg" alt="Dry-farmed corn in tassel at sunset" loading="lazy"></div>
+  <div class="state__bg"><img src="/assets/img/v2/wix-corn-sunset-1800px.jpg" alt="Dry-farmed corn in tassel at sunset" loading="lazy"></div>
   <div class="wrap state__in rv">
     <p class="pull">The tools for endurance, belonging, and purpose are not lost. They are dormant.</p>
     <cite>The premise underneath all of it</cite>
   </div>
 </section>
 
+<!-- ================= GALLERY · his own photographs, rotating ================= -->
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="3" data-label="Our communities">
+<section class="gal" id="gallery">
+  <div class="gal__head">
+    <p class="gal__label">Pictures of our communities</p>
+    <h2>Our communities.</h2>
+  </div>
+  <div class="gal__strip" data-gallery>
+      <figure class="gal__fig"><img src="/assets/img/v2/gallery-elder-sky-1400px.jpg" alt="Elder in profile under open sky"><figcaption>Under open sky</figcaption></figure>
+      <figure class="gal__fig"><img src="/assets/img/gallery/baltic.jpg" alt="The Baltic shore"><figcaption>The Baltic</figcaption></figure>
+      <figure class="gal__fig"><img src="/assets/img/gallery/japanese-temple.jpg" alt="A temple roofline in Japan"><figcaption>Japan</figcaption></figure>
+      <figure class="gal__fig"><img src="/assets/img/v2/gallery-turquoise-hand-1400px.jpg" alt="Turquoise and red earth"><figcaption>Turquoise &amp; red earth</figcaption></figure>
+      <figure class="gal__fig"><img src="/assets/img/gallery/savanna.jpg" alt="The savanna at dusk"><figcaption>The savanna</figcaption></figure>
+      <figure class="gal__fig"><img src="/assets/img/gallery/rowing.jpg" alt="A rowing shell on still water"><figcaption>On the water</figcaption></figure>
+    </div>
+</section>
+
+
 <!-- ================= THE WEAVING ================= -->
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="4" data-label="The garden">
 <section class="plate tex rv">
-  <div class="tex__i"><img src="/assets/img/land/creek-boulders.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="tex__i"><img src="/assets/img/v2/real-creek-logbridge-1800px.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="wrap">
     <div class="plate__ph">
-      <img src="/assets/img/garden/tea-azalea-moss.jpg" alt="Pink azalea over bright moss in a tea garden" loading="lazy">
+      <img src="/assets/img/v2/real-garden-stonebridge-1800px.jpg" alt="Pink azalea over bright moss in a tea garden" loading="lazy">
     </div>
     <div class="plate__cap">
       <p class="eyebrow">The garden</p>
@@ -1186,253 +1705,10 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 </section>
 
 <!-- ================= THE WORK — STACKED ROWS ================= -->
-
-<section class="sec">
-  <div class="wrap">
-    <p class="eyebrow">The work</p>
-    <h2 class="head">A course, a lecture, and the long form of both.</h2>
-    <p class="lead" style="margin-top:1.1rem;max-width:54ch">I hold a faculty appointment at 1440 Multiversity. The subject is unusual enough that I have had to build the syllabus from scratch, out of three traditions and forty years of research that keeps confirming them.</p>
-  </div>
-</section>
-
-<div class="bleed">
-
-  <!-- 1 — THE COURSE -->
-  <article class="row rv">
-    <div class="row__media"><img src="/assets/img/1440/redwoods.jpg" alt="The redwoods at 1440 Multiversity" loading="lazy"></div>
-    <div class="row__body">
-      <p class="row__meta"><b>The course</b> &middot; Faculty, 1440 Multiversity &middot; Residential</p>
-      <h3>Ancestral Practice and Human Performance</h3>
-      <p>Six sessions on the technologies three peoples built for meeting the hardest days &mdash; Din&eacute;, Lithuanian, Japanese &mdash; and the evidence that has since grown up underneath them. Taught from inside the traditions rather than about them. More courses follow the doctoral research, which enters dissertation stage early next year.</p>
-      <div class="row__act"><a class="btn btn--primary" href="/teaching/">The syllabus <span aria-hidden="true">&rarr;</span></a></div>
     </div>
-  </article>
-
-  <article class="row rv">
-    <div class="row__media"><img src="/assets/img/garden/tea-lantern-azalea.jpg" alt="Tony Skrelūnas mid-sentence beside a podium bearing an official seal" style="object-position:50% 24%" loading="lazy"></div>
-    <div class="row__body">
-      <p class="row__meta"><b>Keynotes &amp; addresses</b> · Conferences, campuses, communities</p>
-      <h3>The keynote</h3>
-      <p>Commencement addresses, conference keynotes, community halls with folding chairs. Same talk either way: what the oldest economies on earth knew about wealth, and what it would cost us to remember it.</p>
-      <div class="row__act"><a class="btn btn--primary" href="mailto:wisdom@ancestralwatch.com">Write to Tony <span aria-hidden="true">→</span></a></div>
-    </div>
-  </article>
-      <article class="row row--flip rv">
-    <div class="row__media"><img src="/assets/img/1440/council-chairs.jpg" alt="Tony in council with participants beneath the redwoods" loading="lazy"></div>
-    <div class="row__body">
-      <p class="row__meta"><b>For Teams</b> · 2.5–3 days · Worldwide</p>
-      <h3>The Far Messenger Program</h3>
-      <p>An immersive for leadership teams entering harder terrain. We bring the whole faculty — practitioners, cooks, elders, coaches — and a diagnostic before and thirty days after, so the lift is documented, not just felt.</p>
-      <div class="row__act"><a class="arrow" href="/teams/">See the program <span aria-hidden="true">→</span></a></div>
-    </div>
-  </article>
-      <article class="row rv">
-    <div class="row__media"><img src="/assets/img/world/japan-waterfall.jpg" alt="Tony Skrelūnas standing in front of a wall of Diné line drawings" style="object-position:50% 28%" loading="lazy"></div>
-    <div class="row__body">
-      <p class="row__meta"><b>One to one</b> · Human resilience</p>
-      <h3>Coaching for leaders</h3>
-      <p>Private work for founders, executives, and people carrying something heavy. Endurance and steadiness read through three lenses — Diné, Lithuanian, Japanese.</p>
-      <div class="row__act"><a class="arrow" href="/human-resilience/">Work with Tony <span aria-hidden="true">→</span></a></div>
-    </div>
-  </article>
-      <article class="row row--flip rv">
-    <div class="row__media"><img src="/assets/img/land/peaks-pines.jpg" alt="Tony Skrelūnas presenting an economic transition plan to a seated hall" style="object-position:50% 26%" loading="lazy"></div>
-    <div class="row__body">
-      <p class="row__meta"><b>Advisory</b> · Governments, communities, companies</p>
-      <h3>Community resilience</h3>
-      <p>Governance restructuring, community enterprise, energy and land strategy. The same questions, run at the scale of a nation instead of a nervous system — and run in the room, not in a deck.</p>
-      <div class="row__act"><a class="arrow" href="mailto:wisdom@ancestralwatch.com">Start a conversation <span aria-hidden="true">→</span></a></div>
-    </div>
-  </article>
-      <article class="row rv">
-    <div class="row__media"><img src="/assets/img/1440/fire-circle.jpg" alt="A circle of people around the fire in the redwoods at 1440 Multiversity" loading="lazy"></div>
-    <div class="row__body">
-      <p class="row__meta"><b>The Retreat</b> · Aug 28–30 · Scotts Valley, CA</p>
-      <h3>The Canyon Within</h3>
-      <p>Three days in the redwoods to change the frequency you live at — breath, sound, land, and food cooked as medicine. Eighteen seats. Many arrive alone and leave with a circle.</p>
-      <div class="row__act"><a class="btn btn--primary" href="/workshop/">See the retreat <span aria-hidden="true">→</span></a></div>
-    </div>
-  </article>
-
-</div>
-
-<!-- ================= ROOMS — speaking & teaching ================= -->
-
-<!-- ================= THE GATHERINGS ================= -->
-
-<figure class="slab slab--lift rv">
-  <div class="slab__ph"><img src="/assets/img/land/creek-waterfall.jpg" alt="A row of people seated close together at dusk, listening" style="object-position:50% 46%" loading="lazy"></div>
-  <div class="wrap"><figcaption>Elders and teenagers on the same floor, nobody on a panel. The format underneath every retreat on this page.</figcaption></div>
-</figure>
-
-<!-- ================= JOURNAL ================= -->
-
-<!-- FEATURED — broadsheet cover -->
-<a class="feat" href="/journal/30000-years-tribal-trade-americas/">
-  <div class="feat__ph">
-    <img src="/assets/img/journal/30000-years-tribal-trade-americas/2.jpg" alt="Coiled baskets laid out on a Navajo rug at a trade gathering" loading="lazy">
-  </div>
-  <div class="feat__in tex tex--strong tex--zoom">
-    <div class="tex__i"><img src="/assets/img/garden/tea-lantern-azalea.jpg" alt="" aria-hidden="true" loading="lazy"></div>
-    <p class="feat__kick">The commencement address</p>
-    <h3>30,000 Years, and a Formula That Still Works</h3>
-    <p class="feat__d">A commencement address on where we come from, the great trade civilizations of the Americas, and a formula for a good life that has held for thirty thousand years.</p>
-    <p class="feat__by"><span>Essay · Address</span><span>12 min read</span></p>
-    <span class="feat__go">Read the essay <span aria-hidden="true">→</span></span>
-  </div>
-</a>
-
-<!-- MORE ESSAYS -->
-<section class="sec sec--alt" style="padding-top:clamp(3.5rem, 2.4rem + 3.4vw, 6rem)">
-  <div class="wrap">
-
-    <div class="jbig rv">
-      <a class="jc" href="/journal/the-water-remembers-sacred-lake/">
-        <div class="jc__img"><img src="/assets/img/journal/the-water-remembers-sacred-lake/0.jpg" alt="A mountain lake below snow peaks" loading="lazy"></div>
-        <p class="jc__kick">Water · Memory</p>
-        <h3>The Water Remembers</h3>
-        <p>My grandfather stood at the edge of a mountain lake and was called to sing an old song. What he taught me there belongs to every people on earth.</p>
-        <span class="jc__go">Read the essay →</span>
-      </a>
-
-      <a class="jc" href="/journal/they-tried-to-erase-a-whole-people/">
-        <div class="jc__img"><img src="/assets/img/journal/they-tried-to-erase-a-whole-people/0.jpeg" alt="An illustrated history of Lithuanian survival" style="object-position:50% 6%" loading="lazy"></div>
-        <p class="jc__kick">Survival · Baltics</p>
-        <h3>They Tried to Erase a Whole People</h3>
-        <p>Book smugglers, song keepers, and a basketball team in tie-dye. Now they raise the happiest young souls on earth.</p>
-        <span class="jc__go">Read the essay →</span>
-      </a>
-
-      <a class="jc" href="/journal/the-man-who-raced-hills-into-his-70s/">
-        <div class="jc__img"><img src="/assets/img/journal/the-man-who-raced-hills-into-his-70s/0.jpg" alt="A hand-built vintage hill-climb motorcycle" style="object-position:50% 24%" loading="lazy"></div>
-        <p class="jc__kick">Longevity</p>
-        <h3>The Man Who Raced Hills Into His 70s</h3>
-        <p>He built motorcycles that now sell for six figures. The real machine, the one that kept him alive, was quieter than any engine: he showed up.</p>
-        <span class="jc__go">Read the essay →</span>
-      </a>
-    </div>
-
-    <div class="jmid rv">
-      <a class="jc" href="/journal/honoring-my-father-on-fathers-day/">
-        <p class="jc__kick">Family</p>
-        <h3>Shizhé'é: A Letter to the Man Who Chose Me</h3>
-        <p>A city boy who followed love to the high country, learned the old ways, and became a pillar.</p>
-      </a>
-
-      <a class="jc" href="/journal/ai-robotics-repair-warming-world/">
-        <p class="jc__kick">Technology</p>
-        <h3>The Machines That Could Help Us Come Home</h3>
-        <p>What if the intelligence we built to speed up extraction were turned, deliberately, toward repair?</p>
-      </a>
-
-      <a class="jc" href="/journal/seeds-of-the-ancestors/">
-        <p class="jc__kick">Food</p>
-        <h3>Seeds of the Ancestors</h3>
-        <p>The blueprint for a sustainable future is not an invention waiting to be engineered. It is an inheritance waiting to be remembered.</p>
-      </a>
-
-      <a class="jc" href="/journal/the-final-council-post-extraction-future/">
-        <p class="jc__kick">Futures</p>
-        <h3>The Final Council: Building a Post-Extraction Future</h3>
-        <p>A dream of a council that vets the future before it is built — and a blueprint for encoding reciprocity into what comes next.</p>
-      </a>
-
-      <a class="jc" href="/journal/roots-of-resilience-wisdom-week-rancho-la-puerta/">
-        <p class="jc__kick">The circle</p>
-        <h3>Roots of Resilience: What the Fire Taught Us</h3>
-        <p>Under the stars at Rancho La Puerta, elders and strangers became a circle. Healing begins the moment we are truly seen.</p>
-      </a>
-
-      <a class="jc" href="/journal/wealth-wisdom-from-sheepherders-of-the-planet/">
-        <p class="jc__kick">Wealth</p>
-        <h3>Wealth Wisdom from the Sheepherders of the Planet</h3>
-        <p>Wealth was never counted in currency but in flocks, dawns, clan bonds, and the resilience that outlasts every drought.</p>
-      </a>
-    </div>
-
-    <div class="jlist rv">
-      <a class="jrow" href="/journal/the-ancestral-code-for-living-to-100/">
-        <div>
-          <p class="jrow__k">Longevity</p>
-          <h3>The Ancestral Code for Living to 100</h3>
-        </div>
-        <span class="jrow__a" aria-hidden="true">→</span>
-      </a>
-
-      <a class="jrow" href="/journal/honorable-trade-oldest-economies-planet-in-transition/">
-        <div>
-          <p class="jrow__k">Economy</p>
-          <h3>Honorable Trade: What the World's Oldest Economies Teach a Planet in Transition</h3>
-        </div>
-        <span class="jrow__a" aria-hidden="true">→</span>
-      </a>
-
-      <a class="jrow" href="/journal/tibet-the-unbroken-thread/">
-        <div>
-          <p class="jrow__k">Tibet</p>
-          <h3>Tibet, and the Unbroken Thread</h3>
-        </div>
-        <span class="jrow__a" aria-hidden="true">→</span>
-      </a>
-
-      <a class="jrow" href="/journal/the-silent-theft/">
-        <div>
-          <p class="jrow__k">Human capital</p>
-          <h3>The Silent Theft</h3>
-        </div>
-        <span class="jrow__a" aria-hidden="true">→</span>
-      </a>
-
-      <a class="jrow" href="/journal/what-the-cottonwood-sings-roots-workshop/">
-        <div>
-          <p class="jrow__k">The land</p>
-          <h3>What the Cottonwood Sings</h3>
-        </div>
-        <span class="jrow__a" aria-hidden="true">→</span>
-      </a>
-
-      <a class="jrow" href="/journal/weaving-a-new-dream-what-is-the-world-dreaming-through-you/">
-        <div>
-          <p class="jrow__k">Purpose</p>
-          <h3>Weaving a New Dream: What Is the World Dreaming Through You?</h3>
-        </div>
-        <span class="jrow__a" aria-hidden="true">→</span>
-      </a>
-
-      <a class="jrow" href="/journal/monster-slayer-blueprint-turning-waste-into-renewal/">
-        <div>
-          <p class="jrow__k">Renewal</p>
-          <h3>The Monster Slayer Blueprint: Turning Waste Into Renewal</h3>
-        </div>
-        <span class="jrow__a" aria-hidden="true">→</span>
-      </a>
-
-      <a class="jrow" href="/journal/ancient-farming-hedge-against-climate-change/">
-        <div>
-          <p class="jrow__k">Climate</p>
-          <h3>Ancient Farming as a Hedge Against Climate Change</h3>
-        </div>
-        <span class="jrow__a" aria-hidden="true">→</span>
-      </a>
-    </div>
-
-    <div class="jall rv">
-      <a class="btn btn--primary" href="/journal/">Read the journal <span aria-hidden="true">→</span></a>
-      <a class="arrow" href="/#listen">Or listen instead <span aria-hidden="true">→</span></a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= IMAGE BAND — the peaks ================= -->
-<figure class="slab rv">
-  <div class="slab__ph"><img src="/assets/img/land/canyon-sunset-forest.jpg" alt="Sunset over a forested canyon" style="object-position:50% 54%" loading="lazy"></div>
-  <div class="wrap"><figcaption>Sundown off the rim. Most of this work happens within a day's drive of here.</figcaption></div>
-</figure>
-
-<!-- ================= WATCH ================= -->
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="5" data-label="Watch">
 <section class="sec hasphoto" id="watch">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/lamplight-desk.jpg" alt="" loading="lazy"></div>
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/v2/gallery-elder-sky-1400px.jpg" alt="" loading="lazy"></div>
   
   
   <div class="wrap">
@@ -1447,7 +1723,7 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
     <div class="vsplit rv">
       <div class="vfilm">
         <video controls preload="none" playsinline
-               poster="/assets/img/1440/tony-invitation-poster.jpg">
+               poster="/assets/img/ta/speaking-1-2000x1333.jpg">
           <source src="/assets/video/tony-invitation.mp4" type="video/mp4">
         </video>
       </div>
@@ -1464,9 +1740,11 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 </section>
 
 <!-- ================= LISTEN ================= -->
+    </div>
+    <div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="6" data-label="Listen">
 <section class="sec listen" id="listen">
   
-  <div class="listen__bg"><img src="/assets/img/land/creek-waterfall.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="listen__bg"><img src="/assets/img/v2/real-creek-logbridge-1800px.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="wrap">
     <div class="sec__intro rv">
       <div>
@@ -1499,7 +1777,7 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 
       <article class="ap" data-audio>
         <div class="ap__art">
-          <img src="/assets/img/garden/tea-azalea-moss.jpg" alt="A figure seated by a river at golden hour" loading="lazy">
+          <img src="/assets/img/v2/real-garden-stonebridge-1800px.jpg" alt="A figure seated by a river at golden hour" loading="lazy">
         </div>
         <div class="ap__body">
           <p class="ap__kick">Spoken · A few minutes</p>
@@ -1549,6 +1827,9 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
   </div>
 </section>
 
+
+
+
 <!-- ================= IMAGE BAND — dawn ceremony ================= -->
 <figure class="slab rv">
   <div class="slab__ph"><img src="/assets/img/tony-ceremony.jpg" alt="Tony Skrelūnas leading a dawn gathering outdoors" loading="lazy"></div>
@@ -1557,13 +1838,59 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 
 <!-- ================= BOOKS — the band ================= -->
 
-<figure class="rugstrip rv">
-  <img src="/assets/img/garden/tea-stone-bridge.jpg" alt="Detail of a Navajo weaving in diamond bands" loading="lazy">
-</figure>
+
 
 <!-- ================= GLOBAL ================= -->
 
 <!-- ================= DIAGNOSTIC / CLOSE ================= -->
+    </div>
+  
+<div class="scene" role="tabpanel" aria-roledescription="scene" data-scene="7" data-label="Videos of our communities">
+<section class="cvids" id="community-videos">
+  <div class="wrap">
+    <p class="eyebrow">Videos of our communities</p>
+    <h2 class="head">Come and see.</h2>
+    <p class="lead" style="margin-top:1rem;max-width:56ch">Filmed by Tony and carried over from the old site &mdash; for anyone who may want to see, hear and experience it.</p>
+    <div class="cvid__grid">
+        <figure class="cvid">
+          <div class="cvid__frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/It_RyimQmSc" title="Sounds of sheep herding in Kaibeto"
+                    loading="lazy" allowfullscreen
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          </div>
+          <figcaption><span class="cvid__k">Kaib&eacute;to</span>Sounds of sheep herding in Kaibeto</figcaption>
+        </figure>
+        <figure class="cvid">
+          <div class="cvid__frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/x1CSGqgnYYQ" title="Beautiful singing and dancing of our Apache brothers"
+                    loading="lazy" allowfullscreen
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          </div>
+          <figcaption><span class="cvid__k">Apache</span>Beautiful singing and dancing of our Apache brothers</figcaption>
+        </figure>
+        <figure class="cvid">
+          <div class="cvid__frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/M66aQHgsZMA" title="Rulan leading the Big Mountain dance"
+                    loading="lazy" allowfullscreen
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          </div>
+          <figcaption><span class="cvid__k">Big Mountain</span>Rulan leading the Big Mountain dance</figcaption>
+        </figure>
+        <figure class="cvid">
+          <div class="cvid__frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/b1qE8gXN-Ts" title="The intertribal gathering, in his own overview"
+                    loading="lazy" allowfullscreen
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          </div>
+          <figcaption><span class="cvid__k">Grand Canyon Trust</span>The intertribal gathering, in his own overview</figcaption>
+        </figure>
+    </div>
+  </div>
+</section>
+    </div>
+  </div>
+</section>
+
 <section class="sec close">
   <div class="close__bg"><img src="/assets/img/garden/tea-stone-bridge.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="wrap wrap--tight rv">
@@ -1578,16 +1905,6 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
 </section>
 
 <!-- ================= GET IN TOUCH ================= -->
-<section class="sec sec--alt touch">
-  
-  <div class="wrap wrap--tight rv">
-    <p class="eyebrow eyebrow--center">Get in touch</p>
-    <h2>Write to me.</h2>
-    <p>Speaking, consulting, a retreat for your people, or a question about the work — it comes straight to Tony.</p>
-    <a class="touch__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
-  </div>
-</section>
-
 <section class="sec sec--alt hasphoto">
   <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/hat-child-family.jpg" alt="" loading="lazy"></div><div class="wrap wrap--mid">
   <p class="eyebrow">Free</p>
@@ -1600,13 +1917,22 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
       <input type="checkbox" name="botcheck" class="sr-only" style="display:none" tabindex="-1" autocomplete="off">
       <label class="sr-only" for="v4-email">Your email</label>
       <input id="v4-email" class="join__in" type="email" name="email" required autocomplete="email" placeholder="you@example.com" spellcheck="false">
-      <button class="btn btn--primary" type="submit">Send me the Stone Breath</button>
+      <button class="btn btn--primary" type="submit">Get the Stone Breath &rarr;</button>
     </form>
-    <p class="join__note">The three-minute practice, sent once. Nothing else unless you ask. Or write straight to <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>.</p>
+    <p class="join__note">The three-minute practice opens right on the next page — no list, no waiting. <a href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>.</p>
 </div></section>
 </main>
 
 <!-- ================= FOOTER ================= -->
+<section class="sec sec--alt touch">
+  
+  <div class="wrap wrap--tight rv">
+    <p class="eyebrow eyebrow--center">Get in touch</p>
+    <h2>Write to me.</h2>
+    <p>Speaking, consulting, a retreat for your people, or a question about the work — it comes straight to Tony.</p>
+    <a class="touch__mail" href="mailto:wisdom@ancestralwatch.com">wisdom@ancestralwatch.com</a>
+  </div>
+</section>
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr__grid">
@@ -1793,5 +2119,11 @@ a.gc:hover .gc__l{color:var(--clay-lt)}
   btn.addEventListener('click',function(){ running ? reset() : run(); });
 })();
 </script>
+<div id="palpick"><b>PREVIEW ONLY — PICK YOUR WORLD</b>
+<button style="background:#3E8077" onclick="document.documentElement.removeAttribute('data-pal')">A STONE &amp; SKY</button>
+<button style="background:#B5431F" onclick="document.documentElement.setAttribute('data-pal','b')">B RED ROCK</button>
+<button style="background:#333" onclick="document.documentElement.setAttribute('data-pal','c')">C INK &amp; PAPER</button>
+<button style="background:#2E8540" onclick="document.documentElement.setAttribute('data-pal','d')">D OLD-SITE COURAGE</button>
+</div>
 </body>
 </html>

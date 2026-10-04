@@ -1,0 +1,73 @@
+/* ═══ THE HORSE LEADS THE MASTHEAD ═══════════════════════════════════
+   Tony, 10/4: "the horse logo needs to be more prominent."
+   The rescued Tribe Achieve emblem (wx4, 3000x3000 original) now opens
+   the magazine at full strength instead of sitting as a small mark.
+   Its paper-white ground is melted into the page with multiply so the
+   line art reads as drawn, not as a pasted square.
+   ═══════════════════════════════════════════════════════════════════ */
+.mast{text-align:center}
+.mast__emblem{
+  display:block;margin:0 auto clamp(.6rem,1.4vw,1.2rem);
+  width:clamp(230px,34vw,460px);height:auto;
+  mix-blend-mode:multiply;
+  filter:saturate(1.06) contrast(1.04);
+}
+@media (prefers-color-scheme: dark){ .mast__emblem{mix-blend-mode:normal} }
+.mast h1{
+  font-size:clamp(2.4rem,1.2rem + 5vw,5.4rem);line-height:.94;letter-spacing:-.02em;
+  margin:.2rem 0 .6rem}
+.mast__line{letter-spacing:.14em}
+@media(max-width:700px){ .mast__emblem{width:min(78vw,340px)} }
+
+/* ═══ SUBSCRIBE TO THE MAGAZINE ═══════════════════════════════════════
+   Honest copy: Web3Forms notifies Tony only — there is no autoresponder,
+   so the page never says "check your inbox."
+   ═══════════════════════════════════════════════════════════════════ */
+.mag-sub{background:#124279;color:#EAF0FA;padding-block:clamp(3rem,6vw,5.5rem);margin-top:clamp(2.5rem,5vw,4rem)}
+.mag-sub__in{max-width:62ch;margin-inline:auto;padding-inline:clamp(1.2rem,4vw,2rem);text-align:center}
+.mag-sub__k{font-family:var(--body);font-size:.68rem;font-weight:800;letter-spacing:.2em;
+  text-transform:uppercase;color:#E0A400;margin:0 0 .8rem}
+.mag-sub h2{font-family:var(--display);font-weight:800;color:#fff;margin:0 0 .9rem;
+  font-size:clamp(1.9rem,1.2rem + 2.6vw,3.2rem);line-height:1.02}
+.mag-sub__p{color:#C7D4E8;line-height:1.6;margin:0 auto 1.6rem;max-width:52ch}
+.mag-sub__form{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+.mag-sub__in-f{flex:1 1 17rem;max-width:22rem;padding:.85rem 1rem;border:1px solid rgba(255,255,255,.35);
+  border-radius:3px;background:rgba(255,255,255,.08);color:#fff;font-size:1rem}
+.mag-sub__in-f::placeholder{color:#90A6C6}
+.mag-sub__in-f:focus{outline:2px solid #E0A400;outline-offset:2px;background:rgba(255,255,255,.14)}
+.mag-sub .btn--primary{background:#E0A400;color:#15233C;border-color:#E0A400;font-weight:800}
+.mag-sub .btn--primary:hover{background:#FFD75E}
+.mag-sub__fine{color:#9FB2CE;font-size:.82rem;line-height:1.55;margin:1.2rem auto 0;max-width:46ch}
+
+/* the magazine's masthead nav carries the full site menu now */
+.bs-top nav{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;align-items:center}
+.bs-top nav a{font-family:var(--body);font-size:.84rem;font-weight:700;color:#1E2419;
+  text-decoration:none;white-space:nowrap}
+.bs-top nav a:hover{color:#1C5BA8}
+.bs-top nav a[aria-current="page"]{color:#B8512A;border-bottom:2px solid #B8512A}
+@media(max-width:700px){.bs-top nav a{font-size:.78rem}}
+
+/* ═══ READ IT IN / PASS IT ON ═══ New Yorker grammar: rules, small caps,
+   serif heads, nothing shouting. ═══ */
+.mag-langs{border-top:1px solid rgba(26,21,18,.16);border-bottom:1px solid rgba(26,21,18,.16);
+  padding-block:clamp(1.6rem,3vw,2.6rem);margin-top:clamp(2rem,4vw,3rem)}
+.mag-langs__in,.mag-share__in{max-width:66ch;margin-inline:auto;padding-inline:clamp(1.2rem,4vw,2rem)}
+.mag-langs__k,.mag-share__k{font-family:var(--body);font-size:.66rem;font-weight:800;letter-spacing:.22em;
+  text-transform:uppercase;color:#B8512A;margin:0 0 1rem;text-align:center}
+.mag-langs__list{list-style:none;margin:0;padding:0;display:grid;
+  grid-template-columns:repeat(4,1fr);gap:.4rem 1.4rem}
+@media(max-width:700px){.mag-langs__list{grid-template-columns:repeat(2,1fr)}}
+.mag-langs__list a{text-decoration:none;display:block;padding:.5rem 0;
+  border-top:2px solid transparent;text-align:center}
+.mag-langs__list b{display:block;font-family:var(--display);font-size:1.12rem;color:#124279;line-height:1.2}
+.mag-langs__list span{display:block;font-family:var(--body);font-size:.72rem;color:#5B5048;margin-top:.2rem}
+.mag-langs__list a:hover b{color:#B8512A}
+.mag-langs__list a[aria-current]{border-top-color:#B8512A}
+.mag-langs__list a[aria-current] b{color:#B8512A}
+
+.mag-share{padding-block:clamp(2rem,4vw,3.2rem);text-align:center}
+.mag-share__p{color:#4A4039;line-height:1.6;margin:0 auto 1rem;max-width:52ch}
+.mag-share__url code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:1.02rem;
+  background:#F5F2EC;border:1px solid rgba(26,21,18,.14);border-radius:3px;padding:.4rem .7rem;color:#1A1512}
+.mag-share__row{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
+.mag-share__done{color:#1E6E34;font-weight:700;margin-top:.9rem}
