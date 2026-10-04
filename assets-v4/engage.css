@@ -1,0 +1,57 @@
+/* Share controls on every card, and the seven-minute invitation.
+   Appended last; nothing upstream is touched. */
+
+/* ── a card and its share button ──────────────────────────────────────── */
+.amm__w{position:relative;display:flex;flex-direction:column}
+.amm__w > .amm__c,.amm__w > .amm__f{flex:1}
+.amm__share{position:absolute;right:.6rem;bottom:.6rem;z-index:3;
+  display:inline-flex;align-items:center;gap:.36rem;
+  font:700 .68rem/1 var(--body,system-ui);letter-spacing:.07em;text-transform:uppercase;
+  color:#6B5A49;background:rgba(255,255,255,.88);border:1px solid rgba(107,90,73,.26);
+  border-radius:999px;padding:.42rem .62rem;cursor:pointer;
+  backdrop-filter:saturate(1.4) blur(6px);
+  opacity:0;transform:translateY(4px);transition:opacity .22s,transform .22s,color .22s,border-color .22s}
+.amm__w:hover .amm__share,.amm__share:focus-visible{opacity:1;transform:none}
+.amm__share:hover{color:#B8512A;border-color:rgba(184,81,42,.5)}
+.amm__share.is-done{color:#2F6B4F;border-color:rgba(47,107,79,.5);opacity:1;transform:none}
+.amm__share svg{flex:none}
+/* touch devices have no hover — show it always, a little quieter */
+@media (hover:none){ .amm__share{opacity:.82;transform:none} }
+
+/* ── the seven-minute invitation ──────────────────────────────────────── */
+.amm-reg{position:fixed;left:50%;bottom:0;z-index:70;width:min(46rem,calc(100% - 1.6rem));
+  transform:translate(-50%,120%);transition:transform .52s cubic-bezier(.22,.7,.2,1);
+  will-change:transform}
+.amm-reg.is-in{transform:translate(-50%,-1rem)}
+.amm-reg__in{position:relative;background:#FAF6EC;color:#3B3020;
+  border:1px solid rgba(59,48,32,.18);border-radius:4px;
+  box-shadow:0 30px 70px -24px rgba(40,30,18,.45);
+  padding:clamp(1.2rem,1rem + 1.4vw,1.9rem) clamp(1.2rem,1rem + 1.6vw,2.2rem)}
+.amm-reg__x{position:absolute;top:.5rem;right:.6rem;width:2rem;height:2rem;
+  display:grid;place-items:center;font-size:1.3rem;line-height:1;
+  color:#7A6A58;background:none;border:0;cursor:pointer;border-radius:999px}
+.amm-reg__x:hover{color:#B8512A;background:rgba(59,48,32,.06)}
+.amm-reg__k{margin:0;font:700 .7rem/1 var(--body,system-ui);letter-spacing:.16em;
+  text-transform:uppercase;color:#7A5516}
+.amm-reg__h{margin:.52rem 0 0;font-family:var(--display,Palatino,Georgia,serif);
+  font-weight:700;letter-spacing:-.02em;font-size:clamp(1.22rem,1.1rem + .8vw,1.72rem);
+  line-height:1.16;color:#2C2317}
+.amm-reg__p{margin:.56rem 0 0;max-width:54ch;font-size:.97rem;line-height:1.6;color:#4A4039}
+.amm-reg__f{margin-top:.95rem;display:flex;flex-wrap:wrap;gap:.55rem}
+.amm-reg__f input[type=email]{flex:1 1 15rem;min-width:0;
+  font:400 1rem/1.2 var(--body,system-ui);color:#2C2317;background:#fff;
+  border:1px solid rgba(59,48,32,.3);border-radius:3px;padding:.72em .9em}
+.amm-reg__f input[type=email]:focus{outline:2px solid #B98D3E;outline-offset:1px;border-color:#B98D3E}
+.amm-reg__go{flex:0 0 auto;font:700 .9rem/1 var(--body,system-ui);letter-spacing:.04em;
+  color:#FAF6EC;background:#8A3C1E;border:1px solid #8A3C1E;border-radius:3px;
+  padding:.82em 1.4em;cursor:pointer}
+.amm-reg__go:hover{background:#B8512A;border-color:#B8512A}
+.amm-reg__fine{margin:.8rem 0 0;max-width:60ch;font-size:.8rem;line-height:1.55;color:#6B5A49}
+@media (max-width:560px){
+  .amm-reg.is-in{transform:translate(-50%,-.5rem)}
+  .amm-reg__go{flex:1 1 100%}
+}
+@media (prefers-reduced-motion:reduce){
+  .amm-reg{transition:none}
+  .amm__share{transition:none}
+}
