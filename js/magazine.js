@@ -18,7 +18,10 @@
      exists, and falls back to the English one when it does not */
   /* India reads in English, so the edition is named on <html> and the
      language attribute alone cannot identify it. */
-  var EDITION = document.documentElement.getAttribute('data-edition') ||
+  /* NOT data-edition: the page already uses [data-edition] for the dateline,
+     and a selector that matched <html> had this script set textContent on the
+     root element, which erases the whole document. */
+  var EDITION = document.documentElement.getAttribute('data-mag-edition') ||
                 (document.documentElement.lang || 'en').slice(0, 2);
   var LANG = (document.documentElement.lang || 'en').slice(0, 2);
   function inLang(a) {
@@ -121,7 +124,7 @@
         }
       }
 
-      var stamp = document.querySelector('[data-edition]');
+      var stamp = document.querySelector('body [data-edition]');
       var EDN = { en: 'This edition · ', es: 'Esta edición · ',
                   ja: 'この号 · ', lt: 'Šis leidimas · ' };
       if (stamp && F.generated) {
