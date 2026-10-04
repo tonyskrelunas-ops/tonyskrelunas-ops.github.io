@@ -9,7 +9,15 @@
    "pillar": "Human Resilience",
    "dek": "My great-grandmother corrected careless speech the way she corrected a tool set down in the wrong place. Forty years later I understand why they were the same error.",
    "img": "/assets/img/canyon-family.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/four-capitals.svg",
+   "tr": {
+    "es": {
+     "href": "/es/hable-solo-lo-que-quiera-construir/",
+     "title": "Hable solo lo que quiera construir",
+     "dek": "Mi bisabuela corregía una palabra descuidada igual que corregía una herramienta dejada donde no iba.",
+     "pillar": "Resiliencia humana"
+    }
+   }
   },
   {
    "slug": "wanting-narrows-the-eye",
@@ -19,7 +27,15 @@
    "pillar": "Human Resilience",
    "dek": "My grandfather never had money and was never poor a day in his life. Abundance turns out to be a question about perception, not arithmetic.",
    "img": "/assets/img/land-healing.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/baltic-oak.svg",
+   "tr": {
+    "es": {
+     "href": "/es/el-deseo-angosta-la-mirada/",
+     "title": "El deseo angosta la mirada",
+     "dek": "Mi abuelo nunca tuvo dinero y no fue pobre un solo día de su vida.",
+     "pillar": "Resiliencia humana"
+    }
+   }
   },
   {
    "slug": "stone-breath-has-gone-out-to-the-world",
@@ -29,7 +45,21 @@
    "pillar": "The Books",
    "dek": "Stone Breath has entered worldwide distribution: Apple Books, Kobo, booksellers from Berlin to Sydney. One universal link reaches all of it.",
    "img": "/assets/img/stone-breath-cover.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/japan-bridge.svg",
+   "tr": {
+    "ja": {
+     "href": "/ja/ishi-no-kokyu-sekai-e/",
+     "title": "『石の呼吸』が世界へ",
+     "dek": "アップルブックス、コボ、ベルリンからシドニーまでの書店へ。",
+     "pillar": "本"
+    },
+    "lt": {
+     "href": "/lt/akmens-kvepavimas-isejo-i-pasauli/",
+     "title": "Akmens kvėpavimas išėjo į pasaulį",
+     "dek": "Kodėl pusė šios knygos vyksta Lietuvoje — Antalieptėje, tarp dainų.",
+     "pillar": "Knygos"
+    }
+   }
   },
   {
    "slug": "the-coach-who-borrowed-the-circle",

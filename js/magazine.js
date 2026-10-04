@@ -13,6 +13,18 @@
 (function () {
   var esc = function (t) { var d = document.createElement('div'); d.textContent = t || ''; return d.innerHTML; };
   var pick = function (a) { return a[Math.floor(Math.random() * a.length)]; };
+
+  /* an edition shows his article in its own language when that version
+     exists, and falls back to the English one when it does not */
+  var LANG = (document.documentElement.lang || 'en').slice(0, 2);
+  function inLang(a) {
+    if (LANG === 'en' || !a.tr || !a.tr[LANG]) return a;
+    var t = a.tr[LANG];
+    return { href: t.href || a.href, title: t.title || a.title,
+             dek: t.dek || a.dek, pillar: t.pillar || a.pillar,
+             date: a.date, art: a.art, slug: a.slug, translated: true };
+  }
+
   function pretty(d) {
     if (!d) return '';
     var p = d.split('-'); if (p.length < 3) return d;
@@ -24,10 +36,17 @@
   fetch('/js/magazine-feed.json', { cache: 'no-cache' })
     .then(function (r) { return r.json(); })
     .then(function (F) {
-      var mine = (F.mine || []).filter(function (a) { return a.date; });
+      var mine = (F.mine || []).filter(function (a) { return a.date; }).map(inLang);
       if (mine.length < 4) return;
 
       /* the lead — his newest piece */
+      // in a non-English edition, lead with a piece that exists in that language
+      if (LANG !== 'en') {
+        var translatedFirst = mine.filter(function(a){return a.translated;});
+        if (translatedFirst.length) {
+          mine = translatedFirst.concat(mine.filter(function(a){return !a.translated;}));
+        }
+      }
       var lead = mine[0];
       var ls = document.querySelector('.lead-story');
       if (ls) {
