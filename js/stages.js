@@ -106,11 +106,11 @@
 
     if (window.IntersectionObserver) {
       new IntersectionObserver(function (es) { visible = es[0].isIntersecting; },
-        { threshold: 0.15 }).observe(root);
+        { threshold: 0, rootMargin: '1200px 0px 1200px 0px' }).observe(root);
     }
 
-    var every = 6000 + ordinal * 1400 + Math.floor(Math.random() * 1600);   // 6-11s, staggered
-    var first = 2600 + ordinal * 700;                                        // FIRST turn fast
+    var every = 5200 + ordinal * 900 + Math.floor(Math.random() * 900);    // 5-8s, staggered
+    var first = 1700 + ordinal * 500;                                      // FIRST turn fast
     setTimeout(function () {
       if (held) return;
       if (visible && !document.hidden) next();
@@ -150,14 +150,15 @@
           if (REDUCE || pool.length < 2) return;
           var vis = true;
           if (window.IntersectionObserver)
-            new IntersectionObserver(function(e){ vis = e[0].isIntersecting; }, {threshold:.2}).observe(host);
+            new IntersectionObserver(function(e){ vis = e[0].isIntersecting; },
+              {threshold:0, rootMargin:'1200px 0px 1200px 0px'}).observe(host);
           setTimeout(function(){
             if (held) return;
             timer = setInterval(function(){
               if (held || !vis || document.hidden) return;
               at = (at + 1) % pool.length; paint();
-            }, 7000 + k*900);
-          }, 2200 + k*600);
+            }, 5600 + k*800);
+          }, 1500 + k*450);
         });
       }).catch(function(){});
   }

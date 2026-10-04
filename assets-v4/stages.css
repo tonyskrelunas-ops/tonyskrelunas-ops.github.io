@@ -39,13 +39,13 @@
   align-items:start;overflow:hidden;
   transition:height .62s cubic-bezier(.22,.7,.2,1)}
 .scene{grid-area:1 / 1 / 2 / 2;opacity:0;pointer-events:none;
-  transform:perspective(1500px) rotateY(9deg) translateZ(-70px);
+  transform:perspective(1200px) rotateY(16deg) translateZ(-120px) scale(.97);
   transform-origin:50% 50%;
-  transition:opacity .62s ease, transform .68s cubic-bezier(.22,.7,.2,1);
+  transition:opacity .5s ease, transform .66s cubic-bezier(.2,.75,.2,1);
   will-change:transform,opacity}
 .scene.is-on{opacity:1;pointer-events:auto;
-  transform:perspective(1500px) rotateY(0) translateZ(0)}
-.scene.is-out{transform:perspective(1500px) rotateY(-9deg) translateZ(-70px)}
+  transform:perspective(1200px) rotateY(0) translateZ(0) scale(1)}
+.scene.is-out{transform:perspective(1200px) rotateY(-16deg) translateZ(-120px) scale(.97)}
 
 /* a scene's own section keeps all its styling — the stage only sets its rhythm */
 .scene > section{padding-block:clamp(1.4rem,2.4vw,2.8rem) !important;min-height:0 !important}
@@ -165,3 +165,11 @@ html:not(.stages-on) .stage__nav{display:none}
   content-visibility:auto;
   contain-intrinsic-size:auto 700px;
 }
+
+
+/* the active dot breathes, so a visitor can see the band is live;
+   it stops the moment they take the wheel */
+@keyframes dot-live{0%,100%{opacity:1}50%{opacity:.45}}
+.stage__dot.is-on{animation:dot-live 2.6s ease-in-out infinite}
+.stage.is-held .stage__dot.is-on{animation:none}
+@media (prefers-reduced-motion: reduce){ .stage__dot.is-on{animation:none} }
