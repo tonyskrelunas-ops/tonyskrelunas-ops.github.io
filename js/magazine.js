@@ -61,7 +61,9 @@
 
       /* good news from the world — only renders once the daily job has run,
          so the page never shows an empty promise */
-      var found = F.found || [];
+      var lang = (document.documentElement.lang || 'en').slice(0,2);
+      var found = (lang !== 'en' && F['found_' + lang] && F['found_' + lang].length)
+                  ? F['found_' + lang] : (F.found || []);
       var box = document.querySelector('[data-found]');
       if (box) {
         if (!found.length) { box.hidden = true; }
