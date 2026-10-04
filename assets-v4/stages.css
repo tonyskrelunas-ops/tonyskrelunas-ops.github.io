@@ -179,8 +179,9 @@ html:not(.stages-on) .stage__nav{display:none}
    on the side so someone knows what is in that section." A list of what is
    in there, not a row of dots to guess at. Built by js/stage-menu.js from
    the labels the dots already carry.                                      */
-.stage__with-menu{display:block}
-.stage__menu{margin:0 0 1.4rem}
+.stage__with-menu{display:block;max-width:var(--max,1280px);margin-inline:auto}
+/* line up with the stage's own title, which sits inside the head's gutter */
+.stage__menu{margin:0 0 1.4rem;padding-inline:var(--gut,2rem)}
 .stage__menu-k{margin:0 0 .6rem;font-family:var(--body,system-ui);font-weight:700;
   font-size:.68rem;letter-spacing:.17em;text-transform:uppercase;color:#8A7866}
 .stage__menu ul{list-style:none;margin:0;padding:0;display:flex;gap:.5rem;
@@ -201,9 +202,11 @@ html:not(.stages-on) .stage__nav{display:none}
 
 /* On a wide screen it stands in the margin, as a running list. */
 @media (min-width:1040px){
-  .stage__with-menu{display:grid;grid-template-columns:minmax(0,13.5rem) minmax(0,1fr);
-    gap:clamp(1.4rem,1rem + 1.6vw,2.6rem);align-items:start}
-  .stage__menu{position:sticky;top:5.5rem;margin:0}
+  .stage__with-menu{display:grid;
+    grid-template-columns:minmax(0,13.5rem) minmax(0,1fr);
+    gap:clamp(1.4rem,1rem + 1.6vw,2.6rem);align-items:start;
+    padding-inline:var(--gut,2rem)}
+  .stage__menu{position:sticky;top:5.5rem;margin:0;padding-inline:0}
   .stage__menu ul{flex-direction:column;gap:.18rem;overflow:visible}
   .stage__menu li{flex:none}
   .stage__menu-i{width:100%;justify-content:flex-start;white-space:normal;
