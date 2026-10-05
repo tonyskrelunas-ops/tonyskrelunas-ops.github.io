@@ -26,10 +26,34 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
 FEED = os.path.join(ROOT, "js", "magazine-feed.json")
 
+# Tony, 5 October 2026: "abundance minded sports stories ... even animal
+# stories ... a bit more of a selection ... running, western life — horses,
+# sheep, agriculture ... research and stories of positivity."
+#
+# Which is the old Tribe Achieve masthead, almost word for word: Success,
+# Honor, Health, Lifestyle, Commerce, Motivation. So the English edition reads
+# wider now, in five lanes, and the round robin gives every lane a place on
+# the page rather than letting the loudest feed take the morning.
 SOURCES = [
+    # the good news proper
     ("Good News Network",   "https://www.goodnewsnetwork.org/feed/"),
     ("Positive News",       "https://www.positive.news/feed/"),
     ("Reasons to be Cheerful", "https://reasonstobecheerful.world/feed/"),
+    # the research, and the science of a good life
+    ("Greater Good",        "https://greatergood.berkeley.edu/rss"),
+    # running
+    ("iRunFar",             "https://www.irunfar.com/feed"),
+    ("Trail Runner",        "https://www.trailrunnermag.com/feed/"),
+    ("Canadian Running",    "https://runningmagazine.ca/feed/"),
+    # western life — horses, sheep, the range
+    ("Western Horseman",    "https://westernhorseman.com/feed/"),
+    ("Hobby Farms",         "https://www.hobbyfarms.com/feed/"),
+    # the land and what grows on it
+    ("Modern Farmer",       "https://modernfarmer.com/feed/"),
+    ("Civil Eats",          "https://civileats.com/feed/"),
+    # the animals, and the wild
+    ("Audubon",             "https://www.audubon.org/rss.xml"),
+    ("Mongabay",            "https://news.mongabay.com/feed/"),
 ]
 
 # Each edition gathers in its OWN language.
@@ -174,7 +198,7 @@ def main():
     feed = json.load(open(FEED))
     errs, rejected = [], []
 
-    feed["found"] = gather(SOURCES, "en", 12, errs, rejected)
+    feed["found"] = gather(SOURCES, "en", 18, errs, rejected)
     print("  found        : %d kept from %d sources" % (len(feed["found"]), len(SOURCES)))
     for lang, srcs in SOURCES_BY_LANG.items():
         feed["found_" + lang] = gather(srcs, lang, 9, errs, rejected)

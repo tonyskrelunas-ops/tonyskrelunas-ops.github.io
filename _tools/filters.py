@@ -40,7 +40,21 @@ TOPIC = {
  "en": re.compile(r"\b(communit|restor|regenerat|elder|indigenous|native|tribal|"
                   r"farm|food|seed|water|forest|river|land|heal|resilien|longevity|"
                   r"calm|sleep|walk|run|craft|weav|language|school|youth|neighbou?r|"
-                  r"cooperative|local|repair|reuse|solar|steward)", re.I),
+                  r"cooperative|local|repair|reuse|solar|steward|"
+                  # running, and sport held the old way
+                  r"\brun\b|runner|running|trail|marathon|ultra|race|racer|mile|pace|"
+                  r"stride|athlet|sport|coach|team|training|hike|walk|ride|rider|"
+                  # western life — horses, sheep, the range
+                  r"horse|mare|foal|pony|ranch|saddle|rodeo|corral|herd|cattle|"
+                  r"sheep|wool|shear|livestock|pasture|range|cowboy|cowgirl|"
+                  # the land and what grows on it
+                  r"harvest|orchard|graze|grazing|crop|irrigat|heirloom|pollinat|"
+                  r"compost|regenerative|rancher|grower|shepherd|"
+                  # the animals, and the wild
+                  r"animal|wildlife|bird|raptor|horse|dog|rescue|sanctuary|species|"
+                  r"habitat|conservation|migration|herd|nest|"
+                  # the research behind any of it
+                  r"research|study|scientist|evidence|finding|data|trial)", re.I),
  "es": re.compile(r"(comunidad|comunitari|restaur|regener|anciano|ind[ií]gena|maya|"
                   r"campesin|huerto|semilla|agua|bosque|r[ií]o|tierra|salud|sanar|"
                   r"resilien|longevidad|calma|sue[nñ]o|caminata|caminar|artesan|tejid|"
@@ -64,7 +78,11 @@ UPLIFT = {
                   r"win|won|award|prize|record|thriv|flourish|rescu|sav(e|ed|ing)|"
                   r"heal|recover|grow|rise|rising|first\b|breakthrough|discover|"
                   r"success|celebrat|reunit|protect|preserv|donat|volunteer|"
-                  r"help|boost|improv|revitali|transform|hope|joy|gift|share)", re.I),
+                  r"help|boost|improv|revitali|transform|hope|joy|gift|share|"
+                  # what winning, finishing and new life look like in words
+                  r"finish|complet|qualif|podium|comeback|champion|personal best|"
+                  r"adopt|hatch|foal|lamb|calv|born|returning|returned|fledg|"
+                  r"abundan|flourish|bumper crop|yield|bounty)", re.I),
  "es": re.compile(r"(logr|consigu|inaugur|abre\b|abri[óe]|constru|cre[aó]|crear|"
                   r"restaur|recuper|revit|salv|rescat|crec|florec|premi|r[ée]cord|"
                   r"[ée]xito|celebr|protege|proteg|preserv|dona|volunt|mejor|avanc|"
@@ -99,7 +117,9 @@ ALARM = re.compile(
   r"surveillance|occupied|occupation|crackdown|repress|detention|"
   r"geopolitic|strategic|succession|reckoning|deferred|sanction|"
   r"mining|lithium|extraction|reserves|displac|resettle|"
-  r"infrastructure development|runaway|boarding school)", re.I)
+  r"infrastructure development|runaway|boarding school|"
+  r"extinction|endangered|die-off|dying|poach|culled|false promise|"
+  r"broken promise|backlash|the problem with|why we should stop)", re.I)
 
 # ── 4. junk, in any language ─────────────────────────────────────────────────
 JUNK = {
@@ -109,8 +129,25 @@ JUNK = {
  "lt": re.compile(r"(įžymyb|loterij|skandal|kriptovaliut|lažyb)", re.I),
 }
 
+# Publishers put non-breaking spaces, curly quotes and soft hyphens inside
+# headlines. "False\xa0Promise" slid straight through a gate looking for
+# "false promise", so every blob is flattened before any gate sees it.
+_SPACE = re.compile(r"[\u00a0\u2007\u202f\u2009\u200a\u2002-\u2006\t\r\n]+")
+_DASH  = re.compile(r"[\u2010-\u2015\u2212]")
+_QUOTE = re.compile(r"[\u2018\u2019\u201a\u201b\u2032]")
+_DQUOT = re.compile(r"[\u201c\u201d\u201e\u201f\u2033]")
+
+def flatten(blob):
+    blob = _SPACE.sub(" ", blob or "")
+    blob = _DASH.sub("-", blob)
+    blob = _QUOTE.sub("'", blob)
+    blob = _DQUOT.sub('"', blob)
+    blob = blob.replace("\u00ad", "")          # soft hyphen
+    return re.sub(r"\s{2,}", " ", blob)
+
 def passes(blob, lang):
-    """True only if the item clears all three gates. Returns (ok, why_not)."""
+    """True only if the item clears every gate. Returns (ok, why_not)."""
+    blob = flatten(blob)
     if VETO.search(blob):                        return False, "veto"
     if ALARM.search(blob):                       return False, "alarm"
     j = JUNK.get(lang)

@@ -2,9 +2,9 @@
 
 From the magazine's own engine. Every one is live and shareable.
 
-**Gallery: winning pictures from Bird Photographer of the Year** — Positive News  
-A striking shot of a gannet flying through the water is among the winners of this year’s award The post Gallery: winning pictures from Bird Photographer of the Year appea  
-<https://www.positive.news/environment/winners-of-bird-photographer-of-the-year-announced/>
+**Orphaned, Rescued, and Rewilded, Female Gorilla Becomes a Mother in Historic Conservation Success** — Good News Network  
+One of the first-ever eastern lowland gorillas to be successfully returned to the wild gave birth on May 21st in her new/old home of Virunga National Park in the Democrat  
+<https://www.goodnewsnetwork.org/orphaned-rescued-and-rewilded-female-gorilla-becomes-a-mother-in-historic-conservation-success/>
 
 **Juan Villoro gana el Premio Carlos Fuentes 2026** — México Desconocido · ES  
 El escritor y periodista Juan Villoro se convirtió en el ganador del Premio Carlos Fuentes 2026, otorgado por la Secretaría de Cultura del Gobierno de México y la UNAM. T  
@@ -26,9 +26,9 @@ Think about the last time something felt wrong in your life. Chances are the fir
 Tenzin Nyidon DHARAMSHALA, Sept. 30: Tibetan athlete Tenzin Choezom has bagged a gold medal in the women’s marathon race walk at the 2026 Asian Games after Kazakhstan’s Y  
 <https://phayul.com/tibetan-athlete-tenzin-choezom-clinches-gold-medal-at-asian-games/>
 
-**Antarctica’s Wind Farm Saves 122,000 Gallons of Diesel Over 15 Years Powering McMurdo Station** — Good News Network  
-As they near the end of their productive lives, the 3 wind turbines spinning on Antarctica’s Ross Island have made an enormous impact on the energy market of the continen  
-<https://www.goodnewsnetwork.org/antarcticas-wind-farm-saves-122000-gallons-of-diesel-over-15-years-powering-mcmurdo-station/>
+**Why Wool Still Wins: Western Wool Sweaters, Caps and Cowboy Winter Gear** — Western Horseman  
+Prepare for winter with J.M. Capriola Western wool. Learn about layering for working on the ranch and styling sweaters and caps. The post Why Wool Still Wins: Western Woo  
+<https://westernhorseman.com/mercantile/product-spotlight/why-wool-still-wins-western-wool-sweaters-caps-and-cowboy-winter-gear/>
 
 **Descubren en Huancavelica una nueva rana marsupial de color dorado-amarillo que vive a 2590 metros de altitud en los bosques de Tayacaja** — Inforegión · ES  
 Una de sus características más visibles es su coloración dorado-amarilla, aunque... La entrada Descubren en Huancavelica una nueva rana marsupial de color dorado-amarillo  
