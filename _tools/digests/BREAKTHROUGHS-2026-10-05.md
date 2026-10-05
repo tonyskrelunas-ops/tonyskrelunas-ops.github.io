@@ -26,9 +26,9 @@ Think about the last time something felt wrong in your life. Chances are the fir
 Tenzin Nyidon DHARAMSHALA, Sept. 30: Tibetan athlete Tenzin Choezom has bagged a gold medal in the women’s marathon race walk at the 2026 Asian Games after Kazakhstan’s Y  
 <https://phayul.com/tibetan-athlete-tenzin-choezom-clinches-gold-medal-at-asian-games/>
 
-**Why Wool Still Wins: Western Wool Sweaters, Caps and Cowboy Winter Gear** — Western Horseman  
-Prepare for winter with J.M. Capriola Western wool. Learn about layering for working on the ranch and styling sweaters and caps. The post Why Wool Still Wins: Western Woo  
-<https://westernhorseman.com/mercantile/product-spotlight/why-wool-still-wins-western-wool-sweaters-caps-and-cowboy-winter-gear/>
+**Corgi pays homage to Usain Bolt with dominant win** — Canadian Running  
+Banana came from behind with a burst of speed to win the 2026 Corgi Cup The post Corgi pays homage to Usain Bolt with dominant win appeared first on Canadian Running Maga  
+<https://runningmagazine.ca/the-scene/corgi-pays-homage-to-usain-bolt-with-dominant-win/>
 
 **Descubren en Huancavelica una nueva rana marsupial de color dorado-amarillo que vive a 2590 metros de altitud en los bosques de Tayacaja** — Inforegión · ES  
 Una de sus características más visibles es su coloración dorado-amarilla, aunque... La entrada Descubren en Huancavelica una nueva rana marsupial de color dorado-amarillo  
