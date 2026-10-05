@@ -26,14 +26,14 @@ VETO = re.compile(
   r"guerra|matan|asesinat|disparo|tiroteo|ataque|bomba|misil|tropas|muertos|"
   r"\barmas?\b|miedo|inseguridad|criminaliz|delito|crimen|c[áa]rcel|prisi[óo]n|"
   r"corrupci[óo]n|abuso|violenc|amenaza|desplaz|hambruna|sequ[íi]a|acoso|"
-  r"feminicid|secuestr|extorsi[óo]n|pandilla|narco|detenid|"
+  r"feminicid|secuestr|extorsi[óo]n|pandilla|narco|detenid|juicio|demanda|litigio|adicci[óo]n|"
   # Japanese
   r"戦争|殺害|銃撃|攻撃|爆|ミサイル|死亡|テロ|犯罪|恐怖|刑務|汚職|虐待|暴力|"
   r"脅威|飢餓|干ばつ|誘拐|逮捕|訴訟|被害者|"
   # Lithuanian
   r"kar[ao]\b|žuvo|žūt|šaudyn|nužud|ataka|sprogim|raket|kariuomen|mirė|"
   r"ginkl|baim|nusikalt|kalėjim|korupc|smurt|grasin|badas|sausr|pagrobim|"
-  r"suimt|teisiam|auk[ųos]\b)", re.I)
+  r"suimt|teisiam|karin[iė]|kareivi|brigad|poligon|auk[ųos]\b)", re.I)
 
 # ── 2. what this magazine is about ───────────────────────────────────────────
 TOPIC = {
@@ -118,13 +118,14 @@ ALARM = re.compile(
   r"geopolitic|strategic|succession|reckoning|deferred|sanction|"
   r"mining|lithium|extraction|reserves|displac|resettle|"
   r"infrastructure development|runaway|boarding school|"
-  r"extinction|endangered|die-off|dying|poach|culled|false promise|"
+  r"extinction|endangered|die-off|dying|poach|culled|false promise|lawsuit|addiction|ola de calor|inusualmente c[áa]lido|sequ[íi]a|Trump|Baltieji r[ūu]mai|atstov[ėe] spaudai|atstovas spaudai|"
   r"broken promise|backlash|the problem with|why we should stop)", re.I)
 
 # ── 4. junk, in any language ─────────────────────────────────────────────────
 JUNK = {
- "en": re.compile(r"\b(celebrit|royal|lottery|viral|shock|slam|blast|crypto|betting)\b", re.I),
- "es": re.compile(r"(famoso|celebridad|loter[ií]a|viral|esc[áa]ndalo|cripto|apuesta)", re.I),
+ "en": re.compile(r"\b(celebrit|royal|lottery|jackpot|viral|shock|slam|blast|crypto|betting)\b", re.I),
+ "es": re.compile(r"(famoso|celebridad|loter[ií]a|baloto|sorteo|premio mayor|viral|"
+                  r"esc[áa]ndalo|cripto|apuesta|mascota silvestre)", re.I),
  "ja": re.compile(r"(芸能|不倫|炎上|宝くじ|仮想通貨)"),
  "lt": re.compile(r"(įžymyb|loterij|skandal|kriptovaliut|lažyb)", re.I),
 }
