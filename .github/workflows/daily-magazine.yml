@@ -1,0 +1,59 @@
+# The magazine refreshes itself on GitHub's machines, not on Tony's.
+#
+# 5 October 2026: both morning jobs were skipped because the Mac was asleep at
+# 05:00, and the scheduler simply advanced to the next occurrence — the daily
+# edition to the following day, the Monday articles to the following week. The
+# whole claim that the site updates itself depended on a laptop being open.
+#
+# This runs at 12:11 UTC, which is 05:11 in Phoenix, whatever the Mac is doing.
+# The subscriber list is NOT pulled here: this repository is public and the
+# member addresses must never be in it. That step stays on his machine.
+
+name: Daily magazine
+
+on:
+  schedule:
+    - cron: "11 12 * * *"      # 05:11 America/Phoenix, year round (no DST there)
+  workflow_dispatch:            # and a Run button, for when he wants it now
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-magazine
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gather the editions and rebuild the feed
+        run: python3 _tools/refresh-magazine-daily.py
+
+      - name: Commit, only if something changed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "nothing changed — no push"
+            exit 0
+          fi
+          git config user.name  "TribeAwaken magazine"
+          git config user.email "noreply@tribeawaken.com"
+          git add js/magazine-feed.json journal/index.html _tools/digests journal/versions 2>/dev/null || true
+          git commit -m "Magazine: $(date -u '+%B %-d, %Y') edition"
+          git push
+          echo "pushed — tribeawaken.com has today's edition"
+
+      - name: Keep the day's brief where he can read it
+        uses: actions/upload-artifact@v4
+        with:
+          name: breakthroughs-${{ github.run_id }}
+          path: _tools/digests/
+          retention-days: 30
+          if-no-files-found: ignore
