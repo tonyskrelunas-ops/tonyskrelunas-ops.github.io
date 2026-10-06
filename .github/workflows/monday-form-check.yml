@@ -1,0 +1,29 @@
+# Monday morning: do the forms still work?
+#
+# Tony, 6 October, after a week in which every submission was silently thrown
+# away: "lets make it a rule to chekc these on monday mornnigns too."
+#
+# It runs here rather than on his Mac for the same reason the magazine does:
+# the laptop is asleep at five in the morning and the scheduler skips without
+# telling anyone. A failure here turns the run red and emails him.
+
+name: Monday form check
+
+on:
+  schedule:
+    - cron: "30 13 * * 1"      # 06:30 America/Phoenix, Mondays
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Submit as a reader would, and confirm it arrives
+        env:
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+        run: python3 _tools/check-forms.py
