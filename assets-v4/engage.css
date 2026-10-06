@@ -95,3 +95,22 @@ ul.plain li:last-child{border-bottom:1px solid var(--rule,rgba(59,48,32,.18))}
 .big{font-family:var(--display,Palatino,Georgia,serif);font-style:italic;
   font-size:clamp(1.2rem,1.05rem + .9vw,1.7rem);line-height:1.4;margin:.4rem 0 1rem}
 .fine{margin-top:.8rem;font-size:.84rem;opacity:.8;max-width:56ch}
+
+/* The enquiry form. Tony, 6 October: "folks with questions should still be
+   routed somewhere else" — not to his own consulting address, and not to
+   AncestralWatch's inbox, which is a different business. */
+.wrap--narrow{max-width:46rem}
+.enq{margin-top:1.4rem;display:grid;gap:1rem}
+.enq__row{display:grid;gap:1rem}
+@media(min-width:640px){.enq__row{grid-template-columns:1fr 1fr}}
+.enq__f{display:block}
+.enq__f > span{display:block;margin-bottom:.34rem;font-family:var(--body,system-ui);
+  font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#7A5516}
+.enq input,.enq select,.enq textarea{width:100%;box-sizing:border-box;
+  font:400 1rem/1.45 var(--body,system-ui);color:#2C2317;background:#fff;
+  border:1px solid rgba(59,48,32,.3);border-radius:3px;padding:.72em .9em}
+.enq textarea{resize:vertical;min-height:8rem}
+.enq input:focus,.enq select:focus,.enq textarea:focus{
+  outline:2px solid #B98D3E;outline-offset:1px;border-color:#B98D3E}
+.enq button{justify-self:start}
+.lead-sm{max-width:56ch;line-height:1.6}

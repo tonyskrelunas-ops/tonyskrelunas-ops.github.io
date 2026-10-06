@@ -2,5 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /v4/
 Disallow: /v2/
+Disallow: /v3/
+Disallow: /preview/
 
 Sitemap: https://tribeawaken.com/sitemap.xml

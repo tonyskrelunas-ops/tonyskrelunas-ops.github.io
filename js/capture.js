@@ -86,6 +86,13 @@
       body.set('source', src);
       body.set('edition', LANG);
       body.set('page', location.pathname);
+      /* an enquiry carries more than an address. 6 October: the Contact page
+         promised a form and had none, so every question on the site was a
+         mailto to another business's inbox. */
+      ['name', 'subject', 'message'].forEach(function (f) {
+        var el = form.querySelector('[name="' + f + '"]');
+        if (el && el.value) body.set(f, el.value);
+      });
       var bot = form.querySelector('[name="botcheck"], [name="bot-field"]');
       body.set('bot-field', bot && bot.value ? bot.value : '');
 

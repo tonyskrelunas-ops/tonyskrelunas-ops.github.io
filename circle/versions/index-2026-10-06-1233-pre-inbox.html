@@ -12,8 +12,8 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact — Speaking, consulting, retreats, press | Tony Skrelūnas</title>
-<meta name="description" content="Direct enquiries for keynotes, advisory work, retreats and team immersives, and press. One form, read by Tony.">
+<title>The Circle — Add something to the fire | Tony Skrelūnas</title>
+<meta name="description" content="A place to set down a thought, a reflection, or a note from wherever you are reading. No account, no list, no confirmation email. It comes straight to Tony.">
 <link rel="icon" href="/favicon.svg">
 <link rel="stylesheet" href="/assets-v4/v2.css?v=33">
 <style>
@@ -70,92 +70,118 @@ html{scroll-padding-top:6rem}
 .menu__foot a:hover{color:var(--clay-lt)}
 body.locked{overflow:hidden}
 
-/* ---------- typographic opening ---------- */
-.open{background:var(--ink);border-bottom:1px solid var(--rule);
-  padding-block:clamp(3.5rem, 2rem + 6vw, 7.5rem)}
-.open__grid{display:grid;grid-template-columns:1.15fr .85fr;
-  gap:clamp(2.2rem, 1rem + 4.5vw, 6rem);align-items:end}
-@media(max-width:940px){.open__grid{grid-template-columns:1fr;gap:2.4rem;align-items:start}}
-.open h1{font-size:var(--t-hero);font-weight:900;max-width:9ch}
-.open .lead{margin-top:1.8rem;max-width:34ch;color:var(--sand)}
-.open__mailwrap{padding-bottom:.4rem}
-.open__k{font-family:var(--body);font-weight:800;font-size:.8rem;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--clay-lt);margin-bottom:.9rem}
-.open .f-mail{margin-top:0;font-size:clamp(1.3rem, .1rem + 3.4vw, 2.5rem)}
-/* keep the peaks fully inside this shorter section */
-.open .f-glyph--r{top:50%;bottom:auto;transform:translateY(-50%);
-  right:clamp(-2rem, -2vw, 0rem);width:clamp(190px,22vw,340px);opacity:.13}
-.open__sub{margin-top:1.1rem;color:var(--sand);font-size:.98rem;max-width:32ch}
+/* ---------- hero ---------- */
+.hero{min-height:min(82vh,820px)}
+.hero__bg img{object-position:50% 46%}
+/* weight under the headline on the left; the fire and the circle of chairs
+   stay open on the right. Deepest composite = 1 - (1 - .64)(1 - .22) = .72 */
+.hero__scrim{background:
+  linear-gradient(104deg,rgba(20,13,10,.64) 0%,rgba(20,13,10,.52) 40%,rgba(20,13,10,.24) 74%,rgba(20,13,10,.08) 100%),
+  linear-gradient(180deg,rgba(20,13,10,.2) 0%,rgba(20,13,10,0) 32%,rgba(20,13,10,0) 62%,rgba(27,18,16,.22) 100%)}
+.hero__in .eyebrow{color:var(--gold)}
+.hero__in .eyebrow::before{background:var(--gold)}
+.hero h1{font-size:var(--t-hero);font-weight:900;max-width:11ch}
+.hero .lead{max-width:36ch;color:var(--sand);margin-top:1.9rem}
+.hero__cta{margin-top:2.6rem}
 
-/* ---------- what you might be here for ---------- */
-.kinds{padding-block:clamp(3.5rem, 2.2rem + 5vw, 7rem)}
-.kinds__head{margin-bottom:clamp(2.2rem, 1.6rem + 2vw, 3.4rem)}
-.kinds__head h2{max-width:16ch;font-weight:800}
-.kinds__grid{display:grid;grid-template-columns:repeat(4,1fr);
-  gap:clamp(1.2rem, .8rem + 1.4vw, 2rem)}
-@media(max-width:1080px){.kinds__grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.kinds__grid{grid-template-columns:1fr}}
-.kind{border-top:2px solid var(--clay);padding-top:1.3rem;display:flex;flex-direction:column}
-.kind:nth-child(2){border-top-color:var(--gold)}
-.kind:nth-child(3){border-top-color:var(--clay-lt)}
-.kind:nth-child(4){border-top-color:var(--sand)}
-.kind h3{font-size:clamp(1.3rem, 1.15rem + .7vw, 1.75rem);font-weight:800;margin-bottom:.7rem}
-/* two headings wrap to two lines — hold the others to the same depth
-   so all four bodies start on one line */
-@media(min-width:601px){.kind h3{min-height:2.04em}}
-.kind p{color:var(--sand);font-size:1rem;line-height:1.55;max-width:32ch;margin:0}
-.kind__note{margin-top:.9rem!important;font-size:.9rem;color:var(--clay-lt);font-weight:700}
+/* ---------- the invitation ---------- */
+.invite{padding-block:clamp(4rem, 2.6rem + 6vw, 8rem)}
+.invite__grid{display:grid;grid-template-columns:1.02fr 1fr;
+  gap:clamp(2.4rem, 1.2rem + 5vw, 6.5rem);align-items:start}
+@media(max-width:920px){.invite__grid{grid-template-columns:1fr;gap:2.6rem}}
+.invite h2{max-width:11ch;font-weight:800}
+/* the fire ring sits whole in the empty corner, not cropped by it */
+.invite .f-glyph--br{width:clamp(210px, 23vw, 330px);bottom:7%;
+  right:clamp(-1.5rem, -1.5vw, 0rem)}
+@media(max-width:920px){.invite .f-glyph--br{bottom:2%;opacity:.10}}
+.invite__body p{color:var(--sand);max-width:44ch;font-size:calc(var(--t-body) * 1.04)}
+.invite__body p strong{color:var(--cream-2)}
+.invite__body p:first-child::first-letter{
+  font-family:var(--display);font-weight:900;font-size:3.4em;line-height:.78;
+  float:left;margin:.06em .12em 0 0;color:var(--clay-lt)}
 
-/* ---------- photo band ---------- */
+.prompts__t{margin-top:clamp(2.2rem, 1.6rem + 2vw, 3.4rem);
+  font-family:var(--body);font-weight:800;font-size:.8rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sand)}
+.prompts{list-style:none;padding:0;margin-top:1.3rem;
+  display:grid;gap:0;border-top:1px solid var(--rule)}
+.prompts li{padding:1.25rem 0;border-bottom:1px solid var(--rule);
+  display:flex;gap:1.25rem;align-items:baseline;
+  font-size:1.08rem;line-height:1.5;color:var(--sand)}
+.prompts b{font-family:var(--display);font-weight:900;font-size:.92rem;
+  color:var(--clay-lt);flex:none;letter-spacing:.02em;min-width:1.7rem}
+
+/* ---------- a photograph of the real thing ---------- */
 .band{position:relative;border-block:1px solid var(--rule)}
-.band img{width:100%;height:clamp(280px, 38vh, 480px);object-fit:cover;object-position:50% 40%;
-  filter:brightness(1.18) contrast(1.03)}
-/* the caption sits bottom-left, so the weight does too — the room stays visible */
+.band img{width:100%;height:clamp(300px, 40vh, 520px);object-fit:cover;object-position:50% 58%;
+  filter:contrast(.9) brightness(1.3)}
+/* the caption sits bottom-left, so the weight does too — the faces to the
+   right of it are left alone */
 .band::after{content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(18deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.42) 26%,rgba(27,18,16,.13) 58%,rgba(27,18,16,.05) 100%)}
+  background:linear-gradient(18deg,rgba(20,13,10,.66) 0%,rgba(20,13,10,.4) 26%,rgba(27,18,16,.12) 58%,rgba(27,18,16,.04) 100%)}
 .band__cap{position:absolute;left:0;right:0;bottom:0;z-index:2;
   padding-block:clamp(1.4rem, 1rem + 1.4vw, 2.2rem)}
 .band__cap p{font-family:var(--display);font-style:italic;font-weight:600;
   font-size:clamp(1.05rem, .95rem + .6vw, 1.5rem);color:var(--cream);
-  max-width:42ch;line-height:1.35;margin:0;text-shadow:0 2px 18px rgba(20,13,10,.66)}
+  max-width:40ch;line-height:1.35;margin:0;text-shadow:0 2px 18px rgba(20,13,10,.66)}
 
 /* ---------- the form band ---------- */
-.ask{position:relative;isolation:isolate;background:var(--ink);
-  border-block:1px solid var(--rule);padding-block:clamp(4rem, 2.6rem + 6vw, 8rem)}
-.ask__tex{position:absolute;inset:0;z-index:-2;overflow:hidden}
-.ask__tex img{width:100%;height:100%;object-fit:cover;opacity:.07;
-  filter:contrast(1.25) saturate(.5) blur(2px);transform:scale(1.05)}
-.ask__head{text-align:center;margin-bottom:clamp(2.4rem, 1.6rem + 2.6vw, 4rem)}
-.ask__head h2{margin-inline:auto;max-width:14ch;font-weight:800}
-.ask__head p{margin:1.4rem auto 0;color:var(--sand);text-align:center;max-width:42ch;
-  text-wrap:balance;font-size:var(--t-lead);line-height:1.5;font-weight:500}
+.fire{position:relative;isolation:isolate;background:var(--ink);
+  border-block:1px solid var(--rule);
+  padding-block:clamp(4rem, 2.6rem + 6vw, 8rem)}
+.fire__tex{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.fire__tex img{width:100%;height:100%;object-fit:cover;opacity:.075;
+  filter:contrast(1.25) saturate(.55) blur(2px);transform:scale(1.05)}
+.fire__head{text-align:center;margin-bottom:clamp(2.4rem, 1.6rem + 2.6vw, 4rem)}
+.fire__head h2{margin-inline:auto;max-width:13ch;font-weight:800}
+.fire__head p{margin:1.4rem auto 0;color:var(--sand);text-align:center;
+  max-width:42ch;text-wrap:balance;font-size:var(--t-lead);line-height:1.5;font-weight:500}
 
-/* ---------- what happens next ---------- */
-.next{padding-block:clamp(3.5rem, 2.2rem + 5vw, 7rem);text-align:center}
-.next h2{margin-inline:auto;max-width:14ch;font-weight:800}
-.next__grid{display:grid;grid-template-columns:repeat(3,1fr);
-  gap:clamp(1.4rem, 1rem + 2vw, 3rem);
-  max-width:1000px;margin:clamp(2.4rem, 1.6rem + 2.4vw, 3.8rem) auto 0;text-align:left}
-@media(max-width:760px){.next__grid{grid-template-columns:1fr;gap:1.6rem}}
-.next__grid div{border-top:1px solid var(--rule);padding-top:1.2rem}
-.next__grid b{display:block;font-family:var(--display);font-weight:900;
-  font-size:1.9rem;color:var(--gold);line-height:1;margin-bottom:.7rem}
-.next__grid p{color:var(--sand);font-size:1rem;line-height:1.55;max-width:30ch;margin:0}
-.next__grid strong{color:var(--cream-2)}
+/* three quiet promises under the card */
+.promises{display:grid;grid-template-columns:repeat(3,1fr);
+  gap:clamp(1.2rem, .8rem + 1.6vw, 2.4rem);
+  max-width:780px;margin:clamp(2.2rem, 1.6rem + 2vw, 3.4rem) auto 0}
+@media(max-width:640px){.promises{grid-template-columns:1fr;gap:1.3rem}}
+.promises div{border-top:2px solid var(--rule);padding-top:1rem}
+.promises b{display:block;font-family:var(--body);font-weight:800;font-size:.78rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--clay-lt);margin-bottom:.45rem}
+.promises span{color:var(--sand);font-size:.98rem;line-height:1.5}
 
-/* ---------- footer ---------- */
+/* ---------- the address ---------- */
+.direct{text-align:center;padding-block:clamp(4.5rem, 2.6rem + 7vw, 9rem)}
+.direct h2{margin-inline:auto;max-width:13ch;font-weight:800}
+.direct > .wrap > p{margin:1.5rem auto 0;color:var(--sand);text-align:center;
+  max-width:44ch;text-wrap:pretty;font-size:calc(var(--t-body) * 1.04)}
+.direct__after{margin-top:clamp(1.6rem, 1.2rem + 1.4vw, 2.4rem);
+  font-size:.95rem;color:var(--sand);opacity:.8}
+
+/* ---------- closing band ---------- */
+.state{position:relative;isolation:isolate;display:grid;align-items:center;
+  min-height:min(60vh,560px);overflow:hidden}
+.state__bg{position:absolute;inset:0;z-index:-2}
+.state__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+/* centred quote — weight in the middle only, canyon reads at the edges */
+.state::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(92% 120% at 50% 52%,rgba(20,13,10,.58) 0%,rgba(20,13,10,.46) 52%,rgba(20,13,10,.22) 100%)}
+.state__in{padding-block:clamp(3.5rem, 2rem + 5vw, 6.5rem);text-align:center}
+.state .pull{max-width:21ch;margin-inline:auto;font-style:normal;font-weight:700;
+  font-size:clamp(1.8rem, 1.2rem + 2.6vw, 3.4rem)}
+.state cite{display:block;font-family:var(--body);font-style:normal;font-size:.86rem;
+  font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-top:2.1rem}
+
+/* ---------- footer extras ---------- */
 .ftr__grid{grid-template-columns:1.5fr 1fr 1fr 1fr}
 @media(max-width:1000px){.ftr__grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.ftr__grid{grid-template-columns:1fr}}
 .ftr__brand{margin-top:1.2rem;max-width:30ch}
 </style>
-<link rel="canonical" href="https://tribeawaken.com/contact/">
+<link rel="canonical" href="https://tribeawaken.com/circle/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TribeAwaken">
-<meta property="og:title" content="Contact — Speaking, consulting, retreats, press | Tony Skrelūnas">
-<meta property="og:description" content="Direct enquiries for keynotes, advisory work, retreats and team immersives, and press. One form, read by Tony.">
-<meta property="og:url" content="https://tribeawaken.com/contact/">
-<meta property="og:image" content="https://tribeawaken.com/assets/img/garden/tea-stone-bridge.jpg">
+<meta property="og:title" content="The Circle — Add something to the fire | Tony Skrelūnas">
+<meta property="og:description" content="A place to set down a thought, a reflection, or a note from wherever you are reading. No account, no list, no confirmation email. It comes straight to Tony.">
+<meta property="og:url" content="https://tribeawaken.com/circle/">
+<meta property="og:image" content="https://tribeawaken.com/assets/img/ta/crew-meal-2000x1500.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets-v4/interiors-scrims.css?v=3">
 <link rel="stylesheet" href="/assets-v4/interiors-daylight.css?v=6">
@@ -298,181 +324,178 @@ body.locked{overflow:hidden}
 
 <main id="main">
 
-<!-- ================= OPENING ================= -->
-<section class="open f-glyphed hasphoto">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/garden/tea-stone-bridge.jpg" alt="" loading="lazy"></div>
-  <!-- rock art: four stylized peaks -->
-  <div class="f-glyph f-glyph--r" aria-hidden="true">
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__bg">
+    <img src="/assets/img/ta/barrels-group-2000x1500.jpg" alt="A circle of people gathered around a fire under the redwoods at dusk" fetchpriority="high">
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow">The Circle</p>
+    <h1>Add something to the&nbsp;fire.</h1>
+    <p class="lead">Somewhere to set down a thought, a reflection, or a note from wherever you happen to be reading. It comes straight to me.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#fire">Say your piece <span aria-hidden="true">→</span></a>
+      <a class="btn btn--ghost" href="#address">Or write me a letter</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INVITATION ================= -->
+<section class="sec invite f-glyphed hasphoto">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/grandfathers-hands.jpg" alt="" loading="lazy"></div>
+  
+  <!-- rock art: ring of figures around a fire, kept faint -->
+  <div class="f-glyph f-glyph--br" aria-hidden="true">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-      <polyline points="14,152 38,92 62,152"/>
-      <polyline points="27.9,117.2 38,103 48.1,117.2" opacity="0.7"/>
-      <polyline points="58,152 83,50 108,152"/>
-      <polyline points="72.5,92.8 83,61 93.5,92.8" opacity="0.7"/>
-      <polyline points="104,152 128,66 152,152"/>
-      <polyline points="117.9,102.1 128,77 138.1,102.1" opacity="0.7"/>
-      <polyline points="148,152 167,100 186,152"/>
-      <polyline points="159,121.8 167,111 175,121.8" opacity="0.7"/>
-      <line x1="10" y1="152" x2="190" y2="152"/>
+      <circle cx="71.7" cy="62.1" r="4.1"/>
+      <path d="M 64.9,78.7 L 66.2,70 Q 71.7,64.5 77.2,70 L 78.4,78.7"/>
+      <circle cx="128.3" cy="62.1" r="4.1"/>
+      <path d="M 121.6,78.7 L 122.8,70 Q 128.3,64.5 133.8,70 L 135.1,78.7"/>
+      <circle cx="31.6" cy="79.6" r="4.6"/>
+      <path d="M 24.1,98.2 L 25.5,88.5 Q 31.6,82.3 37.8,88.5 L 39.2,98.2"/>
+      <circle cx="168.4" cy="79.6" r="4.6"/>
+      <path d="M 160.8,98.2 L 162.2,88.5 Q 168.4,82.3 174.5,88.5 L 175.9,98.2"/>
+      <circle cx="168.4" cy="104.5" r="5.3"/>
+      <path d="M 159.7,125.8 L 161.3,114.6 Q 168.4,107.5 175.4,114.6 L 177,125.8"/>
+      <circle cx="31.6" cy="104.5" r="5.3"/>
+      <path d="M 23,125.8 L 24.6,114.6 Q 31.6,107.5 38.7,114.6 L 40.3,125.8"/>
+      <circle cx="128.3" cy="122" r="5.8"/>
+      <path d="M 118.9,145.3 L 120.6,133.1 Q 128.3,125.3 136,133.1 L 137.7,145.3"/>
+      <circle cx="71.7" cy="122" r="5.8"/>
+      <path d="M 62.3,145.3 L 64,133.1 Q 71.7,125.3 79.4,133.1 L 81.1,145.3"/>
+      <path d="M 97,40 C 93,62 79,72 79,90 C 79,106 89,118 101,118 C 114,118 123,107 123,92 C 123,79 113,71 107,56 C 106,68 109,77 106,85 C 100,74 97,57 97,40 Z"/>
+      <path d="M 100,74 C 96,86 92,90 92,99 C 92,107 96,111 101,111 C 106,111 110,107 110,99 C 110,90 104,86 100,74 Z" opacity="0.7"/>
+      <line x1="84" y1="130" x2="116" y2="120"/>
+      <line x1="84" y1="120" x2="116" y2="130"/>
+      <line x1="80" y1="126" x2="120" y2="126" opacity="0.6"/>
     </svg>
   </div>
 
-  <div class="wrap open__grid rv">
+  <div class="wrap invite__grid rv">
     <div>
-      <p class="eyebrow">Contact</p>
-      <h1>Say what you&nbsp;need.</h1>
-      <p class="lead">Speaking, advisory work, a retreat, a team immersive, or a press question. One inbox, read by me.</p>
+      <p class="eyebrow">Why this page exists</p>
+      <h2>A fire is not an audience.</h2>
+      <p class="prompts__t">If you'd like somewhere to start</p>
+      <ul class="prompts">
+        <li><b>01</b><span>The line that stopped you — and why it stopped you.</span></li>
+        <li><b>02</b><span>Something you are carrying right now.</span></li>
+        <li><b>03</b><span>Where you're reading from, and what the land looks like there.</span></li>
+        <li><b>04</b><span>A question you'd ask if we were sitting down.</span></li>
+      </ul>
     </div>
-    <div class="open__mailwrap">
-      <p class="open__k">Write</p>
-      <a class="f-mail" href="#write">Use the form below &darr;</a>
-      <p class="open__sub">It reaches him directly. The few questions only exist so he can answer you properly the first time.</p>
-    </div>
-  </div>
-</section>
-
-<section class="sec" id="write">
-  <div class="wrap wrap--narrow">
-    <p class="eyebrow">Write</p>
-    <h2>Say what you need.</h2>
-    <p class="lead-sm">It comes straight to Tony. No list software behind it, no automatic
-       reply, nothing sold on. If it needs an answer you will get one from him.</p>
-    <form class="enq" action="https://api.web3forms.com/submit" method="POST">
-      <input type="checkbox" name="botcheck" class="sr-only" style="display:none" tabindex="-1" autocomplete="off">
-      <div class="enq__row">
-        <label class="enq__f"><span>Your name</span>
-          <input type="text" name="name" autocomplete="name" required></label>
-        <label class="enq__f"><span>Your email</span>
-          <input type="email" name="email" autocomplete="email" required spellcheck="false"></label>
-      </div>
-      <label class="enq__f"><span>What is this about</span>
-        <select name="subject">
-          <option>Speaking</option>
-          <option>Advisory work</option>
-          <option>A retreat or gathering</option>
-          <option>A team immersive</option>
-          <option>The books</option>
-          <option>Press</option>
-          <option>Something else</option>
-        </select></label>
-      <label class="enq__f"><span>Your message</span>
-        <textarea name="message" rows="6" required></textarea></label>
-      <button class="btn btn--primary" type="submit">Send it to Tony &rarr;</button>
-    </form>
-  </div>
-</section>
-
-<!-- ================= WHAT YOU MIGHT BE HERE FOR ================= -->
-<section class="sec kinds hasphoto">
-  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/world/japan-waterfall.jpg" alt="" loading="lazy"></div>
-  
-  <div class="wrap">
-    <div class="kinds__head rv">
-      <p class="eyebrow">What people usually ask for</p>
-      <h2>Four kinds of enquiry.</h2>
-    </div>
-    <div class="kinds__grid rv">
-      <div class="kind">
-        <h3>Speaking</h3>
-        <p>Keynotes, panels, convocations, and closing sessions. Leadership, regeneration, and what thirty years in the field actually taught.</p>
-        <p class="kind__note">Tell me the date, the room, and who's in it.</p>
-      </div>
-      <div class="kind">
-        <h3>Advisory&nbsp;&amp; consulting</h3>
-        <p>Community resilience, economic development, governance restructuring, and organisations trying to change without losing themselves.</p>
-        <p class="kind__note">Tell me the decision you're facing.</p>
-      </div>
-      <div class="kind">
-        <h3>Retreats&nbsp;&amp; immersives</h3>
-        <p>The Canyon Within, private team immersives, and the Far Messenger Program. On the land, or brought to you.</p>
-        <p class="kind__note">Tell me how many people and roughly when.</p>
-      </div>
-      <div class="kind">
-        <h3>Press&nbsp;&amp; interviews</h3>
-        <p>Podcasts, profiles, book coverage, and permission requests for the essays and the four books.</p>
-        <p class="kind__note">Tell me your deadline.</p>
-      </div>
+    <div class="invite__body">
+      <p>At a council fire nobody performs. People arrive carrying something, they set it down in the middle where everyone can see it, and the fire is bigger for it. Then somebody else speaks.</p>
+      <p>That is what this is. <strong>Not a mailing list. Not a comment section.</strong> A place to say the thing the book brought up, or the thing you have been carrying this week, or simply where you are and what the weather is doing there.</p>
+      <p>I read every one of them. I answer more of them than you would expect.</p>
     </div>
   </div>
 </section>
 
-<!-- ================= PHOTO BAND ================= -->
+<!-- ================= A PHOTOGRAPH OF THE REAL THING ================= -->
 <section class="band">
-  <img src="/assets/img/world/japan-garden-reflection.jpg" alt="Tony Skrelūnas presenting to a seated group in a low-lit room" loading="lazy">
+  <img src="/assets/img/world/japan-garden-reflection.jpg" alt="Elders and young people seated together in a circle outdoors, listening" loading="lazy">
   <div class="wrap band__cap">
-    <p class="rv">Thirty years of rooms like this one — boardrooms, chapter houses, convocations, four continents.</p>
+    <p class="rv">This is the room the page is imitating. Everyone facing in. Nobody at the front.</p>
   </div>
 </section>
 
 <!-- ================= THE FORM ================= -->
-<section class="ask f-glyphed" id="ask">
-  <div class="ask__tex" aria-hidden="true">
-    <img src="/assets/img/garden/tea-azalea-moss.jpg" alt="" loading="lazy">
+<section class="fire f-glyphed" id="fire">
+  <div class="fire__tex" aria-hidden="true">
+    <img src="/assets/img/garden/tea-pagoda-stream.jpg" alt="" loading="lazy">
   </div>
-  <!-- rock art: four interlocking circles -->
-  <div class="f-glyph f-glyph--br" aria-hidden="true">
+  <!-- rock art: sunrise over a mesa -->
+  <div class="f-glyph f-glyph--r" aria-hidden="true">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-      <circle cx="70" cy="70" r="46"/><circle cx="130" cy="70" r="46"/>
-      <circle cx="130" cy="130" r="46"/><circle cx="70" cy="130" r="46"/>
-      <circle cx="100" cy="100" r="7"/>
-      <circle cx="100" cy="100" r="2.2" fill="currentColor" stroke="none"/>
-      <circle cx="54" cy="54" r="8"/>
-      <line x1="54" y1="48" x2="54" y2="60"/>
-      <line x1="50" y1="52" x2="58" y2="52" opacity="0.8"/>
-      <circle cx="141" cy="51" r="6"/><circle cx="151" cy="57" r="6"/>
-      <polyline points="146,138 154,146 146,154 138,146 146,138"/>
-      <polyline points="146,142 150,146 146,150 142,146 146,142" opacity="0.7"/>
-      <path d="M 46,154 C 46,144 52,138 62,138 C 62,148 56,154 46,154 Z"/>
-      <line x1="48" y1="152" x2="60" y2="140" opacity="0.7"/>
+      <line x1="131.4" y1="135" x2="138.4" y2="131"/>
+      <line x1="126" y1="128" x2="137.4" y2="116.6"/>
+      <line x1="119" y1="122.6" x2="123" y2="115.6"/>
+      <line x1="110.8" y1="119.2" x2="114.9" y2="103.7"/>
+      <line x1="102" y1="118" x2="102" y2="110"/>
+      <line x1="93.2" y1="119.2" x2="89.1" y2="103.7"/>
+      <line x1="85" y1="122.6" x2="81" y2="115.6"/>
+      <line x1="78" y1="128" x2="66.6" y2="116.6"/>
+      <line x1="72.6" y1="135" x2="65.6" y2="131"/>
+      <path d="M 76,152 A 26,26 0 0 1 128,152"/>
+      <polyline points="9,152 14,118 23,105 43,103 50,117 56,152"/>
+      <line x1="15" y1="117" x2="50" y2="116" opacity="0.6"/>
+      <line x1="12" y1="134" x2="54" y2="133" opacity="0.45"/>
+      <polyline points="150,152 155,130 162,121 177,120 183,131 188,152"/>
+      <line x1="156" y1="131" x2="183" y2="130" opacity="0.6"/>
+      <line x1="6" y1="152" x2="194" y2="152"/>
     </svg>
   </div>
 
   <div class="wrap">
-    <div class="ask__head rv">
-      <p class="eyebrow eyebrow--center">Send it</p>
-      <h2>Tell me what you're planning.</h2>
-      <p>Six fields. No account, no confirmation email, nothing to join.</p>
+
+    <div class="fire__head rv">
+      <p class="eyebrow eyebrow--center">Send word</p>
+      <h2>Say it in your own words.</h2>
+      <p>No account. No confirmation email. Nothing to join. You write, I read.</p>
     </div>
 
     <!-- ---- the form. Engine: /assets-v4/forms.js ---- -->
     <div class="f-shell rv" data-mail-shell>
 
-      <p style="margin-top:1.6rem"><a class="mailto" href="/contact/#write">Contact</a></p><p class="mailto__note">Write to me &mdash; it opens your own mail, addressed to me. I read everything.</p>
+      <p style="margin-top:1.6rem"><a class="mailto" href="/contact/#write">Contact</a></p><p class="mailto__note">Add someone to the fire &mdash; it opens your own mail, addressed to me. I read everything.</p>
 
       <!-- ---- the success state, shown in place ---- -->
       <div class="f-done" role="status" aria-live="polite">
         <svg class="f-done__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false">
           <circle cx="50" cy="50" r="46" stroke="#C96A3E" stroke-width="2" opacity=".4"/>
           <circle cx="50" cy="50" r="33" stroke="#D9A25F" stroke-width="2" opacity=".7"/>
-          <path d="M32 51.5 45 64l24-27" stroke="#E5895C" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M50 66c-8 0-13-6-13-13 0-9 7-12 7-21 0 0 9 3 9 12 2-3 2-8 2-8s9 7 9 17c0 8-6 13-14 13Z" fill="#E5895C"/>
         </svg>
-        <h3>That's with me.</h3>
-        <p>It arrived in my inbox, not a queue. I answer most enquiries within a few days — sooner if there's a deadline in it.</p>
-        <p>If it's urgent, write straight to <strong>Contact</strong> and say so in the subject.</p>
+        <h3>It's on the fire.</h3>
+        <p>Thank you for that. It landed in my inbox exactly as you wrote it, and I'll read it myself.</p>
+        <p>If you left an address, don't be surprised to hear back.</p>
         <p class="f-done__sig">— Tony</p>
       </div>
     </div>
+
+    <div class="promises rv">
+      <div><b>One inbox</b><span>It goes to wisdom@ancestralwatch.com and stops there.</span></div>
+      <div><b>No list</b><span>Nothing is added anywhere unless you tick the box yourself.</span></div>
+      <div><b>No machine</b><span>No auto-reply, no drip sequence, no confirmation dance.</span></div>
+    </div>
+
   </div>
 </section>
 
-<!-- ================= WHAT HAPPENS NEXT ================= -->
-<section class="sec next">
-  <div class="wrap">
-    <p class="eyebrow eyebrow--center">After you press send</p>
-    <h2>Three things, then nothing.</h2>
-    <div class="next__grid rv">
-      <div>
-        <b>01</b>
-        <p>It lands in <strong>one inbox</strong>, read by Tony, as an ordinary email.</p>
-      </div>
-      <div>
-        <b>02</b>
-        <p><strong>I read it.</strong> Not an assistant, not a routing system, not a bot writing back.</p>
-      </div>
-      <div>
-        <b>03</b>
-        <p><strong>You hear back within a few days</strong>, usually with a question or a time to talk.</p>
-      </div>
-    </div>
+<!-- ================= THE ADDRESS ================= -->
+<section class="sec direct f-glyphed hasphoto" id="address">
+  <div class="photo-bg" aria-hidden="true"><img src="/assets/img/family/great-grandfather-hat.jpg" alt="" loading="lazy"></div>
+  
+  <!-- rock art: concentric rings from a stone -->
+  <div class="f-glyph f-glyph--c" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+      <ellipse cx="100" cy="116" rx="36" ry="12" opacity="0.95"/>
+      <ellipse cx="100" cy="116" rx="56" ry="21" opacity="0.75"/>
+      <ellipse cx="100" cy="116" rx="76" ry="30" opacity="0.55"/>
+      <ellipse cx="100" cy="116" rx="94" ry="38" opacity="0.35"/>
+      <path d="M 78,89 C 78,79 88,73 101,73 C 113,73 121,79 121,88 C 121,96 111,101 100,101 C 87,101 78,97 78,89 Z"/>
+      <path d="M 85,84 C 89,78 95,75 103,76" opacity="0.55"/>
+    </svg>
+  </div>
+
+  <div class="wrap wrap--tight rv">
+    <p class="eyebrow eyebrow--center">Or the old way</p>
+    <h2>Write me a letter.</h2>
+    <p>If you'd rather use your own mail — or you have something long, or private, or with a photograph attached — send it here. This address always works.</p>
+    <a class="f-mail" href="/contact/#write">Contact</a>
+    <p class="direct__after">Same inbox. Same person reading it.</p>
+  </div>
+</section>
+
+<!-- ================= CLOSING ================= -->
+<section class="state">
+  <div class="state__bg">
+    <img src="/assets/img/canyon-family.jpg" alt="Three generations walking the red rock above a canyon at first light" loading="lazy">
+  </div>
+  <div class="wrap state__in rv">
+    <p class="pull">Someone kept the fire before you got here. That is the only reason there is one.</p>
+    <cite>The Ancestral Watch</cite>
   </div>
 </section>
 
