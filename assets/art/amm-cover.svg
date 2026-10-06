@@ -1,25 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The Abundance Mindset Magazine cover: a sun over green mountains, with the far messenger running the ridge"><defs><style>
 .rays{stroke:#FEF7E7;stroke-width:13;stroke-linecap:round}
+/* Tony, 6 October: "have the sun moving around too .. and the figure start
+   sooner once you open the page." So the sun crosses the sky the way it does
+   over a morning — slowly, three minutes end to end, rising a little as it
+   goes — and its rays turn with it. */
+.sun{animation:sun-cross 180s ease-in-out infinite alternate;transform-box:view-box;transform-origin:1180px 250px}
+.rays{animation:sun-cross 180s ease-in-out infinite alternate,
+                ray-turn 120s linear infinite;
+      transform-box:view-box;transform-origin:1180px 250px}
+@keyframes sun-cross{
+  0%{transform:translate(-460px,120px)}
+  50%{transform:translate(0,-18px)}
+  100%{transform:translate(250px,96px)}
+}
+@keyframes ray-turn{to{rotate:360deg}}
 /* The messenger runs the ridge. Tony has had him walking, then running, since
    4 October; here he runs the cover itself. Off under reduced motion. */
 .cv-run{offset-path:path("M -40,640 L 200,500 L 420,610 L 640,470 L 880,600 L 1120,490 L 1380,610 L 1620,520");offset-rotate:0deg;offset-distance:0%;
-  animation:cv-cross 30s linear infinite}
+  animation:cv-cross 30s linear infinite;animation-delay:-7s}
 .cv-b{animation:cv-bob .44s ease-in-out infinite}
 .cv-leg{transform-box:view-box;transform-origin:-6px -13px}
 .cv-arm{transform-box:view-box;transform-origin:1px -27px}
 .cv-leg--f,.cv-arm--b{animation:cv-fwd .44s ease-in-out infinite}
 .cv-leg--b,.cv-arm--f{animation:cv-back .44s ease-in-out infinite}
 .cv-hair{transform-box:view-box;transform-origin:0 -36px;animation:cv-mane .44s ease-in-out infinite}
-@keyframes cv-cross{0%{offset-distance:0%;opacity:0}5%{opacity:1}93%{opacity:1}100%{offset-distance:100%;opacity:0}}
+@keyframes cv-cross{0%{offset-distance:0%;opacity:0}2%{opacity:1}95%{opacity:1}100%{offset-distance:100%;opacity:0}}
 @keyframes cv-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2.6px)}}
 @keyframes cv-fwd{0%,100%{transform:rotate(26deg)}50%{transform:rotate(-24deg)}}
 @keyframes cv-back{0%,100%{transform:rotate(-24deg)}50%{transform:rotate(26deg)}}
 @keyframes cv-mane{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(6deg)}}
-@media (prefers-reduced-motion:reduce){.cv-run{offset-distance:46%;opacity:1}.cv-run,.cv-run *{animation:none!important}}
+@media (prefers-reduced-motion:reduce){.cv-run{offset-distance:46%;opacity:1}.cv-run,.cv-run *,.sun,.rays{animation:none!important;transform:none!important}}
 </style></defs>
 <rect width="1600" height="760" fill="#D7A738"/>
 <g class="rays"><line x1="1180" y1="98" x2="1180" y2="54"/><line x1="1256" y1="118" x2="1278" y2="80"/><line x1="1312" y1="174" x2="1350" y2="152"/><line x1="1332" y1="250" x2="1376" y2="250"/><line x1="1312" y1="326" x2="1350" y2="348"/><line x1="1256" y1="382" x2="1278" y2="420"/><line x1="1180" y1="402" x2="1180" y2="446"/><line x1="1104" y1="382" x2="1082" y2="420"/><line x1="1048" y1="326" x2="1010" y2="348"/><line x1="1028" y1="250" x2="984" y2="250"/><line x1="1048" y1="174" x2="1010" y2="152"/><line x1="1104" y1="118" x2="1082" y2="80"/></g>
-<circle cx="1180" cy="250" r="118" fill="#FEF7E7"/>
+<circle class="sun" cx="1180" cy="250" r="118" fill="#FEF7E7"/>
 <path d="M -20,760 L -20,430 L 150,300 L 300,400 L 470,250 L 640,380 L 820,260 L 1000,390 L 1180,290 L 1360,400 L 1620,310 L 1620,760 Z"  fill="#55915A"/>
 <path d="M -20,760 L -20,520 L 170,380 L 330,490 L 520,330 L 700,470 L 900,350 L 1090,480 L 1300,370 L 1620,470 L 1620,760 Z"   fill="#488448"/>
 <path d="M -20,760 L -20,640 L 200,500 L 420,610 L 640,470 L 880,600 L 1120,490 L 1380,610 L 1620,520 L 1620,760 Z" fill="#376D3B"/>
