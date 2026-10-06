@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-06T15:16:34",
+ "generated": "2026-10-06T08:30:29",
  "mine": [
   {
    "slug": "why-i-started-a-magazine-again",
@@ -810,6 +810,14 @@
    "lane": "running"
   },
   {
+   "title": "2026 PRCA Top 15 Steer Ropers",
+   "url": "https://westernhorseman.com/rodeo/2026-prca-top-15-steer-ropers/",
+   "dek": "Here’s everything you need to know about the PRCA top 15 Steer Ropers headed to the 2026 Wrangler NFR in December. The post 2026 PRCA Top 15 Steer Ropers appeared first on Western Horseman.",
+   "source": "Western Horseman",
+   "date": "2026-10-05",
+   "lane": "land"
+  },
+  {
    "title": "How to Light a Chicken Coop: Four Bright Ideas",
    "url": "https://www.hobbyfarms.com/how-to-light-a-chicken-coop/",
    "dek": "Use these four tips to light up your chicken coop. The post How to Light a Chicken Coop: Four Bright Ideas appeared first on Hobby Farms.",
@@ -826,9 +834,9 @@
    "lane": "land"
   },
   {
-   "title": "What Happens When Farmers Dine With Their Neighbors?",
-   "url": "https://civileats.com/2026/10/06/what-happens-when-farmers-dine-with-their-neighbors/",
-   "dek": "By Bridget Shirvell • October 6, 2026How a Vermont farmers‘ association is building community and strengthening local food systems.Read the full article →",
+   "title": "FDA Investigation Found Cyclospora at Taylor Farms’ Mexico Facility",
+   "url": "https://civileats.com/2026/10/06/fda-investigation-found-cyclospora-at-taylor-farms-mexico-facility/",
+   "dek": "By Rebekah Alvey • October 6, 2026The agency has concluded its investigation into a cyclospora outbreak that sickened a record number of Americans this summer.Read the full article →",
    "source": "Civil Eats",
    "date": "2026-10-06",
    "lane": "land"
@@ -842,9 +850,9 @@
    "lane": "animals"
   },
   {
-   "title": "Artificial nests give Hong Kong’s cockatoos a home – and a chance to study their behavior",
-   "url": "https://news.mongabay.com/2026/10/artificial-nests-give-hong-kongs-cockatoos-a-home-and-a-chance-to-study-their-behavior/",
-   "dek": "HONG KONG — “Spiderman … Tom Holland,” two secondary school boys repeated to each other as they watched conservationist Harry Wong nimbly climb a tall tree at their school, St. Louis School,",
+   "title": "In Australia’s Wet Tropics, restoration misses the forest for the tree cover",
+   "url": "https://news.mongabay.com/2026/10/in-australias-wet-tropics-restoration-misses-the-forest-for-the-tree-cover/",
+   "dek": "Relics of ancient wet forests stretch across the coast of Queensland state in Australia. In a landscape made patchwork by agriculture, volunteers, community groups and Indigenous rangers in ",
    "source": "Mongabay",
    "date": "2026-10-06",
    "lane": "animals"
@@ -888,14 +896,6 @@
    "source": "Reasons to be Cheerful",
    "date": "2026-09-30",
    "lane": "news"
-  },
-  {
-   "title": "17 Ideas From Educators to Start the School Year With Joy",
-   "url": "https://greatergood.berkeley.edu/article/item/17_ideas_from_educators_to_start_the_school_year_with_joy",
-   "dek": "Joy! What a beautiful way to start the school year, not only because it feels good, but also because science shows that joy is linked closely to learning, as well as individual and collectiv",
-   "source": "Greater Good",
-   "date": "",
-   "lane": "research"
   }
  ],
  "found_es": [
@@ -940,11 +940,11 @@
    "lane": "land"
   },
   {
-   "title": "MinAgricultura libera primera área restringida con las llamadas Appa de Petro",
-   "url": "https://www.agronegocios.co/agricultura/minagricultura-libera-primera-area-restringida-con-las-llamadas-appa-de-petro-4497040",
-   "dek": "Las Áreas de Protección para la Producción de Alimentos causaron polémica por quitar autonomía regional y fue anunciada su derogación por el nuevo Gobierno",
+   "title": "Hectáreas cultivadas de aguacate Hass crecieron 6% y Antioquia concentra 36% del área",
+   "url": "https://www.agronegocios.co/agricultura/hectareas-cultivadas-de-aguacate-hass-crecieron-6-y-antioquia-concentra-36-del-area-4497766",
+   "dek": "Colombia registra 39.474 hectáreas de la fruta ante el ICA, 6% más que en 2025. Antioquia concentra 14.258 hectáreas y lidera el país",
    "source": "Agronegocios",
-   "date": "2026-10-05",
+   "date": "2026-10-06",
    "lane": "land"
   },
   {
@@ -1072,6 +1072,22 @@
  ],
  "found_lt": [
   {
+   "title": "Pratęsiamas kandidatų teikimas Socialinės atsakomybės metų apdovanojimams",
+   "url": "https://kauno.diena.lt/naujienos/klaipeda/miesto-pulsas/pratesiamas-kandidatu-teikimas-socialines-atsakomybes-metu-apdovanojimams-1777808",
+   "dek": "<p>Kad prasmingi darbai ir juos darantys žmonės neliktų nepastebėti, skiriama daugiau laiko kandidatams pasiūlyti – jų teikimas Klaipėdos miesto savivaldybės paskelbtiems Socialinės atsakomy",
+   "source": "Kauno diena",
+   "date": "",
+   "lane": "news"
+  },
+  {
+   "title": "M. Valančius iš arti: senųjų knygų paraštėse atsiveria iki šiol mažai pažintas Žemaičių vyskupo pasaulis",
+   "url": "https://mokslolietuva.lt/2026/10/m-valancius-is-arti-senuju-knygu-parastese-atsiveria-iki-siol-mazai-pazintas-zemaiciu-vyskupo-pasaulis/",
+   "dek": "Minint 225-ąsias Motiejaus Valančiaus gimimo metines, Vilniaus universiteto bibliotekoje spalio 15 d. 16 val. bus atidaroma paroda „Motiejus ir biblioteka“. …",
+   "source": "Mokslo Lietuva",
+   "date": "2026-10-06",
+   "lane": "research"
+  },
+  {
    "title": "Vorų kuriami stebuklai žmogaus kūnui nėra svetimkūnis (dr. Eduardas Budrys)",
    "url": "https://gamtostyrimai.lt/voru-kuriami-stebuklai-zmogaus-kunui-nera-svetimkunis-dr-eduardas-budrys/",
    "dek": "The post Vorų kuriami stebuklai žmogaus kūnui nėra svetimkūnis (dr. Eduardas Budrys) appeared first on Gamtos tyrimų centras.",
@@ -1112,6 +1128,22 @@
    "lane": "culture"
   },
   {
+   "title": "Segalovičienė: galimas didesnis nei 3 proc. deficitas kelia nerimą, gynybos išlyga išnaudota",
+   "url": "https://kauno.diena.lt/naujienos/verslas/ekonomika/segaloviciene-galimas-didesnis-nei-3-proc-deficitas-kelia-nerima-gynybos-islyga-isnaudota-1777798",
+   "dek": "<p>„Mes esame nepriklausoma fiskalinė institucija, tai, be abejo, mums nėra „nieko tokio“ deficito viršijimas, turint omenyje mūsų ekonomikos struktūrą, skolos augimą ir panašiai“, – antradi",
+   "source": "Kauno diena",
+   "date": "",
+   "lane": "news"
+  },
+  {
+   "title": "Rūta Mikelkevičiūtė – vėl pirmakursė: „Kai užaugsiu, tai būsiu…“",
+   "url": "https://mokslolietuva.lt/2026/10/ruta-mikelkeviciute-vel-pirmakurse-kai-uzaugsiu-tai-busiu/",
+   "dek": "Kalbėti dešimčiai tūkstančių žmonių – įprasta, o štai prireikus pristatyti plazminę membraną ir natrio bei kalio siurblį nedidelei seminaro auditorijai …",
+   "source": "Mokslo Lietuva",
+   "date": "2026-10-06",
+   "lane": "research"
+  },
+  {
    "title": "Gamtos tyrimų centro mokslininkas prisideda prie aplinkos DNR metodų plėtros Europoje",
    "url": "https://gamtostyrimai.lt/gamtos-tyrimu-centro-mokslininkas-prisideda-prie-aplinkos-dnr-metodu-pletros-europoje/",
    "dek": "Gamtos tyrimų centro mokslininkas dr. Nathanʼas Jay Bakerʼis rugsėjo 28–30 d. dalyvavo Briuselyje (Belgija) vykusiame naujai finansuotos COST iniciatyvos eDNA4Policy (CA25163) valdymo komite",
@@ -1134,38 +1166,6 @@
    "source": "Nacionalinis muziejus",
    "date": "2026-10-06",
    "lane": "culture"
-  },
-  {
-   "title": "Senjorai tapo meno gidais: kultūra grąžina pasitikėjimą savimi",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3073333/senjorai-tapo-meno-gidais-kultura-grazina-pasitikejima-savimi",
-   "dek": "Spalio 1 d. Kaune prasidėjęs Tarptautinis fotografijų ir medijų meno festivalis (IPMA) jau antrus metus kviečia senjorus savanoriauti – lankytojus per ekskursijas supažindinti su šiuolaikini",
-   "source": "LRT Kultūra",
-   "date": "2026-10-06",
-   "lane": "culture"
-  },
-  {
-   "title": "Gamtos tyrimų centre turime naują mokslų daktarę!",
-   "url": "https://gamtostyrimai.lt/gamtos-tyrimu-centre-turime-nauja-mokslu-daktare/",
-   "dek": "Sveikiname Gamtos tyrimų centro Augalų fiziologijos laboratorijos mokslininkę dr. Mariam Zareyan, sėkmingai apgynusią biologijos mokslo krypties (N 010) daktaro disertaciją „Physiological, B",
-   "source": "Gamtos tyrimai",
-   "date": "2026-10-01",
-   "lane": "animals"
-  },
-  {
-   "title": "Jurgiui Mačiūnui – 95: atidaroma paroda-kvietimas",
-   "url": "https://kaunaspilnas.lt/jurgiui-maciunui-95-atidaroma-paroda-kvietimas/",
-   "dek": "„Patirti Fluxus kaip gyvenimo būdą yra vienintelis būdas pažinti Jurgį,“ – Billie Maciunas Spalio 16 d., penktadienį, 18 val. Kauno paveikslų galerija (K. Donelaičio g. 16, Kaune) kviečia į ",
-   "source": "Kaunas pilnas kultūros",
-   "date": "2026-10-06",
-   "lane": "culture"
-  },
-  {
-   "title": "Viduramžių diena Bastėjoje: spalio 10-ąją atgims Taurusis Vilnius",
-   "url": "https://lnm.lt/aktualijos/viduramziu-diena-bastejoje-spalio-10-aja-atgims-taurusis-vilnius/",
-   "dek": "Spalio 10 d. nuo 11 iki 18 val. Lietuvos nacionalinio muziejaus (LNM) Vilniaus gynybinės sienos bastėjoje (Bokšto g. 20, Vilnius) vyks „Viduramžių diena Bastėjoje – Taurusis Vilnius“. Lankyt",
-   "source": "Nacionalinis muziejus",
-   "date": "2026-10-01",
-   "lane": "culture"
   }
  ],
  "found_india": [
@@ -1186,12 +1186,36 @@
    "lane": "news"
   },
   {
+   "title": "How quickly do your lungs recover after you stop smoking? A pulmonologist explains what happens days, weeks, and years after quitting",
+   "url": "https://www.hindustantimes.com/lifestyle/health/how-quickly-do-your-lungs-recover-after-you-stop-smoking-a-pulmonologist-explains-what-happens-days-weeks-and-years-after-quitting-101791283252710.html",
+   "dek": "Your lungs start healing after you quit smoking. Here’s what happens in the first few days, weeks, and years.",
+   "source": "Hindustan Times Health",
+   "date": "2026-10-06",
+   "lane": "running"
+  },
+  {
    "title": "Forgotten vegetables could help make our diets more resilient",
    "url": "https://india.mongabay.com/2026/10/forgotten-vegetables-could-help-make-our-diets-more-resilient/",
    "dek": "The clove bean is fondly known as mookuthi avarai in Tamil, an ode to its nose-pin-like appearance. Clove bean belongs to the same family as the morning glory, perennial fast-growing vines t",
    "source": "Mongabay India",
    "date": "2026-10-06",
    "lane": "land"
+  },
+  {
+   "title": "Living with Elephants in Odisha’s Changing Landscape",
+   "url": "https://roundglasssustain.com/conservation/elephants-odisha",
+   "dek": "As forests become more fragmented and climate pressures grow, people and elephants in Odisha navigate an increasingly contested shared landscape, where survival depends on fragile coexistenc",
+   "source": "Roundglass Sustain",
+   "date": "2026-10-05",
+   "lane": "animals"
+  },
+  {
+   "title": "The last act of dignity: Sumira Roy on National Award-winning documentary Bhangaar",
+   "url": "https://www.thehindu.com/society/sumira-roy-interview-national-award-winning-bhangaar/article71531963.ece",
+   "dek": "72nd National Film Awards: As India’s elderly population grows, Sumira Roy’s National Award-winning Bhangaar, on the Lavates’ demand for euthanasia, explores lost autonomy",
+   "source": "The Hindu Society",
+   "date": "2026-10-02",
+   "lane": "culture"
   },
   {
    "title": "Why Thousands of Migratory Birds Fly Across Countries to 2 Man-Made Reservoirs in Bihar",
@@ -1210,39 +1234,14 @@
    "lane": "news"
   },
   {
-   "title": "Maharashtra formally recognises women farmers regardless of land ownership [Commentary]",
-   "url": "https://india.mongabay.com/2026/10/maharashtra-formally-recognises-women-farmers-regardless-of-land-ownership-commentary/",
-   "dek": "On October 2, Maharashtra is set to begin issuing the Women Farmers Certificates (WFCs) under the newly enacted Women Farmer’s Empowerment Act 2026. The certificates will formally recognise ",
-   "source": "Mongabay India",
-   "date": "2026-10-01",
-   "lane": "land"
-  },
-  {
-   "title": "India’s AI Opportunity Starts With the Last Mile",
-   "url": "https://thebetterindia.com/videos/business/indias-ai-opportunity-starts-with-the-last-mile-12626810",
-   "dek": "What does it take to build a future that works for everyone? As a Gates Foundation Goalkeepers Champion, Debjani Ghosh has spent her career thinking about how innovation can create meaningfu",
-   "source": "The Better India",
-   "date": "2026-10-05",
-   "lane": "news"
-  },
-  {
-   "title": "Legal system fails to keep pace with India’s growing exotic pet industry",
-   "url": "https://india.mongabay.com/2026/10/legal-system-fails-to-keep-pace-with-indias-growing-exotic-pet-industry/",
-   "dek": "This is Part 4 of a series on exotic pet trade. The series looks at the health impacts, legal challenges and the ecological consequences of keeping exotic wild animals as pets. Part 1 explor",
-   "source": "Mongabay India",
-   "date": "2026-10-01",
-   "lane": "land"
-  },
-  {
-   "title": "How Keeping DJs Out of Weddings Is Saving Vultures in This Maharashtra Village",
-   "url": "https://thebetterindia.com/wildlife/chirgaon-maharashtra-village-vulture-conservation-nesting-noise-protection-12625259",
-   "dek": "When a wedding procession passes through Chirgaon in Maharashtra’s Raigad district, one familiar sound is missing: the DJ. Since 2002, the village has prohibited DJs and loudspeakers. Firecr",
-   "source": "The Better India",
-   "date": "2026-10-05",
-   "lane": "news"
+   "title": "Heart and brain health are linked: Cardiologist explains the connection and what to monitor for better health",
+   "url": "https://www.hindustantimes.com/lifestyle/health/heart-and-brain-health-are-linked-cardiologist-explains-the-connection-and-what-to-monitor-for-better-health-101791290020384.html",
+   "dek": "Did you know about the heart-brain connection? Several shared risk factors can affect the health of both organs.",
+   "source": "Hindustan Times Health",
+   "date": "2026-10-06",
+   "lane": "running"
   }
  ],
- "found_zh": [],
  "found_tibet": [
   {
    "title": "CTA unveils five-year roadmap on Middle Way, community sustainability and strengthening CTA",
@@ -1269,6 +1268,14 @@
    "lane": "news"
   },
   {
+   "title": "BDRC Launches Major Initiative to Build Open Buddhist Datasets for AI",
+   "url": "https://www.bdrc.io/blog/2026/02/28/bdrc-launches-major-initiative-to-build-open-buddhist-datasets-for-ai/",
+   "dek": "BDRC is making a major effort to ensure that artificial intelligence (AI) is better informed about Buddhism. With generous financial support and inspiration from Khyentse Foundation, in Dece",
+   "source": "Buddhist Digital Resource Center",
+   "date": "2026-02-28",
+   "lane": "research"
+  },
+  {
    "title": "Man of Peace Screened During Tibetan National Identity Preservation Week at Maximus Mall, Dharamshala",
    "url": "https://tibetmuseum.org/screenings-of-the-historic-animated-series-man-of-peace-at-maximus-mall-dharamshala/",
    "dek": "Dharamshala, 23 September 2026 — As part of the observance of Tibetan National Identity Preservation Week, The Tibet … The post Man of Peace Screened During Tibetan National Identity Preserv",
@@ -1293,28 +1300,20 @@
    "lane": "news"
   },
   {
+   "title": "Returning the Trust: The Final Journey of the Gene Smith Library",
+   "url": "https://www.bdrc.io/blog/2026/02/05/returning-the-trust/",
+   "dek": "In this blog post, we want to share a side of BDRC that few see: our history of repatriating physical books; the paper, ink, and generations of craftsmanship that form the foundation of our ",
+   "source": "Buddhist Digital Resource Center",
+   "date": "2026-02-05",
+   "lane": "research"
+  },
+  {
    "title": "Spirit of Tibet 2026: Celebrating Culture and Compassion",
    "url": "https://tibetmuseum.org/spirit-of-tibet-2026-celebrating-culture-and-compassion/",
    "dek": "India International Centre, New Delhi The Spirit of Tibet: Celebrating Culture and Compassion festival brought together Tibetan culture, … The post Spirit of Tibet 2026: Celebrating Culture ",
    "source": "Tibet Museum",
    "date": "2026-09-05",
    "lane": "culture"
-  },
-  {
-   "title": "Solo peace marcher reaches Dharamshala, urges for greater youth participation",
-   "url": "https://phayul.com/solo-peace-marcher-reaches-dharamshala-urges-for-greater-youth-participation/",
-   "dek": "Tenzin Nyidon DHARAMSHALA, Sept. 29: After eight days on the road, 59-year-old Tibetan activist Tashi Thakchoe arrived in Dharamshala on September 28, completing a solo peace march from New ",
-   "source": "Phayul",
-   "date": "2026-09-29",
-   "lane": "news"
-  },
-  {
-   "title": "Tibetans in Darjeeling Observe Tibetan Identity Preservation Week With a Series of Programmes",
-   "url": "https://tibet.net/tibetans-in-darjeeling-observe-tibetan-identity-preservation-week-with-a-series-of-programmes/",
-   "dek": "Darjeeling, West Bengal: In accordance with the directives issued by the Kashag, the Tibetan community in Darjeeling observed Tibetan Identity Preservation Week during the fourth week of Sep",
-   "source": "Central Tibetan Administration",
-   "date": "2026-10-05",
-   "lane": "news"
   }
  ]
 }

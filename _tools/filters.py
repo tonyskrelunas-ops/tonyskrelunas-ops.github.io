@@ -112,7 +112,7 @@ ALARM = re.compile(
   r"警告|危機|懸念|悪化|崩壊|緊急|抗議|選挙|議員|大臣|政党|政治|"
   r"įspėj|krizė|grės|pavoj|blogėj|žlug|avarin|protest|rinkim|"
   r"seimo|seimas|ministr|politik|partij|"
-  r"警告|危机|风险|威胁|恶化|崩溃|紧急|抗议|选举|议员|部长|政党|政治|制裁|审判|"
+  r"警告|危机|危機|风险|風險|威胁|威脅|恶化|惡化|崩溃|崩潰|紧急|緊急|抗议|抗議|选举|選舉|议员|議員|部长|部長|政党|政黨|政治|制裁|审判|審判|"
   r"当局|被捕|流亡|煎熬|审查|管控|打压|冲突|争端|疫情|裁员|失业|"
   r"surveillance|occupied|occupation|crackdown|repress|detention|"
   r"geopolitic|strategic|succession|reckoning|deferred|sanction|"
@@ -167,19 +167,27 @@ TOPIC["india"] = re.compile(TOPIC["en"].pattern +
   r"adivasi|tribal|temple|festival|craft|weaver|potter|farmer|self-help group|"
   r"watershed|stepwell|heritage|folk|classical|raga|ayurved|yoga)", re.I)
 TOPIC["zh"] = re.compile(
-  r"(社区|社群|乡村|村|修复|再生|循环|长者|老人|原住民|少数民族|农|种子|水|森林|河|土地|"
-  r"健康|疗愈|康复|韧性|长寿|平静|睡眠|步行|手艺|手工|编织|织|语言|学校|青年|邻里|"
-  r"合作社|在地|本地|修理|太阳能|照护|生活|树|植树|公园|花园|自然|气候|能源|"
-  r"文化|博物馆|图书馆|音乐|舞蹈|艺术|食物|市集|书|记忆|传统|非遗|古镇|手作)")
+  # simplified and traditional together
+  r"(社区|社區|社群|乡村|鄉村|村|修复|修復|再生|循环|循環|长者|長者|老人|"
+  r"原住民|少数民族|少數民族|农|農|种子|種子|水|森林|河|土地|"
+  r"健康|疗愈|療癒|康复|康復|韧性|韌性|长寿|長壽|平静|平靜|睡眠|步行|"
+  r"手艺|手藝|手工|编织|編織|织|織|语言|語言|学校|學校|青年|邻里|鄰里|"
+  r"合作社|在地|本地|修理|太阳能|太陽能|照护|照護|生活|树|樹|植树|植樹|"
+  r"公园|公園|花园|花園|自然|气候|氣候|能源|"
+  r"文化|博物馆|博物館|图书馆|圖書館|音乐|音樂|舞蹈|艺术|藝術|食物|市集|"
+  r"书|書|记忆|記憶|传统|傳統|非遗|非遺|古镇|古鎮|手作|部落|祭典|工艺|工藝)")
 UPLIFT["india"] = re.compile(UPLIFT["en"].pattern +
   r"|\b(revive|revived|reviving|uplift|empower|rejuvenat|turnaround|"
   r"planted|restored|crore saved|model village)", re.I)
 UPLIFT["zh"] = re.compile(
-  r"(实现|成功|开设|开张|开馆|开幕|举办|建成|完成|复活|复兴|重生|再生|恢复|救|守护|培育|"
-  r"推广|扩大|首次|首个|获奖|得奖|纪录|庆祝|支持|帮助|改善|提升|希望|欢喜|喜悦|"
-  r"努力|尝试|诞生|连接|相连|学习|馈赠|赠送|分享|重建|焕新|传承)")
+  r"(实现|實現|成功|开设|開設|开张|開張|开馆|開館|开幕|開幕|举办|舉辦|"
+  r"建成|完成|复活|復活|复兴|復興|重生|再生|恢复|恢復|救|守护|守護|培育|"
+  r"推广|推廣|扩大|擴大|首次|首个|首個|获奖|獲獎|得奖|得獎|纪录|紀錄|"
+  r"庆祝|慶祝|支持|帮助|幫助|改善|提升|希望|欢喜|歡喜|喜悦|喜悅|"
+  r"努力|尝试|嘗試|诞生|誕生|连接|連結|相连|相連|学习|學習|馈赠|饋贈|"
+  r"赠送|贈送|分享|重建|焕新|煥新|传承|傳承|找回|重新|走向|打造|陪伴)")
 JUNK["india"] = JUNK["en"]
-JUNK["zh"] = re.compile(r"(明星|绯闻|八卦|彩票|加密货币|博彩|网红带货)")
+JUNK["zh"] = re.compile(r"(明星|绯闻|緋聞|八卦|彩票|加密货币|加密貨幣|博彩|网红带货|網紅帶貨)")
 
 # Tibet reads in English, from the exile community's own publications. Its
 # own vocabulary matters: settlement, monastery, thangka, the language itself.

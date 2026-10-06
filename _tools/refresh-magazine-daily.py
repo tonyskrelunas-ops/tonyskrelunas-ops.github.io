@@ -95,6 +95,8 @@ SOURCES_BY_LANG = {
    ("culture",  "15min Kultūra",          "https://www.15min.lt/rss/kultura"),
    ("culture",  "LRT Kultūra",            "https://www.lrt.lt/naujienos/kultura?rss"),
    ("animals",  "Gamtos tyrimai",         "https://www.gamtostyrimai.lt/feed/"),
+   ("news",     "Kauno diena",            "https://kauno.diena.lt/rss.xml"),
+   ("research", "Mokslo Lietuva",         "https://mokslolietuva.lt/feed/"),
  ],
  # India reads in English, from Indian publications.
  "india": [
@@ -103,6 +105,9 @@ SOURCES_BY_LANG = {
    ("culture",  "Sahapedia",              "https://www.sahapedia.org/rss.xml"),
    ("land",     "Mongabay India",         "https://india.mongabay.com/feed/"),
    ("animals",  "Roundglass Sustain",     "https://roundglasssustain.com/rss.xml"),
+   ("culture",  "The Hindu Society",      "https://www.thehindu.com/society/feeder/default.rss"),
+   ("culture",  "Madras Courier",         "https://madrascourier.com/feed/"),
+   ("running",  "Hindustan Times Health", "https://www.hindustantimes.com/feeds/rss/lifestyle/health/rssfeed.xml"),
  ],
  # Tibet reads in English, from the Tibetan community's own publications.
  "tibet": [
@@ -111,14 +116,12 @@ SOURCES_BY_LANG = {
    ("news",     "Central Tibetan Administration", "https://tibet.net/feed/"),
    ("research", "Tibet Policy Institute", "https://tibetpolicy.net/feed/"),
    ("culture",  "Tibet Museum",           "https://www.tibetmuseum.org/feed/"),
+   ("research", "Buddhist Digital Resource Center", "https://www.bdrc.io/feed/"),
  ],
- # China — the gates are written and ready, but there is still no Chinese
- # source worth reading in here. It stays unpublished rather than going out
- # thin. 少数派 and 知乎日報 are the closest in register.
- "zh": [
-   ("news",     "少数派",                   "https://sspai.com/feed"),
-   ("news",     "知乎日报",                  "https://feedx.net/rss/zhihudaily.xml"),
- ],
+ # Chinese: Tony ruled it out on 4 October — "ok dont do china.. what about
+ # tibet?" The gates for it stay in filters.py, costing nothing, in case he
+ # ever wants it. Nothing is gathered and the morning report does not nag
+ # about a lane he has closed.
 }
 
 def fetch(url, timeout=25):
