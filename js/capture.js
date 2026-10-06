@@ -67,9 +67,12 @@
 
     form.setAttribute('action', ENDPOINT);
     form.setAttribute('method', 'POST');
-    // Web3Forms' own fields are meaningless to the new endpoint
+    /* Web3Forms' own plumbing is meaningless to the new endpoint — but only
+       the hidden plumbing. The contact form has a real `subject` dropdown the
+       reader chooses from, and stripping by name alone deleted it off the
+       page. Hidden inputs only. */
     ['access_key', 'subject', 'from_name', 'redirect'].forEach(function (n) {
-      var el = form.querySelector('[name="' + n + '"]');
+      var el = form.querySelector('input[type="hidden"][name="' + n + '"]');
       if (el) el.parentNode.removeChild(el);
     });
 
