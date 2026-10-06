@@ -23,7 +23,12 @@
 (function () {
   'use strict';
   var ENDPOINT = 'https://tribeawaken-capture.netlify.app/';
-  var FORM     = 'tribe-capture';
+  /* Two piles, because they are two different things. A signup needs nothing
+     back; an enquiry needs an answer. Tony reads the enquiries once a week,
+     so they must not be buried in the signups. A form carrying a message is
+     an enquiry; everything else is a signup. */
+  var SIGNUP   = 'tribe-capture';
+  var ENQUIRY  = 'tribe-enquiry';
 
   var LANG = (document.documentElement.getAttribute('data-mag-edition') ||
               (document.documentElement.lang || 'en').slice(0, 2));
@@ -83,8 +88,9 @@
       var btn = form.querySelector('button, input[type=submit]');
       if (btn) { btn.disabled = true; btn.style.opacity = '.6'; }
 
+      var isEnquiry = !!form.querySelector('[name="message"]');
       var body = new URLSearchParams();
-      body.set('form-name', FORM);
+      body.set('form-name', isEnquiry ? ENQUIRY : SIGNUP);
       body.set('email', email);
       body.set('source', src);
       body.set('edition', LANG);
