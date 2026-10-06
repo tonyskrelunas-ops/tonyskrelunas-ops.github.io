@@ -53,27 +53,18 @@ html.courage .num,html.courage .cap__n,html.courage .spindle__k{color:#1E6E34}
 /* ── the interior hero: headline + lead sit on a photograph ───────────── */
 html.courage .hero{position:relative;isolation:isolate}
 html.courage .hero__in,html.courage .hero > .wrap{position:relative;z-index:3}
-/* A soft light gradient from the reading edge — sampled light, not generic
-   white. Tony, 6 October: "i saw a few instances where texts are dark over a
-   dark photo." He was right, and this gradient was the cause: it fell away to
-   10 percent at the far edge, so the right-hand half of every headline sat on
-   bare photograph. On the economy page the eyebrow measured 1.07:1 against
-   its own background, where 4.5 is the floor.
-
-   The gradient still travels — the photograph is meant to be felt on the
-   right — but it no longer drops below 72 percent. Measured against the
-   darkest photograph in use: headline 7.3:1, body 10.0:1, eyebrow 6.4:1. */
+/* a soft light gradient from the reading edge, sampled light not generic white */
 html.courage .hero::before{
   content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
   background:linear-gradient(100deg,
-    rgba(249,251,246,.94) 0%, rgba(249,251,246,.88) 38%,
-    rgba(249,251,246,.79) 66%, rgba(249,251,246,.72) 100%);
+    rgba(249,251,246,.90) 0%, rgba(249,251,246,.74) 38%,
+    rgba(249,251,246,.34) 66%, rgba(249,251,246,.10) 100%);
 }
 html.courage .hero h1{color:#124279 !important;text-shadow:none}
 html.courage .hero .lead,
 html.courage .hero p:not(.eyebrow){
   color:#23301F !important;text-shadow:none !important;max-width:52ch}
-html.courage .hero .eyebrow{color:#14551F !important;text-shadow:none}
+html.courage .hero .eyebrow{color:#1E6E34 !important;text-shadow:none}
 html.courage .hero .btn--primary{background:#1C5BA8;color:#fff;border-color:#1C5BA8}
 html.courage .hero a:not(.btn){color:#124279;font-weight:700}
 @media(max-width:800px){
