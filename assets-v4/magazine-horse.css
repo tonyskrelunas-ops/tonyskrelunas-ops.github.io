@@ -92,3 +92,61 @@
 @media (max-width:999px){
   .mast__map{margin-top:.4rem}
 }
+
+/* ═══ THE COVER ═══════════════════════════════════════════════════════════
+   Tony, 6 October, with a cover he had made: "figure out how to use all this
+   as background in the magazine.. this is the look .. the horse should go on
+   top too .. keep al the text."
+
+   So the masthead stands on his cover — the gold field, the cream sun, the
+   three green ranges, the black rules — and the Far Messenger runs the front
+   ridge across it, the same figure that runs the home page and the world map.
+   The horse sits on top of it. Every word that was in the masthead is still
+   in the masthead; nothing was moved to make room.                        */
+.mast--cover{position:relative;isolation:isolate;
+  padding:clamp(1.4rem,1rem + 2vw,2.6rem) clamp(1rem,.6rem + 2vw,2.4rem)
+          clamp(1.6rem,1.2rem + 2vw,2.8rem);
+  border:3px solid #17150E;outline:1px solid #17150E;outline-offset:4px;
+  margin-block:clamp(.6rem,.4rem + 1vw,1.4rem)}
+.mast__cover{position:absolute;inset:0;z-index:-1;overflow:hidden;background:#D7A738}
+.mast__cover object{width:100%;height:100%;display:block;pointer-events:none;border:0}
+
+/* the nameplate and the horse, standing on the cover */
+.mast--cover .mast__id h1,
+.mast--cover > h1{color:#17150E}
+.mast--cover .mast__emblem{mix-blend-mode:normal;
+  box-shadow:0 18px 44px -20px rgba(23,21,14,.55)}
+/* the rules and the running line take the cover's ink */
+.mast--cover .bs-rule{border-color:#17150E;opacity:.85}
+.mast--cover .mast__line{color:#17150E}
+.mast--cover .mast__line b{color:#8A3C1E}
+.mast--cover .mast__motto{color:#241F10}
+/* a soft light pool under the words, the same answer as the interior heroes:
+   the picture stays, the text still reads */
+.mast--cover .mast__line,.mast--cover .mast__motto,
+.mast--cover .mast__id h1{position:relative}
+.mast--cover::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(215,167,56,.0) 0%,rgba(215,167,56,.30) 42%,
+    rgba(215,167,56,.72) 72%,rgba(215,167,56,.88) 100%)}
+@media (max-width:760px){
+  .mast--cover{border-width:2px;outline-offset:3px}
+}
+
+/* the nameplate alone on the cover, centred over the sun and the ranges */
+.mast__top--solo{display:block !important;text-align:center}
+.mast--cover .mast__id{text-align:center}
+.mast--cover .mast__emblem{margin-inline:auto;width:min(100%,330px)}
+.mast--cover .mast__id h1,.mast--cover h1{
+  color:#17150E !important;font-style:italic;letter-spacing:-.025em;
+  text-align:center;margin-top:.5rem}
+/* the cover must breathe under the nameplate, so the wash starts lower */
+.mast--cover::before{
+  background:linear-gradient(180deg,rgba(215,167,56,.74) 0%,rgba(215,167,56,.30) 26%,
+    rgba(215,167,56,.10) 48%,rgba(215,167,56,.52) 78%,rgba(215,167,56,.86) 100%) !important}
+.mast--cover{min-height:clamp(26rem,20rem + 22vw,40rem);display:flex;
+  flex-direction:column;justify-content:space-between}
+
+/* the atlas, now its own band under the cover */
+.mast__atlas{margin:clamp(1.2rem,1rem + 1.4vw,2.2rem) 0 0}
+.mast__atlas .mast__map object{display:block;width:100%;height:auto;
+  aspect-ratio:1056/560;border:0}
