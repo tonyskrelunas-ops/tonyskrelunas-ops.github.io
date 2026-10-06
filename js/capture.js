@@ -102,8 +102,22 @@
         var el = form.querySelector('[name="' + f + '"]');
         if (el && el.value) body.set(f, el.value);
       });
+      /* The honeypot, and a trap I walked into. Web3Forms' botcheck is a
+         CHECKBOX, and an unchecked checkbox still reports value "on" — so
+         this was filling Netlify's honeypot on every real submission and
+         Netlify was silently discarding them as spam. A 200 came back, the
+         reader was thanked, and nothing was ever recorded. Only a genuinely
+         filled field counts. */
       var bot = form.querySelector('[name="botcheck"], [name="bot-field"]');
-      body.set('bot-field', bot && bot.value ? bot.value : '');
+      var botVal = '';
+      if (bot) {
+        if (bot.type === 'checkbox' || bot.type === 'radio') {
+          botVal = bot.checked ? (bot.value || 'on') : '';
+        } else {
+          botVal = bot.value || '';
+        }
+      }
+      body.set('bot-field', botVal);
 
       fetch(ENDPOINT, {
         method: 'POST',
