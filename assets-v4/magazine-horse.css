@@ -169,3 +169,31 @@
   .mast--cover .mast__emblem{margin-inline:auto;width:min(72%,260px)}
   .mast--cover .mast__id h1{text-align:center}
 }
+
+
+/* ═══ THE HORSE ON A PHONE ═════════════════════════════════════════════
+   Tony, from his iPhone: "the horse logo is too big .. clip around it and
+   move to side so we can see sun and eagle."
+
+   Line 20 above gives the emblem width:min(78vw,340px) below 700px, which
+   on a 390px phone renders it 225 by 225 -- sitting square in the middle of
+   the cover, over the sun, the eagle and the running figure.
+
+   It goes to the top corner at a size that reads as a mark rather than a
+   picture, trimmed in to the drawing so the paper around it is not taking
+   up room, and the masthead keeps clear of it.
+   ─────────────────────────────────────────────────────────────────── */
+@media (max-width:700px){
+  .mast--cover{position:relative}
+  .mast--cover .mast__emblem{
+    width:86px !important;height:auto !important;
+    position:absolute;top:1.5rem;right:2.2rem;margin:0 !important;z-index:4;
+    clip-path:inset(6% 4% 6% 4%);
+    pointer-events:none}
+  .mast--cover .mast__id{text-align:center}
+  .mast--cover .mast__id h1{padding-right:96px}
+}
+@media (max-width:420px){
+  .mast--cover .mast__emblem{width:64px !important;top:1.2rem;right:1.8rem}
+  .mast--cover .mast__id h1{padding-right:80px}
+}
