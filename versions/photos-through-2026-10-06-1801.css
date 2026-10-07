@@ -1,0 +1,105 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   LET THE PHOTOGRAPHS THROUGH — homepage
+   Tony: "you added too much white ... especially on home page."
+
+   Ten sections and eight scenes on this page carry one of his photographs,
+   and every one sat behind an opaque pale background. The page read as a
+   stack of white panels.
+
+   The law: the photograph IS the background. The veil goes ON the picture,
+   never a sheet of paper over it, and the words read light on top.
+
+   Specificity note: v2.css styles these bands by #id, which outranks a
+   class selector even with !important -- which is why two earlier attempts
+   silently lost. :not(#_) lifts these to the same ID weight so they land.
+   Scoped to bands that genuinely hold a photo, so the magazine strip, the
+   four-up, the shelf and the stage headers keep their ink.
+   ═══════════════════════════════════════════════════════════════════════ */
+html.courage .sec.hasphoto:not(#_),html.courage .scene:has(.photo-bg):not(#_),html.courage .sec.close:not(#_),html.courage .state:not(#_){
+  background:transparent !important;background-image:none !important;
+  position:relative;isolation:isolate}
+
+html.courage .sec.hasphoto:not(#_) .photo-bg,
+html.courage .sec.hasphoto:not(#_) .close__bg,
+html.courage .sec.hasphoto:not(#_) .state__bg,
+html.courage .scene:has(.photo-bg):not(#_) .photo-bg,
+html.courage .scene:has(.photo-bg):not(#_) .close__bg,
+html.courage .scene:has(.photo-bg):not(#_) .state__bg,
+html.courage .sec.close:not(#_) .photo-bg,
+html.courage .sec.close:not(#_) .close__bg,
+html.courage .sec.close:not(#_) .state__bg,
+html.courage .state:not(#_) .photo-bg,
+html.courage .state:not(#_) .close__bg,
+html.courage .state:not(#_) .state__bg{
+  z-index:0 !important;position:absolute !important;inset:0 !important;overflow:hidden !important}
+html.courage .sec.hasphoto:not(#_) .photo-bg img,
+html.courage .sec.hasphoto:not(#_) .close__bg img,
+html.courage .sec.hasphoto:not(#_) .state__bg img,
+html.courage .scene:has(.photo-bg):not(#_) .photo-bg img,
+html.courage .scene:has(.photo-bg):not(#_) .close__bg img,
+html.courage .scene:has(.photo-bg):not(#_) .state__bg img,
+html.courage .sec.close:not(#_) .photo-bg img,
+html.courage .sec.close:not(#_) .close__bg img,
+html.courage .sec.close:not(#_) .state__bg img,
+html.courage .state:not(#_) .photo-bg img,
+html.courage .state:not(#_) .close__bg img,
+html.courage .state:not(#_) .state__bg img{
+  width:100% !important;height:100% !important;object-fit:cover !important;
+  opacity:1 !important;filter:none !important}
+
+/* the veil lives ON the photograph -- deep enough for a bright sky */
+html.courage .sec.hasphoto:not(#_) .photo-bg::after,
+html.courage .sec.hasphoto:not(#_) .close__bg::after,
+html.courage .sec.hasphoto:not(#_) .state__bg::after,
+html.courage .scene:has(.photo-bg):not(#_) .photo-bg::after,
+html.courage .scene:has(.photo-bg):not(#_) .close__bg::after,
+html.courage .scene:has(.photo-bg):not(#_) .state__bg::after,
+html.courage .sec.close:not(#_) .photo-bg::after,
+html.courage .sec.close:not(#_) .close__bg::after,
+html.courage .sec.close:not(#_) .state__bg::after,
+html.courage .state:not(#_) .photo-bg::after,
+html.courage .state:not(#_) .close__bg::after,
+html.courage .state:not(#_) .state__bg::after{
+  content:"" !important;position:absolute !important;inset:0 !important;z-index:1 !important;
+  opacity:1 !important;
+  background:linear-gradient(100deg,rgba(9,22,15,.74),rgba(9,22,15,.56) 54%,rgba(9,22,15,.70)) !important}
+
+/* the reading sits above it, on no paper at all */
+html.courage .sec.hasphoto:not(#_) :is(.wrap,.wrap--mid,.scene__in,.origin > div),
+html.courage .scene:has(.photo-bg):not(#_) :is(.wrap,.wrap--mid,.scene__in,.origin > div),
+html.courage .sec.close:not(#_) :is(.wrap,.wrap--mid,.scene__in,.origin > div),
+html.courage .state:not(#_) :is(.wrap,.wrap--mid,.scene__in,.origin > div){
+  position:relative !important;z-index:2 !important;
+  background:none !important;background-color:transparent !important;
+  box-shadow:none !important;border-radius:0 !important}
+
+/* every word in those bands reads light */
+html.courage .sec.hasphoto:not(#_) :is(p,li,span,b,strong,em,i,div,summary,figcaption,small,blockquote,td,dd),
+html.courage .scene:has(.photo-bg):not(#_) :is(p,li,span,b,strong,em,i,div,summary,figcaption,small,blockquote,td,dd),
+html.courage .sec.close:not(#_) :is(p,li,span,b,strong,em,i,div,summary,figcaption,small,blockquote,td,dd),
+html.courage .state:not(#_) :is(p,li,span,b,strong,em,i,div,summary,figcaption,small,blockquote,td,dd){
+  color:#FBF6EA !important;text-shadow:0 1px 16px rgba(5,14,9,.75) !important}
+html.courage .sec.hasphoto:not(#_) :is(h1,h2,h3,h4,.head,.scene__t),
+html.courage .scene:has(.photo-bg):not(#_) :is(h1,h2,h3,h4,.head,.scene__t),
+html.courage .sec.close:not(#_) :is(h1,h2,h3,h4,.head,.scene__t),
+html.courage .state:not(#_) :is(h1,h2,h3,h4,.head,.scene__t){
+  color:#FFFFFF !important;text-shadow:0 2px 24px rgba(5,14,9,.8) !important}
+html.courage .sec.hasphoto:not(#_) :is(.eyebrow,.trad__n,.kicker),
+html.courage .scene:has(.photo-bg):not(#_) :is(.eyebrow,.trad__n,.kicker),
+html.courage .sec.close:not(#_) :is(.eyebrow,.trad__n,.kicker),
+html.courage .state:not(#_) :is(.eyebrow,.trad__n,.kicker){
+  color:#FFD75E !important;text-shadow:0 1px 16px rgba(5,14,9,.8) !important}
+html.courage .sec.hasphoto:not(#_) :is(.pull,.say),
+html.courage .scene:has(.photo-bg):not(#_) :is(.pull,.say),
+html.courage .sec.close:not(#_) :is(.pull,.say),
+html.courage .state:not(#_) :is(.pull,.say){color:#FFD75E !important}
+html.courage .sec.hasphoto:not(#_) a:not(.btn),
+html.courage .scene:has(.photo-bg):not(#_) a:not(.btn),
+html.courage .sec.close:not(#_) a:not(.btn),
+html.courage .state:not(#_) a:not(.btn){color:#FFD75E !important}
+/* a form on a photograph keeps its own paper, or it cannot be used */
+html.courage .sec.hasphoto:not(#_) :is(input,textarea,select),
+html.courage .scene:has(.photo-bg):not(#_) :is(input,textarea,select),
+html.courage .sec.close:not(#_) :is(input,textarea,select),
+html.courage .state:not(#_) :is(input,textarea,select){
+  color:#1C2418 !important;background:#FFFFFF !important;text-shadow:none !important}
