@@ -125,6 +125,16 @@ SOURCES_BY_LANG = {
 }
 
 
+
+def strip_tags(t):
+    """Some feeds put markup in the summary. Lithuania's Kauno diena sends
+    <p>...</p>, and because the item is escaped on the way out, the tag was
+    printed on the page as text."""
+    t = re.sub(r"<[^>]+>", " ", t or "")
+    t = (t.replace("&nbsp;", " ").replace("&amp;", "&").replace("&quot;", '"')
+          .replace("&#39;", "'").replace("&lt;", "<").replace("&gt;", ">"))
+    return re.sub(r"\s+", " ", t).strip()
+
 def clip(text, n):
     """Cut a summary at a word, not through one, and say so with an ellipsis.
     The old bare [:n] slice left 68 of 134 summaries ending mid-word -- "multiple
@@ -160,7 +170,7 @@ def items(xml, source):
             M = dict(zip("Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(), range(1, 13)))
             if m.group(2)[:3] in M:
                 iso = "%s-%02d-%02d" % (m.group(3), M[m.group(2)[:3]], int(m.group(1)))
-        out.append({"title": title[:150], "url": link, "dek": clip(desc, 190),
+        out.append({"title": strip_tags(title)[:150], "url": link, "dek": clip(strip_tags(desc), 190),
                     "source": source, "date": iso})
     return out
 
