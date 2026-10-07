@@ -138,3 +138,10 @@ html:not(.rv-on) .rv{opacity:1 !important;transform:none !important}
    handled the opposite way in their own sheet. */
 html.courage .ftr .brand__txt,html.courage footer .brand__txt{color:#FFFFFF !important}
 html.courage .ftr__legal,html.courage .ftr__legal *{color:rgba(255,246,234,.78) !important}
+
+/* The gold accent, #E0A400, measures 2.10:1 on the cream page. I fixed this
+   in the interiors sheet, which the homepage does not load, so the stage
+   numerals I, II, III, IV stayed pale here. A deeper gold keeps the colour
+   and gains the contrast. */
+html.courage .stage__num,
+html.courage :is(.say,.lead,p,li) :is(i,em){color:#8A5A12 !important}

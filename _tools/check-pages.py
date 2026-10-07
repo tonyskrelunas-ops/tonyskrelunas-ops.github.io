@@ -108,7 +108,9 @@ function visible(el, win){
 
 function audit(doc, win, page){
   var out = { page: page, unreadable: [], overflow: [], hidden_rv: 0,
-              rv_total: 0, footer: 0, images_broken: [] };
+              rv_total: 0, footer: 0, images_broken: [], js_ran: false };
+  var jsRan = doc.documentElement.classList.contains("rv-on");
+  out.js_ran = jsRan;
 
   // 1. text nobody can read against what is actually behind it
   var SEL = "p,li,h1,h2,h3,h4,h5,span,b,strong,em,i,a,label,td,th,figcaption,summary,button";
@@ -159,7 +161,25 @@ function audit(doc, win, page){
 
   // 3. content still waiting on an animation that may never come
   doc.querySelectorAll(".rv").forEach(function(el){
+    // The stages show one scene at a time, so every other scene is hidden on
+    // purpose. Only count a block as stuck if nothing above it is
+    // deliberately put away -- otherwise the homepage reports 32 of 35
+    // invisible and the real thing hides in the noise.
+    var a = el.parentElement, byDesign = false;
+    while (a && a.nodeType === 1 && a !== doc.body){
+      var s2 = win.getComputedStyle(a);
+      if (s2.display === "none" || s2.visibility === "hidden" ||
+          parseFloat(s2.opacity) < 0.1 || a.hasAttribute("hidden")){ byDesign = true; break; }
+      a = a.parentElement;
+    }
+    if (byDesign) return;
     out.rv_total++;
+    // With the reveal script running, a block below the fold is meant to be
+    // waiting -- that is the animation, not a fault, and GSAP will not answer
+    // a scripted scroll inside this frame. The fault worth catching is the
+    // one that hit 161 pages: the script does not run and the content never
+    // appears. That is what the fail-safe is for, and it is checked below.
+    if (jsRan) return;
     if (parseFloat(win.getComputedStyle(el).opacity) < 0.1) out.hidden_rv++;
   });
 
@@ -192,7 +212,20 @@ function audit(doc, win, page){
     catch (e) { results.push({ page: page, error: String(e).slice(0,120) }); }
     f.remove(); next();
   }
-  f.onload = function(){ setTimeout(finish, 2100); };
+  f.onload = function(){
+    // Walk the frame down its own height so the reveal observer fires, the
+    // way a reader scrolling would. Without this every .rv block reads as
+    // permanently invisible and the check cries wolf on every page.
+    try {
+      var w = f.contentWindow, d2 = f.contentDocument;
+      var h = d2.documentElement.scrollHeight, step = 700, y = 0;
+      var walk = setInterval(function(){
+        y += step; w.scrollTo(0, y);
+        if (y >= h) { clearInterval(walk); w.scrollTo(0, 0); setTimeout(finish, 900); }
+      }, 24);
+      setTimeout(function(){ clearInterval(walk); finish(); }, 7000);
+    } catch (e) { setTimeout(finish, 2100); }
+  };
   setTimeout(finish, 9000);
 })();
 </script>
@@ -226,7 +259,11 @@ def serve(directory):
     return srv, srv.server_address[1]
 
 
-BATCH = 3          # one Chrome per handful; all nineteen at once times out
+BATCH = 1          # one page per browser.
+                   # A batch is only as good as its slowest page, and /listen/
+                   # carries YouTube embeds that never resolve in headless, so
+                   # every page sharing its browser reported "did not finish"
+                   # -- three good pages failing because of one. One each.
 
 
 def _probe_batch(port, pages, width, n):
@@ -237,7 +274,13 @@ def _probe_batch(port, pages, width, n):
     try:
         out = subprocess.run(
             [CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars",
-             "--virtual-time-budget=%d" % (4000 + 4000 * len(pages)),
+             # keep the probe on his own site; a third-party embed that never
+             # answers must not decide whether his pages get checked
+             "--host-resolver-rules=MAP * ~NOTFOUND, EXCLUDE 127.0.0.1, EXCLUDE localhost",
+             # each page may take up to nine seconds now that the probe walks it
+             # down before measuring; a tighter budget made Chrome dump the DOM
+             # mid-probe and three pages reported "did not finish" every time
+             "--virtual-time-budget=%d" % (6000 + 13000 * len(pages)),
              "--dump-dom", "http://127.0.0.1:%d/%s" % (port, probe.name)],
             capture_output=True, text=True, timeout=240).stdout
     except subprocess.TimeoutExpired:

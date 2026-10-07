@@ -250,3 +250,10 @@ html.courage .globebar .soon,
 html.courage .globebar__ls .soon{color:rgba(255,246,234,.72) !important}   /* on the dark green bar */
 html.courage .ftr .soon,
 html.courage footer .soon{color:#6E6A5E !important}                        /* on the cream footer */
+
+/* The footer's language row ends with a bare <span>中文 soon</span> -- no
+   class at all -- inheriting a 40 percent wash that measured 1.48:1 on the
+   cream footer. The .soon rule above never reached it. */
+html.courage .ftr__langs span,
+html.courage .ftr .ftr__langs span,
+html.courage footer [class*="lang"] span{color:#6E6A5E !important}
