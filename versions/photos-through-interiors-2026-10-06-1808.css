@@ -1,0 +1,91 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   LET THE PHOTOGRAPHS THROUGH — the deep pages
+   Tony: "you added too much white."
+
+   interiors-daylight.css lays a near-opaque card (.90 to .94 white) over
+   every photographic band, washes each hero with a .90 white gradient, and
+   brightens every photo by 1.1 on top of that. Ten assessors found the same
+   thing on Human Resilience, Healing, Circle, Contact, Keynotes, Teaching,
+   Teams and both Journal heroes: faces and blankets ghosting through white
+   paper, heroes reduced to flat grey with a hard seam down the middle.
+
+   The law: the photograph IS the background. The veil goes ON the picture,
+   never a sheet of paper over it, and the words read light on top.
+
+   :not(#_) lifts these to ID weight, because v2.css and interiors-daylight
+   both style these bands by #id and would otherwise win.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* 1. stop bleaching his photographs */
+html.courage .photo-bg img:not(#_),
+html.courage .hero__bg img:not(#_),
+html.courage .state__bg img:not(#_){
+  filter:saturate(1.04) contrast(1.02) !important}
+
+/* 2. the hero: no white wash, a veil on the picture instead */
+html.courage .hero:not(#_)::before{background:none !important}
+html.courage .hero:not(#_) .hero__scrim{background:none !important}
+html.courage .hero:not(#_) .hero__bg::after{
+  content:"" !important;position:absolute !important;inset:0 !important;z-index:1 !important;
+  background:linear-gradient(100deg,rgba(9,22,15,.74),rgba(9,22,15,.50) 56%,rgba(9,22,15,.68)) !important}
+html.courage .hero:not(#_) .hero__in{
+  position:relative;z-index:3;background:none !important;box-shadow:none !important}
+html.courage .hero:not(#_) :is(h1,h2,.head){
+  color:#FFFFFF !important;text-shadow:0 2px 24px rgba(5,14,9,.8) !important}
+html.courage .hero:not(#_) :is(p,li,span,b,strong,em,i,div,small){
+  color:#FBF6EA !important;text-shadow:0 1px 16px rgba(5,14,9,.75) !important}
+html.courage .hero:not(#_) .eyebrow{
+  color:#FFD75E !important;text-shadow:0 1px 16px rgba(5,14,9,.8) !important}
+
+/* 3. the photographic bands: paper off, veil onto the picture */
+html.courage .hasphoto:not(.hero):not(#_),
+html.courage .state:not(#_),
+html.courage .sec.close:not(#_){
+  background:transparent !important;background-image:none !important;
+  position:relative;isolation:isolate}
+html.courage .hasphoto:not(.hero):not(#_) .photo-bg,
+html.courage .state:not(#_) .state__bg,
+html.courage .sec.close:not(#_) .close__bg{
+  z-index:0 !important;position:absolute !important;inset:0 !important;overflow:hidden !important}
+html.courage .hasphoto:not(.hero):not(#_) .photo-bg img,
+html.courage .state:not(#_) .state__bg img,
+html.courage .sec.close:not(#_) .close__bg img{
+  width:100% !important;height:100% !important;object-fit:cover !important;opacity:1 !important}
+html.courage .hasphoto:not(.hero):not(#_) .photo-bg::after,
+html.courage .state:not(#_) .state__bg::after,
+html.courage .sec.close:not(#_) .close__bg::after{
+  content:"" !important;position:absolute !important;inset:0 !important;z-index:1 !important;
+  opacity:1 !important;
+  background:linear-gradient(100deg,rgba(9,22,15,.74),rgba(9,22,15,.54) 54%,rgba(9,22,15,.70)) !important}
+
+/* 4. the reading sits above it, on no paper at all */
+html.courage .hasphoto:not(.hero):not(#_) :is(.wrap,.wrap--tight,.wrap--mid,.vwrap,.tex__i,.playlist,.essay,.sec__intro,.loom),
+html.courage .state:not(#_) .wrap,
+html.courage .sec.close:not(#_) .wrap{
+  position:relative;z-index:2;
+  background:none !important;background-color:transparent !important;
+  backdrop-filter:none !important;-webkit-backdrop-filter:none !important;
+  box-shadow:none !important;border-radius:0 !important}
+
+/* 5. every word in those bands reads light */
+html.courage .hasphoto:not(.hero):not(#_) :is(p,li,span,b,strong,em,i,div,summary,figcaption,small,blockquote,td,th,dd,dt),
+html.courage .state:not(#_) :is(p,li,span,b,strong,em,i,div,small),
+html.courage .sec.close:not(#_) :is(p,li,span,b,strong,em,i,div,small){
+  color:#FBF6EA !important;text-shadow:0 1px 16px rgba(5,14,9,.75) !important}
+html.courage .hasphoto:not(.hero):not(#_) :is(h1,h2,h3,h4,.head,.step),
+html.courage .state:not(#_) :is(h1,h2,h3),
+html.courage .sec.close:not(#_) :is(h1,h2,h3){
+  color:#FFFFFF !important;text-shadow:0 2px 24px rgba(5,14,9,.8) !important}
+html.courage .hasphoto:not(.hero):not(#_) :is(.eyebrow,.trad__n,.gloss,.gloss em),
+html.courage .state:not(#_) .eyebrow,
+html.courage .sec.close:not(#_) .eyebrow{
+  color:#FFD75E !important;text-shadow:0 1px 16px rgba(5,14,9,.8) !important}
+html.courage .hasphoto:not(.hero):not(#_) :is(.say,.pull,.lead em,.num){color:#FFD75E !important}
+html.courage .hasphoto:not(.hero):not(#_) a:not(.btn),
+html.courage .hero:not(#_) a:not(.btn),
+html.courage .state:not(#_) a:not(.btn){color:#FFD75E !important}
+/* a form or table on a photograph keeps its own paper, or it cannot be used */
+html.courage .hasphoto:not(.hero):not(#_) :is(input,textarea,select),
+html.courage .hero:not(#_) :is(input,textarea,select),
+html.courage .state:not(#_) :is(input,textarea,select){
+  color:#1C2418 !important;background:#FFFFFF !important;text-shadow:none !important}
