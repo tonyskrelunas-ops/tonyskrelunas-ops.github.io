@@ -93,3 +93,15 @@ html.courage .hasphoto:not(.hero):has(.photo-bg img):not(#_) :is(input,textarea,
 html.courage .hero:has(.hero__bg img):not(#_) :is(input,textarea,select),
 html.courage .state:has(.state__bg img):not(#_) :is(input,textarea,select){
   color:#1C2418 !important;background:#FFFFFF !important;text-shadow:none !important}
+
+/* the ghost button on a photograph — every assessor found these vanishing:
+   "Why this is a hopeful page", "See the retreat", "Read the argument",
+   "The questions, in order". Mid-blue text in a mid-blue hairline box on a
+   mid-tone picture is not a button. On a photograph it reads in cream. */
+html.courage .hero:has(.hero__bg img):not(#_) .btn--ghost,
+html.courage .hasphoto:has(.photo-bg img):not(#_) .btn--ghost,
+html.courage .state:has(.state__bg img):not(#_) .btn--ghost,
+html.courage .sec.close:has(.close__bg img):not(#_) .btn--ghost{
+  color:#FFF6EA !important;border-color:rgba(255,246,234,.72) !important;
+  background:rgba(10,24,16,.30) !important;
+  text-shadow:0 1px 10px rgba(5,14,9,.7) !important}
