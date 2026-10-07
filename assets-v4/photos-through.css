@@ -112,5 +112,5 @@ html.courage .hasphoto:has(.photo-bg img):not(#_) .btn--ghost,
 html.courage .state:has(.state__bg img):not(#_) .btn--ghost,
 html.courage .sec.close:has(.close__bg img):not(#_) .btn--ghost{
   color:#FFF6EA !important;border-color:rgba(255,246,234,.72) !important;
-  background:rgba(10,24,16,.30) !important;
+  background:rgba(9,22,15,.78) !important;
   text-shadow:0 1px 10px rgba(5,14,9,.7) !important}

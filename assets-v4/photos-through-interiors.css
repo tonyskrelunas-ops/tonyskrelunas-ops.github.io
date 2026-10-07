@@ -103,5 +103,24 @@ html.courage .hasphoto:has(.photo-bg img):not(#_) .btn--ghost,
 html.courage .state:has(.state__bg img):not(#_) .btn--ghost,
 html.courage .sec.close:has(.close__bg img):not(#_) .btn--ghost{
   color:#FFF6EA !important;border-color:rgba(255,246,234,.72) !important;
-  background:rgba(10,24,16,.30) !important;
+  background:rgba(9,22,15,.78) !important;
   text-shadow:0 1px 10px rgba(5,14,9,.7) !important}
+
+/* cards that keep their own pale background inside a photographic band
+   (.tile uses var(--bg-3), which is cream) would take the light text above
+   and hand it a cream card -- cream on cream, measured 1.02:1 on the teams
+   page. Inside a picture they become dark glass, so the photograph still
+   shows and the words still read. */
+html.courage .hasphoto:has(.photo-bg img):not(#_) :is(.tile,.card),
+html.courage .state:has(.state__bg img):not(#_) :is(.tile,.card),
+html.courage .sec.close:has(.close__bg img):not(#_) :is(.tile,.card){
+  background:rgba(9,22,15,.70) !important;
+  border-color:rgba(255,246,234,.26) !important;
+  box-shadow:none !important;
+  backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+html.courage .hasphoto:has(.photo-bg img):not(#_) :is(.tile,.card) :is(h3,h4),
+html.courage .state:has(.state__bg img):not(#_) :is(.tile,.card) :is(h3,h4){
+  color:#FFFFFF !important}
+html.courage .hasphoto:has(.photo-bg img):not(#_) :is(.tile,.card) :is(p,li,span),
+html.courage .state:has(.state__bg img):not(#_) :is(.tile,.card) :is(p,li,span){
+  color:#F2EADA !important}
