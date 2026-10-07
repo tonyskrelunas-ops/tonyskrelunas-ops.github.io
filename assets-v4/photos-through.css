@@ -119,3 +119,14 @@ html.courage .sec.close:has(.close__bg img):not(#_) .btn--ghost{
    sheet. scrims.css carries this for the homepage today; keeping a copy
    here means the homepage survives that file being removed. */
 html:not(.rv-on) .rv{opacity:1 !important;transform:none !important}
+
+/* ═══ A 19-PIXEL OVERFLOW ON THE PHONE ═════════════════════════════════
+   .wrap--mid is given margin-left:clamp(1rem,5vw,5rem) and a 60ch
+   max-width. At 390px those add up to 409 -- nineteen pixels past the
+   screen -- and because body is overflow-x:hidden it does not scroll, it
+   just loses the right edge of every line in that band. Measured, not
+   guessed: right=409 in a 390 viewport.
+   Below the phone breakpoint the margin and the width have to share. */
+@media (max-width:720px){
+  html.courage .wrap--mid{max-width:calc(100vw - 2rem) !important}
+}
