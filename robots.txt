@@ -6,3 +6,4 @@ Disallow: /v3/
 Disallow: /preview/
 
 Sitemap: https://tribeawaken.com/sitemap.xml
+Disallow: /counts/

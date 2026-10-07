@@ -124,3 +124,33 @@ html.courage .state:has(.state__bg img):not(#_) :is(.tile,.card) :is(h3,h4){
 html.courage .hasphoto:has(.photo-bg img):not(#_) :is(.tile,.card) :is(p,li,span),
 html.courage .state:has(.state__bg img):not(#_) :is(.tile,.card) :is(p,li,span){
   color:#F2EADA !important}
+
+/* ═══ CONTENT MUST NEVER DEPEND ON AN ANIMATION TO EXIST ═══════════════
+   .rv starts at opacity:0 and is revealed when motion.js adds .rv-on to
+   <html>. The fail-safe that shows it anyway lives in scrims.css -- which
+   only the HOMEPAGE loads. On the other 161 pages, if motion.js throws, is
+   blocked, or simply never runs, every .rv block stays invisible forever.
+   That is whole sections of his deep pages, and the missing footers the
+   assessors reported. The fail-safe belongs on every page. */
+html:not(.rv-on) .rv{opacity:1 !important;transform:none !important}
+
+/* ═══ THE PALE LABELS ══════════════════════════════════════════════════
+   Measured across the site at 1.5 to 2.2 to 1: article datelines, "SHARE
+   IT", "LAST REVIEWED", the journal stream years, the .gloss side captions
+   and the sidebar labels. Pale sand on cream. They are small and
+   letterspaced, which is exactly where contrast matters most. */
+html.courage :is(.date,.dateline,.meta,.reads,.share-label,.reviewed,.years,.range,.gloss,.sidenote,.side-label,.stream__yr,.idx__lbl){
+  color:#7A6224 !important}
+html.courage .gloss em{color:#6E5A2C !important}
+
+/* ═══ THE FOOTER WORDMARK ══════════════════════════════════════════════
+   "Tribe" was navy on navy -- only "Awaken" showed. */
+html.courage .ftr .brand__txt,html.courage footer .brand__txt{color:#FFFFFF !important}
+html.courage .ftr__legal,html.courage .ftr__legal *{color:rgba(255,255,255,.72) !important}
+
+/* ═══ THE TRANSLATION LINKS ════════════════════════════════════════════
+   They sat flush against the left window edge with the first letter
+   clipped, while the article column starts well inside. */
+html.courage .xlang,html.courage .translations,html.courage .lang-links{
+  max-width:min(var(--max,1280px),72ch);margin-inline:auto;
+  padding-inline:clamp(1rem,4vw,3rem)}

@@ -114,3 +114,8 @@ html.courage .sec.close:has(.close__bg img):not(#_) .btn--ghost{
   color:#FFF6EA !important;border-color:rgba(255,246,234,.72) !important;
   background:rgba(9,22,15,.78) !important;
   text-shadow:0 1px 10px rgba(5,14,9,.7) !important}
+
+/* content must never depend on an animation to exist — see the interiors
+   sheet. scrims.css carries this for the homepage today; keeping a copy
+   here means the homepage survives that file being removed. */
+html:not(.rv-on) .rv{opacity:1 !important;transform:none !important}
