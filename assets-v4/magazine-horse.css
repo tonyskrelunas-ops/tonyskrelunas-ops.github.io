@@ -197,3 +197,21 @@
   .mast--cover .mast__emblem{width:64px !important;top:1.2rem;right:1.8rem}
   .mast--cover .mast__id h1{padding-right:80px}
 }
+
+/* ═══ THE HORSE HEAD AS A MARK ═════════════════════════════════════════
+   Tony: "Just a horse head, not the rest of it."
+   The rules above were written for the old emblem, which was a designed
+   card on cream — so they turn the blend off, add a drop shadow and size it
+   to 330px, all of which made sense for a card and none of which does for a
+   bare drawing on a white field. On the gold it read as a white panel.
+   Multiply knocks the white out, the shadow goes, and it sits as a mark. */
+.mast--cover .mast__emblem{
+  mix-blend-mode:multiply !important;
+  box-shadow:none !important;
+  width:auto !important;
+  height:clamp(66px,6vw,104px) !important;
+  margin:0 0 .4rem !important;
+  filter:saturate(.95)}
+@media (prefers-color-scheme: dark){
+  .mast--cover .mast__emblem{mix-blend-mode:multiply !important}
+}
