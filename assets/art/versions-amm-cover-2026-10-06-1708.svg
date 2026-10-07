@@ -4,14 +4,14 @@
    sooner once you open the page." So the sun crosses the sky the way it does
    over a morning — slowly, three minutes end to end, rising a little as it
    goes — and its rays turn with it. */
-.sun{animation:sun-cross 180s ease-in-out infinite alternate;transform-box:view-box;transform-origin:470px 250px}
+.sun{animation:sun-cross 180s ease-in-out infinite alternate;transform-box:view-box;transform-origin:1180px 250px}
 .rays{animation:sun-cross 180s ease-in-out infinite alternate,
                 ray-turn 120s linear infinite;
-      transform-box:view-box;transform-origin:470px 250px}
+      transform-box:view-box;transform-origin:1180px 250px}
 @keyframes sun-cross{
-  0%{transform:translate(-150px,52px)}
-  50%{transform:translate(120px,-34px)}
-  100%{transform:translate(390px,44px)}
+  0%{transform:translate(-460px,120px)}
+  50%{transform:translate(0,-18px)}
+  100%{transform:translate(250px,96px)}
 }
 @keyframes ray-turn{to{rotate:360deg}}
 /* The messenger runs the ridge. Tony has had him walking, then running, since
@@ -30,30 +30,13 @@
 @keyframes cv-back{0%,100%{transform:rotate(-24deg)}50%{transform:rotate(26deg)}}
 @keyframes cv-mane{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(6deg)}}
 @media (prefers-reduced-motion:reduce){.cv-run{offset-distance:46%;opacity:1}.cv-run,.cv-run *,.sun,.rays{animation:none!important;transform:none!important}}
-
-/* the eagle, high over the ridge */
-.eagle__b,.eagle__t{fill:#3B5E3B;opacity:.78}
-.eagle{offset-path:path("M -80,150 C 300,70 620,210 960,110 C 1240,30 1480,140 1760,90");
-  offset-rotate:auto;offset-distance:0%;
-  animation:eagle-cross 54s linear infinite;animation-delay:-14s}
-.eagle > g{animation:eagle-beat 3.6s ease-in-out infinite}
-@keyframes eagle-cross{0%{offset-distance:0%;opacity:0}4%{opacity:1}94%{opacity:1}100%{offset-distance:100%;opacity:0}}
-@keyframes eagle-beat{0%,100%{transform:scale(1.9,1.9)}50%{transform:scale(1.8,1.32)}}
-@media (prefers-reduced-motion:reduce){.eagle{offset-distance:38%;opacity:1}
-  .eagle,.eagle *{animation:none!important}}
 </style></defs>
 <rect width="1600" height="760" fill="#D7A738"/>
-<g class="rays" transform="translate(-710,0)"><line x1="1180" y1="98" x2="1180" y2="54"/><line x1="1256" y1="118" x2="1278" y2="80"/><line x1="1312" y1="174" x2="1350" y2="152"/><line x1="1332" y1="250" x2="1376" y2="250"/><line x1="1312" y1="326" x2="1350" y2="348"/><line x1="1256" y1="382" x2="1278" y2="420"/><line x1="1180" y1="402" x2="1180" y2="446"/><line x1="1104" y1="382" x2="1082" y2="420"/><line x1="1048" y1="326" x2="1010" y2="348"/><line x1="1028" y1="250" x2="984" y2="250"/><line x1="1048" y1="174" x2="1010" y2="152"/><line x1="1104" y1="118" x2="1082" y2="80"/></g>
-<circle class="sun" cx="470" cy="250" r="118" fill="#FEF7E7"/>
+<g class="rays"><line x1="1180" y1="98" x2="1180" y2="54"/><line x1="1256" y1="118" x2="1278" y2="80"/><line x1="1312" y1="174" x2="1350" y2="152"/><line x1="1332" y1="250" x2="1376" y2="250"/><line x1="1312" y1="326" x2="1350" y2="348"/><line x1="1256" y1="382" x2="1278" y2="420"/><line x1="1180" y1="402" x2="1180" y2="446"/><line x1="1104" y1="382" x2="1082" y2="420"/><line x1="1048" y1="326" x2="1010" y2="348"/><line x1="1028" y1="250" x2="984" y2="250"/><line x1="1048" y1="174" x2="1010" y2="152"/><line x1="1104" y1="118" x2="1082" y2="80"/></g>
+<circle class="sun" cx="1180" cy="250" r="118" fill="#FEF7E7"/>
 <path d="M -20,760 L -20,430 L 150,300 L 300,400 L 470,250 L 640,380 L 820,260 L 1000,390 L 1180,290 L 1360,400 L 1620,310 L 1620,760 Z"  fill="#55915A"/>
 <path d="M -20,760 L -20,520 L 170,380 L 330,490 L 520,330 L 700,470 L 900,350 L 1090,480 L 1300,370 L 1620,470 L 1620,760 Z"   fill="#488448"/>
 <path d="M -20,760 L -20,640 L 200,500 L 420,610 L 640,470 L 880,600 L 1120,490 L 1380,610 L 1620,520 L 1620,760 Z" fill="#376D3B"/>
-
-<g class="eagle" aria-hidden="true"><g transform="scale(1.9)">
-  <path class="eagle__b" d="M0,0 C-16,-12 -34,-16 -52,-9 C-36,-5 -22,-1 -8,3 L0,6 L8,3
-        C22,-1 36,-5 52,-9 C34,-16 16,-12 0,0 Z"/>
-  <path class="eagle__t" d="M-5,5 L0,16 L5,5 Z"/>
-</g></g>
 <g class="cv-run"><g transform="scale(2.35) translate(0,-2)">
   <g class="cv-b" stroke="#2F59A3" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round" fill="none">
     <g class="cv-hair" stroke-width="2.5">

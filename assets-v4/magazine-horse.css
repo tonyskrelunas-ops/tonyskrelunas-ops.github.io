@@ -150,3 +150,22 @@
 .mast__atlas{margin:clamp(1.2rem,1rem + 1.4vw,2.2rem) 0 0}
 .mast__atlas .mast__map object{display:block;width:100%;height:auto;
   aspect-ratio:1056/560;border:0}
+
+/* ═══ THE HORSE MOVES RIGHT, SO THE SUN IS SEEN ═════════════════════════
+   Tony, 6 October: "can you move the horse logo to the right side... so we
+   can see the sun .... maybe add an eagle too flying over in the sky."
+   The sun now rises on the left of the cover and crosses; the horse holds the
+   right; the eagle passes above them both while the messenger runs below. */
+.mast__top--solo{display:block !important;text-align:left}
+.mast--cover .mast__id{display:grid;gap:clamp(.8rem,.6rem + 1.4vw,1.8rem);
+  align-items:center;text-align:left}
+@media (min-width:820px){
+  .mast--cover .mast__id{grid-template-columns:minmax(0,1fr) auto}
+  .mast--cover .mast__id h1{grid-row:1;grid-column:1;margin:0;text-align:left}
+  .mast--cover .mast__emblem{grid-row:1;grid-column:2;margin:0;
+    width:clamp(190px,20vw,300px);justify-self:end}
+}
+@media (max-width:819px){
+  .mast--cover .mast__emblem{margin-inline:auto;width:min(72%,260px)}
+  .mast--cover .mast__id h1{text-align:center}
+}
