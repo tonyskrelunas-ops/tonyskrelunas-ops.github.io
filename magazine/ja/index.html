@@ -89,6 +89,25 @@ body{background:#F8F8F4 !important;color:#161310}
   line-height:1.16;font-size:clamp(1.18rem,1.5vw,1.45rem);color:#161310;transition:color .18s}
 .amm__c span{display:block;color:#4A4740;font-size:.95rem;line-height:1.55;margin-top:.4rem}
 
+/* ── the found-news items ───────────────────────────────────────────────
+   magazine.js emits class="amm__f" for these, and no stylesheet ever
+   defined it, so all six editions rendered them with browser defaults:
+   source, headline and summary inline in one underlined run. They are
+   the same kind of object as the edition briefs above, so they take the
+   same shape, with the lane colour to tell them apart.
+   ─────────────────────────────────────────────────────────────────── */
+.amm__f{display:block;break-inside:avoid;background:none;border:0;border-radius:0;
+  box-shadow:none;padding:1.05rem 0 1.15rem;border-top:1px solid rgba(20,15,10,.18);
+  text-decoration:none;transition:none}
+.amm__f:hover{transform:none;box-shadow:none}
+.amm__f:hover b{color:var(--crimson,#B10324)}
+.amm__f i{font-style:normal;display:block;font-size:.66rem;font-weight:800;
+  letter-spacing:.2em;text-transform:uppercase;color:#1E6E34;margin-bottom:.45rem}
+.amm__f b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.015em;
+  line-height:1.16;font-size:clamp(1.12rem,1.4vw,1.34rem);color:#161310;transition:color .18s}
+.amm__f span{display:block;color:#4A4740;font-size:.95rem;line-height:1.55;margin-top:.4rem}
+
+
 /* the desk note + folio */
 .bs-note{font-family:var(--display);font-style:italic;color:#3A362F;font-size:1rem;line-height:1.6;
   max-width:66ch;margin:0;padding:1.2rem 0 2.2rem}
@@ -202,7 +221,7 @@ body{background:#F8F8F4 !important;color:#161310}
 <script src="/js/motion.js" defer></script>
 <script src="/js/tap.js?v=1"></script>
 <script src="/js/rotate-live.js?v=2" defer></script>
-<script src="/js/magazine.js?v=5" defer></script>
+<script src="/js/magazine.js?v=6" defer></script>
 <script src="/js/engage.js?v=2" defer></script>
 <script>
 (function(){var b=document.querySelector('[data-copy]');if(!b)return;

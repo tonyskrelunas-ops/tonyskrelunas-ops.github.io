@@ -124,20 +124,6 @@ SOURCES_BY_LANG = {
  # about a lane he has closed.
 }
 
-
-def clip(text, n):
-    """Cut a summary at a word, not through one, and say so with an ellipsis.
-    The old bare [:n] slice left 68 of 134 summaries ending mid-word -- "multiple
-    local community membe" -- which read as broken rather than abridged."""
-    t = re.sub(r"\s+", " ", (text or "")).strip()
-    if len(t) <= n:
-        return t
-    cut = t[:n]
-    sp = cut.rfind(" ")
-    if sp > n * 0.6:
-        cut = cut[:sp]
-    return cut.rstrip(" ,;:.\u2014-") + "\u2026"
-
 def fetch(url, timeout=25):
     req = urllib.request.Request(url, headers={"User-Agent": "TribeAwaken-magazine/1.0"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -160,7 +146,7 @@ def items(xml, source):
             M = dict(zip("Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(), range(1, 13)))
             if m.group(2)[:3] in M:
                 iso = "%s-%02d-%02d" % (m.group(3), M[m.group(2)[:3]], int(m.group(1)))
-        out.append({"title": title[:150], "url": link, "dek": clip(desc, 190),
+        out.append({"title": title[:150], "url": link, "dek": re.sub(r"\s+", " ", desc)[:190],
                     "source": source, "date": iso})
     return out
 
