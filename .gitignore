@@ -5,3 +5,5 @@ assets/img/cleaned/
 water fall and gardens/
 *.MOV
 *.mov
+.backups/
+.kit_api*

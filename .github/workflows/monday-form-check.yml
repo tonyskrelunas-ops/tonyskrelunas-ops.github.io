@@ -40,3 +40,12 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq chromium-browser || sudo apt-get install -y -qq chromium
           python3 _tools/check-pages.py
+
+      - name: Put any new signups into Kit
+        env:
+          KIT_API_KEY: ${{ secrets.KIT_API_KEY }}
+          KIT_API_SECRET: ${{ secrets.KIT_API_SECRET }}
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+        run: |
+          python3 _tools/pull-subscribers.py || true
+          python3 _tools/sync-kit.py --add
