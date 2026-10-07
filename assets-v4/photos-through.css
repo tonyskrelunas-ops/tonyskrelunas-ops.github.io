@@ -130,3 +130,11 @@ html:not(.rv-on) .rv{opacity:1 !important;transform:none !important}
 @media (max-width:720px){
   html.courage .wrap--mid{max-width:calc(100vw - 2rem) !important}
 }
+
+/* ═══ THE HOMEPAGE FOOTER ══════════════════════════════════════════════
+   This one is navy rgb(17,35,87). "Tribe" was navy on navy so only
+   "Awaken" showed, and the legal line sat at rgb(73,82,63) -- dark grey
+   on dark blue. Both read now. The interior footers are cream and are
+   handled the opposite way in their own sheet. */
+html.courage .ftr .brand__txt,html.courage footer .brand__txt{color:#FFFFFF !important}
+html.courage .ftr__legal,html.courage .ftr__legal *{color:rgba(255,246,234,.78) !important}

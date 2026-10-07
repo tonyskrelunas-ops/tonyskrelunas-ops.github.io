@@ -3,11 +3,18 @@
 # Tony, 6 October, after a week in which every submission was silently thrown
 # away: "lets make it a rule to chekc these on monday mornnigns too."
 #
+# 7 October it also checks the pages. Everything that went wrong that day was
+# the same kind of fault -- a change correct in the file and wrong on the
+# page, with nothing in between that looked. White paper over his
+# photographs, light words on light bands, a form whose stylesheet the page
+# never loaded, a magazine heading painted blue on blue. check-pages.py
+# opens them and measures.
+#
 # It runs here rather than on his Mac for the same reason the magazine does:
 # the laptop is asleep at five in the morning and the scheduler skips without
 # telling anyone. A failure here turns the run red and emails him.
 
-name: Monday form check
+name: Monday check — the forms, and the pages
 
 on:
   schedule:
@@ -27,3 +34,9 @@ jobs:
         env:
           NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
         run: python3 _tools/check-forms.py
+
+      - name: Open the pages and measure them
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq chromium-browser || sudo apt-get install -y -qq chromium
+          python3 _tools/check-pages.py

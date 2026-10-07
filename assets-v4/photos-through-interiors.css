@@ -143,10 +143,15 @@ html.courage :is(.date,.dateline,.meta,.reads,.share-label,.reviewed,.years,.ran
   color:#7A6224 !important}
 html.courage .gloss em{color:#6E5A2C !important}
 
-/* ═══ THE FOOTER WORDMARK ══════════════════════════════════════════════
-   "Tribe" was navy on navy -- only "Awaken" showed. */
-html.courage .ftr .brand__txt,html.courage footer .brand__txt{color:#FFFFFF !important}
-html.courage .ftr__legal,html.courage .ftr__legal *{color:rgba(255,255,255,.72) !important}
+/* ═══ THE FOOTER ═══════════════════════════════════════════════════════
+   I got this wrong earlier today and the page checker caught it. Both
+   footers carry class .ftr, but they are not the same colour: the homepage
+   footer is navy rgb(17,35,87) and every interior footer is cream
+   rgb(238,244,233). I set the legal line to white for all of them, which
+   put it at 1.12 to 1 on the cream ones -- invisible, the exact fault I
+   spent the day removing. On these pages it reads dark. */
+html.courage .ftr .brand__txt,html.courage footer .brand__txt{color:#17235C !important}
+html.courage .ftr__legal,html.courage .ftr__legal *{color:#4A4740 !important}
 
 /* ═══ THE TRANSLATION LINKS ════════════════════════════════════════════
    They sat flush against the left window edge with the first letter
@@ -188,3 +193,60 @@ html.courage :is(h1,h2,h3,h4,.head,.stage__title,.step,.scene__t,.amm__c b,.amm_
 /* Japanese is never set in italic; the browser was slanting it by hand */
 html[lang="ja"] :is(em,i,.say,.pull,blockquote),
 :is([lang="ja"]) :is(em,i,.say,.pull,blockquote){font-style:normal !important}
+
+/* ═══ THE MAGAZINE'S SUBSCRIBE BAND ════════════════════════════════════
+   magazine-horse.css sets .mag-sub h2 to white on the deep blue band, and
+   interiors-daylight.css loads after it with a stronger html.courage h2
+   rule that paints every heading that same blue. Blue on blue: the page
+   checker measured "Subscribe to the magazine." at 1.00 to 1 -- the
+   heading of the magazine's only signup, invisible. :not(#_) gives this
+   the weight to win. */
+html.courage .mag-sub:not(#_) h2{color:#FFFFFF !important}
+html.courage .mag-sub:not(#_) .mag-sub__k{color:#FFD75E !important}
+html.courage .mag-sub:not(#_) .mag-sub__p{color:#D8E3F3 !important}
+html.courage .mag-sub:not(#_) .mag-sub__fine{color:#B7C7DF !important}
+html.courage .mag-sub:not(#_) .btn--primary{color:#15233C !important;background:#E0A400 !important}
+
+/* ═══ THE BOOK BAND ════════════════════════════════════════════════════
+   The page checker found "The Council Fire" and its whole description at
+   1.01 to 1 on /community-resilience/ -- cream words on a cream band. The
+   bookband carries a photograph in .bookband__bg, and it was the one
+   photographic band my earlier pass did not cover, so the picture stayed
+   buried and the light text had nothing dark to sit on. Same law as the
+   rest: the photograph is the background. */
+html.courage .bookband:has(.bookband__bg img):not(#_){
+  background:transparent !important;background-image:none !important;
+  position:relative;isolation:isolate}
+html.courage .bookband:has(.bookband__bg img):not(#_) .bookband__bg{
+  z-index:0 !important;position:absolute !important;inset:0 !important;overflow:hidden !important}
+html.courage .bookband:has(.bookband__bg img):not(#_) .bookband__bg img{
+  width:100% !important;height:100% !important;object-fit:cover !important;opacity:1 !important}
+html.courage .bookband:has(.bookband__bg img):not(#_) .bookband__bg::after{
+  content:"" !important;position:absolute !important;inset:0 !important;z-index:1 !important;
+  background:linear-gradient(100deg,rgba(9,22,15,.76),rgba(9,22,15,.58) 54%,rgba(9,22,15,.72)) !important}
+html.courage .bookband:has(.bookband__bg img):not(#_) .bookband__in{
+  position:relative;z-index:2;background:none !important;box-shadow:none !important}
+html.courage .bookband:has(.bookband__bg img):not(#_) :is(h2,h3,.head){
+  color:#FFFFFF !important;text-shadow:0 2px 24px rgba(5,14,9,.8) !important}
+html.courage .bookband:has(.bookband__bg img):not(#_) :is(p,li,span,b,strong,em,i,div){
+  color:#FBF6EA !important;text-shadow:0 1px 16px rgba(5,14,9,.75) !important}
+html.courage .bookband:has(.bookband__bg img):not(#_) :is(.eyebrow,.bookband__k){
+  color:#FFD75E !important;text-shadow:0 1px 16px rgba(5,14,9,.8) !important}
+
+/* ═══ THE GOLD ACCENT ══════════════════════════════════════════════════
+   #E0A400 on the cream page measures 2.10 to 1, and it is used for the
+   italic emphasis inside body copy -- "gratitude", "we need them both",
+   "the set list is the map" -- where it bites hardest, as well as the
+   stage numerals. A deeper gold keeps the colour and gains the contrast. */
+html.courage :is(.say,.lead,p,li) i,
+html.courage :is(.say,.lead,p,li) em,
+html.courage .stage__num{color:#8A5A12 !important}
+
+/* "中文 soon" is meant to read as not-yet, but it did not read at all. It
+   appears in two places on two different backgrounds, and I darkened both
+   at once -- which fixed the cream one and broke the green one, 1.71:1.
+   The checker caught it in the same minute. They are separate now. */
+html.courage .globebar .soon,
+html.courage .globebar__ls .soon{color:rgba(255,246,234,.72) !important}   /* on the dark green bar */
+html.courage .ftr .soon,
+html.courage footer .soon{color:#6E6A5E !important}                        /* on the cream footer */
