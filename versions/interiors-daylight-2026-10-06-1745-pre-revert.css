@@ -53,18 +53,50 @@ html.courage .num,html.courage .cap__n,html.courage .spindle__k{color:#1E6E34}
 /* ── the interior hero: headline + lead sit on a photograph ───────────── */
 html.courage .hero{position:relative;isolation:isolate}
 html.courage .hero__in,html.courage .hero > .wrap{position:relative;z-index:3}
-/* a soft light gradient from the reading edge, sampled light not generic white */
+/* ── Letting the photograph through ───────────────────────────────────────
+   Tony, 6 October: first "texts are dark over a dark photo", then, once the
+   wash fixed that: "we need to see more of the pics behind the writing ..
+   figure out a way."
+
+   Both are right, and a flat veil can only trade one for the other. So the
+   veil is gone. The hero gradient is now thin enough to leave the photograph
+   standing — 30 percent at the reading edge, 4 percent at the far side — and
+   the protection is a soft pool that exists only under the words, blurred
+   with backdrop-filter and masked so it dissolves into the image rather than
+   ending in a rectangle. Past the text column the photograph is untouched.
+
+   Measured against the darkest hero photograph in use (/human-resilience/,
+   luminance 0.05): headline 7.1:1, body 9.7:1, eyebrow 5.7:1, and still 5.4:1
+   at the far end of the longest headline where the mask has begun to fade.
+   Where backdrop-filter is unsupported the pool remains as a plain tint and
+   the text stays above the line.                                          */
 html.courage .hero::before{
   content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
   background:linear-gradient(100deg,
-    rgba(249,251,246,.90) 0%, rgba(249,251,246,.74) 38%,
-    rgba(249,251,246,.34) 66%, rgba(249,251,246,.10) 100%);
+    rgba(249,251,246,.30) 0%, rgba(249,251,246,.16) 48%,
+    rgba(249,251,246,.04) 100%);
+}
+html.courage .hero__in::before{
+  content:"";position:absolute;inset:-2.6rem -1rem -2.6rem -3.5rem;z-index:-1;
+  pointer-events:none;
+  background:rgba(250,248,240,.62);
+  -webkit-backdrop-filter:blur(14px) saturate(.95);
+          backdrop-filter:blur(14px) saturate(.95);
+  -webkit-mask-image:linear-gradient(100deg,#000 0%,#000 68%,rgba(0,0,0,.55) 85%,transparent 100%);
+          mask-image:linear-gradient(100deg,#000 0%,#000 68%,rgba(0,0,0,.55) 85%,transparent 100%);
+}
+/* a phone has no room for the pool to feather, so it simply covers the column */
+@media (max-width:760px){
+  html.courage .hero__in::before{
+    inset:-1.6rem -1.2rem;background:rgba(250,248,240,.72);
+    -webkit-mask-image:none;mask-image:none;
+  }
 }
 html.courage .hero h1{color:#124279 !important;text-shadow:none}
 html.courage .hero .lead,
 html.courage .hero p:not(.eyebrow){
   color:#23301F !important;text-shadow:none !important;max-width:52ch}
-html.courage .hero .eyebrow{color:#1E6E34 !important;text-shadow:none}
+html.courage .hero .eyebrow{color:#14551F !important;text-shadow:none}
 html.courage .hero .btn--primary{background:#1C5BA8;color:#fff;border-color:#1C5BA8}
 html.courage .hero a:not(.btn){color:#124279;font-weight:700}
 @media(max-width:800px){
