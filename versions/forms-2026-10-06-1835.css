@@ -321,12 +321,11 @@
 .f-glyph--r{right:clamp(-7rem,-8vw,-2.5rem);top:5%;width:clamp(240px,30vw,470px);opacity:.12}
 .f-glyph--br{right:clamp(-5rem,-5vw,-1.5rem);bottom:-3%;
   width:clamp(240px,32vw,520px);opacity:.14}
-.f-glyph--c{left:auto;right:clamp(-4rem,-4vw,-1rem);top:auto;bottom:4%;transform:none;width:clamp(200px,24vw,340px);opacity:.13}
-/* it was centred, which on #address put the rock-art rings squarely over
-   his great-grandfather's face. An ornament does not go on a person. */
+.f-glyph--c{left:50%;top:50%;transform:translate(-50%,-50%);
+  width:clamp(360px,54vw,820px);opacity:.10}
 @media(max-width:760px){
   .f-glyph--l{width:clamp(200px,58vw,300px);top:3%;opacity:.11}
   .f-glyph--r{width:clamp(190px,52vw,280px);opacity:.10}
   .f-glyph--br{width:clamp(200px,56vw,300px);bottom:-2%;opacity:.11}
-  .f-glyph--c{width:min(70vw,300px);bottom:3%;opacity:.09}
+  .f-glyph--c{width:min(88vw,420px);opacity:.09}
 }
