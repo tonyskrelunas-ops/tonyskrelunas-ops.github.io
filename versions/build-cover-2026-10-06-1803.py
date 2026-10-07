@@ -56,13 +56,11 @@ SVG = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" preserve
 .sunbody{{transform-box:view-box;transform-origin:0 0;animation:sun-cross 150s ease-in-out infinite}}
 .rays{{transform-box:view-box;transform-origin:0 0;animation:ray-turn 90s linear infinite}}
 @keyframes sun-cross{{
-  0%   {{transform:translate({CX-330}px,{CY+210}px);opacity:0}}
-  9%   {{opacity:1}}
+  0%   {{transform:translate({CX-330}px,{CY+210}px)}}
   22%  {{transform:translate({CX-170}px,{CY+30}px)}}
   50%  {{transform:translate({CX+130}px,{CY-58}px)}}
   78%  {{transform:translate({CX+420}px,{CY+30}px)}}
-  91%  {{opacity:1}}
-  100% {{transform:translate({CX+600}px,{CY+210}px);opacity:0}}
+  100% {{transform:translate({CX+600}px,{CY+210}px)}}
 }}
 @keyframes ray-turn{{to{{rotate:360deg}}}}
 
