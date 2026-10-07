@@ -1,9 +1,9 @@
 User-agent: *
 Allow: /
-Disallow: /v4/
 Disallow: /v2/
 Disallow: /v3/
+Disallow: /v4/
 Disallow: /preview/
+Disallow: /counts/
 
 Sitemap: https://tribeawaken.com/sitemap.xml
-Disallow: /counts/

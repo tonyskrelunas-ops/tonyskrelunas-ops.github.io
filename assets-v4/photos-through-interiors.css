@@ -154,3 +154,37 @@ html.courage .ftr__legal,html.courage .ftr__legal *{color:rgba(255,255,255,.72) 
 html.courage .xlang,html.courage .translations,html.courage .lang-links{
   max-width:min(var(--max,1280px),72ch);margin-inline:auto;
   padding-inline:clamp(1rem,4vw,3rem)}
+
+/* ═══ TABLES WERE LOSING THEIR LAST COLUMN ════════════════════════════════
+   Six reference tables -- the ownership audit and the four-capitals
+   scorecard on tourism, three on business, one on healing -- overflow the
+   panel they sit in. mobile-fix.css caps them at max-width:100%, so instead
+   of scrolling they squeeze and the right-hand column is cut off mid-word:
+   "Food is the highest-margin, lowest ___". Content was being lost, not
+   just cramped. Let the table keep its own width and scroll inside its
+   panel. */
+html.courage :is(.wrap,.wrap--mid,.essay,.loom,.sec,.reg) table{
+  display:block;max-width:100% !important;width:max-content;min-width:100%;
+  overflow-x:auto;-webkit-overflow-scrolling:touch;
+  border-collapse:collapse}
+html.courage :is(.wrap,.wrap--mid,.essay,.loom,.sec,.reg) table td,
+html.courage :is(.wrap,.wrap--mid,.essay,.loom,.sec,.reg) table th{
+  white-space:normal;vertical-align:top;padding:.55rem .8rem}
+html.courage table caption{
+  text-align:left;font-size:.68rem;font-weight:800;letter-spacing:.18em;
+  text-transform:uppercase;color:#7A6224;margin-bottom:.6rem}
+
+/* ═══ HIS NAME ════════════════════════════════════════════════════════════
+   In the big display face the macron on the u detaches and floats, so
+   "Skrelūnas" reads as "Skreluñas" in headings while the body text is fine.
+   Supplying Latin Extended from a face that has a proper precomposed ū,
+   and only that range, leaves every other letter in the display font. */
+@font-face{font-family:"LatExtFix";
+  src:local("Palatino"),local("Palatino Linotype"),local("Georgia"),local("Times New Roman");
+  unicode-range:U+0100-017F;font-display:swap}
+html.courage :is(h1,h2,h3,h4,.head,.stage__title,.step,.scene__t,.amm__c b,.amm__f b){
+  font-family:"LatExtFix",var(--display),Georgia,serif}
+
+/* Japanese is never set in italic; the browser was slanting it by hand */
+html[lang="ja"] :is(em,i,.say,.pull,blockquote),
+:is([lang="ja"]) :is(em,i,.say,.pull,blockquote){font-style:normal !important}
