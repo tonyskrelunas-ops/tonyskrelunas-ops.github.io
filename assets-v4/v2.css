@@ -1269,7 +1269,10 @@ html.courage .photo-bg img, html.courage .state__bg img, html.courage .bookband_
 @keyframes rays{to{transform:rotate(360deg)}}
 .cmotion__ridge g[stroke="#FFD75E"],.cmotion__ridge g[stroke="#F3C87A"]{
   transform-origin:430px 78px;animation:rays 48s linear infinite}
-html.courage .nyr__art g[stroke="#FFF7E6"]{transform-origin:300px 120px;animation:rays 60s linear infinite}
+/* The cover's sun used to sit still at 300,120 and this turned its beams
+   about that point. The sun travels now and the beams are drawn centred on
+   nothing inside it, so this origin flung them in a wide circle away from
+   the disc — the separation Tony saw. The cover carries its own rule. */
 @media (prefers-reduced-motion: reduce){.cmotion__ridge g,.nyr__art g{animation:none}}
 /* ═══ FRONT GETS WEIGHT ═══ */
 html.courage .globebar{background:#16522A !important;border-bottom:0}
