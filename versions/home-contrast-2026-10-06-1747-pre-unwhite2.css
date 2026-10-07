@@ -154,36 +154,3 @@ html.courage .sec.hasphoto:not([id]) > .wrap .eyebrow,
 html.courage .sec.close .eyebrow{
   color:#FFD75E !important;text-shadow:0 1px 14px rgba(10,22,16,.6) !important}
 html.courage #the-work > .wrap em, html.courage #watch > .wrap em{color:#FFD75E !important}
-
-/* ── and the rest of the white: the deep-dive bands ──────────────────────
-   v2.css:1180 and :1223 lay white paper (.95/.96) on #far-messenger,
-   #chapters, #stone-breath, #the-reader, #traditions and the #about bio,
-   and v2.css pours a WHITE wash (.38->.52) over the photographs behind
-   them. Same mistake, same fix: paper off, veil onto the picture, words
-   light. "we need to see more of the pics behind the writing."
-   ─────────────────────────────────────────────────────────────────────── */
-html.courage #far-messenger .wrap--mid, html.courage #chapters .wrap--mid,
-html.courage #stone-breath .wrap--mid, html.courage #the-reader .wrap,
-html.courage #traditions .wrap, html.courage #about .origin > div,
-html.courage #about .origin > div:last-child, html.courage #chapters .scene{
-  background:none !important;box-shadow:none !important;border-radius:0 !important}
-/* the wash over his photographs becomes a veil under the words */
-html.courage #far-messenger .photo-bg::after, html.courage #chapters .photo-bg::after,
-html.courage #stone-breath .photo-bg::after, html.courage #the-reader .photo-bg::after,
-html.courage #traditions .photo-bg::after{
-  background:linear-gradient(100deg,rgba(14,32,22,.60),rgba(14,32,22,.40) 58%,rgba(14,32,22,.56)) !important}
-/* every word in those bands reads light */
-html.courage :is(#far-messenger,#chapters,#stone-breath,#the-reader,#traditions,#about)
-  :is(p,li,span,b,strong,em,div,summary,.say,.lead,.scene__body,.scene__btn){
-  color:#FBF6EA !important;text-shadow:0 1px 14px rgba(10,22,16,.55) !important}
-html.courage :is(#far-messenger,#chapters,#stone-breath,#the-reader,#traditions,#about)
-  :is(h2,h3,.head,.scene__t,.trad__c h3){
-  color:#FFFFFF !important;text-shadow:0 2px 20px rgba(10,22,16,.6) !important}
-html.courage :is(#far-messenger,#chapters,#stone-breath,#the-reader,#traditions,#about)
-  :is(.eyebrow,.trad__n){color:#FFD75E !important;text-shadow:0 1px 14px rgba(10,22,16,.6) !important}
-html.courage :is(#far-messenger,#the-reader) .pull,
-html.courage #chapters .scene__body .say{color:#FFD75E !important}
-/* the magazine strip keeps its own light band and its ink -- it has no photo */
-html.courage .nyr :is(p,li,span,b,strong,em,i){color:inherit !important;text-shadow:none !important}
-html.courage .nyr .amm__c b{color:#131812 !important}
-html.courage .nyr .amm__c span{color:#49523F !important}
