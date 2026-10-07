@@ -257,3 +257,22 @@ html.courage footer .soon{color:#6E6A5E !important}                        /* on
 html.courage .ftr__langs span,
 html.courage .ftr .ftr__langs span,
 html.courage footer [class*="lang"] span{color:#6E6A5E !important}
+
+/* ═══ THE GOLD IN HIS ARTICLES ═════════════════════════════════════════
+   The page checker read all 67 journal articles. 59 were clean; the eight
+   that were not all failed the same way, at 2.10:1 -- #E0A400 on the cream
+   page. It lands on the two things a reader most needs to see: his pull
+   quotes, and his links.
+
+     "The chances of me and you sitting at this table are..."   one-in-a-trillion
+     "Walk in beauty. Live long. Die wise."                     living-to-100
+     books2read.com/u/4AEDdd                                    stone-breath, twice
+
+   That last one is the buy link for the book. A deeper gold, the same one
+   used for emphasis elsewhere, keeps the colour and gains the contrast.
+   Gold on a photograph is handled above and is not touched by this. */
+html.courage blockquote,
+html.courage blockquote :is(p,span,b,strong,em,i,cite),
+html.courage :is(article,.post,.essay,main) a:not(.btn):not([class*="button"]){
+  color:#8A5A12 !important}
+html.courage :is(article,.post,.essay,main) a:not(.btn):hover{color:#6E4710 !important}
