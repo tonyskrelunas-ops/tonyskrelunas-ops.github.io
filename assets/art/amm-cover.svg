@@ -1,60 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The Abundance Mindset Magazine cover: a sun over green mountains, with the far messenger running the ridge"><defs><style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A sun crossing a gold sky over green mountains, an eagle above, and the far messenger running the ridge"><defs><style>
 .rays{stroke:#FEF7E7;stroke-width:13;stroke-linecap:round}
-/* Tony, 6 October: "have the sun moving around too .. and the figure start
-   sooner once you open the page." So the sun crosses the sky the way it does
-   over a morning — slowly, three minutes end to end, rising a little as it
-   goes — and its rays turn with it. */
-.sun{animation:sun-cross 180s ease-in-out infinite alternate;transform-box:view-box;transform-origin:470px 250px}
-.rays{animation:sun-cross 180s ease-in-out infinite alternate,
-                ray-turn 120s linear infinite;
-      transform-box:view-box;transform-origin:470px 250px}
+.eagle__b,.eagle__t{fill:#3B5E3B;opacity:.78}
+
+.sunbody{transform-box:view-box;transform-origin:0 0;animation:sun-cross 150s ease-in-out infinite}
+.rays{transform-box:view-box;transform-origin:0 0;animation:ray-turn 90s linear infinite}
 @keyframes sun-cross{
-  0%{transform:translate(-150px,52px)}
-  50%{transform:translate(120px,-34px)}
-  100%{transform:translate(390px,44px)}
+  0%   {transform:translate(140px,460px)}
+  22%  {transform:translate(300px,280px)}
+  50%  {transform:translate(600px,192px)}
+  78%  {transform:translate(890px,280px)}
+  100% {transform:translate(1070px,460px)}
 }
 @keyframes ray-turn{to{rotate:360deg}}
-/* The messenger runs the ridge. Tony has had him walking, then running, since
-   4 October; here he runs the cover itself. Off under reduced motion. */
+
+.eagle{offset-path:path("M -80,150 C 300,70 620,210 960,110 C 1240,30 1480,140 1760,90");
+  offset-rotate:auto;offset-distance:0%;animation:eagle-cross 54s linear infinite;animation-delay:-14s}
+.eagle > g{animation:eagle-beat 3.6s ease-in-out infinite}
+@keyframes eagle-cross{0%{offset-distance:0%;opacity:0}4%{opacity:1}94%{opacity:1}100%{offset-distance:100%;opacity:0}}
+@keyframes eagle-beat{0%,100%{transform:scale(1.9,1.9)}50%{transform:scale(1.8,1.32)}}
+
 .cv-run{offset-path:path("M -40,640 L 200,500 L 420,610 L 640,470 L 880,600 L 1120,490 L 1380,610 L 1620,520");offset-rotate:0deg;offset-distance:0%;
-  animation:cv-cross 30s linear infinite;animation-delay:-7s}
+  animation:cv-cross 18s linear infinite;animation-delay:-5s}
 .cv-b{animation:cv-bob .44s ease-in-out infinite}
 .cv-leg{transform-box:view-box;transform-origin:-6px -13px}
 .cv-arm{transform-box:view-box;transform-origin:1px -27px}
 .cv-leg--f,.cv-arm--b{animation:cv-fwd .44s ease-in-out infinite}
 .cv-leg--b,.cv-arm--f{animation:cv-back .44s ease-in-out infinite}
 .cv-hair{transform-box:view-box;transform-origin:0 -36px;animation:cv-mane .44s ease-in-out infinite}
-@keyframes cv-cross{0%{offset-distance:0%;opacity:0}2%{opacity:1}95%{opacity:1}100%{offset-distance:100%;opacity:0}}
+@keyframes cv-cross{0%{offset-distance:0%;opacity:0}3%{opacity:1}95%{opacity:1}100%{offset-distance:100%;opacity:0}}
 @keyframes cv-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2.6px)}}
 @keyframes cv-fwd{0%,100%{transform:rotate(26deg)}50%{transform:rotate(-24deg)}}
 @keyframes cv-back{0%,100%{transform:rotate(-24deg)}50%{transform:rotate(26deg)}}
 @keyframes cv-mane{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(6deg)}}
-@media (prefers-reduced-motion:reduce){.cv-run{offset-distance:46%;opacity:1}.cv-run,.cv-run *,.sun,.rays{animation:none!important;transform:none!important}}
 
-/* the eagle, high over the ridge */
-.eagle__b,.eagle__t{fill:#3B5E3B;opacity:.78}
-.eagle{offset-path:path("M -80,150 C 300,70 620,210 960,110 C 1240,30 1480,140 1760,90");
-  offset-rotate:auto;offset-distance:0%;
-  animation:eagle-cross 54s linear infinite;animation-delay:-14s}
-.eagle > g{animation:eagle-beat 3.6s ease-in-out infinite}
-@keyframes eagle-cross{0%{offset-distance:0%;opacity:0}4%{opacity:1}94%{opacity:1}100%{offset-distance:100%;opacity:0}}
-@keyframes eagle-beat{0%,100%{transform:scale(1.9,1.9)}50%{transform:scale(1.8,1.32)}}
-@media (prefers-reduced-motion:reduce){.eagle{offset-distance:38%;opacity:1}
-  .eagle,.eagle *{animation:none!important}}
+@media (prefers-reduced-motion:reduce){
+  .sunbody{animation:none!important;transform:translate(600px,192px)!important}
+  .rays,.eagle,.eagle > g,.cv-run,.cv-run *{animation:none!important}
+  .eagle{offset-distance:38%;opacity:1} .cv-run{offset-distance:46%;opacity:1}
+}
 </style></defs>
 <rect width="1600" height="760" fill="#D7A738"/>
-<g class="rays" transform="translate(-710,0)"><line x1="1180" y1="98" x2="1180" y2="54"/><line x1="1256" y1="118" x2="1278" y2="80"/><line x1="1312" y1="174" x2="1350" y2="152"/><line x1="1332" y1="250" x2="1376" y2="250"/><line x1="1312" y1="326" x2="1350" y2="348"/><line x1="1256" y1="382" x2="1278" y2="420"/><line x1="1180" y1="402" x2="1180" y2="446"/><line x1="1104" y1="382" x2="1082" y2="420"/><line x1="1048" y1="326" x2="1010" y2="348"/><line x1="1028" y1="250" x2="984" y2="250"/><line x1="1048" y1="174" x2="1010" y2="152"/><line x1="1104" y1="118" x2="1082" y2="80"/></g>
-<circle class="sun" cx="470" cy="250" r="118" fill="#FEF7E7"/>
+<g class="sunbody"><g class="rays"><line x1="0" y1="-152" x2="0" y2="-196"/><line x1="76" y1="-132" x2="98" y2="-170"/><line x1="132" y1="-76" x2="170" y2="-98"/><line x1="152" y1="0" x2="196" y2="0"/><line x1="132" y1="76" x2="170" y2="98"/><line x1="76" y1="132" x2="98" y2="170"/><line x1="0" y1="152" x2="0" y2="196"/><line x1="-76" y1="132" x2="-98" y2="170"/><line x1="-132" y1="76" x2="-170" y2="98"/><line x1="-152" y1="0" x2="-196" y2="0"/><line x1="-132" y1="-76" x2="-170" y2="-98"/><line x1="-76" y1="-132" x2="-98" y2="-170"/></g><circle r="118" fill="#FEF7E7"/></g>
 <path d="M -20,760 L -20,430 L 150,300 L 300,400 L 470,250 L 640,380 L 820,260 L 1000,390 L 1180,290 L 1360,400 L 1620,310 L 1620,760 Z"  fill="#55915A"/>
 <path d="M -20,760 L -20,520 L 170,380 L 330,490 L 520,330 L 700,470 L 900,350 L 1090,480 L 1300,370 L 1620,470 L 1620,760 Z"   fill="#488448"/>
 <path d="M -20,760 L -20,640 L 200,500 L 420,610 L 640,470 L 880,600 L 1120,490 L 1380,610 L 1620,520 L 1620,760 Z" fill="#376D3B"/>
-
-<g class="eagle" aria-hidden="true"><g transform="scale(1.9)">
-  <path class="eagle__b" d="M0,0 C-16,-12 -34,-16 -52,-9 C-36,-5 -22,-1 -8,3 L0,6 L8,3
-        C22,-1 36,-5 52,-9 C34,-16 16,-12 0,0 Z"/>
+<g class="eagle" aria-hidden="true"><g>
+  <path class="eagle__b" d="M0,0 C-16,-12 -34,-16 -52,-9 C-36,-5 -22,-1 -8,3 L0,6 L8,3 C22,-1 36,-5 52,-9 C34,-16 16,-12 0,0 Z"/>
   <path class="eagle__t" d="M-5,5 L0,16 L5,5 Z"/>
 </g></g>
-<g class="cv-run"><g transform="scale(2.35) translate(0,-2)">
+<g class="cv-run" aria-hidden="true"><g transform="scale(2.35) translate(0,-2)">
   <g class="cv-b" stroke="#2F59A3" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round" fill="none">
     <g class="cv-hair" stroke-width="2.5">
       <path d="M-1.0 -39.4 Q-10 -43.2 -19.4 -40.4"/><path d="M-1.8 -37.2 Q-11 -39.8 -21.0 -35.6"/>
@@ -66,6 +60,5 @@
     <g class="cv-leg cv-leg--b"><path d="M-6 -13 Q-12.4 -10 -16.4 -5.4 M-16.4 -5.4 Q-20.6 -3.4 -24.4 -4.6"/></g>
     <g class="cv-arm cv-arm--f"><path d="M1 -27 Q7 -25 8.8 -20.4 M8.8 -20.4 Q10.4 -24.4 9.6 -28"/></g>
     <g class="cv-arm cv-arm--b"><path d="M1 -27 Q-5.4 -25.6 -8.6 -21.6 M-8.6 -21.6 Q-12.6 -23.6 -13.6 -27.4"/></g>
-  </g>
-</g></g>
+  </g></g></g>
 </svg>
