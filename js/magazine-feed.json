@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-06T18:18:59",
+ "generated": "2026-10-07T18:53:28",
  "mine": [
   {
    "slug": "why-i-started-a-magazine-again",
@@ -7,8 +7,8 @@
    "title": "Why I Started a Magazine, and Why I Am Starting It Again",
    "date": "2026-10-04",
    "pillar": "The Movement",
-   "dek": "In 2021 it was called Tribal Prestige. Five years later there are two novels out, a doctorate underway, and the same stubborn idea: that what a people reads every morning decides something.",
-   "img": "/assets/img/v2/tribe-achieve-emblem-1400px.jpg",
+   "dek": "It began in 2021 under a different name. Five years later there are two novels out, a doctorate underway, and the same stubborn idea: that what a people reads every morning decides something",
+   "img": "/assets/img/v2/horse-only-900px.jpg",
    "art": "/assets/art/four-capitals.svg",
    "tr": {
     "es": {
@@ -217,7 +217,7 @@
    "title": "Tibet, and the Unbroken Thread",
    "date": "2026-08-07",
    "pillar": "Global · One Operating System",
-   "dek": "A people is not its territory — it is the thread: the language, the prayer, the way of raising children. Reflections from Machik Weekend in New York, and what the Tibetan community in…",
+   "dek": "A people is not its territory — it is the thread: the language, the prayer, the way of raising children. Reflections from Machik Weekend in New York, and what the Tibetan community in exile ",
    "img": "/assets/img/far-messengers-mountain.jpg",
    "art": "/assets/art/japan-bridge.svg"
   },
@@ -227,7 +227,7 @@
    "title": "Twenty-Five Years to That Podium",
    "date": "2026-08-07",
    "pillar": "The Doctorate",
-   "dek": "I started this doctorate as an extension of my MBA more than twenty-five years ago. Last year I gave the PhD commencement address at Prescott College. Here is what happened in between…",
+   "dek": "I started this doctorate as an extension of my MBA more than twenty-five years ago. Last year I gave the PhD commencement address at Prescott College. Here is what happened in between — and ",
    "img": "/assets/img/tony/speaking-podium-sash.jpg",
    "art": "/assets/art/dine-mountains.svg"
   },
@@ -257,7 +257,7 @@
    "title": "The Ancestral Code for Living to 100",
    "date": "2026-04-01",
    "pillar": "Health & Longevity",
-   "dek": "Across the world, the peoples who reach a hundred are not lucky — they are living a code their ancestors wrote into food, movement, purpose, and song. We did not lose it. We stopped…",
+   "dek": "Across the world, the peoples who reach a hundred are not lucky — they are living a code their ancestors wrote into food, movement, purpose, and song. We did not lose it. We stopped reading ",
    "img": "/assets/img/journal/the-ancestral-code-for-living-to-100/0.jpg",
    "art": "/assets/art/japan-enso.svg"
   },
@@ -277,7 +277,7 @@
    "title": "The Silent Theft: How the World Wastes Its Most Precious Resource — And How We Can Reclaim It",
    "date": "2025-11-20",
    "pillar": "Regenerative Development & New Economy",
-   "dek": "We track every barrel, every dollar, every ton — and let the one irreplaceable resource evaporate: human genius. This is the anatomy of a silent theft, and the map back to an honorable…",
+   "dek": "We track every barrel, every dollar, every ton — and let the one irreplaceable resource evaporate: human genius. This is the anatomy of a silent theft, and the map back to an honorable harve",
    "img": "/assets/img/journal/the-silent-theft/0.jpg",
    "art": "/assets/art/dine-hogan.svg"
   },
@@ -397,7 +397,7 @@
    "title": "The Wealth That Cannot Be Spent: Raising Generations Who Inherit More Than Money",
    "date": "2024-11-02",
    "pillar": "Regenerative Development & New Economy",
-   "dek": "The richest people I know own almost nothing a bank would recognize — and everything the great-grandchildren will need. A meditation on the wealth that is grown, not extracted, and passed…",
+   "dek": "The richest people I know own almost nothing a bank would recognize — and everything the great-grandchildren will need. A meditation on the wealth that is grown, not extracted, and passed do",
    "img": "/assets/img/savanna.jpg",
    "art": "/assets/art/japan-bridge.svg"
   },
@@ -407,7 +407,7 @@
    "title": "The Old Farmers Are Right: Ancient Agriculture as a Hedge Against a Warming World",
    "date": "2024-05-09",
    "pillar": "Food Systems & Agriculture",
-   "dek": "Across the drylands of the world, a handful of master farmers still coax miracle harvests from wind and sand using knowledge older than any market. As the climate shifts, their methods may…",
+   "dek": "Across the drylands of the world, a handful of master farmers still coax miracle harvests from wind and sand using knowledge older than any market. As the climate shifts, their methods may b",
    "img": "/assets/img/journal/ancient-farming-hedge-against-climate-change/0.jpg",
    "art": "/assets/art/dine-mountains.svg"
   },
@@ -417,7 +417,7 @@
    "title": "Shizhé'é: A Father's Day Letter to the Man Who Chose Me",
    "date": "2023-06-19",
    "pillar": "About / The Story",
-   "dek": "A son's letter to the father who took him as his own — a city boy who followed love to the high country, learned the old ways, and became a pillar. A tribute to every dad who carries a…",
+   "dek": "A son's letter to the father who took him as his own — a city boy who followed love to the high country, learned the old ways, and became a pillar. A tribute to every dad who carries a famil",
    "img": "/assets/img/journal/honoring-my-father-on-fathers-day/0.jpg",
    "art": "/assets/art/baltic-juosta.svg"
   },
@@ -427,7 +427,7 @@
    "title": "Honorable Trade: What the World's Oldest Economies Teach a Planet in Transition",
    "date": "2023-04-24",
    "pillar": "Regenerative Development & New Economy",
-   "dek": "For ten thousand years, whole continents ran on economies built not for shareholder wealth but for honor, love, and excitement. As the globe searches for a way through climate change…",
+   "dek": "For ten thousand years, whole continents ran on economies built not for shareholder wealth but for honor, love, and excitement. As the globe searches for a way through climate change, these ",
    "img": "/assets/img/council-band.jpg",
    "art": "/assets/art/dine-dawn.svg"
   },
@@ -447,7 +447,7 @@
    "title": "When motorcycling or any adventurous hobby beckons you to overcome fear and limiting beliefs",
    "date": "2021-03-01",
    "pillar": "Author Journey",
-   "dek": "As a kid, I grew up in a modest traditional Navajo home far from the city and mainly with livestock and no electricity. A lot of times we would stay at sheep camp with grandparents all…",
+   "dek": "As a kid, I grew up in a modest traditional Navajo home far from the city and mainly with livestock and no electricity. A lot of times we would stay at sheep camp with grandparents all summe",
    "img": "/assets/img/journal/overcoming-fear-and-limiting-beliefs/0.jpg",
    "art": "/assets/art/baltic-sun.svg"
   },
@@ -457,7 +457,7 @@
    "title": "Time Tested Traditional Tribal Tools against the coronavirus",
    "date": "2021-02-18",
    "pillar": "Ancestral Wisdom & Culture",
-   "dek": "Many of you have questions about the pandemic and it seems the more you read and research, the more confused you get. What do we do to stay safe? What are the best ways to strengthen our…",
+   "dek": "Many of you have questions about the pandemic and it seems the more you read and research, the more confused you get. What do we do to stay safe? What are the best ways to strengthen our imm",
    "img": "/assets/img/journal/time-tested-tribal-tools-against-the-coronavirus/0.jpg",
    "art": "/assets/art/dine-hogan.svg"
   },
@@ -487,7 +487,7 @@
    "title": "A Magazine to Uplift Our Community",
    "date": "2021-01-05",
    "pillar": "Community & Tribal Economy",
-   "dek": "A Conversation with the Founder of “Tribal Prestige” Magazine",
+   "dek": "A Conversation with the Founder of “the Abundance Mindset Magazine” Magazine",
    "img": "/assets/img/family/lamplight-desk.jpg",
    "art": "/assets/art/japan-bridge.svg"
   },
@@ -497,7 +497,7 @@
    "title": "From Sheep to the Customer:  An Entrepreneur and her Food Business",
    "date": "2021-01-05",
    "pillar": "Community & Tribal Economy",
-   "dek": "Native Grill serves “Navajo soul food” to travelers along Highway 89 and to their loyal customers in Cameron, Arizona. Alfreida Littleboy and her mother started their business in 2013 and…",
+   "dek": "Native Grill serves “Navajo soul food” to travelers along Highway 89 and to their loyal customers in Cameron, Arizona. Alfreida Littleboy and her mother started their business in 2013 and pu",
    "img": "/assets/img/family/lamplight-desk.jpg",
    "art": "/assets/art/dine-mountains.svg"
   },
@@ -527,7 +527,7 @@
    "title": "A Seven-Point Tribal Review of Benefits from the National Economic Transition Platform for Tribes",
    "date": "2020-10-12",
    "pillar": "Regenerative Development & New Economy",
-   "dek": "Tribal communities such as Hopi, Navajo, and Crow are being impacted by the transition away from coal fired power generation to more economical alternatives. In northern Arizona, in Navajo…",
+   "dek": "Tribal communities such as Hopi, Navajo, and Crow are being impacted by the transition away from coal fired power generation to more economical alternatives. In northern Arizona, in Navajo a",
    "img": "/assets/img/journal/seven-point-tribal-review-economic-transition/0.png",
    "art": "/assets/art/japan-enso.svg"
   },
@@ -557,7 +557,7 @@
    "title": "Inspiration for new types of grocery stores to improve our health and reawaken our \"Blue Zone\"",
    "date": "2020-10-10",
    "pillar": "Health & Longevity",
-   "dek": "In the not too distant past, it was very common for many tribal elders to live to be over 100. In my Navajo culture, centenarians were celebrated and 102 years of age was a virtue to…",
+   "dek": "In the not too distant past, it was very common for many tribal elders to live to be over 100. In my Navajo culture, centenarians were celebrated and 102 years of age was a virtue to strive ",
    "img": "/assets/img/journal/inspiration-for-new-grocery-stores/0.jpg",
    "art": "/assets/art/four-capitals.svg"
   },
@@ -567,7 +567,7 @@
    "title": "Its ok to take the lead, rejoice in it, be grateful of your blessed abilities",
    "date": "2020-02-04",
    "pillar": "Leadership & Business",
-   "dek": "As the founder of tribes.humans.net, it was a daunting task to pull all the pieces together. Talk about doing business all over the world, in big cities, working globally with investors…",
+   "dek": "As the founder of tribes.humans.net, it was a daunting task to pull all the pieces together. Talk about doing business all over the world, in big cities, working globally with investors, pro",
    "img": "/assets/img/family/lamplight-desk.jpg",
    "art": "/assets/art/baltic-oak.svg"
   },
@@ -597,7 +597,7 @@
    "title": "What waking up early did for me and what it could do for you",
    "date": "2020-01-28",
    "pillar": "Health & Longevity",
-   "dek": "What could waking early do for me and what do I hope to achieve in this tiny turnaround of life? Waking up early would allow me a more productive day, longer days, make me more successful…",
+   "dek": "What could waking early do for me and what do I hope to achieve in this tiny turnaround of life? Waking up early would allow me a more productive day, longer days, make me more successful in",
    "img": "/assets/img/family/lamplight-desk.jpg",
    "art": "/assets/art/baltic-juosta.svg"
   },
@@ -747,26 +747,26 @@
    "title": "The Man Who Raced Hills Into His 70s: What Longevity Really Asks of Us",
    "date": null,
    "pillar": "Health & Longevity",
-   "dek": "He built motorcycles that now sell for six figures and raced them up near-vertical hills past the age most men retire. But the real machine, the one that kept him alive, was quieter than…",
+   "dek": "He built motorcycles that now sell for six figures and raced them up near-vertical hills past the age most men retire. But the real machine, the one that kept him alive, was quieter than any",
    "img": "/assets/img/journal/the-man-who-raced-hills-into-his-70s/0.jpg",
    "art": "/assets/art/baltic-oak.svg"
   }
  ],
  "found": [
   {
-   "title": "Illinois Community Members Honored for Helping Save Woman in Submerged Vehicle (WATCH)",
-   "url": "https://www.goodnewsnetwork.org/illinois-community-members-honored-for-helping-save-woman-in-submerged-vehicle-watch/",
-   "dek": "On a stormy afternoon in Illinois in August, an elderly driver lost control of her vehicle as it plunged into a flooded retention pond. Sinking up to its roof, multiple local community…",
+   "title": "‘You’re Walking!’ – Dad Surprises Children Having Recovered Ability to Walk After Serious Brain Injury",
+   "url": "https://www.goodnewsnetwork.org/youre-walking-dad-surprises-children-having-recovered-ability-to-walk-after-serious-brain-injury/",
+   "dek": "After 3 years of recovery from a brain injury sustained in a car accident, a father surprised his children by walking independently again. Lounging on the couch enjoying some TV time…",
    "source": "Good News Network",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "news"
   },
   {
-   "title": "‘The forest is life’: how Indigenous communities in Peru are preventing wildfires",
-   "url": "https://www.positive.news/environment/the-forest-is-life-how-indigenous-communities-in-peru-are-preventing-wildfires/",
-   "dek": "Ancient knowledge and new technology are combining to help Indigenous communities in Peru tackle forest fires The post ‘The forest is life’: how Indigenous communities in Peru are…",
+   "title": "A future worth building. What to expect in the new issue of Positive News magazine",
+   "url": "https://www.positive.news/society/media/a-future-worth-building-what-to-expect-in-the-new-issue-of-positive-news-magazine/",
+   "dek": "From future-focused projects to secret schools, the people in this issue are choosing to act for a world they may never see The post A future worth building. What to expect in the new issue…",
    "source": "Positive News",
-   "date": "2026-09-29",
+   "date": "2026-10-07",
    "lane": "news"
   },
   {
@@ -786,11 +786,11 @@
    "lane": "research"
   },
   {
-   "title": "Amazfit Cheetah 2 Ultra Review",
-   "url": "https://www.irunfar.com/amazfit-cheetah-2-ultra-review",
-   "dek": "The post Amazfit Cheetah 2 Ultra Review appeared first on iRunFar. An in-depth review of the Amazfit Cheetah 2 Ultra GPS running watch. Amazfit Cheetah 2 Ultra Review by Craig Randall.",
+   "title": "Nicholas Triolo and the Art of Running",
+   "url": "https://www.irunfar.com/nicholas-triolo-and-the-art-of-running",
+   "dek": "The post Nicholas Triolo and the Art of Running appeared first on iRunFar. A conversation with runner, author, and thinker, Nicholas Triolo. Nicholas Triolo and the Art of Running by Hannah…",
    "source": "iRunFar",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "running"
   },
   {
@@ -802,19 +802,19 @@
    "lane": "running"
   },
   {
-   "title": "Who’s nominated for World Athletics Athlete of the Year–and who got left out?",
-   "url": "https://runningmagazine.ca/the-scene/whos-nominated-for-world-athletics-athlete-of-the-year-and-who-got-left-out/",
-   "dek": "This year was so stacked that choosing three nominees to vote for is harder than choosing one winner The post Who’s nominated for World Athletics Athlete of the Year–and who got left out?…",
+   "title": "The dos and don’ts of taper week recovery",
+   "url": "https://runningmagazine.ca/sections/training/the-dos-and-donts-of-taper-week-recovery/",
+   "dek": "Race week is about arriving at the start line fresh—not trying to cram in one last week of recovery The post The dos and don’ts of taper week recovery appeared first on Canadian Running…",
    "source": "Canadian Running",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "running"
   },
   {
-   "title": "How to Light a Chicken Coop: Four Bright Ideas",
-   "url": "https://www.hobbyfarms.com/how-to-light-a-chicken-coop/",
-   "dek": "Use these four tips to light up your chicken coop. The post How to Light a Chicken Coop: Four Bright Ideas appeared first on Hobby Farms.",
+   "title": "How to Plant Pawpaw Trees This Fall (and Get Them to Fruit)",
+   "url": "https://www.hobbyfarms.com/how-to-plant-pawpaw-trees-this-fall-and-get-them-to-fruit/",
+   "dek": "Key Takeaways Fall is a good time to plant bare-root pawpaws, while the trees are dormant. Buy seed-grown pawpaws. Every seedling is genetically different, so any two will pollinate each…",
    "source": "Hobby Farms",
-   "date": "2026-09-29",
+   "date": "2026-10-07",
    "lane": "land"
   },
   {
@@ -826,11 +826,11 @@
    "lane": "land"
   },
   {
-   "title": "FDA Investigation Found Cyclospora at Taylor Farms’ Mexico Facility",
-   "url": "https://civileats.com/2026/10/06/fda-investigation-found-cyclospora-at-taylor-farms-mexico-facility/",
-   "dek": "By Rebekah Alvey • October 6, 2026The agency has concluded its investigation into a cyclospora outbreak that sickened a record number of Americans this summer.Read the full article →",
+   "title": "Foraging for ‘Deep Exploration’",
+   "url": "https://civileats.com/2026/10/07/foraging-for-deep-exploration/",
+   "dek": "By Paula Cristobal Madina • October 7, 2026Activist Robin Greenfield shares how (and why) he spent the past year living off the land.Read the full article →",
    "source": "Civil Eats",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "land"
   },
   {
@@ -842,49 +842,49 @@
    "lane": "animals"
   },
   {
-   "title": "In Australia’s Wet Tropics, restoration misses the forest for the tree cover",
-   "url": "https://news.mongabay.com/2026/10/in-australias-wet-tropics-restoration-misses-the-forest-for-the-tree-cover/",
-   "dek": "Relics of ancient wet forests stretch across the coast of Queensland state in Australia. In a landscape made patchwork by agriculture, volunteers, community groups and Indigenous rangers…",
+   "title": "Tropical Storm Isaias forms, is forecast to become a hurricane and hit US Gulf Coast this week",
+   "url": "https://news.mongabay.com/short-article/2026/10/tropical-storm-isaias-forms-is-forecast-to-become-a-hurricane-and-hit-us-gulf-coast-this-week/",
+   "dek": "MIAMI (AP) — Tropical Storm Isaias formed Wednesday in the warm waters off eastern Mexico and forecasters said it was expected to strengthen into the first hurricane of the Atlantic season…",
    "source": "Mongabay",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "animals"
   },
   {
-   "title": "Susannah Place in The Rocks, Australia",
-   "url": "https://www.atlasobscura.com/places/susannah-place",
-   "dek": "Located in The Rocks, Sydney's oldest neighborhood, the four humble terrace houses that make up Susannah Place were built in 1844 by Irish immigrants. For over 150 years, the row housed…",
+   "title": "Ham Ho in Binh Phu, Vietnam",
+   "url": "https://www.atlasobscura.com/places/ham-ho",
+   "dek": "Deep within the rugged interior of Tay Son district, Ham Ho presents a striking clash of raw geological wonder and fierce military history. A wild mountain river tears through a colossal…",
    "source": "Atlas Obscura",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "culture"
   },
   {
-   "title": "A Diver Volunteered to Clean Up Trash From a Wisconsin Lake. He Discovered a 1,000-Year-Old Dugout Canoe at the Bottom Instead",
-   "url": "https://www.smithsonianmag.com/smart-news/a-diver-volunteered-to-clean-up-trash-from-a-wisconsin-lake-he-discovered-a-1000-year-old-dugout-canoe-at-the-bottom-instead-180989622/",
-   "dek": "Indigenous communities near present-day Milwaukee hand-carved the white-oak vessel before shaping it with fire between roughly 992 and 1049 C.E.",
+   "title": "Five Discoveries That Changed Our Understanding of T. Rex Forever, From Warm Blood to Lips",
+   "url": "https://www.smithsonianmag.com/science-nature/five-discoveries-that-changed-our-understanding-of-t-rex-forever-from-warm-blood-to-lips-180989634/",
+   "dek": "Paleontologists are still unraveling the secrets of the world’s most famous dinosaur, such as its outward appearance or the way that it hunted. With each new finding, our view of the…",
    "source": "Smithsonian",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "culture"
   },
   {
-   "title": "Orphaned, Rescued, and Rewilded, Female Gorilla Becomes a Mother in Historic Conservation Success",
-   "url": "https://www.goodnewsnetwork.org/orphaned-rescued-and-rewilded-female-gorilla-becomes-a-mother-in-historic-conservation-success/",
-   "dek": "One of the first-ever eastern lowland gorillas to be successfully returned to the wild gave birth on May 21st in her new/old home of Virunga National Park in the Democratic Republic of the…",
+   "title": "Illinois Community Members Honored for Helping Save Woman in Submerged Vehicle (WATCH)",
+   "url": "https://www.goodnewsnetwork.org/illinois-community-members-honored-for-helping-save-woman-in-submerged-vehicle-watch/",
+   "dek": "On a stormy afternoon in Illinois in August, an elderly driver lost control of her vehicle as it plunged into a flooded retention pond. Sinking up to its roof, multiple local community…",
    "source": "Good News Network",
-   "date": "2026-10-05",
+   "date": "2026-10-06",
    "lane": "news"
   },
   {
-   "title": "What went right this week: a brighter future for Kosovo, plus more",
-   "url": "https://www.positive.news/society/good-news-stories-from-week-39-of-2026/",
-   "dek": "Kosovo was cleared of landmines, Germany set a date for quitting oil, and a new species was discovered, plus more The post What went right this week: a brighter future for Kosovo, plus…",
+   "title": "‘The forest is life’: how Indigenous communities in Peru are preventing wildfires",
+   "url": "https://www.positive.news/environment/the-forest-is-life-how-indigenous-communities-in-peru-are-preventing-wildfires/",
+   "dek": "Ancient knowledge and new technology are combining to help Indigenous communities in Peru tackle forest fires The post ‘The forest is life’: how Indigenous communities in Peru are…",
    "source": "Positive News",
-   "date": "2026-09-25",
+   "date": "2026-09-29",
    "lane": "news"
   },
   {
    "title": "What We’re Reading: Rat Rangers to the Rescue",
    "url": "https://reasonstobecheerful.world/what-were-reading-rat-rangers-dc/",
-   "dek": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it here.",
+   "dek": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it…",
    "source": "Reasons to be Cheerful",
    "date": "2026-09-30",
    "lane": "news"
@@ -908,19 +908,11 @@
    "lane": "news"
   },
   {
-   "title": "«¡Aquí falta un árbol!»: movilización ciudadana en más de 150 municipios para auditar el estado del arbolado urbano",
-   "url": "https://climatica.coop/aqui-falta-un-arbol-ecomapeo/",
-   "dek": "Una auditoría ciudadana masiva registrará este fin de semana la falta de árboles en las calles para exigir a los gobiernos locales entornos más verdes, frescos y habitables. The post…",
-   "source": "Climática",
-   "date": "2026-10-01",
-   "lane": "news"
-  },
-  {
-   "title": "Rescatan casi 1000 aves silvestres en Ucayali que iban a ser trasladadas de madrugada a Lima para su venta ilegal en el mercado negro",
-   "url": "https://inforegion.pe/rescatan-casi-1000-aves-silvestres-en-ucayali-que-iban-a-ser-trasladadas-de-madrugada-a-lima-para-su-venta-ilegal-en-el-mercado-negro/",
-   "dek": "La mayor parte de los ejemplares encontrados correspondía a pihuichos de ala ama... La entrada Rescatan casi 1000 aves silvestres en Ucayali que iban a ser trasladadas de madrugada a Lima…",
+   "title": "Agua protegida, suelos reforestados y ecosistemas vivos: los resultados de la remediación de casi 700 pasivos mineros en el país",
+   "url": "https://inforegion.pe/agua-protegida-suelos-reforestados-y-ecosistemas-vivos-los-resultados-de-la-remediacion-de-casi-700-pasivos-mineros-en-el-pais/",
+   "dek": "La remediación minera en el Perú ha dejado de medirse únicamente en toneladas de... La entrada Agua protegida, suelos reforestados y ecosistemas vivos: los resultados de la remediación de…",
    "source": "Inforegión",
-   "date": "2026-10-05",
+   "date": "2026-10-06",
    "lane": "news"
   },
   {
@@ -940,25 +932,25 @@
    "lane": "land"
   },
   {
-   "title": "Hectáreas cultivadas de aguacate Hass crecieron 6% y Antioquia concentra 36% del área",
-   "url": "https://www.agronegocios.co/agricultura/hectareas-cultivadas-de-aguacate-hass-crecieron-6-y-antioquia-concentra-36-del-area-4497766",
-   "dek": "Colombia registra 39.474 hectáreas de la fruta ante el ICA, 6% más que en 2025. Antioquia concentra 14.258 hectáreas y lidera el país",
+   "title": "La agricultura de precisión llega a la ganadería para mejorar productividad y reducir emisiones",
+   "url": "https://www.agronegocios.co/tecnologia/la-agricultura-de-precision-llega-a-la-ganaderia-para-mejorar-productividad-y-reducir-emisiones-4498548",
+   "dek": "El uso de datos, cartografía, drones y planes de fertilización personalizados permitió a fincas acompañadas por Alquería aumentar la producción y reducir emisiones",
    "source": "Agronegocios",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "land"
   },
   {
-   "title": "Colombia: 75 % de la minería de oro detectada en ríos es ilegal y presiona áreas protegidas",
-   "url": "https://es.mongabay.com/2026/10/mineria-oro-ilegal-rios-colombia/",
-   "dek": "La minería ilegal de oro de aluvión -en ríos y otros cuerpos de agua- está creciendo en Colombia. De 118 410 hectáreas con evidencias de explotación detectadas durante 2025, el 75 % es…",
+   "title": "El Niño en Perú: autoridades no terminaron ninguno de los proyectos para restaurar cuencas en siete regiones y prevenir desastres",
+   "url": "https://es.mongabay.com/2026/10/el-nino-peru-autoridades-no-terminaron-proyectos-restaurar-cuencas-prevenir-desastres/",
+   "dek": "A comienzos de 2017, ocurrió uno de los eventos de El Niño más devastadores de las últimas décadas en Perú. Ese año, el Gobierno armó un ambicioso plan que ayudaría al país a estar mejor…",
    "source": "Mongabay Latam",
-   "date": "2026-10-05",
+   "date": "2026-10-07",
    "lane": "animals"
   },
   {
-   "title": "La historia del Archivo Casasola y la Fototeca Nacional",
-   "url": "https://www.local.mx/cultura/archivo-casasola-fototeca-nacional-historia/",
-   "dek": "A 50 años de la Fototeca Nacional, Vania Casasola comparte la historia del Archivo Casasola, su legado familiar y la memoria visual de México. The post La historia del Archivo Casasola y…",
+   "title": "Lo que el océano tiene que ver con nosotros",
+   "url": "https://www.local.mx/cultura/crisis-oceanica-crisis-humana-ocean-catalyst/",
+   "dek": "Después de asistir a los primeros Diálogos de Impacto de Conciencia de Ocean Catalyst, una reflexión sobre lo que el océano puede enseñarnos acerca de nosotros mismos, nuestras comunidades…",
    "source": "Local.mx",
    "date": "2026-10-06",
    "lane": "culture"
@@ -966,17 +958,25 @@
   {
    "title": "El reactor nuclear que nadie construyó",
    "url": "https://www.jotdown.es/2026/10/el-reactor-nuclear-que-nadie-construyo/",
-   "dek": "En 1972, los franceses descubrieron que parte del uranio que extraían de una mina de Gabón ya había servido de combustible en un reactor nuclear, una circunstancia que tenía su…",
+   "dek": "En 1972, los franceses descubrieron que parte del uranio que extraían de una mina de Gabón ya había servido de combustible en un reactor nuclear, una circunstancia que tenía su complicación…",
    "source": "Jot Down",
    "date": "2026-10-06",
    "lane": "culture"
   },
   {
-   "title": "Descubren en Huancavelica una nueva rana marsupial de color dorado-amarillo que vive a 2590 metros de altitud en los bosques de Tayacaja",
-   "url": "https://inforegion.pe/descubren-en-huancavelica-una-nueva-rana-marsupial-de-color-dorado-amarillo-que-vive-a-2590-metros-de-altitud-en-los-bosques-de-tayacaja/",
-   "dek": "Una de sus características más visibles es su coloración dorado-amarilla, aunque... La entrada Descubren en Huancavelica una nueva rana marsupial de color dorado-amarillo que vive a 2590…",
+   "title": "Vivir la desigualdad sin renunciar a la esperanza",
+   "url": "https://www.revistaanfibia.com/protestas-en-francia-vivir-la-desigualdad-sin-renunciar-a-la-esperanza/",
+   "dek": "Ayer, martes 6 de octubre, en el anfiteatro de la École des Hautes Études en Sciences Sociales de París se realizó un acto inédito: la Universidad de Buenos Aires se movió hasta Francia…",
+   "source": "Revista Anfibia",
+   "date": "2026-10-07",
+   "lane": "culture"
+  },
+  {
+   "title": "Minería ilegal, incendios y pérdida de bosques: la nueva edición de la revista Actualidad Ambiental presenta una mirada a los problemas que marcarán l",
+   "url": "https://inforegion.pe/mineria-ilegal-incendios-y-perdida-de-bosques-la-nueva-edicion-de-la-revista-actualidad-ambiental-presenta-una-mirada-a-los-problemas-que-marcaran-la-agenda-ambiental-de-las-nuevas-autoridades/",
+   "dek": "La segunda edición de la revista Actualidad Ambiental, iniciativa de la Sociedad... La entrada Minería ilegal, incendios y pérdida de bosques: la nueva edición de la revista Actualidad…",
    "source": "Inforegión",
-   "date": "2026-10-03",
+   "date": "2026-10-06",
    "lane": "news"
   },
   {
@@ -1014,15 +1014,15 @@
    "lane": "news"
   },
   {
-   "title": "まちは「つくる」と「まもる」の共存へ——油津商店街の仕掛け人が見つけた、まちとの向き合い方〜第14回セミナーレポート〜",
-   "url": "https://sotokoto-online.jp/learning/27284",
-   "dek": "日本関係人口協会が贈る人気シリーズ「関係人口の最強キーワード7」。第14回のテーマは「まちづくりからまちまもりへ」です。宮崎県日南市・油津商店街の再生で知られる木藤亮太さんをゲストに迎え、代表理事・指出一正とともに、まち […]",
+   "title": "【11/9（月）開催】日本関係人口協会 第16回セミナー：指出一正著『オン・ザ・ロード2』から紐解く「最強キーワード7」#8",
+   "url": "https://sotokoto-online.jp/learning/27283",
+   "dek": "指出一正（一般社団法人日本関係人口協会 代表理事／『ソトコト』編集長）の新刊『オン・ザ・ロード2 スーパーウェルビーイング』の刊行を記念した全8回の連続セミナー。シリーズ最終回となる第8回（協会セミナー通算第16回）のテ […]",
    "source": "ソトコト",
    "date": "2026-10-06",
    "lane": "news"
   },
   {
-   "title": "度重なる大雨・水害・強風から畑を守る！  農家が知っておくべき事前対策と被災後のリカバリー術",
+   "title": "度重なる大雨・水害・強風から畑を守る！ 農家が知っておくべき事前対策と被災後のリカバリー術",
    "url": "https://agri.mynavi.jp/2026_10_06_600397/",
    "dek": "「最近、雨の降り方が以前とは違う」と感じる農家は多いのではないだろうか。実際、気象庁「日本の気候変動2025」によると、短時間に降る豪雨の発生頻度は長期的に増加している。大雨は、単に畑を水浸しにするだけではない。根の酸欠、土壌流亡、肥料成分の流出、病害の発生、果実の裂果や落果を引き起こし、強風を伴えば枝折れや倒木にもつながる。筆者自身も台風の多い沖縄で果樹を育てているが、被害を…",
    "source": "マイナビ農業",
@@ -1030,7 +1030,7 @@
    "lane": "land"
   },
   {
-   "title": "『文豪ストレイドッグス』  太宰も芥川も異能力キャラ化：若者を文学へ導く超常バトル",
+   "title": "『文豪ストレイドッグス』 太宰も芥川も異能力キャラ化：若者を文学へ導く超常バトル",
    "url": "https://www.nippon.com/ja/japan-topics/b11811/",
    "dek": "太宰治、中島敦、芥川龍之介らが「異能力者」だったら──。春河３５著、朝霧カフカ原作のマンガ『文豪ストレイドッグス（文スト）』（KADOKAWA）は、「イケメン」化した文豪たちが超常バトルを繰り広げるファンタジーアクション大作。作品ゆかりの地などとのコラボが相次ぎ、文学ファン増加にも一役買っている。",
    "source": "Nippon.com",
@@ -1062,45 +1062,53 @@
    "lane": "news"
   },
   {
-   "title": "【9/28（月）開催】広島支部 第1回セミナー：農業の担い手をつくる！エンタメ型 関係人口",
-   "url": "https://sotokoto-online.jp/learning/27275",
-   "dek": "一般社団法人日本関係人口協会 広島支部がお届けする記念すべき第1回セミナー。今回のテーマは、「農業の担い手をつくる！エンタメ型 関係人口」です。 ゲストには、広島県三原市大和町で代々続く米農家であり、「コメサンタ」として […]",
+   "title": "まちは「つくる」と「まもる」の共存へ——油津商店街の仕掛け人が見つけた、まちとの向き合い方〜第14回セミナーレポート〜",
+   "url": "https://sotokoto-online.jp/learning/27284",
+   "dek": "日本関係人口協会が贈る人気シリーズ「関係人口の最強キーワード7」。第14回のテーマは「まちづくりからまちまもりへ」です。宮崎県日南市・油津商店街の再生で知られる木藤亮太さんをゲストに迎え、代表理事・指出一正とともに、まち […]",
    "source": "ソトコト",
-   "date": "2026-09-17",
+   "date": "2026-10-06",
    "lane": "news"
   }
  ],
  "found_lt": [
   {
-   "title": "Pratęsiamas kandidatų teikimas Socialinės atsakomybės metų apdovanojimams",
-   "url": "https://kauno.diena.lt/naujienos/klaipeda/miesto-pulsas/pratesiamas-kandidatu-teikimas-socialines-atsakomybes-metu-apdovanojimams-1777808",
-   "dek": "Kad prasmingi darbai ir juos darantys žmonės neliktų nepastebėti, skiriama daugiau laiko kandidatams pasiūlyti – jų teikimas Klaipėdos miesto savivaldybės paskelbtiems Socialinės…",
+   "title": "Imunologė A. Žvirblienė apie marą Rusijoje: šį įvykį gaubia daug miglos",
+   "url": "https://www.bernardinai.lt/imunologe-a-zvirbliene-apie-mara-rusijoje-si-ivyki-gaubia-daug-miglos/",
+   "dek": "Rusijos Irkutsko srityje mirus maro tyrimų instituto darbuotojai, viešojoje erdvėje pasirodė pranešimų apie galimą plaučių maro atvejį. Dienraščio „Bernardinai.lt“ kalbintos mokslininkės…",
+   "source": "Bernardinai",
+   "date": "2026-10-07",
+   "lane": "news"
+  },
+  {
+   "title": "Kremlius neigia pranešimus apie antrą maro atvejį – JAV, ES ir PSO reikalauja daugiau skaidrumo",
+   "url": "https://kauno.diena.lt/naujienos/pasaulis/konfliktai-nelaimes/kremlius-neigia-pranesimus-apie-antra-maro-atveji-jav-es-ir-pso-reikalauja-daugiau-skaidrumo-1777928",
+   "dek": "Jungtinės Valstijos, Europos Sąjunga (ES) ir Pasaulio sveikatos organizacija (PSO) paragino Rusiją skaidriai informuoti apie praėjusią savaitę paskelbtą laboratorijos darbuotojos mirtį nuo…",
    "source": "Kauno diena",
    "date": "",
    "lane": "news"
   },
   {
-   "title": "M. Valančius iš arti: senųjų knygų paraštėse atsiveria iki šiol mažai pažintas Žemaičių vyskupo pasaulis",
-   "url": "https://mokslolietuva.lt/2026/10/m-valancius-is-arti-senuju-knygu-parastese-atsiveria-iki-siol-mazai-pazintas-zemaiciu-vyskupo-pasaulis/",
-   "dek": "Minint 225-ąsias Motiejaus Valančiaus gimimo metines, Vilniaus universiteto bibliotekoje spalio 15 d. 16 val. bus atidaroma paroda „Motiejus ir biblioteka“. …",
+   "title": "„Kompetencijų biblioteka“: e. mokymai kultūros sektoriui – tarp geriausių Lietuvoje",
+   "url": "https://mokslolietuva.lt/2026/10/kompetenciju-biblioteka-e-mokymai-kulturos-sektoriui-tarp-geriausiu-lietuvoje/",
+   "dek": "Lietuvos nacionalinės Martyno Mažvydo bibliotekos kuriama nuotolinio mokymosi aplinka „Kompetencijų biblioteka“ per kelerius metus tapo plačiai naudojama kultūros sektoriaus darbuotojų …",
    "source": "Mokslo Lietuva",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "research"
   },
   {
-   "title": "Vorų kuriami stebuklai žmogaus kūnui nėra svetimkūnis (dr. Eduardas Budrys)",
-   "url": "https://gamtostyrimai.lt/voru-kuriami-stebuklai-zmogaus-kunui-nera-svetimkunis-dr-eduardas-budrys/",
-   "dek": "The post Vorų kuriami stebuklai žmogaus kūnui nėra svetimkūnis (dr. Eduardas Budrys) appeared first on Gamtos tyrimų centras.",
+   "title": "Kaip lietuviškai vadinsime Erechtites hieraciifolius?",
+   "url": "https://gamtostyrimai.lt/kaip-lietuviskai-vadinsime-erechtites-hieraciifolius/",
+   "dek": "Lietuvoje Erechtites hieraciifolius (Asteraceae) pirmą kartą aptikta 2020 m., Varėnos r., Dzūkijos nacionaliniame parke, miške prie Margionių (https://doi.org/10.2478/botlit-2020-0018). Iš…",
    "source": "Gamtos tyrimai",
-   "date": "2026-10-05",
+   "date": "2026-10-07",
    "lane": "animals"
   },
   {
-   "title": "Premjerą pristatanti Aistė Rekašiūtė: „Spektaklį svarbu patirti ne tik protu“",
-   "url": "https://kaunaspilnas.lt/premjera-pristatanti-aiste-rekasiute-spektakli-svarbu-patirti-ne-tik-protu/",
-   "dek": "Jaunosios kartos režisierė Aistė Rekašiūtė spalio 17-18 d. pristato premjerą Kauno miesto kameriniame teatre. Jos režisuotas spektaklis „Banginis ant kranto“ (pjesės autorė – Uršulė…",
+   "title": "Pelėdos pranašystės ir prarasto rojaus ilgesys: rudens parodos „Meno parke“",
+   "url": "https://kaunaspilnas.lt/peledos-pranasystes-ir-prarasto-rojaus-ilgesys-rudens-parodos-meno-parke/",
+   "dek": "Spalio 8 d. (ketvirtadienį) 18 val. galerijoje „Meno parkas“ (Rotušės a. 27, Kaunas) vyks dviejų parodų atidarymas. Dainius Liškevičius | PRAUŽ-keikimai Orakulas pelėdos pavidalu: „Negalima…",
    "source": "Kaunas pilnas kultūros",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "culture"
   },
   {
@@ -1112,69 +1120,61 @@
    "lane": "culture"
   },
   {
-   "title": "Prezidentas: Lietuva pirmininkavimą ES Tarybai turi išnaudoti taip, kad Bendrija taptų stipresnė",
-   "url": "https://www.15min.lt/naujiena/aktualu/lietuva/prezidentas-lietuva-pirmininkavima-es-tarybai-turi-isnaudoti-taip-kad-bendrija-taptu-stipresne-56-2779154?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Prezidentas Gitanas Nausėda teigia, kad Lietuva pirmininkavimą ES Tarybai 2027 metų pirmąjį pusmetį turi išnaudoti taip, kad Bendrija taptų stipresnė ir atsparesnė.",
+   "title": "Vilniaus centre susidūrė trys visureigiai, prireikė ir medikų, ir patrulių",
+   "url": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/vilniaus-centre-susidure-trys-visureigiai-prireike-ir-mediku-ir-patruliu-59-2780060?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "Trečiadienį Vilniaus miesto centre į avariją pateko trys prabangūs vienas paskui kitą važiavę visureigiai. Pirminiais duomenimis, gali būti nukentėjusiųjų. Liudininkams į akis kritusi eismo…",
    "source": "15min Kultūra",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "culture"
   },
   {
-   "title": "Naujos „Vilnius Jazz“ spalvos – kontraboso solo ir Čikagos slemas",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3074151/naujos-vilnius-jazz-spalvos-kontraboso-solo-ir-cikagos-slemas",
-   "dek": "Spalio 15 d. į solinį koncertą festivalyje „Vilnius Jazz“ pakvies viena kertinių Europos šiuolaikinio džiazo asmenybių, kontrabosininkas ir kompozitorius, grupių lyderis ir prodiuseris…",
+   "title": "Kas taps Nobelio literatūros premijos laureatu? Tarp ekspertų spėjimų – Atwood, Murakami",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3069361/kas-taps-nobelio-literaturos-premijos-laureatu-tarp-ekspertu-spejimu-atwood-murakami",
+   "dek": "Kas šiemet papildys Nobelio literatūros premijos laureatų sąrašą? Jau spalio 8-ąją paaiškės, kam atiteks vienas prestižiškiausių knygų pasaulio apdovanojimų. Kol Švedijos akademija savo…",
    "source": "LRT Kultūra",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "culture"
   },
   {
-   "title": "Segalovičienė: galimas didesnis nei 3 proc. deficitas kelia nerimą, gynybos išlyga išnaudota",
-   "url": "https://kauno.diena.lt/naujienos/verslas/ekonomika/segaloviciene-galimas-didesnis-nei-3-proc-deficitas-kelia-nerima-gynybos-islyga-isnaudota-1777798",
-   "dek": "„Mes esame nepriklausoma fiskalinė institucija, tai, be abejo, mums nėra „nieko tokio“ deficito viršijimas, turint omenyje mūsų ekonomikos struktūrą, skolos augimą ir panašiai“, –…",
+   "title": "Spalio „Artuma“: „Pranciškau, eik ir atstatyk mano griūvančią Bažnyčią!“",
+   "url": "https://www.bernardinai.lt/spalio-artuma-pranciskau-eik-ir-atstatyk-mano-griuvancia-baznycia/",
+   "dek": "Popiežius Leonas XIV laiške, skirtame Pranciškaus Asyžiečio mirties 800 m. jubiliejui, rašo apie šio šventojo ramybės palinkėjimą – ne kaip mandagumo frazę, bet kaip užtikrintą Kristaus…",
+   "source": "Bernardinai",
+   "date": "2026-10-07",
+   "lane": "news"
+  },
+  {
+   "title": "Grušas: dėl seksualinio išnaudojimo atvejų tyrimo konsultuojamasi ir su Šventuoju Sostu",
+   "url": "https://kauno.diena.lt/naujienos/lietuva/salies-pulsas/grusas-del-seksualinio-isnaudojimo-atveju-tyrimo-konsultuojamasi-ir-su-sventuoju-sostu-1777924",
+   "dek": "Apie tai spalio mėnesio Vilniaus arkivyskupijos kunigų susirinkime priminė arkivyskupas Gintaras Grušas. Tyrimu būtų siekiama išsiaiškinti, kiek nuo 1990 m. kovo 11 d.",
    "source": "Kauno diena",
    "date": "",
    "lane": "news"
   },
   {
-   "title": "Rūta Mikelkevičiūtė – vėl pirmakursė: „Kai užaugsiu, tai būsiu…“",
-   "url": "https://mokslolietuva.lt/2026/10/ruta-mikelkeviciute-vel-pirmakurse-kai-uzaugsiu-tai-busiu/",
-   "dek": "Kalbėti dešimčiai tūkstančių žmonių – įprasta, o štai prireikus pristatyti plazminę membraną ir natrio bei kalio siurblį nedidelei seminaro auditorijai …",
+   "title": "Ekonomikos ir inovacijų komitetas: Lietuva rengiasi DI erai – naujos taisyklės verslui ir daugiau skaidrumo vartotojams",
+   "url": "https://mokslolietuva.lt/2026/10/ekonomikos-ir-inovaciju-komitetas-lietuva-rengiasi-di-erai-naujos-taisykles-verslui-ir-daugiau-skaidrumo-vartotojams/",
+   "dek": "Ar žinosime, kada mums atsako žmogus, o kada – dirbtinis intelektas (DI)? Ar galėsime būti tikri, kad algoritmas, vertinantis mūsų …",
    "source": "Mokslo Lietuva",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "research"
   },
   {
-   "title": "Gamtos tyrimų centro mokslininkas prisideda prie aplinkos DNR metodų plėtros Europoje",
-   "url": "https://gamtostyrimai.lt/gamtos-tyrimu-centro-mokslininkas-prisideda-prie-aplinkos-dnr-metodu-pletros-europoje/",
-   "dek": "Gamtos tyrimų centro mokslininkas dr. Nathanʼas Jay Bakerʼis rugsėjo 28–30 d. dalyvavo Briuselyje (Belgija) vykusiame naujai finansuotos COST iniciatyvos eDNA4Policy (CA25163) valdymo…",
+   "title": "Vorų kuriami stebuklai žmogaus kūnui nėra svetimkūnis (dr. Eduardas Budrys)",
+   "url": "https://gamtostyrimai.lt/voru-kuriami-stebuklai-zmogaus-kunui-nera-svetimkunis-dr-eduardas-budrys/",
+   "dek": "The post Vorų kuriami stebuklai žmogaus kūnui nėra svetimkūnis (dr. Eduardas Budrys) appeared first on Gamtos tyrimų centras.",
    "source": "Gamtos tyrimai",
-   "date": "2026-10-02",
+   "date": "2026-10-05",
    "lane": "animals"
-  },
-  {
-   "title": "Duetinė paroda „Žiotys“ – apie susitikimo ir perėjimo būseną",
-   "url": "https://kaunaspilnas.lt/duetine-paroda-ziotys-apie-susitikimo-ir-perejimo-busena/",
-   "dek": "Lietuvos dailininkų sąjungos Kauno skyriaus galerijoje „Drobė“ (Drobės g. 62-308, Kaunas) spalio 10 d. 16 val. atidaroma menininkių Martynos Plioplytės-Zujienės ir Liucijos Dervinytės…",
-   "source": "Kaunas pilnas kultūros",
-   "date": "2026-10-06",
-   "lane": "culture"
-  },
-  {
-   "title": "LNM Restauravimo centrui – 25: ketvirtis amžiaus saugant muziejaus vertybes",
-   "url": "https://lnm.lt/aktualijos/lnm-restauravimo-centrui-25-ketvirtis-amziaus-saugant-muziejaus-vertybes/",
-   "dek": "Šiemet spalio 11 d. Lietuvos nacionalinio muziejaus (LNM) Restauravimo centras pasitiks ypatingą sukaktį – 25-erius veiklos metus. Per ketvirtį amžiaus nedidelis restauratorių skyrius…",
-   "source": "Nacionalinis muziejus",
-   "date": "2026-10-06",
-   "lane": "culture"
   }
  ],
  "found_india": [
   {
-   "title": "From Overnight Star to Bigg Boss 20 | Qazi Touqeer",
-   "url": "https://thebetterindia.com/videos/television/from-overnight-star-to-bigg-boss-20-qazi-touqeer-12630374",
-   "dek": "21 years ago, Qazi Touqeer beat Arijit Singh to win Fame Gurukul and became a star overnight. But fame can disappear as quickly as it arrives. Qazi dreamed of becoming an actor, landed…",
+   "title": "Raipur Family Builds Rs 1357-Crore Biz Turning Unwanted Seeds Into Chocolate & Cosmetic Ingredients",
+   "url": "https://thebetterindia.com/web-stories/startup/raipur-saraf-family-manorama-industries-forest-seeds-chocolate-cosmetics-business-12634629",
+   "dek": "",
    "source": "The Better India",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "news"
   },
   {
@@ -1186,11 +1186,11 @@
    "lane": "news"
   },
   {
-   "title": "Vegetarian meals don’t have to be low in protein: Here’s how to build a balanced plate with everyday foods",
-   "url": "https://www.hindustantimes.com/lifestyle/health/vegetarian-meals-don-t-have-to-be-low-in-protein-here-s-how-to-build-a-balanced-plate-with-everyday-foods-101791282963769.html",
-   "dek": "From breakfast to dinner, here’s how vegetarians can add more protein to every meal without overhauling their diet.",
+   "title": "Suffering from osteoporosis and worried about working out? Orthopaedic specialist explains what kind of exercises can be beneficial",
+   "url": "https://www.hindustantimes.com/lifestyle/health/suffering-from-osteoporosis-and-worried-about-working-out-orthopaedic-specialist-explains-what-kind-of-exercises-can-be-beneficial-101791389626313.html",
+   "dek": "Exercising with weak bones is a difficult task, but some workouts under guidance can help one stay in better health, shares Dr Ankur Singh.",
    "source": "Hindustan Times Health",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "running"
   },
   {
@@ -1202,19 +1202,35 @@
    "lane": "land"
   },
   {
-   "title": "The last act of dignity: Sumira Roy on National Award-winning documentary Bhangaar",
-   "url": "https://www.thehindu.com/society/sumira-roy-interview-national-award-winning-bhangaar/article71531963.ece",
-   "dek": "72nd National Film Awards: As India’s elderly population grows, Sumira Roy’s National Award-winning Bhangaar, on the Lavates’ demand for euthanasia, explores lost autonomy",
-   "source": "The Hindu Society",
-   "date": "2026-10-02",
+   "title": "Living with Elephants in Odisha’s Changing Landscape",
+   "url": "https://roundglasssustain.com/conservation/elephants-odisha",
+   "dek": "As forests become more fragmented and climate pressures grow, people and elephants in Odisha navigate an increasingly contested shared landscape, where survival depends on fragile…",
+   "source": "Roundglass Sustain",
+   "date": "2026-10-05",
+   "lane": "animals"
+  },
+  {
+   "title": "Puducherry",
+   "url": "http://www.sahapedia.org/my-city-my-heritage/celebrating-puducherry",
+   "dek": "Puducherry dharmendra Mon, 03/09/2026 - 22:17 Puducherry is a city along the Coromandel coast, born of the surrounding Tamil landscape and its long colonial history. Its compact heritage…",
+   "source": "Sahapedia",
+   "date": "2026-03-09",
    "lane": "culture"
   },
   {
-   "title": "No Internet Needed: How a Bihar Village School Is Bringing Digital Lessons to 660 Students",
-   "url": "https://thebetterindia.com/education/digital-education-in-bihar-sarai-tand-smartclass-india-classrooms-12628782",
-   "dek": "This story is part of “How Tech Changed It” — The Better India’s series that looks at how technology has transformed the sectors, systems and everyday experiences around us. From how we…",
+   "title": "Sketching Meenakshi: Learn to draw temple sculptures and architecture",
+   "url": "https://www.thehindu.com/society/sketching-meenakshi-learn-to-draw-temple-sculptures-and-architecture/article71550573.ece",
+   "dek": "Chennai-based artist Sri Kiruthika shares her approach to capturing the nuances of temple sculptures, ahead of a live sketching session at the historic Dhadikombu Perumal Temple in Dindigul",
+   "source": "The Hindu Society",
+   "date": "2026-10-07",
+   "lane": "culture"
+  },
+  {
+   "title": "This Elusive Himalayan Mammal Is Teaching Scientists Where It Finds Food, Shelter & Safety",
+   "url": "https://thebetterindia.com/travel/mishmi-takin-dibang-valley-arunachal-pradesh-12634214",
+   "dek": "Far in Arunachal Pradesh’s eastern Himalayas, dense forests give way to bamboo and rhododendron at higher elevations, before opening into patches of mountain grassland. This is Mishmi takin…",
    "source": "The Better India",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "news"
   },
   {
@@ -1224,31 +1240,15 @@
    "source": "Village Square",
    "date": "2026-09-19",
    "lane": "news"
-  },
-  {
-   "title": "How quickly do your lungs recover after you stop smoking? A pulmonologist explains what happens days, weeks, and years after quitting",
-   "url": "https://www.hindustantimes.com/lifestyle/health/how-quickly-do-your-lungs-recover-after-you-stop-smoking-a-pulmonologist-explains-what-happens-days-weeks-and-years-after-quitting-101791283252710.html",
-   "dek": "Your lungs start healing after you quit smoking. Here’s what happens in the first few days, weeks, and years.",
-   "source": "Hindustan Times Health",
-   "date": "2026-10-06",
-   "lane": "running"
-  },
-  {
-   "title": "Maharashtra formally recognises women farmers regardless of land ownership [Commentary]",
-   "url": "https://india.mongabay.com/2026/10/maharashtra-formally-recognises-women-farmers-regardless-of-land-ownership-commentary/",
-   "dek": "On October 2, Maharashtra is set to begin issuing the Women Farmers Certificates (WFCs) under the newly enacted Women Farmer’s Empowerment Act 2026. The certificates will formally…",
-   "source": "Mongabay India",
-   "date": "2026-10-01",
-   "lane": "land"
   }
  ],
  "found_tibet": [
   {
-   "title": "CTA unveils five-year roadmap on Middle Way, community sustainability and strengthening CTA",
-   "url": "https://phayul.com/cta-unveils-five-year-roadmap-on-middle-way-community-sustainability-and-strengthening-cta/",
-   "dek": "Tenzin Nyidon DHARAMSHALA, Oct. 1: The exile Tibetan government, officially known as the Central Tibetan Administration (CTA), under the 17th Cabinet led by President Penpa Tsering, on…",
+   "title": "Jetsun Pema honoured with Christmas Humphreys Award for lifelong service to Tibetan education",
+   "url": "https://phayul.com/jetsun-pema-honoured-with-christmas-humphreys-award-for-lifelong-service-to-tibetan-education/",
+   "dek": "Tenzin Nyidon DHARAMSHALA, Oct. 7: Jetsun Pema, popularly known as Ama (Mother) Jetsun Pema, the sister of His Holiness the Dalai Lama was honoured with the prestigious Christmas Humphreys…",
    "source": "Phayul",
-   "date": "2026-10-01",
+   "date": "2026-10-07",
    "lane": "news"
   },
   {
@@ -1260,11 +1260,11 @@
    "lane": "news"
   },
   {
-   "title": "Department of Education Organises Two-day Workshop on Universal Ethics Education for Tibetan Primary School Teachers in Dharamshala",
-   "url": "https://tibet.net/department-of-education-organises-two-day-workshop-on-universal-ethics-education-for-tibetan-primary-school-teachers-in-dharamshala/",
-   "dek": "Dharamshala: A two-day training programme on Universal Ethics Education was successfully held for primary-level teachers on 3 and 4 October 2026. The programme was organised by the…",
+   "title": "Speaker Dolma Tsering Teykhang Addresses Event Conferring Buddhist Society’s Christmas Humphreys Award to Kasur Jetsun Pema",
+   "url": "https://tibet.net/speaker-dolma-tsering-teykhang-addresses-event-conferring-buddhist-societys-christmas-humphreys-award-to-kasur-jetsun-pema/",
+   "dek": "Dharamshala, 7 October 2026: Speaker Dolma Tsering Teykhang, as a guest of honour, addressed the presentation ceremony of the Buddhist Society’s Christmas Humphreys Award to Kasur Jetsun…",
    "source": "Central Tibetan Administration",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "news"
   },
   {
@@ -1284,25 +1284,25 @@
    "lane": "culture"
   },
   {
-   "title": "Tibetan athlete Tenzin Choezom clinches gold medal at Asian Games",
-   "url": "https://phayul.com/tibetan-athlete-tenzin-choezom-clinches-gold-medal-at-asian-games/",
-   "dek": "Tenzin Nyidon DHARAMSHALA, Sept. 30: Tibetan athlete Tenzin Choezom has bagged a gold medal in the women’s marathon race walk at the 2026 Asian Games after Kazakhstan’s Yasmina…",
+   "title": "CTA unveils five-year roadmap on Middle Way, community sustainability and strengthening CTA",
+   "url": "https://phayul.com/cta-unveils-five-year-roadmap-on-middle-way-community-sustainability-and-strengthening-cta/",
+   "dek": "Tenzin Nyidon DHARAMSHALA, Oct. 1: The exile Tibetan government, officially known as the Central Tibetan Administration (CTA), under the 17th Cabinet led by President Penpa Tsering, on…",
    "source": "Phayul",
-   "date": "2026-09-30",
+   "date": "2026-10-01",
    "lane": "news"
   },
   {
-   "title": "Tibetan Language and Cultural School Observes Tibetan National Identity Preservation Week in Switzerland and Liechtenstein",
-   "url": "https://tibet.net/tibetan-language-and-cultural-school-observes-tibetan-national-identity-preservation-week-in-switzerland-and-liechtenstein/",
-   "dek": "Geneva: The Tibetan Language and Cultural School of Switzerland and Liechtenstein organised a series of educational and cultural programmes from 23 to 27 September 2026 in Rapperswil-Jona…",
+   "title": "Women’s Empowerment Desk Organises Sexual and Reproductive Health Outreach Visit for Tibetan Nuns in Mandi Region",
+   "url": "https://tibet.net/womens-empowerment-desk-organises-sexual-and-reproductive-health-outreach-visit-for-tibetan-nuns-in-mandi-region/",
+   "dek": "Dharamshala: On 28 Sept 2026, the Women’s Empowerment Desk (WED) under the Department of Finance, Central Tibetan Administration (CTA), successfully organised a Sexual and Reproductive…",
    "source": "Central Tibetan Administration",
-   "date": "2026-10-06",
+   "date": "2026-10-07",
    "lane": "news"
   },
   {
    "title": "Returning the Trust: The Final Journey of the Gene Smith Library",
    "url": "https://www.bdrc.io/blog/2026/02/05/returning-the-trust/",
-   "dek": "In this blog post, we want to share a side of BDRC that few see: our history of repatriating physical books; the paper, ink, and generations of craftsmanship that form the foundation of…",
+   "dek": "In this blog post, we want to share a side of BDRC that few see: our history of repatriating physical books; the paper, ink, and generations of craftsmanship that form the foundation of our…",
    "source": "Buddhist Digital Resource Center",
    "date": "2026-02-05",
    "lane": "research"
@@ -1310,7 +1310,7 @@
   {
    "title": "Spirit of Tibet 2026: Celebrating Culture and Compassion",
    "url": "https://tibetmuseum.org/spirit-of-tibet-2026-celebrating-culture-and-compassion/",
-   "dek": "India International Centre, New Delhi The Spirit of Tibet: Celebrating Culture and Compassion festival brought together Tibetan culture, … The post Spirit of Tibet 2026: Celebrating…",
+   "dek": "India International Centre, New Delhi The Spirit of Tibet: Celebrating Culture and Compassion festival brought together Tibetan culture, … The post Spirit of Tibet 2026: Celebrating Culture…",
    "source": "Tibet Museum",
    "date": "2026-09-05",
    "lane": "culture"
