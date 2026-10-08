@@ -1138,6 +1138,13 @@ html.courage .nyr__cover{border:3.5px solid #141210;outline:1px solid #141210;ou
 html.courage .nyr__mast{font-family:var(--display);font-weight:900;font-style:italic;letter-spacing:-.02em;
   line-height:.88;color:#141210;font-size:clamp(2.4rem,1.4rem + 3vw,3.6rem);
   padding:1.1rem 1.2rem .4rem;background:#E0A400}
+/* The horse head on the home page's little cover, same mark as the real one.
+   The file is a JPG on a white field, so it needs multiply to sit on the gold.
+   It gets its own line above the wordmark: beside it, the italic overhang of
+   "Abundance" ran into the mane at full width. */
+html.courage .nyr__mastwords{display:block}
+html.courage .nyr__emblem{display:block;width:auto;height:clamp(38px,3.4vw,48px);
+  margin:0 0 .3rem auto;mix-blend-mode:multiply;filter:saturate(.95)}
 html.courage .nyr__dateline{font-size:.6rem;font-weight:800;letter-spacing:.18em;color:#141210;
   padding:0 1.25rem .7rem;border-bottom:3px solid #141210;background:#E0A400}
 html.courage .nyr__art{display:block;width:100%;height:auto}
