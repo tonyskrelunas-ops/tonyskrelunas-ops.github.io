@@ -37,6 +37,9 @@ jobs:
       - name: Gather the editions and rebuild the feed
         run: python3 _tools/refresh-magazine-daily.py
 
+      - name: Rebuild the journal's RSS feed
+        run: python3 _tools/build-feed.py
+
       - name: Commit, only if something changed
         run: |
           if [ -z "$(git status --porcelain)" ]; then
@@ -45,7 +48,7 @@ jobs:
           fi
           git config user.name  "TribeAwaken magazine"
           git config user.email "noreply@tribeawaken.com"
-          git add js/magazine-feed.json journal/index.html _tools/digests journal/versions 2>/dev/null || true
+          git add js/magazine-feed.json feed.xml journal/index.html _tools/digests journal/versions 2>/dev/null || true
           git commit -m "Magazine: $(date -u '+%B %-d, %Y') edition"
           git push
           echo "pushed — tribeawaken.com has today's edition"
