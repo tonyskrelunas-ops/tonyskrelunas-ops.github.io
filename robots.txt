@@ -6,5 +6,6 @@ Disallow: /v4/
 Disallow: /preview/
 Disallow: /counts/
 Disallow: /watch/
+Disallow: /abundance-writings/
 
 Sitemap: https://tribeawaken.com/sitemap.xml
