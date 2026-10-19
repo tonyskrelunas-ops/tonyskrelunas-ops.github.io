@@ -246,7 +246,7 @@ def brief(feed, health=None):
 
     d = datetime.date.today().isoformat()
     L = ["# Best ideas today — %s" % d, "",
-         "From the magazine's own engine. Every one is live and shareable.", ""]
+         "Everything I read this morning that was worth keeping. Every one is live and shareable.", ""]
     for lang, it in out:
         L.append("**%s** — %s  \n%s  \n<%s>" %
                  (it["title"], it["source"] + (" · " + lang.upper() if lang != "en" else ""),
