@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 760" role="img"
+     aria-label="Two charts. First, what is measured: 77 percent of US adults anxious about the economy, two-thirds anxious about current events, 53 to 67 percent reporting living paycheck to paycheck, and 43 percent feeling more anxious than the year before. Second, the gap on tribal lands: life expectancy 73.0 years against 78.5 for US all races, the diabetes death rate 3.2 times higher, and the suicide rate 1.7 times higher. A note records that no instrument measures what share of a population sits in sustained fight or flight.">
+  <defs>
+    <style>
+      .ink   { fill: currentColor }
+      .rule  { stroke: currentColor; stroke-width: 1; opacity: .3 }
+      .bar   { fill: currentColor; opacity: .22 }
+      .barK  { fill: #B98D3E; opacity: .85 }
+      .barR  { fill: currentColor; opacity: .42 }
+      .eyeb  { font: 700 12px/1 -apple-system, "Segoe UI", Roboto, sans-serif;
+               letter-spacing: 2.4px; text-transform: uppercase; fill: #B98D3E }
+      .lab   { font: 400 15.5px/1 Palatino, "Palatino Linotype", Georgia, serif; fill: currentColor }
+      .num   { font: 700 16px/1 -apple-system, "Segoe UI", Roboto, sans-serif; fill: currentColor }
+      .numK  { font: 700 16px/1 -apple-system, "Segoe UI", Roboto, sans-serif; fill: #B98D3E }
+      .src   { font: 400 11.5px/1 -apple-system, "Segoe UI", Roboto, sans-serif;
+               fill: currentColor; opacity: .55 }
+      .note  { font: italic 400 14.5px/1 Palatino, "Palatino Linotype", Georgia, serif;
+               fill: currentColor; opacity: .78 }
+      .head  { font: 700 19px/1 Palatino, "Palatino Linotype", Georgia, serif; fill: currentColor }
+    </style>
+  </defs>
+
+  <!-- ─────────── panel one: what is measured ─────────── -->
+  <text class="eyeb" x="0" y="14">What is measured</text>
+  <text class="head" x="0" y="44">The ground most people are already standing on</text>
+  <line class="rule" x1="0" y1="60" x2="880" y2="60"/>
+
+  <!-- 77% economy -->
+  <text class="lab" x="0" y="96">Anxious about the economy</text>
+  <rect class="barK" x="0" y="106" width="562" height="16" rx="2"/>
+  <rect class="bar"  x="562" y="106" width="168" height="16" rx="2"/>
+  <text class="numK" x="742" y="119">77%</text>
+  <text class="src"  x="0" y="140">US adults · American Psychiatric Association annual poll, 2024</text>
+
+  <!-- two-thirds current events -->
+  <text class="lab" x="0" y="178">Anxious about current events in the world</text>
+  <rect class="barK" x="0" y="188" width="487" height="16" rx="2"/>
+  <rect class="bar"  x="487" y="188" width="243" height="16" rx="2"/>
+  <text class="numK" x="742" y="201">⅔</text>
+  <text class="src"  x="0" y="222">US adults · American Psychiatric Association annual poll, 2025</text>
+
+  <!-- paycheck to paycheck, as a range -->
+  <text class="lab" x="0" y="260">Living paycheck to paycheck</text>
+  <rect class="bar"  x="0" y="270" width="730" height="16" rx="2"/>
+  <rect class="barR" x="387" y="270" width="102" height="16" rx="2"/>
+  <line class="rule" x1="387" y1="264" x2="387" y2="292" stroke-width="1.6" opacity=".55"/>
+  <line class="rule" x1="489" y1="264" x2="489" y2="292" stroke-width="1.6" opacity=".55"/>
+  <text class="num"  x="742" y="283">53–67%</text>
+  <text class="src"  x="0" y="304">US adults, self-reported · LendEDU 53, MarketWatch 57, ADP 64, PNC 67</text>
+  <text class="src"  x="0" y="320">The surveys disagree because they define it differently</text>
+
+  <!-- 43% more anxious -->
+  <text class="lab" x="0" y="358">More anxious than the year before</text>
+  <rect class="barK" x="0" y="368" width="314" height="16" rx="2"/>
+  <rect class="bar"  x="314" y="368" width="416" height="16" rx="2"/>
+  <text class="numK" x="742" y="381">43%</text>
+  <text class="src"  x="0" y="402">Up from 37 in 2023 and 32 in 2022 · APA annual poll, 2024</text>
+
+  <!-- ─────────── panel two: the gap on tribal lands ─────────── -->
+  <line class="rule" x1="0" y1="448" x2="880" y2="448"/>
+  <text class="eyeb" x="0" y="486">The gap on tribal lands</text>
+  <text class="head" x="0" y="516">American Indian and Alaska Native, against US all races</text>
+  <line class="rule" x1="0" y1="532" x2="880" y2="532"/>
+
+  <!-- life expectancy -->
+  <text class="lab" x="0" y="566">Life expectancy at birth</text>
+  <rect class="barR" x="0" y="576" width="606" height="13" rx="2"/>
+  <rect class="bar"  x="0" y="593" width="652" height="13" rx="2"/>
+  <text class="num"  x="620" y="586">73.0</text>
+  <text class="src"  x="666" y="603">78.5 — US all races</text>
+  <text class="src"  x="0" y="624">Five and a half years short</text>
+
+  <!-- diabetes -->
+  <text class="lab" x="0" y="660">Diabetes death rate</text>
+  <circle class="barK" cx="300" cy="655" r="7"/>
+  <circle class="barK" cx="322" cy="655" r="7"/>
+  <circle class="barK" cx="344" cy="655" r="7"/>
+  <circle class="bar"  cx="366" cy="655" r="7"/>
+  <text class="numK" x="392" y="661">3.2× higher</text>
+  <text class="src"  x="0" y="680">66.0 against 20.8 per 100,000</text>
+
+  <!-- suicide -->
+  <text class="lab" x="0" y="716">Suicide rate</text>
+  <circle class="barK" cx="300" cy="711" r="7"/>
+  <circle class="bar"  cx="322" cy="711" r="7"/>
+  <text class="numK" x="348" y="717">1.7× higher</text>
+  <text class="src"  x="0" y="736">20.4 against 12.1 per 100,000 · Indian Health Service, Indian Health Disparities</text>
+
+  <!-- the honest note -->
+  <line class="rule" x1="0" y1="752" x2="880" y2="752"/>
+</svg>

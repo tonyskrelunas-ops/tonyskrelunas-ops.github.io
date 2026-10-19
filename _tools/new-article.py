@@ -149,6 +149,20 @@ def build(meta, body_html, slug):
         die("could not find the article header block in the template.")
     s = head_re.sub(lambda _: new_head, s, 1)
 
+    # ---- the share block and the subscribe form carry the TEMPLATE's slug and title.
+    # Left alone, every new article tells readers to share a different article.
+    import urllib.parse as _up
+    t_slug = os.path.basename(os.path.dirname(TEMPLATE))
+    _tm = re.search(r"<title>(.*?)</title>", io.open(TEMPLATE, encoding="utf-8").read(), re.S)
+    t_title = html.unescape(re.sub(r"<[^>]+>", "", _tm.group(1))) if _tm else ""
+    t_title = re.sub(r"\s*(&mdash;|\u2014|\|)\s*TribeAwaken\s*$", "", t_title).strip()
+    for enc in (lambda x: _up.quote(x, safe=""), lambda x: x):
+        s = s.replace(enc("https://tribeawaken.com/journal/%s/" % t_slug),
+                      enc("%s/journal/%s/" % (SITE, slug)))
+        s = s.replace(enc("%s \u2014 Tony Skrel\u016bnas" % t_title),
+                      enc("%s \u2014 Tony Skrel\u016bnas" % title))
+    s = s.replace("sub-%s" % t_slug, "sub-%s" % slug)
+
     # ---- the body
     body_re = re.compile(r'(<div class="article__body">\s*).*?(\s*<div class="share">)', re.S)
     if not body_re.search(s):
