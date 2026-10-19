@@ -57,8 +57,8 @@ fi
 echo
 echo "  Checking that nothing readable survived in the published file..."
 LEAK=0
-for probe in "vagal" "Hopi" "Arnsten" "passphrase is" "Wa Keh"; do
-  n=$(grep -ci "$probe" "$PAGE" || true)
+for probe in "vagal brake" "far messenger" "Wa Keh Yazh" "dry well" "the Cargo"; do
+  n=$(grep -c "$probe" "$PAGE" || true)
   [ "$n" != "0" ] && { echo "  LEAK: '$probe' appears $n times. Not pushing."; LEAK=1; }
 done
 if [ "$LEAK" != "0" ]; then
