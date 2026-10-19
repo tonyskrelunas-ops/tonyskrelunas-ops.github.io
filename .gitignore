@@ -7,3 +7,6 @@ water fall and gardens/
 *.mov
 .backups/
 .kit_api*
+
+# the private research body — plaintext, never published
+_private/
