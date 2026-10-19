@@ -86,8 +86,12 @@ def md_to_html(body):
         b = block.strip()
         if not b:
             continue
+        if b.startswith("<"):          # raw HTML block: a video, a figure, a pull-quote
+            out.append(b)
+            continue
         b = html.escape(b, quote=False)
-        b = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)", r'<a href="\2">\1</a>', b)
+        # absolute URLs and site-relative paths both; nothing else
+        b = re.sub(r"\[([^\]]+)\]\(((?:https?://|/)[^)]+)\)", r'<a href="\2">\1</a>', b)
         b = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", b)
         b = re.sub(r"(?<!\*)\*([^*\n]+)\*(?!\*)", r"<em>\1</em>", b)
         if b.startswith("## "):
