@@ -267,15 +267,148 @@
 </div>
 
 <main id="main"><article class="art">
-<div class="wrap"><p class="eyebrow" style="color:var(--clay-lt)">Research</p><h1 style="font-family:var(--font-display);font-size:var(--step-4);line-height:1.08;">The Ancestral Carry</h1><p class="lead">Working research. Not listed, not indexed, not shared.</p><figure class="article__hero" style="margin:0 0 var(--space-4);border-radius:var(--radius-lg);overflow:hidden;"><img src="/assets/img/far-messengers.jpg" alt="Three messengers crossing a high desert ridge at dusk, a canyon opening below them" loading="eager" style="width:100%;height:auto;display:block;"></figure><p class="artdate"><time datetime="2026-10-19">October&nbsp;19,&nbsp;2026</time></p><div class="article__body">
-<p class="eyebrow">Private · Tony only</p>
+<div class="wrap dp" id="top"><style>
+html.courage .greet,html.courage .globebar{display:none!important}
+.dp{--dp-ink:#1F2A24;--dp-navy:#13406F;--dp-green:#1E6E34;--dp-clay:#B5532A;--dp-gold:#C9973F;
+  --dp-muted:#5D6A62;--dp-rule:rgba(31,42,36,.14);--dp-paper:#FFFEFA;
+  max-width:1180px!important;padding-top:clamp(1.2rem,3vw,2.6rem);padding-bottom:4rem;color:var(--dp-ink)}
+.dp a{color:var(--dp-navy)}
+.dp-label,.dp-kicker,.dp-story__src,.dp-why span,.dp-today span,.dp-toc__m,.dp-chart__l,.dp-kpis span,.dp figure figcaption{
+  font-family:var(--body);letter-spacing:.08em;text-transform:uppercase;font-size:.74rem;font-weight:700;color:var(--dp-green)}
+/* masthead: words left, his photograph right */
+.dp-mast{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(1.4rem,4vw,3.6rem);align-items:center;margin:0 0 clamp(2rem,4vw,3.4rem)}
+.dp-date{font-family:var(--body);font-size:1rem;color:var(--dp-muted);margin:.5rem 0 0}
+html.courage .dp .dp-h1{font-family:var(--display)!important;font-size:clamp(2.6rem,1.6rem + 4.4vw,5.2rem)!important;line-height:1.02!important;
+  color:var(--dp-navy)!important;letter-spacing:-.02em;margin:.7rem 0 1rem;text-wrap:balance;font-weight:700}
+.dp-deck{font-family:var(--body);font-size:clamp(1.08rem,1rem + .4vw,1.3rem);line-height:1.55;color:var(--dp-ink);max-width:36rem;margin:0 0 1.4rem}
+.dp-btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:.98rem;color:#fff!important;background:var(--dp-clay);
+  padding:.8rem 1.3rem;border-radius:2px;text-decoration:none}
+.dp-today{list-style:none;padding:0;margin:1.6rem 0 0;display:grid;gap:.9rem;max-width:36rem}
+.dp-today li{border-top:1px solid var(--dp-rule);padding-top:.7rem;font-family:var(--body);font-size:1rem;line-height:1.45}
+.dp-today span{display:block;margin-bottom:.25rem}
+.dp-today a{text-decoration:none;font-weight:600}
+.dp-today em{font-style:normal;color:var(--dp-muted);font-size:.9rem}
+.dp-mast__photo{margin:0;border-radius:3px;overflow:hidden;aspect-ratio:4/5;margin-right:calc(-1 * var(--gut, 1.5rem))}
+.dp-mast__photo img{width:100%;height:100%;object-fit:cover;display:block}
+/* contents */
+.dp-toc{border-top:3px solid var(--dp-ink);padding-top:1rem;margin:0 0 clamp(2.4rem,5vw,4rem);scroll-margin-top:1rem}
+.dp-toc__head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:.4rem}
+.dp-toc__all{font-family:var(--body);font-size:.92rem;color:var(--dp-muted);margin:0}
+.dp-toc ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(1.4rem,4vw,3.4rem)}
+.dp-toc li{display:grid;grid-template-columns:3.4rem 1fr;gap:.6rem;align-items:start;border-bottom:1px solid var(--dp-rule);padding:.95rem 0}
+.dp-toc__n{font-family:var(--display);font-size:2rem;line-height:1;color:var(--dp-clay);font-weight:600}
+.dp-toc__t{display:block;font-family:var(--display);font-size:clamp(1.2rem,1.05rem + .5vw,1.5rem);line-height:1.2;color:var(--dp-navy)!important;text-decoration:none;font-weight:600}
+.dp-toc__t:hover{text-decoration:underline}
+.dp-toc__m{display:block;margin-top:.3rem;color:var(--dp-muted);letter-spacing:.06em}
+.dp-toc__sub{margin:.5rem 0 0;font-family:var(--body);font-size:.86rem;line-height:1.9}
+.dp-toc__sub a{display:inline-block;margin-right:.9rem;text-decoration:none;border-bottom:1px solid var(--dp-rule)}
+/* sections: numeral and drawing in the margin, reading column beside */
+.dp-sec{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:clamp(1rem,3vw,2.4rem);padding:clamp(2rem,4vw,3.2rem) 0;border-top:1px solid var(--dp-rule);scroll-margin-top:.6rem}
+.dp-sec__head{position:sticky;top:5.5rem;align-self:start;color:var(--dp-clay)}
+.dp-num{display:block;font-family:var(--display);font-size:3.4rem;line-height:.9;font-weight:600;color:var(--dp-clay)}
+.dp-draw{width:56px;height:56px;margin-top:.8rem;color:var(--dp-gold)}
+.dp-sec__main{min-width:0}
+.dp-sec__main > *:not(.dp-stories):not(.dp-charts):not(.dp-kpis){max-width:44rem}
+html.courage .dp .dp-sec__main h2,html.courage .dp .dp-h2{font-family:var(--display)!important;font-size:clamp(2rem,1.4rem + 2.4vw,3.2rem)!important;
+  line-height:1.06!important;color:var(--dp-navy)!important;margin:0 0 .4rem!important;letter-spacing:-.015em;font-weight:700}
+.dp-psec{scroll-margin-top:.6rem;padding-top:1.6rem}
+html.courage .dp .dp-psec h2{font-size:clamp(1.45rem,1.2rem + 1vw,2rem)!important;margin-top:1.4rem!important}
+.dp-sub{font-family:var(--body);color:var(--dp-muted);margin:0 0 1.4rem}
+.dp-up{margin:2rem 0 0;font-family:var(--body);font-size:.86rem}
+.dp-up a{text-decoration:none;color:var(--dp-green)!important;font-weight:700;letter-spacing:.04em}
+.dp-up a::before{content:"\2191  "}
+/* the news, in columns */
+.dp-stories{list-style:none!important;padding:0!important;margin:1.2rem 0 0!important;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,21rem),1fr));gap:1.6rem 2rem}
+.dp-story{border-top:2px solid var(--dp-ink);padding-top:.9rem;margin:0!important}
+.dp-story::before{display:none!important}
+.dp-story__src{margin:0 0 .45rem;color:var(--dp-muted)}
+html.courage .dp .dp-story__h{font-family:var(--display)!important;font-size:1.32rem!important;line-height:1.22!important;color:var(--dp-navy)!important;margin:0 0 .6rem!important;font-weight:700}
+.dp-story__note{font-family:var(--body);font-size:.78rem;font-weight:400;color:var(--dp-muted)}
+.dp-story__p{font-family:var(--body);font-size:1rem;line-height:1.55;margin:0 0 .8rem}
+.dp-why{font-family:var(--body);font-size:.97rem;line-height:1.55;margin:0 0 .9rem;padding-left:.9rem;border-left:3px solid var(--dp-gold)}
+.dp-why span{display:block;color:#8A5A12;margin-bottom:.2rem}
+.dp-read{font-family:var(--body);font-size:.92rem;font-weight:700;text-decoration:none}
+/* by the numbers */
+.dp-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:0;margin:0 0 2rem;border-top:1px solid var(--dp-rule);border-bottom:1px solid var(--dp-rule)}
+.dp-kpis p{margin:0;padding:1.1rem 1rem 1.1rem 0;border-right:1px solid var(--dp-rule)}
+.dp-kpis p:last-child{border-right:0}
+.dp-kpis b{display:block;font-family:var(--display);font-size:clamp(2.2rem,1.6rem + 2vw,3.2rem);line-height:1;color:var(--dp-clay);font-weight:600}
+.dp-kpis span{display:block;margin-top:.4rem;color:var(--dp-muted)}
+.dp-charts{display:grid;grid-template-columns:1fr;gap:2.4rem}
+.dp-charts figure{margin:0}
+.dp-charts figcaption{margin:0 0 .8rem}
+.dp-chart{width:100%;height:auto;display:block;overflow:visible}
+.dp-chart rect{fill:var(--dp-navy)}
+.dp-chart a:hover rect{fill:var(--dp-clay)}
+.dp-chart__l{font-size:12.5px;fill:var(--dp-ink);letter-spacing:0;text-transform:none;font-weight:500}
+.dp-chart__v{font-family:var(--body);font-size:12.5px;fill:var(--dp-muted);font-weight:700}
+/* photograph band before the paper */
+.dp-band{margin:0 0 0;border-radius:3px;overflow:hidden;aspect-ratio:21/8}
+.dp-band img{width:100%;height:100%;object-fit:cover;display:block}
+/* a way back to the contents from anywhere */
+.dp-float{position:fixed;right:16px;bottom:56px;z-index:55;font-family:var(--body);font-size:.86rem;font-weight:700;
+  background:var(--dp-ink);color:#FAF6EC!important;text-decoration:none;padding:.6rem 1rem;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.dp-float::before{content:"\2191  "}
+.dp .listen{margin:.1rem 0 1.2rem}
+@media (max-width:760px){
+  .dp-mast{grid-template-columns:1fr}
+  .dp-mast__photo{order:-1;aspect-ratio:16/10;margin-right:0}
+  .dp-toc ol{grid-template-columns:1fr}
+  .dp-sec{grid-template-columns:1fr;gap:.4rem}
+  .dp-sec__head{position:static;display:flex;align-items:center;gap:.8rem}
+  .dp-num{font-size:2.4rem}
+  .dp-draw{width:42px;height:42px;margin-top:0}
+  .dp-kpis{grid-template-columns:repeat(2,1fr)}
+  .dp-kpis p:nth-child(2){border-right:0}
+  .dp-kpis p{padding-left:0}
+  .dp-band{aspect-ratio:16/9}
+  .dp-chart__l,.dp-chart__v{font-size:15px}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+html.courage .dp .dp-stories{max-width:none!important;width:100%!important}
+html.courage .dp .dp-story p,html.courage .dp .dp-story h3{max-width:none!important}
+html.courage .dp .dp-sec__main p.sub{background:none!important;border:0!important;padding:0!important;box-shadow:none!important;
+  color:var(--dp-muted)!important;font-size:1rem!important;margin:0 0 1.4rem!important}
+html.courage .dp .dp-sec__main h3{font-family:var(--display)!important;color:var(--dp-navy)!important}
+html.courage .dp .dp-charts figcaption{text-align:left!important;font-style:normal!important;color:var(--dp-green)!important;
+  font-family:var(--body)!important;font-size:.74rem!important;letter-spacing:.08em!important;text-transform:uppercase!important;font-weight:700!important}
+html.courage .dp .q{border-left:3px solid var(--dp-gold)!important;background:var(--dp-paper)!important;padding:1.1rem 1.4rem!important;
+  margin:1.2rem 0 1.8rem!important;max-width:44rem;border-radius:2px;box-shadow:0 1px 0 var(--dp-rule)}
+html.courage .dp .q p{max-width:none!important}
+html.courage .dp .q p:first-child b{font-family:var(--display);font-size:1.25rem;color:var(--dp-navy)}
+html.courage .dp a.dp-btn{color:#fff!important}
+html.courage .dp a.dp-float{color:#FAF6EC!important}
+html.courage .dp .dp-toc__t,html.courage .dp .dp-today a,html.courage .dp .dp-read,html.courage .dp .dp-toc__sub a{color:var(--dp-navy)!important}
+html.courage .dp .dp-up a{color:var(--dp-green)!important}
+html.courage .dp .dp-chart a{color:inherit!important}
 
-<h1>Fuel Advantage</h1>
-<p class="sub">The Ancestral Carry — the study, the talk, and the things still open.</p>
+.dp-bars{display:grid;gap:.45rem}
+.dp-barrow{display:grid;grid-template-columns:minmax(9rem,16rem) minmax(0,1fr) 4.6rem;align-items:center;gap:.8rem;text-decoration:none;font-family:var(--body)}
+.dp-barrow__l{font-size:.92rem;color:var(--dp-ink);text-align:right;line-height:1.25}
+.dp-barrow__b{height:18px;background:rgba(19,64,111,.08);border-radius:2px;overflow:hidden}
+.dp-barrow__b i{display:block;height:100%;background:var(--dp-navy);border-radius:2px}
+.dp-barrow:hover .dp-barrow__b i{background:var(--dp-clay)}
+.dp-barrow__v{font-size:.88rem;font-weight:700;color:var(--dp-muted)}
+.dp-cols{display:flex;align-items:flex-end;gap:.5rem;height:180px;padding-top:1.4rem;border-bottom:1px solid var(--dp-rule)}
+.dp-col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;font-family:var(--body);position:relative}
+.dp-col i{display:block;width:70%;background:var(--dp-navy);border-radius:2px 2px 0 0}
+.dp-col b{font-size:.82rem;color:var(--dp-muted);margin-bottom:.25rem}
+.dp-col em{position:absolute;bottom:-1.5rem;font-style:normal;font-size:.74rem;color:var(--dp-muted)!important;white-space:nowrap}
+html.courage .dp .dp-today em{color:var(--dp-muted)!important}
 
-<h2>Sit with this</h2>
-
-<div class="q">
+/* open threads as a checklist, the daily log as a timeline */
+html.courage .dp .dp-sec--threads ul{list-style:none!important;padding:0!important;margin:.6rem 0 0!important}
+html.courage .dp .dp-sec--threads li{position:relative;border-top:1px solid var(--dp-rule);padding:.85rem 0 .85rem 2rem!important;margin:0!important;line-height:1.55}
+html.courage .dp .dp-sec--threads li::before{content:""!important;position:absolute;left:0;top:1.1rem;width:.95rem;height:.95rem;border:1.6px solid var(--dp-clay);border-radius:2px;background:none!important}
+html.courage .dp .dp-sec--threads .flag{display:block;font-family:var(--body);font-weight:700;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dp-clay)!important;margin-bottom:.2rem}
+html.courage .dp .log p{position:relative;border-left:2px solid var(--dp-rule);margin:0!important;padding:0 0 1.4rem 1.3rem!important}
+html.courage .dp .log p::before{content:"";position:absolute;left:-6px;top:.25rem;width:10px;height:10px;border-radius:50%;background:var(--dp-clay)}
+html.courage .dp .log .d{display:block;font-family:var(--body);font-weight:700;font-size:.78rem;letter-spacing:.08em;color:var(--dp-clay)!important;margin-bottom:.3rem}
+@media (max-width:760px){
+  .dp-barrow{grid-template-columns:minmax(0,1fr) 3.8rem;row-gap:.2rem}
+  .dp-barrow__l{grid-column:1 / -1;text-align:left;font-size:.9rem}
+}
+</style><header class="dp-mast"><div class="dp-mast__text"><p class="dp-kicker">The Ancestral Carry &middot; for Tony only</p><p class="dp-date"><time datetime="2026-10-20">Tuesday, October 20, 2026</time></p><h1 class="dp-h1">The alarm is data.</h1><p class="dp-deck">In the Tharu forests near Bardiya, in Nepal, people have long known where the tiger is by listening to the deer. The chital barks. The langur calls.</p><a class="dp-btn dp-button" href="#sit-with-this">Begin with today&rsquo;s thought &middot; 5 min</a><ul class="dp-today"><li><span>The best of the world</span><a class="dp-button" href="#from-the-world-today">Nonprofit celebrates historic milestone in bison restoration project</a> <em>SDPB</em></li><li><span>Next up in the work</span><a class="dp-button" href="#open-threads">The laugh as ventral vagal signature</a></li></ul></div><figure class="dp-mast__photo"><img src="/assets/img/land/redrock-arch.jpg" alt="A small window worn through red sandstone, open sky beyond" loading="eager"></figure></header><nav class="dp-toc" id="contents" aria-label="Contents"><div class="dp-toc__head"><p class="dp-label">Contents</p><p class="dp-toc__all">Everything on the page &middot; about 45 minutes</p></div><ol><li><span class="dp-toc__n">01</span><div><a class="dp-toc__t dp-button" href="#sit-with-this">Sit with this</a><span class="dp-toc__m">5 min</span></div></li><li><span class="dp-toc__n">02</span><div><a class="dp-toc__t dp-button" href="#from-the-world-today">From the world, today</a><span class="dp-toc__m">5 stories, each one read</span></div></li><li><span class="dp-toc__n">03</span><div><a class="dp-toc__t dp-button" href="#by-the-numbers">By the numbers</a><span class="dp-toc__m">the work in graphs</span></div></li><li><span class="dp-toc__n">04</span><div><a class="dp-toc__t dp-button" href="#the-spine-both-ways">The spine, both ways</a><span class="dp-toc__m">1 min</span></div></li><li><span class="dp-toc__n">05</span><div><a class="dp-toc__t dp-button" href="#the-calm-that-carries-you">The Calm That Carries You</a><span class="dp-toc__m">6 min</span></div></li><li><span class="dp-toc__n">06</span><div><a class="dp-toc__t dp-button" href="#the-paper-in-full">The paper</a><span class="dp-toc__m">4,432 words &middot; 11 sections &middot; 5 references</span><p class="dp-toc__sub"><a class="dp-button" href="#abstract">Abstract</a> <a class="dp-button" href="#introduction-the-man-at-the-dry-well">Introduction</a> <a class="dp-button" href="#1-the-structural-convergence-of-the-far-messenge">1 The structural convergence of the far messenger</a> <a class="dp-button" href="#2-three-mechanisms-not-one">2 Three mechanisms, not one</a> <a class="dp-button" href="#3-the-exosomatic-failure-matrix">3 The exosomatic failure matrix</a> <a class="dp-button" href="#4-oscillation-as-method">4 Oscillation as method</a> <a class="dp-button" href="#5-the-extraction-critique-and-where-this-work-st">5 The extraction critique, and where this work stops</a> <a class="dp-button" href="#6-pre-answering-the-reviewers">6 Pre-answering the reviewers</a> <a class="dp-button" href="#7-the-messenger-as-civilizational-infrastructure">7 The messenger as civilizational infrastructure</a> <a class="dp-button" href="#8-the-farm-ecosystem">8 The FARM ecosystem</a> <a class="dp-button" href="#conclusion-the-two-hundred-year-asymmetric-bet">Conclusion</a> <a class="dp-button" href="#references">References</a></p></div></li><li><span class="dp-toc__n">07</span><div><a class="dp-toc__t dp-button" href="#open-threads">Open threads</a><span class="dp-toc__m">6 open</span></div></li><li><span class="dp-toc__n">08</span><div><a class="dp-toc__t dp-button" href="#daily-log">Daily log</a><span class="dp-toc__m">2 days kept</span></div></li></ol></nav><div class="article__body dp-body"><section class="dp-sec dp-sec--sit" id="sit-with-this"><div class="dp-sec__head"><span class="dp-num">01</span><svg class="dp-draw" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="32" cy="46" rx="21" ry="10"/><path d="M15 47c7-3 27-3 34 0" opacity=".45"/><path d="M22 30c3-4 3-8 0-12M32 27c3-4 3-8 0-12M42 30c3-4 3-8 0-12"/></svg></div><div class="dp-sec__main"><h2>Sit with this</h2><div class="q">
   <p><b>20 October. The alarm is data.</b></p>
   <p>In the Tharu forests near Bardiya, in Nepal, people have long known where the tiger is by listening to the deer. The chital barks. The langur calls. Those are alarm calls, and the people who live beside them survive by hearing them clearly without catching the fear in them.</p>
   <p>Your magazine says the news carries the alarm and the far messenger leaves it behind. The forest says something sharper. The far messenger does not leave the alarm behind. He reads it. The deer's panic is the most useful information in the forest, as long as you are calm enough to use it and not join it.</p>
@@ -328,28 +461,17 @@
 
 <h3>What you already have and are not using</h3>
 
-<p>The ancestral line — Wa Keh Yazh, Masan, Ada, you, then whoever is next — is in the introduction as a taxonomy, and it is doing almost no work. In the talk the handoff is the close, the emotional landing. In the paper it is a diagram. The line is your standing in this argument: you are not studying carriers, you are one, four generations in. No reviewer can take that from you and no amount of neuroscience substitutes for it.</p>
-
-<div class="orn">◆ ◆ ◆</div>
-
-<h2>From the world, today</h2>
-<p class="sub">The builders, the restorers, the ones remembering. Every link opened and read before it went in. The last fourteen days only.</p>
+<p>The ancestral line — Wa Keh Yazh, Masan, Ada, you, then whoever is next — is in the introduction as a taxonomy, and it is doing almost no work. In the talk the handoff is the close, the emotional landing. In the paper it is a diagram. The line is your standing in this argument: you are not studying carriers, you are one, four generations in. No reviewer can take that from you and no amount of neuroscience substitutes for it.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></div></section><section class="dp-sec dp-sec--world" id="from-the-world-today"><div class="dp-sec__head"><span class="dp-num">02</span><svg class="dp-draw" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="22"/><path d="M10 32h44M14 21h36M14 43h36M32 10c9 7 9 37 0 44M32 10c-9 7-9 37 0 44"/></svg></div><div class="dp-sec__main"><h2>From the world, today</h2><p class="sub">The builders, the restorers, the ones remembering. Every link opened and read before it went in. The last fourteen days only.</p>
 
 <h3>20 October 2026</h3>
 
-<ul>
-  <li><b>Nonprofit celebrates historic milestone in bison restoration project</b> · SDPB, Delainey LaHood-Burns, 19 October. Thunder Valley CDC released fifty buffalo onto a 39,904-acre range unit in the Stronghold area of Pine Ridge, with about three hundred people there. Founder Beau LeBeaux: "We want to get our young people to understand that those are relatives, and they'll take care of us." <em>Why it matters to this work:</em> this is the hand-off said out loud, a relative returned so the young learn the line from the land itself. <a href="https://sdpb.org/environment/2026-10-19/nonprofit-celebrates-historic-milestone-in-bison-restoration-project">sdpb.org</a></li>
-  <li><b>Blood Tribe gifted heard of Bison</b> (headline as printed) · Lethbridge Herald, Alexandra Noad, 14 October. Fort Peck Tribes of Montana are giving twenty-five Iinii to the Blood Reserve in Alberta, due in January 2027, working with Waterton Parks and the Buffalo Treaty. <em>Why it matters:</em> one nation carrying something across a border to another nation. That is the far messenger's loop in its plainest form. <a href="https://lethbridgeherald.com/news/lethbridge-news/2026/10/14/blood-tribe-gifted-heard-of-bison">lethbridgeherald.com</a></li>
-  <li><b>In Nepal, AI builds on local knowledge to help prevent tiger attacks</b> · Mongabay, Praveen Kumar Yadav, 20 October. Near Bardiya, $60 acoustic monitors learned the old skill of "listening to the forest," reading deer and monkey alarm calls to map where tigers are. A forest guard said the maps "matched exactly." The pilot ran three months and was not funded past that. <em>Why it matters:</em> it is your hybrid cargo from Section 8, built the right way round: the machine learned from the carriers, not the other way. See today's "Sit with this." <a href="https://news.mongabay.com/2026/10/in-nepal-ai-builds-on-local-knowledge-to-help-prevent-tiger-attacks/">news.mongabay.com</a></li>
-  <li><b>Indonesian women cash in on mangrove restoration</b> · Mongabay, Annisa Dinulislam, 17 October. In Sarawet, North Sulawesi, the Rhizopora women's group, started in 2022 with nine members and led by Wisye Sahambangung, planted thirty thousand mangroves in eight months this year. Fish catches are up, and one single mother bought a house through the group's savings. <em>Why it matters:</em> restoration that also pays the household. It is the answer to Section 3, a nervous system given ground under it. <a href="https://news.mongabay.com/2026/10/indonesian-women-cash-in-on-mangrove-restoration-interview-with-community-leader-wisye-sahambangung/">news.mongabay.com</a></li>
-  <li><b>Indigenous leaders have climate solutions. This group helps them get funding.</b> · Yale Climate Connections, Bridgett Ennis, 19 October. Edgar Villanueva's Decolonizing Wealth Project runs the Indigenous Earth Fund. It gave $1 million to thirty Native-led groups in 2025 against $9 million in requests, and an Indigenous advisory committee sets the priorities. <em>Why it matters:</em> this is the reciprocity in Section 5 with a working address. If the paper wants a named, real channel for "transferring material resources," here is one. <a href="https://yaleclimateconnections.org/2026/10/indigenous-leaders-have-climate-solutions-this-group-helps-them-get-funding/">yaleclimateconnections.org</a></li>
-</ul>
-
-<div class="orn">◆ ◆ ◆</div>
-
-<h2>The spine, both ways</h2>
-
-<h3>Spoken — from the TED draft</h3>
+<ul class="dp-stories">
+  <li class="dp-story"><p class="dp-story__src">SDPB, Delainey LaHood-Burns, 19 October</p><h3 class="dp-story__h">Nonprofit celebrates historic milestone in bison restoration project</h3><p class="dp-story__p">Thunder Valley CDC released fifty buffalo onto a 39,904-acre range unit in the Stronghold area of Pine Ridge, with about three hundred people there. Founder Beau LeBeaux: "We want to get our young people to understand that those are relatives, and they'll take care of us."</p><p class="dp-why"><span>Why it matters</span>This is the hand-off said out loud, a relative returned so the young learn the line from the land itself.</p><a class="dp-read dp-button" href="https://sdpb.org/environment/2026-10-19/nonprofit-celebrates-historic-milestone-in-bison-restoration-project" target="_blank" rel="noopener">Read it at sdpb.org &rarr;</a></li>
+  <li class="dp-story"><p class="dp-story__src">Lethbridge Herald, Alexandra Noad, 14 October</p><h3 class="dp-story__h">Blood Tribe gifted heard of Bison <span class="dp-story__note">(headline as printed)</span></h3><p class="dp-story__p">Fort Peck Tribes of Montana are giving twenty-five Iinii to the Blood Reserve in Alberta, due in January 2027, working with Waterton Parks and the Buffalo Treaty.</p><p class="dp-why"><span>Why it matters</span>One nation carrying something across a border to another nation. That is the far messenger's loop in its plainest form.</p><a class="dp-read dp-button" href="https://lethbridgeherald.com/news/lethbridge-news/2026/10/14/blood-tribe-gifted-heard-of-bison" target="_blank" rel="noopener">Read it at lethbridgeherald.com &rarr;</a></li>
+  <li class="dp-story"><p class="dp-story__src">Mongabay, Praveen Kumar Yadav, 20 October</p><h3 class="dp-story__h">In Nepal, AI builds on local knowledge to help prevent tiger attacks</h3><p class="dp-story__p">Near Bardiya, $60 acoustic monitors learned the old skill of "listening to the forest," reading deer and monkey alarm calls to map where tigers are. A forest guard said the maps "matched exactly." The pilot ran three months and was not funded past that.</p><p class="dp-why"><span>Why it matters</span>It is your hybrid cargo from Section 8, built the right way round: the machine learned from the carriers, not the other way. See today's "Sit with this."</p><a class="dp-read dp-button" href="https://news.mongabay.com/2026/10/in-nepal-ai-builds-on-local-knowledge-to-help-prevent-tiger-attacks/" target="_blank" rel="noopener">Read it at news.mongabay.com &rarr;</a></li>
+  <li class="dp-story"><p class="dp-story__src">Mongabay, Annisa Dinulislam, 17 October</p><h3 class="dp-story__h">Indonesian women cash in on mangrove restoration</h3><p class="dp-story__p">In Sarawet, North Sulawesi, the Rhizopora women's group, started in 2022 with nine members and led by Wisye Sahambangung, planted thirty thousand mangroves in eight months this year. Fish catches are up, and one single mother bought a house through the group's savings.</p><p class="dp-why"><span>Why it matters</span>Restoration that also pays the household. It is the answer to Section 3, a nervous system given ground under it.</p><a class="dp-read dp-button" href="https://news.mongabay.com/2026/10/indonesian-women-cash-in-on-mangrove-restoration-interview-with-community-leader-wisye-sahambangung/" target="_blank" rel="noopener">Read it at news.mongabay.com &rarr;</a></li>
+  <li class="dp-story"><p class="dp-story__src">Yale Climate Connections, Bridgett Ennis, 19 October</p><h3 class="dp-story__h">Indigenous leaders have climate solutions. This group helps them get funding.</h3><p class="dp-story__p">Edgar Villanueva's Decolonizing Wealth Project runs the Indigenous Earth Fund. It gave $1 million to thirty Native-led groups in 2025 against $9 million in requests, and an Indigenous advisory committee sets the priorities.</p><p class="dp-why"><span>Why it matters</span>This is the reciprocity in Section 5 with a working address. If the paper wants a named, real channel for "transferring material resources," here is one.</p><a class="dp-read dp-button" href="https://yaleclimateconnections.org/2026/10/indigenous-leaders-have-climate-solutions-this-group-helps-them-get-funding/" target="_blank" rel="noopener">Read it at yaleclimateconnections.org &rarr;</a></li>
+</ul><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></div></section><section class="dp-sec dp-nums" id="by-the-numbers"><div class="dp-sec__head"><span class="dp-num">03</span><svg class="dp-draw" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 55h48"/><path d="M14 55V40h8v15M28 55V30h8v25M42 55V18h8v37"/><path d="M11 33l15-11 13 4 15-15" opacity=".6"/></svg></div><div class="dp-sec__main"><p class="dp-h2">By the numbers</p><p class="dp-sub">Counted from this page every morning. Tap a bar to go there.</p><div class="dp-kpis"><p><b>4,432</b><span>words in the paper</span></p><p><b>5</b><span>references</span></p><p><b>6</b><span>open threads</span></p><p><b>2</b><span>days kept</span></p></div><div class="dp-charts"><figure><figcaption>The paper, section by section</figcaption><div class="dp-bars" role="img" aria-label="Words in each section of the paper"><a class="dp-barrow dp-button dp-button" href="#abstract"><span class="dp-barrow__l">Abstract</span><span class="dp-barrow__b"><i style="width:43.3%"></i></span><span class="dp-barrow__v">282</span></a><a class="dp-barrow dp-button dp-button" href="#introduction-the-man-at-the-dry-well"><span class="dp-barrow__l">Introduction</span><span class="dp-barrow__b"><i style="width:78.0%"></i></span><span class="dp-barrow__v">508</span></a><a class="dp-barrow dp-button dp-button" href="#1-the-structural-convergence-of-the-far-messenge"><span class="dp-barrow__l">1  Structural convergence of the…</span><span class="dp-barrow__b"><i style="width:100.0%"></i></span><span class="dp-barrow__v">651</span></a><a class="dp-barrow dp-button dp-button" href="#2-three-mechanisms-not-one"><span class="dp-barrow__l">2  Three mechanisms, not one</span><span class="dp-barrow__b"><i style="width:87.6%"></i></span><span class="dp-barrow__v">570</span></a><a class="dp-barrow dp-button dp-button" href="#3-the-exosomatic-failure-matrix"><span class="dp-barrow__l">3  Exosomatic failure matrix</span><span class="dp-barrow__b"><i style="width:98.5%"></i></span><span class="dp-barrow__v">641</span></a><a class="dp-barrow dp-button dp-button" href="#4-oscillation-as-method"><span class="dp-barrow__l">4  Oscillation as method</span><span class="dp-barrow__b"><i style="width:26.1%"></i></span><span class="dp-barrow__v">170</span></a><a class="dp-barrow dp-button dp-button" href="#5-the-extraction-critique-and-where-this-work-st"><span class="dp-barrow__l">5  Extraction critique, and…</span><span class="dp-barrow__b"><i style="width:47.3%"></i></span><span class="dp-barrow__v">308</span></a><a class="dp-barrow dp-button dp-button" href="#6-pre-answering-the-reviewers"><span class="dp-barrow__l">6  Pre-answering the reviewers</span><span class="dp-barrow__b"><i style="width:48.2%"></i></span><span class="dp-barrow__v">314</span></a><a class="dp-barrow dp-button dp-button" href="#7-the-messenger-as-civilizational-infrastructure"><span class="dp-barrow__l">7  Messenger as civilizational…</span><span class="dp-barrow__b"><i style="width:58.2%"></i></span><span class="dp-barrow__v">379</span></a><a class="dp-barrow dp-button dp-button" href="#8-the-farm-ecosystem"><span class="dp-barrow__l">8  FARM ecosystem</span><span class="dp-barrow__b"><i style="width:39.8%"></i></span><span class="dp-barrow__v">259</span></a><a class="dp-barrow dp-button dp-button" href="#conclusion-the-two-hundred-year-asymmetric-bet"><span class="dp-barrow__l">Conclusion</span><span class="dp-barrow__b"><i style="width:53.8%"></i></span><span class="dp-barrow__v">350</span></a></div></figure><figure><figcaption>Where this morning&rsquo;s reading goes</figcaption><div class="dp-bars" role="img" aria-label="Reading minutes by section"><a class="dp-barrow dp-button dp-button" href="#sit-with-this"><span class="dp-barrow__l">Sit with this</span><span class="dp-barrow__b"><i style="width:17.9%"></i></span><span class="dp-barrow__v">5 min</span></a><a class="dp-barrow dp-button dp-button" href="#from-the-world-today"><span class="dp-barrow__l">From the world, today</span><span class="dp-barrow__b"><i style="width:7.1%"></i></span><span class="dp-barrow__v">2 min</span></a><a class="dp-barrow dp-button dp-button" href="#the-spine-both-ways"><span class="dp-barrow__l">The spine, both ways</span><span class="dp-barrow__b"><i style="width:3.6%"></i></span><span class="dp-barrow__v">1 min</span></a><a class="dp-barrow dp-button dp-button" href="#the-calm-that-carries-you"><span class="dp-barrow__l">The Calm That Carries You</span><span class="dp-barrow__b"><i style="width:21.4%"></i></span><span class="dp-barrow__v">6 min</span></a><a class="dp-barrow dp-button dp-button" href="#the-paper-in-full"><span class="dp-barrow__l">The paper</span><span class="dp-barrow__b"><i style="width:100.0%"></i></span><span class="dp-barrow__v">28 min</span></a><a class="dp-barrow dp-button dp-button" href="#open-threads"><span class="dp-barrow__l">Open threads</span><span class="dp-barrow__b"><i style="width:3.6%"></i></span><span class="dp-barrow__v">1 min</span></a><a class="dp-barrow dp-button dp-button" href="#daily-log"><span class="dp-barrow__l">Daily log</span><span class="dp-barrow__b"><i style="width:7.1%"></i></span><span class="dp-barrow__v">2 min</span></a></div></figure></div><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></div></section><section class="dp-sec dp-sec--spine" id="the-spine-both-ways"><div class="dp-sec__head"><span class="dp-num">04</span><svg class="dp-draw" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6v52"/><path d="M25 13h14M23 21h18M25 29h14M23 37h18M25 45h14"/><path d="M14 22l-6 6 6 6M50 30l6 6-6 6" opacity=".7"/></svg></div><div class="dp-sec__main"><h2>The spine, both ways</h2><h3>Spoken — from the TED draft</h3>
 <blockquote>A frightened man forgets his own name. A calm man remembers the one thing standing between him and the sand.</blockquote>
 <blockquote>The far messenger is not a memory. The far messenger is who we are about to have to become. Every one of us. Not a rare few, groomed from childhood.</blockquote>
 <blockquote>Two hundred years from now, someone is going to be sitting in the dark — in a world neither of us can picture — needing exactly what you are holding right now.</blockquote>
@@ -359,12 +481,7 @@
 <blockquote>We define this transition as the shift from internal capacity — the Carry — to external retrieval — the Cargo.</blockquote>
 <blockquote>We are not attempting to guarantee the preservation of the perfect, static textbook. We are preserving the capacity to know.</blockquote>
 
-<p>Note that the paper's first line and the talk's pivot are the <em>same sentence</em>, arrived at separately. That is worth trusting.</p>
-
-<div class="orn">◆ ◆ ◆</div>
-
-<h2>The Calm That Carries You</h2>
-<p class="sub">The teaching register — the same crossing, written for the person who has to make it. From <em>The Tools for Surviving the Crossing</em>.</p>
+<p>Note that the paper's first line and the talk's pivot are the <em>same sentence</em>, arrived at separately. That is worth trusting.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></div></section><section class="dp-sec dp-sec--calm" id="the-calm-that-carries-you"><div class="dp-sec__head"><span class="dp-num">05</span><svg class="dp-draw" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 52l17-24 9 11 11-17 19 30z"/><circle cx="47" cy="13" r="5"/><path d="M4 58h56" opacity=".5"/></svg></div><div class="dp-sec__main"><h2>The Calm That Carries You</h2><p class="sub">The teaching register — the same crossing, written for the person who has to make it. From <em>The Tools for Surviving the Crossing</em>.</p>
 
 <p>You have stood at the dry well.</p>
 
@@ -388,16 +505,7 @@
 
 <p>So when you come to your dry well — and you will, more than once — do the hard thing. The trained thing. Sit down. Soften your eyes to the whole horizon. Close your hand on the stone. Count the breath. Let the fear stand there beside you and give it no chair to sit in. And when your heart comes down — and only then — let your quiet mind do what your racing mind never could. Let it remember. Then get up, and go north.</p>
 
-<p>Panic kills. Calm carries you across. It was true on the sand, and it is true in your life, and the calm was never something you were going to find out on the trail in the moment you needed it. You build it in the quiet days. You carry it in. And you draw it up.</p>
-
-<div class="orn">◆ ◆ ◆</div>
-
-<h2>The paper, in full</h2>
-<p class="sub">Every section below has its own Listen button. Roughly five thousand three hundred words.</p>
-
-<h2>Abstract</h2>
-
-<p>When the well is dry, a frightened mind forgets its own name.</p>
+<p>Panic kills. Calm carries you across. It was true on the sand, and it is true in your life, and the calm was never something you were going to find out on the trail in the moment you needed it. You build it in the quiet days. You carry it in. And you draw it up.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></div></section><figure class="dp-band"><img src="/assets/img/land/juniper-redrock.jpg" alt="An old juniper growing out of red sandstone" loading="lazy"></figure><section class="dp-sec dp-sec--paper" id="the-paper-in-full"><div class="dp-sec__head"><span class="dp-num">06</span><svg class="dp-draw" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M32 18c-6-4-14-5-24-4v34c10-1 18 0 24 4 6-4 14-5 24-4V14c-10-1-18 0-24 4z"/><path d="M32 18v34"/><path d="M14 24h12M14 30h12M14 36h9M38 24h12M38 30h12M38 36h9" opacity=".55"/></svg></div><div class="dp-sec__main"><h2>The paper, in full</h2><p class="sub">Every section below has its own Listen button. Roughly five thousand three hundred words.</p><section class="dp-psec" id="abstract"><h2>Abstract</h2><p>When the well is dry, a frightened mind forgets its own name.</p>
 
 <p>Contemporary climate adaptation frameworks are heavily weighted toward an externalized, techno-centric paradigm. Resilience is evaluated by the structural scaling of material infrastructure — seawalls, grid redundancies, and predictive warning systems. This reliance introduces an unmapped single point of failure: the systemic outsourcing of cognitive sovereignty to external tools, transforming human populations from internal capacity (the Carry) to externalized retrieval (the Cargo).</p>
 
@@ -405,11 +513,7 @@
 
 <p>This article uses applied metamodernism to propose an alternate framework for resilience, exploring the non-ironic reconstruction of traditional practices for hyper-modern survival through a structured FARM (Far Messenger) Ecosystem. We look at the structural convergence of traditional long-distance knowledge-carriers — the far messengers of the desert, the ocean, the high passes, and the songlines. We show that these geographically isolated groups independently converged on matching strategies for visceral self-regulation and environmental attunement under threat.</p>
 
-<p>Instead of taking a reductionist view, we map how these practices anchor into three distinct neurobiological substrates: the neurovisceral vagal brake, thalamic sensory gating, and the hippocampal allocentric matrix. Finally, using an autoethnographic, positioned methodology, we directly engage the social theory critique of epistemic extraction, offering a reflexive model of reciprocity and a hybrid pairing with hardened, decentralized technology that treats internal cognitive capacity as an indispensable asset for a highly volatile two-hundred-year civilizational horizon.</p>
-
-<h2>Introduction: the man at the dry well</h2>
-
-<p>On the fourth day of an unbroken crossing through the six hundred and fifty thousand square kilometres of the Rub' al Khali, a navigator comes down off the crest of an eight-hundred-foot dune to find that the far well is cracked mud.</p>
+<p>Instead of taking a reductionist view, we map how these practices anchor into three distinct neurobiological substrates: the neurovisceral vagal brake, thalamic sensory gating, and the hippocampal allocentric matrix. Finally, using an autoethnographic, positioned methodology, we directly engage the social theory critique of epistemic extraction, offering a reflexive model of reciprocity and a hybrid pairing with hardened, decentralized technology that treats internal cognitive capacity as an indispensable asset for a highly volatile two-hundred-year civilizational horizon.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><section class="dp-psec" id="introduction-the-man-at-the-dry-well"><h2>Introduction: the man at the dry well</h2><p>On the fourth day of an unbroken crossing through the six hundred and fifty thousand square kilometres of the Rub' al Khali, a navigator comes down off the crest of an eight-hundred-foot dune to find that the far well is cracked mud.</p>
 
 <p>In that exact landscape of hyper-arid exposure, a frightened traveller does the precise thing that causes lethality: the heart bolts, the respiration fractures, and the mind unloads its remaining water reserves through the skin in a frantic, disoriented flight across the sand.</p>
 
@@ -423,11 +527,7 @@
 
 <p>To resolve this, we cannot simply build more complex infrastructure. We must intervene in the architecture of the human organism itself. That requires a turn toward applied metamodernism: the deliberate, non-ironic reconstruction of pre-modern somatic practices for hyper-modern survival.</p>
 
-<p>This text adopts a positioned, autoethnographic methodology. It is grounded in the explicit taxonomy of an inherited oral tradition — a line moving down through Wa Keh Yazh, through the morning stillness of Masan, through the living council of Ada, down to me, and finally handed to you. Within this framework, the book and the talk operate as a modern canoe: a vehicle built to carry what matters across the contemporary flood of shallow information.</p>
-
-<h2>1. The structural convergence of the far messenger</h2>
-
-<p>To establish that the far messenger complex is a rigorous framework, we look to its cross-cultural structural convergence. If geographically isolated traditions independently arrived at matching behavioural and physiological strategies to survive extreme stress, these methods are not arbitrary cultural performances. They represent optimized human software designed to interact with the stable biological architecture of the human organism.</p>
+<p>This text adopts a positioned, autoethnographic methodology. It is grounded in the explicit taxonomy of an inherited oral tradition — a line moving down through Wa Keh Yazh, through the morning stillness of Masan, through the living council of Ada, down to me, and finally handed to you. Within this framework, the book and the talk operate as a modern canoe: a vehicle built to carry what matters across the contemporary flood of shallow information.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><section class="dp-psec" id="1-the-structural-convergence-of-the-far-messenge"><h2>1. The structural convergence of the far messenger</h2><p>To establish that the far messenger complex is a rigorous framework, we look to its cross-cultural structural convergence. If geographically isolated traditions independently arrived at matching behavioural and physiological strategies to survive extreme stress, these methods are not arbitrary cultural performances. They represent optimized human software designed to interact with the stable biological architecture of the human organism.</p>
 
 <h3 style="margin-top:1.8rem;">I. Rub' al Khali Bedouin: tactile micro-topography</h3>
 
@@ -457,11 +557,7 @@
 
 <p>As demonstrated by Lynne Kelly in <em>The Memory Code</em>, traditional Australian peoples preserved this data without written records by developing a mnemonic technology that maps information directly onto local topography. These paths, the Songlines, function as sequential memory palaces.</p>
 
-<p>Geographic features — specific ridges, trees, rock formations, waterholes — act as permanent visual and tactile indices. As a person walks the Songline, the physical landscape triggers specific verses. These chants integrate melody, rhythm and choreography to store deeply layered data regarding resource management and navigation. Because the information is indexed directly by stable, unchanging geography, the knowledge base remains intact across generations without the memory decay common in unstructured oral histories.</p>
-
-<h2>2. Three mechanisms, not one</h2>
-
-<p>To satisfy the requirements of empirical credibility, we reject a single-key approach to the neuroscience. The vagal brake alone cannot explain the diverse behaviours of the far messenger. Instead we propose a three-mechanism model that maps separate neurobiological pathways for visceral self-regulation, environmental perception, and long-term memory encoding.</p>
+<p>Geographic features — specific ridges, trees, rock formations, waterholes — act as permanent visual and tactile indices. As a person walks the Songline, the physical landscape triggers specific verses. These chants integrate melody, rhythm and choreography to store deeply layered data regarding resource management and navigation. Because the information is indexed directly by stable, unchanging geography, the knowledge base remains intact across generations without the memory decay common in unstructured oral histories.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><section class="dp-psec" id="2-three-mechanisms-not-one"><h2>2. Three mechanisms, not one</h2><p>To satisfy the requirements of empirical credibility, we reject a single-key approach to the neuroscience. The vagal brake alone cannot explain the diverse behaviours of the far messenger. Instead we propose a three-mechanism model that maps separate neurobiological pathways for visceral self-regulation, environmental perception, and long-term memory encoding.</p>
 
 <figure style="margin:1.8rem 0;padding:1.2rem 1.4rem;border:1px solid rgba(120,110,90,.3);border-radius:var(--radius-lg);"><figcaption style="font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;opacity:.65;margin-bottom:.8rem;">The three-mechanism matrix</figcaption><div style="line-height:1.85;"><div><strong>1. Autonomic model</strong> &mdash; resonant vagal brake and dlPFC protection</div><div><strong>2. Perceptual pathway</strong> &mdash; thalamic reticular somatosensory gating</div><div><strong>3. Cognitive substrate</strong> &mdash; hippocampal allocentric grid-cell indexing</div></div></figure>
 
@@ -485,11 +581,7 @@
 
 <p>The retention of massive ecological data arrays via topographic indexing operates within the hippocampal-entorhinal navigation matrix. Human spatial navigation relies on place cells in the hippocampus, which map specific locations, and grid cells in the entorhinal cortex, which calculate a cross-referenced coordinate system.</p>
 
-<p>When a traveller indexes oral histories to stable physical landforms, they are using the brain's natural allocentric mapping hardware. By walking the landscape and performing the corresponding song, the individual engages in multi-modal binding, linking visual, auditory and motor inputs directly to specific place-cell firing patterns. This bypasses the fragile textual memory systems of modernity and structures long-term encoding directly into the stable spatial framework of the brain.</p>
-
-<h2>3. The exosomatic failure matrix</h2>
-
-<p>The primary theoretical contribution of this article is the vulnerability argument regarding externalized cognition. Modern climate adaptation frameworks operate under a profound delusion: that resilience scales with technological complexity. We argue that the historical transition from internal capacity to external retrieval infrastructure represents a major structural hazard.</p>
+<p>When a traveller indexes oral histories to stable physical landforms, they are using the brain's natural allocentric mapping hardware. By walking the landscape and performing the corresponding song, the individual engages in multi-modal binding, linking visual, auditory and motor inputs directly to specific place-cell firing patterns. This bypasses the fragile textual memory systems of modernity and structures long-term encoding directly into the stable spatial framework of the brain.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><section class="dp-psec" id="3-the-exosomatic-failure-matrix"><h2>3. The exosomatic failure matrix</h2><p>The primary theoretical contribution of this article is the vulnerability argument regarding externalized cognition. Modern climate adaptation frameworks operate under a profound delusion: that resilience scales with technological complexity. We argue that the historical transition from internal capacity to external retrieval infrastructure represents a major structural hazard.</p>
 
 <p>Empirical diagnostics indicate that roughly eighty percent of modern populations live in a persistent, chronic state of sympathetic nervous system dominance, driven by the acute economic stress of paycheck-to-paycheck survival. This constant fight-or-flight means the modern nervous system is structurally exhausted long before an ecological crisis arrives.</p>
 
@@ -511,19 +603,11 @@
 <p style="padding-left:1.1rem;border-left:2px solid rgba(120,110,90,.35);"><em>A majority of adults in wealthy economies report financial precarity as a continuous condition rather than an episodic one — between half and two-thirds in US surveys, depending on definition — and the APA's annual polling finds two-thirds anxious about current events and 77 percent about the economy. We do not claim a measured physiological prevalence; no such measure exists. We claim something narrower and better supported: that the conditions known to sustain sympathetic activation are, by self-report, the ordinary conditions of modern life rather than the exception.</em></p>
 
 <p><b>Why this is stronger, not weaker.</b> Section 3 never needed a prevalence number. Its argument is a mechanism argument — a chronically loaded nervous system is a poor vessel for high-consequence knowledge — and that holds on the neuroscience in Section 2 regardless of how many people are in that state. The eighty percent was doing rhetorical work, not logical work, and it was the only sentence in the paper a reviewer could kill outright. Taking it out removes the single point of failure from an article about single points of failure.</p>
-</div>
-
-<h2>4. Oscillation as method</h2>
-
-<p>We explicitly reject a flat traditionalism that naively calls for an unexamined return to pre-modern life, just as we reject the hyper-ironic, detached deconstruction of postmodernity. Our methodology operates through a deliberate metamodern oscillation between modern brain science and ancestral experience — between clinical neurobiology and phenomenological practice.</p>
+</div><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><section class="dp-psec" id="4-oscillation-as-method"><h2>4. Oscillation as method</h2><p>We explicitly reject a flat traditionalism that naively calls for an unexamined return to pre-modern life, just as we reject the hyper-ironic, detached deconstruction of postmodernity. Our methodology operates through a deliberate metamodern oscillation between modern brain science and ancestral experience — between clinical neurobiology and phenomenological practice.</p>
 
 <p>The far messenger complex is not a retreat into historical fantasy. It is an act of informed naiveté and post-critical reconstruction. We move continuously between the hyper-rationalized parameters of clinical neurobiology — catecholamine counts, imaging, entorhinal tracking vectors — and the non-ironic, sincere reclamation of ancestral practice: the palm holding the smooth stone, the rhythm of the breathing cadence.</p>
 
-<p>By using the hard instruments of science to validate the somatic technologies of the line, we perform a metamodern synthesis. We deploy ancestral practices precisely because the externalized cargo networks of modern capitalism are failing under ecological duress. The framework is defined by that fluid movement: anchoring the spirit of the watcher inside the clinical parameters of the lab.</p>
-
-<h2>5. The extraction critique, and where this work stops</h2>
-
-<p>To hold a valid position within contemporary social theory, this article must directly engage the critique of epistemic extraction. Many Indigenous and traditional scholars reject the standard Western academic practice of isolating traditional knowledge, stripping it of its sacred context, and treating it as an open-source tool for modern industrial survival. Such extraction operates on a colonial logic that fragments holistic worldviews into functional commodities.</p>
+<p>By using the hard instruments of science to validate the somatic technologies of the line, we perform a metamodern synthesis. We deploy ancestral practices precisely because the externalized cargo networks of modern capitalism are failing under ecological duress. The framework is defined by that fluid movement: anchoring the spirit of the watcher inside the clinical parameters of the lab.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><section class="dp-psec" id="5-the-extraction-critique-and-where-this-work-st"><h2>5. The extraction critique, and where this work stops</h2><p>To hold a valid position within contemporary social theory, this article must directly engage the critique of epistemic extraction. Many Indigenous and traditional scholars reject the standard Western academic practice of isolating traditional knowledge, stripping it of its sacred context, and treating it as an open-source tool for modern industrial survival. Such extraction operates on a colonial logic that fragments holistic worldviews into functional commodities.</p>
 
 <p>We acknowledge the validity of this critique and explicitly reject any claim of immunity from these dynamics. Our positionality requires a careful, reflective methodology based on three strict boundaries, rooted in the oldest law of the watch: what you know, you owe.</p>
 
@@ -531,21 +615,13 @@
 
 <p><strong>A bounded architectural severance.</strong> We do not recommend that modern subjects mimic traditional identities or perform an unearned indigeneity. We analyze the phenomenological and biological geometry of human performance under threat — the universal intersections where the nervous system meets physical geography. We acknowledge that isolating structural geometry from holistic cultural matrices is a bounded, arguable choice rather than a clean, unproblematic cut.</p>
 
-<p><strong>Reciprocal collaboration.</strong> To break the extractive circuit, this framework links to concrete, non-academic reciprocity: localized land-sovereignty initiatives, Indigenous-led controlled burning networks, community wayfinding centres. By transferring material resources, legal support and complete data sovereignty back to these communities, the project functions as an intentional hand-off, passing the thread forward so the next generation does not find us asleep.</p>
-
-<h2>6. Pre-answering the reviewers</h2>
-
-<p><strong>On romanticization.</strong> Reviewers may argue that this presents a nostalgic, idealized view of pre-modern populations. We reject frameworks based on moral or mystical superiority. The far messenger complex is evaluated strictly as a highly optimized survival technology shaped by intense environmental selection pressure over generations. By showing that isolated traditions independently converged on matching physiological tactics, which map onto clear neurobiological pathways, we treat their methods as rigorous human engineering, not folklore.</p>
+<p><strong>Reciprocal collaboration.</strong> To break the extractive circuit, this framework links to concrete, non-academic reciprocity: localized land-sovereignty initiatives, Indigenous-led controlled burning networks, community wayfinding centres. By transferring material resources, legal support and complete data sovereignty back to these communities, the project functions as an intentional hand-off, passing the thread forward so the next generation does not find us asleep.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><section class="dp-psec" id="6-pre-answering-the-reviewers"><h2>6. Pre-answering the reviewers</h2><p><strong>On romanticization.</strong> Reviewers may argue that this presents a nostalgic, idealized view of pre-modern populations. We reject frameworks based on moral or mystical superiority. The far messenger complex is evaluated strictly as a highly optimized survival technology shaped by intense environmental selection pressure over generations. By showing that isolated traditions independently converged on matching physiological tactics, which map onto clear neurobiological pathways, we treat their methods as rigorous human engineering, not folklore.</p>
 
 <p><strong>On essentialism.</strong> Critics might assert that claiming cross-cultural convergence flattens historical and political differences between distinct societies. We do not claim a flat human nature, nor ignore diverse social structures and histories. Our claim of convergence is strictly limited to the brain's response to severe sensory and spatial disorientation. Cultural expressions are beautifully diverse; nervous systems share the same broad evolutionary architecture. Convergence occurs at the level of the brainstem, the vagus nerve and the prefrontal cortex, not cultural identity.</p>
 
 <p><strong>On biopolitical individualization.</strong> Does the individual focus risk transforming the Carry into a biopolitical technology? Resilience discourse is frequently deployed to shift the burden of structural survival away from failing state systems and onto the precarious individual, forcing workers to practise wellness to endure conditions that should be dismantled.</p>
 
-<p>We counter this directly by framing nervous system regulation as a collective, insurgent resource. An exhausted, fight-or-flight nervous system living paycheck-to-paycheck is incapable of organizing political resistance or building long-term solidarity. It is trapped in the immediate, egocentric loop of daily survival. Reclaiming control of the autonomic nervous system is the baseline structural requirement for collective action. The ecosystem is not an instrument of compliance meant to help people endure precarity. It is a tactical sanctuary designed to build the internal sovereignty required to organize, resist and transition. Both biological stabilization and systemic transformation must proceed in parallel. The Carry is the internal engine that makes systemic resistance possible.</p>
-
-<h2>7. The messenger as civilizational infrastructure</h2>
-
-<p>Modernity views the historical integration of humanity as a progression of external mechanical milestones: the printing press, the steam engine, the telegraph cable, the silicon chip.</p>
+<p>We counter this directly by framing nervous system regulation as a collective, insurgent resource. An exhausted, fight-or-flight nervous system living paycheck-to-paycheck is incapable of organizing political resistance or building long-term solidarity. It is trapped in the immediate, egocentric loop of daily survival. Reclaiming control of the autonomic nervous system is the baseline structural requirement for collective action. The ecosystem is not an instrument of compliance meant to help people endure precarity. It is a tactical sanctuary designed to build the internal sovereignty required to organize, resist and transition. Both biological stabilization and systemic transformation must proceed in parallel. The Carry is the internal engine that makes systemic resistance possible.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><section class="dp-psec" id="7-the-messenger-as-civilizational-infrastructure"><h2>7. The messenger as civilizational infrastructure</h2><p>Modernity views the historical integration of humanity as a progression of external mechanical milestones: the printing press, the steam engine, the telegraph cable, the silicon chip.</p>
 
 <p>This technocratic history has a profound blind spot. Before externalized networks existed, the cross-pollination of human intelligence depended entirely on an organismic infrastructure. The far messenger was the single most critical role in human history. They were the primary biological vessel through which all fundamental human systems — the geometry of early science, generative mythologies, complex medical treatments, drought-hardy agricultural methods, metallurgical technologies — were carried, exchanged and kept alive across space and time.</p>
 
@@ -557,21 +633,13 @@
 
 <p>That regulation allowed them to complete a distinct informational loop. Travel and endurance: navigating extreme distance without falling into the egocentric traps of panic or exhaustion. Epistemic listening: arriving at a distant fire, settling into a shared state of deep present awareness, and learning highly complex technical and medical practice from a foreign tradition. And the intact hand-off: carrying that new knowledge home across thousands of miles of hazardous terrain, ensuring it arrived without cognitive distortion or structural degradation.</p>
 
-<p>Framed this way, we see the true cost of modern technology. Modernity replaced internal nervous system mastery with externalized retrieval tools, and in doing so built a society that is highly connected and internally fragile. The contemporary urgency of applied metamodernism is not a nostalgic retreat. It is an infrastructure project.</p>
-
-<h2>8. The FARM ecosystem</h2>
-
-<p>Because future oceans, deserts and mountain ranges are projected to be significantly more volatile, hotter and less stable than at any point in human history, the future far messenger must be structurally supported across three levels.</p>
+<p>Framed this way, we see the true cost of modern technology. Modernity replaced internal nervous system mastery with externalized retrieval tools, and in doing so built a society that is highly connected and internally fragile. The contemporary urgency of applied metamodernism is not a nostalgic retreat. It is an infrastructure project.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><section class="dp-psec" id="8-the-farm-ecosystem"><h2>8. The FARM ecosystem</h2><p>Because future oceans, deserts and mountain ranges are projected to be significantly more volatile, hotter and less stable than at any point in human history, the future far messenger must be structurally supported across three levels.</p>
 
 <p><strong>The autonomic architecture.</strong> An exhausted nervous system cannot absorb complex traditions or evaluate climate variance. The first layer requires systemic stabilization: resonant frequency breathing and neuro-adaptive path integration, to repair the chronic sympathetic drag caused by modern economic stress. By stabilizing the vagal brake and restoring grey-matter density in the hippocampal allocentric network, the mind is cleared of internal noise and becomes a receptive container for complex technical data.</p>
 
 <p><strong>The metabolic axis.</strong> To prepare human vessels for extreme heat profiles and larger oceanic waves, the ecosystem incorporates precise nutritional and metabolic protocols: anti-inflammatory, nutrient-dense diets designed to optimize mitochondrial efficiency, stabilize blood glucose curves and prevent peripheral nervous system inflammation. Trainees also learn protocols to minimize trans-epidermal water loss and maximize fluid retention across hyper-arid terrain or volatile seas. Survival across extreme boundaries is treated as a cellular discipline.</p>
 
-<p><strong>Bounded hybrid technology.</strong> Revitalizing the far messenger does not imply abandoning modern science. The ecosystem pairs highly regulated human vessels with hardened, decentralized technology: low-power, offline-first tools, localized mesh-network nodes, solar-shielded solid-state storage, low-frequency radio. This hybrid cargo does not replace the human mind. It serves it. The decentralized technology acts as an enduring archive, while the trained human node provides the slow heart, the environmental observation and the physical mobility required to carry civilizational knowledge through any infrastructure shift.</p>
-
-<h2>Conclusion: the two-hundred-year asymmetric bet</h2>
-
-<p>This article introduces a necessary paradigm shift for socio-ecological resilience: internal socio-ecological assets. We argue that the absolute limit of climate adaptation is the processing capacity of the human prefrontal cortex under acute environmental stress.</p>
+<p><strong>Bounded hybrid technology.</strong> Revitalizing the far messenger does not imply abandoning modern science. The ecosystem pairs highly regulated human vessels with hardened, decentralized technology: low-power, offline-first tools, localized mesh-network nodes, solar-shielded solid-state storage, low-frequency radio. This hybrid cargo does not replace the human mind. It serves it. The decentralized technology acts as an enduring archive, while the trained human node provides the slow heart, the environmental observation and the physical mobility required to carry civilizational knowledge through any infrastructure shift.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><section class="dp-psec" id="conclusion-the-two-hundred-year-asymmetric-bet"><h2>Conclusion: the two-hundred-year asymmetric bet</h2><p>This article introduces a necessary paradigm shift for socio-ecological resilience: internal socio-ecological assets. We argue that the absolute limit of climate adaptation is the processing capacity of the human prefrontal cortex under acute environmental stress.</p>
 
 <p>Extended across a two-hundred-year horizon of compounding climate shifts, the long-term survival of human knowledge becomes an engineering problem of the organism, not the server. If future adaptation frameworks continue to treat survival data as a commodity stored exclusively in vulnerable digital systems, a cascading infrastructure collapse risks erasing our collective knowledge base.</p>
 
@@ -583,11 +651,7 @@
 
 <p>Two hundred years from now, a generation will sit in a landscape we cannot fully picture, requiring the core science, healing and stories we hold today. Whether that thread reaches them depends on our willingness to put down the cheap noise of the machine, cultivate the state of the carrier, and pass the carry forward.</p>
 
-<p>The ancestors are already walking. The ultimate frontier of climate adaptation is engineered within the human nervous system.</p>
-
-<h2>References</h2>
-
-<p>Arnsten, A. F. T. (2009). Stress signalling pathways that impair prefrontal cortex structure and function. <em>Nature Reviews Neuroscience</em>, 10(6), 410–422.</p>
+<p>The ancestors are already walking. The ultimate frontier of climate adaptation is engineered within the human nervous system.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><section class="dp-psec" id="references"><h2>References</h2><p>Arnsten, A. F. T. (2009). Stress signalling pathways that impair prefrontal cortex structure and function. <em>Nature Reviews Neuroscience</em>, 10(6), 410–422.</p>
 
 <p>Kelly, L. (2016). <em>The Memory Code</em>. Allen and Unwin.</p>
 
@@ -613,31 +677,19 @@
 <p><b>Two things only you can settle.</b> First, is "How to Carry What Matters Across the Hard Ground of a Life" still a subtitle you want? It does not appear in v20's front matter. Second, is "Wisdom-Tellings" a separate nonfiction line? If so, the old entry may refer to a different book, and the fix is different. And "forthcoming" replaces "2026" because the canon has the book as a finished draft, not yet out. If it ships before submission, put the year back.</p>
 </div>
 
-<p style="margin-top:2rem;font-size:.96rem;opacity:.85;">The practice this paper describes is written out in full, free, in the front of <a href="https://ancestralwatch.com/series/stone-breath/"><em>Stone Breath</em></a>. The long form of the hand-off is <a href="https://ancestralwatch.com/series/the-council-fire/"><em>The Council Fire</em></a>. A field report from one room where this was taught is <a href="/journal/what-i-carried-to-hopi/">here</a>.</p>
-
-<div class="orn">◆ ◆ ◆</div>
-
-<h2>Open threads</h2>
-
-<ul>
-  <li><span class="flag">Next up:</span> the laugh as ventral vagal signature — the unwritten section, and possibly the best one. Leads to read in full: Sakuragi and colleagues on laughing, weeping and heart rate variability, and a systematic review of laughter, blood pressure and heart rate variability in <em>HUMOR</em> (doi 10.1515/humor-2021-0111). Neither record could be opened on 20 October, so neither is cited yet. One early note from the search summaries: voiced laughter seems to raise heart rate in the moment and help vagal recovery afterward. If that holds, "the laugh was the calm" needs care.</li>
+<p style="margin-top:2rem;font-size:.96rem;opacity:.85;">The practice this paper describes is written out in full, free, in the front of <a href="https://ancestralwatch.com/series/stone-breath/"><em>Stone Breath</em></a>. The long form of the hand-off is <a href="https://ancestralwatch.com/series/the-council-fire/"><em>The Council Fire</em></a>. A field report from one room where this was taught is <a href="/journal/what-i-carried-to-hopi/">here</a>.</p><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></section><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></div></section><section class="dp-sec dp-sec--threads" id="open-threads"><div class="dp-sec__head"><span class="dp-num">07</span><svg class="dp-draw" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 44c9-18 20 8 28-6 7-12-5-19-12-9-7 11 7 21 20 16 8-3 10-12 10-12"/><path d="M54 33l5-6" /><circle cx="8" cy="44" r="1.6"/></svg></div><div class="dp-sec__main"><h2>Open threads</h2><ul>
+  <li><span class="flag">Next up</span>The laugh as ventral vagal signature — the unwritten section, and possibly the best one. Leads to read in full: Sakuragi and colleagues on laughing, weeping and heart rate variability, and a systematic review of laughter, blood pressure and heart rate variability in <em>HUMOR</em> (doi 10.1515/humor-2021-0111). Neither record could be opened on 20 October, so neither is cited yet. One early note from the search summaries: voiced laughter seems to raise heart rate in the moment and help vagal recovery afterward. If that holds, "the laugh was the calm" needs care.</li>
   <li>The name of the first carrier. The paper says <em>Wa Keh Yazh</em>. The v20 dedication and <em>The Calm That Carries You</em> say <em>Keh Yazh</em>. One of them is the form you want in print.</li>
   <li>Rub' al Khali ethnography: find the sourcing for <em>Qasas</em> or soften it.</li>
   <li>Section 7's "single most critical role in human history" — argue it or lower it.</li>
   <li>The appendix protocols are proposed, not run. Is there a version of Protocol A you could actually run inside the doctorate, with a small cohort at 1440 or Dopoi?</li>
   <li>Hopi, 14 October, is the first field instance. Nothing in the paper references a room where this was taught. That is data you now have.</li>
-</ul>
+</ul><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></div></section><section class="dp-sec dp-sec--log" id="daily-log"><div class="dp-sec__head"><span class="dp-num">08</span><svg class="dp-draw" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="13" y="7" width="32" height="50" rx="2"/><path d="M19 17h20M19 25h20M19 33h14"/><path d="M47 47l9-9 3 3-9 9-4 1z"/></svg></div><div class="dp-sec__main"><h2>Daily log</h2><div class="log">
+<p><span class="d">20 OCTOBER 2026</span>Started the "From the world, today" section with five items, each opened and read: Thunder Valley's fifty buffalo on Pine Ridge (SDPB), Fort Peck's gift of twenty-five Iinii to the Blood Tribe (Lethbridge Herald), Nepal's forest-listening tiger alerts (Mongabay), the Sarawet women's mangroves (Mongabay), and the Indigenous Earth Fund (Yale Climate Connections). The magazine feed held only Tony's own articles today, so all five came from outside it. Turned down the Penobscot land return (17 September, too old), the Navajo language app (August), and a Trust for Public Land survey whose press release would not open (403). Worked the Book Three thread and closed it against THE-BOOKS-CANON, the v20 POINTER file and "What a Far Messenger Is." The proposed correction is in an editorial note under References; the source file is untouched. Found that this page had dropped the Skrelūnas reference altogether, and put it back inside the note. New small thread: Wa Keh Yazh versus Keh Yazh. Could not source today: the two laughter-and-heart-rate-variability papers (PubMed showed only a cookie page; Semantic Scholar and De Gruyter refused). They are logged as leads, not citations. Sit with this: the alarm is data.</p>
+<p><span class="d">19 OCTOBER 2026 · later</span>Worked the eighty percent figure and closed it. Confirmed no global metric for sympathetic prevalence exists. Found the citable alternatives: APA annual poll 2025 and 2024, and the paycheck-to-paycheck surveys, which range 53 to 67 percent and are all US-only and self-reported. Drafted the restatement and put it in as an editorial note before Section 4. The clinic blogs and the Facebook post in the pasted research are not citable and were not used. Next thread up: the Book Three citation error.</p>
 
-<div class="orn">◆ ◆ ◆</div>
-
-<h2>Daily log</h2>
-
-<div class="log">
-<p><span class="d">20 OCTOBER 2026</span> — Started the "From the world, today" section with five items, each opened and read: Thunder Valley's fifty buffalo on Pine Ridge (SDPB), Fort Peck's gift of twenty-five Iinii to the Blood Tribe (Lethbridge Herald), Nepal's forest-listening tiger alerts (Mongabay), the Sarawet women's mangroves (Mongabay), and the Indigenous Earth Fund (Yale Climate Connections). The magazine feed held only Tony's own articles today, so all five came from outside it. Turned down the Penobscot land return (17 September, too old), the Navajo language app (August), and a Trust for Public Land survey whose press release would not open (403). Worked the Book Three thread and closed it against THE-BOOKS-CANON, the v20 POINTER file and "What a Far Messenger Is." The proposed correction is in an editorial note under References; the source file is untouched. Found that this page had dropped the Skrelūnas reference altogether, and put it back inside the note. New small thread: Wa Keh Yazh versus Keh Yazh. Could not source today: the two laughter-and-heart-rate-variability papers (PubMed showed only a cookie page; Semantic Scholar and De Gruyter refused). They are logged as leads, not citations. Sit with this: the alarm is data.</p>
-<p><span class="d">19 OCTOBER 2026 · later</span> — Worked the eighty percent figure and closed it. Confirmed no global metric for sympathetic prevalence exists. Found the citable alternatives: APA annual poll 2025 and 2024, and the paycheck-to-paycheck surveys, which range 53 to 67 percent and are all US-only and self-reported. Drafted the restatement and put it in as an editorial note before Section 4. The clinic blogs and the Facebook post in the pasted research are not citable and were not used. Next thread up: the Book Three citation error.</p>
-
-<p><span class="d">19 OCTOBER 2026</span> — Page created. Paper pulled off the public site and archived privately. Read the TED draft against the paper for the first time and found that the opening line of the paper and the pivot of the talk are the same sentence, reached independently. Logged the laugh as the strongest unwritten claim. Flagged the eighty percent figure and the Book Three citation error as the two things to fix before anybody else reads this.</p>
-</div>
+<p><span class="d">19 OCTOBER 2026</span>Page created. Paper pulled off the public site and archived privately. Read the TED draft against the paper for the first time and found that the opening line of the paper and the pivot of the talk are the same sentence, reached independently. Logged the laugh as the strongest unwritten claim. Flagged the eighty percent figure and the Book Three citation error as the two things to fix before anybody else reads this.</p>
+</div><p class="dp-up"><a class="dp-button" href="#contents">Back to contents</a></p></div></section></div><a class="dp-float dp-button" href="#contents">Contents</a></div>
 </article></main><footer class="ftr">
   <div class="wrap">
     <div class="ftr__grid">
