@@ -50,6 +50,7 @@ def main():
         except Exception as e: print("  skipped %s (%s)" % (d, e), file=sys.stderr)
     mine.sort(key=lambda a: (a["date"] or "0000-00-00"), reverse=True)
     # pinned pieces lead until their date passes (Tony's call, see _tools/pinned.json)
+    MAG_LEAD = None
     PIN = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pinned.json")
     if os.path.exists(PIN):
         P = json.load(open(PIN, encoding="utf-8"))
@@ -57,6 +58,8 @@ def main():
             order = {s: i for i, s in enumerate(P.get("slugs", []))}
             mine.sort(key=lambda a: order.get(a["slug"], len(order)))   # stable: the rest keep newest-first
             print("  pinned until %s: %s" % (P["until"], ", ".join(P.get("slugs", []))))
+            if P.get("magazine_lead"):
+                MAG_LEAD = P["magazine_lead"]
     for i, a in enumerate(mine):
         a["art"] = ART[i % len(ART)]
     prev = {}
@@ -70,6 +73,7 @@ def main():
         if a["slug"] in tr:
             a["tr"] = tr[a["slug"]]
     feed = {"generated": datetime.datetime.now().isoformat(timespec="seconds"),
+            "lead": MAG_LEAD,
             "mine": mine,
             "found": prev.get("found", [])}
     # each edition's own gathered news survives a rebuild of his articles

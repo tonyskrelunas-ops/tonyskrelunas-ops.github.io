@@ -75,6 +75,11 @@
           mine = translatedFirst.concat(mine.filter(function(a){return !a.translated;}));
         }
       }
+      // Tony's magazine lead, while its pin is live (_tools/pinned.json)
+      if (LANG === 'en' && F.lead) {
+        var li = mine.findIndex(function (a) { return a.slug === F.lead; });
+        if (li > 0) mine = [mine[li]].concat(mine.slice(0, li), mine.slice(li + 1));
+      }
       var lead = mine[0];
       var ls = document.querySelector('.lead-story');
       if (ls) {
