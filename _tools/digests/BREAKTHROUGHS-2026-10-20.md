@@ -18,17 +18,17 @@ Según detalló Barrios, superar esta primera fase implicó delimitar cartográf
 Šių metų lapkričio mėnesį cirko festivalio „Cirkuliacija“ programoje Vilniuje ir Kaune bus pristatomas šiuolaikinio cirko ir tarpdisciplininio meno kompanijos „būda.colle  
 <https://kaunaspilnas.lt/cirkuliacijos-atidarymui-besiruosiantis-zonglierius-uz-regimo-lengvumo-slypi-daug-planavimo-skaiciavimo-ir-isiminimo/>
 
-**From 5 Rhinos in 1984 to a Free-Ranging Experiment: What Dudhwa Is Teaching India** — The Better India · INDIA  
-For decades, rhino conservation in Dudhwa Tiger Reserve in Uttar Pradesh was built around protected enclosures. The approach helped a population recover after the species  
-<https://thebetterindia.com/wildlife/dudhwa-rhinos-terai-conservation-12683811>
+**Ignoring your postpartum diet? Gynaecologist explains how it affects your recovery and lists 7 essential nutrients every new mother needs** — Hindustan Times Health · INDIA  
+New mothers need more than extra calories postpartum. Discover essential nutrients to support recovery, energy, and overall health during this critical period.  
+<https://www.hindustantimes.com/lifestyle/health/ignoring-your-postpartum-diet-gynaecologist-explains-how-it-affects-your-recovery-and-lists-7-essential-nutrients-every-new-mother-needs-101791993168961.html>
 
-**Spirit of Tibet 2026: Celebrating Culture and Compassion** — Tibet Museum · TIBET  
-India International Centre, New Delhi The Spirit of Tibet: Celebrating Culture and Compassion festival brought together Tibetan culture, … The post Spirit of Tibet 2026:   
-<https://tibetmuseum.org/spirit-of-tibet-2026-celebrating-culture-and-compassion/>
+**Webinar: Yigdzin, an open Tibetan OCR model from BDRC – Public Launch** — Buddhist Digital Resource Center · TIBET  
+Join us for the public launch of Yigdzin, BDRC's new open Tibetan OCR model. Yigdzin is a huge step forward for Tibetan OCR, helping researchers and translators spend les  
+<https://www.bdrc.io/blog/2026/10/16/webinar-yigdzin-an-open-tibetan-ocr-model-from-bdrc-public-launch/>
 
-**Happiness Break: A Breathing Technique to Help You Relax** — Greater Good  
-Dr. David Spiegel leads us in a practice of cyclic sighing, a simple breathing technique that uses slow, extended exhales to calm your nervous system, ease stress and anx  
-<https://greatergood.berkeley.edu/podcasts/item/happiness_break_a_breathing_technique_to_help_you_relax>
+**Volunteers became salmon, deer and earthworms. Then they set out to save their river** — Positive News  
+An experiment is helping a Somerset community see its landscape through the eyes of wildlife – and plot a 30-year route to change it The post Volunteers became salmon, de  
+<https://www.positive.news/society/volunteers-became-salmon-deer-and-earthworms-then-they-set-out-to-save-their-river/>
 
 **La vigencia del mito** — Ethic · ES  
 En la raíz de todo cuanto merece la pena hay siempre un mito. La fundación de una ciudad, la creación del primer hombre o el nacimiento del universo exigen una respuesta.  
@@ -38,17 +38,17 @@ En la raíz de todo cuanto merece la pena hay siempre un mito. La fundación de 
 〈茅ヶ崎市美術館〉に月と海と大地と宇宙を出現させた瀧本幹也、公立美術館では初となる大規模個展が開催中。  
 <https://casabrutus.com/categories/art/494585>
 
-**„Scanorama“ pristatė 24-ojo sezono programą: susitikti su kitu didžiuosiuose kino ekranuose** — Kaunas pilnas kultūros · LT  
-Europos kino festivalis „Scanorama“ pristatė šių metų programą, kurioje – didžiuosiuose kino festivaliuose apdovanojimus pelnę ir išskirtiniu meniniu braižu išsiskirianty  
-<https://kaunaspilnas.lt/scanorama-pristate-24-ojo-sezono-programa-susitikti-su-kitu-didziuosiuose-kino-ekranuose/>
+**Kvietimas į leidinio „Lietuvos žemės gelmių turtai“ pristatymą ir diskusiją apie regiono darnią plėtrą** — Mokslo Lietuva · LT  
+Maloniai kviečiame Jus dalyvauti Lietuvos mokslų akademijos leidinio „Lietuvos žemės gelmių turtai“ (2026 m.) pristatyme ir diskusijoje apie regiono darnios …  
+<https://mokslolietuva.lt/2026/10/kvietimas-i-leidinio-lietuvos-zemes-gelmiu-turtai-pristatyma-ir-diskusija-apie-regiono-darnia-pletra/>
 
-**Ignoring your postpartum diet? Gynaecologist explains how it affects your recovery and lists 7 essential nutrients every new mother needs** — Hindustan Times Health · INDIA  
-New mothers need more than extra calories postpartum. Discover essential nutrients to support recovery, energy, and overall health during this critical period.  
-<https://www.hindustantimes.com/lifestyle/health/ignoring-your-postpartum-diet-gynaecologist-explains-how-it-affects-your-recovery-and-lists-7-essential-nutrients-every-new-mother-needs-101791993168961.html>
+**Understanding swimmer's ear: How to protect your ears from infection after swimming and symptoms to watch out for** — Hindustan Times Health · INDIA  
+Long periods in water can lead to prolonged dampness in the ears, which may result in infection. Dr Kumari shares the signs that shouldn't be ignored.  
+<https://www.hindustantimes.com/lifestyle/health/understanding-swimmers-ear-how-to-protect-your-ears-from-infection-after-swimming-and-symptoms-to-watch-out-for-101792486081033.html>
 
-**Tenzing Norgay, a Tibetan outsider who summits Mt Everest, wins Sherpa respect** — Tibetan Review · TIBET  
-(TibetanReview.net, Oct18’26) –Apart from focusing on the expedition to conquer Mt Everest for the first time in human history, the Apple TV film Tenzing also turns the l  
-<https://www.tibetanreview.net/tenzing-norgay-a-tibetan-outsider-who-summits-mt-everest-wins-sherpa-respect/>
+**BDRC Launches Major Initiative to Build Open Buddhist Datasets for AI** — Buddhist Digital Resource Center · TIBET  
+BDRC is making a major effort to ensure that artificial intelligence (AI) is better informed about Buddhism. With generous financial support and inspiration from Khyentse  
+<https://www.bdrc.io/blog/2026/02/28/bdrc-launches-major-initiative-to-build-open-buddhist-datasets-for-ai/>
 
 
 ---
@@ -58,13 +58,7 @@ New mothers need more than extra calories postpartum. Discover essential nutrien
 These sources gave nothing this morning. A feed that stays on this
 list for a few days has moved or died and wants replacing.
 
-- **en** · news · Positive News — unreachable
 - **en** · land · Western Horseman — unreachable
-- **lt** · culture · Nacionalinis muziejus — unreachable
-- **lt** · culture · LRT Kultūra — unreachable
+- **en** · land · Civil Eats — empty
 - **lt** · news · Kauno diena — unreachable
 - **lt** · news · — — nothing cleared the gates
-- **india** · news · Village Square — unreachable
-- **tibet** · news · Phayul — unreachable
-- **tibet** · research · Buddhist Digital Resource Center — unreachable
-- **tibet** · research · — — nothing cleared the gates
