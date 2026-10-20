@@ -171,46 +171,46 @@
  ],
  "magazine": [
   {
-   "kind": "From the journal",
-   "t": "The Wealth That Cannot Be Spent",
-   "s": "Raising generations who inherit more than money.",
-   "href": "/journal/creating-traditional-inter-generational-wealth/",
-   "art": "/assets/art/four-capitals.svg"
-  },
-  {
-   "kind": "From the journal",
-   "t": "The Old Farmers Are Right",
-   "s": "Ancient agriculture as a hedge against a warming world.",
-   "href": "/journal/ancient-farming-hedge-against-climate-change/",
-   "art": "/assets/art/baltic-oak.svg"
-  },
-  {
-   "kind": "From the journal",
-   "t": "A Magazine to Uplift Our Community",
-   "s": "Where this began — and why good news was always the point.",
-   "href": "/journal/a-magazine-to-uplift-our-community/",
-   "art": "/assets/art/dine-dawn.svg"
-  },
-  {
-   "kind": "From the journal",
-   "t": "The Machines That Could Help Us Come Home",
-   "s": "AI, robotics, and the repair of a warming world.",
-   "href": "/journal/ai-robotics-repair-warming-world/",
-   "art": "/assets/art/japan-bridge.svg"
-  },
-  {
-   "kind": "From the journal",
-   "t": "Creativity Is What Makes the Planet Go Round",
-   "s": "On making, and why a people that stops making starts shrinking.",
-   "href": "/journal/creativity-makes-the-planet-go-round/",
+   "kind": "New this week",
+   "t": "The Council Fire Arrives With a Family on Its Cover",
+   "s": "The book is out, with a new cover and a family walking the red path.",
+   "href": "/journal/the-council-fire-arrives-with-a-family-on-its-cover/",
    "art": "/assets/art/baltic-juosta.svg"
   },
   {
-   "kind": "From the journal",
-   "t": "30,000 Years of Wellness Wisdom",
-   "s": "The long record, and what it still has to say.",
-   "href": "/journal/30000-years-wellness-wisdom-phd-book-series-movement/",
+   "kind": "New this week",
+   "t": "Building Long-Term Resilience With an Ancient Culture",
+   "s": "A full day at Hopi, and the tools a nation that has kept its covenant took home.",
+   "href": "/journal/long-term-resilience-ancient-culture/",
    "art": "/assets/art/dine-mountains.svg"
+  },
+  {
+   "kind": "New this week",
+   "t": "A Joke at the Dry Spring",
+   "s": "The spring that should be flowing is dry. A joke, a seat, and an old song.",
+   "href": "/journal/a-joke-at-the-dry-spring/",
+   "art": "/assets/art/baltic-oak.svg"
+  },
+  {
+   "kind": "New this week",
+   "t": "Why I Call the Sheep Camp a Retreat",
+   "s": "Hard work, the word a family gives it, and what that word hands down.",
+   "href": "/journal/why-i-call-the-sheep-camp-a-retreat/",
+   "art": "/assets/art/dine-dawn.svg"
+  },
+  {
+   "kind": "New this week",
+   "t": "A Home Calm Enough to Teach In",
+   "s": "You cannot think bad about others and keep a calm nervous system.",
+   "href": "/journal/a-home-calm-enough-to-teach-in/",
+   "art": "/assets/art/four-capitals.svg"
+  },
+  {
+   "kind": "New this week",
+   "t": "Little Piles of Rock",
+   "s": "An old trail at the Peaks, and what was always in you.",
+   "href": "/journal/little-piles-of-rock/",
+   "art": "/assets/art/japan-bridge.svg"
   }
  ],
  "deepDives": {

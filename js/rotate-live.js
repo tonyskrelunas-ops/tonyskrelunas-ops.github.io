@@ -98,7 +98,9 @@
     var amm = document.querySelector('[data-magazine]');
     if (amm) {
       var seen = {}; var pool = [];
-      document.querySelectorAll('a[href^="/journal/"]').forEach(function (a) {
+      // the newest come first: the "New this week" cards, then everything else on the page
+      Array.prototype.slice.call(document.querySelectorAll('#latest a[href^="/journal/"]'))
+        .concat(Array.prototype.slice.call(document.querySelectorAll('a[href^="/journal/"]'))).forEach(function (a) {
         var href = a.getAttribute('href');
         if (seen[href] || href === '/journal/') return;
         var t = (a.querySelector('h3,b') || a).textContent.trim().replace(/\s+/g,' ');
