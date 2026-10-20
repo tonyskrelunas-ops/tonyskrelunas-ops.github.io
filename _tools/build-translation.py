@@ -82,19 +82,27 @@ def build(slug, lang, body, meta, allpaths):
 
     # ---- the share block was cloned from the English page and still pointed at it,
     # so a reader sharing this translation sent people to the English article instead.
+    # Scope the rewrite to the share block alone: the hreflang alternates MUST keep
+    # pointing at the English original, which is the whole purpose of hreflang.
     import urllib.parse as _up
-    _en = "https://tribeawaken.com/journal/%s/" % slug
-    _me = url if url.endswith("/") else url + "/"
-    _tm = re.search(r"<title>(.*?)</title>", s, re.S)
-    _mt = H.unescape(re.sub(r"<[^>]+>", "", _tm.group(1))) if _tm else ""
-    _mt = re.sub(r"\s*(&mdash;|\u2014|\|)\s*TribeAwaken\s*$", "", _mt).strip()
-    _sm = re.search(r'mailto:\?subject=([^&"]+)', s)
-    for _e in (lambda x: _up.quote(x, safe=""), lambda x: x):
-        s = s.replace(_e(_en), _e(_me))
-    if _sm and _mt:
-        _et = _up.unquote(_sm.group(1))
+    _sh = re.search(r'<div class="share">.*?</div>\s*</div>', s, re.S) or \
+          re.search(r'<div class="share">.*?</div>', s, re.S)
+    if _sh:
+        blk = _sh.group(0)
+        _en = "https://tribeawaken.com/journal/%s/" % slug
+        _me = url if url.endswith("/") else url + "/"
+        _tm = re.search(r"<title>(.*?)</title>", s, re.S)
+        _mt = H.unescape(re.sub(r"<[^>]+>", "", _tm.group(1))) if _tm else ""
+        _mt = re.sub(r"\s*(&mdash;|\u2014|\|)\s*TribeAwaken\s*$", "", _mt).strip()
+        _sm = re.search(r'mailto:\?subject=([^&"]+)', blk)
+        nb = blk
         for _e in (lambda x: _up.quote(x, safe=""), lambda x: x):
-            s = s.replace(_e(_et), _e(_mt + " \u2014 Tony Skrel\u016bnas"))
+            nb = nb.replace(_e(_en), _e(_me))
+        if _sm and _mt:
+            _et = _up.unquote(_sm.group(1))
+            for _e in (lambda x: _up.quote(x, safe=""), lambda x: x):
+                nb = nb.replace(_e(_et), _e(_mt + " \u2014 Tony Skrel\u016bnas"))
+        s = s.replace(blk, nb, 1)
     s = s.replace("sub-%s" % slug, "sub-%s" % path.rstrip("/").split("/")[-1])
 
     out = os.path.join(ROOT, path)
