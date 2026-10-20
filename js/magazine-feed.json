@@ -1,6 +1,16 @@
 {
- "generated": "2026-10-19T18:42:06",
+ "generated": "2026-10-19T17:54:27",
  "mine": [
+  {
+   "slug": "long-term-resilience-ancient-culture",
+   "href": "/journal/long-term-resilience-ancient-culture/",
+   "title": "Building Long-Term Resilience With an Ancient Culture",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "Hopi opened its door to this work. The far messengers, the science of the nervous system, and the tools a nation that has kept its covenant took home.",
+   "img": "/assets/img/far-messengers-shore.jpg",
+   "art": "/assets/art/four-capitals.svg"
+  },
   {
    "slug": "why-i-started-a-magazine-again",
    "href": "/journal/why-i-started-a-magazine-again/",
@@ -750,6 +760,26 @@
    "dek": "He built motorcycles that now sell for six figures and raced them up near-vertical hills past the age most men retire. But the real machine, the one that kept him alive, was quieter than any",
    "img": "/assets/img/journal/the-man-who-raced-hills-into-his-70s/0.jpg",
    "art": "/assets/art/japan-bridge.svg"
+  },
+  {
+   "slug": "the-part-i-forgot-about-the-stone",
+   "href": "/journal/the-part-i-forgot-about-the-stone/",
+   "title": "Moved — TribeAwaken",
+   "date": null,
+   "pillar": "From the journal",
+   "dek": "",
+   "img": null,
+   "art": "/assets/art/dine-mountains.svg"
+  },
+  {
+   "slug": "what-i-carried-to-hopi",
+   "href": "/journal/what-i-carried-to-hopi/",
+   "title": "Moved — TribeAwaken",
+   "date": null,
+   "pillar": "From the journal",
+   "dek": "",
+   "img": null,
+   "art": "/assets/art/baltic-juosta.svg"
   }
  ],
  "found": [
