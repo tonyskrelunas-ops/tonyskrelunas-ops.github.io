@@ -49,6 +49,14 @@ def main():
         try: mine.append(read(d))
         except Exception as e: print("  skipped %s (%s)" % (d, e), file=sys.stderr)
     mine.sort(key=lambda a: (a["date"] or "0000-00-00"), reverse=True)
+    # pinned pieces lead until their date passes (Tony's call, see _tools/pinned.json)
+    PIN = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pinned.json")
+    if os.path.exists(PIN):
+        P = json.load(open(PIN, encoding="utf-8"))
+        if datetime.date.today().isoformat() <= P.get("until", ""):
+            order = {s: i for i, s in enumerate(P.get("slugs", []))}
+            mine.sort(key=lambda a: order.get(a["slug"], len(order)))   # stable: the rest keep newest-first
+            print("  pinned until %s: %s" % (P["until"], ", ".join(P.get("slugs", []))))
     for i, a in enumerate(mine):
         a["art"] = ART[i % len(ART)]
     prev = {}

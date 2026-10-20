@@ -65,7 +65,9 @@
     /* 6 — the LATEST stack: same cards, order turns (nothing removed) */
     var stack = document.querySelector('#latest .feat');
     if (stack && stack.children.length > 1) {
-      shuffle(Array.prototype.slice.call(stack.children)).forEach(function (n) { stack.appendChild(n); });
+      var kids = Array.prototype.slice.call(stack.children);
+      var pinned = function (n) { var u = n.getAttribute('data-pin-until'); return u && new Date() <= new Date(u + 'T23:59:59'); };
+      kids.filter(pinned).concat(shuffle(kids.filter(function (n) { return !pinned(n); }))).forEach(function (n) { stack.appendChild(n); });
     }
 
     document.documentElement.classList.add('rot-ready');

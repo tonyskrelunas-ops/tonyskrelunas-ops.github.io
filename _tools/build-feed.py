@@ -18,7 +18,7 @@ No new metadata to maintain: the pages are the source.
 """
 
 import argparse
-import datetime
+import datetime, json
 import glob
 import html
 import os
@@ -76,6 +76,13 @@ def main():
         (items.append(art) if art else skipped.append((slug, why)))
 
     items.sort(key=lambda a: a["date"], reverse=True)
+    # Tony's pins lead the feed too, until their date passes (_tools/pinned.json)
+    _pin = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pinned.json")
+    if os.path.exists(_pin):
+        _P = json.load(open(_pin, encoding="utf-8"))
+        if datetime.date.today().isoformat() <= _P.get("until", ""):
+            _o = {x: i for i, x in enumerate(_P.get("slugs", []))}
+            items.sort(key=lambda a: _o.get(a["slug"], len(_o)))
 
     print("  articles found : %d" % (len(items) + len(skipped)))
     print("  in the feed    : %d" % len(items))

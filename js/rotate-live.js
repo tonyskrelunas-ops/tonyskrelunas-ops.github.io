@@ -90,9 +90,12 @@
     var shelf = document.querySelector('[data-shelf]');
     if (shelf) makeBand(shelf.closest('section') || shelf, 'shelf', function () { rotateChildren(shelf); });
 
+    // Tony's pins (data-pin-until on a #latest card): while one is live, these bands hold still
+    var PINNED = Array.prototype.slice.call(document.querySelectorAll('#latest [data-pin-until]')).some(function (n) {
+      return new Date() <= new Date(n.getAttribute('data-pin-until') + 'T23:59:59'); });
     // 3 — the LATEST stack: the three cards take turns leading
     var latest = document.querySelector('#latest .feat');
-    if (latest) makeBand(latest.closest('section') || latest, 'latest', function () { rotateChildren(latest); });
+    if (latest) makeBand(latest.closest('section') || latest, 'latest', function () { if (!PINNED) rotateChildren(latest); });
 
     // 4 — the magazine: includes ALL the articles — harvested from the page itself
     var amm = document.querySelector('[data-magazine]');
@@ -120,6 +123,7 @@
       layFive();
       setTimeout(layFive, 1600); // motion.js's async fill loses the race on purpose
       makeBand(amm.closest('section') || amm, 'magazine', function () {
+        if (PINNED) return;
         if (pool.length > amm.children.length) {
           var next = pool.shift(); pool.push(next);
           var first = amm.children[0];

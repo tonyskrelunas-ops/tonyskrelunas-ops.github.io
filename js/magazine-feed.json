@@ -1,56 +1,6 @@
 {
- "generated": "2026-10-19T19:34:42",
+ "generated": "2026-10-19T19:38:16",
  "mine": [
-  {
-   "slug": "a-home-calm-enough-to-teach-in",
-   "href": "/journal/a-home-calm-enough-to-teach-in/",
-   "title": "A Home Calm Enough to Teach In",
-   "date": "2026-10-19",
-   "pillar": "Human Resilience",
-   "dek": "You cannot think bad about others and keep a regulated nervous system. What decolonizing wellness asks of a home, and the old roles a calm home was built to raise.",
-   "img": "/assets/img/a-home-calm-enough-to-teach-in.jpg",
-   "art": "/assets/art/four-capitals.svg",
-   "tr": {
-    "es": {
-     "href": "/es/un-hogar-tranquilo-para-ensenar/",
-     "title": "Un hogar lo bastante tranquilo para enseñar",
-     "dek": "No se puede pensar mal de los demás y mantener regulado el sistema nervioso. Lo que descolonizar el bienestar le pide a un hogar, y los papeles antiguos que un hogar en calma estaba hecho para criar.",
-     "pillar": "Resiliencia humana"
-    },
-    "ja": {
-     "href": "/ja/oshie-ga-tsutawaru-ie/",
-     "title": "教えが伝わるほど穏やかな家",
-     "dek": "他者を悪く思いながら、整った神経系を保つことはできない。ウェルネスの脱植民地化が一つの家に求めるもの、そして穏やかな家が育てるためにあった、古い役割について。",
-     "pillar": "人間のレジリエンス"
-    },
-    "lt": {
-     "href": "/lt/namai-kuriuose-uztenka-ramybes/",
-     "title": "Namai, kuriuose užtenka ramybės mokyti",
-     "dek": "Negali blogai galvoti apie kitus ir kartu išlaikyti sureguliuotą nervų sistemą. Ko gerovės dekolonizavimas reikalauja iš namų, ir senieji vaidmenys, kuriems užauginti buvo kuriami ramūs namai.",
-     "pillar": "Žmogaus atsparumas"
-    }
-   }
-  },
-  {
-   "slug": "a-joke-at-the-dry-spring",
-   "href": "/journal/a-joke-at-the-dry-spring/",
-   "title": "A Joke at the Dry Spring",
-   "date": "2026-10-19",
-   "pillar": "Human Resilience",
-   "dek": "In the long crossing, the first test is a spring that should be flowing and is dry. What you do next was taught long before you got there. A joke, a seat, and an old song.",
-   "img": "/assets/img/a-joke-at-the-dry-spring.jpg",
-   "art": "/assets/art/baltic-oak.svg"
-  },
-  {
-   "slug": "little-piles-of-rock",
-   "href": "/journal/little-piles-of-rock/",
-   "title": "Little Piles of Rock",
-   "date": "2026-10-19",
-   "pillar": "Human Resilience",
-   "dek": "On Labor Day morning, facing the San Francisco Peaks, I recorded a meditation about an old trail. The part that stays with me is the knowledge that was waiting in us all along.",
-   "img": "/assets/img/little-piles-of-rock.jpg",
-   "art": "/assets/art/japan-bridge.svg"
-  },
   {
    "slug": "long-term-resilience-ancient-culture",
    "href": "/journal/long-term-resilience-ancient-culture/",
@@ -59,7 +9,7 @@
    "pillar": "Human Resilience",
    "dek": "Hopi opened its door to this work. The far messengers, the science of the nervous system, and the tools a nation that has kept its covenant took home.",
    "img": "/assets/img/far-messengers-shore.jpg",
-   "art": "/assets/art/dine-mountains.svg",
+   "art": "/assets/art/four-capitals.svg",
    "tr": {
     "es": {
      "href": "/es/resiliencia-duradera-cultura-antigua/",
@@ -89,7 +39,7 @@
    "pillar": "Community Resilience",
    "dek": "A warming world, war, AI and hunger, and bodies living in alarm. The Council Fire is out, with a new cover, and it carries a path through that has been walked before.",
    "img": "/assets/img/the-council-fire-arrives-with-a-family-on-its-cover.jpg",
-   "art": "/assets/art/baltic-juosta.svg",
+   "art": "/assets/art/baltic-oak.svg",
    "tr": {
     "es": {
      "href": "/es/the-council-fire-llega-con-una-familia/",
@@ -112,6 +62,86 @@
    }
   },
   {
+   "slug": "stone-breath-has-gone-out-to-the-world",
+   "href": "/journal/stone-breath-has-gone-out-to-the-world/",
+   "title": "Stone Breath Has Gone Out to the World",
+   "date": "2026-09-11",
+   "pillar": "The Books",
+   "dek": "Stone Breath has entered worldwide distribution: Apple Books, Kobo, booksellers from Berlin to Sydney. One universal link reaches all of it.",
+   "img": "/assets/img/stone-breath-cover.jpg",
+   "art": "/assets/art/japan-bridge.svg",
+   "tr": {
+    "ja": {
+     "href": "/ja/ishi-no-kokyu-sekai-e/",
+     "title": "『石の呼吸』が世界へ",
+     "dek": "アップルブックス、コボ、ベルリンからシドニーまでの書店へ。",
+     "pillar": "本"
+    },
+    "lt": {
+     "href": "/lt/akmens-kvepavimas-isejo-i-pasauli/",
+     "title": "Akmens kvėpavimas išėjo į pasaulį",
+     "dek": "Kodėl pusė šios knygos vyksta Lietuvoje — Antalieptėje, tarp dainų.",
+     "pillar": "Knygos"
+    },
+    "es": {
+     "href": "/es/stone-breath-salio-al-mundo/",
+     "title": "Stone Breath salió al mundo",
+     "dek": "Distribución mundial: Apple Books, Kobo, librerías de Berlín a Sídney. Un solo enlace alcanza todo.",
+     "pillar": "Los libros"
+    }
+   }
+  },
+  {
+   "slug": "a-home-calm-enough-to-teach-in",
+   "href": "/journal/a-home-calm-enough-to-teach-in/",
+   "title": "A Home Calm Enough to Teach In",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "You cannot think bad about others and keep a regulated nervous system. What decolonizing wellness asks of a home, and the old roles a calm home was built to raise.",
+   "img": "/assets/img/a-home-calm-enough-to-teach-in.jpg",
+   "art": "/assets/art/dine-mountains.svg",
+   "tr": {
+    "es": {
+     "href": "/es/un-hogar-tranquilo-para-ensenar/",
+     "title": "Un hogar lo bastante tranquilo para enseñar",
+     "dek": "No se puede pensar mal de los demás y mantener regulado el sistema nervioso. Lo que descolonizar el bienestar le pide a un hogar, y los papeles antiguos que un hogar en calma estaba hecho para criar.",
+     "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/oshie-ga-tsutawaru-ie/",
+     "title": "教えが伝わるほど穏やかな家",
+     "dek": "他者を悪く思いながら、整った神経系を保つことはできない。ウェルネスの脱植民地化が一つの家に求めるもの、そして穏やかな家が育てるためにあった、古い役割について。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/namai-kuriuose-uztenka-ramybes/",
+     "title": "Namai, kuriuose užtenka ramybės mokyti",
+     "dek": "Negali blogai galvoti apie kitus ir kartu išlaikyti sureguliuotą nervų sistemą. Ko gerovės dekolonizavimas reikalauja iš namų, ir senieji vaidmenys, kuriems užauginti buvo kuriami ramūs namai.",
+     "pillar": "Žmogaus atsparumas"
+    }
+   }
+  },
+  {
+   "slug": "a-joke-at-the-dry-spring",
+   "href": "/journal/a-joke-at-the-dry-spring/",
+   "title": "A Joke at the Dry Spring",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "In the long crossing, the first test is a spring that should be flowing and is dry. What you do next was taught long before you got there. A joke, a seat, and an old song.",
+   "img": "/assets/img/a-joke-at-the-dry-spring.jpg",
+   "art": "/assets/art/baltic-juosta.svg"
+  },
+  {
+   "slug": "little-piles-of-rock",
+   "href": "/journal/little-piles-of-rock/",
+   "title": "Little Piles of Rock",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "On Labor Day morning, facing the San Francisco Peaks, I recorded a meditation about an old trail. The part that stays with me is the knowledge that was waiting in us all along.",
+   "img": "/assets/img/little-piles-of-rock.jpg",
+   "art": "/assets/art/dine-dawn.svg"
+  },
+  {
    "slug": "why-i-call-the-sheep-camp-a-retreat",
    "href": "/journal/why-i-call-the-sheep-camp-a-retreat/",
    "title": "Why I Call the Sheep Camp a Retreat",
@@ -119,7 +149,7 @@
    "pillar": "Human Resilience",
    "dek": "Digging out a corral is hard, dirty work, and I call it a retreat. The research on what one word does to the body says a great deal about what a family hands down.",
    "img": "/assets/img/why-i-call-the-sheep-camp-a-retreat.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "why-i-started-a-magazine-again",
@@ -129,7 +159,7 @@
    "pillar": "The Movement",
    "dek": "It began in 2021 under a different name. Five years later there are two novels out, a doctorate underway, and the same stubborn idea: that what a people reads every morning decides something",
    "img": "/assets/img/v2/horse-only-900px.jpg",
-   "art": "/assets/art/japan-enso.svg",
+   "art": "/assets/art/baltic-sun.svg",
    "tr": {
     "es": {
      "href": "/es/por-que-empece-una-revista/",
@@ -159,7 +189,7 @@
    "pillar": "Human Resilience",
    "dek": "My great-grandmother corrected careless speech the way she corrected a tool set down in the wrong place. Forty years later I understand why they were the same error.",
    "img": "/assets/img/canyon-family.jpg",
-   "art": "/assets/art/baltic-sun.svg",
+   "art": "/assets/art/dine-hogan.svg",
    "tr": {
     "es": {
      "href": "/es/hable-solo-lo-que-quiera-construir/",
@@ -189,7 +219,7 @@
    "pillar": "Human Resilience",
    "dek": "My grandfather never had money and was never poor a day in his life. Abundance turns out to be a question about perception, not arithmetic.",
    "img": "/assets/img/land-healing.jpg",
-   "art": "/assets/art/dine-hogan.svg",
+   "art": "/assets/art/four-capitals.svg",
    "tr": {
     "es": {
      "href": "/es/el-deseo-angosta-la-mirada/",
@@ -208,36 +238,6 @@
      "title": "Noras susiaurina akį",
      "dek": "Senelis sulaukė šimto trejų be pinigų ir nė dienos nebuvo vargšas. Apie keturių turtų apskaitą.",
      "pillar": "Žmogaus atsparumas"
-    }
-   }
-  },
-  {
-   "slug": "stone-breath-has-gone-out-to-the-world",
-   "href": "/journal/stone-breath-has-gone-out-to-the-world/",
-   "title": "Stone Breath Has Gone Out to the World",
-   "date": "2026-09-11",
-   "pillar": "The Books",
-   "dek": "Stone Breath has entered worldwide distribution: Apple Books, Kobo, booksellers from Berlin to Sydney. One universal link reaches all of it.",
-   "img": "/assets/img/stone-breath-cover.jpg",
-   "art": "/assets/art/four-capitals.svg",
-   "tr": {
-    "ja": {
-     "href": "/ja/ishi-no-kokyu-sekai-e/",
-     "title": "『石の呼吸』が世界へ",
-     "dek": "アップルブックス、コボ、ベルリンからシドニーまでの書店へ。",
-     "pillar": "本"
-    },
-    "lt": {
-     "href": "/lt/akmens-kvepavimas-isejo-i-pasauli/",
-     "title": "Akmens kvėpavimas išėjo į pasaulį",
-     "dek": "Kodėl pusė šios knygos vyksta Lietuvoje — Antalieptėje, tarp dainų.",
-     "pillar": "Knygos"
-    },
-    "es": {
-     "href": "/es/stone-breath-salio-al-mundo/",
-     "title": "Stone Breath salió al mundo",
-     "dek": "Distribución mundial: Apple Books, Kobo, librerías de Berlín a Sídney. Un solo enlace alcanza todo.",
-     "pillar": "Los libros"
     }
    }
   },
