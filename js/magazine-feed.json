@@ -1,6 +1,36 @@
 {
- "generated": "2026-10-19T18:57:03",
+ "generated": "2026-10-19T19:06:44",
  "mine": [
+  {
+   "slug": "a-home-calm-enough-to-teach-in",
+   "href": "/journal/a-home-calm-enough-to-teach-in/",
+   "title": "A Home Calm Enough to Teach In",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "You cannot think bad about others and keep a regulated nervous system. What decolonizing wellness asks of a home, and the old roles a calm home was built to raise.",
+   "img": "/assets/img/a-home-calm-enough-to-teach-in.jpg",
+   "art": "/assets/art/four-capitals.svg"
+  },
+  {
+   "slug": "a-joke-at-the-dry-spring",
+   "href": "/journal/a-joke-at-the-dry-spring/",
+   "title": "A Joke at the Dry Spring",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "In the long crossing, the first test is a spring that should be flowing and is dry. What you do next was taught long before you got there. A joke, a seat, and an old song.",
+   "img": "/assets/img/a-joke-at-the-dry-spring.jpg",
+   "art": "/assets/art/baltic-oak.svg"
+  },
+  {
+   "slug": "little-piles-of-rock",
+   "href": "/journal/little-piles-of-rock/",
+   "title": "Little Piles of Rock",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "On Labor Day morning, facing the San Francisco Peaks, I recorded a meditation about an old trail. The part that stays with me is the knowledge that was waiting in us all along.",
+   "img": "/assets/img/little-piles-of-rock.jpg",
+   "art": "/assets/art/japan-bridge.svg"
+  },
   {
    "slug": "long-term-resilience-ancient-culture",
    "href": "/journal/long-term-resilience-ancient-culture/",
@@ -9,7 +39,7 @@
    "pillar": "Human Resilience",
    "dek": "Hopi opened its door to this work. The far messengers, the science of the nervous system, and the tools a nation that has kept its covenant took home.",
    "img": "/assets/img/far-messengers-shore.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "the-council-fire-arrives-with-a-family-on-its-cover",
@@ -19,7 +49,17 @@
    "pillar": "Community Resilience",
    "dek": "The Council Fire was released this past week with a new cover. Twelve keepers from twelve peoples, the letters their grandparents left them, and what a people grows back.",
    "img": "/assets/img/the-council-fire-arrives-with-a-family-on-its-cover.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/baltic-juosta.svg"
+  },
+  {
+   "slug": "why-i-call-the-sheep-camp-a-retreat",
+   "href": "/journal/why-i-call-the-sheep-camp-a-retreat/",
+   "title": "Why I Call the Sheep Camp a Retreat",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "Digging out a corral is hard, dirty work, and I call it a retreat. The research on what one word does to the body says a great deal about what a family hands down.",
+   "img": "/assets/img/why-i-call-the-sheep-camp-a-retreat.jpg",
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "why-i-started-a-magazine-again",
@@ -29,7 +69,7 @@
    "pillar": "The Movement",
    "dek": "It began in 2021 under a different name. Five years later there are two novels out, a doctorate underway, and the same stubborn idea: that what a people reads every morning decides something",
    "img": "/assets/img/v2/horse-only-900px.jpg",
-   "art": "/assets/art/japan-bridge.svg",
+   "art": "/assets/art/japan-enso.svg",
    "tr": {
     "es": {
      "href": "/es/por-que-empece-una-revista/",
@@ -59,7 +99,7 @@
    "pillar": "Human Resilience",
    "dek": "My great-grandmother corrected careless speech the way she corrected a tool set down in the wrong place. Forty years later I understand why they were the same error.",
    "img": "/assets/img/canyon-family.jpg",
-   "art": "/assets/art/dine-mountains.svg",
+   "art": "/assets/art/baltic-sun.svg",
    "tr": {
     "es": {
      "href": "/es/hable-solo-lo-que-quiera-construir/",
@@ -89,7 +129,7 @@
    "pillar": "Human Resilience",
    "dek": "My grandfather never had money and was never poor a day in his life. Abundance turns out to be a question about perception, not arithmetic.",
    "img": "/assets/img/land-healing.jpg",
-   "art": "/assets/art/baltic-juosta.svg",
+   "art": "/assets/art/dine-hogan.svg",
    "tr": {
     "es": {
      "href": "/es/el-deseo-angosta-la-mirada/",
@@ -119,7 +159,7 @@
    "pillar": "The Books",
    "dek": "Stone Breath has entered worldwide distribution: Apple Books, Kobo, booksellers from Berlin to Sydney. One universal link reaches all of it.",
    "img": "/assets/img/stone-breath-cover.jpg",
-   "art": "/assets/art/dine-dawn.svg",
+   "art": "/assets/art/four-capitals.svg",
    "tr": {
     "ja": {
      "href": "/ja/ishi-no-kokyu-sekai-e/",
@@ -149,7 +189,7 @@
    "pillar": "Leadership & Business",
    "dek": "Phil Jackson put silence, story and a circle into the most pressured organization in American sport and won 72 games. He had to borrow the pieces.",
    "img": "/assets/img/ta/barrels-group-2000x1500.jpg",
-   "art": "/assets/art/japan-enso.svg",
+   "art": "/assets/art/baltic-oak.svg",
    "tr": {
     "es": {
      "href": "/es/el-entrenador-que-tomo-prestado-el-circulo/",
@@ -179,7 +219,7 @@
    "pillar": "The Movement",
    "dek": "About twenty people came to the meditation. What they got was not a meditation. It was a crossing with a destination, and at the far end they were expected.",
    "img": "/assets/img/journal/the-first-fire/missy-and-henry.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "the-winter-that-didnt-come",
@@ -189,7 +229,7 @@
    "pillar": "Stories I Carry",
    "dek": "A Sámi reindeer herder, taught properly and entirely correct, standing on ice. What to do when the knowledge itself is no longer true.",
    "img": "/assets/img/land/aspen-grove.jpg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "what-a-far-messenger-is",
@@ -199,7 +239,7 @@
    "pillar": "The Books · The Doctorate",
    "dek": "It is book four. It is the doctorate. And it is the thing I have been circling my whole life without knowing what to call it.",
    "img": "/assets/img/far-messengers-cover.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "the-ground-is-the-argument",
@@ -209,7 +249,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "I wrote a novel about what a people build after the extraction economy runs out. Then I watched farmers and Indigenous leaders build it, on real ground.",
    "img": "/assets/img/journal/the-ground-is-the-argument/05.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "stone-breath-born-on-the-solstice",
@@ -219,7 +259,7 @@
    "pillar": "The Books",
    "dek": "A novel about the songs we carry across oceans — and the roots that a lifetime of forgetting could never take. Released on the solstice, on purpose.",
    "img": "/assets/img/journal/stone-breath-born-on-the-solstice/0.jpeg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "they-tried-to-erase-a-whole-people",
@@ -229,7 +269,7 @@
    "pillar": "About / The Story",
    "dek": "Book smugglers, song keepers, and a basketball team in tie-dye. The story of a people who were supposed to vanish and came back singing.",
    "img": "/assets/img/world/baltic-forest.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "tibet-the-unbroken-thread",
@@ -239,7 +279,7 @@
    "pillar": "Global · One Operating System",
    "dek": "A people is not its territory — it is the thread: the language, the prayer, the way of raising children. Reflections from Machik Weekend in New York, and what the Tibetan community in exile ",
    "img": "/assets/img/far-messengers-mountain.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "twenty-five-years-to-the-podium-prescott-commencement",
@@ -249,7 +289,7 @@
    "pillar": "The Doctorate",
    "dek": "I started this doctorate as an extension of my MBA more than twenty-five years ago. Last year I gave the PhD commencement address at Prescott College. Here is what happened in between — and ",
    "img": "/assets/img/tony/speaking-podium-sash.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "what-the-cottonwood-sings-roots-workshop",
@@ -259,7 +299,7 @@
    "pillar": "About / Reflections",
    "dek": "In a gallery full of grief and color, a room of strangers became a circle. I picked up a pen for the first time and wrote my way back.",
    "img": "/assets/img/journal/what-the-cottonwood-sings-roots-workshop/0.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "one-in-a-trillion",
@@ -269,7 +309,7 @@
    "pillar": "Reflections",
    "dek": "Invited to Abundance Week at Rancho La Puerta to meet Tom Blue Wolf and Pat Mitchell — and the hour under the papel picado that came of it.",
    "img": "/assets/img/journal/one-in-a-trillion/00.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "the-ancestral-code-for-living-to-100",
@@ -279,7 +319,7 @@
    "pillar": "Health & Longevity",
    "dek": "Across the world, the peoples who reach a hundred are not lucky — they are living a code their ancestors wrote into food, movement, purpose, and song. We did not lose it. We stopped reading ",
    "img": "/assets/img/journal/the-ancestral-code-for-living-to-100/0.jpg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "ai-robotics-repair-warming-world",
@@ -289,7 +329,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "A warming planet is asking hard questions. What if the intelligence we built to speed up extraction could be turned, deliberately, toward repair?",
    "img": "/assets/img/journal/ai-robotics-repair-warming-world/0.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "the-silent-theft",
@@ -299,7 +339,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "We track every barrel, every dollar, every ton — and let the one irreplaceable resource evaporate: human genius. This is the anatomy of a silent theft, and the map back to an honorable harve",
    "img": "/assets/img/journal/the-silent-theft/0.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "the-final-council-post-extraction-future",
@@ -309,7 +349,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "A recurring dream of a council that vets the future before it is built, and a blueprint for encoding reciprocity into AI, robotics and the next economy.",
    "img": "/assets/img/journal/the-final-council-post-extraction-future/0.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "seeds-of-the-ancestors",
@@ -319,7 +359,7 @@
    "pillar": "Food Systems & Agriculture",
    "dek": "The blueprint for a sustainable future is not a new invention waiting to be engineered. It is an ancient inheritance waiting to be remembered.",
    "img": "/assets/img/journal/seeds-of-the-ancestors/0.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "walking-in-lightness-eating-in-balance",
@@ -329,7 +369,7 @@
    "pillar": "The Doctorate",
    "dek": "Navigating the complex terrain between global economic systems and the specific needs of Indigenous communities has been the defining work of my life.",
    "img": "/assets/img/journal/walking-in-lightness-eating-in-balance/0.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "monster-slayer-blueprint-turning-waste-into-renewal",
@@ -339,7 +379,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Every people on Earth descends from a line of monster-slayers. The take-make-dispose economy is the beast of our age, and the tools are older than it.",
    "img": "/assets/img/journal/monster-slayer-blueprint-turning-waste-into-renewal/0.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "weaving-a-new-dream-what-is-the-world-dreaming-through-you",
@@ -349,7 +389,7 @@
    "pillar": "About / Movement",
    "dek": "We are taught to chase our own dreams. But there is an older, larger dream — the dream of the land itself — and it is trying to move through you. This is what it asks.",
    "img": "/assets/img/journal/weaving-a-new-dream-what-is-the-world-dreaming-through-you/0.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "hitting-the-healing-trails-with-navajo-humor",
@@ -359,7 +399,7 @@
    "pillar": "Ancestral Wisdom & Culture",
    "dek": "In the land where the sun kisses the earth, And the winds whisper ancient tales,",
    "img": "/assets/img/journal/hitting-the-healing-trails-with-navajo-humor/0.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "the-warriors-path",
@@ -369,7 +409,7 @@
    "pillar": "Author Journey",
    "dek": "Stepping out of grad school with an MBA and a vision to transform a nation, and what the years actually taught me about the warrior's path.",
    "img": "/assets/img/journal/the-warriors-path/0.jpg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "the-water-remembers-sacred-lake",
@@ -379,7 +419,7 @@
    "pillar": "About / Reflections",
    "dek": "My grandfather stood at the edge of a mountain lake and was called to sing an old song. What he taught me there: water has a memory, and so do we.",
    "img": "/assets/img/journal/the-water-remembers-sacred-lake/0.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "facing-the-changing-climate",
@@ -389,7 +429,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Ya’at’eeh, Relatives. As global temperatures rise, the way we cultivate food is undergoing significant changes.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "wealth-wisdom-from-sheepherders-of-the-planet",
@@ -399,7 +439,7 @@
    "pillar": "Health & Longevity",
    "dek": "Across the herding peoples of the earth, wealth was never counted in currency but in flocks, dawns, clan bonds, and resilience that outlasts a drought.",
    "img": "/assets/img/journal/wealth-wisdom-from-sheepherders-of-the-planet/0.jpeg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "roots-of-resilience-wisdom-week-rancho-la-puerta",
@@ -409,7 +449,7 @@
    "pillar": "Health &amp; Wellness / Retreats",
    "dek": "Under the stars at Rancho La Puerta, elders and strangers became a circle. A week on how healing begins the moment we are truly seen.",
    "img": "/assets/img/journal/roots-of-resilience-wisdom-week-rancho-la-puerta/0.jpeg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "creating-traditional-inter-generational-wealth",
@@ -419,7 +459,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "The richest people I know own almost nothing a bank would recognize — and everything the great-grandchildren will need. A meditation on the wealth that is grown, not extracted, and passed do",
    "img": "/assets/img/savanna.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "ancient-farming-hedge-against-climate-change",
@@ -429,7 +469,7 @@
    "pillar": "Food Systems & Agriculture",
    "dek": "Across the drylands of the world, a handful of master farmers still coax miracle harvests from wind and sand using knowledge older than any market. As the climate shifts, their methods may b",
    "img": "/assets/img/journal/ancient-farming-hedge-against-climate-change/0.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "honoring-my-father-on-fathers-day",
@@ -439,7 +479,7 @@
    "pillar": "About / The Story",
    "dek": "A son's letter to the father who took him as his own — a city boy who followed love to the high country, learned the old ways, and became a pillar. A tribute to every dad who carries a famil",
    "img": "/assets/img/journal/honoring-my-father-on-fathers-day/0.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "honorable-trade-oldest-economies-planet-in-transition",
@@ -449,7 +489,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "For ten thousand years, whole continents ran on economies built not for shareholder wealth but for honor, love, and excitement. As the globe searches for a way through climate change, these ",
    "img": "/assets/img/council-band.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "long-lives-as-modeled-by-our-ancestors",
@@ -459,7 +499,7 @@
    "pillar": "Health & Longevity",
    "dek": "TribeAwaken joins Northern Arizona University's Department of Health Sciences on improving the health and well-being of Native communities.",
    "img": "/assets/img/journal/long-lives-as-modeled-by-our-ancestors/0.jpeg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "overcoming-fear-and-limiting-beliefs",
@@ -469,7 +509,7 @@
    "pillar": "Author Journey",
    "dek": "As a kid, I grew up in a modest traditional Navajo home far from the city and mainly with livestock and no electricity. A lot of times we would stay at sheep camp with grandparents all summe",
    "img": "/assets/img/journal/overcoming-fear-and-limiting-beliefs/0.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "time-tested-tribal-tools-against-the-coronavirus",
@@ -479,7 +519,7 @@
    "pillar": "Ancestral Wisdom & Culture",
    "dek": "Many of you have questions about the pandemic and it seems the more you read and research, the more confused you get. What do we do to stay safe? What are the best ways to strengthen our imm",
    "img": "/assets/img/journal/time-tested-tribal-tools-against-the-coronavirus/0.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "in-a-spa-state-of-mind",
@@ -489,7 +529,7 @@
    "pillar": "Health & Longevity",
    "dek": "What is a wellness spa? The word spa conjures up images of mud baths, soothing facials, relaxing massages, and rejuvenating body scrubs.",
    "img": "/assets/img/journal/in-a-spa-state-of-mind/0.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "advantage-inside-vantage-outside",
@@ -499,7 +539,7 @@
    "pillar": "Leadership & Business",
    "dek": "Inspiration from an interview with Gary Vaynerchuk, Entrepreneur and Author",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "a-magazine-to-uplift-our-community",
@@ -509,7 +549,7 @@
    "pillar": "Community & Tribal Economy",
    "dek": "A Conversation with the Founder of “the Abundance Mindset Magazine” Magazine",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "from-sheep-to-the-customer",
@@ -519,7 +559,7 @@
    "pillar": "Community & Tribal Economy",
    "dek": "Native Grill serves “Navajo soul food” to travelers along Highway 89 and to their loyal customers in Cameron, Arizona. Alfreida Littleboy and her mother started their business in 2013 and pu",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "triumph-tiger-1200-xca-biker-review",
@@ -529,7 +569,7 @@
    "pillar": "Author Journey",
    "dek": "The founder of TribeAwaken.Com, Tony Skrelunas, wanted to share his passion for motorcycles with others who may be inspired to also try out a bike.",
    "img": "/assets/img/journal/triumph-tiger-1200-xca-biker-review/0.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "buy-navajo-buy-local",
@@ -539,7 +579,7 @@
    "pillar": "Community & Tribal Economy",
    "dek": "On buying Navajo and buying local: why keeping the dollar home in a community is economics, not sentiment, and what it builds when it stays.",
    "img": "/assets/img/journal/buy-navajo-buy-local/0.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "seven-point-tribal-review-economic-transition",
@@ -549,7 +589,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Tribal communities such as Hopi, Navajo, and Crow are being impacted by the transition away from coal fired power generation to more economical alternatives. In northern Arizona, in Navajo a",
    "img": "/assets/img/journal/seven-point-tribal-review-economic-transition/0.png",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "a-business-must-pivot-with-care",
@@ -559,7 +599,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Our oral histories tell of times that almost destroyed our people. In every one, survival turned on the same thing: how carefully the pivot was made.",
    "img": "/assets/img/journal/a-business-must-pivot-with-care/0.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "keeping-our-dollars-in-our-community",
@@ -569,7 +609,7 @@
    "pillar": "Community & Tribal Economy",
    "dek": "Special to TribeAwaken to offer Economic Diversification Strategy to former coal and power plant communities",
    "img": "/assets/img/journal/keeping-our-dollars-in-our-community/0.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "inspiration-for-new-grocery-stores",
@@ -579,7 +619,7 @@
    "pillar": "Health & Longevity",
    "dek": "In the not too distant past, it was very common for many tribal elders to live to be over 100. In my Navajo culture, centenarians were celebrated and 102 years of age was a virtue to strive ",
    "img": "/assets/img/journal/inspiration-for-new-grocery-stores/0.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "its-ok-to-take-the-lead",
@@ -589,7 +629,7 @@
    "pillar": "Leadership & Business",
    "dek": "As the founder of tribes.humans.net, it was a daunting task to pull all the pieces together. Talk about doing business all over the world, in big cities, working globally with investors, pro",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "exercise-and-the-many-benefits",
@@ -599,7 +639,7 @@
    "pillar": "Health & Longevity",
    "dek": "The two do not sound connected, but working out serves mental health as much as physical, and the combination is the whole point.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "30000-years-tribal-trade-americas",
@@ -609,7 +649,7 @@
    "pillar": "From the journal",
    "dek": "Tony Skrelūnas's commencement address to the Native American graduates of Northern Arizona University, on the great trade civilizations of the Americas.",
    "img": "/assets/img/journal/30000-years-tribal-trade-americas/0.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "what-waking-up-early-did-for-me",
@@ -619,7 +659,7 @@
    "pillar": "Health & Longevity",
    "dek": "What could waking early do for me and what do I hope to achieve in this tiny turnaround of life? Waking up early would allow me a more productive day, longer days, make me more successful in",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "were-running-out-of-sand",
@@ -629,7 +669,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "“Sand, sand is everywhere”, take a few steps outside and there’s sand right below your feet. Oh, it’s concrete? Yeah that’s sand too. Your phone? Melted sand.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "what-arranged-marriages-can-teach-us",
@@ -639,7 +679,7 @@
    "pillar": "About / Reflections",
    "dek": "What can we learn from our arranged marriages of the past in our modern day dating processes and eventual marriage of the right life partner? This article is to get conversation going.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "discipline-and-a-strong-life-partner",
@@ -649,7 +689,7 @@
    "pillar": "About / Reflections",
    "dek": "What it takes to succeed under the kind of pressure most people could not handle, and the role a strong life partner plays in it.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "the-passage-of-cultural-knowledge",
@@ -659,7 +699,7 @@
    "pillar": "About / Reflections",
    "dek": "The main meaning of being tribal is to completely engage in the value of ensuring that your kids, your relatives, your neighbors, your tribe succeed.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "helping-young-tribal-runners",
@@ -669,7 +709,7 @@
    "pillar": "Health & Longevity",
    "dek": "The question that hasn’t been asked is “is it possible to support talented runners in a supportive tribal community setting? And how could it be done?”",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "keeping-the-tribal-dollar-home",
@@ -679,7 +719,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "As a child growing up on the Navajo reservation at a placed called Big Mountain, I always looked forward to traveling to the Tonalea Trading Post.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "three-pillars-of-tribal-customer-service",
@@ -689,7 +729,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Great customer service is good business and good for our culture. In the Navajo tradition, it comes down to 3 values: Woshdee, Bahozho, and K’enidzin.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "trading-goods-and-services-worldwide",
@@ -699,7 +739,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Tribes.Humans.Net is a new platform we created as a peer to peer network to enable inter tribal trade within our communities and outside.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "refueling-our-souls-with-a-tribal-dacha",
@@ -709,7 +749,7 @@
    "pillar": "Health & Longevity",
    "dek": "As an honorable tribal person searching for a strong foundation of family, we value a home in the community where we grew up. This enables us to maintain ties to the earth and family.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "in-the-mind-of-a-bull-rider",
@@ -719,7 +759,7 @@
    "pillar": "Health & Longevity",
    "dek": "Bull riding, America’s fastest growing sport, one of America’s most dangerous sports, and one of Native America’s biggest sports.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "success-with-harmony-rise-early-pray-grind",
@@ -729,7 +769,7 @@
    "pillar": "Health & Longevity",
    "dek": "You may ask yourself what does it take to succeed? There are many self help gurus in our world all offering good strategy from their experiences.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "creativity-makes-the-planet-go-round",
@@ -739,7 +779,7 @@
    "pillar": "About / Reflections",
    "dek": "To the Creative: Do what you love, enjoy what you do, make life worth it. It’s very cliché but it’s true.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "30000-years-wellness-wisdom-phd-book-series-movement",
@@ -749,7 +789,7 @@
    "pillar": "About / Movement",
    "dek": "Our families were the most sophisticated success seminars ever designed. We did not lose those teachings because they stopped working.",
    "img": "/assets/img/journal/30000-years-wellness-wisdom-phd-book-series-movement/0.jpeg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "the-body-is-infrastructure",
@@ -759,7 +799,7 @@
    "pillar": "Health & Wellness Development",
    "dek": "A gym is not a luxury. It is quiet infrastructure for a people's survival, and here is how communities the world over can build places to move.",
    "img": "/assets/img/far-messengers-mountain.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "the-man-who-raced-hills-into-his-70s",
@@ -769,7 +809,7 @@
    "pillar": "Health & Longevity",
    "dek": "He built motorcycles that now sell for six figures and raced them up near-vertical hills past the age most men retire. But the real machine, the one that kept him alive, was quieter than any",
    "img": "/assets/img/journal/the-man-who-raced-hills-into-his-70s/0.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "the-part-i-forgot-about-the-stone",
@@ -779,7 +819,7 @@
    "pillar": "From the journal",
    "dek": "",
    "img": null,
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "what-i-carried-to-hopi",
@@ -789,7 +829,7 @@
    "pillar": "From the journal",
    "dek": "",
    "img": null,
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/four-capitals.svg"
   }
  ],
  "found": [
