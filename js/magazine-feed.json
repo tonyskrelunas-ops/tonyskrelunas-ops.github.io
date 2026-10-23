@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T07:21:16",
+ "generated": "2026-10-23T17:00:28",
  "lead": "where-hope-was-built-this-week",
  "mine": [
   {
@@ -93,6 +93,16 @@
    }
   },
   {
+   "slug": "what-does-your-heart-say",
+   "href": "/journal/what-does-your-heart-say/",
+   "title": "What Does Your Heart Say",
+   "date": "2026-10-20",
+   "pillar": "Human Resilience",
+   "dek": "An evening at Prescott College. A greeting in Tzotzil, a navigator who gave away what he was told to keep, and a small stone that teaches a body how to run.",
+   "img": "/assets/img/prescott-fire-circle.jpg",
+   "art": "/assets/art/dine-mountains.svg"
+  },
+  {
    "slug": "a-home-calm-enough-to-teach-in",
    "href": "/journal/a-home-calm-enough-to-teach-in/",
    "title": "A Home Calm Enough to Teach In",
@@ -100,7 +110,7 @@
    "pillar": "Human Resilience",
    "dek": "You cannot think bad about others and keep a regulated nervous system. What decolonizing wellness asks of a home, and the old roles a calm home was built to raise.",
    "img": "/assets/img/a-home-calm-enough-to-teach-in.jpg",
-   "art": "/assets/art/dine-mountains.svg",
+   "art": "/assets/art/baltic-juosta.svg",
    "tr": {
     "es": {
      "href": "/es/un-hogar-tranquilo-para-ensenar/",
@@ -130,7 +140,7 @@
    "pillar": "Human Resilience",
    "dek": "In the long crossing, the first test is a spring that should be flowing and is dry. What you do next was taught long before you got there. A joke, a seat, and an old song.",
    "img": "/assets/img/a-joke-at-the-dry-spring.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "little-piles-of-rock",
@@ -140,7 +150,7 @@
    "pillar": "Human Resilience",
    "dek": "On Labor Day morning, facing the San Francisco Peaks, I recorded a meditation about an old trail. The part that stays with me is the knowledge that was waiting in us all along.",
    "img": "/assets/img/little-piles-of-rock.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "where-hope-was-built-this-week",
@@ -150,7 +160,7 @@
    "pillar": "Human Resilience",
    "dek": "The news carries the alarm. The far messengers carry what we need. Nine places where people protected a spring, a seed, a forest or a language this week.",
    "img": "/assets/img/where-hope-was-built-this-week.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "why-i-call-the-sheep-camp-a-retreat",
@@ -160,7 +170,7 @@
    "pillar": "Human Resilience",
    "dek": "Digging out a corral is hard, dirty work, and I call it a retreat. The research on what one word does to the body says a great deal about what a family hands down.",
    "img": "/assets/img/why-i-call-the-sheep-camp-a-retreat.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "why-i-started-a-magazine-again",
@@ -170,7 +180,7 @@
    "pillar": "The Movement",
    "dek": "It began in 2021 under a different name. Five years later there are two novels out, a doctorate underway, and the same stubborn idea: that what a people reads every morning decides something",
    "img": "/assets/img/v2/horse-only-900px.jpg",
-   "art": "/assets/art/dine-hogan.svg",
+   "art": "/assets/art/four-capitals.svg",
    "tr": {
     "es": {
      "href": "/es/por-que-empece-una-revista/",
@@ -200,7 +210,7 @@
    "pillar": "Human Resilience",
    "dek": "My great-grandmother corrected careless speech the way she corrected a tool set down in the wrong place. Forty years later I understand why they were the same error.",
    "img": "/assets/img/canyon-family.jpg",
-   "art": "/assets/art/four-capitals.svg",
+   "art": "/assets/art/baltic-oak.svg",
    "tr": {
     "es": {
      "href": "/es/hable-solo-lo-que-quiera-construir/",
@@ -230,7 +240,7 @@
    "pillar": "Human Resilience",
    "dek": "My grandfather never had money and was never poor a day in his life. Abundance turns out to be a question about perception, not arithmetic.",
    "img": "/assets/img/land-healing.jpg",
-   "art": "/assets/art/baltic-oak.svg",
+   "art": "/assets/art/japan-bridge.svg",
    "tr": {
     "es": {
      "href": "/es/el-deseo-angosta-la-mirada/",
@@ -260,7 +270,7 @@
    "pillar": "Leadership & Business",
    "dek": "Phil Jackson put silence, story and a circle into the most pressured organization in American sport and won 72 games. He had to borrow the pieces.",
    "img": "/assets/img/ta/barrels-group-2000x1500.jpg",
-   "art": "/assets/art/japan-bridge.svg",
+   "art": "/assets/art/dine-mountains.svg",
    "tr": {
     "es": {
      "href": "/es/el-entrenador-que-tomo-prestado-el-circulo/",
@@ -290,7 +300,7 @@
    "pillar": "The Movement",
    "dek": "About twenty people came to the meditation. What they got was not a meditation. It was a crossing with a destination, and at the far end they were expected.",
    "img": "/assets/img/journal/the-first-fire/missy-and-henry.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "the-winter-that-didnt-come",
@@ -300,7 +310,7 @@
    "pillar": "Stories I Carry",
    "dek": "A Sámi reindeer herder, taught properly and entirely correct, standing on ice. What to do when the knowledge itself is no longer true.",
    "img": "/assets/img/land/aspen-grove.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "what-a-far-messenger-is",
@@ -310,7 +320,7 @@
    "pillar": "The Books · The Doctorate",
    "dek": "It is book four. It is the doctorate. And it is the thing I have been circling my whole life without knowing what to call it.",
    "img": "/assets/img/far-messengers-cover.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "the-ground-is-the-argument",
@@ -320,7 +330,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "I wrote a novel about what a people build after the extraction economy runs out. Then I watched farmers and Indigenous leaders build it, on real ground.",
    "img": "/assets/img/journal/the-ground-is-the-argument/05.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "stone-breath-born-on-the-solstice",
@@ -330,7 +340,7 @@
    "pillar": "The Books",
    "dek": "A novel about the songs we carry across oceans — and the roots that a lifetime of forgetting could never take. Released on the solstice, on purpose.",
    "img": "/assets/img/journal/stone-breath-born-on-the-solstice/0.jpeg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "they-tried-to-erase-a-whole-people",
@@ -340,7 +350,7 @@
    "pillar": "About / The Story",
    "dek": "Book smugglers, song keepers, and a basketball team in tie-dye. The story of a people who were supposed to vanish and came back singing.",
    "img": "/assets/img/world/baltic-forest.jpg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "tibet-the-unbroken-thread",
@@ -350,7 +360,7 @@
    "pillar": "Global · One Operating System",
    "dek": "A people is not its territory — it is the thread: the language, the prayer, the way of raising children. Reflections from Machik Weekend in New York, and what the Tibetan community in exile ",
    "img": "/assets/img/far-messengers-mountain.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "twenty-five-years-to-the-podium-prescott-commencement",
@@ -360,7 +370,7 @@
    "pillar": "The Doctorate",
    "dek": "I started this doctorate as an extension of my MBA more than twenty-five years ago. Last year I gave the PhD commencement address at Prescott College. Here is what happened in between — and ",
    "img": "/assets/img/tony/speaking-podium-sash.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "what-the-cottonwood-sings-roots-workshop",
@@ -370,7 +380,7 @@
    "pillar": "About / Reflections",
    "dek": "In a gallery full of grief and color, a room of strangers became a circle. I picked up a pen for the first time and wrote my way back.",
    "img": "/assets/img/journal/what-the-cottonwood-sings-roots-workshop/0.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "one-in-a-trillion",
@@ -380,7 +390,7 @@
    "pillar": "Reflections",
    "dek": "Invited to Abundance Week at Rancho La Puerta to meet Tom Blue Wolf and Pat Mitchell — and the hour under the papel picado that came of it.",
    "img": "/assets/img/journal/one-in-a-trillion/00.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "the-ancestral-code-for-living-to-100",
@@ -390,7 +400,7 @@
    "pillar": "Health & Longevity",
    "dek": "Across the world, the peoples who reach a hundred are not lucky — they are living a code their ancestors wrote into food, movement, purpose, and song. We did not lose it. We stopped reading ",
    "img": "/assets/img/journal/the-ancestral-code-for-living-to-100/0.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "ai-robotics-repair-warming-world",
@@ -400,7 +410,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "A warming planet is asking hard questions. What if the intelligence we built to speed up extraction could be turned, deliberately, toward repair?",
    "img": "/assets/img/journal/ai-robotics-repair-warming-world/0.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "the-silent-theft",
@@ -410,7 +420,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "We track every barrel, every dollar, every ton — and let the one irreplaceable resource evaporate: human genius. This is the anatomy of a silent theft, and the map back to an honorable harve",
    "img": "/assets/img/journal/the-silent-theft/0.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "the-final-council-post-extraction-future",
@@ -420,7 +430,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "A recurring dream of a council that vets the future before it is built, and a blueprint for encoding reciprocity into AI, robotics and the next economy.",
    "img": "/assets/img/journal/the-final-council-post-extraction-future/0.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "seeds-of-the-ancestors",
@@ -430,7 +440,7 @@
    "pillar": "Food Systems & Agriculture",
    "dek": "The blueprint for a sustainable future is not a new invention waiting to be engineered. It is an ancient inheritance waiting to be remembered.",
    "img": "/assets/img/journal/seeds-of-the-ancestors/0.jpg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "walking-in-lightness-eating-in-balance",
@@ -440,7 +450,7 @@
    "pillar": "The Doctorate",
    "dek": "Navigating the complex terrain between global economic systems and the specific needs of Indigenous communities has been the defining work of my life.",
    "img": "/assets/img/journal/walking-in-lightness-eating-in-balance/0.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "monster-slayer-blueprint-turning-waste-into-renewal",
@@ -450,7 +460,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Every people on Earth descends from a line of monster-slayers. The take-make-dispose economy is the beast of our age, and the tools are older than it.",
    "img": "/assets/img/journal/monster-slayer-blueprint-turning-waste-into-renewal/0.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "weaving-a-new-dream-what-is-the-world-dreaming-through-you",
@@ -460,7 +470,7 @@
    "pillar": "About / Movement",
    "dek": "We are taught to chase our own dreams. But there is an older, larger dream — the dream of the land itself — and it is trying to move through you. This is what it asks.",
    "img": "/assets/img/journal/weaving-a-new-dream-what-is-the-world-dreaming-through-you/0.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "hitting-the-healing-trails-with-navajo-humor",
@@ -470,7 +480,7 @@
    "pillar": "Ancestral Wisdom & Culture",
    "dek": "In the land where the sun kisses the earth, And the winds whisper ancient tales,",
    "img": "/assets/img/journal/hitting-the-healing-trails-with-navajo-humor/0.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "the-warriors-path",
@@ -480,7 +490,7 @@
    "pillar": "Author Journey",
    "dek": "Stepping out of grad school with an MBA and a vision to transform a nation, and what the years actually taught me about the warrior's path.",
    "img": "/assets/img/journal/the-warriors-path/0.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "the-water-remembers-sacred-lake",
@@ -490,7 +500,7 @@
    "pillar": "About / Reflections",
    "dek": "My grandfather stood at the edge of a mountain lake and was called to sing an old song. What he taught me there: water has a memory, and so do we.",
    "img": "/assets/img/journal/the-water-remembers-sacred-lake/0.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "facing-the-changing-climate",
@@ -500,7 +510,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Ya’at’eeh, Relatives. As global temperatures rise, the way we cultivate food is undergoing significant changes.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "wealth-wisdom-from-sheepherders-of-the-planet",
@@ -510,7 +520,7 @@
    "pillar": "Health & Longevity",
    "dek": "Across the herding peoples of the earth, wealth was never counted in currency but in flocks, dawns, clan bonds, and resilience that outlasts a drought.",
    "img": "/assets/img/journal/wealth-wisdom-from-sheepherders-of-the-planet/0.jpeg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "roots-of-resilience-wisdom-week-rancho-la-puerta",
@@ -520,7 +530,7 @@
    "pillar": "Health &amp; Wellness / Retreats",
    "dek": "Under the stars at Rancho La Puerta, elders and strangers became a circle. A week on how healing begins the moment we are truly seen.",
    "img": "/assets/img/journal/roots-of-resilience-wisdom-week-rancho-la-puerta/0.jpeg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "creating-traditional-inter-generational-wealth",
@@ -530,7 +540,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "The richest people I know own almost nothing a bank would recognize — and everything the great-grandchildren will need. A meditation on the wealth that is grown, not extracted, and passed do",
    "img": "/assets/img/savanna.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "ancient-farming-hedge-against-climate-change",
@@ -540,7 +550,7 @@
    "pillar": "Food Systems & Agriculture",
    "dek": "Across the drylands of the world, a handful of master farmers still coax miracle harvests from wind and sand using knowledge older than any market. As the climate shifts, their methods may b",
    "img": "/assets/img/journal/ancient-farming-hedge-against-climate-change/0.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "honoring-my-father-on-fathers-day",
@@ -550,7 +560,7 @@
    "pillar": "About / The Story",
    "dek": "A son's letter to the father who took him as his own — a city boy who followed love to the high country, learned the old ways, and became a pillar. A tribute to every dad who carries a famil",
    "img": "/assets/img/journal/honoring-my-father-on-fathers-day/0.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "honorable-trade-oldest-economies-planet-in-transition",
@@ -560,7 +570,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "For ten thousand years, whole continents ran on economies built not for shareholder wealth but for honor, love, and excitement. As the globe searches for a way through climate change, these ",
    "img": "/assets/img/council-band.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "long-lives-as-modeled-by-our-ancestors",
@@ -570,7 +580,7 @@
    "pillar": "Health & Longevity",
    "dek": "TribeAwaken joins Northern Arizona University's Department of Health Sciences on improving the health and well-being of Native communities.",
    "img": "/assets/img/journal/long-lives-as-modeled-by-our-ancestors/0.jpeg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "overcoming-fear-and-limiting-beliefs",
@@ -580,7 +590,7 @@
    "pillar": "Author Journey",
    "dek": "As a kid, I grew up in a modest traditional Navajo home far from the city and mainly with livestock and no electricity. A lot of times we would stay at sheep camp with grandparents all summe",
    "img": "/assets/img/journal/overcoming-fear-and-limiting-beliefs/0.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "time-tested-tribal-tools-against-the-coronavirus",
@@ -590,7 +600,7 @@
    "pillar": "Ancestral Wisdom & Culture",
    "dek": "Many of you have questions about the pandemic and it seems the more you read and research, the more confused you get. What do we do to stay safe? What are the best ways to strengthen our imm",
    "img": "/assets/img/journal/time-tested-tribal-tools-against-the-coronavirus/0.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "in-a-spa-state-of-mind",
@@ -600,7 +610,7 @@
    "pillar": "Health & Longevity",
    "dek": "What is a wellness spa? The word spa conjures up images of mud baths, soothing facials, relaxing massages, and rejuvenating body scrubs.",
    "img": "/assets/img/journal/in-a-spa-state-of-mind/0.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "advantage-inside-vantage-outside",
@@ -610,7 +620,7 @@
    "pillar": "Leadership & Business",
    "dek": "Inspiration from an interview with Gary Vaynerchuk, Entrepreneur and Author",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "a-magazine-to-uplift-our-community",
@@ -620,7 +630,7 @@
    "pillar": "Community & Tribal Economy",
    "dek": "A Conversation with the Founder of “the Abundance Mindset Magazine” Magazine",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "from-sheep-to-the-customer",
@@ -630,7 +640,7 @@
    "pillar": "Community & Tribal Economy",
    "dek": "Native Grill serves “Navajo soul food” to travelers along Highway 89 and to their loyal customers in Cameron, Arizona. Alfreida Littleboy and her mother started their business in 2013 and pu",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "triumph-tiger-1200-xca-biker-review",
@@ -640,7 +650,7 @@
    "pillar": "Author Journey",
    "dek": "The founder of TribeAwaken.Com, Tony Skrelunas, wanted to share his passion for motorcycles with others who may be inspired to also try out a bike.",
    "img": "/assets/img/journal/triumph-tiger-1200-xca-biker-review/0.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "buy-navajo-buy-local",
@@ -650,7 +660,7 @@
    "pillar": "Community & Tribal Economy",
    "dek": "On buying Navajo and buying local: why keeping the dollar home in a community is economics, not sentiment, and what it builds when it stays.",
    "img": "/assets/img/journal/buy-navajo-buy-local/0.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "seven-point-tribal-review-economic-transition",
@@ -660,7 +670,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Tribal communities such as Hopi, Navajo, and Crow are being impacted by the transition away from coal fired power generation to more economical alternatives. In northern Arizona, in Navajo a",
    "img": "/assets/img/journal/seven-point-tribal-review-economic-transition/0.png",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "a-business-must-pivot-with-care",
@@ -670,7 +680,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Our oral histories tell of times that almost destroyed our people. In every one, survival turned on the same thing: how carefully the pivot was made.",
    "img": "/assets/img/journal/a-business-must-pivot-with-care/0.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "keeping-our-dollars-in-our-community",
@@ -680,7 +690,7 @@
    "pillar": "Community & Tribal Economy",
    "dek": "Special to TribeAwaken to offer Economic Diversification Strategy to former coal and power plant communities",
    "img": "/assets/img/journal/keeping-our-dollars-in-our-community/0.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "inspiration-for-new-grocery-stores",
@@ -690,7 +700,7 @@
    "pillar": "Health & Longevity",
    "dek": "In the not too distant past, it was very common for many tribal elders to live to be over 100. In my Navajo culture, centenarians were celebrated and 102 years of age was a virtue to strive ",
    "img": "/assets/img/journal/inspiration-for-new-grocery-stores/0.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "its-ok-to-take-the-lead",
@@ -700,7 +710,7 @@
    "pillar": "Leadership & Business",
    "dek": "As the founder of tribes.humans.net, it was a daunting task to pull all the pieces together. Talk about doing business all over the world, in big cities, working globally with investors, pro",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "exercise-and-the-many-benefits",
@@ -710,7 +720,7 @@
    "pillar": "Health & Longevity",
    "dek": "The two do not sound connected, but working out serves mental health as much as physical, and the combination is the whole point.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "30000-years-tribal-trade-americas",
@@ -720,7 +730,7 @@
    "pillar": "From the journal",
    "dek": "Tony Skrelūnas's commencement address to the Native American graduates of Northern Arizona University, on the great trade civilizations of the Americas.",
    "img": "/assets/img/journal/30000-years-tribal-trade-americas/0.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "what-waking-up-early-did-for-me",
@@ -730,7 +740,7 @@
    "pillar": "Health & Longevity",
    "dek": "What could waking early do for me and what do I hope to achieve in this tiny turnaround of life? Waking up early would allow me a more productive day, longer days, make me more successful in",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "were-running-out-of-sand",
@@ -740,7 +750,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "“Sand, sand is everywhere”, take a few steps outside and there’s sand right below your feet. Oh, it’s concrete? Yeah that’s sand too. Your phone? Melted sand.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "what-arranged-marriages-can-teach-us",
@@ -750,7 +760,7 @@
    "pillar": "About / Reflections",
    "dek": "What can we learn from our arranged marriages of the past in our modern day dating processes and eventual marriage of the right life partner? This article is to get conversation going.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "discipline-and-a-strong-life-partner",
@@ -760,7 +770,7 @@
    "pillar": "About / Reflections",
    "dek": "What it takes to succeed under the kind of pressure most people could not handle, and the role a strong life partner plays in it.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "the-passage-of-cultural-knowledge",
@@ -770,7 +780,7 @@
    "pillar": "About / Reflections",
    "dek": "The main meaning of being tribal is to completely engage in the value of ensuring that your kids, your relatives, your neighbors, your tribe succeed.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "helping-young-tribal-runners",
@@ -780,7 +790,7 @@
    "pillar": "Health & Longevity",
    "dek": "The question that hasn’t been asked is “is it possible to support talented runners in a supportive tribal community setting? And how could it be done?”",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "keeping-the-tribal-dollar-home",
@@ -790,7 +800,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "As a child growing up on the Navajo reservation at a placed called Big Mountain, I always looked forward to traveling to the Tonalea Trading Post.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "three-pillars-of-tribal-customer-service",
@@ -800,7 +810,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Great customer service is good business and good for our culture. In the Navajo tradition, it comes down to 3 values: Woshdee, Bahozho, and K’enidzin.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "trading-goods-and-services-worldwide",
@@ -810,7 +820,7 @@
    "pillar": "Regenerative Development & New Economy",
    "dek": "Tribes.Humans.Net is a new platform we created as a peer to peer network to enable inter tribal trade within our communities and outside.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "refueling-our-souls-with-a-tribal-dacha",
@@ -820,7 +830,7 @@
    "pillar": "Health & Longevity",
    "dek": "As an honorable tribal person searching for a strong foundation of family, we value a home in the community where we grew up. This enables us to maintain ties to the earth and family.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "in-the-mind-of-a-bull-rider",
@@ -830,7 +840,7 @@
    "pillar": "Health & Longevity",
    "dek": "Bull riding, America’s fastest growing sport, one of America’s most dangerous sports, and one of Native America’s biggest sports.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/baltic-juosta.svg"
   },
   {
    "slug": "success-with-harmony-rise-early-pray-grind",
@@ -840,7 +850,7 @@
    "pillar": "Health & Longevity",
    "dek": "You may ask yourself what does it take to succeed? There are many self help gurus in our world all offering good strategy from their experiences.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "creativity-makes-the-planet-go-round",
@@ -850,7 +860,7 @@
    "pillar": "About / Reflections",
    "dek": "To the Creative: Do what you love, enjoy what you do, make life worth it. It’s very cliché but it’s true.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/japan-enso.svg"
   },
   {
    "slug": "30000-years-wellness-wisdom-phd-book-series-movement",
@@ -860,7 +870,7 @@
    "pillar": "About / Movement",
    "dek": "Our families were the most sophisticated success seminars ever designed. We did not lose those teachings because they stopped working.",
    "img": "/assets/img/journal/30000-years-wellness-wisdom-phd-book-series-movement/0.jpeg",
-   "art": "/assets/art/japan-enso.svg"
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "the-body-is-infrastructure",
@@ -870,7 +880,7 @@
    "pillar": "Health & Wellness Development",
    "dek": "A gym is not a luxury. It is quiet infrastructure for a people's survival, and here is how communities the world over can build places to move.",
    "img": "/assets/img/far-messengers-mountain.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/dine-hogan.svg"
   },
   {
    "slug": "the-man-who-raced-hills-into-his-70s",
@@ -880,7 +890,7 @@
    "pillar": "Health & Longevity",
    "dek": "He built motorcycles that now sell for six figures and raced them up near-vertical hills past the age most men retire. But the real machine, the one that kept him alive, was quieter than any",
    "img": "/assets/img/journal/the-man-who-raced-hills-into-his-70s/0.jpg",
-   "art": "/assets/art/dine-hogan.svg"
+   "art": "/assets/art/four-capitals.svg"
   },
   {
    "slug": "the-part-i-forgot-about-the-stone",
@@ -890,7 +900,7 @@
    "pillar": "From the journal",
    "dek": "",
    "img": null,
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/baltic-oak.svg"
   },
   {
    "slug": "what-i-carried-to-hopi",
@@ -900,14 +910,14 @@
    "pillar": "From the journal",
    "dek": "",
    "img": null,
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/japan-bridge.svg"
   }
  ],
  "found": [
   {
-   "title": "Vines Produce Bigger, Healthier Wine Grapes When Grown Under Solar Panels",
-   "url": "https://www.goodnewsnetwork.org/vines-produce-bigger-healthier-wine-grapes-when-grown-under-solar-panels/",
-   "dek": "Solar panels grown above grapevines substantially increased the development and fruit production of the crop—all while generating clean energy. The technique, known as agrivoltaics, has…",
+   "title": "3 Italian ‘Hobbits’ Searched for Irishman’s ‘Precious’ Wedding Ring for Days Before Bringing it to His Home",
+   "url": "https://www.goodnewsnetwork.org/3-italian-hobbits-searched-for-irishmans-precious-wedding-ring-for-days-before-bringing-it-to-his-home/",
+   "dek": "A man’s misfortunate on vacation turned into a story fit for a fantasy novel, as complete strangers came to his rescue inspired by The Lord of the Rings. Losing his wedding ring in a…",
    "source": "Good News Network",
    "date": "2026-10-23",
    "lane": "news"
@@ -929,27 +939,35 @@
    "lane": "research"
   },
   {
-   "title": "Taking the lululemon Fast and Free Running Collection on a Fall Run",
-   "url": "https://www.irunfar.com/taking-the-lululemon-fast-and-free-running-collection-on-a-fall-run",
-   "dek": "The post Taking the lululemon Fast and Free Running Collection on a Fall Run appeared first on iRunFar. Running through fall with the lululemon Fast and Free Running Collection. Taking the…",
+   "title": "‘Where the Water Was’ with Dakota Jones: Advocating for Utah’s Great Salt Lake",
+   "url": "https://www.irunfar.com/where-the-water-was-with-dakota-jones-advocating-for-utahs-great-salt-lake",
+   "dek": "The post ‘Where the Water Was’ with Dakota Jones: Advocating for Utah’s Great Salt Lake appeared first on iRunFar. Dakota Jones organized a 260-mile relay run around Utah's Great Salt Lake…",
    "source": "iRunFar",
    "date": "2026-10-23",
    "lane": "running"
   },
   {
-   "title": "Belgian duo set shared world record at Backyard Ultra World Team Championships",
-   "url": "https://runningmagazine.ca/trail-running/belgian-duo-set-shared-world-record-at-backyard-ultra-world-team-championships/",
-   "dek": "After five days, 124 yards and more than 824.1 kilometres, Ivo Steyaert and Merijn Geerts have finally stopped running The post Belgian duo set shared world record at Backyard Ultra World…",
-   "source": "Canadian Running",
+   "title": "The Best Gifts for Trail Runners",
+   "url": "https://www.trailrunnermag.com/gear/apparel-gear/the-best-gifts-for-trail-runners/",
+   "dek": "For friends and family who want to run farther or faster, or just run more, these eight products are magic",
+   "source": "Trail Runner",
    "date": "2026-10-22",
    "lane": "running"
   },
   {
-   "title": "7 Tips to Your Reduce Chicken Feed Costs",
-   "url": "https://www.hobbyfarms.com/chew-on-this-more-chicken-feed-for-your-money/",
-   "dek": "A poultry scientist is studying ways to use enzymes to improve feed digestibility in broiler chickens to save you money and make better chicken litter. The post 7 Tips to Your Reduce…",
+   "title": "Samara Quanz and Alex Rogers selected as Under Armour Athletes of the Week",
+   "url": "https://runningmagazine.ca/the-scene/samara-quanz-and-alex-rogers-selected-as-under-armour-athletes-of-the-week/",
+   "dek": "The Windsor Lancer secured her third straight podium finish, while the Dalhousie Tiger rediscovered his form with a dominant win The post Samara Quanz and Alex Rogers selected as Under…",
+   "source": "Canadian Running",
+   "date": "2026-10-23",
+   "lane": "running"
+  },
+  {
+   "title": "Pumpkins for Chickens: 4 Ways Your Birds Can Benefit",
+   "url": "https://www.hobbyfarms.com/four-ways-pumpkin-can-benefit-chickens/",
+   "dek": "Let Your Birds Gobble Up Guts and Leftover Bits for a Delicious and Healthy Treat The post Pumpkins for Chickens: 4 Ways Your Birds Can Benefit appeared first on Hobby Farms.",
    "source": "Hobby Farms",
-   "date": "2026-10-22",
+   "date": "2026-10-23",
    "lane": "land"
   },
   {
@@ -977,9 +995,9 @@
    "lane": "animals"
   },
   {
-   "title": "Googly-eyed buoys and kites help keep seabirds out of fishing nets, study finds",
-   "url": "https://news.mongabay.com/2026/10/googly-eyed-buoys-and-kites-help-keep-seabirds-out-of-fishing-nets-study-finds/",
-   "dek": "Off the coast of Cornwall in southwest England, a pole rises from a buoy with a pair of big eyes on top. The head spins, creating what researchers call an “animated eye effect.” Its job is…",
+   "title": "Taiwan shuts schools and grounds flights as Typhoon Champi brushes by",
+   "url": "https://news.mongabay.com/short-article/2026/10/taiwan-shuts-schools-and-grounds-flights-as-typhoon-champi-brushes-by/",
+   "dek": "TAIPEI, Taiwan (AP) — Taiwan shut down schools and offices and grounded hundreds of flights as Typhoon Champi brushed by the island Friday, packing strong winds and torrential rains. Champi…",
    "source": "Mongabay",
    "date": "2026-10-23",
    "lane": "animals"
@@ -993,17 +1011,17 @@
    "lane": "culture"
   },
   {
-   "title": "Arizona's Otherworldly 'Wonderland of Rocks' Is Now America's Newest National Park",
-   "url": "https://www.smithsonianmag.com/smart-news/arizona-otherworldly-wonderland-of-rocks-is-now-americas-newest-national-park-180989733/",
-   "dek": "Chiricahua National Monument in southeastern Arizona is now Chiricahua National Park, the 64th national park in the United States. Its striking geologic landscape and biodiversity have…",
+   "title": "'Wildwood' Is the Longest Stop-Motion Animated Film Ever. Each Frame of the Movie Is a Marvel of Handcrafted World Building",
+   "url": "https://www.smithsonianmag.com/arts-culture/wildwood-is-the-longest-stop-motion-animated-film-ever-each-frame-of-the-movie-is-a-marvel-of-handcrafted-world-building-180989742/",
+   "dek": "Deborah Cook, costumer designer at stop-motion animation studio Laika, discusses creating tiny costumes for puppets in a fantastical world set in the forests of Portland, Oregon",
    "source": "Smithsonian",
-   "date": "2026-10-22",
+   "date": "2026-10-23",
    "lane": "culture"
   },
   {
-   "title": "Good News in History, October 23",
-   "url": "https://www.goodnewsnetwork.org/events061023/",
-   "dek": "Happy 50th Birthday to Ryan Reynolds, the always-handsome and hilarious Canadian actor who first starred in the sitcom Two Guys and a Girl in 1998, then rose to fame in a range of films…",
+   "title": "Vines Produce Bigger, Healthier Wine Grapes When Grown Under Solar Panels",
+   "url": "https://www.goodnewsnetwork.org/vines-produce-bigger-healthier-wine-grapes-when-grown-under-solar-panels/",
+   "dek": "Solar panels grown above grapevines substantially increased the development and fruit production of the crop—all while generating clean energy. The technique, known as agrivoltaics, has…",
    "source": "Good News Network",
    "date": "2026-10-23",
    "lane": "news"
@@ -1025,28 +1043,20 @@
    "lane": "research"
   },
   {
-   "title": "Belgian Duo of Merijn Geerts and Ivo Steyaert Set a Backyard Ultra Record For a Third Time",
-   "url": "https://www.irunfar.com/merijn-geerts-ivo-steyaert-backyard-ultra-record-2026",
-   "dek": "The post Belgian Duo of Merijn Geerts and Ivo Steyaert Set a Backyard Ultra Record For a Third Time appeared first on iRunFar. Merijn Geerts and Ivo Steyaert finish together to break the…",
+   "title": "Taking the lululemon Fast and Free Running Collection on a Fall Run",
+   "url": "https://www.irunfar.com/taking-the-lululemon-fast-and-free-running-collection-on-a-fall-run",
+   "dek": "The post Taking the lululemon Fast and Free Running Collection on a Fall Run appeared first on iRunFar. Running through fall with the lululemon Fast and Free Running Collection. Taking the…",
    "source": "iRunFar",
-   "date": "2026-10-22",
+   "date": "2026-10-23",
    "lane": "running"
   },
   {
-   "title": "Hamilton runner sets 100 km backward run world record",
-   "url": "https://runningmagazine.ca/the-scene/hamilton-runner-sets-100-km-backward-run-world-record/",
-   "dek": "Kat Clewley completed 250 laps around the Ray Lewis Track & Field Centre track in 15:29:01 The post Hamilton runner sets 100 km backward run world record appeared first on Canadian Running…",
-   "source": "Canadian Running",
-   "date": "2026-10-22",
+   "title": "Whatever You Think of Him, Mark Dowdle Is Built for the Backyard Ultra",
+   "url": "https://www.trailrunnermag.com/people/mark-dowdle-is-built-for-the-backyard-ultra/",
+   "dek": "",
+   "source": "Trail Runner",
+   "date": "2026-10-16",
    "lane": "running"
-  },
-  {
-   "title": "3 Unique Types of Pumpkins for Halloween Displays",
-   "url": "https://www.hobbyfarms.com/3-unique-pumpkins-for-halloween/",
-   "dek": "Skip the Traditional Orange Jack-O’-Lantern & Decorate With One of These Eye-Catching Pumpkins The post 3 Unique Types of Pumpkins for Halloween Displays appeared first on Hobby Farms.",
-   "source": "Hobby Farms",
-   "date": "2026-10-22",
-   "lane": "land"
   }
  ],
  "found_es": [
@@ -1059,11 +1069,19 @@
    "lane": "news"
   },
   {
-   "title": "Una nueva especie de orquídea fue descubierta en el Parque Nacional Yanachaga Chemillén y lleva el nombre de un destacado botánico",
-   "url": "https://inforegion.pe/una-nueva-especie-de-orquidea-fue-descubierta-en-el-parque-nacional-yanachaga-chemillen-y-lleva-el-nombre-de-un-destacado-botanico/",
-   "dek": "El Parque Nacional Yanachaga Chemillén, ubicado en la región Pasco, alberga una ... La entrada Una nueva especie de orquídea fue descubierta en el Parque Nacional Yanachaga Chemillén y…",
+   "title": "Nueva sesión en La Uni Climática: el barrio, la movilidad eléctrica y… Springsteen",
+   "url": "https://climatica.coop/nueva-sesion-uni-climatica/",
+   "dek": "¿Aún no te has matriculado? Este miércoles nos acompañarán el cineasta Javier Fesser y el actor Alberto Castrillo, que nos hablarán de la importancia de las ecotopías. También tendremos a…",
+   "source": "Climática",
+   "date": "2026-10-20",
+   "lane": "news"
+  },
+  {
+   "title": "El bloqueo sistemático del Estado frena la creación de reservas indígenas y deja en mayor vulnerabilidad a los pueblos en aislamiento en el Perú",
+   "url": "https://inforegion.pe/el-bloqueo-sistematico-del-estado-frena-la-creacion-de-reservas-indigenas-y-deja-en-mayor-vulnerabilidad-a-los-pueblos-en-aislamiento-en-el-peru/",
+   "dek": "En septiembre de 2025, la misma comisión bloqueó la creación formal de la Reserv... La entrada El bloqueo sistemático del Estado frena la creación de reservas indígenas y deja en mayor…",
    "source": "Inforegión",
-   "date": "2026-10-22",
+   "date": "2026-10-23",
    "lane": "news"
   },
   {
@@ -1099,11 +1117,11 @@
    "lane": "animals"
   },
   {
-   "title": "Atlantis y la importancia del espacio público en la CDMX",
-   "url": "https://www.local.mx/ciudad-de-mexico/atlantis-espacio-publico-areas-verdes-cdmx/",
-   "dek": "Atlantis, el nuevo espacio de Proyectos Públicos, abre en la San Miguel Chapultepec con una plaza pública, biblioteca, meditación gratuita, exposiciones, una cafetería y un restaurante. Una…",
+   "title": "El Mirador de Chapultepec y la mejor milanesa de la ciudad",
+   "url": "https://www.local.mx/restaurantes/el-mirador-de-chapultepec-cantina-milanesa/",
+   "dek": "Con más de 120 años de historia, El Mirador de Chapultepec es una cantina clásica de CDMX famosa por su milanesa manchega y sus vistas al bosque. The post El Mirador de Chapultepec y la…",
    "source": "Local.mx",
-   "date": "2026-10-21",
+   "date": "2026-10-23",
    "lane": "culture"
   },
   {
@@ -1136,14 +1154,6 @@
    "dek": "Este es un episodio de podcast. Escúchalo aquí: Escucha aquí los demás podcasts: Lee aquí la transcripción del podcast: Aunque dejó Nicaragua a los nueve años, Eddy recuerda la niebla…",
    "source": "Agencia Ocote",
    "date": "2026-10-12",
-   "lane": "news"
-  },
-  {
-   "title": "Parque nacional del Manu: descubren nueva especie de planta que habita entre los 2.300 y 3.300 metros de altitud y que puede alcanzar hasta los dos me",
-   "url": "https://inforegion.pe/parque-nacional-del-manu-descubren-nueva-especie-de-planta-que-habita-entre-los-2-300-y-3-300-metros-de-altitud-y-que-puede-alcanzar-hasta-los-dos-metros-de-altura/",
-   "dek": "Puya ukumari habita los valles de Kosñipata y Mapacho, entre los 2.300 y 3.300 m... La entrada Parque nacional del Manu: descubren nueva especie de planta que habita entre los 2.300 y 3.300…",
-   "source": "Inforegión",
-   "date": "2026-10-22",
    "lane": "news"
   }
  ],
@@ -1223,14 +1233,6 @@
  ],
  "found_lt": [
   {
-   "title": "Subartonyse V. Krėvės-Mickevičiaus atminimą sauganti jo giminaitė L. Raugevičienė: „Esu muziejininkė, privalau būti objektyvi“",
-   "url": "https://www.bernardinai.lt/subartonyse-v-kreves-mickeviciaus-atminima-sauganti-jo-giminaite-l-raugeviciene-esu-muziejininke-privalau-buti-objektyvi/",
-   "dek": "„Vincas Krėvė buvo mano močiutės brolis. Dėl Krėvės aš tapau mokytoja, o vėliau – muziejininke“, – sako Vinco Krėvės-Mickevičiaus memorialiniame muziejuje dirbanti LAIMUTĖ RAUGEVIČIENĖ…",
-   "source": "Bernardinai",
-   "date": "2026-10-23",
-   "lane": "news"
-  },
-  {
    "title": "MRU ir švietimo centrai sieks, kad moksliniai tyrimai būtų plačiau taikomi mokyklose",
    "url": "https://mokslolietuva.lt/2026/10/mru-ir-svietimo-centrai-sieks-kad-moksliniai-tyrimai-butu-placiau-taikomi-mokyklose/",
    "dek": "Moksliniai tyrimai gali padėti spręsti daugelį mokykloms aktualių problemų, tačiau jų rezultatai ne visada pasiekia mokytojus, mokyklų vadovus ir švietimo …",
@@ -1263,17 +1265,17 @@
    "lane": "culture"
   },
   {
-   "title": "Bando užspausti rusus po žeme: atskleidė naujos Ukrainos operacijos detales",
-   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/bando-uzspausti-rusus-po-zeme-atskleide-naujos-ukrainos-operacijos-detales-57-2791342?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Ukrainos kariai iš 425-ojo atskirojo šturmo pulko „Skelia“ kelis mėnesius kovojo prieš Rusijos pajėgas po žeme esančiame dujotiekyje netoli Kupjansko miesto Charkivo srityje.",
+   "title": "Unikaliame Vilniaus rajone – nesutarimai dėl plėtros: bendruomenė bijo, kad gali „negrįžtamai pakenkti“",
+   "url": "https://www.15min.lt/naujiena/aktualu/lietuva/unikaliame-vilniaus-rajone-nesutarimai-del-pletros-bendruomene-bijo-kad-gali-negriztamai-pakenkti-56-2790648?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "Unikalaus kultūros paveldo rajono gyventojai prieštarauja siūlomiems vystymo sprendiniams kaimynystėje. Rasų kolonijos bendruomenė dėl planuojamos teritorijos Gervėčių g. 4 kreipėsi į…",
    "source": "15min Kultūra",
    "date": "2026-10-23",
    "lane": "culture"
   },
   {
-   "title": "Dviejų seserų menininkių sugrįžimas į jaunystės miestą – nauja paroda Kasiulio muziejuje",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3091091/dvieju-seseru-menininkiu-sugrizimas-i-jaunystes-miesta-nauja-paroda-kasiulio-muziejuje",
-   "dek": "Spalio 29 d., ketvirtadienį, Lietuvos nacionalinio dailės muziejaus (LNDM) Vytauto Kasiulio dailės muziejuje atveriama paroda „Seserys Irena ir Joanna Karpińskos“. Pirmą kartą visapusiškai…",
+   "title": "Profesorė Aleksandra Žvirblytė: tikroji prasmė yra tame, ką paliksi po savęs",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3091360/profesore-aleksandra-zvirblyte-tikroji-prasme-yra-tame-ka-paliksi-po-saves",
+   "dek": "Prieš kelias savaites Nacionalinės filharmonijos scenoje Aleksandra Žvirblytė skambino F. Chopino koncertą fortepijonui ir orkestrui – taip atšventė savo jubiliejų. Profesorė, fortepijono…",
    "source": "LRT Kultūra",
    "date": "2026-10-23",
    "lane": "culture"
@@ -1311,19 +1313,27 @@
    "lane": "culture"
   },
   {
-   "title": "Claude Monet paveikslas Paryžiuje parduotas už rekordinę 50 mln. eurų sumą",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3091117/claude-monet-paveikslas-paryziuje-parduotas-uz-rekordine-50-mln-euru-suma",
-   "dek": "Iki šiol niekada viešai neeksponuotas prancūzų impresionisto Claude Monet paveikslas aukcione Paryžiuje parduotas už rekordinę 50 mln. eurų sumą. Tai didžiausia kada nors Prancūzijoje…",
+   "title": "Psilikono teatras LRT garaže atvers alternatyvų hipnozės kabinetą",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3091131/psilikono-teatras-lrt-garaze-atvers-alternatyvu-hipnozes-kabineta",
+   "dek": "Netradicinio įvietinto teatro festivalis „Namas nr. 6“ šiemet lapkričio 13–15 dienomis pakvies į Kauno LRT studiją, ten beveik šimtą metų be pertraukos yra kuriama Lietuvos radijo istorija…",
    "source": "LRT Kultūra",
    "date": "2026-10-23",
+   "lane": "culture"
+  },
+  {
+   "title": "Naujas etapas „Auros“ istorijoje: šokio teatrui vadovaus choreografas Tadas Almantas",
+   "url": "https://kaunaspilnas.lt/naujas-etapas-auros-istorijoje-sokio-teatrui-vadovaus-choreografas-tadas-almantas/",
+   "dek": "Daugiau kaip keturis dešimtmečius šiuolaikinio šokio tradicijas puoselėjanti „Aura“ savo kelią tęs su nauju vadovu. Po ilgametės teatro įkūrėjos Birūtos Komskienės (Birutės Letukaitės)…",
+   "source": "Kaunas pilnas kultūros",
+   "date": "2026-10-21",
    "lane": "culture"
   }
  ],
  "found_india": [
   {
-   "title": "Don’t Throw Away Last Year’s Diyas: This Simple Trick Makes Them Diwali-Ready Again",
-   "url": "https://thebetterindia.com/sustainability/sustainable-diwali-diy-reuse-old-diyas-creative-ways-to-celebrate-festivals-12740876",
-   "dek": "Diwali is a time to light up our homes with diyas, but celebrating the festival sustainably can begin with something as hassle-free as reusing what we already have. Instead of buying new…",
+   "title": "At 82, This Grandma Rides Bikes and Drives Tractors",
+   "url": "https://thebetterindia.com/videos/lifestyle/at-82-this-grandma-rides-bikes-and-drives-tractors-12742989",
+   "dek": "At 74, she decided to learn something new. Today, at 82, she rides a bike, drives a tractor and shares her adventures on social media! Sukhma’s journey began when a joke turned into a…",
    "source": "The Better India",
    "date": "2026-10-23",
    "lane": "news"
@@ -1353,9 +1363,17 @@
    "lane": "animals"
   },
   {
-   "title": "Northeast Indian grocery stores bring a taste of home to Chennai",
-   "url": "https://www.thehindu.com/news/cities/chennai/northeast-indian-grocery-stores-bring-a-taste-of-home-to-chennai/article71587642.ece",
-   "dek": "From Velachery to Choolaimedu, a growing number of Northeast Indian grocery stores are helping the city’s migrant community stay connected to home, stocking ingredients such as mustard…",
+   "title": "Puducherry",
+   "url": "http://www.sahapedia.org/my-city-my-heritage/celebrating-puducherry",
+   "dek": "Puducherry dharmendra Mon, 03/09/2026 - 22:17 Puducherry is a city along the Coromandel coast, born of the surrounding Tamil landscape and its long colonial history. Its compact heritage…",
+   "source": "Sahapedia",
+   "date": "2026-03-09",
+   "lane": "culture"
+  },
+  {
+   "title": "NGOs start donation drives to ‘unbox’ Deepavali joy for underprivileged children",
+   "url": "https://www.thehindu.com/news/cities/chennai/during-this-month-of-daan-utsav-ngos-start-donation-drives-to-unbox-deepavali-joy-for-underprivileged-children/article71599024.ece",
+   "dek": "Perhaps the best part of the Festival of Lights is not what we bring home but what we send to another’s home. Here are initiatives by voluntary groups that offer an opportunity to do that…",
    "source": "The Hindu Society",
    "date": "2026-10-23",
    "lane": "culture"
@@ -1369,9 +1387,9 @@
    "lane": "culture"
   },
   {
-   "title": "Once Buried in Garbage, Now Open to People: 4 Indian Cities Reclaiming Landfills",
-   "url": "https://thebetterindia.com/sustainability/indian-cities-dumpsite-remediation-green-spaces-12740439",
-   "dek": "For decades, India's growing cities have dealt with their waste by moving it out of sight. Over time, municipal dumping grounds have grown into mountains of mixed garbage, often close to…",
+   "title": "Don’t Throw Away Last Year’s Diyas: This Simple Trick Makes Them Diwali-Ready Again",
+   "url": "https://thebetterindia.com/sustainability/sustainable-diwali-diy-reuse-old-diyas-creative-ways-to-celebrate-festivals-12740876",
+   "dek": "Diwali is a time to light up our homes with diyas, but celebrating the festival sustainably can begin with something as hassle-free as reusing what we already have. Instead of buying new…",
    "source": "The Better India",
    "date": "2026-10-23",
    "lane": "news"
@@ -1383,23 +1401,15 @@
    "source": "Hindustan Times Health",
    "date": "2026-10-23",
    "lane": "running"
-  },
-  {
-   "title": "The endurance runner of the grasslands",
-   "url": "https://india.mongabay.com/short-article/2026/10/the-endurance-runner-of-the-grasslands/",
-   "dek": "A creature of the open grasslands, the blackbuck’s evolutionary survival trick is endurance — it can sprint incredibly fast.",
-   "source": "Mongabay India",
-   "date": "2026-10-21",
-   "lane": "land"
   }
  ],
  "found_tibet": [
   {
-   "title": "Tenzing Norgay, a Tibetan outsider who summits Mt Everest, wins Sherpa respect",
-   "url": "https://www.tibetanreview.net/tenzing-norgay-a-tibetan-outsider-who-summits-mt-everest-wins-sherpa-respect/",
-   "dek": "(TibetanReview.net, Oct18’26) –Apart from focusing on the expedition to conquer Mt Everest for the first time in human history, the Apple TV film Tenzing also turns the lens towards the…",
+   "title": "Exile Tibetan leader urges free access, open information on Nagchu earthquake disaster",
+   "url": "https://www.tibetanreview.net/exile-tibetan-leader-urges-free-access-open-information-on-nagchu-earthquake-disaster/",
+   "dek": "(TibetanReview.net, Oct23’26) – Sikyong Penpa Tsering, the executive head of the Central Tibetan Administration (CTA), has expressed fears Oct 23 that the casualty and damage from the…",
    "source": "Tibetan Review",
-   "date": "2026-10-18",
+   "date": "2026-10-23",
    "lane": "news"
   },
   {
@@ -1425,6 +1435,14 @@
    "source": "Tibet Museum",
    "date": "2026-09-23",
    "lane": "culture"
+  },
+  {
+   "title": "Tenzing Norgay, a Tibetan outsider who summits Mt Everest, wins Sherpa respect",
+   "url": "https://www.tibetanreview.net/tenzing-norgay-a-tibetan-outsider-who-summits-mt-everest-wins-sherpa-respect/",
+   "dek": "(TibetanReview.net, Oct18’26) –Apart from focusing on the expedition to conquer Mt Everest for the first time in human history, the Apple TV film Tenzing also turns the lens towards the…",
+   "source": "Tibetan Review",
+   "date": "2026-10-18",
+   "lane": "news"
   },
   {
    "title": "Office of Tibet in Canberra Pays Courtesy Call on Newly Opened Embassy of Republic of Palau",
@@ -1457,14 +1475,6 @@
    "source": "Central Tibetan Administration",
    "date": "2026-10-22",
    "lane": "news"
-  },
-  {
-   "title": "Returning the Trust: The Final Journey of the Gene Smith Library",
-   "url": "https://www.bdrc.io/blog/2026/02/05/returning-the-trust/",
-   "dek": "In this blog post, we want to share a side of BDRC that few see: our history of repatriating physical books; the paper, ink, and generations of craftsmanship that form the foundation of our…",
-   "source": "Buddhist Digital Resource Center",
-   "date": "2026-02-05",
-   "lane": "research"
   }
  ]
 }
