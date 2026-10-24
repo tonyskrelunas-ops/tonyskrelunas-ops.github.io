@@ -15,12 +15,12 @@ En septiembre de 2025, la misma comisión bloqueó la creación formal de la Res
 <https://agri.mynavi.jp/2026_10_22_608344/>
 
 **Graikų dievai, gamtos kerai ir socialinė kritika. Dramaturgė G. Labanauskaitė pristato pirmąją poezijos knygą** — Bernardinai · LT  
-Leidykla „Kitos knygos“ išleido pirmąją dramaturgės Gabrielės Labanauskaitės poezijos knygą „Lūpų tapetai“. Leidinyje nugulė 40 eilėraščių, kuriuos autorė kruopščiai atri  
+Leidykla „Kitos knygos“ išleido pirmąją dramaturgės GABRIELĖS LABANAUSKAITĖS poezijos knygą „Lūpų tapetai“. Leidinyje nugulė 40 eilėraščių, kuriuos autorė kruopščiai atri  
 <https://www.bernardinai.lt/graiku-dievai-gamtos-kerai-ir-socialine-kritika-dramaturge-g-labanauskaite-pristato-pirmaja-poezijos-knyga/>
 
-**Jackfruit Peel Could Help Clean Water: NIT Rourkela Team Removes 90% of Harmful Fluoride** — The Better India · INDIA  
-Cut open a ripe jackfruit, and you are greeted by its golden-yellow flesh, sweet aroma and sticky, fibrous peel. While the juicy fruit often finds its way into curries, c  
-<https://thebetterindia.com/innovation/jackfruit-peel-fluoride-removal-water-purification-nit-rourkela-research-innovation-12741586>
+**From expensive gifts to social media pressure: The hidden emotional and financial costs of picture-perfect festive celebrations** — Hindustan Times Health · INDIA  
+Life coach Sangeeta Sharma explains how social pressure and picture-perfect expectations can turn festive celebrations into a source of stress rather than joy.  
+<https://www.hindustantimes.com/lifestyle/health/from-expensive-gifts-to-social-media-pressure-the-hidden-emotional-and-financial-costs-of-picture-perfect-festive-celebrations-101792843597944.html>
 
 **Webinar: Yigdzin, an open Tibetan OCR model from BDRC – Public Launch** — Buddhist Digital Resource Center · TIBET  
 Join us for the public launch of Yigdzin, BDRC's new open Tibetan OCR model. Yigdzin is a huge step forward for Tibetan OCR, helping researchers and translators spend les  
@@ -42,9 +42,9 @@ Plaza y Conjunto, exposición curada por David Miranda, revisa los procesos, col
 Spalio 24 d. minima Tarptautinė klimato kaitos diena, kurios simboliu neretai tampa medis. Sugerdami anglies dioksidą ir kaupdami anglį, miškai …  
 <https://mokslolietuva.lt/2026/10/ar-lietuvos-mokslininku-kuriama-dirbtine-mediena-gali-padeti-issaugoti-miskus/>
 
-**Normal body weight but high metabolic risk: Doctor explains why you should look beyond BMI to assess your health** — Hindustan Times Health · INDIA  
-A normal BMI may not always mean good health. Dr Niraj Kumar explains why abdominal fat, waist circumference and metabolic markers matter beyond body weight.  
-<https://www.hindustantimes.com/lifestyle/health/normal-body-weight-but-high-metabolic-risk-doctor-explains-why-you-should-look-beyond-bmi-to-assess-your-health-101792831446484.html>
+**Jackfruit Peel Could Help Clean Water: NIT Rourkela Team Removes 90% of Harmful Fluoride** — The Better India · INDIA  
+Cut open a ripe jackfruit, and you are greeted by its golden-yellow flesh, sweet aroma and sticky, fibrous peel. While the juicy fruit often finds its way into curries, c  
+<https://thebetterindia.com/innovation/jackfruit-peel-fluoride-removal-water-purification-nit-rourkela-research-innovation-12741586>
 
 **BDRC Launches Major Initiative to Build Open Buddhist Datasets for AI** — Buddhist Digital Resource Center · TIBET  
 BDRC is making a major effort to ensure that artificial intelligence (AI) is better informed about Buddhism. With generous financial support and inspiration from Khyentse  
