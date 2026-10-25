@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T05:05:53",
+ "generated": "2026-10-25T16:04:46",
  "lead": "where-hope-was-built-this-week",
  "mine": [
   {
@@ -979,14 +979,6 @@
    "lane": "land"
   },
   {
-   "title": "Food Access Organizers See Empty Promises from MAHA",
-   "url": "https://civileats.com/2026/10/22/food-access-organizers-see-empty-promises-from-maha/",
-   "dek": "By Rebekah Alvey • October 22, 2026West Virginia was an early adopter of the Make America Healthy Again movement, but those on the ground are disappointed and say food and clean water…",
-   "source": "Civil Eats",
-   "date": "2026-10-22",
-   "lane": "land"
-  },
-  {
    "title": "What Birds Reveal About Fire, Forests, and Resilience",
    "url": "https://www.audubon.org/rockies/news/what-birds-reveal-about-fire-forests-and-resilience",
    "dek": "In the 2025 State of the Birds report, a status assessment of the health of the nation’s bird populations, more than 50% of western forest species are declining due to habitat degradation…",
@@ -1056,6 +1048,14 @@
    "dek": "",
    "source": "Trail Runner",
    "date": "2026-10-16",
+   "lane": "running"
+  },
+  {
+   "title": "Samara Quanz and Alex Rogers selected as Under Armour Athletes of the Week",
+   "url": "https://runningmagazine.ca/the-scene/samara-quanz-and-alex-rogers-selected-as-under-armour-athletes-of-the-week/",
+   "dek": "The Windsor Lancer secured her third straight podium finish, while the Dalhousie Tiger rediscovered his form with a dominant win The post Samara Quanz and Alex Rogers selected as Under…",
+   "source": "Canadian Running",
+   "date": "2026-10-23",
    "lane": "running"
   }
  ],
@@ -1233,19 +1233,19 @@
  ],
  "found_lt": [
   {
-   "title": "Gyventojus vienu metu spaudžia ir infliacija, ir Europos Centrinis Bankas",
-   "url": "https://www.bernardinai.lt/gyventojus-vienu-metu-spaudzia-ir-infliacija-ir-europos-centrinis-bankas/",
-   "dek": "Rugsėjį metinė infliacija Lietuvoje pasiekė net 6,7 proc. Būsto paskolą turintiems gyventojams prie didėjančių išlaidų prekėms ir paslaugoms gali prisidėti didesnė įmoka: spalio 29 d…",
+   "title": "Ką protas dėmesingai pažįsta, tai širdis valingai myli",
+   "url": "https://www.bernardinai.lt/ka-protas-demesingai-pazista-tai-sirdis-valingai-myli/",
+   "dek": "Fariziejai nerimo savo kailyje; jie ir vėl mėgino Jėzų sugauti kalboje. Anomis dienomis fariziejai ir Įstatymo mokytojai turėjo daugiau nei 600 Mozės Įstatymo įsakymų – nors vežimu vežk…",
    "source": "Bernardinai",
    "date": "2026-10-25",
    "lane": "news"
   },
   {
-   "title": "Ar Lietuvos mokslininkų kuriama dirbtinė mediena gali padėti išsaugoti miškus?",
-   "url": "https://mokslolietuva.lt/2026/10/ar-lietuvos-mokslininku-kuriama-dirbtine-mediena-gali-padeti-issaugoti-miskus/",
-   "dek": "Spalio 24 d. minima Tarptautinė klimato kaitos diena, kurios simboliu neretai tampa medis. Sugerdami anglies dioksidą ir kaupdami anglį, miškai …",
+   "title": "Mokslininkai atkūrė seniausio žinomo Homo Sapiens veidą, ir jis atrodo labai pažįstamai",
+   "url": "https://mokslolietuva.lt/2026/10/mokslininkai-atkure-seniausio-zinomo-homo-sapiens-veida-ir-jis-atrodo-labai-pazistamai/",
+   "dek": "Mokslininkai panaudojo žmonių fosilijas iš Maroko, kad sukurtų maždaug 315 000 metų senumo skaitmeninį veidą. Rezultatas suteikia žvilgsnį į tai, …",
    "source": "Mokslo Lietuva",
-   "date": "2026-10-24",
+   "date": "2026-10-25",
    "lane": "research"
   },
   {
@@ -1257,11 +1257,11 @@
    "lane": "animals"
   },
   {
-   "title": "Savaitgalis Kaune: performansų tvanas, nepatogi dokumentika ir pučiamųjų salvės (renginiai spalio 23–25 d.)",
-   "url": "https://kaunaspilnas.lt/savaitgalis-kaune-performansu-tvanas-nepatogi-dokumentika-ir-puciamuju-salves-renginiai-spalio-23-25-d/",
-   "dek": "PENKTADIENIS, 10 23 ✈️ Parodos „Kai dangus tapo scena“ atidarymas, 15:00Lietuvos aviacijos muziejus, Veiverių g. 132 Muziejus pristato parodą, pasakojančią apie akrobatinio skraidymo…",
+   "title": "Savaitė Kaune: vaizdai, garsai ir nuotaikos tarp atminties ir ateities (renginiai spalio 26–29 d.)",
+   "url": "https://kaunaspilnas.lt/savaite-kaune-vaizdai-garsai-ir-nuotaikos-tarp-atminties-ir-ateities-renginiai-spalio-26-29-d/",
+   "dek": "PIRMADIENIS, 10 26 🎨 Linoraižinių dirbtuvės, 17:30Kauno Vinco Kudirkos viešosios bibliotekos Meno ir muzikos skyrius, A. Mapu g. 18 Biblioteka kviečia susipažinti su viena seniausių…",
    "source": "Kaunas pilnas kultūros",
-   "date": "2026-10-22",
+   "date": "2026-10-25",
    "lane": "culture"
   },
   {
@@ -1273,6 +1273,14 @@
    "lane": "culture"
   },
   {
+   "title": "Rodo neva purškiamus „chemtreilus“: kas išduoda dirbtinio intelekto pagalbą?",
+   "url": "https://www.15min.lt/naujiena/aktualu/lietuva/rodo-neva-purskiamus-chemtreilus-kas-isduoda-dirbtinio-intelekto-pagalba-56-2792000?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "Jau ne kartą dekonstruota sąmokslo teorija apie vadinamuosius „chemtreilus“ gaivinama su nauja jėga. Socialiniuose tinkluose kuriami puslapiai ir grupės, kuriuose skelbiama išgalvota…",
+   "source": "15min Kultūra",
+   "date": "2026-10-25",
+   "lane": "culture"
+  },
+  {
    "title": "Minaretas, virtieniai ir meilė iki mirties: kelionė po rašytojos Ginos Viliūnės Lietuvą",
    "url": "https://www.lrt.lt/naujienos/kultura/12/3091217/minaretas-virtieniai-ir-meile-iki-mirties-kelione-po-rasytojos-ginos-viliunes-lietuva",
    "dek": "Rusų generolų architektūriniai kaprizai, Žiemgalos virtieniai, penkis dešimtmečius saugota sukilėlio našlės priesaika – LRT.lt rubrikoje „Kultūrinis maršrutas“ keliaujame ten, kur gyveno…",
@@ -1281,12 +1289,12 @@
    "lane": "culture"
   },
   {
-   "title": "Dresuotoja R. Jakštaitė: bendravimas su šunimi tik komandomis yra labai ribotas",
-   "url": "https://www.bernardinai.lt/dresuotoja-r-jakstaite-bendravimas-su-sunimi-tik-komandomis-yra-labai-ribotas/",
-   "dek": "„Šuniuko galimybę prisitaikyti prie naujų taisyklių lemia ne amžius, o galvoje gyvenantys tarakonai. Pagrindinis iššūkis vis dėlto yra psichika“, – sako šunų dresuotoja RITA JAKŠTAITĖ…",
-   "source": "Bernardinai",
-   "date": "2026-10-25",
-   "lane": "news"
+   "title": "Ar Lietuvos mokslininkų kuriama dirbtinė mediena gali padėti išsaugoti miškus?",
+   "url": "https://mokslolietuva.lt/2026/10/ar-lietuvos-mokslininku-kuriama-dirbtine-mediena-gali-padeti-issaugoti-miskus/",
+   "dek": "Spalio 24 d. minima Tarptautinė klimato kaitos diena, kurios simboliu neretai tampa medis. Sugerdami anglies dioksidą ir kaupdami anglį, miškai …",
+   "source": "Mokslo Lietuva",
+   "date": "2026-10-24",
+   "lane": "research"
   },
   {
    "title": "Gamtos tyrimų centre – pažintis su mokslu iš arti",
@@ -1297,9 +1305,9 @@
    "lane": "animals"
   },
   {
-   "title": "Kaune – antrasis „Performanso meno savaitgalis“: laukia 14 nemokamų pasirodymų",
-   "url": "https://kaunaspilnas.lt/kaune-antrasis-performanso-meno-savaitgalis-laukia-14-nemokamu-pasirodymu/",
-   "dek": "Spalio 22–25 d. Kaune antrą kartą vyks „Performanso meno savaitgalis“, kurio metu Lietuvos ir užsienio kūrėjai įvairiose miesto erdvėse pristatys 14 pasirodymų. Nuo mezgimo treniruotės ir…",
+   "title": "Savaitgalis Kaune: performansų tvanas, nepatogi dokumentika ir pučiamųjų salvės (renginiai spalio 23–25 d.)",
+   "url": "https://kaunaspilnas.lt/savaitgalis-kaune-performansu-tvanas-nepatogi-dokumentika-ir-puciamuju-salves-renginiai-spalio-23-25-d/",
+   "dek": "PENKTADIENIS, 10 23 ✈️ Parodos „Kai dangus tapo scena“ atidarymas, 15:00Lietuvos aviacijos muziejus, Veiverių g. 132 Muziejus pristato parodą, pasakojančią apie akrobatinio skraidymo…",
    "source": "Kaunas pilnas kultūros",
    "date": "2026-10-22",
    "lane": "culture"
@@ -1318,14 +1326,6 @@
    "dek": "Prieš kelias savaites Nacionalinės filharmonijos scenoje Aleksandra Žvirblytė skambino F. Chopino koncertą fortepijonui ir orkestrui – taip atšventė savo jubiliejų. Profesorė, fortepijono…",
    "source": "LRT Kultūra",
    "date": "2026-10-23",
-   "lane": "culture"
-  },
-  {
-   "title": "Naujas etapas „Auros“ istorijoje: šokio teatrui vadovaus choreografas Tadas Almantas",
-   "url": "https://kaunaspilnas.lt/naujas-etapas-auros-istorijoje-sokio-teatrui-vadovaus-choreografas-tadas-almantas/",
-   "dek": "Daugiau kaip keturis dešimtmečius šiuolaikinio šokio tradicijas puoselėjanti „Aura“ savo kelią tęs su nauju vadovu. Po ilgametės teatro įkūrėjos Birūtos Komskienės (Birutės Letukaitės)…",
-   "source": "Kaunas pilnas kultūros",
-   "date": "2026-10-21",
    "lane": "culture"
   }
  ],
@@ -1437,14 +1437,6 @@
    "lane": "culture"
   },
   {
-   "title": "Tenzing Norgay, a Tibetan outsider who summits Mt Everest, wins Sherpa respect",
-   "url": "https://www.tibetanreview.net/tenzing-norgay-a-tibetan-outsider-who-summits-mt-everest-wins-sherpa-respect/",
-   "dek": "(TibetanReview.net, Oct18’26) –Apart from focusing on the expedition to conquer Mt Everest for the first time in human history, the Apple TV film Tenzing also turns the lens towards the…",
-   "source": "Tibetan Review",
-   "date": "2026-10-18",
-   "lane": "news"
-  },
-  {
    "title": "Office of Tibet in Canberra Pays Courtesy Call on Newly Opened Embassy of Republic of Palau",
    "url": "https://tibet.net/office-of-tibet-in-canberra-pays-courtesy-call-on-newly-opened-embassy-of-republic-of-palau/",
    "dek": "Canberra, Australia: Representative Karma Singey today paid a courtesy call on the newly opened Embassy of the Republic of Palau in Canberra. During the visit, Representative Singey…",
@@ -1475,6 +1467,14 @@
    "source": "Central Tibetan Administration",
    "date": "2026-10-22",
    "lane": "news"
+  },
+  {
+   "title": "Returning the Trust: The Final Journey of the Gene Smith Library",
+   "url": "https://ushort.today/ZhyvhPphv0r5/blog/2026/02/05/returning-the-trust/",
+   "dek": "In this blog post, we want to share a side of BDRC that few see: our history of repatriating physical books; the paper, ink, and generations of craftsmanship that form the foundation of our…",
+   "source": "Buddhist Digital Resource Center",
+   "date": "2026-02-05",
+   "lane": "research"
   }
  ]
 }

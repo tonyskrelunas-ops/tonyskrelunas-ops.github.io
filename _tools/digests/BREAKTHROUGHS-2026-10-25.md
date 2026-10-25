@@ -14,9 +14,9 @@ En septiembre de 2025, la misma comisión bloqueó la creación formal de la Res
 気温が下がってくるこれからの季節、植物の生育は春や夏とは大きく変わる。気温の低下によって生育がゆっくりになったり、落葉して休眠に入ったりする植物がある一方、寒さに弱い植物では気温が少し下がっただけでも生育が止まり、葉を落とすこともある。この時期に注意したいのが、春や夏と同じ感覚で植物を管理してしまうことだ。夏には問題のなかった水やりや施肥  
 <https://agri.mynavi.jp/2026_10_22_608344/>
 
-**Naujas etapas „Auros“ istorijoje: šokio teatrui vadovaus choreografas Tadas Almantas** — Kaunas pilnas kultūros · LT  
-Daugiau kaip keturis dešimtmečius šiuolaikinio šokio tradicijas puoselėjanti „Aura“ savo kelią tęs su nauju vadovu. Po ilgametės teatro įkūrėjos Birūtos Komskienės (Birut  
-<https://kaunaspilnas.lt/naujas-etapas-auros-istorijoje-sokio-teatrui-vadovaus-choreografas-tadas-almantas/>
+**Mokslininkai atkūrė seniausio žinomo Homo Sapiens veidą, ir jis atrodo labai pažįstamai** — Mokslo Lietuva · LT  
+Mokslininkai panaudojo žmonių fosilijas iš Maroko, kad sukurtų maždaug 315 000 metų senumo skaitmeninį veidą. Rezultatas suteikia žvilgsnį į tai, …  
+<https://mokslolietuva.lt/2026/10/mokslininkai-atkure-seniausio-zinomo-homo-sapiens-veida-ir-jis-atrodo-labai-pazistamai/>
 
 **Festive season skincare guide: A simple steps to follow 7 days before the celebrations for healthy, glowing skin** — Hindustan Times Health · INDIA  
 From cleansing to moisturising, here’s a simple 7-day skincare routine to follow before the festive season.  
@@ -26,9 +26,9 @@ From cleansing to moisturising, here’s a simple 7-day skincare routine to foll
 Join us for the public launch of Yigdzin, BDRC's new open Tibetan OCR model. Yigdzin is a huge step forward for Tibetan OCR, helping researchers and translators spend les  
 <https://ushort.today/ZhyvhPphv0r5/blog/2026/10/16/webinar-yigdzin-an-open-tibetan-ocr-model-from-bdrc-public-launch/>
 
-**What went right this week: the good news that matters** — Positive News  
-Rewilding gave low-lying islands hope, a basic income trial showed promise, and a Bangladeshi factory won an award, plus more The post What went right this week: the good  
-<https://www.positive.news/society/good-news-stories-from-week-43-of-2026/>
+**Samara Quanz and Alex Rogers selected as Under Armour Athletes of the Week** — Canadian Running  
+The Windsor Lancer secured her third straight podium finish, while the Dalhousie Tiger rediscovered his form with a dominant win The post Samara Quanz and Alex Rogers sel  
+<https://runningmagazine.ca/the-scene/samara-quanz-and-alex-rogers-selected-as-under-armour-athletes-of-the-week/>
 
 **Mathias Goeritz y la posibilidad de construir comunidad desde el espacio público** — Local.mx · ES  
 Plaza y Conjunto, exposición curada por David Miranda, revisa los procesos, colaboraciones y proyectos urbanos que hicieron de Mathias Goeritz una figura clave en la cons  
@@ -38,9 +38,9 @@ Plaza y Conjunto, exposición curada por David Miranda, revisa los procesos, col
 地域と都市をつなぐ「場」の可能性 地域と関わりたい人と、地域に新しいつながりを生み出したい人。そのあいだをつなぎ、関わりを育てていく「拠点」の役割が、いまあらためて注目されています。 本イベントでは、「関係人口」・「地域 […]  
 <https://sotokoto-online.jp/learning/27280>
 
-**Gyventojus vienu metu spaudžia ir infliacija, ir Europos Centrinis Bankas** — Bernardinai · LT  
-Rugsėjį metinė infliacija Lietuvoje pasiekė net 6,7 proc. Būsto paskolą turintiems gyventojams prie didėjančių išlaidų prekėms ir paslaugoms gali prisidėti didesnė įmoka:  
-<https://www.bernardinai.lt/gyventojus-vienu-metu-spaudzia-ir-infliacija-ir-europos-centrinis-bankas/>
+**Vabzdžiaėdžiai augalai – ir Lietuvos gamtoje (dr. Lukas Petrulaitis) (nuo 26 min. 23 sek.)** — Gamtos tyrimai · LT  
+The post Vabzdžiaėdžiai augalai – ir Lietuvos gamtoje (dr. Lukas Petrulaitis) (nuo 26 min. 23 sek.) appeared first on Gamtos tyrimų centras.  
+<https://gamtostyrimai.lt/vabzdziaedziai-augalai-ir-lietuvos-gamtoje-dr-lukas-petrulaitis-nuo-26-min-23-sek/>
 
 **Jackfruit Peel Could Help Clean Water: NIT Rourkela Team Removes 90% of Harmful Fluoride** — The Better India · INDIA  
 Cut open a ripe jackfruit, and you are greeted by its golden-yellow flesh, sweet aroma and sticky, fibrous peel. While the juicy fruit often finds its way into curries, c  
@@ -59,4 +59,5 @@ These sources gave nothing this morning. A feed that stays on this
 list for a few days has moved or died and wants replacing.
 
 - **en** · land · Western Horseman — unreachable
+- **en** · land · Civil Eats — empty
 - **lt** · news · Kauno diena — unreachable
