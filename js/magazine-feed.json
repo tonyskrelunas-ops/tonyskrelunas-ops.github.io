@@ -1,7 +1,67 @@
 {
- "generated": "2026-10-25T16:04:46",
- "lead": "where-hope-was-built-this-week",
+ "generated": "2026-10-26T18:40:25",
+ "lead": null,
  "mine": [
+  {
+   "slug": "what-does-your-heart-say",
+   "href": "/journal/what-does-your-heart-say/",
+   "title": "What Does Your Heart Say",
+   "date": "2026-10-20",
+   "pillar": "Human Resilience",
+   "dek": "An evening at Prescott College. A greeting in Tzotzil, a navigator who gave away what he was told to keep, and a small stone that teaches a body how to run.",
+   "img": "/assets/img/prescott-fire-circle.jpg",
+   "art": "/assets/art/four-capitals.svg"
+  },
+  {
+   "slug": "a-home-calm-enough-to-teach-in",
+   "href": "/journal/a-home-calm-enough-to-teach-in/",
+   "title": "A Home Calm Enough to Teach In",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "You cannot think bad about others and keep a regulated nervous system. What decolonizing wellness asks of a home, and the old roles a calm home was built to raise.",
+   "img": "/assets/img/a-home-calm-enough-to-teach-in.jpg",
+   "art": "/assets/art/baltic-oak.svg",
+   "tr": {
+    "es": {
+     "href": "/es/un-hogar-tranquilo-para-ensenar/",
+     "title": "Un hogar lo bastante tranquilo para enseñar",
+     "dek": "No se puede pensar mal de los demás y mantener regulado el sistema nervioso. Lo que descolonizar el bienestar le pide a un hogar, y los papeles antiguos que un hogar en calma estaba hecho para criar.",
+     "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/oshie-ga-tsutawaru-ie/",
+     "title": "教えが伝わるほど穏やかな家",
+     "dek": "他者を悪く思いながら、整った神経系を保つことはできない。ウェルネスの脱植民地化が一つの家に求めるもの、そして穏やかな家が育てるためにあった、古い役割について。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/namai-kuriuose-uztenka-ramybes/",
+     "title": "Namai, kuriuose užtenka ramybės mokyti",
+     "dek": "Negali blogai galvoti apie kitus ir kartu išlaikyti sureguliuotą nervų sistemą. Ko gerovės dekolonizavimas reikalauja iš namų, ir senieji vaidmenys, kuriems užauginti buvo kuriami ramūs namai.",
+     "pillar": "Žmogaus atsparumas"
+    }
+   }
+  },
+  {
+   "slug": "a-joke-at-the-dry-spring",
+   "href": "/journal/a-joke-at-the-dry-spring/",
+   "title": "A Joke at the Dry Spring",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "In the long crossing, the first test is a spring that should be flowing and is dry. What you do next was taught long before you got there. A joke, a seat, and an old song.",
+   "img": "/assets/img/a-joke-at-the-dry-spring.jpg",
+   "art": "/assets/art/japan-bridge.svg"
+  },
+  {
+   "slug": "little-piles-of-rock",
+   "href": "/journal/little-piles-of-rock/",
+   "title": "Little Piles of Rock",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "On Labor Day morning, facing the San Francisco Peaks, I recorded a meditation about an old trail. The part that stays with me is the knowledge that was waiting in us all along.",
+   "img": "/assets/img/little-piles-of-rock.jpg",
+   "art": "/assets/art/dine-mountains.svg"
+  },
   {
    "slug": "long-term-resilience-ancient-culture",
    "href": "/journal/long-term-resilience-ancient-culture/",
@@ -10,7 +70,7 @@
    "pillar": "Human Resilience",
    "dek": "Hopi opened its door to this work. The far messengers, the science of the nervous system, and the tools a nation that has kept its covenant took home.",
    "img": "/assets/img/far-messengers-shore.jpg",
-   "art": "/assets/art/four-capitals.svg",
+   "art": "/assets/art/baltic-juosta.svg",
    "tr": {
     "es": {
      "href": "/es/resiliencia-duradera-cultura-antigua/",
@@ -40,7 +100,7 @@
    "pillar": "Community Resilience",
    "dek": "The Council Fire is out with a new cover. Twelve keepers, the instructions our ancestors left, and a path through hard times that has been walked before.",
    "img": "/assets/img/the-council-fire-arrives-with-a-family-on-its-cover.jpg",
-   "art": "/assets/art/baltic-oak.svg",
+   "art": "/assets/art/dine-dawn.svg",
    "tr": {
     "es": {
      "href": "/es/the-council-fire-llega-con-una-familia/",
@@ -59,6 +119,116 @@
      "title": "„The Council Fire“ atkeliauja su šeima viršelyje",
      "dek": "Šylantis pasaulis, dirbtinis intelektas ir badas, ir kūnai, gyvenantys su įjungtu pavojaus signalu. „The Council Fire“ jau išleista, su nauju viršeliu, ir ji neša kelią per tai — kelią, kuriuo jau buvo eita.",
      "pillar": "Bendruomenės atsparumas"
+    }
+   }
+  },
+  {
+   "slug": "where-hope-was-built-this-week",
+   "href": "/journal/where-hope-was-built-this-week/",
+   "title": "Where Hope Was Built This Week",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "The news carries the alarm. The far messengers carry what we need. Nine places where people protected a spring, a seed, a forest or a language this week.",
+   "img": "/assets/img/where-hope-was-built-this-week.jpg",
+   "art": "/assets/art/japan-enso.svg"
+  },
+  {
+   "slug": "why-i-call-the-sheep-camp-a-retreat",
+   "href": "/journal/why-i-call-the-sheep-camp-a-retreat/",
+   "title": "Why I Call the Sheep Camp a Retreat",
+   "date": "2026-10-19",
+   "pillar": "Human Resilience",
+   "dek": "Digging out a corral is hard, dirty work, and I call it a retreat. The research on what one word does to the body says a great deal about what a family hands down.",
+   "img": "/assets/img/why-i-call-the-sheep-camp-a-retreat.jpg",
+   "art": "/assets/art/baltic-sun.svg"
+  },
+  {
+   "slug": "why-i-started-a-magazine-again",
+   "href": "/journal/why-i-started-a-magazine-again/",
+   "title": "Why I Started a Magazine, and Why I Am Starting It Again",
+   "date": "2026-10-04",
+   "pillar": "The Movement",
+   "dek": "It began in 2021 under a different name. Five years later there are two novels out, a doctorate underway, and the same stubborn idea: that what a people reads every morning decides something",
+   "img": "/assets/img/v2/horse-only-900px.jpg",
+   "art": "/assets/art/dine-hogan.svg",
+   "tr": {
+    "es": {
+     "href": "/es/por-que-empece-una-revista/",
+     "title": "Por qué empecé una revista, y por qué la empiezo otra vez",
+     "dek": "En 2021 se llamaba Tribal Prestige. Cinco años después hay dos novelas publicadas, un doctorado en marcha y la misma idea terca.",
+     "pillar": "El movimiento"
+    },
+    "ja": {
+     "href": "/ja/naze-zasshi-wo-hajimeta-ka/",
+     "title": "なぜ雑誌を始めたのか、そしてなぜもう一度始めるのか",
+     "dek": "二〇二一年、その名は『トライバル・プレステージ』だった。五年後、小説が二冊世に出て、博士課程が進み、同じ頑固な考えが残っている。",
+     "pillar": "運動"
+    },
+    "lt": {
+     "href": "/lt/kodel-pradejau-zurnala/",
+     "title": "Kodėl pradėjau žurnalą ir kodėl pradėsiu iš naujo",
+     "dek": "2021-aisiais jis vadinosi „Tribal Prestige“. Po penkerių metų išleisti du romanai, vyksta doktorantūra, o mintis liko ta pati.",
+     "pillar": "Judėjimas"
+    }
+   }
+  },
+  {
+   "slug": "speak-only-what-you-want-built",
+   "href": "/journal/speak-only-what-you-want-built/",
+   "title": "Speak Only What You Want Built",
+   "date": "2026-09-17",
+   "pillar": "Human Resilience",
+   "dek": "My great-grandmother corrected careless speech the way she corrected a tool set down in the wrong place. Forty years later I understand why they were the same error.",
+   "img": "/assets/img/canyon-family.jpg",
+   "art": "/assets/art/four-capitals.svg",
+   "tr": {
+    "es": {
+     "href": "/es/hable-solo-lo-que-quiera-construir/",
+     "title": "Hable solo lo que quiera construir",
+     "dek": "Mi bisabuela corregía una palabra descuidada igual que corregía una herramienta dejada donde no iba.",
+     "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/nozomu-koto-dake-wo-kataru/",
+     "title": "築きたいことだけを口にせよ",
+     "dek": "曾祖母は、不用意な言葉を、置き場所を間違えた道具とまったく同じように正した。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/kalbek-tik-tai-ka-nori-pastatyti/",
+     "title": "Kalbėk tik tai, ką nori pastatyti",
+     "dek": "Promočiutė taisydavo neapgalvotą žodį lygiai taip, kaip taisydavo ne į tą vietą padėtą įrankį.",
+     "pillar": "Žmogaus atsparumas"
+    }
+   }
+  },
+  {
+   "slug": "wanting-narrows-the-eye",
+   "href": "/journal/wanting-narrows-the-eye/",
+   "title": "Wanting Narrows the Eye",
+   "date": "2026-09-17",
+   "pillar": "Human Resilience",
+   "dek": "My grandfather never had money and was never poor a day in his life. Abundance turns out to be a question about perception, not arithmetic.",
+   "img": "/assets/img/land-healing.jpg",
+   "art": "/assets/art/baltic-oak.svg",
+   "tr": {
+    "es": {
+     "href": "/es/el-deseo-angosta-la-mirada/",
+     "title": "El deseo angosta la mirada",
+     "dek": "Mi abuelo nunca tuvo dinero y no fue pobre un solo día de su vida.",
+     "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/hossuru-koto-wa-me-wo-sebameru/",
+     "title": "欲することは眼を狭める",
+     "dek": "祖父は金を持たないまま百三歳まで生き、一日も貧しくなかった。四つの富の帳簿について。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/noras-susiaurina-aki/",
+     "title": "Noras susiaurina akį",
+     "dek": "Senelis sulaukė šimto trejų be pinigų ir nė dienos nebuvo vargšas. Apie keturių turtų apskaitą.",
+     "pillar": "Žmogaus atsparumas"
     }
    }
   },
@@ -89,176 +259,6 @@
      "title": "Stone Breath salió al mundo",
      "dek": "Distribución mundial: Apple Books, Kobo, librerías de Berlín a Sídney. Un solo enlace alcanza todo.",
      "pillar": "Los libros"
-    }
-   }
-  },
-  {
-   "slug": "what-does-your-heart-say",
-   "href": "/journal/what-does-your-heart-say/",
-   "title": "What Does Your Heart Say",
-   "date": "2026-10-20",
-   "pillar": "Human Resilience",
-   "dek": "An evening at Prescott College. A greeting in Tzotzil, a navigator who gave away what he was told to keep, and a small stone that teaches a body how to run.",
-   "img": "/assets/img/prescott-fire-circle.jpg",
-   "art": "/assets/art/dine-mountains.svg"
-  },
-  {
-   "slug": "a-home-calm-enough-to-teach-in",
-   "href": "/journal/a-home-calm-enough-to-teach-in/",
-   "title": "A Home Calm Enough to Teach In",
-   "date": "2026-10-19",
-   "pillar": "Human Resilience",
-   "dek": "You cannot think bad about others and keep a regulated nervous system. What decolonizing wellness asks of a home, and the old roles a calm home was built to raise.",
-   "img": "/assets/img/a-home-calm-enough-to-teach-in.jpg",
-   "art": "/assets/art/baltic-juosta.svg",
-   "tr": {
-    "es": {
-     "href": "/es/un-hogar-tranquilo-para-ensenar/",
-     "title": "Un hogar lo bastante tranquilo para enseñar",
-     "dek": "No se puede pensar mal de los demás y mantener regulado el sistema nervioso. Lo que descolonizar el bienestar le pide a un hogar, y los papeles antiguos que un hogar en calma estaba hecho para criar.",
-     "pillar": "Resiliencia humana"
-    },
-    "ja": {
-     "href": "/ja/oshie-ga-tsutawaru-ie/",
-     "title": "教えが伝わるほど穏やかな家",
-     "dek": "他者を悪く思いながら、整った神経系を保つことはできない。ウェルネスの脱植民地化が一つの家に求めるもの、そして穏やかな家が育てるためにあった、古い役割について。",
-     "pillar": "人間のレジリエンス"
-    },
-    "lt": {
-     "href": "/lt/namai-kuriuose-uztenka-ramybes/",
-     "title": "Namai, kuriuose užtenka ramybės mokyti",
-     "dek": "Negali blogai galvoti apie kitus ir kartu išlaikyti sureguliuotą nervų sistemą. Ko gerovės dekolonizavimas reikalauja iš namų, ir senieji vaidmenys, kuriems užauginti buvo kuriami ramūs namai.",
-     "pillar": "Žmogaus atsparumas"
-    }
-   }
-  },
-  {
-   "slug": "a-joke-at-the-dry-spring",
-   "href": "/journal/a-joke-at-the-dry-spring/",
-   "title": "A Joke at the Dry Spring",
-   "date": "2026-10-19",
-   "pillar": "Human Resilience",
-   "dek": "In the long crossing, the first test is a spring that should be flowing and is dry. What you do next was taught long before you got there. A joke, a seat, and an old song.",
-   "img": "/assets/img/a-joke-at-the-dry-spring.jpg",
-   "art": "/assets/art/dine-dawn.svg"
-  },
-  {
-   "slug": "little-piles-of-rock",
-   "href": "/journal/little-piles-of-rock/",
-   "title": "Little Piles of Rock",
-   "date": "2026-10-19",
-   "pillar": "Human Resilience",
-   "dek": "On Labor Day morning, facing the San Francisco Peaks, I recorded a meditation about an old trail. The part that stays with me is the knowledge that was waiting in us all along.",
-   "img": "/assets/img/little-piles-of-rock.jpg",
-   "art": "/assets/art/japan-enso.svg"
-  },
-  {
-   "slug": "where-hope-was-built-this-week",
-   "href": "/journal/where-hope-was-built-this-week/",
-   "title": "Where Hope Was Built This Week",
-   "date": "2026-10-19",
-   "pillar": "Human Resilience",
-   "dek": "The news carries the alarm. The far messengers carry what we need. Nine places where people protected a spring, a seed, a forest or a language this week.",
-   "img": "/assets/img/where-hope-was-built-this-week.jpg",
-   "art": "/assets/art/baltic-sun.svg"
-  },
-  {
-   "slug": "why-i-call-the-sheep-camp-a-retreat",
-   "href": "/journal/why-i-call-the-sheep-camp-a-retreat/",
-   "title": "Why I Call the Sheep Camp a Retreat",
-   "date": "2026-10-19",
-   "pillar": "Human Resilience",
-   "dek": "Digging out a corral is hard, dirty work, and I call it a retreat. The research on what one word does to the body says a great deal about what a family hands down.",
-   "img": "/assets/img/why-i-call-the-sheep-camp-a-retreat.jpg",
-   "art": "/assets/art/dine-hogan.svg"
-  },
-  {
-   "slug": "why-i-started-a-magazine-again",
-   "href": "/journal/why-i-started-a-magazine-again/",
-   "title": "Why I Started a Magazine, and Why I Am Starting It Again",
-   "date": "2026-10-04",
-   "pillar": "The Movement",
-   "dek": "It began in 2021 under a different name. Five years later there are two novels out, a doctorate underway, and the same stubborn idea: that what a people reads every morning decides something",
-   "img": "/assets/img/v2/horse-only-900px.jpg",
-   "art": "/assets/art/four-capitals.svg",
-   "tr": {
-    "es": {
-     "href": "/es/por-que-empece-una-revista/",
-     "title": "Por qué empecé una revista, y por qué la empiezo otra vez",
-     "dek": "En 2021 se llamaba Tribal Prestige. Cinco años después hay dos novelas publicadas, un doctorado en marcha y la misma idea terca.",
-     "pillar": "El movimiento"
-    },
-    "ja": {
-     "href": "/ja/naze-zasshi-wo-hajimeta-ka/",
-     "title": "なぜ雑誌を始めたのか、そしてなぜもう一度始めるのか",
-     "dek": "二〇二一年、その名は『トライバル・プレステージ』だった。五年後、小説が二冊世に出て、博士課程が進み、同じ頑固な考えが残っている。",
-     "pillar": "運動"
-    },
-    "lt": {
-     "href": "/lt/kodel-pradejau-zurnala/",
-     "title": "Kodėl pradėjau žurnalą ir kodėl pradėsiu iš naujo",
-     "dek": "2021-aisiais jis vadinosi „Tribal Prestige“. Po penkerių metų išleisti du romanai, vyksta doktorantūra, o mintis liko ta pati.",
-     "pillar": "Judėjimas"
-    }
-   }
-  },
-  {
-   "slug": "speak-only-what-you-want-built",
-   "href": "/journal/speak-only-what-you-want-built/",
-   "title": "Speak Only What You Want Built",
-   "date": "2026-09-17",
-   "pillar": "Human Resilience",
-   "dek": "My great-grandmother corrected careless speech the way she corrected a tool set down in the wrong place. Forty years later I understand why they were the same error.",
-   "img": "/assets/img/canyon-family.jpg",
-   "art": "/assets/art/baltic-oak.svg",
-   "tr": {
-    "es": {
-     "href": "/es/hable-solo-lo-que-quiera-construir/",
-     "title": "Hable solo lo que quiera construir",
-     "dek": "Mi bisabuela corregía una palabra descuidada igual que corregía una herramienta dejada donde no iba.",
-     "pillar": "Resiliencia humana"
-    },
-    "ja": {
-     "href": "/ja/nozomu-koto-dake-wo-kataru/",
-     "title": "築きたいことだけを口にせよ",
-     "dek": "曾祖母は、不用意な言葉を、置き場所を間違えた道具とまったく同じように正した。",
-     "pillar": "人間のレジリエンス"
-    },
-    "lt": {
-     "href": "/lt/kalbek-tik-tai-ka-nori-pastatyti/",
-     "title": "Kalbėk tik tai, ką nori pastatyti",
-     "dek": "Promočiutė taisydavo neapgalvotą žodį lygiai taip, kaip taisydavo ne į tą vietą padėtą įrankį.",
-     "pillar": "Žmogaus atsparumas"
-    }
-   }
-  },
-  {
-   "slug": "wanting-narrows-the-eye",
-   "href": "/journal/wanting-narrows-the-eye/",
-   "title": "Wanting Narrows the Eye",
-   "date": "2026-09-17",
-   "pillar": "Human Resilience",
-   "dek": "My grandfather never had money and was never poor a day in his life. Abundance turns out to be a question about perception, not arithmetic.",
-   "img": "/assets/img/land-healing.jpg",
-   "art": "/assets/art/japan-bridge.svg",
-   "tr": {
-    "es": {
-     "href": "/es/el-deseo-angosta-la-mirada/",
-     "title": "El deseo angosta la mirada",
-     "dek": "Mi abuelo nunca tuvo dinero y no fue pobre un solo día de su vida.",
-     "pillar": "Resiliencia humana"
-    },
-    "ja": {
-     "href": "/ja/hossuru-koto-wa-me-wo-sebameru/",
-     "title": "欲することは眼を狭める",
-     "dek": "祖父は金を持たないまま百三歳まで生き、一日も貧しくなかった。四つの富の帳簿について。",
-     "pillar": "人間のレジリエンス"
-    },
-    "lt": {
-     "href": "/lt/noras-susiaurina-aki/",
-     "title": "Noras susiaurina akį",
-     "dek": "Senelis sulaukė šimto trejų be pinigų ir nė dienos nebuvo vargšas. Apie keturių turtų apskaitą.",
-     "pillar": "Žmogaus atsparumas"
     }
    }
   },
@@ -915,11 +915,11 @@
  ],
  "found": [
   {
-   "title": "New U.S. National Park Preserves ‘Land of Standing-Up Rocks’ and its Apache Culture in Arizona",
-   "url": "https://www.goodnewsnetwork.org/new-us-national-park-preserves-land-of-standing-up-rocks/",
-   "dek": "The U.S. has designated a new National Park in Arizona, preserving the distinctive landscape known as Chiricahua, the land of ‘Standing-Up Rocks’. Previously a national monument, the new…",
+   "title": "Good News in History, October 26",
+   "url": "https://www.goodnewsnetwork.org/events061026/",
+   "dek": "201 years ago today, the Erie Canal opened a passageway from New York to the Great Lakes. The canal was built to create a navigable water route from the Atlantic Ocean to the Midwestern US…",
    "source": "Good News Network",
-   "date": "2026-10-24",
+   "date": "2026-10-26",
    "lane": "news"
   },
   {
@@ -939,11 +939,11 @@
    "lane": "research"
   },
   {
-   "title": "Best Cushioned Trail Running Shoes of 2026",
-   "url": "https://www.irunfar.com/best-cushioned-trail-running-shoes",
-   "dek": "The post Best Cushioned Trail Running Shoes of 2026 appeared first on iRunFar. A look at some of the best cushioned trail running shoes, include models from Altra, Brooks, Hoka, La…",
+   "title": "This Week In Running: October 26, 2026",
+   "url": "https://www.irunfar.com/this-week-in-running-october-26-2026",
+   "dek": "The post This Week In Running: October 26, 2026 appeared first on iRunFar. This Week in Running’s trail and ultra recap for October 26, 2026. This Week In Running: October 26, 2026 by…",
    "source": "iRunFar",
-   "date": "2026-10-24",
+   "date": "2026-10-26",
    "lane": "running"
   },
   {
@@ -955,11 +955,11 @@
    "lane": "running"
   },
   {
-   "title": "B.C. runner becomes Canadian Backyard Ultra Champion after running almost 550 km over 82 hours",
-   "url": "https://runningmagazine.ca/trail-running/kelowna-runner-becomes-canadian-backyard-ultra-champion-after-running-almost-550-km-over-82-hours/",
-   "dek": "Michael Serani doubled his previous best and took home the national win The post B.C. runner becomes Canadian Backyard Ultra Champion after running almost 550 km over 82 hours appeared…",
+   "title": "Kenyan distance runner shatters 35-year-old M50 marathon world record",
+   "url": "https://runningmagazine.ca/the-scene/kenyan-distance-runner-shatters-35-year-old-m50-marathon-world-record/",
+   "dek": "Just a month after setting the M50 half-marathon world record, Mark Kosgei Kiptoo laced up his super shoes at the Mainova Frankfurt Marathon to make history once more The post Kenyan…",
    "source": "Canadian Running",
-   "date": "2026-10-23",
+   "date": "2026-10-26",
    "lane": "running"
   },
   {
@@ -987,33 +987,25 @@
    "lane": "animals"
   },
   {
-   "title": "Restoring a 12,000-year-old forest to help defend Poland’s border",
-   "url": "https://news.mongabay.com/video/2026/10/restoring-a-12000-year-old-forest-to-help-defend-polands-border/",
-   "dek": "POLAND — Białowieża Forest. Białowieża Forest, one of Europe’s last remaining primeval forests, straddles the border between Poland and Belarus. Its wetlands and ancient trees support a…",
+   "title": "Rare bird finding strengthens case to protect Congo rainforest across borders",
+   "url": "https://news.mongabay.com/2026/10/rare-bird-finding-strengthens-case-to-protect-congo-rainforest-across-borders/",
+   "dek": "When ecologist Jean Semeki installed camera traps along a forest trail in the Luki Biosphere Reserve in the west of the Democratic Republic of Congo to survey its mammals, he and his…",
    "source": "Mongabay",
-   "date": "2026-10-24",
+   "date": "2026-10-26",
    "lane": "animals"
   },
   {
-   "title": "Indian Arts Center in Laguna, New Mexico",
-   "url": "https://www.atlasobscura.com/places/indian-arts-center",
-   "dek": "Just outside Albuquerque along historic Route 66, sits an unassuming, albeit colorful little building. Adorned with paintings of Native women and traditional pottery, the Indian Arts Center…",
+   "title": "‘Night Song’ in Muncie, Indiana",
+   "url": "https://www.atlasobscura.com/places/night-song-at-riverbend-park",
+   "dek": "Let's be frank. The young Native American man is playing his love's favorite song in hopes of tempting her out for a midnight rendezvous. And it appears to have worked! The “Night Song”…",
    "source": "Atlas Obscura",
-   "date": "2026-10-23",
+   "date": "2026-10-26",
    "lane": "culture"
   },
   {
-   "title": "For the First Time, Scientists Trapped an Elusive Antimatter Particle—and Contained It for Months. It Could Allow Them to Test an Enduring Physics The",
-   "url": "https://www.smithsonianmag.com/smart-news/for-the-first-time-scientists-trapped-an-elusive-antimatter-particle-and-contained-it-for-months-it-could-allow-them-to-test-an-enduring-physics-theory-180989738/",
-   "dek": "The standard model of particle physics works really well, but it can't explain why the universe exists. Something is missing, and this trapped particle might hold a clue to the answer",
-   "source": "Smithsonian",
-   "date": "2026-10-23",
-   "lane": "culture"
-  },
-  {
-   "title": "Good News in History, October 24",
-   "url": "https://www.goodnewsnetwork.org/events061024/",
-   "dek": "Happy 41st Birthday to Wayne Rooney, former Manchester United talisman and captain of the England national team. Part of a golden generation that helped to cement the English Premier League…",
+   "title": "New U.S. National Park Preserves ‘Land of Standing-Up Rocks’ and its Apache Culture in Arizona",
+   "url": "https://www.goodnewsnetwork.org/new-us-national-park-preserves-land-of-standing-up-rocks/",
+   "dek": "The U.S. has designated a new National Park in Arizona, preserving the distinctive landscape known as Chiricahua, the land of ‘Standing-Up Rocks’. Previously a national monument, the new…",
    "source": "Good News Network",
    "date": "2026-10-24",
    "lane": "news"
@@ -1035,11 +1027,11 @@
    "lane": "research"
   },
   {
-   "title": "‘Where the Water Was’ with Dakota Jones: Advocating for Utah’s Great Salt Lake",
-   "url": "https://www.irunfar.com/where-the-water-was-with-dakota-jones-advocating-for-utahs-great-salt-lake",
-   "dek": "The post ‘Where the Water Was’ with Dakota Jones: Advocating for Utah’s Great Salt Lake appeared first on iRunFar. Dakota Jones organized a 260-mile relay run around Utah's Great Salt Lake…",
+   "title": "Best Cushioned Trail Running Shoes of 2026",
+   "url": "https://www.irunfar.com/best-cushioned-trail-running-shoes",
+   "dek": "The post Best Cushioned Trail Running Shoes of 2026 appeared first on iRunFar. A look at some of the best cushioned trail running shoes, include models from Altra, Brooks, Hoka, La…",
    "source": "iRunFar",
-   "date": "2026-10-23",
+   "date": "2026-10-24",
    "lane": "running"
   },
   {
@@ -1051,12 +1043,20 @@
    "lane": "running"
   },
   {
-   "title": "Samara Quanz and Alex Rogers selected as Under Armour Athletes of the Week",
-   "url": "https://runningmagazine.ca/the-scene/samara-quanz-and-alex-rogers-selected-as-under-armour-athletes-of-the-week/",
-   "dek": "The Windsor Lancer secured her third straight podium finish, while the Dalhousie Tiger rediscovered his form with a dominant win The post Samara Quanz and Alex Rogers selected as Under…",
+   "title": "U.S. and European half-marathon records fall in Valencia—but they don’t count",
+   "url": "https://runningmagazine.ca/sections/runs-races/u-s-and-european-half-marathon-records-fall-in-valencia-but-they-dont-count/",
+   "dek": "Questions over national allegiance mean neither performance will count as an official record The post U.S. and European half-marathon records fall in Valencia—but they don’t count appeared…",
    "source": "Canadian Running",
-   "date": "2026-10-23",
+   "date": "2026-10-26",
    "lane": "running"
+  },
+  {
+   "title": "Black Chickens: Popular and Perfect for Spooky Season",
+   "url": "https://www.hobbyfarms.com/2-spooky-chickens-real-farmers-cant-afford-3/",
+   "dek": "If Black Chickens Are Your Goal, Remember Their Hefty Price Tag The post Black Chickens: Popular and Perfect for Spooky Season appeared first on Hobby Farms.",
+   "source": "Hobby Farms",
+   "date": "2026-10-23",
+   "lane": "land"
   }
  ],
  "found_es": [
@@ -1066,6 +1066,14 @@
    "dek": "Häsler Gómez nació en Guatemala, pero creció en Nevada, en Estados Unidos. Migró de niño, con apenas cuatro años. Habla rápido, en un español atravesado por el inglés —el spanglish—... The…",
    "source": "Agencia Ocote",
    "date": "2026-10-14",
+   "lane": "news"
+  },
+  {
+   "title": "‘La bola negra’ y otros suspiros de España",
+   "url": "https://ethic.es/la-bola-negra-otros-suspiros-espana",
+   "dek": "La película dirigida por Los Javis es el último artefacto pop que exige admiración incondicional. La entrada ‘La bola negra’ y otros suspiros de España se publicó primero en Ethic.",
+   "source": "Ethic",
+   "date": "2026-10-26",
    "lane": "news"
   },
   {
@@ -1101,11 +1109,11 @@
    "lane": "land"
   },
   {
-   "title": "Investigación de la Unal abre camino a derivados de cannabis con mayor valor agregado",
-   "url": "https://www.agronegocios.co/remedios/investigacion-de-la-unal-abre-camino-a-derivados-de-cannabis-con-mayor-valor-agregado-4509792",
-   "dek": "El estudio probó a escala industrial un proceso para obtener extractos de cannabis ricos en cannabidiol y productos de mayor valor para mercados internacionales",
+   "title": "Restaurante de James Rodríguez en la Zona T fue sede de un remate de genética Brangus",
+   "url": "https://www.agronegocios.co/finca/restaurante-de-james-rodriguez-en-la-zona-t-fue-sede-de-un-remate-de-genetica-brangus-4511222",
+   "dek": "La segunda edición del remate La Victoria Brangus reunió genética bovina y contó con la participación de Biobos, que ofreció ejemplares y embriones",
    "source": "Agronegocios",
-   "date": "2026-10-23",
+   "date": "2026-10-26",
    "lane": "land"
   },
   {
@@ -1125,11 +1133,19 @@
    "lane": "culture"
   },
   {
-   "title": "Vivir la desigualdad sin renunciar a la esperanza",
-   "url": "https://www.revistaanfibia.com/protestas-en-francia-vivir-la-desigualdad-sin-renunciar-a-la-esperanza/",
-   "dek": "Ayer, martes 6 de octubre, en el anfiteatro de la École des Hautes Études en Sciences Sociales de París se realizó un acto inédito: la Universidad de Buenos Aires se movió hasta Francia…",
-   "source": "Revista Anfibia",
-   "date": "2026-10-07",
+   "title": "Todo lo que merece lágrimas. De concursos literarios, detectores de IA y caza de brujas",
+   "url": "https://www.jotdown.es/2026/10/todo-lo-que-merece-lagrimas-de-concursos-literarios-detectores-de-ia-y-caza-de-brujas/",
+   "dek": "Estamos en el año 20 a. C., en la reunión final del Praemium Stellae Errantis —conocido por el vulgo como Praemium Planetarium—. Se han recibido numerosos textos —el premio es muy…",
+   "source": "Jot Down",
+   "date": "2026-10-26",
+   "lane": "culture"
+  },
+  {
+   "title": "Poemas de “El escondido”, de Ernesto Pérez Zúñiga",
+   "url": "https://www.zendalibros.com/poemas-de-el-escondido-de-ernesto-perez-zuniga/",
+   "dek": "El Escondido es el nuevo poemario de Ernesto Pérez Zúñiga: un libro de amor y de mística contemporánea que escucha lo que late bajo la superficie de lo real. Cartas, sutras, salmos y prosas…",
+   "source": "Zenda Libros",
+   "date": "2026-10-26",
    "lane": "culture"
   },
   {
@@ -1139,22 +1155,6 @@
    "source": "Agencia Ocote",
    "date": "2026-10-12",
    "lane": "news"
-  },
-  {
-   "title": "Una nueva especie de orquídea fue descubierta en el Parque Nacional Yanachaga Chemillén y lleva el nombre de un destacado botánico",
-   "url": "https://inforegion.pe/una-nueva-especie-de-orquidea-fue-descubierta-en-el-parque-nacional-yanachaga-chemillen-y-lleva-el-nombre-de-un-destacado-botanico/",
-   "dek": "El Parque Nacional Yanachaga Chemillén, ubicado en la región Pasco, alberga una ... La entrada Una nueva especie de orquídea fue descubierta en el Parque Nacional Yanachaga Chemillén y…",
-   "source": "Inforegión",
-   "date": "2026-10-22",
-   "lane": "news"
-  },
-  {
-   "title": "Construyendo sostenibilidad en la cadena pesquera mexicana",
-   "url": "https://causanaturacenter.org/articulos/construyendo-sostenibilidad-en-la-cadena-pesquera-mexicana/",
-   "dek": "La sostenibilidad pesquera en México es un tema clave para garantizar la seguridad alimentaria, la conservación de los ecosistemas marinos y el bienestar de las comunidades costeras. A…",
-   "source": "Causa Natura",
-   "date": "2025-11-21",
-   "lane": "land"
   }
  ],
  "found_ja": [
@@ -1233,35 +1233,27 @@
  ],
  "found_lt": [
   {
-   "title": "Ką protas dėmesingai pažįsta, tai širdis valingai myli",
-   "url": "https://www.bernardinai.lt/ka-protas-demesingai-pazista-tai-sirdis-valingai-myli/",
-   "dek": "Fariziejai nerimo savo kailyje; jie ir vėl mėgino Jėzų sugauti kalboje. Anomis dienomis fariziejai ir Įstatymo mokytojai turėjo daugiau nei 600 Mozės Įstatymo įsakymų – nors vežimu vežk…",
-   "source": "Bernardinai",
-   "date": "2026-10-25",
-   "lane": "news"
-  },
-  {
-   "title": "Mokslininkai atkūrė seniausio žinomo Homo Sapiens veidą, ir jis atrodo labai pažįstamai",
-   "url": "https://mokslolietuva.lt/2026/10/mokslininkai-atkure-seniausio-zinomo-homo-sapiens-veida-ir-jis-atrodo-labai-pazistamai/",
-   "dek": "Mokslininkai panaudojo žmonių fosilijas iš Maroko, kad sukurtų maždaug 315 000 metų senumo skaitmeninį veidą. Rezultatas suteikia žvilgsnį į tai, …",
+   "title": "Lietuvos mokslininko Manto Šimėno sėkmės istorija – Europos Komisijos leidinyje, skirtame MSCA programos 30-mečiui",
+   "url": "https://mokslolietuva.lt/2026/10/lietuvos-mokslininko-manto-simeno-sekmes-istorija-europos-komisijos-leidinyje-skirtame-msca-programos-30-meciui/",
+   "dek": "Lietuvos mokslininko, Vilniaus universiteto (VU) Fizikos fakulteto prof. dr. Manto Šimėno mokslinė veikla pristatyta Europos Komisijos (EK) leidinyje, skirtame programos …",
    "source": "Mokslo Lietuva",
-   "date": "2026-10-25",
+   "date": "2026-10-26",
    "lane": "research"
   },
   {
-   "title": "Vabzdžiaėdžiai augalai – ir Lietuvos gamtoje (dr. Lukas Petrulaitis) (nuo 26 min. 23 sek.)",
-   "url": "https://gamtostyrimai.lt/vabzdziaedziai-augalai-ir-lietuvos-gamtoje-dr-lukas-petrulaitis-nuo-26-min-23-sek/",
-   "dek": "The post Vabzdžiaėdžiai augalai – ir Lietuvos gamtoje (dr. Lukas Petrulaitis) (nuo 26 min. 23 sek.) appeared first on Gamtos tyrimų centras.",
+   "title": "Baltųjų gandrų mitybinės kelionės: kodėl svarbus kiekvienas kilometras nuo lizdo?",
+   "url": "https://gamtostyrimai.lt/baltuju-gandru-mitybines-keliones-kodel-svarbus-kiekvienas-kilometras-nuo-lizdo/",
+   "dek": "Perėjimo metu baltųjų gandrų dienos prabėga nuolat keliaujant tarp lizdo ir mitybos vietų, siekiant aprūpinti sparčiai augančius jauniklius maistu. Nors iš pirmo žvilgsnio gali atrodyti…",
    "source": "Gamtos tyrimai",
-   "date": "2026-10-09",
+   "date": "2026-10-26",
    "lane": "animals"
   },
   {
-   "title": "Savaitė Kaune: vaizdai, garsai ir nuotaikos tarp atminties ir ateities (renginiai spalio 26–29 d.)",
-   "url": "https://kaunaspilnas.lt/savaite-kaune-vaizdai-garsai-ir-nuotaikos-tarp-atminties-ir-ateities-renginiai-spalio-26-29-d/",
-   "dek": "PIRMADIENIS, 10 26 🎨 Linoraižinių dirbtuvės, 17:30Kauno Vinco Kudirkos viešosios bibliotekos Meno ir muzikos skyrius, A. Mapu g. 18 Biblioteka kviečia susipažinti su viena seniausių…",
+   "title": "Kas vyksta rašytojo galvoje prieš pasirodant pirmajai knygai? Atsakymai – naujoje parodoje",
+   "url": "https://kaunaspilnas.lt/kas-vyksta-rasytojo-galvoje-pries-pasirodant-pirmajai-knygai-atsakymai-naujoje-parodoje/",
+   "dek": "Spalio 29 d. Maironio lietuvių literatūros muziejuje pristatoma paroda „Tyla. Balsas. Proveržis“, kuri yra VU Kauno fakulteto Lietuvių literatūros ir kūrybinio rašymo magistrantūros studijų…",
    "source": "Kaunas pilnas kultūros",
-   "date": "2026-10-25",
+   "date": "2026-10-26",
    "lane": "culture"
   },
   {
@@ -1273,77 +1265,85 @@
    "lane": "culture"
   },
   {
-   "title": "Rodo neva purškiamus „chemtreilus“: kas išduoda dirbtinio intelekto pagalbą?",
-   "url": "https://www.15min.lt/naujiena/aktualu/lietuva/rodo-neva-purskiamus-chemtreilus-kas-isduoda-dirbtinio-intelekto-pagalba-56-2792000?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Jau ne kartą dekonstruota sąmokslo teorija apie vadinamuosius „chemtreilus“ gaivinama su nauja jėga. Socialiniuose tinkluose kuriami puslapiai ir grupės, kuriuose skelbiama išgalvota…",
+   "title": "„Eismas stovi“: pirmadienio pavakarę – apmaudi avarija siauroje Vilniaus gatvėje",
+   "url": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/eismas-stovi-pirmadienio-pavakare-apmaudi-avarija-siauroje-vilniaus-gatveje-59-2792920?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "Sostinėje, regioninio parko teritorijoje, natūraliai siauroje Mildos gatvės vietoje neprasilenkę du automobilių vairuotojai pilnai užblokavo eismą. Žmonės avarijos metu nenukentėjo.",
    "source": "15min Kultūra",
-   "date": "2026-10-25",
+   "date": "2026-10-26",
    "lane": "culture"
   },
   {
-   "title": "Minaretas, virtieniai ir meilė iki mirties: kelionė po rašytojos Ginos Viliūnės Lietuvą",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3091217/minaretas-virtieniai-ir-meile-iki-mirties-kelione-po-rasytojos-ginos-viliunes-lietuva",
-   "dek": "Rusų generolų architektūriniai kaprizai, Žiemgalos virtieniai, penkis dešimtmečius saugota sukilėlio našlės priesaika – LRT.lt rubrikoje „Kultūrinis maršrutas“ keliaujame ten, kur gyveno…",
+   "title": "Šanchajaus didžiojo operos teatro atidaryme – lietuvių pėdsakas",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3094393/sanchajaus-didziojo-operos-teatro-atidaryme-lietuviu-pedsakas",
+   "dek": "Venecijos operos teatro „La Fenice“ atliekama Giacomo Puccini opera „Toska“ tapo pirmuoju Šanchajaus didžiajame operos teatre atliktu operos spektakliu. Šias gastroles patikėta surengti…",
    "source": "LRT Kultūra",
-   "date": "2026-10-24",
+   "date": "2026-10-26",
    "lane": "culture"
   },
   {
-   "title": "Ar Lietuvos mokslininkų kuriama dirbtinė mediena gali padėti išsaugoti miškus?",
-   "url": "https://mokslolietuva.lt/2026/10/ar-lietuvos-mokslininku-kuriama-dirbtine-mediena-gali-padeti-issaugoti-miskus/",
-   "dek": "Spalio 24 d. minima Tarptautinė klimato kaitos diena, kurios simboliu neretai tampa medis. Sugerdami anglies dioksidą ir kaupdami anglį, miškai …",
-   "source": "Mokslo Lietuva",
-   "date": "2026-10-24",
-   "lane": "research"
-  },
-  {
-   "title": "Gamtos tyrimų centre – pažintis su mokslu iš arti",
-   "url": "https://gamtostyrimai.lt/gamtos-tyrimu-centre-pazintis-su-mokslu-is-arti/",
-   "dek": "Kasdieniai gamtos reiškiniai slepia daugybę klausimų, į kuriuos atsakymų ieško mokslininkai. Spalio 8 d. Valstybinis mokslinių tyrimų institutas Gamtos tyrimų centras (GTC) atvėrė duris…",
-   "source": "Gamtos tyrimai",
-   "date": "2026-10-09",
-   "lane": "animals"
-  },
-  {
-   "title": "Savaitgalis Kaune: performansų tvanas, nepatogi dokumentika ir pučiamųjų salvės (renginiai spalio 23–25 d.)",
-   "url": "https://kaunaspilnas.lt/savaitgalis-kaune-performansu-tvanas-nepatogi-dokumentika-ir-puciamuju-salves-renginiai-spalio-23-25-d/",
-   "dek": "PENKTADIENIS, 10 23 ✈️ Parodos „Kai dangus tapo scena“ atidarymas, 15:00Lietuvos aviacijos muziejus, Veiverių g. 132 Muziejus pristato parodą, pasakojančią apie akrobatinio skraidymo…",
+   "title": "Apie šiuolaikinį meną pasakojančios senjorės: kultūra padeda išsaugoti gyvenimo džiaugsmą",
+   "url": "https://kaunaspilnas.lt/apie-siuolaikini-mena-pasakojancios-senjores-kultura-padeda-issaugoti-gyvenimo-dziaugsma/",
+   "dek": "Kauno paveikslų galerijoje prasideda paskutinė Tarptautinio fotografijos ir medijų meno festivalio IPMA savaitė. Šiemet ryšio temą nagrinėjanti programa kviečia gilintis ne tik į meno…",
    "source": "Kaunas pilnas kultūros",
-   "date": "2026-10-22",
+   "date": "2026-10-26",
    "lane": "culture"
   },
   {
-   "title": "Lietuvos nacionalinis muziejus vyksta į Vilniaus rajono mokyklas",
+   "title": "Lietuvos nacionalinis muziejus vyksta į Vilniaus ir Vilniaus rajono mokyklas",
    "url": "https://lnm.lt/renginiai-mokytojams/lietuvos-nacionalinis-muziejus-atvyksta-i-vilniaus-rajono-mokyklas/",
-   "dek": "Per mokinių rudens atostogas Lietuvos nacionalinis muziejus kviečia Vilniaus rajono mokyklų pedagogus į nemokamus edukacinių veiklų pristatymus jų mokyklose. Susitikimai vyks lapkričio 3, 5…",
+   "dek": "Per mokinių rudens atostogas Lietuvos nacionalinis muziejus kviečia Vilniaus ir Vilniaus rajono mokyklų pedagogus į nemokamus edukacinių veiklų pristatymus jų mokyklose. Susitikimai vyks…",
    "source": "Nacionalinis muziejus",
    "date": "2026-10-20",
    "lane": "culture"
   },
   {
-   "title": "Profesorė Aleksandra Žvirblytė: tikroji prasmė yra tame, ką paliksi po savęs",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3091360/profesore-aleksandra-zvirblyte-tikroji-prasme-yra-tame-ka-paliksi-po-saves",
-   "dek": "Prieš kelias savaites Nacionalinės filharmonijos scenoje Aleksandra Žvirblytė skambino F. Chopino koncertą fortepijonui ir orkestrui – taip atšventė savo jubiliejų. Profesorė, fortepijono…",
+   "title": "NATO naikintuvai du kartus kilo atpažinti ir lydėti Rusijos orlaivių",
+   "url": "https://www.15min.lt/naujiena/aktualu/lietuva/nato-naikintuvai-du-kartus-kilo-atpazinti-ir-lydeti-rusijos-orlaiviu-56-2792910?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "NATO oro gynybos misiją Baltijos šalyse vykdantys naikintuvai praėjusią savaitę du kartus kilo atpažinti ir lydėti skrydžio taisykles pažeidusių Rusijos orlaivių, pirmadienį pranešė Krašto…",
+   "source": "15min Kultūra",
+   "date": "2026-10-26",
+   "lane": "culture"
+  },
+  {
+   "title": "Rėkyvos kultūros namuose atidaryta Rositos Eidintienės paroda „Nepaisant visko“",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3094180/rekyvos-kulturos-namuose-atidaryta-rositos-eidintienes-paroda-nepaisant-visko",
+   "dek": "Šiaulių kultūros centro Rėkyvos kultūros namuose įvyko šiaulietės tapytojos Rositos Eidintienės tapybos darbų parodos „Nepaisant visko“ atidarymas. Parodoje lankytojams pristatyti…",
    "source": "LRT Kultūra",
-   "date": "2026-10-23",
+   "date": "2026-10-26",
+   "lane": "culture"
+  },
+  {
+   "title": "Savaitė Kaune: vaizdai, garsai ir nuotaikos tarp atminties ir ateities (renginiai spalio 26–29 d.)",
+   "url": "https://kaunaspilnas.lt/savaite-kaune-vaizdai-garsai-ir-nuotaikos-tarp-atminties-ir-ateities-renginiai-spalio-26-29-d/",
+   "dek": "PIRMADIENIS, 10 26 🎨 Linoraižinių dirbtuvės, 17:30Kauno Vinco Kudirkos viešosios bibliotekos Meno ir muzikos skyrius, A. Mapu g. 18 Biblioteka kviečia susipažinti su viena seniausių…",
+   "source": "Kaunas pilnas kultūros",
+   "date": "2026-10-25",
+   "lane": "culture"
+  },
+  {
+   "title": "LNM Kazio Varnelio namuose-muziejuje atidaroma menininkės Beatričės Mockevičiūtės paroda „Bėgančios akys“",
+   "url": "https://lnm.lt/aktualijos/lnm-kazio-varnelio-namuose-muziejuje-atidaroma-menininkes-beatrices-mockeviciutes-paroda-begancios-akys/",
+   "dek": "Spalio 14 d. 18 val. Lietuvos nacionalinio muziejaus (LNM) Kazio Varnelio namuose-muziejuje atidaroma menininkės Beatričės Mockevičiūtės paroda „Bėgančios akys“ (kuratorė Indrė Urbelytė)…",
+   "source": "Nacionalinis muziejus",
+   "date": "2026-10-12",
    "lane": "culture"
   }
  ],
  "found_india": [
   {
-   "title": "‘This Is the Horse From My Book’: How a Farm Visit Brought Animals to Life for a Toddler",
-   "url": "https://thebetterindia.com/parenting/farm-visit-with-toddlers-parents-family-travel-mumbai-12741755",
-   "dek": "This story is part of “Parenting: What Google Won’t Tell You” — The Better India’s people-led parenting series that goes beyond conventional advice to document how real families are…",
+   "title": "Forced to Quit Football at 16, This Bengal Woman Now Helps Tribal Girls Reach Nationals",
+   "url": "https://thebetterindia.com/web-stories/changemakers/bharati-mudi-bankura-bengal-free-football-coaching-tribal-girls-12754182",
+   "dek": "",
    "source": "The Better India",
-   "date": "2026-10-24",
+   "date": "2026-10-26",
    "lane": "news"
   },
   {
-   "title": "Festive season skincare guide: A simple steps to follow 7 days before the celebrations for healthy, glowing skin",
-   "url": "https://www.hindustantimes.com/lifestyle/health/festive-season-skincare-guide-a-simple-steps-to-follow-7-days-before-the-celebrations-for-healthy-glowing-skin-101792912737714.html",
-   "dek": "From cleansing to moisturising, here’s a simple 7-day skincare routine to follow before the festive season.",
+   "title": "Beyond 10,000 steps a day: Metabolic health coach shares 5 lifestyle habits that can make a difference",
+   "url": "https://www.hindustantimes.com/lifestyle/health/beyond-10-000-steps-a-day-metabolic-health-coach-shares-5-lifestyle-habits-that-can-make-a-difference-101793024221072.html",
+   "dek": "Walking 10,000 steps but still feeling tired? Govind Lohia, metabolic health coach, explains why protein, strength training, sleep and daily habits matter too.",
    "source": "Hindustan Times Health",
-   "date": "2026-10-25",
+   "date": "2026-10-26",
    "lane": "running"
   },
   {
@@ -1355,11 +1355,11 @@
    "lane": "land"
   },
   {
-   "title": "Meeting a Five-thousand-year-old Peepal Tree",
-   "url": "https://roundglasssustain.com/books/the-trees-know-all-the-stories",
-   "dek": "Arjun, an eight-year-old boy from the city who spends a summer with his grandmother, discovers an ancient tree at the edge of their village",
+   "title": "Gharials Lose Nesting Sites at Katerniaghat",
+   "url": "https://roundglasssustain.com/conservation/gharials-katerniaghat",
+   "dek": "Growth of vegetation along the banks of the Girwa River has adversely affected the nesting of gharials",
    "source": "Roundglass Sustain",
-   "date": "2026-10-21",
+   "date": "2026-10-26",
    "lane": "animals"
   },
   {
@@ -1371,11 +1371,11 @@
    "lane": "culture"
   },
   {
-   "title": "Coimbatore boy to represent India at Asia Pacific Motorsport Championship 2026",
-   "url": "https://www.thehindu.com/news/cities/Coimbatore/coimbatore-boy-to-represent-india-at-asia-pacific-motorsport-championship-2026/article71615082.ece",
-   "dek": "Meet 10-year-old Guru Tarun SK from the city, who has been selected by the Federation of Motor Sports Clubs of India (FMSCI) to represent India in the Under-12 category",
+   "title": "Remembering Chef Damu: A life dedicated to Tamil Nadu’s culinary heritage",
+   "url": "https://www.thehindu.com/society/remembering-chef-damu-a-life-dedicated-to-tamil-nadus-culinary-heritage/article71626208.ece",
+   "dek": "A tribute to the late Chef K Damodaran, who took Tamil Nadu’s cuisine to the world stage, documented forgotten dishes, shared cooking techniques through his television shows, and inspired…",
    "source": "The Hindu Society",
-   "date": "2026-10-24",
+   "date": "2026-10-26",
    "lane": "culture"
   },
   {
@@ -1387,23 +1387,31 @@
    "lane": "culture"
   },
   {
-   "title": "Jackfruit Peel Could Help Clean Water: NIT Rourkela Team Removes 90% of Harmful Fluoride",
-   "url": "https://thebetterindia.com/innovation/jackfruit-peel-fluoride-removal-water-purification-nit-rourkela-research-innovation-12741586",
-   "dek": "Cut open a ripe jackfruit, and you are greeted by its golden-yellow flesh, sweet aroma and sticky, fibrous peel. While the juicy fruit often finds its way into curries, chips and desserts…",
+   "title": "‘The Key Is Ensuring the Soil Doesn’t Retain Too Much Water’: 6 Tips to Grow Marigolds at Home",
+   "url": "https://thebetterindia.com/gardening/how-to-grow-marigolds-at-home-november-expert-tips-west-bengal-farmer-arup-kumar-ghosh-12739172",
+   "dek": "Few flowers can brighten a home garden like marigolds. Their cheerful yellow and orange blooms bring colour to balconies, terraces, and window ledges. They are also a familiar sight during…",
    "source": "The Better India",
-   "date": "2026-10-24",
+   "date": "2026-10-26",
    "lane": "news"
   },
   {
-   "title": "Say goodbye to frizz: 5 secrets for managing humid hair that hair experts won't tell you",
-   "url": "https://www.hindustantimes.com/lifestyle/health/hair-care-tips-for-frizzy-hair-in-humid-weather-101792771064581.html",
-   "dek": "How to manage frizzy hair in humid weather? Expert tips, plant-based products, and simple habits to keep strands smooth and healthy all season long.",
+   "title": "Dr Shriram Nene shares 6 healthy habits he follows with wife Madhuri Dixit for better health: From walking after meals to consistent bedtime routine",
+   "url": "https://www.hindustantimes.com/lifestyle/health/dr-shriram-nene-shares-6-healthy-habits-he-follows-with-wife-madhuri-dixit-for-better-health-from-walking-after-meals-to-consistent-bedtime-routine-101793009943544.html",
+   "dek": "Dr Shriram Nene believes good health starts with the basics. He shares 6 habits involving nutrition, daily movement, muscle strength a for long-term well-being.",
    "source": "Hindustan Times Health",
-   "date": "2026-10-25",
+   "date": "2026-10-26",
    "lane": "running"
   }
  ],
  "found_tibet": [
+  {
+   "title": "Dharamshala RTWA inaugurates statue honouring late Tibetan independence activist Lobga Rangzen",
+   "url": "https://phayul.com/dharamshala-rtwa-inaugurates-statue-honouring-late-tibetan-independence-activist-lobga-rangzen/",
+   "dek": "Tenzin Nyidon DHARAMSHALA, Oct. 26: The Dharamshala Regional Tibetan Women’s Association (RTWA) on Monday inaugurated a 6.5-foot statue of the late Tibetan independence activist Lobga…",
+   "source": "Phayul",
+   "date": "2026-10-26",
+   "lane": "news"
+  },
   {
    "title": "Exile Tibetan leader urges free access, open information on Nagchu earthquake disaster",
    "url": "https://www.tibetanreview.net/exile-tibetan-leader-urges-free-access-open-information-on-nagchu-earthquake-disaster/",
@@ -1413,16 +1421,16 @@
    "lane": "news"
   },
   {
-   "title": "Sikyong Calls for Collective Efforts to Preserve Tibetan Language and Identity at 66th Upper TCV School Founding Anniversary",
-   "url": "https://tibet.net/sikyong-calls-for-collective-efforts-to-preserve-tibetan-language-and-identity-at-66th-upper-tcv-school-founding-anniversary/",
-   "dek": "Dharamshala: Earlier this morning, the 66th Founding Anniversary of Tibetan Children’s Village (TCV) School, Upper TCV, was celebrated on 23 October 2026 at the school’s football ground…",
+   "title": "Core Group for Tibetan Cause-India (CGTC-I) – First Meeting of the 2026-2029 Tenure",
+   "url": "https://tibet.net/core-group-for-tibetan-cause-india-cgtc-i-first-meeting-of-the-2026-2029-tenure/",
+   "dek": "New Delhi: The first meeting of the newly constituted Core Group for Tibetan Cause for the tenure 2026-2029 was held on 25 October 2026 at the Bureau of His Holiness the Dalai Lama, New…",
    "source": "Central Tibetan Administration",
-   "date": "2026-10-23",
+   "date": "2026-10-26",
    "lane": "news"
   },
   {
    "title": "Webinar: Yigdzin, an open Tibetan OCR model from BDRC – Public Launch",
-   "url": "https://ushort.today/ZhyvhPphv0r5/blog/2026/10/16/webinar-yigdzin-an-open-tibetan-ocr-model-from-bdrc-public-launch/",
+   "url": "https://www.bdrc.io/blog/2026/10/16/webinar-yigdzin-an-open-tibetan-ocr-model-from-bdrc-public-launch/",
    "dek": "Join us for the public launch of Yigdzin, BDRC's new open Tibetan OCR model. Yigdzin is a huge step forward for Tibetan OCR, helping researchers and translators spend less time retyping…",
    "source": "Buddhist Digital Resource Center",
    "date": "2026-10-16",
@@ -1437,16 +1445,16 @@
    "lane": "culture"
   },
   {
-   "title": "Office of Tibet in Canberra Pays Courtesy Call on Newly Opened Embassy of Republic of Palau",
-   "url": "https://tibet.net/office-of-tibet-in-canberra-pays-courtesy-call-on-newly-opened-embassy-of-republic-of-palau/",
-   "dek": "Canberra, Australia: Representative Karma Singey today paid a courtesy call on the newly opened Embassy of the Republic of Palau in Canberra. During the visit, Representative Singey…",
+   "title": "Chinese Liaison Officer Dawa Sangmo Joins Sydney RTYC in Marking TYC’s 56th Founding Anniversary and Chapter Revival",
+   "url": "https://tibet.net/chinese-liaison-officer-dawa-sangmo-joins-sydney-rtyc-in-marking-tycs-56th-founding-anniversary-and-chapter-revival/",
+   "dek": "Sydney: At the invitation of the Sydney Regional Tibetan Youth Congress, Dawa Sangmo, Chinese Liaison Officer of the Tibet Information Office (TIO), joined members and supporters of the…",
    "source": "Central Tibetan Administration",
-   "date": "2026-10-23",
+   "date": "2026-10-26",
    "lane": "news"
   },
   {
    "title": "BDRC Launches Major Initiative to Build Open Buddhist Datasets for AI",
-   "url": "https://ushort.today/ZhyvhPphv0r5/blog/2026/02/28/bdrc-launches-major-initiative-to-build-open-buddhist-datasets-for-ai/",
+   "url": "https://www.bdrc.io/blog/2026/02/28/bdrc-launches-major-initiative-to-build-open-buddhist-datasets-for-ai/",
    "dek": "BDRC is making a major effort to ensure that artificial intelligence (AI) is better informed about Buddhism. With generous financial support and inspiration from Khyentse Foundation, in…",
    "source": "Buddhist Digital Resource Center",
    "date": "2026-02-28",
@@ -1461,16 +1469,8 @@
    "lane": "culture"
   },
   {
-   "title": "Health Kalon Pema Tso Maiden Visit to Three Bir Tibetan Settlements and Tashi Jong",
-   "url": "https://tibet.net/health-kalon-pema-tso-maiden-visit-to-three-bir-tibetan-settlements-and-tashi-jong/",
-   "dek": "Bir, 21 October 2026: Health Kalon Pema Tso of the Central Tibetan Administration (CTA) conducted her maiden official visit to the Tibetan settlements of Chauntra, Bir Dege, Bir Tibetan…",
-   "source": "Central Tibetan Administration",
-   "date": "2026-10-22",
-   "lane": "news"
-  },
-  {
    "title": "Returning the Trust: The Final Journey of the Gene Smith Library",
-   "url": "https://ushort.today/ZhyvhPphv0r5/blog/2026/02/05/returning-the-trust/",
+   "url": "https://www.bdrc.io/blog/2026/02/05/returning-the-trust/",
    "dek": "In this blog post, we want to share a side of BDRC that few see: our history of repatriating physical books; the paper, ink, and generations of craftsmanship that form the foundation of our…",
    "source": "Buddhist Digital Resource Center",
    "date": "2026-02-05",
