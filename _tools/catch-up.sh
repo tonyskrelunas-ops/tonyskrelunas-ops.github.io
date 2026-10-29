@@ -13,7 +13,9 @@ set -u
 export PATH=/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin
 cd ~/Documents/TribeAwaken || exit 1
 
-git pull --quiet --rebase origin main 2>/dev/null
+# --autostash, 19 October 2026: without it the pull refused to run whenever
+# the Mac copy held uncommitted work, so the Mac fell behind GitHub silently.
+git pull --quiet --rebase --autostash origin main 2>/dev/null
 
 LIVE=$(python3 -c "import json;print(json.load(open('js/magazine-feed.json'))['generated'][:10])" 2>/dev/null)
 TODAY=$(date +%F)
