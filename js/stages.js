@@ -1,7 +1,9 @@
 /* THE FOUR MAJOR ROTATING SECTIONS — the stage engine.
    One component drives all four theaters (The Work / The Journal / The Books /
    The Life).  Implements the motion law exactly:
-     · auto-rotates, staggered 6-11s per stage, FIRST turn fast
+     · auto-rotates slowly, about 15s per scene, first turn after ~12s
+       (Tony 11/2/2026: "the sections turn too quick .. its hard to navigate")
+     · holds still while the pointer rests on a stage (reading)
      · real 3D turns on SCENES (never a tilted grid)
      · ANY click, touch or keyboard focus permanently stops that stage and
        shows "paused — yours"; the dots then drive it
@@ -26,7 +28,7 @@
     var dots   = Array.prototype.slice.call(root.querySelectorAll('.stage__dot'));
     if (!deck || scenes.length === 0) return;
 
-    var i = 0, held = false, visible = true, timer = null, swapping = false;
+    var i = 0, held = false, visible = true, timer = null, swapping = false, resting = false;
 
     /* the deck takes the ACTIVE scene's height, so a short scene never leaves
        a void beneath it. Grid stacking still guarantees it can never collapse
@@ -75,6 +77,9 @@
     /* A deliberate tap hands the stage over. A scroll does not: touchstart
        fires the moment a finger lands, so this used to freeze every band on
        a phone at the first scroll. See js/tap.js. */
+    /* a pointer resting on the stage means someone is reading: hold still */
+    root.addEventListener('mouseenter', function () { resting = true; });
+    root.addEventListener('mouseleave', function () { resting = false; });
     if (window.taphold) { window.taphold(root, hold); }
     else { root.addEventListener('click', hold, { passive: true }); }
     dots.forEach(function (d, n) {
@@ -111,16 +116,16 @@
         { threshold: 0, rootMargin: '1200px 0px 1200px 0px' }).observe(root);
     }
 
-    var every = 6000 + ordinal * 400;        // ~6s, lightly staggered so they never flip in unison
-    var first = 1800 + ordinal * 450;        // the first turn comes quickly
+    var every = 15000 + ordinal * 700;       // ~15s per scene, lightly staggered so they never flip in unison
+    var first = 12000 + ordinal * 900;       // give the first scene time to be read
     document.addEventListener('visibilitychange', function () {
-      if (!document.hidden && !held && visible) next();   // resume on return
+      if (!document.hidden && !held && visible && !resting) next();   // resume on return
     });
     setTimeout(function () {
       if (held) return;
-      if (visible && !document.hidden) next();
+      if (visible && !document.hidden && !resting) next();
       timer = setInterval(function () {
-        if (!held && visible && !document.hidden) next();
+        if (!held && visible && !document.hidden && !resting) next();
       }, every);
     }, first);
   }
@@ -162,8 +167,8 @@
             timer = setInterval(function(){
               if (held || !vis || document.hidden) return;
               at = (at + 1) % pool.length; paint();
-            }, 6000 + k*350);
-          }, 1600 + k*400);
+            }, 12000 + k*500);
+          }, 8000 + k*400);
         });
       }).catch(function(){});
   }
