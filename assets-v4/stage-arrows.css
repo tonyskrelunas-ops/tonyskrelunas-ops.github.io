@@ -1,0 +1,13 @@
+/* Arrows and the other-sections menu beside each rotating stage (Tony, 11/4/2026). */
+.stage .stage__nav{flex-wrap:wrap;row-gap:.55rem}
+.stage .stage__arrow{display:inline-grid;place-items:center;width:34px;height:34px;padding:0;
+  border:1px solid currentColor;border-radius:50%;background:transparent;color:inherit;
+  font:600 1.15rem/1 var(--body,system-ui);cursor:pointer;opacity:.75;transition:opacity .2s,background .2s}
+.stage .stage__arrow span{transform:translateY(-1px)}
+.stage .stage__arrow:hover,.stage .stage__arrow:focus-visible{opacity:1;background:color-mix(in srgb,currentColor 10%,transparent)}
+.stage .stage__others{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .9rem;margin-left:.6rem;
+  font-family:var(--body,system-ui);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.stage .stage__others a{color:inherit;opacity:.72;text-decoration:none;border-bottom:1px solid transparent}
+.stage .stage__others a:hover,.stage .stage__others a:focus-visible{opacity:1;border-bottom-color:currentColor}
+@media (max-width:640px){ .stage .stage__others{flex-basis:100%;margin-left:0} }
+@media (prefers-reduced-motion:reduce){ .stage .stage__arrow{transition:none} }
