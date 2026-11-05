@@ -44,6 +44,19 @@ mark{background:none;padding:0}
 footer{color:#8a7d66;font-size:13.5px;margin-top:34px;line-height:1.55;
  border-top:1px solid var(--line);padding-top:14px}
 audio{width:100%;height:36px;margin-top:6px}
+.hero{margin:14px 0 18px;position:relative}
+.hero img{width:100%;height:clamp(150px,27vw,300px);object-fit:cover;border-radius:12px;
+ display:block;box-shadow:0 3px 20px rgba(0,0,0,.18)}
+.hero figcaption{position:absolute;left:12px;bottom:10px;color:#fff;font-size:13px;
+ font-style:italic;text-shadow:0 1px 8px rgba(0,0,0,.85);letter-spacing:.01em}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:8px;margin:16px 0 4px}
+.strip img{width:100%;height:112px;object-fit:cover;border-radius:8px;display:block}
+video{width:100%;border-radius:12px;display:block;box-shadow:0 3px 20px rgba(0,0,0,.18)}
+.vcap{color:#8a7d66;font-size:13.5px;margin:6px 0 0;font-style:italic}
+.vrow{background:var(--card);border:1px solid var(--line);border-radius:11px;
+ padding:12px 14px;margin-bottom:9px}
+.vrow b{font-weight:normal;font-size:17px}
+.vrow .w{display:block;color:#8a7d66;font-size:13.5px;margin:1px 0 7px}
 /* one-column modes */
 body.only-l .cell.r,body.only-l .hd.r{display:none}
 body.only-l .row,body.only-l .heads{grid-template-columns:1fr}
@@ -71,6 +84,7 @@ body.diffs .gap{display:block;text-align:center;color:#b3a78e;margin:.5em 0;lett
 <p class="sub">0 paragraphs differ · 154 identical</p>
 
 </header>
+<figure class="hero"><img src="/assets/img/land/peaks-meadow.jpg" alt="The stillness before storm" loading="lazy"><figcaption>The stillness before storm</figcaption></figure>
 <div class="bar">
  <button class="btn" data-m="b">Both</button>
  <button class="btn" data-m="l">Edited</button>
