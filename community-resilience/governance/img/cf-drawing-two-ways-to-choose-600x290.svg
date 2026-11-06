@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 290" role="img" aria-label="Two ways to choose: the campaign that pushes down and outspends, and the council that nominates and lifts up">
+<defs><style>
+.ink{fill:none;stroke:#8c733a;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+.thin{fill:none;stroke:#8c733a;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.solid{fill:#8c733a;}
+.lbl{fill:#3b4e38;font-family:Georgia,serif;font-size:17px;text-anchor:middle;}
+.lblsm{fill:#6b5b3d;font-family:Georgia,serif;font-size:12px;font-style:italic;text-anchor:middle;}
+.cap{fill:#3b4e38;font-family:Georgia,serif;font-size:12px;text-anchor:middle;font-variant:small-caps;letter-spacing:1px;}
+.capc{fill:#3b4e38;font-family:Georgia,serif;font-size:13px;text-anchor:middle;font-variant:small-caps;letter-spacing:1px;}
+</style></defs>
+<text x="150" y="35" class="capc">the campaign</text>
+<text x="450" y="35" class="capc">the council</text>
+<line x1="300" y1="55" x2="300" y2="300" class="thin" opacity="0.4"></line>
+<!-- campaign side: figures pushing each other down, money -->
+<g transform="translate(150,150)"><circle cx="-60" cy="-20" r="10" class="ink"></circle><line x1="-60" y1="-10" x2="-60" y2="25" class="ink"></line><circle cx="0" cy="-40" r="10" class="ink"></circle><line x1="0" y1="-30" x2="0" y2="5" class="ink"></line><circle cx="60" cy="-20" r="10" class="ink"></circle><line x1="60" y1="-10" x2="60" y2="25" class="ink"></line><path d="M-30,20 L-30,55 M-36,48 L-30,58 L-24,48" class="ink" /><path d="M30,20 L30,55 M24,48 L30,58 L36,48" class="ink" /><text x="0" y="105" class="lblsm">push down &amp; outspend</text></g><g transform="translate(450,150)"><circle cx="0" cy="-10" r="55" class="thin"></circle><circle cx="55" cy="-10" r="6" class="solid"></circle><circle cx="28" cy="38" r="6" class="solid"></circle><circle cx="-27" cy="38" r="6" class="solid"></circle><circle cx="-55" cy="-10" r="6" class="solid"></circle><circle cx="-28" cy="-58" r="6" class="solid"></circle><circle cx="28" cy="-58" r="6" class="solid"></circle><path d="M0,25 L0,-10 M-6,-2 L0,-12 L6,-2" class="ink" /><text x="0" y="105" class="lblsm">nominate &amp; lift up</text></g></svg>
