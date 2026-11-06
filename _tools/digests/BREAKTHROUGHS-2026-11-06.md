@@ -59,6 +59,6 @@ These sources gave nothing this morning. A feed that stays on this
 list for a few days has moved or died and wants replacing.
 
 - **en** · land · Western Horseman — unreachable
-- **lt** · culture · 15min Kultūra — unreachable
+- **es** · news · Inforegión — unreachable
 - **lt** · news · Kauno diena — unreachable
 - **tibet** · culture · — — nothing cleared the gates

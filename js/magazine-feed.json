@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T11:53:31",
+ "generated": "2026-11-06T19:18:06",
  "lead": null,
  "mine": [
   {
@@ -50,27 +50,7 @@
    "pillar": "Human Resilience",
    "dek": "In the long crossing, the first test is a spring that should be flowing and is dry. What you do next was taught long before you got there. A joke, a seat, and an old song.",
    "img": "/assets/img/a-joke-at-the-dry-spring.jpg",
-   "art": "/assets/art/japan-bridge.svg",
-   "tr": {
-    "es": {
-     "href": "/es/un-chiste-en-el-manantial-seco/",
-     "title": "Un chiste en el manantial seco",
-     "dek": "En la travesía larga, la primera prueba es un manantial que debería correr y está seco. Lo que se hace después se enseñó mucho antes de que usted llegara. Un chiste, un lugar para sentarse y un canto antiguo.",
-     "pillar": "Resiliencia humana"
-    },
-    "ja": {
-     "href": "/ja/kareta-izumi-de-no-joudan/",
-     "title": "涸れた泉での冗談",
-     "dek": "長い横断の旅で、最初の試練は、湧いているはずなのに涸れている泉だ。次にどうするかは、あなたがそこに着くずっと前に教えられていた。冗談をひとつ、腰を下ろす場所、そして古い歌。",
-     "pillar": "人間のレジリエンス"
-    },
-    "lt": {
-     "href": "/lt/juokelis-prie-isdziuvusio-saltinio/",
-     "title": "Juokelis prie išdžiūvusio šaltinio",
-     "dek": "Ilgame perėjime pirmas išbandymas yra šaltinis, kuris turėtų tekėti, bet yra išdžiūvęs. Ką daryti toliau, buvo išmokyta gerokai anksčiau, nei ten atėjote. Juokelis, vieta atsisėsti ir sena daina.",
-     "pillar": "Žmogaus atsparumas"
-    }
-   }
+   "art": "/assets/art/japan-bridge.svg"
   },
   {
    "slug": "little-piles-of-rock",
@@ -80,27 +60,7 @@
    "pillar": "Human Resilience",
    "dek": "On Labor Day morning, facing the San Francisco Peaks, I recorded a meditation about an old trail. The part that stays with me is the knowledge that was waiting in us all along.",
    "img": "/assets/img/little-piles-of-rock.jpg",
-   "art": "/assets/art/dine-mountains.svg",
-   "tr": {
-    "es": {
-     "href": "/es/montoncitos-de-piedra/",
-     "title": "Montoncitos de piedra",
-     "dek": "La mañana del Día del Trabajo, frente a los San Francisco Peaks, grabé una meditación sobre un sendero antiguo. Lo que se me queda es el conocimiento que estuvo esperando en nosotros todo el tiempo.",
-     "pillar": "Resiliencia humana"
-    },
-    "ja": {
-     "href": "/ja/chiisana-ishizumi/",
-     "title": "小さな石積み",
-     "dek": "レイバー・デーの朝、サンフランシスコ・ピークスに向かって、古い道についての瞑想を録音した。心に残っているのは、ずっと私たちのなかで待っていた知識のことだ。",
-     "pillar": "人間のレジリエンス"
-    },
-    "lt": {
-     "href": "/lt/akmenu-kruveles/",
-     "title": "Akmenų krūvelės",
-     "dek": "Darbo dienos rytą, veidu į San Francisco Peaks, įrašiau meditaciją apie seną taką. Labiausiai su manimi lieka žinojimas, kuris visą laiką laukė mumyse.",
-     "pillar": "Žmogaus atsparumas"
-    }
-   }
+   "art": "/assets/art/dine-mountains.svg"
   },
   {
    "slug": "long-term-resilience-ancient-culture",
@@ -180,27 +140,7 @@
    "pillar": "Human Resilience",
    "dek": "Digging out a corral is hard, dirty work, and I call it a retreat. The research on what one word does to the body says a great deal about what a family hands down.",
    "img": "/assets/img/why-i-call-the-sheep-camp-a-retreat.jpg",
-   "art": "/assets/art/baltic-sun.svg",
-   "tr": {
-    "es": {
-     "href": "/es/por-que-le-llamo-retiro-al-campamento-de-borregos/",
-     "title": "Por qué le llamo retiro al campamento de borregos",
-     "dek": "Limpiar un corral a pala es trabajo duro y sucio, y yo le llamo retiro. Lo que la investigación dice que una sola palabra le hace al cuerpo dice mucho sobre lo que una familia hereda.",
-     "pillar": "Resiliencia humana"
-    },
-    "ja": {
-     "href": "/ja/hitsuji-kyanpu-wo-ritoriito-to-yobu/",
-     "title": "なぜ私は羊のキャンプを「リトリート」と呼ぶのか",
-     "dek": "家畜囲いを掘り出すのは、きつくて汚れる仕事だ。それでも私はリトリートと呼ぶ。ひとつの言葉が体に何をするかという研究は、家族が何を受け渡すのかについて多くを語っている。",
-     "pillar": "人間のレジリエンス"
-    },
-    "lt": {
-     "href": "/lt/kodel-aviu-stovykla-vadinu-atokvepiu/",
-     "title": "Kodėl avių stovyklą vadinu atokvėpiu",
-     "dek": "Iškasti gardą yra sunkus, purvinas darbas, o aš jį vadinu atokvėpiu. Tyrimai apie tai, ką vienas žodis padaro kūnui, daug pasako apie tai, ką šeima perduoda.",
-     "pillar": "Žmogaus atsparumas"
-    }
-   }
+   "art": "/assets/art/baltic-sun.svg"
   },
   {
    "slug": "why-i-started-a-magazine-again",
@@ -370,27 +310,7 @@
    "pillar": "Stories I Carry",
    "dek": "A Sámi reindeer herder, taught properly and entirely correct, standing on ice. What to do when the knowledge itself is no longer true.",
    "img": "/assets/img/land/aspen-grove.jpg",
-   "art": "/assets/art/dine-dawn.svg",
-   "tr": {
-    "es": {
-     "href": "/es/el-invierno-que-no-llego/",
-     "title": "El invierno que no llegó",
-     "dek": "Un pastor de renos sami vino desde muy lejos a una reunión porque alguien le dijo que tal vez ahí habría gente que sabía qué hacer con un conocimiento que ya no es cierto. He pensado en eso durante años.",
-     "pillar": "Historias que llevo"
-    },
-    "ja": {
-     "href": "/ja/konakatta-fuyu/",
-     "title": "来なかった冬",
-     "dek": "サーミのトナカイ飼いが、ある集まりにはるばるやって来た。もう正しくなくなった知識をどうすればいいか知っている人がそこにいるかもしれない、と誰かに言われたからだ。そのことを、私は何年も考えつづけている。",
-     "pillar": "私が運ぶ物語"
-    },
-    "lt": {
-     "href": "/lt/ziema-kuri-neatejo/",
-     "title": "Žiema, kuri neatėjo",
-     "dek": "Samių šiaurės elnių augintojas atkeliavo labai toli į susitikimą, nes kažkas jam pasakė, kad ten gali būti žmonių, kurie žino, ką daryti su žinojimu, kuris nebėra teisingas. Apie tai galvoju jau daug metų.",
-     "pillar": "Istorijos, kurias nešu"
-    }
-   }
+   "art": "/assets/art/dine-dawn.svg"
   },
   {
    "slug": "what-a-far-messenger-is",
@@ -1091,9 +1011,9 @@
    "lane": "culture"
   },
   {
-   "title": "Michelangelo Used These Custom, Multi-Headed Brushes While Painting 'The Last Judgment' to Replicate His Intricate Sculpting Techniques",
-   "url": "https://www.smithsonianmag.com/smart-news/michelangelo-used-these-custom-multi-headed-brushes-while-painting-the-last-judgment-to-replicate-his-intricate-sculpting-techniques-180989816/",
-   "dek": "While restoring the Sistine Chapel, researchers discovered wavy groupings of brushstrokes which indicated that the artist used the special brushes to create a distinct crosshatching pattern",
+   "title": "For Centuries, Cave Visitors Walked Right by 280 Ice Age Engravings. The Newly Discovered Rock Art Is Rewriting Catalonia's Prehistory",
+   "url": "https://www.smithsonianmag.com/smart-news/for-centuries-visitors-walked-right-by-280-ice-age-engravings-in-a-catalan-cave-the-newly-discovered-rock-art-is-rewriting-catalonias-prehistory-180989827/",
+   "dek": "Prior to the discovery, rock art in northeastern Spain was \"very scarce,\" one archaeologist says. The drawings show dozens of animals, as well as more abstract shapes, which are distinct…",
    "source": "Smithsonian",
    "date": "2026-11-06",
    "lane": "culture"
@@ -1353,6 +1273,14 @@
    "lane": "culture"
   },
   {
+   "title": "Medvedevas prakalbo apie Muską ir Ukrainą",
+   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/medvedevas-prakalbo-apie-muska-ir-ukraina-57-2800822?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "Rusijos Saugumo Tarybos pirmininko pavaduotojas Dmitrijus Medvedevas savo „Telegram“ kanale parašė, kad „SpaceX“ įkūrėjo Elono Musko sprendimas po Rusijos invazijos suteikti Ukrainai…",
+   "source": "15min Kultūra",
+   "date": "2026-11-06",
+   "lane": "culture"
+  },
+  {
    "title": "Safronovas apie Klaipėdos paštą ir būsimą Argelanderio centrą: restauravimo neužtenka",
    "url": "https://www.lrt.lt/naujienos/kultura/12/3106392/safronovas-apie-klaipedos-pasta-ir-busima-argelanderio-centra-restauravimo-neuztenka",
    "dek": "Daugiau negu pusę amžiaus valstybės saugomas raudonplytis Klaipėdos paštas šiandien vis dar laukia esminių tvarkybos darbų. Nors jo išsaugojimui buvo numatyti milijonai eurų, o ateities…",
@@ -1398,14 +1326,6 @@
    "dek": "Prieš 170 metų Vilniuje atidarytą pirmąjį viešąjį muziejų Lietuvoje nuo lapkričio 5 d. bus galima aplankyti virtualiai. Lietuvos nacionalinis muziejus (LNM) pristatys parodą-kompiuterinį…",
    "source": "Nacionalinis muziejus",
    "date": "2026-10-28",
-   "lane": "culture"
-  },
-  {
-   "title": "Fotografijos atspaudų mugėje – nuo pripažintų meistrų iki naujų vardų",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3106407/fotografijos-atspaudu-mugeje-nuo-pripazintu-meistru-iki-nauju-vardu",
-   "dek": "Lapkričio 7–8 dienomis Nacionalinės dailės galerijos Didžiojoje salėje vyks Vilniaus fotografijos savaitės atspaudų mugė, subursianti skirtingų kartų fotografijos kūrėjus, galerijas…",
-   "source": "LRT Kultūra",
-   "date": "2026-11-06",
    "lane": "culture"
   }
  ],
