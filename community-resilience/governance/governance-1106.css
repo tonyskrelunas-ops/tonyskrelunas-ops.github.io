@@ -1,0 +1,197 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   GOVERNANCE — editorial rebuild, 6 November 2026.
+   Own classes (gv-*) so v2.css's #id weight and !important rules never
+   fight this page. The shell (greet, globebar, header, menu, crumb,
+   footer) stays on v2.css and nation.css. Palette: TribeAwaken's
+   "old-site courage" tokens, with color coming from the photographs.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+html.courage{
+  --gv-max:1360px;
+  --gv-ink:#1E2419;        /* forest ink */
+  --gv-ink-2:#3A4336;      /* secondary */
+  --gv-head:#124279;       /* headline blue */
+  --gv-blue:#1C5BA8;       /* the runner's blue, actions */
+  --gv-green:#2E8540;      /* mountain green */
+  --gv-green-deep:#1E6E34;
+  --gv-gold:#8A5A12;       /* deep gold, reading size */
+  --gv-sun:#E0A400;
+  --gv-ember:#A65234;      /* sampled from his fire photographs */
+  --gv-paper:#F7FAF4;      /* leaf-white */
+  --gv-paper-2:#FFFFFF;
+  --gv-tint:#EEF4E9;       /* resting band */
+  --gv-rule:rgba(19,24,18,.16);
+  --gv-rule-2:rgba(19,24,18,.08);
+  --gv-measure:64ch;
+}
+
+/* ── the section bar: five floors of Community Resilience, visible ─── */
+.secnav{position:relative;z-index:5;background:var(--gv-tint);border-bottom:1px solid var(--gv-rule)}
+.secnav__in{display:flex;align-items:center;gap:.5rem 1.15rem;flex-wrap:wrap;padding-block:.75rem}
+.secnav__in::-webkit-scrollbar{display:none}
+.secnav__lbl{font-family:var(--body);text-transform:uppercase;letter-spacing:.16em;font-size:.7rem;font-weight:800;color:var(--gv-green-deep);white-space:nowrap;flex:none}
+.secnav a{white-space:nowrap;text-decoration:none;font-size:.86rem;font-weight:600;color:var(--gv-ink-2);padding-bottom:3px;border-bottom:2px solid transparent}
+.secnav a:hover{color:var(--gv-ink)}
+.secnav a.is-on{color:var(--gv-head);border-bottom-color:var(--gv-green)}
+@media(max-width:640px){.secnav__lbl{display:none}}
+
+/* ── shared pieces ─────────────────────────────────────────────────── */
+.gv-wrap{width:100%;max-width:var(--gv-max);margin-inline:auto;padding-inline:var(--gut)}
+.gv-kicker{font-family:var(--body);font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gv-green-deep);margin:0 0 1.2rem}
+.gv-num,.gv-sec p.gv-num,.gv-close p.gv-num{font-family:var(--display);font-weight:900;font-size:clamp(3.4rem,2.4rem + 4vw,6.4rem);line-height:.9;letter-spacing:-.04em;color:var(--gv-gold);margin:0 0 .6rem;font-variant-numeric:lining-nums}
+.gv-text h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.6rem);color:var(--gv-head);max-width:20ch;margin:0 0 1.4rem}
+.gv-text h3{font-size:clamp(1.45rem,1.2rem + 1vw,2.1rem);color:var(--gv-head);max-width:26ch;margin:2.4rem 0 .9rem;line-height:1.1}
+.gv-text p:not(.gv-num){max-width:var(--gv-measure);color:var(--gv-ink);margin:0 0 1.15em;font-size:var(--t-body);line-height:1.62}
+.gv-text p strong{color:#0F1A14}
+.gv-arrow{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;font-weight:800;font-size:1rem;color:var(--gv-blue);border-bottom:2px solid var(--gv-blue);padding-bottom:2px;margin-top:.4rem}
+.gv-arrow:hover{color:var(--gv-head);border-bottom-color:var(--gv-head)}
+figure{margin:0}
+.gv-cap{font-family:var(--body);font-size:.84rem;font-weight:600;letter-spacing:.01em;color:var(--gv-ink-2);margin-top:.6rem;padding-left:.1rem}
+
+/* ── the opening: headline left, his photograph bleeding off the right ── */
+.gv-open{background:var(--gv-paper);overflow:hidden;position:relative}
+.gv-open__grid{display:grid;grid-template-columns:minmax(0,46fr) minmax(0,54fr);align-items:stretch;min-height:min(86vh,880px)}
+.gv-open__text{padding:clamp(2.4rem,4vw,5rem) clamp(1.5rem,3vw,3.6rem) clamp(2.4rem,4vw,4.2rem) max(var(--gut),calc((100vw - var(--gv-max))/2 + var(--gut)));display:flex;flex-direction:column;justify-content:center}
+.gv-open h1{font-size:clamp(3rem,1.6rem + 5.4vw,6.6rem);font-weight:900;color:var(--gv-head);line-height:.96;letter-spacing:-.035em;max-width:9ch;margin:0 0 1.6rem}
+.gv-stand{font-size:clamp(1.12rem,1rem+.55vw,1.42rem);line-height:1.55;color:var(--gv-ink);max-width:56ch;margin:0 0 1.2rem}
+.gv-who{font-size:var(--t-small);line-height:1.55;color:var(--gv-ink-2);max-width:56ch;margin:0 0 1.8rem}
+.gv-stat{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:1rem 1.2rem;border-top:1px solid var(--gv-rule);padding-top:1.3rem;max-width:30rem}
+.gv-stat b{font-family:var(--display);font-weight:900;font-size:clamp(3.6rem,2.6rem + 4vw,6.2rem);line-height:.9;letter-spacing:-.05em;color:var(--gv-ember);font-variant-numeric:lining-nums}
+.gv-stat span{font-size:var(--t-small);line-height:1.4;color:var(--gv-ink);font-weight:600;max-width:16ch}
+.gv-open__fig{position:relative;overflow:hidden;min-height:46vh}
+.gv-open__fig .gv-frame{position:absolute;inset:0}
+.gv-open__fig img{width:100%;height:100%;object-fit:cover;object-position:60% 50%;display:block}
+.gv-open__fig .gv-cap{position:absolute;left:0;bottom:0;margin:0;padding:.55rem .9rem;background:rgba(247,250,244,.94);color:var(--gv-ink);border-top-right-radius:3px}
+@media(prefers-reduced-motion:no-preference){
+  .gv-open__fig img{animation:gv-drift 46s ease-in-out infinite alternate;transform-origin:62% 55%}
+  @keyframes gv-drift{from{transform:scale(1)}to{transform:scale(1.07) translate(-1.2%,-1%)}}
+}
+@media(max-width:900px){
+  .gv-open__grid{grid-template-columns:1fr;min-height:0}
+  .gv-open__text{padding:2rem var(--gut) 2.2rem;order:2}
+  .gv-open__fig{order:1;min-height:0;aspect-ratio:4/3}
+  .gv-open h1{max-width:12ch}
+}
+
+/* ── directory: what is on the page, before any argument starts ───── */
+.gv-dir{background:var(--gv-paper-2);border-top:1px solid var(--gv-rule);border-bottom:1px solid var(--gv-rule)}
+.gv-dir__in{display:grid;grid-template-columns:auto 1fr;gap:1rem 3rem;align-items:start;padding-block:1.4rem}
+.gv-dir__lbl{font-family:var(--body);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gv-green-deep);margin:.5rem 0 0;white-space:nowrap}
+.gv-dir ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0 1.6rem}
+.gv-dir li{border-left:1px solid var(--gv-rule);padding:.3rem 0 .4rem 1rem}
+.gv-dir a{display:grid;gap:.25rem;text-decoration:none;color:var(--gv-ink)}
+.gv-dir a b{font-family:var(--display);font-weight:900;font-size:1.05rem;color:var(--gv-gold);letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.gv-dir a span{font-weight:800;font-size:1rem;line-height:1.2;color:var(--gv-head)}
+.gv-dir a small{font-size:.86rem;line-height:1.4;color:var(--gv-ink-2)}
+.gv-dir a:hover span{color:var(--gv-blue)}
+@media(max-width:1100px){.gv-dir ol{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem 1.6rem}}
+@media(max-width:760px){
+  .gv-dir__in{grid-template-columns:1fr;gap:.6rem}
+  .gv-dir ol{grid-template-columns:1fr;gap:0}
+  .gv-dir li{border-left:0;border-top:1px solid var(--gv-rule-2);padding:.75rem 0}
+  .gv-dir a{grid-template-columns:2.4rem 1fr;grid-template-areas:"n t" "n s";gap:.15rem .4rem}
+  .gv-dir a b{grid-area:n}.gv-dir a span{grid-area:t}.gv-dir a small{grid-area:s}
+}
+
+/* ── editorial rows: text on one side, a photograph bleeding off the other ── */
+.gv-sec{background:var(--gv-paper);padding-block:clamp(3rem,2rem + 4vw,6rem);overflow:hidden}
+.gv-sec--tint{background:var(--gv-tint)}
+.gv-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.6rem,3vw,4rem);align-items:start;max-width:var(--gv-max);margin-inline:auto;padding-inline:var(--gut)}
+.gv-row + .gv-row{margin-top:clamp(3rem,2rem + 4vw,6rem)}
+.gv-row--imgleft{grid-template-columns:minmax(0,46fr) minmax(0,54fr)}
+.gv-row--imgright{grid-template-columns:minmax(0,54fr) minmax(0,46fr)}
+.gv-row--imgleft .gv-bleed{order:1}.gv-row--imgleft .gv-text{order:2}
+.gv-bleed{position:relative}
+.gv-bleed--left{margin-left:calc(-1 * max(var(--gut), (100vw - var(--gv-max)) / 2 + var(--gut)))}
+.gv-bleed--right{margin-right:calc(-1 * max(var(--gut), (100vw - var(--gv-max)) / 2 + var(--gut)))}
+.gv-bleed .gv-frame{overflow:hidden;background:var(--gv-tint)}
+.gv-bleed img{width:100%;height:100%;object-fit:cover;display:block;will-change:transform}
+.gv-bleed--left .gv-frame{aspect-ratio:5/4;border-top-right-radius:3px;border-bottom-right-radius:3px}
+.gv-bleed--right .gv-frame{aspect-ratio:5/4;border-top-left-radius:3px;border-bottom-left-radius:3px}
+.gv-bleed--tall .gv-frame{aspect-ratio:4/5}
+.gv-bleed--left .gv-cap{padding-left:var(--gut)}
+.gv-bleed--right .gv-cap{padding-left:0}
+.gv-bleed.is-sticky{position:sticky;top:5.5rem}
+.gv-inset{margin:1.6rem 0 1.4rem;max-width:30rem}
+.gv-inset .gv-frame{overflow:hidden;border-radius:3px;aspect-ratio:4/3}
+.gv-inset--portrait .gv-frame{aspect-ratio:3/4}
+.gv-inset img{width:100%;height:100%;object-fit:cover;display:block}
+.gv-inset--side{float:right;width:min(42%,22rem);margin:.4rem 0 1.2rem 2rem}
+@media(max-width:900px){
+  .gv-row,.gv-row--imgleft,.gv-row--imgright{grid-template-columns:1fr;gap:1.4rem}
+  .gv-row--imgleft .gv-bleed,.gv-row--imgright .gv-bleed{order:1}
+  .gv-row--imgleft .gv-text,.gv-row--imgright .gv-text{order:2}
+  .gv-bleed--left,.gv-bleed--right{margin-left:calc(-1 * var(--gut));margin-right:calc(-1 * var(--gut))}
+  .gv-bleed--left .gv-frame,.gv-bleed--right .gv-frame,.gv-bleed--tall .gv-frame{aspect-ratio:4/3;border-radius:0}
+  .gv-bleed--right .gv-cap{padding-left:var(--gut)}
+  .gv-bleed.is-sticky{position:static}
+  .gv-inset--side{float:none;width:100%;max-width:30rem;margin:1.4rem 0}
+}
+
+/* ── the five older ways: a ruled ledger, numerals in the margin ────── */
+.gv-head{max-width:var(--gv-max);margin-inline:auto;padding-inline:var(--gut);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:end}
+.gv-head h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.6rem);color:var(--gv-head);max-width:18ch;margin:0 0 1.2rem}
+.gv-lede{font-size:clamp(1.08rem,1rem+.4vw,1.3rem);line-height:1.58;color:var(--gv-ink);max-width:58ch;margin:0}
+.gv-mark{width:clamp(7rem,12vw,13rem);color:var(--gv-ember);align-self:center}
+.gv-mark svg{width:100%;height:auto}
+@media(prefers-reduced-motion:no-preference){
+  .gv-mark svg *{stroke-dasharray:420;stroke-dashoffset:420}
+  .gv-mark.in svg *{animation:gv-draw 2.6s cubic-bezier(.4,0,.2,1) forwards}
+  @keyframes gv-draw{to{stroke-dashoffset:0}}
+}
+@media(max-width:760px){.gv-head{grid-template-columns:1fr}.gv-mark{width:6.5rem;justify-self:start}}
+.gv-ways{list-style:none;margin:clamp(2rem,3vw,3.4rem) auto 0;padding:0 var(--gut);max-width:var(--gv-max);counter-reset:way}
+.gv-ways li{counter-increment:way;display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem 1.6rem;padding:1.7rem 0;border-top:1px solid var(--gv-rule);align-items:start}
+.gv-ways li::before{content:counter(way,decimal-leading-zero);font-family:var(--display);font-weight:900;font-size:clamp(2.2rem,1.6rem + 2vw,3.6rem);line-height:.9;letter-spacing:-.04em;color:var(--gv-gold);font-variant-numeric:lining-nums;padding-top:.2rem}
+.gv-ways li:last-child{border-bottom:1px solid var(--gv-rule)}
+.gv-ways b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(1.3rem,1.1rem+.9vw,1.9rem);line-height:1.12;letter-spacing:-.02em;color:var(--gv-head);margin:0 0 .5rem;max-width:30ch}
+.gv-ways p{margin:0 0 .9em;max-width:var(--gv-measure);color:var(--gv-ink);line-height:1.6}
+.gv-ways p:last-child{margin-bottom:0}
+.gv-ways .gv-arrow{font-size:.95rem;margin-top:.5rem}
+@media(max-width:640px){.gv-ways li{grid-template-columns:3.4rem minmax(0,1fr);gap:.6rem .8rem;padding:1.3rem 0}}
+
+/* ── a strip of three photographs, uneven on purpose ────────────────── */
+.gv-strip{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr) minmax(0,2fr);gap:.8rem;max-width:var(--gv-max);margin:clamp(2.4rem,3vw,3.6rem) auto 0;padding-inline:var(--gut)}
+.gv-strip figure .gv-frame{overflow:hidden;border-radius:3px;aspect-ratio:4/3}
+.gv-strip figure:first-child .gv-frame{aspect-ratio:16/10}
+.gv-strip img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:760px){.gv-strip{grid-template-columns:1fr 1fr}.gv-strip figure:first-child{grid-column:1/-1}}
+
+/* ── a line from his book, big, left-aligned, on the resting ground ─── */
+.gv-quote{max-width:var(--gv-max);margin:clamp(2.6rem,3vw,4rem) auto 0;padding:0 var(--gut);display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem 1.6rem}
+.gv-quote::before{content:"\201C";font-family:var(--display);font-weight:900;font-size:clamp(4rem,3rem + 4vw,7rem);line-height:.6;color:var(--gv-ember);padding-top:.9rem}
+.gv-quote p{font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,1.2rem + 1.6vw,2.7rem);line-height:1.18;letter-spacing:-.015em;color:var(--gv-ink);max-width:28ch;margin:0}
+.gv-quote cite{display:block;font-style:normal;font-family:var(--body);font-size:.88rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gv-green-deep);margin-top:1rem}
+.gv-quote cite a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
+@media(max-width:640px){.gv-quote{grid-template-columns:3.4rem minmax(0,1fr)}}
+
+/* ── what travels: a numbered run with the numerals out in the margin ─ */
+.gv-travels{list-style:none;margin:2rem 0 0;padding:0;counter-reset:tr}
+.gv-travels li{counter-increment:tr;display:grid;grid-template-columns:3.2rem minmax(0,1fr);gap:.4rem 1rem;padding:1.2rem 0;border-top:1px solid var(--gv-rule)}
+.gv-travels li::before{content:counter(tr);font-family:var(--display);font-weight:900;font-size:2rem;line-height:1;color:var(--gv-gold);font-variant-numeric:lining-nums}
+.gv-travels b{display:block;font-family:var(--display);font-weight:800;font-size:1.25rem;line-height:1.2;color:var(--gv-head);margin-bottom:.35rem}
+.gv-travels p,.gv-text .gv-travels p{margin:0;max-width:var(--gv-measure);color:var(--gv-ink);line-height:1.6}
+.gv-test{margin:2.2rem 0 0;padding:1.4rem 0 0;border-top:3px solid var(--gv-ember);max-width:var(--gv-measure)}
+.gv-test p,.gv-text .gv-test p{font-family:var(--display);font-weight:600;font-size:clamp(1.3rem,1.1rem + 1vw,1.9rem);line-height:1.22;color:var(--gv-ink);margin:0 0 .6rem}
+.gv-test cite{font-style:normal;font-size:.88rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gv-green-deep)}
+.gv-test cite a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
+
+/* ── the close: a wide photograph, then the invitation on paper ─────── */
+.gv-close{background:var(--gv-paper);padding-top:0}
+.gv-wide{position:relative;overflow:hidden;height:clamp(300px,52vh,620px)}
+.gv-wide img{width:100%;height:100%;object-fit:cover;object-position:50% 60%;display:block}
+.gv-wide .gv-cap{position:absolute;left:0;bottom:0;margin:0;padding:.55rem .9rem .55rem max(var(--gut),calc((100vw - var(--gv-max))/2 + var(--gut)));background:rgba(247,250,244,.94);color:var(--gv-ink);border-top-right-radius:3px}
+.gv-close__grid{display:grid;grid-template-columns:minmax(0,58fr) minmax(0,42fr);gap:clamp(1.6rem,3vw,4rem);align-items:center;max-width:var(--gv-max);margin-inline:auto;padding:clamp(3rem,2rem + 4vw,5.5rem) var(--gut) 0}
+.gv-close h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.6rem);color:var(--gv-head);max-width:18ch;margin:0 0 1.2rem}
+.gv-close p:not(.gv-num){max-width:var(--gv-measure);color:var(--gv-ink);line-height:1.62;margin:0 0 1.6rem}
+.gv-acts{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;align-items:center}
+.gv-links{list-style:none;margin:0;padding:0;display:grid;gap:.9rem;border-left:3px solid var(--gv-green);padding-left:1.4rem}
+.gv-links a{text-decoration:none;color:var(--gv-head);font-weight:800;font-size:1.05rem;line-height:1.3}
+.gv-links a:hover{color:var(--gv-blue)}
+.gv-links small{display:block;font-weight:500;color:var(--gv-ink-2);font-size:.9rem;margin-top:.15rem}
+@media(max-width:900px){.gv-close__grid{grid-template-columns:1fr}}
+
+/* ── reveal: the shared .rv script adds .in; without it everything shows ── */
+@media(prefers-reduced-motion:no-preference){
+  .gv-bleed.rv,.gv-inset.rv,.gv-strip figure.rv{transition-duration:1.1s}
+}
