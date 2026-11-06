@@ -1,0 +1,124 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   A JOURNAL ARTICLE — the upgraded template. Loaded last on the page.
+   Redesign of 6 November 2026, built on the one markup skeleton that
+   _tools/new-article.py writes, so every future article inherits it:
+     .art > .wrap > [.art__alt] > .eyebrow > h1 > .lead > figure.article__hero
+     > .artdate > .article__body > .share > aside.sub > .artnote
+   Everything is editorial and left-aligned; his photographs bleed off
+   the right edge; the pull quote sits in the margin on a wide screen.
+   ═══════════════════════════════════════════════════════════════════════ */
+:root{
+  --a-ink:#1E2419; --a-mute:#49523F; --a-blue:#1C5BA8; --a-deep:#124279;
+  --a-green:#1E6E34; --a-gold:#7A6224; --a-pale:#EEF4E9; --a-rule:rgba(19,24,18,.16);
+  --a-mono:'Courier New',ui-monospace,Menlo,monospace;
+  --a-col:62ch;                                   /* the reading column */
+  --a-bleed:calc(var(--gut) + max(0px, (100vw - 76rem) / 2));
+}
+html.courage .art{padding-block:clamp(1.6rem,1.2rem + 1.6vw,3rem) clamp(3rem,2.4rem + 3vw,6rem)}
+html.courage .art .wrap{max-width:76rem}
+
+/* the small label, with no dash before it */
+html.courage .art .eyebrow{display:block;font-family:var(--body);font-size:.74rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--a-green) !important;margin:0 0 .9rem}
+html.courage .art .eyebrow::before{display:none}
+html.courage .art .art__alt{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin:0 0 1.4rem;font-size:.84rem}
+html.courage main .art .art__alt a:not(#_){color:var(--a-blue) !important;font-weight:700;text-decoration:none;
+  border-bottom:1px solid currentColor;padding-bottom:.1rem}
+
+/* ── the opening ──────────────────────────────────────────────────────── */
+html.courage .art h1{font-family:"LatExtFix",var(--display),Georgia,serif !important;font-weight:700;
+  font-size:clamp(2.2rem,1.4rem + 4vw,4.8rem) !important;line-height:.98 !important;letter-spacing:-.035em;
+  color:var(--a-deep);max-width:16ch;margin:0}
+html.courage .art .lead{margin-top:1.1rem;font-size:clamp(1.12rem,1.02rem + .6vw,1.5rem);line-height:1.45;
+  font-weight:500;color:var(--a-ink);max-width:40ch}
+html.courage .art .article__hero{margin:clamp(1.6rem,1.2rem + 1.6vw,2.6rem) 0 0 !important;
+  border-radius:0 !important;overflow:visible !important;max-width:none !important}
+html.courage .art .article__hero img{width:100%;height:auto;display:block}
+html.courage .art .article__hero figcaption{padding:.6rem 0 0 !important;font-family:var(--a-mono);font-size:.7rem !important;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--a-gold);opacity:1 !important;line-height:1.5;max-width:60ch;box-sizing:content-box}
+html.courage .art .artdate{margin-top:1.1rem;font-family:var(--a-mono);text-transform:uppercase;letter-spacing:.14em;
+  font-size:.7rem;color:var(--a-gold)}
+html.courage .art .artdate--reads{opacity:1;margin-top:.3rem}
+html.courage .art .artdate--reads span{color:var(--a-ink)}
+
+/* ── the reading column ───────────────────────────────────────────────── */
+html.courage .article__body{margin-top:clamp(1.8rem,1.4rem + 1.6vw,2.8rem);max-width:var(--a-col);position:relative}
+html.courage .article__body p{color:var(--a-ink);font-size:1.08rem;line-height:1.82;max-width:var(--a-col);margin-top:1.25rem}
+html.courage .article__body p:first-child{margin-top:0}
+html.courage .article__body p strong{color:#131812}
+html.courage .article__body h2{font-family:"LatExtFix",var(--display),Georgia,serif;font-weight:700;letter-spacing:-.025em;
+  font-size:clamp(1.6rem,1.3rem + 1.4vw,2.4rem);line-height:1.08;color:var(--a-deep);
+  margin-top:clamp(2.4rem,2rem + 1.6vw,3.4rem);max-width:22ch}
+html.courage main .article__body a:not(.btn):not(#_){color:var(--a-blue) !important;text-decoration:underline;
+  text-decoration-thickness:1px;text-underline-offset:.16em}
+html.courage main .article__body a:not(.btn):not(#_):hover{color:var(--a-deep) !important}
+html.courage .article__body hr{border:0;border-top:1px solid var(--a-rule);margin:2.4rem 0}
+
+/* a photograph inside the piece, with a plain caption under it */
+html.courage .article__fig{margin:clamp(1.8rem,1.4rem + 1.6vw,2.8rem) 0}
+html.courage .article__fig img{width:100%;height:auto;display:block;border-radius:0}
+html.courage .article__fig figcaption{margin-top:.6rem;font-family:var(--a-mono);font-size:.7rem;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--a-gold);font-style:normal;text-align:left;line-height:1.5;max-width:60ch;box-sizing:content-box}
+
+/* his own sentence, set large in the margin */
+html.courage .art__pull{margin:1.8rem 0;padding:0 0 0 1.1rem;border-left:3px solid var(--a-green)}
+html.courage .art__pull p{font-family:"LatExtFix",var(--display),Georgia,serif;font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(1.3rem,1.1rem + 1vw,1.8rem);line-height:1.22;color:var(--a-deep);margin:0;max-width:22ch}
+
+/* ── share, the circle, the note ──────────────────────────────────────── */
+html.courage .share{margin-top:clamp(2rem,1.6rem + 1.6vw,3rem);padding-top:1.2rem;border-top:2px solid var(--a-deep);max-width:var(--a-col)}
+html.courage .share p{font-family:var(--body);text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:800;color:var(--a-green);margin:0 0 .8rem}
+html.courage .share ul{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0}
+html.courage main .share a:not(#_):not(#_){display:inline-block;text-decoration:none !important;font-size:.86rem;font-weight:700;
+  color:var(--a-deep) !important;border:1px solid rgba(18,66,121,.42);border-radius:2px;padding:.5em 1em;background:#fff}
+html.courage main .share a:not(#_):not(#_):hover{border-color:var(--a-blue);color:var(--a-blue) !important}
+html.courage .sub{background:#fff;border:1px solid var(--a-rule);border-left:3px solid var(--a-green);border-radius:2px;max-width:var(--a-col)}
+html.courage .sub__eyebrow{font-family:var(--body);font-weight:800;letter-spacing:.16em;color:var(--a-green)}
+html.courage .sub__head{color:var(--a-deep)}
+html.courage .sub__say,html.courage .sub__fine{color:var(--a-mute)}
+html.courage .artnote{color:var(--a-mute);max-width:var(--a-col)}
+html.courage .artnote strong{color:var(--a-ink)}
+html.courage .artnote--stamp{color:var(--a-gold)}
+
+/* more of his writing, filled by article-1106.js from the magazine feed */
+.keep{margin-top:clamp(2.4rem,2rem + 2vw,4rem);border-top:2px solid var(--a-deep);padding-top:1.2rem}
+.keep[hidden]{display:none}
+html.courage .article__body .keep__k{font-family:var(--body);font-size:.74rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--a-green);margin:0 0 .4rem;line-height:1.4}
+.keep h2{font-family:"LatExtFix",var(--display),Georgia,serif;font-weight:700;letter-spacing:-.03em;
+  font-size:clamp(1.6rem,1.3rem + 1.6vw,2.6rem);line-height:1;color:var(--a-deep);margin:0}
+.keep ul{list-style:none;margin:1.2rem 0 0;padding:0;border-top:1px solid var(--a-rule)}
+.keep li{border-bottom:1px solid var(--a-rule)}
+html.courage main .article__body .keep li a:not(#_):not(#_){display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:0 1rem;align-items:center;padding:.8rem 0;
+  text-decoration:none !important;transition:padding .2s ease}
+.keep li a:hover{padding-left:.35rem}
+.keep img{display:block;width:5.5rem;height:5.5rem;object-fit:cover;background:var(--a-pale)}
+.keep .d{display:block;font-family:var(--a-mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--a-gold)}
+.keep b{display:block;font-family:"LatExtFix",var(--display),Georgia,serif;font-weight:700;letter-spacing:-.015em;
+  font-size:clamp(1.02rem,.96rem + .4vw,1.3rem);line-height:1.2;color:var(--a-deep);margin-top:.15rem}
+.keep li a:hover b{color:var(--a-blue)}
+.keep .s{display:block;color:var(--a-mute);font-size:.92rem;line-height:1.5;margin-top:.25rem;max-width:60ch}
+html.courage main .keep__all:not(#_){display:inline-block;margin-top:1.1rem;font-family:var(--body);font-weight:800;font-size:.86rem;
+  letter-spacing:.05em;color:var(--a-blue) !important;text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:.12rem}
+
+/* ── wide screens: the photographs leave the column ───────────────────── */
+@media (min-width:1100px){
+  html.courage .art .article__hero{width:calc(100% + var(--a-bleed));}
+  html.courage .article__body{max-width:none;display:grid;grid-template-columns:var(--a-col) minmax(0,1fr);column-gap:clamp(2.5rem,5vw,5rem)}
+  html.courage .article__body > *{grid-column:1}
+  html.courage .article__body > .art__pull{grid-column:2;align-self:start;position:sticky;top:7rem;margin:0;padding-left:1.2rem}
+  html.courage .article__body > .article__fig{grid-column:1 / -1;width:calc(100% + var(--a-bleed))}
+  html.courage .article__body > .article__fig--left{width:calc(100% + var(--a-bleed));margin-left:calc(-1 * var(--a-bleed))}
+  html.courage .article__body > .article__fig--left figcaption{padding-left:var(--a-bleed)}
+  html.courage .article__body > .article__fig--col{grid-column:1;width:100%;margin-left:0}
+  html.courage .article__body > .share,html.courage .article__body > .sub,html.courage .article__body > .artnote,html.courage .article__body > .keep{grid-column:1}
+  .keep{max-width:none}
+  .keep ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.6rem}
+  .keep li:nth-child(-n+2){border-top:1px solid var(--a-rule)}
+  .keep ul{border-top:0}
+}
+@keyframes artKB{from{transform:scale(1.02) translate(.3%,0)}to{transform:scale(1.07) translate(-.6%,-.6%)}}
+@media (min-width:1100px) and (prefers-reduced-motion:no-preference){
+  html.courage .art .article__hero{overflow:hidden !important}
+  html.courage .art .article__hero img{animation:artKB 34s ease-in-out infinite alternate;will-change:transform}
+}
+main{overflow-x:clip}
