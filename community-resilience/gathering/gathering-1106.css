@@ -1,0 +1,272 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   HOW MEETINGS CAN BE RUN — editorial rebuild, 6 November 2026.
+   Own classes (mt-*) so v2.css's #id weight and !important rules never
+   fight this page. The shell (greet, globebar, header, menu, crumb,
+   footer) stays on v2.css and nation.css. Palette: TribeAwaken's
+   "old-site courage" tokens, with color coming from the photographs.
+   Daylight only: no text sits over a dark photograph anywhere here.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+html.courage{
+  --mt-max:1360px;
+  --mt-ink:#1E2419;        /* forest ink */
+  --mt-ink-2:#3A4336;      /* secondary */
+  --mt-head:#124279;       /* headline blue */
+  --mt-blue:#1C5BA8;       /* the runner's blue, actions */
+  --mt-green:#2E8540;      /* mountain green */
+  --mt-green-deep:#1E6E34;
+  --mt-gold:#8A5A12;       /* deep gold, reading size */
+  --mt-sun:#E0A400;
+  --mt-ember:#A65234;      /* sampled from his fire photographs */
+  --mt-paper:#F7FAF4;      /* leaf-white */
+  --mt-paper-2:#FFFFFF;
+  --mt-tint:#EEF4E9;       /* resting band */
+  --mt-rule:rgba(19,24,18,.16);
+  --mt-rule-2:rgba(19,24,18,.08);
+  --mt-measure:64ch;
+}
+
+/* ── the section bar: the floors of Community Resilience, visible ──── */
+.secnav{position:relative;z-index:5;background:var(--mt-tint);border-bottom:1px solid var(--mt-rule)}
+.secnav__in{display:flex;align-items:center;gap:.5rem 1.15rem;flex-wrap:wrap;padding-block:.75rem}
+.secnav__in::-webkit-scrollbar{display:none}
+.secnav__lbl{font-family:var(--body);text-transform:uppercase;letter-spacing:.16em;font-size:.7rem;font-weight:800;color:var(--mt-green-deep);white-space:nowrap;flex:none}
+.secnav a{white-space:nowrap;text-decoration:none;font-size:.86rem;font-weight:600;color:var(--mt-ink-2);padding-bottom:3px;border-bottom:2px solid transparent}
+.secnav a:hover{color:var(--mt-ink)}
+.secnav a.is-on{color:var(--mt-head);border-bottom-color:var(--mt-green)}
+@media(max-width:640px){.secnav__lbl{display:none}}
+
+/* ── shared pieces ─────────────────────────────────────────────────── */
+.mt-wrap{width:100%;max-width:var(--mt-max);margin-inline:auto;padding-inline:var(--gut)}
+.mt-kicker{font-family:var(--body);font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mt-green-deep);margin:0 0 1.2rem}
+.mt-num,.mt-sec p.mt-num,.mt-close p.mt-num{font-family:var(--display);font-weight:900;font-size:clamp(3.4rem,2.4rem + 4vw,6.4rem);line-height:.9;letter-spacing:-.04em;color:var(--mt-gold);margin:0 0 .6rem;font-variant-numeric:lining-nums}
+.mt-text h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.6rem);color:var(--mt-head);max-width:20ch;margin:0 0 1.4rem}
+.mt-text h3{font-size:clamp(1.45rem,1.2rem + 1vw,2.1rem);color:var(--mt-head);max-width:26ch;margin:2.4rem 0 .9rem;line-height:1.1}
+.mt-text p:not(.mt-num){max-width:var(--mt-measure);color:var(--mt-ink);margin:0 0 1.15em;font-size:var(--t-body);line-height:1.62}
+.mt-text p strong{color:#0F1A14}
+.mt-text a:not(.mt-arrow){color:var(--mt-blue)}
+.mt-arrow{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;font-weight:800;font-size:1rem;color:var(--mt-blue);border-bottom:2px solid var(--mt-blue);padding-bottom:2px;margin-top:.4rem}
+.mt-arrow:hover{color:var(--mt-head);border-bottom-color:var(--mt-head)}
+figure{margin:0}
+.mt-cap{font-family:var(--body);font-size:.84rem;font-weight:600;letter-spacing:.01em;color:var(--mt-ink-2);margin-top:.6rem;padding-left:.1rem}
+.mt-cap em{font-style:normal;font-weight:800;color:var(--mt-ember)}
+
+/* ── the opening: headline left, his photograph bleeding off the right ── */
+.mt-open{background:var(--mt-paper);overflow:hidden;position:relative}
+.mt-open__grid{display:grid;grid-template-columns:minmax(0,46fr) minmax(0,54fr);align-items:stretch;min-height:min(86vh,880px)}
+.mt-open__text{padding:clamp(2.4rem,4vw,5rem) clamp(1.5rem,3vw,3.6rem) clamp(2.4rem,4vw,4.2rem) max(var(--gut),calc((100vw - var(--mt-max))/2 + var(--gut)));display:flex;flex-direction:column;justify-content:center}
+.mt-open h1{font-size:clamp(3rem,1.6rem + 5.4vw,6.6rem);font-weight:900;color:var(--mt-head);line-height:.96;letter-spacing:-.035em;max-width:9ch;margin:0 0 1.6rem}
+.mt-stand{font-size:clamp(1.12rem,1rem+.55vw,1.42rem);line-height:1.55;color:var(--mt-ink);max-width:56ch;margin:0 0 1.2rem}
+.mt-who{font-size:var(--t-small);line-height:1.55;color:var(--mt-ink-2);max-width:56ch;margin:0 0 1.8rem}
+.mt-stat{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:1rem 1.2rem;border-top:1px solid var(--mt-rule);padding-top:1.3rem;max-width:32rem}
+.mt-stat b{font-family:var(--display);font-weight:900;font-size:clamp(3.6rem,2.6rem + 4vw,6.2rem);line-height:.9;letter-spacing:-.05em;color:var(--mt-ember);font-variant-numeric:lining-nums}
+.mt-stat span{font-size:var(--t-small);line-height:1.4;color:var(--mt-ink);font-weight:600;max-width:22ch}
+.mt-open__fig{position:relative;overflow:hidden;min-height:46vh}
+.mt-open__fig .mt-frame{position:absolute;inset:0}
+.mt-open__fig img{width:100%;height:100%;object-fit:cover;object-position:50% 55%;display:block}
+.mt-open__fig .mt-cap{position:absolute;left:0;bottom:0;margin:0;padding:.55rem .9rem;background:rgba(247,250,244,.94);color:var(--mt-ink);border-top-right-radius:3px}
+@media(prefers-reduced-motion:no-preference){
+  .mt-open__fig img{animation:mt-drift 46s ease-in-out infinite alternate;transform-origin:50% 60%}
+  @keyframes mt-drift{from{transform:scale(1)}to{transform:scale(1.07) translate(-1.2%,-1%)}}
+}
+@media(max-width:900px){
+  .mt-open__grid{grid-template-columns:1fr;min-height:0}
+  .mt-open__text{padding:2rem var(--gut) 2.2rem;order:2}
+  .mt-open__fig{order:1;min-height:0;aspect-ratio:4/3}
+  .mt-open h1{max-width:12ch}
+}
+
+/* ── directory: what is on the page, before any argument starts ───── */
+.mt-dir{background:var(--mt-paper-2);border-top:1px solid var(--mt-rule);border-bottom:1px solid var(--mt-rule)}
+.mt-dir__in{display:grid;grid-template-columns:auto 1fr;gap:1rem 3rem;align-items:start;padding-block:1.4rem}
+.mt-dir__lbl{font-family:var(--body);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mt-green-deep);margin:.5rem 0 0;white-space:nowrap}
+.mt-dir ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0 1.6rem}
+.mt-dir li{border-left:1px solid var(--mt-rule);padding:.3rem 0 .4rem 1rem}
+.mt-dir a{display:grid;gap:.25rem;text-decoration:none;color:var(--mt-ink)}
+.mt-dir a b{font-family:var(--display);font-weight:900;font-size:1.05rem;color:var(--mt-gold);letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.mt-dir a span{font-weight:800;font-size:1rem;line-height:1.2;color:var(--mt-head)}
+.mt-dir a small{font-size:.86rem;line-height:1.4;color:var(--mt-ink-2)}
+.mt-dir a:hover span{color:var(--mt-blue)}
+@media(max-width:1100px){.mt-dir ol{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem 1.6rem}}
+@media(max-width:760px){
+  .mt-dir__in{grid-template-columns:1fr;gap:.6rem}
+  .mt-dir ol{grid-template-columns:1fr;gap:0}
+  .mt-dir li{border-left:0;border-top:1px solid var(--mt-rule-2);padding:.75rem 0}
+  .mt-dir a{grid-template-columns:2.4rem 1fr;grid-template-areas:"n t" "n s";gap:.15rem .4rem}
+  .mt-dir a b{grid-area:n}.mt-dir a span{grid-area:t}.mt-dir a small{grid-area:s}
+}
+
+/* ── editorial rows: text on one side, a photograph bleeding off the other ── */
+.mt-sec{background:var(--mt-paper);padding-block:clamp(3rem,2rem + 4vw,6rem);overflow:hidden}
+.mt-sec--tint{background:var(--mt-tint)}
+.mt-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.6rem,3vw,4rem);align-items:start;max-width:var(--mt-max);margin-inline:auto;padding-inline:var(--gut)}
+.mt-row + .mt-row{margin-top:clamp(3rem,2rem + 4vw,6rem)}
+.mt-row--imgleft{grid-template-columns:minmax(0,46fr) minmax(0,54fr)}
+.mt-row--imgright{grid-template-columns:minmax(0,54fr) minmax(0,46fr)}
+.mt-row--imgleft .mt-bleed{order:1}.mt-row--imgleft .mt-text{order:2}
+.mt-bleed{position:relative}
+.mt-bleed--left{margin-left:calc(-1 * max(var(--gut), (100vw - var(--mt-max)) / 2 + var(--gut)))}
+.mt-bleed--right{margin-right:calc(-1 * max(var(--gut), (100vw - var(--mt-max)) / 2 + var(--gut)))}
+.mt-bleed .mt-frame{overflow:hidden;background:var(--mt-tint)}
+.mt-bleed img{width:100%;height:100%;object-fit:cover;display:block;will-change:transform}
+.mt-bleed--left .mt-frame{aspect-ratio:5/4;border-top-right-radius:3px;border-bottom-right-radius:3px}
+.mt-bleed--right .mt-frame{aspect-ratio:5/4;border-top-left-radius:3px;border-bottom-left-radius:3px}
+.mt-bleed--tall .mt-frame{aspect-ratio:4/5}
+.mt-bleed--left .mt-cap{padding-left:var(--gut)}
+.mt-bleed--right .mt-cap{padding-left:0}
+.mt-bleed.is-sticky{position:sticky;top:5.5rem}
+.mt-inset{margin:1.6rem 0 1.4rem;max-width:30rem}
+.mt-inset .mt-frame{overflow:hidden;border-radius:3px;aspect-ratio:4/3}
+.mt-inset--portrait .mt-frame{aspect-ratio:3/4}
+.mt-inset img{width:100%;height:100%;object-fit:cover;display:block}
+.mt-inset--side{float:right;width:min(42%,22rem);margin:.4rem 0 1.2rem 2rem}
+@media(max-width:900px){
+  .mt-row,.mt-row--imgleft,.mt-row--imgright{grid-template-columns:1fr;gap:1.4rem}
+  .mt-row--imgleft .mt-bleed,.mt-row--imgright .mt-bleed{order:1}
+  .mt-row--imgleft .mt-text,.mt-row--imgright .mt-text{order:2}
+  .mt-bleed--left,.mt-bleed--right{margin-left:calc(-1 * var(--gut));margin-right:calc(-1 * var(--gut))}
+  .mt-bleed--left .mt-frame,.mt-bleed--right .mt-frame,.mt-bleed--tall .mt-frame{aspect-ratio:4/3;border-radius:0}
+  .mt-bleed--right .mt-cap{padding-left:var(--gut)}
+  .mt-bleed.is-sticky{position:static}
+  .mt-inset--side{float:none;width:100%;max-width:30rem;margin:1.4rem 0}
+}
+
+/* ── a line from his book, big, left-aligned, on the resting ground ─── */
+.mt-quote{max-width:var(--mt-max);margin:clamp(2.6rem,3vw,4rem) auto 0;padding:0 var(--gut);display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem 1.6rem}
+.mt-quote::before{content:"\201C";font-family:var(--display);font-weight:900;font-size:clamp(4rem,3rem + 4vw,7rem);line-height:.6;color:var(--mt-ember);padding-top:.9rem}
+.mt-quote p{font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,1.2rem + 1.6vw,2.7rem);line-height:1.18;letter-spacing:-.015em;color:var(--mt-ink);max-width:28ch;margin:0}
+.mt-quote--long p{font-size:clamp(1.25rem,1.05rem + 1.1vw,2rem);max-width:40ch;line-height:1.28}
+.mt-quote cite{display:block;grid-column:2;font-style:normal;font-family:var(--body);font-size:.88rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mt-green-deep);margin-top:0}
+.mt-quote cite a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
+@media(max-width:640px){.mt-quote{grid-template-columns:3.4rem minmax(0,1fr)}}
+
+/* a shorter quoted line inside running text, ruled in ember */
+.mt-test{margin:2.2rem 0 1.6rem;padding:1.4rem 0 0;border-top:3px solid var(--mt-ember);max-width:var(--mt-measure)}
+.mt-test p,.mt-text .mt-test p{font-family:var(--display);font-weight:600;font-size:clamp(1.3rem,1.1rem + 1vw,1.9rem);line-height:1.22;color:var(--mt-ink);margin:0 0 .6rem}
+.mt-test cite{font-style:normal;font-size:.88rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mt-green-deep)}
+.mt-test cite a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
+
+/* ── the steps: a ruled ledger with the numerals in the margin ────────── */
+.mt-head{max-width:var(--mt-max);margin-inline:auto;padding-inline:var(--gut);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:end}
+.mt-head h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.6rem);color:var(--mt-head);max-width:18ch;margin:0 0 1.2rem}
+.mt-lede{font-size:clamp(1.08rem,1rem+.4vw,1.3rem);line-height:1.58;color:var(--mt-ink);max-width:58ch;margin:0}
+.mt-mark{width:clamp(7rem,12vw,13rem);color:var(--mt-ember);align-self:center}
+.mt-mark svg{width:100%;height:auto}
+@media(prefers-reduced-motion:no-preference){
+  .mt-mark svg *{stroke-dasharray:420;stroke-dashoffset:420}
+  .mt-mark.in svg *{animation:mt-draw 2.6s cubic-bezier(.4,0,.2,1) forwards}
+  @keyframes mt-draw{to{stroke-dashoffset:0}}
+}
+@media(max-width:760px){.mt-head{grid-template-columns:1fr}.mt-mark{width:6.5rem;justify-self:start}}
+.mt-acts{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;align-items:center;margin-top:1.4rem}
+.mt-btn,html.courage a.mt-btn:not(#_){display:inline-flex;align-items:center;gap:.5rem;background:var(--mt-blue);color:#fff !important;font-family:var(--body);font-weight:800;font-size:1rem;padding:.8rem 1.3rem;border-radius:3px;border:0;cursor:pointer;text-decoration:none;line-height:1.1}
+.mt-btn:hover,html.courage a.mt-btn:not(#_):hover{background:var(--mt-head);color:#fff !important}
+/* photos-through-interiors.css paints every blockquote and every link in main gold with !important; the big quotes here are ink by design */
+html.courage blockquote.mt-quote:not(#_) p,html.courage blockquote.mt-quote:not(#_){color:var(--mt-ink) !important}
+html.courage main .mt-arrow:not(#_){color:var(--mt-blue) !important}
+html.courage main .mt-arrow:not(#_):hover{color:var(--mt-head) !important}
+html.courage main .mt-links a:not(#_){color:var(--mt-head) !important}
+html.courage main .mt-links a:not(#_):hover{color:var(--mt-blue) !important}
+.mt-btn--ghost{background:transparent;color:var(--mt-head);border:2px solid var(--mt-head)}
+.mt-btn--ghost:hover{background:var(--mt-head);color:#fff}
+.mt-steps{max-width:var(--mt-max);margin:clamp(2.2rem,3vw,3.6rem) auto 0;padding:0 var(--gut);counter-reset:step}
+.mt-steps__h{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem 1.6rem;align-items:end;margin:clamp(2.6rem,3vw,4rem) 0 .4rem}
+.mt-steps__h:first-child{margin-top:0}
+.mt-steps__h h3{grid-column:2;font-family:var(--body);font-size:.84rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mt-green-deep);margin:0 0 .3rem}
+.mt-steps__h p{grid-column:2;margin:0 0 .6rem;max-width:var(--mt-measure);color:var(--mt-ink-2);font-size:var(--t-small);line-height:1.5}
+.mt-steps ol{list-style:none;margin:0;padding:0}
+.mt-steps li{counter-increment:step;display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem 1.6rem;padding:1.6rem 0;border-top:1px solid var(--mt-rule);align-items:start}
+.mt-steps li::before{content:counter(step,decimal-leading-zero);font-family:var(--display);font-weight:900;font-size:clamp(2.2rem,1.6rem + 2vw,3.6rem);line-height:.9;letter-spacing:-.04em;color:var(--mt-gold);font-variant-numeric:lining-nums;padding-top:.2rem}
+.mt-steps li.has-fig{grid-template-columns:5.5rem minmax(0,1fr) minmax(0,19rem)}
+.mt-steps li.has-fig .mt-step__fig{grid-column:3;grid-row:1}
+.mt-steps li.has-fig .mt-step__body{grid-column:2}
+.mt-step__fig .mt-frame{overflow:hidden;border-radius:3px;aspect-ratio:4/3;background:var(--mt-tint)}
+.mt-step__fig--tall .mt-frame{aspect-ratio:4/5}
+.mt-step__fig--map .mt-frame{aspect-ratio:1800/1140;background:#FBF8F1}
+.mt-step__fig img{width:100%;height:100%;object-fit:cover;display:block}
+.mt-step__fig--map img{object-fit:contain}
+.mt-steps b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(1.3rem,1.1rem+.9vw,1.9rem);line-height:1.12;letter-spacing:-.02em;color:var(--mt-head);margin:0 0 .5rem;max-width:30ch}
+.mt-steps p{margin:0 0 .9em;max-width:var(--mt-measure);color:var(--mt-ink);line-height:1.6;font-size:var(--t-body)}
+.mt-steps p:last-child{margin-bottom:0}
+.mt-steps q{quotes:"\201C" "\201D" "\2018" "\2019"}
+.mt-steps .mt-src{display:block;font-family:var(--body);font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mt-green-deep);margin-top:.4rem}
+.mt-steps .mt-src a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
+.mt-steps li:last-child{border-bottom:1px solid var(--mt-rule)}
+.mt-three{max-width:var(--mt-max);margin:clamp(2.4rem,3vw,3.6rem) auto 0;padding:0 var(--gut);display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem 1.6rem}
+.mt-three > div{grid-column:2;border-left:3px solid var(--mt-green);padding-left:1.4rem;max-width:var(--mt-measure)}
+.mt-three h3{font-family:var(--body);font-size:.84rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mt-green-deep);margin:0 0 .8rem}
+.mt-three p{margin:0 0 .8em;color:var(--mt-ink);line-height:1.6}
+.mt-three p b{font-family:var(--display);font-weight:800;color:var(--mt-head);font-size:1.15em}
+@media(max-width:900px){
+  .mt-steps li.has-fig{grid-template-columns:5.5rem minmax(0,1fr)}
+  .mt-steps li.has-fig .mt-step__fig{grid-column:2;grid-row:auto;max-width:30rem;margin-top:.4rem}
+}
+@media(max-width:640px){
+  .mt-steps li,.mt-steps li.has-fig,.mt-steps__h,.mt-three{grid-template-columns:3.4rem minmax(0,1fr);gap:.6rem .8rem}
+  .mt-steps li{padding:1.3rem 0}
+}
+
+/* ── a strip of photographs, uneven on purpose ───────────────────────── */
+.mt-strip{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr) minmax(0,2fr);gap:.8rem;max-width:var(--mt-max);margin:clamp(2.4rem,3vw,3.6rem) auto 0;padding-inline:var(--gut)}
+.mt-strip figure .mt-frame{overflow:hidden;border-radius:3px;aspect-ratio:4/3}
+.mt-strip figure:first-child .mt-frame{aspect-ratio:16/10}
+.mt-strip img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:760px){.mt-strip{grid-template-columns:1fr 1fr}.mt-strip figure:first-child{grid-column:1/-1}}
+
+/* ── the book: cover beside the invitation, then the wide illustration ── */
+.mt-book{background:var(--mt-tint);padding-block:clamp(3rem,2rem + 4vw,6rem);overflow:hidden}
+.mt-book__grid{display:grid;grid-template-columns:minmax(0,34fr) minmax(0,66fr);gap:clamp(1.6rem,3vw,4rem);align-items:center;max-width:var(--mt-max);margin-inline:auto;padding-inline:var(--gut)}
+.mt-book__cover .mt-frame{overflow:hidden;border-radius:3px;box-shadow:0 24px 50px -30px rgba(18,40,30,.55);max-width:22rem}
+.mt-book__cover img{width:100%;height:auto;display:block}
+.mt-book h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.6rem);color:var(--mt-head);max-width:16ch;margin:0 0 .4rem}
+.mt-book .mt-sub{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(1.15rem,1rem+.6vw,1.5rem);color:var(--mt-ink-2);margin:0 0 1.2rem}
+.mt-book p:not(.mt-sub){max-width:var(--mt-measure);color:var(--mt-ink);line-height:1.62;margin:0 0 1.1em;font-size:var(--t-body)}
+.mt-wide{position:relative;overflow:hidden;max-width:var(--mt-max);margin:clamp(2.4rem,3vw,3.6rem) auto 0;padding-inline:var(--gut)}
+.mt-wide .mt-frame{overflow:hidden;border-radius:3px;aspect-ratio:1408/430;background:#0E1218}
+.mt-wide img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:900px){.mt-book__grid{grid-template-columns:1fr}.mt-book__cover .mt-frame{max-width:16rem}}
+
+/* ── the close: a wide photograph, then the invitation on paper ─────── */
+.mt-close{background:var(--mt-paper);padding-top:0}
+.mt-close .mt-photo{position:relative;overflow:hidden;height:clamp(300px,52vh,620px)}
+.mt-close .mt-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 55%;display:block}
+.mt-close .mt-photo .mt-cap{position:absolute;left:0;bottom:0;margin:0;padding:.55rem .9rem .55rem max(var(--gut),calc((100vw - var(--mt-max))/2 + var(--gut)));background:rgba(247,250,244,.94);color:var(--mt-ink);border-top-right-radius:3px}
+.mt-close__grid{display:grid;grid-template-columns:minmax(0,58fr) minmax(0,42fr);gap:clamp(1.6rem,3vw,4rem);align-items:center;max-width:var(--mt-max);margin-inline:auto;padding:clamp(3rem,2rem + 4vw,5.5rem) var(--gut) 0}
+.mt-close h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.6rem);color:var(--mt-head);max-width:18ch;margin:0 0 1.2rem}
+.mt-close p:not(.mt-num){max-width:var(--mt-measure);color:var(--mt-ink);line-height:1.62;margin:0 0 1.6rem}
+.mt-links{list-style:none;margin:0;padding:0;display:grid;gap:.9rem;border-left:3px solid var(--mt-green);padding-left:1.4rem}
+.mt-links a{text-decoration:none;color:var(--mt-head);font-weight:800;font-size:1.05rem;line-height:1.3}
+.mt-links a:hover{color:var(--mt-blue)}
+.mt-links small{display:block;font-weight:500;color:var(--mt-ink-2);font-size:.9rem;margin-top:.15rem}
+@media(max-width:900px){.mt-close__grid{grid-template-columns:1fr}}
+
+/* ── reveal: the shared .rv script adds .in; without it everything shows ── */
+@media(prefers-reduced-motion:no-preference){
+  .mt-bleed.rv,.mt-inset.rv,.mt-strip figure.rv{transition-duration:1.1s}
+}
+
+/* ── print: the steps only, on paper, one column ──────────────────────── */
+@media print{
+  .greet,.globebar,.hdr,.menu,.secnav,.crumb,.mt-open,.mt-dir,.mt-sec:not(#steps),.mt-book,.mt-close,.ftr,.mt-acts,.mt-mark,.skip{display:none !important}
+  html.courage,html.courage body{background:#fff !important;color:#000 !important}
+  #steps{padding:0 !important;background:#fff !important}
+  .mt-head{grid-template-columns:1fr;padding:0}
+  .mt-head h2{font-size:22pt;color:#000;max-width:none}
+  .mt-lede{font-size:10.5pt;max-width:none;color:#000}
+  .mt-steps,.mt-three{padding:0;max-width:none}
+  .mt-steps li,.mt-steps li.has-fig{grid-template-columns:2.2rem minmax(0,1fr);gap:.4rem .8rem;padding:.55rem 0;break-inside:avoid;border-top:1px solid #999}
+  .mt-steps li::before{font-size:14pt;color:#000}
+  .mt-steps b{font-size:12pt;color:#000;margin-bottom:.15rem}
+  .mt-steps p{font-size:9.5pt;line-height:1.4;color:#000;max-width:none}
+  .mt-steps .mt-src{font-size:7.5pt;color:#333}
+  .mt-steps__h{grid-template-columns:2.2rem minmax(0,1fr);gap:.4rem .8rem;margin:1rem 0 .2rem;break-after:avoid}
+  .mt-steps__h h3{color:#000}
+  .mt-steps__h p{color:#333;font-size:9pt}
+  .mt-step__fig{display:none !important}
+  .mt-three{grid-template-columns:2.2rem minmax(0,1fr);gap:.4rem .8rem;margin-top:1rem}
+  .mt-three > div{border-left:2px solid #000;max-width:none}
+  .mt-three p{font-size:9.5pt;color:#000}
+  .mt-three h3{color:#000}
+  .rv{opacity:1 !important;transform:none !important}
+  a{color:#000;text-decoration:none}
+}
