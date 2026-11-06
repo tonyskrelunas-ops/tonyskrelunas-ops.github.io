@@ -119,11 +119,27 @@ ALARM = re.compile(
   r"mining|lithium|extraction|reserves|displac|resettle|"
   r"infrastructure development|runaway|boarding school|"
   r"extinction|endangered|die-off|dying|poach|culled|false promise|lawsuit|addiction|ola de calor|inusualmente c[áa]lido|sequ[íi]a|Trump|Baltieji r[ūu]mai|atstov[ėe] spaudai|atstovas spaudai|"
-  r"broken promise|backlash|the problem with|why we should stop)", re.I)
+  r"broken promise|backlash|the problem with|why we should stop|"
+  # added 11/6/2026, after a counter-extremism story, a mining road that dried two
+  # sacred springs, a moisturiser guide and a president's absence reached the paper
+  r"extremis|radicali[sz]|radical islamist|skinhead|gangs?\b|"
+  r"miner[ao]s?\b|se sec[aó]|secaron|osario|"
+  r"barely afford|cost of living|inflation|repeal|announces? (a )?plan|unveils? (a )?plan|"
+  r"in memoriam|obituar|pikt(i|as|a|ų|o)\b|prezident|Nausėd)", re.I)
+
+# The CJK words above sit behind the \b that opens ALARM, and between two CJK
+# characters there is no word boundary, so mid-sentence they never matched. This
+# runs them again with no boundary, plus the words for conflict.
+ALARM_CJK = re.compile(
+  r"(警告|危機|懸念|悪化|崩壊|緊急|抗議|選挙|議員|大臣|政党|政治|争い|紛争|対立|"
+  r"危机|风险|風險|威胁|威脅|恶化|惡化|崩溃|崩潰|紧急|抗议|选举|選舉|议员|部长|部長|政黨|"
+  r"制裁|审判|審判|当局|被捕|流亡|煎熬|审查|管控|打压|冲突|争端|疫情|裁员|失业)")
 
 # ── 4. junk, in any language ─────────────────────────────────────────────────
 JUNK = {
- "en": re.compile(r"\b(celebrit|royal|lottery|jackpot|viral|shock|slam|blast|crypto|betting)\b", re.I),
+ "en": re.compile(r"\b(celebrit|royal|lottery|jackpot|viral|shock|slam|blast|crypto|betting|"
+                  r"review(?! of (the )?(literature|evidence|research))|"
+                  r"moisturi[sz]er|skincare|skin care)\b", re.I),
  "es": re.compile(r"(famoso|celebridad|loter[ií]a|baloto|sorteo|premio mayor|viral|"
                   r"esc[áa]ndalo|cripto|apuesta|mascota silvestre)", re.I),
  "ja": re.compile(r"(芸能|不倫|炎上|宝くじ|仮想通貨)"),
@@ -151,6 +167,7 @@ def passes(blob, lang):
     blob = flatten(blob)
     if VETO.search(blob):                        return False, "veto"
     if ALARM.search(blob):                       return False, "alarm"
+    if ALARM_CJK.search(blob):                   return False, "alarm"
     j = JUNK.get(lang)
     if j and j.search(blob):                     return False, "junk"
     t = TOPIC.get(lang)

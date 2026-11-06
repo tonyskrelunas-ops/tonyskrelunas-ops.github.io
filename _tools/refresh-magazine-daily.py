@@ -174,6 +174,17 @@ def items(xml, source):
                     "source": source, "date": iso})
     return out
 
+# Added 11/6/2026, after a May planting guide and a year-old forum notice reached
+# the November paper. A dated piece older than this stays out; an undated one is
+# left to the gates.
+MAX_AGE_DAYS = 30
+
+def stale(iso):
+    try:
+        return (datetime.date.today() - datetime.date.fromisoformat(iso)).days > MAX_AGE_DAYS
+    except ValueError:
+        return False
+
 def gather(srcs, lang, cap, errs, rejected, health):
     """Read every source for one edition, keep what clears the gates, and give
        each lane a place on the page. Round robin by lane first, then by source,
@@ -189,6 +200,8 @@ def gather(srcs, lang, cap, errs, rejected, health):
             health.append((lang, lane, name, "unreachable"))
             continue
         for it in items_:
+            if stale(it["date"]):
+                rejected.append((lang, "stale", it["title"][:70])); continue
             blob = it["title"] + " " + it["dek"]
             ok, why = passes(blob, lang)
             if not ok:

@@ -1,0 +1,332 @@
+/* ═══ ABUNDANCE MINDSET MAGAZINE — THE BROADSHEET, 6 November 2026 ═══════════
+   Tony, 10/3: "New York Times or maybe a Lithuanian newspaper." Ink on cool
+   paper, the horse as a small crest, double rules, hairline columns, no cards,
+   no shadows, and one of his line drawings beside every piece.
+
+   Every selector here is lifted to ID weight with :not(#_), because v2.css
+   styles .amm__c by #id-weight rules and engage.css doubles classes; a plain
+   class rule written here would silently lose (tribeawaken-css-trap).
+   Linked LAST on magazine/index.html. Nothing shared is edited.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.mag1106:not(#_){
+  --paper:#F8F8F4;
+  --ink:#161310;
+  --ink-2:#3A362F;
+  --ink-3:#5C5850;
+  --hair:rgba(22,19,16,.24);
+  --hair-2:rgba(22,19,16,.12);
+  --dbl:rgba(22,19,16,.6);
+  --crim:#B10324;
+  --serif:var(--display,'Fraunces',Georgia,serif);
+  --sans:var(--body,'Hanken Grotesk',system-ui,sans-serif);
+}
+html.courage body.mag1106:not(#_){background:var(--paper);color:var(--ink)}
+.mag1106:not(#_) ::selection{background:#F3D6DB;color:var(--ink)}
+
+/* the sheet */
+.mag1106:not(#_) .bs{max-width:1240px;margin:0 auto;padding:0 clamp(1rem,3.4vw,2.6rem)}
+.mag1106:not(#_) .rule{border:0;border-top:1px solid var(--hair);margin:0}
+.mag1106:not(#_) .rule--dbl{border-top:3px double var(--dbl)}
+.mag1106:not(#_) .rule--ink{border-top:2px solid var(--ink)}
+
+/* ── the top bar: the site's own menu, kept ─────────────────────────────── */
+.mag1106:not(#_) .bs-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+  padding:.8rem 0 .7rem;font-family:var(--sans)}
+.mag1106:not(#_) .bs-top > a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.8rem;
+  letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+.mag1106:not(#_) .bs-top nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:.3rem 1.1rem}
+.mag1106:not(#_) .bs-top nav a{color:var(--ink-2);text-decoration:none;font-size:.78rem;font-weight:700;
+  letter-spacing:.06em;white-space:nowrap;border-bottom:2px solid transparent;padding-bottom:.1rem}
+.mag1106:not(#_) .bs-top nav a:hover{color:var(--crim)}
+.mag1106:not(#_) .bs-top nav a[aria-current="page"]{color:var(--crim);border-bottom-color:var(--crim)}
+@media (max-width:700px){
+  .mag1106:not(#_) .bs-top{flex-direction:column;align-items:flex-start;gap:.5rem}
+  .mag1106:not(#_) .bs-top nav{justify-content:flex-start;gap:.25rem .9rem}
+  .mag1106:not(#_) .bs-top nav a{font-size:.74rem}
+}
+
+/* ── the nameplate ──────────────────────────────────────────────────────── */
+.mag1106:not(#_) .np{padding:clamp(1rem,2vw,1.6rem) 0 0}
+.mag1106:not(#_) .np__row{display:grid;grid-template-columns:minmax(172px,1fr) minmax(0,auto) minmax(172px,1fr);align-items:end;
+  gap:clamp(1rem,2vw,2rem);padding-bottom:clamp(.7rem,1.4vw,1rem)}
+.mag1106:not(#_) .np__ears{display:contents}
+.mag1106:not(#_) .np__ear{grid-column:1;grid-row:1}
+.mag1106:not(#_) .np__ear--r{grid-column:3}
+.mag1106:not(#_) .np__id{grid-column:2;grid-row:1}
+/* the shared interiors sheet paints every link and blockquote inside <main>
+   gold with !important; this sheet is ink on paper, so these say so */
+.mag1106:not(#_) main a:not(.bs-btn),.mag1106:not(#_) .bs a:not(.bs-btn){color:var(--ink) !important}
+.mag1106:not(#_) main a:not(.bs-btn):hover,.mag1106:not(#_) .bs a:not(.bs-btn):hover{color:var(--crim) !important}
+.mag1106:not(#_) .note blockquote,.mag1106:not(#_) .note blockquote p{color:var(--ink) !important}
+.mag1106:not(#_) .note cite a,.mag1106:not(#_) .np__bar .np__shelves a,.mag1106:not(#_) .folio a{color:var(--ink-3) !important}
+.mag1106:not(#_) .note cite a:hover,.mag1106:not(#_) .np__bar .np__shelves a:hover,.mag1106:not(#_) .folio a:hover{color:var(--crim) !important}
+.mag1106:not(#_) .np__bar a[aria-current="page"],.mag1106:not(#_) .bs-top nav a[aria-current="page"]{color:var(--crim) !important}
+.mag1106:not(#_) .np__ear{font-family:var(--sans);font-size:.72rem;line-height:1.5;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 .3rem;font-weight:700}
+.mag1106:not(#_) .np__ear b{display:block;color:var(--ink);font-weight:800}
+.mag1106:not(#_) .np__ear--r{text-align:right}
+.mag1106:not(#_) .np__ear--r b{color:var(--crim)}
+.mag1106:not(#_) .np__id{display:flex;align-items:center;justify-content:center;gap:clamp(.7rem,1.4vw,1.3rem);
+  min-width:0}
+.mag1106:not(#_) .np__crest{display:block;height:clamp(58px,6.2vw,92px);width:auto;flex:none;
+  mix-blend-mode:multiply;filter:saturate(.9) contrast(1.02)}
+.mag1106:not(#_) .np h1{font-family:var(--serif);font-weight:900;font-variation-settings:"opsz" 144;
+  font-size:clamp(2.35rem,1rem + 4.2vw,4.9rem);line-height:.92;letter-spacing:-.025em;
+  color:var(--ink);margin:0;text-wrap:balance;text-align:left}
+.mag1106:not(#_) .np__motto{font-family:var(--serif);font-weight:500;font-size:clamp(.98rem,.9rem + .4vw,1.14rem);
+  line-height:1.55;color:var(--ink-2);text-align:center;max-width:78ch;margin:.75rem auto 0;padding:0 0 .85rem}
+/* the section bar — six editions and the two shelves, as a newspaper's sections */
+.mag1106:not(#_) .np__bar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;
+  gap:.35rem 1.2rem;padding:.6rem 0;font-family:var(--sans);font-size:.7rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase}
+.mag1106:not(#_) .np__bar ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.3rem 1.25rem}
+.mag1106:not(#_) .np__bar a{color:var(--ink-2);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:.12rem}
+.mag1106:not(#_) .np__bar a:hover{color:var(--crim)}
+.mag1106:not(#_) .np__bar a[aria-current="page"]{color:var(--crim);border-bottom-color:var(--crim)}
+.mag1106:not(#_) .np__bar .np__shelves a{color:var(--ink-3)}
+@media (max-width:900px){
+  .mag1106:not(#_) .np__row{grid-template-columns:1fr;gap:.55rem;justify-items:center;padding-bottom:.6rem}
+  .mag1106:not(#_) .np__id{grid-column:1;grid-row:1;flex-direction:column;gap:.45rem;text-align:center}
+  .mag1106:not(#_) .np h1{text-align:center}
+  .mag1106:not(#_) .np__ears{display:flex;grid-column:1;grid-row:2;justify-content:space-between;width:100%;gap:1rem;
+    border-top:1px solid var(--hair-2);padding-top:.55rem}
+  .mag1106:not(#_) .np__ear,.mag1106:not(#_) .np__ear--r{grid-column:auto;grid-row:auto;margin:0;font-size:.64rem}
+  .mag1106:not(#_) .np__ear b{font-size:.68rem}
+  .mag1106:not(#_) .np__motto{font-size:.96rem;max-width:40ch;padding-bottom:.7rem}
+  .mag1106:not(#_) .np__bar{font-size:.64rem;letter-spacing:.12em;gap:.3rem .9rem}
+  .mag1106:not(#_) .np__bar ul{gap:.3rem .9rem}
+}
+
+/* ── his cover, as the front-page plate ────────────────────────────────── */
+.mag1106:not(#_) .plate{position:relative;height:clamp(150px,19vw,270px);overflow:hidden;
+  border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);background:#D7A738}
+.mag1106:not(#_) .plate object{display:block;width:100%;height:100%;border:0;pointer-events:none}
+.mag1106:not(#_) .plate figcaption{position:absolute;right:.7rem;bottom:.45rem;margin:0;
+  font-family:var(--sans);font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:#241F10;background:rgba(215,167,56,.78);padding:.22rem .5rem}
+
+/* ── section heads, used everywhere on the sheet ────────────────────────── */
+.mag1106:not(#_) .sh{margin:0;padding:.42rem 0 .7rem;border-top:2px solid var(--ink);
+  font-family:var(--sans);font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--crim);display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.mag1106:not(#_) .sh small{font-size:.64rem;letter-spacing:.12em;color:var(--ink-3);font-weight:700;text-transform:none}
+
+/* ── the front page: three hairline columns ─────────────────────────────── */
+.mag1106:not(#_) .fp{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,6.2fr) minmax(0,3.1fr);
+  column-gap:0;padding:clamp(1.1rem,2vw,1.7rem) 0 0;align-items:start}
+.mag1106:not(#_) .fp > *{min-width:0}
+.mag1106:not(#_) .fp__l{padding-right:clamp(1.1rem,2vw,2rem);border-right:1px solid var(--hair)}
+.mag1106:not(#_) .fp__c{padding:0 clamp(1.1rem,2vw,2rem)}
+.mag1106:not(#_) .fp__r{padding-left:clamp(1.1rem,2vw,2rem);border-left:1px solid var(--hair)}
+@media (max-width:1000px){
+  .mag1106:not(#_) .fp{grid-template-columns:minmax(0,1fr) minmax(0,19rem)}
+  .mag1106:not(#_) .fp__l{grid-column:1 / -1;grid-row:2;border-right:0;padding:1.4rem 0 0;
+    border-top:1px solid var(--hair);margin-top:1.2rem;
+    display:grid;grid-template-columns:1fr 1fr;gap:0 2rem;align-items:start}
+  .mag1106:not(#_) .fp__c{padding-left:0}
+}
+@media (max-width:700px){
+  .mag1106:not(#_) .fp{grid-template-columns:minmax(0,1fr)}
+  .mag1106:not(#_) .fp__c{padding:0}
+  .mag1106:not(#_) .fp__r{grid-row:2;border-left:0;padding:0;margin-top:1.2rem}
+  .mag1106:not(#_) .fp__l{grid-row:3;grid-template-columns:1fr;margin-top:1.4rem}
+}
+
+/* the lead */
+.mag1106:not(#_) .lead{display:grid;grid-template-columns:minmax(0,1fr) clamp(96px,10vw,136px);
+  gap:0 clamp(1rem,2vw,1.6rem);align-items:start;padding-bottom:clamp(1rem,2vw,1.6rem)}
+.mag1106:not(#_) .lead__art{grid-column:2;grid-row:2 / span 3;width:100%;height:auto;aspect-ratio:1;color:var(--ink)}
+.mag1106:not(#_) .lead__kick{grid-column:1 / -1;margin:0 0 .55rem;font-family:var(--sans);font-size:.68rem;font-weight:800;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--crim)}
+.mag1106:not(#_) .lead h2{grid-column:1;margin:0;font-family:var(--serif);font-weight:700;
+  font-variation-settings:"opsz" 96;font-size:clamp(1.9rem,1.1rem + 2.7vw,3.5rem);line-height:1.02;
+  letter-spacing:-.022em;color:var(--ink);text-wrap:balance;text-align:left}
+.mag1106:not(#_) .lead h2 a{color:inherit;text-decoration:none}
+.mag1106:not(#_) .lead h2 a:hover{color:var(--crim)}
+.mag1106:not(#_) .lead__dek{grid-column:1;margin:.8rem 0 0;font-family:var(--serif);font-weight:500;
+  font-size:clamp(1.06rem,1rem + .4vw,1.24rem);line-height:1.5;color:var(--ink-2);max-width:60ch}
+.mag1106:not(#_) .lead__go{grid-column:1;margin:.9rem 0 0;font-family:var(--sans);font-size:.74rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase}
+.mag1106:not(#_) .lead__go a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink)}
+.mag1106:not(#_) .lead__go a:hover{color:var(--crim);border-color:var(--crim)}
+@media (max-width:700px){
+  .mag1106:not(#_) .lead{grid-template-columns:minmax(0,1fr) 84px;gap:0 .9rem}
+  .mag1106:not(#_) .lead__art{grid-row:2 / span 2}
+}
+
+/* ── every piece: a drawing, a kicker, a headline, a line ───────────────── */
+.mag1106:not(#_) .amm__c, .mag1106:not(#_) .amm__f{
+  display:grid;grid-template-columns:54px minmax(0,1fr);gap:.2rem .95rem;align-items:start;
+  padding:.95rem 0 1.05rem;border:0;border-top:1px solid var(--hair);border-radius:0;
+  background:transparent;box-shadow:none;transform:none;text-decoration:none;transition:none;color:var(--ink)}
+.mag1106:not(#_) .amm__c:hover, .mag1106:not(#_) .amm__f:hover{transform:none;box-shadow:none;background:transparent}
+.mag1106:not(#_) .amm__c:hover b, .mag1106:not(#_) .amm__f:hover b{color:var(--crim)}
+.mag1106:not(#_) .amm__art{grid-column:1;grid-row:1 / span 3;width:54px;height:54px;margin:.15rem 0 0;color:var(--ink)}
+.mag1106:not(#_) .amm__c i, .mag1106:not(#_) .amm__f i{grid-column:2;font-style:normal;display:block;
+  font-family:var(--sans);font-size:.64rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--crim);margin:0 0 .15rem}
+.mag1106:not(#_) .amm__f i{color:var(--ink-3)}
+.mag1106:not(#_) .amm__c b, .mag1106:not(#_) .amm__f b{grid-column:2;display:block;font-family:var(--serif);
+  font-weight:700;font-variation-settings:"opsz" 48;font-size:clamp(1.12rem,1.02rem + .45vw,1.3rem);line-height:1.18;
+  letter-spacing:-.015em;color:var(--ink);transition:color .18s;text-wrap:pretty}
+.mag1106:not(#_) .amm__c span, .mag1106:not(#_) .amm__f span{grid-column:2;display:block;font-family:var(--serif);
+  font-weight:500;font-size:.96rem;line-height:1.5;color:var(--ink-2);margin-top:.3rem}
+.mag1106:not(#_) .amm__en{display:inline-block;margin-left:.45em;padding:.06em .4em;border:1px solid var(--hair);
+  border-radius:0;font-style:normal;font-size:.78em;letter-spacing:.06em;text-transform:none;color:var(--ink-3);background:none}
+/* the share control engage.js adds: ink type, no pill, always visible */
+.mag1106:not(#_) .amm__w{position:relative}
+.mag1106:not(#_) .amm__w > .amm__c.amm__c, .mag1106:not(#_) .amm__w > .amm__f.amm__f{padding-bottom:2.3rem}
+.mag1106:not(#_) .amm__share{position:absolute;right:0;bottom:.7rem;z-index:3;display:inline-flex;align-items:center;gap:.3rem;
+  font:800 .6rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);
+  background:transparent;border:0;border-bottom:1px solid var(--hair);border-radius:0;padding:0 0 .14rem;
+  cursor:pointer;opacity:1;backdrop-filter:none;-webkit-backdrop-filter:none;transition:color .2s,border-color .2s}
+.mag1106:not(#_) .amm__share:hover{color:var(--crim);border-color:var(--crim)}
+.mag1106:not(#_) .amm__share.is-done{color:#1E6E34;border-color:#1E6E34}
+
+/* his four, two by two */
+.mag1106:not(#_) .mine{display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(1.2rem,2vw,2rem);align-items:start}
+@media (max-width:520px){.mag1106:not(#_) .mine{grid-template-columns:1fr}}
+
+/* the photograph, under the lead */
+.mag1106:not(#_) .photo{margin:0 0 clamp(1rem,2vw,1.5rem);border-top:1px solid var(--hair);padding-top:.9rem}
+.mag1106:not(#_) .photo img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 42%}
+.mag1106:not(#_) .photo figcaption{margin:.55rem 0 0;font-family:var(--serif);font-weight:500;font-size:.9rem;line-height:1.45;color:var(--ink-2)}
+.mag1106:not(#_) .photo figcaption small{display:block;margin-top:.2rem;font-family:var(--sans);font-size:.62rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.mag1106:not(#_) .justin[hidden]{display:none}
+.mag1106:not(#_) .justin .amm__f span{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.mag1106:not(#_) .editor{margin-top:1.4rem}
+.mag1106:not(#_) .editor blockquote{margin:0;padding:0;font-family:var(--serif);font-weight:600;font-style:italic;
+  font-size:1.06rem;line-height:1.42;color:var(--ink) !important}
+.mag1106:not(#_) .editor blockquote p{margin:0;font:inherit;color:var(--ink) !important}
+.mag1106:not(#_) .editor blockquote p + p{margin-top:.7rem}
+.mag1106:not(#_) .editor cite{display:block;margin-top:.6rem;font-family:var(--sans);font-style:normal;font-size:.64rem;
+  font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.mag1106:not(#_) .editor cite a{color:var(--ink-3) !important;text-decoration:none;border-bottom:1px solid var(--hair)}
+.mag1106:not(#_) .editor cite a:hover{color:var(--crim) !important}
+
+/* the directory and the desk note */
+.mag1106:not(#_) .dir{margin:0;padding:0;list-style:none;counter-reset:dir}
+.mag1106:not(#_) .dir li{counter-increment:dir;display:grid;grid-template-columns:1.6rem minmax(0,1fr);gap:0 .4rem;
+  align-items:baseline;padding:.42rem 0;border-top:1px solid var(--hair-2);font-family:var(--serif);font-size:.98rem;line-height:1.35}
+.mag1106:not(#_) .dir li::before{content:counter(dir,upper-roman);font-family:var(--serif);font-weight:700;font-size:.78rem;
+  color:var(--crim);letter-spacing:.04em}
+.mag1106:not(#_) .dir a{color:var(--ink);text-decoration:none;font-weight:700}
+.mag1106:not(#_) .dir a:hover{color:var(--crim)}
+.mag1106:not(#_) .dir small{grid-column:2;display:block;font-family:var(--sans);font-size:.7rem;color:var(--ink-3);letter-spacing:.04em;margin-top:.1rem}
+.mag1106:not(#_) .dir .dir__lanes{grid-column:2;display:flex;flex-wrap:wrap;gap:.1rem .55rem;margin-top:.15rem}
+.mag1106:not(#_) .dir .dir__lanes a{font-weight:700;font-size:.9rem}
+.mag1106:not(#_) .note{margin-top:1.4rem}
+.mag1106:not(#_) .note p{margin:0;font-family:var(--serif);font-weight:500;font-size:.96rem;line-height:1.55;color:var(--ink-2)}
+.mag1106:not(#_) .note p + p{margin-top:.7rem}
+.mag1106:not(#_) .note a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--hair);text-underline-offset:3px}
+.mag1106:not(#_) .note a:hover{color:var(--crim)}
+
+/* ── from the world: the lanes flow across hairline columns ─────────────── */
+.mag1106:not(#_) .world{margin-top:clamp(1.6rem,3vw,2.6rem);padding-top:clamp(1rem,2vw,1.4rem);border-top:3px double var(--dbl)}
+.mag1106:not(#_) .world[hidden]{display:none}
+.mag1106:not(#_) .world__k{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.4rem 1.4rem;margin:0 0 1rem}
+.mag1106:not(#_) .world__k h2{margin:0;font-family:var(--serif);font-weight:900;font-variation-settings:"opsz" 144;
+  font-size:clamp(1.7rem,1.2rem + 1.8vw,2.7rem);letter-spacing:-.02em;line-height:1;color:var(--ink);text-align:left}
+.mag1106:not(#_) .world__k p{margin:0;font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3)}
+.mag1106:not(#_) .lanes{columns:3;column-gap:clamp(1.6rem,2.6vw,2.8rem);column-rule:1px solid var(--hair)}
+.mag1106:not(#_) .lanes .sh{break-after:avoid;break-inside:avoid;margin-top:.9rem}
+.mag1106:not(#_) .lanes .sh:first-child{margin-top:0}
+.mag1106:not(#_) .lanes .amm__w, .mag1106:not(#_) .lanes .amm__f{break-inside:avoid;-webkit-column-break-inside:avoid}
+.mag1106:not(#_) .lanes .sh + .amm__w > .amm__f, .mag1106:not(#_) .lanes .sh + .amm__f{border-top:0;padding-top:.2rem}
+@media (max-width:980px){.mag1106:not(#_) .lanes{columns:2}}
+@media (max-width:640px){.mag1106:not(#_) .lanes{columns:1}}
+
+/* ── the editions, with the map ─────────────────────────────────────────── */
+.mag1106:not(#_) .eds{margin-top:clamp(1.8rem,3vw,2.8rem);padding-top:1rem;border-top:3px double var(--dbl);
+  display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(1.2rem,2.6vw,2.6rem);align-items:start}
+.mag1106:not(#_) .eds__map{border:1px solid var(--hair);background:#FAF6EC;aspect-ratio:1056/560}
+.mag1106:not(#_) .eds__map object{display:block;width:100%;height:100%;border:0}
+.mag1106:not(#_) .eds__list{list-style:none;margin:0;padding:0}
+.mag1106:not(#_) .eds__list li{border-top:1px solid var(--hair)}
+.mag1106:not(#_) .eds__list li:last-child{border-bottom:1px solid var(--hair)}
+.mag1106:not(#_) .eds__list a{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:1rem;
+  padding:.62rem 0;text-decoration:none;color:var(--ink)}
+.mag1106:not(#_) .eds__list b{font-family:var(--serif);font-weight:700;font-size:1.14rem;letter-spacing:-.01em}
+.mag1106:not(#_) .eds__list span{font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);text-align:right}
+.mag1106:not(#_) .eds__list a:hover b{color:var(--crim)}
+.mag1106:not(#_) .eds__list a[aria-current="page"] b{color:var(--crim)}
+.mag1106:not(#_) .eds__list a[aria-current="page"] span::after{content:" · here"}
+html[lang="es"] .mag1106:not(#_) .eds__list a[aria-current="page"] span::after{content:" · aquí"}
+html[lang="ja"] .mag1106:not(#_) .eds__list a[aria-current="page"] span::after{content:" · ここ"}
+html[lang="lt"] .mag1106:not(#_) .eds__list a[aria-current="page"] span::after{content:" · čia"}
+/* Japanese has no italic; the shared sheet already straightens blockquotes, this keeps the ears readable */
+html[lang="ja"] .mag1106:not(#_) .np__ear,html[lang="ja"] .mag1106:not(#_) .np__bar,html[lang="ja"] .mag1106:not(#_) .sh{letter-spacing:.08em}
+.mag1106:not(#_) .eds__p{margin:.9rem 0 0;font-family:var(--serif);font-weight:500;font-size:.95rem;line-height:1.5;color:var(--ink-2)}
+@media (max-width:800px){.mag1106:not(#_) .eds{grid-template-columns:1fr}}
+
+/* ── pass it on, and the address ────────────────────────────────────────── */
+.mag1106:not(#_) .tail{margin-top:clamp(1.8rem,3vw,2.8rem);border-top:3px double var(--dbl);
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0}
+.mag1106:not(#_) .tail > section{padding:1rem clamp(1rem,2vw,2rem) 1.4rem 0}
+.mag1106:not(#_) .tail > section + section{border-left:1px solid var(--hair);padding:1rem 0 1.4rem clamp(1rem,2vw,2rem)}
+.mag1106:not(#_) .tail h2{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(1.4rem,1.2rem + .9vw,1.9rem);
+  letter-spacing:-.018em;line-height:1.08;color:var(--ink);text-align:left}
+.mag1106:not(#_) .tail p{margin:.7rem 0 0;font-family:var(--serif);font-weight:500;font-size:.98rem;line-height:1.55;color:var(--ink-2);max-width:58ch}
+.mag1106:not(#_) .tail .url{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92rem;color:var(--ink);
+  border-bottom:1px solid var(--hair)}
+.mag1106:not(#_) .row{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1rem;align-items:center}
+.mag1106:not(#_) .bs-btn{display:inline-flex;align-items:center;gap:.4rem;font:800 .72rem/1 var(--sans);letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink);background:transparent;border:1px solid var(--ink);border-radius:0;
+  padding:.72rem .95rem;text-decoration:none;cursor:pointer;transition:color .18s,background .18s,border-color .18s}
+.mag1106:not(#_) .bs-btn:hover{color:var(--crim);border-color:var(--crim)}
+.mag1106:not(#_) .bs-btn--crim{background:var(--crim);border-color:var(--crim);color:#fff}
+.mag1106:not(#_) .bs-btn--crim:hover{background:#8E0220;border-color:#8E0220;color:#fff}
+.mag1106:not(#_) .done{margin:.7rem 0 0;font-family:var(--sans);font-size:.74rem;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:#1E6E34}
+.mag1106:not(#_) .sub__form{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1rem}
+.mag1106:not(#_) .sub__form input[type=email]{flex:1 1 15rem;min-width:0;font:400 1rem/1.2 var(--sans);color:var(--ink);
+  background:#fff;border:1px solid var(--ink);border-radius:0;padding:.7rem .85rem}
+.mag1106:not(#_) .sub__form input[type=email]::placeholder{color:#7A766E}
+.mag1106:not(#_) .sub__form input[type=email]:focus{outline:2px solid var(--crim);outline-offset:1px}
+.mag1106:not(#_) .fine{margin-top:.7rem;font-family:var(--sans);font-size:.78rem;line-height:1.5;color:var(--ink-3);max-width:50ch}
+.mag1106:not(#_) .cap-done{border-left-color:#1E6E34;background:rgba(30,110,52,.06);border-radius:0;color:var(--ink)}
+.mag1106:not(#_) .cap-done span{color:var(--ink-2)}
+@media (max-width:760px){
+  .mag1106:not(#_) .tail{grid-template-columns:1fr}
+  .mag1106:not(#_) .tail > section{padding-right:0}
+  .mag1106:not(#_) .tail > section + section{border-left:0;border-top:1px solid var(--hair);padding-left:0}
+}
+
+/* ── the folio ──────────────────────────────────────────────────────────── */
+.mag1106:not(#_) .folio{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.4rem 1.4rem;max-width:none;
+  margin:clamp(1.4rem,2.6vw,2.4rem) 0 0;padding:.8rem 0 2.4rem;border-top:3px double var(--dbl);
+  font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.mag1106:not(#_) .folio a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair)}
+.mag1106:not(#_) .folio a:hover{color:var(--crim)}
+
+/* ── the seven-minute panel (engage.js), on this paper ─────────────────── */
+.mag1106:not(#_) .amm-reg__in{background:var(--paper);color:var(--ink);border:1px solid var(--ink);border-radius:0;
+  box-shadow:0 24px 60px -28px rgba(22,19,16,.5)}
+.mag1106:not(#_) .amm-reg__k{color:var(--crim)}
+.mag1106:not(#_) .amm-reg__h{color:var(--ink)}
+.mag1106:not(#_) .amm-reg__p,.mag1106:not(#_) .amm-reg__fine{color:var(--ink-2)}
+.mag1106:not(#_) .amm-reg__go{background:var(--crim);border-color:var(--crim);color:#fff;border-radius:0}
+.mag1106:not(#_) .amm-reg__go:hover{background:#8E0220;border-color:#8E0220}
+.mag1106:not(#_) .amm-reg__f input[type=email]{border-radius:0;border-color:var(--ink)}
+.mag1106:not(#_) .amm-reg__f input[type=email]:focus{outline-color:var(--crim);border-color:var(--crim)}
+.mag1106:not(#_) .amm-reg__x:hover{color:var(--crim);background:rgba(22,19,16,.06)}
+
+/* ── the drawings draw themselves as they arrive ───────────────────────── */
+.mag1106:not(#_) svg.spot{display:block;overflow:visible}
+.mag1106:not(#_) svg.spot .dr{transition:stroke-dashoffset 1.15s cubic-bezier(.25,.55,.2,1)}
+.mag1106:not(#_) svg.spot .df{opacity:0;transition:opacity .5s ease .9s}
+.mag1106:not(#_) svg.spot.is-drawn .dr{stroke-dashoffset:0 !important}
+.mag1106:not(#_) svg.spot.is-drawn .df{opacity:1}
+@media (prefers-reduced-motion:reduce){
+  .mag1106:not(#_) svg.spot .dr, .mag1106:not(#_) svg.spot .df{transition:none}
+  .mag1106:not(#_) .bs-btn, .mag1106:not(#_) .amm__share{transition:none}
+}
+
+/* the no-script note stays plain */
+.mag1106:not(#_) .nojs{margin:1.2rem 0 0;padding:.9rem 0 0;border-top:1px solid var(--hair);
+  font-family:var(--serif);font-weight:500;font-size:.96rem;line-height:1.55;color:var(--ink-2);max-width:66ch}
+.mag1106:not(#_) .nojs a{color:var(--ink)}

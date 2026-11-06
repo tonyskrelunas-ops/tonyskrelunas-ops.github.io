@@ -37,201 +37,181 @@
 <link rel="alternate" hreflang="x-default" href="https://tribeawaken.com/magazine/">
 <link rel="canonical" href="https://tribeawaken.com/magazine/lt/">
 <link rel="stylesheet" href="/assets-v4/v2.css?v=56">
-<style>
-/* ═══ THE BROADSHEET — peaceful; NYT restraint, old-country newspaper bones ═══ */
-body{background:#F8F8F4 !important;color:#161310}
-.bs{max-width:1180px;margin:0 auto;padding:0 clamp(1.2rem,4vw,3rem)}
-.bs-rule{border:0;border-top:1px solid rgba(20,15,10,.25);margin:0}
-.bs-rule--double{border-top:3px double rgba(20,15,10,.45)}
-
-/* top bar — quiet */
-.bs-top{display:flex;justify-content:space-between;align-items:baseline;
-  padding:.9rem 0;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#4A4740}
-.bs-top a{color:#161310;text-decoration:none;font-weight:700}
-.bs-top a:hover{color:var(--crimson,#B10324)}
-.bs-top nav{display:flex;gap:1.6rem}
-
-/* masthead */
-.mast{text-align:center;padding:clamp(1.8rem,4vw,3rem) 0 0}
-.mast__emblem{height:clamp(54px,7vw,84px);mix-blend-mode:multiply;filter:saturate(.85)}
-.mast h1{font-family:var(--display);font-weight:900;letter-spacing:-.015em;line-height:.95;
-  font-size:clamp(2.6rem,1rem + 6.4vw,5.6rem);margin:.6rem 0 1rem;color:#141210}
-.mast__line{display:flex;align-items:center;justify-content:center;gap:1.4rem;flex-wrap:wrap;
-  font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#4A4740;
-  padding:.65rem 0}
-.mast__line b{color:var(--crimson,#B10324);font-weight:800}
-.mast__motto{font-family:var(--display);font-style:italic;font-size:clamp(1.02rem,1.6vw,1.25rem);
-  color:#3A362F;margin:1.1rem auto 1.4rem;max-width:62ch;line-height:1.5}
-
-/* the lead story */
-.lead-story{padding:clamp(1.6rem,3.4vw,2.6rem) 0 clamp(1.4rem,3vw,2.2rem);text-align:center}
-.lead-story .kick{font-size:.7rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--crimson,#B10324)}
-.lead-story h2{font-family:var(--display);font-weight:700;letter-spacing:-.018em;line-height:1.04;
-  font-size:clamp(1.9rem,1rem + 3.6vw,3.6rem);margin:.7rem auto .8rem;max-width:24ch;color:#141210}
-.lead-story h2 a{color:inherit;text-decoration:none}
-.lead-story h2 a:hover{color:var(--crimson,#B10324)}
-.lead-story .dek{font-size:clamp(1.05rem,1.6vw,1.25rem);color:#3A362F;max-width:58ch;margin:0 auto;line-height:1.55}
-
-/* the briefs — newspaper columns, hairline rules, no cards */
-.briefs-label{font-size:.7rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;
-  color:#4A4740;padding:.8rem 0 .9rem}
-.amm__grid{display:block;columns:3;column-gap:clamp(1.8rem,3.4vw,3rem);
-  column-rule:1px solid rgba(20,15,10,.18);padding-bottom:clamp(1.6rem,3vw,2.4rem)}
-@media(max-width:980px){.amm__grid{columns:2}}
-@media(max-width:640px){.amm__grid{columns:1}}
-.amm__c{display:block;break-inside:avoid;background:none;border:0;border-radius:0;box-shadow:none;
-  padding:1.05rem 0 1.15rem;border-top:1px solid rgba(20,15,10,.18);text-decoration:none;transition:none}
-.amm__c:hover{transform:none;box-shadow:none}
-.amm__c:hover b{color:var(--crimson,#B10324)}
-.amm__c i{font-style:normal;display:block;font-size:.66rem;font-weight:800;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--crimson,#B10324);margin-bottom:.45rem}
-.amm__c b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.015em;
-  line-height:1.16;font-size:clamp(1.18rem,1.5vw,1.45rem);color:#161310;transition:color .18s}
-.amm__c span{display:block;color:#4A4740;font-size:.95rem;line-height:1.55;margin-top:.4rem}
-
-/* ── the found-news items ───────────────────────────────────────────────
-   magazine.js emits class="amm__f" for these, and no stylesheet ever
-   defined it, so all six editions rendered them with browser defaults:
-   source, headline and summary inline in one underlined run. They are
-   the same kind of object as the edition briefs above, so they take the
-   same shape, with the lane colour to tell them apart.
-   ─────────────────────────────────────────────────────────────────── */
-.amm__f{display:block;break-inside:avoid;background:none;border:0;border-radius:0;
-  box-shadow:none;padding:1.05rem 0 1.15rem;border-top:1px solid rgba(20,15,10,.18);
-  text-decoration:none;transition:none}
-.amm__f:hover{transform:none;box-shadow:none}
-.amm__f:hover b{color:var(--crimson,#B10324)}
-.amm__f i{font-style:normal;display:block;font-size:.66rem;font-weight:800;
-  letter-spacing:.2em;text-transform:uppercase;color:#1E6E34;margin-bottom:.45rem}
-.amm__f b{display:block;font-family:var(--display);font-weight:700;letter-spacing:-.015em;
-  line-height:1.16;font-size:clamp(1.12rem,1.4vw,1.34rem);color:#161310;transition:color .18s}
-.amm__f span{display:block;color:#4A4740;font-size:.95rem;line-height:1.55;margin-top:.4rem}
-
-
-/* the desk note + folio */
-.bs-note{font-family:var(--display);font-style:italic;color:#3A362F;font-size:1rem;line-height:1.6;
-  max-width:66ch;margin:0;padding:1.2rem 0 2.2rem}
-.folio{display:flex;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;
-  padding:1rem 0 3rem;font-size:.74rem;font-weight:700;letter-spacing:.16em;
-  text-transform:uppercase;color:#4A4740}
-.folio a{color:#161310;text-decoration:none;border-bottom:1px solid rgba(20,15,10,.3)}
-
-/* ═══ the drawings — one per piece, New Yorker style ═══ */
-.amm__art{display:block;height:58px;width:58px;margin:0 0 .55rem}
-.lead-art{display:block;height:84px;width:84px;margin:0 auto 1rem}
-</style>
-<link rel="stylesheet" href="/assets-v4/magazine-horse.css?v=10">
 <link rel="stylesheet" href="/assets-v4/engage.css?v=8">
 <link rel="stylesheet" href="/assets-v4/interiors-daylight.css?v=6">
 <link rel="stylesheet" href="/assets-v4/photos-through-interiors.css?v=11115">
 <link rel="stylesheet" href="/assets-v4/mobile-fix.css?v=1">
 <link rel="stylesheet" href="/assets-v4/controls-daylight.css?v=2">
+<link rel="stylesheet" href="/magazine/magazine-1106.css?v=1">
 </head>
-<body>
+<body class="mag1106">
 
 <div class="bs">
   <div class="bs-top">
     <a href="/">&larr; TribeAwaken</a>
-    <nav aria-label="Primary"><a href="/">Home</a><a href="/human-resilience/">Human Resilience</a><a href="https://ancestralwatch.com">The Books</a><a href="/teaching/">Teaching</a><a href="/journal/">Journal</a><a href="/magazine/">Magazine</a><a href="/teams/">For Teams</a><a href="/community-resilience/">Community Resilience</a></nav>
+    <nav aria-label="Primary"><a href="/">Home</a><a href="/human-resilience/">Human Resilience</a><a href="https://ancestralwatch.com">The Books</a><a href="/teaching/">Teaching</a><a href="/journal/">Journal</a><a href="/magazine/" aria-current="page">Magazine</a><a href="/teams/">For Teams</a><a href="/community-resilience/">Community Resilience</a></nav>
   </div>
-  <hr class="bs-rule">
+  <hr class="rule rule--dbl">
 
-  <header class="mast mast--cover">
-    <div class="mast__cover"><object data="/assets/art/amm-cover.svg?v=5" type="image/svg+xml" aria-label="Saulė virš žalių kalnų ir tolimas pasiuntinys, bėgantis ketera"></object></div>
-    <div class="mast__top mast__top--solo"><div class="mast__id">
-<img class="mast__emblem" src="/assets/img/v2/horse-only-900px.jpg" alt="Arklys, nupieštas vienu brūkšniu, su dviem erelio plunksnomis karčiuose"><h1>Gausos mąstysenos<br>žurnalas</h1></div></div>
-    <hr class="bs-rule">
-    <p class="mast__line"><span>Good news, chosen as medicine</span><b>&#9670;</b><span>Vėžlio sala — Meksika — Peru — Vilnius — Indija — Tibetas — Kiotas</span></p>
-    <hr class="bs-rule bs-rule--double">
-    <p class="mast__motto">Kad nurimtų nervų sistema, augtų atsparumas ir įsitvirtintų gausos mąstysena. Visame pasaulyje žmonės stato, gydo ir prisimena. Kiekvieną rytą perskaitau pasaulį ir čia pasilieku tai, ką verta nešti. Grįžkite rytoj — ugnis prižiūrėta.</p>
+  <header class="np">
+    <div class="np__row">
+      <div class="np__ears">
+        <p class="np__ear"><b>V&#279;&#382;lio sala</b><span data-dateline>Rytin&#279; laida</span></p>
+        <p class="np__ear np__ear--r"><b>Good news, chosen as medicine</b><span>Tony Skrel&#363;nas &middot; nemokamai, kas ryt&#261;</span></p>
+      </div>
+      <div class="np__id">
+        <img class="np__crest" src="/assets/img/v2/horse-only-900px.jpg" alt="The horse, drawn in one line, two eagle feathers in its mane" width="900" height="785">
+        <h1>Gausos m&#261;stysenos<br>&#382;urnalas</h1>
+      </div>
+    </div>
+    <hr class="rule">
+    <p class="np__motto">Kad nurimtų nervų sistema, augtų atsparumas ir įsitvirtintų gausos mąstysena. Visame pasaulyje žmonės stato, gydo ir prisimena. Kiekvieną rytą perskaitau pasaulį ir čia pasilieku tai, ką verta nešti. Grįžkite rytoj — ugnis prižiūrėta.</p>
+    <hr class="rule">
+    <nav class="np__bar" aria-label="Editions">
+      <ul>
+        <li><a href="/magazine/">English &middot; Turtle Island</a></li>
+        <li><a href="/magazine/es/" lang="es">Espa&ntilde;ol</a></li>
+        <li><a href="/magazine/ja/" lang="ja">&#26085;&#26412;&#35486;</a></li>
+        <li><a href="/magazine/lt/" lang="lt" aria-current="page">Lietuvi&#371;</a></li>
+        <li><a href="/magazine/india/">India</a></li>
+        <li><a href="/magazine/tibet/">Tibet</a></li>
+      </ul>
+      <ul class="np__shelves">
+        <li><a href="/journal/">Dienora&scaron;tis</a></li>
+        <li><a href="https://ancestralwatch.com">Knygos</a></li>
+        <li><a href="#address">Palikite adres&#261;</a></li>
+      </ul>
+    </nav>
+    <hr class="rule rule--dbl">
   </header>
 
-  <section class="mast__atlas"><div class="mast__map"><object data="/assets/art/amm-world-map.svg?v=3" type="image/svg+xml" aria-label="Pieštas pasaulio žemėlapis su keturiais leidimais: Vėžlio sala, Meksika ir Gvatemala, Vilnius, Kiotas"></object></div></section>
+  <figure class="plate">
+    <object data="/assets/art/amm-cover.svg?v=5" type="image/svg+xml" aria-label="Saul&#279;, kertanti auksin&#303; dang&#363; vir&scaron; &#382;ali&#371; kaln&#371;, erelis vir&scaron;uje ir tolimas pasiuntinys, b&#279;gantis ketera"></object>
+    <figcaption>Tolimas pasiuntinys b&#279;ga ketera</figcaption>
+  </figure>
 
-  <section class="lead-story">
-    <img class="lead-art" src="/assets/art/dine-dawn.svg" alt=""><p class="kick">Kur viskas prasidėjo</p>
-    <h2><a href="/journal/a-magazine-to-uplift-our-community/">A Magazine to Uplift Our Community</a></h2>
-    <p class="dek">Why good news was always the point &mdash; the first Tribe Achieve, and the reason this one exists.</p>
-  </section>
-  <hr class="bs-rule">
+  <main class="fp">
+    <aside class="fp__l">
+      <h2 class="sh">&Scaron;ioje laidoje</h2>
+      <ol class="dir">
+        <li><a href="#lead">Pagrindinis tekstas</a><small>Naujausias jo tekstas i&scaron; dienora&scaron;&#269;io</small></li>
+        <li><a href="#justin">K&#261; tik gauta</a><small>Trys naujausi tekstai, kuriuos rado variklis</small></li>
+        <li><a href="#journal">I&scaron; dienora&scaron;&#269;io</a><small>Trys nauji tekstai ir vienas senesnis, kuris kei&#269;iasi kiekvien&#261; apsilankym&#261;</small></li>
+        <li><a href="#world">I&scaron; pasaulio</a><small data-count-found>Surinkta &scaron;&#303; ryt&#261;, pagal skiltis</small><span class="dir__lanes" data-dir-lanes></span></li>
+        <li><a href="#editions">&Scaron;e&scaron;ios laidos</a><small>English, Espa&ntilde;ol, &#26085;&#26412;&#35486;, Lietuvi&#371;, India, Tibet</small></li>
+        <li><a href="#share">Perduokite toliau</a><small>Viena nuoroda atveda skaitytoj&#261; &#303; &scaron;iandienos laid&#261;</small></li>
+      </ol>
 
-  <main>
-    <p class="briefs-label" data-edition>Ši laida · pranešimai</p>
-    <div class="amm__grid" data-mag-mine>
-      <a class="amm__c" href="/journal/creating-traditional-inter-generational-wealth/"><img class="amm__art" src="/assets/art/four-capitals.svg" alt=""><i>From the journal</i><b>The Wealth That Cannot Be Spent</b><span>Raising generations who inherit more than money.</span></a>
-      <a class="amm__c" href="/journal/ancient-farming-hedge-against-climate-change/"><img class="amm__art" src="/assets/art/baltic-oak.svg" alt=""><i>From the journal</i><b>The Old Farmers Are Right</b><span>Ancient agriculture as a hedge against a warming world.</span></a>
-      <a class="amm__c" href="/journal/ai-robotics-repair-warming-world/"><img class="amm__art" src="/assets/art/japan-bridge.svg" alt=""><i>From the journal</i><b>The Machines That Could Help Us Come Home</b><span>AI, robotics, and the repair of a warming world.</span></a>
-      <a class="amm__c" href="/journal/creativity-makes-the-planet-go-round/"><img class="amm__art" src="/assets/art/baltic-juosta.svg" alt=""><i>From the journal</i><b>Creativity Is What Makes the Planet Go Round</b><span>On making, and why a people that stops making starts shrinking.</span></a>
-      <a class="amm__c" href="/journal/30000-years-wellness-wisdom-phd-book-series-movement/"><img class="amm__art" src="/assets/art/dine-mountains.svg" alt=""><i>From the journal</i><b>30,000 Years of Wellness Wisdom</b><span>The long record, and what it still has to say.</span></a>
-    </div>
-<p class="briefs-label briefs-label--found">Geros žinios, rastos šią savaitę</p>
-<div class="amm__grid amm__grid--found" data-found hidden></div>
-    <hr class="bs-rule">
-    <p class="bs-note">The found-news desk is being lit: a weekly search will gather good news from around the world, each story linked to its source and chosen by one test &mdash; does reading it settle the body and strengthen the reader? Until the desk is burning, this edition features dispatches from the journal.</p>
+      <section class="note">
+        <h2 class="sh">Kaip daromas &scaron;is puslapis</h2>
+        <p>Kiekvien&#261; ankst&#371; ryt&#261; variklis po &scaron;iuo puslapiu perskaito a&scaron;tuonis &scaron;ios laidos leidinius &mdash; Bernardinai, Kaunas pilnas kult&#363;ros, Nacionalin&#303; muziej&#371;, 15min Kult&#363;r&#261;, LRT Kult&#363;r&#261;, Gamtos tyrimus, Kauno dien&#261; ir Mokslo Lietuv&#261; &mdash; ir palieka tik tai, kas pereina keturis patikrinimus: nieko smurtinio ar g&#261;sdinan&#269;io, jokios partin&#279;s politikos, tik &scaron;io &#382;urnalo temos, ir kad kas nors i&scaron; tikr&#371;j&#371; b&#363;t&#371; pastatyta, i&scaron;gydyta, atidaryta, laim&#279;ta ar at&scaron;v&#281;sta. Jis pasilieka antra&scaron;t&#281;, vien&#261; eilut&#281; ir nuorod&#261;, o tekst&#261; skaitote ten, kur jis buvo para&scaron;ytas. Mano paties tekstai i&scaron; dienora&scaron;&#269;io guli &scaron;alia to, k&#261; jis rado, taip, kaip 2021-aisiais juos d&#279;liojau ranka. Kai kurie rytai b&#363;na ploni, nes niekas nepra&#279;jo vis&#371; keturi&#371; patikrinim&#371;, ir a&scaron; palieku juos plonus.</p>
+      </section>
+    </aside>
+
+    <section class="fp__c">
+      <article class="lead" id="lead">
+        <img class="lead__art" src="/assets/art/dine-dawn.svg" alt="" width="136" height="136">
+        <p class="lead__kick">Jud&#279;jimas &middot; 2026 m. spalio 4 d.</p>
+        <h2><a href="/lt/kodel-pradejau-zurnala/">Kod&#279;l prad&#279;jau &#382;urnal&#261; ir kod&#279;l prad&#279;siu i&scaron; naujo</a></h2>
+        <p class="lead__dek">2021-aisiais jis vadinosi &bdquo;Tribal Prestige&ldquo;. Po penkeri&#371; met&#371; i&scaron;leisti du romanai, vyksta doktorant&#363;ra, o mintis liko ta pati.</p>
+        <p class="lead__go"><a href="/lt/kodel-pradejau-zurnala/">Skaitykite</a></p>
+      </article>
+
+      <figure class="photo" data-photo>
+        <img src="/assets/img/v2/real-sheep-under-butte-1800px.jpg" srcset="/assets/img/v2/real-sheep-under-butte-1800px-900w.jpg 900w, /assets/img/v2/real-sheep-under-butte-1800px.jpg 1800w" sizes="(max-width:700px) 100vw, 620px" width="1800" height="1012" alt="The flock under the butte">
+        <figcaption><span data-cap>The flock under the butte</span><small>Nuotrauka &middot; Tony Skrel&#363;nas</small></figcaption>
+      </figure>
+
+      <h2 class="sh" id="journal">I&scaron; dienora&scaron;&#269;io</h2>
+      <div class="mine" data-mag-mine>
+        <a class="amm__c" href="/journal/a-magazine-to-uplift-our-community/"><img class="amm__art" src="/assets/art/baltic-sun.svg" alt="" width="54" height="54"><i>Where it began &middot; January 5, 2021</i><b>A Magazine to Uplift Our Community</b><span>Why good news was always the point &mdash; the first magazine, and the reason this one exists.</span></a>
+        <a class="amm__c" href="/journal/creating-traditional-inter-generational-wealth/"><img class="amm__art" src="/assets/art/four-capitals.svg" alt="" width="54" height="54"><i>From the journal</i><b>The Wealth That Cannot Be Spent</b><span>Raising generations who inherit more than money.</span></a>
+        <a class="amm__c" href="/journal/ancient-farming-hedge-against-climate-change/"><img class="amm__art" src="/assets/art/baltic-oak.svg" alt="" width="54" height="54"><i>From the journal</i><b>The Old Farmers Are Right</b><span>Ancient agriculture as a hedge against a warming world.</span></a>
+        <a class="amm__c" href="/journal/creativity-makes-the-planet-go-round/"><img class="amm__art" src="/assets/art/baltic-juosta.svg" alt="" width="54" height="54"><i>From the journal</i><b>Creativity Is What Makes the Planet Go Round</b><span>On making, and why a people that stops making starts shrinking.</span></a>
+        <a class="amm__c" href="/journal/30000-years-wellness-wisdom-phd-book-series-movement/"><img class="amm__art" src="/assets/art/dine-mountains.svg" alt="" width="54" height="54"><i>From the journal</i><b>30,000 Years of Wellness Wisdom</b><span>The long record, and what it still has to say.</span></a>
+      </div>
+      <noscript><p class="nojs">Be scenarij&#371; &scaron;is puslapis i&scaron;laiko tai, kas jame atspausdinta: pagrindin&#303; tekst&#261;, &scaron;iuos dienora&scaron;&#269;io tekstus ir nuotrauk&#261;. Ryto surinktas naujienas sudeda scenarijus atidarius puslap&#303;, tad &#303;junkite j&#303;, arba eikite &#303; <a href="/journal/">dienora&scaron;t&#303;</a>, kur sura&scaron;yti visi mano tekstai.</p></noscript>
+    </section>
+
+    <aside class="fp__r">
+      <section class="justin" id="justin" data-justin hidden>
+        <h2 class="sh">K&#261; tik gauta<small>I&scaron; pasaulio</small></h2>
+        <div data-justin-list></div>
+      </section>
+      <section class="editor">
+        <h2 class="sh">Jo &#382;od&#382;iais</h2>
+        <blockquote>
+          <p>Taigi &#382;urnalas niekada nebuvo apie pozityvum&#261;. Jis buvo apie tai, k&#261; skaitymas padaro skaitan&#269;iajam.</p>
+          <p>Skaitykite j&#303; ryt&#261;, prie&scaron; t&#261; kit&#261; dalyk&#261;, kur&#303; skaitote. Visas eksperimentas tiek ir t&#279;ra, ir j&#303; galite paleisti ant sav&#281;s grei&#269;iau nei per savait&#281;.</p>
+          <cite><a href="/lt/kodel-pradejau-zurnala/">Kod&#279;l prad&#279;jau &#382;urnal&#261; ir kod&#279;l prad&#279;siu i&scaron; naujo</a></cite>
+        </blockquote>
+      </section>
+    </aside>
   </main>
 
-
-<section class="mag-langs" id="languages">
-  <div class="mag-langs__in">
-    <p class="mag-langs__k">Skaitykite</p>
-    <ul class="mag-langs__list"><li><a href="/magazine/"><b>English</b><span>The edition</span></a></li><li><a href="/magazine/es/" lang="es"><b>Espa&ntilde;ol</b><span>Edici&oacute;n &middot; Guatemala</span></a></li><li><a href="/magazine/ja/" lang="ja"><b>&#26085;&#26412;&#35486;</b><span>&#26085;&#26412;&#35486;&#29256;</span></a></li><li><a href="/magazine/lt/" lang="lt" aria-current="page"><b>Lietuvi&#371;</b><span>Lietuvi&#353;kai</span></a></li><li><a href="/magazine/india/"><b>India</b><span>The India edition</span></a></li><li><a href="/magazine/tibet/"><b>Tibet</b><span>The Tibet edition</span></a></li></ul>
-  </div>
-</section>
-
-<section class="mag-share">
-  <div class="mag-share__in">
-    <p class="mag-share__k">Perduokite toliau</p>
-    <p class="mag-share__p">Žurnalas turi savo adresą. Nusiųskite šią vieną nuorodą ir skaitytojas atsidurs čia, šiandienos laidoje.</p>
-    <p class="mag-share__url"><code>tribeawaken.com/magazine</code></p>
-    <div class="mag-share__row">
-      <button class="btn btn--primary" type="button" data-copy="https://tribeawaken.com/magazine/">Kopijuoti nuorodą</button>
-      <a class="btn btn--ghost" href="mailto:?subject=Abundance%20Mindset%20Magazine&amp;body=Good%20news%2C%20chosen%20as%20medicine%20%E2%80%94%20https%3A%2F%2Ftribeawaken.com%2Fmagazine%2F">Siųsti el. paštu</a>
-      <a class="btn btn--ghost" href="https://wa.me/?text=https%3A%2F%2Ftribeawaken.com%2Fmagazine%2F" target="_blank" rel="noopener">WhatsApp</a>
+  <section class="world" id="world" data-world hidden>
+    <div class="world__k">
+      <h2>I&scaron; pasaulio</h2>
+      <p data-edition-label>&Scaron;i laida</p>
     </div>
-    <p class="mag-share__done" data-copied hidden>Nukopijuota.</p>
+    <div class="lanes" data-found hidden></div>
+  </section>
+
+  <section class="eds" id="editions">
+    <div class="eds__map"><object data="/assets/art/amm-world-map.svg?v=3" type="image/svg+xml" aria-label="A pen-and-ink world map marking the editions: Turtle Island, México and Guatemala, Perú, Vilnius, India, Tibet and Kyōto"></object></div>
+    <div>
+      <h2 class="sh">Skaitykite</h2>
+      <ul class="eds__list">
+        <li><a href="/magazine/"><b>English</b><span>Turtle Island</span></a></li>
+        <li><a href="/magazine/es/" lang="es"><b>Espa&ntilde;ol</b><span>M&eacute;xico &middot; Guatemala &middot; Per&uacute; &middot; Espa&ntilde;a</span></a></li>
+        <li><a href="/magazine/ja/" lang="ja"><b>&#26085;&#26412;&#35486;</b><span>Ky&#333;to</span></a></li>
+        <li><a href="/magazine/lt/" lang="lt" aria-current="page"><b>Lietuvi&#371;</b><span>Vilnius</span></a></li>
+        <li><a href="/magazine/india/"><b>India</b><span>Reads in English</span></a></li>
+        <li><a href="/magazine/tibet/"><b>Tibet</b><span>Reads in English</span></a></li>
+      </ul>
+      <p class="eds__p">Kiekviena laida turi savo varikl&#303;, skaitant&#303; savo leidinius, tad skaitytojui Gvatemaloje paduodama &#382;urnalistika ispan&#371; kalba, o ne i&scaron;versta angli&scaron;ka antra&scaron;t&#279;.</p>
+    </div>
+  </section>
+
+  <div class="tail">
+    <section id="share">
+      <h2 class="sh">Perduokite toliau</h2>
+      <h2>&#381;urnalas turi savo adres&#261;.</h2>
+      <p>Nusi&#371;skite &scaron;i&#261; vien&#261; nuorod&#261; ir skaitytojas atsidurs &#269;ia, &scaron;iandienos laidoje: <span class="url">tribeawaken.com/magazine</span></p>
+      <div class="row">
+        <button class="bs-btn bs-btn--crim" type="button" data-copy="https://tribeawaken.com/magazine/">Kopijuoti nuorod&#261;</button>
+        <a class="bs-btn" href="mailto:?subject=Abundance%20Mindset%20Magazine&amp;body=Good%20news%2C%20chosen%20as%20medicine%20%E2%80%94%20https%3A%2F%2Ftribeawaken.com%2Fmagazine%2F">Si&#371;sti el. pa&scaron;tu</a>
+        <a class="bs-btn" href="https://wa.me/?text=https%3A%2F%2Ftribeawaken.com%2Fmagazine%2F" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p class="done" data-copied hidden>Nukopijuota.</p>
+    </section>
+    <section id="address">
+      <h2 class="sh">Palikite adres&#261;</h2>
+      <h2>Jei norite, kad tur&#279;&#269;iau j&#363;s&#371; adres&#261;, palikite j&#303; &#269;ia.</h2>
+      <p>Jis pasiekia mane ir niek&#261; kit&#261;, jokia ma&scaron;ina neatra&scaron;o ir niekam nieko neparduodama, o &#382;urnal&#261; &scaron;iame puslapyje kas ryt&#261; galima skaityti nemokamai, paliksite adres&#261; ar ne.</p>
+      <form class="sub__form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="057975c1-1a1a-465e-9b5e-3fb6692b2106">
+        <input type="hidden" name="subject" value="Gausos mąstysenos žurnalas — a new subscriber">
+        <input type="hidden" name="from_name" value="TribeAwaken Magazine">
+        <input type="hidden" name="redirect" value="https://tribeawaken.com/thanks/">
+        <input type="checkbox" name="botcheck" class="sr-only" style="display:none" tabindex="-1" autocomplete="off">
+        <label class="sr-only" for="mag-email">J&#363;s&#371; el. pa&scaron;tas</label>
+        <input id="mag-email" type="email" name="email" required autocomplete="email" placeholder="jus@pavyzdys.lt" spellcheck="false">
+        <button class="bs-btn bs-btn--crim" type="submit">Palikti adres&#261;</button>
+      </form>
+      <p class="fine">Jokio automatinio atsakymo.</p>
+    </section>
   </div>
-</section>
 
-<section class="mag-sub" id="subscribe">
-  <div class="mag-sub__in">
-    <p class="mag-sub__k">Pasiimkite laidą su savimi</p>
-    <h2>Prenumeruokite žurnalą.</h2>
-    <p class="mag-sub__p">Čia rasite tekstų iš kitų pasaulio dalių, kurių niekur kitur nerasite surinktų kartu; kiekvienas parinktas pagal vietą, iš kurios ateina. Statome tai atidžiai, po vieną kalbą. Čia kiekvieną rytą pasikeičia leidimas; palikite adresą ir Tony jį atsiųs.</p>
-    <form class="mag-sub__form" action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="057975c1-1a1a-465e-9b5e-3fb6692b2106">
-      <input type="hidden" name="subject" value="Gausos mąstysenos žurnalas — a new subscriber">
-      <input type="hidden" name="from_name" value="TribeAwaken Magazine">
-      <input type="hidden" name="redirect" value="https://tribeawaken.com/thanks/">
-      <input type="checkbox" name="botcheck" class="sr-only" style="display:none" tabindex="-1" autocomplete="off">
-      <label class="sr-only" for="mag-email">Your email</label>
-      <input id="mag-email" class="mag-sub__in-f" type="email" name="email" required autocomplete="email" placeholder="you@example.com" spellcheck="false">
-      <button class="btn btn--primary" type="submit">Prenumeruoti &rarr;</button>
-    </form>
-    <p class="mag-sub__fine">Laiškas keliauja tiesiai Tony — jokių adresatų programų, jokio automatinio atsakymo, niekam neperduodama. Žurnalą čia visada galima skaityti nemokamai.</p>
-  </div>
-</section>
-
-
-  <hr class="bs-rule bs-rule--double">
   <p class="folio">
-    <span>Gausos mąstysenos žurnalas &middot; a TribeAwaken fire</span>
+    <span>Gausos m&#261;stysenos &#382;urnalas &middot; a TribeAwaken fire</span>
     <a href="/">tribeawaken.com</a>
   </p>
 </div>
 
-<script src="/js/motion.js" defer></script>
 <script src="/js/tap.js?v=1"></script>
-<script src="/js/rotate-live.js?v=2" defer></script>
-<script src="/js/magazine.js?v=6" defer></script>
+<script src="/magazine/magazine-1106.js?v=1" defer></script>
 <script src="/js/engage.js?v=2" defer></script>
-<script>
-(function(){var b=document.querySelector('[data-copy]');if(!b)return;
- b.addEventListener('click',function(){var u=b.getAttribute('data-copy');
-  function done(){var d=document.querySelector('[data-copied]');if(d){d.hidden=false;setTimeout(function(){d.hidden=true},2600);}}
-  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done,done);}
-  else{var t=document.createElement('textarea');t.value=u;document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}t.remove();done();}
- });})();
-</script>
 <script src="/js/capture.js?v=6" defer></script>
 <footer class="ftr">
   <div class="wrap">
