@@ -285,3 +285,12 @@ q.cfq{quotes:"\201C" "\201D";font-style:normal}
 .gv-home--two .gv-home__text{max-width:none}
 .gv-home--two .gv-home__text p,.gv-home--two .gv-three{max-width:var(--gv-measure)}
 @media(max-width:900px){.gv-home--two{grid-template-columns:1fr}}
+
+/* world photographs band, 11/6 */
+.gv-world:not(#_){padding:2.4rem 1.25rem 2.6rem;margin:0}
+.gv-world__grid:not(#_){max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}
+.gv-world:not(#_) figure{margin:0}
+.gv-world:not(#_) img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:3px}
+.gv-world:not(#_) figcaption{font-size:.84rem;line-height:1.4;margin-top:.45rem;opacity:.85}
+.gv-world:not(#_) .gv-credit{opacity:.7;white-space:nowrap}
+@media (max-width:760px){.gv-world__grid:not(#_){grid-template-columns:repeat(2,1fr);gap:.6rem}}
