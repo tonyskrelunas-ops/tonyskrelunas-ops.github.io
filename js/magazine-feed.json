@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T19:53:16",
+ "generated": "2026-11-06T11:53:31",
  "lead": null,
  "mine": [
   {
@@ -50,7 +50,27 @@
    "pillar": "Human Resilience",
    "dek": "In the long crossing, the first test is a spring that should be flowing and is dry. What you do next was taught long before you got there. A joke, a seat, and an old song.",
    "img": "/assets/img/a-joke-at-the-dry-spring.jpg",
-   "art": "/assets/art/japan-bridge.svg"
+   "art": "/assets/art/japan-bridge.svg",
+   "tr": {
+    "es": {
+     "href": "/es/un-chiste-en-el-manantial-seco/",
+     "title": "Un chiste en el manantial seco",
+     "dek": "En la travesía larga, la primera prueba es un manantial que debería correr y está seco. Lo que se hace después se enseñó mucho antes de que usted llegara. Un chiste, un lugar para sentarse y un canto antiguo.",
+     "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/kareta-izumi-de-no-joudan/",
+     "title": "涸れた泉での冗談",
+     "dek": "長い横断の旅で、最初の試練は、湧いているはずなのに涸れている泉だ。次にどうするかは、あなたがそこに着くずっと前に教えられていた。冗談をひとつ、腰を下ろす場所、そして古い歌。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/juokelis-prie-isdziuvusio-saltinio/",
+     "title": "Juokelis prie išdžiūvusio šaltinio",
+     "dek": "Ilgame perėjime pirmas išbandymas yra šaltinis, kuris turėtų tekėti, bet yra išdžiūvęs. Ką daryti toliau, buvo išmokyta gerokai anksčiau, nei ten atėjote. Juokelis, vieta atsisėsti ir sena daina.",
+     "pillar": "Žmogaus atsparumas"
+    }
+   }
   },
   {
    "slug": "little-piles-of-rock",
@@ -60,7 +80,27 @@
    "pillar": "Human Resilience",
    "dek": "On Labor Day morning, facing the San Francisco Peaks, I recorded a meditation about an old trail. The part that stays with me is the knowledge that was waiting in us all along.",
    "img": "/assets/img/little-piles-of-rock.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/dine-mountains.svg",
+   "tr": {
+    "es": {
+     "href": "/es/montoncitos-de-piedra/",
+     "title": "Montoncitos de piedra",
+     "dek": "La mañana del Día del Trabajo, frente a los San Francisco Peaks, grabé una meditación sobre un sendero antiguo. Lo que se me queda es el conocimiento que estuvo esperando en nosotros todo el tiempo.",
+     "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/chiisana-ishizumi/",
+     "title": "小さな石積み",
+     "dek": "レイバー・デーの朝、サンフランシスコ・ピークスに向かって、古い道についての瞑想を録音した。心に残っているのは、ずっと私たちのなかで待っていた知識のことだ。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/akmenu-kruveles/",
+     "title": "Akmenų krūvelės",
+     "dek": "Darbo dienos rytą, veidu į San Francisco Peaks, įrašiau meditaciją apie seną taką. Labiausiai su manimi lieka žinojimas, kuris visą laiką laukė mumyse.",
+     "pillar": "Žmogaus atsparumas"
+    }
+   }
   },
   {
    "slug": "long-term-resilience-ancient-culture",
@@ -140,7 +180,27 @@
    "pillar": "Human Resilience",
    "dek": "Digging out a corral is hard, dirty work, and I call it a retreat. The research on what one word does to the body says a great deal about what a family hands down.",
    "img": "/assets/img/why-i-call-the-sheep-camp-a-retreat.jpg",
-   "art": "/assets/art/baltic-sun.svg"
+   "art": "/assets/art/baltic-sun.svg",
+   "tr": {
+    "es": {
+     "href": "/es/por-que-le-llamo-retiro-al-campamento-de-borregos/",
+     "title": "Por qué le llamo retiro al campamento de borregos",
+     "dek": "Limpiar un corral a pala es trabajo duro y sucio, y yo le llamo retiro. Lo que la investigación dice que una sola palabra le hace al cuerpo dice mucho sobre lo que una familia hereda.",
+     "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/hitsuji-kyanpu-wo-ritoriito-to-yobu/",
+     "title": "なぜ私は羊のキャンプを「リトリート」と呼ぶのか",
+     "dek": "家畜囲いを掘り出すのは、きつくて汚れる仕事だ。それでも私はリトリートと呼ぶ。ひとつの言葉が体に何をするかという研究は、家族が何を受け渡すのかについて多くを語っている。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/kodel-aviu-stovykla-vadinu-atokvepiu/",
+     "title": "Kodėl avių stovyklą vadinu atokvėpiu",
+     "dek": "Iškasti gardą yra sunkus, purvinas darbas, o aš jį vadinu atokvėpiu. Tyrimai apie tai, ką vienas žodis padaro kūnui, daug pasako apie tai, ką šeima perduoda.",
+     "pillar": "Žmogaus atsparumas"
+    }
+   }
   },
   {
    "slug": "why-i-started-a-magazine-again",
@@ -310,7 +370,27 @@
    "pillar": "Stories I Carry",
    "dek": "A Sámi reindeer herder, taught properly and entirely correct, standing on ice. What to do when the knowledge itself is no longer true.",
    "img": "/assets/img/land/aspen-grove.jpg",
-   "art": "/assets/art/dine-dawn.svg"
+   "art": "/assets/art/dine-dawn.svg",
+   "tr": {
+    "es": {
+     "href": "/es/el-invierno-que-no-llego/",
+     "title": "El invierno que no llegó",
+     "dek": "Un pastor de renos sami vino desde muy lejos a una reunión porque alguien le dijo que tal vez ahí habría gente que sabía qué hacer con un conocimiento que ya no es cierto. He pensado en eso durante años.",
+     "pillar": "Historias que llevo"
+    },
+    "ja": {
+     "href": "/ja/konakatta-fuyu/",
+     "title": "来なかった冬",
+     "dek": "サーミのトナカイ飼いが、ある集まりにはるばるやって来た。もう正しくなくなった知識をどうすればいいか知っている人がそこにいるかもしれない、と誰かに言われたからだ。そのことを、私は何年も考えつづけている。",
+     "pillar": "私が運ぶ物語"
+    },
+    "lt": {
+     "href": "/lt/ziema-kuri-neatejo/",
+     "title": "Žiema, kuri neatėjo",
+     "dek": "Samių šiaurės elnių augintojas atkeliavo labai toli į susitikimą, nes kažkas jam pasakė, kad ten gali būti žmonių, kurie žino, ką daryti su žinojimu, kuris nebėra teisingas. Apie tai galvoju jau daug metų.",
+     "pillar": "Istorijos, kurias nešu"
+    }
+   }
   },
   {
    "slug": "what-a-far-messenger-is",
@@ -923,11 +1003,19 @@
    "lane": "news"
   },
   {
-   "title": "The butterfly effect: a brighter way to make paint?",
-   "url": "https://www.positive.news/science/the-butterfly-effect-a-brighter-way-to-make-paint/",
-   "dek": "Researchers are looking to butterflies in the search for coatings without harmful, chemical-based pigments The post The butterfly effect: a brighter way to make paint? appeared first on…",
+   "title": "What went right this week: the good news that matters",
+   "url": "https://www.positive.news/society/good-news-stories-from-week-45-of-2026/",
+   "dek": "Nature was restored at ‘unprecedented scale’, Barbados halted HIV transmission in babies, and a fuel revolution picked up speed, plus more The post What went right this week: the good news…",
    "source": "Positive News",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
+   "lane": "news"
+  },
+  {
+   "title": "The Spark: When Communities Own the Land, Housing Stays Affordable",
+   "url": "https://reasonstobecheerful.world/the-spark-community-land-trusts/",
+   "dek": "Welcome back to The Spark, our monthly celebration of how people just like you are creating positive change, one meaningful step at a time. The Spark is generously supported by Laura Rice…",
+   "source": "Reasons to be Cheerful",
+   "date": "2026-11-06",
    "lane": "news"
   },
   {
@@ -939,11 +1027,11 @@
    "lane": "research"
   },
   {
-   "title": "From Pro Runner to Mountain Running World Cup Manager: A Profile of Jonathan Wyatt",
-   "url": "https://www.irunfar.com/jonathan-wyatt-profile",
-   "dek": "The post From Pro Runner to Mountain Running World Cup Manager: A Profile of Jonathan Wyatt appeared first on iRunFar. A conversation with Jonathan Wyatt, former pro runner and present…",
+   "title": "Best Running Headlamps of 2026",
+   "url": "https://www.irunfar.com/best-running-headlamp",
+   "dek": "The post Best Running Headlamps of 2026 appeared first on iRunFar. A guide to the best running headlamps on the market, including models from Black Diamond, Nitecore, Petzl, and UltrAspire…",
    "source": "iRunFar",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "lane": "running"
   },
   {
@@ -955,19 +1043,19 @@
    "lane": "running"
   },
   {
-   "title": "The scientific fuelling strategy behind Andreas Almgren’s winning debut marathon",
+   "title": "The scientific fuelling strategy behind Andreas Almgren’s debut marathon win",
    "url": "https://runningmagazine.ca/the-scene/the-scientific-fuelling-strategy-behind-andreas-almgrens-winning-debut-marathon/",
-   "dek": "The Swedish superstar underwent a series of tests to determine how to consume his carbs on race day The post The scientific fuelling strategy behind Andreas Almgren’s winning debut marathon…",
+   "dek": "The Swedish superstar underwent a series of tests to determine how to consume his carbs on race day The post The scientific fuelling strategy behind Andreas Almgren’s debut marathon win…",
    "source": "Canadian Running",
    "date": "2026-11-05",
    "lane": "running"
   },
   {
-   "title": "3 Ways to Use Fall Leaves to Feed Your Soil",
-   "url": "https://www.hobbyfarms.com/3-ways-to-feed-your-soil-with-fallen-leaves/",
-   "dek": "Create Mulch, Soil Conditioner and Compost from Fallen Leaf Debris to Build Your Garden's Growing Materials The post 3 Ways to Use Fall Leaves to Feed Your Soil appeared first on Hobby…",
+   "title": "Winter Savory: How to Grow and Use This Hardy Herb",
+   "url": "https://www.hobbyfarms.com/from-the-herb-garden-winter-savory/",
+   "dek": "Grow winter savory—a healthy, hearty herb that tolerates cold well—in your garden to add flavor and warmth to your winter dishes. The post Winter Savory: How to Grow and Use This Hardy Herb…",
    "source": "Hobby Farms",
-   "date": "2026-11-04",
+   "date": "2026-11-05",
    "lane": "land"
   },
   {
@@ -979,31 +1067,39 @@
    "lane": "land"
   },
   {
-   "title": "Rainfall, Water Levels, and More from the Conservation Team",
-   "url": "https://www.audubon.org/florida/news/rainfall-water-levels-and-more-conservation-team",
-   "dek": "26550RainfallThe Sanctuary recorded 4.81 inches of rain in October, which is 24% above average for October. To date, we have received 81% of the rainfall we typically receive from June…",
+   "title": "Colorado Invests in Healthy Forests, Rivers, and the Places We Love",
+   "url": "https://www.audubon.org/rockies/news/colorado-invests-healthy-forests-rivers-and-places-we-love",
+   "dek": "Colorado's forests, rivers, and open spaces are more than remarkable landscapes. They are connected natural systems that sustain our water, wildlife, communities, and way of life. The…",
    "source": "Audubon",
-   "date": "2026-11-03",
+   "date": "2026-11-06",
    "lane": "animals"
   },
   {
-   "title": "Mali’s ‘Moringa Queen’ wins UN recognition for restoring degraded land",
-   "url": "https://news.mongabay.com/short-article/2026/11/malis-moringa-queen-wins-un-recognition-for-restoring-degraded-land/",
-   "dek": "Rokiatu Traoré, president of a social enterprise in Mali that uses agroforestry to restore degraded land and create jobs for women and youths, has been named a Changemaker at the United…",
+   "title": "Scientists discovered an unknown baby right whale off Canada. They say it’s a cause for joy",
+   "url": "https://news.mongabay.com/short-article/2026/11/scientists-discovered-an-unknown-baby-right-whale-off-canada-they-say-its-a-cause-for-joy/",
+   "dek": "PORTLAND, Maine (AP) — Scientists who study whales are heartened by an unexpected discovery of a baby right whale off Canada. Researchers in Canada captured images of an unidentified baby…",
    "source": "Mongabay",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "lane": "animals"
   },
   {
-   "title": "Only-in-Anchorage Winter Traditions",
-   "url": "https://www.atlasobscura.com/articles/anchorage-alaska-winter-event-guide",
-   "dek": "Winter brings out the best of Anchorage. Under a blanket of snow, the city comes alive with festivals exploring regional history, lively tributes to Indigenous culture, decades-old sled dog…",
+   "title": "Statue of Lord Laddu Gopal in Agra, India",
+   "url": "https://www.atlasobscura.com/places/26-foot-statue-of-lord-laddu-gopal",
+   "dek": "Standing along Agra’s Yamuna River Promenade, the giant 26-foot-tall Lord Laddu Gopal statue is hard to miss. Created by the Agra Municipal Corporation as part of its \"Waste to Wonder\"…",
    "source": "Atlas Obscura",
-   "date": "2026-10-23",
+   "date": "2026-11-06",
    "lane": "culture"
   },
   {
-   "title": "Seabird Sees Miracle Recovery After Avian Flu Wiped Them Out",
+   "title": "Michelangelo Used These Custom, Multi-Headed Brushes While Painting 'The Last Judgment' to Replicate His Intricate Sculpting Techniques",
+   "url": "https://www.smithsonianmag.com/smart-news/michelangelo-used-these-custom-multi-headed-brushes-while-painting-the-last-judgment-to-replicate-his-intricate-sculpting-techniques-180989816/",
+   "dek": "While restoring the Sistine Chapel, researchers discovered wavy groupings of brushstrokes which indicated that the artist used the special brushes to create a distinct crosshatching pattern",
+   "source": "Smithsonian",
+   "date": "2026-11-06",
+   "lane": "culture"
+  },
+  {
+   "title": "Seabirds See Miracle Recovery After Avian Flu Wiped Them Out",
    "url": "https://www.goodnewsnetwork.org/miracle-recovery-sees-seabirds-reclaim-former-colony-after-avian-flu-wiped-them-out/",
    "dek": "Thanks to dedicated conservation efforts, sandwich terns have reclaimed a colony England’s south coast 3 years after they were wiped out by avian flu. Today, in what seems like a miracle…",
    "source": "Good News Network",
@@ -1011,11 +1107,11 @@
    "lane": "news"
   },
   {
-   "title": "Who needs a golden ticket? The race to future-proof chocolate",
-   "url": "https://www.positive.news/society/who-needs-a-golden-ticket-the-race-to-future-proof-chocolate/",
-   "dek": "A student has made chocolate from cocoa grown in England, where new varieties could help with climate change The post Who needs a golden ticket? The race to future-proof chocolate appeared…",
+   "title": "The butterfly effect: a brighter way to make paint?",
+   "url": "https://www.positive.news/science/the-butterfly-effect-a-brighter-way-to-make-paint/",
+   "dek": "Researchers are looking to butterflies in the search for coatings without harmful, chemical-based pigments The post The butterfly effect: a brighter way to make paint? appeared first on…",
    "source": "Positive News",
-   "date": "2026-11-04",
+   "date": "2026-11-05",
    "lane": "news"
   },
   {
@@ -1025,40 +1121,64 @@
    "source": "Greater Good",
    "date": "",
    "lane": "research"
+  },
+  {
+   "title": "Gifts for Ultrarunners",
+   "url": "https://www.irunfar.com/ultrarunning-gifts",
+   "dek": "The post Gifts for Ultrarunners appeared first on iRunFar. We've pulled together some of the best gifts for the ultrarunner in your life. Gifts for Ultrarunners by Robbie Harms.",
+   "source": "iRunFar",
+   "date": "2026-11-06",
+   "lane": "running"
+  },
+  {
+   "title": "To Win the Backyard Ultra World Team Championship, Try Being … Vulnerable?",
+   "url": "https://www.trailrunnermag.com/people/to-win-the-backyard-ultra-world-team-championship-try-being-vulnerable/",
+   "dek": "",
+   "source": "Trail Runner",
+   "date": "2026-10-29",
+   "lane": "running"
   }
  ],
  "found_es": [
   {
-   "title": "Gaudí y la naturaleza",
-   "url": "https://ethic.es/gaudi-naturaleza",
-   "dek": "El arquitecto catalán Antoni Gaudí encontró en la naturaleza una fuente de inspiración para su arquitectura y, desde su fe, una expresión del orden de la creación. La entrada Gaudí y la…",
+   "title": "Diseñar para durar: el viaje detrás de cada pieza",
+   "url": "https://ethic.es/disenar-para-durar-el-viaje-detras-de-cada-pieza",
+   "dek": "KAVE HOME pone en valor el savoir-faire detrás de su mobiliario con su nueva serie ' The Journey'. Un recorrido en los espacios, procesos y personas que hacen posible cada producto. La…",
    "source": "Ethic",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "lane": "news"
   },
   {
-   "title": "Los corales imposibles de Miami: ¿cuál es el secreto de su resistencia?",
-   "url": "https://climatica.coop/corales-imposibles-miami/",
-   "dek": "Sobre escolleras artificiales, carritos de la compra abandonados y neumáticos, sumergidos en aguas turbias y contaminadas, prospera una comunidad de corales diversa y sana que no debería…",
+   "title": "Del BBVA a las constructoras de Erdoğan: quién patrocina la COP31",
+   "url": "https://climatica.coop/patrocinadores-cop31/",
+   "dek": "La cumbre del clima de Antalya (Turquía) tiene como uno de sus máximos patrocinadores a la entidad española, que participará en casi un centenar de encuentros durante las dos semanas de…",
    "source": "Climática",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "lane": "news"
   },
   {
-   "title": "Huánuco: liberan 50 mil peces, entre paco y trucha, en ríos de la región para recuperar a las especies acuáticas y beneficiar a más de 6 mil pobladore",
-   "url": "https://inforegion.pe/huanuco-liberan-50-mil-peces-entre-paco-y-trucha-en-rios-de-la-region-para-recuperar-a-las-especies-acuaticas-y-beneficiar-a-mas-de-6-mil-pobladores/",
-   "dek": "La Dirección Regional de la Producción (Direpro) de Huánuco liberó 50 mil alevin... La entrada Huánuco: liberan 50 mil peces, entre paco y trucha, en ríos de la región para recuperar a las…",
-   "source": "Inforegión",
-   "date": "2026-11-03",
-   "lane": "news"
-  },
-  {
-   "title": "¿Poner carbón caliente en el agua de las gallinas aumenta la producción de huevos?",
-   "url": "https://www.agronegocios.co/remedios/poner-carbon-caliente-en-el-agua-de-las-gallinas-aumenta-la-produccion-de-huevos-4517557",
-   "dek": "Aunque algunos criadores aseguran que introducir carbón caliente en el agua de las gallinas mejora la postura, no hay evidencia científica que respalde esta práctica",
-   "source": "Agronegocios",
+   "title": "FILIJ 2026 regresa al Cenart con más de mil 500 actividades gratuitas",
+   "url": "https://www.mexicodesconocido.com.mx/filij-2026.html",
+   "dek": "La FILIJ 2026 regresa al Cenart con más de 1,500 actividades gratuitas. Consulta fechas, horarios, invitados y talleres para toda la familia. The post FILIJ 2026 regresa al Cenart con más…",
+   "source": "México Desconocido",
    "date": "2026-11-04",
    "lane": "land"
+  },
+  {
+   "title": "Empanadas y gorras, conozca los otros negocios del cantante Jhon Álex Castaño",
+   "url": "https://www.agronegocios.co/agricultura/empanadas-y-gorras-conozca-los-otros-negocios-del-cantante-jhon-alex-castano-4518722",
+   "dek": "El reconocido cantante y empresario colombiano habló sobre sus 20 años de trayectoria, el crecimiento de la música popular y sus negocios",
+   "source": "Agronegocios",
+   "date": "2026-11-06",
+   "lane": "land"
+  },
+  {
+   "title": "El «Chernóbyl argentino»: pozo petrolero abandonado provoca una fuga de hidrocarburos que afecta al bosque chaqueño",
+   "url": "https://es.mongabay.com/2026/11/chernobyl-argentino-pozo-petrolero-abandonado-provoca-fuga-hidrocarburos-afecta-bosque-chaqueno/",
+   "dek": "Imagine un tramo de bosque donde termina el Chaco Seco, la gran llanura árida que se extiende por el centro de Sudamérica, y empieza a ganar terreno la humedad de las Yungas, la selva de…",
+   "source": "Mongabay Latam",
+   "date": "2026-11-06",
+   "lane": "animals"
   },
   {
    "title": "Mutek México cumple 23 años de hacer espacio para lo que todavía no conocemos",
@@ -1077,6 +1197,14 @@
    "lane": "culture"
   },
   {
+   "title": "Los dos primeros libros del fenómeno mundial “Los diarios de la boticaria” llegan a España",
+   "url": "https://www.zendalibros.com/los-dos-primeros-libros-del-fenomeno-mundial-los-diarios-de-la-boticaria-llegan-a-espana/",
+   "dek": "Los diarios de la boticaria nació en Japón como una novela publicada en internet y, gracias a su éxito, dio el salto al papel, con ilustraciones de Touko Shino. Desde entonces, la historia…",
+   "source": "Zenda Libros",
+   "date": "2026-11-05",
+   "lane": "culture"
+  },
+  {
    "title": "¿Qué son los periodistas?",
    "url": "https://www.revistaanfibia.com/que-son-los-periodistas/",
    "dek": "Hay una foto reciente. Es del 9 de octubre de 2026. Muestra una reunión con una pantalla gigante en la que se proyecta una batalla construida con inteligencia artificial. La presenta…",
@@ -1085,20 +1213,28 @@
    "lane": "culture"
   },
   {
-   "title": "Por qué las ballenas son heroínas del clima que también necesitan nuestra protección",
-   "url": "https://climatica.coop/ballenas-heroinas-clima-necesitan-proteccion/",
-   "dek": "El destacado científico marino y conservacionista Chris Johnson explora la sorprendente relación entre las ballenas, la salud de los océanos y el cambio climático, y lo que su recuperación…",
+   "title": "Los corales imposibles de Miami: ¿cuál es el secreto de su resistencia?",
+   "url": "https://climatica.coop/corales-imposibles-miami/",
+   "dek": "Sobre escolleras artificiales, carritos de la compra abandonados y neumáticos, sumergidos en aguas turbias y contaminadas, prospera una comunidad de corales diversa y sana que no debería…",
    "source": "Climática",
-   "date": "2026-11-02",
+   "date": "2026-11-05",
    "lane": "news"
   },
   {
-   "title": "FILIJ 2026 regresa al Cenart con más de mil 500 actividades gratuitas",
-   "url": "https://www.mexicodesconocido.com.mx/filij-2026.html",
-   "dek": "La FILIJ 2026 regresa al Cenart con más de 1,500 actividades gratuitas. Consulta fechas, horarios, invitados y talleres para toda la familia The post FILIJ 2026 regresa al Cenart con más de…",
-   "source": "México Desconocido",
+   "title": "¿Poner carbón caliente en el agua de las gallinas aumenta la producción de huevos?",
+   "url": "https://www.agronegocios.co/remedios/poner-carbon-caliente-en-el-agua-de-las-gallinas-aumenta-la-produccion-de-huevos-4517557",
+   "dek": "Aunque algunos criadores aseguran que introducir carbón caliente en el agua de las gallinas mejora la postura, no hay evidencia científica que respalde esta práctica",
+   "source": "Agronegocios",
    "date": "2026-11-04",
    "lane": "land"
+  },
+  {
+   "title": "Reportaje fotográfico | Viajes extraordinarios de hasta 3500 kilómetros: así migran pingüinos, tiburones y ballenas para alimentarse y reproducirse",
+   "url": "https://es.mongabay.com/custom-story/2026/11/reportaje-fotografico-viajes-migratorios-pinguinos-tiburones-ballenas-alimentacion-reproduccion/",
+   "dek": "Los pingüinos de Magallanes recorren hasta 3500 kilómetros desde Argentina para buscar alimento durante la época reproductiva. La ballena jorobada Tuta conectó áreas marinas protegidas de…",
+   "source": "Mongabay Latam",
+   "date": "2026-11-06",
+   "lane": "animals"
   }
  ],
  "found_ja": [
@@ -1127,12 +1263,20 @@
    "lane": "news"
   },
   {
-   "title": "売上高４億円の半分をポップコーンで稼ぐ 失敗を乗り越えて築いた唯一無二の仕組み【岩佐と紐解く戦略農業 #32】",
-   "url": "https://agri.mynavi.jp/2026_11_05_608374/",
-   "dek": "私、株式会社GRAの岩佐大輝（いわさ・ひろき）が、いま注目している農業経営者に突撃し、戦略を紐解いていく連載企画。北海道十勝の前田農産食品株式会社を訪問しました。代表の前田茂雄（まえだ・しげお）さんは、2013年にポップコーンの栽培を開始し、約5億円を投じて挑戦を続けてきました。6次産業化を経営の柱に成長させるまでの道のりと、これからの日本の農業について、話を聞きました。",
+   "title": "オオイヌノフグリは駆除すべき？ 似た植物との違いや効果的な駆除・管理方法を農家が解説",
+   "url": "https://agri.mynavi.jp/2026_11_06_614495/",
+   "dek": "雑草と言うにはちょっと可愛すぎるんじゃないかと思う姿のオオイヌノフグリ。春の訪れを感じるかわいらしい花ですが、根はしっかりと張るので畑や芝生で広がると抜くのが大変です。この記事では特徴や似た植物との見分け方から、抜く・残すの判断基準、効果的な管理方法まで解説します。",
    "source": "マイナビ農業",
    "date": "2026-11-05",
    "lane": "land"
+  },
+  {
+   "title": "7歳・5歳・3歳の子どもの成長を祝う「七五三」",
+   "url": "https://www.nippon.com/ja/articles/-/10628",
+   "dek": "「七五三（しちごさん）」は、7歳・5歳・3歳の節目を迎える子どもの成長を神様に感謝し、将来の健やかな成長を祈願する日本の伝統的な年中行事です。毎年11月の休日には、晴れ着姿の子どもを連れた家族で神社や寺院がにぎわう。",
+   "source": "Nippon.com",
+   "date": "2026-11-02",
+   "lane": "culture"
   },
   {
    "title": "パリ西部・セガン島にRCRアーキテクツ＋カルクによる新アート拠点〈ル・ラルジュ〉が誕生。",
@@ -1169,6 +1313,22 @@
  ],
  "found_lt": [
   {
+   "title": "I. Vėgėlė: Kinijos diplomatai atvyksta į Lietuvą aptarti diplomatinio atstovavimo atkūrimo",
+   "url": "https://www.bernardinai.lt/i-vegele-kinijos-diplomatai-atvyksta-i-lietuva-aptarti-diplomatinio-atstovavimo-atkurimo/",
+   "dek": "Kinijos diplomatai kitą savaitę atvyks į Lietuvą, siekiančią atkurti diplomatinį atstovavimą su Pekinu iki ambasadorių lygio, BNS penktadienį patvirtino parlamentaras Ignas Vėgėlė. „Kinai…",
+   "source": "Bernardinai",
+   "date": "2026-11-06",
+   "lane": "news"
+  },
+  {
+   "title": "Tapybos paroda „Spalvos galia“",
+   "url": "https://mokslolietuva.lt/2026/11/tapybos-paroda-spalvos-galia/",
+   "dek": "Lapkričio 5 d. Lietuvos medicinos bibliotekoje atidaryta Vilniaus tapytojų grupės MES paroda „Spalvos galia“. „Spalva turi galią pakelti žmogų, kai …",
+   "source": "Mokslo Lietuva",
+   "date": "2026-11-06",
+   "lane": "research"
+  },
+  {
    "title": "Kartu lengviau žengti mokslininko keliu",
    "url": "https://gamtostyrimai.lt/kartu-lengviau-zengti-mokslininko-keliu/",
    "dek": "Lapkričio 4 d. Gamtos tyrimų centro Ankstyvosios karjeros tyrėjų komitetas organizavo susitikimą su pirmo kurso doktorantais! Susitikimo metu dr. Kristina Valavičiūtė-Pocienė pasidalijo…",
@@ -1177,35 +1337,11 @@
    "lane": "animals"
   },
   {
-   "title": "„Kitybės kartografijos“ kviečia kvestionuoti tapatybę formuojančias sistemas",
-   "url": "https://kaunaspilnas.lt/kitybes-kartografijos-kviecia-kvestionuoti-tapatybe-formuojancias-sistemas/",
-   "dek": "Nuo lapkričio 13 d. galerijoje „Meno parkas“ veiks paroda „Kitybės kartografijos“. Jos dėmesio centre – nykstančios ribos, iš naujo konstruojamos nacionalinės vėliavos ir pėdsakų…",
+   "title": "Lapkričio „Kaunas pilnas kultūros“ kviečia atsigręžti į klasiką",
+   "url": "https://kaunaspilnas.lt/lapkricio-kaunas-pilnas-kulturos-kviecia-atsigrezti-i-klasika/",
+   "dek": "Patogu kiekvieną mėnesį skelbti naujienas – jų mieste niekuomet netrūksta. Vis kažkas atidaroma, startuojama, inicijuojama… Bet, srautą užpylus karštybėmis ir šviežienomis, kartkartėmis…",
    "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-04",
-   "lane": "culture"
-  },
-  {
-   "title": "Į „Scanoramą“ – susitikti su kitu: festivalio atidaryme – būrys rinktinio kino gerbėjų",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3105086/i-scanorama-susitikti-su-kitu-festivalio-atidaryme-burys-rinktinio-kino-gerbeju",
-   "dek": "Vilniuje ketvirtadienį prasidėjo 24-asis Europos kino festivalis „Scanorama“. Į atidarymo ceremoniją sostinės kino centre „Forum Cinemas Vingis“ sugužėjo didelis ir margas būrys rinktinio…",
-   "source": "LRT Kultūra",
-   "date": "2026-11-05",
-   "lane": "culture"
-  },
-  {
-   "title": "Tarpdisciplininio bendradarbiavimo sėkmės istorija",
-   "url": "https://gamtostyrimai.lt/tarpdisciplininio-bendradarbiavimo-sekmes-istorija/",
-   "dek": "Gamtos tyrimų centro Genetikos laboratorijos mokslininkai kartu su VU Gyvybės mokslų centro Biomokslų instituto tyrėjais paskelbė publikaciją viename iš labiausiai cituojamų žurnalų…",
-   "source": "Gamtos tyrimai",
-   "date": "2026-11-05",
-   "lane": "animals"
-  },
-  {
-   "title": "Nuo silikono lėlių iki meilės radijo bangai: Kaune – neįprasta teatro premjera",
-   "url": "https://kaunaspilnas.lt/nuo-silikono-leliu-iki-meiles-radijo-bangai-kaune-neiprasta-teatro-premjera/",
-   "dek": "Ar galima įsimylėti radijo bangą? O kas nutinka, kai tarp daugybės balsų ieškodamas mylimosios pamažu prarandi save? Lapkričio 13–15 dienomis netradicinio teatro festivalyje NAMAS Nr. 6…",
-   "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-04",
+   "date": "2026-11-06",
    "lane": "culture"
   },
   {
@@ -1217,37 +1353,69 @@
    "lane": "culture"
   },
   {
-   "title": "Pianistas Kasparas Uinskas – apie muziką, filosofiją ir naują kūrybinį etapą",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3105245/pianistas-kasparas-uinskas-apie-muzika-filosofija-ir-nauja-kurybini-etapa",
-   "dek": "Lapkričio 10 d. Kauno valstybinėje filharmonijoje ir lapkričio 12 d. Lietuvos nacionalinėje filharmonijoje Vilniuje pianistas Kasparas Uinskas surengs fortepijono rečitalius „Nuo tylos iki…",
+   "title": "Safronovas apie Klaipėdos paštą ir būsimą Argelanderio centrą: restauravimo neužtenka",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3106392/safronovas-apie-klaipedos-pasta-ir-busima-argelanderio-centra-restauravimo-neuztenka",
+   "dek": "Daugiau negu pusę amžiaus valstybės saugomas raudonplytis Klaipėdos paštas šiandien vis dar laukia esminių tvarkybos darbų. Nors jo išsaugojimui buvo numatyti milijonai eurų, o ateities…",
    "source": "LRT Kultūra",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "lane": "culture"
   },
   {
-   "title": "Kaip paukščiai randa kelią į Afriką ir grįžta į Lietuvą? Jų navigacija slepia daugiau, nei galėjome įsivaizduoti (Paukščių ekologijos laboratorija)",
-   "url": "https://gamtostyrimai.lt/kaip-pauksciai-randa-kelia-i-afrika-ir-grizta-i-lietuva-ju-navigacija-slepia-daugiau-nei-galejome-isivaizduoti-pauksciu-ekologijos-laboratorija/",
-   "dek": "The post Kaip paukščiai randa kelią į Afriką ir grįžta į Lietuvą? Jų navigacija slepia daugiau, nei galėjome įsivaizduoti (Paukščių ekologijos laboratorija) appeared first on Gamtos tyrimų…",
+   "title": "Atsargiai, Vilnius“: Lietuvos nacionalinis dailės muziejus pristato patirtinį kūrinį apie sudėtingą miesto istoriją",
+   "url": "https://www.bernardinai.lt/atsargiai-vilnius-lndm-patirtinis-kurinys-apie-miesto-istorija/",
+   "dek": "LNDM pristato audiovizualinį patirtinį kūrinį „Atsargiai, Vilnius“ – žiūrovas telefonu keliauja senamiesčio gatvėmis ir girdi sudėtingą miesto istoriją.",
+   "source": "Bernardinai",
+   "date": "2026-11-06",
+   "lane": "news"
+  },
+  {
+   "title": "Archyviniai duomenys apie dr. Jono Basanavičiaus turtinę ir finansinę padėtį",
+   "url": "https://mokslolietuva.lt/2026/11/archyviniai-duomenys-apie-dr-jono-basanaviciaus-turtine-ir-finansine-padeti/",
+   "dek": "Gausus dr. Ivano Basanovičiaus paliktas susirašinėjimas apima dokumentus, leidžiančius objektyviai atkurti jo materialinę ir finansinę padėtį Bulgarijoje. Atsižvelgiant į to …",
+   "source": "Mokslo Lietuva",
+   "date": "2026-11-06",
+   "lane": "research"
+  },
+  {
+   "title": "Tarpdisciplininio bendradarbiavimo sėkmės istorija",
+   "url": "https://gamtostyrimai.lt/tarpdisciplininio-bendradarbiavimo-sekmes-istorija/",
+   "dek": "Gamtos tyrimų centro Genetikos laboratorijos mokslininkai kartu su VU Gyvybės mokslų centro Biomokslų instituto tyrėjais paskelbė publikaciją viename iš labiausiai cituojamų žurnalų…",
    "source": "Gamtos tyrimai",
-   "date": "2026-11-03",
+   "date": "2026-11-05",
    "lane": "animals"
   },
   {
-   "title": "Senamiestyje – nauja paroda apie medija tampantį kūną",
-   "url": "https://kaunaspilnas.lt/senamiestyje-nauja-paroda-apie-medija-tampanti-kuna/",
-   "dek": "Lapkričio 5 d. (ketvirtadienį), 18:00 val. VDU menų galerijoje „101“ (Muitinės g. 7, Kaunas) atidaroma fotomenininkės Tamaros Pathak personalinė paroda „Embodied Parallels“. „Embodied…",
+   "title": "Šiuolaikinio cirko šventė: Kaune atidarytas jubiliejinis festivalis „Cirkuliacija“",
+   "url": "https://kaunaspilnas.lt/siuolaikinio-cirko-svente-kaune-atidarytas-jubiliejinis-festivalis-cirkuliacija/",
+   "dek": "Lietuvių kūrėjų premjera Kaune prasidėjo dešimtasis tarptautinis šiuolaikinio cirko festivalis „Cirkuliacija“, šiemet skirtas šventei – džiaugsmui kurti, patirti ir atrasti šiuolaikinį…",
    "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-04",
+   "date": "2026-11-06",
+   "lane": "culture"
+  },
+  {
+   "title": "Po 170 metų atgimsta pirmasis viešasis muziejus Lietuvoje: lapkričio 5-ąją – virtualios parodos premjera",
+   "url": "https://lnm.lt/aktualijos/po-170-metu-atgimsta-pirmasis-viesasis-muziejus-lietuvoje-lapkricio-5-aja-virtualios-parodos-premjera/",
+   "dek": "Prieš 170 metų Vilniuje atidarytą pirmąjį viešąjį muziejų Lietuvoje nuo lapkričio 5 d. bus galima aplankyti virtualiai. Lietuvos nacionalinis muziejus (LNM) pristatys parodą-kompiuterinį…",
+   "source": "Nacionalinis muziejus",
+   "date": "2026-10-28",
+   "lane": "culture"
+  },
+  {
+   "title": "Fotografijos atspaudų mugėje – nuo pripažintų meistrų iki naujų vardų",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3106407/fotografijos-atspaudu-mugeje-nuo-pripazintu-meistru-iki-nauju-vardu",
+   "dek": "Lapkričio 7–8 dienomis Nacionalinės dailės galerijos Didžiojoje salėje vyks Vilniaus fotografijos savaitės atspaudų mugė, subursianti skirtingų kartų fotografijos kūrėjus, galerijas…",
+   "source": "LRT Kultūra",
+   "date": "2026-11-06",
    "lane": "culture"
   }
  ],
  "found_india": [
   {
-   "title": "Hyderabad Needs to Save Every Drop. What Chennai's Rainwater Harvesting Story Can Teach Us",
-   "url": "https://thebetterindia.com/conservation/nature/chennai-rainwater-harvesting-sekhar-raghavan-hyderabad-water-crisis-12785849",
-   "dek": "In 1995, Professor Sekhar Raghavan noticed something unusual about the water coming from his tap in Chennai. It had turned salty. As groundwater levels fell, seawater was seeping into the…",
+   "title": "This Bengal Professor Is Helping Children Eat Well & Study for Free at 20+ Learning Centres",
+   "url": "https://thebetterindia.com/web-stories/changemakers/chandrashekhar-kundu-boitoi-hoichoi-free-coaching-centres-west-bengal-12790192",
+   "dek": "",
    "source": "The Better India",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "lane": "news"
   },
   {
@@ -1259,6 +1427,14 @@
    "lane": "news"
   },
   {
+   "title": "Kids’ nutrition guide: What growing children need for healthy development?",
+   "url": "https://www.hindustantimes.com/lifestyle/health/kids-nutrition-guide-what-growing-children-need-for-healthy-development-101793964237898.html",
+   "dek": "Discover essential nutrition tips and meal ideas to support your child's healthy development, boost energy levels, and tackle fussy eating habits effectively.",
+   "source": "Hindustan Times Health",
+   "date": "2026-11-06",
+   "lane": "running"
+  },
+  {
    "title": "New study examines effect of artificial light at night in protected areas",
    "url": "https://india.mongabay.com/short-article/2026/11/new-study-examines-effect-of-artificial-light-at-night-in-protected-areas/",
    "dek": "In protected areas, artificial light at night can affect wildlife in several ways, potentially changing where animals live and move, how they navigate, their reproductive behaviour and…",
@@ -1267,28 +1443,44 @@
    "lane": "land"
   },
   {
-   "title": "Along the River's Edge: The Black-bellied Terns of Chambal",
-   "url": "https://roundglasssustain.com/films/chambal-black-bellied-terns",
-   "dek": "Every summer, black-bellied terns arrive to nest on the islands of the Chambal River. But the nesting season comes with a series of challenges. Parents must protect eggs from extreme heat…",
+   "title": "Lost and Found: Rediscovering a Himalayan Blueberry",
+   "url": "https://roundglasssustain.com/wild-vault/himalayan-blueberry",
+   "dek": "In 2024, botanists rediscovered a wild blueberry species, 188 years after it was first recorded in Arunachal Pradesh",
    "source": "Roundglass Sustain",
-   "date": "2026-11-04",
+   "date": "2026-11-06",
    "lane": "animals"
   },
   {
-   "title": "How brown mussels sustain livelihoods along Thiruvananthapuram’s coast",
-   "url": "https://www.thehindu.com/society/how-brown-mussels-sustain-livelihoods-along-thiruvananthapurams-coast/article71631476.ece",
-   "dek": "From the auctions at Vizhinjam fishing harbour to seafood markets across the region, brown mussels sustain a community of divers whose livelihoods depend on the sea and its seasonal bounty",
+   "title": "Deepavali with pets: Why pet parents are choosing quieter holiday getaways",
+   "url": "https://www.thehindu.com/life-and-style/how-to-calm-a-dog-during-diwali-fireworks-signs-of-firework-stress-in-cats-pet-friendly-places-to-spend-deepavali/article71656241.ece",
+   "dek": "As fireworks unsettle dogs and cats, pet owners are trading noisy city celebrations for countryside retreats, pet hostels and quieter holidays",
    "source": "The Hindu Society",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "lane": "culture"
   },
   {
-   "title": "Trees Have a Hidden Underground Network Called the ‘Wood Wide Web’. Here’s How It Works",
-   "url": "https://thebetterindia.com/conservation/nature/wood-wide-web-fungi-tree-roots-forest-partnerships-explained-12785413",
-   "dek": "Imagine walking through the Western Ghats after the monsoon. The soil is damp, leaves glisten with rain, and tiny saplings grow in the shade of towering trees. Each tree seems to live a…",
+   "title": "HP Celebrates Lights of Change",
+   "url": "https://thebetterindia.com/videos/hp-celebrates-lights-of-change-12788822",
+   "dek": "This Diwali, HP celebrates the Lights of Change – the thoughtful innovations lighting up India and making lives brighter. From turning farm stubble into a resource to making healthcare more…",
    "source": "The Better India",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "lane": "news"
+  },
+  {
+   "title": "Can this kitchen staple help clean plastic out of our water?",
+   "url": "https://villagesquare.in/can-this-kitchen-staple-help-clean-plastic-out-of-our-water/",
+   "dek": "At Village Square we all know and love moringa. It’s a vegetable, a medicine cabinet, a cooking oil and, as of this year, a research subject in the fight against one of the world’s most…",
+   "source": "Village Square",
+   "date": "2026-10-30",
+   "lane": "news"
+  },
+  {
+   "title": "Is your cooking oil making you sick? An Ayurvedic doctor explains the difference between cold-pressed and refined oils",
+   "url": "https://www.hindustantimes.com/lifestyle/health/coldpressed-oils-and-everyday-nutrition-separating-facts-from-myths-101793805668689.html",
+   "dek": "Explore the truth about cold-pressed and refined oils, including their health benefits, proper usage, and how to incorporate them into a balanced diet.",
+   "source": "Hindustan Times Health",
+   "date": "2026-11-06",
+   "lane": "running"
   }
  ],
  "found_tibet": [
@@ -1309,20 +1501,20 @@
    "lane": "news"
   },
   {
-   "title": "Webinar: Yigdzin, an open Tibetan OCR model from BDRC – Public Launch",
-   "url": "https://www.bdrc.io/blog/2026/10/16/webinar-yigdzin-an-open-tibetan-ocr-model-from-bdrc-public-launch/",
-   "dek": "Join us for the public launch of Yigdzin, BDRC's new open Tibetan OCR model. Yigdzin is a huge step forward for Tibetan OCR, helping researchers and translators spend less time retyping…",
-   "source": "Buddhist Digital Resource Center",
-   "date": "2026-10-16",
-   "lane": "research"
-  },
-  {
    "title": "Hokkaido Shimizu Town Delegation Visits Tibet House Japan, Presents First Harvest of the Region for His Holiness the Dalai Lama",
    "url": "https://tibet.net/hokkaido-shimizu-town-delegation-visits-tibet-house-japan-presents-first-harvest-of-the-region-for-his-holiness-the-dalai-lama/",
    "dek": "Tokyo: A Japanese delegation from Hokkaido Shimizu Town, led by Hon. Mayor Yasuhiro Tsuji, visited the Tibet House Japan on 4 November to present the offerings of the first autumnal harvest…",
    "source": "Central Tibetan Administration",
    "date": "2026-11-05",
    "lane": "news"
+  },
+  {
+   "title": "Webinar: Yigdzin, an open Tibetan OCR model from BDRC – Public Launch",
+   "url": "https://www.bdrc.io/blog/2026/10/16/webinar-yigdzin-an-open-tibetan-ocr-model-from-bdrc-public-launch/",
+   "dek": "Join us for the public launch of Yigdzin, BDRC's new open Tibetan OCR model. Yigdzin is a huge step forward for Tibetan OCR, helping researchers and translators spend less time retyping…",
+   "source": "Buddhist Digital Resource Center",
+   "date": "2026-10-16",
+   "lane": "research"
   }
  ]
 }
