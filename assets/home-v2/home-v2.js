@@ -28,7 +28,7 @@ function field(canvas, draw, scale){
 }
 
 /* the morning mist: soft banks of light drifting across, pooling low, and the sun warming the top right */
-function mistDraw(seed, strength){
+function mistDraw(seed, strength, cool){
   const R = rng(seed), N = 13, blobs = [];
   for (let i = 0; i < N; i++) blobs.push({ x: R(), y: 0.35 + R() * 0.7, r: 0.2 + R() * 0.32, v: (0.012 + R() * 0.02) * (R() < 0.5 ? -1 : 1), a: 0.07 + R() * 0.11, ph: R() * 6.28, bob: 0.02 + R() * 0.04 });
   return function(ctx, w, h, t){
@@ -39,13 +39,15 @@ function mistDraw(seed, strength){
       const y = b.y * h + Math.sin(t * 0.09 + b.ph) * b.bob * h;
       const g = ctx.createRadialGradient(x, y, 0, x, y, r);
       const a = b.a * strength * (0.85 + 0.15 * Math.sin(t * 0.13 + b.ph));
-      g.addColorStop(0, `rgba(255,251,242,${a})`); g.addColorStop(0.55, `rgba(255,248,232,${a * 0.45})`); g.addColorStop(1, 'rgba(255,248,232,0)');
+      const c0 = cool ? '228,238,246' : '255,251,242', c1 = cool ? '220,232,242' : '255,248,232';   // cool: the blue-grey mist before the sun is up
+      g.addColorStop(0, `rgba(${c0},${a})`); g.addColorStop(0.55, `rgba(${c1},${a * 0.45})`); g.addColorStop(1, `rgba(${c1},0)`);
       ctx.fillStyle = g; ctx.beginPath(); ctx.ellipse(x, y, r, r * 0.55, 0, 0, 6.2832); ctx.fill();
     }
     // the mist pooling along the ground
     const pool = ctx.createLinearGradient(0, h * 0.55, 0, h);
     const pa = (0.16 + 0.05 * Math.sin(t * 0.07)) * strength;
-    pool.addColorStop(0, 'rgba(255,250,240,0)'); pool.addColorStop(1, `rgba(255,250,240,${pa})`);
+    const pc = cool ? '226,236,244' : '255,250,240';
+    pool.addColorStop(0, `rgba(${pc},0)`); pool.addColorStop(1, `rgba(${pc},${pa})`);
     ctx.fillStyle = pool; ctx.fillRect(0, h * 0.55, w, h * 0.45);
     ctx.globalCompositeOperation = 'source-over';
   };
@@ -254,9 +256,31 @@ gardenFirst(); addEventListener('load', gardenFirst);
 AP.sound.toggle = function(){ if (AP.sound.on) AP.sound.stop(); else { gardenFirst(); AP.sound.start(); } };
 bar();
 const cut = $('#cut')._cut; shotNames(cut);
+/* the film always opens on the first light and the mist (Tony, 11/7: "always start from the beginning where there is light and mist").
+   The timeline waits until the opening clip is actually playing, starts it from its first frame,
+   starts the waterfall from its first frame as it fades in, and every loop opens on the light again. */
+(function openOnTheLight(){
+  if (!AP.motion || AP.render) return;
+  const v0 = cut.shots[0].querySelector('video'), v1 = cut.shots[1].querySelector('video'), lp0 = cut.shots[0].querySelector('.ap-loop')._loop;
+  if (!v0 || !lp0) return;
+  const fade = Number(cut.el.dataset.fade) || 1.8, d0 = Number(cut.shots[0].dataset.dur) || 6;
+  cut.stop(); cut.seek(0);
+  v0.preload = 'auto'; lp0.load();
+  let t0 = 0, prev = 0, began = false;
+  const rewind = v => { try { v.currentTime = 0; } catch (e) {} };
+  function run(now){
+    const tt = ((now - t0) / 1000) % cut.DUR;
+    if (prev < d0 - fade && tt >= d0 - fade && v1) rewind(v1);          // the waterfall begins at its start
+    if (prev < cut.DUR - fade && tt >= cut.DUR - fade) rewind(v0);      // the light returns from its first frame
+    prev = tt; cut.seek(tt); requestAnimationFrame(run);
+  }
+  function begin(){ if (began) return; began = true; rewind(v0); t0 = performance.now(); requestAnimationFrame(run); }
+  v0.addEventListener('playing', begin, { once: true });
+  setTimeout(begin, 7000);   // on a slow connection the opening still shows its first frame, then runs
+})();
 const phone = matchMedia('(max-width:980px)').matches;
-field($('#mist'), mistDraw(11, 1.7), 0.4);
-field($('#mist3'), mistDraw(17, 1.2), 0.5);
+field($('#mist'), mistDraw(11, 1.5, true), 0.4);
+field($('#mist3'), mistDraw(17, 1.7, true), 0.5);
 field($('#dew'),  dewDraw(5, phone ? 40 : 90, phone ? 10 : 22, false), 0.75);
 field($('#dew2'), dewDraw(9, phone ? 60 : 70, 8, true), 1);
 /* the weather down the page: mist at the seams, dew on the leaves, warm light and beams */

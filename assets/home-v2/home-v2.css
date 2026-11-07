@@ -446,3 +446,53 @@ html.render .wx .beams{animation:none}
 }
 html.menu-open .sec-dock{display:none}
 @media (prefers-reduced-motion:reduce){.sec-dock *{transition:none!important}}
+
+/* ---------- 11/7 evening: early morning and cool, a calmer bar (Tony: "a bit darker... like early morning and cool", "its too bright", "the menu is too jammed", "logo and title is too small") ---------- */
+.arrive{background:#4f6069}
+.arrive .glow{background:#465760}
+.arrive .glow img{filter:blur(38px) saturate(.75) brightness(.55)}
+.arrive .glow::after{background:linear-gradient(90deg,rgba(24,38,50,.42),rgba(24,38,50,.18) 45%,rgba(24,38,50,.14) 75%,rgba(24,38,50,.38)),linear-gradient(180deg,rgba(206,220,228,.16),rgba(206,220,228,0) 30%,rgba(26,40,50,0) 65%,rgba(26,40,50,.34))}
+.arrive .mist{opacity:.6}
+.arrive .dew{opacity:.5}
+.arrive .rays{opacity:.2}
+.arrive .sun{background:radial-gradient(circle,rgba(255,244,222,.5) 0,rgba(255,232,186,.24) 16%,rgba(255,222,160,.07) 40%,rgba(255,222,160,0) 70%)}
+.arrive .panel{background:rgba(232,238,240,.9);border-color:rgba(255,255,255,.45);box-shadow:0 40px 90px -40px rgba(10,24,32,.6)}
+.ta-bar{background:linear-gradient(180deg,rgba(226,233,236,.92),rgba(226,233,236,.7))}
+.ta-bar .ap-mark{font-size:1.62rem;gap:.7rem}
+.ta-bar .ap-mark img{width:46px;height:43px}
+@media (max-width:980px){.ta-bar .ap-mark{font-size:1.42rem}.ta-bar .ap-mark img{width:40px;height:38px}}
+/* the laptop bar: five main pages with room between them; Home, Teaching, For Teams and About sit behind the Menu pill */
+@media (min-width:981px){
+  .ta-bar .ap-nav{gap:clamp(1.3rem,2.3vw,2.5rem);font-size:.95rem}
+  .ta-bar .ap-nav a[href="/"],.ta-bar .ap-nav a[href="/teaching/"],.ta-bar .ap-nav a[href="/teams/"],.ta-bar .ap-nav a[href="/#about"]{display:none}
+  .ta-bar .ap-sound{padding:.6em .85em}.ta-bar .ap-sound .lbl{display:none}
+  .ta-bar .acts{gap:.75rem}
+  .ap-burger{display:flex;align-items:center;width:auto;min-width:44px;padding:0 44px 0 15px;border:1px solid currentColor;border-radius:999px;height:42px}
+  .ap-burger::before{content:"Menu";font-weight:600;font-size:.92rem;letter-spacing:.02em}
+  .ap-burger span{left:auto;right:14px;width:20px;top:14px}
+  .ap-burger span:nth-child(2){top:20px}.ap-burger span:nth-child(3){top:26px}
+}
+/* the whole first screen at dawn (Tony: "its totally bright"): the panel and the bar go dark and cool, the type turns light */
+.arrive .panel{background:rgba(20,32,40,.58);border-color:rgba(255,255,255,.1);box-shadow:0 40px 90px -40px rgba(0,0,0,.6);color:#E6ECEA}
+.arrive .label{color:rgba(230,236,234,.72)}
+.arrive h1,.arrive h1 *{color:#F3EFE5}
+.arrive h1 em,.arrive h1 .accent,.arrive h1 b{color:#D9C38C}
+.arrive .lede{color:#DCE4E2}
+.arrive .byline{border-top-color:rgba(255,255,255,.14)}
+.arrive .byline img{box-shadow:0 0 0 3px rgba(255,255,255,.25)}
+.arrive .byline b{color:#F3EFE5}
+.arrive .byline span,.arrive .byline span i{color:rgba(220,228,226,.78)}
+.arrive .btn.ghost.dark{color:#F3EFE5;border-color:rgba(243,239,229,.5)}
+.arrive .btn.ghost.dark:hover{background:rgba(255,255,255,.08)}
+.arrive .ap-say{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16);color:#E6ECEA}
+.arrive .soundbtn{color:#E6ECEA;border-color:rgba(255,255,255,.3)}
+.ta-bar{background:linear-gradient(180deg,rgba(22,34,42,.9),rgba(22,34,42,.74));color:#E9EEEC}
+.ta-bar.solid{background:rgba(22,34,42,.9)}
+.ta-bar .ap-mark{color:#F3EFE5}.ta-bar .ap-mark span{color:#B9D2C4}
+.ta-bar .ap-mark img{mix-blend-mode:normal;filter:brightness(1.6) saturate(.6)}
+.ta-bar .ap-sound,.ap-bar.on-light .ap-sound{border-color:rgba(255,255,255,.35);color:#E9EEEC}
+.ap-bar.on-light{color:#E9EEEC}
+.sec-dock ol{background:rgba(22,34,42,.62)}
+.sec-dock a{color:#E6ECEA}.sec-dock a::after{background:#9FC7AE}.sec-dock a.on::after{background:#F3EFE5}.sec-dock a:hover{background:rgba(255,255,255,.08)}
+.arrive .framecol figcaption{background:rgba(20,32,40,.66);color:#E6ECEA;border-color:rgba(255,255,255,.12)}
+.arrive .framecol figcaption b{color:#F3EFE5}.arrive .framecol figcaption span{color:rgba(220,228,226,.8)}
