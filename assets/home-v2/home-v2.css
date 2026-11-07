@@ -545,3 +545,10 @@ html.at-top .sec-dock{opacity:0;pointer-events:none}
 .arrive .portrait .mist3{opacity:.4}@media (min-width:981px){.arrive .portrait .mist3{opacity:.32}}
 .ta-bar.solid,.ta-bar.on-light.solid,.ap-bar.ta-bar.on-light.solid{background:rgba(22,34,42,.92)}
 .ap-bar.ta-bar,.ap-bar.ta-bar.on-light,.ap-bar.ta-bar.solid,.ap-bar.ta-bar.on-light.solid{background:rgba(22,34,42,.9);transition:box-shadow .5s}
+/* the bar shows every page again (Tony: "where did some of the menu items go like for teams, the teachings"): all seven, sized to fit */
+@media (min-width:981px){
+  .ta-bar .ap-nav{position:static;transform:none;gap:clamp(.9rem,1.5vw,1.6rem);font-size:clamp(.82rem,.55rem + .35vw,.93rem);margin:0 auto}
+  .ta-bar .ap-nav a[href="/teaching/"],.ta-bar .ap-nav a[href="/teams/"],.ta-bar .ap-nav a[href="/#about"]{display:inline-block}
+  .ta-bar .ap-nav a,.nav-drop>button{white-space:nowrap}
+}
+@media (max-width:1100px){.ta-bar .ap-nav{display:none}}
