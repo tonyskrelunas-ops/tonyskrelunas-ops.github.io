@@ -550,3 +550,13 @@ html.at-top .sec-dock{opacity:0;pointer-events:none}
 .cap-done b{display:block;font-size:1rem;line-height:1.4}
 .cap-done span{display:block;margin-top:.3rem;font-size:.88rem;opacity:.8}
 .cap-done--err{border-left-color:#8A3C1E;background:rgba(138,60,30,.07)}
+/* the Executive Reader, carried over from the current home page */
+.reader-feature{display:grid;grid-template-columns:150px minmax(0,1fr);gap:clamp(16px,2vw,28px);align-items:center;margin-top:clamp(24px,3vw,40px);padding:clamp(14px,1.6vw,22px);border-radius:18px;background:rgba(255,253,246,.7);border:1px solid rgba(30,36,25,.1);text-decoration:none;color:inherit;max-width:56rem;transition:background .3s}
+.reader-feature:hover{background:rgba(255,253,246,.92)}
+.reader-feature img{width:100%;height:auto;border-radius:4px;box-shadow:0 18px 40px -18px rgba(30,36,25,.55)}
+.reader-feature small{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--crimson,#9b2c2c)}
+.reader-feature h3{font-size:clamp(1.4rem,1.1rem + 1vw,2rem);margin:.3rem 0 .5rem}
+.reader-feature p{margin:0 0 .5rem;max-width:40rem}
+.reader-feature .pull{font-family:var(--display);font-style:italic}
+.reader-feature .go{font-weight:700;color:var(--blue-deep,#124279)}
+@media (max-width:600px){.reader-feature{grid-template-columns:96px minmax(0,1fr)}}
