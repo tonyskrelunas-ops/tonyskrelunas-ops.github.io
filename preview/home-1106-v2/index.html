@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Hanken+Grotesk:wght@300..800&display=swap">
 <link rel="stylesheet" href="/assets/home-v2/engine/vendor/lenis.css">
 <link rel="stylesheet" href="/assets/home-v2/engine/site.css">
-<link rel="stylesheet" href="/assets/home-v2/home-v2.css?v=20261107t">
+<link rel="stylesheet" href="/assets/home-v2/home-v2.css?v=20261107x">
 </head>
 <body>
 
@@ -26,8 +26,7 @@
     <a href="/" aria-current="page">Home</a>
     <a href="/human-resilience/">Human Resilience</a>
     <a href="/community-resilience/">Community Resilience</a>
-    <a href="/journal/">Journal</a>
-    <a href="/magazine/">Magazine</a>
+    <div class="nav-drop"><button type="button" aria-expanded="false" aria-haspopup="true">Magazine &amp; Journal</button><div class="drop"><a href="/magazine/"><b>Abundance Mindset Magazine</b><span>Good news chosen as medicine, every morning</span></a><a href="/journal/"><b>The Journal</b><span>Essays and stories</span></a></div></div>
     <a href="https://ancestralwatch.com">The Books</a>
     <a href="/teaching/">Teaching</a>
     <a href="/teams/">For Teams</a>
@@ -45,12 +44,11 @@
     <a href="/"><small></small>Home</a>
     <a href="/human-resilience/"><small>01</small>Human Resilience</a>
     <a href="/community-resilience/"><small>02</small>Community Resilience</a>
-    <a href="/journal/"><small>03</small>Journal</a>
-    <a href="/magazine/"><small>04</small>Magazine</a>
-    <a href="https://ancestralwatch.com"><small>05</small>The Books</a>
-    <a href="/teaching/"><small>06</small>Teaching</a>
-    <a href="/teams/"><small>07</small>For Teams</a>
-    <a href="/#about"><small>08</small>About</a>
+    <div class="duo"><small>03</small><a href="/magazine/">Magazine</a> <i>&amp;</i> <a href="/journal/">Journal</a></div>
+    <a href="https://ancestralwatch.com"><small>04</small>The Books</a>
+    <a href="/teaching/"><small>05</small>Teaching</a>
+    <a href="/teams/"><small>06</small>For Teams</a>
+    <a href="/#about"><small>07</small>About</a>
   </nav>
   <div class="foot"><span><a href="/es/">Español</a><a href="/ja/">日本語</a><a href="/lt/">Lietuvių</a><a href="/india/">India</a></span><a class="btn light" href="/contact/#write">Write to me <span class="arrow">→</span></a></div>
 </div>
@@ -98,6 +96,10 @@
         <a class="btn" href="/magazine/">Read today's magazine <span class="arrow">→</span></a>
         <a class="btn ghost dark" href="/contact/#write">Work with Tony</a>
       </div>
+      <a class="hero-books reveal d3" href="https://ancestralwatch.com">
+        <span class="covers"><img src="/assets/home-v2/img/cover-stone-breath-560.jpg" alt=""><img src="/assets/home-v2/img/cover-the-far-messengers-560.jpg" alt=""><img src="/assets/home-v2/img/cover-the-council-fire-600.jpg" alt=""></span>
+        <span class="t"><b>The Ancestral Watch novels</b><small>Stone Breath · The Far Messengers · The Council Fire</small></span><span class="arrow" aria-hidden="true">→</span>
+      </a>
       <div class="say reveal d4">
         <button class="ap-say" data-src="/assets/home-v2/audio/voice-welcome-imagine-a-stream.mp3" data-who="Before we start" data-text="First, I want you to imagine. Imagine that you're at a stream, in the mountains, in the canyon, and you're hearing the water flow by. The birds, the trees, the breeze, morning dew."></button>
         <button class="soundbtn" id="soundBtn" type="button" aria-pressed="false"><i><b></b><b></b><b></b></i><span>Sound on</span></button>
@@ -106,8 +108,8 @@
     <figure class="framecol">
       <div class="portrait" id="portrait">
         <div class="ap-cut" id="cut" data-fade="3.4">
-          <div class="shot" data-dur="18" data-name="First light and mist, through the pines"><div class="ap-loop" data-src="/assets/home-v2/video/garden-first-light-misty-720x1280-dawn-20s.mp4" data-poster="/assets/home-v2/img/garden-first-light-misty-dawn-poster-720.jpg"></div></div>
-          <div class="shot" data-dur="22" data-name="The waterfall, in the morning mist"><div class="ap-loop" data-src="/assets/home-v2/video/garden-waterfall-misty-720x1280-dawn.mp4" data-poster="/assets/home-v2/img/garden-waterfall-misty-dawn-poster-720.jpg"></div></div>
+          <div class="shot" data-dur="18" data-name="First light and mist, through the pines"><div class="ap-loop" data-src="/assets/home-v2/video/garden-first-light-misty-720x1280-dawn-20s.mp4" data-poster="/assets/home-v2/img/garden-first-light-misty-dawn-poster-720.jpg" data-src-wide="/assets/home-v2/video/garden-first-light-misty-1280x720-dawn-20s.mp4" data-poster-wide="/assets/home-v2/img/garden-first-light-misty-dawn-poster-1280.jpg"></div></div>
+          <div class="shot" data-dur="14" data-name="The waterfall, in the morning mist"><div class="ap-loop" data-src="/assets/home-v2/video/garden-waterfall-misty-720x1280-dawn.mp4" data-poster="/assets/home-v2/img/garden-waterfall-misty-dawn-poster-720.jpg" data-src-wide="/assets/home-v2/video/garden-waterfall-misty-1280x720-dawn.mp4" data-poster-wide="/assets/home-v2/img/garden-waterfall-misty-dawn-poster-1280.jpg"></div></div>
         </div>
         <canvas class="fx mist3" id="mist3" aria-hidden="true"></canvas>
       </div>
@@ -214,6 +216,7 @@
     <nav class="editions" aria-label="Editions"><a href="/magazine/">English</a><a href="/es/" lang="es">Español</a><a href="/ja/" lang="ja">日本語</a><a href="/lt/" lang="lt">Lietuvių</a><a href="/india/">India</a><a href="/magazine/tibet/">Tibet</a></nav>
   </div>
   <div class="dateline"><span>Turtle Island · México · Kyōto · Vilnius · India · Tibet</span><span data-edition>This morning's issue</span></div>
+  <a class="mag-plate" href="/magazine/" aria-label="Open this morning's Abundance Mindset Magazine"><object data="/assets/art/amm-cover.svg?v=5" type="image/svg+xml" tabindex="-1" aria-label="A sun crossing a gold sky over green mountains, an eagle above, and the far messenger running the ridge"></object><span class="cap">The far messenger runs the ridge · open this morning's issue →</span></a>
   <div class="body">
     <div>
       <article class="lead-story">
@@ -431,6 +434,6 @@
 <script src="/assets/home-v2/engine/vendor/lenis.min.js"></script>
 <script src="/assets/home-v2/engine/site.js"></script>
 <script src="/js/magazine.js" defer></script>
-<script src="/assets/home-v2/home-v2.js?v=20261107t"></script>
+<script src="/assets/home-v2/home-v2.js?v=20261107w"></script>
 </body>
 </html>

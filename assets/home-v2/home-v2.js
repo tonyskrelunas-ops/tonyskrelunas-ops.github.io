@@ -246,6 +246,9 @@ function shotNames(cut){
 AP.sound.register('creek',  AU + 'bed-creek-oak-creek-48s.mp3');          // his real Oak Creek water
 AP.sound.register('garden', AU + 'first-light-in-the-garden-piano-flute-waterfall-166s.mp3');     // original piano and flute over the real sound of the waterfall he built
 AP.sound.register('rain',   AU + 'bed-rain-soft-46s.mp3');                // a soft sun shower, kept for later
+/* on a laptop the film fills the screen, so it plays the wide cut of the same two scenes */
+const wide = matchMedia('(min-width:981px)').matches;
+if (wide) $$('[data-src-wide]').forEach(el => { el.dataset.src = el.dataset.srcWide; if (el.dataset.posterWide) el.dataset.poster = el.dataset.posterWide; });
 mosaic(); journalRows();
 AP.init();
 /* the opening always sounds like the garden. At load the scene watcher can land on a later band,
@@ -296,7 +299,7 @@ field($('#mist2'), mistDraw(23, 0.8), 0.4);
 const gsap = AP.gsap, ST = AP.ST;
 if (gsap && ST && AP.motion) {
   gsap.to('#cutwrap', { scale: 1.08, yPercent: 8, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: AP.render ? true : 0.5 } });
-  gsap.to('#portrait', { yPercent: phone ? 14 : -10, scale: phone ? 1.06 : 1.03, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: AP.render ? true : 0.6 } });
+  if (!wide) gsap.to('#portrait', { yPercent: phone ? 14 : -10, scale: phone ? 1.06 : 1.03, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: AP.render ? true : 0.6 } });
   gsap.to('.arrive .copy', { yPercent: phone ? 0 : 7, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: AP.render ? true : 0.6 } });
   $$('.mrow').forEach(r => gsap.fromTo(r, { x: -Number(r.dataset.drift) }, { x: Number(r.dataset.drift), ease: 'none', scrollTrigger: { trigger: '#global', start: 'top bottom', end: 'bottom top', scrub: AP.render ? true : 0.6 } }));
 }
@@ -334,4 +337,19 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
   const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
   const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { links.forEach(l => l.classList.remove('on')); const l = map.get(en.target.id); if (l) l.classList.add('on'); } }), { rootMargin: '-45% 0px -50% 0px' });
   map.forEach((_, id) => { const el = document.getElementById(id); if (el) io.observe(el); });
+})();
+
+/* Magazine & Journal: one item in the bar, opening on hover, focus or tap */
+(function navDrop(){
+  const d = document.querySelector('.nav-drop'); if (!d) return;
+  const b = d.querySelector('button'), set = o => { d.classList.toggle('open', o); b.setAttribute('aria-expanded', String(o)); };
+  b.addEventListener('click', e => { e.stopPropagation(); set(!d.classList.contains('open')); });
+  document.addEventListener('click', e => { if (!d.contains(e.target)) set(false); });
+  d.addEventListener('keydown', e => { if (e.key === 'Escape') { set(false); b.focus(); } });
+})();
+
+/* the section dock stays out of the opening screen */
+(function dockAfterOpening(){
+  const f = () => document.documentElement.classList.toggle('at-top', scrollY < innerHeight * 0.7);
+  f(); addEventListener('scroll', f, { passive: true }); addEventListener('resize', f);
 })();
