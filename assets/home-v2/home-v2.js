@@ -294,3 +294,23 @@ if (gsap && ST && AP.motion) {
 window.DURATION = 52;
 window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return true; };
 })();
+
+/* ---------- 11/7: the section dock: jump to any part of the page, and see where you are ---------- */
+(function(){
+  const dock = document.getElementById('secDock'); if (!dock) return;
+  const toggle = dock.querySelector('.sec-toggle'), links = [...dock.querySelectorAll('a')];
+  links.forEach(a => { const t = document.createElement('span'); t.className = 't'; t.textContent = a.textContent; a.textContent = ''; a.appendChild(t); a.setAttribute('aria-label', t.textContent); });
+  const setOpen = o => { dock.classList.toggle('open', o); toggle.setAttribute('aria-expanded', String(o)); };
+  toggle.addEventListener('click', () => setOpen(!dock.classList.contains('open')));
+  links.forEach(a => a.addEventListener('click', e => {
+    const el = document.querySelector(a.getAttribute('href')); if (!el) return;
+    e.preventDefault(); setOpen(false);
+    const off = -((document.getElementById('bar') || {}).offsetHeight || 0);
+    if (AP.lenis) AP.lenis.scrollTo(el, { offset: off, duration: 1.4 }); else el.scrollIntoView({ behavior: 'smooth' });
+    history.replaceState(null, '', a.getAttribute('href'));
+  }));
+  document.addEventListener('click', e => { if (!dock.contains(e.target)) setOpen(false); });
+  const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+  const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { links.forEach(l => l.classList.remove('on')); const l = map.get(en.target.id); if (l) l.classList.add('on'); } }), { rootMargin: '-45% 0px -50% 0px' });
+  map.forEach((_, id) => { const el = document.getElementById(id); if (el) io.observe(el); });
+})();
