@@ -246,11 +246,17 @@ AP.sound.register('garden', AU + 'first-light-in-the-garden-piano-flute-waterfal
 AP.sound.register('rain',   AU + 'bed-rain-soft-46s.mp3');                // a soft sun shower, kept for later
 mosaic(); journalRows();
 AP.init();
+/* the opening always sounds like the garden. At load the scene watcher can land on a later band,
+   so near the top the Sound button starts the garden music (piano and flute over the waterfall). */
+const atTop = () => scrollY < innerHeight * 0.8;
+const gardenFirst = () => { if (atTop()) { document.documentElement.dataset.scene = 'garden'; AP.sound.scene = 'garden'; } };
+gardenFirst(); addEventListener('load', gardenFirst);
+AP.sound.toggle = function(){ if (AP.sound.on) AP.sound.stop(); else { gardenFirst(); AP.sound.start(); } };
 bar();
 const cut = $('#cut')._cut; shotNames(cut);
 const phone = matchMedia('(max-width:980px)').matches;
-field($('#mist'), mistDraw(11, 0.95), 0.4);
-field($('#mist3'), mistDraw(17, 0.6), 0.5);
+field($('#mist'), mistDraw(11, 1.7), 0.4);
+field($('#mist3'), mistDraw(17, 1.2), 0.5);
 field($('#dew'),  dewDraw(5, phone ? 40 : 90, phone ? 10 : 22, false), 0.75);
 field($('#dew2'), dewDraw(9, phone ? 60 : 70, 8, true), 1);
 /* the weather down the page: mist at the seams, dew on the leaves, warm light and beams */
