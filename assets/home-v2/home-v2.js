@@ -281,19 +281,16 @@ const cut = $('#cut')._cut; shotNames(cut);
 const phone = matchMedia('(max-width:980px)').matches;
 field($('#mist'), mistDraw(11, 1.5, true), 0.4);
 field($('#mist3'), mistDraw(17, 1.7, true), 0.5);
-field($('#dew'),  dewDraw(5, phone ? 40 : 90, phone ? 10 : 22, false), 0.75);
-field($('#dew2'), dewDraw(9, phone ? 60 : 70, 8, true), 1);
+/* no sparkles: just the mist (Tony, 11/7: "i dont want flickering stars... i just wanted to have mist") */
 /* the weather down the page: mist at the seams, dew on the leaves, warm light and beams */
 $$('[data-wx]').forEach((el, i) => {
   const kinds = el.dataset.wx.split(' '), wx = document.createElement('div'); wx.className = 'wx';
   if (kinds.includes('warm')) { const w = document.createElement('div'); w.className = 'warm'; wx.appendChild(w); }
   if (kinds.includes('beams')) { const bm = document.createElement('div'); bm.className = 'beams'; wx.appendChild(bm); }
-  let mc, dc;
+  let mc;
   if (kinds.includes('mist')) { mc = document.createElement('canvas'); mc.className = 'mistc'; wx.appendChild(mc); }
-  if (kinds.includes('dew')) { dc = document.createElement('canvas'); dc.className = 'dewc'; wx.appendChild(dc); }
   el.prepend(wx);
   if (mc) field(mc, mistDraw(31 + i * 3, Number(el.dataset.mist || 0.7)), 0.35);
-  if (dc) field(dc, dewDraw(61 + i * 5, phone ? 16 : 30, 6, false), 0.6);
 });
 field($('#mist2'), mistDraw(23, 0.8), 0.4);
 const gsap = AP.gsap, ST = AP.ST;
