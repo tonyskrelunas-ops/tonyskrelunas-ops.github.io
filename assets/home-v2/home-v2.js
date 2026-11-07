@@ -140,8 +140,13 @@ const JOURNAL = [
   ['30000-years-tribal-trade-americas', '30,000 Years, and a Formula That Still Works', 'From the journal', 'japan-bridge']
 ];
 const PHOTOS = [
-  ['mexico-dancers-900', 'Dancers in Mexico'], ['world-circle-in-a-courtyard-800', 'A circle in a courtyard, India'], ['crown-dancers-fire-900', 'Crown dancers at the fire'],
-  ['world-farmer-with-baskets-800', 'A farmer and his baskets'], ['feather-parade-900', 'A parade of feathers'], ['world-hands-planting-a-seedling-800', 'Hands planting a seedling'],
+  ['tony-fog-on-the-road-through-the-eucalyptus-900', 'Fog on the road through the eucalyptus'], ['mexico-dancers-900', 'Dancers in Mexico'], ['tony-the-city-from-the-water-900', 'The city from the water'],
+  ['world-circle-in-a-courtyard-800', 'A circle in a courtyard, India'], ['tony-mist-in-the-pines-900', 'Mist in the pines'], ['world-rice-terraces-morning-mist-800', 'Rice terraces in the morning mist'],
+  ['tony-the-bridge-at-sunset-900', 'The bridge at sunset'], ['world-farmer-with-baskets-800', 'A farmer and his baskets'], ['tony-a-city-at-night-900', 'A city at night'],
+  ['tony-a-tea-garden-pond-900', 'A tea garden pond'], ['tony-redwoods-looking-up-900', 'Redwoods, looking up'], ['tony-gulls-on-a-foggy-beach-900', 'Gulls on a foggy beach'],
+  ['tony-a-stone-bridge-and-its-reflection-900', 'A stone bridge and its reflection'], ['tony-a-ferry-in-the-low-sun-900', 'A ferry in the low sun'], ['tony-under-the-pier-900', 'Under the pier'],
+  ['tony-dusk-over-the-hills-of-the-city-900', 'Dusk over the hills of the city'], ['tony-a-quiet-marina-900', 'A quiet marina'], ['tony-first-sun-across-the-park-900', 'First sun across the park'],
+  ['crown-dancers-fire-900', 'Crown dancers at the fire'], ['feather-parade-900', 'A parade of feathers'], ['world-hands-planting-a-seedling-800', 'Hands planting a seedling'],
   ['gathering-on-the-grass-900', 'A gathering on the grass'], ['world-rice-terraces-morning-light-800', 'Rice terraces in morning light'], ['friends-redrocks-900', 'Friends among the red rocks'],
   ['world-young-people-on-the-steps-800', 'Young people on the steps'], ['horseshoe-bend-seated-900', 'On the rim at Horseshoe Bend'], ['world-farmers-market-800', 'A farmers market'],
   ['teton-river-900', 'The Teton Range over the river'], ['world-solar-roofs-rainbow-800', 'Solar roofs under a rainbow'], ['redwoods-and-creek-900', 'Redwoods and a creek, Santa Cruz Mountains'],
@@ -152,7 +157,8 @@ const PHOTOS = [
   ['river-peaks-900', 'The river and the Peaks'], ['corn-sunset-900', 'Corn at sunset']
 ];
 const CLIPS = [
-  ['the-pacific-voyage', 'The Pacific voyage. From the films for the books.'], ['the-andes-relay', 'The Andes relay. From the films for the books.'],
+  ['tony-sunset-through-the-trees-over-the-bay', 'Sunset through the trees, over the bay'], ['the-pacific-voyage', 'The Pacific voyage. From the films for the books.'],
+  ['tony-waves-on-a-gray-morning', 'Waves on a gray morning'], ['the-andes-relay', 'The Andes relay. From the films for the books.'], ['tony-surf-and-the-shore', 'Surf and the shore'],
   ['the-desert-runner', 'The desert runner. From the films for the books.'], ['the-elder-runner-on-the-mesa', 'The elder runner on the mesa. From the films for the books.'],
   ['runs-east-at-first-light', 'Keh Yazh runs east at first light. From the films for the books.'], ['family-runs-then-the-waterfall', 'A family runs toward you, then the waterfall.']
 ];

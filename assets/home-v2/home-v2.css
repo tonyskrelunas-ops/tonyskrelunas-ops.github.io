@@ -543,3 +543,5 @@ html.at-top .sec-dock{opacity:0;pointer-events:none}
 .mag-plate .cap{position:absolute;right:.8rem;bottom:.6rem;font-size:.78rem;font-weight:600;letter-spacing:.04em;color:#fff;background:rgba(20,30,24,.45);padding:.3em .7em;border-radius:999px}
 @media (min-width:981px){.arrive .framecol figcaption{bottom:auto;top:calc(100svh - 104px)}.arrive h1{font-size:clamp(2.1rem,1.2rem + 2.2vw,3.35rem)}}
 .arrive .portrait .mist3{opacity:.4}@media (min-width:981px){.arrive .portrait .mist3{opacity:.32}}
+.ta-bar.solid,.ta-bar.on-light.solid,.ap-bar.ta-bar.on-light.solid{background:rgba(22,34,42,.92)}
+.ap-bar.ta-bar,.ap-bar.ta-bar.on-light,.ap-bar.ta-bar.solid,.ap-bar.ta-bar.on-light.solid{background:rgba(22,34,42,.9);transition:box-shadow .5s}
