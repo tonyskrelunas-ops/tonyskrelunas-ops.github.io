@@ -76,6 +76,37 @@ function rainDraw(seed, count){
   };
 }
 
+/* morning dew: glints of light on the leaves and drops catching the sun, soft bokeh drifting up through the beams */
+function dewDraw(seed, nGlint, nBokeh, low){
+  const R = rng(seed), G = [], B = [];
+  for (let i = 0; i < nGlint; i++) G.push({ x: R(), y: (low ? 0.22 : 0.05) + R() * (low ? 0.78 : 0.95), per: 1.6 + R() * 3.4, ph: R() * 6.283, s: 0.5 + R() * 1.1, warm: R() });
+  for (let i = 0; i < nBokeh; i++) B.push({ x: R(), y: R(), r: 0.012 + R() * 0.03, v: 0.006 + R() * 0.012, ph: R() * 6.283, a: 0.1 + R() * 0.16 });
+  return function(ctx, w, h, t){
+    ctx.globalCompositeOperation = 'lighter';
+    for (const b of B) {
+      const y = (((b.y - t * b.v) % 1) + 1) % 1 * h, x = (b.x + 0.02 * Math.sin(t * 0.3 + b.ph)) * w, r = b.r * w;
+      const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+      const a = b.a * (0.7 + 0.3 * Math.sin(t * 0.7 + b.ph));
+      g.addColorStop(0, `rgba(255,232,170,${a})`); g.addColorStop(0.72, `rgba(255,226,150,${a * 0.75})`); g.addColorStop(0.9, `rgba(255,240,200,${a * 0.95})`); g.addColorStop(1, 'rgba(255,240,200,0)');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, r, 0, 6.2832); ctx.fill();
+    }
+    ctx.lineCap = 'round';
+    for (const p of G) {
+      const k = Math.max(0, Math.sin(t * 6.283 / p.per + p.ph)); const b = Math.pow(k, 10); if (b < 0.02) continue;
+      const x = p.x * w, y = p.y * h, s = p.s * w / 180, col = p.warm > .6 ? '255,236,190' : '255,252,240';
+      const g = ctx.createRadialGradient(x, y, 0, x, y, s * 3.2);
+      g.addColorStop(0, `rgba(${col},${0.95 * b})`); g.addColorStop(0.35, `rgba(${col},${0.35 * b})`); g.addColorStop(1, `rgba(${col},0)`);
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, s * 3.2, 0, 6.2832); ctx.fill();
+      ctx.strokeStyle = `rgba(${col},${0.85 * b})`; ctx.lineWidth = Math.max(0.6, s * 0.35);
+      const L = s * 4.5 * (0.6 + 0.4 * b);
+      ctx.beginPath(); ctx.moveTo(x - L, y); ctx.lineTo(x + L, y); ctx.moveTo(x, y - L); ctx.lineTo(x, y + L); ctx.stroke();
+      ctx.strokeStyle = `rgba(${col},${0.35 * b})`; ctx.lineWidth = Math.max(0.5, s * 0.25);
+      ctx.beginPath(); ctx.moveTo(x - L * .5, y - L * .5); ctx.lineTo(x + L * .5, y + L * .5); ctx.moveTo(x + L * .5, y - L * .5); ctx.lineTo(x - L * .5, y + L * .5); ctx.stroke();
+    }
+    ctx.globalCompositeOperation = 'source-over';
+  };
+}
+
 /* ---------- the content lists ---------- */
 const JOURNAL = [
   ['a-home-calm-enough-to-teach-in', 'A Home Calm Enough to Teach In', 'Human Resilience', 'baltic-oak'],
@@ -92,18 +123,18 @@ const JOURNAL = [
   ['what-the-cottonwood-sings-roots-workshop', 'What the Cottonwood Sings: A Poet’s Afternoon in the Roots Workshop', 'Reflections', 'dine-mountains'],
   ['one-in-a-trillion', 'One in a Trillion', 'Reflections', 'baltic-juosta'],
   ['the-water-remembers-sacred-lake', 'The Water Remembers: My Grandfather’s Song at the Sacred Lake', 'Reflections', 'japan-enso'],
-  ['ai-robotics-repair-warming-world', 'The Machines That Could Help Us Come Home: AI, Robotics, and the Repair of a Warming World', 'Regenerative Development & New Economy', 'japan-enso'],
-  ['the-silent-theft', 'The Silent Theft: How the World Wastes Its Most Precious Resource, and How We Can Reclaim It', 'Regenerative Development & New Economy', 'baltic-sun'],
-  ['the-final-council-post-extraction-future', 'The Final Council: Building a Post-Extraction Future for Economics and Technology', 'Regenerative Development & New Economy', 'dine-hogan'],
+  ['ai-robotics-repair-warming-world', 'The Machines That Could Help Us Come Home: AI, Robotics, and the Repair of a Warming World', 'Regeneration', 'japan-enso'],
+  ['the-silent-theft', 'The Silent Theft: How the World Wastes Its Most Precious Resource, and How We Can Reclaim It', 'Regeneration', 'baltic-sun'],
+  ['the-final-council-post-extraction-future', 'The Final Council: Building a Post-Extraction Future for Economics and Technology', 'Regeneration', 'dine-hogan'],
   ['seeds-of-the-ancestors', 'Seeds of the Ancestors: Remembering Our Food, Our Stories, and Ourselves', 'Food Systems & Agriculture', 'four-capitals'],
-  ['monster-slayer-blueprint-turning-waste-into-renewal', 'The Monster-Slayer’s Blueprint: Turning the Age of Waste into an Age of Renewal', 'Regenerative Development & New Economy', 'japan-bridge'],
+  ['monster-slayer-blueprint-turning-waste-into-renewal', 'The Monster-Slayer’s Blueprint: Turning the Age of Waste into an Age of Renewal', 'Regeneration', 'japan-bridge'],
   ['weaving-a-new-dream-what-is-the-world-dreaming-through-you', 'Weaving a New Dream: What Is the World Dreaming Through You?', 'Movement', 'dine-mountains'],
   ['the-man-who-raced-hills-into-his-70s', 'The Man Who Raced Hills Into His 70s: What Longevity Really Asks of Us', 'Health & Longevity', 'four-capitals'],
   ['wealth-wisdom-from-sheepherders-of-the-planet', 'Wealth Wisdom from the Sheepherders of the Planet', 'Health & Longevity', 'dine-hogan'],
   ['roots-of-resilience-wisdom-week-rancho-la-puerta', 'Roots of Resilience: What the Fire Taught Us at Wisdom Week', 'Retreats', 'four-capitals'],
   ['ancient-farming-hedge-against-climate-change', 'The Old Farmers Are Right: Ancient Agriculture as a Hedge Against a Warming World', 'Food Systems & Agriculture', 'japan-bridge'],
   ['honoring-my-father-on-fathers-day', 'Shizhé’é: A Father’s Day Letter to the Man Who Chose Me', 'The Story', 'dine-mountains'],
-  ['honorable-trade-oldest-economies-planet-in-transition', 'Honorable Trade: What the World’s Oldest Economies Teach a Planet in Transition', 'Regenerative Development & New Economy', 'baltic-juosta'],
+  ['honorable-trade-oldest-economies-planet-in-transition', 'Honorable Trade: What the World’s Oldest Economies Teach a Planet in Transition', 'Regeneration', 'baltic-juosta'],
   ['30000-years-tribal-trade-americas', '30,000 Years, and a Formula That Still Works', 'From the journal', 'japan-bridge']
 ];
 const PHOTOS = [
@@ -112,7 +143,11 @@ const PHOTOS = [
   ['gathering-on-the-grass-900', 'A gathering on the grass'], ['world-rice-terraces-morning-light-800', 'Rice terraces in morning light'], ['friends-redrocks-900', 'Friends among the red rocks'],
   ['world-young-people-on-the-steps-800', 'Young people on the steps'], ['horseshoe-bend-seated-900', 'On the rim at Horseshoe Bend'], ['world-farmers-market-800', 'A farmers market'],
   ['teton-river-900', 'The Teton Range over the river'], ['world-solar-roofs-rainbow-800', 'Solar roofs under a rainbow'], ['redwoods-and-creek-900', 'Redwoods and a creek, Santa Cruz Mountains'],
-  ['lawn-council-900', 'A council on the lawn'], ['river-peaks-900', 'The river and the Peaks'], ['corn-sunset-900', 'Corn at sunset']
+  ['lawn-council-900', 'A council on the lawn'], ['aw-japan-stone-bridge-900', 'Children on the stone bridge'], ['aw-peaks-meadow-900', 'The Peaks over the meadow'],
+  ['aw-rowing-900', 'Two rowers on a misty lake at dawn'], ['aw-stone-dawn-900', 'A pebble held up to the dawn'], ['aw-slickrock-group-900', 'A rider in the pines'],
+  ['aw-canyon-sunset-forest-900', 'Sunset over the rim'], ['aw-bench-talk-900', 'A talk on the bench, among the ferns'], ['aw-juniper-ancient-900', 'An ancient juniper'],
+  ['aw-horseshoe-bend-standing-900', 'Standing on the rim at Horseshoe Bend'], ['aw-creek-stones-superior-900', 'The creek and its stones near Superior, Arizona'], ['aw-peaks-pines-900', 'The Peaks over the pines'],
+  ['river-peaks-900', 'The river and the Peaks'], ['corn-sunset-900', 'Corn at sunset']
 ];
 const CLIPS = [
   ['the-pacific-voyage', 'The Pacific voyage. From the films for the books.'], ['the-andes-relay', 'The Andes relay. From the films for the books.'],
@@ -199,23 +234,43 @@ function journalRows(){
 
 /* ---------- the shot name follows the cut ---------- */
 function shotNames(cut){
-  const names = cut.shots.map(s => s.dataset.name), el = $('#shotName');
-  (function loop(){ let best = 0, bo = 0; cut.shots.forEach((s, i) => { const o = parseFloat(s.style.opacity || 0); if (o > bo) { bo = o; best = i; } }); if (el.textContent !== names[best]) el.textContent = names[best]; if (AP.motion) requestAnimationFrame(loop); })();
+  const names = cut.shots.map(s => s.dataset.name), el = $('#shotName'), glow = $('.arrive .glow');
+  const tick = () => { let best = 0, bo = 0; cut.shots.forEach((s, i) => { const o = parseFloat(s.style.opacity || 0); if (o > bo) { bo = o; best = i; } }); if (el.textContent !== names[best]) el.textContent = names[best]; if (glow) glow.classList.toggle('two', best === 1); };
+  (function loop(){ tick(); if (AP.motion) requestAnimationFrame(loop); })();
+  AP.registerSeek(() => tick());   // render mode: the name and the backdrop follow the seeked cut
 }
 
 /* ---------- wire it all ---------- */
-AP.sound.register('creek', AU + 'bed-creek-oak-creek-48s.mp3');   // his real Oak Creek water
-AP.sound.register('rain',  AU + 'bed-rain-soft-46s.mp3');         // a soft sun shower, made for this page
+AP.sound.register('creek',  AU + 'bed-creek-oak-creek-48s.mp3');          // his real Oak Creek water
+AP.sound.register('garden', AU + 'garden-waterfall-morning-bed.mp3');     // the real sound of the waterfall he built
+AP.sound.register('rain',   AU + 'bed-rain-soft-46s.mp3');                // a soft sun shower, kept for later
 mosaic(); journalRows();
 AP.init();
 bar();
 const cut = $('#cut')._cut; shotNames(cut);
-field($('#mist'), mistDraw(11, 0.55), 0.4);
-field($('#rain'), rainDraw(5, matchMedia('(max-width:980px)').matches ? 26 : 44), 1);
+const phone = matchMedia('(max-width:980px)').matches;
+field($('#mist'), mistDraw(11, 0.95), 0.4);
+field($('#mist3'), mistDraw(17, 0.6), 0.5);
+field($('#dew'),  dewDraw(5, phone ? 40 : 90, phone ? 10 : 22, false), 0.75);
+field($('#dew2'), dewDraw(9, phone ? 60 : 70, 8, true), 1);
+/* the weather down the page: mist at the seams, dew on the leaves, warm light and beams */
+$$('[data-wx]').forEach((el, i) => {
+  const kinds = el.dataset.wx.split(' '), wx = document.createElement('div'); wx.className = 'wx';
+  if (kinds.includes('warm')) { const w = document.createElement('div'); w.className = 'warm'; wx.appendChild(w); }
+  if (kinds.includes('beams')) { const bm = document.createElement('div'); bm.className = 'beams'; wx.appendChild(bm); }
+  let mc, dc;
+  if (kinds.includes('mist')) { mc = document.createElement('canvas'); mc.className = 'mistc'; wx.appendChild(mc); }
+  if (kinds.includes('dew')) { dc = document.createElement('canvas'); dc.className = 'dewc'; wx.appendChild(dc); }
+  el.prepend(wx);
+  if (mc) field(mc, mistDraw(31 + i * 3, Number(el.dataset.mist || 0.7)), 0.35);
+  if (dc) field(dc, dewDraw(61 + i * 5, phone ? 16 : 30, 6, false), 0.6);
+});
 field($('#mist2'), mistDraw(23, 0.8), 0.4);
 const gsap = AP.gsap, ST = AP.ST;
 if (gsap && ST && AP.motion) {
-  gsap.to('#cutwrap', { scale: 1.1, yPercent: 9, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: AP.render ? true : 0.5 } });
+  gsap.to('#cutwrap', { scale: 1.08, yPercent: 8, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: AP.render ? true : 0.5 } });
+  gsap.to('#portrait', { yPercent: phone ? 14 : -10, scale: phone ? 1.06 : 1.03, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: AP.render ? true : 0.6 } });
+  gsap.to('.arrive .copy', { yPercent: phone ? 0 : 7, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: AP.render ? true : 0.6 } });
   $$('.mrow').forEach(r => gsap.fromTo(r, { x: -Number(r.dataset.drift) }, { x: Number(r.dataset.drift), ease: 'none', scrollTrigger: { trigger: '#global', start: 'top bottom', end: 'bottom top', scrub: AP.render ? true : 0.6 } }));
 }
 
@@ -231,5 +286,5 @@ if (gsap && ST && AP.motion) {
 
 /* render mode: window.DURATION + window.seek(t) for render.js */
 window.DURATION = 52;
-window.seek = async t => { await AP.seekPage(t, { hold: 4, end: 48 }); return true; };
+window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return true; };
 })();
