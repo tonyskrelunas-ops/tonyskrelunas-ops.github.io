@@ -1,0 +1,235 @@
+/* TRIBEAWAKEN HOME v2 — page script — 2026-11-06
+   Runs on top of the Ancestral Peaks engine (window.AP). Adds: the morning mist, the sun shower, the TribeAwaken bar,
+   the living mosaic, the drifting journal rows, the breath ring, and render mode for the frame renderer. */
+(function(){
+'use strict';
+const $ = (s, r) => (r || document).querySelector(s), $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+const html = document.documentElement;
+const V = '/assets/home-v2/video/', I = '/assets/home-v2/img/', AU = '/assets/home-v2/audio/';
+const clamp = (x, a, b) => x < a ? a : x > b ? b : x;
+function rng(seed){ let a = seed >>> 0; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+
+/* ---------- a canvas that runs only while its section is on screen, and seeks under the renderer ---------- */
+function field(canvas, draw, scale){
+  if (!canvas) return null;
+  const ctx = canvas.getContext('2d'); let w = 0, h = 0, raf = 0, on = false, t0 = performance.now();
+  const S = scale || 0.5;
+  function resize(){ const r = canvas.getBoundingClientRect(); w = Math.max(2, Math.round(r.width * S)); h = Math.max(2, Math.round(r.height * S)); if (canvas.width !== w || canvas.height !== h) { canvas.width = w; canvas.height = h; } }
+  function frame(t){ resize(); ctx.clearRect(0, 0, w, h); draw(ctx, w, h, t); }
+  function loop(){ frame((performance.now() - t0) / 1000); raf = requestAnimationFrame(loop); }
+  const api = { seek(t){ frame(t); }, start(){ if (on || !AP.motion) return; on = true; raf = requestAnimationFrame(loop); }, stop(){ on = false; cancelAnimationFrame(raf); } };
+  if (AP.motion && 'IntersectionObserver' in window) {
+    const host = canvas.closest('section') || canvas.parentElement;
+    new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? api.start() : api.stop()), { rootMargin: '10% 0px' }).observe(host);
+  } else frame(6);
+  addEventListener('resize', () => frame(AP.motion ? (performance.now() - t0) / 1000 : 6));
+  AP.registerSeek(t => api.seek(t));
+  return api;
+}
+
+/* the morning mist: soft banks of light drifting across, pooling low, and the sun warming the top right */
+function mistDraw(seed, strength){
+  const R = rng(seed), N = 13, blobs = [];
+  for (let i = 0; i < N; i++) blobs.push({ x: R(), y: 0.35 + R() * 0.7, r: 0.2 + R() * 0.32, v: (0.012 + R() * 0.02) * (R() < 0.5 ? -1 : 1), a: 0.07 + R() * 0.11, ph: R() * 6.28, bob: 0.02 + R() * 0.04 });
+  return function(ctx, w, h, t){
+    ctx.globalCompositeOperation = 'lighter';
+    for (const b of blobs) {
+      const r = b.r * w, span = w + 2 * r;
+      let x = ((b.x * span + b.v * w * t) % span + span) % span - r;
+      const y = b.y * h + Math.sin(t * 0.09 + b.ph) * b.bob * h;
+      const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+      const a = b.a * strength * (0.85 + 0.15 * Math.sin(t * 0.13 + b.ph));
+      g.addColorStop(0, `rgba(255,251,242,${a})`); g.addColorStop(0.55, `rgba(255,248,232,${a * 0.45})`); g.addColorStop(1, 'rgba(255,248,232,0)');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.ellipse(x, y, r, r * 0.55, 0, 0, 6.2832); ctx.fill();
+    }
+    // the mist pooling along the ground
+    const pool = ctx.createLinearGradient(0, h * 0.55, 0, h);
+    const pa = (0.16 + 0.05 * Math.sin(t * 0.07)) * strength;
+    pool.addColorStop(0, 'rgba(255,250,240,0)'); pool.addColorStop(1, `rgba(255,250,240,${pa})`);
+    ctx.fillStyle = pool; ctx.fillRect(0, h * 0.55, w, h * 0.45);
+    ctx.globalCompositeOperation = 'source-over';
+  };
+}
+
+/* a sun shower: a few bright drops falling through the light, rings where they land */
+function rainDraw(seed, count){
+  const R = rng(seed), drops = [];
+  for (let i = 0; i < count; i++) drops.push({ x: R(), v: 0.9 + R() * 0.5, l: 0.035 + R() * 0.035, p: R() * 10, s: 0.6 + R() * 0.36, a: 0.22 + R() * 0.25 });
+  return function(ctx, w, h, t){
+    const slant = 0.07;
+    ctx.lineCap = 'round'; ctx.lineWidth = Math.max(1, w / 900);
+    for (const d of drops) {
+      const cyc = 1.3 / d.v, u = (((t + d.p) / cyc) % 1 + 1) % 1;       // 0..1 through one fall
+      const y = (u * 1.3 - 0.15) * h, x = d.x * w + (y / h) * slant * w;
+      const uh = (d.s + 0.15) / 1.3;                                   // where it meets the water
+      if (u < uh) {
+        const L = d.l * h, fade = u < 0.1 ? u / 0.1 : 1;
+        const g = ctx.createLinearGradient(x, y - L, x + slant * L, y);
+        g.addColorStop(0, 'rgba(255,255,255,0)'); g.addColorStop(1, `rgba(255,255,255,${d.a * fade})`);
+        ctx.strokeStyle = g; ctx.beginPath(); ctx.moveTo(x - slant * L, y - L); ctx.lineTo(x, y); ctx.stroke();
+      } else if (u < uh + 0.22) {
+        const k = (u - uh) / 0.22, sy = d.s * h, sx = d.x * w + d.s * slant * w, r = (0.01 + k * 0.05) * w;
+        ctx.strokeStyle = `rgba(255,255,255,${(1 - k) * 0.55 * d.a * 2})`; ctx.beginPath(); ctx.ellipse(sx, sy, r, r * 0.32, 0, 0, 6.2832); ctx.stroke();
+        if (k < 0.35) { ctx.fillStyle = `rgba(255,255,255,${(0.35 - k) * 1.2})`; ctx.beginPath(); ctx.arc(sx, sy - k * 0.02 * h, w / 700 * (1 - k), 0, 6.2832); ctx.fill(); }
+      }
+    }
+  };
+}
+
+/* ---------- the content lists ---------- */
+const JOURNAL = [
+  ['a-home-calm-enough-to-teach-in', 'A Home Calm Enough to Teach In', 'Human Resilience', 'baltic-oak'],
+  ['what-a-far-messenger-is', 'What a Far Messenger Is', 'The Books · The Doctorate', 'japan-enso'],
+  ['the-ancestral-code-for-living-to-100', 'The Ancestral Code for Living to 100', 'Health & Longevity', 'dine-dawn'],
+  ['why-i-call-the-sheep-camp-a-retreat', 'Why I Call the Sheep Camp a Retreat', 'Human Resilience', 'baltic-sun'],
+  ['the-council-fire-arrives-with-a-family-on-its-cover', 'The Council Fire Arrives With a Family on Its Cover', 'Community Resilience', 'dine-dawn'],
+  ['little-piles-of-rock', 'Little Piles of Rock', 'Human Resilience', 'dine-mountains'],
+  ['a-joke-at-the-dry-spring', 'A Joke at the Dry Spring', 'Human Resilience', 'japan-bridge'],
+  ['long-term-resilience-ancient-culture', 'Building Long-Term Resilience With an Ancient Culture', 'Human Resilience', 'baltic-juosta'],
+  ['stone-breath-has-gone-out-to-the-world', 'Stone Breath Has Gone Out to the World', 'The Books', 'japan-bridge'],
+  ['tibet-the-unbroken-thread', 'Tibet, and the Unbroken Thread', 'Global · One Operating System', 'baltic-oak'],
+  ['they-tried-to-erase-a-whole-people', 'They Tried to Erase a Whole People. Now They Raise the Happiest Young Souls on Earth.', 'The Story', 'four-capitals'],
+  ['what-the-cottonwood-sings-roots-workshop', 'What the Cottonwood Sings: A Poet’s Afternoon in the Roots Workshop', 'Reflections', 'dine-mountains'],
+  ['one-in-a-trillion', 'One in a Trillion', 'Reflections', 'baltic-juosta'],
+  ['the-water-remembers-sacred-lake', 'The Water Remembers: My Grandfather’s Song at the Sacred Lake', 'Reflections', 'japan-enso'],
+  ['ai-robotics-repair-warming-world', 'The Machines That Could Help Us Come Home: AI, Robotics, and the Repair of a Warming World', 'Regenerative Development & New Economy', 'japan-enso'],
+  ['the-silent-theft', 'The Silent Theft: How the World Wastes Its Most Precious Resource, and How We Can Reclaim It', 'Regenerative Development & New Economy', 'baltic-sun'],
+  ['the-final-council-post-extraction-future', 'The Final Council: Building a Post-Extraction Future for Economics and Technology', 'Regenerative Development & New Economy', 'dine-hogan'],
+  ['seeds-of-the-ancestors', 'Seeds of the Ancestors: Remembering Our Food, Our Stories, and Ourselves', 'Food Systems & Agriculture', 'four-capitals'],
+  ['monster-slayer-blueprint-turning-waste-into-renewal', 'The Monster-Slayer’s Blueprint: Turning the Age of Waste into an Age of Renewal', 'Regenerative Development & New Economy', 'japan-bridge'],
+  ['weaving-a-new-dream-what-is-the-world-dreaming-through-you', 'Weaving a New Dream: What Is the World Dreaming Through You?', 'Movement', 'dine-mountains'],
+  ['the-man-who-raced-hills-into-his-70s', 'The Man Who Raced Hills Into His 70s: What Longevity Really Asks of Us', 'Health & Longevity', 'four-capitals'],
+  ['wealth-wisdom-from-sheepherders-of-the-planet', 'Wealth Wisdom from the Sheepherders of the Planet', 'Health & Longevity', 'dine-hogan'],
+  ['roots-of-resilience-wisdom-week-rancho-la-puerta', 'Roots of Resilience: What the Fire Taught Us at Wisdom Week', 'Retreats', 'four-capitals'],
+  ['ancient-farming-hedge-against-climate-change', 'The Old Farmers Are Right: Ancient Agriculture as a Hedge Against a Warming World', 'Food Systems & Agriculture', 'japan-bridge'],
+  ['honoring-my-father-on-fathers-day', 'Shizhé’é: A Father’s Day Letter to the Man Who Chose Me', 'The Story', 'dine-mountains'],
+  ['honorable-trade-oldest-economies-planet-in-transition', 'Honorable Trade: What the World’s Oldest Economies Teach a Planet in Transition', 'Regenerative Development & New Economy', 'baltic-juosta'],
+  ['30000-years-tribal-trade-americas', '30,000 Years, and a Formula That Still Works', 'From the journal', 'japan-bridge']
+];
+const PHOTOS = [
+  ['mexico-dancers-900', 'Dancers in Mexico'], ['world-circle-in-a-courtyard-800', 'A circle in a courtyard, India'], ['crown-dancers-fire-900', 'Crown dancers at the fire'],
+  ['world-farmer-with-baskets-800', 'A farmer and his baskets'], ['feather-parade-900', 'A parade of feathers'], ['world-hands-planting-a-seedling-800', 'Hands planting a seedling'],
+  ['gathering-on-the-grass-900', 'A gathering on the grass'], ['world-rice-terraces-morning-light-800', 'Rice terraces in morning light'], ['friends-redrocks-900', 'Friends among the red rocks'],
+  ['world-young-people-on-the-steps-800', 'Young people on the steps'], ['horseshoe-bend-seated-900', 'On the rim at Horseshoe Bend'], ['world-farmers-market-800', 'A farmers market'],
+  ['teton-river-900', 'The Teton Range over the river'], ['world-solar-roofs-rainbow-800', 'Solar roofs under a rainbow'], ['redwoods-and-creek-900', 'Redwoods and a creek, Santa Cruz Mountains'],
+  ['lawn-council-900', 'A council on the lawn'], ['river-peaks-900', 'The river and the Peaks'], ['corn-sunset-900', 'Corn at sunset']
+];
+const CLIPS = [
+  ['the-pacific-voyage', 'The Pacific voyage. From the films for the books.'], ['the-andes-relay', 'The Andes relay. From the films for the books.'],
+  ['the-desert-runner', 'The desert runner. From the films for the books.'], ['the-elder-runner-on-the-mesa', 'The elder runner on the mesa. From the films for the books.'],
+  ['runs-east-at-first-light', 'Keh Yazh runs east at first light. From the films for the books.'], ['family-runs-then-the-waterfall', 'A family runs toward you, then the waterfall.']
+];
+
+/* ---------- the bar: menu and sound ---------- */
+function bar(){
+  const host = $('#bar'), burger = $('.ap-burger', host), menu = $('#apMenu');
+  const setOpen = o => { burger.setAttribute('aria-expanded', String(o)); menu.classList.toggle('open', o); menu.setAttribute('aria-hidden', String(!o)); host.classList.toggle('menu-open', o); if (AP.lenis) { o ? AP.lenis.stop() : AP.lenis.start(); } document.body.style.overflow = o ? 'hidden' : ''; };
+  burger.addEventListener('click', () => setOpen(burger.getAttribute('aria-expanded') !== 'true'));
+  $$('a', menu).forEach(a => a.addEventListener('click', () => setOpen(false)));
+  addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
+  const onScroll = () => host.classList.toggle('solid', (window.scrollY || html.scrollTop) > 40);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  $$('.ap-sound, .soundbtn').forEach(b => { b.addEventListener('click', () => AP.sound.toggle()); AP.sound._buttons.push(b); });
+  addEventListener('ap:sound', e => { const sb = $('#soundBtn'); if (sb) sb.lastElementChild.textContent = e.detail.on ? 'Sound off' : 'Sound on'; });
+}
+
+/* ---------- the living mosaic ---------- */
+function mosaic(){
+  const host = $('#mosaic'); if (!host) return;
+  const LAYOUT = [['w', '', '', 'w'], ['', 'cta', 'w', '', ''], ['', '', 'w', 'cta2', '']];
+  let pi = 0, ci = 0; const tiles = [];
+  LAYOUT.forEach((row, r) => {
+    const mr = document.createElement('div'); mr.className = 'mrow'; mr.dataset.drift = r % 2 ? '36' : '-36';
+    row.forEach((kind, c) => {
+      if (kind === 'cta' || kind === 'cta2') {
+        const a = document.createElement('a'); a.className = 'tile cta';
+        if (kind === 'cta') { a.href = 'https://www.youtube.com/playlist?list=PLjB4J2ZBlei6CgzNuXQzLxH9MG9pImafZ'; a.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><div><b>Come and see.</b><span>Videos of our communities, for anyone who wants to see or experience them.</span></div>'; }
+        else { a.href = 'https://www.youtube.com/watch?v=8kGuXxsbKYU'; a.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><div><b>The invitation, on film.</b><span>A minute from the redwoods.</span></div>'; }
+        a.target = '_blank'; a.rel = 'noopener'; mr.appendChild(a); return;
+      }
+      const t = document.createElement('div'); t.className = 'tile' + (kind === 'w' ? ' wide' : '');
+      const useClip = kind === 'w' && ci < CLIPS.length;
+      if (useClip) { const [v, cap] = CLIPS[ci++]; const l = document.createElement('div'); l.className = 'ap-loop'; l.dataset.src = `${V}${v}.mp4`; l.dataset.poster = `${V}${v}-poster.jpg`; t.appendChild(l); const s = document.createElement('span'); s.className = 'cap'; s.textContent = cap; t.appendChild(s); }
+      else {
+        const [p, cap] = PHOTOS[pi++ % PHOTOS.length];
+        const a = document.createElement('img'); a.className = 'a'; a.src = `${I}${p}.jpg`; a.alt = cap; a.loading = AP.render ? 'eager' : 'lazy';
+        const b = document.createElement('img'); b.className = 'b'; b.alt = ''; b.loading = AP.render ? 'eager' : 'lazy';
+        const s = document.createElement('span'); s.className = 'cap'; s.textContent = cap;
+        t.append(a, b, s); tiles.push(t);
+      }
+      mr.appendChild(t);
+    });
+    host.appendChild(mr);
+  });
+  function seek(t){
+    tiles.forEach((tile, i) => {
+      const period = 9 + (i % 5) * 1.7, phase = (i * 2.3) % period, k = Math.floor((t + phase) / period);
+      if (tile._k === k) return; tile._k = k;
+      const front = k % 2 === 0, hidden = front ? tile.querySelector('img.b') : tile.querySelector('img.a');
+      const [p, cap] = PHOTOS[(i * 7 + k * 13 + 3) % PHOTOS.length];
+      if (!hidden.src.endsWith(p + '.jpg')) { hidden.src = `${I}${p}.jpg`; hidden.alt = cap; }
+      tile.querySelector('.cap').textContent = cap;
+      tile.classList.toggle('flip', !front);
+    });
+  }
+  const t0 = performance.now();
+  if (AP.motion) (function loop(){ seek((performance.now() - t0) / 1000); requestAnimationFrame(loop); })(); else seek(0);
+  AP.registerSeek(seek);
+}
+
+/* ---------- the journal rows drift past each other ---------- */
+function journalRows(){
+  const host = $('#jrows'); if (!host) return;
+  const rows = [JOURNAL.slice(0, 14), JOURNAL.slice(14)];
+  const els = rows.map((list, r) => {
+    const row = document.createElement('div'); row.className = 'jrow';
+    const card = ([slug, title, pillar, art]) => `<a class="jcard" href="/journal/${slug}/"><img src="/assets/art/${art}.svg" alt="" loading="lazy"><i>${pillar}</i><b>${title}</b></a>`;
+    row.innerHTML = list.map(card).join('') + list.map(card).join('');
+    host.appendChild(row); return row;
+  });
+  let half = [0, 0], hover = false;
+  const measure = () => els.forEach((row, i) => { half[i] = row.scrollWidth / 2; });
+  measure(); addEventListener('resize', measure); document.fonts && document.fonts.ready.then(measure);
+  host.addEventListener('pointerenter', () => hover = true); host.addEventListener('pointerleave', () => hover = false);
+  let acc = 0, last = performance.now();
+  function place(t){ els.forEach((row, i) => { const H = half[i] || 1, sp = (i ? 22 : 30); let x = (t * sp) % H; if (i) x = H - x; row.style.transform = `translate3d(${-x}px,0,0)`; }); }
+  if (AP.motion) (function loop(now){ if (!hover) acc += (now - last) / 1000; last = now; place(acc); requestAnimationFrame(loop); })(performance.now()); else place(8);
+  AP.registerSeek(place);
+}
+
+/* ---------- the shot name follows the cut ---------- */
+function shotNames(cut){
+  const names = cut.shots.map(s => s.dataset.name), el = $('#shotName');
+  (function loop(){ let best = 0, bo = 0; cut.shots.forEach((s, i) => { const o = parseFloat(s.style.opacity || 0); if (o > bo) { bo = o; best = i; } }); if (el.textContent !== names[best]) el.textContent = names[best]; if (AP.motion) requestAnimationFrame(loop); })();
+}
+
+/* ---------- wire it all ---------- */
+AP.sound.register('creek', AU + 'bed-creek-oak-creek-48s.mp3');   // his real Oak Creek water
+AP.sound.register('rain',  AU + 'bed-rain-soft-46s.mp3');         // a soft sun shower, made for this page
+mosaic(); journalRows();
+AP.init();
+bar();
+const cut = $('#cut')._cut; shotNames(cut);
+field($('#mist'), mistDraw(11, 0.55), 0.4);
+field($('#rain'), rainDraw(5, matchMedia('(max-width:980px)').matches ? 26 : 44), 1);
+field($('#mist2'), mistDraw(23, 0.8), 0.4);
+const gsap = AP.gsap, ST = AP.ST;
+if (gsap && ST && AP.motion) {
+  gsap.to('#cutwrap', { scale: 1.1, yPercent: 9, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: AP.render ? true : 0.5 } });
+  $$('.mrow').forEach(r => gsap.fromTo(r, { x: -Number(r.dataset.drift) }, { x: Number(r.dataset.drift), ease: 'none', scrollTrigger: { trigger: '#global', start: 'top bottom', end: 'bottom top', scrub: AP.render ? true : 0.6 } }));
+}
+
+/* the breath ring: one round with the creek under it */
+(function breath(){
+  const host = $('#ring'); if (!host || !AP.breathRing) return;
+  const done = $('#breathDone'), btn = $('#beginBreath');
+  const ring = AP.breathRing(host, { rounds: 1, legend: true, tones: true, rest: ['Breathe', 'with the water'],
+    onStart(){ btn.textContent = 'Breathing…'; btn.disabled = true; done.textContent = ''; },
+    onFinish(){ btn.textContent = 'Once more'; btn.disabled = false; done.textContent = 'Did your shoulders drop? The whole practice is three minutes, and it is free below.'; } });
+  btn.addEventListener('click', () => { ring.start(); AP.scrollTo('#listen', { offset: 0 }); });
+})();
+
+/* render mode: window.DURATION + window.seek(t) for render.js */
+window.DURATION = 52;
+window.seek = async t => { await AP.seekPage(t, { hold: 4, end: 48 }); return true; };
+})();
