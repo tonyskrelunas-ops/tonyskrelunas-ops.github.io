@@ -242,7 +242,7 @@ function shotNames(cut){
 
 /* ---------- wire it all ---------- */
 AP.sound.register('creek',  AU + 'bed-creek-oak-creek-48s.mp3');          // his real Oak Creek water
-AP.sound.register('garden', AU + 'garden-waterfall-morning-bed.mp3');     // the real sound of the waterfall he built
+AP.sound.register('garden', AU + 'first-light-in-the-garden-piano-flute-waterfall-166s.mp3');     // original piano and flute over the real sound of the waterfall he built
 AP.sound.register('rain',   AU + 'bed-rain-soft-46s.mp3');                // a soft sun shower, kept for later
 mosaic(); journalRows();
 AP.init();
