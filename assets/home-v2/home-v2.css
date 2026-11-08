@@ -706,3 +706,4 @@ html.gated body{overflow:hidden}
 .peaks-card{text-decoration:none;color:inherit;background:linear-gradient(120deg,#163a2a,#1d4a36);border-color:transparent}.peaks-card small{color:#E6C46A}.peaks-card h3{color:#F3EFE5}.peaks-card p{color:rgba(238,242,236,.86)}.peaks-card .go{font-weight:700;color:#E6C46A}
 .mag-plate img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 @media (max-width:600px){.mag-plate{height:210px}.mag-plate .cap{font-size:.72rem;left:.6rem;right:.6rem}}
+@media (max-width:980px){.thumbbar span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;max-width:100%;overflow-wrap:anywhere}}
