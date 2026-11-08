@@ -707,3 +707,8 @@ html.gated body{overflow:hidden}
 .mag-plate img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 @media (max-width:600px){.mag-plate{height:210px}.mag-plate .cap{font-size:.72rem;left:.6rem;right:.6rem}}
 @media (max-width:980px){.thumbbar span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;max-width:100%;overflow-wrap:anywhere}}
+/* the whole photograph of Masan, the boy and the dog: the frame takes the photograph's own shape instead of cropping it tall (Tony: "you cut me out of the pic with masan") */
+@media (min-width:981px){
+  .lamplight .photo{min-height:0;aspect-ratio:4/3;align-self:start;position:sticky;top:calc(var(--bar-h) + 24px)}
+}
+.lamplight .photo img{inset:-6% 0;height:112%;object-position:50% 55%}
