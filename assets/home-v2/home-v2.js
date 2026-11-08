@@ -186,7 +186,7 @@ function mosaic(){
     row.forEach((kind, c) => {
       if (kind === 'cta' || kind === 'cta2') {
         const a = document.createElement('a'); a.className = 'tile cta';
-        if (kind === 'cta') { a.href = 'https://www.youtube.com/playlist?list=PLjB4J2ZBlei6CgzNuXQzLxH9MG9pImafZ'; a.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><div><b>Come and see.</b><span>Videos of our communities, for anyone who wants to see or experience them.</span></div>'; }
+        if (kind === 'cta') { a.href = 'https://www.youtube.com/playlist?list=PLjB4J2ZBlei6CgzNuXQzLxH9MG9pImafZ'; a.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><div><b>Meditations for the morning.</b><span>A running playlist of guided sits, drum, and long-form quiet.</span></div>'; }
         else { a.href = 'https://www.youtube.com/watch?v=8kGuXxsbKYU'; a.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><div><b>The invitation, on film.</b><span>A minute from the redwoods.</span></div>'; }
         a.target = '_blank'; a.rel = 'noopener'; mr.appendChild(a); return;
       }
@@ -335,7 +335,7 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
   links.forEach(a => a.addEventListener('click', e => {
     const el = document.querySelector(a.getAttribute('href')); if (!el) return;
     e.preventDefault(); setOpen(false);
-    const off = -((document.getElementById('bar') || {}).offsetHeight || 0);
+    const bar = document.getElementById('bar'), off = bar ? -Math.max(bar.offsetHeight, bar.getBoundingClientRect().bottom) : 0;
     if (AP.lenis) AP.lenis.scrollTo(el, { offset: off, duration: 1.4 }); else el.scrollIntoView({ behavior: 'smooth' });
     history.replaceState(null, '', a.getAttribute('href'));
   }));
@@ -358,4 +358,60 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
 (function dockAfterOpening(){
   const f = () => document.documentElement.classList.toggle('at-top', scrollY < innerHeight * 0.7);
   f(); addEventListener('scroll', f, { passive: true }); addEventListener('resize', f);
+})();
+
+/* one sound at a time: the song, the spoken word and the film each quiet the page sound and each other */
+(function oneSound(){
+  const media = Array.from(document.querySelectorAll('.hear audio, #cfFilm video'));
+  media.forEach(m => m.addEventListener('play', () => {
+    media.forEach(o => { if (o !== m && !o.paused) o.pause(); });
+    if (window.AP && AP.sound && AP.sound.on) AP.sound.stop();
+  }));
+  const f = document.getElementById('cfFilm'); if (!f) return;
+  const v = f.querySelector('video'), b = f.querySelector('.cf-play');
+  b.addEventListener('click', () => { f.classList.add('is-playing'); v.controls = true; v.play(); });
+  v.addEventListener('ended', () => { f.classList.remove('is-playing'); v.controls = false; });
+})();
+
+/* the Global language strip rides above the bar at the top, and tucks away once the reader scrolls */
+(function strip(){
+  const f = () => document.documentElement.classList.toggle('past-strip', scrollY > 160);
+  f(); addEventListener('scroll', f, { passive: true });
+})();
+
+/* join, free: after two minutes on the site (counted only while the page is in view, across pages and visits),
+   the reader is asked to join the free list before exploring further. Joined readers never see it again.
+   Search engines and the page renderer are never asked. */
+(function gate(){
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', gate); return; }
+  const g = document.getElementById('gate'); if (!g) return;
+  const LIMIT = 120, ua = navigator.userAgent || '';
+  if (/bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(ua) || navigator.webdriver || /[?&]nogate\b/.test(location.search) || (window.AP && AP.render)) return;
+  const get = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+  const set = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+  if (get('ta-member') === '1') return;
+  let seen = Number(get('ta-seen-s')) || 0, shown = false;
+  function open(){
+    if (shown) return; shown = true;
+    g.hidden = false; requestAnimationFrame(() => g.classList.add('on'));
+    document.documentElement.classList.add('gated');
+    if (window.AP && AP.lenis) AP.lenis.stop();
+    const i = g.querySelector('input[type=email]'); if (i) setTimeout(() => i.focus({ preventScroll: true }), 400);
+  }
+  function close(){
+    set('ta-member', '1'); g.classList.remove('on');
+    document.documentElement.classList.remove('gated');
+    if (window.AP && AP.lenis) AP.lenis.start();
+    setTimeout(() => { g.hidden = true; }, 600);
+  }
+  g.querySelector('form').addEventListener('submit', () => {
+    const e = (g.querySelector('input[type=email]') || {}).value || '';
+    if (/.+@.+\..+/.test(e)) setTimeout(close, 2200);     // the thank-you shows, then the site opens
+  });
+  if (seen >= LIMIT) { open(); return; }
+  const tick = setInterval(() => {
+    if (document.visibilityState !== 'visible') return;
+    seen += 5; set('ta-seen-s', String(seen));
+    if (seen >= LIMIT) { clearInterval(tick); open(); }
+  }, 5000);
 })();
