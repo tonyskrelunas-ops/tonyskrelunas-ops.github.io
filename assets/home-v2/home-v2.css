@@ -703,3 +703,4 @@ html.gated body{overflow:hidden}
 /* the join step must never sit over the page while it is closed (Tony: "the links do not work") */
 .gate[hidden]{display:none!important}
 .gate:not(.on){pointer-events:none}
+.peaks-card{text-decoration:none;color:inherit;background:linear-gradient(120deg,#163a2a,#1d4a36);border-color:transparent}.peaks-card small{color:#E6C46A}.peaks-card h3{color:#F3EFE5}.peaks-card p{color:rgba(238,242,236,.86)}.peaks-card .go{font-weight:700;color:#E6C46A}
