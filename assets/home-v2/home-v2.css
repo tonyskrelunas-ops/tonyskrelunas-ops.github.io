@@ -743,3 +743,6 @@ html.gated body{overflow:hidden}
 .peaks-band .pb-phone{position:absolute;z-index:2;right:12%;top:50%;transform:translateY(-50%);width:min(34%,270px);aspect-ratio:9/16;border-radius:20px;overflow:hidden;box-shadow:0 28px 70px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.12);background:#100B0D}
 .peaks-band .pb-phone video{width:100%;height:100%;object-fit:cover;display:block}
 @media (max-width:980px){.peaks-band .pb-media{min-height:400px}.peaks-band .pb-phone{right:50%;transform:translate(50%,-50%);width:min(48%,200px)}}
+
+/* 11/8 same Safari fix as Ancestral Peaks: the phone card's video gets its own layer inside the rounded clip */
+.peaks-band .pb-phone{isolation:isolate;-webkit-mask-image:-webkit-radial-gradient(white,black)}
