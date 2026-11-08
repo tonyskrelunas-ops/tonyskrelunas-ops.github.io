@@ -389,6 +389,7 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
   if (/bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(ua) || navigator.webdriver || /[?&]nogate\b/.test(location.search) || (window.AP && AP.render)) return;
   const get = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
   const set = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+  if (/[?&](member|tony)\b/.test(location.search)) set('ta-member', '1');   // Tony's pass: open tribeawaken.com/?member once on each device
   if (get('ta-member') === '1') return;
   let seen = Number(get('ta-seen-s')) || 0, shown = false;
   function open(){
