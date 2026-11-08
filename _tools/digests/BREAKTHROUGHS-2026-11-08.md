@@ -42,9 +42,9 @@ KAVE HOME pone en valor el savoir-faire detrás de su mobiliario con su nueva se
 Aušros Vartuose baigiami restauravimo darbai – atnaujinami istoriniai fasadai, atkuriamos pirminės puošybos elementų formos ir spalvos, restauruojamos sieninės freskos. T  
 <https://www.lrt.lt/naujienos/kultura/12/3107069/ausros-vartuose-baigiami-restauravimo-darbai-atgims-vytis-ir-sv-kazimiero-atvaizdas>
 
-**Breast lumps? 90% aren’t cancer; here's what a radiation oncologist explains that every woman needs to know now** — Hindustan Times Health · INDIA  
-Discover that not all breast lumps are cancerous; 80-90% are benign. Learn when to seek medical advice and why early evaluation matters for breast health.  
-<https://www.hindustantimes.com/lifestyle/health/not-every-breast-lump-is-cancer-what-women-should-know-before-panicking-101793727564245.html>
+**Cancer risk reduction: Oncologist explains why healthy eating is not enough, shares what else matters** — Hindustan Times Health · INDIA  
+A balanced diet may support cancer risk reduction, but it is not enough on its own.  
+<https://www.hindustantimes.com/lifestyle/health/cancer-risk-reduction-oncologist-explains-why-healthy-eating-is-not-enough-shares-what-else-matters-101794139297135.html>
 
 **Full restoration, strengthening urged for US-funded Tibetan broadcast services** — Tibetan Review · TIBET  
 (TibetanReview.net, Nov07’26) – Washington-based Tibet advocacy group International Campaign for Tibet (ICT, savetibet.org) has on Nov 6 launched a report urging not only  
@@ -58,12 +58,6 @@ Discover that not all breast lumps are cancerous; 80-90% are benign. Learn when 
 These sources gave nothing this morning. A feed that stays on this
 list for a few days has moved or died and wants replacing.
 
-- **en** · news · Good News Network — unreachable
-- **lt** · culture · 15min Kultūra — unreachable
-- **lt** · animals · Gamtos tyrimai — unreachable
+- **en** · land · Western Horseman — unreachable
 - **lt** · news · Kauno diena — unreachable
-- **lt** · animals · — — nothing cleared the gates
-- **tibet** · news · Central Tibetan Administration — unreachable
-- **tibet** · research · Tibet Policy Institute — unreachable
-- **tibet** · culture · Tibet Museum — unreachable
 - **tibet** · culture · — — nothing cleared the gates

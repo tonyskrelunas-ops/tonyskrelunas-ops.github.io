@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T06:26:06",
+ "generated": "2026-11-08T17:55:03",
  "lead": null,
  "mine": [
   {
@@ -995,6 +995,14 @@
  ],
  "found": [
   {
+   "title": "Lucky Bird Found in Storm Drain a Mile From Home After Passing Driver Happens to Spot it Hopping in",
+   "url": "https://www.goodnewsnetwork.org/lucky-bird-found-in-storm-drain-a-mile-from-home/",
+   "dek": "A pet budgie that vanished when a storm blew open a kitchen window was found hiding in a storm drain a mile from home. Luna made her great escape from owner Cimberley Frost’s home in…",
+   "source": "Good News Network",
+   "date": "2026-11-08",
+   "lane": "news"
+  },
+  {
    "title": "What went right this week: the good news that matters",
    "url": "https://www.positive.news/society/good-news-stories-from-week-45-of-2026/",
    "dek": "Nature was restored at ‘unprecedented scale’, Barbados halted HIV transmission in babies, and a fuel revolution picked up speed, plus more The post What went right this week: the good news…",
@@ -1043,14 +1051,6 @@
    "lane": "running"
   },
   {
-   "title": "Natural Comfort. Trusted Performance. The 5 Star Difference.",
-   "url": "https://westernhorseman.com/mercantile/product-spotlight/sponsored-content/natural-comfort-trusted-performance-the-5-star-difference/",
-   "dek": "Discover the benefits of 5 Star fleece-lined wool saddle pads and fleece-lined natural mohair cinches with an extra layer of comfort. The post Natural Comfort. Trusted Performance. The 5…",
-   "source": "Western Horseman",
-   "date": "2026-11-01",
-   "lane": "land"
-  },
-  {
    "title": "Winter Savory: How to Grow and Use This Hardy Herb",
    "url": "https://www.hobbyfarms.com/from-the-herb-garden-winter-savory/",
    "dek": "Grow winter savory—a healthy, hearty herb that tolerates cold well—in your garden to add flavor and warmth to your winter dishes. The post Winter Savory: How to Grow and Use This Hardy Herb…",
@@ -1075,11 +1075,11 @@
    "lane": "animals"
   },
   {
-   "title": "Scientists discovered an unknown baby right whale off Canada. They say it’s a cause for joy",
-   "url": "https://news.mongabay.com/short-article/2026/11/scientists-discovered-an-unknown-baby-right-whale-off-canada-they-say-its-a-cause-for-joy/",
-   "dek": "PORTLAND, Maine (AP) — Scientists who study whales are heartened by an unexpected discovery of a baby right whale off Canada. Researchers in Canada captured images of an unidentified baby…",
+   "title": "Killing a dangerous coral",
+   "url": "https://news.mongabay.com/short-article/2026/11/killing-a-dangerous-coral/",
+   "dek": "A Brazilian biologist and a team of volunteer divers are killing coral to save a marine protected area just off the famous Ipanema beach. They’re manually removing sun coral, an invasive…",
    "source": "Mongabay",
-   "date": "2026-11-06",
+   "date": "2026-11-08",
    "lane": "animals"
   },
   {
@@ -1097,6 +1097,14 @@
    "source": "Smithsonian",
    "date": "2026-11-06",
    "lane": "culture"
+  },
+  {
+   "title": "Baby Saved After Racing Heartbeat Detected by Family Doberman",
+   "url": "https://www.goodnewsnetwork.org/baby-saved-as-racing-heartbeat-detected-by-pet/",
+   "dek": "A baby’s life was likely saved after his racing heartbeat was detected by the family dog—that wouldn’t stop crying. Kim Reynolds was confounded by her doberman’s unusual “needy” behavior…",
+   "source": "Good News Network",
+   "date": "2026-11-07",
+   "lane": "news"
   },
   {
    "title": "The butterfly effect: a brighter way to make paint?",
@@ -1128,14 +1136,6 @@
    "dek": "",
    "source": "Trail Runner",
    "date": "2026-10-29",
-   "lane": "running"
-  },
-  {
-   "title": "Maximilien Filion and Caroline Ash named Under Armour Athletes of the Week",
-   "url": "https://runningmagazine.ca/u-sports/maximilien-filion-and-caroline-ash-named-under-armour-athletes-of-the-week/",
-   "dek": "The Thunderbird and X-Woman both capped off undefeated conference seasons and now have their eyes on the U Sports Cross Country Championships The post Maximilien Filion and Caroline Ash…",
-   "source": "Canadian Running",
-   "date": "2026-11-06",
    "lane": "running"
   }
  ],
@@ -1313,9 +1313,9 @@
  ],
  "found_lt": [
   {
-   "title": "Pulmonologas E. Danila: moterys daug imlesnės tabako rūkymui ir vėžio atsiradimui",
-   "url": "https://www.bernardinai.lt/pulmonologas-e-danila-moterys-daug-imlesnes-tabako-rukymui-ir-vezio-atsiradimui/",
-   "dek": "Spalį katalikų bendruomenę sukrėtė žinia – popiežiui Leonui XIV nustatyta adenokarcinoma, dažniausia plaučių vėžio forma. Atlikus operaciją ir pašalinus dalį vieno plaučio, paskelbta, kad…",
+   "title": "Popiežius: motinos ir močiutės, niekada nepavarkite perduoti tikėjimo!",
+   "url": "https://www.bernardinai.lt/popiezius-motinos-ir-mociutes-niekada-nepavarkite-perduoti-tikejimo/",
+   "dek": "Sekmadienio rytą popiežius atvyko į už maždaug 100 km į šiaurę nuo Urugvajaus sostinės esantį Floridos miestą ir aukojo Mišias aikštėje šalia katedros, kuri yra ir Urugvajaus nacionalinė…",
    "source": "Bernardinai",
    "date": "2026-11-08",
    "lane": "news"
@@ -1329,11 +1329,19 @@
    "lane": "research"
   },
   {
-   "title": "Lapkričio „Kaunas pilnas kultūros“ kviečia atsigręžti į klasiką",
-   "url": "https://kaunaspilnas.lt/lapkricio-kaunas-pilnas-kulturos-kviecia-atsigrezti-i-klasika/",
-   "dek": "Patogu kiekvieną mėnesį skelbti naujienas – jų mieste niekuomet netrūksta. Vis kažkas atidaroma, startuojama, inicijuojama… Bet, srautą užpylus karštybėmis ir šviežienomis, kartkartėmis…",
+   "title": "Kartu lengviau žengti mokslininko keliu",
+   "url": "https://gamtostyrimai.lt/kartu-lengviau-zengti-mokslininko-keliu/",
+   "dek": "Lapkričio 4 d. Gamtos tyrimų centro Ankstyvosios karjeros tyrėjų komitetas organizavo susitikimą su pirmo kurso doktorantais! Susitikimo metu dr. Kristina Valavičiūtė-Pocienė pasidalijo…",
+   "source": "Gamtos tyrimai",
+   "date": "2026-11-05",
+   "lane": "animals"
+  },
+  {
+   "title": "Savaitė Kaune: šiuolaikinė muzika, atviras teatras, kabaretas Žaliakalnyje ir europietiški filmai (renginiai lapkričio 9–12 d.)",
+   "url": "https://kaunaspilnas.lt/savaite-kaune-siuolaikine-muzika-atviras-teatras-kabaretas-zaliakalnyje-ir-europietiski-filmai-renginiai-lapkricio-9-12-d/",
+   "dek": "PIRMADIENIS, 11 09 💃 Lietuviškų šokių vakaras, 18:00KMM Renginių salė, L. Zamenhofo g. 4 Tradicija tapęs vakaras kviečia susitikti, pajudėti ir pasinerti į tradicinių šokių ritmą. Čia…",
    "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-06",
+   "date": "2026-11-08",
    "lane": "culture"
   },
   {
@@ -1345,11 +1353,11 @@
    "lane": "culture"
   },
   {
-   "title": "Aušros Vartuose baigiami restauravimo darbai – atgims Vytis ir šv. Kazimiero atvaizdas",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3107069/ausros-vartuose-baigiami-restauravimo-darbai-atgims-vytis-ir-sv-kazimiero-atvaizdas",
-   "dek": "Aušros Vartuose baigiami restauravimo darbai – atnaujinami istoriniai fasadai, atkuriamos pirminės puošybos elementų formos ir spalvos, restauruojamos sieninės freskos. Tikimasi, kad darbus…",
+   "title": "Kolekcininkė apie Nidos dailininkų kolonijos istoriją: viską, kas vokiška, bandyta ištrint",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3003211/kolekcininke-apie-nidos-dailininku-kolonijos-istorija-viska-kas-vokiska-bandyta-istrint",
+   "dek": "Kuršių nerijos nuošalumas, pirmapradė gamta, archajiška kaimo žvejų buitis ir tik šiai vietai būdingi šviesos ir šešėlių žaismai nuo 19 a. vidurio į Nidą priviliojo ne vieną šimtą tapytojų…",
    "source": "LRT Kultūra",
-   "date": "2026-11-07",
+   "date": "2026-11-08",
    "lane": "culture"
   },
   {
@@ -1361,9 +1369,17 @@
    "lane": "research"
   },
   {
-   "title": "Šiuolaikinio cirko šventė: Kaune atidarytas jubiliejinis festivalis „Cirkuliacija“",
-   "url": "https://kaunaspilnas.lt/siuolaikinio-cirko-svente-kaune-atidarytas-jubiliejinis-festivalis-cirkuliacija/",
-   "dek": "Lietuvių kūrėjų premjera Kaune prasidėjo dešimtasis tarptautinis šiuolaikinio cirko festivalis „Cirkuliacija“, šiemet skirtas šventei – džiaugsmui kurti, patirti ir atrasti šiuolaikinį…",
+   "title": "Tarpdisciplininio bendradarbiavimo sėkmės istorija",
+   "url": "https://gamtostyrimai.lt/tarpdisciplininio-bendradarbiavimo-sekmes-istorija/",
+   "dek": "Gamtos tyrimų centro Genetikos laboratorijos mokslininkai kartu su VU Gyvybės mokslų centro Biomokslų instituto tyrėjais paskelbė publikaciją viename iš labiausiai cituojamų žurnalų…",
+   "source": "Gamtos tyrimai",
+   "date": "2026-11-05",
+   "lane": "animals"
+  },
+  {
+   "title": "Lapkričio „Kaunas pilnas kultūros“ kviečia atsigręžti į klasiką",
+   "url": "https://kaunaspilnas.lt/lapkricio-kaunas-pilnas-kulturos-kviecia-atsigrezti-i-klasika/",
+   "dek": "Patogu kiekvieną mėnesį skelbti naujienas – jų mieste niekuomet netrūksta. Vis kažkas atidaroma, startuojama, inicijuojama… Bet, srautą užpylus karštybėmis ir šviežienomis, kartkartėmis…",
    "source": "Kaunas pilnas kultūros",
    "date": "2026-11-06",
    "lane": "culture"
@@ -1377,36 +1393,20 @@
    "lane": "culture"
   },
   {
-   "title": "Kuklaus būdo genijus, gyvenimą baigęs skurde: architekto Vaclovo Michnevičiaus (pa)likimas",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3090207/kuklaus-budo-genijus-gyvenima-baiges-skurde-architekto-vaclovo-michneviciaus-pa-likimas",
-   "dek": "Halės turgus, Senasis ir Nacionalinis dramos teatrai, Kauno mečetė – architekto Vaclovo Michnevičiaus darbai pažįstami daugeliui. Kur kas mažiau pažintas jo gyvenimas, asmenybė. V…",
+   "title": "Aušros Vartuose baigiami restauravimo darbai – atgims Vytis ir šv. Kazimiero atvaizdas",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3107069/ausros-vartuose-baigiami-restauravimo-darbai-atgims-vytis-ir-sv-kazimiero-atvaizdas",
+   "dek": "Aušros Vartuose baigiami restauravimo darbai – atnaujinami istoriniai fasadai, atkuriamos pirminės puošybos elementų formos ir spalvos, restauruojamos sieninės freskos. Tikimasi, kad darbus…",
    "source": "LRT Kultūra",
    "date": "2026-11-07",
    "lane": "culture"
   },
   {
-   "title": "Archyviniai duomenys apie dr. Jono Basanavičiaus turtinę ir finansinę padėtį",
-   "url": "https://mokslolietuva.lt/2026/11/archyviniai-duomenys-apie-dr-jono-basanaviciaus-turtine-ir-finansine-padeti/",
-   "dek": "Gausus dr. Ivano Basanovičiaus paliktas susirašinėjimas apima dokumentus, leidžiančius objektyviai atkurti jo materialinę ir finansinę padėtį Bulgarijoje. Atsižvelgiant į to …",
-   "source": "Mokslo Lietuva",
-   "date": "2026-11-06",
-   "lane": "research"
-  },
-  {
-   "title": "„Kitybės kartografijos“ kviečia kvestionuoti tapatybę formuojančias sistemas",
-   "url": "https://kaunaspilnas.lt/kitybes-kartografijos-kviecia-kvestionuoti-tapatybe-formuojancias-sistemas/",
-   "dek": "Nuo lapkričio 13 d. galerijoje „Meno parkas“ veiks paroda „Kitybės kartografijos“. Jos dėmesio centre – nykstančios ribos, iš naujo konstruojamos nacionalinės vėliavos ir pėdsakų…",
-   "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-04",
-   "lane": "culture"
-  },
-  {
-   "title": "Signatarų namų gotikiniuose rūsiuose – Rūtos Spelskytės meninė instaliacija",
-   "url": "https://lnm.lt/aktualijos/signataru-namu-gotikiniuose-rusiuose-rutos-spelskytes-menine-instaliacija/",
-   "dek": "Ką gali atskleisti prieš kelis šimtmečius pagaminta keramikos šukė? Kokias istorijas slepia gėlių ir paukščių atvaizdai bei kokią informaciją geba išsaugoti molis? Atsakymų į šiuos…",
-   "source": "Nacionalinis muziejus",
-   "date": "2026-10-21",
-   "lane": "culture"
+   "title": "Kaip paukščiai randa kelią į Afriką ir grįžta į Lietuvą? Jų navigacija slepia daugiau, nei galėjome įsivaizduoti (Paukščių ekologijos laboratorija)",
+   "url": "https://gamtostyrimai.lt/kaip-pauksciai-randa-kelia-i-afrika-ir-grizta-i-lietuva-ju-navigacija-slepia-daugiau-nei-galejome-isivaizduoti-pauksciu-ekologijos-laboratorija/",
+   "dek": "The post Kaip paukščiai randa kelią į Afriką ir grįžta į Lietuvą? Jų navigacija slepia daugiau, nei galėjome įsivaizduoti (Paukščių ekologijos laboratorija) appeared first on Gamtos tyrimų…",
+   "source": "Gamtos tyrimai",
+   "date": "2026-11-03",
+   "lane": "animals"
   }
  ],
  "found_india": [
@@ -1427,9 +1427,9 @@
    "lane": "news"
   },
   {
-   "title": "Breast lumps? 90% aren’t cancer; here's what a radiation oncologist explains that every woman needs to know now",
-   "url": "https://www.hindustantimes.com/lifestyle/health/not-every-breast-lump-is-cancer-what-women-should-know-before-panicking-101793727564245.html",
-   "dek": "Discover that not all breast lumps are cancerous; 80-90% are benign. Learn when to seek medical advice and why early evaluation matters for breast health.",
+   "title": "Cancer risk reduction: Oncologist explains why healthy eating is not enough, shares what else matters",
+   "url": "https://www.hindustantimes.com/lifestyle/health/cancer-risk-reduction-oncologist-explains-why-healthy-eating-is-not-enough-shares-what-else-matters-101794139297135.html",
+   "dek": "A balanced diet may support cancer risk reduction, but it is not enough on its own.",
    "source": "Hindustan Times Health",
    "date": "2026-11-08",
    "lane": "running"
@@ -1475,11 +1475,11 @@
    "lane": "news"
   },
   {
-   "title": "Before You Buy: From added sugar to preservatives, what to check when choosing packaged flavoured oats",
-   "url": "https://www.hindustantimes.com/lifestyle/health/before-you-buy-from-added-sugar-to-preservatives-what-to-check-when-choosing-packaged-flavoured-oats-101794031455133.html",
-   "dek": "Those flavoured oats may not be as healthy as you think. Here's what to check before buying oats for your breakfast.",
+   "title": "Breast lumps? 90% aren’t cancer; here's what a radiation oncologist explains that every woman needs to know now",
+   "url": "https://www.hindustantimes.com/lifestyle/health/not-every-breast-lump-is-cancer-what-women-should-know-before-panicking-101793727564245.html",
+   "dek": "Discover that not all breast lumps are cancerous; 80-90% are benign. Learn when to seek medical advice and why early evaluation matters for breast health.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-07",
+   "date": "2026-11-08",
    "lane": "running"
   }
  ],
