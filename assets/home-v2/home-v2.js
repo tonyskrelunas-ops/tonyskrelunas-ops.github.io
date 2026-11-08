@@ -455,12 +455,12 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
   bar.appendChild(b); dock.appendChild(bar);
 })();
 
-/* 11/8 the opening, calmer and lighter: Tony saw the yard film "fast and loops then goes off" on his phone. Both opening
+/* 11/8 the opening, long and calm (Tony: "make it play long if someone stays there and stop if they scroll down"): Tony saw the yard film "fast and loops then goes off" on his phone. Both opening
    clips were decoding at once even while one was hidden, and the 14-second waterfall looped often. Now the clip that is
    not showing rests, and both play at 0.8 speed, so the water moves slower and the loop comes round less often. */
 (function heroRest(){
   const cut = document.querySelector('.arrive .ap-cut'); if (!cut) return;
-  const RATE = 0.8;
+  const RATE = 1.0;   // the clips themselves are now long half-speed versions (38 s and 27 s on screen), so they play at their own pace
   setInterval(() => {
     const r = cut.getBoundingClientRect(); const inView = r.bottom > 0 && r.top < innerHeight;
     cut.querySelectorAll('.shot').forEach(s => {
