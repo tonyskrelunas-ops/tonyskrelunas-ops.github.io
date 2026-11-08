@@ -712,3 +712,8 @@ html.gated body{overflow:hidden}
   .lamplight .photo{min-height:0;aspect-ratio:4/3;align-self:start;position:sticky;top:calc(var(--bar-h) + 24px)}
 }
 .lamplight .photo img{inset:-6% 0;height:112%;object-position:50% 55%}
+/* invited by: the hosts, in other people's names, right under the first screen */
+.invited{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.45rem .9rem;padding:14px var(--gutter);background:#0F1A20;color:rgba(230,236,234,.86);font-size:.9rem;text-align:center}
+.invited b{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:#E6C46A;margin-right:.2rem}
+.invited i{font-style:normal;opacity:.45}
+.work-outcome{max-width:46rem;margin:.6rem 0 0;font-size:clamp(1.02rem,.96rem + .3vw,1.15rem);color:var(--ink)}
