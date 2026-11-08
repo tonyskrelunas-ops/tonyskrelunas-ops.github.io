@@ -717,3 +717,16 @@ html.gated body{overflow:hidden}
 .invited b{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:#E6C46A;margin-right:.2rem}
 .invited i{font-style:normal;opacity:.45}
 .work-outcome{max-width:46rem;margin:.6rem 0 0;font-size:clamp(1.02rem,.96rem + .3vw,1.15rem);color:var(--ink)}
+/* ---------- Ancestral Peaks, the practice: a full band right after the Stone Breath ---------- */
+.peaks-band{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);min-height:min(88vh,820px);background:#100B0D;color:#F3EFE5}
+.peaks-band .pb-media{position:relative;overflow:hidden}
+.peaks-band .pb-media .ap-loop{position:absolute;inset:0}
+.peaks-band .pb-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,11,13,0) 55%,#100B0D 100%)}
+.peaks-band .pb-text{display:flex;flex-direction:column;justify-content:center;gap:.8rem;padding:clamp(32px,5vw,80px) var(--gutter)}
+.peaks-band .label{color:#E6C46A}
+.peaks-band h2{color:#F3EFE5;font-size:clamp(2rem,1.3rem + 2.4vw,3.4rem);max-width:18ch}
+.peaks-band p{color:rgba(238,242,236,.86);max-width:36rem;font-size:clamp(1.02rem,.96rem + .3vw,1.16rem)}
+.peaks-band .btn.ghost{color:#F3EFE5;border-color:rgba(243,239,229,.45)}
+.peaks-band .fine{font-size:.88rem;opacity:.75}
+.ta-bar .ap-nav a.peaks-nav{color:#E6C46A;opacity:1}
+@media (max-width:980px){.peaks-band{grid-template-columns:1fr}.peaks-band .pb-media{min-height:56vw}.peaks-band .pb-media::after{background:linear-gradient(180deg,rgba(16,11,13,0) 60%,#100B0D)}}
