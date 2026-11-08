@@ -415,3 +415,30 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
     if (seen >= LIMIT) { clearInterval(tick); open(); }
   }, 5000);
 })();
+
+/* the thumb bar on the phone: Breathe, the Magazine, the Books, and every section, made from the page's own
+   section list so it reads in whatever language the page is in */
+(function thumbbar(){
+  if (!matchMedia('(max-width:980px)').matches) return;
+  const dock = document.getElementById('secDock'); if (!dock) return;
+  const label = h => { const a = dock.querySelector('a[href="' + h + '"]'); return a ? a.textContent.trim() : ''; };
+  const ico = {
+    listen: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"/><circle cx="12" cy="12" r="8.5" opacity=".55"/></svg>',
+    magazine: '<svg viewBox="0 0 24 24"><path d="M4 5h12v14H6a2 2 0 0 1-2-2z"/><path d="M16 8h4v9a2 2 0 0 1-2 2h-2"/><path d="M7 9h6M7 12h6M7 15h4"/></svg>',
+    books: '<svg viewBox="0 0 24 24"><path d="M5 4h4v16H5zM10 4h4v16h-4z"/><path d="M15.5 5.2l3.6-.9 3 15.5-3.6.9z"/></svg>',
+    all: '<svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14"/></svg>'
+  };
+  const bar = document.createElement('div'); bar.className = 'thumbbar';
+  const short = t => t.replace(/^(Take a |The )/, '');
+  [['#listen', 'listen'], ['#magazine', 'magazine'], ['#books', 'books']].forEach(([h, k]) => {
+    const a = document.createElement('a'); a.href = h; a.innerHTML = ico[k] + '<span></span>'; a.querySelector('span').textContent = short(label(h)) || k;
+    a.addEventListener('click', e => { const el = document.querySelector(h); if (!el) return; e.preventDefault(); const off = -((document.getElementById('bar') || {}).offsetHeight || 0); if (window.AP && AP.lenis) AP.lenis.scrollTo(el, { offset: off, duration: 1.3 }); else el.scrollIntoView({ behavior: 'smooth' }); });
+    bar.appendChild(a);
+  });
+  const t = dock.querySelector('.sec-toggle'), b = document.createElement('button');
+  b.type = 'button'; b.setAttribute('aria-expanded', 'false'); b.innerHTML = ico.all + '<span></span>'; b.querySelector('span').textContent = (t && t.textContent.trim()) || 'Sections';
+  b.addEventListener('click', e => { e.stopPropagation(); const o = !dock.classList.contains('open'); dock.classList.toggle('open', o); b.setAttribute('aria-expanded', String(o)); });
+  document.addEventListener('click', e => { if (!dock.contains(e.target)) { dock.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); } });
+  dock.querySelectorAll('ol a').forEach(a => a.addEventListener('click', () => { dock.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }));
+  bar.appendChild(b); dock.appendChild(bar);
+})();
