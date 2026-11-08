@@ -34,16 +34,16 @@
               (document.documentElement.lang || 'en').slice(0, 2));
 
   var SAID = {
-    en: { ok:  'Thank you — that reached Tony.',
+    en: { ok:  'Thank you — that reached us.',
           sub: 'The magazine turns every morning; the letter comes once a week.',
           err: 'That did not go through. Try once more, or write to tony@tribeawaken.com.' },
-    es: { ok:  'Gracias — le llegó a Tony.',
+    es: { ok:  'Gracias — nos llegó.',
           sub: 'La revista cambia cada mañana; la carta llega una vez por semana.',
           err: 'No se envió. Inténtelo otra vez, o escriba a tony@tribeawaken.com.' },
-    ja: { ok:  'ありがとうございます — トニーに届きました。',
+    ja: { ok:  'ありがとうございます — 私たちに届きました。',
           sub: '誌面は毎朝入れ替わり、お便りは週に一度届きます。',
           err: '送信できませんでした。もう一度お試しください。' },
-    lt: { ok:  'Ačiū — Tony tai gavo.',
+    lt: { ok:  'Ačiū — gavome.',
           sub: 'Žurnalas keičiasi kas rytą; laiškas ateina kartą per savaitę.',
           err: 'Nepavyko išsiųsti. Pabandykite dar kartą.' }
   };
