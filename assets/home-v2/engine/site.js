@@ -148,7 +148,7 @@ AP.smooth = function(){
   if (!AP.gsap || !AP.ST) return;
   AP.gsap.registerPlugin(AP.ST);
   if (window.Lenis && AP.motion && !AP.flat) {
-    AP.lenis = new window.Lenis({ lerp: 0.085, smoothWheel: true, wheelMultiplier: 0.9 });
+    AP.lenis = new window.Lenis({ lerp: 0.14, smoothWheel: true, wheelMultiplier: 1 });   // 11/7: crisper, so the page stops when the hand stops (was lerp 0.085, a long glide on laptop trackpads)
     AP.lenis.on('scroll', AP.ST.update);
     AP.gsap.ticker.add(time => AP.lenis.raf(time * 1000));
     AP.gsap.ticker.lagSmoothing(0);
