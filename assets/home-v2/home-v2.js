@@ -454,3 +454,21 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
   dock.querySelectorAll('ol a').forEach(a => a.addEventListener('click', () => { dock.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }));
   bar.appendChild(b); dock.appendChild(bar);
 })();
+
+/* 11/8 the opening, calmer and lighter: Tony saw the yard film "fast and loops then goes off" on his phone. Both opening
+   clips were decoding at once even while one was hidden, and the 14-second waterfall looped often. Now the clip that is
+   not showing rests, and both play at 0.8 speed, so the water moves slower and the loop comes round less often. */
+(function heroRest(){
+  const cut = document.querySelector('.arrive .ap-cut'); if (!cut) return;
+  const RATE = 0.8;
+  setInterval(() => {
+    const r = cut.getBoundingClientRect(); const inView = r.bottom > 0 && r.top < innerHeight;
+    cut.querySelectorAll('.shot').forEach(s => {
+      const v = s.querySelector('video'); if (!v) return;
+      if (v.playbackRate !== RATE) { v.defaultPlaybackRate = RATE; v.playbackRate = RATE; }
+      const on = inView && parseFloat(getComputedStyle(s).opacity) > 0.02;
+      if (!on && !v.paused) v.pause();
+      else if (on && v.paused && v.getAttribute('src') && document.visibilityState === 'visible') v.play().catch(() => {});
+    });
+  }, 400);
+})();
