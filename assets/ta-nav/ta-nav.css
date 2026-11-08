@@ -1,0 +1,56 @@
+/* TribeAwaken site menu: the same green language strip, dark bar and full menu as the home page, on every page (11/7/2026) */
+html body .tan,html body .tan *{box-sizing:border-box}
+html body .tan{position:sticky;top:0;z-index:2000;font-family:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+html body .tan a{text-decoration:none!important;color:inherit;border:0}
+html body .tan-strip{height:34px;display:flex;align-items:center;gap:clamp(.9rem,1.6vw,1.6rem);padding:0 clamp(16px,4vw,64px);background:#1B5530;color:#EEF2EC;font-size:.82rem;font-weight:600;white-space:nowrap;overflow-x:auto;scrollbar-width:none;transition:margin-top .35s ease}
+html body .tan-strip::-webkit-scrollbar{display:none}
+html body .tan-strip>*{flex:none}
+html body .tan-strip .tan-lbl{display:flex;align-items:center;gap:.4rem;color:#E6C46A;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+html body .tan-strip .tan-lbl svg{width:15px;height:15px}
+html body .tan-strip a{opacity:.92;padding:.25em 0;border-bottom:2px solid transparent!important}
+html body .tan-strip a:hover{opacity:1;border-bottom-color:rgba(230,196,106,.6)!important}
+html body .tan-strip a.on{border-bottom-color:#E6C46A!important;opacity:1}
+html body .tan-strip .tan-soon{opacity:.5;font-weight:500}
+html body .tan-strip .tan-mail{margin-left:auto;color:#B9E0C4}
+html.tan-scrolled body .tan-strip{margin-top:-34px}
+html body .tan-bar{height:72px;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0 clamp(16px,4vw,64px);background:rgba(22,34,42,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#E9EEEC;box-shadow:0 1px 0 rgba(255,255,255,.06)}
+html body .tan-mark{display:flex;align-items:center;gap:.7rem;font-family:"Fraunces","Iowan Old Style",Georgia,serif;font-weight:800;font-size:1.55rem;letter-spacing:-.01em;color:#F3EFE5!important}
+html body .tan-mark img{width:44px;height:42px;object-fit:contain;filter:brightness(1.6) saturate(.6)}
+html body .tan-mark span{color:#B9D2C4}
+html body .tan-nav{display:flex;align-items:center;gap:clamp(1.2rem,2.2vw,2.4rem);font-weight:600;font-size:.95rem;margin:0 auto}
+html body .tan-nav>a,html body .tan-drop>button{position:relative;padding:.3em 0;opacity:.9;white-space:nowrap}
+html body .tan-nav>a:hover,html body .tan-nav>a.on{opacity:1}
+html body .tan-nav>a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:currentColor;transition:right .35s ease}
+html body .tan-nav>a:hover::after,html body .tan-nav>a.on::after{right:0}
+html body .tan-drop{position:relative}
+html body .tan-drop>button{background:none;border:0;color:inherit;font:inherit;font-weight:600;cursor:pointer;padding-right:1.1em}
+html body .tan-drop>button::after{content:"";position:absolute;right:.15em;top:50%;width:.4em;height:.4em;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-70%) rotate(45deg)}
+html body .tan-drop .tan-dd{position:absolute;left:50%;top:calc(100% + 12px);transform:translate(-50%,6px);min-width:19rem;background:rgba(22,34,42,.97);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:.5rem;box-shadow:0 20px 50px rgba(0,0,0,.4);opacity:0;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s}
+html body .tan-drop .tan-dd::before{content:"";position:absolute;left:0;right:0;top:-14px;height:14px}
+html body .tan-drop:hover .tan-dd,html body .tan-drop:focus-within .tan-dd,html body .tan-drop.open .tan-dd{opacity:1;visibility:visible;transform:translate(-50%,0)}
+html body .tan-dd a{display:flex;flex-direction:column;gap:.15rem;padding:.7rem .85rem;border-radius:10px;color:#F3EFE5}
+html body .tan-dd a:hover{background:rgba(255,255,255,.08)}
+html body .tan-dd b{font-family:"Fraunces",Georgia,serif;font-size:1rem}
+html body .tan-dd span{font-size:.8rem;font-weight:500;color:rgba(220,228,226,.75)}
+html body .tan-acts{display:flex;align-items:center;gap:.75rem}
+html body .tan-write{display:inline-flex;align-items:center;padding:.65em 1.15em;border-radius:999px;background:#1C5BA8;color:#fff!important;font-weight:700;font-size:.92rem}
+html body .tan-burger{position:relative;display:flex;align-items:center;height:42px;padding:0 44px 0 15px;border:1px solid currentColor;border-radius:999px;background:none;color:inherit;font:inherit;font-weight:600;font-size:.92rem;cursor:pointer}
+html body .tan-burger i{position:absolute;right:14px;width:20px;height:2px;background:currentColor;transition:transform .35s,opacity .35s}
+html body .tan-burger i:nth-child(1){top:14px}html body .tan-burger i:nth-child(2){top:20px}html body .tan-burger i:nth-child(3){top:26px}
+html.tan-menu-open body .tan-burger i:nth-child(1){transform:translateY(6px) rotate(45deg)}
+html.tan-menu-open body .tan-burger i:nth-child(2){opacity:0}
+html.tan-menu-open body .tan-burger i:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+html body .tan-menu{position:fixed;inset:0;z-index:1999;background:#16222A;color:#fff;display:grid;grid-template-rows:1fr auto;padding:calc(106px + 24px) clamp(16px,4vw,64px) 28px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;overflow-y:auto}
+html.tan-menu-open body .tan-menu{opacity:1;visibility:visible}
+html.tan-menu-open body{overflow:hidden}
+html body .tan-menu nav{display:flex;flex-direction:column;justify-content:center;gap:.15em}
+html body .tan-menu nav a,html body .tan-menu .tan-duo{font-family:"Fraunces",Georgia,serif;font-weight:800;font-size:clamp(1.9rem,8vw,3rem);letter-spacing:-.03em;line-height:1.15;color:#fff}
+html body .tan-menu small{display:block;font-family:"Hanken Grotesk",Arial,sans-serif;font-weight:500;font-size:.85rem;letter-spacing:0;color:rgba(255,255,255,.6);margin-bottom:.4em}
+html body .tan-menu .tan-duo i{font-style:normal;opacity:.55;font-weight:500}
+html body .tan-menu .tan-foot{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:center;justify-content:space-between;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.14)}
+html body .tan-menu .tan-foot span a{margin-right:1rem;font-weight:600}
+@media (max-width:1100px){html body .tan-nav{display:none}}
+@media (max-width:980px){html body .tan-write{display:none}html body .tan-mark{font-size:1.35rem}html body .tan-mark img{width:38px;height:36px}html body .tan-strip{font-size:.78rem;gap:1rem}html body .tan-strip .tan-lbl span{display:none}}
+@media print{html body .tan{display:none}}
+html body .tan-menu a{text-decoration:none!important;border:0;color:#fff}
+html body .tan-menu .tan-foot .tan-write{display:inline-flex!important}
