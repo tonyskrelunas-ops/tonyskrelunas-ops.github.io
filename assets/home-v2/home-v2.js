@@ -389,6 +389,7 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
   if (/bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(ua) || navigator.webdriver || /[?&]nogate\b/.test(location.search) || (window.AP && AP.render)) return;
   const get = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
   const set = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+  if (/[?&](member|tony)\b/.test(location.search)) set('ta-member', '1');   // Tony's pass: open tribeawaken.com/?member once on each device
   if (get('ta-member') === '1') return;
   let seen = Number(get('ta-seen-s')) || 0, shown = false;
   function open(){
@@ -421,7 +422,7 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
 (function thumbbar(){
   if (!matchMedia('(max-width:980px)').matches) return;
   const dock = document.getElementById('secDock'); if (!dock) return;
-  const label = h => { const a = dock.querySelector('a[href="' + h + '"]'); return a ? a.textContent.trim() : ''; };
+  const label = h => { const a = dock.querySelector('a[href="' + h + '"]'); return a ? (a.dataset.short || a.textContent.trim()) : ''; };
   const ico = {
     listen: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"/><circle cx="12" cy="12" r="8.5" opacity=".55"/></svg>',
     magazine: '<svg viewBox="0 0 24 24"><path d="M4 5h12v14H6a2 2 0 0 1-2-2z"/><path d="M16 8h4v9a2 2 0 0 1-2 2h-2"/><path d="M7 9h6M7 12h6M7 15h4"/></svg>',
