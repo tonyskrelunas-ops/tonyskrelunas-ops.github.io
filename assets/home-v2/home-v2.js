@@ -255,6 +255,17 @@ AP.sound.register('rain',   AU + 'bed-rain-soft-46s.mp3');                // a s
 /* on a laptop the film fills the screen, so it plays the wide cut of the same two scenes */
 const wide = matchMedia('(min-width:981px)').matches;
 if (wide) $$('[data-src-wide]').forEach(el => { el.dataset.src = el.dataset.srcWide; if (el.dataset.posterWide) el.dataset.poster = el.dataset.posterWide; });
+/* on a phone the tall loops play a 720x1280 copy: the same picture with far less memory, so the page does not close near the bottom */
+else $$('[data-src-phone]').forEach(el => { el.dataset.src = el.dataset.srcPhone; if (el.dataset.posterPhone) el.dataset.poster = el.dataset.posterPhone; });
+/* the playlist loads YouTube only when someone presses play; until then it is one picture and a button */
+$$('.yt-go').forEach(btn => btn.addEventListener('click', () => {
+  const f = document.createElement('iframe');
+  f.src = 'https://www.youtube.com/embed/videoseries?list=' + btn.dataset.list + '&autoplay=1';
+  f.title = btn.dataset.title || '';
+  f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+  f.allowFullscreen = true;
+  btn.replaceWith(f);
+}, { once: true }));
 mosaic(); journalRows();
 AP.init();
 /* the opening always sounds like the garden. At load the scene watcher can land on a later band,
