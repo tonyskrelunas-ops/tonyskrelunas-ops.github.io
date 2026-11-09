@@ -27,6 +27,14 @@ h1{font-weight:400;font-size:38px;line-height:1.05;letter-spacing:-.01em;margin:
 .btn{display:flex;align-items:center;justify-content:center;min-height:52px;padding:12px 16px;border-radius:999px;text-decoration:none;font-size:17px;border:1px solid var(--ink);transition:background .2s,color .2s}
 .btn.main{grid-column:1/-1;background:var(--ink);color:var(--cream)}
 .btn:active{opacity:.8}
+.photos{padding:26px 0 4px}
+.photos h2{font-weight:400;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--goldtxt);margin:0 22px 6px}
+.photos p{margin:0 22px 14px;color:var(--soft);font-size:16px}
+.strip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 22px 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.strip a{flex:0 0 68%;scroll-snap-align:start;display:block}
+.strip img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;background:#e9e1cf}
+@media (min-width:700px){.strip a{flex-basis:46%}}
 .breath{margin:30px 0 0;padding:34px 22px 30px;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .breath h2{font-weight:400;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--goldtxt);margin:0 0 10px}
 .breath p{margin:0 0 6px;color:var(--soft);font-size:17px}
@@ -62,6 +70,16 @@ h1{font-weight:400;font-size:38px;line-height:1.05;letter-spacing:-.01em;margin:
     <a class="btn" href="tel:+19288530048">Call</a>
     <a class="btn" href="mailto:tony.tribeawaken@gmail.com">Email</a>
   </nav>
+  <section class="photos" aria-label="Photographs">
+    <h2>Photographs</h2>
+    <p>Tap any photo for the full size, for programs and introductions.</p>
+    <div class="strip">
+      <a href="media/photo-hat-turquoise-full-609x1134.jpg"><img src="media/photo-hat-turquoise-609x761.jpg" width="609" height="761" loading="lazy" alt="Tony in a cream felt hat and a turquoise necklace"></a>
+      <a href="media/photo-arms-crossed-full-1000x1250.jpg"><img src="media/photo-arms-crossed-800x1000.jpg" width="800" height="1000" loading="lazy" alt="Tony standing with arms crossed, smiling"></a>
+      <a href="media/photo-redwoods-stones-full-1600x2000.jpg"><img src="media/photo-redwoods-stones-800x1000.jpg" width="800" height="1000" loading="lazy" alt="Tony kneeling beside a redwood, sorting river stones"></a>
+      <a href="media/photo-hand-stone-full-1600x2000.jpg"><img src="media/photo-hand-stone-800x1000.jpg" width="800" height="1000" loading="lazy" alt="An open hand holding a single river stone beside a waterfall"></a>
+    </div>
+  </section>
   <section class="breath" aria-label="The Stone Breath">
     <h2>The Stone Breath</h2>
     <p>Hold a stone lightly in your hand, or only imagine one. Follow the light around the ring: in four, hold four, out six, hold four. Five times.</p>
