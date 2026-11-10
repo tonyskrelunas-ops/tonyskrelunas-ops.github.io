@@ -431,7 +431,7 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
 /* the thumb bar on the phone: Breathe, the Magazine, the Books, and every section, made from the page's own
    section list so it reads in whatever language the page is in */
 (function thumbbar(){
-  /* phones and, since 11/10, laptops too (Tony: "it needs to also float on the webpage for laptops") */
+  if (!matchMedia('(max-width:980px)').matches) return;
   const dock = document.getElementById('secDock'); if (!dock) return;
   const label = h => { const a = dock.querySelector('a[href="' + h + '"]'); return a ? (a.dataset.short || a.textContent.trim()) : ''; };
   const ico = {
@@ -441,16 +441,6 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
     all: '<svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14"/></svg>'
   };
   const bar = document.createElement('div'); bar.className = 'thumbbar';
-  /* Home first (Tony, 11/10: "the bottom floating bar should have home"): back to the top of this home page */
-  (function(){
-    const lang = (document.documentElement.lang || 'en').slice(0, 2);
-    const word = { es: 'Inicio', ja: 'ホーム', lt: 'Pradžia' }[lang] || 'Home';
-    const a = document.createElement('a'); a.href = location.pathname; a.className = 'tb-home';
-    a.innerHTML = '<svg viewBox="0 0 24 24"><path d="M4 11.5 12 4.5l8 7"/><path d="M6 10v9h4.5v-5h3v5H18v-9"/></svg><span></span>';
-    a.querySelector('span').textContent = word;
-    a.addEventListener('click', e => { e.preventDefault(); if (window.AP && AP.lenis) AP.lenis.scrollTo(0); else window.scrollTo({ top: 0, behavior: 'smooth' }); });
-    bar.appendChild(a);
-  })();
   const short = t => t.replace(/^(Take a |The )/, '');
   [['#listen', 'listen'], ['#magazine', 'magazine'], ['#books', 'books']].forEach(([h, k]) => {
     const a = document.createElement('a'); a.href = h; a.innerHTML = ico[k] + '<span></span>'; a.querySelector('span').textContent = short(label(h)) || k;
