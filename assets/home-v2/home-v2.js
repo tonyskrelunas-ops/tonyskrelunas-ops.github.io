@@ -431,7 +431,7 @@ window.seek = async t => { await AP.seekPage(t, { hold: 8, end: 48 }); return tr
 /* the thumb bar on the phone: Breathe, the Magazine, the Books, and every section, made from the page's own
    section list so it reads in whatever language the page is in */
 (function thumbbar(){
-  if (!matchMedia('(max-width:980px)').matches) return;
+  /* phones and, since 11/10, laptops too (Tony: "it needs to also float on the webpage for laptops") */
   const dock = document.getElementById('secDock'); if (!dock) return;
   const label = h => { const a = dock.querySelector('a[href="' + h + '"]'); return a ? (a.dataset.short || a.textContent.trim()) : ''; };
   const ico = {

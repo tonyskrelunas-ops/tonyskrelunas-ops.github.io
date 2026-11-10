@@ -132,7 +132,7 @@
       var a = new Audio(); a.preload = 'none'; a.src = el.getAttribute('data-src'); ALL_AUDIO.push(a);
       var btn = $('.h6-say__btn', el), fg = $('.fg', el), time = $('.h6-say__time', el), fill = $('.h6-say__fill', el), bar = $('.h6-say__bar', el);
       var dur = Number(el.getAttribute('data-dur')) || 0;
-      if (time && dur) time.textContent = fmt(dur) + (el.hasAttribute('data-masked') ? ' · spoken in a masked voice' : '');
+      if (time && dur) time.textContent = fmt(dur) + (el.hasAttribute('data-masked') ? '' : '');
       btn.addEventListener('click', function () { if (a.paused) { pauseOthers(a); a.play(); } else a.pause(); });
       a.addEventListener('play', function () { el.classList.add('is-playing'); btn.setAttribute('aria-label', 'Pause'); });
       a.addEventListener('pause', function () { el.classList.remove('is-playing'); btn.setAttribute('aria-label', 'Play'); });
