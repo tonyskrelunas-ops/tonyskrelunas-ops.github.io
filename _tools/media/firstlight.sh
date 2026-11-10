@@ -29,13 +29,13 @@ case "$look" in
   lift) grade="eq=contrast=1.22:brightness=0.03:saturation=1.08,curves=r='0/0 0.7/0.74 1/1':b='0/0 0.7/0.68 1/0.95'";;
   keep) grade="null";;
   *) echo "unknown look $look" >&2; exit 2;; esac
-finish="split[fa][fb];[fb]gblur=sigma=18[fbl];[fa][fbl]blend=all_mode=screen:all_opacity=0.20,vignette=PI/5${grain},format=yuv420p"
+finish="format=gbrp,split[fa][fb];[fb]gblur=sigma=18[fbl];[fa][fbl]blend=all_mode=screen:all_opacity=0.20,vignette=PI/5${grain},format=yuv420p"   # blend in RGB: blending YUV planes tints highlights purple
 
 tmp="$(mktemp -d)"; trap 'rm -rf "$tmp"' EXIT
 trim=(); [ -n "$from" ] && trim+=(-ss "$from"); [ -n "$to" ] && trim+=(-to "$to")
 pre="fps=30"; [ -n "$size" ] && pre="$pre,scale=${size/x/:}:flags=lanczos"
 if [ "$slow" != "1" ]; then pre="$pre,setpts=${slow}*PTS,minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1"; fi
-ffmpeg -v error -y "${trim[@]}" -i "$in" -an -vf "$pre,$grade,$finish" -c:v libx264 -crf 14 -preset fast "$tmp/a.mp4"
+ffmpeg -v error -y ${trim[@]+"${trim[@]}"} -i "$in" -an -vf "$pre,$grade,$finish" -c:v libx264 -crf 14 -preset fast "$tmp/a.mp4"
 L=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$tmp/a.mp4")
 case "$loop" in
   xfade)

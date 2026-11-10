@@ -1,6 +1,6 @@
 /* TribeAwaken home v5 (preview)
    1. the Japanese thread: ink mountains and cedars in drifting mist, drawn live on a canvas (nothing photographed, nothing generated elsewhere)
-   2. the music: a koto in the Japanese thread, strings over a heartbeat drum in the world section, only when the visitor has the sound on */
+   2. no music made in the browser: recorded sources only */
 (function(){
 'use strict';
 const sec = document.getElementById('japan'), cv = document.getElementById('ink');
@@ -67,54 +67,8 @@ addEventListener('resize', () => { size(); if (still || !visible) draw(12, still
 if ('IntersectionObserver' in window) new IntersectionObserver(es => { visible = es[0].isIntersecting; kick(); music('japan', visible); }, { rootMargin: '10% 0px' }).observe(sec);
 else { visible = true; kick(); }
 
-/* ---------- 2. the music ---------- */
-/* Plucked strings made in the browser (Karplus-Strong), so nothing is downloaded and it is never the same twice.
-   The Japanese thread: a koto in the in-sen scale on D.  Culture in motion: brighter strings in an open five-note scale over a slow heartbeat drum.
-   It only sounds when the visitor has turned the site's sound on, and it stops when the section leaves the screen. */
-const MODES = {
-  japan: { notes: [146.83, 196.00, 220.00, 293.66, 311.13, 392.00, 440.00, 523.25, 587.33], gap: [2600, 4200], step: [0.28, 0.9], gain: 0.34, drum: false },
-  world: { notes: [196.00, 220.00, 246.94, 293.66, 329.63, 392.00, 440.00, 493.88, 587.33], gap: [3000, 3600], step: [0.4, 0.5], gain: 0.26, drum: true }
-};
-const bufs = {}, seen = {}; let timer = 0, mode = null, bus = null;
-function pluck(c, f){
-  if (bufs[f]) return bufs[f];
-  const sr = c.sampleRate, n = Math.floor(sr * 4.2), b = c.createBuffer(1, n, sr), d = b.getChannelData(0), N = Math.round(sr / f), line = new Float32Array(N);
-  let prev = 0; for (let i = 0; i < N; i++) { const w = Math.random() * 2 - 1; prev = prev * 0.45 + w * 0.55; line[i] = prev; }   // a soft pick
-  let idx = 0; const damp = 0.9965 - Math.min(0.004, f / 200000);
-  for (let i = 0; i < n; i++) { const nx = (idx + 1) % N, v = (line[idx] + line[nx]) * 0.5 * damp; d[i] = line[idx]; line[idx] = v; idx = nx; }
-  for (let i = 0; i < 90; i++) d[i] *= i / 90;
-  return (bufs[f] = b);
-}
-function ensureBus(S){
-  if (bus) return bus; const c = S.ctx;
-  bus = c.createGain(); bus.gain.value = 0.34;
-  const dl = c.createDelay(1.2), fb = c.createGain(), lp = c.createBiquadFilter(), wet = c.createGain();
-  dl.delayTime.value = 0.37; fb.gain.value = 0.34; lp.type = 'lowpass'; lp.frequency.value = 2400; wet.gain.value = 0.42;
-  bus.connect(S.fx || c.destination); bus.connect(dl); dl.connect(lp); lp.connect(fb); fb.connect(dl); lp.connect(wet); wet.connect(S.fx || c.destination);
-  return bus;
-}
-function thump(c, out, at, level){   // a frame drum: a low tone that falls, with a soft skin tap on top
-  const o = c.createOscillator(), g = c.createGain(); o.type = 'sine';
-  o.frequency.setValueAtTime(92, at); o.frequency.exponentialRampToValueAtTime(48, at + 0.22);
-  g.gain.setValueAtTime(0.0001, at); g.gain.exponentialRampToValueAtTime(level, at + 0.012); g.gain.exponentialRampToValueAtTime(0.0001, at + 0.7);
-  o.connect(g); g.connect(out); o.start(at); o.stop(at + 0.8);
-}
-function phrase(){
-  timer = 0; const S = AP.sound, M = MODES[mode]; if (!M || !S || !S.on || !S.ctx) return;
-  const c = S.ctx, out = ensureBus(S), duck = S._duck || 1; out.gain.setTargetAtTime(M.gain, c.currentTime, 0.4);
-  let at = c.currentTime + 0.05;
-  if (M.drum) { thump(c, out, at, 0.9 * duck); thump(c, out, at + 0.34, 0.55 * duck); at += 0.9; }
-  const count = 1 + Math.floor(Math.random() * 3); let k = Math.floor(Math.random() * M.notes.length);
-  for (let i = 0; i < count; i++) {
-    const src = c.createBufferSource(), g = c.createGain(); src.buffer = pluck(c, M.notes[k]);
-    g.gain.value = (0.5 + Math.random() * 0.4) * duck; src.connect(g); g.connect(out); src.start(at);
-    at += M.step[0] + Math.random() * M.step[1]; k = Math.max(0, Math.min(M.notes.length - 1, k + (Math.random() < 0.5 ? -1 : 1) * (1 + Math.floor(Math.random() * 2))));
-  }
-  timer = setTimeout(phrase, M.gap[0] + Math.random() * M.gap[1]);
-}
-function retune(){ const next = seen.japan ? 'japan' : seen.world ? 'world' : null; if (next === mode) return; mode = next; if (timer) { clearTimeout(timer); timer = 0; } if (mode && !still) timer = setTimeout(phrase, 900); }
-function music(name, on){ seen[name] = on; retune(); }
-addEventListener('ap:sound', e => { if (e.detail && e.detail.on) { if (mode && !timer) timer = setTimeout(phrase, 1200); } else if (timer) { clearTimeout(timer); timer = 0; } });
-const world = document.getElementById('global');
-if (world && 'IntersectionObserver' in window) new IntersectionObserver(es => music('world', es[0].isIntersecting), { rootMargin: '-20% 0px' }).observe(world);
+/* ---------- 2. sound ----------
+   No music is made in the browser. Tony's rule (11/10): recorded sources only. The site's own sound
+   (the recorded rain, creek and fire beds) carries this page when the visitor turns sound on. */
+function music(){}
 })();

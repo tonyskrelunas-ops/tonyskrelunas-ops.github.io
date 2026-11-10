@@ -62,3 +62,14 @@ html.flat .japan{min-height:860px}
 .japan.ja p{line-height:1.9}
 .japan.ja .label{letter-spacing:.3em}
 .japan.ja h2,.japan.ja blockquote{word-break:auto-phrase;text-wrap:balance}
+
+/* real Japan footage behind the Japanese thread: three loops crossfade on wide screens, one on phones */
+.japan .jp-film{position:absolute;inset:0;z-index:0;overflow:hidden}
+.japan .jp-film .ap-loop{position:absolute;inset:0;opacity:0;animation:jpfade 27s linear infinite}
+.japan .jp-film .ap-loop:nth-child(2){animation-delay:9s}
+.japan .jp-film .ap-loop:nth-child(3){animation-delay:18s}
+@keyframes jpfade{0%{opacity:0}6%{opacity:1}33%{opacity:1}39%{opacity:0}100%{opacity:0}}
+.japan .ink{opacity:.42;mix-blend-mode:screen}
+.japan .jp-note{position:absolute;left:var(--gutter);bottom:clamp(10px,2vh,18px);z-index:2;margin:0;font-size:.7rem;letter-spacing:.06em;color:rgba(220,230,232,.62)}
+@media (max-width:760px){.japan .jp-film .ap-loop:not(:first-child){display:none}.japan .jp-film .ap-loop:first-child{animation:none;opacity:1}.japan .jp-note{position:static;padding:0 var(--gutter) 18px}}
+@media (prefers-reduced-motion:reduce){.japan .jp-film .ap-loop{animation:none}.japan .jp-film .ap-loop:first-child{opacity:1}}
