@@ -1,0 +1,115 @@
+/* TRIBEAWAKEN — the two pillar front doors, v3 — 2026-11-10
+   Sits on the home page's system: engine/site.css + home-v2.css (tokens, bar, menu, section dock, footer, buttons, ap-loop).
+   One rhythm, repeated: a full-width picture or film, then a short row of words underneath it, then the next.
+   One type scale. Daylight ground. Nothing is drawn over a film: no captions on film, no blends, no filters, no canvas.
+   Page class: html.door (not .pillars, which home-v2.css styles as the home's own section). */
+
+html.door{scroll-padding-top:calc(var(--bar-h) + 12px)}
+.door main{overflow-x:clip;padding-top:calc(var(--bar-h) + var(--strip-h,34px))}
+.door main p{margin:0 0 .9rem}
+.door main p:last-child{margin-bottom:0}
+.door .label{font-weight:700;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:0 0 .8rem}
+.door main .acts{display:flex;flex-wrap:wrap;gap:.7rem 1.1rem;align-items:center;margin-top:1.2rem}
+.door main .acts a.more{font-size:.95rem}
+.door .fine{font-size:.86rem;color:var(--ink-2)}
+
+/* ---------- the media band: full width, edge to edge; a still or a film loop; never anything on top of it ---------- */
+.door .band{position:relative;overflow:hidden;background:#dfe6dc;width:100%}
+.door .band>img:not(.cover),.door .band>.ap-loop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.door .band>img:not(.cover){object-position:50% 45%}
+.door .band{height:clamp(360px,52vw,760px)}
+.door .band.tall{height:clamp(420px,62vw,860px)}
+.door .band.short{height:clamp(260px,38vw,520px)}
+.door .band.inset{width:auto;margin:0 var(--gutter);border-radius:4px}
+/* a cover standing in the band, on a still picture only */
+.door .band .cover{position:absolute;z-index:2;right:clamp(16px,5vw,90px);bottom:clamp(16px,4vw,56px);width:min(22vw,210px);border-radius:3px;box-shadow:0 30px 60px -22px rgba(0,0,0,.65);transform:rotate(-2.5deg)}
+/* three covers standing on the water */
+.door .band.shelf{display:grid;place-items:end center;padding-bottom:clamp(20px,5vw,72px)}
+.door .band.shelf .covers{position:relative;z-index:2;display:flex;align-items:flex-end;gap:clamp(10px,2vw,28px)}
+.door .band.shelf .covers img{width:clamp(96px,16vw,210px);border-radius:3px;box-shadow:0 36px 60px -24px rgba(0,0,0,.7);transform:rotate(-2deg)}
+.door .band.shelf .covers img:nth-child(2){width:clamp(112px,19vw,250px);transform:none;margin-bottom:10px}
+.door .band.shelf .covers img:nth-child(3){transform:rotate(2deg)}
+
+/* ---------- the row of words under every band: a small mark on the left, the words on the right ---------- */
+.door .row{display:grid;grid-template-columns:minmax(10rem,.3fr) minmax(0,1fr);gap:1rem clamp(2rem,5vw,6rem);padding:clamp(34px,4.6vw,72px) var(--gutter) clamp(44px,6vw,96px);align-items:start}
+.door .row .mark{display:flex;flex-direction:column;gap:.35rem;padding-top:.5rem}
+.door .row .mark .n{font-family:var(--display);font-weight:300;font-size:1.5rem;letter-spacing:-.03em;line-height:1;color:var(--creek)}
+.door .row .mark .k{font-weight:700;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.door .row .mark .cap{font-size:.84rem;line-height:1.45;color:var(--ink-2);margin-top:.6rem;max-width:16rem}
+.door .row .words{max-width:46rem}
+.door .row h2{font-size:clamp(1.65rem,1.2rem + 1.5vw,2.6rem);margin:0 0 1rem;max-width:22ch}
+.door .row p{max-width:40rem}
+.door .row p.lede{max-width:42rem}
+.door .row.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem clamp(2rem,5vw,6rem)}
+.door .row.two h2{max-width:18ch}
+
+/* ---------- the arrival: the film under the bar, then the headline row ---------- */
+.door .arrival .row{padding-bottom:clamp(28px,4vw,56px);grid-template-rows:auto 1fr}
+.door .arrival .row .mark{grid-column:1;grid-row:1}
+.door .arrival .row .words{grid-column:2;grid-row:1/3}
+.door .arrival .row .bookline{grid-column:1;grid-row:2;align-self:start}
+.door .arrival h1{font-size:clamp(2.3rem,1.45rem + 2.9vw,4.4rem);margin:0 0 1.1rem;max-width:16ch}
+.door .arrival .row p{max-width:42rem}
+.door .bookline{display:flex;align-items:center;gap:.9rem;text-decoration:none;color:var(--ink);max-width:22rem;margin-top:.2rem}
+.door .bookline img{width:48px;height:72px;object-fit:cover;border-radius:3px;box-shadow:0 10px 24px -10px rgba(0,0,0,.5);flex:none}
+.door .bookline b{display:block;font-family:var(--display);font-size:1.02rem;color:var(--blue-deep);line-height:1.15}
+.door .bookline small{display:block;color:var(--ink-2);font-size:.82rem;line-height:1.35;margin-top:.2rem}
+.door .bookline:hover b{color:var(--blue)}
+
+/* ---------- the directory: the shape of the page, in one short list ---------- */
+.door .dir{margin:0 var(--gutter);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(18px,2.4vw,30px) 0;display:grid;grid-template-columns:minmax(10rem,.3fr) minmax(0,1fr);gap:1rem clamp(2rem,5vw,6rem);align-items:start}
+.door .dir .label{margin:0;padding-top:.45rem}
+.door .dir ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.4rem 2rem}
+.door .dir a{display:grid;grid-template-columns:1.7rem minmax(0,1fr);gap:.5rem;align-items:baseline;padding:.42rem 0;text-decoration:none;color:var(--ink)}
+.door .dir a i{font-style:normal;font-family:var(--display);font-weight:300;font-size:1rem;color:var(--creek)}
+.door .dir a b{font-family:var(--display);font-weight:700;font-size:1.04rem;color:var(--blue-deep);letter-spacing:-.01em;display:block;line-height:1.2}
+.door .dir a span{display:block;color:var(--ink-2);font-size:.86rem;margin-top:.15rem;line-height:1.35}
+.door .dir a:hover b{color:var(--blue)}
+
+/* ---------- the ledger: a few short entries on hairlines, no boxes ---------- */
+.door .ledger{list-style:none;margin:1.4rem 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(1.5rem,4vw,4rem)}
+.door .ledger li{border-top:1px solid var(--line);padding:.9rem 0 1rem}
+.door .ledger h3{font-size:1.08rem;margin:0 0 .3rem;letter-spacing:-.01em}
+.door .ledger p{font-size:.95rem;color:var(--ink-2);margin:0;max-width:30rem}
+.door .ledger p q{font-family:var(--display);color:var(--ink);quotes:"\201C" "\201D"}
+.door .ledger a.more{font-size:.86rem;border-bottom-width:1px}
+
+/* ---------- the quote row: one line of his, large, then a line under it ---------- */
+.door .row blockquote{margin:0 0 1rem;font-family:var(--display);font-weight:700;font-size:clamp(1.55rem,1.15rem + 1.5vw,2.6rem);line-height:1.12;letter-spacing:-.02em;color:var(--blue-deep);max-width:24ch}
+.door .row blockquote cite{display:block;font-style:normal;font-family:var(--text);font-weight:600;font-size:.86rem;letter-spacing:.04em;color:var(--ink-2);margin-top:.8rem}
+
+/* ---------- the footer sits straight on the daylight page ---------- */
+.door .ta-foot{margin-top:0}
+
+/* ---------- the phone: the same order, the picture tall, one column ---------- */
+@media (max-width:980px){
+  .door .band,.door .band.tall{height:auto;aspect-ratio:4/5}
+  .door .band.short{height:auto;aspect-ratio:4/3}
+  .door .band.inset{margin:0}
+  .door .band .cover{width:min(30vw,150px);right:14px;bottom:14px}
+  .door .band.shelf{padding-bottom:9vw}
+  .door .band.shelf .covers img{width:24vw}
+  .door .band.shelf .covers img:nth-child(2){width:28vw}
+  .door .row{grid-template-columns:1fr;gap:.9rem;padding:clamp(22px,6vw,32px) var(--gutter) clamp(34px,9vw,52px)}
+  .door .row .mark{flex-direction:row;align-items:baseline;gap:.7rem;padding-top:0}
+  .door .row .mark .n{font-size:1.2rem}
+  .door .row .mark .cap{display:none}
+  .door .row h2{max-width:none}
+  .door .row.two{grid-template-columns:1fr;gap:2rem}
+  .door .arrival h1{max-width:none}
+  .door .arrival .row{grid-template-rows:none}
+  .door .arrival .row .mark,.door .arrival .row .words,.door .arrival .row .bookline{grid-column:1;grid-row:auto}
+  .door .arrival .row .bookline{margin-top:.6rem;padding-top:1.2rem;border-top:1px solid var(--line);max-width:none}
+  .door .dir{grid-template-columns:1fr;gap:.4rem}
+  .door .dir ol{grid-template-columns:1fr;gap:0}
+  .door .dir li{border-top:1px solid var(--line)}
+  .door .dir li:first-child{border-top:0}
+  .door .dir a{padding:.55rem 0}
+  .door .ledger{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  .door .bookline img{width:42px;height:63px}
+}
+@media (prefers-reduced-motion:reduce){
+  .door .band>.ap-loop>video{display:none}
+}
