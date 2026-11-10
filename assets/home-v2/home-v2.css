@@ -763,3 +763,7 @@ html.gated body{overflow:hidden}
   .sec-dock > ol a span.t{max-width:none;opacity:1}
   .sec-dock > ol a:hover{background:rgba(255,255,255,.08)}
 }
+
+/* 11/10: five on the floating bar now, Home first */
+.thumbbar{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+@media (min-width:981px){.sec-dock{width:min(660px,calc(100vw - 48px))}}
