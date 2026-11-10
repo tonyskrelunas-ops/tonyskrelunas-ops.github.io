@@ -15,8 +15,8 @@ html.door{scroll-padding-top:calc(var(--bar-h) + 12px)}
 
 /* ---------- the media band: full width, edge to edge; a still or a film loop; never anything on top of it ---------- */
 .door .band{position:relative;overflow:hidden;background:#dfe6dc;width:100%}
-.door .band>img:not(.cover),.door .band>.ap-loop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.door .band>img:not(.cover){object-position:50% 45%}
+.door .band>img:not(.cover),.door .band>picture,.door .band>picture>img,.door .band>.ap-loop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.door .band>img:not(.cover),.door .band>picture>img{object-position:50% 45%}
 .door .band{height:clamp(360px,52vw,760px)}
 .door .band.tall{height:clamp(420px,62vw,860px)}
 .door .band.short{height:clamp(260px,38vw,520px)}
