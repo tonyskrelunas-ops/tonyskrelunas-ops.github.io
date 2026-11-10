@@ -32,6 +32,8 @@
 <link rel="stylesheet" href="/assets/home-v2/engine/vendor/lenis.css">
 <link rel="stylesheet" href="/assets/home-v2/engine/site.css">
 <link rel="stylesheet" href="/assets/home-v2/home-v2.css?v=20261108c">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&display=swap">
+<link rel="stylesheet" href="/assets/home-v5/home-v5.css?v=20261110c">
 </head>
 <body>
 
@@ -103,8 +105,8 @@
 <section class="arrive" id="top" data-scene="garden" data-scene-label="夜明けの光のなかの、庭の滝" data-bar="light">
   <div class="cutwrap" id="cutwrap">
     <div class="glow" aria-hidden="true">
-      <img class="g a" src="/assets/home-v2/img/garden-first-light-misty-dawn-poster-720.jpg" alt="">
-      <img class="g b" src="/assets/home-v2/img/garden-waterfall-misty-dawn-poster-720.jpg" alt="">
+      <img class="g a" src="/assets/home-v5/video/first-light-through-the-aspens-tall-poster.jpg" alt="">
+      <img class="g b" src="/assets/home-v5/video/the-stone-waterfall-tall-poster.jpg" alt="">
     </div>
     <canvas class="fx mist" id="mist" aria-hidden="true"></canvas>
     <div class="sun" aria-hidden="true"></div>
@@ -136,10 +138,12 @@
     <figure class="framecol">
       <div class="portrait" id="portrait">
         <div class="ap-cut" id="cut" data-fade="3.4">
-          <div class="shot" data-dur="38" data-name="夜明けの光と霧、松林のあいだに"><div class="ap-loop" data-src="/assets/home-v2/video/garden-first-light-misty-720x1280-dawn-slow.mp4" data-poster="/assets/home-v2/img/garden-first-light-misty-dawn-poster-720.jpg" data-src-wide="/assets/home-v2/video/garden-first-light-misty-1280x720-dawn-slow.mp4" data-poster-wide="/assets/home-v2/img/garden-first-light-misty-dawn-poster-1280.jpg"></div></div>
-          <div class="shot" data-dur="27" data-name="朝霧のなかの滝"><div class="ap-loop" data-src="/assets/home-v2/video/garden-waterfall-misty-720x1280-dawn-slow.mp4" data-poster="/assets/home-v2/img/garden-waterfall-misty-dawn-poster-720.jpg" data-src-wide="/assets/home-v2/video/garden-waterfall-misty-1280x720-dawn-slow.mp4" data-poster-wide="/assets/home-v2/img/garden-waterfall-misty-dawn-poster-1280.jpg"></div></div>
+          <div class="shot" data-dur="30" data-name="夜明けの光と霧、松林のあいだに"><div class="ap-loop" data-src="/assets/home-v5/video/first-light-through-the-aspens-tall.mp4" data-poster="/assets/home-v5/video/first-light-through-the-aspens-tall-poster.jpg" data-src-wide="/assets/home-v5/video/first-light-through-the-aspens-wide.mp4" data-poster-wide="/assets/home-v5/video/first-light-through-the-aspens-wide-poster.jpg"></div></div>
+          <div class="shot" data-dur="15" data-name="朝霧のなかの滝"><div class="ap-loop" data-src="/assets/home-v5/video/the-stone-waterfall-tall.mp4" data-poster="/assets/home-v5/video/the-stone-waterfall-tall-poster.jpg" data-src-wide="/assets/home-v5/video/the-stone-waterfall-wide.mp4" data-poster-wide="/assets/home-v5/video/the-stone-waterfall-wide-poster.jpg"></div></div>
+          <div class="shot" data-dur="14" data-name="岩を越えていく水"><div class="ap-loop" data-src="/assets/home-v5/video/the-creek-running-cold-tall.mp4" data-poster="/assets/home-v5/video/the-creek-running-cold-tall-poster.jpg" data-src-wide="/assets/home-v5/video/the-creek-running-cold-wide.mp4" data-poster-wide="/assets/home-v5/video/the-creek-running-cold-wide-poster.jpg"></div></div>
         </div>
         <canvas class="fx mist3" id="mist3" aria-hidden="true"></canvas>
+        <div class="v5-grain" aria-hidden="true"></div>
       </div>
       <figcaption><b>私がつくった庭と滝、夜明けの光のなかで。</b><span id="shotName">夜明けの光と霧、松林のあいだに</span></figcaption>
     </figure>
@@ -211,6 +215,8 @@
   <path d="M 12,60 C 48,34 152,34 188,60 L 179,74 C 147,52 53,52 21,74 Z"/>
 </svg><span class="w" lang="ja">ようこそ</span><span class="l">日本語</span></a>
 </div>
+
+<div class="v5-band" aria-hidden="true"><i class="dine"></i><i class="lt"></i><i class="jp"></i></div>
 
 <!-- ===== BY LAMPLIGHT: the guide's story ===== -->
 <section class="lamplight" id="about" data-scene="hearth" data-scene-label="ランプと炉辺" data-bar="light" data-wx="warm">
@@ -304,6 +310,24 @@
       <div class="ap-player compact" style="margin-top:1rem" data-src="/assets/home-v2/audio/session-before-we-start-creek-bed.mp3" data-title="はじめる前に · セッション全編" data-sub="六分間。夜明けの小川、あなたを呼ぶ小石、呼吸を一巡。声の下には小川の流れ。" data-visual="ripples" data-duration="364" data-color="#2E8540" data-color2="#E0A400"></div>
     </div>
     <div class="ringcol"><div id="ring" aria-live="polite"></div></div>
+  </div>
+</section>
+
+<!-- ===== 日本の糸: ink mountains in mist, his own words from Stone Breath (Japanese edition) ===== -->
+<section class="japan ja" id="japan" data-scene="creek" data-scene-label="杉木立にかかる霧">
+  <canvas class="ink" id="ink" aria-hidden="true"></canvas>
+  <div class="jp-lantern" aria-hidden="true"></div>
+  <div class="jp-in">
+    <div class="jp-text">
+      <p class="label reveal">日本の糸</p>
+      <h2 class="reveal">灯油ランプの灯りで、私は日本を学びました。</h2>
+      <p class="reveal">あの山には電気もテレビもありませんでした。だから私のテレビは本と想像力でした。郵便で山を上ってくる本を頼りに、私は灯油ランプの灯りで日本とスイスを学び、その世界を思い描きました。</p>
+      <p class="reveal">『Stone Breath』の日本の糸は、私自身の糸が始まったところから始まります。一人の少年と、灯油ランプと、遠い道のりを経て彼のもとへたどり着いた本から。各章にひとつずつ、二十二の道具。出会ったことのない三つの民——ディネ、リトアニア、日本——が、それぞれに同じ答えへたどり着いたものです。</p>
+      <blockquote class="reveal">「日本では、ひびを隠しません。金で埋めるのです。」<cite>『Stone Breath』より</cite></blockquote>
+      <div class="acts reveal"><a class="btn light" href="/ja/ishi-no-kokyu-sekai-e/">日本の糸を読む <span class="arrow">&rarr;</span></a><a class="more" href="/ja/ishi-no-kokyu/">石の呼吸 &rarr;</a><a class="more" href="/ja/okinawa-to-hogan/">沖縄とホーガン &rarr;</a></div>
+    </div>
+    <div class="jp-v"><span class="big">石の呼吸</span><span class="small">一期一会</span></div>
+    <p class="jp-gloss"><span>一期一会</span> 一生に一度の出会い</p>
   </div>
 </section>
 
@@ -594,6 +618,7 @@
 <script src="/assets/home-v2/engine/site.js?v=20261107s"></script>
 <script src="/js/magazine.js" defer></script>
 <script src="/assets/home-v2/home-v2.js?v=20261108c"></script>
+<script src="/assets/home-v5/home-v5.js?v=20261110c" defer></script>
 <!-- ===== JOIN, FREE: after two minutes on the site the reader is asked to join the free list (Tony, 11/7: "no one should just go in and explore my website without a membership.. its free.. they join mailing list") ===== -->
 <div class="gate" id="gate" hidden role="dialog" aria-modal="true" aria-labelledby="gateTitle">
   <div class="gate-card">

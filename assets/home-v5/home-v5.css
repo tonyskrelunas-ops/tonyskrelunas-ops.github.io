@@ -47,3 +47,18 @@ html.render .v5-grain,html.flat .v5-grain{animation:none}
   .japan h2{max-width:none}
 }
 html.flat .japan{min-height:860px}
+
+/* ---------- 3. the woven band: Diné weaving, the Lithuanian sash, the Japanese wave, from Tony's own line drawings ---------- */
+.v5-band{display:grid;grid-template-columns:repeat(3,1fr);gap:0;height:44px;background:#f3efe5;border-block:1px solid rgba(20,40,30,.1)}
+.v5-band i{display:block;height:100%;-webkit-mask-size:auto 190%;mask-size:auto 190%;-webkit-mask-repeat:repeat-x;mask-repeat:repeat-x;-webkit-mask-position:0 34%;mask-position:0 34%;opacity:.8}
+.v5-band .dine{background:#b4582f;-webkit-mask-image:url(/assets/art/dine-weaving.svg);mask-image:url(/assets/art/dine-weaving.svg)}
+.v5-band .lt{background:#2e8540;-webkit-mask-image:url(/assets/art/baltic-juosta.svg);mask-image:url(/assets/art/baltic-juosta.svg)}
+.v5-band .jp{background:#124279;-webkit-mask-image:url(/assets/art/japan-seigaiha.svg);mask-image:url(/assets/art/japan-seigaiha.svg)}
+@media (max-width:980px){.v5-band{height:34px}}
+
+/* ---------- 4. the Japanese edition sets this section in Mincho ---------- */
+.japan.ja h2,.japan.ja blockquote{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;font-weight:700;letter-spacing:.02em;line-height:1.35}
+.japan.ja h2{font-size:clamp(1.6rem,1.1rem + 1.7vw,2.5rem);max-width:none}
+.japan.ja p{line-height:1.9}
+.japan.ja .label{letter-spacing:.3em}
+.japan.ja h2,.japan.ja blockquote{word-break:auto-phrase;text-wrap:balance}

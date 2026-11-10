@@ -4,7 +4,7 @@
 # real contrast (not a flat blue wash), soft bloom, fine grain. Makes a seamless loop and a poster.
 #
 #   _tools/media/firstlight.sh IN.mp4 OUT_BASENAME [options]
-#     --look dawn|day|lift|keep   dawn = cool early morning (default); day = neutral daylight polish;
+#     --look dawn|deepdawn|day|lift|keep   dawn = cool early morning (default); deepdawn = the same, darker; day = neutral daylight polish;
 #                            lift = put contrast back into a clip that was already graded flat; keep = no colour change
 #     --slow N               slow-motion factor with motion interpolation (default 1 = real speed)
 #     --loop xfade|pingpong|none   xfade = dissolve the end into the start (water); pingpong = forward then back (light, leaves)
@@ -24,6 +24,7 @@ while [ $# -gt 0 ]; do case "$1" in
 
 case "$look" in
   dawn) grade="eq=brightness=-0.07:contrast=1.06:saturation=0.78,curves=r='0/0 0.3/0.22 0.7/0.70 1/0.97':g='0/0.01 0.3/0.26 0.7/0.71 1/0.97':b='0/0.05 0.3/0.33 0.7/0.72 1/0.93'";;
+  deepdawn) grade="eq=brightness=-0.13:contrast=1.08:saturation=0.70,curves=r='0/0 0.3/0.21 0.7/0.68 1/0.95':g='0/0.01 0.3/0.25 0.7/0.70 1/0.96':b='0/0.05 0.3/0.33 0.7/0.72 1/0.94'";;
   day)  grade="eq=contrast=1.05:saturation=0.94,curves=r='0/0 0.5/0.51 1/1':b='0/0.02 0.5/0.49 1/0.97'";;
   lift) grade="eq=contrast=1.22:brightness=0.03:saturation=1.08,curves=r='0/0 0.7/0.74 1/1':b='0/0 0.7/0.68 1/0.95'";;
   keep) grade="null";;
