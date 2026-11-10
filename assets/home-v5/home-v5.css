@@ -73,3 +73,8 @@ html.flat .japan{min-height:860px}
 .japan .jp-note{position:absolute;left:var(--gutter);bottom:clamp(10px,2vh,18px);z-index:2;margin:0;font-size:.7rem;letter-spacing:.06em;color:rgba(220,230,232,.62)}
 @media (max-width:760px){.japan .jp-film .ap-loop:not(:first-child){display:none}.japan .jp-film .ap-loop:first-child{animation:none;opacity:1}.japan .jp-note{position:static;padding:0 var(--gutter) 18px}}
 @media (prefers-reduced-motion:reduce){.japan .jp-film .ap-loop{animation:none}.japan .jp-film .ap-loop:first-child{opacity:1}}
+
+/* ---------- phones and tablets: nothing blended over moving video ----------
+   The animated grain (blended over the opening films) and the ink canvas (blended over the Japan film)
+   crashed Safari on iPhone on 11/10. On touch screens and narrow windows both are off. */
+@media (hover:none),(max-width:980px){.v5-grain{display:none!important;animation:none!important}.japan .ink{display:none!important}}
