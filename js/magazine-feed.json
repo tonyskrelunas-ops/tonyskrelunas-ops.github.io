@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T22:17:07",
+ "generated": "2026-11-10T05:12:19",
  "lead": null,
  "mine": [
   {
@@ -1051,11 +1051,27 @@
    "lane": "running"
   },
   {
+   "title": "Natural Comfort. Trusted Performance. The 5 Star Difference.",
+   "url": "https://westernhorseman.com/mercantile/product-spotlight/sponsored-content/natural-comfort-trusted-performance-the-5-star-difference/",
+   "dek": "Discover the benefits of 5 Star fleece-lined wool saddle pads and fleece-lined natural mohair cinches with an extra layer of comfort. The post Natural Comfort. Trusted Performance. The 5…",
+   "source": "Western Horseman",
+   "date": "2026-11-01",
+   "lane": "land"
+  },
+  {
    "title": "Egg Cocktails: 7 Farm-Fresh Recipes",
    "url": "https://www.hobbyfarms.com/use-your-eggs-in-these-7-summertime-cocktails/",
    "dek": "Egg cocktails are a creative and delicious way to use your farm-fresh eggs, especially when they’re abundant in summer. The post Egg Cocktails: 7 Farm-Fresh Recipes appeared first on Hobby…",
    "source": "Hobby Farms",
    "date": "2026-11-09",
+   "lane": "land"
+  },
+  {
+   "title": "How an Edible Food Forest in Washington Feeds Its Community",
+   "url": "https://civileats.com/2026/11/10/in-washington-an-edible-food-forest-grows-after-conservation-efforts/",
+   "dek": "By Alicia Erickson • November 10, 2026In Tacoma’s South End, residents have turned a former blueberry farm into a source of healthy food for the neighborhood.Read the full article →",
+   "source": "Civil Eats",
+   "date": "2026-11-10",
    "lane": "land"
   },
   {
@@ -1067,11 +1083,11 @@
    "lane": "animals"
   },
   {
-   "title": "Killing a dangerous coral",
-   "url": "https://news.mongabay.com/short-article/2026/11/killing-a-dangerous-coral/",
-   "dek": "A Brazilian biologist and a team of volunteer divers are killing coral to save a marine protected area just off the famous Ipanema beach. They’re manually removing sun coral, an invasive…",
+   "title": "A plan to save Bali’s vanishing fireflies takes root in organic farming",
+   "url": "https://news.mongabay.com/short-article/2026/11/a-plan-to-save-balis-vanishing-fireflies-takes-root-in-organic-farming/",
+   "dek": "Four decades ago, Wayan Wardika says, clouds of fireflies would illuminate the night sky above the rice fields of his native village in Bali, Indonesia. Today, the insects have virtually…",
    "source": "Mongabay",
-   "date": "2026-11-08",
+   "date": "2026-11-10",
    "lane": "animals"
   },
   {
@@ -1121,22 +1137,6 @@
    "source": "Greater Good",
    "date": "",
    "lane": "research"
-  },
-  {
-   "title": "This Week In Running: November 9, 2026",
-   "url": "https://www.irunfar.com/this-week-in-running-november-9-2026",
-   "dek": "The post This Week In Running: November 9, 2026 appeared first on iRunFar. This Week in Running’s trail and ultra recap for November 9, 2026. This Week In Running: November 9, 2026 by…",
-   "source": "iRunFar",
-   "date": "2026-11-09",
-   "lane": "running"
-  },
-  {
-   "title": "To Win the Backyard Ultra World Team Championship, Try Being … Vulnerable?",
-   "url": "https://www.trailrunnermag.com/people/to-win-the-backyard-ultra-world-team-championship-try-being-vulnerable/",
-   "dek": "",
-   "source": "Trail Runner",
-   "date": "2026-10-29",
-   "lane": "running"
   }
  ],
  "found_es": [
@@ -1165,9 +1165,9 @@
    "lane": "news"
   },
   {
-   "title": "Cooperativa asháninka de Junín gana premio al mejor chocolate del mundo en su categoría con cacao de Río Tambo",
-   "url": "https://inforegion.pe/cooperativa-ashaninka-de-junin-gana-premio-al-mejor-chocolate-del-mundo-en-su-categoria-con-cacao-de-rio-tambo/",
-   "dek": "La cooperativa recibió asistencia técnica de la Comisión Nacional para el Desarr... La entrada Cooperativa asháninka de Junín gana premio al mejor chocolate del mundo en su categoría con…",
+   "title": "Cusco: limpian 450 kilos de residuos de los Caminos Inka del Santuario Histórico de Machupicchu para proteger el ecosistema del cucarachero inka, ave ",
+   "url": "https://inforegion.pe/cusco-limpian-450-kilos-de-residuos-de-los-caminos-inka-del-santuario-historico-de-machupicchu-para-proteger-el-ecosistema-del-cucarachero-inka-ave-endemica-del-peru/",
+   "dek": "Un total de 450 kilos de residuos inorgánicos retiraron trabajadores, autoridade... La entrada Cusco: limpian 450 kilos de residuos de los Caminos Inka del Santuario Histórico de…",
    "source": "Inforegión",
    "date": "2026-11-09",
    "lane": "news"
@@ -1213,14 +1213,6 @@
    "lane": "culture"
   },
   {
-   "title": "Aracne: el precio de la verdad",
-   "url": "https://www.zendalibros.com/aracne-el-precio-de-la-verdad/",
-   "dek": "Los efectos fueron lentos. Primero llegó el picor en la lengua, que se extendió por la faringe hasta alcanzar el esófago. La respiración se volvió lenta, casi imperceptible. El dolor llegó…",
-   "source": "Zenda Libros",
-   "date": "2026-11-09",
-   "lane": "culture"
-  },
-  {
    "title": "Fe, espectáculo, geopolítica",
    "url": "https://www.revistaanfibia.com/historia-de-los-viajes-papales-fe-espectaculo-geopolitica/",
    "dek": "A diferencia de lo que suele creerse, los viajes apostólicos son relativamente recientes en la historia del papado. El primer papa que salió de Italia en el período contemporáneo fue Pablo…",
@@ -1235,15 +1227,23 @@
    "source": "Climática",
    "date": "2026-11-05",
    "lane": "news"
+  },
+  {
+   "title": "Cooperativa asháninka de Junín gana premio al mejor chocolate del mundo en su categoría con cacao de Río Tambo",
+   "url": "https://inforegion.pe/cooperativa-ashaninka-de-junin-gana-premio-al-mejor-chocolate-del-mundo-en-su-categoria-con-cacao-de-rio-tambo/",
+   "dek": "La cooperativa recibió asistencia técnica de la Comisión Nacional para el Desarr... La entrada Cooperativa asháninka de Junín gana premio al mejor chocolate del mundo en su categoría con…",
+   "source": "Inforegión",
+   "date": "2026-11-09",
+   "lane": "news"
   }
  ],
  "found_ja": [
   {
-   "title": "【11/24＠都内・オンライン】地域の魅力を高める、持続可能なまちの未来とは？自治体職員と民間事業者のための「まちゴト脱炭素サミット」（セミナー）",
-   "url": "https://ideasforgood.jp/2026/11/04/machigoto-datsutanso-summit/",
-   "dek": "【11/24＠都内・オンライン】脱炭素は、防災や観光、産業誘致など、各部署が進める施策を後押しする手段にもなります。部署を越え、民間事業者とも連携して取り組みを進めてきた自治体は、庁内をどう巻き込み、財源をどう確保してきたのか。そんな問いを事例から考えるセミナー「まちゴト脱炭素サミット」が開かれます。 The post…",
+   "title": "【11/20@オンライン開催】法規制ウォッチから循環型ビジネスの試算まで。「Circular Tool Box」でできること（Circular Economy Hubリニューアル記念イベント）",
+   "url": "https://ideasforgood.jp/2026/11/10/circular-tool-box-launch-event/",
+   "dek": "Circular Economy Hubのリニューアルを記念し、法規制の動向把握から循環型ビジネスの収支試算まで実務に使えるデータツール群「Circular Tool Box」の活用イベントを11月20日に無料開催。実際の操作画面をお見せしながら、企業支援の現場視点で事業検討や社内提案のポイントを解説します。 The post…",
    "source": "IDEAS FOR GOOD",
-   "date": "2026-11-04",
+   "date": "2026-11-10",
    "lane": "news"
   },
   {
@@ -1263,11 +1263,11 @@
    "lane": "news"
   },
   {
-   "title": "生でも食べられる芋「ヤーコン」とは？ 旬や特徴、下処理と保存のコツ、レシピ、家庭での栽培方法まで紹介",
-   "url": "https://agri.mynavi.jp/2026_11_09_617408/",
-   "dek": "サツマイモのような見た目なのに、生で食べると梨のようにみずみずしく甘い！ そんな意外性を持つ根菜「ヤーコン」は秋から冬にかけて出回り、サラダや炒め物などのベーシックな料理から、甘いおやつにまで幅広いレシピで楽しめる野菜です。この記事では、ヤーコンの特徴や旬、栄養、下処理と保存のコツを解説し、おすすめのレシピ5品と家庭菜園での育て方を紹介します。",
+   "title": "ゼオライトで土が変わる！ 園芸利用で得られる5つの効果と正しい使い方・配合比",
+   "url": "https://agri.mynavi.jp/2026_11_10_615876/",
+   "dek": "家庭菜園やガーデニングで、土壌改良効果が期待されているゼオライト。水やりや肥料管理の手間を減らし、植物を健康に育てるための強力なサポート役となります。本記事では、ゼオライトが持つ優れた効果から、初心者でも失敗しない具体的な混ぜ方・配合比まで詳しく解説します。",
    "source": "マイナビ農業",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "lane": "land"
   },
   {
@@ -1287,11 +1287,11 @@
    "lane": "culture"
   },
   {
-   "title": "気候変動に「適応」するビール大麦。サッポロビール研究員が約30年の育種で見出した、「良い作物」の条件",
-   "url": "https://ideasforgood.jp/2026/11/04/good-barley-climate-adaptation/",
-   "dek": "気候変動で揺らぐ大麦生産。雨に強く、品質を保ち、環境負荷も減らすにはどうすればよいのでしょうか。30年以上、大麦育種に携わるサッポロビールの木原誠氏に、気候変動時代の「良い作物」とは何か、生産者に選ばれる技術の条件、そして研究を各地の適応へどうつなげるのかを伺いました。 The post…",
+   "title": "登山道を直すことは、歴史をつなぐこと。南アルプスの麓で考えた、人と山のこれからの「道」",
+   "url": "https://ideasforgood.jp/2026/11/10/sanu-southalps-trail-maintenance/",
+   "dek": "登山道の直し方には、その土地の自然観が映ります。元登山家・花谷泰広さんの言葉と日向山での整備体験から、里山と信仰の記憶をたどり、これからの「道」を考えます。 The post 登山道を直すことは、歴史をつなぐこと。南アルプスの麓で考えた、人と山のこれからの「道」 first appeared on IDEAS FOR GOOD.",
    "source": "IDEAS FOR GOOD",
-   "date": "2026-11-03",
+   "date": "2026-11-09",
    "lane": "news"
   },
   {
@@ -1313,20 +1313,44 @@
  ],
  "found_lt": [
   {
-   "title": "Šv. Leonas Didysis – taikos popiežius, krikščionybės pamatų statytojas",
-   "url": "https://www.bernardinai.lt/sv-leonas-didysis-taikos-popiezius-krikscionybes-pamatu-statytojas/",
-   "dek": "Lapkričio 10 d. Bažnyčia mini šventąjį Leoną Didįjį, popiežių. Šv. Leonas Didysis – iš tiesų vienas didžiausių popiežių, prisidėjęs prie Bažnyčios autoriteto bei prestižo sustiprinimo. Jis…",
-   "source": "Bernardinai",
-   "date": "2026-11-09",
-   "lane": "news"
+   "title": "SEB grupė atnaujino makroekonomikos prognozes: Lietuva praranda augimo lyderės Baltijos šalyse titulą",
+   "url": "https://mokslolietuva.lt/2026/11/seb-grupe-atnaujino-makroekonomikos-prognozes-lietuva-praranda-augimo-lyderes-baltijos-salyse-titula/",
+   "dek": "JAV ir euro zonos ekonomika stebina savo atsparumu ir verslo lūkesčiais. SEB ekonomistai nekeičia 2027 metų euro zonos prognozės ir …",
+   "source": "Mokslo Lietuva",
+   "date": "2026-11-10",
+   "lane": "research"
   },
   {
-   "title": "Klaipėdos universitetas kviečia į Leonido Donskio vardo auditorijos atidarymą",
-   "url": "https://mokslolietuva.lt/2026/11/klaipedos-universitetas-kviecia-i-leonido-donskio-vardo-auditorijos-atidaryma/",
-   "dek": "Renginio pradžia: 14:00 Renginio vieta: Klaipėdos universiteto Socialinių ir humanitarinių mokslų fakulteto 204 auditorijoje, S. Nėries g. 5, Klaipėdoje Filosofo …",
-   "source": "Mokslo Lietuva",
+   "title": "Sveikiname mielą kolegą akademiką habil. dr. Gediminą Valkiūną",
+   "url": "https://gamtostyrimai.lt/sveikiname-miela-kolega-akademika-habil-dr-gedimina-valkiuna/",
+   "dek": "Gražios sukakties proga nuoširdžiai sveikiname mielą kolegą akademiką habil. dr. Gediminą Valkiūną ir linkime neišsenkančios energijos, stiprios sveikatos, kūrybinio įkvėpimo, naujų…",
+   "source": "Gamtos tyrimai",
+   "date": "2026-11-10",
+   "lane": "animals"
+  },
+  {
+   "title": "Raudondvario pilyje – žirgų kapo dugne slėptas sidabras",
+   "url": "https://kaunaspilnas.lt/raudondvario-pilyje-zirgu-kapo-dugne-sleptas-sidabras/",
+   "dek": "Lapkričio 12 d., ketvirtadienį, 18 val. Raudondvario pilyje įsikūrusiame Kauno rajono muziejuje atidaroma paroda „Kulautuvos lobiai“. Jos centre – penki sidabro lobiai, archeologų aptikti…",
+   "source": "Kaunas pilnas kultūros",
+   "date": "2026-11-10",
+   "lane": "culture"
+  },
+  {
+   "title": "Nauja paroda „Gydantis svajotojas“ kvies pažinti mažiau atrastą Jono Basanavičiaus pusę",
+   "url": "https://lnm.lt/aktualijos/nauja-paroda-gydantis-svajotojas-kvies-pazinti-maziau-atrasta-jono-basanaviciaus-puse/",
+   "dek": "Joną Basanavičių įprasta įsivaizduoti kaip tvirtą, santūrų tautos patriarchą – žmogų, kurio gyvenimas buvo neatsiejamas nuo kovos už Lietuvos nepriklausomybę. Tačiau už šio istorinio…",
+   "source": "Nacionalinis muziejus",
+   "date": "2026-11-04",
+   "lane": "culture"
+  },
+  {
+   "title": "Čiurlionio dailės muziejus ieško mecenato, galinčio padovanoti „Fluxus“ meno kolekciją",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3109120/ciurlionio-dailes-muziejus-iesko-mecenato-galincio-padovanoti-fluxus-meno-kolekcija",
+   "dek": "Nacionalinis Mikalojaus Konstantino Čiurlionio dailės muziejus siekia į Lietuvą parvežti vieną reikšmingiausių pasaulyje „Fluxus“ ir eksperimentinio meno kolekcijų, saugomą Berlyne…",
+   "source": "LRT Kultūra",
    "date": "2026-11-09",
-   "lane": "research"
+   "lane": "culture"
   },
   {
    "title": "Kartu lengviau žengti mokslininko keliu",
@@ -1345,36 +1369,20 @@
    "lane": "culture"
   },
   {
-   "title": "Nauja paroda „Gydantis svajotojas“ kvies pažinti mažiau atrastą Jono Basanavičiaus pusę",
-   "url": "https://lnm.lt/aktualijos/nauja-paroda-gydantis-svajotojas-kvies-pazinti-maziau-atrasta-jono-basanaviciaus-puse/",
-   "dek": "Joną Basanavičių įprasta įsivaizduoti kaip tvirtą, santūrų tautos patriarchą – žmogų, kurio gyvenimas buvo neatsiejamas nuo kovos už Lietuvos nepriklausomybę. Tačiau už šio istorinio…",
+   "title": "Po 170 metų atgimsta pirmasis viešasis muziejus Lietuvoje: lapkričio 5-ąją – virtualios parodos premjera",
+   "url": "https://lnm.lt/aktualijos/po-170-metu-atgimsta-pirmasis-viesasis-muziejus-lietuvoje-lapkricio-5-aja-virtualios-parodos-premjera/",
+   "dek": "Prieš 170 metų Vilniuje atidarytą pirmąjį viešąjį muziejų Lietuvoje nuo lapkričio 5 d. bus galima aplankyti virtualiai. Lietuvos nacionalinis muziejus (LNM) pristatys parodą-kompiuterinį…",
    "source": "Nacionalinis muziejus",
-   "date": "2026-11-04",
+   "date": "2026-10-28",
    "lane": "culture"
   },
   {
-   "title": "Buenos Airėse popiežių Leoną XIV sveikino daugiau nei du milijonai žmonių",
-   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/buenos-airese-popieziu-leona-xiv-sveikino-daugiau-nei-du-milijonai-zmoniu-57-2802314?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Į popiežiaus Leono XIV pirmadienį Buenos Airėse aukotas mišias, pasak vietos pareigūnų, susirinko daugiau nei du milijonai tikinčiųjų, o piligrimai atvyko iš visos Argentinos ir nakvojo…",
-   "source": "15min Kultūra",
-   "date": "2026-11-09",
-   "lane": "culture"
-  },
-  {
-   "title": "Vytauto Kasiulio dailės muziejuje – paroda „Seserys Irena ir Joanna Karpinskos“",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3109453/vytauto-kasiulio-dailes-muziejuje-paroda-seserys-irena-ir-joanna-karpinskos",
-   "dek": "Vytauto Kasiulio dailės muziejuje atidaryta paroda „Seserys Irena ir Joanna Karpinskos“ kviečia atrasti dvi tarpukario Vilniuje brendusias kūrėjas, simboliškai grįžtančias į savo jaunystės…",
+   "title": "Vasarį knygų šventė vyks! Naujas tarptautinis literatūros festivalis „Book Fest Vilnius“",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3109094/vasari-knygu-svente-vyks-naujas-tarptautinis-literaturos-festivalis-book-fest-vilnius",
+   "dek": "Vasario 25–28 dienomis Vilniuje, Šiuolaikinio meno centre, pirmą kartą vyks naujas tarptautinis literatūros festivalis „Book Fest Vilnius“, subursiantis daugiau kaip 50 Lietuvos ir užsienio…",
    "source": "LRT Kultūra",
-   "date": "2026-11-10",
-   "lane": "culture"
-  },
-  {
-   "title": "Nepriklausomas Rusijos laikraštis „Novaja Gazeta“ uždarė redakciją",
-   "url": "https://www.bernardinai.lt/nepriklausomas-rusijos-laikrastis-novaja-gazeta-uzdare-redakcija/",
-   "dek": "Pagrindinis nepriklausomas Rusijos laikraštis „Novaja Gazeta“, praėjusį mėnesį paskelbęs apie uždarymą dėl Kremliaus spaudimo, pirmadienį surengė paskutinį redakcijos susirinkimą ir…",
-   "source": "Bernardinai",
    "date": "2026-11-09",
-   "lane": "news"
+   "lane": "culture"
   },
   {
    "title": "Tarpdisciplininio bendradarbiavimo sėkmės istorija",
@@ -1393,29 +1401,21 @@
    "lane": "culture"
   },
   {
-   "title": "Po 170 metų atgimsta pirmasis viešasis muziejus Lietuvoje: lapkričio 5-ąją – virtualios parodos premjera",
-   "url": "https://lnm.lt/aktualijos/po-170-metu-atgimsta-pirmasis-viesasis-muziejus-lietuvoje-lapkricio-5-aja-virtualios-parodos-premjera/",
-   "dek": "Prieš 170 metų Vilniuje atidarytą pirmąjį viešąjį muziejų Lietuvoje nuo lapkričio 5 d. bus galima aplankyti virtualiai. Lietuvos nacionalinis muziejus (LNM) pristatys parodą-kompiuterinį…",
+   "title": "Signatarų namų gotikiniuose rūsiuose – Rūtos Spelskytės meninė instaliacija",
+   "url": "https://lnm.lt/aktualijos/signataru-namu-gotikiniuose-rusiuose-rutos-spelskytes-menine-instaliacija/",
+   "dek": "Ką gali atskleisti prieš kelis šimtmečius pagaminta keramikos šukė? Kokias istorijas slepia gėlių ir paukščių atvaizdai bei kokią informaciją geba išsaugoti molis? Atsakymų į šiuos…",
    "source": "Nacionalinis muziejus",
-   "date": "2026-10-28",
-   "lane": "culture"
-  },
-  {
-   "title": "Artimiausių dienų orai: naktimis – šalnos, kai kur gali iškristi pirmosios snaigės",
-   "url": "https://www.15min.lt/naujiena/aktualu/orai/artimiausiu-dienu-orai-naktimis-salnos-kai-kur-gali-iskristi-pirmosios-snaiges-60-2802254?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Orai ir klimatas Lietuvoje savo feisbuko paskyroje pateikia artimiausių orų prognozę.",
-   "source": "15min Kultūra",
-   "date": "2026-11-09",
+   "date": "2026-10-21",
    "lane": "culture"
   }
  ],
  "found_india": [
   {
-   "title": "2 Chennai Engineers Helped 130+ Buildings Save 5 Billion Litres of Water by Spotting Hidden Leaks",
-   "url": "https://thebetterindia.com/startup/smart-water-management-buildings-water-saving-earthfokus-startup-chennai-india-12789754",
-   "dek": "Turn on a tap to wash your hands. Notice how much water hits your palms, bounces off and disappears down the drain. Now imagine this happening hundreds of times a day across an office…",
+   "title": "How an Assam Father & Daughter Are Making Notebooks From Rhino Dung to Help Villagers Earn",
+   "url": "https://thebetterindia.com/startup/elephant-rhino-dung-paper-assam-wildlife-conservation-elrhino-startup-india-12789296",
+   "dek": "Handmade paper can be made from cotton rags, recycled newspapers, bamboo and even agricultural waste. But have you ever imagined that elephant and rhinoceros dung could become paper too? In…",
    "source": "The Better India",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "lane": "news"
   },
   {
@@ -1427,19 +1427,19 @@
    "lane": "news"
   },
   {
-   "title": "Gynaecologist explains importance of dental care during pregnancy, shares easy checklist",
-   "url": "https://www.hindustantimes.com/lifestyle/health/gynaecologist-explains-importance-of-dental-care-during-pregnancy-shares-easy-checklist-101794209296958.html",
-   "dek": "Pregnancy can affect one's dental health, and vice versa, explains Dr Pallavi Vasal, as she highlights easy steps to keep the mother and unborn baby healthy.",
+   "title": "Feeling guilty for saying no? Psychologist shares why it happens and 6 ways to set healthier boundaries",
+   "url": "https://www.hindustantimes.com/lifestyle/health/feeling-guilty-for-saying-no-psychologist-shares-why-it-happens-and-6-ways-to-set-healthier-boundaries-101794299128384.html",
+   "dek": "If you are always saying yes to people please, learn how to reframe your thinking and priortise help. An expert walks us through the root psychological causes.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "lane": "running"
   },
   {
-   "title": "Great Nicobar’s leatherbacks carry a unique genetic record that a megaport could bury",
-   "url": "https://india.mongabay.com/2026/11/great-nicobars-leatherbacks-carry-a-unique-genetic-record-that-a-megaport-could-bury/",
-   "dek": "Last winter, female leatherbacks heaved themselves onto a beach bordering Galathea Bay on Great Nicobar Island to dig and lay eggs in 869 nests, according to data from the Andaman and…",
+   "title": "Communities experiment with new ways to protect old caves",
+   "url": "https://india.mongabay.com/2026/11/communities-experiment-with-new-ways-to-protect-old-caves/",
+   "dek": "It’s an autumn morning at Mawmluh Cave, near Cherrapunji, in Meghalaya’s north-eastern hills. At the entrance, 27-year-old Milton Marak switches on his headlamp, and leads a group into the…",
    "source": "Mongabay India",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "lane": "land"
   },
   {
@@ -1455,15 +1455,15 @@
    "url": "https://www.thehindu.com/society/history-and-culture/jashn-e-chiraghan-tracing-deepavali-celebrations-in-the-mughal-empire/article71659626.ece",
    "dek": "Historian Anoushka Jain traces the history of Deepavali celebrations in the Mughal Empire, exploring how the festival of lights found a place in the imperial court and the cultural life of…",
    "source": "The Hindu Society",
-   "date": "2026-11-08",
+   "date": "2026-11-10",
    "lane": "culture"
   },
   {
-   "title": "From Shampoo to Compost, An Eco-Expert Shares 7 Ways to Reuse Leftover Diwali Flowers",
-   "url": "https://thebetterindia.com/sustainability/reuse-leftover-diwali-flowers-sustainable-ideas-compost-environmental-consultant-12786537",
-   "dek": "Once the Diwali lights come down and the decorations are packed away, what happens to all those beautiful marigold garlands and rose petals? More often than not, they end up in the bin. But…",
+   "title": "10 Million Hectares of Sal Forests: 7 Ways One Tree Supports India’s Rural Economy",
+   "url": "https://thebetterindia.com/sustainability/one-plant-100-uses-sal-tree-india-different-opportunities-timber-livelihoods-12784727",
+   "dek": "A meal served on a leaf plate, a silk saree woven from wild silk, and incense burning during a prayer may appear like three unrelated parts of everyday life. But they share an interesting…",
    "source": "The Better India",
-   "date": "2026-11-08",
+   "date": "2026-11-10",
    "lane": "news"
   },
   {
@@ -1475,11 +1475,11 @@
    "lane": "news"
   },
   {
-   "title": "From gentle stretches to breathing exercises: Yoga practices to reset your body and mind after Diwali",
-   "url": "https://www.hindustantimes.com/lifestyle/health/from-gentle-stretches-to-breathing-exercises-yoga-practices-to-reset-your-body-and-mind-after-diwali-101794206521588.html",
-   "dek": "After days of festive indulgence, these simple yoga practices can help you ease back into a healthy routine.",
+   "title": "High AQI and eye health: Ophthalmologist explains signs of pollution-related eye irritation and ways to protect your vision",
+   "url": "https://www.hindustantimes.com/lifestyle/health/high-aqi-and-eye-health-ophthalmologist-explains-signs-of-pollution-related-eye-irritation-and-ways-to-protect-your-vision-101794295104347.html",
+   "dek": "Rising air pollution can affect your eyes too. An ophthalmologist explains the symptoms to watch for and ways to protect your eye health.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "lane": "running"
   }
  ],
@@ -1501,11 +1501,11 @@
    "lane": "news"
   },
   {
-   "title": "Women’s Empowerment Desk Organises Sexual and Reproductive Health (SRH) Awareness and Gynecology Consultation Programme at Bir",
-   "url": "https://tibet.net/womens-empowerment-desk-organises-sexual-and-reproductive-health-srh-awareness-and-gynecology-consultation-programme-at-bir/",
-   "dek": "Dharamshala: The Women’s Empowerment Desk, in collaboration with TPHC Bir, organised a Sexual and Reproductive Health (SRH) Awareness and Gynecology Consultation Programme at Bir to improve…",
+   "title": "Representative Rigzin Genkhang Urges Young Advocates to Honour His Holiness the Dalai Lama’s Selfless Devotion at Tibetan Empowerment Days in Brussels",
+   "url": "https://tibet.net/representative-rigzin-genkhang-urges-young-advocates-to-honour-his-holiness-the-dalai-lamas-selfless-devotion-at-tibetan-empowerment-days-in-brussels/",
+   "dek": "Brussels: Representative Rigzin Genkhang of the Office of Tibet, Brussels, met with participants of the 2026 Tibetan Empowerment Days (TED), a four-day advocacy and capacity-building…",
    "source": "Central Tibetan Administration",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "lane": "news"
   },
   {
@@ -1525,11 +1525,27 @@
    "lane": "news"
   },
   {
+   "title": "TIPA Presents Traditional Tibetan Opera Depicting the Life of Lord Buddha During Sacred Relic Celebrations in Tawang",
+   "url": "https://tibet.net/tipa-presents-traditional-tibetan-opera-depicting-the-life-of-lord-buddha-during-sacred-relic-celebrations-in-tawang/",
+   "dek": "Tawang, Arunachal Pradesh, 2 November 2026: Tibetan Institute of Performing Arts (TIPA) presented Lha Shung, a traditional Tibetan opera depicting the life of Lord Buddha, on two…",
+   "source": "Central Tibetan Administration",
+   "date": "2026-11-10",
+   "lane": "news"
+  },
+  {
    "title": "Full restoration, strengthening urged for US-funded Tibetan broadcast services",
    "url": "https://www.tibetanreview.net/full-restoration-strengthening-urged-for-us-funded-tibetan-broadcast-services/",
    "dek": "(TibetanReview.net, Nov07’26) – Washington-based Tibet advocacy group International Campaign for Tibet (ICT, savetibet.org) has on Nov 6 launched a report urging not only a full restoration…",
    "source": "Tibetan Review",
    "date": "2026-11-07",
+   "lane": "news"
+  },
+  {
+   "title": "Sikyong Penpa Tsering Begins Official Visit and Engagements in Washington, D.C.",
+   "url": "https://tibet.net/sikyong-penpa-tsering-begins-official-visit-and-engagements-in-washington-d-c/",
+   "dek": "Washington, D.C.: Sikyong Penpa Tsering of the Central Tibetan Administration (CTA) arrived in Washington, D.C. today, and his first day began with a briefing from the Office of Tibet, the…",
+   "source": "Central Tibetan Administration",
+   "date": "2026-11-10",
    "lane": "news"
   }
  ]
