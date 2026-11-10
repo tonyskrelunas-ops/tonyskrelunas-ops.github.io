@@ -3,6 +3,7 @@ Allow: /
 Disallow: /v2/
 Disallow: /v3/
 Disallow: /v4/
+Disallow: /v5/
 Disallow: /preview/
 Disallow: /counts/
 Disallow: /watch/
