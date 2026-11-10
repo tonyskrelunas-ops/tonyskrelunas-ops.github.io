@@ -1,0 +1,151 @@
+/* TRIBEAWAKEN — the two pillar front doors — 2026-11-10
+   Sits on the home page's system: engine/site.css + home-v2.css (tokens, bar, menu, dock, footer, buttons, ap-loop).
+   Daylight ground, editorial rows, big left-aligned headlines, media bleeding off the page edge, alternating sides.
+   Nothing is blended over a video: no mix-blend-mode, no filters over film, no canvas. Posters until a loop is near. */
+
+:root{--pad:var(--gutter);--row:clamp(44px,6.5vw,104px)}
+html.pillars{scroll-padding-top:calc(var(--bar-h) + 12px)}
+.pillars main{overflow-x:clip}
+.pillars .eyebrow{font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);margin:0 0 .9rem}
+.pillars .eyebrow a{color:inherit;text-decoration:none}
+.pillars .eyebrow a:hover{color:var(--blue)}
+.pillars p{margin:0 0 .9rem}
+.pillars .num{font-size:clamp(3rem,2.4rem + 3vw,5.4rem);color:var(--creek);opacity:.85;display:block;margin-bottom:.4rem}
+.pillars .cap{position:absolute;left:14px;bottom:12px;z-index:3;max-width:min(80%,30rem);font-size:.76rem;line-height:1.35;color:#F3F6F1;background:rgba(16,26,22,.62);padding:.38em .7em;border-radius:5px;font-style:normal}
+.pillars .cap small{display:block;opacity:.78;font-size:.9em;margin-top:.1em}
+.pillars .media{position:relative;overflow:hidden;background:#dfe6dc}
+.pillars .media>img,.pillars .media>.ap-loop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pillars .media>img{object-position:50% 40%}
+.pillars main .acts{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center;margin-top:.6rem}
+.pillars .fine{font-size:.86rem;color:var(--ink-2)}
+
+/* ---------- arrival: the headline on the left, the film off the right edge ---------- */
+.pa{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);background:var(--stone)}
+.pa .copy{padding:calc(var(--bar-h) + var(--strip-h,34px) + clamp(22px,4vh,56px)) clamp(18px,3vw,56px) clamp(28px,4vw,56px) var(--pad);display:flex;flex-direction:column;justify-content:center;gap:.2rem}
+.pa h1{font-size:clamp(2.35rem,1.35rem + 3.3vw,4.9rem);max-width:14ch;margin:0 0 1.1rem}
+.pa .lede{max-width:36rem}
+.pa .media{min-height:min(100svh,880px)}
+.pa .media .cap{left:auto;right:14px}
+.pa .bookline{display:flex;align-items:center;gap:.9rem;margin-top:1rem;text-decoration:none;color:var(--ink);max-width:30rem}
+.pa .bookline img{width:52px;height:78px;object-fit:cover;border-radius:3px;box-shadow:0 10px 24px -10px rgba(0,0,0,.5);flex:none}
+.pa .bookline b{display:block;font-family:var(--display);font-size:1.05rem;color:var(--blue-deep)}
+.pa .bookline small{color:var(--ink-2)}
+
+/* ---------- the directory: the whole shape of the page in one list ---------- */
+.dir{padding:clamp(22px,3vw,40px) var(--pad);border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(10rem,.28fr) minmax(0,1fr);gap:1rem 3rem;align-items:start;background:var(--stone-2)}
+.dir .eyebrow{margin:0;padding-top:.5rem}
+.dir ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 2.5rem}
+.dir li{border-top:1px solid var(--line)}
+.dir li:nth-child(-n+2){border-top:0}
+.dir a{display:grid;grid-template-columns:2.2rem minmax(0,1fr) auto;gap:.6rem;align-items:baseline;padding:.62rem 0;text-decoration:none;color:var(--ink)}
+.dir a i{font-style:normal;font-family:var(--display);font-weight:300;color:var(--creek);font-size:1.05rem}
+.dir a b{font-family:var(--display);font-weight:700;color:var(--blue-deep);font-size:1.08rem;letter-spacing:-.01em}
+.dir a span{display:block;color:var(--ink-2);font-size:.9rem;margin-top:.1rem;font-weight:400}
+.dir a .arrow{color:var(--blue);font-weight:700;transition:transform .3s}
+.dir a:hover b{color:var(--blue)}
+.dir a:hover .arrow{transform:translateX(4px)}
+
+/* ---------- a row: media on one side, bleeding off the page edge; words on the other ---------- */
+.row2{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center;margin-top:var(--row);position:relative}
+.row2 .media{min-height:min(78vh,720px);align-self:stretch}
+.row2 .text{padding:clamp(20px,3vw,48px) var(--pad);max-width:44rem}
+.row2.flip .media{order:2}
+.row2 .text h2{font-size:clamp(1.9rem,1.25rem + 2.2vw,3.5rem);margin:0 0 1rem;max-width:18ch}
+.row2 .text h3{font-size:clamp(1.7rem,1.2rem + 1.8vw,3rem);margin:0 0 .9rem;max-width:18ch}
+.row2 .text p{max-width:36rem}
+.row2 .cover{position:absolute;z-index:3;width:min(24vw,210px);border-radius:5px;box-shadow:0 30px 60px -22px rgba(0,0,0,.6);transform:rotate(-3deg)}
+.row2 .cover.r{right:calc(50% - min(6vw,60px));bottom:clamp(14px,3vw,36px)}
+.row2 .cover.l{left:calc(50% - min(6vw,60px));bottom:clamp(14px,3vw,36px)}
+.row2.small{grid-template-columns:minmax(0,.6fr) minmax(0,1fr);margin-top:calc(var(--row) * .7)}
+.row2.small .media{min-height:min(44vh,380px)}
+.row2.small .text h3{font-size:clamp(1.4rem,1.1rem + 1.2vw,2.2rem)}
+.row2 .stat{display:flex;align-items:baseline;gap:.6rem;margin:.4rem 0 .8rem;font-family:var(--display);color:var(--blue-deep)}
+.row2 .stat b{font-weight:900;font-size:clamp(2.4rem,1.8rem + 2.6vw,4.4rem);letter-spacing:-.04em;line-height:.9}
+.row2 .stat span{font-family:var(--text);color:var(--ink-2);max-width:16rem;line-height:1.3;font-size:.95rem}
+.row2 .shelf{display:flex;gap:14px;align-items:flex-end;padding:0 var(--pad);max-width:100%;box-sizing:border-box;overflow:hidden;min-width:0}
+.row2 .shelf img{width:min(26%,190px);border-radius:4px;box-shadow:0 24px 50px -20px rgba(0,0,0,.55)}
+.row2 .shelf img:nth-child(2){width:min(30%,220px);transform:translateY(-12px)}
+
+/* ---------- the spine: a Council Fire idea, then what was built with it; the sea of clouds stays beside it ---------- */
+.spine{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);margin-top:var(--row);align-items:start}
+.spine .lead{padding:0 var(--pad) 1.2rem}
+.spine .lead h2{font-size:clamp(1.9rem,1.25rem + 2.2vw,3.5rem);max-width:20ch;margin:0 0 1rem}
+.spine .lead p{max-width:38rem}
+.spine .ledger{margin:0 var(--pad) 0 var(--pad);padding:0;list-style:none}
+.spine .ledger li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.6rem 2.4rem;padding:1.35rem 0 1.5rem;border-top:1px solid var(--line)}
+.spine .ledger li:last-child{border-bottom:1px solid var(--line)}
+.spine .ledger h3{font-size:clamp(1.25rem,1.05rem + .8vw,1.75rem);margin:0 0 .5rem;letter-spacing:-.015em}
+.spine .ledger .quote{font-family:var(--display);font-weight:400;font-size:1.06rem;line-height:1.45;color:var(--ink);margin:0}
+.spine .ledger .quote cite{display:block;font-style:normal;font-family:var(--text);font-size:.8rem;color:var(--ink-2);margin-top:.45rem}
+.spine .ledger .did{padding-top:.1rem}
+.spine .ledger .did .eyebrow{margin:0 0 .45rem;font-size:.7rem;color:var(--green-deep)}
+.spine .ledger .did p{margin:0 0 .5rem;font-size:.98rem}
+.spine .ledger .did a.more{font-size:.92rem}
+.spine .side{position:sticky;top:var(--bar-h);height:calc(100svh - var(--bar-h));min-height:420px;align-self:start}
+.spine .side .media{position:absolute;inset:0}
+
+/* ---------- a quiet band: one sentence over daylight water ---------- */
+.seam{position:relative;min-height:84svh;display:grid;align-items:center;isolation:isolate;overflow:hidden;margin-top:var(--row);background:#dfe6dc}
+.seam .bg{position:absolute;inset:0;z-index:0}
+.seam .bg .ap-loop{position:absolute;inset:0}
+.seam .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(247,250,244,.96) 0%,rgba(247,250,244,.9) 46%,rgba(247,250,244,.45) 72%,rgba(247,250,244,.08) 100%)}
+.seam .inner{position:relative;z-index:1;padding:clamp(56px,9vw,130px) var(--pad);max-width:52rem}
+.seam blockquote{margin:0 0 1.2rem;font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,1.15rem + 2.1vw,3.3rem);line-height:1.12;letter-spacing:-.02em;color:var(--blue-deep)}
+.seam blockquote cite{display:block;font-style:normal;font-family:var(--text);font-weight:600;font-size:.9rem;letter-spacing:.04em;color:var(--ink-2);margin-top:.8rem}
+.seam .inner p{max-width:38rem}
+.seam .cap{left:auto;right:14px}
+
+/* ---------- the close: read the whole essay, and write ---------- */
+.close{position:relative;min-height:80svh;display:grid;align-items:center;isolation:isolate;overflow:hidden;margin-top:var(--row);background:#dfe6dc}
+.close .bg{position:absolute;inset:0;z-index:0}
+.close .bg .ap-loop{position:absolute;inset:0}
+.close .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(247,250,244,.18),rgba(247,250,244,.42) 60%,rgba(247,250,244,.7))}
+.close .inner{position:relative;z-index:1;padding:clamp(48px,7vw,110px) var(--pad);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.4rem;align-items:stretch}
+.close .panel{background:rgba(247,250,244,.86);border:1px solid rgba(30,36,25,.1);border-radius:18px;padding:clamp(22px,3vw,40px);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 30px 70px -40px rgba(20,40,30,.4)}
+.close .panel h2{font-size:clamp(1.6rem,1.2rem + 1.4vw,2.6rem);margin:.4rem 0 .8rem;max-width:18ch}
+.close .panel p{max-width:34rem}
+.close .cap{left:14px;right:auto}
+
+/* ---------- the footer sits on the daylight page ---------- */
+.pillars .ta-foot{margin-top:0}
+
+/* ---------- the phone: everything stacks, the media stays big, the directory is one column ---------- */
+@media (max-width:980px){
+  .pa{grid-template-columns:1fr;min-height:0}
+  .pa .media{order:-1;min-height:0;height:clamp(260px,64vw,460px)}
+  .pa.tall .media{height:min(118vw,72svh)}
+  .pa .copy{padding:clamp(22px,5vw,32px) var(--pad) clamp(22px,5vw,32px)}
+  .pa h1{font-size:clamp(2.1rem,1.4rem + 4.6vw,3rem);max-width:none}
+  .dir{grid-template-columns:1fr;gap:.4rem}
+  .dir ol{grid-template-columns:1fr}
+  .dir li:nth-child(2){border-top:1px solid var(--line)}
+  .row2,.row2.small{grid-template-columns:1fr;margin-top:clamp(36px,9vw,56px)}
+  .row2 .media{min-height:0;height:clamp(240px,66vw,480px)}
+  .row2.flip .media{order:0}
+  .row2.small .media{height:clamp(200px,52vw,360px)}
+  .row2 .text{padding:clamp(18px,5vw,28px) var(--pad) 0;max-width:none}
+  .row2 .cover{display:none}
+  .row2 .shelf{padding:0 var(--pad)}
+  .spine{grid-template-columns:1fr}
+  .spine .side{position:relative;top:auto;height:clamp(240px,62vw,420px);min-height:0;order:-1;margin-top:clamp(36px,9vw,56px)}
+  .spine .lead{padding-top:clamp(18px,5vw,28px)}
+  .spine .ledger li{grid-template-columns:1fr;gap:.6rem}
+  .seam{min-height:0}
+  .seam .inner{padding:clamp(44px,12vw,72px) var(--pad)}
+  .seam .bg::after{background:linear-gradient(180deg,rgba(247,250,244,.9),rgba(247,250,244,.78) 50%,rgba(247,250,244,.5))}
+  .close .inner{grid-template-columns:1fr}
+  .pillars .cap{font-size:.7rem;max-width:min(86%,24rem)}
+}
+@media (max-width:480px){
+  .pa .bookline img{width:44px;height:66px}
+  .dir a{grid-template-columns:1.8rem minmax(0,1fr) auto}
+}
+@media (prefers-reduced-motion:reduce){
+  .dir a .arrow{transition:none}
+}
+
+/* 11/10 review: on a phone the fixed bar covered the top of the opening film (faces cut off), and captions over a playing film carry no blur, which strains iPhone Safari */
+@media (max-width:980px){
+  .pa:not(.tall) .media{margin-top:calc(var(--bar-h) + var(--strip-h,34px));height:auto;aspect-ratio:4/3}
+  .close .panel{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(247,250,244,.95)}
+}
