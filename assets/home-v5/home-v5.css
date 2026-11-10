@@ -17,11 +17,11 @@ html.render .v5-grain,html.flat .v5-grain{animation:none}
 .japan::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
   background:linear-gradient(90deg,rgba(9,17,23,.78) 0%,rgba(9,17,23,.5) 34%,rgba(9,17,23,.08) 62%,rgba(9,17,23,0) 100%),
              linear-gradient(180deg,rgba(9,17,23,.35) 0%,rgba(9,17,23,0) 22%,rgba(9,17,23,0) 78%,rgba(9,17,23,.55) 100%)}
-.japan .jp-lantern{position:absolute;z-index:1;right:clamp(210px,24vw,420px);bottom:clamp(64px,11vh,120px);width:clamp(86px,10vw,150px);aspect-ratio:1;
+.japan .jp-lantern{position:absolute;z-index:1;right:clamp(330px,35vw,520px);bottom:clamp(64px,11vh,120px);width:clamp(86px,10vw,150px);aspect-ratio:1;
   background:linear-gradient(180deg,#e9d7a6,#c9a25a);opacity:.82;
   -webkit-mask:url(/assets/art/japan-stone-lantern.svg) center/contain no-repeat;mask:url(/assets/art/japan-stone-lantern.svg) center/contain no-repeat}
 .japan .jp-in{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,38rem) 1fr;gap:clamp(20px,4vw,72px);align-items:center;
-  padding:clamp(72px,11vh,130px) calc(var(--gutter) + 104px) clamp(72px,11vh,130px) var(--gutter)}
+  padding:clamp(72px,11vh,130px) calc(var(--gutter) + 214px) clamp(72px,11vh,130px) var(--gutter)}
 .japan .label{color:#e6c46a;letter-spacing:.16em}
 .japan h2{color:#fff;font-size:clamp(1.9rem,1.2rem + 2.3vw,3.2rem);line-height:1.06;margin-top:.5rem;max-width:16ch;text-wrap:balance}
 .japan p{color:#dfe7e6;margin-top:.95rem;max-width:36rem;font-size:clamp(1rem,.96rem + .25vw,1.12rem);line-height:1.62}
@@ -34,7 +34,7 @@ html.render .v5-grain,html.flat .v5-grain{animation:none}
   font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;color:#f4f1e8;text-shadow:0 2px 26px rgba(8,16,22,.55)}
 .japan .jp-v .big{font-weight:700;font-size:clamp(3rem,2rem + 4.6vw,6.4rem);letter-spacing:.12em;line-height:1}
 .japan .jp-v .small{font-weight:500;font-size:clamp(1rem,.8rem + .8vw,1.5rem);letter-spacing:.34em;color:#e6c46a;padding-top:.4em}
-.japan .jp-gloss{position:absolute;right:calc(var(--gutter) + 104px);bottom:clamp(14px,3vh,30px);margin:0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#c4d0d2}
+.japan .jp-gloss{position:absolute;right:calc(var(--gutter) + 214px);bottom:clamp(14px,3vh,30px);margin:0;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#c4d0d2}
 .japan .jp-gloss span{font-family:"Shippori Mincho",serif;letter-spacing:.2em;text-transform:none;color:#e6c46a;margin-right:.5em}
 @media (max-width:980px){
   .japan{min-height:0}
