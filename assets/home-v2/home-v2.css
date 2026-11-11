@@ -633,6 +633,7 @@ html.gated body{overflow:hidden}
 .recent{padding:clamp(56px,8vw,110px) var(--gutter);background:#EEF1EA;color:var(--ink)}
 .recent-in{max-width:1240px;margin:0 auto}
 .recent h2{font-size:clamp(2rem,1.4rem + 2.4vw,3.4rem);margin:.4rem 0 0;max-width:22ch}
+.recent .recent-by{margin:.8rem 0 0;max-width:none;text-wrap:balance;font-size:.98rem;line-height:1.5;color:var(--ink-2)}
 .recent-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(16px,2vw,28px);margin-top:clamp(24px,3vw,40px)}
 .rw{grid-column:span 2;display:flex;flex-direction:column;background:#FFFDF6;border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;border:1px solid rgba(30,36,25,.08);transition:transform .35s,box-shadow .35s}
 .rw:nth-child(4),.rw:nth-child(5){grid-column:span 3}
