@@ -78,3 +78,74 @@ html.flat .japan{min-height:860px}
    The animated grain (blended over the opening films) and the ink canvas (blended over the Japan film)
    crashed Safari on iPhone on 11/10. On touch screens and narrow windows both are off. */
 @media (hover:none),(max-width:980px){.v5-grain{display:none!important;animation:none!important}.japan .ink{display:none!important}}
+
+/* ---------- 5. the Lithuanian thread (11/11): the main setting of Stone Breath ----------
+   Real photographs of Lithuania crossfade slowly behind the text (opacity and transform only, nothing blended).
+   Phones show one still photograph. The woven sash (juosta) runs down the right edge, across the top on phones. */
+.lithuania{position:relative;overflow:hidden;isolation:isolate;color:#eef2ec;
+  background:linear-gradient(180deg,#0c1611 0%,#1b2a21 46%,#33443a 100%)}
+.lithuania .lt-film{position:absolute;inset:0;z-index:0;overflow:hidden}
+.lithuania .lt-shot{position:absolute;inset:0;opacity:0;animation:ltfade 32s linear infinite}
+.lithuania .lt-shot img{display:block;width:100%;height:100%;object-fit:cover;transform-origin:60% 50%;animation:ltdrift 32s linear infinite}
+.lithuania .lt-shot:nth-child(2),.lithuania .lt-shot:nth-child(2) img{animation-delay:8s}
+.lithuania .lt-shot:nth-child(3),.lithuania .lt-shot:nth-child(3) img{animation-delay:16s}
+.lithuania .lt-shot:nth-child(4),.lithuania .lt-shot:nth-child(4) img{animation-delay:24s}
+@keyframes ltfade{0%{opacity:0}5%{opacity:1}25%{opacity:1}31%{opacity:0}100%{opacity:0}}
+@keyframes ltdrift{0%{transform:scale(1.09)}31%{transform:scale(1.01)}100%{transform:scale(1.01)}}
+.lithuania::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(90deg,rgba(8,15,11,.82) 0%,rgba(8,15,11,.55) 36%,rgba(8,15,11,.12) 64%,rgba(8,15,11,0) 100%),
+             linear-gradient(180deg,rgba(8,15,11,.4) 0%,rgba(8,15,11,0) 18%,rgba(8,15,11,0) 48%,rgba(8,15,11,.78) 70%,rgba(8,15,11,.93) 100%)}
+.lithuania .lt-sash{position:absolute;z-index:2;top:0;bottom:0;right:calc(var(--gutter) + 28px);width:40px;opacity:.78;
+  background:linear-gradient(180deg,#b5452c 0%,#d9a24b 38%,#3f8a4e 70%,#b5452c 100%);
+  -webkit-mask:url(/assets/art/baltic-juosta-vertical.svg) 34% 0/190% auto repeat-y;mask:url(/assets/art/baltic-juosta-vertical.svg) 34% 0/190% auto repeat-y}
+.lithuania .lt-in{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,38rem) 1fr;gap:clamp(20px,4vw,72px);align-items:center;
+  min-height:min(78svh,760px);padding:clamp(72px,11vh,130px) calc(var(--gutter) + 120px) clamp(28px,4vh,48px) var(--gutter)}
+.lithuania .label{color:#e7b25a;letter-spacing:.16em}
+.lithuania h2{color:#fff;font-size:clamp(1.9rem,1.2rem + 2.3vw,3.2rem);line-height:1.06;margin-top:.5rem;max-width:17ch;text-wrap:balance}
+.lithuania p{color:#e2e8df;margin-top:.95rem;max-width:36rem;font-size:clamp(1rem,.96rem + .25vw,1.12rem);line-height:1.62}
+.lithuania blockquote{margin:1.5rem 0 0;padding:.2rem 0 .2rem 1.1rem;border-left:2px solid #d9a24b;font-family:var(--display);font-size:clamp(1.2rem,1rem + .8vw,1.6rem);line-height:1.3;color:#fff;max-width:30rem}
+.lithuania blockquote cite{display:block;margin-top:.55rem;font-family:var(--text);font-style:normal;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#bccabf}
+.lithuania .acts{display:flex;flex-wrap:wrap;gap:.8rem 1.2rem;align-items:center;margin-top:1.6rem}
+.lithuania a.more{color:#f1e3bd;border-color:rgba(241,227,189,.5);font-family:var(--display);font-style:italic;font-weight:600;font-size:1.02rem}
+.lithuania a.more:hover{color:#fff}
+.lithuania .lt-v{justify-self:end;display:flex;gap:.9rem;align-items:flex-start;writing-mode:vertical-rl;
+  font-family:var(--display);color:#f4f1e8;text-shadow:0 2px 26px rgba(8,15,11,.6)}
+.lithuania .lt-v .big{font-weight:700;font-size:clamp(2.4rem,1.4rem + 2.8vw,4.4rem);letter-spacing:.02em;line-height:1.05;font-variation-settings:"SOFT" 60}
+.lithuania .lt-v .small{font-style:italic;font-weight:500;font-size:clamp(1rem,.85rem + .6vw,1.4rem);letter-spacing:.06em;color:#e7b25a;padding-top:.5em}
+.lithuania .lt-gloss{grid-column:1/-1;justify-self:end;margin:0;max-width:none;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#c8d2c6}
+.lithuania .lt-gloss span{font-family:var(--display);font-style:italic;letter-spacing:.02em;text-transform:none;font-size:1rem;color:#e7b25a;margin-right:.6em}
+.lithuania .lt-places{position:relative;z-index:2;list-style:none;margin:0;padding:0 calc(var(--gutter) + 120px) 0 var(--gutter);
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,26px)}
+.lithuania .lt-places li,.lithuania .lt-places figure{margin:0}
+.lithuania .lt-ph{aspect-ratio:4/3;overflow:hidden;border-radius:6px;background:#1b2a21;box-shadow:0 10px 30px rgba(0,0,0,.28)}
+.lithuania .lt-ph img{display:block;width:100%;height:100%;object-fit:cover}
+.lithuania figcaption{padding-top:.75rem}
+.lithuania figcaption .ch{display:block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#e7b25a}
+.lithuania figcaption b{display:block;margin-top:.3rem;font-family:var(--display);font-weight:600;font-size:1.06rem;line-height:1.25;color:#fff}
+.lithuania figcaption q{display:block;margin-top:.35rem;font-family:var(--display);font-style:italic;font-size:.95rem;line-height:1.4;color:#d3dbd0;quotes:"\201C" "\201D"}
+.lithuania .lt-note{position:relative;z-index:2;margin:0;max-width:none;padding:clamp(22px,3vh,34px) calc(var(--gutter) + 120px) clamp(22px,3vh,34px) var(--gutter);font-size:.72rem;line-height:1.55;color:rgba(214,224,214,.68)}
+.lithuania .lt-note a{color:inherit}
+@media (max-width:980px){
+  .lithuania::after{background:linear-gradient(180deg,rgba(8,15,11,.25) 0%,rgba(8,15,11,.7) 34%,rgba(8,15,11,.86) 60%,rgba(8,15,11,.95) 100%)}
+  .lithuania .lt-sash{top:0;bottom:auto;left:0;right:0;width:auto;height:34px;
+    -webkit-mask:url(/assets/art/baltic-juosta.svg) 0 34%/auto 190% repeat-x;mask:url(/assets/art/baltic-juosta.svg) 0 34%/auto 190% repeat-x;
+    background:linear-gradient(90deg,#b5452c 0%,#d9a24b 38%,#3f8a4e 70%,#b5452c 100%)}
+  .lithuania .lt-in{grid-template-columns:1fr;min-height:0;padding:calc(clamp(150px,34vh,300px) + 24px) var(--gutter) 24px}
+  .lithuania .lt-v{position:absolute;top:74px;right:var(--gutter)}
+  .lithuania .lt-v .big{font-size:clamp(2rem,9vw,3rem)}
+  .lithuania .lt-gloss{justify-self:start;margin-top:.4rem}
+  .lithuania h2{max-width:none}
+  .lithuania .lt-places{grid-template-columns:repeat(2,minmax(0,1fr));padding:8px var(--gutter) 0}
+  .lithuania .lt-note{padding:22px var(--gutter) 26px}
+}
+@media (max-width:760px){
+  .lithuania .lt-shot:not(:first-child){display:none}
+  .lithuania .lt-shot:first-child{animation:none;opacity:1}
+  .lithuania{background:#0e1813}
+  .lithuania .lt-shot:first-child img{animation:none;transform:none;height:min(78svh,620px)}
+  .lithuania .lt-film::after{content:"";position:absolute;left:0;right:0;top:calc(min(78svh,620px) - 220px);height:221px;background:linear-gradient(180deg,rgba(14,24,19,0) 0%,#0e1813 100%)}
+  .lithuania .lt-v .small{display:none}
+}
+@media (prefers-reduced-motion:reduce){.lithuania .lt-shot,.lithuania .lt-shot img{animation:none}.lithuania .lt-shot:first-child{opacity:1}}
+html.render .lithuania .lt-shot,html.render .lithuania .lt-shot img,html.flat .lithuania .lt-shot,html.flat .lithuania .lt-shot img{animation:none}
+html.render .lithuania .lt-shot:first-child,html.flat .lithuania .lt-shot:first-child{opacity:1}
