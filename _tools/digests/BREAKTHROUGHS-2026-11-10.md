@@ -38,9 +38,15 @@ This story was originally published by Open Campus. Walking by New River’s adv
 登山道の直し方には、その土地の自然観が映ります。元登山家・花谷泰広さんの言葉と日向山での整備体験から、里山と信仰の記憶をたどり、これからの「道」を考えます。 The post 登山道を直すことは、歴史をつなぐこと。南アルプスの麓で考えた、人と山のこれからの「道」 first appeared on IDEAS FOR GOOD.  
 <https://ideasforgood.jp/2026/11/10/sanu-southalps-trail-maintenance/>
 
+<<<<<<< Updated upstream
 **Ekonomikos apžvalga: lėtesnis augimas ant plono ledo** — Bernardinai · LT  
 Daugelio pasaulio šalių ekonomikos išliko atsparios brangesnei energijai, įsibėgėjusiai infliacijai ir aukštesnėms palūkanoms. Banko „Swedbank“ ekonomistai prognozuoja, k  
 <https://www.bernardinai.lt/ekonomikos-apzvalga-letesnis-augimas-ant-plono-ledo/>
+=======
+**SEB grupė atnaujino makroekonomikos prognozes: Lietuva praranda augimo lyderės Baltijos šalyse titulą** — Mokslo Lietuva · LT  
+JAV ir euro zonos ekonomika stebina savo atsparumu ir verslo lūkesčiais. SEB ekonomistai nekeičia 2027 metų euro zonos prognozės ir …  
+<https://mokslolietuva.lt/2026/11/seb-grupe-atnaujino-makroekonomikos-prognozes-lietuva-praranda-augimo-lyderes-baltijos-salyse-titula/>
+>>>>>>> Stashed changes
 
 **Feeling guilty for saying no? Psychologist shares why it happens and 6 ways to set healthier boundaries** — Hindustan Times Health · INDIA  
 If you are always saying yes to people please, learn how to reframe your thinking and priortise help. An expert walks us through the root psychological causes.  
