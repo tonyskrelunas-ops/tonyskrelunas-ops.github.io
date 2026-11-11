@@ -149,3 +149,105 @@ html.flat .japan{min-height:860px}
 @media (prefers-reduced-motion:reduce){.lithuania .lt-shot,.lithuania .lt-shot img{animation:none}.lithuania .lt-shot:first-child{opacity:1}}
 html.render .lithuania .lt-shot,html.render .lithuania .lt-shot img,html.flat .lithuania .lt-shot,html.flat .lithuania .lt-shot img{animation:none}
 html.render .lithuania .lt-shot:first-child,html.flat .lithuania .lt-shot:first-child{opacity:1}
+
+/* ---------- 6. the people of the books (11/11): three lineages, many lands ---------- */
+.lineages{position:relative;background:#f3efe5;color:var(--blue-deep,#12324f)}
+.lineages .ln-band{border-top:0}
+.lineages .ln-in{max-width:1240px;margin:0 auto;padding:clamp(56px,9vh,108px) var(--gutter) clamp(52px,8vh,96px)}
+.lineages .label{color:#8a5a1c}
+.lineages h2{margin-top:.6rem;font-size:clamp(2rem,1.25rem + 2.7vw,3.7rem);line-height:1.04;max-width:21ch;text-wrap:balance;color:var(--blue-deep,#12324f)}
+.lineages .ln-go{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.6vw,24px);margin-top:clamp(28px,4vh,44px)}
+.lineages .ln-go a{position:relative;display:grid;grid-template-columns:1fr auto;align-items:end;gap:.15rem .8rem;padding:0 0 1rem;text-decoration:none;color:inherit;border-bottom:2px solid rgba(18,50,79,.18);transition:border-color .25s}
+.lineages .ln-go a:hover,.lineages .ln-go a:focus-visible{border-bottom-color:currentColor}
+.lineages .ln-go .sw{grid-column:1/-1;display:block;height:40px;margin-bottom:.9rem;opacity:.85;-webkit-mask:url(/assets/art/baltic-juosta.svg) 0 34%/auto 190% repeat-x;mask:url(/assets/art/baltic-juosta.svg) 0 34%/auto 190% repeat-x}
+.lineages .ln-go .sw.lt{background:#2e8540}
+.lineages .ln-go .sw.jp{background:#124279;-webkit-mask-image:url(/assets/art/japan-seigaiha.svg);mask-image:url(/assets/art/japan-seigaiha.svg)}
+.lineages .ln-go .sw.dine{background:#b4582f;-webkit-mask-image:url(/assets/art/dine-weaving.svg);mask-image:url(/assets/art/dine-weaving.svg)}
+.lineages .ln-go b{font-family:var(--display);font-weight:700;font-size:clamp(1.35rem,1rem + 1.1vw,1.9rem);line-height:1.1}
+.lineages .ln-go span{grid-column:1;font-family:"Iowan Old Style",Georgia,"Times New Roman",serif;font-style:italic;font-size:1.02rem;color:#6b5a44} /* Fraunces has no precomposed ū/ō */
+.lineages .ln-go em{grid-column:2;grid-row:2/4;font-style:normal;font-size:1.4rem;align-self:end}
+.lineages .ln-far{margin-top:clamp(28px,4vh,40px);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#6b5a44;max-width:none}
+.lineages .ln-places{margin-top:.6rem;max-width:62rem;font-family:var(--display);font-style:italic;font-size:clamp(1.05rem,.95rem + .45vw,1.35rem);line-height:1.55;color:#2c3a46}
+.lineages .ln-places i{font-style:normal;color:#b98a3e;padding:0 .2em}
+@media (max-width:760px){
+  .lineages .ln-go{grid-template-columns:1fr;gap:16px}
+  .lineages .ln-go .sw{height:30px;margin-bottom:.6rem}
+}
+
+/* ---------- the cast lines inside each thread: who comes from this lineage, book by book ---------- */
+.cast{margin:1.4rem 0 0;max-width:36rem;display:grid;gap:.75rem}
+.cast > div{display:grid;grid-template-columns:9.2rem minmax(0,1fr);gap:.4rem 1rem;padding-top:.75rem;border-top:1px solid rgba(255,255,255,.16)}
+.cast dt{font-family:var(--display);font-size:.98rem;line-height:1.35}
+.cast dd{margin:0;font-size:.95rem;line-height:1.5;color:#dde5df}
+.lithuania .cast dt{color:#e7b25a}
+.japan .cast dt{color:#e6c46a}
+.japan .cast dd{color:#dfe7e6}
+@media (max-width:760px){.cast > div{grid-template-columns:1fr}}
+
+/* ---------- 7. the Turtle Island thread (11/11): red rock, sage, the flock; turquoise for the accent ----------
+   Same build as the Lithuanian thread: still photographs crossfading (opacity and transform only), one still photo on phones,
+   the Diné weaving band (Tony's own line drawing) down the right edge, across the top on phones. */
+.turtle{position:relative;overflow:hidden;isolation:isolate;color:#f1ece4;
+  background:linear-gradient(180deg,#1a120d 0%,#2c1d15 46%,#4a3324 100%)}
+.turtle .ti-film{position:absolute;inset:0;z-index:0;overflow:hidden}
+.turtle .ti-shot{position:absolute;inset:0;opacity:0;animation:ltfade 32s linear infinite}
+.turtle .ti-shot img{display:block;width:100%;height:100%;object-fit:cover;transform-origin:45% 55%;animation:ltdrift 32s linear infinite}
+.turtle .ti-shot:nth-child(2),.turtle .ti-shot:nth-child(2) img{animation-delay:8s}
+.turtle .ti-shot:nth-child(3),.turtle .ti-shot:nth-child(3) img{animation-delay:16s}
+.turtle .ti-shot:nth-child(4),.turtle .ti-shot:nth-child(4) img{animation-delay:24s}
+.turtle::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(90deg,rgba(20,12,8,.84) 0%,rgba(20,12,8,.58) 36%,rgba(20,12,8,.3) 64%,rgba(20,12,8,.34) 100%),
+             linear-gradient(180deg,rgba(20,12,8,.5) 0%,rgba(20,12,8,.08) 22%,rgba(20,12,8,0) 48%,rgba(20,12,8,.8) 70%,rgba(20,12,8,.94) 100%)}
+.turtle .ti-weave{position:absolute;z-index:2;top:0;bottom:0;right:calc(var(--gutter) + 28px);width:40px;opacity:.8;
+  background:linear-gradient(180deg,#b4582f 0%,#e0b062 40%,#3f9e94 72%,#b4582f 100%);
+  -webkit-mask:url(/assets/art/dine-weaving-vertical.svg) 34% 0/190% auto repeat-y;mask:url(/assets/art/dine-weaving-vertical.svg) 34% 0/190% auto repeat-y}
+.turtle .ti-in{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,38rem) 1fr;gap:clamp(20px,4vw,72px);align-items:center;
+  min-height:min(78svh,760px);padding:clamp(72px,11vh,130px) calc(var(--gutter) + 120px) clamp(28px,4vh,48px) var(--gutter)}
+.turtle .label{color:#7fd0c4;letter-spacing:.16em}
+.turtle h2{color:#fff;font-size:clamp(1.9rem,1.2rem + 2.3vw,3.2rem);line-height:1.06;margin-top:.5rem;max-width:18ch;text-wrap:balance}
+.turtle p{color:#ece4d8;margin-top:.95rem;max-width:36rem;font-size:clamp(1rem,.96rem + .25vw,1.12rem);line-height:1.62}
+.turtle .cast dt{color:#7fd0c4}
+.turtle .cast dd{color:#e8dfd2}
+.turtle blockquote{margin:1.5rem 0 0;padding:.2rem 0 .2rem 1.1rem;border-left:2px solid #4fb3a5;font-family:var(--display);font-size:clamp(1.2rem,1rem + .8vw,1.6rem);line-height:1.3;color:#fff;max-width:30rem}
+.turtle blockquote cite{display:block;margin-top:.55rem;font-family:var(--text);font-style:normal;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#cbbfae}
+.turtle .acts{display:flex;flex-wrap:wrap;gap:.8rem 1.2rem;align-items:center;margin-top:1.6rem}
+.turtle a.more{color:#f1e3bd;border-color:rgba(241,227,189,.5);font-family:var(--display);font-style:italic;font-weight:600;font-size:1.02rem}
+.turtle a.more:hover{color:#fff}
+.turtle .ti-v{justify-self:end;display:flex;gap:.9rem;align-items:flex-start;writing-mode:vertical-rl;font-family:var(--display);color:#f6efe4;text-shadow:0 2px 18px rgba(20,12,8,.85),0 0 2px rgba(20,12,8,.6)}
+.turtle .ti-v .big{font-weight:700;font-size:clamp(2.6rem,1.6rem + 3.2vw,4.8rem);letter-spacing:.03em;line-height:1.05;font-variation-settings:"SOFT" 60}
+.turtle .ti-v .small{font-style:italic;font-weight:500;font-size:clamp(1rem,.85rem + .6vw,1.4rem);letter-spacing:.06em;color:#a6e6dc;padding-top:.5em}
+.turtle .ti-gloss{grid-column:1/-1;justify-self:end;margin:0;max-width:none;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#d6cbbb}
+.turtle .ti-gloss span{font-family:var(--display);font-style:italic;letter-spacing:.02em;text-transform:none;font-size:1rem;color:#7fd0c4;margin-right:.6em}
+.turtle .ti-places{position:relative;z-index:2;list-style:none;margin:0;padding:0 calc(var(--gutter) + 120px) 0 var(--gutter);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,26px)}
+.turtle .ti-places li,.turtle .ti-places figure{margin:0}
+.turtle .ti-ph{aspect-ratio:4/3;overflow:hidden;border-radius:6px;background:#2c1d15;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.turtle .ti-ph img{display:block;width:100%;height:100%;object-fit:cover}
+.turtle figcaption{padding-top:.75rem}
+.turtle figcaption .ch{display:block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7fd0c4}
+.turtle figcaption b{display:block;margin-top:.3rem;font-family:var(--display);font-weight:600;font-size:1.06rem;line-height:1.25;color:#fff}
+.turtle figcaption q{display:block;margin-top:.35rem;font-family:var(--display);font-style:italic;font-size:.95rem;line-height:1.4;color:#e0d6c8;quotes:"\201C" "\201D"}
+.turtle .ti-note{position:relative;z-index:2;margin:0;max-width:none;padding:clamp(22px,3vh,34px) calc(var(--gutter) + 120px) clamp(22px,3vh,34px) var(--gutter);font-size:.72rem;line-height:1.55;color:rgba(230,220,206,.7)}
+@media (max-width:980px){
+  .turtle::after{background:linear-gradient(180deg,rgba(20,12,8,.25) 0%,rgba(20,12,8,.7) 34%,rgba(20,12,8,.86) 60%,rgba(20,12,8,.95) 100%)}
+  .turtle .ti-weave{top:0;bottom:auto;left:0;right:0;width:auto;height:34px;
+    -webkit-mask:url(/assets/art/dine-weaving.svg) 0 34%/auto 190% repeat-x;mask:url(/assets/art/dine-weaving.svg) 0 34%/auto 190% repeat-x;
+    background:linear-gradient(90deg,#b4582f 0%,#e0b062 40%,#3f9e94 72%,#b4582f 100%)}
+  .turtle .ti-in{grid-template-columns:1fr;min-height:0;padding:calc(clamp(150px,34vh,300px) + 24px) var(--gutter) 24px}
+  .turtle .ti-v{position:absolute;top:74px;right:var(--gutter)}
+  .turtle .ti-v .big{font-size:clamp(2rem,9vw,3rem)}
+  .turtle .ti-gloss{justify-self:start;margin-top:.4rem}
+  .turtle h2{max-width:none}
+  .turtle .ti-places{grid-template-columns:repeat(2,minmax(0,1fr));padding:8px var(--gutter) 0}
+  .turtle .ti-note{padding:22px var(--gutter) 26px}
+}
+@media (max-width:760px){
+  .turtle{background:#1d140f}
+  .turtle .ti-shot:not(:first-child){display:none}
+  .turtle .ti-shot:first-child{animation:none;opacity:1}
+  .turtle .ti-shot:first-child img{animation:none;transform:none;height:min(78svh,620px)}
+  .turtle .ti-film::after{content:"";position:absolute;left:0;right:0;top:calc(min(78svh,620px) - 220px);height:221px;background:linear-gradient(180deg,rgba(29,20,15,0) 0%,#1d140f 100%)}
+  .turtle .ti-v .small{display:none}
+}
+@media (prefers-reduced-motion:reduce){.turtle .ti-shot,.turtle .ti-shot img{animation:none}.turtle .ti-shot:first-child{opacity:1}}
+html.render .turtle .ti-shot,html.render .turtle .ti-shot img,html.flat .turtle .ti-shot,html.flat .turtle .ti-shot img{animation:none}
+html.render .turtle .ti-shot:first-child,html.flat .turtle .ti-shot:first-child{opacity:1}
