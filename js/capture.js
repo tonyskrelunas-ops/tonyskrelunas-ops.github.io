@@ -23,6 +23,12 @@
 (function () {
   'use strict';
   var ENDPOINT = 'https://tribeawaken-capture.netlify.app/';
+  /* 11/12: the one members list (ancestralpeaks-members, Netlify Blobs) behind First Light and the letters.
+     A plain-text POST, so the browser sends it without asking first; it never holds up the sign-up. */
+  var JOIN = 'https://ancestralpeaks-members.netlify.app/api/join';
+  function joinList(email, name, source) {
+    try { fetch(JOIN, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=UTF-8' }, body: JSON.stringify({ email: email, first: name || '', source: source, page: location.pathname }), keepalive: true }).catch(function () {}); } catch (e) {}
+  }
   /* Two piles, because they are two different things. A signup needs nothing
      back; an enquiry needs an answer. Tony reads the enquiries once a week,
      so they must not be buried in the signups. A form carrying a message is
@@ -118,6 +124,10 @@
         }
       }
       body.set('bot-field', botVal);
+      if (!isEnquiry && !botVal) {
+        var nmEl = form.querySelector('[name="name"], [name="first_name"]');
+        joinList(email, nmEl ? nmEl.value : '', src);
+      }
 
       fetch(ENDPOINT, {
         method: 'POST',
