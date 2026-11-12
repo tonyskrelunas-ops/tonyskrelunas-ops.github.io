@@ -19,7 +19,6 @@ import os, csv, json, glob, datetime, urllib.request
 
 HERE  = os.path.dirname(os.path.abspath(__file__))
 HOME  = os.path.expanduser("~")
-TOKEN = open(os.path.join(HOME, ".aw_netlify_token")).read().strip()
 SITE  = "f41ce288-9755-4f2e-ad20-13e099810be6"      # tribeawaken-capture
 DESK  = os.path.join(HOME, "Desktop", "MEMBERS-LIST-CURRENT.csv")
 ARCH  = os.path.join(HOME, "Library/CloudStorage/Dropbox/For-Claude/members")
@@ -28,13 +27,23 @@ ARCH  = os.path.join(HOME, "Library/CloudStorage/Dropbox/For-Claude/members")
 SEEDS = [os.path.join(HOME, "Desktop", "IMPORT-THIS-LIST-70-subscribers-*.csv"),
          os.path.join(HOME, "Library/CloudStorage/Dropbox/For-Claude/tribeawaken-list-CLEAN-*.csv")]
 
-FIELDS = ["email", "first_name", "last_name", "signup_date", "source", "edition", "page", "consent"]
+FIELDS = ["email", "first_name", "last_name", "signup_date", "site", "source", "edition", "page", "consent"]
 
 def api(path):
-    req = urllib.request.Request("https://api.netlify.com/api/v1" + path,
-                                 headers={"Authorization": "Bearer " + TOKEN})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r)
+    """Netlify API through the signed-in Netlify CLI on this Mac (the old personal token expired in Oct 2026)."""
+    import subprocess, urllib.parse
+    u = urllib.parse.urlparse(path); q = dict(urllib.parse.parse_qsl(u.query))
+    parts = u.path.strip("/").split("/")          # sites/<id>/submissions
+    data = {"site_id": parts[1], **q}
+    raw = subprocess.run(["npx", "--yes", "netlify-cli", "api", "listSiteSubmissions", "--data", json.dumps(data)],
+                         capture_output=True, text=True, cwd="/tmp").stdout
+    return json.loads(raw[raw.find("["):]) if "[" in raw else []
+
+def site_of(d):
+    s = ((d.get("source") or "") + " " + (d.get("page") or "")).lower()
+    if "peaks" in s: return "ancestralpeaks"
+    if "ancestralwatch" in s or s.startswith("aw-") or " aw-" in s: return "ancestralwatch"
+    return "tribeawaken"
 
 def main():
     people = {}
@@ -51,7 +60,7 @@ def main():
                              "signup_date": (row.get("signup_date") or "")[:10],
                              "source": row.get("source") or "imported",
                              "edition": "en", "page": "",
-                             "consent": row.get("consent") or "subscribed"}
+                             "consent": row.get("consent") or "subscribed", "site": "tribeawaken"}
     seeded = len(people)
 
     # 2 — everything the site has captured since
@@ -74,7 +83,8 @@ def main():
                          "source": d.get("source") or "site",
                          "edition": d.get("edition") or "en",
                          "page": d.get("page") or "",
-                         "consent": "subscribed"}
+                         "consent": "subscribed",
+                         "site": site_of(d)}
         page += 1
         if page > 20: break
 
