@@ -747,3 +747,9 @@ html.gated body{overflow:hidden}
 
 /* 11/8 same Safari fix as Ancestral Peaks: the phone card's video gets its own layer inside the rounded clip */
 .peaks-band .pb-phone{isolation:isolate;-webkit-mask-image:-webkit-radial-gradient(white,black)}
+/* 11/13 Tony: "the council fire video... sits too far the right edge.. can barely see". On laptops the film now leads the pair,
+   larger, on the left, clear of the Sections rail on the right edge. Phones keep the single centred column. */
+@media (min-width:761px){
+  .books-pair{grid-template-columns:minmax(280px,340px) minmax(0,1fr)}
+  .books-pair .cf-film{order:-1;width:100%}
+}
