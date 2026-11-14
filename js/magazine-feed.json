@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T19:36:11",
+ "generated": "2026-11-14T06:55:25",
  "lead": null,
  "mine": [
   {
@@ -1047,11 +1047,11 @@
    "lane": "running"
   },
   {
-   "title": "Backyard Ultras Are Booming. Here’s Why.",
-   "url": "https://www.trailrunnermag.com/races/backyard-ultras-are-booming-heres-why/",
-   "dek": "Put on the map by the likes of Courtney Dauwalter and mastermind Gary \"Lazarus Lake\" Cantrell, backyard ultras have no time cutoff and seemingly no end to their rise in popularity.",
+   "title": "Escape Winter With These 6 Underrated Desert Trail Runs",
+   "url": "https://www.trailrunnermag.com/travel/6-underrated-desert-trail-runs/",
+   "dek": "",
    "source": "Trail Runner",
-   "date": "2026-10-29",
+   "date": "2026-11-13",
    "lane": "running"
   },
   {
@@ -1061,6 +1061,14 @@
    "source": "Canadian Running",
    "date": "2026-11-13",
    "lane": "running"
+  },
+  {
+   "title": "Natural Comfort. Trusted Performance. The 5 Star Difference.",
+   "url": "https://westernhorseman.com/mercantile/product-spotlight/sponsored-content/natural-comfort-trusted-performance-the-5-star-difference/",
+   "dek": "Discover the benefits of 5 Star fleece-lined wool saddle pads and fleece-lined natural mohair cinches with an extra layer of comfort. The post Natural Comfort. Trusted Performance. The 5…",
+   "source": "Western Horseman",
+   "date": "2026-11-01",
+   "lane": "land"
   },
   {
    "title": "Turkey Recipes: 3 Classic Favorites Anytime",
@@ -1079,19 +1087,19 @@
    "lane": "land"
   },
   {
-   "title": "New Audubon Report Reveals Population Trends for Birds in Latin America and the Caribbean",
-   "url": "https://www.audubon.org/news/new-audubon-report-reveals-population-trends-birds-latin-america-and-caribbean",
-   "dek": "A new Audubon report offers one of the clearest pictures yet of how birds are changing across Latin America and the Caribbean — and highlights the growing power of community science across…",
+   "title": "Three Circles, One Mission: Marking a Christmas Bird Count Milestone in Latin America and the Caribbean",
+   "url": "https://www.audubon.org/news/three-circles-one-mission-marking-christmas-bird-count-milestone-latin-america-and-caribbean",
+   "dek": "For more than 125 years, the Christmas Bird Count has been a cornerstone of community science. While the tradition runs deep in North America, a vibrant and rapidly growing movement has…",
    "source": "Audubon",
    "date": "2026-11-13",
    "lane": "animals"
   },
   {
-   "title": "Animal cafes and exotic pet trade bring wildlife disease risks into public spaces",
-   "url": "https://news.mongabay.com/2026/11/animal-cafes-and-exotic-pet-trade-bring-wildlife-disease-risks-into-public-spaces/",
-   "dek": "Mumbai-based veterinarian Rina Dev was hospitalized for four days recently with a lung infection. “I hope it’s not something from the parrots I was treating,” she told Mongabay India after…",
+   "title": "Spicy ping-pong balls and flaming dung keep elephants at bay in Zimbabwe",
+   "url": "https://news.mongabay.com/short-article/2026/11/spicy-ping-pong-balls-and-flaming-dung-keep-elephants-at-bay-in-zimbabwe/",
+   "dek": "On the front line of the human-elephant conflict, coming up with non-lethal methods of protecting crops means getting creative. In one village in Zimbabwe, a multilayered approach is taken…",
    "source": "Mongabay",
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "lane": "animals"
   },
   {
@@ -1135,27 +1143,19 @@
    "lane": "research"
   },
   {
-   "title": "Best Running Gloves of 2026",
-   "url": "https://www.irunfar.com/best-running-gloves",
-   "dek": "The post Best Running Gloves of 2026 appeared first on iRunFar. The best running gloves out there, including gloves from The North Face, Black Diamond, REI, Patagonia, and more. Best…",
+   "title": "The Best Trail Running Deals From REI’s Holiday Sale",
+   "url": "https://www.irunfar.com/the-best-trail-running-deals-from-reis-holiday-sale",
+   "dek": "The post The Best Trail Running Deals From REI’s Holiday Sale appeared first on iRunFar. Gift-proven gear with REI’s steep markdowns across every category of outdoor hard goods, apparel…",
    "source": "iRunFar",
-   "date": "2026-11-11",
+   "date": "2026-11-13",
    "lane": "running"
   },
   {
-   "title": "To Win the Backyard Ultra World Team Championship, Try Being … Vulnerable?",
-   "url": "https://www.trailrunnermag.com/people/to-win-the-backyard-ultra-world-team-championship-try-being-vulnerable/",
-   "dek": "",
+   "title": "Backyard Ultras Are Booming. Here’s Why.",
+   "url": "https://www.trailrunnermag.com/races/backyard-ultras-are-booming-heres-why/",
+   "dek": "Put on the map by the likes of Courtney Dauwalter and mastermind Gary \"Lazarus Lake\" Cantrell, backyard ultras have no time cutoff and seemingly no end to their rise in popularity.",
    "source": "Trail Runner",
    "date": "2026-10-29",
-   "lane": "running"
-  },
-  {
-   "title": "Ethiopia’s Yomif Kejelcha withdraws from Valencia Marathon",
-   "url": "https://runningmagazine.ca/the-scene/ethiopias-yomif-kejelcha-withdraws-from-valencia-marathon/",
-   "dek": "The half-marathon world record holder has been dealing with an injury and will focus on recovery as he heads into 2027 The post Ethiopia’s Yomif Kejelcha withdraws from Valencia Marathon…",
-   "source": "Canadian Running",
-   "date": "2026-11-13",
    "lane": "running"
   }
  ],
@@ -1185,51 +1185,43 @@
    "lane": "news"
   },
   {
-   "title": "El evento de natación en aguas abiertas más grande del Perú regresa a Chorrillos con un mensaje de defensa del océano",
-   "url": "https://inforegion.pe/el-evento-de-natacion-en-aguas-abiertas-mas-grande-del-peru-regresa-a-chorrillos-con-mas-de-5000-participantes-y-un-mensaje-de-defensa-del-oceano/",
-   "dek": "Entre las iniciativas socioambientales programadas destacan las jornadas de limp... La entrada El evento de natación en aguas abiertas más grande del Perú regresa a Chorrillos con un…",
+   "title": "Tito Jaime, alcalde electo de Leoncio Prado, plantea impulsar la agricultura y el turismo para fortalecer la economía de Leoncio Prado",
+   "url": "https://inforegion.pe/tito-jaime-alcalde-electo-de-leoncio-prado-plantea-impulsar-la-agricultura-y-el-turismo-para-fortalecer-la-economia-de-leoncio-prado/",
+   "dek": "El alcalde electo de Leoncio Prado, Tito Jaime, anunció que su futura gestión mu... La entrada Tito Jaime, alcalde electo de Leoncio Prado, plantea impulsar la agricultura y el turismo para…",
    "source": "Inforegión",
    "date": "2026-11-13",
    "lane": "news"
   },
   {
-   "title": "Lucio Usobiaga gana el «Nobel de Gastronomía» por rescate de cultura agroecológica de Xochimilco",
-   "url": "https://www.mexicodesconocido.com.mx/lucio-usobiaga.html",
-   "dek": "¡Orgullo mexicano! El chef Lucio Usobiaga ganó el Basque Culinary Word Prize 2026 por su rescate de las chinampas de Xochimilco a partir del proyecto Arca Tierra. The post Lucio Usobiaga…",
-   "source": "México Desconocido",
-   "date": "2026-11-11",
-   "lane": "land"
-  },
-  {
-   "title": "MinAgricultura derogó las Appa sobre cerca de un millón de hectáreas en seis departamentos",
-   "url": "https://www.agronegocios.co/agricultura/minagricultura-derogo-las-appa-sobre-cerca-de-un-millon-de-hectareas-en-seis-departamentos-4522727",
-   "dek": "El proceso se cerró este 11 de noviembre con las decisiones adoptadas en el norte del Tolima y Santander. En el primer departamento, la derogatoria comprende más de 48.000 hectáreas",
+   "title": "Producir aceite de palma para aviación requeriría de hasta 164.000 nuevas hectáreas",
+   "url": "https://www.agronegocios.co/agricultura/aceite-de-palma-para-aviacion-requeriria-de-hasta-164-000-nuevas-hectareas-en-colombia-4524582",
+   "dek": "En el sector se estiman inversiones potenciales superiores a US$4.500 millones en la cadena de valor y la generación de más de 150.000 empleos directos",
    "source": "Agronegocios",
-   "date": "2026-11-11",
+   "date": "2026-11-13",
    "lane": "land"
   },
   {
-   "title": "El Papa en Perú: autoridades y representantes indígenas entregarán a León XIV un nuevo pacto por la justicia ambiental",
-   "url": "https://es.mongabay.com/short-article/2026/11/peru-autoridades-papa-leon-xiv-nuevo-pacto-justicia-ambiental/",
-   "dek": "Autoridades y representantes de organizaciones indígenas de Perú firmaron una segunda versión del denominado Pacto por la Justicia Ambiental, un documento que, según anunciaron, será…",
+   "title": "Murciélagos y aromas sintéticos, aliados inesperados para la restauración del Bosque Atlántico",
+   "url": "https://es.mongabay.com/short-article/2026/11/murcielagos-frugivoros-aromas-sinteticos-aliados-restauracion-bosque-atlantico/",
+   "dek": "Un murciélago frugívoro (que se alimenta de frutas) conquistó a Lays Cherobim Parolin al inicio de su carrera. Quería trabajar con mamíferos grandes, pero terminó en un proyecto sobre…",
    "source": "Mongabay Latam",
    "date": "2026-11-13",
    "lane": "animals"
   },
   {
-   "title": "Mutek México cumple 23 años de hacer espacio para lo que todavía no conocemos",
-   "url": "https://www.local.mx/ciudad-de-mexico/mutek-mexico-2026-damian-romero-experimentacion/",
-   "dek": "Damián Romero, fundador de MUTEK México, habla sobre 23 años de experimentación, música electrónica, nuevas generaciones y el futuro de la cultura digital. The post Mutek México cumple 23…",
+   "title": "Agenda Local: Qué hacer del 13 al 19 de noviembre en CDMX",
+   "url": "https://www.local.mx/agenda-local/agenda-cdmx-13-19-noviembre-2026/",
+   "dek": "Exposiciones, música experimental, ferias de arte, encuentros editoriales, nuevas propuestas gastronómicas y actividades culturales para descubrir esta semana en Ciudad de México. The post…",
    "source": "Local.mx",
-   "date": "2026-11-04",
+   "date": "2026-11-13",
    "lane": "culture"
   },
   {
-   "title": "5 poemas de Cimbra, de Fabio Morábito",
-   "url": "https://www.zendalibros.com/5-poemas-de-cimbra-de-fabio-morabito/",
-   "dek": "La contemplación de una cuadrilla de albañiles trabajando frente al mar inspira el título de este libro. En el aparente caos de una obra en construcción, el autor descubre una armonía…",
+   "title": "Zenda recomienda: La gravedad y la gracia, de Simone Weil",
+   "url": "https://www.zendalibros.com/zenda-recomienda-la-gravedad-y-la-gracia-de-simone-weil/",
+   "dek": "La propia editorial apunta, acerca del libro: “Reunidos a partir de los cuadernos que la autora confió a Gustave Thibon antes de abandonar Francia, los fragmentos de La gravedad y la gracia…",
    "source": "Zenda Libros",
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "lane": "culture"
   },
   {
@@ -1249,12 +1241,20 @@
    "lane": "news"
   },
   {
-   "title": "Precio del cacao en Huánuco alcanza los S/24 por kilo pese al aumento de la producción mundial y crecen las expectativas para 2027",
-   "url": "https://inforegion.pe/precio-del-cacao-en-huanuco-alcanza-los-s-24-por-kilo-pese-al-aumento-de-la-produccion-mundial-y-crecen-las-expectativas-para-2027/",
-   "dek": "El cacao de Huánuco mantiene precios superiores a los registrados hace cuatro o ... La entrada Precio del cacao en Huánuco alcanza los S/24 por kilo pese al aumento de la producción mundial…",
+   "title": "El evento de natación en aguas abiertas más grande del Perú regresa a Chorrillos con un mensaje de defensa del océano",
+   "url": "https://inforegion.pe/el-evento-de-natacion-en-aguas-abiertas-mas-grande-del-peru-regresa-a-chorrillos-con-mas-de-5000-participantes-y-un-mensaje-de-defensa-del-oceano/",
+   "dek": "Entre las iniciativas socioambientales programadas destacan las jornadas de limp... La entrada El evento de natación en aguas abiertas más grande del Perú regresa a Chorrillos con un…",
    "source": "Inforegión",
    "date": "2026-11-13",
    "lane": "news"
+  },
+  {
+   "title": "El Papa en Perú: autoridades y representantes indígenas entregarán a León XIV un nuevo pacto por la justicia ambiental",
+   "url": "https://es.mongabay.com/short-article/2026/11/peru-autoridades-papa-leon-xiv-nuevo-pacto-justicia-ambiental/",
+   "dek": "Autoridades y representantes de organizaciones indígenas de Perú firmaron una segunda versión del denominado Pacto por la Justicia Ambiental, un documento que, según anunciaron, será…",
+   "source": "Mongabay Latam",
+   "date": "2026-11-13",
+   "lane": "animals"
   }
  ],
  "found_ja": [
@@ -1283,20 +1283,12 @@
    "lane": "news"
   },
   {
-   "title": "初心者でも枯らさない！イチゴの冬越しを成功させるコツ",
-   "url": "https://agri.mynavi.jp/2026_11_13_616302/",
-   "dek": "家庭菜園でイチゴを育てると、冬越しに不安を感じる人が多いと思います。冬は寒さが厳しく雪も降るのでイチゴが枯れてしまいそうですよね。そして冬の次には収穫の季節である春が来るので、その準備もするべきです。冬越しで失敗すると、春にイチゴを収穫できなくなります。そこで今回は家庭菜園でのイチゴの冬越しを成功させるコツを紹介します。",
+   "title": "秋の実りを春につなぐ 11月の畑仕事と冬野菜の収穫・貯蔵術【DIY的半農生活Vol.60】",
+   "url": "https://agri.mynavi.jp/2026_11_14_619702/",
+   "dek": "茨城県筑波山のふもとでセルフビルドした住まいに暮らし、約3.5反（35アール）の田畑でコメや野菜を栽培するフリーライターの和田義弥（わだ・よしひろ）が、実践と経験をもとに教える自給自足的暮らしのノウハウ。紅葉が深まり、初霜の便りが届く頃。今年最後の種まきと植え付けをして、春まで食卓を支える野菜の冬支度を始める。今回は、晩秋から冬にかけての畑作業と、冬の野菜の収穫・貯蔵のコツをご…",
    "source": "マイナビ農業",
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "lane": "land"
-  },
-  {
-   "title": "変わる混浴 湯あみ着で誰でも入りやすく：激減の中で守る湯治文化",
-   "url": "https://www.nippon.com/ja/articles/-/56882",
-   "dek": "日本の混浴が変化している。男女が一緒の風呂に入る習慣は江戸時代から続く日本の文化だが、近年は女性客に対する迷惑行為の影響もあり、その数が激減。一方で誰もが湯に漬かりながら語らう文化を残そうと、湯あみ着を導入したり、水着で楽しめるように工夫したりする動きも出てきた。",
-   "source": "Nippon.com",
-   "date": "2026-11-13",
-   "lane": "culture"
   },
   {
    "title": "庭、建築、展示、すべてが美しい！ 改修を終えたポルトガル・リスボンの〈グルベンキアン美術館〉へ。",
@@ -1329,23 +1321,31 @@
    "source": "ソトコト",
    "date": "2026-10-16",
    "lane": "news"
+  },
+  {
+   "title": "初心者でも枯らさない！イチゴの冬越しを成功させるコツ",
+   "url": "https://agri.mynavi.jp/2026_11_13_616302/",
+   "dek": "家庭菜園でイチゴを育てると、冬越しに不安を感じる人が多いと思います。冬は寒さが厳しく雪も降るのでイチゴが枯れてしまいそうですよね。そして冬の次には収穫の季節である春が来るので、その準備もするべきです。冬越しで失敗すると、春にイチゴを収穫できなくなります。そこで今回は家庭菜園でのイチゴの冬越しを成功させるコツを紹介します。",
+   "source": "マイナビ農業",
+   "date": "2026-11-13",
+   "lane": "land"
   }
  ],
  "found_lt": [
   {
-   "title": "„Microsoft“ veiklos sutrikimai sukėlė chaosą visame pasaulyje, kada jie bus pašalinti – nežinia",
-   "url": "https://www.bernardinai.lt/microsoft-veiklos-sutrikimai-sukele-chaosa-visame-pasaulyje-kada-jie-bus-pasalinti-nezinia/",
-   "dek": "Penktadienį dėl plataus masto „Microsoft“ paslaugų sutrikimo, apėmusio kelis bendrovės produktus, įskaitant elektroninio pašto programą „Outlook“, visame pasaulyje sutriko sveikatos…",
+   "title": "Bažnyčioje rimtu veidu",
+   "url": "https://www.bernardinai.lt/baznycioje-rimtu-veidu/",
+   "dek": "Ta nuotrauka, aišku, kalba ir pati, be jokių papildomų komentarų. O kad neišeina patylėti, tai dėl to, kad ji prakalbina žiūrovą. Nieko naujo ir ypatingo toks dialogas. Viena mūsų parapijos…",
    "source": "Bernardinai",
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "lane": "news"
   },
   {
-   "title": "Pagalba telefone: 5 programėlės, kurios padeda mokytis",
-   "url": "https://mokslolietuva.lt/2026/11/pagalba-telefone-5-programeles-kurios-padeda-mokytis/",
-   "dek": "Vadovėlis, pratybos ir pamokoje pateikiama medžiaga seniai nebėra vieninteliai įrankiai, padedantys mokiniams įsisavinti naujas žinias – tam į pagalbą vis …",
+   "title": "Pirmasis „Euclid“ duomenų rinkinys – žingsnis link 3D dangaus žemėlapio",
+   "url": "https://mokslolietuva.lt/2026/11/pirmasis-euclid-duomenu-rinkinys-zingsnis-link-3d-dangaus-zemelapio/",
+   "dek": "ESA teleskopas „Euclid“ jau anksčiau pateikė pirmuosius rezultatus. Anksčiau buvo pristatytas nedidelis vaizdas, apimantis 60 kvadratinių laipsnių dangaus plotą – …",
    "source": "Mokslo Lietuva",
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "lane": "research"
   },
   {
@@ -1373,33 +1373,17 @@
    "lane": "culture"
   },
   {
-   "title": "Vagonais gabenama kontrabanda daug metų krovė turtus Diskų šeimai: teisėjai, ką galėjo, konfiskavo",
-   "url": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/vagonais-gabenama-kontrabanda-daug-metu-krove-turtus-disku-seimai-teisejai-ka-galejo-konfiskavo-59-2804576?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Generalinė prokuratūra siekė valstybės naudai konfiskuoti daugiau kaip 181 tūkst. eurų, kurių teisėtos kilmės, jos vertinimu, Diskų šeima nepajėgė pagrįsti. Ginčo objektu tapo vyro…",
-   "source": "15min Kultūra",
-   "date": "2026-11-13",
-   "lane": "culture"
-  },
-  {
-   "title": "Vilniaus dokumentinių filmų festivalyje – lietuviškos premjeros",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3113150/vilniaus-dokumentiniu-filmu-festivalyje-lietuviskos-premjeros",
-   "dek": "23-ojo Vilniaus dokumentinio filmų festivalio (VDFF) lietuviškos premjeros, kiekvienais metais pristatančios nacionalinio dokumentinio kino temų ir formų įvairovę, atvers žemėlapį, kuriame…",
+   "title": "Iš meilės Billui Evansui. Pamąstymai išėjus iš kino salės",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3113169/is-meiles-billui-evansui-pamastymai-isejus-is-kino-sales",
+   "dek": "Kino festivalis „Scanorama“ šiemet priviliojo kaip niekad daug džiazo gerbėjų, pristatydamas Granto Gee vaidybinį filmą „Visiems patinka Bilas Evansas“. Filmo pavadinimas, atkartojantis…",
    "source": "LRT Kultūra",
    "date": "2026-11-13",
    "lane": "culture"
   },
   {
-   "title": "Daliai mokytojų dėl atlyginimų ketinant streikuoti, M. Sinkevičius ragina turėti saiką",
-   "url": "https://www.bernardinai.lt/daliai-mokytoju-del-atlyginimu-ketinant-streikuoti-m-sinkevicius-ragina-tureti-saika/",
-   "dek": "Daliai mokytojų dėl per mažų atlyginimų kitą savaitę ketinant streikuoti, premjeras Mindaugas Sinkevičius ragina „turėti saiką“. „Nepamirškim tos situacijos. Mes vienu metu kalbam ir apie…",
-   "source": "Bernardinai",
-   "date": "2026-11-13",
-   "lane": "news"
-  },
-  {
-   "title": "Kraują skystinantis vaistas gali pasiūlyti naują osteoartrito gydymo būdą",
-   "url": "https://mokslolietuva.lt/2026/11/krauja-skystinantis-vaistas-gali-pasiulyti-nauja-osteoartrito-gydymo-buda/",
-   "dek": "Osteoartritas yra dažniausia sąnarių ligų forma, dėl kurios sąnariai tampa skausmingi ir stingsta. Tai gali nutikti bet kuriam sąnariui, kai …",
+   "title": "Pagalba telefone: 5 programėlės, kurios padeda mokytis",
+   "url": "https://mokslolietuva.lt/2026/11/pagalba-telefone-5-programeles-kurios-padeda-mokytis/",
+   "dek": "Vadovėlis, pratybos ir pamokoje pateikiama medžiaga seniai nebėra vieninteliai įrankiai, padedantys mokiniams įsisavinti naujas žinias – tam į pagalbą vis …",
    "source": "Mokslo Lietuva",
    "date": "2026-11-13",
    "lane": "research"
@@ -1427,15 +1411,31 @@
    "source": "Nacionalinis muziejus",
    "date": "2026-11-04",
    "lane": "culture"
+  },
+  {
+   "title": "Vilniaus dokumentinių filmų festivalyje – lietuviškos premjeros",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3113150/vilniaus-dokumentiniu-filmu-festivalyje-lietuviskos-premjeros",
+   "dek": "23-ojo Vilniaus dokumentinio filmų festivalio (VDFF) lietuviškos premjeros, kiekvienais metais pristatančios nacionalinio dokumentinio kino temų ir formų įvairovę, atvers žemėlapį, kuriame…",
+   "source": "LRT Kultūra",
+   "date": "2026-11-13",
+   "lane": "culture"
+  },
+  {
+   "title": "Kraują skystinantis vaistas gali pasiūlyti naują osteoartrito gydymo būdą",
+   "url": "https://mokslolietuva.lt/2026/11/krauja-skystinantis-vaistas-gali-pasiulyti-nauja-osteoartrito-gydymo-buda/",
+   "dek": "Osteoartritas yra dažniausia sąnarių ligų forma, dėl kurios sąnariai tampa skausmingi ir stingsta. Tai gali nutikti bet kuriam sąnariui, kai …",
+   "source": "Mokslo Lietuva",
+   "date": "2026-11-13",
+   "lane": "research"
   }
  ],
  "found_india": [
   {
-   "title": "This 17-YO Helped Turn a Bengaluru School’s Storage Room Into a 2000-Book Library for Children",
-   "url": "https://thebetterindia.com/changemakers/asavari-agrawal-shape-the-future-bengaluru-government-school-children-library-teen-12807047",
-   "dek": "On a Saturday morning at a government school in Bengaluru’s Mullur Colony, 17-year-old Asavari Agrawal barely gets through the gate before the children surround her. Some run up to hug her…",
+   "title": "Himachal Is Known for Apples. Here’s Why Some Farmers Are Now Growing Persimmons Instead",
+   "url": "https://thebetterindia.com/conservation/nature/himachal-pradesh-climate-change-apple-farmers-persimmon-crop-shift-12807204",
+   "dek": "In Bajaura, in Himachal Pradesh’s Kullu district, farmers have had to rethink their orchards twice. As changing weather made apple cultivation harder, they turned to pomegranates. Then…",
    "source": "The Better India",
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "lane": "news"
   },
   {
@@ -1447,11 +1447,11 @@
    "lane": "news"
   },
   {
-   "title": "Children's Day special: 5 thoughtful personal care gifts for kids",
-   "url": "https://www.hindustantimes.com/lifestyle/health/childrens-day-special-5-thoughtful-personal-care-gifts-for-kids-101794580659213.html",
-   "dek": "Celebrate Children's Day with fun haircare gifts for kids, including nourishing shampoos and serums that make grooming enjoyable and promote healthy hair.",
+   "title": "Endocrinologist reveals 6 less obvious signs of type 2 diabetes, from fatigue to slow-healing wounds",
+   "url": "https://www.hindustantimes.com/lifestyle/health/endocrinologist-reveals-6-less-obvious-signs-of-type-2-diabetes-from-fatigue-to-slow-healing-wounds-101794657515676.html",
+   "dek": "Diabetes may not always show obvious signs, making it very important to seek early screening.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "lane": "running"
   },
   {
@@ -1479,11 +1479,11 @@
    "lane": "culture"
   },
   {
-   "title": "BMI SAYS ONE THING.YOUR WAIST SAYS ANOTHER. WHICH SHOULD YOU BELIEVE?",
-   "url": "https://thebetterindia.com/videos/lifestyle/bmi-says-one-thingyour-waist-says-another-which-should-you-believe-12806898",
-   "dek": "Your height is one number. Your weight is another. Put them together and you get your BMI. But is that enough to understand your weight and health? Not by itself. BMI is a useful screening…",
+   "title": "‘It Was Very Upsetting’: How a Mum Helped Her 5-YO Cope With Changing Schools & Leaving Friends Behind",
+   "url": "https://thebetterindia.com/parenting/helping-children-adjust-to-new-school-parenting-guide-mom-influencer-shivani-tyagi-12806634",
+   "dek": "For a five-year-old, changing schools can mean more than walking into a new classroom or learning a different routine. It can also mean leaving behind familiar faces, favourite teachers and…",
    "source": "The Better India",
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "lane": "news"
   },
   {
@@ -1495,11 +1495,11 @@
    "lane": "news"
   },
   {
-   "title": "Your fridge is not always keeping food at its best: Storage mistakes that could be ruining your healthy groceries",
-   "url": "https://www.hindustantimes.com/lifestyle/health/your-fridge-is-not-always-keeping-food-at-its-best-storage-mistakes-that-could-be-ruining-your-healthy-groceries-101794566388080.html",
-   "dek": "From washing produce too early to incorrect placement, fridge habits that could affect your groceries.",
+   "title": "Are online searches making you a nervous parent? A gynaecologist reveals everything about the 'Google doctor effect'",
+   "url": "https://www.hindustantimes.com/lifestyle/health/the-google-doctor-effect-how-online-health-searches-are-changing-pregnancy-and-parenting-decisions-101794565468022.html",
+   "dek": "How does the 'Google Doctor Effect' impact parenting choices? Highlighting the importance of seeking professional advice amidst online health searches.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "lane": "running"
   }
  ],
