@@ -30,8 +30,8 @@ html body .tan-drop .tan-dd::before{content:"";position:absolute;left:0;right:0;
 html body .tan-drop:hover .tan-dd,html body .tan-drop:focus-within .tan-dd,html body .tan-drop.open .tan-dd{opacity:1;visibility:visible;transform:translate(-50%,0)}
 html body .tan-dd a{display:flex;flex-direction:column;gap:.15rem;padding:.7rem .85rem;border-radius:10px;color:#F3EFE5}
 html body .tan-dd a:hover{background:rgba(255,255,255,.08)}
-html body .tan-dd b{font-family:"Fraunces",Georgia,serif;font-size:1rem}
-html body .tan-dd span{font-size:.8rem;font-weight:500;color:rgba(220,228,226,.75)}
+html body .tan-dd b{font-family:"Fraunces",Georgia,serif;font-size:1rem;color:#F7F2E8!important}
+html body .tan-dd span{font-size:.8rem;font-weight:500;color:rgba(232,236,234,.85)!important}
 html body .tan-acts{display:flex;align-items:center;gap:.75rem}
 html body .tan-write{display:inline-flex;align-items:center;padding:.65em 1.15em;border-radius:999px;background:#1C5BA8;color:#fff!important;font-weight:700;font-size:.92rem}
 html body .tan-burger{position:relative;display:flex;align-items:center;height:42px;padding:0 44px 0 15px;border:1px solid currentColor;border-radius:999px;background:none;color:inherit;font:inherit;font-weight:600;font-size:.92rem;cursor:pointer}
