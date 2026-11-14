@@ -6,13 +6,13 @@ Everything I read this morning that was worth keeping. Every one is live and sha
 A man put his life on the line to rescue his vulnerable neighbors during a flood in Florida he he described as “biblical.” With one recovering from surgery and the other   
 <https://www.goodnewsnetwork.org/update-stories-of-daring-rescues-continue-to-surface-from-flooded-florida-communities/>
 
-**Tanto cine y tan poca ley** — Agencia Ocote · ES  
-Un país que no protege su cine tampoco protege su memoria. En Guatemala se hacen películas, de las buenas. Hay cineastas, productores, técnicos, festivales y asociaciones  
-<https://www.agenciaocote.com/blog/2026/11/09/tanto-cine-y-tan-poca-ley/>
+**Brasil: mapeo muestra que el cacao se expande en la Amazonía sin nueva deforestación** — Mongabay Latam · ES  
+Mientras los precios récord del cacao empujan a los agricultores de África Occidental a talar bosque nativo, un nuevo estudio sugiere que en la Amazonía brasileña el cult  
+<https://es.mongabay.com/2026/11/mapeo-cacao-amazonia-brasil-sin-deforestacion/>
 
-**初心者でも枯らさない！イチゴの冬越しを成功させるコツ** — マイナビ農業 · JA  
-家庭菜園でイチゴを育てると、冬越しに不安を感じる人が多いと思います。冬は寒さが厳しく雪も降るのでイチゴが枯れてしまいそうですよね。そして冬の次には収穫の季節である春が来るので、その準備もするべきです。冬越しで失敗すると、春にイチゴを収穫できなくなります。そこで今回は家庭菜園でのイチゴの冬越しを成功させるコツを紹介します。  
-<https://agri.mynavi.jp/2026_11_13_616302/>
+**地域で、どう経済を回すか。元内閣官房・村上敬亮さんに聞く、地方創生のこれまでとこれから** — greenz.jp · JA  
+この記事はgreenz peopleからのギフト（寄付）で届けられています。あなたもgreenz peopleになって、すてきな記事を誰かに届けてみませんか？ グリーンズはこれまで、地域を元気にする様々なローカルのプロジェクトを取り上げてきました。日本全体を見ても、2014年から地方創生が掲げられ、地方を活性化する様々な取り組みに支援が行  
+<https://greenz.jp/2026/11/11/keisuke-murakami/>
 
 **Kalėdos Kaune: du šventiniai miesteliai ir daugiau dėmesio mažiesiems (fotogalerija)** — Kaunas pilnas kultūros · LT  
 Kaunas intensyviai ruošiasi gražiausioms metų šventėms. Šiemet miestas pasitiks Kalėdas gerokai atsinaujinęs – su dviem skirtingo charakterio kalėdiniais miesteliais, nau  
@@ -30,13 +30,13 @@ Join us for the public launch of Yigdzin, BDRC's new open Tibetan OCR model. Yig
 This story was originally published by Open Campus. Walking by New River’s advising office one day, Stephanie Addikis noticed that the coloring books and Legos that she h  
 <https://reasonstobecheerful.world/rural-colleges-student-parents-support/>
 
-**Tito Jaime, alcalde electo de Leoncio Prado, plantea impulsar la agricultura y el turismo para fortalecer la economía de Leoncio Prado** — Inforegión · ES  
-El alcalde electo de Leoncio Prado, Tito Jaime, anunció que su futura gestión mu... La entrada Tito Jaime, alcalde electo de Leoncio Prado, plantea impulsar la agricultur  
-<https://inforegion.pe/tito-jaime-alcalde-electo-de-leoncio-prado-plantea-impulsar-la-agricultura-y-el-turismo-para-fortalecer-la-economia-de-leoncio-prado/>
+**Tanto cine y tan poca ley** — Agencia Ocote · ES  
+Un país que no protege su cine tampoco protege su memoria. En Guatemala se hacen películas, de las buenas. Hay cineastas, productores, técnicos, festivales y asociaciones  
+<https://www.agenciaocote.com/blog/2026/11/09/tanto-cine-y-tan-poca-ley/>
 
-**地域で、どう経済を回すか。元内閣官房・村上敬亮さんに聞く、地方創生のこれまでとこれから** — greenz.jp · JA  
-この記事はgreenz peopleからのギフト（寄付）で届けられています。あなたもgreenz peopleになって、すてきな記事を誰かに届けてみませんか？ グリーンズはこれまで、地域を元気にする様々なローカルのプロジェクトを取り上げてきました。日本全体を見ても、2014年から地方創生が掲げられ、地方を活性化する様々な取り組みに支援が行  
-<https://greenz.jp/2026/11/11/keisuke-murakami/>
+**【TENOHA特別トークイベント】 地域と都市のあいだに新しい関係をつくる～関係人口と地域共生の拠点づくり～** — ソトコト · JA  
+地域と都市をつなぐ「場」の可能性 地域と関わりたい人と、地域に新しいつながりを生み出したい人。そのあいだをつなぎ、関わりを育てていく「拠点」の役割が、いまあらためて注目されています。 本イベントでは、「関係人口」・「地域 […]  
+<https://sotokoto-online.jp/learning/27280>
 
 **Pirmasis „Euclid“ duomenų rinkinys – žingsnis link 3D dangaus žemėlapio** — Mokslo Lietuva · LT  
 ESA teleskopas „Euclid“ jau anksčiau pateikė pirmuosius rezultatus. Anksčiau buvo pristatytas nedidelis vaizdas, apimantis 60 kvadratinių laipsnių dangaus plotą – …  
@@ -59,7 +59,6 @@ These sources gave nothing this morning. A feed that stays on this
 list for a few days has moved or died and wants replacing.
 
 - **en** · news · Positive News — unreachable
-- **ja** · culture · Nippon.com — unreachable
-- **lt** · culture · 15min Kultūra — unreachable
+- **en** · land · Western Horseman — unreachable
 - **lt** · news · Kauno diena — unreachable
 - **tibet** · culture · — — nothing cleared the gates
