@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T07:48:43",
+ "generated": "2026-11-15T18:47:50",
  "lead": null,
  "mine": [
   {
@@ -1075,20 +1075,12 @@
    "lane": "running"
   },
   {
-   "title": "B.C. standout storms to second straight U Sports XC crown",
-   "url": "https://runningmagazine.ca/u-sports/b-c-standout-storms-to-second-straight-u-sports-xc-crown/",
-   "dek": "From high jump to the HYROX World Championships to cross-country dominance, what can't Victoria Vike standout Madelyn Eybergen do? The post B.C. standout storms to second straight U Sports…",
+   "title": "Toronto runner sets world record for half-marathon in construction gear",
+   "url": "https://runningmagazine.ca/the-scene/toronto-runner-sets-world-record-for-half-marathon-in-construction-gear/",
+   "dek": "Bridget Burns has raced dressed as everything from a pilot to Michael Jackson, and her latest Guinness World Record involved a pair of jeans and a tool belt The post Toronto runner sets…",
    "source": "Canadian Running",
-   "date": "2026-11-14",
+   "date": "2026-11-15",
    "lane": "running"
-  },
-  {
-   "title": "Natural Comfort. Trusted Performance. The 5 Star Difference.",
-   "url": "https://westernhorseman.com/mercantile/product-spotlight/sponsored-content/natural-comfort-trusted-performance-the-5-star-difference/",
-   "dek": "Discover the benefits of 5 Star fleece-lined wool saddle pads and fleece-lined natural mohair cinches with an extra layer of comfort. The post Natural Comfort. Trusted Performance. The 5…",
-   "source": "Western Horseman",
-   "date": "2026-11-01",
-   "lane": "land"
   },
   {
    "title": "Turkey Recipes: 3 Classic Favorites Anytime",
@@ -1096,14 +1088,6 @@
    "dek": "Turkey Recipes Handed Down Through Generations The post Turkey Recipes: 3 Classic Favorites Anytime appeared first on Hobby Farms.",
    "source": "Hobby Farms",
    "date": "2026-11-11",
-   "lane": "land"
-  },
-  {
-   "title": "How a Food Forest in Washington Feeds Its Community",
-   "url": "https://civileats.com/2026/11/10/in-washington-an-edible-food-forest-grows-after-conservation-efforts/",
-   "dek": "By Alicia Erickson • November 10, 2026In Tacoma’s South End, residents have turned a former blueberry farm into a source of healthy food for the neighborhood.Read the full article →",
-   "source": "Civil Eats",
-   "date": "2026-11-10",
    "lane": "land"
   },
   {
@@ -1177,6 +1161,22 @@
    "source": "Trail Runner",
    "date": "2026-10-29",
    "lane": "running"
+  },
+  {
+   "title": "B.C. standout storms to second straight U Sports XC crown",
+   "url": "https://runningmagazine.ca/u-sports/b-c-standout-storms-to-second-straight-u-sports-xc-crown/",
+   "dek": "From high jump to the HYROX World Championships to cross-country dominance, what can't Victoria Vike standout Madelyn Eybergen do? The post B.C. standout storms to second straight U Sports…",
+   "source": "Canadian Running",
+   "date": "2026-11-14",
+   "lane": "running"
+  },
+  {
+   "title": "Egg Cocktails: 7 Farm-Fresh Recipes",
+   "url": "https://www.hobbyfarms.com/use-your-eggs-in-these-7-summertime-cocktails/",
+   "dek": "Egg cocktails are a creative and delicious way to use your farm-fresh eggs, especially when they’re abundant in summer. The post Egg Cocktails: 7 Farm-Fresh Recipes appeared first on Hobby…",
+   "source": "Hobby Farms",
+   "date": "2026-11-09",
+   "lane": "land"
   }
  ],
  "found_es": [
@@ -1229,6 +1229,14 @@
    "lane": "animals"
   },
   {
+   "title": "Agenda Local: Qué hacer del 13 al 19 de noviembre en CDMX",
+   "url": "https://www.local.mx/agenda-local/agenda-cdmx-13-19-noviembre-2026/",
+   "dek": "Exposiciones, música experimental, ferias de arte, encuentros editoriales, nuevas propuestas gastronómicas y actividades culturales para descubrir esta semana en Ciudad de México. The post…",
+   "source": "Local.mx",
+   "date": "2026-11-13",
+   "lane": "culture"
+  },
+  {
    "title": "Fe, espectáculo, geopolítica",
    "url": "https://www.revistaanfibia.com/historia-de-los-viajes-papales-fe-espectaculo-geopolitica/",
    "dek": "A diferencia de lo que suele creerse, los viajes apostólicos son relativamente recientes en la historia del papado. El primer papa que salió de Italia en el período contemporáneo fue Pablo…",
@@ -1267,14 +1275,6 @@
    "source": "Agronegocios",
    "date": "2026-11-14",
    "lane": "land"
-  },
-  {
-   "title": "Murciélagos y aromas sintéticos, aliados inesperados para la restauración del Bosque Atlántico",
-   "url": "https://es.mongabay.com/short-article/2026/11/murcielagos-frugivoros-aromas-sinteticos-aliados-restauracion-bosque-atlantico/",
-   "dek": "Un murciélago frugívoro (que se alimenta de frutas) conquistó a Lays Cherobim Parolin al inicio de su carrera. Quería trabajar con mamíferos grandes, pero terminó en un proyecto sobre…",
-   "source": "Mongabay Latam",
-   "date": "2026-11-13",
-   "lane": "animals"
   }
  ],
  "found_ja": [
@@ -1301,6 +1301,14 @@
    "source": "ソトコト",
    "date": "2026-10-29",
    "lane": "news"
+  },
+  {
+   "title": "【接ぎ木 実践編】年間2000本をこなすプロが解説！ 接ぎ木で失敗しない「3つのタイミング」と成功の5つのポイント",
+   "url": "https://agri.mynavi.jp/2026_11_15_618017/",
+   "dek": "接ぎ木に挑戦してみたいけれど、「台木はどのくらい育ててから接げばよいのか？」「地植えして大きくなった木にも接ぎ木できるのか？」と疑問に思ったことはないだろうか。実は、接ぎ木は発芽して間もない小さな苗から、何年も育った大きな木まで、さまざまな生育段階で行うことができる。筆者は沖縄で熱帯果樹を中心に栽培し、年間2,000本以上の接ぎ木を行っているが、台木を1年ほど育ててから接ぐこと…",
+   "source": "マイナビ農業",
+   "date": "2026-11-14",
+   "lane": "land"
   },
   {
    "title": "変わる混浴 湯あみ着で誰でも入りやすく：激減の中で守る湯治文化",
@@ -1341,20 +1349,12 @@
    "source": "ソトコト",
    "date": "2026-10-16",
    "lane": "news"
-  },
-  {
-   "title": "パジェロ復活：三菱自の「伝家の宝刀」、その歴史とクロスカントリー車の復権",
-   "url": "https://www.nippon.com/ja/articles/-/56913",
-   "dek": "三菱自動車の「パジェロ」が7年ぶりに復活した。2026年12月17日に発売される新型は、伝統の悪路走破性に最新の快適装備を加えたモデルだ。1980～90年代、クロスカントリーと呼ばれ人気を博した本格4輪駆動（4WD）車の代表格は、どんな進化を遂げたのだろうか。",
-   "source": "Nippon.com",
-   "date": "2026-11-12",
-   "lane": "culture"
   }
  ],
  "found_lt": [
   {
-   "title": "Istorijos instituto vadovas: neskubėsime atverti kitų erdvių Vilniaus arkikatedroje",
-   "url": "https://www.bernardinai.lt/istorijos-instituto-vadovas-neskubesime-atverti-kitu-erdviu-vilniaus-arkikatedroje/",
+   "title": "Istorijos instituto vadovas A. Švedas: neskubėsime atverti kitų erdvių Vilniaus arkikatedroje",
+   "url": "https://www.bernardinai.lt/istorijos-instituto-vadovas-a-svedas-neskubesime-atverti-kitu-erdviu-vilniaus-arkikatedroje/",
    "dek": "Lietuvos istorijos instituto direktorius Aurimas Švedas patvirtina, kad Vilniaus arkikatedroje esama dar apie 20 erdvių, kurias reikėtų patikrinti ieškant Vytauto Didžiojo palaikų, tačiau…",
    "source": "Bernardinai",
    "date": "2026-11-15",
@@ -1369,17 +1369,25 @@
    "lane": "animals"
   },
   {
-   "title": "Lietuviškos dokumentikos premjeros: Gintaro kambario paieškos ir futuristinės Palio miesto vizijos",
-   "url": "https://kaunaspilnas.lt/lietuviskos-dokumentikos-premjeros-gintaro-kambario-paieskos-ir-futuristines-palio-miesto-vizijos/",
-   "dek": "23-ojo Vilniaus dokumentinio filmų festivalio (VDFF) lietuviškos premjeros, kiekvienais metais pristatančios nacionalinio dokumentinio kino temų ir formų įvairovę, atvers žemėlapį, kuriame…",
-   "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-13",
+   "title": "Tarp naujausių Lietuvos nacionalinio muziejaus įsigytų vertybių – dailininko Petro Repšio kūriniai",
+   "url": "https://lnm.lt/aktualijos/tarp-naujausiu-lietuvos-nacionalinio-muziejaus-isigytu-vertybiu-dailininko-petro-repsio-kuriniai/",
+   "dek": "Lietuvos nacionalinio muziejaus (LNM) rinkinius šiemet papildė vieno žymiausių Lietuvos dailininkų, Nacionalinės kultūros ir meno premijos laureato Petro Repšio (g. 1940 m.) kūriniai. Tarp…",
+   "source": "Nacionalinis muziejus",
+   "date": "2026-11-12",
    "lane": "culture"
   },
   {
-   "title": "Istorijos instituto vadovas: neskubėsime atverti kitų erdvių Vilniaus arkikatedroje",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3115069/istorijos-instituto-vadovas-neskubesime-atverti-kitu-erdviu-vilniaus-arkikatedroje",
-   "dek": "Lietuvos istorijos instituto direktorius Aurimas Švedas patvirtina, kad Vilniaus arkikatedroje esama dar apie 20 erdvių, kurias reikėtų patikrinti ieškant Vytauto Didžiojo palaikų, tačiau…",
+   "title": "Vizitą Pietų Amerikoje baigiantis popiežius Leonas XIV Peru lanko Andų ir Amazonijos bendruomenes",
+   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/vizita-pietu-amerikoje-baigiantis-popiezius-leonas-xiv-peru-lanko-andu-ir-amazonijos-bendruomenes-57-2806430?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "Vietinių gyventojų padėtis ir Amazonijos apsauga sekmadienį atsidūrė dėmesio centre, popiežiui Leonui XIV keliaujant po Peru, kur jis lanko aukštai Anduose ir atogrąžų miškų glūdumoje…",
+   "source": "15min Kultūra",
+   "date": "2026-11-15",
+   "lane": "culture"
+  },
+  {
+   "title": "Jevgenijus Fiodorovas apie Rusiją ir kultūrą: aš tiksliai žinau, kad niekada ten negrįšiu",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3111436/jevgenijus-fiodorovas-apie-rusija-ir-kultura-as-tiksliai-zinau-kad-niekada-ten-negrisiu",
+   "dek": "Jevgenijus Fiodorovas – muzikantas, kompozitorius ir grupės „Tequilajazzz“ lyderis. Ši grupė Rusijos alternatyviojoje scenoje ėmė reikštis dešimtajame praėjusio amžiaus ir pirmajame šio…",
    "source": "LRT Kultūra",
    "date": "2026-11-15",
    "lane": "culture"
@@ -1393,19 +1401,19 @@
    "lane": "animals"
   },
   {
-   "title": "Kalėdos Kaune: du šventiniai miesteliai ir daugiau dėmesio mažiesiems (fotogalerija)",
-   "url": "https://kaunaspilnas.lt/kaledos-kaune-du-sventiniai-miesteliai-ir-daugiau-demesio-maziesiems-fotogalerija/",
-   "dek": "Kaunas intensyviai ruošiasi gražiausioms metų šventėms. Šiemet miestas pasitiks Kalėdas gerokai atsinaujinęs – su dviem skirtingo charakterio kalėdiniais miesteliais, naujomis pramogomis…",
-   "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-12",
+   "title": "Nauja paroda „Gydantis svajotojas“ kvies pažinti mažiau atrastą Jono Basanavičiaus pusę",
+   "url": "https://lnm.lt/aktualijos/nauja-paroda-gydantis-svajotojas-kvies-pazinti-maziau-atrasta-jono-basanaviciaus-puse/",
+   "dek": "Joną Basanavičių įprasta įsivaizduoti kaip tvirtą, santūrų tautos patriarchą – žmogų, kurio gyvenimas buvo neatsiejamas nuo kovos už Lietuvos nepriklausomybę. Tačiau už šio istorinio…",
+   "source": "Nacionalinis muziejus",
+   "date": "2026-11-04",
    "lane": "culture"
   },
   {
-   "title": "Kaune prasideda įvietinto teatro festivalis „Namas Nr. 6“ – spektakliai vyks LRT studijoje",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3113359/kaune-prasideda-ivietinto-teatro-festivalis-namas-nr-6-spektakliai-vyks-lrt-studijoje",
-   "dek": "Kaune prasideda įvietinto teatro festivalis „Namas Nr. 6“. Šiemet jis vyks šimtmetį švenčiančioje LRT Kauno studijoje. Festivalis žiūrovus kviečia į tris premjeras, sukurtas specialiai LRT…",
+   "title": "Istorijos instituto vadovas: neskubėsime atverti kitų erdvių Vilniaus arkikatedroje",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3115069/istorijos-instituto-vadovas-neskubesime-atverti-kitu-erdviu-vilniaus-arkikatedroje",
+   "dek": "Lietuvos istorijos instituto direktorius Aurimas Švedas patvirtina, kad Vilniaus arkikatedroje esama dar apie 20 erdvių, kurias reikėtų patikrinti ieškant Vytauto Didžiojo palaikų, tačiau…",
    "source": "LRT Kultūra",
-   "date": "2026-11-13",
+   "date": "2026-11-15",
    "lane": "culture"
   },
   {
@@ -1417,35 +1425,27 @@
    "lane": "animals"
   },
   {
-   "title": "Nemišku tampantis miškas: Palmės Žiedas išleido naują kūrinį",
-   "url": "https://kaunaspilnas.lt/nemisku-tampantis-miskas-palmes-ziedas-isleido-nauja-kurini/",
-   "dek": "Atlikėjas ir muzikos prodiuseris Palmės Žiedas, kurio darbas „Kaunas – Amerika“ skamba „Kauno pilno kultūros“ tinklalaidėse, sugrįžta su nauju skambesiu: šiandien pasirodo naujausias jo…",
-   "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-12",
+   "title": "Po 170 metų atgimsta pirmasis viešasis muziejus Lietuvoje: lapkričio 5-ąją – virtualios parodos premjera",
+   "url": "https://lnm.lt/aktualijos/po-170-metu-atgimsta-pirmasis-viesasis-muziejus-lietuvoje-lapkricio-5-aja-virtualios-parodos-premjera/",
+   "dek": "Prieš 170 metų Vilniuje atidarytą pirmąjį viešąjį muziejų Lietuvoje nuo lapkričio 5 d. bus galima aplankyti virtualiai. Lietuvos nacionalinis muziejus (LNM) pristatys parodą-kompiuterinį…",
+   "source": "Nacionalinis muziejus",
+   "date": "2026-10-28",
    "lane": "culture"
   },
   {
-   "title": "Iš meilės Billui Evansui. Pamąstymai išėjus iš kino salės",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3113169/is-meiles-billui-evansui-pamastymai-isejus-is-kino-sales",
-   "dek": "Kino festivalis „Scanorama“ šiemet priviliojo kaip niekad daug džiazo gerbėjų, pristatydamas Granto Gee vaidybinį filmą „Visiems patinka Bilas Evansas“. Filmo pavadinimas, atkartojantis…",
+   "title": "Kaune prasideda įvietinto teatro festivalis „Namas Nr. 6“ – spektakliai vyks LRT studijoje",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3113359/kaune-prasideda-ivietinto-teatro-festivalis-namas-nr-6-spektakliai-vyks-lrt-studijoje",
+   "dek": "Kaune prasideda įvietinto teatro festivalis „Namas Nr. 6“. Šiemet jis vyks šimtmetį švenčiančioje LRT Kauno studijoje. Festivalis žiūrovus kviečia į tris premjeras, sukurtas specialiai LRT…",
    "source": "LRT Kultūra",
    "date": "2026-11-13",
    "lane": "culture"
   },
   {
-   "title": "Filmas apie fotomenininką R. Požerskį – be pjedestalo ir su humoru",
-   "url": "https://kaunaspilnas.lt/filmas-apie-fotomenininka-r-pozerski-be-pjedestalo-ir-su-humoru/",
-   "dek": "Vienas įžymiausių Lietuvos fotomeninkų Romualdas Požerskis daugiau nei 5 dešimtmečius fiksavo įvykius, žmones ir istorijas, o pastaruosius 6 metus režisierius Joris Skudra fiksavo jį patį –…",
-   "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-11",
-   "lane": "culture"
-  },
-  {
-   "title": "Vilniaus dokumentinių filmų festivalyje – lietuviškos premjeros",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3113150/vilniaus-dokumentiniu-filmu-festivalyje-lietuviskos-premjeros",
-   "dek": "23-ojo Vilniaus dokumentinio filmų festivalio (VDFF) lietuviškos premjeros, kiekvienais metais pristatančios nacionalinio dokumentinio kino temų ir formų įvairovę, atvers žemėlapį, kuriame…",
-   "source": "LRT Kultūra",
-   "date": "2026-11-13",
+   "title": "Signatarų namų gotikiniuose rūsiuose – Rūtos Spelskytės meninė instaliacija",
+   "url": "https://lnm.lt/aktualijos/signataru-namu-gotikiniuose-rusiuose-rutos-spelskytes-menine-instaliacija/",
+   "dek": "Ką gali atskleisti prieš kelis šimtmečius pagaminta keramikos šukė? Kokias istorijas slepia gėlių ir paukščių atvaizdai bei kokią informaciją geba išsaugoti molis? Atsakymų į šiuos…",
+   "source": "Nacionalinis muziejus",
+   "date": "2026-10-21",
    "lane": "culture"
   }
  ],
@@ -1467,9 +1467,9 @@
    "lane": "news"
   },
   {
-   "title": "Doctor explains the effect of kitchen smoke on lung health, shares checklist to minimise exposure",
-   "url": "https://www.hindustantimes.com/lifestyle/health/doctor-explains-the-effect-of-kitchen-smoke-on-lung-health-shares-checklist-to-minimise-exposure-101794747273807.html",
-   "dek": "Smoke in the kitchen is not always benign, especially on a regular basis when paired with poor air circulation, shares Dr Jyoti Wadhwa.",
+   "title": "Food blogger shares recipe for creamy roasted bell pepper dip with sautéed vegetables: Simple and delicious way to add protein and fibre to meals",
+   "url": "https://www.hindustantimes.com/lifestyle/health/food-blogger-shares-recipe-for-creamy-roasted-bell-pepper-dip-with-saut-ed-vegetables-simple-and-delicious-way-to-add-protein-and-fibre-to-meals-101794754606936.html",
+   "dek": "Kirti shows an easy way to hit the daily protein and fibre goals on a vegetarian diet with her roasted bell pepper dip with sautéed vegetables recipe.",
    "source": "Hindustan Times Health",
    "date": "2026-11-15",
    "lane": "running"
@@ -1515,9 +1515,9 @@
    "lane": "news"
   },
   {
-   "title": "Air purifiers and winter pollution: Doctor shares how to choose one, from room size to filter type",
-   "url": "https://www.hindustantimes.com/lifestyle/health/air-purifiers-and-winter-pollution-doctor-shares-how-to-choose-one-from-room-size-to-filter-type-101794724850366.html",
-   "dek": "Fine particles such as PM2.5 can affect respiratory and cardiovascular health. A correctly sized HEPA purifier can improve indoor air.",
+   "title": "Doctor explains the effect of kitchen smoke on lung health, shares checklist to minimise exposure",
+   "url": "https://www.hindustantimes.com/lifestyle/health/doctor-explains-the-effect-of-kitchen-smoke-on-lung-health-shares-checklist-to-minimise-exposure-101794747273807.html",
+   "dek": "Smoke in the kitchen is not always benign, especially on a regular basis when paired with poor air circulation, shares Dr Jyoti Wadhwa.",
    "source": "Hindustan Times Health",
    "date": "2026-11-15",
    "lane": "running"
