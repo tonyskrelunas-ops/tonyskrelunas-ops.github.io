@@ -238,5 +238,25 @@
    "dek": "Ilgame perėjime pirmas išbandymas yra šaltinis, kuris turėtų tekėti, bet yra išdžiūvęs. Ką daryti toliau, buvo išmokyta gerokai anksčiau, nei ten atėjote. Juokelis, vieta atsisėsti ir sena daina.",
    "pillar": "Žmogaus atsparumas"
   }
+ },
+ "the-year-i-failed-out-of-college": {
+  "es": {
+   "href": "/es/el-ano-que-reprobe-la-universidad/",
+   "title": "El año que reprobé la universidad",
+   "dek": "Después de que perdimos a Masan, reprobé la universidad. Mi abuela Ada me dejó descansar unas noches, y luego me puso a trabajar.",
+   "pillar": "Resiliencia humana"
+  },
+  "ja": {
+   "href": "/ja/daigaku-wo-rakudai-shita-toshi/",
+   "title": "大学を落第した年",
+   "dek": "マサンを失ったあと、私は大学を落第した。祖母エイダは数晩休ませてくれたが、それから私を働かせた。",
+   "pillar": "人間のレジリエンス"
+  },
+  "lt": {
+   "href": "/lt/metai-kai-isleikiau-is-universiteto/",
+   "title": "Metai, kai išlėkiau iš universiteto",
+   "dek": "Po to, kai netekome Masan, išlėkiau iš universiteto. Močiutė Ada leido man pasilsėti kelias naktis, o paskui paskyrė man darbą.",
+   "pillar": "Žmogaus atsparumas"
+  }
  }
 }
