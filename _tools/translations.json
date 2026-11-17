@@ -258,5 +258,25 @@
    "dek": "Po to, kai netekome Masan, išlėkiau iš universiteto. Močiutė Ada leido man pasilsėti kelias naktis, o paskui paskyrė man darbą.",
    "pillar": "Žmogaus atsparumas"
   }
+ },
+ "the-work-only-my-grandmother-knew-about": {
+  "es": {
+   "href": "/es/el-trabajo-que-solo-mi-abuela-conocia/",
+   "title": "El trabajo que solo mi abuela conocía",
+   "dek": "La voz que dice que te estás perdiendo algo, y la pregunta más antigua que hay debajo: ¿a quién va a sostener esto?",
+   "pillar": "Sanación intergeneracional"
+  },
+  "ja": {
+   "href": "/ja/sobo-dake-ga-shitteita-shigoto/",
+   "title": "祖母だけが知っていた仕事",
+   "dek": "取り残されているという声と、その下にあるもっと古い問い。これは誰を支えるのか。",
+   "pillar": "世代を超える癒し"
+  },
+  "lt": {
+   "href": "/lt/darbas-apie-kuri-zinojo-tik-mano-mociute/",
+   "title": "Darbas, apie kurį žinojo tik mano močiutė",
+   "dek": "Balsas, sakantis, kad kažko netenki, ir senesnis klausimas po juo: ką tai išlaikys?",
+   "pillar": "Tarpgeneracinis gydymasis"
+  }
  }
 }
