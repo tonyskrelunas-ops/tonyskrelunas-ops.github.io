@@ -33,6 +33,8 @@ Run it from a clean worktree of the site (git status shows nothing staged).
 import json, os, re, subprocess, sys, time, datetime, html, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+import shutil
+MAGICK = "magick" if shutil.which("magick") else "convert"   # ImageMagick 7 on the Mac, 6 in the cloud
 REPO = "tonyskrelunas-ops/tonyskrelunas-ops.github.io"
 STREAMS = {"healing", "economics", "body", "carried", "ride", "doctorate", "novels"}
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August",
@@ -93,10 +95,10 @@ def main():
         os.makedirs(os.path.join(ROOT, folder), exist_ok=True)
         src = os.path.join(ROOT, meta["photo"].lstrip("/"))
         hero = "/%s/%s-1600.jpg" % (folder, slug)
-        sh("magick", src, "-resize", "1600x", "-strip", "-quality", "84", "-interlace", "Plane", os.path.join(ROOT, hero.lstrip("/")))
-        sh("magick", src, "-resize", "480x480^", "-gravity", "center", "-extent", "480x480", "-strip", "-quality", "82",
+        sh(MAGICK, src, "-resize", "1600x", "-strip", "-quality", "84", "-interlace", "Plane", os.path.join(ROOT, hero.lstrip("/")))
+        sh(MAGICK, src, "-resize", "480x480^", "-gravity", "center", "-extent", "480x480", "-strip", "-quality", "82",
            os.path.join(ROOT, folder, slug + "-480x480.jpg"))
-        sh("magick", src, "-resize", "1200x630^", "-gravity", "center", "-extent", "1200x630", "-strip", "-quality", "84",
+        sh(MAGICK, src, "-resize", "1200x630^", "-gravity", "center", "-extent", "1200x630", "-strip", "-quality", "84",
            os.path.join(ROOT, folder, slug + "-og-1200x630.jpg"))
         draft = os.path.join("/tmp", "publish-%s.md" % slug)
         fm = "---\ntitle: %s\neyebrow: %s\ndek: %s\nhero: %s\nhero_alt: %s\ndate: %s\n---\n\n" % (
