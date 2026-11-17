@@ -50,7 +50,11 @@ jobs:
           git config user.email "noreply@tribeawaken.com"
           git add js/magazine-feed.json feed.xml journal/index.html _tools/digests journal/versions 2>/dev/null || true
           git commit -m "Magazine: $(date -u '+%B %-d, %Y') edition"
-          git push
+          for i in 1 2 3 4; do
+            git push && break
+            [ "$i" = 4 ] && exit 1
+            git pull --rebase origin main
+          done
           echo "pushed — tribeawaken.com has today's edition"
 
       - name: Keep the day's brief where he can read it
