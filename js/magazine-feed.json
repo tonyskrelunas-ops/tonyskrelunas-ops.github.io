@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T13:41:41",
+ "generated": "2026-11-17T16:21:40",
  "lead": null,
  "mine": [
   {
@@ -1083,10 +1083,568 @@
    "art": "/assets/art/baltic-sun.svg"
   }
  ],
- "found": [],
- "found_es": [],
- "found_ja": [],
- "found_lt": [],
- "found_india": [],
- "found_tibet": []
+ "found": [
+  {
+   "title": "Good News in History, November 17",
+   "url": "https://www.goodnewsnetwork.org/events061117/",
+   "dek": "56 years ago today, a patent on the first computer mouse was presented to the engineer and inventor Douglas Engelbart. He became an internet and computer pioneer at the Stanford Research…",
+   "source": "Good News Network",
+   "date": "2026-11-17",
+   "lane": "news"
+  },
+  {
+   "title": "Can Barbershops Turn Trust Into Better Health for Black Men?",
+   "url": "https://reasonstobecheerful.world/barbershops-black-men-hypertension-screenings/",
+   "dek": "It is a Tuesday morning at Against Da Grain, a barbershop on a quiet street on Staten Island’s North Shore. Owner Sean White is rounding off a cut for a middle-aged Black man while another…",
+   "source": "Reasons to be Cheerful",
+   "date": "2026-11-16",
+   "lane": "news"
+  },
+  {
+   "title": "Can Well-Being Give You Two More Years of Life?",
+   "url": "https://greatergood.berkeley.edu/article/item/Can_wellbeing_give_you_two_more_years",
+   "dek": "Decades of scientific inquiry have found that the quality and length of a person’s life goes up when they experience less depression, anxiety, or other mental health conditions. More recent…",
+   "source": "Greater Good",
+   "date": "",
+   "lane": "research"
+  },
+  {
+   "title": "The Unassuming Running Culture of Kapchorwa, Uganda",
+   "url": "https://www.irunfar.com/the-unassuming-running-culture-of-kapchorwa-uganda",
+   "dek": "The post The Unassuming Running Culture of Kapchorwa, Uganda appeared first on iRunFar. A look at the unique running culture in Kapchorwa, Uganda, which has produced multiple Olympic and…",
+   "source": "iRunFar",
+   "date": "2026-11-17",
+   "lane": "running"
+  },
+  {
+   "title": "Escape Winter With These 6 Underrated Desert Trail Runs",
+   "url": "https://www.trailrunnermag.com/travel/6-underrated-desert-trail-runs/",
+   "dek": "",
+   "source": "Trail Runner",
+   "date": "2026-11-13",
+   "lane": "running"
+  },
+  {
+   "title": "Cycling or elliptical? Which is better for cross-training",
+   "url": "https://runningmagazine.ca/sections/training/cycling-or-elliptical-which-is-better-for-cross-training/",
+   "dek": "Alternative cardio workouts can help you maintain your fitness while giving your body a break The post Cycling or elliptical? Which is better for cross-training appeared first on Canadian…",
+   "source": "Canadian Running",
+   "date": "2026-11-17",
+   "lane": "running"
+  },
+  {
+   "title": "Turkey Recipes: 3 Classic Favorites Anytime",
+   "url": "https://www.hobbyfarms.com/three-traditional-turkey-recipes-home/",
+   "dek": "Turkey Recipes Handed Down Through Generations The post Turkey Recipes: 3 Classic Favorites Anytime appeared first on Hobby Farms.",
+   "source": "Hobby Farms",
+   "date": "2026-11-11",
+   "lane": "land"
+  },
+  {
+   "title": "In Cape Cod’s Depleted Estuaries, Shellfish Help Reverse Pollution",
+   "url": "https://civileats.com/2026/11/16/in-cape-cods-depleted-estuaries-shellfish-join-efforts-to-reverse-pollution/",
+   "dek": "By Ben Seal • November 16, 2026On a septic-heavy peninsula, oysters, clams, and scallops suffer from poor water quality. Now they’re turning the tide.Read the full article →",
+   "source": "Civil Eats",
+   "date": "2026-11-16",
+   "lane": "land"
+  },
+  {
+   "title": "EPA Awards $13.9M for Project to Simultaneously Save Flooding Freeway and Restore Critical Wetland in San Francisco Bay",
+   "url": "https://www.audubon.org/california/press-room/epa-awards-139m-project-simultaneously-save-flooding-freeway-and-restore",
+   "dek": "(Tiburon, CA) In partnership with Audubon California, local governments, transportation agencies, and restoration practitioners, the Association of Bay Area Governments has been awarded…",
+   "source": "Audubon",
+   "date": "2026-11-16",
+   "lane": "animals"
+  },
+  {
+   "title": "Plans for a new marine protected area boost whale shark conservation in Indonesia’s Saleh Bay",
+   "url": "https://news.mongabay.com/2026/11/plans-for-a-new-marine-protected-area-boost-whale-shark-conservation-in-indonesias-saleh-bay/",
+   "dek": "Plans to create a marine protected area for whale sharks in Indonesia’s Saleh Bay would give the world’s largest fish important new protections across several stages of its lifecycle…",
+   "source": "Mongabay",
+   "date": "2026-11-17",
+   "lane": "animals"
+  },
+  {
+   "title": "Glass Wonders Gallery in Karpacz, Poland",
+   "url": "https://www.atlasobscura.com/places/glass-wonders-gallery",
+   "dek": "Step into a realm where sand and fire transform into pure magic at the Glass Wonders Gallery in Karpacz. Nestled in the heart of the Karkonosze Mountains, this hidden gem turns an ordinary…",
+   "source": "Atlas Obscura",
+   "date": "2026-11-17",
+   "lane": "culture"
+  },
+  {
+   "title": "These Adorable Hatchlings Are From the U.S. West Coast's First Known Natural Sea Turtle Nests. Now, They've Returned to the Wild",
+   "url": "https://www.smithsonianmag.com/smart-news/these-adorable-hatchlings-are-from-the-us-west-coasts-first-known-natural-sea-turtle-nests-now-theyve-returned-to-the-wild-180989876/",
+   "dek": "Two nests were spotted in September, and authorities moved the eggs to an aquarium to protect them from an incoming tropical storm. Over the weekend, dozens of hatchlings emerged and have…",
+   "source": "Smithsonian",
+   "date": "2026-11-16",
+   "lane": "culture"
+  },
+  {
+   "title": "Farmer Finds Unknown Seeds in His Attic – and Grows an Ancient ‘Miracle’ Grain",
+   "url": "https://www.goodnewsnetwork.org/farmer-finds-unknown-seeds-in-his-attic-and-grows-an-ancient-miracle-grain/",
+   "dek": "From the sun-soaked plains of Parma comes the story of an Italian farmer who accidentally brought on a Biblical resurrection with very modern implications for our food system. Claudio…",
+   "source": "Good News Network",
+   "date": "2026-11-16",
+   "lane": "news"
+  },
+  {
+   "title": "What We’re Reading: An 80-Cent Plastic Bag Is Saving Mothers’ Lives",
+   "url": "https://reasonstobecheerful.world/what-were-reading-an-80-cent-plastic-bag-is-saving-mothers-lives/",
+   "dek": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it…",
+   "source": "Reasons to be Cheerful",
+   "date": "2026-11-11",
+   "lane": "news"
+  },
+  {
+   "title": "Ten TV Series That Highlight the Best in Humanity: 2026",
+   "url": "https://greatergood.berkeley.edu/article/item/ten_tv_series_that_highlight_the_best_in_humanity_2026",
+   "dek": "Every year, we invite staff and regular contributors to nominate TV series for Greater Goodies, the awards we give to stories that exemplify or illustrate kindness, community, empathy, and…",
+   "source": "Greater Good",
+   "date": "",
+   "lane": "research"
+  },
+  {
+   "title": "This Week In Running: November 16, 2026",
+   "url": "https://www.irunfar.com/this-week-in-running-november-16-2026",
+   "dek": "The post This Week In Running: November 16, 2026 appeared first on iRunFar. This Week in Running’s trail and ultra recap for November 16, 2026. This Week In Running: November 16, 2026 by…",
+   "source": "iRunFar",
+   "date": "2026-11-16",
+   "lane": "running"
+  },
+  {
+   "title": "Backyard Ultras Are Booming. Here’s Why.",
+   "url": "https://www.trailrunnermag.com/races/backyard-ultras-are-booming-heres-why/",
+   "dek": "Put on the map by the likes of Courtney Dauwalter and mastermind Gary \"Lazarus Lake\" Cantrell, backyard ultras have no time cutoff and seemingly no end to their rise in popularity.",
+   "source": "Trail Runner",
+   "date": "2026-10-29",
+   "lane": "running"
+  },
+  {
+   "title": "Would you try a 5K where the slowest runners start first?",
+   "url": "https://runningmagazine.ca/the-scene/would-you-try-a-5k-where-the-slowest-runners-start-first/",
+   "dek": "In a handicap race, slower runners get a head start, giving everyone a shot at crossing the finish line first The post Would you try a 5K where the slowest runners start first? appeared…",
+   "source": "Canadian Running",
+   "date": "2026-11-16",
+   "lane": "running"
+  }
+ ],
+ "found_es": [
+  {
+   "title": "Iverco, Carretero y Etesa: viejos negocios, nuevos contratos",
+   "url": "https://www.agenciaocote.com/blog/2026/11/16/iverco-carretero-etesa-viejos-negocios-nuevos-contratos/",
+   "dek": "Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcción y modernización de torres y líneas de electricidad con la venta de instrumentos musicales al Estado? A primera…",
+   "source": "Agencia Ocote",
+   "date": "2026-11-16",
+   "lane": "news"
+  },
+  {
+   "title": "El nuevo mercado de la vejez femenina",
+   "url": "https://ethic.es/nuevo-mercado-vejez-femenina",
+   "dek": "El mercado global de productos y servicios vinculados a la menopausia (cosméticos, suplementos, apps y tecnología médica) alcanzó los 20.000 millones de euros en 2023. La entrada El nuevo…",
+   "source": "Ethic",
+   "date": "2026-11-16",
+   "lane": "news"
+  },
+  {
+   "title": "Dajla: expansión urbanística y transformación de un territorio ocupado",
+   "url": "https://climatica.coop/dajla-expansion-urbanistica/",
+   "dek": "La construcción de hoteles, villas y nuevos complejos residenciales se suma a grandes proyectos agrícolas, energéticos y de infraestructuras en el Sáhara Occidental. The post Dajla…",
+   "source": "Climática",
+   "date": "2026-11-17",
+   "lane": "news"
+  },
+  {
+   "title": "El Parque Nacional Tingo María, en Huánuco, y la Reserva Nacional Allpahuayo Mishana, en Loreto, destacan entre las 100 mejores experiencias de turism",
+   "url": "https://inforegion.pe/el-parque-nacional-tingo-maria-en-huanuco-y-la-reserva-nacional-allpahuayo-mishana-en-loreto-destacan-entre-las-100-mejores-experiencias-de-turismo-sostenible-del-mundo/",
+   "dek": "El Parque Nacional Tingo María, en Huánuco, y la Reserva Nacional Allpahuayo Mis... La entrada El Parque Nacional Tingo María, en Huánuco, y la Reserva Nacional Allpahuayo Mishana, en…",
+   "source": "Inforegión",
+   "date": "2026-11-16",
+   "lane": "news"
+  },
+  {
+   "title": "Cinco clásicos de toda la vida que se pusieron botas y sombrero con los artistas populares",
+   "url": "https://www.agronegocios.co/finca/cinco-clasicos-de-toda-la-vida-que-se-pusieron-botas-y-sombrero-con-los-artistas-populares-4525286",
+   "dek": "Hoy recordamos cinco canciones, de diferentes géneros musicales, que conquistaron generaciones y que ahora regresan con el sello de nuestros artistas agropecuarios",
+   "source": "Agronegocios",
+   "date": "2026-11-14",
+   "lane": "land"
+  },
+  {
+   "title": "México: un sistema de policultivo tradicional restaura la tierra en la Sierra Nororiental de Puebla",
+   "url": "https://es.mongabay.com/2026/11/mexico-sistema-policultivo-tradicional-restaura-tierra-sierra-nororiental-puebla/",
+   "dek": "“Innovar significa volver algo a su estado original”, recuerda entre risas el ingeniero Leonardo Durán al hablar del asombro que fue descubrir que uno de los usos de esta palabra…",
+   "source": "Mongabay Latam",
+   "date": "2026-11-17",
+   "lane": "animals"
+  },
+  {
+   "title": "La tinta es semilla",
+   "url": "https://www.zendalibros.com/la-tinta-es-semilla/",
+   "dek": "Aunque Incluso si nada renace constituye su primer poemario publicado, Arantxa Rochet lleva años vinculada a la poesía y a la vida cultural madrileña. Seleccionada en 2008 como autora…",
+   "source": "Zenda Libros",
+   "date": "2026-11-17",
+   "lane": "culture"
+  },
+  {
+   "title": "Fe, espectáculo, geopolítica",
+   "url": "https://www.revistaanfibia.com/historia-de-los-viajes-papales-fe-espectaculo-geopolitica/",
+   "dek": "A diferencia de lo que suele creerse, los viajes apostólicos son relativamente recientes en la historia del papado. El primer papa que salió de Italia en el período contemporáneo fue Pablo…",
+   "source": "Revista Anfibia",
+   "date": "2026-11-08",
+   "lane": "culture"
+  },
+  {
+   "title": "Tanto cine y tan poca ley",
+   "url": "https://www.agenciaocote.com/blog/2026/11/09/tanto-cine-y-tan-poca-ley/",
+   "dek": "Un país que no protege su cine tampoco protege su memoria. En Guatemala se hacen películas, de las buenas. Hay cineastas, productores, técnicos, festivales y asociaciones que llevan años…",
+   "source": "Agencia Ocote",
+   "date": "2026-11-09",
+   "lane": "news"
+  },
+  {
+   "title": "¿A ciudades más grandes ciudadanos menos felices?",
+   "url": "https://ethic.es/ciudades-grandes-ciudadanos-menos-felices",
+   "dek": "Quizá una ciudad de éxito no sea simplemente una ciudad capaz de atraer cada vez a más habitantes, sino una en la que merezca la pena vivir cuando ya los ha atraído. La entrada ¿A ciudades…",
+   "source": "Ethic",
+   "date": "2026-11-13",
+   "lane": "news"
+  },
+  {
+   "title": "[VÍDEO] Día 7 de la COP31: primer borrador de acuerdo final",
+   "url": "https://climatica.coop/cop31-dia-7/",
+   "dek": "La periodista Tais Gadea Lara nos cuenta desde Antalya (Turquía) cómo se desarrollan las negociaciones en la cumbre del clima. The post [VÍDEO] Día 7 de la COP31: primer borrador de acuerdo…",
+   "source": "Climática",
+   "date": "2026-11-16",
+   "lane": "news"
+  },
+  {
+   "title": "Tito Jaime, alcalde electo de Leoncio Prado, plantea impulsar la agricultura y el turismo para fortalecer la economía de Leoncio Prado",
+   "url": "https://inforegion.pe/tito-jaime-alcalde-electo-de-leoncio-prado-plantea-impulsar-la-agricultura-y-el-turismo-para-fortalecer-la-economia-de-leoncio-prado/",
+   "dek": "El alcalde electo de Leoncio Prado, Tito Jaime, anunció que su futura gestión mu... La entrada Tito Jaime, alcalde electo de Leoncio Prado, plantea impulsar la agricultura y el turismo para…",
+   "source": "Inforegión",
+   "date": "2026-11-13",
+   "lane": "news"
+  }
+ ],
+ "found_ja": [
+  {
+   "title": "【11/27-28＠愛知・蒲郡】壊れた愛用品を連れて、温泉旅館へ。直す日、愛でる日、めでたい日。「経年好日」開催",
+   "url": "https://ideasforgood.jp/2026/11/17/keinenkoujitsu-repair-event-gamagori/",
+   "dek": "壊れたモノを直し、時を重ねた愛用品を祝う2日間。愛知県蒲郡市の老舗旅館「平野屋」で、リペアイベント「経年好日」が開催。修理体験やアップサイクル、IDEAS FOR GOOD制作の映画『リペアカフェ』上映などを通じて、モノを長く使う豊かさに触れます。 The post…",
+   "source": "IDEAS FOR GOOD",
+   "date": "2026-11-17",
+   "lane": "news"
+  },
+  {
+   "title": "人の魂は、森の生きものたちにも宿っている。タイの少数民族「スゴー・カレン族」の知恵と文化を次の世代へつなぐ2人の実践",
+   "url": "https://greenz.jp/2026/11/13/sgaw-karen/",
+   "dek": "この記事はgreenz peopleからのギフト（寄付）で届けられています。あなたもgreenz peopleになって、すてきな記事を誰かに届けてみませんか？ その土地に古くから続いてきた暮らしや文化は、どうすれば残っていくのだろう。なぜ、ある暮らしは静かに消え、ある暮らしは続いていくのか。…",
+   "source": "greenz.jp",
+   "date": "2026-11-12",
+   "lane": "news"
+  },
+  {
+   "title": "音楽家の子育て歳時記。〜天川の風にフルートの音色をのせて〜(奈良県天川村洞川温泉)",
+   "url": "https://sotokoto-online.jp/sotokoto_pen_club/27281",
+   "dek": "秋の夜空と、リビングの小さなお月見 すっかり秋の空気が馴染んできた10月。夜風がひんやりと心地よく、ふと見上げる夜空がひときわ高く澄み渡る美しい季節です。日本では古くから、9月の中秋の名月だけでなく10月のこの「後の月 […]",
+   "source": "ソトコト",
+   "date": "2026-10-29",
+   "lane": "news"
+  },
+  {
+   "title": "ベビーリーフ一本化で売上高14倍 飛躍の背景にある「作物が営業する」経営と通年出荷の工夫",
+   "url": "https://agri.mynavi.jp/2026_11_16_619698/",
+   "dek": "親から経営を引き継ぐとき、何を守り、何を改めるかが事業の発展を左右する。みっちゃん工房（熊本県益城町）の社長、光永カオリ（みつなが・かおり）さんは親が選んだ品目のうちベビーリーフに絞り、売上高を飛躍的に拡大した。貫いたのは「農産物が営業する」というスタンスだ。",
+   "source": "マイナビ農業",
+   "date": "2026-11-15",
+   "lane": "land"
+  },
+  {
+   "title": "変わる混浴 湯あみ着で誰でも入りやすく：激減の中で守る湯治文化",
+   "url": "https://www.nippon.com/ja/articles/-/56882",
+   "dek": "日本の混浴が変化している。男女が一緒の風呂に入る習慣は江戸時代から続く日本の文化だが、近年は女性客に対する迷惑行為の影響もあり、その数が激減。一方で誰もが湯に漬かりながら語らう文化を残そうと、湯あみ着を導入したり、水着で楽しめるように工夫したりする動きも出てきた。",
+   "source": "Nippon.com",
+   "date": "2026-11-13",
+   "lane": "culture"
+  },
+  {
+   "title": "環境建築家・仙田満の足跡を辿る展覧会が〈建築家会館〉で開催。",
+   "url": "https://casabrutus.com/categories/architecture/496699",
+   "dek": "80歳を超えて、なお〈石川県立図書館〉や〈エディオンピースウイング広島〉といった意欲的な作品を世に送り出し続ける仙田満。環境建築家としての60年余りの歩みを振り返る展覧会『仙田MAN展 ことばで紡ぐ建築』が開催される。",
+   "source": "Casa Brutus",
+   "date": "2026-11-16",
+   "lane": "culture"
+  },
+  {
+   "title": "【11/26オンライン開催】Refuturing: アジアらしい循環とは？日本とインドネシアの建築文化から紐解く、コンヴィヴィアルなサーキュラーデザインの実践",
+   "url": "https://ideasforgood.jp/2026/11/17/refuturing-10/",
+   "dek": "欧州発のサーキュラーエコノミーを、日本やアジアの風土にどう根付かせるか。11/26開催の「Refuturing」では、竹中工務店の海野玄陽氏を迎え、日本とインドネシアの建築文化やバイオマス活用から、アジアならではの「コンヴィヴィアル（共愉的）な循環」の実践を探ります。 The post 【11/26オンライン開催】Refuturing…",
+   "source": "IDEAS FOR GOOD",
+   "date": "2026-11-17",
+   "lane": "news"
+  },
+  {
+   "title": "地域で、どう経済を回すか。元内閣官房・村上敬亮さんに聞く、地方創生のこれまでとこれから",
+   "url": "https://greenz.jp/2026/11/11/keisuke-murakami/",
+   "dek": "この記事はgreenz peopleからのギフト（寄付）で届けられています。あなたもgreenz peopleになって、すてきな記事を誰かに届けてみませんか？ グリーンズはこれまで、地域を元気にする様々なローカルのプロジェクトを取り上げてきました。日本全体を見ても、2014年から地方創生が掲げられ、地方を活性化する様々な取り組みに支援が行われています。実際、この10年余りでロー…",
+   "source": "greenz.jp",
+   "date": "2026-11-10",
+   "lane": "news"
+  },
+  {
+   "title": "【接ぎ木 実践編】年間2000本をこなすプロが解説！ 接ぎ木で失敗しない「3つのタイミング」と成功の5つのポイント",
+   "url": "https://agri.mynavi.jp/2026_11_15_618017/",
+   "dek": "接ぎ木に挑戦してみたいけれど、「台木はどのくらい育ててから接げばよいのか？」「地植えして大きくなった木にも接ぎ木できるのか？」と疑問に思ったことはないだろうか。実は、接ぎ木は発芽して間もない小さな苗から、何年も育った大きな木まで、さまざまな生育段階で行うことができる。筆者は沖縄で熱帯果樹を中心に栽培し、年間2,000本以上の接ぎ木を行っているが、台木を1年ほど育ててから接ぐこと…",
+   "source": "マイナビ農業",
+   "date": "2026-11-14",
+   "lane": "land"
+  }
+ ],
+ "found_lt": [
+  {
+   "title": "Meninis vaikų ugdymas: kodėl jį pradedame per vėlai ir ką dirbtinio intelekto amžiuje vaikui duoda scena?",
+   "url": "https://www.bernardinai.lt/meninis-vaiku-ugdymas-kodel-ji-pradedame-per-velai-ir-ka-dirbtinio-intelekto-amziuje-vaikui-duoda-scena/",
+   "dek": "Skaičiuojama, kad mūsų šalyje yra daugiau nei 300 tūkst. moksleivių. Egzistuoja sena tradicija, kad neformaliuoju vaikų švietimu turi rūpintis savivaldybės, tačiau prieš dešimtmetį šiam…",
+   "source": "Bernardinai",
+   "date": "2026-11-17",
+   "lane": "news"
+  },
+  {
+   "title": "Šimtametis knygoje dalinasi ilgo gyvenimo paslaptimis",
+   "url": "https://mokslolietuva.lt/2026/11/simtametis-knygoje-dalinasi-ilgo-gyvenimo-paslaptimis/",
+   "dek": "Farmakologas, habilituotas biomedicinos mokslų daktaras, profesorius Antanas Juozas Gendrolis gegužės mėnesį sulaukęs šimto metų pristato autobiografinę knygą „Šimtametis dar turi …",
+   "source": "Mokslo Lietuva",
+   "date": "2026-11-17",
+   "lane": "research"
+  },
+  {
+   "title": "Kviečiame į podoktorantūros tyrėjų konferenciją „Exploring Biodiversity, Interactions and Environmental Change“",
+   "url": "https://gamtostyrimai.lt/kvieciame-i-podoktoranturos-tyreju-konferencija-exploring-biodiversity-interactions-and-environmental-change/",
+   "dek": "2026 m. gruodžio 1 d. Gamtos tyrimų centras kviečia į podoktorantūros tyrėjų konferenciją „Exploring Biodiversity, Interactions and Environmental Change“, kurioje bus pristatomi aktualūs…",
+   "source": "Gamtos tyrimai",
+   "date": "2026-11-17",
+   "lane": "animals"
+  },
+  {
+   "title": "Parodoje Torunėje – kauniečių fotografų darbai",
+   "url": "https://kaunaspilnas.lt/parodoje-toruneje-kaunieciu-fotografu-darbai/",
+   "dek": "Penktadienio, lapkričio 13-osios vakarą meno galerijoje „Wozownia“ Torunėje (Lenkija) atidaryta paroda „Lietuvos fotografija. Žvilgsnių lietus“, per dvylikos fotografų kūrybą atskleidžianti…",
+   "source": "Kaunas pilnas kultūros",
+   "date": "2026-11-16",
+   "lane": "culture"
+  },
+  {
+   "title": "Lietuvos nacionalinis muziejus kviečia atrasti veltinio istoriją",
+   "url": "https://lnm.lt/aktualijos/lietuvos-nacionalinis-muziejus-kviecia-atrasti-veltinio-istorija/",
+   "dek": "Gruodžio 2 d. 18 val. Lietuvos nacionalinio muziejaus Senajame arsenale (Arsenalo g. 3, Vilnius) bus atidaroma nauja paroda „Susivėlę radiniai“. Ji kvies atrasti veltinio istoriją ir…",
+   "source": "Nacionalinis muziejus",
+   "date": "2026-11-17",
+   "lane": "culture"
+  },
+  {
+   "title": "CNN: sutriko itin slaptas JAV nacionalinio saugumo ryšių tinklas",
+   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/cnn-sutriko-itin-slaptas-jav-nacionalinio-saugumo-rysiu-tinklas-57-2808286?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "JAV Nacionalinio saugumo agentūros (NSA) vidaus ryšiams naudojamas itin slaptas tinklas neveikia, teigia šeši su situacija susipažinę asmenys, kuriuos cituoja CNN.",
+   "source": "15min Kultūra",
+   "date": "2026-11-17",
+   "lane": "culture"
+  },
+  {
+   "title": "Taline įvyko kriminalinės dramos „Trys savaitės dugne“ premjera",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3117114/taline-ivyko-kriminalines-dramos-trys-savaites-dugne-premjera",
+   "dek": "Pirmadienio vakarą vieninteliame Šiaurės Europos A klasės kino festivalyje – Talino „Juodosiose naktyse“ įvyko režisieriaus Martino Kubos filmo „Trys savaitės dugne“ pasaulinė premjera…",
+   "source": "LRT Kultūra",
+   "date": "2026-11-17",
+   "lane": "culture"
+  },
+  {
+   "title": "Frankfurto prie Maino Goethe’s universiteto profesorė Jolanta Gelumbeckaitė: „Nenorėjau, kad tai, ką dėstau, dingtų“",
+   "url": "https://mokslolietuva.lt/2026/11/frankfurto-prie-maino-goethes-universiteto-profesore-jolanta-gelumbeckaite-nenorejau-kad-tai-ka-destau-dingtu/",
+   "dek": "„Orientuojuosi į indoeuropeistikos studijas, noriu, kad tos senosios kalbos būtų kuo daugiau“, – sako profesorė Jolanta Gelumbeckaitė, jau daugiau nei …",
+   "source": "Mokslo Lietuva",
+   "date": "2026-11-17",
+   "lane": "research"
+  },
+  {
+   "title": "Kerpės ant medžių rodo oro švarą: kai kurios rūšys ten niekada neauga (dr. Jurga Motiejūnaitė)",
+   "url": "https://gamtostyrimai.lt/kerpes-ant-medziu-rodo-oro-svara-kai-kurios-rusys-ten-niekada-neauga-dr-jurga-motiejunaite/",
+   "dek": "The post Kerpės ant medžių rodo oro švarą: kai kurios rūšys ten niekada neauga (dr. Jurga Motiejūnaitė) appeared first on Gamtos tyrimų centras.",
+   "source": "Gamtos tyrimai",
+   "date": "2026-11-16",
+   "lane": "animals"
+  },
+  {
+   "title": "Nuo pirmų natų iki bendrų šeimų: kaip choras keičia likimus ir kuria bendrystę",
+   "url": "https://kaunaspilnas.lt/nuo-pirmu-natu-iki-bendru-seimu-kaip-choras-keicia-likimus-ir-kuria-bendryste/",
+   "dek": "Pradėjusi galvoti, ko galėčiau paklausti savo pašnekovių apie chorą, turėjau progą apmąstyti ir savo pačios kelią su juo. Su choriniu dainavimu susipažinau muzikos mokykloje. Kai choro…",
+   "source": "Kaunas pilnas kultūros",
+   "date": "2026-11-16",
+   "lane": "culture"
+  },
+  {
+   "title": "Tarp naujausių Lietuvos nacionalinio muziejaus įsigytų vertybių – dailininko Petro Repšio kūriniai",
+   "url": "https://lnm.lt/aktualijos/tarp-naujausiu-lietuvos-nacionalinio-muziejaus-isigytu-vertybiu-dailininko-petro-repsio-kuriniai/",
+   "dek": "Lietuvos nacionalinio muziejaus (LNM) rinkinius šiemet papildė vieno žymiausių Lietuvos dailininkų, Nacionalinės kultūros ir meno premijos laureato Petro Repšio (g. 1940 m.) kūriniai. Tarp…",
+   "source": "Nacionalinis muziejus",
+   "date": "2026-11-12",
+   "lane": "culture"
+  },
+  {
+   "title": "Graikų dievai niekada nebuvo šventuoliai: lietuviškai pasirodo Stepheno Fry`aus „Mythos“",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3117082/graiku-dievai-niekada-nebuvo-sventuoliai-lietuviskai-pasirodo-stepheno-fry-aus-mythos",
+   "dek": "Vienas garsiausių britų aktorių, komikų ir rašytojų Stephenas Fry`us knygoje „Mythos“ iš naujo pasakoja legendinius graikų mitus, atskleisdamas jų humorą, dramą ir stebėtiną aktualumą…",
+   "source": "LRT Kultūra",
+   "date": "2026-11-17",
+   "lane": "culture"
+  }
+ ],
+ "found_india": [
+  {
+   "title": "As Groundwater Levels Fall, Rewari Is Reviving 10 Ponds to Store 120 Million Litres of Water",
+   "url": "https://thebetterindia.com/conservation/nature/rewari-haryana-village-pond-restoration-teri-water-conservation-12816963",
+   "dek": "For a village that depends on the monsoon, a pond can make the difference between rainwater that runs away and water that remains available after the rains. It can collect rainfall, support…",
+   "source": "The Better India",
+   "date": "2026-11-17",
+   "lane": "news"
+  },
+  {
+   "title": "Bijapur’s former Naxal strongholds get electricity for the first time",
+   "url": "https://villagesquare.in/bijapurs-former-naxal-strongholds-get-electricity-for-the-first-time/",
+   "dek": "Until December 2024, Kondapalli village in Usoor block in Chhattisgarh’s Bijapur district was considered a Naxal stronghold. The village, home to around 600 people across 144 households…",
+   "source": "Village Square",
+   "date": "2026-11-17",
+   "lane": "news"
+  },
+  {
+   "title": "Pulmonologist explains how COPD can run in the family and who is at higher risk even without smoking",
+   "url": "https://www.hindustantimes.com/lifestyle/health/pulmonologist-explains-how-copd-can-run-in-the-family-and-who-is-at-higher-risk-even-without-smoking-101794910914742.html",
+   "dek": "COPD is not always passed down from parents to children, but genetics does have a role to play, shares Dr Sushil Gupta.",
+   "source": "Hindustan Times Health",
+   "date": "2026-11-17",
+   "lane": "running"
+  },
+  {
+   "title": "No land to call their own, migrants and elephants share Teesta’s shifting sandbars",
+   "url": "https://india.mongabay.com/video/2026/11/migrants-and-elephants-share-shifting-sandbars/",
+   "dek": "On the shifting sandbars of the Teesta in West Bengal, migrant farmers cultivate seasonal crops that are increasingly attracting elephants from nearby forests. The elephants feed on these…",
+   "source": "Mongabay India",
+   "date": "2026-11-17",
+   "lane": "land"
+  },
+  {
+   "title": "How a Bird’s Discovery Led to a Conservation Success Story",
+   "url": "https://roundglasssustain.com/conservation/bugun-liocichla-eaglenest",
+   "dek": "The discovery of the Bugun Liocichla in 2006 sparked a community-led conservation effort that protected a forest, secured the species’ future, and placed this landscape firmly on the global…",
+   "source": "Roundglass Sustain",
+   "date": "2026-11-17",
+   "lane": "animals"
+  },
+  {
+   "title": "The inaugural edition of the Moto Summit Kochi 2026 will take place on November 21 and 22",
+   "url": "https://www.thehindu.com/society/the-inaugural-edition-of-the-moto-summit-kochi-2026-will-take-place-on-november-21-and-22/article71692605.ece",
+   "dek": "Touted as Keralam’s first ultimate motorsports and lifestyle festival, Moto Summit Kochi, will be held at Chakola Mill, Kalamassery",
+   "source": "The Hindu Society",
+   "date": "2026-11-16",
+   "lane": "culture"
+  },
+  {
+   "title": "Once An Earthshot Awards Winner, This Indian Startup Is Turning Stubble Into Biochar",
+   "url": "https://thebetterindia.com/conservation/nature/takachar-stubble-burning-biochar-earthshot-prize-12816727",
+   "dek": "Every winter, the burning of leftover paddy stubble across northern India adds to seasonal air pollution, particularly in the Indo-Gangetic plains. For farmers working against tight…",
+   "source": "The Better India",
+   "date": "2026-11-17",
+   "lane": "news"
+  },
+  {
+   "title": "Nature at the heart of Bihar’s vibrant Chhath Puja",
+   "url": "https://villagesquare.in/nature-at-the-heart-of-bihars-vibrant-chhath-puja/",
+   "dek": "A woman makes an offering to the rising sun on the auspicious occasion of Chhath Puja. This festival is one of its kind where the rising and setting sun are both worshipped. (Photo by…",
+   "source": "Village Square",
+   "date": "2026-11-15",
+   "lane": "news"
+  },
+  {
+   "title": "Doctor explains annual health check-ups: Age group that actually needs them and what they should include",
+   "url": "https://www.hindustantimes.com/lifestyle/health/doctor-explains-annual-health-check-ups-age-group-that-actually-needs-them-and-what-they-should-include-101794899124732.html",
+   "dek": "Regular health checkups are important for everyone, but some need it more frequently than others, shares Dr Ravi Kesri.",
+   "source": "Hindustan Times Health",
+   "date": "2026-11-17",
+   "lane": "running"
+  }
+ ],
+ "found_tibet": [
+  {
+   "title": "Xi says Taiwan reunification ‘unstoppable’, rules out independence",
+   "url": "https://phayul.com/2026/11/xi-says-taiwan-reunification-unstoppable-rules-out-independence/",
+   "dek": "Tenzin Nyidon DHARAMSHALA, Nov. 13: Chinese President Xi Jinping has renewed Beijing’s insistence on bringing Taiwan under its control, declaring that the island’s eventual reunification…",
+   "source": "Phayul",
+   "date": "2026-11-13",
+   "lane": "news"
+  },
+  {
+   "title": "Woman Chinese cadre in Tibet for 40 plus years indicted for bribery",
+   "url": "https://www.tibetanreview.net/woman-chinese-cadre-in-tibet-for-40-plus-years-indicted-for-bribery/",
+   "dek": "(TibetanReview.net, Nov16’26) – A Chinese woman who held positions in Tibet Autonomous Region (TAR) for more than four decades since 1982, rising to become the deputy head of its…",
+   "source": "Tibetan Review",
+   "date": "2026-11-16",
+   "lane": "news"
+  },
+  {
+   "title": "Health Kalon Pema Tso Visits Tibetan Healthcare Facilities in Delhi, Meets Residents Requiring Medical Assistance",
+   "url": "https://tibet.net/health-kalon-pema-tso-visits-tibetan-healthcare-facilities-in-delhi-meets-residents-requiring-medical-assistance/",
+   "dek": "New Delhi: Kalon Pema Tso of the Department of Health, CTA, conducted a two-day official visit to Samyeling Tibetan Settlement and Tibetan health facilities in Delhi on 14 and 15 November…",
+   "source": "Central Tibetan Administration",
+   "date": "2026-11-16",
+   "lane": "news"
+  },
+  {
+   "title": "Tibet House US honours Michael Douglas and Thurmans with 2026 Art of Freedom awards",
+   "url": "https://phayul.com/2026/11/tibet-house-us-honours-michael-douglas-and-thurmans-with-2026-art-of-freedom-awards/",
+   "dek": "Tenzin Nyidon DHARAMSHALA, Nov. 11: Tibet House US honoured Hollywood actor and longtime supporter of the Tibetan cause Michael Douglas, alongside its co-founder Birgitte “Nena” Thurman and…",
+   "source": "Phayul",
+   "date": "2026-11-11",
+   "lane": "news"
+  },
+  {
+   "title": "India forms specialised police commando body to patrol its Tibet-border with China",
+   "url": "https://www.tibetanreview.net/india-forms-specialised-police-commando-body-to-patrol-its-tibet-border-with-china/",
+   "dek": "(TibetanReview.net, Nov13’26) – Even as they continue to improve bilateral ties in a host of areas after the serious mid-2020 Galwan Valley clash-led freeze, India and China are continuing…",
+   "source": "Tibetan Review",
+   "date": "2026-11-13",
+   "lane": "news"
+  },
+  {
+   "title": "CTA Winter Inter-Departmental Basketball Tournament Concludes Successfully",
+   "url": "https://tibet.net/cta-winter-inter-departmental-basketball-tournament-concludes-successfully/",
+   "dek": "Dharamshala: The CTA Winter Inter-Departmental Basketball Tournament concluded successfully on 13 November 2026, marking the culmination of a month-long sporting event organised by the…",
+   "source": "Central Tibetan Administration",
+   "date": "2026-11-16",
+   "lane": "news"
+  },
+  {
+   "title": "Tibetan activist Kalsang Tharchin completes 1600-km solo walk for language preservation",
+   "url": "https://phayul.com/2026/11/tibetan-activist-kalsang-tharchin-completes-1600-km-solo-walk-for-language-preservation/",
+   "dek": "Tenzin Nyidon DHARAMSHALA, Nov. 11: Nearly four months on the road walking through the unforgiving terrains of the Himalayas surviving primarily on a staple of Tsampa (barley flour), a…",
+   "source": "Phayul",
+   "date": "2026-11-11",
+   "lane": "news"
+  },
+  {
+   "title": "PRC President Xi Jinping reiterates Taiwan reunification vow on 160th ROC founder’s birthday",
+   "url": "https://www.tibetanreview.net/prc-president-xi-jinping-reiterates-taiwan-reunification-vow-on-160th-roc-founders-birthday/",
+   "dek": "(TibetanReview.net, Nov12’26) – As China commemorated the 160th anniversary of the birth of Sun Yat-sen on Nov 12, its top Party-state leader Xi Jinping has called for a complete…",
+   "source": "Tibetan Review",
+   "date": "2026-11-12",
+   "lane": "news"
+  },
+  {
+   "title": "Tibet House US honors Michael Douglas with 2026 Art of Freedom award",
+   "url": "https://www.tibetanreview.net/tibet-house-us-honors-michael-douglas-with-2026-art-of-freedom-award/",
+   "dek": "(TibetanReview.net, Nov09’26) – Tibet House US, founded in New York City by a group of supporters of Tibetan culture and the Tibetan cause, including Robert Thurman, Richard Gere, and…",
+   "source": "Tibetan Review",
+   "date": "2026-11-09",
+   "lane": "news"
+  }
+ ]
 }
