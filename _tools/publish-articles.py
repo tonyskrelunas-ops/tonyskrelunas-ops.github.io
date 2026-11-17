@@ -6,7 +6,10 @@ Tony, 14 November 2026: "this is all supposed to be automatic.. why are you wait
 i dont have time to look at things.. find a way to put things right in front of me if you need review."
 So articles publish themselves; the email that tells him about it comes after they are live.
 
-    python3 _tools/publish-articles.py draft1.md [draft2.md ...] [--dry-run]
+    python3 _tools/publish-articles.py draft1.md [draft2.md ...] [--dry-run] [--no-wait]
+
+--no-wait prints the JSON line right after the push, with "pushed": <commit>, instead of waiting for the
+pages to answer (the cloud routine cannot reach tribeawaken.com and checks the GitHub Pages deploy instead).
 
 Each draft is markdown with the frontmatter new-article.py reads, plus two keys of its own:
 
@@ -147,6 +150,11 @@ def main():
         sys.exit("FAILED: could not push")
 
     urls = ["https://tribeawaken.com/journal/%s/" % it["slug"] for it in items]
+    if "--no-wait" in sys.argv:                           # the cloud routine checks the Pages deploy itself
+        print(json.dumps({"pushed": sh("git", "rev-parse", "HEAD").strip(),
+                          "live": [{"title": it["meta"]["title"], "url": u, "first": it["first"]} for it, u in zip(items, urls)]},
+                         ensure_ascii=False))
+        return
     for t in range(60):                                   # up to 15 minutes
         ok = 0
         for u in urls:
