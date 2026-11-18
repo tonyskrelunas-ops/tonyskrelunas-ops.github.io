@@ -2,9 +2,9 @@
 
 Everything I read this morning that was worth keeping. Every one is live and shareable.
 
-**Canadians to watch at NCAA DI XC Championships** — Canadian Running  
-As international talent floods U.S. athletics, some of Canada's top runners are in the mix The post Canadians to watch at NCAA DI XC Championships appeared first on Canad  
-<https://runningmagazine.ca/the-scene/canadians-to-watch-at-ncaa-di-xc-championships/>
+**Bhutan wins $1.3m Earthshot Prize for maintaining 70% forest cover** — Mongabay  
+Bhutan has been crowned one of the 2026 winners of the Earthshot Prize for its work in conserving Himalayan forests, receiving 1 million pounds, or about $1.3 million, to  
+<https://news.mongabay.com/short-article/2026/11/bhutan-wins-1-3m-earthshot-prize-for-maintaining-70-forest-cover/>
 
 **Iverco, Carretero y Etesa: viejos negocios, nuevos contratos** — Agencia Ocote · ES  
 Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcción y modernización de torres y líneas de electricidad con la venta de instrumentos musicales a  
@@ -14,9 +14,9 @@ Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcci
 接ぎ木に挑戦してみたいけれど、「台木はどのくらい育ててから接げばよいのか？」「地植えして大きくなった木にも接ぎ木できるのか？」と疑問に思ったことはないだろうか。実は、接ぎ木は発芽して間もない小さな苗から、何年も育った大きな木まで、さまざまな生育段階で行うことができる。筆者は沖縄で熱帯果樹を中心に栽培し、年間2,000本以上の接ぎ木を行って  
 <https://agri.mynavi.jp/2026_11_15_618017/>
 
-**„Aukštybei sutverti“: restauruoti paveikslai iš Vilniaus arkivyskupijos bažnyčių** — Bernardinai · LT  
-Tradicinėje, jau ketvirtojoje restauruotų Vilniaus arkivyskupijos bažnyčių paveikslų parodoje „Aukštybei sutverti“ Bažnytinio paveldo muziejus pristato 2020–2026 m. atnau  
-<https://www.bernardinai.lt/aukstybei-sutverti-restauruoti-paveikslai-is-vilniaus-arkivyskupijos-baznyciu/>
+**Nauja muziejaus ekspozicija kvies kitaip pažvelgti į žmogaus ir gamtos santykį** — Kaunas pilnas kultūros · LT  
+Lapkričio 20 d. Kauno Tado Ivanausko zoologijos muziejuje duris atvers nauja ekspozicija, pakeisianti iki šiol veikusią medžioklės trofėjų salę. Atnaujintoje erdvėje medž  
+<https://kaunaspilnas.lt/nauja-ekspozicija-kvies-kitaip-pazvelgti-i-zmogaus-ir-gamtos-santyki/>
 
 **How a Bird’s Discovery Led to a Conservation Success Story** — Roundglass Sustain · INDIA  
 The discovery of the Bugun Liocichla in 2006 sparked a community-led conservation effort that protected a forest, secured the species’ future, and placed this landscape f  
@@ -26,25 +26,25 @@ The discovery of the Bugun Liocichla in 2006 sparked a community-led conservatio
 Dharamshala: Tibetan health facilities across India observed World Diabetes Day on 14 November 2026, through a series of awareness and preventive healthcare activities ai  
 <https://tibet.net/department-of-health-observes-world-diabetes-day-with-screenings-and-preventive-healthcare-activities/>
 
-**A Rural Community Seeks to Preserve Colorado’s Apple Heritage** — Civil Eats  
-By Jordan Charbonneau • November 18, 2026The Montezuma Orchard Restoration Project is protecting heirloom apple orchards and giving farmers a new revenue stream.Read the   
-<https://civileats.com/2026/11/18/a-rural-community-seeks-to-preserve-colorados-apple-heritage/>
+**Siblings Build 430-Step ‘Sky Ladder’ for Their Mother Who Refuses to Live in the City** — Good News Network  
+The children of an elderly Chinese mother have touched the hearts of millions by painstakingly building a new staircase by hand up the side of a mountain to help her reac  
+<https://www.goodnewsnetwork.org/siblings-build-430-step-sky-ladder-for-their-mother-who-refuses-to-live-in-the-city/>
 
-**[VÍDEO] Día 8 de la COP31: primeros temores ante un acuerdo de mínimos** — Climática · ES  
-La periodista Tais Gadea Lara nos cuenta desde Antalya (Turquía) cómo se desarrollan las negociaciones en la cumbre del clima. The post [VÍDEO] Día 8 de la COP31: primero  
-<https://climatica.coop/cop31-dia-8/>
+**Lo que le ha pasado al planeta y al clima mientras esperabas el GTA VI** — Climática · ES  
+En los 13 años que ha tardado en lanzarse una nueva entrega del videojuego Grand Theft Auto se ha adoptado el Acuerdo de París (y ha medio fracasado) y crecieron las reno  
+<https://climatica.coop/cambios-planeta-clima-gta-vi/>
 
 **【11/27-28＠愛知・蒲郡】壊れた愛用品を連れて、温泉旅館へ。直す日、愛でる日、めでたい日。「経年好日」開催** — IDEAS FOR GOOD · JA  
 壊れたモノを直し、時を重ねた愛用品を祝う2日間。愛知県蒲郡市の老舗旅館「平野屋」で、リペアイベント「経年好日」が開催。修理体験やアップサイクル、IDEAS FOR GOOD制作の映画『リペアカフェ』上映などを通じて、モノを長く使う豊かさに触れます。 The post…  
 <https://ideasforgood.jp/2026/11/17/keinenkoujitsu-repair-event-gamagori/>
 
-**Lietuvos nacionalinis muziejus kviečia atrasti veltinio istoriją** — Nacionalinis muziejus · LT  
-Gruodžio 2 d. 18 val. Lietuvos nacionalinio muziejaus Senajame arsenale (Arsenalo g. 3, Vilnius) bus atidaroma nauja paroda „Susivėlę radiniai“. Ji kvies atrasti veltinio  
-<https://lnm.lt/aktualijos/lietuvos-nacionalinis-muziejus-kviecia-atrasti-veltinio-istorija/>
+**Muziejui „Dingęs štetlas“ – prestižinis apdovanojimas iš už Atlanto** — LRT Kultūra · LT  
+Šeduvos žydų istorijos muziejus „Dingęs štetlas“ sulaukė dar vieno svarbaus pripažinimo – pelnė „Thea“ išskirtinio pasiekimo apdovanojimą (angl. Thea Award for Outstandin  
+<https://www.lrt.lt/naujienos/kultura/12/3118198/muziejui-dinges-stetlas-prestizinis-apdovanojimas-is-uz-atlanto>
 
-**The Lights We Leave On Could Be Taking Away the Darkness Kerala’s Forests Need. Here’s How to Help** — The Better India · INDIA  
-A road outside a forest stays lit after sunset. So does a nearby place of worship or a cluster of shops where people gather. Those lights help people go about their lives  
-<https://thebetterindia.com/conservation/nature/kerala-western-ghats-forest-light-pollution-protected-areas-study-12820248>
+**Trees Alone Cannot Protect Wildlife: Chandigarh Survey Shows Why Grasslands & Wetlands Matter Too** — The Better India · INDIA  
+Take a walk through a city park. There are trees lining the paths, lawns stretching between them and plenty of shade. It looks green, perhaps even thriving. But where are  
+<https://thebetterindia.com/wildlife/chandigarh-wildlife-survey-trees-not-enough-grasslands-wetlands-urban-habitat-12820932>
 
 **Health Kalon Pema Tso Visits Tibetan Healthcare Facilities in Delhi, Meets Residents Requiring Medical Assistance** — Central Tibetan Administration · TIBET  
 New Delhi: Kalon Pema Tso of the Department of Health, CTA, conducted a two-day official visit to Samyeling Tibetan Settlement and Tibetan health facilities in Delhi on 1  
@@ -61,6 +61,5 @@ list for a few days has moved or died and wants replacing.
 - **en** · news · Positive News — unreachable
 - **en** · land · Western Horseman — unreachable
 - **lt** · news · Kauno diena — unreachable
-- **lt** · research · — — nothing cleared the gates
 - **tibet** · research · — — nothing cleared the gates
 - **tibet** · culture · — — nothing cleared the gates
