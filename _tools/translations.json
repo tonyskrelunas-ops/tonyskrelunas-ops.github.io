@@ -278,5 +278,25 @@
    "dek": "Balsas, sakantis, kad kažko netenki, ir senesnis klausimas po juo: ką tai išlaikys?",
    "pillar": "Tarpgeneracinis gydymasis"
   }
+ },
+ "the-day-everything-went-right": {
+  "es": {
+   "href": "/es/el-dia-en-que-todo-salio-bien/",
+   "title": "El día en que todo salió bien",
+   "dek": "Recuerda un día en que todo simplemente salió bien. Un ejercicio sencillo de una jornada de liderazgo en el norte de Arizona, y la pregunta que más entusiasmó a la sala.",
+   "pillar": "Resiliencia humana"
+  },
+  "ja": {
+   "href": "/ja/subete-ga-umaku-itta-hi/",
+   "title": "すべてがうまくいった日",
+   "dek": "何もかもがただうまくいった日を思い出してみよう。北アリゾナでのリーダーシップ研修で行った単純なエクササイズと、部屋をいちばん沸かせた一つの問い。",
+   "pillar": "人間のレジリエンス"
+  },
+  "lt": {
+   "href": "/lt/diena-kai-viskas-klostesi-gerai/",
+   "title": "Diena, kai viskas klostėsi gerai",
+   "dek": "Prisiminkite dieną, kai viskas tiesiog klostėsi gerai. Paprastas pratimas iš lyderystės dienos Šiaurės Arizonoje ir vienas klausimas, kuris salę sujaudino labiausiai.",
+   "pillar": "Žmogaus atsparumas"
+  }
  }
 }
