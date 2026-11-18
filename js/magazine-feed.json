@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T20:48:17",
+ "generated": "2026-11-18T13:42:17",
  "lead": null,
  "mine": [
   {
@@ -60,7 +60,27 @@
    "pillar": "Human Resilience",
    "dek": "Remember a day when everything just went right. A simple exercise from a leadership day in northern Arizona, and the one question that excited the room most.",
    "img": "/assets/img/journal-1110/the-day-everything-went-right-og-1200x630.jpg",
-   "art": "/assets/art/dine-mountains.svg"
+   "art": "/assets/art/dine-mountains.svg",
+   "tr": {
+    "es": {
+     "href": "/es/el-dia-en-que-todo-salio-bien/",
+     "title": "El día en que todo salió bien",
+     "dek": "Recuerda un día en que todo simplemente salió bien. Un ejercicio sencillo de una jornada de liderazgo en el norte de Arizona, y la pregunta que más entusiasmó a la sala.",
+     "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/subete-ga-umaku-itta-hi/",
+     "title": "すべてがうまくいった日",
+     "dek": "何もかもがただうまくいった日を思い出してみよう。北アリゾナでのリーダーシップ研修で行った単純なエクササイズと、部屋をいちばん沸かせた一つの問い。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/diena-kai-viskas-klostesi-gerai/",
+     "title": "Diena, kai viskas klostėsi gerai",
+     "dek": "Prisiminkite dieną, kai viskas tiesiog klostėsi gerai. Paprastas pratimas iš lyderystės dienos Šiaurės Arizonoje ir vienas klausimas, kuris salę sujaudino labiausiai.",
+     "pillar": "Žmogaus atsparumas"
+    }
+   }
   },
   {
    "slug": "the-work-only-my-grandmother-knew-about",
@@ -1085,19 +1105,19 @@
  ],
  "found": [
   {
-   "title": "Good News in History, November 17",
-   "url": "https://www.goodnewsnetwork.org/events061117/",
-   "dek": "56 years ago today, a patent on the first computer mouse was presented to the engineer and inventor Douglas Engelbart. He became an internet and computer pioneer at the Stanford Research…",
+   "title": "Scientists ‘Cure’ Deadly Brain Tumors in Every Mouse Tested with New Cancer Therapy",
+   "url": "https://www.goodnewsnetwork.org/scientists-cure-deadly-brain-tumors-in-every-mouse-tested-with-new-cancer-therapy/",
+   "dek": "In experiments involving mice, scientists successfully eliminated an aggressive childhood brain cancer while also providing lasting protection. The scientists, from UC San Francisco…",
    "source": "Good News Network",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "lane": "news"
   },
   {
-   "title": "Can Barbershops Turn Trust Into Better Health for Black Men?",
-   "url": "https://reasonstobecheerful.world/barbershops-black-men-hypertension-screenings/",
-   "dek": "It is a Tuesday morning at Against Da Grain, a barbershop on a quiet street on Staten Island’s North Shore. Owner Sean White is rounding off a cut for a middle-aged Black man while another…",
+   "title": "What We’re Reading: Phone Bans Are Improving Kids’ Test Scores",
+   "url": "https://reasonstobecheerful.world/what-were-reading-phone-bans-improving-test-scores/",
+   "dek": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it…",
    "source": "Reasons to be Cheerful",
-   "date": "2026-11-16",
+   "date": "2026-11-18",
    "lane": "news"
   },
   {
@@ -1109,11 +1129,11 @@
    "lane": "research"
   },
   {
-   "title": "The Unassuming Running Culture of Kapchorwa, Uganda",
-   "url": "https://www.irunfar.com/the-unassuming-running-culture-of-kapchorwa-uganda",
-   "dek": "The post The Unassuming Running Culture of Kapchorwa, Uganda appeared first on iRunFar. A look at the unique running culture in Kapchorwa, Uganda, which has produced multiple Olympic and…",
+   "title": "A Runner’s Guide to Gratitude",
+   "url": "https://www.irunfar.com/a-runners-guide-to-gratitude",
+   "dek": "The post A Runner’s Guide to Gratitude appeared first on iRunFar. Sabrina Little advocates for running with gratitude for the people and systems that support us. A Runner’s Guide to…",
    "source": "iRunFar",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "lane": "running"
   },
   {
@@ -1141,27 +1161,27 @@
    "lane": "land"
   },
   {
-   "title": "In Cape Cod’s Depleted Estuaries, Shellfish Help Reverse Pollution",
-   "url": "https://civileats.com/2026/11/16/in-cape-cods-depleted-estuaries-shellfish-join-efforts-to-reverse-pollution/",
-   "dek": "By Ben Seal • November 16, 2026On a septic-heavy peninsula, oysters, clams, and scallops suffer from poor water quality. Now they’re turning the tide.Read the full article →",
+   "title": "A Rural Community Seeks to Preserve Colorado’s Apple Heritage",
+   "url": "https://civileats.com/2026/11/18/a-rural-community-seeks-to-preserve-colorados-apple-heritage/",
+   "dek": "By Jordan Charbonneau • November 18, 2026The Montezuma Orchard Restoration Project is protecting heirloom apple orchards and giving farmers a new revenue stream.Read the full article →",
    "source": "Civil Eats",
-   "date": "2026-11-16",
+   "date": "2026-11-18",
    "lane": "land"
   },
   {
-   "title": "Bumper Year for Bird-Friendly Maple in Vermont",
-   "url": "https://www.audubon.org/vermont/news/bumper-year-bird-friendly-maple-vermont",
-   "dek": "2026 may have brought an old-school winter to much of the Northeast, but the summer was anything but traditional for the Bird-Friendly Maple Program. Between June and September, we welcomed…",
+   "title": "Audubon Washington’s 2027 Legislative Priorities",
+   "url": "https://www.audubon.org/washington/news/audubon-washingtons-2027-legislative-priorities",
+   "dek": "At Audubon, we know that protecting birds and the places they need also leads to better outcomes for people and the planet. Our policy advocacy work is a critical complement to our…",
    "source": "Audubon",
    "date": "2026-11-17",
    "lane": "animals"
   },
   {
-   "title": "In Zimbabwe, trusted local guardians help communities coexist with lions",
-   "url": "https://news.mongabay.com/podcast/2026/11/in-zimbabwe-trusted-local-guardians-help-communities-coexist-with-lions/",
-   "dek": "Conservation biologist and founder of the nonprofit Wildlife Conservation Action, Moreangels Mbizah joins the Mongabay Newscast this week to detail her work helping reduce human-wildlife…",
+   "title": "Study maps jaguars across the Americas to help their populations rebound",
+   "url": "https://news.mongabay.com/2026/11/study-maps-jaguars-across-the-americas-to-help-their-populations-rebound/",
+   "dek": "When forests are carved into farms, America’s top cats find themselves trapped in isolation.",
    "source": "Mongabay",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "lane": "animals"
   },
   {
@@ -1173,27 +1193,27 @@
    "lane": "culture"
   },
   {
-   "title": "These Adorable Hatchlings Are From the U.S. West Coast's First Known Natural Sea Turtle Nests. Now, They've Returned to the Wild",
-   "url": "https://www.smithsonianmag.com/smart-news/these-adorable-hatchlings-are-from-the-us-west-coasts-first-known-natural-sea-turtle-nests-now-theyve-returned-to-the-wild-180989876/",
-   "dek": "Two nests were spotted in September, and authorities moved the eggs to an aquarium to protect them from an incoming tropical storm. Over the weekend, dozens of hatchlings emerged and have…",
+   "title": "From a Small Island in Denmark, This Man Lived Through the Transition From Hunter-Gathering to Farming 6,000 Years Ago",
+   "url": "https://www.smithsonianmag.com/smart-news/from-a-small-island-in-denmark-this-man-lived-through-the-transition-from-hunter-gathering-to-farming-6000-years-ago-180989889/",
+   "dek": "A new analysis of the Rødhals Man suggests he witnessed the Neolithic Revolution in his lifetime, growing up eating mostly foraged seafood before shifting to more land-based, likely farmed…",
    "source": "Smithsonian",
-   "date": "2026-11-16",
+   "date": "2026-11-18",
    "lane": "culture"
   },
   {
-   "title": "Farmer Finds Unknown Seeds in His Attic – and Grows an Ancient ‘Miracle’ Grain",
-   "url": "https://www.goodnewsnetwork.org/farmer-finds-unknown-seeds-in-his-attic-and-grows-an-ancient-miracle-grain/",
-   "dek": "From the sun-soaked plains of Parma comes the story of an Italian farmer who accidentally brought on a Biblical resurrection with very modern implications for our food system. Claudio…",
+   "title": "Good News in History, November 18",
+   "url": "https://www.goodnewsnetwork.org/events061118/",
+   "dek": "75 years ago today, the pioneering newsmagazine series, See It Now, was first broadcast. Running for seven years on CBS, it was created by iconic newsman Edward R. Murrow, along with CBS…",
    "source": "Good News Network",
-   "date": "2026-11-16",
+   "date": "2026-11-18",
    "lane": "news"
   },
   {
-   "title": "What We’re Reading: An 80-Cent Plastic Bag Is Saving Mothers’ Lives",
-   "url": "https://reasonstobecheerful.world/what-were-reading-an-80-cent-plastic-bag-is-saving-mothers-lives/",
-   "dek": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it…",
+   "title": "Can Barbershops Turn Trust Into Better Health for Black Men?",
+   "url": "https://reasonstobecheerful.world/barbershops-black-men-hypertension-screenings/",
+   "dek": "It is a Tuesday morning at Against Da Grain, a barbershop on a quiet street on Staten Island’s North Shore. Owner Sean White is rounding off a cut for a middle-aged Black man while another…",
    "source": "Reasons to be Cheerful",
-   "date": "2026-11-11",
+   "date": "2026-11-16",
    "lane": "news"
   },
   {
@@ -1205,11 +1225,11 @@
    "lane": "research"
   },
   {
-   "title": "This Week In Running: November 16, 2026",
-   "url": "https://www.irunfar.com/this-week-in-running-november-16-2026",
-   "dek": "The post This Week In Running: November 16, 2026 appeared first on iRunFar. This Week in Running’s trail and ultra recap for November 16, 2026. This Week In Running: November 16, 2026 by…",
+   "title": "The Unassuming Running Culture of Kapchorwa, Uganda",
+   "url": "https://www.irunfar.com/the-unassuming-running-culture-of-kapchorwa-uganda",
+   "dek": "The post The Unassuming Running Culture of Kapchorwa, Uganda appeared first on iRunFar. A look at the unique running culture in Kapchorwa, Uganda, which has produced multiple Olympic and…",
    "source": "iRunFar",
-   "date": "2026-11-16",
+   "date": "2026-11-17",
    "lane": "running"
   },
   {
@@ -1239,11 +1259,11 @@
    "lane": "news"
   },
   {
-   "title": "El nuevo mercado de la vejez femenina",
-   "url": "https://ethic.es/nuevo-mercado-vejez-femenina",
-   "dek": "El mercado global de productos y servicios vinculados a la menopausia (cosméticos, suplementos, apps y tecnología médica) alcanzó los 20.000 millones de euros en 2023. La entrada El nuevo…",
+   "title": "Economía circular como motor de transformación industrial",
+   "url": "https://ethic.es/viii-premios-basf-economia-circular-como-motor-transformacion-industrial",
+   "dek": "La octava edición de los Premios BASF reunió al tejido empresarial y científico español para reconocer aquellas iniciativas innovadoras que están transformando los residuos del día a día en…",
    "source": "Ethic",
-   "date": "2026-11-16",
+   "date": "2026-11-18",
    "lane": "news"
   },
   {
@@ -1263,9 +1283,17 @@
    "lane": "news"
   },
   {
-   "title": "De $120.000 a $400.000: cuánto cuesta iniciar un negocio de apicultura",
-   "url": "https://www.agronegocios.co/finca/como-empezar-en-el-negocio-apicola-oportunidades-retos-y-productos-derivados-4526333",
-   "dek": "La producción apicola no se basa solo en la miel, los productores también cosechan polen y comercializan productos derivados",
+   "title": "Ladino, de concepto mestizo a insulto mexicano",
+   "url": "https://www.mexicodesconocido.com.mx/ladino.html",
+   "dek": "En un principio, la palabra ladino describía a los indígenas, mestizos y afrodescendientes que sabían hablar latín en la Nueva España. The post Ladino, de concepto mestizo a insulto…",
+   "source": "México Desconocido",
+   "date": "2026-11-17",
+   "lane": "land"
+  },
+  {
+   "title": "ICA entrega recomendaciones para proteger cultivos y animales ante el fenómeno de El Niño",
+   "url": "https://www.agronegocios.co/clima/ica-entrega-recomendaciones-para-proteger-cultivos-y-animales-ante-el-fenomeno-de-el-nino-4526654",
+   "dek": "El Instituto hizo un llamado a los productores agropecuarios para anticiparse a los efectos de la variabilidad climática",
    "source": "Agronegocios",
    "date": "2026-11-17",
    "lane": "land"
@@ -1287,9 +1315,9 @@
    "lane": "culture"
   },
   {
-   "title": "La tinta es semilla",
-   "url": "https://www.zendalibros.com/la-tinta-es-semilla/",
-   "dek": "Aunque Incluso si nada renace constituye su primer poemario publicado, Arantxa Rochet lleva años vinculada a la poesía y a la vida cultural madrileña. Seleccionada en 2008 como autora…",
+   "title": "La llamada de… Elena Medel",
+   "url": "https://www.zendalibros.com/la-llamada-de-elena-medel/",
+   "dek": "Elena Medel (Córdoba, 1985) es poeta, novelista, ensayista y una de las voces más destacadas de la literatura española contemporánea. Autora de poemarios como Mi primer bikini, Tara y…",
    "source": "Zenda Libros",
    "date": "2026-11-17",
    "lane": "culture"
@@ -1311,19 +1339,11 @@
    "lane": "news"
   },
   {
-   "title": "¿A ciudades más grandes ciudadanos menos felices?",
-   "url": "https://ethic.es/ciudades-grandes-ciudadanos-menos-felices",
-   "dek": "Quizá una ciudad de éxito no sea simplemente una ciudad capaz de atraer cada vez a más habitantes, sino una en la que merezca la pena vivir cuando ya los ha atraído. La entrada ¿A ciudades…",
+   "title": "El nuevo mercado de la vejez femenina",
+   "url": "https://ethic.es/nuevo-mercado-vejez-femenina",
+   "dek": "El mercado global de productos y servicios vinculados a la menopausia (cosméticos, suplementos, apps y tecnología médica) alcanzó los 20.000 millones de euros en 2023. La entrada El nuevo…",
    "source": "Ethic",
-   "date": "2026-11-13",
-   "lane": "news"
-  },
-  {
-   "title": "Dajla: expansión urbanística y transformación de un territorio ocupado",
-   "url": "https://climatica.coop/dajla-expansion-urbanistica/",
-   "dek": "La construcción de hoteles, villas y nuevos complejos residenciales se suma a grandes proyectos agrícolas, energéticos y de infraestructuras en el Sáhara Occidental. The post Dajla…",
-   "source": "Climática",
-   "date": "2026-11-17",
+   "date": "2026-11-16",
    "lane": "news"
   }
  ],
@@ -1369,11 +1389,11 @@
    "lane": "culture"
   },
   {
-   "title": "環境建築家・仙田満の足跡を辿る展覧会が〈建築家会館〉で開催。",
-   "url": "https://casabrutus.com/categories/architecture/496699",
-   "dek": "80歳を超えて、なお〈石川県立図書館〉や〈エディオンピースウイング広島〉といった意欲的な作品を世に送り出し続ける仙田満。環境建築家としての60年余りの歩みを振り返る展覧会『仙田MAN展 ことばで紡ぐ建築』が開催される。",
+   "title": "芦沢啓治とノーム・アーキテクツが描き出す、自然とものづくりの物語。〈カリモクケース〉による展覧会が開催中！",
+   "url": "https://casabrutus.com/categories/design/496713",
+   "dek": "〈カリモク家具〉が展開する〈カリモクケース〉による展覧会『Forest Conversations』が、2026年12月21日まで東京・西麻布の2会場、〈KARIMOKU RESEARCH CENTER〉と〈カリモク コモンズ トウキョウ〉で開催中。建築家・芦沢啓治とノーム・アーキテクツがディレクションを手がけ、自然素材に刻まれた時間と、森から家具へと続くものづくりの物語を紐解…",
    "source": "Casa Brutus",
-   "date": "2026-11-16",
+   "date": "2026-11-18",
    "lane": "culture"
   },
   {
@@ -1403,20 +1423,12 @@
  ],
  "found_lt": [
   {
-   "title": "Meninis vaikų ugdymas: kodėl jį pradedame per vėlai ir ką dirbtinio intelekto amžiuje vaikui duoda scena?",
-   "url": "https://www.bernardinai.lt/meninis-vaiku-ugdymas-kodel-ji-pradedame-per-velai-ir-ka-dirbtinio-intelekto-amziuje-vaikui-duoda-scena/",
-   "dek": "Skaičiuojama, kad mūsų šalyje yra daugiau nei 300 tūkst. moksleivių. Egzistuoja sena tradicija, kad neformaliuoju vaikų švietimu turi rūpintis savivaldybės, tačiau prieš dešimtmetį šiam…",
+   "title": "„Aukštybei sutverti“: restauruoti paveikslai iš Vilniaus arkivyskupijos bažnyčių",
+   "url": "https://www.bernardinai.lt/aukstybei-sutverti-restauruoti-paveikslai-is-vilniaus-arkivyskupijos-baznyciu/",
+   "dek": "Tradicinėje, jau ketvirtojoje restauruotų Vilniaus arkivyskupijos bažnyčių paveikslų parodoje „Aukštybei sutverti“ Bažnytinio paveldo muziejus pristato 2020–2026 m. atnaujintus meno…",
    "source": "Bernardinai",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "lane": "news"
-  },
-  {
-   "title": "Už paramą Klaipėdos universiteto fondui Dianai Bumelytei suteiktas valstybinis įvertinimas",
-   "url": "https://mokslolietuva.lt/2026/11/uz-parama-klaipedos-universiteto-fondui-dianai-bumelytei-suteiktas-valstybinis-ivertinimas/",
-   "dek": "Lapkričio 13 d. Vilniuje, Sapiegų rūmuose, vykusioje iškilmingoje nacionalinių, savivaldybių ir bendruomenių mecenatų pagerbimo ceremonijoje apdovanota UAB „Northway medicinos centrai“ …",
-   "source": "Mokslo Lietuva",
-   "date": "2026-11-17",
-   "lane": "research"
   },
   {
    "title": "Kviečiame į podoktorantūros tyrėjų konferenciją „Exploring Biodiversity, Interactions and Environmental Change“",
@@ -1427,11 +1439,11 @@
    "lane": "animals"
   },
   {
-   "title": "Parodoje Torunėje – kauniečių fotografų darbai",
-   "url": "https://kaunaspilnas.lt/parodoje-toruneje-kaunieciu-fotografu-darbai/",
-   "dek": "Penktadienio, lapkričio 13-osios vakarą meno galerijoje „Wozownia“ Torunėje (Lenkija) atidaryta paroda „Lietuvos fotografija. Žvilgsnių lietus“, per dvylikos fotografų kūrybą atskleidžianti…",
+   "title": "„Iš arti“ – Čiurlionis šiandienos pasaulyje: „Dabartinei visuomenei jis būtų nerealiai tikęs“",
+   "url": "https://kaunaspilnas.lt/is-arti-ciurlionis-siandienos-pasaulyje-dabartinei-visuomenei-jis-butu-nerealiai-tikes/",
+   "dek": "Praėjusią savaitę Kaune prasidėjo šiuolaikinės muzikos festivalis „Iš arti“. Premjerų, tarpdisciplininių projektų ir naujausių technologijų kupiną programą lapkričio 21 d. užbaigs…",
    "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-16",
+   "date": "2026-11-18",
    "lane": "culture"
   },
   {
@@ -1439,14 +1451,6 @@
    "url": "https://lnm.lt/aktualijos/lietuvos-nacionalinis-muziejus-kviecia-atrasti-veltinio-istorija/",
    "dek": "Gruodžio 2 d. 18 val. Lietuvos nacionalinio muziejaus Senajame arsenale (Arsenalo g. 3, Vilnius) bus atidaroma nauja paroda „Susivėlę radiniai“. Ji kvies atrasti veltinio istoriją ir…",
    "source": "Nacionalinis muziejus",
-   "date": "2026-11-17",
-   "lane": "culture"
-  },
-  {
-   "title": "Išskirtinio rajono gyventojai jaučiasi ignoruojami: naujas kvartalas planuojamas jų nepaisant",
-   "url": "https://www.15min.lt/naujiena/aktualu/lietuva/isskirtinio-rajono-gyventojai-jauciasi-ignoruojami-naujas-kvartalas-planuojamas-ju-nepaisant-56-2807372?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Šią savaitę į posėdį planuoja rinktis Vilniaus Gervėčių g. 4 architektūrinio konkurso komisija, kuri vertins pasiūlymus, kaip ateityje atrodys ši sostinės vieta. Tačiau vietos Rasų…",
-   "source": "15min Kultūra",
    "date": "2026-11-17",
    "lane": "culture"
   },
@@ -1459,14 +1463,6 @@
    "lane": "culture"
   },
   {
-   "title": "Šimtametis knygoje dalinasi ilgo gyvenimo paslaptimis",
-   "url": "https://mokslolietuva.lt/2026/11/simtametis-knygoje-dalinasi-ilgo-gyvenimo-paslaptimis/",
-   "dek": "Farmakologas, habilituotas biomedicinos mokslų daktaras, profesorius Antanas Juozas Gendrolis gegužės mėnesį sulaukęs šimto metų pristato autobiografinę knygą „Šimtametis dar turi …",
-   "source": "Mokslo Lietuva",
-   "date": "2026-11-17",
-   "lane": "research"
-  },
-  {
    "title": "Kerpės ant medžių rodo oro švarą: kai kurios rūšys ten niekada neauga (dr. Jurga Motiejūnaitė)",
    "url": "https://gamtostyrimai.lt/kerpes-ant-medziu-rodo-oro-svara-kai-kurios-rusys-ten-niekada-neauga-dr-jurga-motiejunaite/",
    "dek": "The post Kerpės ant medžių rodo oro švarą: kai kurios rūšys ten niekada neauga (dr. Jurga Motiejūnaitė) appeared first on Gamtos tyrimų centras.",
@@ -1475,9 +1471,9 @@
    "lane": "animals"
   },
   {
-   "title": "Nuo pirmų natų iki bendrų šeimų: kaip choras keičia likimus ir kuria bendrystę",
-   "url": "https://kaunaspilnas.lt/nuo-pirmu-natu-iki-bendru-seimu-kaip-choras-keicia-likimus-ir-kuria-bendryste/",
-   "dek": "Pradėjusi galvoti, ko galėčiau paklausti savo pašnekovių apie chorą, turėjau progą apmąstyti ir savo pačios kelią su juo. Su choriniu dainavimu susipažinau muzikos mokykloje. Kai choro…",
+   "title": "Parodoje Torunėje – kauniečių fotografų darbai",
+   "url": "https://kaunaspilnas.lt/parodoje-toruneje-kaunieciu-fotografu-darbai/",
+   "dek": "Penktadienio, lapkričio 13-osios vakarą meno galerijoje „Wozownia“ Torunėje (Lenkija) atidaryta paroda „Lietuvos fotografija. Žvilgsnių lietus“, per dvylikos fotografų kūrybą atskleidžianti…",
    "source": "Kaunas pilnas kultūros",
    "date": "2026-11-16",
    "lane": "culture"
@@ -1491,21 +1487,45 @@
    "lane": "culture"
   },
   {
-   "title": "Keista JAV gynybos sekretoriaus pavaduotojo kalba: pasisakė dėl smūgių giliai į Rusiją",
-   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/keista-jav-gynybos-sekretoriaus-pavaduotojo-kalba-pasisake-del-smugiu-giliai-i-rusija-57-2808320?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "JAV gynybos sekretoriaus pavaduotojas Elbridge'as Colby pagyrė Europą už tai, kad ji prisiima daugiau atsakomybės už Ukrainos gynybą ir padeda Ukrainos pajėgoms kurti „atsparią gynybą…",
-   "source": "15min Kultūra",
+   "title": "Graikų dievai niekada nebuvo šventuoliai: lietuviškai pasirodo Stepheno Fry`aus „Mythos“",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3117082/graiku-dievai-niekada-nebuvo-sventuoliai-lietuviskai-pasirodo-stepheno-fry-aus-mythos",
+   "dek": "Vienas garsiausių britų aktorių, komikų ir rašytojų Stephenas Fry`us knygoje „Mythos“ iš naujo pasakoja legendinius graikų mitus, atskleisdamas jų humorą, dramą ir stebėtiną aktualumą…",
+   "source": "LRT Kultūra",
    "date": "2026-11-17",
+   "lane": "culture"
+  },
+  {
+   "title": "Nuo pirmų natų iki bendrų šeimų: kaip choras keičia likimus ir kuria bendrystę",
+   "url": "https://kaunaspilnas.lt/nuo-pirmu-natu-iki-bendru-seimu-kaip-choras-keicia-likimus-ir-kuria-bendryste/",
+   "dek": "Pradėjusi galvoti, ko galėčiau paklausti savo pašnekovių apie chorą, turėjau progą apmąstyti ir savo pačios kelią su juo. Su choriniu dainavimu susipažinau muzikos mokykloje. Kai choro…",
+   "source": "Kaunas pilnas kultūros",
+   "date": "2026-11-16",
+   "lane": "culture"
+  },
+  {
+   "title": "Nauja paroda „Gydantis svajotojas“ kvies pažinti mažiau atrastą Jono Basanavičiaus pusę",
+   "url": "https://lnm.lt/aktualijos/nauja-paroda-gydantis-svajotojas-kvies-pazinti-maziau-atrasta-jono-basanaviciaus-puse/",
+   "dek": "Joną Basanavičių įprasta įsivaizduoti kaip tvirtą, santūrų tautos patriarchą – žmogų, kurio gyvenimas buvo neatsiejamas nuo kovos už Lietuvos nepriklausomybę. Tačiau už šio istorinio…",
+   "source": "Nacionalinis muziejus",
+   "date": "2026-11-04",
+   "lane": "culture"
+  },
+  {
+   "title": "Kauno paveikslų galerijoje pristatoma paroda „Abstraktusis Lenkijos menas“",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3116449/kauno-paveikslu-galerijoje-pristatoma-paroda-abstraktusis-lenkijos-menas",
+   "dek": "Parodoje Kauno paveikslų galerijoje – kūriniai, pasakojantys Lenkijos abstrakčiojo meno šimtmečio istoriją. Tarp jų – pasaulinio garso lenkų menininkės Magdalenos Abakanovič darbas…",
+   "source": "LRT Kultūra",
+   "date": "2026-11-16",
    "lane": "culture"
   }
  ],
  "found_india": [
   {
-   "title": "As Groundwater Levels Fall, Rewari Is Reviving 10 Ponds to Store 120 Million Litres of Water",
-   "url": "https://thebetterindia.com/conservation/nature/rewari-haryana-village-pond-restoration-teri-water-conservation-12816963",
-   "dek": "For a village that depends on the monsoon, a pond can make the difference between rainwater that runs away and water that remains available after the rains. It can collect rainfall, support…",
+   "title": "The Lights We Leave On Could Be Taking Away the Darkness Kerala’s Forests Need. Here’s How to Help",
+   "url": "https://thebetterindia.com/conservation/nature/kerala-western-ghats-forest-light-pollution-protected-areas-study-12820248",
+   "dek": "A road outside a forest stays lit after sunset. So does a nearby place of worship or a cluster of shops where people gather. Those lights help people go about their lives. But their glow…",
    "source": "The Better India",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "lane": "news"
   },
   {
@@ -1517,19 +1537,19 @@
    "lane": "news"
   },
   {
-   "title": "Pulmonologist explains how COPD can run in the family and who is at higher risk even without smoking",
-   "url": "https://www.hindustantimes.com/lifestyle/health/pulmonologist-explains-how-copd-can-run-in-the-family-and-who-is-at-higher-risk-even-without-smoking-101794910914742.html",
-   "dek": "COPD is not always passed down from parents to children, but genetics does have a role to play, shares Dr Sushil Gupta.",
+   "title": "From mineral build-up to hair roughness: Understanding why hard water can affect your hair care routine",
+   "url": "https://www.hindustantimes.com/lifestyle/health/from-mineral-build-up-to-hair-roughness-understanding-why-hard-water-can-affect-your-hair-care-routine-101794984715884.html",
+   "dek": "Blaming your shampoo and conditioner for dry hair? An expert explains how hard water may be affecting your hair texture.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "lane": "running"
   },
   {
-   "title": "No land to call their own, migrants and elephants share Teesta’s shifting sandbars",
-   "url": "https://india.mongabay.com/video/2026/11/migrants-and-elephants-share-shifting-sandbars/",
-   "dek": "On the shifting sandbars of the Teesta in West Bengal, migrant farmers cultivate seasonal crops that are increasingly attracting elephants from nearby forests. The elephants feed on these…",
+   "title": "The fragility of mountains loom large over COP31",
+   "url": "https://india.mongabay.com/2026/11/the-fragility-of-mountains-loom-large-over-cop31/",
+   "dek": "The proposal to include an agenda item focussed on the impacts of rising temperatures on high mountain ranges may have been rejected at the ongoing COP31 in Antalya, Türkiye, but that…",
    "source": "Mongabay India",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "lane": "land"
   },
   {
@@ -1541,19 +1561,19 @@
    "lane": "animals"
   },
   {
-   "title": "The inaugural edition of the Moto Summit Kochi 2026 will take place on November 21 and 22",
-   "url": "https://www.thehindu.com/society/the-inaugural-edition-of-the-moto-summit-kochi-2026-will-take-place-on-november-21-and-22/article71692605.ece",
-   "dek": "Touted as Keralam’s first ultimate motorsports and lifestyle festival, Moto Summit Kochi, will be held at Chakola Mill, Kalamassery",
+   "title": "Kondayampettai’s potters pin their hopes on tiny lamps to light up Karthigai Deepam festive business",
+   "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/kondayampettais-potters-pin-their-hopes-on-tiny-lamps-to-light-up-karthigai-deepam-festive-business/article71708255.ece",
+   "dek": "Although raw materials such as clayey river soil and coconut fibre are available more easily than before, their rising cost has affected their earnings, say some artisans",
    "source": "The Hindu Society",
    "date": "2026-11-16",
    "lane": "culture"
   },
   {
-   "title": "Once An Earthshot Awards Winner, This Indian Startup Is Turning Stubble Into Biochar",
-   "url": "https://thebetterindia.com/conservation/nature/takachar-stubble-burning-biochar-earthshot-prize-12816727",
-   "dek": "Every winter, the burning of leftover paddy stubble across northern India adds to seasonal air pollution, particularly in the Indo-Gangetic plains. For farmers working against tight…",
+   "title": "Same City, Different Sources of Pollution: What Ahmedabad’s Air Data Reveals",
+   "url": "https://thebetterindia.com/conservation/nature/ahmedabad-smart-vayu-air-pollution-monitoring-sensors-12819907",
+   "dek": "A patch of dust near a busy road, smoke rising from an industrial chimney, and waste burning in an open space may all contribute to a city's air pollution. But the sources responsible for…",
    "source": "The Better India",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "lane": "news"
   },
   {
@@ -1565,11 +1585,11 @@
    "lane": "news"
   },
   {
-   "title": "Doctor explains annual health check-ups: Age group that actually needs them and what they should include",
-   "url": "https://www.hindustantimes.com/lifestyle/health/doctor-explains-annual-health-check-ups-age-group-that-actually-needs-them-and-what-they-should-include-101794899124732.html",
-   "dek": "Regular health checkups are important for everyone, but some need it more frequently than others, shares Dr Ravi Kesri.",
+   "title": "Ranbir Kapoor returns to training for Ramayana as trainer Nam shares intense boxing session: Back to the grind",
+   "url": "https://www.hindustantimes.com/lifestyle/health/ranbir-kapoor-returns-to-training-for-ramayana-as-trainer-nam-shares-intense-boxing-session-back-to-the-grind-101794982777403.html",
+   "dek": "A new photo posted by trainer Nam shows Ranbir Kapoor working on his boxing. The actor is preparing for Ramayana Part 2, scheduled for Diwali 2028.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "lane": "running"
   }
  ],
@@ -1591,11 +1611,11 @@
    "lane": "news"
   },
   {
-   "title": "Health Kalon Pema Tso Visits Tibetan Healthcare Facilities in Delhi, Meets Residents Requiring Medical Assistance",
-   "url": "https://tibet.net/health-kalon-pema-tso-visits-tibetan-healthcare-facilities-in-delhi-meets-residents-requiring-medical-assistance/",
-   "dek": "New Delhi: Kalon Pema Tso of the Department of Health, CTA, conducted a two-day official visit to Samyeling Tibetan Settlement and Tibetan health facilities in Delhi on 14 and 15 November…",
+   "title": "Department of Health Observes World Diabetes Day with Screenings and Preventive Healthcare Activities",
+   "url": "https://tibet.net/department-of-health-observes-world-diabetes-day-with-screenings-and-preventive-healthcare-activities/",
+   "dek": "Dharamshala: Tibetan health facilities across India observed World Diabetes Day on 14 November 2026, through a series of awareness and preventive healthcare activities aimed at educating…",
    "source": "Central Tibetan Administration",
-   "date": "2026-11-16",
+   "date": "2026-11-18",
    "lane": "news"
   },
   {
@@ -1615,11 +1635,11 @@
    "lane": "news"
   },
   {
-   "title": "CTA Winter Inter-Departmental Basketball Tournament Concludes Successfully",
-   "url": "https://tibet.net/cta-winter-inter-departmental-basketball-tournament-concludes-successfully/",
-   "dek": "Dharamshala: The CTA Winter Inter-Departmental Basketball Tournament concluded successfully on 13 November 2026, marking the culmination of a month-long sporting event organised by the…",
+   "title": "Cholsum Tibetan Settlement Participates in Celebration Marking the 342nd Founding Anniversary of Paonta Sahib",
+   "url": "https://tibet.net/cholsum-tibetan-settlement-participates-in-celebration-marking-the-342nd-founding-anniversary-of-paonta-sahib/",
+   "dek": "Paonta Sahib: On 17 November 2026, Paonta Cholsum Tibetan Settlement participated in the 342nd anniversary celebration of Paonta Sahib, an industrial town in the southern part of Himachal…",
    "source": "Central Tibetan Administration",
-   "date": "2026-11-16",
+   "date": "2026-11-18",
    "lane": "news"
   },
   {
@@ -1636,6 +1656,14 @@
    "dek": "(TibetanReview.net, Nov12’26) – As China commemorated the 160th anniversary of the birth of Sun Yat-sen on Nov 12, its top Party-state leader Xi Jinping has called for a complete…",
    "source": "Tibetan Review",
    "date": "2026-11-12",
+   "lane": "news"
+  },
+  {
+   "title": "Health Kalon Pema Tso Visits Tibetan Healthcare Facilities in Delhi, Meets Residents Requiring Medical Assistance",
+   "url": "https://tibet.net/health-kalon-pema-tso-visits-tibetan-healthcare-facilities-in-delhi-meets-residents-requiring-medical-assistance/",
+   "dek": "New Delhi: Kalon Pema Tso of the Department of Health, CTA, conducted a two-day official visit to Samyeling Tibetan Settlement and Tibetan health facilities in Delhi on 14 and 15 November…",
+   "source": "Central Tibetan Administration",
+   "date": "2026-11-16",
    "lane": "news"
   }
  ]
