@@ -2,13 +2,13 @@
 
 Everything I read this morning that was worth keeping. Every one is live and shareable.
 
-**Glass Wonders Gallery in Karpacz, Poland** — Atlas Obscura  
-Step into a realm where sand and fire transform into pure magic at the Glass Wonders Gallery in Karpacz. Nestled in the heart of the Karkonosze Mountains, this hidden gem  
-<https://www.atlasobscura.com/places/glass-wonders-gallery>
+**Empire State Building Lit Up with Gold Marks Historic Milestone of NASA’s Voyager 1 This Week** — Good News Network  
+This week the Empire State Building was illuminated in gold to celebrate NASA’s Voyager 1 spacecraft passing one light-day away from Earth. It now takes the farthest man-  
+<https://www.goodnewsnetwork.org/empire-state-building-lit-up-with-gold-to-celebrate-nasa-spacecraft-passing-one-light-day-from-earth/>
 
-**Productores de café del Vraem logran precios de hasta S/ 463 por kilogramo en subasta internacional que reunió 35 lotes de dos cooperativas** — Inforegión · ES  
-En la subasta participaron las cooperativas Valle de Inkawasi y San Fernando, qu... La entrada Productores de café del Vraem logran precios de hasta S/ 463 por kilogramo   
-<https://inforegion.pe/productores-de-cafe-del-vraem-logran-precios-de-hasta-s-463-por-kilogramo-en-subasta-internacional-que-reunio-35-lotes-de-dos-cooperativas/>
+**Iverco, Carretero y Etesa: viejos negocios, nuevos contratos** — Agencia Ocote · ES  
+Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcción y modernización de torres y líneas de electricidad con la venta de instrumentos musicales a  
+<https://www.agenciaocote.com/blog/2026/11/16/iverco-carretero-etesa-viejos-negocios-nuevos-contratos/>
 
 **絵本作家きくちちきの初の大規模巡回展が開催中！** — Casa Brutus · JA  
 画面からはみ出そうな躍動感が人気のきくちちき。個展を開催中のPLAY！ MUSEUMで聞きました。  
@@ -26,21 +26,21 @@ Sleep does more than help you feel rested. A neurologist explains how sleep cycl
 Dharamshala: Tibetan health facilities across India observed World Diabetes Day on 14 November 2026, through a series of awareness and preventive healthcare activities ai  
 <https://tibet.net/department-of-health-observes-world-diabetes-day-with-screenings-and-preventive-healthcare-activities/>
 
-**Siblings Build 430-Step ‘Sky Ladder’ for Their Mother Who Refuses to Live in the City** — Good News Network  
-The children of an elderly Chinese mother have touched the hearts of millions by painstakingly building a new staircase by hand up the side of a mountain to help her reac  
-<https://www.goodnewsnetwork.org/siblings-build-430-step-sky-ladder-for-their-mother-who-refuses-to-live-in-the-city/>
+**New Findings Show Which Latin American and Caribbean Bird Species Are Thriving—and Which Need Help** — Audubon  
+Year after year since 1900, neighbors have come together to tally birdlife for Audubon’s Christmas Bird Count. Their repeated efforts have built a trove of data that scie  
+<https://www.audubon.org/magazine/latin-america-caribbean-bird-population-trends-christmas-bird-count>
 
-**Iverco, Carretero y Etesa: viejos negocios, nuevos contratos** — Agencia Ocote · ES  
-Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcción y modernización de torres y líneas de electricidad con la venta de instrumentos musicales a  
-<https://www.agenciaocote.com/blog/2026/11/16/iverco-carretero-etesa-viejos-negocios-nuevos-contratos/>
+**Lo que le ha pasado al planeta y al clima mientras esperabas el GTA VI** — Climática · ES  
+En los 13 años que ha tardado en lanzarse una nueva entrega del videojuego Grand Theft Auto se ha adoptado el Acuerdo de París (y ha medio fracasado) y crecieron las reno  
+<https://climatica.coop/cambios-planeta-clima-gta-vi/>
 
 **【11/27-28＠愛知・蒲郡】壊れた愛用品を連れて、温泉旅館へ。直す日、愛でる日、めでたい日。「経年好日」開催** — IDEAS FOR GOOD · JA  
 壊れたモノを直し、時を重ねた愛用品を祝う2日間。愛知県蒲郡市の老舗旅館「平野屋」で、リペアイベント「経年好日」が開催。修理体験やアップサイクル、IDEAS FOR GOOD制作の映画『リペアカフェ』上映などを通じて、モノを長く使う豊かさに触れます。 The post…  
 <https://ideasforgood.jp/2026/11/17/keinenkoujitsu-repair-event-gamagori/>
 
-**Biudžeto projektas į Seimą turės grįžti su planu kaip atkurti fiskalinį tvarumą, sako A. Sysas** — Bernardinai · LT  
-Seimui ketvirtadienį pradėjus pirmąjį fiskalinės drausmės kriterijus viršijančio 2027-ųjų biudžeto projekto svarstymą, Biudžeto ir finansų komiteto pirmininkas socialdemo  
-<https://www.bernardinai.lt/biudzeto-projektas-i-seima-tures-grizti-su-planu-kaip-atkurti-fiskalini-tvaruma-sako-a-sysas/>
+**Natalija apsidžiaugė sode aptikusi gamtos lobį: mokslininkas paaiškino, kuo ypatingos šios lervos (Dr. Norbertas Noreika)** — Gamtos tyrimai · LT  
+The post Natalija apsidžiaugė sode aptikusi gamtos lobį: mokslininkas paaiškino, kuo ypatingos šios lervos (Dr. Norbertas Noreika) appeared first on Gamtos tyrimų centras  
+<https://gamtostyrimai.lt/natalija-apsidziauge-sode-aptikusi-gamtos-lobi-mokslininkas-paaiskino-kuo-ypatingos-sios-lervos-dr-norbertas-noreika/>
 
 **How a Bird’s Discovery Led to a Conservation Success Story** — Roundglass Sustain · INDIA  
 The discovery of the Bugun Liocichla in 2006 sparked a community-led conservation effort that protected a forest, secured the species’ future, and placed this landscape f  
@@ -60,9 +60,9 @@ list for a few days has moved or died and wants replacing.
 
 - **en** · news · Positive News — unreachable
 - **en** · land · Western Horseman — unreachable
-- **es** · news · Climática — unreachable
 - **ja** · land · マイナビ農業 — unreachable
 - **ja** · land · — — nothing cleared the gates
 - **lt** · news · Kauno diena — unreachable
+- **lt** · research · — — nothing cleared the gates
 - **tibet** · research · — — nothing cleared the gates
 - **tibet** · culture · — — nothing cleared the gates
