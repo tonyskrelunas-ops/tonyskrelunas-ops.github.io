@@ -22,33 +22,33 @@ Gamtos tyrimų centras (GTC) lapkričio 19 d. pristatė savo veiklą pirmą kart
 Adopt these five everyday lifestyle changes to improve your digestion and maintain a better bowel health.  
 <https://www.hindustantimes.com/lifestyle/health/from-sleep-patterns-to-physical-activity-5-daily-habits-that-can-make-a-difference-to-your-bowel-health-101795156195823.html>
 
-**TYC launches ‘Flame of Unity’ campaign, to tour with martyr Lobga Rangzen’s flag across 25 Indian states** — Phayul · TIBET  
-Tenzin Nyidon DHARAMSHALA, Nov. 18: The largest pro-independence group, Tibetan Youth Congress (TYC) on Wednesday launched its “Flame of Unity” campaign in Dharamshala, w  
-<https://phayul.com/2026/11/tyc-launches-flame-of-unity-campaign-to-tour-with-martyr-lobga-rangzens-flag-across-25-indian-states/>
+**China anxious as record 13 million university graduates to hit a tough job market in 2027** — Tibetan Review · TIBET  
+(TibetanReview.net, Nov20’26) – As China, the world’s second-largest economy, continues to grapple with slowed growth and weak domestic demand, its number of university g  
+<https://www.tibetanreview.net/china-anxious-as-record-13-million-university-graduates-to-hit-a-tough-job-market-in-2027/>
 
 **We Ain’t Buildin’ a Church** — iRunFar  
 The post We Ain’t Buildin’ a Church appeared first on iRunFar. Zach Miller writes about perfectionism in house-building and running. We Ain’t Buildin’ a Church by Zach Mi  
 <https://www.irunfar.com/we-aint-buildin-a-church>
 
-**Sobre los nuevos gobernadores y el trabajo con los bosques** — Inforegión · ES  
-Por: Valeria Muñoz (*) El 1 de enero de 2027, cuando asuman las autoridades regi... La entrada Sobre los nuevos gobernadores y el trabajo con los bosques se publicó prime  
-<https://inforegion.pe/sobre-los-nuevos-gobernadores-y-el-trabajo-con-los-bosques/>
+**Lo que le ha pasado al planeta y al clima mientras esperabas el GTA VI** — Climática · ES  
+En los 13 años que ha tardado en lanzarse una nueva entrega del videojuego Grand Theft Auto se ha adoptado el Acuerdo de París (y ha medio fracasado) y crecieron las reno  
+<https://climatica.coop/cambios-planeta-clima-gta-vi/>
 
 **野菜の残渣や生ごみを捨てないで！最短1週間で古い土がいい土に蘇ります！** — マイナビ農業 · JA  
 植物を育てていると、土の処理や枯れた植物の茎や葉、根などの植物残渣の処理に困ることが多いと思います。自治体によりますが、土は捨てられないことも多いですよね。そんな悩みを一気に解消してくれるのが、植物残渣を使った土の再生です。土の再生と聞くと難しいことはわからないという人も多いと思いますが、大丈夫です！今回は本当に簡単にできる土の再生方法に  
 <https://agri.mynavi.jp/2026_11_20_618500/>
 
-**Po Ukrainos dronų smūgių vis daugiau Rusijos regionų riboja prekybą degalais** — 15min Kultūra · LT  
-Po atsinaujinusių Ukrainos atakų prieš Rusijos naftos perdirbimo gamyklas vis daugiau Rusijos regionų riboja mažmeninę prekybą benzinu ir dyzelinu, praneša vietos žiniask  
-<https://www.15min.lt/naujiena/aktualu/pasaulis/po-ukrainos-dronu-smugiu-vis-daugiau-rusijos-regionu-riboja-prekyba-degalais-57-2810960?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed>
+**V. Koryzna patvirtintas nauju „Ignitis grupės“ vadovu, pradės darbą nuo sausio** — Bernardinai · LT  
+Valstybės valdomos energetikos grupės „Ignitis grupė“ stebėtojų taryba galutinai patvirtino 44 metų Vytenį Koryzną grupės valdybos pirmininku ir vadovu. Naujasis vadovas   
+<https://www.bernardinai.lt/v-koryzna-patvirtintas-nauju-ignitis-grupes-vadovu-prades-darba-nuo-sausio/>
 
 **How a Bird’s Discovery Led to a Conservation Success Story** — Roundglass Sustain · INDIA  
 The discovery of the Bugun Liocichla in 2006 sparked a community-led conservation effort that protected a forest, secured the species’ future, and placed this landscape f  
 <https://roundglasssustain.com/conservation/bugun-liocichla-eaglenest>
 
-**Woman Chinese cadre in Tibet for 40 plus years indicted for bribery** — Tibetan Review · TIBET  
-(TibetanReview.net, Nov16’26) – A Chinese woman who held positions in Tibet Autonomous Region (TAR) for more than four decades since 1982, rising to become the deputy hea  
-<https://www.tibetanreview.net/woman-chinese-cadre-in-tibet-for-40-plus-years-indicted-for-bribery/>
+**TYC launches ‘Flame of Unity’ campaign, to tour with martyr Lobga Rangzen’s flag across 25 Indian states** — Phayul · TIBET  
+Tenzin Nyidon DHARAMSHALA, Nov. 18: The largest pro-independence group, Tibetan Youth Congress (TYC) on Wednesday launched its “Flame of Unity” campaign in Dharamshala, w  
+<https://phayul.com/2026/11/tyc-launches-flame-of-unity-campaign-to-tour-with-martyr-lobga-rangzens-flag-across-25-indian-states/>
 
 
 ---
