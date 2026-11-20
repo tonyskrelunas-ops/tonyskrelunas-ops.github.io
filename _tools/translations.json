@@ -318,5 +318,25 @@
    "dek": "Šį daktaratą pradėjau kaip savo MBA tęsinį daugiau nei prieš dvidešimt penkerius metus. Pernai Prescott kolegijoje pasakiau daktaratą baigiantiesiems skirtą išleistuvių kalbą. Štai kas įvyko per tą laiką — ir ką radau atvykęs keliomis dienomis anksčiau.",
    "pillar": "Daktaratas"
   }
+ },
+ "they-tried-to-erase-a-whole-people": {
+  "es": {
+   "href": "/es/intentaron-borrar-a-todo-un-pueblo/",
+   "title": "Intentaron borrar a todo un pueblo. Ahora crían a los jóvenes más felices de la tierra.",
+   "dek": "Contrabandistas de libros, guardianes de canciones y un equipo de baloncesto con camisetas tie-dye. La historia de un pueblo que debía desaparecer y volvió cantando, y por qué sobrevivir es la herencia de todos nosotros.",
+   "pillar": "Resiliencia humana"
+  },
+  "ja": {
+   "href": "/ja/hitotsu-no-tami-wo-kesou-to-shita/",
+   "title": "一つの民を消し去ろうとした者たちがいた。いま、その民は地球でいちばん幸せな若者を育てている。",
+   "dek": "本の密輸人たち、歌の守り手たち、そしてタイダイを着たバスケットボール・チーム。消えるはずだったのに歌いながら戻ってきた民の物語と、生き延びることが私たち一人ひとりの遺産である理由。",
+   "pillar": "人間のレジリエンス"
+  },
+  "lt": {
+   "href": "/lt/bande-istrinti-visa-tauta/",
+   "title": "Jie bandė ištrinti visą tautą. Dabar jie augina laimingiausius jaunus žmones žemėje.",
+   "dek": "Knygnešiai, dainų saugotojos ir krepšinio komanda tie-dye marškinėliais. Istorija apie tautą, kuriai buvo lemta išnykti ir kuri sugrįžo dainuodama, ir kodėl išlikimas yra kiekvieno iš mūsų paveldas.",
+   "pillar": "Žmogaus atsparumas"
+  }
  }
 }
