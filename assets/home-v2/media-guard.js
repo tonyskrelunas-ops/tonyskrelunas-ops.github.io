@@ -16,7 +16,7 @@
         if (s && !v.controls) { v.pause(); v.dataset.guardSrc = s; v.removeAttribute('src'); v.load(); }
       }
     });
-  }, { rootMargin: '120% 0px 120% 0px' });
+  }, { rootMargin: document.documentElement.classList.contains('lite') ? '60% 0px 60% 0px' : '120% 0px 120% 0px' });   /* 11/20: phones hand film memory back sooner */
   function watch() {
     var vs = document.querySelectorAll('video');
     for (var i = 0; i < vs.length; i++) if (!vs[i].__guard) { vs[i].__guard = 1; io.observe(vs[i]); }

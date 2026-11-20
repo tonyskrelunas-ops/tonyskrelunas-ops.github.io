@@ -753,3 +753,11 @@ html.gated body{overflow:hidden}
   .books-pair{grid-template-columns:minmax(280px,340px) minmax(0,1fr)}
   .books-pair .cf-film{order:-1;width:100%}
 }
+
+/* 11/20/2026 phones and tablets (html.lite): nothing is blended over the films and photographs. Tony saw the
+   page "go out" on his phone just after the Japanese thread; screen-blended mist, beams, rays, dew, grain and
+   ink over moving pictures are what closed Safari on iPhone on 11/10. The pictures, words and films all stay. */
+html.lite canvas.fx,html.lite canvas.mistc,html.lite canvas.dewc,html.lite canvas.ap-particles,
+html.lite .wx .beams,html.lite .arrive .rays,html.lite .arrive .sun,html.lite .v5-grain,
+html.lite .write .mist2,html.lite .japan .ink{display:none!important}
+html.lite .jrow{will-change:auto}
