@@ -26,9 +26,9 @@ The discovery of the Bugun Liocichla in 2006 sparked a community-led conservatio
 (TibetanReview.net, Nov20’26) – As China, the world’s second-largest economy, continues to grapple with slowed growth and weak domestic demand, its number of university g  
 <https://www.tibetanreview.net/china-anxious-as-record-13-million-university-graduates-to-hit-a-tough-job-market-in-2027/>
 
-**We Ain’t Buildin’ a Church** — iRunFar  
-The post We Ain’t Buildin’ a Church appeared first on iRunFar. Zach Miller writes about perfectionism in house-building and running. We Ain’t Buildin’ a Church by Zach Mi  
-<https://www.irunfar.com/we-aint-buildin-a-church>
+**2026 Ultra-Trail Cape Town 100k Results: Americans David Sinclair, Abby Hall Win** — iRunFar  
+The post 2026 Ultra-Trail Cape Town 100k Results: Americans David Sinclair, Abby Hall Win appeared first on iRunFar. Americans David Sinclair and Abby Hall won the 2026 U  
+<https://www.irunfar.com/2026-ultra-trail-cape-town-100k-results>
 
 **Iverco, Carretero y Etesa: viejos negocios, nuevos contratos** — Agencia Ocote · ES  
 Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcción y modernización de torres y líneas de electricidad con la venta de instrumentos musicales a  
@@ -38,9 +38,9 @@ Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcci
 植物を育てていると、土の処理や枯れた植物の茎や葉、根などの植物残渣の処理に困ることが多いと思います。自治体によりますが、土は捨てられないことも多いですよね。そんな悩みを一気に解消してくれるのが、植物残渣を使った土の再生です。土の再生と聞くと難しいことはわからないという人も多いと思いますが、大丈夫です！今回は本当に簡単にできる土の再生方法に  
 <https://agri.mynavi.jp/2026_11_20_618500/>
 
-**Lietuvos nacionalinis muziejus kviečia atrasti veltinio istoriją** — Nacionalinis muziejus · LT  
-Gruodžio 2 d. 18 val. Lietuvos nacionalinio muziejaus Senajame arsenale (Arsenalo g. 3, Vilnius) bus atidaroma nauja paroda „Susivėlę radiniai“. Ji kvies atrasti veltinio  
-<https://lnm.lt/aktualijos/lietuvos-nacionalinis-muziejus-kviecia-atrasti-veltinio-istorija/>
+**Paskirtas popiežiaus namų teologas** — Bernardinai · LT  
+Lapkričio 21-ąją paskelbti įvairūs popiežiaus Leono potvarkiai, susiję su pareigomis Šventojo Sosto institucijose. Paskirtas naujas Popiežiaus namų teologas, pagal daugia  
+<https://www.bernardinai.lt/paskirtas-popieziaus-namu-teologas/>
 
 **Pulmonologist explains the health impacts of lighting incense sticks at home, shares precautionary measures** — Hindustan Times Health · INDIA  
 Lighting incense sticks indoors increases the levels of indoor air pollutants and can cause respiratory symptoms to flare up, shares Dr Sujan Bardhan.  
@@ -61,6 +61,5 @@ list for a few days has moved or died and wants replacing.
 - **en** · news · Positive News — unreachable
 - **en** · land · Western Horseman — unreachable
 - **lt** · news · Kauno diena — unreachable
-- **tibet** · research · Buddhist Digital Resource Center — unreachable
 - **tibet** · research · — — nothing cleared the gates
 - **tibet** · culture · — — nothing cleared the gates
