@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T20:01:26",
+ "generated": "2026-11-21T13:42:31",
  "lead": null,
  "mine": [
   {
@@ -70,7 +70,27 @@
    "pillar": "Community Resilience",
    "dek": "The method I carried from community to community for thirty years works just as well on one person, and on the home around that person.",
    "img": "/assets/img/journal-1114/what-a-million-community-plans-taught-me-about-one-life-1600.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/baltic-juosta.svg",
+   "tr": {
+    "es": {
+     "href": "/es/lo-que-un-millon-de-planes-comunitarios-me-ensenaron/",
+     "title": "Lo que un millón de planes comunitarios me enseñaron sobre una sola vida",
+     "dek": "El método que llevé de comunidad en comunidad durante treinta años funciona igual de bien con una sola persona, y con el hogar que la rodea.",
+     "pillar": "Resiliencia comunitaria"
+    },
+    "ja": {
+     "href": "/ja/hyakuman-no-keikaku-ga-oshieta-hitotsu-no-jinsei/",
+     "title": "百万の地域計画が教えてくれた、ひとつの人生のこと",
+     "dek": "三十年にわたって共同体から共同体へと運んできた方法は、ひとりの人にも、その人のまわりの家にも、同じようによく効く。",
+     "pillar": "共同体のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/ka-milijonas-bendruomeniu-planu-isme-apie-viena-gyvenima/",
+     "title": "Ką milijonas bendruomenių planų išmokė mane apie vieną gyvenimą",
+     "dek": "Metodas, kurį trisdešimt metų nešiojau iš bendruomenės į bendruomenę, tiek pat gerai tinka vienam žmogui ir namams aplink jį.",
+     "pillar": "Bendruomenės atsparumas"
+    }
+   }
   },
   {
    "slug": "the-day-everything-went-right",
@@ -429,7 +449,7 @@
    "date": "2026-09-11",
    "pillar": "The Books",
    "dek": "Stone Breath has entered worldwide distribution: Apple Books, Kobo, booksellers from Berlin to Sydney. One universal link reaches all of it.",
-   "img": "/assets/img/stone-breath-cover.jpg",
+   "img": "/assets/img/stone-breath-cover.jpg?v=1121",
    "art": "/assets/art/four-capitals.svg",
    "tr": {
     "ja": {
@@ -549,7 +569,7 @@
    "date": "2026-08-07",
    "pillar": "The Books",
    "dek": "A novel about the songs we carry across oceans — and the roots that a lifetime of forgetting could never take. Released on the solstice, on purpose.",
-   "img": "/assets/img/journal/stone-breath-born-on-the-solstice/0.jpeg",
+   "img": "/assets/img/journal/stone-breath-born-on-the-solstice/0.jpeg?v=1121",
    "art": "/assets/art/japan-enso.svg"
   },
   {
@@ -1189,11 +1209,11 @@
    "lane": "research"
   },
   {
-   "title": "We Ain’t Buildin’ a Church",
-   "url": "https://www.irunfar.com/we-aint-buildin-a-church",
-   "dek": "The post We Ain’t Buildin’ a Church appeared first on iRunFar. Zach Miller writes about perfectionism in house-building and running. We Ain’t Buildin’ a Church by Zach Miller.",
+   "title": "Cameron Balser Sets Trans America Run Record in Under 42 Days",
+   "url": "https://www.irunfar.com/cameron-balser-trans-america-run-speed-record-breaking-42-2026",
+   "dek": "The post Cameron Balser Sets Trans America Run Record in Under 42 Days appeared first on iRunFar. Cameron Balser has set a new record for the 3,000-plus-mile Trans America Run. Cameron…",
    "source": "iRunFar",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "lane": "running"
   },
   {
@@ -1237,11 +1257,11 @@
    "lane": "land"
   },
   {
-   "title": "Cross-border Collaboration to Protect Wintering Grassland Birds",
-   "url": "https://www.audubon.org/southwest/news/cross-border-collaboration-protect-wintering-grassland-birds",
-   "dek": "Team members from Audubon Southwest, Audubon Conservation Ranching, and Audubon Americas recently joined Bird Conservancy of the Rockies (BCR) and Mexican partners in Chihuahua City, Mexico…",
+   "title": "I Tracked Down All 60 Birds in GTA 6: A Birder’s Guide to Vice City’s Wildlife",
+   "url": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
+   "dek": "I finished collecting the bricks of cocaine and landed my bullet-ridden seaplane at the dock. It was time for birdwatching.A few minutes after midnight on Thursday morning, I joined…",
    "source": "Audubon",
-   "date": "2026-11-19",
+   "date": "2026-11-20",
    "lane": "animals"
   },
   {
@@ -1293,11 +1313,11 @@
    "lane": "research"
   },
   {
-   "title": "A Runner’s Guide to Gratitude",
-   "url": "https://www.irunfar.com/a-runners-guide-to-gratitude",
-   "dek": "The post A Runner’s Guide to Gratitude appeared first on iRunFar. Sabrina Little advocates for running with gratitude for the people and systems that support us. A Runner’s Guide to…",
+   "title": "We Ain’t Buildin’ a Church",
+   "url": "https://www.irunfar.com/we-aint-buildin-a-church",
+   "dek": "The post We Ain’t Buildin’ a Church appeared first on iRunFar. Zach Miller writes about perfectionism in house-building and running. We Ain’t Buildin’ a Church by Zach Miller.",
    "source": "iRunFar",
-   "date": "2026-11-18",
+   "date": "2026-11-20",
    "lane": "running"
   },
   {
@@ -1335,19 +1355,19 @@
    "lane": "news"
   },
   {
-   "title": "Perú busca movilizar capital público y privado en la COP31 para conservar sus bosques amazónicos",
-   "url": "https://inforegion.pe/peru-busca-movilizar-capital-publico-y-privado-en-la-cop31-para-conservar-sus-bosques-amazonicos/",
-   "dek": "En el marco de la Conferencia de las Naciones Unidas sobre el Cambio Climático (... La entrada Perú busca movilizar capital público y privado en la COP31 para conservar sus bosques…",
+   "title": "Las luces de Tacna desorientan a las golondrinas de mar: más de 50 aves protegidas fueron rescatadas tras caer en calles, parques y viviendas",
+   "url": "https://inforegion.pe/las-luces-de-tacna-desorientan-a-las-golondrinas-de-mar-mas-de-50-aves-protegidas-fueron-rescatadas-tras-caer-en-calles-parques-y-viviendas/",
+   "dek": "El Servicio Nacional Forestal y de Fauna Silvestre (SERFOR) rescató y liberó más... La entrada Las luces de Tacna desorientan a las golondrinas de mar: más de 50 aves protegidas fueron…",
    "source": "Inforegión",
    "date": "2026-11-20",
    "lane": "news"
   },
   {
-   "title": "ANT invierte $12.000 millones y entrega tractores a campesinos del Tolima golpeados incendios forestales",
-   "url": "https://www.agronegocios.co/clima/ant-invierte-12-000-millones-y-entrega-tractores-a-campesinos-del-tolima-golpeados-incendios-forestales-4528350",
-   "dek": "Los recursos se usarán para reconstruir la infraestructura agropecuaria y reactivar la economía rural. Cada asociación campesina seleccionada podrá acceder a proyectos de hasta $750…",
+   "title": "Chile reabre su mercado a la carne bovina colombiana y se proyectan exportaciones por US$27 millones",
+   "url": "https://www.agronegocios.co/mercados/chile-reabre-su-mercado-a-la-carne-bovina-colombiana-y-se-proyectan-exportaciones-por-us-27-millones-4529913",
+   "dek": "La reapertura del mercado chileno permitirá proyectar exportaciones de 3.500 toneladas de carne bovina colombiana en 2027",
    "source": "Agronegocios",
-   "date": "2026-11-19",
+   "date": "2026-11-21",
    "lane": "land"
   },
   {
@@ -1375,11 +1395,11 @@
    "lane": "culture"
   },
   {
-   "title": "Libro de familia, de Rafael Maldonado",
-   "url": "https://www.zendalibros.com/libro-de-familia-de-rafael-maldonado/",
-   "dek": "Este libro nace de la necesidad de comprender y de asumir un linaje y un legado. El autor lo hace a través de la crónica de una serie de antepasados que siempre le han obsesionado. El…",
+   "title": "Javier Castillo: “Hoy cada estímulo es una distracción que nos aleja de la lectura”",
+   "url": "https://www.zendalibros.com/javier-castillo-hoy-cada-estimulo-es-una-distraccion-que-nos-aleja-de-la-lectura/",
+   "dek": "“Parece que fue ayer cuando publiqué El día que se perdió la cordura. Han sido nueve novelas en nueve años, tengo la sensación de que en cada libro me lo juego todo y mantengo ese…",
    "source": "Zenda Libros",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "lane": "culture"
   },
   {
@@ -1449,11 +1469,11 @@
    "lane": "culture"
   },
   {
-   "title": "絵本作家きくちちきの初の大規模巡回展が開催中！",
-   "url": "https://casabrutus.com/categories/culture/496099",
-   "dek": "画面からはみ出そうな躍動感が人気のきくちちき。個展を開催中のPLAY！ MUSEUMで聞きました。",
+   "title": "浦安市最古の神社が見守る地。【今日の名所江戸百景 by 村上隆】",
+   "url": "https://casabrutus.com/categories/art/491357",
+   "dek": "村上隆が歌川広重の「名所江戸百景」をオマージュしたシリーズを毎週末に紹介する連載【今日の名所江戸百景 by 村上隆】。西洋の画家たちに「認知革命」を引き起こした日本美術の衝撃を村上隆が読み解きます。",
    "source": "Casa Brutus",
-   "date": "2026-11-19",
+   "date": "2026-11-20",
    "lane": "culture"
   },
   {
@@ -1483,19 +1503,19 @@
  ],
  "found_lt": [
   {
-   "title": "V. Koryzna patvirtintas nauju „Ignitis grupės“ vadovu, pradės darbą nuo sausio",
-   "url": "https://www.bernardinai.lt/v-koryzna-patvirtintas-nauju-ignitis-grupes-vadovu-prades-darba-nuo-sausio/",
-   "dek": "Valstybės valdomos energetikos grupės „Ignitis grupė“ stebėtojų taryba galutinai patvirtino 44 metų Vytenį Koryzną grupės valdybos pirmininku ir vadovu. Naujasis vadovas darbą pradės kitų…",
+   "title": "Kanklininkė L. Žilinskaitė-Petkevičienė: „Dievas išlaisvino manyje gebėjimą ne tik groti, bet ir per muziką melstis“",
+   "url": "https://www.bernardinai.lt/kanklininke-l-zilinskaite-petkeviciene-dievas-islaisvino-manyje-gebejima-ne-tik-groti-bet-ir-per-muzika-melstis/",
+   "dek": "Prieš pradėdami skaityti, įsijunkite vieną iš Linos atliekamų giesmių. Tegul kanklių garsai ir balsas lydi pasakojimą apie muziką, kuri tampa malda. Šventosios Cecilijos rankose dailininkai…",
    "source": "Bernardinai",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "lane": "news"
   },
   {
-   "title": "KTU mokslininkas apie pastatų ateitį – kaip duomenys gali padėti juos efektyviau valdyti ir atnaujinti?",
-   "url": "https://mokslolietuva.lt/2026/11/ktu-mokslininkas-apie-pastatu-ateiti-kaip-duomenys-gali-padeti-juos-efektyviau-valdyti-ir-atnaujinti/",
-   "dek": "Europos Sąjungoje pastatai sunaudoja apie 40 proc. visos suvartojamos energijos ir reikšmingai prisideda prie šiltnamio efektą sukeliančių dujų išmetimo. Dėl to …",
+   "title": "Ant stogų montuojama saulės energija gali sumažinti su karščiu susijusių mirčių skaičių, nes vėsinimas tampa prieinamesnis",
+   "url": "https://mokslolietuva.lt/2026/11/ant-stogu-montuojama-saules-energija-gali-sumazinti-su-karsciu-susijusiu-mirciu-skaiciu-nes-vesinimas-tampa-prieinamesnis/",
+   "dek": "Intensyvėjant klimato kaitai, ekstremalios temperatūros visame pasaulyje tampa vis dažnesnės. Žemėlapis, kuriame parodytas bendras gyvenamųjų namų saulės fotovoltinių įrenginių skaičius …",
    "source": "Mokslo Lietuva",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "lane": "research"
   },
   {
@@ -1523,28 +1543,28 @@
    "lane": "culture"
   },
   {
-   "title": "„Volvo XC70“ automobilį vyriškis pavertė slėptuve keturiais varomais ratais",
-   "url": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/volvo-xc70-automobili-vyriskis-paverte-sleptuve-keturiais-varomais-ratais-59-2811222?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Šalčininkų rajone pasieniečiai sulaikė vietos gyventoją, automobiliu gabenusį nelegalių cigarečių krovinį. Daugiau kaip 4,8 tūkst. eurų vertės rūkalai vyrui gali „kainuoti“ iki 6 tūkst…",
-   "source": "15min Kultūra",
-   "date": "2026-11-20",
-   "lane": "culture"
-  },
-  {
-   "title": "Monika Gimbutaitė. „Tiksinti Baltija“ – lėtas žvilgsnis į Baltijos jūros dugno paslaptis",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3120148/monika-gimbutaite-tiksinti-baltija-letas-zvilgsnis-i-baltijos-juros-dugno-paslaptis",
-   "dek": "Faktai žmones jaudina retai. Sužinojus, kad Baltijos jūra vis pasiekia užterštumo rekordus, vis tiek kiekvieną vasarą norisi į ją niurktelti, tik stengiesi negalvoti, kad jūra kasmet vis…",
+   "title": "Romano Krasninkevičiaus darbų paroda: skaudžių patirčių kupiną gyvenimą perkėlė į kūrybą",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3120394/romano-krasninkeviciaus-darbu-paroda-skaudziu-patirciu-kupina-gyvenima-perkele-i-kuryba",
+   "dek": "Galaunių namuose-muziejuje Kaune atidaryta tautodailininko, grafiko Romano Krasninkevičiaus kūrybos paroda „Romanas“. Šįmet minimos 100-osios menininko gimimo metinės. Parodos kuratorė sako…",
    "source": "LRT Kultūra",
    "date": "2026-11-20",
    "lane": "culture"
   },
   {
-   "title": "M. Sinkevičius palaiko idėją Suvalkiją pervadinti Sūduvos vardu: būčiau už istorinių šaknų laikymąsi",
-   "url": "https://www.bernardinai.lt/m-sinkevicius-palaiko-ideja-suvalkija-pervadinti-suduvos-vardu-buciau-uz-istoriniu-saknu-laikymasi/",
-   "dek": "Premjeras Mindaugas Sinkevičius palaiko Seime svarstomą iniciatyvą atsisakyti Lietuvos etnografinio regiono pavadinimo Suvalkija, įstatyme įtvirtinant vieną, istoriškai autentišką…",
+   "title": "Kultūros savaitraštis Nr. 2026/18 | 2026 m. lapkričio 21 d.",
+   "url": "https://www.bernardinai.lt/kulturos-savaitrastis-nr-2026-18-2026-11-21/",
+   "dek": "Naujausias „Bernardinai.lt“ kultūros savaitraštis (Nr. 2026/18). Skaitykite svarbiausius savaitės tekstus PDF formatu.",
    "source": "Bernardinai",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "lane": "news"
+  },
+  {
+   "title": "KTU mokslininkas apie pastatų ateitį – kaip duomenys gali padėti juos efektyviau valdyti ir atnaujinti?",
+   "url": "https://mokslolietuva.lt/2026/11/ktu-mokslininkas-apie-pastatu-ateiti-kaip-duomenys-gali-padeti-juos-efektyviau-valdyti-ir-atnaujinti/",
+   "dek": "Europos Sąjungoje pastatai sunaudoja apie 40 proc. visos suvartojamos energijos ir reikšmingai prisideda prie šiltnamio efektą sukeliančių dujų išmetimo. Dėl to …",
+   "source": "Mokslo Lietuva",
+   "date": "2026-11-20",
+   "lane": "research"
   },
   {
    "title": "Natalija apsidžiaugė sode aptikusi gamtos lobį: mokslininkas paaiškino, kuo ypatingos šios lervos (Dr. Norbertas Noreika)",
@@ -1571,9 +1591,9 @@
    "lane": "culture"
   },
   {
-   "title": "Gimęs iš meilės Klaipėdai – menų festivalis atveria naujas erdves ir talentus",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3110126/gimes-is-meiles-klaipedai-menu-festivalis-atveria-naujas-erdves-ir-talentus",
-   "dek": "Iki lapkričio pabaigos Klaipėdoje vyksta menų festivalis „Miesto šnabždesiai“, kviečiantis pažinti miestą per muziką, teatrą, fotografiją, virtualiąją realybę, orientacinius žaidimus…",
+   "title": "Monika Gimbutaitė. „Tiksinti Baltija“ – lėtas žvilgsnis į Baltijos jūros dugno paslaptis",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3120148/monika-gimbutaite-tiksinti-baltija-letas-zvilgsnis-i-baltijos-juros-dugno-paslaptis",
+   "dek": "Faktai žmones jaudina retai. Sužinojus, kad Baltijos jūra vis pasiekia užterštumo rekordus, vis tiek kiekvieną vasarą norisi į ją niurktelti, tik stengiesi negalvoti, kad jūra kasmet vis…",
    "source": "LRT Kultūra",
    "date": "2026-11-20",
    "lane": "culture"
@@ -1581,11 +1601,11 @@
  ],
  "found_india": [
   {
-   "title": "How a 7-Member Team Won $15,000 for Its Work to Protect Tamil Nadu’s Tamiraparani",
-   "url": "https://thebetterindia.com/changemakers/tamiraparani-river-conservation-personhood-two-young-women-12826763",
-   "dek": "An old man in Tirunelveli remembers a time when he could bend down, collect water in his hands and drink directly from the Tamiraparani. The water, he recalls, tasted sweeter then. Today…",
+   "title": "India's Hidden Natural Wonders: 9 Geological Sites Seeking UNESCO World Heritage Recognition",
+   "url": "https://thebetterindia.com/culture/indian-natural-heritage-sites-unesco-responsible-travel-12826958",
+   "dek": "India's most extraordinary landscapes do not always announce themselves with grand monuments or marked tourist trails. Some are hidden beneath tropical forests, others rise out of the sea…",
    "source": "The Better India",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "lane": "news"
   },
   {
@@ -1597,11 +1617,11 @@
    "lane": "news"
   },
   {
-   "title": "From sleep patterns to physical activity: 5 daily habits that can make a difference to your bowel health",
-   "url": "https://www.hindustantimes.com/lifestyle/health/from-sleep-patterns-to-physical-activity-5-daily-habits-that-can-make-a-difference-to-your-bowel-health-101795156195823.html",
-   "dek": "Adopt these five everyday lifestyle changes to improve your digestion and maintain a better bowel health.",
+   "title": "Air pollution and gut health: Doctor explains how constant exposure to toxic air can affect your gut microbiome and trigger digestive discomfort",
+   "url": "https://www.hindustantimes.com/lifestyle/health/air-pollution-and-gut-health-doctor-explains-how-constant-exposure-to-toxic-air-can-affect-your-gut-microbiome-and-trigger-digestive-discomfort-101795256471534.html",
+   "dek": "Could the polluted air you breathe also affect your gut? A doctor explains the connection between air pollution, gut bacteria and digestive discomfort.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "lane": "running"
   },
   {
@@ -1629,11 +1649,11 @@
    "lane": "culture"
   },
   {
-   "title": "I CAN Earthshot Challenge | How TN Students Turned Old Newspapers Into Waste Bags and Won $2,000",
-   "url": "https://thebetterindia.com/changemakers/tamil-nadu-school-students-decom-possible-childrens-earthshot-prize-12826578",
-   "dek": "At a school in Ammaiyappan, Thiruvarur district, a discarded newspaper found a new purpose. Instead of being thrown away, it was folded into a waste bag, fitted with jute handles and coated…",
+   "title": "A Home That Lets Nature Take Centre Stage: Inside a Yercaud House Built Around a Tree",
+   "url": "https://thebetterindia.com/conservation/nature/architect-builds-home-around-nature-yercaud-sustainable-architecture-12827354",
+   "dek": "Imagine walking into a house and finding a stream flowing beneath your feet. Not outside the entrance or in a garden designed to resemble a natural waterbody, but directly beneath a…",
    "source": "The Better India",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "lane": "news"
   },
   {
@@ -1645,11 +1665,11 @@
    "lane": "news"
   },
   {
-   "title": "Endocrinologist explains the effect of skipping breakfast on blood sugar levels, shares what healthy breakfast should look like",
-   "url": "https://www.hindustantimes.com/lifestyle/health/endocrinologist-explains-the-effect-of-skipping-breakfast-on-blood-sugar-levels-shares-what-healthy-breakfast-should-look-like-101795159076036.html",
-   "dek": "Skipping breakfast might appear to be a simple way of avoiding calories, but it affects how the body processes the other meals as well, cautions Dr Parashar.",
+   "title": "Pulmonologist explains the health impacts of lighting incense sticks at home, shares precautionary measures",
+   "url": "https://www.hindustantimes.com/lifestyle/health/pulmonologist-explains-the-health-impacts-of-lighting-incense-sticks-at-home-shares-precautionary-measures-101795253765207.html",
+   "dek": "Lighting incense sticks indoors increases the levels of indoor air pollutants and can cause respiratory symptoms to flare up, shares Dr Sujan Bardhan.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "lane": "running"
   }
  ],
