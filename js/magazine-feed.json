@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T19:06:51",
+ "generated": "2026-11-22T13:42:15",
  "lead": null,
  "mine": [
   {
@@ -449,7 +449,7 @@
    "date": "2026-09-11",
    "pillar": "The Books",
    "dek": "Stone Breath has entered worldwide distribution: Apple Books, Kobo, booksellers from Berlin to Sydney. One universal link reaches all of it.",
-   "img": "/assets/img/stone-breath-cover.jpg?v=1121",
+   "img": "/assets/img/stone-breath-cover.jpg?v=1122",
    "art": "/assets/art/four-capitals.svg",
    "tr": {
     "ja": {
@@ -569,7 +569,7 @@
    "date": "2026-08-07",
    "pillar": "The Books",
    "dek": "A novel about the songs we carry across oceans — and the roots that a lifetime of forgetting could never take. Released on the solstice, on purpose.",
-   "img": "/assets/img/journal/stone-breath-born-on-the-solstice/0.jpeg?v=1121",
+   "img": "/assets/img/journal/stone-breath-born-on-the-solstice/0.jpeg?v=1122",
    "art": "/assets/art/japan-enso.svg"
   },
   {
@@ -1040,7 +1040,27 @@
    "pillar": "About / Reflections",
    "dek": "What it takes to succeed under the kind of pressure most people could not handle, and the role a strong life partner plays in it.",
    "img": "/assets/img/family/lamplight-desk.jpg",
-   "art": "/assets/art/baltic-juosta.svg"
+   "art": "/assets/art/baltic-juosta.svg",
+   "tr": {
+    "es": {
+     "href": "/es/el-mayor-exito-exige-disciplina-y-una-pareja-fuerte/",
+     "title": "El mayor éxito exige disciplina y una pareja de vida fuerte, en medio de las tentaciones",
+     "dek": "En mis observaciones pensé en lo que hace falta para triunfar al más alto nivel, bajo el tipo de presión que la mayoría de la gente no podría soportar, sobre todo bajo las luces brillantes de Las Vegas y con todo Indian Country mirando.",
+     "pillar": "Acerca de / Reflexiones"
+    },
+    "ja": {
+     "href": "/ja/kiritsu-to-tsuyoi-jinsei-no-pato-na/",
+     "title": "最高の成功には、規律と、強い人生の伴侶が要る。誘惑に囲まれながら",
+     "dek": "そうして見ていて、私は考えた。ほとんどの人が耐えられないほどの重圧のもとで、とりわけラスベガスの眩い照明の下、インディアン・カントリー全体が見つめるなかで、最高の水準で成功するには何が要るのだろうか、と。",
+     "pillar": "私について / 省察"
+    },
+    "lt": {
+     "href": "/lt/didziausia-sekme-reikalauja-disciplinos-ir-tvirto-gyvenimo-partnerio/",
+     "title": "Didžiausiai sėkmei reikia drausmės ir tvirto gyvenimo partnerio, esant aplink pagundų",
+     "dek": "Stebėdamas galvojau, ko reikia, kad pasiektum aukščiausią lygį esant tokiam spaudimui, kokio dauguma žmonių neištvertų, ypač po skaisčiomis Las Vegaso šviesomis, kai žiūri visas Indian Country.",
+     "pillar": "Apie / Apmąstymai"
+    }
+   }
   },
   {
    "slug": "the-passage-of-cultural-knowledge",
@@ -1209,9 +1229,9 @@
    "lane": "research"
   },
   {
-   "title": "2026 Ultra-Trail Cape Town 100k Results: Americans David Sinclair, Abby Hall Win",
-   "url": "https://www.irunfar.com/2026-ultra-trail-cape-town-100k-results",
-   "dek": "The post 2026 Ultra-Trail Cape Town 100k Results: Americans David Sinclair, Abby Hall Win appeared first on iRunFar. Americans David Sinclair and Abby Hall won the 2026 Ultra-Trail Cape…",
+   "title": "2026 JFK 50 Mile Results: Victory for Sydney Welch and Coleman Cragun",
+   "url": "https://www.irunfar.com/2026-jfk-50-mile-results",
+   "dek": "The post 2026 JFK 50 Mile Results: Victory for Sydney Welch and Coleman Cragun appeared first on iRunFar. Sydney Welch and Coleman Cragun used both road and trail speed to win the 2026 JFK…",
    "source": "iRunFar",
    "date": "2026-11-21",
    "lane": "running"
@@ -1313,9 +1333,9 @@
    "lane": "research"
   },
   {
-   "title": "Cameron Balser Sets Trans America Run Record in Under 42 Days",
-   "url": "https://www.irunfar.com/cameron-balser-trans-america-run-speed-record-breaking-42-2026",
-   "dek": "The post Cameron Balser Sets Trans America Run Record in Under 42 Days appeared first on iRunFar. Cameron Balser has set a new record for the 3,000-plus-mile Trans America Run. Cameron…",
+   "title": "2026 Ultra-Trail Cape Town 100k Results: Americans David Sinclair, Abby Hall Win",
+   "url": "https://www.irunfar.com/2026-ultra-trail-cape-town-100k-results",
+   "dek": "The post 2026 Ultra-Trail Cape Town 100k Results: Americans David Sinclair, Abby Hall Win appeared first on iRunFar. Americans David Sinclair and Abby Hall won the 2026 Ultra-Trail Cape…",
    "source": "iRunFar",
    "date": "2026-11-21",
    "lane": "running"
@@ -1395,9 +1415,9 @@
    "lane": "culture"
   },
   {
-   "title": "Javier Castillo: “Hoy cada estímulo es una distracción que nos aleja de la lectura”",
-   "url": "https://www.zendalibros.com/javier-castillo-hoy-cada-estimulo-es-una-distraccion-que-nos-aleja-de-la-lectura/",
-   "dek": "“Parece que fue ayer cuando publiqué El día que se perdió la cordura. Han sido nueve novelas en nueve años, tengo la sensación de que en cada libro me lo juego todo y mantengo ese…",
+   "title": "La máscara y la pluma",
+   "url": "https://www.zendalibros.com/la-mascara-y-la-pluma/",
+   "dek": "Mi primer censor es siempre mi propio pudor; una barrera que, más allá de la responsabilidad profesional, me impide acometer esa forma de narrar que solo encuentro adecuada en el territorio…",
    "source": "Zenda Libros",
    "date": "2026-11-21",
    "lane": "culture"
@@ -1469,11 +1489,11 @@
    "lane": "culture"
   },
   {
-   "title": "浦安市最古の神社が見守る地。【今日の名所江戸百景 by 村上隆】",
-   "url": "https://casabrutus.com/categories/art/491357",
-   "dek": "村上隆が歌川広重の「名所江戸百景」をオマージュしたシリーズを毎週末に紹介する連載【今日の名所江戸百景 by 村上隆】。西洋の画家たちに「認知革命」を引き起こした日本美術の衝撃を村上隆が読み解きます。",
+   "title": "藤井厚二の旧喜多邸で〈GALLERY STOOP〉とスペイン〈SIDE GALLERY〉がモダニズム家具の展覧会を開催。",
+   "url": "https://casabrutus.com/categories/design/496543",
+   "dek": "京都・北白川の名作住宅〈旧喜多源逸邸〉を舞台に、剣持勇やミゲル・ミラ、ジョージ・ナカシマらの家具や照明を展示する『Japanese Design Meets Spanish Design』が開催されている。日本とスペインのデザインギャラリーが、モダニズムを背景とする両国にゆかりのある家具を紹介する。",
    "source": "Casa Brutus",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "lane": "culture"
   },
   {
@@ -1503,11 +1523,11 @@
  ],
  "found_lt": [
   {
-   "title": "Panevėžio vyskupijos 100-metį vainikavo iškilminga šventė",
-   "url": "https://www.bernardinai.lt/panevezio-vyskupijos-100-meti-vainikavo-iskilminga-svente/",
-   "dek": "Panevėžio Kristaus Karaliaus katedroje šiandien surengta pagrindinė Panevėžio vyskupijos 100 metų jubiliejaus uždarymo šventė. Iškilmingomis šv. Mišiomis, kurioms vadovavo Jo Eminencija…",
+   "title": "Pamokslas žadina ar migdo?",
+   "url": "https://www.bernardinai.lt/pamokslas-zadina-ar-migdo/",
+   "dek": "Ar ilgas pamokslas visada padeda geriau suprasti Dievo žodį? Kada kunigo kalbėjimas ima trukdyti maldai ir kodėl pasiruošti homilijai neužtenka vien bendro išsilavinimo? Naujausioje…",
    "source": "Bernardinai",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "lane": "news"
   },
   {
@@ -1543,11 +1563,11 @@
    "lane": "culture"
   },
   {
-   "title": "„Pinigai – dar ne viskas“: Zelenskis atsakė į Musko kaltinimus meluojant dėl „Starshield“",
-   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/pinigai-dar-ne-viskas-zelenskis-atsake-i-musko-kaltinimus-meluojant-del-starshield-57-2811560?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Ukrainoje iš tiesų kilo problemų dėl „Starshield“ veikimo, o sistemos veikla buvo atkurta po pokalbių su JAV valstybės sekretoriumi Marco Rubio. Tai interviu CNN pareiškė Ukrainos…",
+   "title": "ES pirmininkaujanti Airija: ES narės nepritaria COP31 susitarimui",
+   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/es-pirmininkaujanti-airija-es-nares-nepritaria-cop31-susitarimui-57-2811754?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "Europos Sąjungai (ES) pirmininkaujanti Airija sekmadienį pareiškė, kad Bendrijos narės prieštaraus prieštaringai vertinamo galutinio susitarimo, dėl kurio deramasi klimato kaitos…",
    "source": "15min Kultūra",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "lane": "culture"
   },
   {
@@ -1557,14 +1577,6 @@
    "source": "LRT Kultūra",
    "date": "2026-11-20",
    "lane": "culture"
-  },
-  {
-   "title": "Paskirtas popiežiaus namų teologas",
-   "url": "https://www.bernardinai.lt/paskirtas-popieziaus-namu-teologas/",
-   "dek": "Lapkričio 21-ąją paskelbti įvairūs popiežiaus Leono potvarkiai, susiję su pareigomis Šventojo Sosto institucijose. Paskirtas naujas Popiežiaus namų teologas, pagal daugiaamžę tradiciją – iš…",
-   "source": "Bernardinai",
-   "date": "2026-11-21",
-   "lane": "news"
   },
   {
    "title": "Pasaulinė televizijos diena: ar jaunimui socialinės medijos ją atstos?",
@@ -1597,15 +1609,23 @@
    "source": "Nacionalinis muziejus",
    "date": "2026-11-12",
    "lane": "culture"
+  },
+  {
+   "title": "Monika Gimbutaitė. „Tiksinti Baltija“ – lėtas žvilgsnis į Baltijos jūros dugno paslaptis",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3120148/monika-gimbutaite-tiksinti-baltija-letas-zvilgsnis-i-baltijos-juros-dugno-paslaptis",
+   "dek": "Faktai žmones jaudina retai. Sužinojus, kad Baltijos jūra vis pasiekia užterštumo rekordus, vis tiek kiekvieną vasarą norisi į ją niurktelti, tik stengiesi negalvoti, kad jūra kasmet vis…",
+   "source": "LRT Kultūra",
+   "date": "2026-11-20",
+   "lane": "culture"
   }
  ],
  "found_india": [
   {
-   "title": "India's Hidden Natural Wonders: 9 Geological Sites Seeking UNESCO World Heritage Recognition",
-   "url": "https://thebetterindia.com/culture/indian-natural-heritage-sites-unesco-responsible-travel-12826958",
-   "dek": "India's most extraordinary landscapes do not always announce themselves with grand monuments or marked tourist trails. Some are hidden beneath tropical forests, others rise out of the sea…",
+   "title": "College Team Creates a Whole New Spring to Double Drinking Water Supply in an Uttarakhand Village",
+   "url": "https://thebetterindia.com/conservation/nature/iit-roorkee-new-spring-doubles-drinking-water-uttarakhand-village-12827613",
+   "dek": "In the mountain villages of Uttarakhand's Tehri Garhwal district, the amount of drinking water available to families can change dramatically with the seasons. Many households depend on…",
    "source": "The Better India",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "lane": "news"
   },
   {
@@ -1617,11 +1637,11 @@
    "lane": "news"
   },
   {
-   "title": "Air pollution and gut health: Doctor explains how constant exposure to toxic air can affect your gut microbiome and trigger digestive discomfort",
-   "url": "https://www.hindustantimes.com/lifestyle/health/air-pollution-and-gut-health-doctor-explains-how-constant-exposure-to-toxic-air-can-affect-your-gut-microbiome-and-trigger-digestive-discomfort-101795256471534.html",
-   "dek": "Could the polluted air you breathe also affect your gut? A doctor explains the connection between air pollution, gut bacteria and digestive discomfort.",
+   "title": "Men’s Health Awareness Month 2026: 5 essentials to help men take charge of their hair health",
+   "url": "https://www.hindustantimes.com/lifestyle/health/mens-health-awareness-month-2026-5-essentials-to-help-men-take-charge-of-their-hair-health-101795253261190.html",
+   "dek": "Discover key hair care products for men in 2026, with an emphasis on scalp health and grooming routines for vibrant hair during Men's Health Awareness Month.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "lane": "running"
   },
   {
@@ -1649,11 +1669,11 @@
    "lane": "culture"
   },
   {
-   "title": "A Home That Lets Nature Take Centre Stage: Inside a Yercaud House Built Around a Tree",
-   "url": "https://thebetterindia.com/conservation/nature/architect-builds-home-around-nature-yercaud-sustainable-architecture-12827354",
-   "dek": "Imagine walking into a house and finding a stream flowing beneath your feet. Not outside the entrance or in a garden designed to resemble a natural waterbody, but directly beneath a…",
+   "title": "This Bengaluru Farmer Grows 1500 Bunches of Chrysanthemums a Week. Try His Tips for Your Balcony",
+   "url": "https://thebetterindia.com/web-stories/gardening/grow-chrysanthemums-at-home-bengaluru-flower-farmer-lohith-reddy-tips-12827257",
+   "dek": "",
    "source": "The Better India",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "lane": "news"
   },
   {
@@ -1665,11 +1685,11 @@
    "lane": "news"
   },
   {
-   "title": "Pulmonologist explains the health impacts of lighting incense sticks at home, shares precautionary measures",
-   "url": "https://www.hindustantimes.com/lifestyle/health/pulmonologist-explains-the-health-impacts-of-lighting-incense-sticks-at-home-shares-precautionary-measures-101795253765207.html",
-   "dek": "Lighting incense sticks indoors increases the levels of indoor air pollutants and can cause respiratory symptoms to flare up, shares Dr Sujan Bardhan.",
+   "title": "Bringing home your preemie? A neonatologist reveals everything about their first year that every parent needs to know",
+   "url": "https://www.hindustantimes.com/lifestyle/health/your-premature-baby-is-home-whats-next-a-parents-guide-to-the-first-year-101795084389419.html",
+   "dek": "Essential tips for caring for your premature baby at home, including feeding advice, health monitoring, and developmental milestones for their first year.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "lane": "running"
   }
  ],
