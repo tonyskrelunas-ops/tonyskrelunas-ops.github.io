@@ -26,9 +26,9 @@ Discover key hair care products for men in 2026, with an emphasis on scalp healt
 (TibetanReview.net, Nov20’26) – As China, the world’s second-largest economy, continues to grapple with slowed growth and weak domestic demand, its number of university g  
 <https://www.tibetanreview.net/china-anxious-as-record-13-million-university-graduates-to-hit-a-tough-job-market-in-2027/>
 
-**2026 Ultra-Trail Cape Town 100k Results: Americans David Sinclair, Abby Hall Win** — iRunFar  
-The post 2026 Ultra-Trail Cape Town 100k Results: Americans David Sinclair, Abby Hall Win appeared first on iRunFar. Americans David Sinclair and Abby Hall won the 2026 U  
-<https://www.irunfar.com/2026-ultra-trail-cape-town-100k-results>
+**Yes, you can do XC and Hyrox—this athlete wins at both** — Canadian Running  
+Madelyn Eybergen defended her U SPORTS cross-country title, and won the Hyrox Dallas Pro women's race less than a week later The post Yes, you can do XC and Hyrox—this at  
+<https://runningmagazine.ca/the-scene/yes-you-can-do-xc-and-hyrox-this-athlete-wins-at-both/>
 
 **Iverco, Carretero y Etesa: viejos negocios, nuevos contratos** — Agencia Ocote · ES  
 Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcción y modernización de torres y líneas de electricidad con la venta de instrumentos musicales a  
@@ -38,9 +38,9 @@ Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcci
 植物を育てていると、土の処理や枯れた植物の茎や葉、根などの植物残渣の処理に困ることが多いと思います。自治体によりますが、土は捨てられないことも多いですよね。そんな悩みを一気に解消してくれるのが、植物残渣を使った土の再生です。土の再生と聞くと難しいことはわからないという人も多いと思いますが、大丈夫です！今回は本当に簡単にできる土の再生方法に  
 <https://agri.mynavi.jp/2026_11_20_618500/>
 
-**Lietuvos nacionalinis muziejus kviečia atrasti veltinio istoriją** — Nacionalinis muziejus · LT  
-Gruodžio 2 d. 18 val. Lietuvos nacionalinio muziejaus Senajame arsenale (Arsenalo g. 3, Vilnius) bus atidaroma nauja paroda „Susivėlę radiniai“. Ji kvies atrasti veltinio  
-<https://lnm.lt/aktualijos/lietuvos-nacionalinis-muziejus-kviecia-atrasti-veltinio-istorija/>
+**Po chaotiškos pabaigos klimato konferencijoje COP31 nepavyko pasiekti susitarimo** — 15min Kultūra · LT  
+Rekordiškai ilgai užsitęsusi klimato konferencija COP31 sekmadienį baigėsi istoriniu fiasko, Europos Sąjungai (ES) ir kitoms šalims atsisakius pritarti susitarimui, kuria  
+<https://www.15min.lt/naujiena/aktualu/pasaulis/po-chaotiskos-pabaigos-klimato-konferencijoje-cop31-nepavyko-pasiekti-susitarimo-57-2811810?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed>
 
 **How a Bird’s Discovery Led to a Conservation Success Story** — Roundglass Sustain · INDIA  
 The discovery of the Bugun Liocichla in 2006 sparked a community-led conservation effort that protected a forest, secured the species’ future, and placed this landscape f  
@@ -60,6 +60,8 @@ list for a few days has moved or died and wants replacing.
 
 - **en** · news · Positive News — unreachable
 - **en** · land · Western Horseman — unreachable
+- **en** · land · Civil Eats — empty
 - **lt** · news · Kauno diena — unreachable
+- **tibet** · research · Buddhist Digital Resource Center — unreachable
 - **tibet** · research · — — nothing cleared the gates
 - **tibet** · culture · — — nothing cleared the gates
