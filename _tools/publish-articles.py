@@ -14,7 +14,7 @@ pages to answer (the cloud routine cannot reach tribeawaken.com and checks the G
 Each draft is markdown with the frontmatter new-article.py reads, plus two keys of its own:
 
     ---
-    title: The Year I Failed Out of College
+    title: The Year I Lost My Scholarship
     eyebrow: Human Resilience
     dek: One sentence for the index, the feed and the share card.
     photo: /assets/home-v5/turtle-island/flock-going-out-1600.jpg   # a REAL photograph already in the repo
