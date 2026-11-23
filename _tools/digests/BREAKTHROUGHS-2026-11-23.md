@@ -26,9 +26,9 @@ Discover key hair care products for men in 2026, with an emphasis on scalp healt
 (TibetanReview.net, Nov20’26) – As China, the world’s second-largest economy, continues to grapple with slowed growth and weak domestic demand, its number of university g  
 <https://www.tibetanreview.net/china-anxious-as-record-13-million-university-graduates-to-hit-a-tough-job-market-in-2027/>
 
-**In Maine, Making Kimchi Builds Community Resilience Ahead of Winter** — Civil Eats  
-By Ben Seal • November 23, 2026A fermentation shop has adapted Korea’s communal tradition of preservation to Maine’s short seasons and available ingredients.Read the full  
-<https://civileats.com/2026/11/23/in-this-maine-shop-kimchi-builds-community-resilience-ahead-of-winter/>
+**Homemade Gifts: 3 Easy and Affordable DIY Ideas** — Hobby Farms  
+Creating these homemade gifts is a simple and thoughtful way to show you care. The post Homemade Gifts: 3 Easy and Affordable DIY Ideas appeared first on Hobby Farms.  
+<https://www.hobbyfarms.com/homemade-gifts-easy-inexpensive/>
 
 **Iverco, Carretero y Etesa: viejos negocios, nuevos contratos** — Agencia Ocote · ES  
 Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcción y modernización de torres y líneas de electricidad con la venta de instrumentos musicales a  
@@ -38,17 +38,17 @@ Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcci
 植物を育てていると、土の処理や枯れた植物の茎や葉、根などの植物残渣の処理に困ることが多いと思います。自治体によりますが、土は捨てられないことも多いですよね。そんな悩みを一気に解消してくれるのが、植物残渣を使った土の再生です。土の再生と聞くと難しいことはわからないという人も多いと思いますが、大丈夫です！今回は本当に簡単にできる土の再生方法に  
 <https://agri.mynavi.jp/2026_11_20_618500/>
 
-**„Sukūręs „Fluxus“, jis pradėjo šypsotis“: prisimenant Jurgį Mačiūną** — Bernardinai · LT  
-„Jo sesuo Nijolė yra pasakojusi, kad Jurgis nuo vaikystės buvo silpnos sveikatos, nuolat sirguliavo, tačiau sukūręs „Fluxus“ pradėjo šypsotis. Nepaisydamas visų sunkumų,   
-<https://www.bernardinai.lt/sukures-fluxus-jis-pradejo-sypsotis-prisimenant-jurgi-maciuna/>
+**Lk 21, 5–11: „Žiūrėkite, kad nebūtumėte suklaidinti, nes daugelis ateis, prisidengę mano vardu“** — Bernardinai · LT  
+Kai kuriems bekalbant apie šventyklą, kad ji išpuošta gražiais akmenimis bei dovanomis, Jėzus prabilo: „Ateis dienos, kai iš to miesto, ką matote, neliks akmens ant akmen  
+<https://www.bernardinai.lt/lk-21-5-11-ziurekite-kad-nebutumete-suklaidinti-nes-daugelis-ateis-prisidenge-mano-vardu/>
 
-**How a Bird’s Discovery Led to a Conservation Success Story** — Roundglass Sustain · INDIA  
-The discovery of the Bugun Liocichla in 2006 sparked a community-led conservation effort that protected a forest, secured the species’ future, and placed this landscape f  
-<https://roundglasssustain.com/conservation/bugun-liocichla-eaglenest>
+**Bringing home your preemie? A neonatologist reveals everything about their first year that every parent needs to know** — Hindustan Times Health · INDIA  
+Essential tips for caring for your premature baby at home, including feeding advice, health monitoring, and developmental milestones for their first year.  
+<https://www.hindustantimes.com/lifestyle/health/your-premature-baby-is-home-whats-next-a-parents-guide-to-the-first-year-101795084389419.html>
 
-**TYC launches ‘Flame of Unity’ campaign, to tour with martyr Lobga Rangzen’s flag across 25 Indian states** — Phayul · TIBET  
-Tenzin Nyidon DHARAMSHALA, Nov. 18: The largest pro-independence group, Tibetan Youth Congress (TYC) on Wednesday launched its “Flame of Unity” campaign in Dharamshala, w  
-<https://phayul.com/2026/11/tyc-launches-flame-of-unity-campaign-to-tour-with-martyr-lobga-rangzens-flag-across-25-indian-states/>
+**Tibetan arts curriculum launched to promote traditional craftsmanship and creativity** — Phayul · TIBET  
+Tenzin Nyidon DHARAMSHALA, Nov. 23: A new curriculum textbook on traditional Tibetan arts and craftsmanship, titled “Understanding Zo-Rigpa: An Invitation to See, Underst  
+<https://phayul.com/2026/11/tibetan-arts-curriculum-launched-to-promote-traditional-craftsmanship-and-creativity/>
 
 
 ---
@@ -60,8 +60,6 @@ list for a few days has moved or died and wants replacing.
 
 - **en** · news · Positive News — unreachable
 - **en** · land · Western Horseman — unreachable
-- **es** · animals · Servindi — empty
-- **ja** · news · ソトコト — empty
 - **lt** · news · Kauno diena — unreachable
 - **tibet** · research · — — nothing cleared the gates
 - **tibet** · culture · — — nothing cleared the gates
