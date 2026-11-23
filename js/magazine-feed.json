@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T19:29:44",
+ "generated": "2026-11-23T13:42:23",
  "lead": null,
  "mine": [
   {
@@ -20,7 +20,27 @@
    "pillar": "Human Resilience",
    "dek": "Your job is not to worry, your job is to stay in the moment, and the body can be taught to do that one small piece at a time.",
    "img": "/assets/img/journal-1120/why-i-keep-my-mouth-slightly-open-1600.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/baltic-oak.svg",
+   "tr": {
+    "es": {
+     "href": "/es/por-que-mantengo-la-boca-ligeramente-abierta/",
+     "title": "Por qué mantengo la boca ligeramente abierta",
+     "dek": "Tu trabajo no es preocuparte, tu trabajo es estar en el momento, y al cuerpo se le puede enseñar a hacerlo, una pequeña pieza a la vez.",
+     "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/kuchi-wo-sukoshi-dake-akeru-riyu/",
+     "title": "私が口を少しだけ開けておく理由",
+     "dek": "あなたの仕事は心配することではない。いまこの瞬間にとどまることであり、体はそれを、小さな一片ずつ教わることができる。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/kodel-laikau-burna-siek-tiek-praverta/",
+     "title": "Kodėl laikau burną šiek tiek pravertą",
+     "dek": "Tavo darbas nėra nerimauti, tavo darbas yra būti akimirkoje, o kūną galima to išmokyti po mažą dalelę.",
+     "pillar": "Žmogaus atsparumas"
+    }
+   }
   },
   {
    "slug": "returning-is-the-skill",
@@ -1205,11 +1225,11 @@
  ],
  "found": [
   {
-   "title": "Breath of a Whale Captured by Drone Allows Full Genome Sequencing Without Intrusion",
-   "url": "https://www.goodnewsnetwork.org/breath-of-whale-captured-via-drone-to-complete-genome-sequence/",
-   "dek": "The exhale from a whale’s blowhole has been captured by drones, and used to complete the genome sequencing of one of the ocean giants for the first time. Researchers from the University of…",
+   "title": "How a T-Shirt Startup’s Manifesto Got People Everywhere Rethinking Their Lives",
+   "url": "https://www.goodnewsnetwork.org/how-a-t-shirt-startups-manifesto-got-people-everywhere-rethinking-their-lives/",
+   "dek": "Just in time for the holidays, Good News Network has teamed up with Holstee on a curated collection of gifts that celebrate living well. Shop the collection. “If you’re looking for the love…",
    "source": "Good News Network",
-   "date": "2026-11-21",
+   "date": "2026-11-23",
    "lane": "news"
   },
   {
@@ -1229,11 +1249,11 @@
    "lane": "research"
   },
   {
-   "title": "Best Running Vests of 2026",
-   "url": "https://www.irunfar.com/best-running-vests",
-   "dek": "The post Best Running Vests of 2026 appeared first on iRunFar. iRunFar's guide to the best running vests – from barely there packs to all-day adventure rigs – to help you get out and get…",
+   "title": "This Week In Running: November 23, 2026",
+   "url": "https://www.irunfar.com/this-week-in-running-november-23-2026",
+   "dek": "The post This Week In Running: November 23, 2026 appeared first on iRunFar. This Week in Running’s trail and ultra recap for November 23, 2026. This Week In Running: November 23, 2026 by…",
    "source": "iRunFar",
-   "date": "2026-11-22",
+   "date": "2026-11-23",
    "lane": "running"
   },
   {
@@ -1245,9 +1265,9 @@
    "lane": "running"
   },
   {
-   "title": "Yes, you can do XC and Hyrox—this athlete wins at both",
-   "url": "https://runningmagazine.ca/the-scene/yes-you-can-do-xc-and-hyrox-this-athlete-wins-at-both/",
-   "dek": "Madelyn Eybergen defended her U SPORTS cross-country title, and won the Hyrox Dallas Pro women's race less than a week later The post Yes, you can do XC and Hyrox—this athlete wins at both…",
+   "title": "Indiana ultrarunner breaks 10-year-old record for running across the United States",
+   "url": "https://runningmagazine.ca/the-scene/indiana-ultrarunner-breaks-10-year-old-record-for-running-across-the-united-states/",
+   "dek": "Cameron Balser covered more than 3,000 miles from San Francisco to New York in 41 days, 16 hours and 46 minutes The post Indiana ultrarunner breaks 10-year-old record for running across the…",
    "source": "Canadian Running",
    "date": "2026-11-22",
    "lane": "running"
@@ -1269,6 +1289,14 @@
    "lane": "land"
   },
   {
+   "title": "In Maine, Making Kimchi Builds Community Resilience Ahead of Winter",
+   "url": "https://civileats.com/2026/11/23/in-this-maine-shop-kimchi-builds-community-resilience-ahead-of-winter/",
+   "dek": "By Ben Seal • November 23, 2026A fermentation shop has adapted Korea’s communal tradition of preservation to Maine’s short seasons and available ingredients.Read the full article →",
+   "source": "Civil Eats",
+   "date": "2026-11-23",
+   "lane": "land"
+  },
+  {
    "title": "I Tracked Down All 60 Birds in GTA 6: A Birder’s Guide to Vice City’s Wildlife",
    "url": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
    "dek": "I finished collecting the bricks of cocaine and landed my bullet-ridden seaplane at the dock. It was time for birdwatching.A few minutes after midnight on Thursday morning, I joined…",
@@ -1277,11 +1305,11 @@
    "lane": "animals"
   },
   {
-   "title": "It’s time to put Africa’s forest communities on the map (commentary)",
-   "url": "https://news.mongabay.com/2026/11/its-past-time-to-put-africas-forest-communities-on-the-map-commentary/",
-   "dek": "The U.N. General Assembly’s recent adoption of a new standard world map, more accurately reflecting the true size of Africa than depicted in the Eurocentric 16th-century Mercator…",
+   "title": "‘We had to reinvent the system completely,’ Brazilian philanthropy leader says",
+   "url": "https://news.mongabay.com/2026/11/we-had-to-reinvent-the-system-completely-brazilian-philanthropy-leader-says/",
+   "dek": "In November 2025, Indigenous and Afro-descendent peoples, frontline defenders and civil society movements mobilized in unprecedented numbers in Belém, Brazil, to advocate for their demands…",
    "source": "Mongabay",
-   "date": "2026-11-20",
+   "date": "2026-11-23",
    "lane": "animals"
   },
   {
@@ -1293,17 +1321,17 @@
    "lane": "culture"
   },
   {
-   "title": "Rembrandt's 'Night Watch' Is Teeming With Life. Researchers Reveal a Hidden World of Microbes All Over the Masterpiece",
-   "url": "https://www.smithsonianmag.com/smart-news/rembrandt-night-watch-is-teeming-with-life-researchers-reveal-a-hidden-world-of-microbes-all-over-the-masterpiece-180989917/",
-   "dek": "Samples swabbed from the 17th-century painting reveal myriad microorganisms, including one perplexing bacterium that was first discovered at a Japanese sugar refinery in 2013",
+   "title": "Once Called Home by Lockkeepers and Park Rangers, This 200-Year-Old House Along the Historic Chesapeake and Ohio Canal Is Now Opening Its Doors to Ove",
+   "url": "https://www.smithsonianmag.com/smart-news/once-called-home-by-lockkeepers-and-park-rangers-this-200-year-old-house-along-the-historic-chesapeake-and-ohio-canal-is-now-opening-its-doors-to-overnight-guests-180989924/",
+   "dek": "From the 1830s to the 1920s, Lockhouse 8 provided living quarters for the generations of lockkeepers who helped keep boats moving along canal, a critical route from the Atlantic Ocean to…",
    "source": "Smithsonian",
-   "date": "2026-11-20",
+   "date": "2026-11-23",
    "lane": "culture"
   },
   {
-   "title": "First Human Trial to Slash Bad Cholesterol by 50% With One Injection of CRISPR Gene-Editing Therapy",
-   "url": "https://www.goodnewsnetwork.org/first-human-trial-to-slash-bad-cholesterol-by-50pt-with-one-crispr-injection/",
-   "dek": "A one-time infusion of CRISPR gene editing therapy slashed dangerous cholesterol by 52%, with the patients still experiencing the benefit 12 months after initial treatment, and without side…",
+   "title": "Breath of a Whale Captured by Drone Allows Full Genome Sequencing Without Intrusion",
+   "url": "https://www.goodnewsnetwork.org/breath-of-whale-captured-via-drone-to-complete-genome-sequence/",
+   "dek": "The exhale from a whale’s blowhole has been captured by drones, and used to complete the genome sequencing of one of the ocean giants for the first time. Researchers from the University of…",
    "source": "Good News Network",
    "date": "2026-11-21",
    "lane": "news"
@@ -1325,11 +1353,11 @@
    "lane": "research"
   },
   {
-   "title": "2026 JFK 50 Mile Results: Victory for Sydney Welch and Coleman Cragun",
-   "url": "https://www.irunfar.com/2026-jfk-50-mile-results",
-   "dek": "The post 2026 JFK 50 Mile Results: Victory for Sydney Welch and Coleman Cragun appeared first on iRunFar. Sydney Welch and Coleman Cragun used both road and trail speed to win the 2026 JFK…",
+   "title": "Best Running Vests of 2026",
+   "url": "https://www.irunfar.com/best-running-vests",
+   "dek": "The post Best Running Vests of 2026 appeared first on iRunFar. iRunFar's guide to the best running vests – from barely there packs to all-day adventure rigs – to help you get out and get…",
    "source": "iRunFar",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "lane": "running"
   },
   {
@@ -1338,14 +1366,6 @@
    "dek": "The human rights lawyer retooled her training and developed special gear to withstand temperatures as low as minus 35 degrees Fahrenheit and make history as the first woman to run 100 miles…",
    "source": "Trail Runner",
    "date": "2026-11-19",
-   "lane": "running"
-  },
-  {
-   "title": "Two Ontario women set six Canadian masters records—and no one noticed",
-   "url": "https://runningmagazine.ca/trail-running/two-ontario-women-set-six-canadian-masters-records-and-no-one-noticed/",
-   "dek": "Back in September, Jane MacLeod and Teresa Novick took on the 24-hour and 6-hour races at That Dam Hill Marathon and Ultra Races, and left with their name in the history books The post Two…",
-   "source": "Canadian Running",
-   "date": "2026-11-20",
    "lane": "running"
   }
  ],
@@ -1399,19 +1419,19 @@
    "lane": "culture"
   },
   {
-   "title": "El muy europeo arte de batirse en duelo por una rabieta",
-   "url": "https://www.jotdown.es/2026/11/europeo-arte-batirse-en-duelo-rabieta/",
-   "dek": "Los duelos ridículos ponen de manifiesto el funcionamiento del sistema mejor que los solemnes, ya que, en estos últimos, el lugar y la forma en que se libra el enfrentamiento cobran…",
+   "title": "Agua, crepúsculos y monstruos: una revisión de los cómics más sugerentes del tercer trimestre de 2026",
+   "url": "https://www.jotdown.es/2026/11/revision-comics-tercer-trimestre-2026/",
+   "dek": "Acometemos el tercer trimestre comiquero de 2026 con la firme convicción de que este año va a ser también uno interesante para el medio. A las habituales recuperaciones de obras de…",
    "source": "Jot Down",
-   "date": "2026-11-20",
+   "date": "2026-11-23",
    "lane": "culture"
   },
   {
-   "title": "La máscara y la pluma",
-   "url": "https://www.zendalibros.com/la-mascara-y-la-pluma/",
-   "dek": "Mi primer censor es siempre mi propio pudor; una barrera que, más allá de la responsabilidad profesional, me impide acometer esa forma de narrar que solo encuentro adecuada en el territorio…",
+   "title": "Lo que nos habita",
+   "url": "https://www.zendalibros.com/lo-que-nos-habita/",
+   "dek": "No creo que sea casualidad. Tampoco lo es que el poeta que se formó en esa misma Granada, la de nuestras lecturas y andanzas compartidas de juventud, haya regresado a ella cuatro siglos…",
    "source": "Zenda Libros",
-   "date": "2026-11-21",
+   "date": "2026-11-23",
    "lane": "culture"
   },
   {
@@ -1449,11 +1469,11 @@
  ],
  "found_ja": [
   {
-   "title": "【12/1@東京】健康データは、国境を越えてどこへ行く？便益とリスクのあいだで、“信頼”をつくるには",
-   "url": "https://ideasforgood.jp/2026/11/20/jst-data-trust-vol3/",
-   "dek": "行政のAI・データ活用が進むなか、住民との「信頼」をどう築くか。JST主催のシンポジウム第2回の議論を振り返りつつ、12月1日開催の第3回「国を越えるヘルスデータとトラスト」の見どころをご紹介します。 The post 【12/1@東京】健康データは、国境を越えてどこへ行く？便益とリスクのあいだで、“信頼”をつくるには first appeared on IDEAS FOR…",
+   "title": "【12/4締切】脱炭素を環境部署だけの仕事にしない。関東環境局が「まちゴト脱炭素デザイン会議」の実施自治体を募集",
+   "url": "https://ideasforgood.jp/2026/11/23/machigoto-design/",
+   "dek": "【12/4締切】脱炭素は、防災や観光、産業誘致など、地域の魅力を高める手段にもなります。部署を越え、部署を越えて、まちの脱炭素の未来を描く「まちゴト脱炭素デザイン会議」を募集地域で開催します。 The post 【12/4締切】脱炭素を環境部署だけの仕事にしない。関東環境局が「まちゴト脱炭素デザイン会議」の実施自治体を募集 first appeared on IDEAS…",
    "source": "IDEAS FOR GOOD",
-   "date": "2026-11-19",
+   "date": "2026-11-23",
    "lane": "news"
   },
   {
@@ -1465,14 +1485,6 @@
    "lane": "news"
   },
   {
-   "title": "音楽家の子育て歳時記。〜天川の風にフルートの音色をのせて〜(奈良県天川村洞川温泉)",
-   "url": "https://sotokoto-online.jp/sotokoto_pen_club/27281",
-   "dek": "秋の夜空と、リビングの小さなお月見 すっかり秋の空気が馴染んできた10月。夜風がひんやりと心地よく、ふと見上げる夜空がひときわ高く澄み渡る美しい季節です。日本では古くから、9月の中秋の名月だけでなく10月のこの「後の月 […]",
-   "source": "ソトコト",
-   "date": "2026-10-29",
-   "lane": "news"
-  },
-  {
    "title": "野菜の残渣や生ごみを捨てないで！最短1週間で古い土がいい土に蘇ります！",
    "url": "https://agri.mynavi.jp/2026_11_20_618500/",
    "dek": "植物を育てていると、土の処理や枯れた植物の茎や葉、根などの植物残渣の処理に困ることが多いと思います。自治体によりますが、土は捨てられないことも多いですよね。そんな悩みを一気に解消してくれるのが、植物残渣を使った土の再生です。土の再生と聞くと難しいことはわからないという人も多いと思いますが、大丈夫です！今回は本当に簡単にできる土の再生方法について紹介します。",
@@ -1481,11 +1493,11 @@
    "lane": "land"
   },
   {
-   "title": "【書評】「羆（くま）を狩る」とはこういうことか：藤本靖著『羆撃ちに人生を賭けた男──単独で200頭超のヒグマを仕留めてきた守護神 赤石正男』",
-   "url": "https://www.nippon.com/ja/articles/-/57363",
-   "dek": "冬眠前のクマが食糧を求め、今年も市中に出没するニュースが連日のように取り上げられている。本書は、北海道でヒグマを仕留めてきた希代のハンターのドキュメントである。彼はどのようにして凶暴なヒグマを追い詰めていったのか。",
+   "title": "浅草の「伝統的な日本の風景」変わる街並み、変わらぬ日常：初沢亜利の東京探検（3）",
+   "url": "https://www.nippon.com/ja/articles/-/57609",
+   "dek": "大型再開発が相次ぐ巨大都市・東京。その足元で人々の暮らしが息づく。東京の変化と変わらぬ姿を、東京を撮り続ける写真家・初沢亜利が記録する。今回は外国人観光客に人気の観光地・浅草を巡る。",
    "source": "Nippon.com",
-   "date": "2026-11-20",
+   "date": "2026-11-23",
    "lane": "culture"
   },
   {
@@ -1497,11 +1509,11 @@
    "lane": "culture"
   },
   {
-   "title": "地域の合言葉は「ムトス」。太陽光の市民ファンドで歴史を繋ぐ、長野・飯田市のまちづくり",
-   "url": "https://ideasforgood.jp/2026/11/19/decarbonization-and-regional-culture-iidashi/",
-   "dek": "アルプスの雄大な山々に抱かれた長野県飯田市。厳しい気候を生き抜くため、人々は古くから互助の精神「結い」と、主体的行動を表す「ムトス（自ら行動する意志）」を大切に育んできました。さらに、日本初となる「地域環境権」条例を制定。太陽や森林の恵みを地域の共有財産（コモンズ）と定め、市民による市民のための太陽光発電の仕組みを作り、売電収入は、人形劇の伝統継承や、公民館の維持に還元されてい…",
+   "title": "【12/19@京都・オンライン】まちの未来を形作る循環アイデアが集結。サーキュラービジネスデザインスクール京都 最終成果発表・交流会",
+   "url": "https://ideasforgood.jp/2026/11/23/cbdskyoto-demoday-2026/",
+   "dek": "循環型ビジネスの創出を支援する事業開発プログラム「サーキュラービジネスデザインスクール京都」。2026年度の最終成果発表会では、アドバンスド講座の参加者が開発してきた事業構想をピッチ形式で発表します。 The post 【12/19@京都・オンライン】まちの未来を形作る循環アイデアが集結。サーキュラービジネスデザインスクール京都 最終成果発表・交流会 first…",
    "source": "IDEAS FOR GOOD",
-   "date": "2026-11-18",
+   "date": "2026-11-23",
    "lane": "news"
   },
   {
@@ -1519,23 +1531,31 @@
    "source": "マイナビ農業",
    "date": "2026-11-19",
    "lane": "land"
+  },
+  {
+   "title": "【書評】「羆（くま）を狩る」とはこういうことか：藤本靖著『羆撃ちに人生を賭けた男──単独で200頭超のヒグマを仕留めてきた守護神 赤石正男』",
+   "url": "https://www.nippon.com/ja/articles/-/57363",
+   "dek": "冬眠前のクマが食糧を求め、今年も市中に出没するニュースが連日のように取り上げられている。本書は、北海道でヒグマを仕留めてきた希代のハンターのドキュメントである。彼はどのようにして凶暴なヒグマを追い詰めていったのか。",
+   "source": "Nippon.com",
+   "date": "2026-11-20",
+   "lane": "culture"
   }
  ],
  "found_lt": [
   {
-   "title": "ES pirmininkaujanti Airija: ES narės nepritaria COP31 susitarimui",
-   "url": "https://www.bernardinai.lt/es-pirmininkaujanti-airija-es-nares-nepritaria-cop31-susitarimui/",
-   "dek": "Europos Sąjungai (ES) pirmininkaujanti Airija sekmadienį pareiškė, kad Bendrijos narės prieštaraus prieštaringai vertinamo galutinio susitarimo, dėl kurio deramasi klimato kaitos…",
+   "title": "„Sukūręs „Fluxus“, jis pradėjo šypsotis“: prisimenant Jurgį Mačiūną",
+   "url": "https://www.bernardinai.lt/sukures-fluxus-jis-pradejo-sypsotis-prisimenant-jurgi-maciuna/",
+   "dek": "„Jo sesuo Nijolė yra pasakojusi, kad Jurgis nuo vaikystės buvo silpnos sveikatos, nuolat sirguliavo, tačiau sukūręs „Fluxus“ pradėjo šypsotis. Nepaisydamas visų sunkumų, jis gyveno…",
    "source": "Bernardinai",
-   "date": "2026-11-22",
+   "date": "2026-11-23",
    "lane": "news"
   },
   {
-   "title": "„Anthropic“ tyrėjas teigia, kad kartu su „Claude“ įrodė Rymano hipotezę, pirmą kartą iškeltą 1859 m.",
-   "url": "https://mokslolietuva.lt/2026/11/anthropic-tyrejas-teigia-kad-kartu-su-claude-irode-rymano-hipoteze-pirma-karta-iskelta-1859-m/",
-   "dek": "Penktadienį dirbtinio intelekto (DI) bendrovės „Anthropic“ tyrėjas pranešė, kad pasitelkęs įmonės pokalbių robotą „Claude“ įrodė Rymano hipotezę – matematinę problemą, …",
+   "title": "MRU mokslininkė ir ACEBaltic viceprezidentė telkia tarptautinę bendruomenę: asociacijos metinis renginys pirmą kartą vyks Lietuvoje",
+   "url": "https://mokslolietuva.lt/2026/11/mru-mokslininke-ir-acebaltic-viceprezidente-telkia-tarptautine-bendruomene-asociacijos-metinis-renginys-pirma-karta-vyks-lietuvoje/",
+   "dek": "Renginio tipas: Konferencija Renginio data: penktadienis, 2026 lapkričio 27 Renginio pradžia: 09:00 Renginio pabaiga: penktadienis, 2026 lapkričio 27 Renginio vieta: …",
    "source": "Mokslo Lietuva",
-   "date": "2026-11-21",
+   "date": "2026-11-23",
    "lane": "research"
   },
   {
@@ -1563,11 +1583,11 @@
    "lane": "culture"
   },
   {
-   "title": "Po chaotiškos pabaigos klimato konferencijoje COP31 nepavyko pasiekti susitarimo",
-   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/po-chaotiskos-pabaigos-klimato-konferencijoje-cop31-nepavyko-pasiekti-susitarimo-57-2811810?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Rekordiškai ilgai užsitęsusi klimato konferencija COP31 sekmadienį baigėsi istoriniu fiasko, Europos Sąjungai (ES) ir kitoms šalims atsisakius pritarti susitarimui, kuriame neminimas…",
+   "title": "ES: labai svarbu, kad po JT derybų dėl klimato daugiašalis procesas „išliktų gyvas“",
+   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/es-labai-svarbu-kad-po-jt-derybu-del-klimato-daugiasalis-procesas-isliktu-gyvas-57-2812476?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "Turkijoje užsitęsusioms Jungtinių Tautų (JT) deryboms pasibaigus aklaviete dėl iškastinio kuro, finansavimo ir kitų klausimų, Europos Sąjunga (ES) pirmadienį pareiškė, jog yra labai svarbu…",
    "source": "15min Kultūra",
-   "date": "2026-11-22",
+   "date": "2026-11-23",
    "lane": "culture"
   },
   {
@@ -1579,11 +1599,11 @@
    "lane": "culture"
   },
   {
-   "title": "Pasaulinė televizijos diena: ar jaunimui socialinės medijos ją atstos?",
-   "url": "https://mokslolietuva.lt/2026/11/pasauline-televizijos-diena-ar-jaunimui-socialines-medijos-ja-atstos/",
-   "dek": "„Netflix“, „YouTube“, „TikTok“ ir kitos skaitmeninės platformos iš esmės pakeitė tai, kaip šiandien pasiekiame audiovizualinį turinį. Tačiau ar tai reiškia, …",
+   "title": "Nepriklausomi matematikai patvirtina, kad dirbtinio intelekto kartu su “Anthropic” matematiku įrodyta Rymano hipotezė yra teisinga",
+   "url": "https://mokslolietuva.lt/2026/11/nepriklausomi-matematikai-patvirtina-kad-dirbtinio-intelekto-kartu-su-anthropic-matematiku-irodyta-rymano-hipoteze-yra-teisinga/",
+   "dek": "Matematikai dabar tikri, kad stulbinantis dirbtinio intelekto sukurtas Rymano hipotezės įrodymas yra tikras. Penktadienį matematikas Leventas Alpöge pareiškė, kad panaudojo …",
    "source": "Mokslo Lietuva",
-   "date": "2026-11-21",
+   "date": "2026-11-23",
    "lane": "research"
   },
   {
@@ -1611,29 +1631,29 @@
    "lane": "culture"
   },
   {
-   "title": "Pagal nobelininko Fosse`s scenarijų filmą sukūręs režisierius: tai pamatyti tenka nedažnai",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3119113/pagal-nobelininko-fosse-s-scenariju-filma-sukures-rezisierius-tai-pamatyti-tenka-nedaznai",
-   "dek": "Beveik 29 metai – tiek užtruko, kol norvegų režisierius Erikas Poppe`ė filmu pavertė vieno žinomiausių šiandienos rašytojų Jono Fosse`s scenarijų. Nors kūrinys buvo parodytas keliems…",
-   "source": "LRT Kultūra",
-   "date": "2026-11-21",
+   "title": "Kauno IX forto muziejuje – nauja paroda apie Miuncheną ir Kauną saistančią skaudžią praeitį",
+   "url": "https://www.15min.lt/naujiena/aktualu/lietuva/kauno-ix-forto-muziejuje-nauja-paroda-apie-miunchena-ir-kauna-saistancia-skaudzia-praeiti-56-2812452?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "2026 m. lapkričio 25 d. 13.00 val. Kauno IX forto muziejuje atidaroma paroda „Miunchenas–Kaunas: gyvenimai besitęsiantys atminime“. Joje pasakojama apie Miuncheno gyventojų žydų likimo…",
+   "source": "15min Kultūra",
+   "date": "2026-11-23",
    "lane": "culture"
   }
  ],
  "found_india": [
   {
-   "title": "College Team Creates a Whole New Spring to Double Drinking Water Supply in an Uttarakhand Village",
-   "url": "https://thebetterindia.com/conservation/nature/iit-roorkee-new-spring-doubles-drinking-water-uttarakhand-village-12827613",
-   "dek": "In the mountain villages of Uttarakhand's Tehri Garhwal district, the amount of drinking water available to families can change dramatically with the seasons. Many households depend on…",
+   "title": "How Can the Process That Purifies Water Leave Behind a Possible Carcinogen?",
+   "url": "https://thebetterindia.com/sustainability/how-carcinogens-enter-packaged-drinking-water-bisleri-fssai-12834545",
+   "dek": "You twist open a sealed bottle of water and drink without a second thought. It's clear, it's sealed, and it's been purified. Behind that bottle is more checking than most of us realise…",
    "source": "The Better India",
-   "date": "2026-11-22",
+   "date": "2026-11-23",
    "lane": "news"
   },
   {
-   "title": "Bijapur’s former Naxal strongholds get electricity for the first time",
-   "url": "https://villagesquare.in/bijapurs-former-naxal-strongholds-get-electricity-for-the-first-time/",
-   "dek": "Until December 2024, Kondapalli village in Usoor block in Chhattisgarh’s Bijapur district was considered a Naxal stronghold. The village, home to around 600 people across 144 households…",
+   "title": "A Haryana film asks what villages lose as they modernise",
+   "url": "https://villagesquare.in/the-calf-doll-a-haryana-film-asks-what-villages-lose-as-they-modernise/",
+   "dek": "In 2023, while visiting his village of Dayalpur in Haryana, Ankur Hooda’s grandfather’s cow gave birth to a stillborn calf. The family turned to an old ritual, the calf doll, meant to help…",
    "source": "Village Square",
-   "date": "2026-11-17",
+   "date": "2026-11-23",
    "lane": "news"
   },
   {
@@ -1669,19 +1689,19 @@
    "lane": "culture"
   },
   {
-   "title": "This Bengaluru Farmer Grows 1500 Bunches of Chrysanthemums a Week. Try His Tips for Your Balcony",
-   "url": "https://thebetterindia.com/web-stories/gardening/grow-chrysanthemums-at-home-bengaluru-flower-farmer-lohith-reddy-tips-12827257",
-   "dek": "",
+   "title": "71% of 27,000 Orchids Survived: How Kerala Researchers Rescued Plants That Were Marked for Felling",
+   "url": "https://thebetterindia.com/conservation/nature/kerala-orchid-conservation-road-development-rescue-relocation-12834195",
+   "dek": "When trees along a road are marked for felling, the loss extends beyond their shade and canopy. For thousands of orchids growing on their trunks and branches, the removal of a single tree…",
    "source": "The Better India",
-   "date": "2026-11-22",
+   "date": "2026-11-23",
    "lane": "news"
   },
   {
-   "title": "Nature at the heart of Bihar’s vibrant Chhath Puja",
-   "url": "https://villagesquare.in/nature-at-the-heart-of-bihars-vibrant-chhath-puja/",
-   "dek": "A woman makes an offering to the rising sun on the auspicious occasion of Chhath Puja. This festival is one of its kind where the rising and setting sun are both worshipped. (Photo by…",
+   "title": "Bijapur’s former Naxal strongholds get electricity for the first time",
+   "url": "https://villagesquare.in/bijapurs-former-naxal-strongholds-get-electricity-for-the-first-time/",
+   "dek": "Until December 2024, Kondapalli village in Usoor block in Chhattisgarh’s Bijapur district was considered a Naxal stronghold. The village, home to around 600 people across 144 households…",
    "source": "Village Square",
-   "date": "2026-11-15",
+   "date": "2026-11-17",
    "lane": "news"
   },
   {
@@ -1711,11 +1731,11 @@
    "lane": "news"
   },
   {
-   "title": "Speaker Teykhang Calls for Unity, Flags Off Tibetan Youth Congress’s Flame of Unity Campaign",
-   "url": "https://tibet.net/speaker-teykhang-calls-for-unity-flags-off-tibetan-youth-congresss-flame-of-unity-campaign/",
-   "dek": "Dharamshala: On November 18, 2026, the Tibetan Youth Congress launched the Flame of Unity Campaign (Chikdril Gyi Meche). The tour will carry the Tibetan flag hoisted by Tibetan activist…",
+   "title": "Ten-Day Administrative Training Programme at IIPA Concludes Successfully",
+   "url": "https://tibet.net/ten-day-administrative-training-programme-at-iipa-concludes-successfully/",
+   "dek": "New Delhi, 20 November 2026: The Public Service Commission (PSC), Central Tibetan Administration, successfully concluded ten days Administrative Training Programme at Indian Institute of…",
    "source": "Central Tibetan Administration",
-   "date": "2026-11-19",
+   "date": "2026-11-23",
    "lane": "news"
   },
   {
