@@ -398,5 +398,25 @@
    "dek": "Tavo darbas nėra nerimauti, tavo darbas yra būti akimirkoje, o kūną galima to išmokyti po mažą dalelę.",
    "pillar": "Žmogaus atsparumas"
   }
+ },
+ "gifts-light-enough-to-carry": {
+  "es": {
+   "href": "/es/regalos-lo-bastante-ligeros-para-llevarlos/",
+   "title": "Regalos lo bastante ligeros para llevarlos",
+   "dek": "Te hacen regalos, te hacen comida, te hacen cosas ligeras que puedes llevar.",
+   "pillar": "Resiliencia humana"
+  },
+  "ja": {
+   "href": "/ja/mochihakoberu-hodo-karui-okurimono/",
+   "title": "持ち運べるほど軽い贈り物",
+   "dek": "彼らはあなたに贈り物を作り、食べ物を作り、軽くて持ち運べるものを作ってくれる。",
+   "pillar": "人間のレジリエンス"
+  },
+  "lt": {
+   "href": "/lt/dovanos-pakankamai-lengvos-nesti/",
+   "title": "Dovanos, pakankamai lengvos nešti",
+   "dek": "Jie jums padaro dovanų, paruošia maisto, padaro lengvų daiktų, kuriuos galima nešti.",
+   "pillar": "Žmogaus atsparumas"
+  }
  }
 }
