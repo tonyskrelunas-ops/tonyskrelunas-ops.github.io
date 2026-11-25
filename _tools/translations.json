@@ -418,5 +418,25 @@
    "dek": "Jie jums padaro dovanų, paruošia maisto, padaro lengvų daiktų, kuriuos galima nešti.",
    "pillar": "Žmogaus atsparumas"
   }
+ },
+ "the-5k-i-meant-to-jog": {
+  "es": {
+   "href": "/es/el-5k-que-pense-trotar/",
+   "title": "El 5K que pensaba trotar",
+   "dek": "Iba a usarlo como carrera de entrenamiento, pero mi espíritu competitivo salió a relucir de verdad.",
+   "pillar": "Resiliencia humana"
+  },
+  "ja": {
+   "href": "/ja/jogu-tsumori-datta-5k/",
+   "title": "軽く流すつもりだった5キロ",
+   "dek": "練習のつもりで走るはずだったが、私の負けず嫌いが本当に顔を出してしまった。",
+   "pillar": "人間のレジリエンス"
+  },
+  "lt": {
+   "href": "/lt/5-km-kuri-ketinau-tik-risnoti/",
+   "title": "5 km, kuriuos ketinau tik risnoti",
+   "dek": "Ketinau tai panaudoti kaip treniruotę, bet mano rungtyniavimo dvasia tikrai išlindo į paviršių.",
+   "pillar": "Žmogaus atsparumas"
+  }
  }
 }
