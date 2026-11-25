@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T22:20:49",
+ "generated": "2026-11-25T13:42:20",
  "lead": null,
  "mine": [
   {
@@ -10,7 +10,27 @@
    "pillar": "Human Resilience",
    "dek": "I was going to use it as a training run, but my competitiveness really came out.",
    "img": "/assets/img/journal-1124/the-5k-i-meant-to-jog-1600.jpg",
-   "art": "/assets/art/four-capitals.svg"
+   "art": "/assets/art/four-capitals.svg",
+   "tr": {
+    "es": {
+     "href": "/es/el-5k-que-pense-trotar/",
+     "title": "El 5K que pensaba trotar",
+     "dek": "Iba a usarlo como carrera de entrenamiento, pero mi espíritu competitivo salió a relucir de verdad.",
+     "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/jogu-tsumori-datta-5k/",
+     "title": "軽く流すつもりだった5キロ",
+     "dek": "練習のつもりで走るはずだったが、私の負けず嫌いが本当に顔を出してしまった。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/5-km-kuri-ketinau-tik-risnoti/",
+     "title": "5 km, kuriuos ketinau tik risnoti",
+     "dek": "Ketinau tai panaudoti kaip treniruotę, bet mano rungtyniavimo dvasia tikrai išlindo į paviršių.",
+     "pillar": "Žmogaus atsparumas"
+    }
+   }
   },
   {
    "slug": "what-i-asked-the-room-not-to-say",
@@ -1265,11 +1285,11 @@
  ],
  "found": [
   {
-   "title": "Good News in History, November 24",
-   "url": "https://www.goodnewsnetwork.org/events061124/",
-   "dek": "167 years ago today, the British naturalist and geologist Charles Darwin published On the Origin of Species explaining his theory of evolution. The first edition—which has been voted by…",
+   "title": "Land Returned to Native American Ownership 400 Years After the First Thanksgiving",
+   "url": "https://www.goodnewsnetwork.org/land-returned-indigenous-care-first-encounter-beach/",
+   "dek": "More than 400 years after the Pilgrims first explored the Cape Cod area, land belonging to Native Americans was returned to Indigenous ownership. On October 30, The Nature Conservancy gave…",
    "source": "Good News Network",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "news"
   },
   {
@@ -1289,11 +1309,11 @@
    "lane": "research"
   },
   {
-   "title": "Best Running Pants for Men and Women of 2026",
-   "url": "https://www.irunfar.com/best-running-pants",
-   "dek": "The post Best Running Pants for Men and Women of 2026 appeared first on iRunFar. Our top picks for pants for running in the cold, sun protection, rain, and wind. Best Running Pants for Men…",
+   "title": "Taking Her Own Path: A Conversation With Anna Gibson",
+   "url": "https://www.irunfar.com/anna-gibson-profile",
+   "dek": "The post Taking Her Own Path: A Conversation With Anna Gibson appeared first on iRunFar. A profile of Anna Gibson: trail runner, Olympian, and adventure-forward athlete. Taking Her Own…",
    "source": "iRunFar",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "running"
   },
   {
@@ -1329,6 +1349,14 @@
    "lane": "land"
   },
   {
+   "title": "In Maine, Making Kimchi Builds Community Resilience Ahead of Winter",
+   "url": "https://civileats.com/2026/11/23/in-this-maine-shop-kimchi-builds-community-resilience-ahead-of-winter/",
+   "dek": "By Ben Seal • November 23, 2026A fermentation shop has adapted Korea’s communal tradition of preservation to Maine’s short seasons and available ingredients.Read the full article →",
+   "source": "Civil Eats",
+   "date": "2026-11-23",
+   "lane": "land"
+  },
+  {
    "title": "Stronger Together: Building Partnerships for a Resilient Platte River",
    "url": "https://www.audubon.org/great-plains/news/stronger-together-building-partnerships-resilient-platte-river",
    "dek": "Editor’s note: This article is part of a series exploring the various facets of the Sandhill Crane Migration in Central Nebraska, the $28 Million annual economic impact that the migration...",
@@ -1337,11 +1365,11 @@
    "lane": "animals"
   },
   {
-   "title": "In the Bolivian Andes, Indigenous women plant native trees to restore water sources",
-   "url": "https://news.mongabay.com/2026/11/in-the-bolivian-andes-indigenous-women-plant-native-trees-to-restore-water-sources/",
-   "dek": "The bare ridges of the Tunari mountain range rise high in Bolivia’s central Cochabamba department. Only the occasional stand of squat, shrubby trees and rust-red potato crops dot the…",
+   "title": "Photos: Elephants maintain an essential role in conservation in Nepal despite shifting norms",
+   "url": "https://news.mongabay.com/2026/11/photos-elephants-maintain-an-essential-role-in-conservation-in-nepal-despite-shifting-norms/",
+   "dek": "CHITWAN NATIONAL PARK, Nepal — Perched some 3 meters off the ground, or about 10 feet, on the back of Asian elephants, workers traverse Nepal’s dense jungles and grasslands to complete…",
    "source": "Mongabay",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "animals"
   },
   {
@@ -1353,19 +1381,19 @@
    "lane": "culture"
   },
   {
-   "title": "The First-Ever Children's Booker Prize Revealed Its Eight Shortlisted Finalists. Meet the Four Young Judges Deciding the Winner",
-   "url": "https://www.smithsonianmag.com/smart-news/the-first-ever-childrens-booker-prize-revealed-its-eight-shortlisted-finalists-meet-the-four-young-judges-deciding-the-winner-180989940/",
-   "dek": "Launched amid a historic low in youth reading enjoyment, the award will be decided by a joint panel of three adults and four young readers, who were selected from more than 4,000 applicants",
+   "title": "Indigenous Hunters Drove Bison Off This Tall Cliff for 3,000 Years. It's Only the Second Buffalo Jump Ever Discovered in Texas",
+   "url": "https://www.smithsonianmag.com/smart-news/indigenous-hunters-drove-bison-off-a-cliff-for-3000-years-its-only-the-second-buffalo-jump-ever-discovered-in-texas-180989941/",
+   "dek": "Two science teachers were hiking when they stumbled on hundreds of ancient buffalo bones in Caprock Canyons State Park, which is today home to the Texas State Bison Herd",
    "source": "Smithsonian",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "culture"
   },
   {
-   "title": "Determined Volunteer Rescues Lost Toddler in the Desert: ‘She may not be our child, but she could be’",
-   "url": "https://www.goodnewsnetwork.org/determined-volunteer-rescues-lost-toddler-in-the-desert-she-may-not-be-our-child-but-she-could-be/",
-   "dek": "An Arizona community is celebrating a local grandfather who found a missing toddler in the middle of the cold desert night. Honored by the sheriff’s office as an outstanding citizen, Jay…",
+   "title": "Good News in History, November 24",
+   "url": "https://www.goodnewsnetwork.org/events061124/",
+   "dek": "167 years ago today, the British naturalist and geologist Charles Darwin published On the Origin of Species explaining his theory of evolution. The first edition—which has been voted by…",
    "source": "Good News Network",
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "lane": "news"
   },
   {
@@ -1385,9 +1413,9 @@
    "lane": "research"
   },
   {
-   "title": "The SnowMammoth: 335 Miles of Racing in October",
-   "url": "https://www.irunfar.com/the-snowmammoth-335-miles-of-racing-in-october",
-   "dek": "The post The SnowMammoth: 335 Miles of Racing in October appeared first on iRunFar. Gabe Joyes reflects on racing both the Mammoth 200 Mile and 5-day Snowman Race in the span of a month…",
+   "title": "Best Running Pants for Men and Women of 2026",
+   "url": "https://www.irunfar.com/best-running-pants",
+   "dek": "The post Best Running Pants for Men and Women of 2026 appeared first on iRunFar. Our top picks for pants for running in the cold, sun protection, rain, and wind. Best Running Pants for Men…",
    "source": "iRunFar",
    "date": "2026-11-24",
    "lane": "running"
@@ -1399,14 +1427,6 @@
    "source": "Trail Runner",
    "date": "2026-11-20",
    "lane": "running"
-  },
-  {
-   "title": "The Christmas music people run fastest to is Sabrina Carpenter",
-   "url": "https://runningmagazine.ca/the-scene/the-christmas-music-people-run-fastest-to-is-sabrina-carpenter/",
-   "dek": "Runners averaged 5:31/km while listening to the pop star's song \"A Nonsense Christmas\" The post The Christmas music people run fastest to is Sabrina Carpenter appeared first on Canadian…",
-   "source": "Canadian Running",
-   "date": "2026-11-24",
-   "lane": "running"
   }
  ],
  "found_es": [
@@ -1416,14 +1436,6 @@
    "dek": "Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcción y modernización de torres y líneas de electricidad con la venta de instrumentos musicales al Estado? A primera…",
    "source": "Agencia Ocote",
    "date": "2026-11-16",
-   "lane": "news"
-  },
-  {
-   "title": "«España puede convertirse en el hub energético más importante de Europa gracias al sol, viento y agua»",
-   "url": "https://ethic.es/marc-pons-psoe-energia-elecciones-29n",
-   "dek": "Marc Pons, secretario de Transición Justa del PSOE, protagoniza una nueva sesión del ciclo de desayunos organizado por el Observatorio de Energía y Sostenibilidad de la Fundación…",
-   "source": "Ethic",
-   "date": "2026-11-23",
    "lane": "news"
   },
   {
@@ -1443,11 +1455,19 @@
    "lane": "news"
   },
   {
-   "title": "Modernizarán la zona Paricutín y San Juan Viejo en Michoacán",
-   "url": "https://www.mexicodesconocido.com.mx/modernizaran-la-zona-paricutin-y-san-juan-viejo-en-michoacan.html",
-   "dek": "Puentes 360, pabellones y restauraciones. La región del volcán Paricutín y las históricas ruinas de San Juan Parangaricutiro, conocido popularmente como San Juan Viejo, atraviesa una…",
+   "title": "Parque Barrancas, la nueva era de uno de los atractivos más espectaculares en México",
+   "url": "https://www.mexicodesconocido.com.mx/parque-barrancas-chihuahua.html",
+   "dek": "Nuevas atracciones y mejoras que harán esta experiencia aún más inolvidable. The post Parque Barrancas, la nueva era de uno de los atractivos más espectaculares en México appeared first on…",
    "source": "México Desconocido",
    "date": "2026-11-24",
+   "lane": "land"
+  },
+  {
+   "title": "\"La parte comercial y el trabajo asociativo son fundamentales; unidos, nuestra fruta vale más\"",
+   "url": "https://www.agronegocios.co/agricultura/entrevista-con-gabriel-botero-productor-y-gerente-de-la-comercializadora-de-asocolblue-sobre-el-negocio-de-arandanos-4530800",
+   "dek": "Gabriel Botero, productor y gerente de la comercializadora de Asocolblue, habló sobre el desarrollo de su negocio de arándanos y la asociación de pequeños productores",
+   "source": "Agronegocios",
+   "date": "2026-11-25",
    "lane": "land"
   },
   {
@@ -1475,11 +1495,11 @@
    "lane": "culture"
   },
   {
-   "title": "Beatrice Bergamín, Celso Varela y Yoel Peña, ganadores en el XX Premio Paco Rabal de periodismo cultural",
-   "url": "https://www.zendalibros.com/beatrice-bergamin-celso-varela-y-yoel-pena-ganadores-en-el-xx-premio-paco-rabal-de-periodismo-cultural/",
-   "dek": "Fotografía de portada: Celso Varela. © Larissa Louro La vigésima convocatoria de este prestigioso galardón ha suscitado en esta entrega el interés de 77 participantes que remitieron sus…",
+   "title": "Mapa de las lenguas 2027, el español como territorio compartido",
+   "url": "https://www.zendalibros.com/mapa-de-las-lenguas-2027-el-espanol-como-territorio-compartido/",
+   "dek": "Alfaguara y Random House presentan la nueva edición de Mapa de las lenguas, una iniciativa en la que se sirven del español para trazar la cartografía de la mejor narrativa escrita en…",
    "source": "Zenda Libros",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "culture"
   },
   {
@@ -1509,11 +1529,11 @@
  ],
  "found_ja": [
   {
-   "title": "【12/4締切】脱炭素を環境部署だけの仕事にしない。関東環境局が「まちゴト脱炭素デザイン会議」の実施自治体を募集",
-   "url": "https://ideasforgood.jp/2026/11/23/machigoto-design/",
-   "dek": "【12/4締切】脱炭素は、防災や観光、産業誘致など、地域の魅力を高める手段にもなります。部署を越え、部署を越えて、まちの脱炭素の未来を描く「まちゴト脱炭素デザイン会議」を募集地域で開催します。 The post 【12/4締切】脱炭素を環境部署だけの仕事にしない。関東環境局が「まちゴト脱炭素デザイン会議」の実施自治体を募集 first appeared on IDEAS…",
+   "title": "【12/10＠横浜】Planetary Nesting：地球に棲みなおすための芸術とデザイン。ベルリン在住アーティスト・井口奈保氏トーク＆ワークショップ",
+   "url": "https://ideasforgood.jp/2026/11/25/star-planetary-nesting/",
+   "dek": "自転車のハンドルで眠る雛鳥。私たちの暮らす場所は、ほかの生きものの住処でもあるかもしれません。12/10、ベルリン在住のアーティスト井口奈保さんを迎え、Sta.Rでトーク＆ワークショップを開催します！ The post 【12/10＠横浜】Planetary Nesting：地球に棲みなおすための芸術とデザイン。ベルリン在住アーティスト・井口奈保氏トーク＆ワークショップ…",
    "source": "IDEAS FOR GOOD",
-   "date": "2026-11-23",
+   "date": "2026-11-25",
    "lane": "news"
   },
   {
@@ -1549,17 +1569,17 @@
    "lane": "culture"
   },
   {
-   "title": "藤井厚二の旧喜多邸で〈GALLERY STOOP〉とスペイン〈SIDE GALLERY〉がモダニズム家具の展覧会を開催。",
-   "url": "https://casabrutus.com/categories/design/496543",
-   "dek": "京都・北白川の名作住宅〈旧喜多源逸邸〉を舞台に、剣持勇やミゲル・ミラ、ジョージ・ナカシマらの家具や照明を展示する『Japanese Design Meets Spanish Design』が開催されている。日本とスペインのデザインギャラリーが、モダニズムを背景とする両国にゆかりのある家具を紹介する。",
+   "title": "〈フリッツ・ハンセン〉と〈シュタイン〉が初コラボ。生活の中で完成する、タイムレスなデザイン。",
+   "url": "https://casabrutus.com/categories/design/496862",
+   "dek": "デンマークの名門〈フリッツ・ハンセン〉と、デザイナー・浅川喜一朗が手がけるファッションブランド〈シュタイン〉が初のコラボレーション。名作《セブンチェア》と《ドットスツール》が生まれ変わる。発売開始は2026年11月25日。12月20日まで、伊勢丹新宿店での店頭販売も行います。",
    "source": "Casa Brutus",
-   "date": "2026-11-22",
+   "date": "2026-11-25",
    "lane": "culture"
   },
   {
-   "title": "【12/19@京都・オンライン】まちの未来を形作る循環アイデアが集結。サーキュラービジネスデザインスクール京都 最終成果発表・交流会",
-   "url": "https://ideasforgood.jp/2026/11/23/cbdskyoto-demoday-2026/",
-   "dek": "循環型ビジネスの創出を支援する事業開発プログラム「サーキュラービジネスデザインスクール京都」。2026年度の最終成果発表会では、アドバンスド講座の参加者が開発してきた事業構想をピッチ形式で発表します。 The post 【12/19@京都・オンライン】まちの未来を形作る循環アイデアが集結。サーキュラービジネスデザインスクール京都 最終成果発表・交流会 first…",
+   "title": "【12/4締切】脱炭素を環境部署だけの仕事にしない。関東環境局が「まちゴト脱炭素デザイン会議」の実施自治体を募集",
+   "url": "https://ideasforgood.jp/2026/11/23/machigoto-design/",
+   "dek": "【12/4締切】脱炭素は、防災や観光、産業誘致など、地域の魅力を高める手段にもなります。部署を越え、部署を越えて、まちの脱炭素の未来を描く「まちゴト脱炭素デザイン会議」を募集地域で開催します。 The post 【12/4締切】脱炭素を環境部署だけの仕事にしない。関東環境局が「まちゴト脱炭素デザイン会議」の実施自治体を募集 first appeared on IDEAS…",
    "source": "IDEAS FOR GOOD",
    "date": "2026-11-23",
    "lane": "news"
@@ -1583,35 +1603,35 @@
  ],
  "found_lt": [
   {
-   "title": "Politinės retorikos ekspertė G. Vaičekauskienė: šiandien laimi tie, kurie garsiau deklaruoja savo tiesą",
-   "url": "https://www.bernardinai.lt/politines-retorikos-eksperte-g-vaicekauskiene-siandien-laimi-tie-kurie-garsiau-deklaruoja-savo-tiesa/",
-   "dek": "„Konsensuso kultūra traukiasi. Vis mažiau politinių lyderių nori tapti moderatoriais. Anksčiau girdėdavome daug pažadų susodinti visus prie vieno stalo, kalbėtis su skirtingų įsitikinimų ir…",
+   "title": "Bendroji audiencija. Popiežius priminė Susirinkimo mokymą apie taiką",
+   "url": "https://www.bernardinai.lt/bendroji-audiencija-popiezius-primine-susirinkimo-mokyma-apie-taika/",
+   "dek": "Ši vilties kupina perspektyva apima ne tik žmoniją, bet ir visą kūriniją, kaip rašo šv.",
    "source": "Bernardinai",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "news"
   },
   {
-   "title": "KTU mokslininkas išleido pirmąją lietuvišką knygą apie gatvės šokius: įamžintas „Kaunas Jazz Jam“ dešimtmetis",
-   "url": "https://mokslolietuva.lt/2026/11/ktu-mokslininkas-isleido-pirmaja-lietuviska-knyga-apie-gatves-sokius-iamzintas-kaunas-jazz-jam-desimtmetis/",
-   "dek": "Dešimtmetį fotografuotas gatvės šokių konkursas, daugiau kaip 90 įamžintų šokėjų ir 200 puslapių fotografijų, pasakojimų bei šokių istorijos – visa …",
+   "title": "Lietuvos, Suomijos ir Izraelio mokslininkai kuria naujos kartos elektronikos pagrindus: pateikė reikšmingų įžvalgų apie anglies nanovamzdelių veikimą",
+   "url": "https://mokslolietuva.lt/2026/11/lietuvos-suomijos-ir-izraelio-mokslininkai-kuria-naujos-kartos-elektronikos-pagrindus-pateike-reiksmingu-izvalgu-apie-anglies-nanovamzdeliu-veikima/",
+   "dek": "Anglies nanovamzdeliai – vos vieno atomo storio plika akimi nematoma medžiaga, kuri, tikimasi, sukels proveržį kuriant naujos kartos elektroniką. Tik …",
    "source": "Mokslo Lietuva",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "research"
   },
   {
-   "title": "Gamtos tyrimų centras pristatė savo veiklą pirmą kartą surengtoje Geologijos sektoriaus dienoje",
-   "url": "https://gamtostyrimai.lt/gamtos-tyrimu-centras-pristate-savo-veikla-pirma-karta-surengtoje-geologijos-sektoriaus-dienoje/",
-   "dek": "Gamtos tyrimų centras (GTC) lapkričio 19 d. pristatė savo veiklą pirmą kartą Žemės gelmių informacijos centre, Vievyje, įvykusioje Geologijos sektoriaus dienoje. Renginyje GTC atstovavo…",
+   "title": "Mokslas prasideda nuo smalsumo – o kartais ir nuo žaidimo!",
+   "url": "https://gamtostyrimai.lt/mokslas-prasideda-nuo-smalsumo-o-kartais-ir-nuo-zaidimo/",
+   "dek": "Genetikos laboratorijos mokslininkai aktyviai prisideda prie jaunosios kartos ugdymo, skatindami mokinius domėtis gamtos mokslais ir tyrinėjimais. Praktinių mokymų ir ekskursijų Gamtos…",
    "source": "Gamtos tyrimai",
-   "date": "2026-11-20",
+   "date": "2026-11-25",
    "lane": "animals"
   },
   {
-   "title": "Kauno sienos pasakos tris naujas meno istorijas (fotogalerija)",
-   "url": "https://kaunaspilnas.lt/kauno-sienos-pasakos-tris-naujas-meno-istorijas-fotogalerija/",
-   "dek": "Popieriniai lėktuvėliai, simbolizuojantys jauno žmogaus svajones, vaikų vaizduotę žadinančios spalvos ir nedideliu dvaru virtusi transformatorinė. Tris skirtingas Kauno erdves papildė nauji…",
+   "title": "Kauno styginių kvartetas: keturi pasauliai susitinkantys muzikoje",
+   "url": "https://kaunaspilnas.lt/kauno-styginiu-kvartetas-keturi-pasauliai-susitinkantys-muzikoje/",
+   "dek": "Kauno filharmonija. Styginių kvarteto repeticijų klasė. Akimirka prieš pirmąją natą. Įkvėpimas, linktelėjimas ir erdvę užlieja nuostabi muzika. Taip savo istoriją pradeda pasakoti Kauno…",
    "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "culture"
   },
   {
@@ -1623,11 +1643,11 @@
    "lane": "culture"
   },
   {
-   "title": "Pasaulinio dėmesio byla: kalinys prakalbo apie įtariamo Madeleine McCann pagrobėjo paslaptį",
-   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/pasaulinio-demesio-byla-kalinys-prakalbo-apie-itariamo-madeleine-mccann-pagrobejo-paslapti-57-2813020?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Vokietijos policija gavo išsamų prisipažinimą, kuriame Christianas Bruckneris, pagrindinis įtariamasis Madeleine McCann dingimo byloje, prisipažino kitam kaliniui, kad pagrobė mažą…",
+   "title": "Pradėtas tyrimas dėl veikimo Rusijos naudai: sulaikyti penki Lietuvos piliečiai – kas yra įtariamieji?",
+   "url": "https://www.15min.lt/naujiena/aktualu/lietuva/pradetas-tyrimas-del-veikimo-rusijos-naudai-sulaikyti-penki-lietuvos-pilieciai-56-2814216?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "Ikiteisminiame tyrime dėl padėjimo kitai valstybei veikti prieš Lietuvą teisėsauga sulaikė 5 asmenis, atlikta daugiau nei 10 kratų, atlikti kiti planuoti proceso veiksmai, pranešė Vilniaus…",
    "source": "15min Kultūra",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "culture"
   },
   {
@@ -1639,19 +1659,19 @@
    "lane": "culture"
   },
   {
-   "title": "Natalija apsidžiaugė sode aptikusi gamtos lobį: mokslininkas paaiškino, kuo ypatingos šios lervos (Dr. Norbertas Noreika)",
-   "url": "https://gamtostyrimai.lt/natalija-apsidziauge-sode-aptikusi-gamtos-lobi-mokslininkas-paaiskino-kuo-ypatingos-sios-lervos-dr-norbertas-noreika/",
-   "dek": "The post Natalija apsidžiaugė sode aptikusi gamtos lobį: mokslininkas paaiškino, kuo ypatingos šios lervos (Dr. Norbertas Noreika) appeared first on Gamtos tyrimų centras.",
+   "title": "Gamtos tyrimų centras pristatė savo veiklą pirmą kartą surengtoje Geologijos sektoriaus dienoje",
+   "url": "https://gamtostyrimai.lt/gamtos-tyrimu-centras-pristate-savo-veikla-pirma-karta-surengtoje-geologijos-sektoriaus-dienoje/",
+   "dek": "Gamtos tyrimų centras (GTC) lapkričio 19 d. pristatė savo veiklą pirmą kartą Žemės gelmių informacijos centre, Vievyje, įvykusioje Geologijos sektoriaus dienoje. Renginyje GTC atstovavo…",
    "source": "Gamtos tyrimai",
-   "date": "2026-11-19",
+   "date": "2026-11-20",
    "lane": "animals"
   },
   {
-   "title": "Lentynose – pirmoji lietuviška knyga apie gatvės šokius: įamžintas „Kaunas Jazz Jam“ dešimtmetis",
-   "url": "https://kaunaspilnas.lt/lentynose-pirmoji-lietuviska-knyga-apie-gatves-sokius-iamzintas-kaunas-jazz-jam-desimtmetis/",
-   "dek": "Dešimtmetį fotografuotas gatvės šokių konkursas, daugiau kaip 90 įamžintų šokėjų ir 200 puslapių fotografijų, pasakojimų bei šokių istorijos – visa tai sugulė į pirmąją lietuvišką knygą…",
+   "title": "Mugė ir menas joje: „Tai yra šventė“",
+   "url": "https://kaunaspilnas.lt/muge-ir-menas-joje-tai-yra-svente/",
+   "dek": "Artėjant Kalėdoms metas pasiaiškinti – ar mugėse galima aptikti gero meno? Ar menininkai nesikrato su muge siejamų asociacijų – amato, derybų, pardavimų? Ar nori jose dalyvauti? Apie Kaune…",
    "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "culture"
   },
   {
@@ -1663,45 +1683,45 @@
    "lane": "culture"
   },
   {
+   "title": "Vokietijos kariai Rūdninkuose mokėsi dronais naikinti Rusijos tankus",
+   "url": "https://www.15min.lt/naujiena/aktualu/lietuva/vokietijos-kariai-rudninkuose-mokesi-dronais-naikinti-rusijos-tankus-56-2814070?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "NATO pratybų „Freedom Shield 2“ Lietuvoje metu Vokietijos kariai pirmą kartą mokėsi atremti Rusijos tankų puolimą naudojant kamikadzės tipo dronus, praneša Vokietijos leidinys „Bild“.",
+   "source": "15min Kultūra",
+   "date": "2026-11-25",
+   "lane": "culture"
+  },
+  {
    "title": "Vilniuje atrastas dingęs Rimto Kalpoko paveikslas – buvo paliktas prie konteinerio",
    "url": "https://www.lrt.lt/naujienos/kultura/12/3124158/vilniuje-atrastas-dinges-rimto-kalpoko-paveikslas-buvo-paliktas-prie-konteinerio",
    "dek": "Vilniuje rastas 1939 metais dingęs Rimto Kalpoko paveikslas „Mindaugo karūnavimas“, antradienį pranešė Lietuvos nacionalinio dailės muziejaus (LNDM) generalinis direktorius dr. Arūnas…",
    "source": "LRT Kultūra",
    "date": "2026-11-24",
    "lane": "culture"
-  },
-  {
-   "title": "Projektas BFS-GUTS – Išsamus juodosios plokščiamusės lervų riebalų įvertinimas žmogaus žarnyno sveikatai ir saugai",
-   "url": "https://gamtostyrimai.lt/projektas-bfs-guts-issamus-juodosios-ploksciamuses-lervu-riebalu-ivertinimas-zmogaus-zarnyno-sveikatai-ir-saugai/",
-   "dek": "Bendradarbiaujant su Kauno technologijų universiteto Maisto institutu, GTC Genetikos laboratorijos darbuotojos dr. Bazilė Ravoitytė ir dokt. Vilija Lapinskaitė vykdo projektą “Išsamus…",
-   "source": "Gamtos tyrimai",
-   "date": "2026-11-19",
-   "lane": "animals"
   }
  ],
  "found_india": [
   {
-   "title": "No Forest Fires in 20+ Yrs: These Uttarakhand Women Revived 28 Acres of Barren Forest & Became Its Guardians",
-   "url": "https://thebetterindia.com/conservation/nature/uttarakhand-women-community-forest-restoration-fire-prevention-12838354",
-   "dek": "Every morning, 75-year-old Bhagirathi Devi walks into the forest beside her village in Uttarakhand's Champawat district. She patrols the area, returns home around noon and heads back for…",
+   "title": "In This Ladakh Village, Families Stay Up at Night Guarding Water So Every Farmer Gets Their Share",
+   "url": "https://thebetterindia.com/governance/phey-ladakh-water-lord-household-rota-cattle-jail-12838106",
+   "dek": "Before dawn, a farmer in Phey may be waiting for a turn that belongs to a carefully watched village schedule. Water is not taken whenever someone needs it. Its flow is shared through rules…",
    "source": "The Better India",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "news"
   },
   {
-   "title": "A Haryana film asks what villages lose as they modernise",
-   "url": "https://villagesquare.in/the-calf-doll-a-haryana-film-asks-what-villages-lose-as-they-modernise/",
-   "dek": "In 2023, while visiting his village of Dayalpur in Haryana, Ankur Hooda’s grandfather’s cow gave birth to a stillborn calf. The family turned to an old ritual, the calf doll, meant to help…",
+   "title": "A farmer’s problem is not always a farming problem",
+   "url": "https://villagesquare.in/a-farmers-problem-is-not-always-a-farming-problem/",
+   "dek": "When I entered the rural development sector, I believed understanding farming meant understanding crops – soil health, seed selection, irrigation, fertilisers, pests, diseases and…",
    "source": "Village Square",
-   "date": "2026-11-23",
+   "date": "2026-11-25",
    "lane": "news"
   },
   {
-   "title": "Paediatrician explains winter dehydration in children: Signs to look out for and steps to take",
-   "url": "https://www.hindustantimes.com/lifestyle/health/paediatrician-explains-winter-dehydration-in-children-signs-to-look-out-for-and-steps-to-take-101795522488074.html",
-   "dek": "Parents should keep an eye out for children not drinking enough water during winter and make sure they meet their fluid requirement, shares Dr Golash.",
+   "title": "Your international travel checklist is incomplete without this health check: Vaccines to consider before flying",
+   "url": "https://www.hindustantimes.com/lifestyle/health/your-international-travel-checklist-is-incomplete-without-this-health-check-vaccines-to-consider-before-flying-101795588805741.html",
+   "dek": "If you are planning to travel abroad, here’s a doctor's guide to routine and destination-specific vaccines for holidaymakers.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "running"
   },
   {
@@ -1729,28 +1749,28 @@
    "lane": "culture"
   },
   {
-   "title": "From Hiring Disabled People to Helping Artisans Earn: 5 CEOs Building a Better India",
-   "url": "https://thebetterindia.com/changemakers/indian-businesses-creating-social-impact-lijjat-papad-jaipur-rugs-12837473",
-   "dek": "What comes to mind when you think of a successful business? Crores in revenue, thousands of employees, a presence across the world, or perhaps a celebrated CEO? Now consider a few other…",
+   "title": "India Pledges $1.6 Billion To Nepal, But Key Disputes Remain Unresolved",
+   "url": "https://madrascourier.com/policy/india-pledges-1-6-billion-to-nepal-but-key-disputes-remain-unresolved/?utm_source=rss&utm_medium=rss&utm_campaign=india-pledges-1-6-billion-to-nepal-but-key-disputes-remain-unresolved",
+   "dek": "A landmark financial package boosts ties between India and Nepal, but air access, border disputes and long-pending agreements remain unresolved. The post India Pledges $1.6 Billion To…",
+   "source": "Madras Courier",
+   "date": "2026-11-25",
+   "lane": "culture"
+  },
+  {
+   "title": "No Forest Fires in 20+ Yrs: These Uttarakhand Women Revived 28 Acres of Barren Forest & Became Its Guardians",
+   "url": "https://thebetterindia.com/conservation/nature/uttarakhand-women-community-forest-restoration-fire-prevention-12838354",
+   "dek": "Every morning, 75-year-old Bhagirathi Devi walks into the forest beside her village in Uttarakhand's Champawat district. She patrols the area, returns home around noon and heads back for…",
    "source": "The Better India",
    "date": "2026-11-24",
    "lane": "news"
   },
   {
-   "title": "Bijapur’s former Naxal strongholds get electricity for the first time",
-   "url": "https://villagesquare.in/bijapurs-former-naxal-strongholds-get-electricity-for-the-first-time/",
-   "dek": "Until December 2024, Kondapalli village in Usoor block in Chhattisgarh’s Bijapur district was considered a Naxal stronghold. The village, home to around 600 people across 144 households…",
+   "title": "A Haryana film asks what villages lose as they modernise",
+   "url": "https://villagesquare.in/the-calf-doll-a-haryana-film-asks-what-villages-lose-as-they-modernise/",
+   "dek": "In 2023, while visiting his village of Dayalpur in Haryana, Ankur Hooda’s grandfather’s cow gave birth to a stillborn calf. The family turned to an old ritual, the calf doll, meant to help…",
    "source": "Village Square",
-   "date": "2026-11-17",
+   "date": "2026-11-23",
    "lane": "news"
-  },
-  {
-   "title": "Fertility after 30: Doctor debunks common myths and explains how age affects reproductive health",
-   "url": "https://www.hindustantimes.com/lifestyle/health/fertility-after-30-doctor-debunks-common-myths-and-explains-how-age-affects-reproductive-health-101795496321146.html",
-   "dek": "Worried about fertility after 30? Here's what doctors want women to know about age and pregnancy.",
-   "source": "Hindustan Times Health",
-   "date": "2026-11-24",
-   "lane": "running"
   }
  ],
  "found_tibet": [
