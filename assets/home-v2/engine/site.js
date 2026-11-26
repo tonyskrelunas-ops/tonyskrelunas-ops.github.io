@@ -164,6 +164,7 @@ AP.scrollTo = function(target, opts){
 AP.parallax = function(root){
   const els = $$('[data-parallax]', root); if (!els.length) return;
   if (!AP.gsap || !AP.ST || !AP.motion) return;
+  if (document.documentElement.classList.contains('lite')) return;   /* 11/26: phones keep pictures still (memory) */
   els.forEach(el => {
     const p = Number(el.dataset.parallax) || .2, trig = el.closest('[data-parallax-trigger]') || el.parentElement;
     AP.gsap.fromTo(el, { yPercent: -p * 50 }, { yPercent: p * 50, ease: 'none', scrollTrigger: { trigger: trig, start: 'top bottom', end: 'bottom top', scrub: AP.render ? true : 0.6 } });

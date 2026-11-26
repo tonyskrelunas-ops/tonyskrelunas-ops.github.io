@@ -761,3 +761,14 @@ html.lite canvas.fx,html.lite canvas.mistc,html.lite canvas.dewc,html.lite canva
 html.lite .wx .beams,html.lite .arrive .rays,html.lite .arrive .sun,html.lite .v5-grain,
 html.lite .write .mist2,html.lite .japan .ink{display:none!important}
 html.lite .jrow{will-change:auto}
+
+/* 11/26/2026 phones, round two. Tony: on the iPhone it went further but still "went out". Every picture, film and word
+   stays. What goes on phones is what holds extra memory in Safari: frosted-glass blur, the two blurred copies of the
+   opening pictures, and standing GPU layers. Glass panels get a little more body so they read the same. */
+html.lite *,html.lite *::before,html.lite *::after{will-change:auto!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html.lite .arrive .glow img{display:none!important}
+html.lite .thumbbar{background:rgba(15,26,32,.96)}
+html.lite .sec-dock ol,html.lite .sec-dock .sec-toggle{background:rgba(250,252,247,.97)}
+html.lite .gate{background:rgba(12,20,26,.92)}
+html.lite .panel{background:rgba(247,250,244,.96)}
+html.lite .framecol figcaption{background:rgba(15,26,32,.72)}
