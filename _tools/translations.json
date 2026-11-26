@@ -438,5 +438,25 @@
    "dek": "Ketinau tai panaudoti kaip treniruotę, bet mano rungtyniavimo dvasia tikrai išlindo į paviršių.",
    "pillar": "Žmogaus atsparumas"
   }
+ },
+ "what-i-asked-the-room-not-to-say": {
+  "es": {
+   "href": "/es/lo-que-pedi-a-la-sala-que-no-dijera/",
+   "title": "Lo que pedí a la sala que no dijera",
+   "dek": "Todos nos ponemos obstáculos en el camino. Ay, tengo esto. No puedo con esto. Esto siempre pasa.",
+   "pillar": "Resiliencia humana"
+  },
+  "ja": {
+   "href": "/ja/heya-ni-iwanaide-to-tanonda-koto/",
+   "title": "私が部屋に、口にしないでほしいと頼んだこと",
+   "dek": "私たちはみな、自分で自分に障害物を置く。ああ、自分にはこれがある。これはできない。いつもこうなる。",
+   "pillar": "人間のレジリエンス"
+  },
+  "lt": {
+   "href": "/lt/ko-paprasiau-sales-netarti/",
+   "title": "Ko paprašiau salės netarti",
+   "dek": "Visi patys sau statome kelio užtvaras. Oi, aš tai turiu. Aš to negaliu. Taip visada nutinka.",
+   "pillar": "Žmogaus atsparumas"
+  }
  }
 }
