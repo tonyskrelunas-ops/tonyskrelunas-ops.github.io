@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T21:36:54",
+ "generated": "2026-11-26T13:42:40",
  "lead": null,
  "mine": [
   {
@@ -40,7 +40,27 @@
    "pillar": "Human Resilience",
    "dek": "We all put roadblocks up for us. Oh, I have this. I can't do this. This always happens.",
    "img": "/assets/img/journal-1124/what-i-asked-the-room-not-to-say-1600.jpg",
-   "art": "/assets/art/baltic-oak.svg"
+   "art": "/assets/art/baltic-oak.svg",
+   "tr": {
+    "es": {
+     "href": "/es/lo-que-pedi-a-la-sala-que-no-dijera/",
+     "title": "Lo que pedí a la sala que no dijera",
+     "dek": "Todos nos ponemos obstáculos en el camino. Ay, tengo esto. No puedo con esto. Esto siempre pasa.",
+     "pillar": "Resiliencia humana"
+    },
+    "ja": {
+     "href": "/ja/heya-ni-iwanaide-to-tanonda-koto/",
+     "title": "私が部屋に、口にしないでほしいと頼んだこと",
+     "dek": "私たちはみな、自分で自分に障害物を置く。ああ、自分にはこれがある。これはできない。いつもこうなる。",
+     "pillar": "人間のレジリエンス"
+    },
+    "lt": {
+     "href": "/lt/ko-paprasiau-sales-netarti/",
+     "title": "Ko paprašiau salės netarti",
+     "dek": "Visi patys sau statome kelio užtvaras. Oi, aš tai turiu. Aš to negaliu. Taip visada nutinka.",
+     "pillar": "Žmogaus atsparumas"
+    }
+   }
   },
   {
    "slug": "gifts-light-enough-to-carry",
@@ -1285,19 +1305,19 @@
  ],
  "found": [
   {
-   "title": "‘Autos for Love’ Owners Delight in Giving Away Cars to Needy Neighbors",
-   "url": "https://www.goodnewsnetwork.org/texas-auto-shop-couple-is-hungry-to-keep-giving-cars-away-to-neighbors-in-need/",
-   "dek": "Once a year, the owners of a Texas auto-repair shop would refurbish a donated car and then hand the keys to a member of their community in need. But thanks to their generosity and the…",
+   "title": "Texans Work for Free on Farms That Aren’t Theirs to Send Others’ Kids to College",
+   "url": "https://www.goodnewsnetwork.org/texans-work-for-free-on-farms-that-arent-theirs-to-send-others-kids-to-college/",
+   "dek": "These Volunteer Farmers Raise $400,000 Each Year for Teens Going to College Texas Community Sharecropping Scholarships, Earning Millions for Their Kids’ Futures Texans Work for Free on…",
    "source": "Good News Network",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "news"
   },
   {
-   "title": "What We’re Reading: Building a Walkable City From Scratch",
-   "url": "https://reasonstobecheerful.world/what-were-reading-walkable-utah-city/",
-   "dek": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it…",
+   "title": "The Portlanders Turning Rescued Food Into Restaurant-Quality Meals",
+   "url": "https://reasonstobecheerful.world/portland-urban-gleaners/",
+   "dek": "It’s a Tuesday morning in early October and chef Bradley Cohen, 49, is trying to improvise a meal from a hotel pan full of pork loins. He pulls a crate of fresh kale and zucchini from the…",
    "source": "Reasons to be Cheerful",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "news"
   },
   {
@@ -1357,11 +1377,11 @@
    "lane": "land"
   },
   {
-   "title": "Stronger Together: Building Partnerships for a Resilient Platte River",
-   "url": "https://www.audubon.org/great-plains/news/stronger-together-building-partnerships-resilient-platte-river",
-   "dek": "Editor’s note: This article is part of a series exploring the various facets of the Sandhill Crane Migration in Central Nebraska, the $28 Million annual economic impact that the migration...",
+   "title": "Community Science, Community Connections",
+   "url": "https://www.audubon.org/great-lakes/news/community-science-community-connections",
+   "dek": "When the leaves start to fall, and the vibrant colors of the summer begin to fade, winter birding takes center stage.Feeding the birds is a tradition for many, especially as shorter days…",
    "source": "Audubon",
-   "date": "2026-11-23",
+   "date": "2026-11-25",
    "lane": "animals"
   },
   {
@@ -1389,19 +1409,19 @@
    "lane": "culture"
   },
   {
-   "title": "Land Returned to Native American Ownership 400 Years After the First Thanksgiving",
-   "url": "https://www.goodnewsnetwork.org/land-returned-indigenous-care-first-encounter-beach/",
-   "dek": "More than 400 years after the Pilgrims first explored the Cape Cod area, land belonging to Native Americans was returned to Indigenous ownership. On October 30, The Nature Conservancy gave…",
+   "title": "‘Autos for Love’ Owners Delight in Giving Away Cars to Needy Neighbors",
+   "url": "https://www.goodnewsnetwork.org/texas-auto-shop-couple-is-hungry-to-keep-giving-cars-away-to-neighbors-in-need/",
+   "dek": "Once a year, the owners of a Texas auto-repair shop would refurbish a donated car and then hand the keys to a member of their community in need. But thanks to their generosity and the…",
    "source": "Good News Network",
    "date": "2026-11-25",
    "lane": "news"
   },
   {
-   "title": "The Waterless, Hyper-Efficient Machines That Clean Clothes With Carbon Dioxide",
-   "url": "https://reasonstobecheerful.world/carbon-dioxide-laundry-machine/",
-   "dek": "This story was originally published by Grist. Sign up for Grist’s weekly newsletter here. Doing the laundry has grown easier and more efficient over the years, yet two things have always…",
+   "title": "What We’re Reading: Building a Walkable City From Scratch",
+   "url": "https://reasonstobecheerful.world/what-were-reading-walkable-utah-city/",
+   "dek": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it…",
    "source": "Reasons to be Cheerful",
-   "date": "2026-11-19",
+   "date": "2026-11-25",
    "lane": "news"
   },
   {
@@ -1455,19 +1475,19 @@
    "lane": "news"
   },
   {
-   "title": "Descubre Peña de Bernal: itinerario de 3 días para tu próxima escapada",
-   "url": "https://www.mexicodesconocido.com.mx/descubre-pena-de-bernal-itinerario-de-3-dias-para-tu-proxima-escapada.html",
-   "dek": "Disfruta de una escapada inolvidable con este itinerario de 3 días en Peña de Bernal, Querétaro. Descubre recomendaciones de hospedaje, gastronomía local, visitas a viñedos y los mejores…",
+   "title": "El Museo Nacional de Antropología es declarado el mejor del mundo",
+   "url": "https://www.mexicodesconocido.com.mx/el-museo-nacional-de-antropologia-es-declarado-el-mejor-del-mundo.html",
+   "dek": "De acuerdo a Worth a Journey 2026, el Museo Nacional de Antropología encabeza la lista de los mejores 100 museos del mundo. The post El Museo Nacional de Antropología es declarado el mejor…",
    "source": "México Desconocido",
    "date": "2026-11-25",
    "lane": "land"
   },
   {
-   "title": "Alquería invirtió $700 millones en el programa Vaca Madrina para ganadería sostenible",
-   "url": "https://www.agronegocios.co/finca/alqueria-invirtio-700-millones-en-el-programa-vaca-madrina-para-ganaderia-sostenible-4533115",
-   "dek": "La empresa reportó 885 hectáreas de bosque conservadas y 113 en proceso de restauración como parte de sus iniciativas de ganadería sostenible",
+   "title": "Las recetas de los decanos de economía para levantar el PIB agropecuario en el país",
+   "url": "https://www.agronegocios.co/agricultura/las-recetas-de-los-decanos-de-economia-para-levantar-el-pib-agropecuario-en-el-pais-4533713",
+   "dek": "Los académicos plantean medidas de financiamiento, alivios tributarios, seguros climáticos y coberturas cambiarias para impulsar la recuperación del agro",
    "source": "Agronegocios",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "land"
   },
   {
@@ -1495,11 +1515,11 @@
    "lane": "culture"
   },
   {
-   "title": "Mapa de las lenguas 2027, el español como territorio compartido",
-   "url": "https://www.zendalibros.com/mapa-de-las-lenguas-2027-el-espanol-como-territorio-compartido/",
-   "dek": "Alfaguara y Random House presentan la nueva edición de Mapa de las lenguas, una iniciativa en la que se sirven del español para trazar la cartografía de la mejor narrativa escrita en…",
+   "title": "Crónica de un desconocido éxito",
+   "url": "https://www.zendalibros.com/cronica-de-un-desconocido-exito/",
+   "dek": "Ahora traslada esa manera de entender la Historia al papel en su nueva publicación Cuando el mundo quiso ser español: La Spanishmania que cambió la historia y la cultura universal. Es un…",
    "source": "Zenda Libros",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "culture"
   },
   {
@@ -1511,20 +1531,20 @@
    "lane": "culture"
   },
   {
-   "title": "Tanto cine y tan poca ley",
-   "url": "https://www.agenciaocote.com/blog/2026/11/09/tanto-cine-y-tan-poca-ley/",
-   "dek": "Un país que no protege su cine tampoco protege su memoria. En Guatemala se hacen películas, de las buenas. Hay cineastas, productores, técnicos, festivales y asociaciones que llevan años…",
-   "source": "Agencia Ocote",
-   "date": "2026-11-09",
-   "lane": "news"
+   "title": "Descubre Peña de Bernal: itinerario de 3 días para tu próxima escapada",
+   "url": "https://www.mexicodesconocido.com.mx/descubre-pena-de-bernal-itinerario-de-3-dias-para-tu-proxima-escapada.html",
+   "dek": "Disfruta de una escapada inolvidable con este itinerario de 3 días en Peña de Bernal, Querétaro. Descubre recomendaciones de hospedaje, gastronomía local, visitas a viñedos y los mejores…",
+   "source": "México Desconocido",
+   "date": "2026-11-25",
+   "lane": "land"
   },
   {
-   "title": "Alexandra Cousteau: “Proteger el océano ya no alcanza, nuestra generación tiene el deber de restaurarlo”",
-   "url": "https://inforegion.pe/alexandra-cousteau-proteger-el-oceano-ya-no-alcanza-nuestra-generacion-tiene-el-deber-de-restaurarlo/",
-   "dek": "La historia de la familia Cousteau resume la evolución de la relación moderna en... La entrada Alexandra Cousteau: “Proteger el océano ya no alcanza, nuestra generación tiene el deber de…",
-   "source": "Inforegión",
-   "date": "2026-11-23",
-   "lane": "news"
+   "title": "Alquería invirtió $700 millones en el programa Vaca Madrina para ganadería sostenible",
+   "url": "https://www.agronegocios.co/finca/alqueria-invirtio-700-millones-en-el-programa-vaca-madrina-para-ganaderia-sostenible-4533115",
+   "dek": "La empresa reportó 885 hectáreas de bosque conservadas y 113 en proceso de restauración como parte de sus iniciativas de ganadería sostenible",
+   "source": "Agronegocios",
+   "date": "2026-11-25",
+   "lane": "land"
   }
  ],
  "found_ja": [
@@ -1545,19 +1565,11 @@
    "lane": "news"
   },
   {
-   "title": "音楽家の子育て歳時記。〜天川の風にフルートの音色をのせて〜(奈良県天川村洞川温泉)",
-   "url": "https://sotokoto-online.jp/sotokoto_pen_club/27281",
-   "dek": "秋の夜空と、リビングの小さなお月見 すっかり秋の空気が馴染んできた10月。夜風がひんやりと心地よく、ふと見上げる夜空がひときわ高く澄み渡る美しい季節です。日本では古くから、9月の中秋の名月だけでなく10月のこの「後の月 […]",
-   "source": "ソトコト",
-   "date": "2026-10-29",
-   "lane": "news"
-  },
-  {
-   "title": "年3億円をたたき出すトップいちご農家が挑む、年商30億円へのロードマップ。異能のチーム経営と世界を見据えた野望",
-   "url": "https://agri.mynavi.jp/2026_11_25_619069/",
-   "dek": "いちごの生産量日本一を誇る栃木県真岡市。400戸以上の生産者がしのぎを削るこの地で、売上約3億円・販売額14年連続県内トップを誇るのが株式会社ベリーズバトンだ。代表の新井孝一（あらい・こういち）さんは、農閑期の弱点を収益源に変えた「苗受託事業」、JAとの深い信頼に基づく「契約販売」、「組織の痛み」から生まれた「10箇条のクレド評価制度」と家業のいちご栽培を改革し、大きく拡大して…",
+   "title": "初心者でも育てやすい観葉植物・パキラを剪定するコツ。伸びすぎた枝の切り方と失敗しないベストな時期",
+   "url": "https://agri.mynavi.jp/2026_11_26_625489/",
+   "dek": "中南米を原産とするアオイ科パキラ属のパキラは、その美しい葉と仕立てやすさから高い人気を誇る観葉植物です。成長が非常に早い一方で、手入れを怠ると枝が伸びすぎて全体のバランスが崩れてしまうことも少なくありません。パキラの美しさを保ち、健康な状態を長持ちさせるためには、適切な剪定が不可欠です。本記事では、失敗しない剪定の時期や切る位置、その後の丁寧なケアまでを分かりやすく解説します。",
    "source": "マイナビ農業",
-   "date": "2026-11-24",
+   "date": "2026-11-26",
    "lane": "land"
   },
   {
@@ -1593,45 +1605,53 @@
    "lane": "news"
   },
   {
-   "title": "野菜の残渣や生ごみを捨てないで！最短1週間で古い土がいい土に蘇ります！",
-   "url": "https://agri.mynavi.jp/2026_11_20_618500/",
-   "dek": "植物を育てていると、土の処理や枯れた植物の茎や葉、根などの植物残渣の処理に困ることが多いと思います。自治体によりますが、土は捨てられないことも多いですよね。そんな悩みを一気に解消してくれるのが、植物残渣を使った土の再生です。土の再生と聞くと難しいことはわからないという人も多いと思いますが、大丈夫です！今回は本当に簡単にできる土の再生方法について紹介します。",
+   "title": "年3億円をたたき出すトップいちご農家が挑む、年商30億円へのロードマップ。異能のチーム経営と世界を見据えた野望",
+   "url": "https://agri.mynavi.jp/2026_11_25_619069/",
+   "dek": "いちごの生産量日本一を誇る栃木県真岡市。400戸以上の生産者がしのぎを削るこの地で、売上約3億円・販売額14年連続県内トップを誇るのが株式会社ベリーズバトンだ。代表の新井孝一（あらい・こういち）さんは、農閑期の弱点を収益源に変えた「苗受託事業」、JAとの深い信頼に基づく「契約販売」、「組織の痛み」から生まれた「10箇条のクレド評価制度」と家業のいちご栽培を改革し、大きく拡大して…",
    "source": "マイナビ農業",
-   "date": "2026-11-20",
+   "date": "2026-11-24",
    "lane": "land"
+  },
+  {
+   "title": "浅草の「伝統的な日本の風景」変わる街並み、変わらぬ日常：初沢亜利の東京探検（3）",
+   "url": "https://www.nippon.com/ja/articles/-/57609",
+   "dek": "大型再開発が相次ぐ巨大都市・東京。その足元で人々の暮らしが息づく。東京の変化と変わらぬ姿を、東京を撮り続ける写真家・初沢亜利が記録する。今回は外国人観光客に人気の観光地・浅草を巡る。",
+   "source": "Nippon.com",
+   "date": "2026-11-23",
+   "lane": "culture"
   }
  ],
  "found_lt": [
   {
-   "title": "„Nurašomi kaip tinginiai“: kodėl disleksiją turintys vaikai vis dar traumuojami mokyklose ir kaip veikia įtrauktis?",
-   "url": "https://www.bernardinai.lt/nurasomi-kaip-tinginiai-kodel-disleksija-turintys-vaikai-vis-dar-traumuojami-mokyklose-ir-kaip-veikia-itrauktis/",
-   "dek": "Skaičiuojama, kad Lietuvos mokyklose mokosi apie 11 proc. vaikų, turinčių specialiųjų ugdymo poreikių, o daugiau nei 10 proc. visos populiacijos susiduria su disleksija – specifiniu…",
+   "title": "Nugaros ir sąnarių skausmai vargina vis jaunesnius žmones: kada būtina kreiptis į specialistą?",
+   "url": "https://www.bernardinai.lt/nugaros-ir-sanariu-skausmai-vargina-vis-jaunesnius-zmones-kada-butina-kreiptis-i-specialista/",
+   "dek": "Nugaros skausmas po darbo dienos, sustingęs kaklas, maudžiantys keliai ar riešų diskomfortas – negalavimai, kuriuos daugelis vis dar sieja su vyresniu amžiumi. Dėl panašių simptomų į…",
    "source": "Bernardinai",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "news"
   },
   {
-   "title": "Neužtenka aptikti parazitą – svarbu žinoti, ar jis dar gyvybingas: Lietuvos mokslininkai išbandė naują tyrimo metodą",
-   "url": "https://mokslolietuva.lt/2026/11/neuztenka-aptikti-parazita-svarbu-zinoti-ar-jis-dar-gyvybingas-lietuvos-mokslininkai-isbande-nauja-tyrimo-metoda/",
-   "dek": "Aplinkoje aptinkama parazitų genetinė medžiaga dar nereiškia, kad jie yra gyvybingi ir gali užkrėsti gyvūnus ar žmones. Lietuvos ir Latvijos …",
+   "title": "KTU studentė iš Kambodžos: niekada nemaniau, kad galėsiu studijuoti Europoje",
+   "url": "https://mokslolietuva.lt/2026/11/ktu-studente-is-kambodzos-niekada-nemaniau-kad-galesiu-studijuoti-europoje/",
+   "dek": "Dar visai neseniai studijos Europoje Moyuiy Ly atrodė sunkiai įgyvendinama svajonė. Nedideliame Kambodžos kaimelyje, kuriame dauguma gyventojų verčiasi žemės ūkiu, …",
    "source": "Mokslo Lietuva",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "research"
   },
   {
-   "title": "GTC doktorantė konferencijoje „Bioateitis – gamtos ir gyvybės mokslų perspektyvos“ apdovanota pirmosios vietos prizu",
-   "url": "https://gamtostyrimai.lt/gamtos-tyrimu-centro-doktorante-konferencijoje-bioateitis-gamtos-ir-gyvybes-mokslu-perspektyvos-apdovanota-pirmosios-vietos-prizu/",
-   "dek": "Lapkričio 17 d. Lietuvos mokslų akademijoje vykusioje 19-ojoje Lietuvos jaunųjų mokslininkų konferencijoje „Bioateitis – gamtos ir gyvybės mokslų perspektyvos“ savo mokslinių tyrimų…",
+   "title": "Neužtenka aptikti parazitą – svarbu žinoti, ar jis dar gyvybingas: Lietuvos mokslininkai išbandė naują tyrimo metodą (dr. Agnė Baranauskaitė-Lengvinie",
+   "url": "https://gamtostyrimai.lt/neuztenka-aptikti-parazita-svarbu-zinoti-ar-jis-dar-gyvybingas-lietuvos-mokslininkai-isbande-nauja-tyrimo-metoda-dr-agne-baranauskaite-lengviniene/",
+   "dek": "The post Neužtenka aptikti parazitą – svarbu žinoti, ar jis dar gyvybingas: Lietuvos mokslininkai išbandė naują tyrimo metodą (dr. Agnė Baranauskaitė-Lengvinienė) appeared first on Gamtos…",
    "source": "Gamtos tyrimai",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "animals"
   },
   {
-   "title": "Kauno styginių kvartetas: keturi pasauliai susitinkantys muzikoje",
-   "url": "https://kaunaspilnas.lt/kauno-styginiu-kvartetas-keturi-pasauliai-susitinkantys-muzikoje/",
-   "dek": "Kauno filharmonija. Styginių kvarteto repeticijų klasė. Akimirka prieš pirmąją natą. Įkvėpimas, linktelėjimas ir erdvę užlieja nuostabi muzika. Taip savo istoriją pradeda pasakoti Kauno…",
+   "title": "Radijo metus baigs paroda „Radijo kalnas“: nuo pirmųjų transliacijų iki šiandienos eterio",
+   "url": "https://kaunaspilnas.lt/radijo-metus-baigs-paroda-radijo-kalnas-nuo-pirmuju-transliaciju-iki-siandienos-eterio/",
+   "dek": "1926 m. birželio 12 d. Kaune prasidėjo Lietuvos radijo istorija. Tuo metu šalyje buvo vos 323 radijo imtuvai, o naujoji technologija žmonėms kėlė ne tik susidomėjimą, bet ir įvairiausių…",
    "source": "Kaunas pilnas kultūros",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "culture"
   },
   {
@@ -1643,41 +1663,41 @@
    "lane": "culture"
   },
   {
-   "title": "Internete kaltinama JK miesto taryba: ar tikrai uždraudė britams kabinti šalies vėliavas?",
-   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/internete-kaltinama-jk-miesto-taryba-ar-tikrai-uzdraude-britams-kabinti-salies-veliavas-57-2814252?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Birmingeme ginčas dėl ant gatvių apšvietimo stulpų kabinamų vėliavų pasiekė teismą prieš kelis mėnesius, tačiau atgarsio lietuviškose socialinių tinklų paskyrose sulaukė tik dabar…",
+   "title": "Padvarių gyventojai namų vazonuose augino ne gėles: sulaukė policijos",
+   "url": "https://www.15min.lt/naujiena/aktualu/nusikaltimaiirnelaimes/padvariu-gyventojai-namu-vazonuose-augino-ne-geles-sulauke-policijos-59-2815304?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "Kretingos rajone pareigūnai rado, kaip įtariama, draudžiamų augalų. Šeimininkams gresia nemalonumai.",
    "source": "15min Kultūra",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "culture"
   },
   {
-   "title": "Šiauliuose festivalį „Virus`31“ užbaigs keturiolika mados kolekcijų",
-   "url": "https://www.lrt.lt/naujienos/kultura/12/3125115/siauliuose-festivali-virus-31-uzbaigs-keturiolika-mados-kolekciju",
-   "dek": "Lapkričio 28 d. Šiaulių lengvosios atletikos ir sveikatingumo centre vyksiančiame tarptautiniame mados šou „Virus mada“ kolekcijas pristatys Lietuvos, Latvijos ir Lenkijos dizaineriai, o…",
+   "title": "Tarp „Grammy“ nominantų – alytiškė pianistė Rasa Vitkauskaitė",
+   "url": "https://www.lrt.lt/naujienos/kultura/12/3126267/tarp-grammy-nominantu-alytiske-pianiste-rasa-vitkauskaite",
+   "dek": "Alytiškės pianistės Rasos Vitkauskaitės vardas skamba tarp ryškiausių pasaulio muzikos kūrėjų – atlikėja pelnė 2027 metų prestižinių „Grammy“ apdovanojimų nominaciją.",
    "source": "LRT Kultūra",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "culture"
   },
   {
-   "title": "Lietuvos, Suomijos ir Izraelio mokslininkai kuria naujos kartos elektronikos pagrindus: pateikė reikšmingų įžvalgų apie anglies nanovamzdelių veikimą",
-   "url": "https://mokslolietuva.lt/2026/11/lietuvos-suomijos-ir-izraelio-mokslininkai-kuria-naujos-kartos-elektronikos-pagrindus-pateike-reiksmingu-izvalgu-apie-anglies-nanovamzdeliu-veikima/",
-   "dek": "Anglies nanovamzdeliai – vos vieno atomo storio plika akimi nematoma medžiaga, kuri, tikimasi, sukels proveržį kuriant naujos kartos elektroniką. Tik …",
+   "title": "Neužtenka aptikti parazitą – svarbu žinoti, ar jis dar gyvybingas: Lietuvos mokslininkai išbandė naują tyrimo metodą",
+   "url": "https://mokslolietuva.lt/2026/11/neuztenka-aptikti-parazita-svarbu-zinoti-ar-jis-dar-gyvybingas-lietuvos-mokslininkai-isbande-nauja-tyrimo-metoda/",
+   "dek": "Aplinkoje aptinkama parazitų genetinė medžiaga dar nereiškia, kad jie yra gyvybingi ir gali užkrėsti gyvūnus ar žmones. Lietuvos ir Latvijos …",
    "source": "Mokslo Lietuva",
    "date": "2026-11-25",
    "lane": "research"
   },
   {
-   "title": "Natalija apsidžiaugė sode aptikusi gamtos lobį: mokslininkas paaiškino, kuo ypatingos šios lervos",
-   "url": "https://gamtostyrimai.lt/natalija-apsidziauge-sode-aptikusi-gamtos-lobi-mokslininkas-paaiskino-kuo-ypatingos-sios-lervos/",
-   "dek": "The post Natalija apsidžiaugė sode aptikusi gamtos lobį: mokslininkas paaiškino, kuo ypatingos šios lervos appeared first on Gamtos tyrimų centras.",
+   "title": "Projekto AQUAEra partnerių susitikimas Madride",
+   "url": "https://gamtostyrimai.lt/projekto-aquaera-partneriu-susitikimas-madride/",
+   "dek": "2026 m. lapkričio 2–7 d. INIA-CSIC (Madridas, Ispanija) vyko projekto „AQUAEra“ (Nr. S-WATER4ALL-26-1) partnerių susitikimas, kuriame dalyvavo VMTI Gamtos tyrimų centro tyrėjai dr. L…",
    "source": "Gamtos tyrimai",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "animals"
   },
   {
-   "title": "Mugė ir menas joje: „Tai yra šventė“",
-   "url": "https://kaunaspilnas.lt/muge-ir-menas-joje-tai-yra-svente/",
-   "dek": "Artėjant Kalėdoms metas pasiaiškinti – ar mugėse galima aptikti gero meno? Ar menininkai nesikrato su muge siejamų asociacijų – amato, derybų, pardavimų? Ar nori jose dalyvauti? Apie Kaune…",
+   "title": "Kauno styginių kvartetas: keturi pasauliai susitinkantys muzikoje",
+   "url": "https://kaunaspilnas.lt/kauno-styginiu-kvartetas-keturi-pasauliai-susitinkantys-muzikoje/",
+   "dek": "Kauno filharmonija. Styginių kvarteto repeticijų klasė. Akimirka prieš pirmąją natą. Įkvėpimas, linktelėjimas ir erdvę užlieja nuostabi muzika. Taip savo istoriją pradeda pasakoti Kauno…",
    "source": "Kaunas pilnas kultūros",
    "date": "2026-11-25",
    "lane": "culture"
@@ -1691,21 +1711,21 @@
    "lane": "culture"
   },
   {
-   "title": "Cichanouskaja nebeatlaikė vyro išpuolių: „Aš su tuo taikstytis nebegaliu“",
-   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/cichanouskaja-nebeatlaike-as-su-tuo-taikstytis-nebegaliu-57-2814550?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
-   "dek": "Baltarusijos demokratinių jėgų lyderė Sviatlana Cichanouskaja davė ilgą interviu portalui „Naša Niva“, kuriame kalbėjo ne tik apie politinių kalinių paleidimą, bendrą opozicijos darbą, bet…",
+   "title": "Iraną kviečia į Nepriklausomų valstybių sandraugos glėbį",
+   "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/irana-kviecia-i-nepriklausomu-valstybiu-sandraugos-glebi-57-2815246?utm_source=rssfeed_default&utm_medium=rss&utm_campaign=rssfeed",
+   "dek": "Nepriklausomų valstybių sandrauga (NVS) ketina suteikti Iranui partnerio statusą, naujienų agentūrai TASS sakė NVS generalinis sekretorius Sergejus Lebedevas. Pasak jo, kalbama apie…",
    "source": "15min Kultūra",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "culture"
   }
  ],
  "found_india": [
   {
-   "title": "In This Ladakh Village, Families Stay Up at Night Guarding Water So Every Farmer Gets Their Share",
-   "url": "https://thebetterindia.com/governance/phey-ladakh-water-lord-household-rota-cattle-jail-12838106",
-   "dek": "Before dawn, a farmer in Phey may be waiting for a turn that belongs to a carefully watched village schedule. Water is not taken whenever someone needs it. Its flow is shared through rules…",
+   "title": "Once Rare in Ujani, 10 Lakh Deccan Mahseer Get a Fresh Chance Through a 10-Year Plan",
+   "url": "https://thebetterindia.com/wildlife/deccan-mahseer-conservation-ujani-reservoir-fish-restoration-12833875",
+   "dek": "A fish that had nearly disappeared from Maharashtra’s Ujani Reservoir decades ago is getting another chance to swim in its waters. The Deccan Mahseer, once found in abundance in the Bhima…",
    "source": "The Better India",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "news"
   },
   {
@@ -1717,35 +1737,35 @@
    "lane": "news"
   },
   {
-   "title": "Your international travel checklist is incomplete without this health check: Vaccines to consider before flying",
-   "url": "https://www.hindustantimes.com/lifestyle/health/your-international-travel-checklist-is-incomplete-without-this-health-check-vaccines-to-consider-before-flying-101795588805741.html",
-   "dek": "If you are planning to travel abroad, here’s a doctor's guide to routine and destination-specific vaccines for holidaymakers.",
+   "title": "From tight buns to sleek ponytails: Dermatologist explains how winter hairstyles and frequent styling can affect hair health",
+   "url": "https://www.hindustantimes.com/lifestyle/health/from-tight-buns-to-sleek-ponytails-dermatologist-explains-how-winter-hairstyles-and-frequent-styling-can-affect-hair-health-101795682180145.html",
+   "dek": "A dermatologist shared how tight hairstyles and frequent styling may contribute to long-term hair loss and how you can prevent it.",
    "source": "Hindustan Times Health",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "lane": "running"
   },
   {
-   "title": "India thought it eliminated kala-azar. The disease now gets reported from a non-endemic state",
-   "url": "https://india.mongabay.com/2026/11/india-thought-it-eliminated-kala-azar-the-disease-now-gets-reported-from-a-non-endemic-state/",
-   "dek": "Thirty kilometres from Pauri, the nearest hill town, the road gives out. It ends at a solar farm, narrows into rubble and eventually becomes a stony footpath that winds downhill for about…",
+   "title": "Translocated tigress’ miscarriage and injuries raise welfare concerns",
+   "url": "https://india.mongabay.com/2026/11/translocated-tigress-miscarriage-and-injuries-raise-welfare-concerns/",
+   "dek": "T138 was a healthy three-year-old tigress roaming the forests of Bihar’s Valmiki Tiger Reserve until she was selected for a reintroduction programme at Buxa Tiger Reserve (BTR) in West…",
    "source": "Mongabay India",
-   "date": "2026-11-24",
+   "date": "2026-11-26",
    "lane": "land"
   },
   {
-   "title": "Along the River's Edge: The Black-bellied Terns of Chambal",
-   "url": "https://roundglasssustain.com/films/chambal-black-bellied-terns",
-   "dek": "Every summer, black-bellied terns arrive to nest on the islands of the Chambal River. But the nesting season comes with a series of challenges. Parents must protect eggs from extreme heat…",
+   "title": "Lost and Found: Rediscovering a Himalayan Blueberry",
+   "url": "https://roundglasssustain.com/wild-vault/himalayan-blueberry",
+   "dek": "In 2024, botanists rediscovered a wild blueberry species, 188 years after it was first recorded in Arunachal Pradesh",
    "source": "Roundglass Sustain",
-   "date": "2026-11-23",
+   "date": "2026-11-26",
    "lane": "animals"
   },
   {
-   "title": "What do lemurs and opera singers share?",
-   "url": "https://www.thehindu.com/children/what-do-lemurs-and-opera-singers-share/article71689211.ece",
-   "dek": "Recently, a study showed how indri lemurs use the same method opera singers use to ensure their vocals reach the audience at the back. In conversation with one of the researchers, Dr Chiara…",
+   "title": "Packing a punch: Chennai’s professional boxers on what it takes to prepare for an international fight",
+   "url": "https://www.thehindu.com/news/cities/chennai/history-of-professional-boxing-in-chennai-and-what-it-takes-for-boxers-to-prepare-for-international-matches/article71738551.ece",
+   "dek": "Weeks of sipping water from teaspoons, sweat-soaked gyms, and a prayer before the gloves go on. As professional boxing makes a comeback in Chennai, a growing band of fighters is chasing…",
    "source": "The Hindu Society",
-   "date": "2026-11-24",
+   "date": "2026-11-26",
    "lane": "culture"
   },
   {
@@ -1757,11 +1777,11 @@
    "lane": "culture"
   },
   {
-   "title": "No Forest Fires in 20+ Yrs: These Uttarakhand Women Revived 28 Acres of Barren Forest & Became Its Guardians",
-   "url": "https://thebetterindia.com/conservation/nature/uttarakhand-women-community-forest-restoration-fire-prevention-12838354",
-   "dek": "Every morning, 75-year-old Bhagirathi Devi walks into the forest beside her village in Uttarakhand's Champawat district. She patrols the area, returns home around noon and heads back for…",
+   "title": "From Zero to ₹31 Cr/Month! | Yash Kalra's Story",
+   "url": "https://thebetterindia.com/videos/lifestyle/from-zero-to-31-crmonth-yash-kalras-story-12841746",
+   "dek": "What if a healthy, protein-rich breakfast took just 30 seconds to prepare? 🚀 Yash Kalra set out to solve a problem he believed millions of Indians were facing: inadequate protein…",
    "source": "The Better India",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "lane": "news"
   },
   {
@@ -1791,14 +1811,6 @@
    "lane": "news"
   },
   {
-   "title": "Representative Tsering Yangkey Shares Tibet’s Story with Seaford U3A Members in Sussex",
-   "url": "https://tibet.net/representative-tsering-yangkey-shares-tibets-story-with-seaford-u3a-members-in-sussex/",
-   "dek": "London: The University of the Third Age (U3A) in Seaford, Sussex, invited the Representative of His Holiness the Dalai Lama in the UK, Tsering Yangkey, to deliver a joint presentation…",
-   "source": "Central Tibetan Administration",
-   "date": "2026-11-24",
-   "lane": "news"
-  },
-  {
    "title": "Tibetan arts curriculum launched to promote traditional craftsmanship and creativity",
    "url": "https://phayul.com/2026/11/tibetan-arts-curriculum-launched-to-promote-traditional-craftsmanship-and-creativity/",
    "dek": "Tenzin Nyidon DHARAMSHALA, Nov. 23: A new curriculum textbook on traditional Tibetan arts and craftsmanship, titled “Understanding Zo-Rigpa: An Invitation to See, Understand, and Create,”…",
@@ -1815,14 +1827,6 @@
    "lane": "news"
   },
   {
-   "title": "DU Student Samten Choedon Bags Prestigious Gold Medal for Academic Excellence",
-   "url": "https://tibet.net/du-student-samten-choedon-bags-prestigious-gold-medal-for-academic-excellence/",
-   "dek": "Dharamshala: Samten Choedon has brought pride and inspiration to the Tibetan community by securing the University Gold Medal for topping the MA programme in East Asian Studies at the…",
-   "source": "Central Tibetan Administration",
-   "date": "2026-11-24",
-   "lane": "news"
-  },
-  {
    "title": "TYC launches ‘Flame of Unity’ campaign, to tour with martyr Lobga Rangzen’s flag across 25 Indian states",
    "url": "https://phayul.com/2026/11/tyc-launches-flame-of-unity-campaign-to-tour-with-martyr-lobga-rangzens-flag-across-25-indian-states/",
    "dek": "Tenzin Nyidon DHARAMSHALA, Nov. 18: The largest pro-independence group, Tibetan Youth Congress (TYC) on Wednesday launched its “Flame of Unity” campaign in Dharamshala, with three members…",
@@ -1836,14 +1840,6 @@
    "dek": "(TibetanReview.net, Nov20’26) – As China, the world’s second-largest economy, continues to grapple with slowed growth and weak domestic demand, its number of university graduates is…",
    "source": "Tibetan Review",
    "date": "2026-11-20",
-   "lane": "news"
-  },
-  {
-   "title": "Compliance Cell Organises Three-Day Legal Compliance Training for Tibetan Organisations in South India",
-   "url": "https://tibet.net/compliance-cell-organises-three-day-legal-compliance-training-for-tibetan-organisations-in-south-india/",
-   "dek": "Mundgod: The Compliance Cell under the Department of Finance, Central Tibetan Administration (CTA), successfully organised a three-day legal compliance training programme for Tibetan…",
-   "source": "Central Tibetan Administration",
-   "date": "2026-11-24",
    "lane": "news"
   }
  ]
