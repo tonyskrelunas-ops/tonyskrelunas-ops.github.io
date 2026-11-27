@@ -83,14 +83,15 @@
       var lead = mine[0];
       var ls = document.querySelector('.lead-story');
       if (ls) {
-        var h = ls.querySelector('h2 a') || ls.querySelector('h2');
+        var h = ls.querySelector('h2 a, h3 a') || ls.querySelector('h2, h3');   // 27 Nov: the home pages' lead is an h3; the headline stayed on October's piece
         var k = ls.querySelector('.kick');
         var dek = ls.querySelector('.dek');
         var art = ls.querySelector('.lead-art');
         if (h) { h.textContent = lead.title; if (h.tagName === 'A') h.href = lead.href; }
         if (k) { k.innerHTML = esc(lead.pillar) + ' · ' + pretty(lead.date) + tag(lead); }
         if (dek && lead.dek) dek.textContent = lead.dek;
-        if (art && lead.art) art.setAttribute('src', lead.art);
+        if (art && art.closest('.pic') && lead.img) { art.setAttribute('src', lead.img); art.setAttribute('alt', ''); }   // a photo frame gets the piece's own photograph
+        else if (art && lead.art) art.setAttribute('src', lead.art);
       }
 
       /* FOUR of his own on the front page: the next three newest, plus one
