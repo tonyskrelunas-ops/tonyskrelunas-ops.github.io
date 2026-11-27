@@ -2,9 +2,9 @@
 
 Everything I read this morning that was worth keeping. Every one is live and shareable.
 
-**In Maine, Making Kimchi Builds Community Resilience Ahead of Winter** — Civil Eats  
-By Ben Seal • November 23, 2026A fermentation shop has adapted Korea’s communal tradition of preservation to Maine’s short seasons and available ingredients.Read the full  
-<https://civileats.com/2026/11/23/in-this-maine-shop-kimchi-builds-community-resilience-ahead-of-winter/>
+**Mental Health Is Not Mental Performance** — iRunFar  
+The post Mental Health Is Not Mental Performance appeared first on iRunFar. Mental health and mental performance in trail running are different, and understanding the div  
+<https://www.irunfar.com/mental-health-is-not-mental-performance>
 
 **Inforegión TV estrena su primer programa y aborda los obstáculos para proteger a los pueblos indígenas en aislamiento y el avance de la minería ilegal** — Inforegión · ES  
 Inforegión TV ya está al aire. Desde este 26 de noviembre, Inforegión presenta u... La entrada Inforegión TV estrena su primer programa y aborda los obstáculos para prote  
@@ -18,17 +18,17 @@ Inforegión TV ya está al aire. Desde este 26 de noviembre, Inforegión present
 Nuo gruodžio 4 d. Nacionaliniame M. K. Čiurlionio dailės muziejuje (V. Putvinskio g. 55, Kaune) veiks Elžbietos Daugvilienės kūrybos paroda „Skausmo siuvėja“. Elžbieta Da  
 <https://kaunaspilnas.lt/duris-po-durio-per-istorine-trauma-atidaroma-elzbietos-daugvilienes-paroda/>
 
-**Doctor explains the effects of winter beverage habits on kidney health, shares how best to enjoy them** — Hindustan Times Health · INDIA  
-A warm cup of tea, coffee or hot chocolate can be very comforting in chilly weather, but excessive consumption can affect kidney health, shares Dr Anupam Roy.  
-<https://www.hindustantimes.com/lifestyle/health/doctor-explains-how-winter-beverage-habits-can-affect-kidney-health-shares-how-best-to-enjoy-them-101795784978610.html>
+**Winter immunity, the desi way: Why a handful of nuts and dry fruits should be your daily shield?** — Hindustan Times Health · INDIA  
+How incorporating nuts and dried fruits into your winter diet can boost immunity by providing essential nutrients for better health and wellness.  
+<https://www.hindustantimes.com/lifestyle/health/winter-immunity-the-desi-way-why-a-handful-of-nuts-and-dry-fruits-should-be-your-daily-shield-101795784029071.html>
 
-**China anxious as record 13 million university graduates to hit a tough job market in 2027** — Tibetan Review · TIBET  
-(TibetanReview.net, Nov20’26) – As China, the world’s second-largest economy, continues to grapple with slowed growth and weak domestic demand, its number of university g  
-<https://www.tibetanreview.net/china-anxious-as-record-13-million-university-graduates-to-hit-a-tough-job-market-in-2027/>
+**Tibetan student Samten Choedon bags gold medal at Delhi University** — Phayul · TIBET  
+Tenzin Nyidon DHARAMSHALA, Nov. 25: A 23-year-old Tibetan student, Samten Choedon, has been awarded a prestigious Gold Medal at the University of Delhi’s 103rd Convocatio  
+<https://phayul.com/2026/11/tibetan-student-samten-choedon-bags-gold-medal-at-delhi-university/>
 
-**Best Running Pants for Men and Women of 2026** — iRunFar  
-The post Best Running Pants for Men and Women of 2026 appeared first on iRunFar. Our top picks for pants for running in the cold, sun protection, rain, and wind. Best Run  
-<https://www.irunfar.com/best-running-pants>
+**In Maine, Making Kimchi Builds Community Resilience Ahead of Winter** — Civil Eats  
+By Ben Seal • November 23, 2026A fermentation shop has adapted Korea’s communal tradition of preservation to Maine’s short seasons and available ingredients.Read the full  
+<https://civileats.com/2026/11/23/in-this-maine-shop-kimchi-builds-community-resilience-ahead-of-winter/>
 
 **Iverco, Carretero y Etesa: viejos negocios, nuevos contratos** — Agencia Ocote · ES  
 Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcción y modernización de torres y líneas de electricidad con la venta de instrumentos musicales a  
@@ -42,13 +42,13 @@ Rolando Rodríguez B.rrodriguez@prensa.com ¿Qué tienen en común la construcci
 Žiema atnešė tamsesnius vakarus, bet kartu ir daugiau progų susitikti universitete. Nuo folkloro ir klasikinės muzikos iki džiazo, šokio bei istorijų …  
 <https://mokslolietuva.lt/2026/11/kvieciame-pasitikti-sventes-su-vilniaus-universiteto-kulturos-centru-atraskite-ka-si-sventini-sezona-paruose-vu-meno-kolektyvai/>
 
-**Winter immunity, the desi way: Why a handful of nuts and dry fruits should be your daily shield?** — Hindustan Times Health · INDIA  
-How incorporating nuts and dried fruits into your winter diet can boost immunity by providing essential nutrients for better health and wellness.  
-<https://www.hindustantimes.com/lifestyle/health/winter-immunity-the-desi-way-why-a-handful-of-nuts-and-dry-fruits-should-be-your-daily-shield-101795784029071.html>
+**He Built a Robot at 12! Now He Runs an AI Startup** — The Better India · INDIA  
+At just 12, Raul John Aju built a humanoid robot called Me-bot. Today, at 16, the Kerala teenager has his own AI startup and a growing list of projects aimed at making te  
+<https://thebetterindia.com/videos/he-built-a-robot-at-12-now-he-runs-an-ai-startup-12846850>
 
-**Tibetan student Samten Choedon bags gold medal at Delhi University** — Phayul · TIBET  
-Tenzin Nyidon DHARAMSHALA, Nov. 25: A 23-year-old Tibetan student, Samten Choedon, has been awarded a prestigious Gold Medal at the University of Delhi’s 103rd Convocatio  
-<https://phayul.com/2026/11/tibetan-student-samten-choedon-bags-gold-medal-at-delhi-university/>
+**US panel highlights China’s moves to subvert India’s rise, including by military partnership with Pakistan** — Tibetan Review · TIBET  
+(TibetanReview.net, Nov22’26) – China is out to subvert the rise of India, one of the few powers outside the US alliances with the scale to compete with it, a key US Cong  
+<https://www.tibetanreview.net/us-panel-highlights-chinas-moves-to-subvert-indias-rise-including-by-military-partnership-with-pakistan/>
 
 
 ---
@@ -60,11 +60,6 @@ list for a few days has moved or died and wants replacing.
 
 - **en** · news · Positive News — unreachable
 - **en** · land · Western Horseman — unreachable
-- **ja** · news · ソトコト — empty
 - **lt** · news · Kauno diena — unreachable
-- **india** · news · The Better India — unreachable
-- **india** · news · Village Square — unreachable
-- **india** · news · — — nothing cleared the gates
-- **tibet** · research · Buddhist Digital Resource Center — unreachable
 - **tibet** · research · — — nothing cleared the gates
 - **tibet** · culture · — — nothing cleared the gates
