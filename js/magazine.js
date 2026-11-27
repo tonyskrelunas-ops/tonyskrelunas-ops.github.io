@@ -29,7 +29,7 @@
     var t = a.tr[LANG];
     return { href: t.href || a.href, title: t.title || a.title,
              dek: t.dek || a.dek, pillar: t.pillar || a.pillar,
-             date: a.date, art: a.art, slug: a.slug, translated: true };
+             date: a.date, art: a.art, img: a.img, slug: a.slug, translated: true };
   }
 
   /* each edition writes the date in its own language — it was printing
