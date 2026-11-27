@@ -458,5 +458,25 @@
    "dek": "Visi patys sau statome kelio užtvaras. Oi, aš tai turiu. Aš to negaliu. Taip visada nutinka.",
    "pillar": "Žmogaus atsparumas"
   }
+ },
+ "what-does-your-heart-say": {
+  "es": {
+   "href": "/es/que-dice-tu-corazon/",
+   "title": "¿Qué dice tu corazón?",
+   "dek": "Un saludo en tzotzil, un navegante que regaló lo que le dijeron que guardara y una piedrecita pequeña que enseña al cuerpo a correr.",
+   "pillar": "Resiliencia humana"
+  },
+  "ja": {
+   "href": "/ja/anata-no-kokoro-wa-nanto-iu/",
+   "title": "あなたの心は何と言っていますか",
+   "dek": "ツォツィル語の挨拶、守れと言われたものを手放した航海者、そして体に走ることを教える小さな石。",
+   "pillar": "人間のレジリエンス"
+  },
+  "lt": {
+   "href": "/lt/ka-sako-tavo-sirdis/",
+   "title": "Ką sako tavo širdis?",
+   "dek": "Pasisveikinimas tzotzil kalba, navigatorius, kuris atidavė tai, ką jam liepė saugoti, ir mažas akmenukas, mokantis kūną bėgti.",
+   "pillar": "Žmogaus atsparumas"
+  }
  }
 }
